@@ -1,0 +1,29 @@
+baseURL = 'https://example.com/'
+theme = 'PaperMod'
+
+defaultContentLanguage = 'zh'
+defaultContentLanguageInSubdir = false
+
+[languages]
+
+  [languages.zh]
+    languageCode = 'zh-cn'
+    languageName = '中文'
+    weight = 1
+    title = '我的个人博客'
+    [languages.zh.params]
+      description = '分享商业与技术研究'
+      defaultTheme = "auto"
+      showToc = true
+      TocOpen = false
+
+  [languages.en]
+    languageCode = 'en'
+    languageName = 'English'
+    weight = 2
+    title = 'My Personal Blog'
+    [languages.en.params]
+      description = 'Insights on Business and Tech'
+      defaultTheme = "auto"
+      showToc = true
+      TocOpen = false
