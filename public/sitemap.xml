@@ -5,19 +5,22 @@
     <loc>http://localhost:1313/</loc>
     <lastmod>2026-08-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>http://localhost:1313/page/</loc>
     <lastmod>2026-08-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/page/archives/</loc>
+    <loc>http://localhost:1313/page/archives/</loc>
     <lastmod>2026-08-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/page/search/</loc>
+    <loc>http://localhost:1313/page/search/</loc>
     <lastmod>2026-08-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/my-first-post.zh/</loc>
     <lastmod>2026-08-08T10:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/my-first-post/</loc>
+    <lastmod>2026-08-08T10:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/</loc>
     <lastmod>2026-08-08T10:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
