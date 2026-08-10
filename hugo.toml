@@ -15,7 +15,7 @@ theme = "stack"
     [params.sidebar]
         compact = false
         subtitle = "记录技术与思考"
-        avatar = "avatar.jpg"
+        avatar = "/avatar.jpg"
 
 # 侧边栏导航菜单配置
 [[menu.main]]
