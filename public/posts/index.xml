@@ -1,24 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Posts on 我的个人博客</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on 我的个人博客</description>
-    <generator>Hugo</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sat, 08 Aug 2026 10:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>我的第一篇博客文章</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Sat, 08 Aug 2026 10:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>&lt;p&gt;这是我的第一篇中文博客文章，欢迎光临！&lt;/p&gt;
-&lt;h3 id=&#34;未来规划&#34;&gt;未来规划&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;持续输出优质原创内容&lt;/li&gt;
-&lt;li&gt;申请 Google AdSense 广告变现&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-  </channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Dex的个人博客</title>
+        <link>http://localhost:1313/posts/</link>
+        <description>Recent content in Posts on Dex的个人博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sat, 08 Aug 2026 10:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" /><item>
+            <title>Dex的第一篇博客文章</title>
+            <link>http://localhost:1313/posts/my-first-post.zh/</link>
+            <pubDate>Sat, 08 Aug 2026 10:00:00 +0800</pubDate>
+            <guid>http://localhost:1313/posts/my-first-post.zh/</guid>
+            <description>&lt;p&gt;这是我的第一篇中文博客文章，欢迎光临！&lt;/p&gt;&#xA;&lt;h3 id=&#34;未来规划&#34;&gt;未来规划&#xD;&#xA;&lt;/h3&gt;&lt;ul&gt;&#xA;&lt;li&gt;持续输出优质内容&lt;/li&gt;&#xA;&lt;li&gt;申请 Google AdSense 广告变现&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;</description>
+        </item><item>
+            <title>My First Blog Post</title>
+            <link>http://localhost:1313/posts/my-first-post/</link>
+            <pubDate>Sat, 08 Aug 2026 10:00:00 +0800</pubDate>
+            <guid>http://localhost:1313/posts/my-first-post/</guid>
+            <description>&lt;p&gt;This is the English version of my first blog post. Welcome!&lt;/p&gt;&#xA;&lt;h3 id=&#34;future-plans&#34;&gt;Future Plans&#xD;&#xA;&lt;/h3&gt;&lt;ul&gt;&#xA;&lt;li&gt;Publish high-quality articles&lt;/li&gt;&#xA;&lt;li&gt;Apply for Google AdSense&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;</description>
+        </item></channel>
 </rss>
