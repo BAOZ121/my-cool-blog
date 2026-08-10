@@ -6,21 +6,43 @@ theme = "stack"
 [params]
     mainSections = ["post", "posts"]
 
-    # 日期显示格式配置
+    # 日期显示格式
     [params.dateFormat]
         published = "2006-01-02"
         updated = "2006-01-02"
 
-    # 侧边栏配置
+    # 侧边栏与头像配置（直接指定头像图片文件名）
     [params.sidebar]
         compact = false
         subtitle = "记录技术与思考"
+        avatar = "avatar.jpg"
 
-    # 首页侧边栏小工具配置
-    [params.widgets]
-        homepage = [
-            { type = "search" },
-            { type = "categories" },
-            { type = "tag-cloud" }
-        ]
-        
+# 侧边栏导航菜单配置
+[[menu.main]]
+    identifier = "home"
+    name = "首页"
+    url = "/"
+    weight = 1
+    params = { icon = "home" }
+
+[[menu.main]]
+    identifier = "archives"
+    name = "归档"
+    url = "/archives/"
+    weight = 2
+    params = { icon = "archives" }
+
+[[menu.main]]
+    identifier = "search"
+    name = "搜索"
+    url = "/search/"
+    weight = 3
+    params = { icon = "search" }
+
+# 侧边栏挂件配置
+[params.widgets]
+    homepage = [
+        { type = "search" },
+        { type = "categories" },
+        { type = "tag-cloud" }
+    ]
