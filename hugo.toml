@@ -2,3 +2,25 @@ baseURL = "https://my-cool-blog.pages.dev/"
 languageCode = "zh-cn"
 title = "Dex的个人博客"
 theme = "stack"
+
+[params]
+    mainSections = ["post", "posts"]
+
+    # 日期显示格式配置
+    [params.dateFormat]
+        published = "2006-01-02"
+        updated = "2006-01-02"
+
+    # 侧边栏配置
+    [params.sidebar]
+        compact = false
+        subtitle = "记录技术与思考"
+
+    # 首页侧边栏小工具配置
+    [params.widgets]
+        homepage = [
+            { type = "search" },
+            { type = "categories" },
+            { type = "tag-cloud" }
+        ]
+        
