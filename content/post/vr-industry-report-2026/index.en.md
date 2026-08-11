@@ -1,10 +1,10 @@
 ---
-title: "是什么，让一家公司一年损失近200亿美元"
+title: "What Causes a Company to Lose Nearly $20 Billion in a Single Year?"
 date: 2026-08-11
-description: "是什么，让一家公司一年损失近200亿美元。2014年，扎克伯格以20亿美元收购 Oculus..."
+description: "What causes a company to lose nearly $20 billion in a single year? In 2014, Zuckerberg acquired Oculus for $2 billion..."
 image: "cover.jpg"
 categories:
-    - "行业研究"
+    - "industry Research"
 tags:
     - "VR"
     - "XR"
