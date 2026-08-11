@@ -5,15 +5,11 @@ theme = "stack"
 # 全局通用配置
 [params]
     mainSections = ["post", "posts"]
-    favicon = "favicon.png"
+    favicon = "/favicon.png"
 
     [params.dateFormat]
         published = "2006-01-02"
         updated = "2006-01-02"
-
-    [params.sidebar]
-        compact = false
-        avatar = "/avatar.jpg"
 
     [params.widgets]
         homepage = [
@@ -33,6 +29,8 @@ theme = "stack"
         weight = 1
 
         [languages.zh-cn.params.sidebar]
+            compact = false
+            avatar = "/avatar.jpg"
             subtitle = "记录技术与思考"
 
         # 中文主导航菜单
@@ -78,6 +76,8 @@ theme = "stack"
         weight = 2
 
         [languages.en.params.sidebar]
+            compact = false
+            avatar = "/avatar.jpg"
             subtitle = "Tech & Thoughts"
 
         # 英文主导航菜单
