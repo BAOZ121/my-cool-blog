@@ -5,7 +5,7 @@ theme = "stack"
 # 全局通用配置
 [params]
     mainSections = ["post", "posts"]
-
+    favicon = "favicon.png"
     [params.dateFormat]
         published = "2006-01-02"
         updated = "2006-01-02"
