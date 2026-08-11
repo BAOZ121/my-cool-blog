@@ -20,16 +20,6 @@ theme = "stack"
             { type = "categories" },
             { type = "tag-cloud" }
         ]
-# 侧边栏社交 / 联系方式菜单
-[[menu.social]]
-    name = "YouTube"
-    url = "https://www.youtube.com/@ZeRuiDong"
-    params = { icon = "brand-youtube" }
-
-[[menu.social]]
-    name = "Email"
-    url = "mailto:dex222444@gmail.com"
-    params = { icon = "mail" }
 
 # 多语言设置
 [languages]
@@ -63,7 +53,16 @@ theme = "stack"
             url = "/search/"
             weight = 3
             params = { icon = "search" }
+# 在 [languages.zh-cn] 区域内追加中文社交菜单：
+[[languages.zh-cn.menu.social]]
+    name = "YouTube"
+    url = "https://www.youtube.com/@ZeRuiDong"
+    params = { icon = "brand-youtube" }
 
+[[languages.zh-cn.menu.social]]
+    name = "Email"
+    url = "mailto:dex222444@gmail.com"
+    params = { icon = "mail" }
     # 2. 英文配置
     [languages.en]
         languageCode = "en"
@@ -95,3 +94,13 @@ theme = "stack"
             weight = 3
             params = { icon = "search" }
             # 侧边栏社交 / 联系方式
+# 在 [languages.en] 区域内追加英文社交菜单：
+[[languages.en.menu.social]]
+    name = "YouTube"
+    url = "https://www.youtube.com/@ZeRuiDong"
+    params = { icon = "brand-youtube" }
+
+[[languages.en.menu.social]]
+    name = "Email"
+    url = "mailto:dex222444@gmail.com"
+    params = { icon = "mail" }
