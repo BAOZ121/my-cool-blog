@@ -20,16 +20,16 @@ theme = "stack"
             { type = "categories" },
             { type = "tag-cloud" }
         ]
-[[params.social]]
+# 侧边栏社交 / 联系方式菜单
+[[menu.social]]
     name = "YouTube"
-    icon = "brand-youtube"
     url = "https://www.youtube.com/@ZeRuiDong"
+    params = { icon = "brand-youtube" }
 
-[[params.social]]
-    name = "Email 1"
-    icon = "mail"
+[[menu.social]]
+    name = "Email"
     url = "mailto:dex222444@gmail.com"
-
+    params = { icon = "mail" }
 
 # 多语言设置
 [languages]
