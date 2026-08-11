@@ -84,3 +84,13 @@ theme = "stack"
             url = "/en/search/"
             weight = 3
             params = { icon = "search" }
+            # 侧边栏社交 / 联系方式
+[[params.social]]
+    name = "YouTube"
+    icon = "brand-youtube"
+    url = "https://www.youtube.com/@ZeRuiDong"
+
+[[params.social]]
+    name = "Email 1"
+    icon = "mail"
+    url = "dex222444@gmail.com"
