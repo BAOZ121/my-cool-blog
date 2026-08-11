@@ -6,6 +6,7 @@ theme = "stack"
 [params]
     mainSections = ["post", "posts"]
     favicon = "favicon.png"
+
     [params.dateFormat]
         published = "2006-01-02"
         updated = "2006-01-02"
@@ -21,8 +22,9 @@ theme = "stack"
             { type = "tag-cloud" }
         ]
 
-# 多语言设置
+# 多语言配置
 [languages]
+
     # 1. 中文配置
     [languages.zh-cn]
         languageCode = "zh-cn"
@@ -33,6 +35,7 @@ theme = "stack"
         [languages.zh-cn.params.sidebar]
             subtitle = "记录技术与思考"
 
+        # 中文主导航菜单
         [[languages.zh-cn.menu.main]]
             identifier = "home"
             name = "首页"
@@ -53,16 +56,20 @@ theme = "stack"
             url = "/search/"
             weight = 3
             params = { icon = "search" }
-# 在 [languages.zh-cn] 区域内追加中文社交菜单：
-[[languages.zh-cn.menu.social]]
-    name = "YouTube"
-    url = "https://www.youtube.com/@ZeRuiDong"
-    params = { icon = "brand-youtube" }
 
-[[languages.zh-cn.menu.social]]
-    name = "Email"
-    url = "mailto:dex222444@gmail.com"
-    params = { icon = "mail" }
+        # 中文社交菜单
+        [[languages.zh-cn.menu.social]]
+            identifier = "youtube"
+            name = "YouTube"
+            url = "https://www.youtube.com/@ZeRuiDong"
+            params = { icon = "brand-youtube" }
+
+        [[languages.zh-cn.menu.social]]
+            identifier = "email"
+            name = "Email"
+            url = "mailto:dex222444@gmail.com"
+            params = { icon = "mail" }
+
     # 2. 英文配置
     [languages.en]
         languageCode = "en"
@@ -73,6 +80,7 @@ theme = "stack"
         [languages.en.params.sidebar]
             subtitle = "Tech & Thoughts"
 
+        # 英文主导航菜单
         [[languages.en.menu.main]]
             identifier = "home"
             name = "Home"
@@ -93,14 +101,16 @@ theme = "stack"
             url = "/en/search/"
             weight = 3
             params = { icon = "search" }
-            # 侧边栏社交 / 联系方式
-# 在 [languages.en] 区域内追加英文社交菜单：
-[[languages.en.menu.social]]
-    name = "YouTube"
-    url = "https://www.youtube.com/@ZeRuiDong"
-    params = { icon = "brand-youtube" }
 
-[[languages.en.menu.social]]
-    name = "Email"
-    url = "mailto:dex222444@gmail.com"
-    params = { icon = "mail" }
+        # 英文社交菜单
+        [[languages.en.menu.social]]
+            identifier = "youtube"
+            name = "YouTube"
+            url = "https://www.youtube.com/@ZeRuiDong"
+            params = { icon = "brand-youtube" }
+
+        [[languages.en.menu.social]]
+            identifier = "email"
+            name = "Email"
+            url = "mailto:dex222444@gmail.com"
+            params = { icon = "mail" }
