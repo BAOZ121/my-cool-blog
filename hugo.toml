@@ -1,48 +1,86 @@
 baseURL = "https://my-cool-blog.pages.dev/"
-languageCode = "zh-cn"
-title = "Dex的个人博客"
+defaultContentLanguage = "zh-cn"
 theme = "stack"
 
+# 全局通用配置
 [params]
     mainSections = ["post", "posts"]
 
-    # 日期显示格式
     [params.dateFormat]
         published = "2006-01-02"
         updated = "2006-01-02"
 
-    # 侧边栏与头像配置（直接指定头像图片文件名）
     [params.sidebar]
         compact = false
-        subtitle = "记录技术与思考"
         avatar = "/avatar.jpg"
 
-# 侧边栏导航菜单配置
-[[menu.main]]
-    identifier = "home"
-    name = "首页"
-    url = "/"
-    weight = 1
-    params = { icon = "home" }
+    [params.widgets]
+        homepage = [
+            { type = "search" },
+            { type = "categories" },
+            { type = "tag-cloud" }
+        ]
 
-[[menu.main]]
-    identifier = "archives"
-    name = "归档"
-    url = "/archives/"
-    weight = 2
-    params = { icon = "archives" }
+# 多语言设置
+[languages]
+    # 1. 中文配置
+    [languages.zh-cn]
+        languageCode = "zh-cn"
+        languageName = "中文"
+        title = "Dex的个人博客"
+        weight = 1
 
-[[menu.main]]
-    identifier = "search"
-    name = "搜索"
-    url = "/search/"
-    weight = 3
-    params = { icon = "search" }
+        [languages.zh-cn.params.sidebar]
+            subtitle = "记录技术与思考"
 
-# 侧边栏挂件配置
-[params.widgets]
-    homepage = [
-        { type = "search" },
-        { type = "categories" },
-        { type = "tag-cloud" }
-    ]
+        [[languages.zh-cn.menu.main]]
+            identifier = "home"
+            name = "首页"
+            url = "/"
+            weight = 1
+            params = { icon = "home" }
+
+        [[languages.zh-cn.menu.main]]
+            identifier = "archives"
+            name = "归档"
+            url = "/archives/"
+            weight = 2
+            params = { icon = "archives" }
+
+        [[languages.zh-cn.menu.main]]
+            identifier = "search"
+            name = "搜索"
+            url = "/search/"
+            weight = 3
+            params = { icon = "search" }
+
+    # 2. 英文配置
+    [languages.en]
+        languageCode = "en"
+        languageName = "English"
+        title = "Dex's Blog"
+        weight = 2
+
+        [languages.en.params.sidebar]
+            subtitle = "Tech & Thoughts"
+
+        [[languages.en.menu.main]]
+            identifier = "home"
+            name = "Home"
+            url = "/en/"
+            weight = 1
+            params = { icon = "home" }
+
+        [[languages.en.menu.main]]
+            identifier = "archives"
+            name = "Archives"
+            url = "/en/archives/"
+            weight = 2
+            params = { icon = "archives" }
+
+        [[languages.en.menu.main]]
+            identifier = "search"
+            name = "Search"
+            url = "/en/search/"
+            weight = 3
+            params = { icon = "search" }

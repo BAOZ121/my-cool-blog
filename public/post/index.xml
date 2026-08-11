@@ -7,15 +7,9 @@
         <language>zh-cn</language>
         <lastBuildDate>Sat, 08 Aug 2026 10:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" /><item>
             <title>Dex的第一篇博客文章</title>
-            <link>http://localhost:1313/post/my-first-post.zh/</link>
-            <pubDate>Sat, 08 Aug 2026 10:00:00 +0800</pubDate>
-            <guid>http://localhost:1313/post/my-first-post.zh/</guid>
-            <description>&lt;img src=&#34;https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe&#34; alt=&#34;Featured image of post Dex的第一篇博客文章&#34; /&gt;&lt;p&gt;这是我的第一篇中文博客文章，欢迎光临！&lt;/p&gt;&#xA;&lt;h3 id=&#34;未来规划&#34;&gt;未来规划&#xD;&#xA;&lt;/h3&gt;&lt;ul&gt;&#xA;&lt;li&gt;持续输出优质内容&lt;/li&gt;&#xA;&lt;li&gt;申请 Google AdSense 广告变现&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;</description>
-        </item><item>
-            <title>My First Blog Post</title>
             <link>http://localhost:1313/post/my-first-post/</link>
             <pubDate>Sat, 08 Aug 2026 10:00:00 +0800</pubDate>
             <guid>http://localhost:1313/post/my-first-post/</guid>
-            <description>&lt;img src=&#34;https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe&#34; alt=&#34;Featured image of post My First Blog Post&#34; /&gt;&lt;p&gt;This is the English version of my first blog post. Welcome!&lt;/p&gt;&#xA;&lt;h3 id=&#34;future-plans&#34;&gt;Future Plans&#xD;&#xA;&lt;/h3&gt;&lt;ul&gt;&#xA;&lt;li&gt;Publish high-quality articles&lt;/li&gt;&#xA;&lt;li&gt;Apply for Google AdSense&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;</description>
+            <description>&lt;img src=&#34;https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe&#34; alt=&#34;Featured image of post Dex的第一篇博客文章&#34; /&gt;&lt;p&gt;这是我的第一篇中文博客文章，欢迎光临！&lt;/p&gt;&#xA;&lt;h3 id=&#34;未来规划&#34;&gt;未来规划&#xD;&#xA;&lt;/h3&gt;&lt;ul&gt;&#xA;&lt;li&gt;持续输出优质内容&lt;/li&gt;&#xA;&lt;li&gt;申请 Google AdSense 广告变现&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;</description>
         </item></channel>
 </rss>
