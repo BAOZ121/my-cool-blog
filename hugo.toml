@@ -20,6 +20,16 @@ theme = "stack"
             { type = "categories" },
             { type = "tag-cloud" }
         ]
+[[params.social]]
+    name = "YouTube"
+    icon = "brand-youtube"
+    url = "https://www.youtube.com/@ZeRuiDong"
+
+[[params.social]]
+    name = "Email 1"
+    icon = "mail"
+    url = "mailto:dex222444@gmail.com"
+
 
 # 多语言设置
 [languages]
@@ -85,12 +95,3 @@ theme = "stack"
             weight = 3
             params = { icon = "search" }
             # 侧边栏社交 / 联系方式
-[[params.social]]
-    name = "YouTube"
-    icon = "brand-youtube"
-    url = "https://www.youtube.com/@ZeRuiDong"
-
-[[params.social]]
-    name = "Email 1"
-    icon = "mail"
-    url = "dex222444@gmail.com"
