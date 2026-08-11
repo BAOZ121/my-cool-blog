@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="From 1935 sci-fi visions to 2026 commercial hurdles: A deep dive into the VR/XR value chain, Meta vs. Apple dynamics, and 4 fundamental engineering bottlenecks.">
+<title>Billions Burned Over a Century-Long Dream: 2026 VR/XR Value Chain &amp; 4 Core Bottlenecks</title>
+
+
+<link rel="canonical" href="http://localhost:1313/en/post/vr-industry-report-2026/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+
+
+<link rel="stylesheet" href="/scss/style.min.59c5eb617b2b83358d0baf163162325d5249a2be44239b430beb29a87c1ddbe4.css"><meta property='og:title' content="Billions Burned Over a Century-Long Dream: 2026 VR/XR Value Chain & 4 Core Bottlenecks">
+<meta property='og:description' content="From 1935 sci-fi visions to 2026 commercial hurdles: A deep dive into the VR/XR value chain, Meta vs. Apple dynamics, and 4 fundamental engineering bottlenecks.">
+<meta property='og:url' content='http://localhost:1313/en/post/vr-industry-report-2026/'>
+<meta property='og:site_name' content='Dex&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='VR' /><meta property='article:tag' content='XR' /><meta property='article:tag' content='Value Chain' /><meta property='article:tag' content='Meta' /><meta property='article:tag' content='Apple' /><meta property='article:tag' content='Spatial Computing' /><meta property='article:published_time' content='2026-08-11T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-08-11T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="Billions Burned Over a Century-Long Dream: 2026 VR/XR Value Chain & 4 Core Bottlenecks">
+<meta name="twitter:description" content="From 1935 sci-fi visions to 2026 commercial hurdles: A deep dive into the VR/XR value chain, Meta vs. Apple dynamics, and 4 fundamental engineering bottlenecks.">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        <figure class="site-avatar">
+                <a href="/en/">
+                    <img src="/avatar.jpg" 
+                        width=""
+                        height=""
+                        class="site-logo"
+                        loading="lazy"
+                        alt="Avatar">
+                </a>
+                
+            </figure>
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/en/">Dex&#39;s Blog</a></h1>
+            <h2 class="site-description">Tech &amp; Thoughts</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/en/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/en/archives/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/en/search/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    <li id="i18n-switch">  
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                        <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                            
+                                
+                                
+                                    
+                                        
+                                    
+                                
+                                    
+                                
+                                <option value="/post/vr-industry-report-2026/" >中文</option>
+                            
+                                
+                                
+                                    
+                                
+                                    
+                                        
+                                    
+                                
+                                <option value="/en/post/vr-industry-report-2026/" selected>English</option>
+                            
+                        </select>
+                    </li>
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            
+            
+            
+            <a href="/en/categories/industry-research/" style="background-color: hsl(324, 60%, 84%); color: hsl(324, 60%, 15%);">
+                Industry Research
+            </a>
+        
+            
+            
+            
+            <a href="/en/categories/tech--business/" style="background-color: hsl(227, 60%, 84%); color: hsl(227, 60%, 15%);">
+                Tech &amp; Business
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/en/post/vr-industry-report-2026/">Billions Burned Over a Century-Long Dream: 2026 VR/XR Value Chain &amp; 4 Core Bottlenecks</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            From 1935 sci-fi visions to 2026 commercial hurdles: A deep dive into the VR/XR value chain, Meta vs. Apple dynamics, and 4 fundamental engineering bottlenecks.
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    <footer class="article-meta">
+        
+            <div class="inline-meta">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                    <time class="article-time--published" datetime='2026-08-11T00:00:00Z'>2026-08-11</time>
+                
+
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                    <time class="article-time--reading">
+                        4 minutes read
+                    </time>
+                
+            </div>
+        
+
+        
+            <div class="inline-meta">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                
+                    <a href="/post/vr-industry-report-2026/" class="link">中文</a>
+                
+            </div>
+        
+
+        
+    </footer>
+    
+</div>
+
+</header>
+
+    
+
+    <section class="article-content">
+    
+    
+    
+    <blockquote>
+        <p><strong>Executive Summary</strong>: What causes a single tech giant to lose nearly $20 billion in a single year? In 2014, Mark Zuckerberg acquired Oculus for $2 billion and established Reality Labs. Even in 2026, tech leaders continue pouring tens of billions into a 90-year-old sci-fi promise. Why? Because once the technology crosses its critical inflection point, VR/XR will become the next personal computing paradigm—just like smartphones.</p>
+
+    </blockquote>
+<hr>
+<h2 id="1-a-century-long-dream-history--evolution-of-vr">1. A Century-Long Dream: History &amp; Evolution of VR
+</h2><p>Virtual Reality is far from a modern concept; its origins span nearly a century of imagination and engineering breakthroughs:</p>
+<ul>
+<li><strong>1935 (Conceptual Origins)</strong>: American sci-fi author Stanley G. Weinbaum published <em>Pygmalion&rsquo;s Spectacles</em>, describing goggles that allowed users to see, hear, taste, and touch a living virtual world.</li>
+<li><strong>1960 (Form Factor Established)</strong>: Photographer Morton Heilig patented the <strong>Telesphere Mask</strong>, the first stereoscopic 3D head-mounted display, establishing the blueprint for modern VR headsets.</li>
+<li><strong>1968 (Technical Foundation)</strong>: Computer graphics pioneer Ivan Sutherland created the first tracked HMD. Suspended from the ceiling due to its extreme weight, it was famously dubbed <strong>&ldquo;The Sword of Damocles&rdquo;</strong>.</li>
+<li><strong>1987 (Commercial Coining)</strong>: Jaron Lanier, founder of VPL Research, popularized the term &ldquo;Virtual Reality&rdquo; and commercialized the first VR goggles and data gloves, earning him the title &ldquo;Father of Virtual Reality.&rdquo;</li>
+</ul>
+<p>Despite enduring multiple hype cycles and capital bubbles, the tech industry has never abandoned the pursuit of next-generation spatial computing.</p>
+<hr>
+<h2 id="2-2026-vrxr-industry-value-chain-breakdown">2. 2026 VR/XR Industry Value Chain Breakdown
+</h2><p>Today, the industry is broadly categorized under <strong>XR (Extended Reality, encompassing VR, AR, and MR)</strong>. Below is a structural breakdown across the upstream, midstream, and downstream value chain:</p>
+<h3 id="upstream-core-components--technologies">Upstream: Core Components &amp; Technologies
+</h3><ul>
+<li><strong>Processors / Chips</strong>: Qualcomm (dominating standalone headsets via the XR2 series) and Apple (custom M-series + R1 spatial co-processor).</li>
+<li><strong>Displays &amp; Optics</strong>: Sony (Micro-OLED silicon panels), BOE, and Sunny Optical (Pancake lens assemblies).</li>
+<li><strong>Sensors &amp; Power</strong>: Spatial tracking sensors, eye/gesture tracking modules, and high-density battery cells.</li>
+</ul>
+<h3 id="midstream-brands--oemodm-manufacturing">Midstream: Brands &amp; OEM/ODM Manufacturing
+</h3><ul>
+<li><strong>Brand Camps</strong>:
+<ul>
+<li><strong>Meta</strong>: Dominates ~75% of global market share with the Quest 3 and budget Quest 3S.</li>
+<li><strong>Apple</strong>: Holds ~5% market share with Vision Pro ($3,499). Despite low volume due to pricing, it captured the premium market and standardized &ldquo;Spatial Computing.&rdquo;</li>
+<li><strong>Sony, Pico, HTC</strong>: Serving host gaming ecosystems and regional enterprise markets.</li>
+</ul>
+</li>
+<li><strong>Key Contract Manufacturers</strong>: <strong>Goertek</strong> and <strong>Luxshare Precision</strong>. Financial performance and utilization rates at these key assemblers serve as leading indicators for global VR shipment volumes.</li>
+</ul>
+<h3 id="downstream-ecosystems--application-scenarios">Downstream: Ecosystems &amp; Application Scenarios
+</h3><ul>
+<li><strong>Consumer (C-End)</strong>: SteamVR, Meta Quest Store, App Store. Core applications center around immersive gaming, virtual social spaces (e.g., VRChat), and spatial video.</li>
+<li><strong>Enterprise (B-End)</strong>: Evolved from military flight training into medical simulation, industrial digital twins, and automotive design.</li>
+</ul>
+<hr>
+<h2 id="3-four-core-bottlenecks-facing-the-industry-in-2026">3. Four Core Bottlenecks Facing the Industry in 2026
+</h2><p>Despite bold market promises, the XR industry remains constrained by four fundamental physics and engineering challenges:</p>
+<h3 id="1-screen-door-effect--exorbitant-micro-oled-costs">1. Screen-Door Effect &amp; Exorbitant Micro-OLED Costs
+</h3><p>Eliminating pixelation (screen-door effect) centimeters from the human eye requires thousands of pixels per inch (PPI). <strong>Micro-OLED (OLED on Silicon)</strong> is the only ideal solution, but yield rates remain extremely low and manufacturing costs astronomically high—accounting for a massive portion of the Vision Pro&rsquo;s $3,499 price tag.</p>
+<h3 id="2-vergence-accommodation-conflict-vac--motion-sickness">2. Vergence-Accommodation Conflict (VAC) &amp; Motion Sickness
+</h3><p>VAC represents a fundamental optical-neurological hurdle. In real life, eye convergence and lens focal adjustment work in sync; in VR, the focal plane remains fixed on the screen while content varies in depth. This &ldquo;eye-brain mismatch&rdquo; causes nausea and dizziness for 30%–40% of users within 20 minutes. Commercial varifocal displays remain far off.</p>
+<h3 id="3-the-performance-thermal-battery-impossible-trinity">3. The &ldquo;Performance-Thermal-Battery&rdquo; Impossible Trinity
+</h3><p>Mainstream standalone headsets weigh <strong>500g to 600g+</strong>, effectively hanging a bottle of water on the user&rsquo;s face.
+Rendering high-resolution 3D spatial scenes requires massive compute power (generating heat that requires fans, adding weight) and heavy batteries. This ergonomic limitation prevents users from wearing headsets for extended 8-hour workdays.</p>
+<h3 id="4-raw-material-supply-chain-constraints--inflation">4. Raw Material Supply Chain Constraints &amp; Inflation
+</h3><p>Recent volatility in semiconductor supply chains—specifically export restrictions and cost surges in key raw materials like <strong>Gallium and Germanium</strong> needed for high-refractive optics and processors—has driven up component inflation. This shattered hopes for rapid hardware cost reductions. Reality Labs recorded over $19 billion in operating losses in 2025, accelerating an industry shift toward lighter, screenless &ldquo;AI Smart Glasses&rdquo; (such as Meta&rsquo;s Ray-Ban partnership).</p>
+<hr>
+<h2 id="4-outlook--conclusion">4. Outlook &amp; Conclusion
+</h2><p>The XR market is undergoing a major transition from heavy HMDs toward light, fashion-forward form factors. As Jitesh Ubrani, Research Manager at IDC, noted:</p>
+
+    <blockquote>
+        <p>&ldquo;As we shift away from bulky headsets toward lighter designs, success depends not just on technology, but on fashion and comfort.&rdquo;</p>
+
+    </blockquote>
+<p>While VR has spent nearly a century evolving in fits and starts, spatial computing is steadily approaching its ultimate consumer form factor.</p>
+<hr>
+<p><em>Written &amp; curated by <strong>Dex</strong>. If you enjoy deep-dive market research and tech breakdowns, feel free to subscribe to the blog and channel.</em></p>
+
+</section>
+
+
+    <footer class="article-meta article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/en/tags/vr/">VR</a>
+        
+            <a href="/en/tags/xr/">XR</a>
+        
+            <a href="/en/tags/value-chain/">Value Chain</a>
+        
+            <a href="/en/tags/meta/">Meta</a>
+        
+            <a href="/en/tags/apple/">Apple</a>
+        
+            <a href="/en/tags/spatial-computing/">Spatial Computing</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        const elementsToRender = [".main-article", ".widget--toc"];
+
+        elementsToRender.forEach(selector => {
+            const element = document.querySelector(selector);
+            if (element) {
+                renderMathInElement(element, {
+                    delimiters: [
+                        { left: "$$", right: "$$", display: true },
+                        { left: "$", right: "$", display: false },
+                        { left: "\\(", right: "\\)", display: false },
+                        { left: "\\[", right: "\\]", display: true }
+                    ],
+                    ignoredClasses: ["gist"]
+                });
+            }
+        });
+    });
+</script>
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+
+        <div class="disqus-container">
+    
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (typeof DISQUS == 'object') {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2026 Dex&#39;s Blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="4.0.3">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+
+
+
+<script type="module">
+    import gallery from '\/ts\/gallery.js';
+
+    const articleContent = document.querySelector('.article-content');
+    const shouldLoad = articleContent && (articleContent.querySelectorAll('figure').length > 0 || articleContent.querySelectorAll('img.gallery-image').length > 0);
+    
+    if (shouldLoad) {
+        gallery(articleContent);
+
+        const PhotoSwipeLightbox = (await import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js")).default;
+        const styleHref = "https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.css";
+
+        const styleTag = document.createElement('link');
+        styleTag.rel = 'stylesheet';
+        styleTag.href = styleHref;
+        document.head.appendChild(styleTag);
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallerySelector: '.article-content',
+            childSelector: 'figure a.image-link',
+            pswpModule: () => import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js")
+        });
+        lightbox.init();
+    }
+</script>
+
+    
+
+            </main>
+        </div>
+        
+<script type="text/javascript" src="/ts/main.5ac8619f2665f36fb5fba17c51f7bcd17217458694c30744de49aa257540991d.js" defer></script>
+
+
+    </body>
+</html>

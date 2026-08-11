@@ -2,8 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/en/tags/apple/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/tags/apple/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/apple/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/post/vr-industry-report-2026/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/post/vr-industry-report-2026/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/post/vr-industry-report-2026/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/categories/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/categories/"
+                />
+  </url><url>
     <loc>http://localhost:1313/en/</loc>
-    <lastmod>2026-08-08T10:00:00+08:00</lastmod>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -13,6 +52,83 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/en/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/categories/industry-research/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/meta/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/tags/meta/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/meta/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/post/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/post/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/tags/spatial-computing/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/categories/tech--business/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/value-chain/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/en/tags/vr/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/tags/vr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/vr/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/tags/xr/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/tags/xr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/tags/xr/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/post/my-first-post/</loc>
@@ -26,19 +142,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/en/post/my-first-post/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/post/</loc>
-    <lastmod>2026-08-08T10:00:00+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/post/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/page/archives/</loc>
@@ -65,18 +168,6 @@
                 href="http://localhost:1313/en/page/search/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/categories/"
-                />
-  </url><url>
     <loc>http://localhost:1313/en/page/</loc>
     <xhtml:link
                 rel="alternate"
@@ -87,18 +178,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="http://localhost:1313/en/page/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/en/tags/"
                 />
   </url>
 </urlset>

@@ -4,5 +4,42 @@
         <link>http://localhost:1313/en/tags/</link>
         <description>Recent content in Tags on Dex&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en</language><atom:link href="http://localhost:1313/en/tags/index.xml" rel="self" type="application/rss+xml" /></channel>
+        <language>en</language>
+        <lastBuildDate>Tue, 11 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/en/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+            <title>Apple</title>
+            <link>http://localhost:1313/en/tags/apple/</link>
+            <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+            <guid>http://localhost:1313/en/tags/apple/</guid>
+            <description></description>
+        </item><item>
+            <title>Meta</title>
+            <link>http://localhost:1313/en/tags/meta/</link>
+            <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+            <guid>http://localhost:1313/en/tags/meta/</guid>
+            <description></description>
+        </item><item>
+            <title>Spatial Computing</title>
+            <link>http://localhost:1313/en/tags/spatial-computing/</link>
+            <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+            <guid>http://localhost:1313/en/tags/spatial-computing/</guid>
+            <description></description>
+        </item><item>
+            <title>Value Chain</title>
+            <link>http://localhost:1313/en/tags/value-chain/</link>
+            <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+            <guid>http://localhost:1313/en/tags/value-chain/</guid>
+            <description></description>
+        </item><item>
+            <title>VR</title>
+            <link>http://localhost:1313/en/tags/vr/</link>
+            <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+            <guid>http://localhost:1313/en/tags/vr/</guid>
+            <description></description>
+        </item><item>
+            <title>XR</title>
+            <link>http://localhost:1313/en/tags/xr/</link>
+            <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
+            <guid>http://localhost:1313/en/tags/xr/</guid>
+            <description></description>
+        </item></channel>
 </rss>
