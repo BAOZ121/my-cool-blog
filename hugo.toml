@@ -1,5 +1,5 @@
 baseURL = "https://thedexs.com/"
-defaultContentLanguage = "zh-cn"
+defaultContentLanguage = "en"
 theme = "stack"
 
 # 全局通用配置
@@ -21,59 +21,12 @@ theme = "stack"
 # 多语言配置
 [languages]
 
-    # 1. 中文配置
-    [languages.zh-cn]
-        languageCode = "zh-cn"
-        languageName = "中文"
-        title = "Dex的个人博客"
-        weight = 1
-
-        [languages.zh-cn.params.sidebar]
-            compact = false
-            avatar = "/avatar.jpg"
-            subtitle = "记录技术与思考"
-
-        # 中文主导航菜单
-        [[languages.zh-cn.menu.main]]
-            identifier = "home"
-            name = "首页"
-            url = "/"
-            weight = 1
-            params = { icon = "home" }
-
-        [[languages.zh-cn.menu.main]]
-            identifier = "archives"
-            name = "归档"
-            url = "/archives/"
-            weight = 2
-            params = { icon = "archives" }
-
-        [[languages.zh-cn.menu.main]]
-            identifier = "search"
-            name = "搜索"
-            url = "/search/"
-            weight = 3
-            params = { icon = "search" }
-
-        # 中文社交菜单
-        [[languages.zh-cn.menu.social]]
-            identifier = "youtube"
-            name = "YouTube"
-            url = "https://www.youtube.com/@ZeRuiDong"
-            params = { icon = "brand-youtube" }
-
-        [[languages.zh-cn.menu.social]]
-            identifier = "email"
-            name = "Email"
-            url = "mailto:dex222444@gmail.com"
-            params = { icon = "mail" }
-
-    # 2. 英文配置
+    # 1. 默认语言：英文
     [languages.en]
         languageCode = "en"
         languageName = "English"
         title = "Dex's Blog"
-        weight = 2
+        weight = 1
 
         [languages.en.params.sidebar]
             compact = false
@@ -84,21 +37,21 @@ theme = "stack"
         [[languages.en.menu.main]]
             identifier = "home"
             name = "Home"
-            url = "/en/"
+            url = "/"
             weight = 1
             params = { icon = "home" }
 
         [[languages.en.menu.main]]
             identifier = "archives"
             name = "Archives"
-            url = "/en/archives/"
+            url = "/archives/"
             weight = 2
             params = { icon = "archives" }
 
         [[languages.en.menu.main]]
             identifier = "search"
             name = "Search"
-            url = "/en/search/"
+            url = "/search/"
             weight = 3
             params = { icon = "search" }
 
@@ -110,6 +63,53 @@ theme = "stack"
             params = { icon = "brand-youtube" }
 
         [[languages.en.menu.social]]
+            identifier = "email"
+            name = "Email"
+            url = "mailto:dex222444@gmail.com"
+            params = { icon = "mail" }
+
+    # 2. 次要语言：中文
+    [languages.zh-cn]
+        languageCode = "zh-cn"
+        languageName = "中文"
+        title = "Dex的个人博客"
+        weight = 2
+
+        [languages.zh-cn.params.sidebar]
+            compact = false
+            avatar = "/avatar.jpg"
+            subtitle = "记录技术与思考"
+
+        # 中文主导航菜单
+        [[languages.zh-cn.menu.main]]
+            identifier = "home"
+            name = "首页"
+            url = "/zh-cn/"
+            weight = 1
+            params = { icon = "home" }
+
+        [[languages.zh-cn.menu.main]]
+            identifier = "archives"
+            name = "归档"
+            url = "/zh-cn/archives/"
+            weight = 2
+            params = { icon = "archives" }
+
+        [[languages.zh-cn.menu.main]]
+            identifier = "search"
+            name = "搜索"
+            url = "/zh-cn/search/"
+            weight = 3
+            params = { icon = "search" }
+
+        # 中文社交菜单
+        [[languages.zh-cn.menu.social]]
+            identifier = "youtube"
+            name = "YouTube"
+            url = "https://www.youtube.com/@ZeRuiDong"
+            params = { icon = "brand-youtube" }
+
+        [[languages.zh-cn.menu.social]]
             identifier = "email"
             name = "Email"
             url = "mailto:dex222444@gmail.com"
