@@ -2,6 +2,45 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/zh-cn/</loc>
+    <lastmod>2026-08-12T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh-cn/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh-cn/page/</loc>
+    <lastmod>2026-08-12T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/page/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh-cn/page/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh-cn/about/</loc>
+    <lastmod>2026-08-12T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh-cn/about/"
+                />
+  </url><url>
     <loc>http://localhost:1313/zh-cn/categories/</loc>
     <lastmod>2026-08-11T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -26,19 +65,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="http://localhost:1313/zh-cn/tags/dex/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/zh-cn/</loc>
-    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/"
                 />
   </url><url>
     <loc>http://localhost:1313/zh-cn/post/</loc>
@@ -130,19 +156,6 @@
   </url><url>
     <loc>http://localhost:1313/zh-cn/tags/%E8%A1%8C%E4%B8%9A%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/</loc>
     <lastmod>2026-08-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/zh-cn/page/</loc>
-    <lastmod>2026-08-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/page/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/page/"
-                />
   </url><url>
     <loc>http://localhost:1313/zh-cn/archives/</loc>
     <lastmod>2026-08-10T00:00:00+00:00</lastmod>

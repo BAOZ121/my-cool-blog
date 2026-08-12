@@ -2,6 +2,45 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/about/</loc>
+    <lastmod>2026-08-12T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh-cn/about/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-08-12T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh-cn/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/page/</loc>
+    <lastmod>2026-08-12T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/page/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh-cn/page/"
+                />
+  </url><url>
     <loc>http://localhost:1313/tags/business-analysis/</loc>
     <lastmod>2026-08-11T00:00:00+00:00</lastmod>
   </url><url>
@@ -32,19 +71,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="http://localhost:1313/zh-cn/tags/dex/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/"
                 />
   </url><url>
     <loc>http://localhost:1313/categories/industry-research/</loc>
@@ -142,19 +168,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="http://localhost:1313/zh-cn/archives/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/page/</loc>
-    <lastmod>2026-08-10T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="http://localhost:1313/page/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="http://localhost:1313/zh-cn/page/"
                 />
   </url><url>
     <loc>http://localhost:1313/search/</loc>
