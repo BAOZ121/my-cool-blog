@@ -120,3 +120,6 @@ theme = "stack"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+ # 将 page 目录下的页面 URL 简化（去除 /page/ 前缀）
+[permalinks]
+    page = "/:slug/"
