@@ -15,6 +15,19 @@
                 href="http://localhost:1313/zh-cn/categories/"
                 />
   </url><url>
+    <loc>http://localhost:1313/zh-cn/tags/dex/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/tags/dex/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh-cn/tags/dex/"
+                />
+  </url><url>
     <loc>http://localhost:1313/zh-cn/</loc>
     <lastmod>2026-08-11T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -80,6 +93,22 @@
                 href="http://localhost:1313/zh-cn/tags/xr/"
                 />
   </url><url>
+    <loc>http://localhost:1313/zh-cn/post/cybersecurity-industry-report/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/post/cybersecurity-industry-report/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh-cn/post/cybersecurity-industry-report/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/zh-cn/tags/%E5%95%86%E4%B8%9A%E5%88%86%E6%9E%90/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/zh-cn/post/vr-industry-report-2026/</loc>
     <lastmod>2026-08-11T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -93,7 +122,13 @@
                 href="http://localhost:1313/zh-cn/post/vr-industry-report-2026/"
                 />
   </url><url>
+    <loc>http://localhost:1313/zh-cn/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/zh-cn/categories/%E8%A1%8C%E4%B8%9A%E7%A0%94%E7%A9%B6/</loc>
+    <lastmod>2026-08-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/zh-cn/tags/%E8%A1%8C%E4%B8%9A%E7%A0%94%E7%A9%B6%E6%8A%A5%E5%91%8A/</loc>
     <lastmod>2026-08-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/zh-cn/page/</loc>

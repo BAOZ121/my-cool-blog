@@ -114,3 +114,9 @@ theme = "stack"
             name = "Email"
             url = "mailto:dex222444@gmail.com"
             params = { icon = "mail" }
+
+# 允许 Markdown 内渲染原生 HTML 标签与颜色样式
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
