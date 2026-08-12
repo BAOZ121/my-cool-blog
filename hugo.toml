@@ -1,6 +1,7 @@
 baseURL = "https://thedexs.com/"
 defaultContentLanguage = "en"
 theme = "stack"
+enableRobotsTXT = true
 
 # 全局通用配置
 [params]
