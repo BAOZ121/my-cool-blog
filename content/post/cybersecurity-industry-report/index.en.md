@@ -3,7 +3,8 @@ title: "Unveiling the $250B Cybersecurity Empire From an Aquarium Thermometer He
 date: 2026-08-11
 description: "A deep dive into the 60-year evolution of cybersecurity, upstream-midstream-downstream value chains, the four major market camps, and core industry bottlenecks."
 tags: ["Industry Research Report", "DEX", "Cybersecurity", "Business Analysis"]
-categories: ["Industry Research"]
+categories:
+  - "Cybersecurity"
 image: "cover.jpg"
 draft: false
 ---
