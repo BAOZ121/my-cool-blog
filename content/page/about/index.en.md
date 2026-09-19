@@ -23,6 +23,7 @@ That is the positioning for now. Funnily enough, as of today (August 12, 2026), 
 You can reach me through the following channels:
 
 - **Email:** dex222444@gmail.com
+- **Email (Proton):** qizhangdong325@proton.me
 - **YouTube:** https://www.youtube.com/@ZeRuiDong
 - **GitHub:** https://github.com/BAOZ121
 - **Website:** https://thedexs.com
