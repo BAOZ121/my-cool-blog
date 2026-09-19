@@ -3,7 +3,7 @@ title: "AI Risks, Industry Turbulence, and the Layoff Wave: What the Numbers Act
 description: "A structured look at how AI-related risks, capital reallocation, and post-pandemic correction are driving tech layoffs—and why the story is more complex than ‘AI replaces workers.’"
 date: 2026-09-19
 categories:
-  - "Industry Research"
+  - "AI & Labor"
 draft: false
 ---
 
