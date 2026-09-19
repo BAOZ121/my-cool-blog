@@ -1,0 +1,8 @@
+/*
+ * Keep report typography readable in both color schemes.
+ * Some existing posts contain inline color declarations; only those
+ * declarations are normalized to the theme's primary article text color.
+ */
+.article-content [style*="color:"] {
+    color: var(--card-text-color-main) !important;
+}
