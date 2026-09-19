@@ -4,10 +4,10 @@ date: 2026-08-11
 description: "What causes a company to lose nearly $20 billion in a single year? In 2014, Zuckerberg acquired Oculus for $2 billion..."
 image: "cover.jpg"
 categories:
-    - "industry Research"
+  - "XR & Hardware"
 tags:
-    - "VR"
-    - "XR"
+  - "VR"
+  - "XR"
 ---
 What causes a company to lose nearly $20 billion in a single year? In 2014, Zuckerberg acquired Oculus for $2 billion. Since then, Meta established the Reality Labs division, specializing in virtual reality, augmented reality hardware, and digital world building.
 
