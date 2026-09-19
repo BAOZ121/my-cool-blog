@@ -4,7 +4,7 @@ date: 2026-08-11
 description: "What causes a company to lose nearly $20 billion in a single year? In 2014, Zuckerberg acquired Oculus for $2 billion..."
 image: "cover.jpg"
 categories:
-  - "XR & Hardware"
+  - "Industry Report"
 tags:
   - "VR"
   - "XR"
