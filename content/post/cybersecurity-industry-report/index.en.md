@@ -4,7 +4,7 @@ date: 2026-08-11
 description: "A deep dive into the 60-year evolution of cybersecurity, upstream-midstream-downstream value chains, the four major market camps, and core industry bottlenecks."
 tags: ["Industry Research Report", "DEX", "Cybersecurity", "Business Analysis"]
 categories:
-  - "Cybersecurity"
+  - "Industry Report"
 image: "cover.jpg"
 draft: false
 ---
@@ -52,7 +52,7 @@ The 2000s marked a transitional period for cybersecurity threats, shifting from 
    * **SQL Slammer (2003):** One of the fastest worms in history, infecting 75,000 hosts worldwide in just 10 minutes, bringing networks and ATMs to a standstill.
 
 2. <span style="color: #1e3a8a; font-weight: bold;">Rise of Commercial Cybercrime (Mid-to-Late 2000s):</span> Hacker motivations shifted from technical boasting to economic gain.
-   * **Botnets:** By 2009, Symantec monitored that approximately 85% of global spam emails were sent by botnets.
+   * **Botnets:** By 2009, botnet monitored that approximately 85% of global spam emails were sent by botnets.
    * **First Major Data Breaches:** In 2005, CardSystems Solutions was hacked, exposing 40 million credit card accounts; in 2007, TJX Companies disclosed a breach where 94 million customer records were stolen.
    * The establishment of hacker forums like Shadow Crew marked the first emergence of a proto-dark web.
 
