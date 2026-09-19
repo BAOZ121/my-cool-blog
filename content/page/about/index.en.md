@@ -18,20 +18,30 @@ That is the positioning for now. Funnily enough, as of today (August 12, 2026), 
 
 ---
 
+## Contact
+
+You can reach me through the following channels:
+
+- **Email:** dex222444@gmail.com
+- **YouTube:** https://www.youtube.com/@ZeRuiDong
+- **GitHub:** https://github.com/BAOZ121
+- **Website:** https://thedexs.com
+
+Feel free to write if you have questions, feedback, or collaboration ideas.
+
+---
+
 ## Support the Author
 
 If you enjoy the industry research and content here, here are simple ways to support:
 
-**⭐ Star the repository**  
-[github.com/BAOZ121/my-cool-blog](https://github.com/BAOZ121/my-cool-blog) — a free way to show support and help others discover the project.
+**Star the repository**  
+https://github.com/BAOZ121/my-cool-blog
 
-**💖 GitHub Sponsors**  
-[github.com/sponsors/BAOZ121](https://github.com/sponsors/BAOZ121) — support ongoing research and content creation (if Sponsors is enabled on the account).
+**GitHub Sponsors**  
+https://github.com/sponsors/BAOZ121
 
-**📺 Subscribe on YouTube**  
-[youtube.com/@ZeRuiDong](https://www.youtube.com/@ZeRuiDong)
-
-**✉️ Get in touch**  
-[dex222444@gmail.com](mailto:dex222444@gmail.com)
+**Subscribe on YouTube**  
+https://www.youtube.com/@ZeRuiDong
 
 Thank you — every bit of support means a lot and helps keep the research going.
