@@ -4,7 +4,7 @@ description: "A deep dive into the 150-year evolution of the pharmaceutical indu
 date: 2026-08-21
 image: "cover.jpg"
 categories:
-  - "Industry Research"
+  - "Healthcare"
 draft: false
 ---
 
