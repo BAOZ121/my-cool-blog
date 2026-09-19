@@ -3,7 +3,7 @@ defaultContentLanguage = "en"
 theme = "stack"
 enableRobotsTXT = true
 
-# 全局通用配置
+# Global settings
 [params]
     mainSections = ["post", "posts"]
     favicon = "/favicon.png"
@@ -19,10 +19,9 @@ enableRobotsTXT = true
             { type = "tag-cloud" }
         ]
 
-# 多语言配置
+# Language configuration (English only)
 [languages]
 
-    # 1. 默认语言：英文
     [languages.en]
         languageCode = "en"
         languageName = "English"
@@ -34,7 +33,7 @@ enableRobotsTXT = true
             avatar = "/avatar.jpg"
             subtitle = "Tech & Thoughts"
 
-        # 英文主导航菜单
+        # Main navigation
         [[languages.en.menu.main]]
             identifier = "home"
             name = "Home"
@@ -63,7 +62,7 @@ enableRobotsTXT = true
             weight = 4
             params = { icon = "user" }
 
-        # 英文社交菜单
+        # Social links
         [[languages.en.menu.social]]
             identifier = "youtube"
             name = "YouTube"
@@ -75,13 +74,13 @@ enableRobotsTXT = true
             name = "Email"
             url = "mailto:dex222444@gmail.com"
             params = { icon = "mail" }
-   
 
-# 允许 Markdown 内渲染原生 HTML 标签与颜色样式
+# Allow raw HTML in Markdown
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
- # 将 page 目录下的页面 URL 简化（去除 /page/ 前缀）
+
+# Simplify page URLs (remove /page/ prefix)
 [permalinks]
     page = "/:slug/"
