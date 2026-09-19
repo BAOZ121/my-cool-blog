@@ -2,7 +2,6 @@
 title: "50 High-Potential Industries (2025–2040): Technologies, Markets, and Growth"
 description: "A structured list of 50 high-potential industries based on McKinsey Global Institute arenas, China’s NDRC priority sectors, and leading market forecasts—with representative technologies, market sizes, and CAGR projections."
 date: 2026-09-19
-image: "cover.jpg"
 categories:
   - "Business Research"
 draft: false
