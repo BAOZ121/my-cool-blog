@@ -62,12 +62,18 @@ enableRobotsTXT = true
             weight = 4
             params = { icon = "user" }
 
-        # Social links
+        # Social links (sidebar)
+        [[languages.en.menu.social]]
+            identifier = "github"
+            name = "GitHub"
+            url = "https://github.com/BAOZ121"
+            params = { icon = "brand-github", newTab = true }
+
         [[languages.en.menu.social]]
             identifier = "youtube"
             name = "YouTube"
             url = "https://www.youtube.com/@ZeRuiDong"
-            params = { icon = "brand-youtube" }
+            params = { icon = "brand-youtube", newTab = true }
 
         [[languages.en.menu.social]]
             identifier = "email"
