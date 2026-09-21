@@ -46,6 +46,7 @@ enableRobotsTXT = true
             name = "Industries"
             url = "/industries/"
             weight = 2
+            params = { icon = "chart-bar" }
 
         [[languages.en.menu.main]]
             identifier = "archives"
