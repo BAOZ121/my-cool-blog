@@ -8,8 +8,6 @@ categories:
 draft: false
 ---
 
-# <span style="font-size: 2.2em; color: #0f172a;">Part 1: Story</span>
-
 Over the past two decades, a small set of industries captured an outsized share of global growth and market-value creation. McKinsey Global Institute calls them “arenas of competition”: sectors that combine high growth with intense competitive dynamism.
 
 Twelve such arenas—from cloud and e-commerce to electric vehicles and semiconductors—already reshaped the economy between 2005 and the early 2020s. Looking ahead, McKinsey has identified **18 future arenas** that could generate **$29–48 trillion** in revenues by 2040 and account for a much larger share of global GDP growth.
@@ -21,8 +19,6 @@ This report brings those signals together into a practical list of **50 high-pot
 **Disclaimer:** Figures are synthesized from public research reports and official releases. Definitions and statistical scopes differ across sources. This is for reference only and does not constitute investment advice.
 
 ---
-
-# <span style="font-size: 2.2em; color: #0f172a;">Part 2: Selection Framework</span>
 
 ## <span style="font-size: 1.5em; color: #1e3a8a;">1. McKinsey’s Future Arenas</span>
 
@@ -50,8 +46,6 @@ Together they form a clear directional map for the next decade of industrial pol
 The 50 entries below expand the McKinsey arenas and Chinese pillars into a broader working list, adding adjacent high-growth segments (data centers, fintech, silver economy, advanced materials, etc.) so readers can scan both global and China-focused opportunity spaces in one place.
 
 ---
-
-# <span style="font-size: 2.2em; color: #0f172a;">Part 3: The List of 50 Industries</span>
 
 | Rank | Industry | Representative Technology | Market Size (~2025) | Projected Size | Est. CAGR | Key Notes |
 |------|----------|---------------------------|---------------------|----------------|-----------|-----------|
@@ -107,8 +101,6 @@ The 50 entries below expand the McKinsey arenas and Chinese pillars into a broad
 | 50 | Sustainable Food & Alternative Proteins | Cultured meat, plant-based proteins, precision fermentation | Early commercialization | High potential | High | Population + climate pressure food innovation |
 
 ---
-
-# <span style="font-size: 2.2em; color: #0f172a;">Part 4: Key Patterns and Sources</span>
 
 ## <span style="font-size: 1.5em; color: #1e3a8a;">1. What the List Highlights</span>
 
