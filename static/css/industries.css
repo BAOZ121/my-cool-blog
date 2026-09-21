@@ -1,0 +1,205 @@
+.ix {
+  --ix-border: color-mix(in srgb, var(--card-text-color-main, #e2e8f0) 14%, transparent);
+  --ix-accent: var(--accent-color, #14b8a6);
+  font-size: 0.95rem;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.ix-lead {
+  color: var(--card-text-color-secondary, #94a3b8);
+  margin: 0 0 1rem;
+}
+
+.ix-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0 0 0.75rem;
+}
+
+.ix-btn {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--ix-border);
+  background: var(--card-background, #303030);
+  color: var(--card-text-color-main, #eee);
+  border-radius: 8px;
+  padding: 0.4rem 0.8rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.ix-btn:hover {
+  border-color: var(--ix-accent);
+  color: var(--ix-accent);
+}
+
+.ix-btn-primary {
+  background: var(--ix-accent);
+  border-color: var(--ix-accent);
+  color: #0b1220;
+  font-weight: 600;
+}
+
+.ix-btn-primary:hover {
+  filter: brightness(1.05);
+  color: #0b1220;
+}
+
+.ix-note {
+  font-size: 0.82rem;
+  color: var(--card-text-color-secondary, #94a3b8);
+  margin: 0 0 1rem;
+}
+
+.ix-filters {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.ix-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--card-text-color-secondary, #94a3b8);
+}
+
+.ix-filters input,
+.ix-filters select {
+  border: 1px solid var(--ix-border);
+  background: var(--card-background, #303030);
+  color: var(--card-text-color-main, #eee);
+  border-radius: 8px;
+  padding: 0.45rem 0.6rem;
+  font-size: 0.9rem;
+}
+
+.ix-count {
+  font-size: 0.85rem;
+  color: var(--card-text-color-secondary, #94a3b8);
+  margin: 0 0 0.8rem;
+}
+
+.ix-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(240px, 0.9fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.ix-table-wrap {
+  overflow: auto;
+  border: 1px solid var(--ix-border);
+  border-radius: 12px;
+}
+
+.ix-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.84rem;
+}
+
+.ix-table th,
+.ix-table td {
+  padding: 0.55rem 0.65rem;
+  border-bottom: 1px solid var(--ix-border);
+  text-align: left;
+  vertical-align: top;
+}
+
+.ix-table th {
+  position: sticky;
+  top: 0;
+  background: var(--card-background, #303030);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ix-table tbody tr {
+  cursor: pointer;
+}
+
+.ix-table tbody tr:hover {
+  background: color-mix(in srgb, var(--ix-accent) 10%, transparent);
+}
+
+.ix-table tbody tr.is-selected {
+  background: color-mix(in srgb, var(--ix-accent) 16%, transparent);
+}
+
+.ix-chip {
+  display: inline-block;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ix-accent) 18%, transparent);
+  color: var(--ix-accent);
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+
+.ix-calc {
+  border: 1px solid var(--ix-border);
+  border-radius: 12px;
+  padding: 0.9rem;
+  background: var(--card-background, #303030);
+}
+
+.ix-calc h3 {
+  margin: 0 0 0.7rem;
+  font-size: 1rem;
+}
+
+.ix-calc label {
+  display: block;
+  font-size: 0.8rem;
+  margin: 0.45rem 0 0.2rem;
+  color: var(--card-text-color-secondary, #94a3b8);
+}
+
+.ix-calc input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--ix-border);
+  background: transparent;
+  color: var(--card-text-color-main, #eee);
+  border-radius: 8px;
+  padding: 0.4rem 0.55rem;
+}
+
+.ix-result {
+  margin-top: 0.8rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.ix-years {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.82rem;
+  color: var(--card-text-color-secondary, #94a3b8);
+}
+
+.ix-warn {
+  font-size: 0.8rem;
+  color: #f59e0b;
+  min-height: 1.1em;
+  margin: 0.35rem 0 0;
+}
+
+.ix-empty {
+  padding: 1rem;
+  color: var(--card-text-color-secondary, #94a3b8);
+}
+
+@media (max-width: 900px) {
+  .ix-filters,
+  .ix-layout {
+    grid-template-columns: 1fr;
+  }
+}

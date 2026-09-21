@@ -8,6 +8,8 @@ categories:
 draft: false
 ---
 
+**Interactive database:** filter the 50 industries and run a CAGR calculator on the [Industries](/industries/) page.
+
 Over the past two decades, a small set of industries captured an outsized share of global growth and market-value creation. McKinsey Global Institute calls them “arenas of competition”: sectors that combine high growth with intense competitive dynamism.
 
 Twelve such arenas—from cloud and e-commerce to electric vehicles and semiconductors—already reshaped the economy between 2005 and the early 2020s. Looking ahead, McKinsey has identified **18 future arenas** that could generate **$29–48 trillion** in revenues by 2040 and account for a much larger share of global GDP growth.

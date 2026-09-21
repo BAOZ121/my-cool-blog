@@ -1,0 +1,51 @@
+rank,name,tech,category,maturity,market_label,projected_label,cagr_label,market_low,market_high,cagr_low,cagr_high,notes,updated
+1,AI Software & Services,"Large models / Agentic AI, Generative AI",AI Foundation,Growth,~$230–390B,$1.5–2.4T (2030–32),25%–35%,230,390,25,35,Enterprise AI spend surging; Gartner ~$1.5T AI spend in 2025,2026-09
+2,Semiconductors,"Advanced nodes (2nm/3nm), HBM, AI accelerators",AI Foundation,Growth,~$630–775B,$1.5–3.2T (2030),10%–18%,630,775,10,18,AI servers driving growth; BofA sees $3.2T TAM by 2030,2026-09
+3,Cloud Services,"Hyperscale data centers, AI training/inference cloud",AI Foundation,Growth,~$220B baseline,$1.6–3.4T (2040),12%–17%,220,220,12,17,Infrastructure demand accelerating with AI,2026-09
+4,Electric Vehicles (EVs),"Solid-state batteries, 800V platforms, domain controllers",Energy,Growth,~$900–990B,$1.1–3.7T (2030–35),10%–15%,900,990,10,15,China leads volume; IEA tracks global adoption,2026-09
+5,Batteries & Energy Storage,"Solid-state, sodium-ion, flow batteries",Energy,Growth,~$98B (batteries),$810B–1.1T (2040),12%–14%,98,98,12,14,China new-type storage is a pillar industry,2026-09
+6,Shared Autonomous Vehicles,"L4/L5 autonomy, Robotaxi, vehicle-road coordination",Hard Tech,Early,Early stage,$610B–2.3T (2040),High (4%–20%),,,4,20,"Waymo, Cruise, Tesla advancing commercialization",2026-09
+7,Space Economy,"Reusable rockets, LEO constellations, satellite internet",Hard Tech,Growth,~$550–626B,$1–1.8T (2035–40),7%–10%,550,626,7,10,Launch cost decline; commercial services dominant,2026-09
+8,Cybersecurity,"Zero Trust, AI security, quantum-safe cryptography",Digitization,Growth,~$160–240B,$590B–1.2T (2040),8%–20%,160,240,8,20,AI threats + quantum computing driving demand,2026-09
+9,Robotics (Industrial + Service),"Humanoid robots, collaborative robots, embodied AI",Hard Tech,Growth,~$50–90B,$110–205B (2030),14%–20%,50,90,14,20,China intelligent robots is a pillar industry,2026-09
+10,E-commerce,"Social commerce, instant retail, cross-border platforms",Digitization,Mature,Mature large-scale,$14–20T (2040),7%–9%,,,7,9,Emerging markets + new categories,2026-09
+11,Digital Advertising,"Programmatic, AI targeting, retail media networks",Digitization,Growth,~$320–580B range,$2.1–2.9T (2040),8%–20%,320,580,8,20,AI optimization + privacy shifts,2026-09
+12,Streaming Video,"Cloud gaming, interactive streaming, AI content",Digitization,Mature,Mature growth,Multi-hundred $B,Mid-high,,,,,Content + advertising models converging,2026-09
+13,Video Games,"Cloud gaming, metaverse games, AI NPCs",Digitization,Growth,Hundreds of $B,Continued strong growth,Mid-high,,,,,~40% of global population may be gamers by 2030,2026-09
+14,Modular Construction,"Prefabricated modules, digital construction",Manufacturing,Early,Early expansion,High potential,High,,,,,Labor shortages + efficiency drivers,2026-09
+15,Future Air Mobility,"eVTOL, urban air mobility",Hard Tech,Early,Early commercialization,$75–340B (2040),10%–20%,,,10,20,China low-altitude economy is a pillar industry,2026-09
+16,Obesity & Related Drugs,"GLP-1 agonists, innovative weight-loss drugs",Bio & Health,Growth,~$24–100B range,$120–280B (2040),9%–35%,24,100,9,35,Semaglutide-class drugs driving rapid growth,2026-09
+17,Nuclear Fission Power,"Small modular reactors (SMR), advanced reactors",Energy,Growth,~$18B baseline,$65–150B (2040),7%–13%,18,18,7,13,Energy security + low-carbon dual drivers,2026-09
+18,Industrial & Consumer Biotech,"Synthetic biology, enzyme engineering, bio-based materials",Bio & Health,Early,Early to growth,High potential,High,,,,,Non-medical biotech; sustainable materials,2026-09
+19,Integrated Circuits (China focus),"Domestic advanced packaging, Chiplet, automotive chips",AI Foundation,Growth,Rapid China growth,Part of 6 pillars > RMB 10T by 2030,20%+,,,20,,NDRC emerging pillar industry,2026-09
+20,Aerospace (China focus),"Domestic large aircraft, satellites, LEO constellations",Hard Tech,Growth,Rapid expansion,Part of 6 pillars,High,,,,,Large aircraft + commercial space,2026-09
+21,Biopharmaceuticals,"Cell & gene therapy, antibody drugs, AI drug discovery",Bio & Health,Mature,Mature high growth,Continued expansion,15%–25%,,,15,25,Aging + innovation; China pillar industry,2026-09
+22,Low-Altitude Economy,"Drone logistics, eVTOL, low-altitude air traffic management",Hard Tech,Early,Early boom in China,China may exceed RMB 3.5T by 2035,30%+,,,30,,Strong policy support; NDRC pillar,2026-09
+23,New-Type Energy Storage,"Electrochemical, compressed air, flywheel storage",Energy,Growth,Rapid China growth,Part of 6 pillars,25%+,,,25,,Mandatory storage pairing with wind/solar,2026-09
+24,Intelligent Robots,"Humanoid, industrial intelligent, service robots",Hard Tech,Growth,Rapid expansion,Part of 6 pillars,High,,,,,NDRC priority; embodied AI synergy,2026-09
+25,Quantum Technology,"Quantum computing, communication, sensing",AI Foundation,Early,Early R&D / commercialization,~$85B by 2035 possible,High,,,,,China future industry; technology breakthrough phase,2026-09
+26,Bio-manufacturing,"Synthetic bio-manufacturing, cell factories",Bio & Health,Early,Early,High-potential future industry,High,,,,,China future industry; chemical substitution,2026-09
+27,Green Hydrogen,"Water electrolysis, hydrogen trucks, green hydrogen chemicals",Energy,Early,Early commercialization,High growth,High,,,,,China future industry; dual-carbon goals,2026-09
+28,Nuclear Fusion Energy,"Tokamak, inertial confinement, demo reactors",Energy,Early,R&D stage,Long-term huge potential,Extremely high (long-term),,,,,China future industry,2026-09
+29,Brain-Computer Interface,"Invasive / non-invasive BCI, neuromodulation",Bio & Health,Early,Early clinical / commercial,High-potential future,High,,,,,China future industry,2026-09
+30,Embodied AI,"Multimodal models + robot bodies, physical-world interaction",Hard Tech,Early,Early breakout,High-potential future,Extremely high,,,,,China future industry; humanoid synergy,2026-09
+31,6G Communications,"Terahertz, integrated space-air-ground networks",Digitization,Early,R&D / standards,Commercial after 2030,High (long-term),,,,,China future industry; IoT foundation,2026-09
+32,Data Centers & Computing Power,"Liquid cooling, AI servers, intelligent computing centers",AI Foundation,Growth,High-speed expansion,Continued high growth,High,,,,,AI training/inference demand; China computing power network,2026-09
+33,Renewable Energy (Solar + Wind),"Perovskite cells, large offshore turbines, IBC modules",Energy,Mature,Large-scale mature,Multi-trillion $ install base,Mid-high,,,,,Core of global energy transition,2026-09
+34,Hydrogen Full Value Chain,"Green hydrogen production, storage/transport, fuel cells",Energy,Early,Early to growth,High growth,High,,,,,"Key path for trucking, steel, chemicals decarbonization",2026-09
+35,CCUS,"Carbon capture, utilization, geological storage",Energy,Early,Early,High growth potential,High,,,,,Industrial decarbonization & negative emissions,2026-09
+36,Smart Manufacturing / Industry 4.0,"Digital twins, industrial AI, flexible production lines",Manufacturing,Growth,~$550–650B (2025),~$1.6T (2030),~19%,550,650,19,19,Core of China’s manufacturing upgrade,2026-09
+37,Fintech,"Digital payments, embedded finance, blockchain settlement",Digitization,Mature,Mature high growth,Continued expansion,Mid-high,,,,,Global digital payments & financial inclusion,2026-09
+38,Silver Economy / Smart Elderly Care,"Age-friendly products, telemedicine, rehab robots",Bio & Health,Growth,Rapid China growth,Trillion-RMB market,15%–20%,,,15,20,Aging population rigid demand,2026-09
+39,Gene & Cell Therapy,"CRISPR gene editing, CAR-T, stem-cell therapy",Bio & Health,Growth,Rapid commercialization,High growth,20%+,,,20,,Precision medicine breakthroughs,2026-09
+40,Synthetic Biology,"Genetic circuit design, microbial cell factories",Bio & Health,Early,Early expansion,High potential,High,,,,,"Materials, food, energy applications",2026-09
+41,Advanced Materials,"Graphene, superconducting materials, next-gen semiconductors",Manufacturing,Early,Early to growth,China ~RMB 1.2T by 2030 possible,High,,,,,Future materials priority direction,2026-09
+42,Satellite Internet,"LEO constellations, high-throughput satellite communications",Hard Tech,Growth,Rapid deployment,High growth,High,,,,,Global coverage & emergency communications,2026-09
+43,Autonomous Driving & Connected Vehicles,"LiDAR, domain controllers, vehicle-road-cloud integration",Hard Tech,Growth,Growth stage,High growth,High,,,,,Synergy with Robotaxi & low-altitude economy,2026-09
+44,Medical AI & Digital Health,"AI diagnosis, telemedicine, wearable monitoring",Bio & Health,Growth,Rapid expansion,High growth,High,,,,,Aging + efficiency dual drivers,2026-09
+45,Green Buildings & Energy Efficiency,"BIPV, smart building systems",Manufacturing,Growth,BIPV ~$17B (2024),BIPV ~$42B (2029) etc.,~20%,17,17,20,20,Dual-carbon & building energy control,2026-09
+46,Logistics Automation & Drone Delivery,"Warehouse robots, last-mile delivery drones",Manufacturing,Growth,Rapid expansion,High growth,High,,,,,E-commerce & instant delivery drivers,2026-09
+47,Digital Twin & Industrial Metaverse,"Factory digital twins, virtual-physical simulation",Manufacturing,Early,Early to growth,High potential,High,,,,,Smart manufacturing & training applications,2026-09
+48,Privacy Computing & Data Elements,"Federated learning, multi-party computation, data trading",Digitization,Early,Early expansion,High growth,20%+,,,20,,Data element marketization & compliance,2026-09
+49,Advanced Connectivity,"5G-Advanced, 6G, space-air-ground-sea integration",Digitization,Growth,"5G mature, 6G R&D",Long-term high growth,High,,,,,IoT & low-latency application foundation,2026-09
+50,Sustainable Food & Alternative Proteins,"Cultured meat, plant-based proteins, precision fermentation",Bio & Health,Early,Early commercialization,High potential,High,,,,,Population + climate pressure food innovation,2026-09
