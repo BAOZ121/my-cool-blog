@@ -5,12 +5,13 @@ enableRobotsTXT = true
 
 # Global settings
 [params]
-    mainSections = ["post", "posts"]
+    mainSections = ["post"]
     favicon = "/favicon.png"
+    description = "Independent industry research on market structure, technology, growth, and risk."
 
     [params.dateFormat]
         published = "2006-01-02"
-        updated = "2006-01-02"
+        lastUpdated = "2006-01-02"
 
     [params.widgets]
         homepage = [
@@ -18,20 +19,28 @@ enableRobotsTXT = true
             { type = "categories" },
             { type = "tag-cloud" }
         ]
+        page = [
+            { type = "toc" }
+        ]
+
+    [params.article]
+        headingAnchor = true
+        toc = true
+        readingTime = true
 
 # Language configuration (English only)
 [languages]
 
     [languages.en]
-        languageCode = "en"
-        languageName = "English"
-        title = "Dex's Blog"
+        locale = "en"
+        label = "English"
+        title = "DEX Research"
         weight = 1
 
         [languages.en.params.sidebar]
             compact = false
             avatar = "/avatar.jpg"
-            subtitle = "Tech & Thoughts"
+            subtitle = "Independent Industry Research"
 
         # Main navigation
         [[languages.en.menu.main]]
@@ -64,7 +73,7 @@ enableRobotsTXT = true
 
         [[languages.en.menu.main]]
             identifier = "about"
-            name = "AboutMe"
+            name = "About & Methodology"
             url = "/about/"
             weight = 5
             params = { icon = "user" }

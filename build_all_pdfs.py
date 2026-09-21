@@ -1,16 +1,23 @@
-import os
+"""Generate printable PDF copies of published Hugo posts.
+
+The website also exposes a browser-native "Print / Save PDF" action. This
+script is for maintainers who want static PDF files under ``static/pdf``.
+"""
+
+from __future__ import annotations
+
+import html
 import re
-import glob
+from pathlib import Path
+
 import markdown
 import weasyprint
 import yaml
 
-# 1. Directory Configuration
-CONTENT_DIR = "content"
-OUTPUT_DIR = os.path.join("static", "pdf")
-os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# 2. PDF HTML Style Template (English Version)
+CONTENT_DIR = Path("content/post")
+OUTPUT_DIR = Path("static/pdf")
+
 HTML_TEMPLATE = """<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,85 +31,118 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         @bottom-left { content: "DEX Business Research | thedexs.com"; font-size: 8.5pt; color: #64748b; }
     }
     body {
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         color: #1e293b;
         line-height: 1.6;
         font-size: 10pt;
     }
     .header {
-        background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+        background: #0f172a;
         color: #ffffff;
         padding: 20px;
         border-radius: 8px;
         margin-bottom: 20px;
     }
-    .header h1 { margin: 0 0 8px 0; font-size: 18pt; line-height: 1.3; }
-    .header .meta { font-size: 9pt; color: #93c5fd; }
+    .header h1 { margin: 0 0 8px; font-size: 18pt; line-height: 1.3; color: #ffffff; }
+    .header .meta { font-size: 9pt; color: #bfdbfe; }
     .content { background: #ffffff; padding: 22px; border-radius: 6px; border: 1px solid #e2e8f0; }
     h1, h2, h3 { color: #0f172a; page-break-after: avoid; }
     h2 { border-bottom: 2px solid #cbd5e1; padding-bottom: 4px; margin-top: 20px; }
     blockquote { border-left: 4px solid #2563eb; margin: 0; padding-left: 12px; color: #475569; }
+    img { max-width: 100%; height: auto; }
     table { width: 100%; border-collapse: collapse; margin: 15px 0; }
-    th, td { border: 1px solid #cbd5e1; padding: 8px 10px; font-size: 9pt; text-align: left; }
+    th, td { border: 1px solid #cbd5e1; padding: 8px 10px; font-size: 8pt; text-align: left; }
     th { background: #0f172a; color: white; }
 </style>
 </head>
 <body>
 <div class="header">
-    <h1>{title}</h1>
-    <div class="meta">Author: DEX | Date: {date} | Website: thedexs.com</div>
+    <h1>__TITLE__</h1>
+    <div class="meta">Author: DEX | Date: __DATE__ | Website: thedexs.com</div>
 </div>
-<div class="content">
-    {body}
-</div>
+<div class="content">__BODY__</div>
 </body>
 </html>
 """
 
-def parse_markdown_file(filepath):
-    """Parse Hugo Markdown File (Extract Front Matter and Body)"""
-    with open(filepath, 'r', encoding='utf-8') as f:
-        content = f.read()
 
-    yaml_pattern = r'^---\s*\n(.*?)\n---\s*\n(.*)$'
-    match = re.search(yaml_pattern, content, re.DOTALL)
+def parse_markdown_file(filepath: Path) -> tuple[dict, str]:
+    """Return Hugo front matter and Markdown body for one post."""
+    content = filepath.read_text(encoding="utf-8")
+    match = re.match(r"^---\s*\r?\n(.*?)\r?\n---\s*\r?\n(.*)$", content, re.DOTALL)
+    if not match:
+        return {}, content
 
-    if match:
-        meta_text, body_md = match.group(1), match.group(2)
-        try:
-            meta = yaml.safe_load(meta_text) or {}
-        except Exception:
-            meta = {}
+    metadata = yaml.safe_load(match.group(1)) or {}
+    if not isinstance(metadata, dict):
+        raise ValueError(f"Front matter must be a mapping: {filepath}")
+    return metadata, match.group(2)
+
+
+def output_slug(filepath: Path, metadata: dict) -> str:
+    """Build a stable, unique-friendly slug for leaf bundles and Markdown files."""
+    explicit = metadata.get("slug")
+    if explicit:
+        candidate = str(explicit)
+    elif filepath.name in {"index.md", "index.en.md"}:
+        candidate = filepath.parent.name
     else:
-        meta = {}
-        body_md = content
+        candidate = filepath.stem.removesuffix(".en")
 
-    title = meta.get('title', 'Business Research')
-    date = str(meta.get('date', '2026'))[:10]
-    slug = meta.get('slug', os.path.splitext(os.path.basename(filepath))[0])
+    slug = re.sub(r"[^a-zA-Z0-9_-]+", "-", candidate).strip("-").lower()
+    if not slug:
+        raise ValueError(f"Could not derive an output slug for {filepath}")
+    return slug
 
-    body_html = markdown.markdown(body_md, extensions=['tables', 'fenced_code', 'toc'])
-    return title, date, slug, body_html
 
-def main():
-    md_files = glob.glob(os.path.join(CONTENT_DIR, "**", "*.md"), recursive=True)
+def render_html(title: str, date: str, body_markdown: str) -> str:
+    body_html = markdown.markdown(
+        body_markdown,
+        extensions=["tables", "fenced_code", "toc"],
+        output_format="html5",
+    )
+    return (
+        HTML_TEMPLATE.replace("__TITLE__", html.escape(title))
+        .replace("__DATE__", html.escape(date))
+        .replace("__BODY__", body_html)
+    )
 
-    for filepath in md_files:
-        if os.path.basename(filepath).startswith("_index"):
+
+def main() -> None:
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    used_slugs: set[str] = set()
+    errors: list[str] = []
+
+    for filepath in sorted(CONTENT_DIR.rglob("*.md")):
+        if filepath.name.startswith("_index"):
             continue
 
-        title, date, slug, body_html = parse_markdown_file(filepath)
-        full_html = HTML_TEMPLATE.format(title=title, date=date, body=body_html)
-
-        output_pdf_name = f"{slug}.pdf"
-        output_pdf_path = os.path.join(OUTPUT_DIR, output_pdf_name)
-
-        print(f"Generating PDF: {output_pdf_name} ...")
         try:
-            weasyprint.HTML(string=full_html).write_pdf(output_pdf_path)
-            print(f"  └─ SUCCESS: {output_pdf_path}")
-        except Exception as e:
-            print(f"  └─ ERROR: {e}")
+            metadata, body_markdown = parse_markdown_file(filepath)
+            if metadata.get("draft") is True:
+                continue
+
+            slug = output_slug(filepath, metadata)
+            if slug in used_slugs:
+                raise ValueError(f"Duplicate PDF slug: {slug}")
+            used_slugs.add(slug)
+
+            title = str(metadata.get("title", "Business Research"))
+            date = str(metadata.get("date", ""))[:10]
+            full_html = render_html(title, date, body_markdown)
+            output_path = OUTPUT_DIR / f"{slug}.pdf"
+
+            print(f"Generating PDF: {output_path}")
+            weasyprint.HTML(
+                string=full_html,
+                base_url=str(filepath.parent.resolve()),
+            ).write_pdf(output_path)
+        except Exception as exc:  # Continue so one bad post does not hide other failures.
+            errors.append(f"{filepath}: {exc}")
+
+    if errors:
+        raise SystemExit("PDF generation failed:\n- " + "\n- ".join(errors))
+
 
 if __name__ == "__main__":
     main()

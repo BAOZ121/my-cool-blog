@@ -6,3 +6,109 @@
 .article-content [style*="color:"] {
     color: var(--card-text-color-main) !important;
 }
+
+.research-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 0 18px;
+    padding: 0 var(--card-padding);
+}
+
+.research-action {
+    appearance: none;
+    min-height: 40px;
+    border: 1px solid var(--card-separator-color);
+    border-radius: 8px;
+    background: transparent;
+    color: var(--card-text-color-main);
+    cursor: pointer;
+    font: inherit;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 9px 13px;
+    text-decoration: none;
+
+    &:hover,
+    &:focus-visible {
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+    }
+
+    &:focus-visible {
+        outline: 3px solid color-mix(in srgb, var(--accent-color) 30%, transparent);
+        outline-offset: 2px;
+    }
+}
+
+.reading-progress {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--accent-color);
+    pointer-events: none;
+    transform: scaleX(0);
+    transform-origin: left center;
+}
+
+@media (max-width: 640px) {
+    .research-actions {
+        flex-direction: column;
+    }
+
+    .research-action {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media print {
+    @page {
+        size: A4;
+        margin: 15mm;
+    }
+
+    .left-sidebar,
+    .right-sidebar,
+    .research-actions,
+    .reading-progress,
+    .article-footer,
+    .related-content,
+    .comments,
+    body > footer {
+        display: none !important;
+    }
+
+    html,
+    body,
+    .main-container,
+    .main,
+    .main-article {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        background: #fff !important;
+        box-shadow: none !important;
+    }
+
+    .article-content,
+    .article-content * {
+        color: #111827 !important;
+    }
+
+    .article-content a {
+        text-decoration: underline;
+    }
+
+    .article-content pre,
+    .article-content blockquote,
+    .article-content table,
+    .article-content img {
+        break-inside: avoid;
+    }
+}

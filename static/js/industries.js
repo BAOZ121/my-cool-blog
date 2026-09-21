@@ -8,6 +8,7 @@
     category: root.querySelector("#ix-category"),
     maturity: root.querySelector("#ix-maturity"),
     cagr: root.querySelector("#ix-cagr"),
+    coverage: root.querySelector("#ix-coverage"),
     count: root.querySelector("#ix-count"),
     tbody: root.querySelector("#ix-tbody"),
     pv: root.querySelector("#ix-pv"),
@@ -16,7 +17,6 @@
     result: root.querySelector("#ix-result"),
     yearList: root.querySelector("#ix-year-list"),
     warn: root.querySelector("#ix-warn"),
-    useBtn: root.querySelector("#ix-use"),
     loaded: root.querySelector("#ix-loaded"),
   };
 
@@ -33,12 +33,42 @@
 
   const midpoint = (lo, hi) => {
     if (lo == null && hi == null) return null;
-    if (lo == null) return hi;
-    if (hi == null) return lo;
-    return (lo + hi) / 2;
+    if (lo == null) return Number(hi);
+    if (hi == null) return Number(lo);
+    return (Number(lo) + Number(hi)) / 2;
   };
 
   const cagrValue = (row) => midpoint(row.cagr_low, row.cagr_high);
+  const marketValue = (row) => midpoint(row.market_low, row.market_high);
+
+  function escapeHtml(value) {
+    return String(value == null ? "" : value)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function updateSortState() {
+    root.querySelectorAll("th[data-sort]").forEach((header) => {
+      const active = header.getAttribute("data-sort") === sortKey;
+      header.setAttribute(
+        "aria-sort",
+        active ? (sortDir === 1 ? "ascending" : "descending") : "none"
+      );
+    });
+  }
+
+  function compareRows(a, b) {
+    let av = sortKey === "cagr" ? cagrValue(a) : a[sortKey];
+    let bv = sortKey === "cagr" ? cagrValue(b) : b[sortKey];
+
+    if (av == null && bv == null) return 0;
+    if (av == null) return 1;
+    if (bv == null) return -1;
+    if (typeof av === "string") return av.localeCompare(bv) * sortDir;
+    return (Number(av) - Number(bv)) * sortDir;
+  }
 
   function applyFilters() {
     const q = (els.q.value || "").trim().toLowerCase();
@@ -46,34 +76,26 @@
     const mat = els.maturity.value;
     const cagrMin = els.cagr.value ? Number(els.cagr.value) : null;
 
-    let rows = items.filter((row) => {
-      if (cat && row.category !== cat) return false;
-      if (mat && row.maturity !== mat) return false;
-      if (cagrMin != null) {
-        const c = cagrValue(row);
-        if (c == null || c < cagrMin) return false;
-      }
-      if (q) {
-        const blob = [row.name, row.tech, row.notes, row.category].join(" ").toLowerCase();
-        if (!blob.includes(q)) return false;
-      }
-      return true;
-    });
-
-    rows.sort((a, b) => {
-      let av = a[sortKey];
-      let bv = b[sortKey];
-      if (sortKey === "cagr") {
-        av = cagrValue(a);
-        bv = cagrValue(b);
-      }
-      if (av == null) av = sortDir > 0 ? Infinity : -Infinity;
-      if (bv == null) bv = sortDir > 0 ? Infinity : -Infinity;
-      if (typeof av === "string") return av.localeCompare(bv) * sortDir;
-      return (av - bv) * sortDir;
-    });
+    const rows = items
+      .filter((row) => {
+        if (cat && row.category !== cat) return false;
+        if (mat && row.maturity !== mat) return false;
+        if (cagrMin != null) {
+          const cagr = cagrValue(row);
+          if (cagr == null || cagr < cagrMin) return false;
+        }
+        if (q) {
+          const searchable = [row.name, row.tech, row.notes, row.category, row.maturity]
+            .join(" ")
+            .toLowerCase();
+          if (!searchable.includes(q)) return false;
+        }
+        return true;
+      })
+      .sort(compareRows);
 
     els.count.textContent = "Showing " + rows.length + " of " + items.length;
+    updateSortState();
     renderTable(rows);
   }
 
@@ -82,15 +104,25 @@
       els.tbody.innerHTML = '<tr><td colspan="6" class="ix-empty">No matching industries.</td></tr>';
       return;
     }
+
     els.tbody.innerHTML = rows
       .map((row) => {
-        const sel = selected && selected.rank === row.rank ? " is-selected" : "";
+        const isSelected = selected && selected.rank === row.rank;
+        const calcReady = marketValue(row) != null && cagrValue(row) != null;
+        const action = calcReady
+          ? "Load available numeric midpoints into the calculator"
+          : "View this industry; numeric calculator inputs are incomplete";
+
         return (
-          "<tr data-rank=\"" +
+          '<tr data-rank="' +
           row.rank +
-          "\" class=\"" +
-          sel +
-          "\">" +
+          '" class="' +
+          (isSelected ? "is-selected" : "") +
+          '" tabindex="0" role="button" aria-selected="' +
+          (isSelected ? "true" : "false") +
+          '" aria-label="' +
+          escapeHtml(row.name + ". " + action) +
+          '">' +
           "<td>" +
           row.rank +
           "</td>" +
@@ -106,7 +138,7 @@
           "<td>" +
           escapeHtml(row.cagr_label) +
           "</td>" +
-          "<td><span class=\"ix-chip\">" +
+          '<td><span class="ix-chip">' +
           escapeHtml(row.category) +
           "</span></td>" +
           "</tr>"
@@ -115,61 +147,93 @@
       .join("");
   }
 
-  function escapeHtml(s) {
-    return String(s)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
+  function clearScenario(message) {
+    els.pv.value = "";
+    els.rate.value = "";
+    els.result.textContent = "Enter values to calculate";
+    els.yearList.innerHTML = "";
+    els.warn.textContent = message || "";
   }
 
   function selectRank(rank) {
-    selected = items.find((x) => x.rank === rank) || null;
+    selected = items.find((item) => item.rank === rank) || null;
     applyFilters();
     if (!selected) return;
-    const pv = midpoint(selected.market_low, selected.market_high);
+
+    const pv = marketValue(selected);
     const rate = cagrValue(selected);
+    els.loaded.textContent = "Selected: " + selected.name;
+
     if (pv == null || rate == null) {
-      els.warn.textContent = "This row has no usable market size or CAGR for the calculator.";
-      els.loaded.textContent = "Selected: " + selected.name;
+      clearScenario(
+        "This row does not contain both a numeric market range and CAGR. Previous values were cleared; enter your own assumptions to run a scenario."
+      );
       return;
     }
+
     els.warn.textContent = "";
     els.pv.value = String(Math.round(pv * 10) / 10);
     els.rate.value = String(Math.round(rate * 10) / 10);
-    els.loaded.textContent = "Loaded midpoint from " + selected.name;
+    els.loaded.textContent = "Loaded reported midpoints from " + selected.name + ".";
     calculate();
   }
 
   function calculate() {
-    const pv = Number(els.pv.value);
-    const rate = Number(els.rate.value) / 100;
-    const years = Number(els.years.value);
-    if (!Number.isFinite(pv) || !Number.isFinite(rate) || !Number.isFinite(years) || years < 1) {
-      els.result.textContent = "—";
+    const pvRaw = els.pv.value.trim();
+    const rateRaw = els.rate.value.trim();
+    const yearsRaw = els.years.value.trim();
+    const pv = Number(pvRaw);
+    const ratePercent = Number(rateRaw);
+    const years = Number(yearsRaw);
+
+    const valid =
+      pvRaw !== "" &&
+      rateRaw !== "" &&
+      yearsRaw !== "" &&
+      Number.isFinite(pv) &&
+      pv >= 0 &&
+      Number.isFinite(ratePercent) &&
+      ratePercent > -100 &&
+      Number.isInteger(years) &&
+      years >= 1 &&
+      years <= 50;
+
+    if (!valid) {
+      els.result.textContent = "Enter valid values to calculate";
       els.yearList.innerHTML = "";
       return;
     }
+
+    const rate = ratePercent / 100;
     const fv = pv * Math.pow(1 + rate, years);
-    els.result.textContent = "≈ " + fmtMoney(fv);
+    els.result.textContent =
+      "≈ " + fmtMoney(fv) + " after " + years + (years === 1 ? " year" : " years");
+
     let html = "";
-    for (let i = 1; i <= years; i++) {
-      html += "<li>Year " + i + ": " + fmtMoney(pv * Math.pow(1 + rate, i)) + "</li>";
+    for (let year = 1; year <= years; year += 1) {
+      html += "<li>Year " + year + ": " + fmtMoney(pv * Math.pow(1 + rate, year)) + "</li>";
     }
     els.yearList.innerHTML = html;
   }
 
-  root.addEventListener("input", (e) => {
-    if (["ix-q", "ix-category", "ix-maturity", "ix-cagr"].includes(e.target.id)) applyFilters();
-    if (["ix-pv", "ix-rate", "ix-years"].includes(e.target.id)) calculate();
+  root.addEventListener("input", (event) => {
+    if (["ix-q", "ix-category", "ix-maturity", "ix-cagr"].includes(event.target.id)) {
+      applyFilters();
+    }
+    if (["ix-pv", "ix-rate", "ix-years"].includes(event.target.id)) {
+      els.warn.textContent = "";
+      calculate();
+    }
   });
-  root.addEventListener("change", (e) => {
-    if (["ix-category", "ix-maturity", "ix-cagr"].includes(e.target.id)) applyFilters();
+
+  root.addEventListener("change", (event) => {
+    if (["ix-category", "ix-maturity", "ix-cagr"].includes(event.target.id)) applyFilters();
   });
-  root.addEventListener("click", (e) => {
-    const th = e.target.closest("th[data-sort]");
-    if (th) {
-      const key = th.getAttribute("data-sort");
+
+  root.addEventListener("click", (event) => {
+    const sortButton = event.target.closest(".ix-sort[data-sort]");
+    if (sortButton) {
+      const key = sortButton.getAttribute("data-sort");
       if (sortKey === key) sortDir *= -1;
       else {
         sortKey = key;
@@ -178,22 +242,46 @@
       applyFilters();
       return;
     }
-    const tr = e.target.closest("tbody tr[data-rank]");
-    if (tr) selectRank(Number(tr.getAttribute("data-rank")));
+
+    const row = event.target.closest("tbody tr[data-rank]");
+    if (row) selectRank(Number(row.getAttribute("data-rank")));
   });
-  els.useBtn.addEventListener("click", () => {
-    if (selected) selectRank(selected.rank);
-    else els.warn.textContent = "Click a row in the table first.";
+
+  root.addEventListener("keydown", (event) => {
+    const row = event.target.closest("tbody tr[data-rank]");
+    if (!row || !["Enter", " "].includes(event.key)) return;
+    event.preventDefault();
+    selectRank(Number(row.getAttribute("data-rank")));
   });
 
   fetch(DATA_URL)
-    .then((r) => r.json())
+    .then((response) => {
+      if (!response.ok) throw new Error("Industry data request failed");
+      return response.json();
+    })
     .then((payload) => {
-      items = payload.industries || [];
+      if (!payload || !Array.isArray(payload.industries)) throw new Error("Invalid industry data");
+      items = payload.industries;
+      const cagrCount = items.filter((item) => cagrValue(item) != null).length;
+      const calculatorCount = items.filter(
+        (item) => marketValue(item) != null && cagrValue(item) != null
+      ).length;
+      els.coverage.textContent =
+        "Data coverage: numeric CAGR for " +
+        cagrCount +
+        "/" +
+        items.length +
+        "; calculator-ready market and CAGR data for " +
+        calculatorCount +
+        "/" +
+        items.length +
+        ".";
       applyFilters();
       calculate();
     })
     .catch(() => {
       els.count.textContent = "Could not load industry data.";
+      els.coverage.textContent = "Data coverage is temporarily unavailable.";
+      els.warn.textContent = "Refresh the page or download the CSV to inspect the data.";
     });
 })();
