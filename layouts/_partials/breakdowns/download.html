@@ -1,0 +1,2 @@
+{{ $json := resources.FromString "data/industry-breakdowns.json" (hugo.Data.breakdowns | jsonify (dict "indent" "  ")) }}
+<a class="bd-button" href="{{ $json.RelPermalink }}" download>Download breakdown data (JSON)</a>

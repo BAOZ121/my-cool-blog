@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "reviewed": "2026-09-22",
+  "profiles": [
+    {
+      "id": "ai-software",
+      "name": "AI Software & Services",
+      "category": "AI Foundation",
+      "dataset_rank": 1,
+      "keywords": "artificial intelligence models inference enterprise automation 人工智能",
+      "summary": "From computing inputs to models and paid workflows.",
+      "question": "Who gets paid when an AI capability becomes a useful workflow?",
+      "scope": "Enterprise AI software and services; excludes a standalone valuation of chipmakers or cloud infrastructure.",
+      "geography": "Global business-model lens; US framework and vendor examples.",
+      "chain": [
+        {"title": "Compute & data", "actors": "Cloud providers, data owners and tooling suppliers", "role": "Supply the resources used to build and run AI systems.", "revenue": "Compute consumption, data licensing or tooling contracts.", "bottleneck": "Can data rights and serving costs support the intended use?"},
+        {"title": "Models & deployment", "actors": "Model developers and deployment platforms", "role": "Turn resources into usable inference and evaluation services.", "revenue": "Usage-based APIs, capacity commitments or licenses.", "bottleneck": "Does reliability hold under real workloads, not just benchmarks?"},
+        {"title": "Applications & adoption", "actors": "Software vendors, integrators and enterprise teams", "role": "Embed a capability into a customer's operating process.", "revenue": "Subscriptions, implementation projects or usage fees.", "bottleneck": "Will verified savings translate into repeat paid use?"}
+      ],
+      "economics": "Follow customer revenue after inference, support and integration costs. A growing user count alone does not establish attractive unit economics.",
+      "drivers": ["Which workflows have measurable time savings?", "Do pilots become recurring paid deployments?"],
+      "risks": ["Model errors, data rights and accountability may block adoption.", "Falling model prices may help customers without improving every supplier's margin."],
+      "metrics": [
+        {"name": "Cost per completed task", "meaning": "Include inference, retries and human review; compare like-for-like tasks."},
+        {"name": "Paid retention", "meaning": "Track continued paid use, not registrations or free trials."},
+        {"name": "Task success rate", "meaning": "Use a defined test set and disclose human intervention."}
+      ],
+      "evidence": [
+        {"text": "Amazon Bedrock publishes input/output token pricing for several models, providing a concrete example of usage-based inference billing.", "source": "aws"},
+        {"text": "NIST's AI RMF is voluntary guidance for managing risk across AI design, development, use and evaluation.", "source": "nist-ai"}
+      ],
+      "sources": [
+        {"id": "aws", "publisher": "AWS", "title": "Amazon Bedrock Pricing", "url": "https://aws.amazon.com/bedrock/pricing/", "published": "Undated; live pricing page", "type": "Company documentation", "supports": "Billing-model example only; no price or market-size estimate is reproduced."},
+        {"id": "nist-ai", "publisher": "NIST", "title": "AI Risk Management Framework", "url": "https://www.nist.gov/itl/ai-risk-management-framework", "published": "AI RMF 1.0 released 2023-01-26", "type": "Government framework", "supports": "Risk-management scope; not a revenue forecast or an official value-chain taxonomy."}
+      ],
+      "related": [{"title": "AI risks and industry turbulence", "url": "/post/ai-risks-layoffs-industry-turbulence/"}]
+    },
+    {
+      "id": "semiconductors",
+      "name": "Semiconductors",
+      "category": "AI Foundation",
+      "dataset_rank": 2,
+      "keywords": "chips integrated circuits foundry design packaging 半导体 芯片",
+      "summary": "From chip design to fabrication, packaging and testing.",
+      "question": "Which production constraint determines where value is captured?",
+      "scope": "Semiconductor production, with equipment and materials as enabling inputs. Not a ranking of individual companies or process nodes.",
+      "geography": "Global production lens; industry-body primer.",
+      "chain": [
+        {"title": "Design", "actors": "Chip designers and design-tool/IP suppliers", "role": "Specify the device and prepare it for production.", "revenue": "Chip sales, design services or intellectual-property licensing.", "bottleneck": "Can the design meet performance, power and cost requirements?"},
+        {"title": "Wafer fabrication", "actors": "Foundries, integrated manufacturers and input suppliers", "role": "Fabricate circuits on wafers using specialized facilities.", "revenue": "Manufacturing services or internally produced chip sales.", "bottleneck": "Are yield and utilization sufficient to cover fixed costs?"},
+        {"title": "Assembly, test & packaging", "actors": "Packaging/test providers and integrated manufacturers", "role": "Separate, test and package devices for customers.", "revenue": "Packaging and testing services or bundled chip sales.", "bottleneck": "Can packaging capacity and reliability meet product requirements?"}
+      ],
+      "economics": "Separate design economics from capital-intensive manufacturing. A shortage in one process or package does not imply a shortage across all chips.",
+      "drivers": ["Which applications are creating durable design wins?", "Where do customer requirements exceed available production capability?"],
+      "risks": ["Capacity additions can arrive after the demand cycle changes.", "Geographic dependencies and customer concentration require separate analysis."],
+      "metrics": [
+        {"name": "Manufacturing yield", "meaning": "Good devices as a share of output, for a specified product/process."},
+        {"name": "Capacity utilization", "meaning": "Track actual loading, not announced capacity alone."},
+        {"name": "Inventory & lead time", "meaning": "Read together to distinguish shortages from order inflation."}
+      ],
+      "evidence": [{"text": "SIA's primer distinguishes design, front-end fabrication and back-end assembly, test and packaging. The three-stage map here follows that production sequence.", "source": "sia"}],
+      "sources": [{"id": "sia", "publisher": "Semiconductor Industry Association", "title": "Semiconductor Industry Primer: The Stages of Production and Business Models", "url": "https://www.semiconductors.org/semiconductor-industry-primer-the-stages-of-production-and-business-models/", "published": "2015-02-25", "type": "Industry-body explainer", "supports": "Production stages; foundational reference, not current market sizing."}],
+      "related": []
+    },
+    {
+      "id": "battery-storage",
+      "name": "Batteries & Energy Storage",
+      "category": "Energy",
+      "dataset_rank": 5,
+      "keywords": "battery lithium stationary grid minerals cells 储能 电池",
+      "summary": "From minerals and cells to installed storage systems.",
+      "question": "Who earns the return: material suppliers, manufacturers or operators?",
+      "scope": "Battery supply chains, with a stationary-storage operating lens. EV batteries and grid-storage revenue pools are not interchangeable.",
+      "geography": "Global supply chain; project economics depend on local power markets.",
+      "chain": [
+        {"title": "Materials & components", "actors": "Miners, refiners and component suppliers", "role": "Provide battery-grade inputs and components.", "revenue": "Material and component sales under spot or contract terms.", "bottleneck": "Do quality, supply security and chemistry choices align?"},
+        {"title": "Cells & systems", "actors": "Cell makers, pack makers and system integrators", "role": "Turn components into a tested, controllable storage system.", "revenue": "Cell/system sales, integration and warranty services.", "bottleneck": "Can manufacturing quality and warranty obligations be sustained?"},
+        {"title": "Projects & operation", "actors": "Developers, utilities and storage operators", "role": "Connect and operate assets to serve a particular power market.", "revenue": "Contracted or market-based power-system services.", "bottleneck": "Will local revenues cover degradation and full project costs?"}
+      ],
+      "economics": "Do not equate cheaper cells with better project returns. Connection, installation, financing, degradation and market rules belong in the same model.",
+      "drivers": ["Where does variable generation create a need for flexibility?", "Can storage participate and get paid in the relevant local market?"],
+      "risks": ["Safety, degradation and warranties may change lifecycle costs.", "Supply concentration and changing project revenues can offset lower hardware prices."],
+      "metrics": [
+        {"name": "Installed system cost", "meaning": "Use consistent currency, date and system boundary; distinguish USD/kW from USD/kWh."},
+        {"name": "Usable capacity & efficiency", "meaning": "Measure at the same operating conditions and asset age."},
+        {"name": "Contracted revenue share", "meaning": "Separate contracted cash flows from merchant assumptions."}
+      ],
+      "evidence": [{"text": "The IEA describes concentration across battery supply chains and explains storage's role in flexibility and grid stability. Its 2024 scenarios are not treated here as current forecasts.", "source": "iea"}],
+      "sources": [{"id": "iea", "publisher": "International Energy Agency", "title": "Batteries and Secure Energy Transitions — Executive summary", "url": "https://www.iea.org/reports/batteries-and-secure-energy-transitions/executive-summary", "published": "2024-04-25", "type": "Intergovernmental analysis", "supports": "Supply-chain structure and power-system applications; historical scenarios, not fresh market estimates."}],
+      "related": []
+    },
+    {
+      "id": "cybersecurity",
+      "name": "Cybersecurity",
+      "category": "Digitization",
+      "dataset_rank": 8,
+      "keywords": "security identity threat intelligence detection response 网络安全",
+      "summary": "From security inputs to products and operational response.",
+      "question": "Does the customer buy another tool, or a better security outcome?",
+      "scope": "Enterprise security products and services. The commercial layers below are DEX's map, not the NIST CSF functions or a compliance checklist.",
+      "geography": "Global enterprise lens; NIST provides the risk-management reference.",
+      "chain": [
+        {"title": "Signals & foundations", "actors": "Telemetry, identity and intelligence providers", "role": "Supply the information and controls used by security teams.", "revenue": "Data feeds, infrastructure or identity-service contracts.", "bottleneck": "Are the signals relevant, complete and lawful to use?"},
+        {"title": "Security products", "actors": "Endpoint, cloud, network and identity vendors", "role": "Turn inputs into prevention, detection and investigation tools.", "revenue": "Subscriptions, licenses or consumption-based fees.", "bottleneck": "Can tools integrate without overwhelming operators?"},
+        {"title": "Operations & response", "actors": "Internal teams, managed providers and responders", "role": "Operate controls and coordinate incident handling and recovery.", "revenue": "Managed-service contracts, retainers or response projects.", "bottleneck": "Can the customer turn alerts into timely, effective action?"}
+      ],
+      "economics": "Test renewal quality and delivery cost alongside product claims. Security spending is not itself evidence that customer risk has fallen.",
+      "drivers": ["Which assets and workflows create an uncovered exposure?", "Would integration or managed delivery solve a staffing bottleneck?"],
+      "risks": ["Product overlap and tool consolidation may affect renewals.", "Failures in the vendor's own systems can undermine trust."],
+      "metrics": [
+        {"name": "Net revenue retention", "meaning": "Use a consistent cohort and vendor definition."},
+        {"name": "Response effectiveness", "meaning": "Define incident severity and measurement boundaries before comparing."},
+        {"name": "Service delivery cost", "meaning": "Include analyst time and infrastructure per customer."}
+      ],
+      "evidence": [{"text": "NIST CSF 2.0 organizes cybersecurity outcomes under Govern, Identify, Protect, Detect, Respond and Recover. These are outcomes, not six sequential commercial stages.", "source": "nist-csf"}],
+      "sources": [{"id": "nist-csf", "publisher": "NIST", "title": "The NIST Cybersecurity Framework (CSF) 2.0", "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf", "published": "2024-02-26", "type": "Government framework · PDF", "supports": "Risk-management functions only; does not establish vendor revenue, effectiveness or market size."}],
+      "related": [{"title": "Cybersecurity industry report", "url": "/post/cybersecurity-industry-report/"}]
+    },
+    {
+      "id": "robotics",
+      "name": "Robotics",
+      "category": "Hard Tech",
+      "dataset_rank": 9,
+      "keywords": "robots automation industrial integration actuators cobots 机器人",
+      "summary": "From components to integrated, supported automation.",
+      "question": "Can a robot deliver a repeatable outcome in a real operating environment?",
+      "scope": "Industrial robot systems and their integration. This is a subset of the explorer's Industrial + Service Robotics row; not a humanoid or service-robot forecast.",
+      "geography": "Global industrial lens; ABB is one vendor example, not a market ranking.",
+      "chain": [
+        {"title": "Components & control", "actors": "Motion, sensing and control suppliers", "role": "Provide the hardware and software building blocks.", "revenue": "Component sales and software licenses.", "bottleneck": "Can parts satisfy precision, durability and integration requirements?"},
+        {"title": "Robots & integration", "actors": "Robot manufacturers and system integrators", "role": "Combine machines, tooling and software around a defined task.", "revenue": "Equipment sales and engineering projects.", "bottleneck": "How much customization is required for each deployment?"},
+        {"title": "Operation & lifecycle", "actors": "Factory operators and service providers", "role": "Commission, maintain and improve the deployed system.", "revenue": "Maintenance, training and modernization contracts.", "bottleneck": "Does uptime and throughput justify the full lifecycle cost?"}
+      ],
+      "economics": "Evaluate the complete installed cell and support burden, not just the robot's purchase price. Pilot demonstrations are not recurring production deployments.",
+      "drivers": ["Which repetitive tasks have stable requirements and measurable payback?", "Can integration be reused across multiple customer sites?"],
+      "risks": ["Customization and commissioning delays can erode project margins.", "Reliability, operator training and safe integration need on-site validation."],
+      "metrics": [
+        {"name": "Installed-system payback", "meaning": "Include integration, downtime, maintenance and training."},
+        {"name": "Productive uptime", "meaning": "Measure time actually completing the intended task."},
+        {"name": "Repeat deployments", "meaning": "Separate pilots from repeat orders and operating installations."}
+      ],
+      "evidence": [{"text": "ABB's robotics services cover installation, support, maintenance and modernization, illustrating commercial activity beyond the initial equipment sale.", "source": "abb"}],
+      "sources": [{"id": "abb", "publisher": "ABB", "title": "Robotics Services", "url": "https://www.abb.com/global/en/areas/robotics/services", "published": "Undated; product/service page", "type": "Company documentation", "supports": "One vendor's service offerings; not independent evidence of achieved returns or industry-wide revenue mix."}],
+      "related": []
+    },
+    {
+      "id": "biopharmaceuticals",
+      "name": "Biopharmaceuticals",
+      "category": "Bio & Health",
+      "dataset_rank": 21,
+      "keywords": "biotech pharmaceuticals drugs clinical trials medicine 生物制药 医药",
+      "summary": "From scientific discovery to evidence and commercialization.",
+      "question": "How does a scientific asset become an approved and commercially viable product?",
+      "scope": "Innovative drug development. The US pathway is an illustrative regulatory reference; individual products and other jurisdictions require separate analysis.",
+      "geography": "US regulatory reference; not a universal approval pathway.",
+      "chain": [
+        {"title": "Discovery & preclinical", "actors": "Research teams, biotechs and research suppliers", "role": "Develop candidates and investigate their properties before human studies.", "revenue": "Research services or licensing arrangements to investigate.", "bottleneck": "Does the evidence justify further development and funding?"},
+        {"title": "Clinical evidence & review", "actors": "Sponsors, trial providers and regulators", "role": "Generate human evidence and evaluate a submission for approval.", "revenue": "Trial-service contracts or milestone arrangements to investigate.", "bottleneck": "Are safety, efficacy and manufacturing evidence sufficient?"},
+        {"title": "Manufacture & access", "actors": "Manufacturers, commercial teams and health-system buyers", "role": "Supply approved products while maintaining quality and safety monitoring.", "revenue": "Product sales, royalties or manufacturing services to investigate.", "bottleneck": "Does approval translate into supply, access and viable net revenue?"}
+      ],
+      "economics": "Separate scientific progress, approval and commercial success. Model development spending and potential dilution before assuming future product revenue.",
+      "drivers": ["What unmet need would a successful product address?", "Which evidence would change clinical or purchasing decisions?"],
+      "risks": ["Clinical failure and manufacturing problems can change the entire thesis.", "Approval alone does not establish reimbursement or commercial demand."],
+      "metrics": [
+        {"name": "Evidence milestones", "meaning": "State trial phase, population and endpoints; avoid treating a milestone as guaranteed."},
+        {"name": "Cash runway", "meaning": "Test spending assumptions and funding needs under delays."},
+        {"name": "Net realized revenue", "meaning": "Distinguish actual sales from headline prices and potential markets."}
+      ],
+      "evidence": [{"text": "FDA's drug-development overview describes discovery, preclinical research, clinical research, review and post-market safety monitoring. The three cards group those activities for readability.", "source": "fda"}],
+      "sources": [{"id": "fda", "publisher": "US Food and Drug Administration", "title": "The Drug Development Process", "url": "https://www.fda.gov/patients/learn-about-drug-and-device-approvals/drug-development-process", "published": "Undated overview; reviewed on the date shown above", "type": "Regulator explainer", "supports": "US development and review stages; not clinical advice or evidence for a particular drug."}],
+      "related": [{"title": "Pharmaceutical industry report", "url": "/post/pharmaceutical-industry/"}]
+    }
+  ]
+}

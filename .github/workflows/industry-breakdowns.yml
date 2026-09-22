@@ -1,0 +1,41 @@
+name: Industry breakdown validation
+
+on:
+  pull_request:
+  push:
+    branches: [main, codex/industry-breakdowns]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out source and theme
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          submodules: recursive
+          persist-credentials: false
+      - name: Set up Node
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '22'
+      - name: Install pinned Hugo Extended
+        shell: bash
+        run: |
+          set -euo pipefail
+          hugo_dir=$(mktemp -d)
+          curl --fail --location --silent --show-error --retry 3 \
+            https://github.com/gohugoio/hugo/releases/download/v0.166.0/hugo_extended_0.166.0_linux-amd64.tar.gz \
+            --output "$hugo_dir/hugo.tar.gz"
+          printf '%s  %s\n' '0e39b901e3f919f1daae05c8ff64f0c14c8a348ef46886d63f8e6d1bb2653885' "$hugo_dir/hugo.tar.gz" | sha256sum --check
+          tar -xzf "$hugo_dir/hugo.tar.gz" -C "$hugo_dir" hugo
+          printf '%s\n' "$hugo_dir" >> "$GITHUB_PATH"
+      - name: Test enhancement logic
+        run: node --test tests/breakdowns.test.mjs
+      - name: Build production HTML without warnings
+        run: hugo --environment production --minify --panicOnWarning
+      - name: Check data, source mappings and internal links
+        run: python3 scripts/validate_breakdowns.py public

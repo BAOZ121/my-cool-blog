@@ -1,0 +1,6 @@
+<section class="ix-breakdowns" aria-labelledby="ix-breakdowns-title">
+  <h2 id="ix-breakdowns-title">Understand the industry behind the numbers</h2>
+  <p>Explore {{ len hugo.Data.breakdowns.profiles }} scoped value-chain maps, business models, risks and source-backed evidence anchors. Coverage is a subset of the dataset.</p>
+  <ul>{{ range hugo.Data.breakdowns.profiles }}<li><a href="{{ printf "/industry-breakdowns/%s/" .id | relURL }}">{{ .name }}</a></li>{{ end }}</ul>
+  <a class="ix-btn" href="{{ "/industry-breakdowns/" | relURL }}">Browse all industry breakdowns →</a>
+</section>

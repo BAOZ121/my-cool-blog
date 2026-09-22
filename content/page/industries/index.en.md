@@ -9,6 +9,8 @@ slug: "industries"
 
 Explore the 50-industry dataset, compare reported ranges, and test transparent CAGR scenarios. Categories and maturity labels are editorial classifications; source definitions and coverage vary. This tool is **not investment advice**.
 
+{{< breakdown-links >}}
+
 <div id="industry-explorer" class="ix">
 <div class="ix-actions">
 <a class="ix-btn ix-btn-primary" href="/data/industries.csv" download>Download CSV</a>
