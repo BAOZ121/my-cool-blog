@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" role="img" aria-labelledby="title desc">
+  <title id="title">Cybersecurity industry value chain</title>
+  <desc id="desc">Three-stage map from upstream security foundations through products to downstream delivery and customers, with an incident-data feedback loop.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8"/>
+    </marker>
+    <style>
+      .title{font-family:Inter,Arial,sans-serif;font-size:42px;font-weight:700;fill:#f8fafc}.subtitle{font-family:Inter,Arial,sans-serif;font-size:21px;font-weight:400;fill:#94a3b8}
+      .stage{font-family:Inter,Arial,sans-serif;font-size:22px;font-weight:700;letter-spacing:1px;fill:#f8fafc}.node{font-family:Inter,Arial,sans-serif;font-size:20px;font-weight:600;fill:#e2e8f0}
+      .note{font-family:Inter,Arial,sans-serif;font-size:18px;font-weight:500;fill:#94a3b8}.source{font-family:Inter,Arial,sans-serif;font-size:16px;font-weight:400;fill:#64748b}
+    </style>
+  </defs>
+  <rect width="1600" height="760" rx="28" fill="#0b1220"/>
+  <text x="58" y="68" class="title">Cybersecurity Value Chain</text>
+  <text x="58" y="103" class="subtitle">Capabilities move toward customers; incident data strengthens the intelligence layer.</text>
+
+  <path d="M520 360 H565" stroke="#38bdf8" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M1035 360 H1080" stroke="#38bdf8" stroke-width="5" marker-end="url(#arrow)"/>
+
+  <rect x="50" y="142" width="470" height="480" rx="20" fill="#101e31" stroke="#0ea5e9" stroke-width="2"/>
+  <rect x="50" y="142" width="470" height="64" rx="20" fill="#0369a1"/>
+  <rect x="50" y="185" width="470" height="21" fill="#0369a1"/>
+  <text x="78" y="184" class="stage">UPSTREAM — FOUNDATIONS</text>
+  <rect x="78" y="240" width="414" height="88" rx="12" fill="#152941"/>
+  <text x="100" y="276" class="node"><tspan x="100">Threat intelligence and</tspan><tspan x="100" dy="28">vulnerability databases</tspan></text>
+  <rect x="78" y="348" width="414" height="88" rx="12" fill="#152941"/>
+  <text x="100" y="384" class="node"><tspan x="100">Cloud, chips, identity and</tspan><tspan x="100" dy="28">open-source libraries</tspan></text>
+  <rect x="78" y="456" width="414" height="88" rx="12" fill="#152941"/>
+  <text x="100" y="492" class="node"><tspan x="100">Security research and</tspan><tspan x="100" dy="28">attack telemetry</tspan></text>
+
+  <rect x="565" y="142" width="470" height="480" rx="20" fill="#101e31" stroke="#14b8a6" stroke-width="2"/>
+  <rect x="565" y="142" width="470" height="64" rx="20" fill="#0f766e"/>
+  <rect x="565" y="185" width="470" height="21" fill="#0f766e"/>
+  <text x="593" y="184" class="stage">MIDSTREAM — PRODUCTS</text>
+  <rect x="593" y="230" width="414" height="72" rx="12" fill="#143037"/>
+  <text x="615" y="274" class="node">Endpoint and identity security</text>
+  <rect x="593" y="318" width="414" height="72" rx="12" fill="#143037"/>
+  <text x="615" y="346" class="node"><tspan x="615">Network, SASE and</tspan><tspan x="615" dy="27">zero-trust platforms</tspan></text>
+  <rect x="593" y="406" width="414" height="72" rx="12" fill="#143037"/>
+  <text x="615" y="434" class="node"><tspan x="615">Cloud, application and</tspan><tspan x="615" dy="27">data security</tspan></text>
+  <rect x="593" y="494" width="414" height="72" rx="12" fill="#143037"/>
+  <text x="615" y="522" class="node"><tspan x="615">SIEM, XDR and</tspan><tspan x="615" dy="27">security platforms</tspan></text>
+
+  <rect x="1080" y="142" width="470" height="480" rx="20" fill="#101e31" stroke="#8b5cf6" stroke-width="2"/>
+  <rect x="1080" y="142" width="470" height="64" rx="20" fill="#6d28d9"/>
+  <rect x="1080" y="185" width="470" height="21" fill="#6d28d9"/>
+  <text x="1108" y="184" class="stage">DOWNSTREAM — DELIVERY</text>
+  <rect x="1108" y="230" width="414" height="72" rx="12" fill="#251b43"/>
+  <text x="1130" y="274" class="node">System integrators and VARs</text>
+  <rect x="1108" y="318" width="414" height="72" rx="12" fill="#251b43"/>
+  <text x="1130" y="346" class="node"><tspan x="1130">Managed security</tspan><tspan x="1130" dy="27">service providers</tspan></text>
+  <rect x="1108" y="406" width="414" height="72" rx="12" fill="#251b43"/>
+  <text x="1130" y="434" class="node"><tspan x="1130">Consulting and</tspan><tspan x="1130" dy="27">incident response</tspan></text>
+  <rect x="1108" y="494" width="414" height="72" rx="12" fill="#251b43"/>
+  <text x="1130" y="522" class="node"><tspan x="1130">Enterprises and</tspan><tspan x="1130" dy="27">public institutions</tspan></text>
+
+  <path d="M1315 622 C1315 690 285 690 285 622" fill="none" stroke="#f59e0b" stroke-width="3" stroke-dasharray="10 10" marker-end="url(#arrow)"/>
+  <rect x="612" y="658" width="376" height="38" rx="19" fill="#1f2937"/>
+  <text x="800" y="684" text-anchor="middle" class="note">Incident-data feedback loop</text>
+  <text x="1540" y="730" text-anchor="end" class="source">DEX synthesis based on the report</text>
+</svg>

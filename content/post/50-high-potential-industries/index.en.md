@@ -2,7 +2,7 @@
 title: "50 High-Potential Industries (2025–2040): Technologies, Markets, and Growth"
 description: "A structured list of 50 high-potential industries based on McKinsey Global Institute arenas, China’s NDRC priority sectors, and leading market forecasts—with representative technologies, market sizes, and CAGR projections."
 date: 2026-09-19
-lastmod: 2026-09-21
+lastmod: 2026-09-22
 image: "cover.jpg"
 dataDownload: "/data/industries.csv"
 categories:
@@ -21,6 +21,41 @@ At the same time, China’s National Development and Reform Commission has named
 This report brings those signals together into a practical list of **50 high-potential industries**—each with a representative technology, market size where available, growth outlook, and key commercial or policy notes.
 
 **Disclaimer:** Figures are synthesized from public research reports and official releases. Definitions and statistical scopes differ across sources. This is for reference only and does not constitute investment advice.
+
+{{< research-diagram
+    label="Research map"
+    title="Six Clusters Behind the 50-Industry Dataset"
+    caption="The six clusters are DEX editorial groupings used to navigate the dataset; examples are illustrative rather than exhaustive."
+    source="DEX classification of the accompanying 50-industry dataset"
+    fallback="industry-cluster-map.svg"
+>}}
+mindmap
+  root((50 high-potential industries))
+    AI Foundation — 6
+      AI software and services
+      Semiconductors
+      Cloud and computing power
+    Digitization — 9
+      Cybersecurity
+      E-commerce and fintech
+      Advanced connectivity
+    Energy — 9
+      EVs and batteries
+      Hydrogen and renewables
+      Fission, fusion and CCUS
+    Hard Tech — 10
+      Robotics and embodied AI
+      Space and satellite internet
+      Autonomous mobility
+    Bio and Health — 10
+      Biopharmaceuticals
+      Gene and cell therapy
+      Medical AI and synthetic biology
+    Manufacturing — 6
+      Smart manufacturing
+      Advanced materials
+      Logistics and digital twins
+{{< /research-diagram >}}
 
 ---
 

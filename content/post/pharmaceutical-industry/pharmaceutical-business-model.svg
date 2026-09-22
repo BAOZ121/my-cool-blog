@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1080" viewBox="0 0 1600 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Innovative pharmaceutical business model</title>
+  <desc id="desc">Seven-block model covering value creation, customers, delivery, revenue, costs, defensibility and failure points.</desc>
+  <defs>
+    <style>
+      .title{font-family:Inter,Arial,sans-serif;font-size:42px;font-weight:700;fill:#f8fafc}.subtitle{font-family:Inter,Arial,sans-serif;font-size:20px;font-weight:400;fill:#94a3b8}
+      .head{font-family:Inter,Arial,sans-serif;font-size:23px;font-weight:700;fill:#f8fafc}.item{font-family:Inter,Arial,sans-serif;font-size:18px;font-weight:500;fill:#cbd5e1}
+      .source{font-family:Inter,Arial,sans-serif;font-size:16px;font-weight:400;fill:#64748b}
+    </style>
+  </defs>
+  <rect width="1600" height="1080" rx="28" fill="#0b1220"/>
+  <text x="55" y="65" class="title">Innovative Pharmaceutical Business Model</text>
+  <text x="55" y="100" class="subtitle">How scientific risk, IP, regulation and market access turn R&amp;D into cash flow.</text>
+
+  <g transform="translate(55 135)">
+    <rect width="1490" height="160" rx="18" fill="#102a32" stroke="#14b8a6" stroke-width="3"/>
+    <text x="28" y="42" class="head">VALUE CREATION</text>
+    <text x="40" y="84" class="item">• Discover or license a differentiated drug candidate</text>
+    <text x="520" y="84" class="item">• Fund preclinical work and multi-stage clinical trials</text>
+    <text x="1010" y="84" class="item">• Secure approval, patents and exclusivity</text>
+    <text x="40" y="124" class="item">Evidence and intellectual property convert uncertain science into a regulated commercial asset.</text>
+  </g>
+
+  <g transform="translate(55 325)">
+    <rect width="730" height="200" rx="18" fill="#101e31" stroke="#38bdf8" stroke-width="2"/>
+    <text x="26" y="42" class="head">CUSTOMERS AND PAYERS</text>
+    <text x="34" y="85" class="item">• Patients, hospitals and specialist physicians</text>
+    <text x="34" y="124" class="item">• Public health systems and reimbursement programs</text>
+    <text x="34" y="163" class="item">• Commercial insurers and pharmacy benefit managers</text>
+  </g>
+  <g transform="translate(815 325)">
+    <rect width="730" height="200" rx="18" fill="#101e31" stroke="#38bdf8" stroke-width="2"/>
+    <text x="26" y="42" class="head">DELIVERY AND MARKET ACCESS</text>
+    <text x="34" y="85" class="item">• Hospital, specialist, retail and DTP channels</text>
+    <text x="34" y="124" class="item">• Distributors and commercialization partners</text>
+    <text x="34" y="163" class="item">• Medical affairs, formulary access and patient support</text>
+  </g>
+
+  <g transform="translate(55 555)">
+    <rect width="730" height="200" rx="18" fill="#102a26" stroke="#22c55e" stroke-width="2"/>
+    <text x="26" y="42" class="head">REVENUE ENGINES</text>
+    <text x="34" y="85" class="item">• Protected branded-drug sales during exclusivity</text>
+    <text x="34" y="124" class="item">• Upfront, development and commercial milestones</text>
+    <text x="34" y="163" class="item">• Licensing income and partner royalties</text>
+  </g>
+  <g transform="translate(815 555)">
+    <rect width="730" height="200" rx="18" fill="#302416" stroke="#f59e0b" stroke-width="2"/>
+    <text x="26" y="42" class="head">COST STRUCTURE</text>
+    <text x="34" y="85" class="item">• Failed discovery programs and long clinical trials</text>
+    <text x="34" y="124" class="item">• Manufacturing, quality and regulatory compliance</text>
+    <text x="34" y="163" class="item">• Sales, market access, discounts and rebates</text>
+  </g>
+
+  <g transform="translate(55 785)">
+    <rect width="730" height="200" rx="18" fill="#102a26" stroke="#22c55e" stroke-width="2"/>
+    <text x="26" y="42" class="head">DEFENSIBILITY</text>
+    <text x="34" y="85" class="item">• Patents, exclusivity and manufacturing know-how</text>
+    <text x="34" y="124" class="item">• Clinical evidence and physician confidence</text>
+    <text x="34" y="163" class="item">• Global regulatory and commercial infrastructure</text>
+  </g>
+  <g transform="translate(815 785)">
+    <rect width="730" height="200" rx="18" fill="#302416" stroke="#f59e0b" stroke-width="2"/>
+    <text x="26" y="42" class="head">FAILURE POINTS</text>
+    <text x="34" y="85" class="item">• Clinical failure, adverse events or delayed approval</text>
+    <text x="34" y="124" class="item">• Pricing pressure and reimbursement exclusion</text>
+    <text x="34" y="163" class="item">• Patent challenges, patent cliffs and generic entry</text>
+  </g>
+  <text x="1545" y="1045" text-anchor="end" class="source">DEX synthesis based on this report — explanatory, not a forecast</text>
+</svg>
