@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Six clusters behind the 50-industry dataset</title>
+  <desc id="desc">A mind map grouping fifty high-potential industries into AI foundation, digitization, energy, hard tech, bio and health, and manufacturing.</desc>
+  <defs>
+    <style>
+      .title{font-family:Inter,Arial,sans-serif;font-size:42px;font-weight:700;fill:#f8fafc}.subtitle{font-family:Inter,Arial,sans-serif;font-size:20px;font-weight:400;fill:#94a3b8}
+      .root{font-family:Inter,Arial,sans-serif;font-size:27px;font-weight:700;fill:#fff}.head{font-family:Inter,Arial,sans-serif;font-size:23px;font-weight:700;fill:#f8fafc}
+      .count{font-family:Inter,Arial,sans-serif;font-size:18px;font-weight:700;fill:#0b1220}.item{font-family:Inter,Arial,sans-serif;font-size:18px;font-weight:500;fill:#cbd5e1}
+      .source{font-family:Inter,Arial,sans-serif;font-size:16px;font-weight:400;fill:#64748b}
+    </style>
+  </defs>
+  <rect width="1600" height="900" rx="28" fill="#0b1220"/>
+  <text x="55" y="65" class="title">Six Clusters Behind the 50-Industry Dataset</text>
+  <text x="55" y="99" class="subtitle">Editorial navigation map — examples shown are illustrative, not exhaustive.</text>
+
+  <path d="M800 220 V258 H290 V300 M800 258 H800 V300 M800 258 H1310 V300" fill="none" stroke="#475569" stroke-width="4"/>
+  <path d="M800 220 V548 H290 V590 M800 548 H800 V590 M800 548 H1310 V590" fill="none" stroke="#475569" stroke-width="4"/>
+  <rect x="555" y="125" width="490" height="95" rx="48" fill="#0369a1" stroke="#38bdf8" stroke-width="3"/>
+  <text x="800" y="165" text-anchor="middle" class="root"><tspan x="800">50 High-Potential Industries</tspan><tspan x="800" dy="32">2025–2040</tspan></text>
+
+  <g transform="translate(50 300)">
+    <rect width="480" height="220" rx="18" fill="#101e31" stroke="#38bdf8" stroke-width="2"/>
+    <rect width="480" height="58" rx="18" fill="#0369a1"/><rect y="40" width="480" height="18" fill="#0369a1"/>
+    <text x="24" y="38" class="head">AI FOUNDATION</text><rect x="382" y="16" width="72" height="30" rx="15" fill="#7dd3fc"/><text x="418" y="38" text-anchor="middle" class="count">6</text>
+    <text x="28" y="98" class="item">• AI software and services</text><text x="28" y="137" class="item">• Semiconductors</text><text x="28" y="176" class="item">• Cloud and computing power</text>
+  </g>
+  <g transform="translate(560 300)">
+    <rect width="480" height="220" rx="18" fill="#101e31" stroke="#14b8a6" stroke-width="2"/>
+    <rect width="480" height="58" rx="18" fill="#0f766e"/><rect y="40" width="480" height="18" fill="#0f766e"/>
+    <text x="24" y="38" class="head">DIGITIZATION</text><rect x="382" y="16" width="72" height="30" rx="15" fill="#5eead4"/><text x="418" y="38" text-anchor="middle" class="count">9</text>
+    <text x="28" y="98" class="item">• Cybersecurity</text><text x="28" y="137" class="item">• E-commerce and fintech</text><text x="28" y="176" class="item">• Advanced connectivity</text>
+  </g>
+  <g transform="translate(1070 300)">
+    <rect width="480" height="220" rx="18" fill="#101e31" stroke="#f59e0b" stroke-width="2"/>
+    <rect width="480" height="58" rx="18" fill="#b45309"/><rect y="40" width="480" height="18" fill="#b45309"/>
+    <text x="24" y="38" class="head">ENERGY</text><rect x="382" y="16" width="72" height="30" rx="15" fill="#fcd34d"/><text x="418" y="38" text-anchor="middle" class="count">9</text>
+    <text x="28" y="98" class="item">• EVs and batteries</text><text x="28" y="137" class="item">• Hydrogen and renewables</text><text x="28" y="176" class="item">• Fission, fusion and CCUS</text>
+  </g>
+  <g transform="translate(50 590)">
+    <rect width="480" height="220" rx="18" fill="#101e31" stroke="#8b5cf6" stroke-width="2"/>
+    <rect width="480" height="58" rx="18" fill="#6d28d9"/><rect y="40" width="480" height="18" fill="#6d28d9"/>
+    <text x="24" y="38" class="head">HARD TECH</text><rect x="382" y="16" width="72" height="30" rx="15" fill="#c4b5fd"/><text x="418" y="38" text-anchor="middle" class="count">10</text>
+    <text x="28" y="98" class="item">• Robotics and embodied AI</text><text x="28" y="137" class="item">• Space and satellite internet</text><text x="28" y="176" class="item">• Autonomous mobility</text>
+  </g>
+  <g transform="translate(560 590)">
+    <rect width="480" height="220" rx="18" fill="#101e31" stroke="#ec4899" stroke-width="2"/>
+    <rect width="480" height="58" rx="18" fill="#be185d"/><rect y="40" width="480" height="18" fill="#be185d"/>
+    <text x="24" y="38" class="head">BIO &amp; HEALTH</text><rect x="382" y="16" width="72" height="30" rx="15" fill="#f9a8d4"/><text x="418" y="38" text-anchor="middle" class="count">10</text>
+    <text x="28" y="98" class="item">• Biopharmaceuticals</text><text x="28" y="137" class="item">• Gene and cell therapy</text><text x="28" y="176" class="item">• Medical AI and synthetic biology</text>
+  </g>
+  <g transform="translate(1070 590)">
+    <rect width="480" height="220" rx="18" fill="#101e31" stroke="#22c55e" stroke-width="2"/>
+    <rect width="480" height="58" rx="18" fill="#15803d"/><rect y="40" width="480" height="18" fill="#15803d"/>
+    <text x="24" y="38" class="head">MANUFACTURING</text><rect x="382" y="16" width="72" height="30" rx="15" fill="#86efac"/><text x="418" y="38" text-anchor="middle" class="count">6</text>
+    <text x="28" y="98" class="item">• Smart manufacturing</text><text x="28" y="137" class="item">• Advanced materials</text><text x="28" y="176" class="item">• Logistics and digital twins</text>
+  </g>
+  <text x="1545" y="865" text-anchor="end" class="source">DEX classification of the accompanying dataset</text>
+</svg>

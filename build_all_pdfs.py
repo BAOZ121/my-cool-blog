@@ -95,7 +95,51 @@ def output_slug(filepath: Path, metadata: dict) -> str:
     return slug
 
 
+def shortcode_attribute(attributes: str, name: str) -> str | None:
+    """Return a quoted Hugo shortcode attribute without evaluating templates."""
+    match = re.search(rf'\b{re.escape(name)}\s*=\s*(["\'])(.*?)\1', attributes, re.DOTALL)
+    return match.group(2).strip() if match else None
+
+
+def replace_visual_shortcodes(body_markdown: str) -> str:
+    """Replace interactive visuals with their committed SVGs for static PDFs."""
+
+    def replace_diagram(match: re.Match[str]) -> str:
+        attributes = match.group("attributes")
+        fallback = shortcode_attribute(attributes, "fallback")
+        if not fallback:
+            return ""
+        title = shortcode_attribute(attributes, "title") or "Research diagram"
+        caption = shortcode_attribute(attributes, "caption")
+        result = f'![{title}]({fallback} "{title}")'
+        if caption:
+            result += f"\n\n*{caption}*"
+        return result
+
+    body_markdown = re.sub(
+        r"\{\{<\s*research-diagram\b(?P<attributes>.*?)>\}\}.*?\{\{<\s*/research-diagram\s*>\}\}",
+        replace_diagram,
+        body_markdown,
+        flags=re.DOTALL,
+    )
+
+    def replace_business_model(match: re.Match[str]) -> str:
+        attributes = match.group("attributes")
+        fallback = shortcode_attribute(attributes, "fallback")
+        if not fallback:
+            return ""
+        return f'![Business model]({fallback} "Business model")'
+
+    return re.sub(
+        r"\{\{<\s*business-model\b(?P<attributes>.*?)>\}\}",
+        replace_business_model,
+        body_markdown,
+        flags=re.DOTALL,
+    )
+
+
 def render_html(title: str, date: str, body_markdown: str) -> str:
+    body_markdown = replace_visual_shortcodes(body_markdown)
     body_html = markdown.markdown(
         body_markdown,
         extensions=["tables", "fenced_code", "toc"],

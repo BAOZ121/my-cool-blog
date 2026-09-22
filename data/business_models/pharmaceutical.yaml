@@ -1,0 +1,47 @@
+label: Business model
+title: Innovative Pharmaceutical Business Model
+summary: How scientific risk, intellectual property, regulation, and market access turn R&D into cash flow.
+source: DEX synthesis based on this report; the diagram is explanatory rather than a financial forecast.
+sections:
+  - key: value
+    title: Value creation
+    items:
+      - Discover or license a differentiated drug candidate
+      - Fund preclinical work and multi-stage clinical trials
+      - Secure regulatory approval, patents, and exclusivity
+  - key: customers
+    title: Customers and payers
+    items:
+      - Patients, hospitals, and specialist physicians
+      - Public health systems and national reimbursement programs
+      - Commercial insurers and pharmacy benefit managers
+  - key: delivery
+    title: Delivery and market access
+    items:
+      - Hospital, specialist, retail, and DTP pharmacy channels
+      - Distributors and global commercialization partners
+      - Medical affairs, formulary access, and patient support
+  - key: revenue
+    title: Revenue engines
+    items:
+      - Protected branded-drug sales during exclusivity
+      - Upfront, development, and commercial milestone payments
+      - Licensing income and royalties from partners
+  - key: costs
+    title: Cost structure
+    items:
+      - Failed discovery programs and long clinical trials
+      - Manufacturing, quality systems, and regulatory compliance
+      - Sales, market access, discounts, and rebates
+  - key: moat
+    title: Defensibility
+    items:
+      - Patents, regulatory exclusivity, and manufacturing know-how
+      - Clinical evidence and physician confidence
+      - Global regulatory and commercial infrastructure
+  - key: risks
+    title: Failure points
+    items:
+      - Clinical failure, adverse events, or delayed approval
+      - Pricing pressure and reimbursement exclusion
+      - Patent challenges, patent cliffs, and generic entry

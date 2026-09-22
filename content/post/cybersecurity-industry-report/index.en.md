@@ -1,6 +1,7 @@
 ---
 title: "Unveiling the $250B Cybersecurity Empire From an Aquarium Thermometer Heist: DEX Industry Research Report"
 date: 2026-08-11
+lastmod: 2026-09-22
 description: "A deep dive into the 60-year evolution of cybersecurity, upstream-midstream-downstream value chains, the four major market camps, and core industry bottlenecks."
 tags: ["Industry Research Report", "DEX", "Cybersecurity", "Business Analysis"]
 categories:
@@ -71,6 +72,52 @@ Since 2020, the industry has undergone profound transformation characterized by 
 # <span style="font-size: 2.2em; color: #0f172a;">Part 3: Industry Value Chain</span>
 
 Let's briefly summarize the structure of the cybersecurity industry.
+
+{{< research-diagram
+    label="Industry chain"
+    title="Cybersecurity Value Chain"
+    caption="Solid arrows show the delivery of capabilities toward customers; the dotted arrow shows how incident data feeds the intelligence layer."
+    source="DEX synthesis based on the value-chain sections in this report"
+    fallback="cybersecurity-value-chain.svg"
+>}}
+flowchart LR
+    accTitle: Cybersecurity industry value chain
+    accDescr: Threat intelligence, cloud and hardware foundations feed security product vendors. Integrators, managed security providers and incident response teams deliver those products to organizations, while incident data feeds back into threat intelligence.
+
+    subgraph U["UPSTREAM — Foundations"]
+        U1["Threat intelligence<br/>and vulnerability data"]
+        U2["Cloud, chips, identity<br/>and open-source libraries"]
+        U3["Security research<br/>and attack telemetry"]
+    end
+
+    subgraph M["MIDSTREAM — Products"]
+        M1["Endpoint and identity"]
+        M2["Network, SASE<br/>and zero trust"]
+        M3["Cloud, application<br/>and data security"]
+        M4["SIEM, XDR<br/>and security platforms"]
+    end
+
+    subgraph D["DOWNSTREAM — Delivery"]
+        D1["System integrators<br/>and VARs"]
+        D2["Managed security<br/>service providers"]
+        D3["Consulting and<br/>incident response"]
+        D4["Enterprises and<br/>public institutions"]
+    end
+
+    U1 --> M1
+    U1 --> M4
+    U2 --> M2
+    U2 --> M3
+    U3 --> M4
+    M1 --> D1
+    M2 --> D1
+    M3 --> D2
+    M4 --> D2
+    D1 --> D4
+    D2 --> D4
+    D3 --> D4
+    D3 -. Incident data .-> U1
+{{< /research-diagram >}}
 
 ## <span style="font-size: 1.5em; color: #1e3a8a;">Upstream: Foundational Infrastructure & Threat Intelligence</span>
 

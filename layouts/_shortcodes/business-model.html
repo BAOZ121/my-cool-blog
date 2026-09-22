@@ -1,0 +1,42 @@
+{{- $modelID := .Get "id" -}}
+{{- $fallback := .Get "fallback" -}}
+{{- if not $modelID -}}
+    {{- errorf "The business-model shortcode requires an id parameter (%s)" .Position -}}
+{{- end -}}
+{{- $model := index hugo.Data.business_models $modelID -}}
+{{- if not $model -}}
+    {{- errorf "No business model data found for %q (%s)" $modelID .Position -}}
+{{- end -}}
+{{- $sectionID := printf "business-model-%s-%d" ($modelID | urlize) .Ordinal -}}
+{{- $fallbackURL := "" -}}
+{{- with $fallback -}}
+    {{- with $.Page.Resources.Get . -}}
+        {{- $fallbackURL = .RelPermalink -}}
+    {{- else -}}
+        {{- $fallbackURL = . | relURL -}}
+    {{- end -}}
+{{- end -}}
+
+<section class="research-visual business-model" aria-labelledby="{{ $sectionID }}-title">
+    <header class="research-visual__header">
+        <span class="research-visual__eyebrow">{{ $model.label | default "Business model" }}</span>
+        <div class="research-visual__title" id="{{ $sectionID }}-title" role="heading" aria-level="3">{{ $model.title }}</div>
+        {{- with $model.summary }}<p class="research-visual__summary">{{ . }}</p>{{ end }}
+    </header>
+    <div class="business-model__grid">
+        {{- range $model.sections }}
+        <article class="business-model__block business-model__block--{{ .key | urlize }}">
+            <h4>{{ .title }}</h4>
+            <ul>
+                {{- range .items }}<li>{{ . }}</li>{{ end }}
+            </ul>
+        </article>
+        {{- end }}
+    </div>
+    {{- if or $model.source $fallbackURL }}
+    <footer class="research-visual__caption">
+        {{- with $model.source }}<span class="research-visual__source">Source: {{ . }}</span>{{ end }}
+        {{- with $fallbackURL }}<a class="research-visual__download" href="{{ . }}" download>Download SVG</a>{{ end }}
+    </footer>
+    {{- end }}
+</section>

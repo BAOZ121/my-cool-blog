@@ -1,0 +1,48 @@
+{{- $title := .Get "title" | default "Research diagram" -}}
+{{- $label := .Get "label" | default "Research visual" -}}
+{{- $caption := .Get "caption" -}}
+{{- $source := .Get "source" -}}
+{{- $sourceURL := .Get "sourceUrl" -}}
+{{- $fallback := .Get "fallback" -}}
+{{- $alt := .Get "alt" | default $title -}}
+{{- $figureID := printf "research-diagram-%d" .Ordinal -}}
+{{- $fallbackURL := "" -}}
+
+{{- with $fallback -}}
+    {{- with $.Page.Resources.Get . -}}
+        {{- $fallbackURL = .RelPermalink -}}
+    {{- else -}}
+        {{- $fallbackURL = . | relURL -}}
+    {{- end -}}
+{{- end -}}
+
+<figure class="research-visual research-diagram" aria-labelledby="{{ $figureID }}-title">
+    <header class="research-visual__header">
+        <span class="research-visual__eyebrow">{{ $label }}</span>
+        <div class="research-visual__title" id="{{ $figureID }}-title" role="heading" aria-level="3">{{ $title }}</div>
+    </header>
+    <div class="research-diagram__canvas">
+        <pre class="mermaid" style="visibility:hidden">{{- .Inner | safeHTML -}}</pre>
+        {{- with $fallbackURL }}
+        <noscript>
+            <img class="research-visual__fallback" src="{{ . }}" alt="{{ $alt }}" loading="lazy">
+        </noscript>
+        {{- end }}
+    </div>
+    {{- if or $caption $source $fallbackURL }}
+    <figcaption class="research-visual__caption">
+        {{- with $caption }}<span>{{ . }}</span>{{ end -}}
+        {{- with $source }}
+            <span class="research-visual__source">
+                Source:
+                {{- if $sourceURL }} <a href="{{ $sourceURL | safeURL }}" rel="noopener noreferrer">{{ . }}</a>{{ else }} {{ . }}{{ end -}}
+            </span>
+        {{- end }}
+        {{- with $fallbackURL }}
+            <a class="research-visual__download" href="{{ . }}" download>Download SVG</a>
+        {{- end }}
+    </figcaption>
+    {{- end }}
+</figure>
+
+{{- .Page.Store.Set "hasMermaid" true -}}

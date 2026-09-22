@@ -28,6 +28,16 @@ enableRobotsTXT = true
         toc = true
         readingTime = true
 
+        [params.article.mermaid]
+            transparentBackground = true
+            securityLevel = "strict"
+            look = "classic"
+            lightTheme = "neutral"
+            darkTheme = "dark"
+            htmlLabels = true
+            fontSize = 16
+            fontFamily = "Inter, ui-sans-serif, system-ui, sans-serif"
+
 # Language configuration (English only)
 [languages]
 

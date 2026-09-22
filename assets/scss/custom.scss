@@ -55,6 +55,151 @@
     transform-origin: left center;
 }
 
+.research-visual {
+    overflow: hidden;
+    margin: 2.2rem 0;
+    border: 1px solid var(--card-separator-color);
+    border-radius: 14px;
+    background: color-mix(in srgb, var(--card-background) 96%, var(--accent-color));
+    box-shadow: var(--shadow-l1);
+    color: var(--card-text-color-main);
+    text-align: left;
+}
+
+.research-visual__header {
+    padding: 18px 20px 16px;
+    border-bottom: 1px solid var(--card-separator-color);
+    background: color-mix(in srgb, var(--accent-color) 8%, transparent);
+}
+
+.research-visual__eyebrow {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    font-weight: 750;
+    letter-spacing: 0.08em;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+.research-visual__title {
+    font-size: clamp(1.9rem, 2.4vw, 2.5rem);
+    font-weight: 750;
+    line-height: 1.25;
+}
+
+.research-visual__summary {
+    margin: 7px 0 0;
+    color: var(--card-text-color-secondary);
+    font-size: 1.45rem;
+    line-height: 1.55;
+}
+
+.research-diagram__canvas {
+    overflow-x: auto;
+    padding: 18px;
+}
+
+.research-diagram__canvas .mermaid-wrapper,
+.research-diagram__canvas .mermaid {
+    margin: 0;
+}
+
+.research-diagram__canvas .mermaid {
+    min-width: 680px;
+    padding: 0;
+    background: transparent;
+}
+
+.research-diagram__canvas svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.research-visual__fallback {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.research-visual__caption {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 16px;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 12px 20px 14px;
+    border-top: 1px solid var(--card-separator-color);
+    color: var(--card-text-color-secondary);
+    font-size: 1.3rem;
+    line-height: 1.55;
+    text-align: left;
+}
+
+.research-visual__source {
+    flex: 1 1 100%;
+}
+
+.research-visual__download {
+    color: var(--accent-color);
+    font-weight: 650;
+    white-space: nowrap;
+}
+
+.business-model__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    padding: 18px;
+}
+
+.business-model__block {
+    padding: 15px 16px;
+    border: 1px solid var(--card-separator-color);
+    border-top: 4px solid #38bdf8;
+    border-radius: 10px;
+    background: var(--card-background);
+}
+
+.business-model__block--value {
+    grid-column: 1 / -1;
+    border-top-color: #14b8a6;
+}
+
+.business-model__block--revenue,
+.business-model__block--moat {
+    border-top-color: #22c55e;
+}
+
+.business-model__block--costs,
+.business-model__block--risks {
+    border-top-color: #f59e0b;
+}
+
+.business-model__block h4 {
+    margin: 0 0 8px;
+    padding: 0;
+    border: 0;
+    color: var(--card-text-color-main);
+    font-size: 1.55rem;
+    line-height: 1.35;
+}
+
+.business-model__block ul {
+    margin: 0;
+    padding-left: 20px;
+    color: var(--card-text-color-secondary);
+    font-size: 1.35rem;
+    line-height: 1.55;
+}
+
+.business-model__block li + li {
+    margin-top: 5px;
+}
+
 @media (max-width: 640px) {
     .research-actions {
         flex-direction: column;
@@ -63,6 +208,29 @@
     .research-action {
         width: 100%;
         text-align: center;
+    }
+
+    .research-visual {
+        border-radius: 10px;
+    }
+
+    .research-visual__header,
+    .research-visual__caption {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .research-diagram__canvas,
+    .business-model__grid {
+        padding: 14px;
+    }
+
+    .business-model__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .business-model__block--value {
+        grid-column: auto;
     }
 }
 
@@ -110,5 +278,26 @@
     .article-content table,
     .article-content img {
         break-inside: avoid;
+    }
+
+    .research-visual {
+        border-color: #cbd5e1 !important;
+        background: #fff !important;
+        box-shadow: none !important;
+    }
+
+    .research-visual__header,
+    .research-visual__caption,
+    .business-model__block {
+        background: #fff !important;
+    }
+
+    .research-diagram,
+    .business-model__block {
+        break-inside: avoid;
+    }
+
+    .mermaid-toolbar {
+        display: none !important;
     }
 }

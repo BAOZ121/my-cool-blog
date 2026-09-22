@@ -2,6 +2,7 @@
 title: "The Pharmaceutical Industry: History, Structure, and Challenges"
 description: "A deep dive into the 150-year evolution of the pharmaceutical industry, core market structures, and future challenges."
 date: 2026-08-21
+lastmod: 2026-09-22
 image: "cover.jpg"
 categories:
   - "Industry Report"
@@ -148,6 +149,8 @@ New drug R&D investment -> Patent monopoly period (extremely high gross profit m
 2. CXOs earn fixed service fees;
 3. Big Pharma leverages its vast capital and business networks to launch new drugs globally, maximizing profits during the 10-15 year patent term;
 4. After patent expiration, generic drug companies and distributors quickly take over the market, significantly reducing healthcare costs, while Big Pharma uses its profits to seek the next biotech target, completing the cycle.
+
+{{< business-model id="pharmaceutical" fallback="pharmaceutical-business-model.svg" >}}
 
 Of course, high returns often come with high risks. This complex competitive landscape limits drug development efficiency and triggers various commercial struggles and public health crises.
 
