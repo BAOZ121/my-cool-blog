@@ -14,17 +14,18 @@
         {{- $fileURL := "" -}}
         {{- $hosted := false -}}
         {{- $sourceURL := .source_url | default "" -}}
+        {{- $publishPath := .publish_path | default "" -}}
 
         {{- with .local_path }}
             {{- $fileURL = . | relURL -}}
             {{- $hosted = true -}}
         {{- else }}
-            {{- if $sourceURL }}
+            {{- if and $sourceURL $publishPath }}
                 {{- with try (resources.GetRemote $sourceURL (dict "timeout" "30s")) }}
                     {{- with .Err }}
                         {{- warnf "Unable to mirror source material %q: %s" $sourceURL . -}}
                     {{- else with .Value }}
-                        {{- $copy := resources.Copy $.publish_path . -}}
+                        {{- $copy := resources.Copy $publishPath . -}}
                         {{- $fileURL = $copy.RelPermalink -}}
                         {{- $hosted = true -}}
                     {{- else }}
