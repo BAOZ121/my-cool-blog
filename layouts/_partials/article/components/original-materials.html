@@ -21,15 +21,13 @@
             {{- $hosted = true -}}
         {{- else }}
             {{- if and $sourceURL $publishPath }}
-                {{- with try (resources.GetRemote $sourceURL (dict "timeout" "30s")) }}
-                    {{- with .Err }}
-                        {{- warnf "Unable to mirror source material %q: %s" $sourceURL . -}}
-                    {{- else with .Value }}
-                        {{- $copy := resources.Copy $publishPath . -}}
-                        {{- $fileURL = $copy.RelPermalink -}}
-                        {{- $hosted = true -}}
-                    {{- else }}
-                        {{- warnf "Unable to mirror source material %q: no resource returned" $sourceURL -}}
+                {{- with try (resources.GetRemote $sourceURL) }}
+                    {{- if not .Err }}
+                        {{- with .Value }}
+                            {{- $copy := resources.Copy $publishPath . -}}
+                            {{- $fileURL = $copy.RelPermalink -}}
+                            {{- $hosted = true -}}
+                        {{- end }}
                     {{- end }}
                 {{- end }}
             {{- end }}
@@ -51,7 +49,7 @@
                     {{- if eq .format "PDF" }}
                     <a class="research-action" href="{{ $fileURL }}" target="_blank" rel="noopener">{{ if $hosted }}View hosted PDF{{ else }}View source PDF{{ end }}</a>
                     {{- end }}
-                    <a class="research-action" href="{{ $fileURL }}" download>Download {{ .format }}</a>
+                    <a class="research-action" href="{{ $fileURL }}"{{ if $hosted }} download{{ end }}>Download {{ .format }}</a>
                 {{- end }}
                 {{- if $sourceURL }}
                     <a class="research-action" href="{{ $sourceURL }}" target="_blank" rel="noopener noreferrer">Original / source URL</a>
