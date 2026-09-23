@@ -1,6 +1,6 @@
 ---
 title: "50 High-Potential Industries (2025–2040): Technologies, Markets, and Growth"
-description: "A structured list of 50 high-potential industries based on McKinsey Global Institute arenas, China’s NDRC priority sectors, and leading market forecasts—with representative technologies, market sizes, and CAGR projections."
+description: "A provisional 50-industry screening list inspired by global arenas and China policy priorities. Numeric estimates await row-level source verification."
 date: 2026-09-19
 lastmod: 2026-09-21
 image: "cover.jpg"
@@ -14,13 +14,13 @@ draft: false
 
 Over the past two decades, a small set of industries captured an outsized share of global growth and market-value creation. McKinsey Global Institute calls them “arenas of competition”: sectors that combine high growth with intense competitive dynamism.
 
-Twelve such arenas—from cloud and e-commerce to electric vehicles and semiconductors—already reshaped the economy between 2005 and the early 2020s. Looking ahead, McKinsey has identified **18 future arenas** that could generate **$29–48 trillion** in revenues by 2040 and account for a much larger share of global GDP growth.
+[McKinsey Global Institute's 2024 analysis](https://www.mckinsey.com/mgi/our-research/the-next-big-arenas-of-competition) identifies **18 potential future arenas** and models **$29–48 trillion** in combined 2040 revenue across them. Those figures describe McKinsey's collective scenario, not the 50 rows below.
 
-At the same time, China’s National Development and Reform Commission has named **six emerging pillar industries** and **six future industries**, with related output expected to exceed **RMB 10 trillion** by 2030.
+At the same time, [China's NDRC described six emerging pillar industries and six future industries in March 2026](https://www.ndrc.gov.cn/fzggw/wld/zsj/zyhd/202603/t20260306_1404063.html). It estimated that output related to the six emerging pillars alone could exceed **RMB 10 trillion** by 2030; this is not a forecast for all 12 categories together.
 
-This report brings those signals together into a practical list of **50 high-potential industries**—each with a representative technology, market size where available, growth outlook, and key commercial or policy notes.
+This report brings those signals together into a provisional screening list of **50 industries**—with representative technologies, indicative figures where available, and commercial or policy notes.
 
-**Disclaimer:** Figures are synthesized from public research reports and official releases. Definitions and statistical scopes differ across sources. This is for reference only and does not constitute investment advice.
+**Evidence status:** The 50 rows and downloadable CSV do not identify a source, publication date, geography, definition, or unit for each estimate. The figures have not been reverified against individual primary sources. The sources listed below explain the selection themes but do **not** substantiate each market size or CAGR. Do not use these figures as comparable measurements, a forecast, or investment evidence. See the [methodology](/about/#research-methodology) for the intended verification standard.
 
 ---
 
@@ -106,24 +106,18 @@ The 50 entries below expand the McKinsey arenas and Chinese pillars into a broad
 
 ---
 
-## <span style="font-size: 1.5em; color: #1e3a8a;">1. What the List Highlights</span>
+## <span style="font-size: 1.5em; color: #1e3a8a;">4. What the List Highlights</span>
 
-1. **AI foundation cluster** (AI software, semiconductors, cloud) is currently the strongest growth engine and has already added trillions in market capitalization since 2022.  
-2. **China’s policy focus** on the six emerging pillars and six future industries provides clear directional signals for the next decade.  
-3. **Electrification and hard tech** (EVs, batteries, robotics, space, future air mobility) are moving from early S-curves into scaled deployment.  
+1. **AI foundation cluster** (AI software, semiconductors, cloud) is a useful set of related research questions about demand, infrastructure, and value capture.
+2. **China's policy priorities** identify areas for further investigation; the list does not establish their investment outcomes.
+3. **Electrification and hard tech** (EVs, batteries, robotics, space, future air mobility) require separate market definitions before their estimates can be compared.
 4. Market sizes and CAGRs vary significantly across sources due to differing definitions; always cross-check the latest primary reports.
 
-## <span style="font-size: 1.5em; color: #1e3a8a;">2. Primary Sources</span>
+## <span style="font-size: 1.5em; color: #1e3a8a;">5. Background Sources (Not Row-Level Citations)</span>
 
-- McKinsey Global Institute – *The Next Big Arenas of Competition*  
-  https://www.mckinsey.com/mgi/our-research/the-next-big-arenas-of-competition  
-- China’s National Development and Reform Commission (NDRC) statements on six emerging pillars + six future industries (2026 NPC economic press conference coverage)  
-- IEA Global EV Outlook  
-- Bank of America semiconductor TAM forecasts  
-- SEMI / TSMC semiconductor outlook  
-- OECD – *The Space Economy at a Glance*  
-- Morgan Stanley / Space Foundation space economy estimates  
-- GlobalData / ABI Research robotics market reports  
-- MarketsandMarkets, Statista, Gartner AI market & spending forecasts  
+- [McKinsey Global Institute, *Growth industries and the next big arenas of competition* (2024)](https://www.mckinsey.com/mgi/our-research/the-next-big-arenas-of-competition): future-arena framework and collective scenario.
+- [NDRC, economic press conference (March 2026, Chinese)](https://www.ndrc.gov.cn/fzggw/wld/zsj/zyhd/202603/t20260306_1404063.html): names of the six emerging pillars and six future industries; aggregate output scenario for the pillars.
+- [IEA, *Global EV Outlook 2025*](https://www.iea.org/reports/global-ev-outlook-2025): EV adoption context; not a citation for the EV market-size row.
+- [OECD, *The Space Economy in Figures* (2023)](https://www.oecd.org/en/publications/the-space-economy-in-figures_fa5494aa-en.html): definitions and measurement context; not a citation for the space market-size row.
 
-*Data synthesized September 2026. Always verify with the latest official and institutional releases before making decisions.*
+*List file updated September 2026; the date does not establish when the figures were sourced or checked. Verify every relevant estimate with its original report before use.*

@@ -35,7 +35,7 @@ Sources are generally considered in this order:
 3. Reputable research firms, major financial institutions, and well-sourced journalism.
 4. Secondary summaries used only as discovery aids or context.
 
-Important claims should be traceable to the source list in the relevant report. Market estimates are cross-checked where possible, and ranges are preferred when sources disagree.
+Published research should link material claims to specific sources, including the source's date, geography, market definition, and unit. A source list alone does not establish which source supports a particular estimate. The current 50-industry screening dataset does not yet meet this standard: its market sizes and growth figures have no row-level citations and should be treated as unverified research leads, not validated observations or forecasts.
 
 ### 3. Separate evidence from interpretation
 
@@ -43,11 +43,11 @@ Reported figures, editorial classifications, scenarios, and DEX interpretations 
 
 ### 4. State uncertainty and limitations
 
-Forecasts are sensitive to definitions, base years, exchange rates, regulation, and adoption assumptions. Missing data is shown as missing rather than silently replaced. Reports include a publication or update date so readers can judge how current the evidence is.
+Forecasts are sensitive to definitions, base years, exchange rates, regulation, and adoption assumptions. Missing data is shown as missing rather than silently replaced. A dataset update date records when the file was edited, not when each underlying source was published or checked.
 
 ### 5. Review, update, and correct
 
-Before publication, key numbers and links are checked against the cited material. Substantive corrections or new data may be reflected in the report's last-updated date. If you find an error, please send the exact page, claim, and supporting source to **dex222444@gmail.com**.
+As reports are revised, key numbers and links should be checked against cited material; where that review has not happened, the limitation is stated alongside the data. Substantive corrections or new data may be reflected in the report's last-updated date. If you find an error, please send the exact page, claim, and supporting source to **dex222444@gmail.com**.
 
 ## Use of AI
 

@@ -1,13 +1,13 @@
 ---
 title: "Industries"
-description: "Explore 50 high-potential industries, inspect the underlying data, and run transparent CAGR scenarios."
+description: "Explore a provisional 50-industry screening list, inspect its fields and limitations, and test CAGR scenarios."
 date: 2026-09-21
 slug: "industries"
 ---
 
 <link rel="stylesheet" href="/css/industries.css">
 
-Explore the 50-industry dataset, compare reported ranges, and test transparent CAGR scenarios. Categories and maturity labels are editorial classifications; source definitions and coverage vary. This tool is **not investment advice**.
+Explore a provisional 50-industry screening list and test CAGR scenarios. Its market and growth estimates have **no row-level citations or verified definitions**; they are research leads, not comparable, validated measurements. Categories and maturity labels are editorial classifications.
 
 {{< breakdown-links >}}
 
@@ -17,7 +17,7 @@ Explore the 50-industry dataset, compare reported ranges, and test transparent C
 <a class="ix-btn" href="/post/50-high-potential-industries/">Read the report</a>
 <a class="ix-btn" href="/about/#research-methodology">Research methodology</a>
 </div>
-<p class="ix-note">Updated September 2026. Market sizes are in USD billions where available. CAGR ranges are approximate and the filter uses their midpoint.</p>
+<p class="ix-note">File updated September 2026 (not a source-verification date). Numeric market sizes are in USD billions where available. The CAGR filter uses a range midpoint only when both bounds exist; a one-sided value is treated as a lower bound.</p>
 <p id="ix-coverage" class="ix-coverage" aria-live="polite">Checking data coverage…</p>
 <div class="ix-filters">
 <label>Search
@@ -42,7 +42,7 @@ Explore the 50-industry dataset, compare reported ranges, and test transparent C
 <option>Mature</option>
 </select>
 </label>
-<label>Minimum CAGR midpoint
+<label>Minimum indicative CAGR
 <select id="ix-cagr">
 <option value="">Any</option>
 <option value="10">10%+</option>
@@ -53,9 +53,9 @@ Explore the 50-industry dataset, compare reported ranges, and test transparent C
 </div>
 <p id="ix-count" class="ix-count" aria-live="polite">Loading…</p>
 <div class="ix-layout">
-<div class="ix-table-wrap">
+<div class="ix-table-wrap" role="region" aria-label="Industry data table" tabindex="0">
 <table class="ix-table">
-<caption class="ix-sr-only">High-potential industries. Activate a row to load its available numeric data into the calculator.</caption>
+<caption class="ix-sr-only">Provisional industry screening list. Use an industry's Select button to inspect its data and prepare a scenario.</caption>
 <thead>
 <tr>
 <th data-sort="rank" aria-sort="ascending"><button type="button" class="ix-sort" data-sort="rank">#</button></th>
@@ -71,7 +71,7 @@ Explore the 50-industry dataset, compare reported ranges, and test transparent C
 </div>
 <aside class="ix-calc">
 <h3>Scenario calculator</h3>
-<p class="ix-note">Click or press Enter on a row to load its numeric midpoint. You can also enter your own assumptions.</p>
+<p class="ix-note">Select an industry to inspect its fields and load indicative numbers, or enter your own assumptions.</p>
 <label for="ix-pv">Starting value (USD billion)</label>
 <input id="ix-pv" type="number" min="0" step="0.1" inputmode="decimal" placeholder="e.g. 310">
 <label for="ix-rate">Annual growth rate (%)</label>
@@ -82,6 +82,7 @@ Explore the 50-industry dataset, compare reported ranges, and test transparent C
 <ul id="ix-year-list" class="ix-years"></ul>
 <p id="ix-warn" class="ix-warn" role="status"></p>
 <p id="ix-loaded" class="ix-note"></p>
+<div id="ix-details" class="ix-details" aria-live="polite">Select an industry to inspect its scope and source limitations.</div>
 <p class="ix-disclaimer">The result is a mathematical scenario, not a market forecast.</p>
 </aside>
 </div>
