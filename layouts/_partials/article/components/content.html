@@ -1,0 +1,16 @@
+{{- if eq .Section "post" -}}
+<div class="reading-progress" data-reading-progress aria-hidden="true"></div>
+<nav class="research-actions" aria-label="Article tools">
+    <button class="research-action" type="button" data-print-article>Print / Save PDF</button>
+    {{- with .Params.dataDownload }}
+    <a class="research-action" href="{{ . | relURL }}" download>Download data (CSV)</a>
+    {{- end }}
+    <a class="research-action" href="{{ "/about/" | relLangURL }}#research-methodology">Research methodology</a>
+</nav>
+{{- end }}
+
+<section class="article-content">
+    {{/* Wrap Markdown tables so they remain usable on narrow screens. */}}
+    {{ $wrappedTable := printf "<div class=\"table-wrapper\">${1}</div>" }}
+    {{ .Content | replaceRE "(<table>(?:.|\n)+?</table>)" $wrappedTable | safeHTML }}
+</section>

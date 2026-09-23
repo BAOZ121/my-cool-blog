@@ -1,48 +1,72 @@
 ---
-title: "About"
+title: "About & Methodology"
+description: "What DEX publishes, how the research is produced, and how to suggest corrections or collaborations."
 date: 2026-08-12
+lastmod: 2026-09-21
 slug: "about"
 ---
 
-## About Me
+## About DEX
 
-Hi everyone, I am DEX, a business observer, researcher, and content creator dedicated to breaking down the complex business world into clear and accessible insights.
+DEX is an independent, student-led business research and publishing project. I study business and accounting and use this site to turn long-form research into practical, readable industry intelligence.
 
-I have been fascinated by the business world since childhood. Watching leaders in suits making decision after decision that reshapes the world always filled me with admiration. To me, truly understanding an industry is remarkably complex; even with the internet and AI tools, grasping such intricate business structures in their entirety is no small feat. These systems represent thousands of years of accumulated human wisdom and cultural heritage. My goal is to make the business world readable and visible to everyone.
+The goal is not to predict which company or asset will win. It is to build a durable body of work that explains how industries developed, how their value chains and business models work, where credible growth signals exist, and which risks could change the outcome.
 
-## About the Website
+## What This Site Publishes
 
-I built this website over a few days, and I handle all content updates myself, including my YouTube channel (with a bit of help from AI tools along the way). This site is my own space where I publish my industry research, covering history, market structures, and current industry challenges.
+- **Industry reports** covering history, market structure, value chains, economics, competition, regulation, and risk.
+- **Structured datasets and tools** that make assumptions visible and let readers inspect or test the numbers.
+- **Video explainers** that translate the core findings into a faster format.
 
-That is the positioning for now. Funnily enough, as of today (August 12, 2026), my first video has only 8 views, and my second has only 4. There is quite a gap between ideals and reality, haha. Enough said—I will keep working at my own pace. Everything is just beginning...
+Each format supports the same research system: one research project can become an article, a dataset, a visual explanation, and a video without changing the underlying evidence.
 
----
+## Research Methodology
 
-## Contact
+### 1. Define the question and scope
 
-You can reach me through the following channels:
+Every report begins with a specific question, a geographic and time scope, and a set of definitions. When different sources use different market definitions, the report treats them as different estimates rather than combining them into false precision.
 
-- **Email:** dex222444@gmail.com
-- **Email (Proton):** qizhangdong325@proton.me
-- **YouTube:** https://www.youtube.com/@ZeRuiDong
-- **GitHub:** https://github.com/BAOZ121
-- **Website:** https://thedexs.com
+### 2. Prioritize stronger sources
 
-Feel free to write if you have questions, feedback, or collaboration ideas.
+Sources are generally considered in this order:
 
----
+1. Government agencies, regulators, statistical offices, and company filings.
+2. International institutions, peer-reviewed research, and established industry bodies.
+3. Reputable research firms, major financial institutions, and well-sourced journalism.
+4. Secondary summaries used only as discovery aids or context.
 
-## Support the Author
+Published research should link material claims to specific sources, including the source's date, geography, market definition, and unit. A source list alone does not establish which source supports a particular estimate. The current 50-industry screening dataset does not yet meet this standard: its market sizes and growth figures have no row-level citations and should be treated as unverified research leads, not validated observations or forecasts.
 
-If you enjoy the industry research and content here, here are simple ways to support:
+### 3. Separate evidence from interpretation
 
-**Star the repository**  
-https://github.com/BAOZ121/my-cool-blog
+Reported figures, editorial classifications, scenarios, and DEX interpretations are not the same thing. Tools on this site label calculated outputs as scenarios. Categories and maturity labels are editorial judgments intended to make comparison easier; they are not official classifications.
 
-**GitHub Sponsors**  
-https://github.com/sponsors/BAOZ121
+### 4. State uncertainty and limitations
 
-**Subscribe on YouTube**  
-https://www.youtube.com/@ZeRuiDong
+Forecasts are sensitive to definitions, base years, exchange rates, regulation, and adoption assumptions. Missing data is shown as missing rather than silently replaced. A dataset update date records when the file was edited, not when each underlying source was published or checked.
 
-Thank you — every bit of support means a lot and helps keep the research going.
+### 5. Review, update, and correct
+
+As reports are revised, key numbers and links should be checked against cited material; where that review has not happened, the limitation is stated alongside the data. Substantive corrections or new data may be reflected in the report's last-updated date. If you find an error, please send the exact page, claim, and supporting source to **dex222444@gmail.com**.
+
+## Use of AI
+
+AI tools may assist with discovery, outlining, translation, formatting, code, and production. They are not treated as evidence. Factual claims should be checked against the cited public sources, and final editorial responsibility remains with DEX.
+
+## Independence and Disclaimer
+
+Unless a page clearly states otherwise, the content is independently produced and no company paid for inclusion. Future sponsored or commissioned work will be labeled. Nothing on this site is investment, legal, accounting, or medical advice.
+
+## Contact and Collaboration
+
+Corrections, source suggestions, dataset feedback, sponsorship inquiries, and research collaborations are welcome.
+
+- **Email:** [dex222444@gmail.com](mailto:dex222444@gmail.com)
+- **Proton Mail:** [qizhangdong325@proton.me](mailto:qizhangdong325@proton.me)
+- **YouTube:** [@ZeRuiDong](https://www.youtube.com/@ZeRuiDong)
+- **GitHub:** [BAOZ121](https://github.com/BAOZ121)
+- **Website:** [thedexs.com](https://thedexs.com)
+
+## Support the Research
+
+If this work is useful, you can support it by sharing a report, subscribing on YouTube, starring the [website repository](https://github.com/BAOZ121/my-cool-blog), or using [GitHub Sponsors](https://github.com/sponsors/BAOZ121). These actions help fund more research and better datasets.
