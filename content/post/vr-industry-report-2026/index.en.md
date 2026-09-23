@@ -96,3 +96,14 @@ That's the simplified map for this video. It is a starting point for checking hi
 - [Luxshare Precision investor relations: 2025 annual report and Q1 2026 report](https://www.luxshare-ict.com/investors/financial-reports.html) — company-wide financial filings supplied for manufacturing context; neither independently measures the entire VR market.
 
 The supplied China Mobile Research Institute *VR/AR Product Development Status and Trend* report dates from **November 2022**. An original publisher-hosted URL was not verified, so it is recorded here bibliographically rather than linked to an unlicensed copy or used to justify a 2026 market-share claim. The Goertek and Luxshare reports likewise cannot substitute for a defined current shipment survey.
+
+## Supplied original documents
+
+The following documents can be opened from their publishers. They are not copied to this website while redistribution rights remain unverified:
+
+- [Sutherland, *The Ultimate Display* (1965): University of Utah PDF](https://www.eng.utah.edu/~cs6360/Readings/UltimateDisplay.pdf).
+- [Goertek, 2024 Annual Report: publisher-hosted PDF](https://www.goertek.com/en/Upload/202505/20250519154009_5706.pdf).
+- [Luxshare Precision, 2025 Annual Report (English): PDF on the company's disclosure platform](https://static.cninfo.com.cn/finalpage/2026-06-17/1225373512.PDF).
+- [Luxshare Precision, 2026 Q1 Report (Chinese): PDF on the company's disclosure platform](https://static.cninfo.com.cn/finalpage/2026-04-29/1225249986.PDF).
+
+The supplied 2022 China Mobile Research Institute VR/AR report is not offered here as a download because its publisher-hosted original and redistribution terms have not been confirmed.

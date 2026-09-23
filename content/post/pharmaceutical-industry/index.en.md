@@ -188,3 +188,37 @@ Of course, high returns often come with high risks. This complex competitive lan
 - [Cencora: AmerisourceBergen becomes Cencora](https://www.cencora.com/newsroom/amerisourcebergen-becomes-cencora) — verifies the distributor's present name.
 
 The accompanying *Pharmaceutical Manufacturing* working note is a reading list, not an independently verified market dataset. Its links have been matched to the relevant claims above; unverified figures have been removed rather than attributed to the note.
+
+## View or download the supplied original
+
+{{< research-pdf src="/research-files/pharmaceutical/STATUTE-76-Pg780.pdf" title="Kefauver–Harris Drug Amendments (1962)" publisher="U.S. Government Publishing Office, 17 pages" official="https://www.govinfo.gov/content/pkg/STATUTE-76/pdf/STATUTE-76-Pg780.pdf" >}}
+
+### Links contained in the Pharmaceutical Manufacturing research note
+
+These are the note's reading leads, not independent verification of every claim or an endorsement of paid databases. Two links that pointed through Google searches are shown as direct destinations; duplicate links appear once.
+
+Regulation and trials:
+
+- [Drugs@FDA](https://www.accessdata.fda.gov/scripts/cder/daf/) — direct destination of the note's search link.
+- [China's CDE](https://www.cde.org.cn/).
+- [European Medicines Agency](https://www.ema.europa.eu/).
+- [ClinicalTrials.gov](https://clinicaltrials.gov/).
+- [Chinese Clinical Trial Registry](https://www.chictr.org.cn/).
+- [EU Clinical Trials Register](https://www.clinicaltrialsregister.eu/).
+
+Scientific and commercial research:
+
+- [DrugBank](https://go.drugbank.com/).
+- [IUPHAR/BPS Guide to Pharmacology](https://www.guidetopharmacology.org/).
+- [PubChem](https://pubchem.ncbi.nlm.nih.gov/).
+- [DXY Insight](https://db.dxy.cn/).
+- [FiercePharma](https://www.fiercepharma.com/).
+- [FierceBiotech](https://www.fiercebiotech.com/).
+- [Endpoints News](https://endpts.com/).
+- [BioWorld](https://www.bioworld.com/) — direct destination of the note's search link.
+
+Historical reading:
+
+- [NLM biography of Frances Oldham Kelsey](https://www.nlm.nih.gov/exhibition/changing-the-face-of-medicine/physicians/biography_frances_kelsey.html).
+- [Bayer's historical article](https://www.bayer.com/en/history/cl0n3-of-history) and [Bayer homepage](https://www.bayer.com).
+- [Pfizer company history](https://www.pfizer.com/about/history).

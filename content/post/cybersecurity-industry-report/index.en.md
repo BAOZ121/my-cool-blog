@@ -161,3 +161,55 @@ That concludes my industry report. If you found it interesting, please like the 
 - [CISA: Apache Log4j vulnerability advisory](https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-356a) — primary security guidance for the software-supply-chain example.
 
 The accompanying *Network Security* document is a research reading list, not primary verification for the anonymous casino account or the removed market figures. The incident specifics remain unverified in public primary records.
+
+## View or download the supplied original
+
+{{< research-pdf src="/research-files/cybersecurity/NIST.SP.800-207.pdf" title="NIST SP 800-207: Zero Trust Architecture (2020)" publisher="National Institute of Standards and Technology, 59 pages" official="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf" >}}
+
+The [Menlo Ventures Cybersecurity Market Map PDF](https://menlovc.com/wp-content/uploads/2021/01/cybersecurity_market_map-091922.pdf) is available directly from its publisher; it is not hosted here because permission to redistribute that copyrighted PDF has not been established.
+
+### Links contained in the Network Security research note
+
+These are the supplied note's research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.
+
+Incident and industry background:
+
+- [The Hacker News: aquarium thermometer incident](https://thehackernews.com/2018/04/iot-hacking-thermometer.html).
+- [Entrepreneur: casino thermometer account](https://www.entrepreneur.com/business-news/a-casino-gets-hacked-through-a-fish-tank-thermometer/368943).
+- [Privacy International: aquarium thermometer account](https://privacyinternational.org/examples/2559/aquarium-thermometer-enables-casino-hack).
+- [Cyber Magazine: history of cybersecurity](https://cybermagazine.com/cyber-security/history-cybersecurity).
+- [History of Information: first computer virus](https://www.historyofinformation.com/detail.php?entryid=2860).
+- [Wikipedia: Creeper and Reaper](https://en.wikipedia.org/wiki/Creeper_and_Reaper).
+- [KMC Controls: Creeper and Reaper](https://www.kmccontrols.com/blog/security-from-creeper-to-reaper/).
+- [Atari Magazine: virus explainer](https://www.atarimagazines.com/startv4n10/virus.php).
+- [Atari Mania: ST Virus Killer](https://www.atarimania.com/utility-atari-st-st-virus-killer_45204.html).
+- [Carifred: UVK](https://www.carifred.com/uvk/).
+- [Wikipedia: ESET NOD32](https://en.wikipedia.org/wiki/ESET_NOD32).
+- [Internet Archive: Malware Museum](https://archive.org/details/malwaremuseum).
+- [Wikipedia: G Data CyberDefense](https://en.wikipedia.org/wiki/G_Data_CyberDefense).
+- [Wikipedia: security-hacking incidents](https://en.wikipedia.org/wiki/List_of_security_hacking_incidents).
+- [Purdue TAP: hackers of the 2000s](https://cyber.tap.purdue.edu/blog/articles/hackers-of-the-2000s/).
+- [Cofense: history of phishing](https://cofense.com/knowledge-center/history-of-phishing/).
+- [Wikipedia: computer virus and worm timeline](https://en.wikipedia.org/wiki/Timeline_of_computer_viruses_and_worms).
+- [CISA: Log4j guidance](https://www.cisa.gov/news-events/news/apache-log4j-vulnerability-guidance).
+- [Wikipedia: Sony Pictures hack](https://en.wikipedia.org/wiki/2014_Sony_Pictures_hack).
+- [Wikipedia: WannaCry attack](https://en.wikipedia.org/wiki/WannaCry_ransomware_attack).
+
+Market and technical references:
+
+- [Mordor Intelligence: cybersecurity market](https://www.mordorintelligence.com/industry-reports/cyber-security-market).
+- [Menlo Ventures: market map PDF](https://menlovc.com/wp-content/uploads/2021/01/cybersecurity_market_map-091922.pdf).
+- [Cloudflare: next-generation firewalls](https://www.cloudflare.com/learning/security/what-is-next-generation-firewall-ngfw/).
+- [Cybersecurity Ventures](https://cybersecurityventures.com/).
+- [U.S. Securities and Exchange Commission](https://www.sec.gov/).
+- [IBM: a decade of global cyberattacks](https://www.ibm.com/think/insights/decade-global-cyberattacks-where-they-left-us).
+- [CSO: Target breach timeline search](https://www.csoonline.com/search/?q=Target+data+breach+2013+timeline).
+- [NIST SP 800-207 PDF](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf).
+
+Video references from the note (third-party material, not licensed for reuse here):
+
+- [Video 1](https://youtu.be/b_Cbfh0_9Ws?si=Nnc074hC6b-Ai_hp).
+- [Video 2](https://youtu.be/O4fpqXjkdQM?si=cvrBatlQCwLvKdbC).
+- [Video 3](https://youtu.be/yn6CPQ9RioA?si=1oHfRgTD8KWDVt9P).
+- [Video 4](https://youtu.be/tpBXSCMJXq4?si=omqdLRt6QzxRT2km).
+- [Video 5](https://youtu.be/PWVN3Rq4gzw?si=pIolrzQdIUM3Dgcb).
