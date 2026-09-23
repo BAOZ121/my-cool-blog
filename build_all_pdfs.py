@@ -45,13 +45,15 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     }
     .header h1 { margin: 0 0 8px; font-size: 18pt; line-height: 1.3; color: #ffffff; }
     .header .meta { font-size: 9pt; color: #bfdbfe; }
-    .content { background: #ffffff; padding: 22px; border-radius: 6px; border: 1px solid #e2e8f0; }
+    .content { background: #ffffff; padding: 16px; border-radius: 6px; border: 1px solid #e2e8f0; }
     h1, h2, h3 { color: #0f172a; page-break-after: avoid; }
     h2 { border-bottom: 2px solid #cbd5e1; padding-bottom: 4px; margin-top: 20px; }
     blockquote { border-left: 4px solid #2563eb; margin: 0; padding-left: 12px; color: #475569; }
     img { max-width: 100%; height: auto; }
     table { width: 100%; border-collapse: collapse; margin: 15px 0; }
-    th, td { border: 1px solid #cbd5e1; padding: 8px 10px; font-size: 8pt; text-align: left; }
+    thead { display: table-header-group; }
+    tr { break-inside: avoid; page-break-inside: avoid; }
+    th, td { border: 1px solid #cbd5e1; padding: 6px 8px; font-size: 8pt; text-align: left; }
     th { background: #0f172a; color: white; }
 </style>
 </head>

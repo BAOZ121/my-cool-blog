@@ -18,6 +18,7 @@
     yearList: root.querySelector("#ix-year-list"),
     warn: root.querySelector("#ix-warn"),
     loaded: root.querySelector("#ix-loaded"),
+    details: root.querySelector("#ix-details"),
   };
 
   let items = [];
@@ -38,7 +39,11 @@
     return (Number(lo) + Number(hi)) / 2;
   };
 
-  const cagrValue = (row) => midpoint(row.cagr_low, row.cagr_high);
+  const cagrValue = (row) => {
+    if (row.cagr_low == null || row.cagr_high == null) return null;
+    return midpoint(row.cagr_low, row.cagr_high);
+  };
+  const cagrFilterValue = (row) => cagrValue(row) ?? (row.cagr_low == null ? null : Number(row.cagr_low));
   const marketValue = (row) => midpoint(row.market_low, row.market_high);
 
   function escapeHtml(value) {
@@ -60,8 +65,8 @@
   }
 
   function compareRows(a, b) {
-    let av = sortKey === "cagr" ? cagrValue(a) : a[sortKey];
-    let bv = sortKey === "cagr" ? cagrValue(b) : b[sortKey];
+    let av = sortKey === "cagr" ? cagrFilterValue(a) : a[sortKey];
+    let bv = sortKey === "cagr" ? cagrFilterValue(b) : b[sortKey];
 
     if (av == null && bv == null) return 0;
     if (av == null) return 1;
@@ -81,7 +86,7 @@
         if (cat && row.category !== cat) return false;
         if (mat && row.maturity !== mat) return false;
         if (cagrMin != null) {
-          const cagr = cagrValue(row);
+          const cagr = cagrFilterValue(row);
           if (cagr == null || cagr < cagrMin) return false;
         }
         if (q) {
@@ -109,26 +114,21 @@
       .map((row) => {
         const isSelected = selected && selected.rank === row.rank;
         const calcReady = marketValue(row) != null && cagrValue(row) != null;
-        const action = calcReady
-          ? "Load available numeric midpoints into the calculator"
-          : "View this industry; numeric calculator inputs are incomplete";
+        const action = calcReady ? "Inspect and load indicative values" : "Inspect; calculator inputs are incomplete";
 
         return (
           '<tr data-rank="' +
           row.rank +
           '" class="' +
           (isSelected ? "is-selected" : "") +
-          '" tabindex="0" role="button" aria-selected="' +
-          (isSelected ? "true" : "false") +
-          '" aria-label="' +
-          escapeHtml(row.name + ". " + action) +
           '">' +
           "<td>" +
           row.rank +
           "</td>" +
-          "<td><strong>" +
-          escapeHtml(row.name) +
-          "</strong></td>" +
+          '<td><button type="button" class="ix-select" data-rank="' + row.rank +
+          '" aria-label="' + escapeHtml(action + ": " + row.name) +
+          '" aria-pressed="' + (isSelected ? "true" : "false") + '">' +
+          escapeHtml(row.name) + "</button></td>" +
           "<td>" +
           escapeHtml(row.tech) +
           "</td>" +
@@ -159,14 +159,24 @@
     selected = items.find((item) => item.rank === rank) || null;
     applyFilters();
     if (!selected) return;
+    const selectedButton = Array.from(els.tbody.querySelectorAll(".ix-select"))
+      .find((button) => Number(button.dataset.rank) === rank);
+    if (selectedButton) selectedButton.focus({ preventScroll: true });
 
     const pv = marketValue(selected);
     const rate = cagrValue(selected);
     els.loaded.textContent = "Selected: " + selected.name;
+    els.details.innerHTML =
+      "<strong>" + escapeHtml(selected.name) + "</strong>" +
+      "<dl><dt>Category</dt><dd>" + escapeHtml(selected.category) +
+      "</dd><dt>Maturity</dt><dd>" + escapeHtml(selected.maturity) +
+      " (editorial)</dd><dt>Projected size</dt><dd>" + escapeHtml(selected.projected_label) +
+      "</dd><dt>Notes</dt><dd>" + escapeHtml(selected.notes) +
+      "</dd><dt>Scope and sources</dt><dd>No row-level source, geography, market definition, or source date recorded. Values are unverified screening estimates.</dd></dl>";
 
     if (pv == null || rate == null) {
       clearScenario(
-        "This row does not contain both a numeric market range and CAGR. Previous values were cleared; enter your own assumptions to run a scenario."
+        "This row lacks a usable market value or a two-sided CAGR range. Previous values were cleared; enter your own assumptions to run a scenario."
       );
       return;
     }
@@ -174,7 +184,7 @@
     els.warn.textContent = "";
     els.pv.value = String(Math.round(pv * 10) / 10);
     els.rate.value = String(Math.round(rate * 10) / 10);
-    els.loaded.textContent = "Loaded reported midpoints from " + selected.name + ".";
+    els.loaded.textContent = "Loaded indicative, unverified values for " + selected.name + ". Check definitions and sources before use.";
     calculate();
   }
 
@@ -243,15 +253,8 @@
       return;
     }
 
-    const row = event.target.closest("tbody tr[data-rank]");
-    if (row) selectRank(Number(row.getAttribute("data-rank")));
-  });
-
-  root.addEventListener("keydown", (event) => {
-    const row = event.target.closest("tbody tr[data-rank]");
-    if (!row || !["Enter", " "].includes(event.key)) return;
-    event.preventDefault();
-    selectRank(Number(row.getAttribute("data-rank")));
+    const button = event.target.closest(".ix-select[data-rank]");
+    if (button) selectRank(Number(button.getAttribute("data-rank")));
   });
 
   fetch(DATA_URL)
@@ -262,16 +265,16 @@
     .then((payload) => {
       if (!payload || !Array.isArray(payload.industries)) throw new Error("Invalid industry data");
       items = payload.industries;
-      const cagrCount = items.filter((item) => cagrValue(item) != null).length;
+      const cagrCount = items.filter((item) => cagrFilterValue(item) != null).length;
       const calculatorCount = items.filter(
         (item) => marketValue(item) != null && cagrValue(item) != null
       ).length;
       els.coverage.textContent =
-        "Data coverage: numeric CAGR for " +
+        "Data coverage: numeric CAGR or lower bound for " +
         cagrCount +
         "/" +
         items.length +
-        "; calculator-ready market and CAGR data for " +
+        "; rows with market and two-sided CAGR values for " +
         calculatorCount +
         "/" +
         items.length +

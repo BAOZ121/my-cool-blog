@@ -12,9 +12,12 @@ if (progress && article) {
 
     const updateProgress = () => {
         const articleTop = window.scrollY + article.getBoundingClientRect().top;
-        const readableDistance = Math.max(article.offsetHeight - window.innerHeight, 1);
+        const articleBottom = articleTop + article.offsetHeight;
+        const readableDistance = Math.max(articleBottom - window.innerHeight - articleTop, 0);
         const amountRead = window.scrollY - articleTop;
-        const ratio = Math.min(Math.max(amountRead / readableDistance, 0), 1);
+        const ratio = readableDistance === 0
+            ? (article.getBoundingClientRect().top < window.innerHeight ? 1 : 0)
+            : Math.min(Math.max(amountRead / readableDistance, 0), 1);
 
         progress.style.transform = `scaleX(${ratio})`;
         ticking = false;

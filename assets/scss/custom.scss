@@ -79,7 +79,7 @@
     .article-footer,
     .related-content,
     .comments,
-    body > footer {
+    .site-footer {
         display: none !important;
     }
 
@@ -107,8 +107,17 @@
 
     .article-content pre,
     .article-content blockquote,
-    .article-content table,
-    .article-content img {
+    .article-content img,
+    .article-content tr {
         break-inside: avoid;
+    }
+
+    .article-content thead {
+        display: table-header-group;
+    }
+
+    .article-content .table-wrapper,
+    .main-article {
+        overflow: visible !important;
     }
 }
