@@ -1,11 +1,11 @@
 pharmaceutical-industry:
   title: "Original files & source links"
-  intro: "The files below are the source materials used alongside this report. PDF copies are mirrored into this site at build time so readers can open or download them directly. DOCX research notes are hosted as original files, with their embedded URLs also listed below for browser access."
+  intro: "The PDF source below is mirrored into this site at build time so readers can open or download it directly. Links extracted from the uploaded DOCX research notes are also preserved here for browser access."
   files:
     - title: "Pharmaceutical Manufacturing research notes"
       original_name: "Pharmaceutical Manufacturing.docx"
       format: "DOCX"
-      local_path: "/third-party/pharmaceutical/Pharmaceutical-Manufacturing.docx"
+      source_note: "Source-link index extracted from the uploaded DOCX research notes."
       links:
         - "https://clinicaltrials.gov/"
         - "https://db.dxy.cn/"
@@ -33,7 +33,7 @@ pharmaceutical-industry:
 
 cybersecurity-industry-report:
   title: "Original files & source links"
-  intro: "The files below are the source materials used alongside this report. PDF copies are mirrored into this site at build time so readers can open or download them directly. The DOCX research notes are hosted as an original file, and its embedded URLs are listed below for browser access."
+  intro: "The PDF sources below are mirrored into this site at build time so readers can open or download them directly. Links extracted from the uploaded DOCX research notes are also preserved here for browser access."
   files:
     - title: "Cybersecurity Market Map"
       original_name: "cybersecurity_market_map-091922.pdf"
@@ -43,7 +43,7 @@ cybersecurity-industry-report:
     - title: "Network Security research notes"
       original_name: "Network Security.docx"
       format: "DOCX"
-      local_path: "/third-party/cybersecurity/Network-Security.docx"
+      source_note: "Source-link index extracted from the uploaded DOCX research notes."
       links:
         - "https://archive.org/details/malwaremuseum"
         - "https://cofense.com/knowledge-center/history-of-phishing/"
