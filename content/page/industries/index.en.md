@@ -9,6 +9,8 @@ slug: "industries"
 
 Explore a provisional 50-industry screening list and test CAGR scenarios. Its market and growth estimates have **no row-level citations or verified definitions**; they are research leads, not comparable, validated measurements. Categories and maturity labels are editorial classifications.
 
+{{< breakdown-links >}}
+
 <div id="industry-explorer" class="ix">
 <div class="ix-actions">
 <a class="ix-btn ix-btn-primary" href="/data/industries.csv" download>Download CSV</a>

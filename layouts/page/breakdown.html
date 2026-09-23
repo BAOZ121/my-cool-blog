@@ -1,0 +1,48 @@
+{{ define "body-class" }}article-page bd-page{{ end }}
+{{ define "head" }}{{ partial "breakdowns/assets.html" . }}{{ end }}
+{{ define "main" }}
+{{ $matches := where hugo.Data.breakdowns.profiles "id" .Params.industryId }}
+{{ if ne (len $matches) 1 }}{{ errorf "Expected exactly one breakdown profile for %s" .File.Path }}{{ end }}
+{{ $profile := index $matches 0 }}
+<article class="bd bd-detail" id="bd-main">
+  <nav class="bd-breadcrumb" aria-label="Breadcrumb"><a href="{{ "/industry-breakdowns/" | relURL }}">Industry breakdowns</a><span aria-hidden="true"> / </span><span aria-current="page">{{ $profile.name }}</span></nav>
+  <header class="bd-hero">
+    <p class="bd-eyebrow">{{ $profile.category }} / RESEARCH MAP {{ printf "%02d" (int $profile.dataset_rank) }}</p>
+    <h1>{{ $profile.name }}</h1>
+    <p class="bd-lead bd-question">{{ $profile.question }}</p>
+    <p class="bd-intro">{{ $profile.summary }}</p>
+    <div class="bd-hero-meta"><span>Starter framework</span><span>Reviewed <time datetime="{{ hugo.Data.breakdowns.reviewed }}">{{ hugo.Data.breakdowns.reviewed }}</time></span><a href="#sources">{{ len $profile.sources }} source{{ if ne (len $profile.sources) 1 }}s{{ end }}</a></div>
+  </header>
+
+  <nav class="bd-jump" aria-label="On this breakdown"><a href="#value-chain">Value chain</a><a href="#economics">Business model</a><a href="#watchlist">Signals & risks</a><a href="#metrics">Metrics</a><a href="#sources">Evidence & sources</a></nav>
+  <div class="bd-scope"><p><strong>Scope:</strong> {{ $profile.scope }}</p><p><strong>Geography:</strong> {{ $profile.geography }}</p></div>
+
+  <section class="bd-section" aria-labelledby="value-chain">
+    <div class="bd-section-heading"><div><p class="bd-kicker">01 / HOW IT WORKS</p><h2 id="value-chain">Follow the value chain</h2></div><button class="bd-button" type="button" data-expand-chain aria-expanded="false" aria-controls="bd-chain" hidden>Expand all stage details</button></div>
+    <p class="bd-muted">DEX editorial map. Read left to right (top to bottom on mobile); companies may span several stages. Expand a stage to inspect its economics.</p>
+    <ol class="bd-chain" id="bd-chain">
+    {{ range $i, $stage := $profile.chain }}
+      <li class="bd-stage">
+        <span class="bd-stage-number" aria-hidden="true">{{ printf "%02d" (add $i 1) }}</span>
+        <h3>{{ .title }}</h3><p class="bd-actors">{{ .actors }}</p><p>{{ .role }}</p>
+        <details data-chain-detail><summary>Revenue & bottleneck<span class="bd-sr-only"> — {{ .title }}</span></summary><dl><dt>Revenue models to investigate</dt><dd>{{ .revenue }}</dd><dt>Bottleneck to test</dt><dd>{{ .bottleneck }}</dd></dl></details>
+      </li>
+    {{ end }}
+    </ol>
+  </section>
+
+  <section class="bd-panel bd-economics" aria-labelledby="economics"><p class="bd-kicker">02 / FOLLOW THE MONEY · DEX INTERPRETATION</p><h2 id="economics">The business-model lens</h2><p>{{ $profile.economics }}</p></section>
+
+  <section class="bd-section" aria-labelledby="watchlist"><p class="bd-kicker">03 / TEST THE THESIS · RESEARCH QUESTIONS</p><h2 id="watchlist">Signals to investigate. Risks to challenge.</h2><div class="bd-two-columns"><div class="bd-panel"><h3>Demand & adoption questions</h3><ul>{{ range $profile.drivers }}<li>{{ . }}</li>{{ end }}</ul></div><div class="bd-panel bd-risk"><h3>What could weaken the thesis?</h3><ul>{{ range $profile.risks }}<li>{{ . }}</li>{{ end }}</ul></div></div></section>
+
+  <section class="bd-section" aria-labelledby="metrics"><p class="bd-kicker">04 / BUILD A WATCHLIST</p><h2 id="metrics">Metrics worth tracking</h2><p class="bd-muted">Suggested research metrics, not measured values. Collect primary data with a date, geography and definition before making comparisons.</p><dl class="bd-metrics">{{ range $profile.metrics }}<div><dt>{{ .name }}</dt><dd>{{ .meaning }}</dd></div>{{ end }}</dl></section>
+
+  <section class="bd-panel bd-evidence" aria-labelledby="sources"><p class="bd-kicker">05 / CHECK THE EVIDENCE</p><h2 id="sources">Evidence anchors & sources</h2><p class="bd-muted">These sources support the statements below. They do not validate every editorial hypothesis, imply endorsement, or refresh the explorer's market estimates.</p><ul class="bd-evidence-list">{{ range $profile.evidence }}<li>{{ .text }} <a href="#source-{{ .source }}">[{{ .source }}]</a></li>{{ end }}</ul><ol class="bd-sources">{{ range $profile.sources }}<li id="source-{{ .id }}"><span class="bd-tag">{{ .type }}</span><h3><a href="{{ .url }}">{{ .title }} <span aria-hidden="true">↗</span></a></h3><p class="bd-source-meta">{{ .publisher }} · {{ .published }} · Reviewed {{ hugo.Data.breakdowns.reviewed }}</p><p><strong>Supports:</strong> {{ .supports }}</p></li>{{ end }}</ol></section>
+
+  <section class="bd-panel bd-next" aria-labelledby="bd-next-title"><div><p class="bd-kicker">CONTINUE THE RESEARCH</p><h2 id="bd-next-title">Go from map to evidence.</h2><p>The 50-industry dataset is a separate screening resource with different coverage and source limitations. Related reports retain their own dates and scope.</p>{{ with $profile.related }}<ul>{{ range . }}<li><a href="{{ .url | relURL }}">{{ .title }}</a></li>{{ end }}</ul>{{ else }}<p class="bd-muted">No dedicated DEX report is linked for this industry yet.</p>{{ end }}</div><div class="bd-actions"><a class="bd-button bd-button-primary" href="{{ "/industries/" | relURL }}">Open the industry dataset</a>{{ partial "breakdowns/download.html" . }}<a class="bd-button" href="{{ "/about/" | relURL }}#research-methodology">Methodology & corrections</a></div></section>
+
+  <nav class="bd-siblings" aria-label="Other industry breakdowns"><h2>Explore another industry</h2><div>{{ range hugo.Data.breakdowns.profiles }}{{ if ne .id $profile.id }}<a href="{{ printf "/industry-breakdowns/%s/" .id | relURL }}">{{ .name }}</a>{{ end }}{{ end }}</div></nav>
+  <p class="bd-disclaimer">Educational research framework only. Not investment, legal or medical advice.</p>
+</article>
+{{ partialCached "footer/footer" . }}
+{{ end }}

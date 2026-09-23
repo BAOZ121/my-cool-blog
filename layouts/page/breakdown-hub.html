@@ -1,0 +1,50 @@
+{{ define "body-class" }}article-page bd-page{{ end }}
+{{ define "head" }}{{ partial "breakdowns/assets.html" . }}{{ end }}
+{{ define "main" }}
+{{ $profiles := hugo.Data.breakdowns.profiles }}
+{{ $dataset := os.ReadFile "static/data/industries.json" | transform.Unmarshal }}
+<article class="bd" id="bd-main">
+  <header class="bd-hero">
+    <p class="bd-eyebrow">DEX RESEARCH / INDUSTRY ATLAS</p>
+    <h1>Industry breakdowns</h1>
+    <p class="bd-lead">See the structure.<br>Ask better questions.</p>
+    <div class="bd-intro">{{ .Content }}</div>
+    <div class="bd-hero-meta"><span>{{ len $profiles }} research maps</span><span>Primary-source anchors</span><span>No black-box scores</span></div>
+  </header>
+
+  <section class="bd-panel bd-guide" aria-labelledby="bd-guide-title">
+    <div><p class="bd-kicker">HOW TO READ</p><h2 id="bd-guide-title">An industry, in three lenses.</h2></div>
+    <ol><li><strong>Follow the chain</strong><span>Who supplies whom?</span></li><li><strong>Trace the economics</strong><span>Who pays, and for what?</span></li><li><strong>Test the thesis</strong><span>Which signals and risks matter?</span></li></ol>
+  </section>
+
+  <section class="bd-directory" aria-labelledby="bd-directory-title" data-breakdown-directory>
+    <div class="bd-section-heading"><div><p class="bd-kicker">EXPLORE THE ATLAS</p><h2 id="bd-directory-title">Choose an industry</h2></div><a href="{{ "/industries/" | relURL }}">Open the 50-industry dataset <span aria-hidden="true">↗</span></a></div>
+    <p class="bd-muted">Starter coverage: {{ len $profiles }} of {{ len $dataset.industries }} dataset entries have a scoped breakdown. These are research frameworks, not complete sector reports or rankings.</p>
+    <form class="bd-filters" role="search" aria-label="Filter industry breakdowns" hidden>
+      <label for="bd-query">Search industries<input id="bd-query" type="search" name="q" placeholder="Try chips, storage or cybersecurity" autocomplete="off"></label>
+      <label for="bd-category">Category<select id="bd-category" name="category"><option value="">All categories</option>{{ range (slice "AI Foundation" "Energy" "Digitization" "Hard Tech" "Bio & Health") }}<option value="{{ . }}">{{ . }}</option>{{ end }}</select></label>
+      <button class="bd-button" type="reset">Clear filters</button>
+    </form>
+    <p class="bd-count" data-breakdown-count role="status" aria-live="polite">Showing {{ len $profiles }} of {{ len $profiles }} breakdowns</p>
+    <div class="bd-cards">
+    {{ range $profiles }}
+      <article class="bd-card" data-breakdown-card data-category="{{ .category }}" data-search="{{ printf "%s %s %s %s" .name .category .summary .keywords }}" aria-labelledby="card-{{ .id }}">
+        <div class="bd-card-top"><span class="bd-tag">{{ .category }}</span><span class="bd-index" aria-label="Dataset row {{ .dataset_rank }}">{{ printf "%02d" (int .dataset_rank) }}</span></div>
+        <h3 id="card-{{ .id }}"><a href="{{ printf "/industry-breakdowns/%s/" .id | relURL }}">{{ .name }}</a></h3>
+        <p>{{ .summary }}</p>
+        <ol class="bd-mini-chain" aria-label="Value-chain stages">{{ range .chain }}<li>{{ .title }}</li>{{ end }}</ol>
+        <div class="bd-card-bottom"><span>{{ len .sources }} source{{ if ne (len .sources) 1 }}s{{ end }} · 3 metrics</span><a href="{{ printf "/industry-breakdowns/%s/" .id | relURL }}" aria-label="Explore {{ .name }} breakdown">Explore breakdown <span aria-hidden="true">→</span></a></div>
+      </article>
+    {{ end }}
+    </div>
+    <div class="bd-panel bd-empty" data-breakdown-empty hidden><h3>No matching breakdowns yet</h3><p>Try another term or clear the filters. The broader dataset still covers 50 industries.</p><a href="{{ "/industries/" | relURL }}">Browse all industries</a></div>
+    <noscript><p class="bd-note">Search needs JavaScript. All industry links and complete breakdown pages remain available below and above.</p></noscript>
+  </section>
+
+  <aside class="bd-panel bd-method" aria-labelledby="bd-method-title">
+    <div><p class="bd-kicker">EVIDENCE, NOT CERTAINTY</p><h2 id="bd-method-title">A map is a starting point.</h2><p>Value chains, revenue models, risks and suggested metrics are DEX editorial frameworks. Explicit evidence anchors link to the source that supports them, with dates and scope. Source review does not revalidate the separate market-size dataset.</p><p class="bd-muted">No live market feed, investment ranking or company recommendation. Reviewed {{ hugo.Data.breakdowns.reviewed }}.</p></div>
+    <div class="bd-actions"><a class="bd-button bd-button-primary" href="{{ "/about/" | relURL }}#research-methodology">Research methodology</a>{{ partial "breakdowns/download.html" . }}</div>
+  </aside>
+</article>
+{{ partialCached "footer/footer" . }}
+{{ end }}
