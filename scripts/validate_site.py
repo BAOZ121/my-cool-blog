@@ -80,6 +80,17 @@ def main() -> None:
     assert industry_page.ranks == list(range(1, 51)), "Static industry rows are missing or out of order"
     for select, field in (("ix-category", "category"), ("ix-maturity", "maturity")):
         assert set(industry_page.options[select]) == {"", *(item[field] for item in items)}, select
+    search_index = json.loads((BUILD / "search/index.json").read_text(encoding="utf-8"))
+    indexed_urls = {entry["permalink"] for entry in search_index}
+    assert all(
+        f"/industry-breakdowns/{profile['id']}/" in indexed_urls
+        for profile in json.loads((ROOT / "data/breakdowns.json").read_text(encoding="utf-8"))["profiles"]
+    ), "Industry maps must be searchable"
+    assert "/industries/" in indexed_urls and "/post/my-first-post/" not in indexed_urls
+    assert "See the structure. Check the evidence." in (BUILD / "index.html").read_text(encoding="utf-8")
+    for slug in ("pharmaceutical-industry", "cybersecurity-industry-report", "vr-industry-report-2026"):
+        article = (BUILD / "post" / slug / "index.html").read_text(encoding="utf-8")
+        assert "Source notes and primary materials" in article, f"Missing article bibliography: {slug}"
     checked = 0
     errors = []
     for page in pages:

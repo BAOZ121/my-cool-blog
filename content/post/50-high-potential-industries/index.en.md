@@ -2,11 +2,12 @@
 title: "50 High-Potential Industries (2025–2040): Technologies, Markets, and Growth"
 description: "A provisional 50-industry screening list inspired by global arenas and China policy priorities. Numeric estimates await row-level source verification."
 date: 2026-09-19
-lastmod: 2026-09-21
+lastmod: 2026-09-23
 image: "cover.jpg"
 dataDownload: "/data/industries.csv"
 categories:
   - "Business Research"
+  - "Emerging Industries"
 draft: false
 ---
 
@@ -20,7 +21,7 @@ At the same time, [China's NDRC described six emerging pillar industries and six
 
 This report brings those signals together into a provisional screening list of **50 industries**—with representative technologies, indicative figures where available, and commercial or policy notes.
 
-**Evidence status:** The 50 rows and downloadable CSV do not identify a source, publication date, geography, definition, or unit for each estimate. The figures have not been reverified against individual primary sources. The sources listed below explain the selection themes but do **not** substantiate each market size or CAGR. Do not use these figures as comparable measurements, a forecast, or investment evidence. See the [methodology](/about/#research-methodology) for the intended verification standard.
+**Evidence status:** The 50 rows and downloadable CSV now contain empty, per-row fields for numeric source URL, source date, geography, and market definition. None of the figures has been reverified against an individual primary source; an empty field means **unverified**, not zero or not applicable. Selected context links help explain an industry but do **not** substantiate its market size or CAGR. Do not use these figures as comparable measurements, a forecast, or investment evidence. See the [methodology](/about/#research-methodology) for the intended verification standard.
 
 ---
 
@@ -119,5 +120,7 @@ The 50 entries below expand the McKinsey arenas and Chinese pillars into a broad
 - [NDRC, economic press conference (March 2026, Chinese)](https://www.ndrc.gov.cn/fzggw/wld/zsj/zyhd/202603/t20260306_1404063.html): names of the six emerging pillars and six future industries; aggregate output scenario for the pillars.
 - [IEA, *Global EV Outlook 2025*](https://www.iea.org/reports/global-ev-outlook-2025): EV adoption context; not a citation for the EV market-size row.
 - [OECD, *The Space Economy in Figures* (2023)](https://www.oecd.org/en/publications/the-space-economy-in-figures_fa5494aa-en.html): definitions and measurement context; not a citation for the space market-size row.
+- [NIST SP 800-207, *Zero Trust Architecture* (2020)](https://csrc.nist.gov/pubs/sp/800/207/final): provided primary context for the cybersecurity category; not a citation for row 8's market-size or CAGR.
+- [FDA, Frances Oldham Kelsey and thalidomide](https://www.fda.gov/about-fda/fda-history-exhibits/frances-oldham-kelsey-medical-reviewer-famous-averting-public-health-tragedy): provided primary context for pharmaceutical regulation; not a citation for row 21's growth range.
 
 *List file updated September 2026; the date does not establish when the figures were sourced or checked. Verify every relevant estimate with its original report before use.*

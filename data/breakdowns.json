@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed": "2026-09-22",
+  "reviewed": "2026-09-23",
   "profiles": [
     {
       "id": "ai-software",
@@ -94,7 +94,7 @@
       "name": "Cybersecurity",
       "category": "Digitization",
       "dataset_rank": 8,
-      "keywords": "security identity threat intelligence detection response 网络安全",
+      "keywords": "security identity threat intelligence detection response zero trust 网络安全",
       "summary": "From security inputs to products and operational response.",
       "question": "Does the customer buy another tool, or a better security outcome?",
       "scope": "Enterprise security products and services. The commercial layers below are DEX's map, not the NIST CSF functions or a compliance checklist.",
@@ -112,8 +112,16 @@
         {"name": "Response effectiveness", "meaning": "Define incident severity and measurement boundaries before comparing."},
         {"name": "Service delivery cost", "meaning": "Include analyst time and infrastructure per customer."}
       ],
-      "evidence": [{"text": "NIST CSF 2.0 organizes cybersecurity outcomes under Govern, Identify, Protect, Detect, Respond and Recover. These are outcomes, not six sequential commercial stages.", "source": "nist-csf"}],
-      "sources": [{"id": "nist-csf", "publisher": "NIST", "title": "The NIST Cybersecurity Framework (CSF) 2.0", "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf", "published": "2024-02-26", "type": "Government framework · PDF", "supports": "Risk-management functions only; does not establish vendor revenue, effectiveness or market size."}],
+      "evidence": [
+        {"text": "NIST CSF 2.0 organizes cybersecurity outcomes under Govern, Identify, Protect, Detect, Respond and Recover. These are outcomes, not six sequential commercial stages.", "source": "nist-csf"},
+        {"text": "NIST SP 800-207 sets out zero-trust architectural principles; it is not a market-sizing or vendor-share study.", "source": "nist-zero-trust"},
+        {"text": "Menlo Ventures' 2022 market map is an illustrative snapshot of product categories and vendors, not a current estimate of spending or company shares.", "source": "menlo-map"}
+      ],
+      "sources": [
+        {"id": "nist-csf", "publisher": "NIST", "title": "The NIST Cybersecurity Framework (CSF) 2.0", "url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf", "published": "2024-02-26", "type": "Government framework · PDF", "supports": "Risk-management functions only; does not establish vendor revenue, effectiveness or market size."},
+        {"id": "nist-zero-trust", "publisher": "NIST", "title": "SP 800-207: Zero Trust Architecture", "url": "https://csrc.nist.gov/pubs/sp/800/207/final", "published": "2020-08", "type": "Government publication", "supports": "Zero-trust architecture concepts; not an estimate of industry revenue."},
+        {"id": "menlo-map", "publisher": "Menlo Ventures", "title": "Cybersecurity Market Map", "url": "https://menlovc.com/wp-content/uploads/2021/01/cybersecurity_market_map-091922.pdf", "published": "2022-09", "type": "Investor research · PDF", "supports": "Illustrative historical vendor categories; not a verified 2026 revenue dataset."}
+      ],
       "related": [{"title": "Cybersecurity industry report", "url": "/post/cybersecurity-industry-report/"}]
     },
     {
@@ -166,8 +174,14 @@
         {"name": "Cash runway", "meaning": "Test spending assumptions and funding needs under delays."},
         {"name": "Net realized revenue", "meaning": "Distinguish actual sales from headline prices and potential markets."}
       ],
-      "evidence": [{"text": "FDA's drug-development overview describes discovery, preclinical research, clinical research, review and post-market safety monitoring. The three cards group those activities for readability.", "source": "fda"}],
-      "sources": [{"id": "fda", "publisher": "US Food and Drug Administration", "title": "The Drug Development Process", "url": "https://www.fda.gov/patients/learn-about-drug-and-device-approvals/drug-development-process", "published": "Undated overview; reviewed on the date shown above", "type": "Regulator explainer", "supports": "US development and review stages; not clinical advice or evidence for a particular drug."}],
+      "evidence": [
+        {"text": "FDA's drug-development overview describes discovery, preclinical research, clinical research, review and post-market safety monitoring. The three cards group those activities for readability.", "source": "fda"},
+        {"text": "The 1962 U.S. Drug Amendments strengthened the evidence of effectiveness required for new-drug approval. This is historical U.S. law, not a worldwide approval pathway.", "source": "drug-act"}
+      ],
+      "sources": [
+        {"id": "fda", "publisher": "US Food and Drug Administration", "title": "The Drug Development Process", "url": "https://www.fda.gov/patients/learn-about-drug-and-device-approvals/drug-development-process", "published": "Undated overview; reviewed on the date shown above", "type": "Regulator explainer", "supports": "US development and review stages; not clinical advice or evidence for a particular drug."},
+        {"id": "drug-act", "publisher": "U.S. Congress / GovInfo", "title": "Drug Amendments of 1962, Public Law 87-781", "url": "https://www.govinfo.gov/content/pkg/STATUTE-76/pdf/STATUTE-76-Pg780.pdf", "published": "1962-10-10", "type": "Original statute · PDF", "supports": "Historical U.S. effectiveness requirement and regulatory powers; not a global or modern market-size estimate."}
+      ],
       "related": [{"title": "Pharmaceutical industry report", "url": "/post/pharmaceutical-industry/"}]
     }
   ]

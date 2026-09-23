@@ -2,7 +2,7 @@
 title: "About & Methodology"
 description: "What DEX publishes, how the research is produced, and how to suggest corrections or collaborations."
 date: 2026-08-12
-lastmod: 2026-09-21
+lastmod: 2026-09-23
 slug: "about"
 ---
 
@@ -35,7 +35,7 @@ Sources are generally considered in this order:
 3. Reputable research firms, major financial institutions, and well-sourced journalism.
 4. Secondary summaries used only as discovery aids or context.
 
-Published research should link material claims to specific sources, including the source's date, geography, market definition, and unit. A source list alone does not establish which source supports a particular estimate. The current 50-industry screening dataset does not yet meet this standard: its market sizes and growth figures have no row-level citations and should be treated as unverified research leads, not validated observations or forecasts.
+Published research should link material claims to specific sources, including the source's date, geography, market definition, and unit. A source list alone does not establish which source supports a particular estimate. The 50-industry screening dataset now reserves a source URL, source date, geography and market-definition field per row; these remain empty until independently verified. Its market sizes and growth figures are unverified research leads, not validated observations or forecasts. A separate context link, where present, is not evidence for the row's numbers.
 
 ### 3. Separate evidence from interpretation
 

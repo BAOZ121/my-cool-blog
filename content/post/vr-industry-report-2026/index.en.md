@@ -1,54 +1,98 @@
 ---
-title: "What Causes a Company to Lose Nearly $20 Billion in a Single Year?"
+title: "Meta Reality Labs' $19.2B 2025 Loss: A VR/XR Industry Map"
 date: 2026-08-11
-description: "What causes a company to lose nearly $20 billion in a single year? In 2014, Zuckerberg acquired Oculus for $2 billion..."
+lastmod: 2026-09-23
+description: "A simplified VR/XR industry map, historical context, and what company filings can and cannot establish."
 image: "cover.jpg"
 categories:
   - "Industry Report"
+  - "XR & Hardware"
 tags:
   - "VR"
   - "XR"
 ---
-What causes a company to lose nearly $20 billion in a single year? In 2014, Zuckerberg acquired Oculus for $2 billion. Since then, Meta established the Reality Labs division, specializing in virtual reality, augmented reality hardware, and digital world building.
+What does it mean for a company to spend heavily on an emerging computing platform? Meta's Reality Labs segment reported an operating loss of **$19.193 billion for full-year 2025**; that is a segment accounting result, not the net loss of Meta Platforms as a whole. Meta acquired Oculus in 2014 and continues to invest in virtual reality, augmented reality, and related devices.
 
 VR, as the name suggests, is Virtual Reality.
-1935 (over 90 years ago)
-American sci-fi writer Stanley G. Weinbaum published a short story titled *Pygmalion's Spectacles*. The story described a pair of magical glasses: "Wearing them, you can see a living world, hear, see, and even smell and touch the people inside. You are the main character of the story." Nobody expected that ninety years later, this sentence would be accurately realized.
-1960 (Form factor established): Photographer Morton Heilig invented and applied for a patent called Telesphere Mask. If you look at the patent drawings from back then, its appearance is almost identical to today's Meta Quest—this was also the first binocular 3D head-mounted display in human history, though unfortunately back then it could not change the picture with the movement of the user's head.
-1968 (Technological foundation): Computer graphics pioneer Ivan Sutherland developed history's first true virtual reality headset with tracking functionality. Because this device was too heavy, it had to be suspended from the ceiling by a thick steel pipe over the user's head, so it was dubbed "The Sword of Damocles".
-American computer scientist and founder of VPL Research, Jaron Lanier, officially created and popularized the term "Virtual Reality" in 1987. VPL Research was also the first virtual reality company.
-Before this, scientists called this technology "artificial environment" or "virtual space." Lanier not only named this industry, but his company also produced humanity's first commercial VR glasses and data gloves. He is thus known as the "Father of Virtual Reality."
-Note: Although French playwright Antonin Artaud used the term "la réalité virtuelle" in his 1938 work, that was to describe illusions on the theater stage and had nothing to do with modern technology.
 
-Over the past few decades, VR has experienced countless capital bubbles and bursts where "thunder was loud but rain was small." People have been tossing and turning for this story for almost a century. Even today in 2026, why are the world's smartest capital and top tech giants (Apple, Meta) still willing to bleed and bet tens of billions of dollars a year on this 90-year-old sci-fi prophecy? Because they all know that once the technology crosses its inflection point, this will be the next personal computing era just like smartphones.
+## Historical context
+
+In 1935, more than 90 years ago,
+Stanley G. Weinbaum's story *Pygmalion's Spectacles* imagined an immersive experience through glasses; that literary vision preceded the hardware.
+
+In the 1960s, Morton Heilig's Telesphere Mask was an early head-mounted stereoscopic display concept. Its historical significance does not make it mechanically equivalent to a modern tracked headset.
+
+In his 1965 paper *The Ultimate Display*, computer graphics pioneer Ivan Sutherland described an ambitious vision for interactive computer displays. A later tracked head-mounted display was presented in 1968; the **1965 paper is historical context, not evidence for the later device's mechanical design**.
+
+Jaron Lanier and VPL Research helped popularize the term "virtual reality" and develop early commercial systems and data gloves. Claims about a single inventor or first company are more contested than this simplified history can establish.
+
+Over several decades, VR has experienced cycles of enthusiasm and retrenchment. Meta and Apple have invested in different visions of spatial computing, but whether headsets become a mass-market computing platform remains an open question.
 
 Now that the story is finished, let's look at today in 2026. What does the development of the VR industry look like? Let's simply dissect this industry.
+
+## Industry chain
+
 First is the upstream of this industry:
-Chips: Qualcomm (dominating standalone chips, such as the XR2 series), Apple (self-developed M-series + R-series chips).
+
+Chips: Qualcomm (XR2 series), Apple (M-series + R-series chips).
+
 Display/Optics: Sony (Micro-OLED), BOE, Sunny Optical (Pancake lenses).
+
 Sensors & Batteries: Suppliers of various sensors tracking eye movements and gestures.
+
 Then let's look at the midstream of this industry (hardware terminal manufacturing): Who makes the headsets we buy?
+
 Brands: Meta (Quest series, affordable mass adoption route), Apple (flagship Vision Pro, high-end spatial computing route), Sony (PSVR products, focusing on console gaming ecosystem), Pico (under ByteDance), HTC.
-The most crucial ones are contract manufacturers: Goertek, Luxshare Precision. Observing the financial reports of these two companies often allows predicting the sales volume of mainstream VR headsets in advance.
+
+Contract manufacturers and component suppliers include Goertek and Luxshare Precision. Their consolidated financial reports disclose company-wide results, but **do not by themselves reveal or predict the unit sales of an individual headset brand**.
+
 Finally, the downstream of this industry (content and application scenarios): What are its application scenarios?
+
 C-end ecosystem: SteamVR, Meta Quest Store, App Store. Core applications are gaming, social (VRChat), and video/film.
+
 B-end applications: Originally used for Air Force flight training and space navigation, later expanded to other fields, such as medical simulation training, industrial digital twins, automobile design, etc.
-Today, the industry's consensus category is called XR (Extended Reality, including VR/AR/MR). Today's market landscape is occupied by three major forces:
-Meta (with Quest 3 and the affordable Quest 3S) still wildly dominates about 75% of global market share.
-Although Meta is still dominant in hardware, its VR headset growth has slowed significantly. In contrast, Meta's screenless AI smart glasses in partnership with Ray-Ban are exploding frantically. Within Meta's Reality Labs department, revenue from glasses has even begun to rival traditional VR headsets.
-Apple's Vision Pro holds about 5% market share. Although shipments are very limited due to the high price of $3,499, it took away the highest-end demographic, top supply chain resources, and standardized the technical standard for "Spatial Computing."
-Of course, the market is as changeable as the ocean. Google's Android XR platform and its hardware partners are expected to launch new products and raise consumer awareness, creating opportunities for brands like XREAL to challenge Meta's dominance. They don't follow the heavy headset route, but instead make lightweight AR glasses, eating into the survival space of traditional VR from the periphery.
-Jitesh Ubrani, Research Manager for IDC's Worldwide Mobile Device Trackers, stated: "As we gradually move away from bulky head-mounted devices toward lighter, easier-to-use designs, the XR market is undergoing a major transformation. This shift means success depends not only on technology, but also on fashion and comfort. Convincing someone who doesn't need prescription glasses to wear glasses all day is far more difficult than getting them to wear a watch or carry a phone. Brands that fail to balance design, battery life, and application ecosystems will struggle to gain market acceptance."
+
+## Competition and adoption
+
+XR (Extended Reality) is often used as an umbrella term for VR, AR and MR. Categories overlap; market-share claims require carefully defined devices and time periods.
+
+Meta sells the Quest series and Apple sells Vision Pro, but a 2026 worldwide market-share comparison requires a specified device category, period, geography and shipment source. Meta's segment reports include multiple products and do not split headset and smart-glasses sales sufficiently to establish the relative revenue of those categories here.
+
+Apple positions Vision Pro as a premium spatial-computing device. Its market share and competitive effects should not be inferred from a list price alone.
+
+New platforms and lighter glasses may compete for attention, but future product adoption cannot be inferred from announcements alone.
+
+Comfort, fashion, battery life, and the application ecosystem may affect adoption. An earlier attributed quotation about these factors has been removed because its original publication could not be verified.
+
+## Technical and commercial constraints
+
 In the current industry context, the VR/XR industry is plagued by four major challenges:
-First, the Screen-Door Effect. Simply put, if you want users not to see pixelation on a screen just a few centimeters from their eyes (i.e. eliminating the "screen-door effect"), the screen pixel density (PPI) must reach several thousand. Currently, the only perfect solution is Micro-OLED (OLED on Silicon).
-The yield rate of this screen is extremely low, and the cost is shockingly high. Apple Vision Pro's price tag is as high as $3,499, a huge portion of which was spent purchasing Micro-OLED screens from Sony. As long as screen costs can't come down, affordable retina-level VR will never become popular.
-Second, the VAC phenomenon (Vergence-Accommodation Conflict): This is the fundamental scientific bottleneck. In reality, when human eyes look close, pupils converge inward, and when looking far, they diverge (vergence); at the same time, the eye lens adjusts focus. But in VR, the screen distance to your eyes is fixed, while the picture moves back and forth.
-This conflict where "eyes deceive the brain" causes about 30% to 40% of users to experience severe nausea and dizziness after wearing it for more than 20 minutes. Currently, varifocal display technologies on the market (such as voice-coil varifocal) are still very far from commercialization.
+
+First, image clarity and display cost. Visible pixel structure depends on more than a single screen-PPI threshold, and Micro-OLED is one of several display approaches. High-resolution optics and displays can add cost, but without a bill of materials it is not possible to attribute a specific portion of a headset's price to one supplier.
+
+Second, vergence-accommodation conflict (VAC). In natural viewing, the eyes converge on an object and focus at its distance; a conventional stereoscopic headset can present a different simulated depth while the display's optical focal plane remains fixed.
+
+This mismatch can contribute to visual discomfort, although motion, latency, individual sensitivity and other factors also matter. There is no universal severe-nausea rate for all users after a fixed wearing time; device and study conditions matter.
+
 Third, the current standalone VR headset is a heavily integrated electronic product. Chips, cooling fans, complex Pancake lens sets, and even batteries are all stacked around the user's eye sockets.
-This is the biggest commercial pain point of this industry: it leads to device weights generally between 500 grams to over 600 grams. From a physics perspective, this is equivalent to hanging a bottle of mineral water on your face. The huge downward pressure makes users unable to wear it continuously for more than 1 hour. If this problem isn't solved, the claim by tech giants that "VR can replace computers to become the next-generation productivity tool (wearing it to work for 8 hours)" is a false proposition. Science faces an "Impossible Trinity Paradox" among compute power, heat dissipation, and battery life here: rendering high-precision 3D spatial scenes consumes several times the compute power of a normal 2D smartphone screen. Powerful chips are required (such as Qualcomm XR2 Gen 2 or Apple M-series), but this brings terrifying heat generation, requiring fans for cooling (which adds weight).
-Battery technology issue: To have long battery life, the battery must be large, making the device even heavier. Currently, mainstream VR battery life is generally only about 2 hours.
+
+Weight distribution, thermal design and fit can limit comfortable use. Rendering, heat, battery capacity and form factor require tradeoffs, but wear time and battery life vary by headset and workload. There is no single physical "impossible trinity" or universal one-hour comfort limit.
+
 Fourth, upstream supply chain and scarce materials.
-Raw material price surges and shortages: In recent years, with developments in AI and other fields, the global semiconductor and precision optics supply chains have been volatile. Key raw materials required for manufacturing high-end XR processors and high-refractive-index optical crystals, such as Gallium and Germanium, face restrictions and shortages, directly leading to cost inflation in upstream optical components.
-This directly shattered the illusion of giants like Meta trying to quickly clean up the market through hardware cost reduction. Meta's Reality Labs division recorded a huge operating loss of over $19 billion in 2025 and is still not out of the woods, leading to sharp strategic pullbacks within the industry in 2026. Some major players have even begun shrinking pure VR projects, pivoting to develop lower-cost, lighter "screenless AI smart glasses."
+
+Supply chains for chips, displays and optics can be exposed to bottlenecks, but the supplied company reports do not establish a direct causal chain from particular minerals to XR display costs. Meta's **$19.193 billion 2025 Reality Labs operating loss** is verified in its results; it alone cannot prove why individual suppliers or competitors changed product plans in 2026.
+
 Where the VR/XR industry will ultimately go is a question that only time can answer.
-So that's all for this video. Personally, I think even though this industry has existed and developed for nearly a century without much progress, the Vision Pro launch event three years ago allowed me to see the future again. If technology permits, I can create even better work. If you're interested in my videos, feel free to sponsor me. Of course, this isn't mandatory; give it a like and leave a subscription so you don't miss my exciting content. I'm Dex, see you next time.
+
+That's the simplified map for this video. It is a starting point for checking historical sources, company filings and device-specific data—not a forecast of a winner. I'm Dex, see you next time.
+
+---
+
+## Source notes and primary materials
+
+- [Meta: fourth-quarter and full-year 2025 results](https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Fourth-Quarter-and-Full-Year-2025-Results/) — source for Reality Labs' **2025 segment operating loss**, not a headset unit count or company-wide net loss.
+- [Ivan Sutherland, *The Ultimate Display* (1965)](https://www.eng.utah.edu/~cs6360/Readings/UltimateDisplay.pdf) — the supplied historical paper about an interactive display vision; not a 2026 product or market forecast.
+- [Goertek investor relations: 2024 annual report](https://www.goertek.com/en/IR/dingqi.html) — company-wide filing supplied for manufacturing context; no brand-specific headset shipment claim is inferred.
+- [Luxshare Precision investor relations: 2025 annual report and Q1 2026 report](https://www.luxshare-ict.com/investors/financial-reports.html) — company-wide financial filings supplied for manufacturing context; neither independently measures the entire VR market.
+
+The supplied China Mobile Research Institute *VR/AR Product Development Status and Trend* report dates from **November 2022**. An original publisher-hosted URL was not verified, so it is recorded here bibliographically rather than linked to an unlicensed copy or used to justify a 2026 market-share claim. The Goertek and Luxshare reports likewise cannot substitute for a defined current shipment survey.

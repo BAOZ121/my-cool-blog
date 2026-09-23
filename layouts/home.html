@@ -1,0 +1,37 @@
+{{ define "main" }}
+  <section class="research-landing" aria-labelledby="research-landing-title">
+    <p class="research-landing__eyebrow">DEX RESEARCH / START HERE</p>
+    <h2 id="research-landing-title">See the structure. Check the evidence.</h2>
+    <p>Explore industry value chains, inspect a provisional 50-industry screening list, or read the full research notes. Market estimates in the list are not yet verified at the row level.</p>
+    <div class="research-landing__routes">
+      <a href="{{ "/industry-breakdowns/" | relURL }}"><strong>Industry breakdowns</strong><span>Six mapped value chains with scoped sources →</span></a>
+      <a href="{{ "/industries/" | relURL }}"><strong>Industry dataset</strong><span>50 research leads and a scenario calculator →</span></a>
+      <a href="{{ "/about/" | relURL }}#research-methodology"><strong>How the research works</strong><span>Source standards, limits, and corrections →</span></a>
+    </div>
+    <form action="{{ "/search/" | relURL }}" role="search" class="research-landing__search">
+      <label for="research-home-query">Search articles and industry maps</label>
+      <div><input id="research-home-query" name="keyword" type="search" placeholder="Try cybersecurity or biopharma" required><button type="submit">Search</button></div>
+    </form>
+  </section>
+
+  {{- $paginator := partial "helper/paginator.html" . -}}
+  <h2 class="research-landing__list-title">Latest research</h2>
+  <section class="article-list" aria-label="Latest articles">
+    {{ $firstCover := true }}
+    {{ range $index, $element := $paginator.Pages }}
+      {{ $cover := partial "helper/image" (dict "Image" .Params.image "Resources" .Resources "Context" .) }}
+      {{ if and $firstCover $cover }}
+        {{ partial "article-list/lead.html" . }}
+        {{ $firstCover = false }}
+      {{ else }}
+        {{ partial "article-list/default" . }}
+      {{ end }}
+    {{ end }}
+  </section>
+  {{- partial "pagination.html" . -}}
+  {{- partial "footer/footer" . -}}
+{{ end }}
+
+{{ define "right-sidebar" }}
+  {{ partial "sidebar/right.html" (dict "Context" . "Scope" "homepage") }}
+{{ end }}

@@ -7,7 +7,7 @@ slug: "industries"
 
 <link rel="stylesheet" href="/css/industries.css">
 
-Explore a provisional 50-industry screening list and test CAGR scenarios. Its market and growth estimates have **no row-level citations or verified definitions**; they are research leads, not comparable, validated measurements. Categories and maturity labels are editorial classifications.
+Explore a provisional 50-industry screening list and test CAGR scenarios. Every row now exposes explicit slots for a numeric source, source date, geography, and market definition; **all four remain blank until the corresponding estimate is verified**. Selected rows link to relevant primary reading, clearly separated from numerical evidence. Current estimates are research leads, not comparable, validated measurements. Categories and maturity labels are editorial classifications.
 
 {{< breakdown-links >}}
 
