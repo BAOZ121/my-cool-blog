@@ -18,7 +18,7 @@ Explore a provisional 50-industry screening list and test CAGR scenarios. Its ma
 <a class="ix-btn" href="/about/#research-methodology">Research methodology</a>
 </div>
 <p class="ix-note">File updated September 2026 (not a source-verification date). Numeric market sizes are in USD billions where available. The CAGR filter uses a range midpoint only when both bounds exist; a one-sided value is treated as a lower bound.</p>
-<p id="ix-coverage" class="ix-coverage" aria-live="polite">Checking data coverage…</p>
+<p id="ix-coverage" class="ix-coverage" aria-live="polite">The full screening list is available below. Numeric coverage appears when the interactive controls load.</p>
 <div class="ix-filters">
 <label>Search
 <input id="ix-q" type="search" placeholder="Industry, technology, notes" autocomplete="off">
@@ -26,20 +26,20 @@ Explore a provisional 50-industry screening list and test CAGR scenarios. Its ma
 <label>Category
 <select id="ix-category">
 <option value="">All</option>
-<option>AI Foundation</option>
-<option>Digitization</option>
-<option>Energy</option>
-<option>Hard Tech</option>
-<option>Bio & Health</option>
-<option>Manufacturing</option>
+<option value="AI Foundation">AI Foundation</option>
+<option value="Digitization">Digitization</option>
+<option value="Energy">Energy</option>
+<option value="Hard Tech">Hard Tech</option>
+<option value="Bio & Health">Bio & Health</option>
+<option value="Manufacturing">Manufacturing</option>
 </select>
 </label>
 <label>Maturity
 <select id="ix-maturity">
 <option value="">All</option>
-<option>Early</option>
-<option>Growth</option>
-<option>Mature</option>
+<option value="Early">Early</option>
+<option value="Growth">Growth</option>
+<option value="Mature">Mature</option>
 </select>
 </label>
 <label>Minimum indicative CAGR
@@ -51,7 +51,8 @@ Explore a provisional 50-industry screening list and test CAGR scenarios. Its ma
 </select>
 </label>
 </div>
-<p id="ix-count" class="ix-count" aria-live="polite">Loading…</p>
+<p id="ix-count" class="ix-count" aria-live="polite">Full industry list</p>
+<noscript><p class="ix-note">Search, sorting and scenarios require JavaScript; the list remains readable below.</p></noscript>
 <div class="ix-layout">
 <div class="ix-table-wrap" role="region" aria-label="Industry data table" tabindex="0">
 <table class="ix-table">
@@ -66,7 +67,7 @@ Explore a provisional 50-industry screening list and test CAGR scenarios. Its ma
 <th data-sort="category" aria-sort="none"><button type="button" class="ix-sort" data-sort="category">Category</button></th>
 </tr>
 </thead>
-<tbody id="ix-tbody"></tbody>
+{{< industries-table-data >}}
 </table>
 </div>
 <aside class="ix-calc">

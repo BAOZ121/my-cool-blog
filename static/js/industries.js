@@ -76,6 +76,7 @@
   }
 
   function applyFilters() {
+    if (!items.length) return;
     const q = (els.q.value || "").trim().toLowerCase();
     const cat = els.category.value;
     const mat = els.maturity.value;
@@ -257,34 +258,44 @@
     if (button) selectRank(Number(button.getAttribute("data-rank")));
   });
 
-  fetch(DATA_URL)
-    .then((response) => {
-      if (!response.ok) throw new Error("Industry data request failed");
-      return response.json();
-    })
-    .then((payload) => {
-      if (!payload || !Array.isArray(payload.industries)) throw new Error("Invalid industry data");
-      items = payload.industries;
-      const cagrCount = items.filter((item) => cagrFilterValue(item) != null).length;
-      const calculatorCount = items.filter(
-        (item) => marketValue(item) != null && cagrValue(item) != null
-      ).length;
-      els.coverage.textContent =
-        "Data coverage: numeric CAGR or lower bound for " +
-        cagrCount +
-        "/" +
-        items.length +
-        "; rows with market and two-sided CAGR values for " +
-        calculatorCount +
-        "/" +
-        items.length +
-        ".";
-      applyFilters();
-      calculate();
-    })
-    .catch(() => {
-      els.count.textContent = "Could not load industry data.";
-      els.coverage.textContent = "Data coverage is temporarily unavailable.";
-      els.warn.textContent = "Refresh the page or download the CSV to inspect the data.";
-    });
+  function loadData(payload) {
+    if (!payload || !Array.isArray(payload.industries) || !payload.industries.length) {
+      throw new Error("Invalid industry data");
+    }
+    items = payload.industries;
+    const cagrCount = items.filter((item) => cagrFilterValue(item) != null).length;
+    const calculatorCount = items.filter(
+      (item) => marketValue(item) != null && cagrValue(item) != null
+    ).length;
+    els.coverage.textContent =
+      "Data coverage: numeric CAGR or lower bound for " +
+      cagrCount +
+      "/" +
+      items.length +
+      "; rows with market and two-sided CAGR values for " +
+      calculatorCount +
+      "/" +
+      items.length +
+      ".";
+    applyFilters();
+    calculate();
+  }
+
+  try {
+    const embedded = root.querySelector("#ix-dataset");
+    if (!embedded) throw new Error("Embedded industry data missing");
+    loadData(JSON.parse(embedded.textContent));
+  } catch (error) {
+    fetch(DATA_URL)
+      .then((response) => {
+        if (!response.ok) throw new Error("Industry data request failed");
+        return response.json();
+      })
+      .then(loadData)
+      .catch(() => {
+        els.count.textContent = "The full industry list remains available below.";
+        els.coverage.textContent = "Interactive data is temporarily unavailable.";
+        els.warn.textContent = "Refresh the page or download the CSV to inspect the data.";
+      });
+  }
 })();
