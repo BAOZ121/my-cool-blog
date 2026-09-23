@@ -35,6 +35,8 @@ jobs:
           printf '%s\n' "$hugo_dir" >> "$GITHUB_PATH"
       - name: Check JavaScript syntax
         run: node --check static/js/industries.js
+      - name: Test industry explorer with translated labels and embedded data
+        run: node --test tests/industries.test.mjs
       - name: Build production HTML without warnings
         run: hugo --environment production --minify --panicOnWarning
       - name: Check industry data and site links

@@ -23,6 +23,44 @@ class Links(HTMLParser):
         self.urls.extend(fields[key] for key in ("href", "src") if fields.get(key))
 
 
+class IndustryTable(HTMLParser):
+    def __init__(self, path: Path):
+        super().__init__()
+        self.dataset = ""
+        self.in_dataset = False
+        self.in_table = False
+        self.select = None
+        self.ranks = []
+        self.options = {"ix-category": [], "ix-maturity": []}
+        self.feed(path.read_text(encoding="utf-8"))
+
+    def handle_starttag(self, tag, attrs):
+        fields = dict(attrs)
+        if tag == "script" and fields.get("id") == "ix-dataset":
+            self.in_dataset = True
+        elif tag == "tbody" and fields.get("id") == "ix-tbody":
+            self.in_table = True
+        elif tag == "tr" and self.in_table:
+            self.ranks.append(int(fields["data-rank"]))
+        elif tag == "select":
+            self.select = fields.get("id")
+        elif tag == "option" and self.select in self.options:
+            assert "value" in fields, f"Explicit value required for translated {self.select} option"
+            self.options[self.select].append(fields["value"] or "")
+
+    def handle_data(self, data):
+        if self.in_dataset:
+            self.dataset += data
+
+    def handle_endtag(self, tag):
+        if tag == "script":
+            self.in_dataset = False
+        elif tag == "tbody":
+            self.in_table = False
+        elif tag == "select":
+            self.select = None
+
+
 def main() -> None:
     data = json.loads((ROOT / "static/data/industries.json").read_text(encoding="utf-8"))
     with (ROOT / "static/data/industries.csv").open(encoding="utf-8", newline="") as stream:
@@ -37,6 +75,11 @@ def main() -> None:
     assert BUILD.is_dir(), "Build the site first"
     pages = list(BUILD.rglob("*.html"))
     assert pages, "No generated HTML"
+    industry_page = IndustryTable(BUILD / "industries/index.html")
+    assert json.loads(industry_page.dataset) == data, "Embedded industry JSON diverges from the download"
+    assert industry_page.ranks == list(range(1, 51)), "Static industry rows are missing or out of order"
+    for select, field in (("ix-category", "category"), ("ix-maturity", "maturity")):
+        assert set(industry_page.options[select]) == {"", *(item[field] for item in items)}, select
     checked = 0
     errors = []
     for page in pages:
@@ -53,7 +96,7 @@ def main() -> None:
             if not target.exists():
                 errors.append(f"{page.relative_to(BUILD)}: {link}")
     assert not errors, "Missing internal links:\n" + "\n".join(errors)
-    print(f"PASS: {len(items)} matched CSV/JSON rows, {len(pages)} HTML pages, {checked} internal links")
+    print(f"PASS: {len(items)} matched CSV/JSON and static HTML rows, {len(pages)} HTML pages, {checked} internal links")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,14 @@
+{{- $dataset := readFile "static/data/industries.json" | transform.Unmarshal -}}
+<tbody id="ix-tbody">
+{{- range $dataset.industries }}
+<tr data-rank="{{ .rank }}">
+<td>{{ .rank }}</td>
+<td><strong>{{ .name }}</strong></td>
+<td>{{ .tech }}</td>
+<td>{{ .market_label }}</td>
+<td>{{ .cagr_label }}</td>
+<td><span class="ix-chip">{{ .category }}</span></td>
+</tr>
+{{- end }}
+</tbody>
+<script type="application/json" id="ix-dataset">{{ $dataset | jsonify | safeJS }}</script>
