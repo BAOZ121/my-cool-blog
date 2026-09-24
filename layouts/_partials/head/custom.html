@@ -1,0 +1,11 @@
+{{ if .IsHome }}
+  {{ with .Site.GetPage "/post/50-high-potential-industries" }}
+    {{ with .Resources.GetMatch "cover.jpg" }}
+      <meta property="og:image" content="{{ .Permalink }}">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:image" content="{{ .Permalink }}">
+    {{ end }}
+  {{ end }}
+  {{ $website := dict "@context" "https://schema.org" "@type" "WebSite" "name" .Site.Title "url" .Site.BaseURL "description" .Site.Params.description }}
+  <script type="application/ld+json">{{ $website | jsonify | safeJS }}</script>
+{{ end }}

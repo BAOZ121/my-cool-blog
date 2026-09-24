@@ -54,6 +54,17 @@
       .replace(/"/g, "&quot;");
   }
 
+  function safeSourceLink(url, label) {
+    if (!url) return "";
+    try {
+      const parsed = new URL(url);
+      if (parsed.protocol !== "https:") return "";
+      return '<a href="' + escapeHtml(parsed.href) + '">' + escapeHtml(label) + "</a>";
+    } catch (_) {
+      return "";
+    }
+  }
+
   function updateSortState() {
     root.querySelectorAll("th[data-sort]").forEach((header) => {
       const active = header.getAttribute("data-sort") === sortKey;
@@ -173,7 +184,14 @@
       "</dd><dt>Maturity</dt><dd>" + escapeHtml(selected.maturity) +
       " (editorial)</dd><dt>Projected size</dt><dd>" + escapeHtml(selected.projected_label) +
       "</dd><dt>Notes</dt><dd>" + escapeHtml(selected.notes) +
-      "</dd><dt>Scope and sources</dt><dd>No row-level source, geography, market definition, or source date recorded. Values are unverified screening estimates.</dd></dl>";
+      "</dd><dt>Market definition</dt><dd>" + escapeHtml(selected.market_definition || "Not recorded") +
+      "</dd><dt>Geography</dt><dd>" + escapeHtml(selected.geography || "Not recorded") +
+      "</dd><dt>Numeric source and date</dt><dd>" +
+      (safeSourceLink(selected.numeric_source_url, "Open numeric source") || "No numeric source recorded") +
+      "; " + escapeHtml(selected.source_date || "date not recorded") +
+      "</dd><dt>Related primary material</dt><dd>" +
+      (safeSourceLink(selected.context_url, "Read category context (does not verify figures)") || "None linked") +
+      "</dd></dl>";
 
     if (pv == null || rate == null) {
       clearScenario(

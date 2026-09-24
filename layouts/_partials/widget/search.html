@@ -1,0 +1,11 @@
+{{- $query := first 1 (where .Context.Site.Pages "Layout" "==" "search") -}}
+{{- with $query -}}
+  {{- $searchPage := index . 0 -}}
+  <form action="{{ $searchPage.RelPermalink }}" class="search-form widget" {{ with $searchPage.OutputFormats.Get "json" }}data-json="{{ .RelPermalink }}"{{ end }} role="search">
+    <p>
+      <label for="sidebar-search-query">{{ T "search.title" }}</label>
+      <input id="sidebar-search-query" name="keyword" type="search" required placeholder="{{ T `search.placeholder` }}" />
+      <button type="submit" title="{{ T `search.title` }}" aria-label="{{ T `search.title` }}">{{ partial "helper/icon" "search" }}</button>
+    </p>
+  </form>
+{{- end -}}

@@ -1,27 +1,21 @@
 ---
-title: "Unveiling the $250B Cybersecurity Empire From an Aquarium Thermometer Heist: DEX Industry Research Report"
+title: "Cybersecurity: An Industry Map From Network Defenses to Zero Trust"
 date: 2026-08-11
+lastmod: 2026-09-23
 description: "A deep dive into the 60-year evolution of cybersecurity, upstream-midstream-downstream value chains, the four major market camps, and core industry bottlenecks."
 tags: ["Industry Research Report", "DEX", "Cybersecurity", "Business Analysis"]
 categories:
   - "Industry Report"
+  - "Cybersecurity"
 image: "cover.jpg"
 draft: false
 ---
 
-# <span style="font-size: 2.2em; color: #0f172a;">Part 1: Story</span>
+## <span style="font-size: 2.2em; color: #0f172a;">Part 1: Story</span>
 
-In 2017, a top-tier luxury casino in Las Vegas, USA, fell victim to a "digital heist" that sent shockwaves across the nation.
+An often-repeated account describes attackers using a connected aquarium sensor as an entry point to a casino network. It illustrates how an overlooked device can expand a network's attack surface.
 
-This casino boasts a top-tier defense system—military-grade perimeter firewalls, a 24-hour staffed surveillance center, and antivirus software costing millions of dollars. Against their digital fortress, ordinary hackers wouldn't even be able to get a foot in the door.
-
-However, that very year, hackers not only silently slipped into their core database but also made off with a staggering 100 GB of data containing the list of their ultra-wealthy clients.
-
-Ironically, the hackers neither breached the million-dollar firewall nor attempted to brute-force the formidable servers; the entry point they exploited turned out to be the "smart water thermometer" on a high-tech aquarium in the casino lobby.
-
-Hackers simply compromised a small, inexpensive IoT device used to remotely monitor aquarium water temperature; using it as a springboard, they easily bypassed security defenses and traced their way into the casino's core database.
-
-This incident was intercepted and subsequently handled by the renowned British cybersecurity giant Darktrace. It was not until April 2018 that Nicole Eagan, Darktrace’s CEO at the time, publicly revealed the case to global media and business leaders at the *Wall Street Journal* CEO Council meeting in London. Due to a commercial non-disclosure agreement, Darktrace did not reveal the specific name of the casino in its public reports.
+The public retellings do not supply enough independently verifiable information to confirm the casino, date, defenses, or amount of data taken. Treat it as an illustrative anecdote, **not** a documented case study or a quantitative measure of cyber risk.
 
 This story brings us to an important subject—
 
@@ -29,38 +23,34 @@ Welcome, I'm Dex. Welcome to my industry report. Before we dive in, let's take a
 
 ---
 
-# <span style="font-size: 2.2em; color: #0f172a;">Part 2: Industry History</span>
+## <span style="font-size: 2.2em; color: #0f172a;">Part 2: Industry History</span>
 
-## <span style="font-size: 1.5em; color: #1e3a8a;">1970s: ARPANET and Creeper</span>
+### <span style="font-size: 1.5em; color: #1e3a8a;">1970s: ARPANET and Creeper</span>
 
-Cybersecurity traces its origins to the 1970s, when researcher Bob Thomas created a computer program named "Creeper" that could move across the ARPANET network, leaving a trail wherever it went. Ray Tomlinson, the inventor of email, wrote a program called "Reaper" to track down and delete Creeper. Reaper was the first antivirus software and the first self-replicating program, making it the first computer worm in history.
+Early networked experiments such as Creeper and Reaper are part of the history of self-propagating programs and countermeasures. Assigning a single unqualified "first worm" or "first antivirus" to either program obscures differences in definitions and surviving records.
 
-## <span style="font-size: 1.5em; color: #1e3a8a;">1980s: Birth of Commercial Antivirus Software</span>
+### <span style="font-size: 1.5em; color: #1e3a8a;">1980s: Birth of Commercial Antivirus Software</span>
 
-1987 marked the birth of commercial antivirus software, although there is no consensus on who invented the very first program. Andreas Lüning and Kai Figge released their first antivirus software for the Atari ST—the same year that *Ultimate Virus Killer* also appeared. Three Czechoslovakians developed the first version of NOD antivirus that same year, while in the United States, John McAfee founded McAfee and released *VirusScan*.
+Commercial antivirus products emerged in the 1980s, and their precise chronology depends on how a "first" product is defined. The transition from standalone personal computers to connected business networks expanded the range of threats and defenses.
 
-## <span style="font-size: 1.5em; color: #1e3a8a;">Key Turning Point: Mid-1990s</span>
+### <span style="font-size: 1.5em; color: #1e3a8a;">Key Turning Point: Mid-1990s</span>
 
-By the mid-1990s, the landscape of cybersecurity threats had undergone a significant shift. With the release of Windows 95 and the widespread adoption of personal computers, hacking attacks evolved from early floppy-disk-based propagation to sophisticated, internet-driven threats—such as phishing (e.g., the "Love Bug"), macro viruses, and early denial-of-service attacks. This period saw not only the defacement of official websites belonging to the U.S. Department of Justice and the CIA but also the covert launch—around 1996—of "Moonlight Maze," a massive cyber-espionage campaign targeting the U.S. military, the Pentagon, and various research institutions.
+During the 1990s, more connected personal computers and business networks created additional opportunities for malicious code, denial-of-service attacks, and intrusions. This is a directional overview rather than a complete chronology of named incidents.
 
-## <span style="font-size: 1.5em; color: #1e3a8a;">2000s (2000–2009): Commercial and Organized Cybercrime</span>
+### <span style="font-size: 1.5em; color: #1e3a8a;">2000s (2000–2009): Commercial and Organized Cybercrime</span>
 
 The 2000s marked a transitional period for cybersecurity threats, shifting from mere pranks to serious, organized, and commercially driven criminal activity. Driven by core threat data and landmark incidents, people began to realize the vulnerabilities inherent in the early digital age during this explosion of cybersecurity incidents:
 
-1. <span style="color: #1e3a8a; font-weight: bold;">The Highly Destructive "Worm" Era (2000–2004):</span> Worm viruses exploited operating system vulnerabilities, paralyzing global networks within hours.
-   * **ILOVEYOU (2000):** Rapidly infected about 10% of connected hosts worldwide via email, causing up to $15 billion in economic damage.
-   * **SQL Slammer (2003):** One of the fastest worms in history, infecting 75,000 hosts worldwide in just 10 minutes, bringing networks and ATMs to a standstill.
+1. <span style="color: #1e3a8a; font-weight: bold;">Fast-spreading worms (2000–2004):</span> Incidents such as ILOVEYOU and SQL Slammer showed how email and software vulnerabilities could cause rapid, widespread disruption. Exact global infection and loss estimates vary by source and method.
 
 2. <span style="color: #1e3a8a; font-weight: bold;">Rise of Commercial Cybercrime (Mid-to-Late 2000s):</span> Hacker motivations shifted from technical boasting to economic gain.
-   * **Botnets:** By 2009, botnet monitored that approximately 85% of global spam emails were sent by botnets.
-   * **First Major Data Breaches:** In 2005, CardSystems Solutions was hacked, exposing 40 million credit card accounts; in 2007, TJX Companies disclosed a breach where 94 million customer records were stolen.
-   * The establishment of hacker forums like Shadow Crew marked the first emergence of a proto-dark web.
+   * **Botnets and data breaches:** Compromised computers were increasingly used for spam and fraud, while payment-card incidents highlighted the costs of weak data protection. Incident totals and exposed-record counts require case-specific primary reports.
 
-3. <span style="color: #1e3a8a; font-weight: bold;">Destructive Power of DDoS Attacks:</span> In 2000, Canadian teenager Mafiaboy launched DDoS attacks against Yahoo!, Amazon, CNN, and eBay, causing approximately $1.2 billion in economic damage.
+3. <span style="color: #1e3a8a; font-weight: bold;">Distributed denial of service:</span> High-profile incidents exposed the operational costs of making online services unavailable; dollar-loss estimates are not directly comparable between incidents.
 
-4. <span style="color: #1e3a8a; font-weight: bold;">Heading Towards Cyber Espionage Warfare (Late 2000s):</span> Operation Aurora (2009) targeted Google and defense firms, opening the curtain on nation-state cyber espionage. This prompted enterprise upgrades toward firewalls, VPNs, and endpoint security.
+4. <span style="color: #1e3a8a; font-weight: bold;">Espionage and advanced intrusions:</span> Public disclosures such as Operation Aurora increased attention to persistent, targeted threats; cyber espionage itself predated the incident.
 
-## <span style="font-size: 1.5em; color: #1e3a8a;">2010 to Present: Cloud-Native & AI-Driven Era</span>
+### <span style="font-size: 1.5em; color: #1e3a8a;">2010 to Present: Cloud-Native & AI-Driven Era</span>
 
 Between 2010 and 2019, the global cybersecurity landscape evolved from simple virus defense to geopolitical cyber warfare, massive data breaches, and ransomware ecosystems (e.g., Stuxnet, Sony Pictures hack, WannaCry).
 
@@ -68,28 +58,28 @@ Since 2020, the industry has undergone profound transformation characterized by 
 
 ---
 
-# <span style="font-size: 2.2em; color: #0f172a;">Part 3: Industry Value Chain</span>
+## <span style="font-size: 2.2em; color: #0f172a;">Part 3: Industry Value Chain</span>
 
 Let's briefly summarize the structure of the cybersecurity industry.
 
-## <span style="font-size: 1.5em; color: #1e3a8a;">Upstream: Foundational Infrastructure & Threat Intelligence</span>
+### <span style="font-size: 1.5em; color: #1e3a8a;">Upstream: Foundational Infrastructure & Threat Intelligence</span>
 
 The upstream sector serves as the cornerstone of the entire security industry, supplying midstream vendors with computing power, fundamental components, and critical threat intelligence:
 
-* <span style="color: #1e3a8a; font-weight: bold;">Cloud Infrastructure & Computing Power:</span> AWS, Microsoft Azure, Alibaba Cloud. Modern SaaS security vendors (like CrowdStrike) rely heavily on these underlying cloud platforms to process trillions of data points daily.
+* <span style="color: #1e3a8a; font-weight: bold;">Cloud Infrastructure & Computing Power:</span> AWS, Microsoft Azure, and Alibaba Cloud are examples of infrastructure on which security services may run.
 * <span style="color: #1e3a8a; font-weight: bold;">Foundational Core Components:</span> Deep-tech companies mastering cryptographic algorithm libraries and high-precision processing chips (FPGAs, ASICs).
 * <span style="color: #1e3a8a; font-weight: bold;">Threat Intelligence Providers:</span> Acting as the "radar" of the industry. They gather Indicators of Compromise (IOCs) globally and package data feeds to power midstream security engines.
 
-## <span style="font-size: 1.5em; color: #1e3a8a;">Midstream: Core Products & Solutions</span>
+### <span style="font-size: 1.5em; color: #1e3a8a;">Midstream: Core Products & Solutions</span>
 
 Midstream vendors directly face hacker attacks and provide defensive tools to clients. Based on modern enterprise IT architecture, midstream is categorized into four major segments:
 
-1. <span style="color: #1e3a8a; font-weight: bold;">Endpoint & Workload Security:</span> Traditional antivirus is obsolete. The current standard is EDR (Endpoint Detection & Response), led by CrowdStrike, which uses AI for real-time behavioral analysis.
-2. <span style="color: #1e3a8a; font-weight: bold;">Network & Perimeter Security:</span> Evolved from physical firewalls to Next-Generation Firewalls (NGFW) and SASE, dominated by Palo Alto Networks and Fortinet.
-3. <span style="color: #1e3a8a; font-weight: bold;">Identity & Access Management (IAM):</span> As physical perimeters vanish, identity becomes the sole perimeter. Okta and CyberArk act as super-administrators for enterprise access.
-4. <span style="color: #1e3a8a; font-weight: bold;">Security Operations & Data Analytics:</span> Systems like Splunk (acquired by Cisco) or Datadog aggregate millions of daily alerts and use AI to filter out genuine threats.
+1. <span style="color: #1e3a8a; font-weight: bold;">Endpoint & Workload Security:</span> Antivirus, endpoint detection and response (EDR), and workload protection address different risks; CrowdStrike is one example of an EDR vendor.
+2. <span style="color: #1e3a8a; font-weight: bold;">Network & Perimeter Security:</span> Firewalls, secure access service edge (SASE), and segmentation coexist; Palo Alto Networks and Fortinet are examples of suppliers.
+3. <span style="color: #1e3a8a; font-weight: bold;">Identity & Access Management (IAM):</span> Identity is an important control alongside devices and networks, not the sole perimeter; Okta and CyberArk are examples of suppliers.
+4. <span style="color: #1e3a8a; font-weight: bold;">Security Operations & Data Analytics:</span> Systems such as Splunk (acquired by Cisco) aggregate and investigate security events. Monitoring and analytics products differ in scope and are not interchangeable.
 
-## <span style="font-size: 1.5em; color: #1e3a8a;">Downstream: Channels & Security Services</span>
+### <span style="font-size: 1.5em; color: #1e3a8a;">Downstream: Channels & Security Services</span>
 
 Because security products are complex, a massive downstream service market has emerged:
 
@@ -101,68 +91,125 @@ Because security products are complex, a massive downstream service market has e
 
 ---
 
-# <span style="font-size: 2.2em; color: #0f172a;">Part 4: Industry Market Landscape</span>
+## <span style="font-size: 2.2em; color: #0f172a;">Part 4: Industry Market Landscape</span>
 
-The global cybersecurity market scale has reached $250 billion to $300 billion and is projected to reach $500 billion at a 9%–14% CAGR.
-
-Unlike operating systems or search engines, no single cybersecurity company commands over 15% market share. The top five vendors (Palo Alto Networks, Microsoft, Cisco, Fortinet, CrowdStrike/IBM) combined account for only 25%–30% of the market, with the remaining 70% split among thousands of niche startups and service providers.
+There is no single comparable "cybersecurity market" figure without specifying geography, year, whether services and cloud infrastructure are included, and the research method. The supplied 2022 Menlo Ventures map identifies product categories and companies; **it does not substantiate this article's earlier $250B–$300B size, $500B forecast, CAGR, or vendor-share estimates**. Those numbers have been removed pending a traceable dataset.
 
 The global market is divided into four major camps:
 
-## <span style="font-size: 1.5em; color: #1e3a8a;">1. Cross-Domain Tech Giants</span>
+### <span style="font-size: 1.5em; color: #1e3a8a;">1. Cross-Domain Tech Giants</span>
 
 * **Key Players:** Microsoft (Defender / Sentinel), Google (Mandiant)
-* **Competitive Moat:** Leveraging software ecosystem advantages for bundling. Microsoft's security revenue has exceeded $20 billion annually.
+* **Competitive Moat:** Leveraging software ecosystems and distribution to integrate security products.
 
-## <span style="font-size: 1.5em; color: #1e3a8a;">2. Pure-Play Security "Big Three"</span>
+### <span style="font-size: 1.5em; color: #1e3a8a;">2. Pure-Play Security "Big Three"</span>
 
 * **Key Players:** Palo Alto Networks, CrowdStrike, Fortinet
-* **Competitive Moat:** 
-  * **Palo Alto:** Largest pure-play security giant featuring "Firewall + Cloud + AI"
-  * **CrowdStrike:** Endpoint security (EDR) market leader and SaaS benchmark
-  * **Fortinet:** High-cost-performance proprietary ASIC chips dominating SMB markets
+* **Product focus:** Palo Alto Networks sells network and cloud security; CrowdStrike emphasizes endpoint and cloud protection; Fortinet sells network-security appliances and software. These are illustrative positions, not audited share rankings.
 
-## <span style="font-size: 1.5em; color: #1e3a8a;">3. Traditional IT & Hardware Giants</span>
+### <span style="font-size: 1.5em; color: #1e3a8a;">3. Traditional IT & Hardware Giants</span>
 
 * **Key Players:** Cisco, IBM, Trend Micro
-* **Competitive Moat:** Enterprise gateway hardware roots, expanding via massive acquisitions (e.g., Cisco acquiring Splunk for $28B).
+* **Product focus:** Enterprise networking and IT software, with acquisitions used to expand security portfolios.
 
-## <span style="font-size: 1.5em; color: #1e3a8a;">4. Niche Specialists</span>
+### <span style="font-size: 1.5em; color: #1e3a8a;">4. Niche Specialists</span>
 
 * **Key Players:** Zscaler (Zero Trust / SASE), Cloudflare (Edge Protection), Okta (Identity)
 * **Competitive Moat:** Dominating specific technical niches to attract top-tier enterprise clients.
 
-## <span style="font-size: 1.5em; color: #1e3a8a;">Two Trends Shifting Market Dynamics</span>
+### <span style="font-size: 1.5em; color: #1e3a8a;">Two Trends Shifting Market Dynamics</span>
 
-1. <span style="color: #1e3a8a; font-weight: bold;">Vendor Consolidation:</span> Driven by soaring costs, over 70% of CISOs are reducing vendor counts, channeling capital toward all-in-one platform giants like Palo Alto and Microsoft.
-2. <span style="color: #1e3a8a; font-weight: bold;">Cloud-Native & AI Eroding Legacy Hardware:</span> Traditional physical hardware vendors are losing market share and valuation multiples to pure-cloud, AI-driven architectures like CrowdStrike and Zscaler.
+1. <span style="color: #1e3a8a; font-weight: bold;">Vendor Consolidation:</span> Some buyers prefer fewer integrations and vendors; the outcome depends on their existing architecture and procurement needs.
+2. <span style="color: #1e3a8a; font-weight: bold;">Cloud and AI:</span> Cloud-delivered tools and automated detection are growing areas of investment, while hardware controls still serve important use cases.
 
 ---
 
-# <span style="font-size: 2.2em; color: #0f172a;">Part 5: Industry Challenges & Bottlenecks</span>
+## <span style="font-size: 2.2em; color: #0f172a;">Part 5: Industry Challenges & Bottlenecks</span>
 
 Despite intense competition, the industry faces fundamental challenges:
 
-## <span style="font-size: 1.5em; color: #1e3a8a;">1. Asymmetric Warfare</span>
+### <span style="font-size: 1.5em; color: #1e3a8a;">1. Asymmetric Warfare</span>
 
 Defenders must protect every single endpoint and password, whereas attackers need only find one weak link using AI tools. Defenders remain in a reactive cycle while AI drastically lowers attack costs and sky-rockets defense expenses.
 
-## <span style="font-size: 1.5em; color: #1e3a8a;">2. Compliance-Driven "Shelfware"</span>
+### <span style="font-size: 1.5em; color: #1e3a8a;">2. Compliance-Driven "Shelfware"</span>
 
 Many non-critical enterprises buy security tools primarily to pass audits rather than stop hackers, creating a market flooded with "shelfware" installed for inspection and then ignored.
 
-## <span style="font-size: 1.5em; color: #1e3a8a;">3. Tool Fragmentation & Alert Fatigue</span>
+### <span style="font-size: 1.5em; color: #1e3a8a;">3. Tool Fragmentation & Alert Fatigue</span>
 
-Large enterprises deploy an average of 40 to 70 non-interoperable security tools generating thousands of daily alerts—over 90% of which are false positives—causing engineer burnout while critical attacks hide in the noise.
+Large organizations can struggle with overlapping tools and alert volumes. A universal average number of tools or false-positive rate would need a defined sample and measurement method.
 
-## <span style="font-size: 1.5em; color: #1e3a8a;">Value Chain Bottlenecks</span>
+### <span style="font-size: 1.5em; color: #1e3a8a;">Value Chain Bottlenecks</span>
 
-* <span style="color: #1e3a8a; font-weight: bold;">Upstream:</span> Siloed intelligence data and heavy reliance on open-source libraries (e.g., Log4j) mean a single low-level vulnerability can impact millions of servers globally.
-* <span style="color: #1e3a8a; font-weight: bold;">Midstream:</span> Continuous AI/engine R&D is required, with long sales cycles (6–12 months) and high Customer Acquisition Costs (CAC). Friction from "Zero Trust" policies often faces internal operational resistance.
-* <span style="color: #1e3a8a; font-weight: bold;">Downstream:</span> Labor-intensive services face talent shortages that squeeze gross margins (30%–40% vs. 70%–80% for software), alongside ambiguous liability during breach incidents.
+* <span style="color: #1e3a8a; font-weight: bold;">Upstream:</span> Shared software components can create widespread exposure, as CISA's Log4j advisories illustrate.
+* <span style="color: #1e3a8a; font-weight: bold;">Midstream:</span> Ongoing research, complex integrations and operational resistance can slow adoption of zero-trust approaches.
+* <span style="color: #1e3a8a; font-weight: bold;">Downstream:</span> Labor-intensive services face staffing and incident-response challenges; margins vary across businesses.
 
 ---
 
 This competition appears to be a death spiral with no end in sight; as for how the cybersecurity industry will evolve—whether a super-giant akin to Google will emerge, or if the advent of AI will trigger a commercial tsunami—only time will tell.
 
 That concludes my industry report. If you found it interesting, please like the video and subscribe to my channel. I’m Dex—see you next time.
+
+---
+
+## Source notes and primary materials
+
+- [NIST SP 800-207: *Zero Trust Architecture* (2020)](https://csrc.nist.gov/pubs/sp/800/207/final) — original standard supplied with the working materials. It defines an architectural approach, **not** market size or company share.
+- [Menlo Ventures: *Cybersecurity Market Map* (2022)](https://menlovc.com/wp-content/uploads/2021/01/cybersecurity_market_map-091922.pdf) — the supplied category/company map, a 2022 snapshot rather than a 2026 revenue dataset or endorsement of the named vendors.
+- [CISA: Apache Log4j vulnerability advisory](https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-356a) — primary security guidance for the software-supply-chain example.
+
+The accompanying *Network Security* document is a research reading list, not primary verification for the anonymous casino account or the removed market figures. The incident specifics remain unverified in public primary records.
+
+## View or download the supplied original
+
+{{< research-pdf src="/research-files/cybersecurity/NIST.SP.800-207.pdf" title="NIST SP 800-207: Zero Trust Architecture (2020)" publisher="National Institute of Standards and Technology, 59 pages" official="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf" >}}
+
+The [Menlo Ventures Cybersecurity Market Map PDF](https://menlovc.com/wp-content/uploads/2021/01/cybersecurity_market_map-091922.pdf) is available directly from its publisher; it is not hosted here because permission to redistribute that copyrighted PDF has not been established.
+
+### Links contained in the Network Security research note
+
+These are the supplied note's research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.
+
+Incident and industry background:
+
+- [The Hacker News: aquarium thermometer incident](https://thehackernews.com/2018/04/iot-hacking-thermometer.html).
+- [Entrepreneur: casino thermometer account](https://www.entrepreneur.com/business-news/a-casino-gets-hacked-through-a-fish-tank-thermometer/368943).
+- [Privacy International: aquarium thermometer account](https://privacyinternational.org/examples/2559/aquarium-thermometer-enables-casino-hack).
+- [Cyber Magazine: history of cybersecurity](https://cybermagazine.com/cyber-security/history-cybersecurity).
+- [History of Information: first computer virus](https://www.historyofinformation.com/detail.php?entryid=2860).
+- [Wikipedia: Creeper and Reaper](https://en.wikipedia.org/wiki/Creeper_and_Reaper).
+- [KMC Controls: Creeper and Reaper](https://www.kmccontrols.com/blog/security-from-creeper-to-reaper/).
+- [Atari Magazine: virus explainer](https://www.atarimagazines.com/startv4n10/virus.php).
+- [Atari Mania: ST Virus Killer](https://www.atarimania.com/utility-atari-st-st-virus-killer_45204.html).
+- [Carifred: UVK](https://www.carifred.com/uvk/).
+- [Wikipedia: ESET NOD32](https://en.wikipedia.org/wiki/ESET_NOD32).
+- [Internet Archive: Malware Museum](https://archive.org/details/malwaremuseum).
+- [Wikipedia: G Data CyberDefense](https://en.wikipedia.org/wiki/G_Data_CyberDefense).
+- [Wikipedia: security-hacking incidents](https://en.wikipedia.org/wiki/List_of_security_hacking_incidents).
+- [Purdue TAP: hackers of the 2000s](https://cyber.tap.purdue.edu/blog/articles/hackers-of-the-2000s/).
+- [Cofense: history of phishing](https://cofense.com/knowledge-center/history-of-phishing/).
+- [Wikipedia: computer virus and worm timeline](https://en.wikipedia.org/wiki/Timeline_of_computer_viruses_and_worms).
+- [CISA: Log4j guidance](https://www.cisa.gov/news-events/news/apache-log4j-vulnerability-guidance).
+- [Wikipedia: Sony Pictures hack](https://en.wikipedia.org/wiki/2014_Sony_Pictures_hack).
+- [Wikipedia: WannaCry attack](https://en.wikipedia.org/wiki/WannaCry_ransomware_attack).
+
+Market and technical references:
+
+- [Mordor Intelligence: cybersecurity market](https://www.mordorintelligence.com/industry-reports/cyber-security-market).
+- [Menlo Ventures: market map PDF](https://menlovc.com/wp-content/uploads/2021/01/cybersecurity_market_map-091922.pdf).
+- [Cloudflare: next-generation firewalls](https://www.cloudflare.com/learning/security/what-is-next-generation-firewall-ngfw/).
+- [Cybersecurity Ventures](https://cybersecurityventures.com/).
+- [U.S. Securities and Exchange Commission](https://www.sec.gov/).
+- [IBM: a decade of global cyberattacks](https://www.ibm.com/think/insights/decade-global-cyberattacks-where-they-left-us).
+- [CSO: Target breach timeline search](https://www.csoonline.com/search/?q=Target+data+breach+2013+timeline).
+- [NIST SP 800-207 PDF](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf).
+
+Video references from the note (third-party material, not licensed for reuse here):
+
+- [Video 1](https://youtu.be/b_Cbfh0_9Ws?si=Nnc074hC6b-Ai_hp).
+- [Video 2](https://youtu.be/O4fpqXjkdQM?si=cvrBatlQCwLvKdbC).
+- [Video 3](https://youtu.be/yn6CPQ9RioA?si=1oHfRgTD8KWDVt9P).
+- [Video 4](https://youtu.be/tpBXSCMJXq4?si=omqdLRt6QzxRT2km).
+- [Video 5](https://youtu.be/PWVN3Rq4gzw?si=pIolrzQdIUM3Dgcb).

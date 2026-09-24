@@ -6,6 +6,17 @@ import vm from "node:vm";
 const data = JSON.parse(readFileSync(new URL("../static/data/industries.json", import.meta.url), "utf8"));
 const script = readFileSync(new URL("../static/js/industries.js", import.meta.url), "utf8");
 
+test("numeric provenance stays separate from contextual reading", () => {
+  assert.equal(data.industries.length, 50);
+  for (const row of data.industries) {
+    for (const field of ["numeric_source_url", "source_date", "geography", "market_definition"]) {
+      assert.equal(row[field], "", `Row ${row.rank} is not numerically verified`);
+    }
+  }
+  assert.match(data.industries[7].context_url, /nist\.gov/);
+  assert.match(data.industries[20].context_url, /fda\.gov/);
+});
+
 function page({ embeddedData = JSON.stringify(data), fetchData = () => { throw Error("Unexpected fetch"); } } = {}) {
   const listeners = {};
   const elements = new Map();
@@ -19,6 +30,7 @@ function page({ embeddedData = JSON.stringify(data), fetchData = () => { throw E
   elements.get("ix-years").value = "5";
   elements.get("ix-count").textContent = "Full industry list";
   elements.get("ix-tbody").innerHTML = "<tr data-rank=\"1\">Static industry row</tr>";
+  elements.get("ix-tbody").querySelectorAll = () => [];
   const root = {
     querySelector(selector) {
       if (selector === "#ix-dataset") return embeddedData == null ? null : { textContent: embeddedData };
@@ -28,7 +40,7 @@ function page({ embeddedData = JSON.stringify(data), fetchData = () => { throw E
     addEventListener(name, handler) { listeners[name] = handler; }
   };
   const document = { getElementById(id) { return id === "industry-explorer" ? root : null; } };
-  vm.runInNewContext(script, { document, fetch: fetchData });
+  vm.runInNewContext(script, { document, fetch: fetchData, URL });
   return { elements, listeners };
 }
 
@@ -52,6 +64,17 @@ test("translated option labels do not alter category filtering", () => {
   category.value = "";
   listeners.change({ target: category });
   assert.equal(elements.get("ix-count").textContent, "Showing 50 of 50");
+});
+
+test("selected row separates an unverified numeric claim from relevant reading", () => {
+  const { elements, listeners } = page();
+  listeners.click({ target: {
+    closest(selector) { return selector.startsWith(".ix-select") ? { getAttribute() { return "8"; } } : null; }
+  } });
+  const details = elements.get("ix-details").innerHTML;
+  assert.match(details, /No numeric source recorded/);
+  assert.match(details, /nist\.gov/);
+  assert.match(details, /does not verify figures/);
 });
 
 test("an early input event cannot clear static rows while a fallback fetch is pending", () => {

@@ -1,0 +1,15 @@
+{{- $src := .Get "src" -}}
+{{- $title := .Get "title" -}}
+{{- $publisher := .Get "publisher" -}}
+{{- $official := .Get "official" -}}
+<section class="research-original" aria-label="Original PDF: {{ $title }}">
+  <p class="research-original__title">{{ $title }}</p>
+  <p class="research-original__meta">Original PDF · {{ $publisher }}</p>
+  <p class="research-original__actions">
+    <a href="{{ $src }}" target="_blank" rel="noopener">Open PDF in a new tab</a>
+    <a href="{{ $src }}" download>Download original PDF</a>
+    {{- with $official }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">Publisher's copy</a>{{ end }}
+  </p>
+  <iframe class="research-original__preview" src="{{ $src }}#view=FitH" title="Preview of {{ $title }}" loading="lazy"></iframe>
+  <p class="research-original__fallback">If the preview is unavailable in your browser, use “Open PDF in a new tab” above.</p>
+</section>

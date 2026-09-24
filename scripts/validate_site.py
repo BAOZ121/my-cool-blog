@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import csv
+import hashlib
 import json
 import sys
 from html.parser import HTMLParser
@@ -80,6 +81,39 @@ def main() -> None:
     assert industry_page.ranks == list(range(1, 51)), "Static industry rows are missing or out of order"
     for select, field in (("ix-category", "category"), ("ix-maturity", "maturity")):
         assert set(industry_page.options[select]) == {"", *(item[field] for item in items)}, select
+    search_index = json.loads((BUILD / "search/index.json").read_text(encoding="utf-8"))
+    indexed_urls = {entry["permalink"] for entry in search_index}
+    assert all(
+        f"/industry-breakdowns/{profile['id']}/" in indexed_urls
+        for profile in json.loads((ROOT / "data/breakdowns.json").read_text(encoding="utf-8"))["profiles"]
+    ), "Industry maps must be searchable"
+    assert "/industries/" in indexed_urls and "/post/my-first-post/" not in indexed_urls
+    assert "See the structure. Check the evidence." in (BUILD / "index.html").read_text(encoding="utf-8")
+    for slug in ("pharmaceutical-industry", "cybersecurity-industry-report", "vr-industry-report-2026"):
+        article = (BUILD / "post" / slug / "index.html").read_text(encoding="utf-8")
+        assert "Source notes and primary materials" in article, f"Missing article bibliography: {slug}"
+    originals = {
+        "pharmaceutical-industry": (
+            "research-files/pharmaceutical/STATUTE-76-Pg780.pdf",
+            "6c91250d39a8bac71edefb40689eaf4027f87a38d98611a98faf86ae071c299d",
+        ),
+        "cybersecurity-industry-report": (
+            "research-files/cybersecurity/NIST.SP.800-207.pdf",
+            "0290d6ece24874287316f4bf430fef770aa4ec08a2227c8f2c1e5b2ff975e03d",
+        ),
+    }
+    assert {
+        p.relative_to(ROOT / "static").as_posix()
+        for p in (ROOT / "static/research-files").rglob("*") if p.is_file()
+    } == {path for path, _ in originals.values()}, "Unexpected research file in public assets"
+    for slug, (path, expected_sha256) in originals.items():
+        source = (ROOT / "static" / path).read_bytes()
+        assert source.startswith(b"%PDF-"), f"Not a PDF: {path}"
+        assert hashlib.sha256(source).hexdigest() == expected_sha256, f"Original altered: {path}"
+        assert (BUILD / path).read_bytes() == source, f"Built PDF differs from original: {path}"
+        article = (BUILD / "post" / slug / "index.html").read_text(encoding="utf-8")
+        assert f'src="/{path}#view=FitH"' in article, f"Missing PDF preview: {slug}"
+        assert f"href=/{path} download" in article, f"Missing PDF download: {slug}"
     checked = 0
     errors = []
     for page in pages:

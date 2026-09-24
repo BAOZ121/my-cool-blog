@@ -41,3 +41,5 @@ jobs:
         run: hugo --environment production --minify --panicOnWarning
       - name: Check industry data and site links
         run: python3 scripts/validate_site.py public
+      - name: Check sourced industry breakdowns
+        run: python3 scripts/validate_breakdowns.py public

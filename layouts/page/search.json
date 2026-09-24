@@ -1,0 +1,20 @@
+{{- $result := slice -}}
+{{- range where .Site.RegularPages "Section" "in" (slice "post" "page") -}}
+  {{- if ne .Layout "search" -}}
+    {{- $content := .Plain -}}
+    {{- with .Params.industryId -}}
+      {{- $matches := where hugo.Data.breakdowns.profiles "id" . -}}
+      {{- with index $matches 0 -}}
+        {{- $content = printf "%s %s %s %s" $content .summary .keywords .scope -}}
+        {{- range .chain -}}
+          {{- $content = printf "%s %s %s" $content .title .role -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $data := dict "title" .Title "date" .Date "permalink" .RelPermalink "content" (printf "%s %s" .Description $content) -}}
+    {{- $image := partial "helper/image" (dict "Image" .Params.image "Resources" .Resources "Context" .) -}}
+    {{- if $image -}}{{- $data = merge $data (dict "image" $image.Permalink) -}}{{- end -}}
+    {{- $result = $result | append $data -}}
+  {{- end -}}
+{{- end -}}
+{{ jsonify $result }}
