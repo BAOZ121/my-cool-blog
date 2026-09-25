@@ -14,3 +14,7 @@
     {{ $wrappedTable := printf "<div class=\"table-wrapper\">${1}</div>" }}
     {{ .Content | replaceRE "(<table>(?:.|\n)+?</table>)" $wrappedTable | safeHTML }}
 </section>
+
+{{- if eq .Section "post" -}}
+    {{ partial "article/components/original-materials.html" . }}
+{{- end }}

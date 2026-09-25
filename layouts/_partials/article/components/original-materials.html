@@ -1,0 +1,75 @@
+{{- $articleKey := "" -}}
+{{- with .File -}}
+    {{- $articleKey = path.Base .Dir -}}
+{{- end -}}
+{{- $materials := index site.Data.original_materials $articleKey -}}
+{{- with $materials -}}
+<section class="source-materials" aria-labelledby="original-materials-heading">
+    <hr>
+    <h2 id="original-materials-heading">{{ .title }}</h2>
+    <p>{{ .intro }}</p>
+
+    <div class="source-materials-list">
+    {{- range .files }}
+        {{- $fileURL := "" -}}
+        {{- $hosted := false -}}
+        {{- $sourceURL := .source_url | default "" -}}
+        {{- $publishPath := .publish_path | default "" -}}
+
+        {{- with .local_path }}
+            {{- $fileURL = . | relURL -}}
+            {{- $hosted = true -}}
+        {{- else }}
+            {{- if and $sourceURL $publishPath }}
+                {{- with try (resources.GetRemote $sourceURL) }}
+                    {{- if not .Err }}
+                        {{- with .Value }}
+                            {{- $copy := resources.Copy $publishPath . -}}
+                            {{- $fileURL = $copy.RelPermalink -}}
+                            {{- $hosted = true -}}
+                        {{- end }}
+                    {{- end }}
+                {{- end }}
+            {{- end }}
+        {{- end }}
+
+        {{- if and (not $fileURL) $sourceURL }}
+            {{- $fileURL = $sourceURL -}}
+        {{- end }}
+
+        <article class="source-material-card">
+            <div class="source-material-meta">
+                <h3>{{ .title }}</h3>
+                <p><strong>Original filename:</strong> <code>{{ .original_name }}</code> <span aria-hidden="true">·</span> {{ .format }}</p>
+                {{- with .source_note }}<p class="source-material-note">{{ . }}</p>{{- end }}
+            </div>
+
+            <div class="source-material-actions" aria-label="Actions for {{ .original_name }}">
+                {{- if $fileURL }}
+                    {{- if eq .format "PDF" }}
+                    <a class="research-action" href="{{ $fileURL }}" target="_blank" rel="noopener">{{ if $hosted }}View hosted PDF{{ else }}View source PDF{{ end }}</a>
+                    {{- end }}
+                    <a class="research-action" href="{{ $fileURL }}"{{ if $hosted }} download{{ end }}>Download {{ .format }}</a>
+                {{- end }}
+                {{- if $sourceURL }}
+                    <a class="research-action" href="{{ $sourceURL }}" target="_blank" rel="noopener noreferrer">Original / source URL</a>
+                {{- end }}
+            </div>
+
+            {{- with .links }}
+            <details class="source-material-links">
+                <summary>Links contained in this file ({{ len . }})</summary>
+                <ul>
+                    {{- range . }}
+                    <li><a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ . }}</a></li>
+                    {{- end }}
+                </ul>
+            </details>
+            {{- end }}
+        </article>
+    {{- end }}
+    </div>
+
+    <p class="source-material-rights">Third-party documents remain the property of their respective publishers or rights holders. Hosted copies are provided here for research-source transparency; where available, the original/source URL is retained beside the copy.</p>
+</section>
+{{- end -}}
