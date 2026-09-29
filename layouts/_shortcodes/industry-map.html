@@ -1,0 +1,28 @@
+{{- $id := .Get "id" -}}
+{{- $map := index hugo.Data.article_visuals.maps $id -}}
+{{- if not $map -}}{{ errorf "Unknown industry-map %q in %s" $id .Page.File.Path }}{{- end -}}
+{{- $uid := printf "industry-map-%s-%d" $id .Ordinal -}}
+<figure class="article-visual" data-visual="map" data-vendor="{{ "vendor/article-visuals/markmap.js" | relURL }}" aria-labelledby="{{ $uid }}-title">
+    <header class="visual-header">
+        <p class="visual-eyebrow">INDUSTRY MAP</p>
+        <h3 id="{{ $uid }}-title">{{ $map.title }}</h3>
+        <p>{{ $map.description }}</p>
+    </header>
+    <div class="visual-toolbar" hidden aria-label="Mind map controls">
+        <button type="button" data-action="fit">Fit to view</button>
+        <button type="button" data-action="expand">Expand all</button>
+        <button type="button" data-action="collapse">Collapse</button>
+        <button type="button" data-action="fullscreen">Full screen</button>
+    </div>
+    <div class="visual-stage" hidden aria-label="{{ $map.title }}; a text outline is available below"></div>
+    <p class="visual-status" role="status" aria-live="polite"></p>
+    <details class="visual-fallback" open>
+        <summary>Read the full text outline</summary>
+        <ul class="visual-outline">{{ partial "article-visuals/outline.html" $map.root }}</ul>
+    </details>
+    <figcaption class="visual-caption">
+        <p>{{ $map.note }}</p>
+        <p>Sources: {{ range $index, $source := $map.sources }}{{ if $index }} · {{ end }}<a href="{{ $source.url | relURL }}">{{ $source.title }}</a>{{ end }}. Reviewed {{ $map.reviewed }}.</p>
+    </figcaption>
+    <script class="visual-data" type="application/json">{{ $map | jsonify | safeJS }}</script>
+</figure>

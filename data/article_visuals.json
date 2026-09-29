@@ -1,0 +1,748 @@
+{
+  "schema_version": 1,
+  "maps": {
+    "cybersecurity": {
+      "title": "The cybersecurity value chain",
+      "description": "Explore the foundations, products and services that connect security suppliers to customers.",
+      "root": {
+        "name": "Cybersecurity",
+        "children": [
+          {
+            "name": "Upstream · Foundations",
+            "children": [
+              {
+                "name": "Cloud infrastructure",
+                "children": [
+                  {
+                    "name": "AWS"
+                  },
+                  {
+                    "name": "Microsoft Azure"
+                  },
+                  {
+                    "name": "Alibaba Cloud"
+                  }
+                ]
+              },
+              {
+                "name": "Core components",
+                "children": [
+                  {
+                    "name": "Cryptographic libraries"
+                  },
+                  {
+                    "name": "Specialized chips"
+                  }
+                ]
+              },
+              {
+                "name": "Threat intelligence",
+                "children": [
+                  {
+                    "name": "Indicators and telemetry"
+                  },
+                  {
+                    "name": "Threat-data feeds"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Midstream · Products",
+            "children": [
+              {
+                "name": "Endpoint & workloads",
+                "children": [
+                  {
+                    "name": "CrowdStrike"
+                  }
+                ]
+              },
+              {
+                "name": "Network security",
+                "children": [
+                  {
+                    "name": "Palo Alto Networks"
+                  },
+                  {
+                    "name": "Fortinet"
+                  }
+                ]
+              },
+              {
+                "name": "Identity & access",
+                "children": [
+                  {
+                    "name": "Okta"
+                  },
+                  {
+                    "name": "CyberArk"
+                  }
+                ]
+              },
+              {
+                "name": "Security analytics",
+                "children": [
+                  {
+                    "name": "Splunk / Cisco"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Downstream · Delivery",
+            "children": [
+              {
+                "name": "Integration & resale",
+                "children": [
+                  {
+                    "name": "System integrators"
+                  },
+                  {
+                    "name": "Value-added resellers"
+                  }
+                ]
+              },
+              {
+                "name": "Managed security",
+                "children": [
+                  {
+                    "name": "MSSPs"
+                  },
+                  {
+                    "name": "Customer security teams"
+                  }
+                ]
+              },
+              {
+                "name": "Incident response",
+                "children": [
+                  {
+                    "name": "Mandiant"
+                  },
+                  {
+                    "name": "Consulting and response teams"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "Cybersecurity industry breakdown and source notes",
+          "url": "/industry-breakdowns/cybersecurity/"
+        }
+      ],
+      "note": "DEX editorial map based on the accompanying report. Examples are illustrative, not exhaustive or ranked. Companies can operate across several stages; connections show categories, not verified supplier contracts.",
+      "reviewed": "2026-09-29"
+    },
+    "pharmaceutical": {
+      "title": "The pharmaceutical value chain",
+      "description": "Follow the path from research and production support to medicines, distribution and payment.",
+      "root": {
+        "name": "Pharmaceuticals",
+        "children": [
+          {
+            "name": "Upstream · R&D support",
+            "children": [
+              {
+                "name": "Instruments & reagents",
+                "children": [
+                  {
+                    "name": "Thermo Fisher Scientific"
+                  },
+                  {
+                    "name": "Danaher"
+                  },
+                  {
+                    "name": "Illumina"
+                  }
+                ]
+              },
+              {
+                "name": "APIs & intermediates",
+                "children": [
+                  {
+                    "name": "Active ingredients"
+                  },
+                  {
+                    "name": "Chemical intermediates"
+                  }
+                ]
+              },
+              {
+                "name": "Research & manufacturing services",
+                "children": [
+                  {
+                    "name": "CROs"
+                  },
+                  {
+                    "name": "CDMOs / CMOs"
+                  }
+                ]
+              },
+              {
+                "name": "Technology platforms",
+                "children": [
+                  {
+                    "name": "Drug-discovery software"
+                  },
+                  {
+                    "name": "Gene-editing tools"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Midstream · Medicines",
+            "children": [
+              {
+                "name": "Big Pharma",
+                "children": [
+                  {
+                    "name": "Pfizer"
+                  },
+                  {
+                    "name": "Eli Lilly"
+                  },
+                  {
+                    "name": "AstraZeneca"
+                  }
+                ]
+              },
+              {
+                "name": "Biotechnology",
+                "children": [
+                  {
+                    "name": "BioNTech"
+                  },
+                  {
+                    "name": "Moderna"
+                  }
+                ]
+              },
+              {
+                "name": "Generic medicines",
+                "children": [
+                  {
+                    "name": "Teva"
+                  },
+                  {
+                    "name": "Sandoz"
+                  },
+                  {
+                    "name": "Sun Pharma"
+                  }
+                ]
+              },
+              {
+                "name": "Specialty medicines",
+                "children": [
+                  {
+                    "name": "Santen"
+                  },
+                  {
+                    "name": "Jazz Pharmaceuticals"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Downstream · Access",
+            "children": [
+              {
+                "name": "Distribution",
+                "children": [
+                  {
+                    "name": "McKesson"
+                  },
+                  {
+                    "name": "Cencora"
+                  },
+                  {
+                    "name": "Cardinal Health"
+                  }
+                ]
+              },
+              {
+                "name": "Care & retail channels",
+                "children": [
+                  {
+                    "name": "Hospitals"
+                  },
+                  {
+                    "name": "Retail and specialty pharmacies"
+                  }
+                ]
+              },
+              {
+                "name": "Payers & reimbursement",
+                "children": [
+                  {
+                    "name": "Public health systems"
+                  },
+                  {
+                    "name": "Insurers and PBMs"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "Biopharmaceutical industry breakdown and source notes",
+          "url": "/industry-breakdowns/biopharmaceuticals/"
+        }
+      ],
+      "note": "DEX editorial map based on the accompanying report. Examples are illustrative, not exhaustive or ranked. Companies can operate across several stages; connections show categories, not verified supplier contracts.",
+      "reviewed": "2026-09-29"
+    },
+    "vr-xr": {
+      "title": "The VR / XR value chain",
+      "description": "Explore the components, headsets and applications behind immersive computing.",
+      "root": {
+        "name": "VR / XR",
+        "children": [
+          {
+            "name": "Upstream · Components",
+            "children": [
+              {
+                "name": "Compute",
+                "children": [
+                  {
+                    "name": "Qualcomm XR platforms"
+                  },
+                  {
+                    "name": "Apple silicon"
+                  }
+                ]
+              },
+              {
+                "name": "Displays & optics",
+                "children": [
+                  {
+                    "name": "Micro-OLED displays"
+                  },
+                  {
+                    "name": "Pancake optics"
+                  }
+                ]
+              },
+              {
+                "name": "Tracking & power",
+                "children": [
+                  {
+                    "name": "Cameras and motion sensors"
+                  },
+                  {
+                    "name": "Eye / hand tracking"
+                  },
+                  {
+                    "name": "Batteries"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Midstream · Headsets",
+            "children": [
+              {
+                "name": "Device brands",
+                "children": [
+                  {
+                    "name": "Meta Quest"
+                  },
+                  {
+                    "name": "Apple Vision Pro"
+                  },
+                  {
+                    "name": "Sony PlayStation VR"
+                  },
+                  {
+                    "name": "Pico"
+                  },
+                  {
+                    "name": "HTC"
+                  }
+                ]
+              },
+              {
+                "name": "Manufacturing & supply",
+                "children": [
+                  {
+                    "name": "Goertek"
+                  },
+                  {
+                    "name": "Luxshare Precision"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Downstream · Experiences",
+            "children": [
+              {
+                "name": "Platforms & stores",
+                "children": [
+                  {
+                    "name": "SteamVR"
+                  },
+                  {
+                    "name": "Meta Quest Store"
+                  },
+                  {
+                    "name": "App Store"
+                  }
+                ]
+              },
+              {
+                "name": "Consumer uses",
+                "children": [
+                  {
+                    "name": "Gaming"
+                  },
+                  {
+                    "name": "Social experiences"
+                  },
+                  {
+                    "name": "Video and entertainment"
+                  }
+                ]
+              },
+              {
+                "name": "Enterprise uses",
+                "children": [
+                  {
+                    "name": "Simulation and training"
+                  },
+                  {
+                    "name": "Design and digital twins"
+                  },
+                  {
+                    "name": "Medical education"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "Report sources and original materials",
+          "url": "/post/vr-industry-report-2026/#source-notes-and-primary-materials"
+        }
+      ],
+      "note": "DEX editorial map based on the accompanying report. Examples are illustrative, not exhaustive or ranked. Companies can operate across several stages; connections show categories, not verified supplier contracts.",
+      "reviewed": "2026-09-29"
+    },
+    "semiconductors": {
+      "title": "The semiconductor value chain",
+      "description": "See how design, production capabilities and end markets fit together.",
+      "root": {
+        "name": "Semiconductors",
+        "children": [
+          {
+            "name": "Upstream · Design & inputs",
+            "children": [
+              {
+                "name": "Chip design",
+                "children": [
+                  {
+                    "name": "CPUs, GPUs and accelerators"
+                  },
+                  {
+                    "name": "Analog, power and RF"
+                  }
+                ]
+              },
+              {
+                "name": "EDA & reusable IP",
+                "children": [
+                  {
+                    "name": "Design and verification tools"
+                  },
+                  {
+                    "name": "Processor and interface IP"
+                  }
+                ]
+              },
+              {
+                "name": "Equipment & materials",
+                "children": [
+                  {
+                    "name": "Lithography and process tools"
+                  },
+                  {
+                    "name": "Wafers, gases and chemicals"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Midstream · Production",
+            "children": [
+              {
+                "name": "Wafer fabrication",
+                "children": [
+                  {
+                    "name": "Dedicated foundries"
+                  },
+                  {
+                    "name": "Integrated device manufacturers"
+                  }
+                ]
+              },
+              {
+                "name": "Assembly & packaging",
+                "children": [
+                  {
+                    "name": "Conventional packaging"
+                  },
+                  {
+                    "name": "Advanced packaging and chiplets"
+                  }
+                ]
+              },
+              {
+                "name": "Testing",
+                "children": [
+                  {
+                    "name": "Wafer probing"
+                  },
+                  {
+                    "name": "Final test and reliability"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Downstream · End markets",
+            "children": [
+              {
+                "name": "Computing",
+                "children": [
+                  {
+                    "name": "Data centers and AI"
+                  },
+                  {
+                    "name": "PCs and smartphones"
+                  }
+                ]
+              },
+              {
+                "name": "Connected systems",
+                "children": [
+                  {
+                    "name": "Automotive"
+                  },
+                  {
+                    "name": "Telecommunications"
+                  }
+                ]
+              },
+              {
+                "name": "Specialized applications",
+                "children": [
+                  {
+                    "name": "Industrial and energy"
+                  },
+                  {
+                    "name": "Defense and aerospace"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "Semiconductor industry primer — production stages",
+          "url": "https://www.semiconductors.org/semiconductor-industry-primer-the-stages-of-production-and-business-models/"
+        }
+      ],
+      "note": "DEX editorial map based on the accompanying report. Examples are illustrative, not exhaustive or ranked. Companies can operate across several stages; connections show categories, not verified supplier contracts.",
+      "reviewed": "2026-09-29"
+    }
+  },
+  "shares": {
+    "xr-headsets-2024": {
+      "title": "Global AR/VR headset shipment share",
+      "period": "Full year 2024",
+      "geography": "Worldwide",
+      "scope": "AR/VR headset market tracked by IDC; consumer and commercial shipments. This is broader than VR alone.",
+      "metric": "Share of headset unit shipments (%)",
+      "series": [
+        {
+          "name": "Meta",
+          "value": 74.6
+        },
+        {
+          "name": "Apple",
+          "value": 5.2
+        },
+        {
+          "name": "Sony",
+          "value": 4.3
+        },
+        {
+          "name": "ByteDance (Pico)",
+          "value": 4.1
+        },
+        {
+          "name": "XREAL",
+          "value": 3.3
+        },
+        {
+          "name": "Other",
+          "value": 8.5,
+          "derived": true
+        }
+      ],
+      "source": {
+        "publisher": "IDC",
+        "title": "Growth Expected to Pause for AR/VR Headsets, according to IDC",
+        "published": "2025-03-25",
+        "url": "https://www.idc.com/resource-center/press-releases/growth-expected-to-pause-for-ar-vr-headsets-according-to-idc/",
+        "locator": "Second body paragraph",
+        "underlying": "IDC Worldwide Quarterly Augmented and Virtual Reality Headset Tracker"
+      },
+      "note": "Other is calculated as 100% minus the five published shares. Shipments are neither installed base nor retail sell-through or revenue. This historical 2024 snapshot is not a 2026 estimate. Do not mix it with Counterpoint's narrower VR-only estimate.",
+      "unit": "%",
+      "reviewed": "2026-09-29"
+    },
+    "foundry-q4-2025": {
+      "title": "Global wafer foundry revenue share",
+      "period": "Q4 2025",
+      "geography": "Worldwide",
+      "scope": "Wafer foundry revenue under TrendForce's market definition. Samsung excludes System LSI. This is not total semiconductor revenue or the expanded Foundry 2.0 market.",
+      "metric": "Share of foundry revenue (%)",
+      "series": [
+        {
+          "name": "TSMC",
+          "value": 70.4
+        },
+        {
+          "name": "Samsung Foundry",
+          "value": 7.1
+        },
+        {
+          "name": "SMIC",
+          "value": 5.2
+        },
+        {
+          "name": "UMC",
+          "value": 4.2
+        },
+        {
+          "name": "GlobalFoundries",
+          "value": 3.8
+        },
+        {
+          "name": "Other foundries",
+          "value": 9.3,
+          "derived": true
+        }
+      ],
+      "source": {
+        "publisher": "TrendForce",
+        "title": "AI Demand Drives 4Q25 Global Top 10 Foundries Revenue Up 2.6% QoQ; Samsung Gains Share and Tower Moves Up in Rankings",
+        "published": "2026-03-12",
+        "url": "https://www.trendforce.com/presscenter/news/20260312-12965.html",
+        "locator": "TSMC and Samsung paragraphs; linked ranking graphic",
+        "image": "https://img.trendforce.com/EDM/2026/03/20260312_163034_3.jpg"
+      },
+      "note": "Five largest suppliers shown. Other foundries = 100% minus the five published shares and includes both other ranked and unranked suppliers. Percentages retain the source rounding. Historical quarter; not full-year 2025, all chip sales, or the broader Foundry 2.0 definition.",
+      "unit": "%",
+      "reviewed": "2026-09-29"
+    },
+    "modern-endpoint-security-2024": {
+      "title": "Modern endpoint security revenue share",
+      "period": "Full year 2024",
+      "geography": "Worldwide",
+      "scope": "IDC modern endpoint security segment; not the whole cybersecurity market.",
+      "metric": "Share of modern endpoint security revenue (%)",
+      "series": [
+        {
+          "name": "Microsoft",
+          "value": 28.6
+        },
+        {
+          "name": "Other",
+          "value": 71.4,
+          "derived": true
+        }
+      ],
+      "source": {
+        "publisher": "IDC, reproduced by Microsoft",
+        "title": "Microsoft ranked number one in modern endpoint security market share third year in a row",
+        "published": "2025-08-27",
+        "url": "https://www.microsoft.com/en-us/security/blog/2025/08/27/microsoft-ranked-number-one-in-modern-endpoint-security-market-share-third-year-in-a-row/",
+        "underlying": "IDC Worldwide Modern Endpoint Security Market Shares, 2024, US53349725, May 2025; IDC Semiannual Software Tracker, 2025",
+        "locator": "Opening paragraph and Worldwide Modern Endpoint Security 2024 Share Snapshot",
+        "image": "https://www.microsoft.com/en-us/security/blog/wp-content/uploads/2025/08/Picture3.webp"
+      },
+      "note": "IDC estimates reproduced on a vendor's official website. Other is the residual share of all remaining suppliers. Revenue share does not measure customer counts or product effectiveness. Historical 2024 snapshot.",
+      "unit": "%",
+      "reviewed": "2026-09-29"
+    },
+    "pharma-regions-2025": {
+      "title": "Prescription medicine sales by region",
+      "period": "Full year 2025",
+      "geography": "Worldwide, grouped by sales market",
+      "scope": "Global retail and hospital prescription medicine sales at ex-manufacturer prices. Regional sales destinations, not manufacturers' headquarters or company market shares.",
+      "metric": "Share of prescription medicine sales value (%)",
+      "series": [
+        {
+          "name": "North America (US & Canada)",
+          "value": 54.7
+        },
+        {
+          "name": "Europe",
+          "value": 23.7
+        },
+        {
+          "name": "China",
+          "value": 6.5
+        },
+        {
+          "name": "Japan",
+          "value": 3.5
+        },
+        {
+          "name": "Latin America",
+          "value": 4.2
+        },
+        {
+          "name": "Africa, other Asia & Australia",
+          "value": 7.4
+        }
+      ],
+      "source": {
+        "publisher": "EFPIA / IQVIA MIDAS",
+        "title": "The Pharmaceutical Industry in Figures — Key Data 2026",
+        "published": "2026",
+        "url": "https://www.efpia.eu/media/uj0popel/the-pharmaceutical-industry-in-figures-2026.pdf#page=14",
+        "locator": "Page 14, Breakdown of the world pharmaceutical market — 2025 sales",
+        "underlying": "IQVIA MIDAS (audited sales), FY 2025, April 2026"
+      },
+      "note": "Europe includes Belarus, Turkey, Russia and Ukraine. Other Asia excludes China and Japan. Values retain the publisher's one-decimal rounding. This is a geographic sales split, not a vendor ranking or total healthcare spending.",
+      "unit": "%",
+      "reviewed": "2026-09-29",
+      "dimension": "Sales region"
+    }
+  }
+}

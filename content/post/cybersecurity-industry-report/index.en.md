@@ -1,7 +1,7 @@
 ---
 title: "Cybersecurity: An Industry Map From Network Defenses to Zero Trust"
 date: 2026-08-11
-lastmod: 2026-09-23
+lastmod: 2026-09-29
 description: "A deep dive into the 60-year evolution of cybersecurity, upstream-midstream-downstream value chains, the four major market camps, and core industry bottlenecks."
 tags: ["Industry Research Report", "DEX", "Cybersecurity", "Business Analysis"]
 categories:
@@ -60,6 +60,8 @@ Since 2020, the industry has undergone profound transformation characterized by 
 
 ## <span style="font-size: 2.2em; color: #0f172a;">Part 3: Industry Value Chain</span>
 
+{{< industry-map id="cybersecurity" >}}
+
 Let's briefly summarize the structure of the cybersecurity industry.
 
 ### <span style="font-size: 1.5em; color: #1e3a8a;">Upstream: Foundational Infrastructure & Threat Intelligence</span>
@@ -92,6 +94,8 @@ Because security products are complex, a massive downstream service market has e
 ---
 
 ## <span style="font-size: 2.2em; color: #0f172a;">Part 4: Industry Market Landscape</span>
+
+{{< market-share id="modern-endpoint-security-2024" >}}
 
 There is no single comparable "cybersecurity market" figure without specifying geography, year, whether services and cloud infrastructure are included, and the research method. The supplied 2022 Menlo Ventures map identifies product categories and companies; **it does not substantiate this article's earlier $250B–$300B size, $500B forecast, CAGR, or vendor-share estimates**. Those numbers have been removed pending a traceable dataset.
 

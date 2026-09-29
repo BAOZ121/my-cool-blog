@@ -1,0 +1,38 @@
+{{- $id := .Get "id" -}}
+{{- $chart := index hugo.Data.article_visuals.shares $id -}}
+{{- if not $chart -}}{{ errorf "Unknown market-share %q in %s" $id .Page.File.Path }}{{- end -}}
+{{- $uid := printf "market-share-%s-%d" $id .Ordinal -}}
+{{- $csv := "Name,Share (%),Period,Geography,Metric,Source URL\n" -}}
+{{- range $chart.series -}}
+    {{- $csv = printf "%s\"%s\",%v,\"%s\",\"%s\",\"%s\",\"%s\"\n" $csv (replace .name "\"" "\"\"") .value (replace $chart.period "\"" "\"\"") (replace $chart.geography "\"" "\"\"") (replace $chart.metric "\"" "\"\"") (replace $chart.source.url "\"" "\"\"") -}}
+{{- end -}}
+{{- $download := resources.FromString (printf "data/charts/%s.csv" $id) $csv -}}
+<figure class="article-visual" data-visual="share" data-vendor="{{ "vendor/article-visuals/echarts.js" | relURL }}" aria-labelledby="{{ $uid }}-title">
+    <header class="visual-header">
+        <p class="visual-eyebrow">MARKET SHARE · {{ $chart.period }}</p>
+        <h3 id="{{ $uid }}-title">{{ $chart.title }}</h3>
+        <p>{{ $chart.scope }}</p>
+        <p class="visual-meta">{{ $chart.geography }} · {{ $chart.metric }}</p>
+    </header>
+    <div class="visual-toolbar" hidden aria-label="Chart controls">
+        <button type="button" data-action="fullscreen">Full screen</button>
+    </div>
+    <div class="visual-stage" hidden aria-label="{{ $chart.title }}; exact percentages are available in the table below"></div>
+    <p class="visual-status" role="status" aria-live="polite"></p>
+    <details class="visual-fallback" open>
+        <summary>View the data table</summary>
+        <div class="table-wrapper">
+            <table class="visual-table">
+                <caption>{{ $chart.title }} · {{ $chart.period }} · {{ $chart.metric }}</caption>
+                <thead><tr><th scope="col">{{ $chart.dimension | default "Company" }}</th><th scope="col">Share</th></tr></thead>
+                <tbody>{{ range $chart.series }}<tr><th scope="row">{{ .name }}</th><td>{{ printf "%.1f%%" (float .value) }}</td></tr>{{ end }}</tbody>
+            </table>
+        </div>
+        <a class="visual-download" href="{{ $download.RelPermalink }}" download>Download data (CSV)</a>
+    </details>
+    <figcaption class="visual-caption">
+        <p>{{ $chart.note }}</p>
+        <p>Source: <a href="{{ $chart.source.url }}">{{ $chart.source.publisher }} — {{ $chart.source.title }}</a> ({{ $chart.source.published }}). Reviewed {{ $chart.reviewed }}.</p>
+    </figcaption>
+    <script class="visual-data" type="application/json">{{ $chart | jsonify | safeJS }}</script>
+</figure>

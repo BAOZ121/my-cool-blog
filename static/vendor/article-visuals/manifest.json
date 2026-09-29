@@ -1,0 +1,327 @@
+{
+  "generatedBy": "npm run build:visuals",
+  "delivery": "Self-hosted ES modules; no runtime CDN or data requests",
+  "bundles": {
+    "markmap.js": {
+      "bytes": 81211
+    },
+    "echarts.js": {
+      "bytes": 480883
+    }
+  },
+  "licenses": [
+    {
+      "name": "d3",
+      "version": "7.9.0",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-array",
+      "version": "3.2.4",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-array-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-axis",
+      "version": "3.0.0",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-axis-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-brush",
+      "version": "3.0.0",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-brush-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-chord",
+      "version": "3.0.1",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-chord-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-color",
+      "version": "3.1.0",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-color-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-contour",
+      "version": "4.0.2",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-contour-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-delaunay",
+      "version": "6.0.4",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-delaunay-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-dispatch",
+      "version": "3.0.1",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-dispatch-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-drag",
+      "version": "3.0.0",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-drag-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-dsv",
+      "version": "3.0.1",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-dsv-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-ease",
+      "version": "3.0.1",
+      "license": "BSD-3-Clause",
+      "files": [
+        "licenses/d3-ease-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-fetch",
+      "version": "3.0.1",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-fetch-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-force",
+      "version": "3.0.0",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-force-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-format",
+      "version": "3.1.2",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-format-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-geo",
+      "version": "3.1.1",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-geo-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-hierarchy",
+      "version": "3.1.2",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-hierarchy-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-interpolate",
+      "version": "3.0.1",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-interpolate-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-path",
+      "version": "3.1.0",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-path-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-polygon",
+      "version": "3.0.1",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-polygon-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-quadtree",
+      "version": "3.0.1",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-quadtree-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-random",
+      "version": "3.0.1",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-random-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-scale",
+      "version": "4.0.2",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-scale-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-scale-chromatic",
+      "version": "3.1.0",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-scale-chromatic-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-selection",
+      "version": "3.0.0",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-selection-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-shape",
+      "version": "3.2.0",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-shape-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-time",
+      "version": "3.1.0",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-time-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-time-format",
+      "version": "4.1.0",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-time-format-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-timer",
+      "version": "3.0.1",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-timer-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-transition",
+      "version": "3.0.1",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-transition-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "d3-zoom",
+      "version": "3.0.0",
+      "license": "ISC",
+      "files": [
+        "licenses/d3-zoom-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "delaunator",
+      "version": "5.1.0",
+      "license": "ISC",
+      "files": [
+        "licenses/delaunator-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "echarts",
+      "version": "6.1.0",
+      "license": "Apache-2.0",
+      "files": [
+        "licenses/echarts-LICENSE.txt",
+        "licenses/echarts-NOTICE.txt"
+      ]
+    },
+    {
+      "name": "internmap",
+      "version": "2.0.3",
+      "license": "ISC",
+      "files": [
+        "licenses/internmap-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "markmap-common",
+      "version": "0.18.9",
+      "license": "MIT",
+      "files": [
+        "licenses/markmap-common-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "markmap-view",
+      "version": "0.18.12",
+      "license": "MIT",
+      "files": [
+        "licenses/markmap-view-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "robust-predicates",
+      "version": "3.0.3",
+      "license": "Unlicense",
+      "files": [
+        "licenses/robust-predicates-LICENSE.txt"
+      ]
+    },
+    {
+      "name": "tslib",
+      "version": "2.3.0",
+      "license": "0BSD",
+      "files": [
+        "licenses/tslib-LICENSE.txt.txt"
+      ]
+    },
+    {
+      "name": "zrender",
+      "version": "6.1.0",
+      "license": "BSD-3-Clause",
+      "files": [
+        "licenses/zrender-LICENSE.txt"
+      ]
+    }
+  ]
+}

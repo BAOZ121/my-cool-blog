@@ -2,7 +2,7 @@
 title: "The Pharmaceutical Industry: History, Structure, and Challenges"
 description: "A deep dive into the 150-year evolution of the pharmaceutical industry, core market structures, and future challenges."
 date: 2026-08-21
-lastmod: 2026-09-23
+lastmod: 2026-09-29
 image: "cover.jpg"
 categories:
   - "Industry Report"
@@ -75,6 +75,8 @@ Similarly, the pharmaceutical industry, like its history, is extremely complex. 
 ---
 
 ## <span style="font-size: 2.2em; color: #0f172a;">Part 3: Industry Structure</span>
+
+{{< industry-map id="pharmaceutical" >}}
 
 The pharmaceutical industry is a complex and unique industry characterized by high technological barriers, high compliance thresholds, long cycles, high profit margins, and high risks. The entire industry chain can be clearly divided into three core segments: upstream (R&D support), midstream (pharmaceutical companies and product portfolios), and downstream (distribution, channels, and payers).
 
@@ -154,6 +156,12 @@ New drug R&D investment -> regulatory approval and a period of market exclusivit
 Of course, high returns often come with high risks. This complex competitive landscape limits drug development efficiency and triggers various commercial struggles and public health crises.
 
 ---
+
+## Where medicines are sold
+
+The regional sales mix below describes the destinations of prescription medicine sales. It does not rank pharmaceutical companies.
+
+{{< market-share id="pharma-regions-2025" >}}
 
 ## <span style="font-size: 2.2em; color: #0f172a;">Part 4: Industry Issues and Challenges</span>
 
