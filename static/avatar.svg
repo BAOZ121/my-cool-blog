@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#0a0a0a"/>
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f7e7a0"/>
+      <stop offset="35%" stop-color="#e8c547"/>
+      <stop offset="55%" stop-color="#c9a227"/>
+      <stop offset="100%" stop-color="#8a6d1a"/>
+    </linearGradient>
+    <linearGradient id="goldEdge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8d0"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </linearGradient>
+    <filter id="emboss" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+  <text x="256" y="310" font-family="Impact, Arial Black, sans-serif" font-size="150" font-weight="900" fill="url(#gold)" stroke="url(#goldEdge)" stroke-width="1.5" text-anchor="middle" filter="url(#emboss)" letter-spacing="-6">DEX</text>
+</svg>
