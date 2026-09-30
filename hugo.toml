@@ -6,7 +6,7 @@ enableRobotsTXT = true
 # Global settings
 [params]
     mainSections = ["post"]
-    favicon = "/favicon.png"
+    favicon = "/favicon.svg"
     description = "Independent industry research on market structure, technology, growth, and risk."
 
     [params.dateFormat]
@@ -39,7 +39,7 @@ enableRobotsTXT = true
 
         [languages.en.params.sidebar]
             compact = false
-            avatar = "/avatar-gold.svg"
+            avatar = "/avatar.svg"
             subtitle = "Independent Industry Research"
 
         # Main navigation
