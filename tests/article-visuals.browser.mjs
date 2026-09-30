@@ -74,9 +74,15 @@ try {
       assert.notEqual(await share.evaluate(el => getComputedStyle(el).backgroundColor), light);
       if (captures && slug === 'vr-industry-report-2026') await share.screenshot({ path: resolve(captures, `xr-share-dark-${width}.png`) });
       await share.locator('[data-action="fullscreen"]').click();
-      assert.ok(await share.evaluate(el => document.fullscreenElement === el || el.classList.contains('is-expanded')));
+      await page.waitForFunction(() => {
+        const figure = document.querySelector('figure.article-visual[data-visual="share"]');
+        return document.fullscreenElement === figure || figure?.classList.contains('is-expanded');
+      });
       await share.locator('[data-action="fullscreen"]').click();
-      assert.equal(await share.evaluate(el => document.fullscreenElement === el || el.classList.contains('is-expanded')), false);
+      await page.waitForFunction(() => {
+        const figure = document.querySelector('figure.article-visual[data-visual="share"]');
+        return document.fullscreenElement !== figure && !figure?.classList.contains('is-expanded');
+      });
       await page.evaluate(() => window.dispatchEvent(new Event('beforeprint')));
       await page.emulateMedia({ media: 'print' });
       assert.equal(await share.evaluate(el => getComputedStyle(el).backgroundColor), 'rgb(255, 255, 255)', 'Dark mode must print on white');
