@@ -1,5 +1,5 @@
 <aside class="sidebar left-sidebar sticky {{ if .Site.Params.sidebar.compact }}compact{{ end }}">
-    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="{{ T `toggleMenu` }}">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="{{ T `toggleMenu` }}" aria-controls="main-menu" aria-expanded="false">
         <span class="hamburger-box">
             <span class="hamburger-inner"></span>
         </span>
@@ -62,7 +62,7 @@
         {{ range .Site.Menus.main }}
         {{ $active := or (eq $currentPage.RelPermalink .URL) (or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .)) }}
         <li {{ if $active }} class='current'{{ end }}>
-            <a href='{{ .URL }}' {{ if .Params.newTab }}target="_blank"{{ end }}>
+            <a href='{{ .URL }}' {{ if $active }}aria-current="page"{{ end }} {{ if .Params.newTab }}target="_blank"{{ end }}>
                 {{ with .Params.Icon }}
                     {{ partial "helper/icon" . }}
                 {{ end }}
@@ -91,10 +91,12 @@
                 {{ end }}
 
                 {{ if .Site.Params.colorScheme.toggle }}
-                    <li id="dark-mode-toggle">
-                        {{ partial "helper/icon" "toggle-left" }}
-                        {{ partial "helper/icon" "toggle-right" }}
-                        <span>{{ T "darkMode" }}</span>
+                    <li class="theme-toggle-item">
+                        <button id="dark-mode-toggle" type="button" aria-pressed="false">
+                            {{ partial "helper/icon" "toggle-left" }}
+                            {{ partial "helper/icon" "toggle-right" }}
+                            <span>{{ T "darkMode" }}</span>
+                        </button>
                     </li>
                 {{ end }}
             </ol>

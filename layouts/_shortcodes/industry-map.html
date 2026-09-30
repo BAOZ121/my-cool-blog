@@ -2,7 +2,7 @@
 {{- $map := index hugo.Data.article_visuals.maps $id -}}
 {{- if not $map -}}{{ errorf "Unknown industry-map %q in %s" $id .Page.File.Path }}{{- end -}}
 {{- $uid := printf "industry-map-%s-%d" $id .Ordinal -}}
-<figure class="article-visual" data-visual="map" data-vendor="{{ "vendor/article-visuals/markmap.js" | relURL }}" aria-labelledby="{{ $uid }}-title">
+<figure id="industry-map-{{ $id }}" class="article-visual" data-visual="map" data-vendor="{{ "vendor/article-visuals/markmap.js" | relURL }}" aria-labelledby="{{ $uid }}-title">
     <header class="visual-header">
         <p class="visual-eyebrow">INDUSTRY MAP</p>
         <h3 id="{{ $uid }}-title">{{ $map.title }}</h3>

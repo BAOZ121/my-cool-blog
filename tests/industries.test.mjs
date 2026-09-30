@@ -17,7 +17,16 @@ test("numeric provenance stays separate from contextual reading", () => {
   assert.match(data.industries[20].context_url, /fda\.gov/);
 });
 
-function page({ embeddedData = JSON.stringify(data), fetchData = () => { throw Error("Unexpected fetch"); } } = {}) {
+const researchLinks = {
+  "2": [
+    { label: "View industry breakdown", url: "/industry-breakdowns/semiconductors/" },
+    { label: "Read report", url: "/post/semiconductor-industry-report/" },
+    { label: "View industry mind map", url: "/post/semiconductor-industry-report/#industry-map-semiconductors" },
+    { label: "View share chart", url: "/post/semiconductor-industry-report/#market-share-foundry-q4-2025" }
+  ]
+};
+
+function page({ embeddedData = JSON.stringify(data), embeddedLinks = JSON.stringify(researchLinks), locationHref, fetchData = () => { throw Error("Unexpected fetch"); } } = {}) {
   const listeners = {};
   const elements = new Map();
   const selectors = [
@@ -34,13 +43,15 @@ function page({ embeddedData = JSON.stringify(data), fetchData = () => { throw E
   const root = {
     querySelector(selector) {
       if (selector === "#ix-dataset") return embeddedData == null ? null : { textContent: embeddedData };
+      if (selector === "#ix-research-links") return embeddedLinks == null ? null : { textContent: embeddedLinks };
       return elements.get(selector.slice(1));
     },
     querySelectorAll() { return []; },
     addEventListener(name, handler) { listeners[name] = handler; }
   };
   const document = { getElementById(id) { return id === "industry-explorer" ? root : null; } };
-  vm.runInNewContext(script, { document, fetch: fetchData, URL });
+  const navigation = locationHref ? { location: { href: locationHref } } : undefined;
+  vm.runInNewContext(script, { document, fetch: fetchData, URL, window: navigation });
   return { elements, listeners };
 }
 
@@ -82,4 +93,41 @@ test("an early input event cannot clear static rows while a fallback fetch is pe
   listeners.input({ target: elements.get("ix-q") });
   assert.match(elements.get("ix-tbody").innerHTML, /Static industry row/);
   assert.equal(elements.get("ix-count").textContent, "Full industry list");
+});
+
+test("rendered rows retain stable destinations and valid research links before selection", () => {
+  const { elements } = page();
+  const table = elements.get("ix-tbody").innerHTML;
+  assert.equal((table.match(/id="ix-industry-\d+"/g) || []).length, 50);
+  for (const link of researchLinks["2"]) assert.ok(table.includes('href="' + link.url + '"'));
+  assert.doesNotMatch(table, /#industry-map-battery|#market-share-robotics/);
+});
+
+test("sourced baselines and broader context never validate or replace the original calculator estimates", () => {
+  const row = data.industries.find((item) => item.rank === 2);
+  const { elements } = page({ locationHref: "https://thedexs.com/industries/?industry=2#ix-industry-2" });
+  assert.match(elements.get("ix-tbody").innerHTML, /Sourced baseline · 2025/);
+  assert.match(elements.get("ix-tbody").innerHTML, /Sourced context · 2025/);
+  const details = elements.get("ix-details").innerHTML;
+  assert.match(details, /No numeric source recorded/);
+  assert.match(details, /Separate|separate|does not|do not/);
+  assert.ok(details.includes(row.sourced_baseline.source.url));
+  assert.equal(elements.get("ix-pv").value, String(Math.round((row.market_low + row.market_high) / 2 * 10) / 10));
+  assert.match(elements.get("ix-loaded").textContent, /unverified/);
+  for (const link of researchLinks["2"]) assert.ok(details.includes('href="' + link.url + '"'));
+});
+
+test("related research rejects external, executable and malformed routes without creating fake destinations", () => {
+  const malicious = { "2": [
+    { label: "External", url: "//outside.example/report" },
+    { label: "Executable", url: "javascript:alert(1)" },
+    { label: "Malformed", url: "/\\outside.example/report" },
+    { label: "Valid <tag>", url: "/post/semiconductor-industry-report/" }
+  ] };
+  const { elements } = page({ embeddedLinks: JSON.stringify(malicious), locationHref: "https://thedexs.com/industries/?industry=2" });
+  const markup = elements.get("ix-details").innerHTML;
+  assert.doesNotMatch(markup, /outside\.example|javascript:|Valid <tag>/);
+  assert.match(markup, /Valid &lt;tag&gt;/);
+  const missing = page({ embeddedLinks: "{invalid" });
+  assert.doesNotMatch(missing.elements.get("ix-tbody").innerHTML, /Continue the research/);
 });

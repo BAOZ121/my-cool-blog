@@ -1,9 +1,17 @@
 {{- $dataset := readFile "static/data/industries.json" | transform.Unmarshal -}}
+{{- $researchLinks := partial "industries/research-links.html" .Page -}}
 <tbody id="ix-tbody">
 {{- range $dataset.industries }}
-<tr data-rank="{{ .rank }}">
+{{- $row := . -}}
+<tr id="ix-industry-{{ .rank }}" data-rank="{{ .rank }}">
 <td>{{ .rank }}</td>
-<td><strong>{{ .name }}</strong></td>
+<td><strong>{{ .name }}</strong><br>
+{{- with .sourced_baseline -}}
+  <small class="ix-note"><a href="{{ .source.url }}">{{ if eq $row.verification_status "context" }}Sourced context{{ else }}Sourced baseline{{ end }} · {{ .year }}</a></small><br>
+{{- end -}}
+<small class="ix-note">Original ~2025 estimates unverified</small>
+{{- with index $researchLinks (printf "%v" .rank) }}<nav class="ix-note" aria-label="Related research for {{ $row.name }}">{{ range $index, $link := . }}{{ if $index }}<br>{{ end }}<a href="{{ $link.url }}">{{ $link.label }}</a>{{ end }}</nav>{{ end -}}
+</td>
 <td>{{ .tech }}</td>
 <td>{{ .market_label }}</td>
 <td>{{ .cagr_label }}</td>
@@ -12,3 +20,4 @@
 {{- end }}
 </tbody>
 <script type="application/json" id="ix-dataset">{{ $dataset | jsonify | safeJS }}</script>
+<script type="application/json" id="ix-research-links">{{ $researchLinks | jsonify | safeJS }}</script>

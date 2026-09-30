@@ -2,7 +2,7 @@
 title: "About & Methodology"
 description: "What DEX publishes, how the research is produced, and how to suggest corrections or collaborations."
 date: 2026-08-12
-lastmod: 2026-09-23
+lastmod: 2026-09-30
 slug: "about"
 ---
 
@@ -35,7 +35,7 @@ Sources are generally considered in this order:
 3. Reputable research firms, major financial institutions, and well-sourced journalism.
 4. Secondary summaries used only as discovery aids or context.
 
-Published research should link material claims to specific sources, including the source's date, geography, market definition, and unit. A source list alone does not establish which source supports a particular estimate. The 50-industry screening dataset now reserves a source URL, source date, geography and market-definition field per row; these remain empty until independently verified. Its market sizes and growth figures are unverified research leads, not validated observations or forecasts. A separate context link, where present, is not evidence for the row's numbers.
+Published research should link material claims to specific sources, including the source's date, geography, market definition, and unit. A source list alone does not establish which source supports a particular estimate. The [50-industry screening dataset](/industries/#source-review-notes) retains its original market sizes, growth figures and projections as unverified research leads. Separate historical baselines have been source-checked for semiconductors and cybersecurity; broader prescription-medicine context accompanies the biopharmaceutical row. Each added record includes its own year, unit, geography, market definition, publication date and review date. A partial or context status applies only to that separate record: it does not verify the original screening estimate or forecast. Original-source fields remain empty until the corresponding original claim is verified. A contextual reading link is also not evidence for the row's numbers.
 
 ### 3. Separate evidence from interpretation
 

@@ -2,7 +2,7 @@
 title: "50 High-Potential Industries (2025–2040): Technologies, Markets, and Growth"
 description: "A provisional 50-industry screening list inspired by global arenas and China policy priorities. Numeric estimates await row-level source verification."
 date: 2026-09-19
-lastmod: 2026-09-23
+lastmod: 2026-09-30
 image: "cover.jpg"
 dataDownload: "/data/industries.csv"
 categories:
@@ -21,7 +21,7 @@ At the same time, [China's NDRC described six emerging pillar industries and six
 
 This report brings those signals together into a provisional screening list of **50 industries**—with representative technologies, indicative figures where available, and commercial or policy notes.
 
-**Evidence status:** The 50 rows and downloadable CSV now contain empty, per-row fields for numeric source URL, source date, geography, and market definition. None of the figures has been reverified against an individual primary source; an empty field means **unverified**, not zero or not applicable. Selected context links help explain an industry but do **not** substantiate its market size or CAGR. Do not use these figures as comparable measurements, a forecast, or investment evidence. See the [methodology](/about/#research-methodology) for the intended verification standard.
+**Evidence status:** All original screening ranges, growth rates and projections below remain **unverified**. The [Industries page](/industries/#source-review-notes) and downloadable CSV now carry separate, source-checked historical baselines for semiconductors and cybersecurity, plus broader prescription-medicine context for biopharmaceuticals. Each added record has its own year, scope and source; it does **not** verify the original figures in this report. Empty original-source fields mean unverified, not zero or not applicable. Selected contextual reading links also do not substantiate market size or CAGR. See the [methodology](/about/#research-methodology) for the verification standard.
 
 ---
 

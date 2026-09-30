@@ -25,13 +25,13 @@ Typical topics:
 
   <div style="margin-bottom: 1rem;">
     <label for="name" style="display: block; margin-bottom: 0.35rem; font-weight: 600;">Name</label>
-    <input type="text" id="name" name="name" required placeholder="Your name"
+    <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name"
       style="width: 100%; padding: 0.65rem 0.85rem; border-radius: 8px; border: 1px solid var(--card-border, #333); background: var(--card-background, #1a1a1a); color: inherit; box-sizing: border-box;">
   </div>
 
   <div style="margin-bottom: 1rem;">
     <label for="email" style="display: block; margin-bottom: 0.35rem; font-weight: 600;">Email</label>
-    <input type="email" id="email" name="email" required placeholder="you@example.com"
+    <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com"
       style="width: 100%; padding: 0.65rem 0.85rem; border-radius: 8px; border: 1px solid var(--card-border, #333); background: var(--card-background, #1a1a1a); color: inherit; box-sizing: border-box;">
   </div>
 
@@ -46,37 +46,10 @@ Typical topics:
     Send Message
   </button>
 
-  <p id="form-status" style="margin-top: 1rem; font-size: 0.95rem;"></p>
+  <p id="form-status" role="status" aria-live="polite" aria-atomic="true" style="margin-top: 1rem; font-size: 0.95rem;"></p>
 </form>
 
-<script>
-  const form = document.getElementById('contact-form');
-  const status = document.getElementById('form-status');
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    status.textContent = 'Sending...';
-    status.style.color = 'inherit';
-    const data = new FormData(form);
-    try {
-      const res = await fetch(form.action, {
-        method: 'POST',
-        body: data
-      });
-      const json = await res.json();
-      if (json.success) {
-        status.textContent = 'Message sent successfully. Thank you!';
-        status.style.color = '#4ade80';
-        form.reset();
-      } else {
-        status.textContent = json.message || 'Something went wrong. Please try again or email directly.';
-        status.style.color = '#f87171';
-      }
-    } catch (err) {
-      status.textContent = 'Network error. Please email dex222444@gmail.com instead.';
-      status.style.color = '#f87171';
-    }
-  });
-</script>
+<script src="/js/contact.js" defer></script>
 
 ---
 
