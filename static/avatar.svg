@@ -1,3 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
-  <image href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgICAgMCAgIDAwMDBAYEBAQEBAgGBgUGCQgKCgkICQkKDA8MCgsOCwkJDRENDg8QEBEQCgwSExIQEw8QEBD/yQALCAABAAEBAREA/8wABgAQEAX/2gAIAQEAAD8A2f8A9k=" width="512" height="512" preserveAspectRatio="xMidYMid slice"/>
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f9e79f"/>
+      <stop offset="25%" stop-color="#f4d03f"/>
+      <stop offset="50%" stop-color="#d4af37"/>
+      <stop offset="75%" stop-color="#b7950b"/>
+      <stop offset="100%" stop-color="#7d6608"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.4"/>
+      <stop offset="40%" stop-color="#ffffff" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.3"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" fill="#0a0a0a"/>
+  <text x="256" y="330" 
+        font-family="Arial Black, Impact, sans-serif" 
+        font-size="155" 
+        font-weight="900" 
+        fill="url(#goldGrad)" 
+        stroke="#c9a227" 
+        stroke-width="1.5"
+        text-anchor="middle" 
+        letter-spacing="-6"
+        filter="url(#shadow)">DEX</text>
 </svg>
