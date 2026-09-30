@@ -1,0 +1,16 @@
+{
+  "name": "dex-research-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Optional development tools for DEX Research's self-hosted article graphics. Hugo builds require no npm install.",
+  "scripts": {
+    "build:visuals": "node scripts/build-visual-vendors.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "echarts": "6.1.0",
+    "esbuild": "0.28.2",
+    "markmap-view": "0.18.12"
+  }
+}

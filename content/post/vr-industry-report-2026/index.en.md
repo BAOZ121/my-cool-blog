@@ -1,7 +1,7 @@
 ---
 title: "Meta Reality Labs' $19.2B 2025 Loss: A VR/XR Industry Map"
 date: 2026-08-11
-lastmod: 2026-09-23
+lastmod: 2026-09-29
 description: "A simplified VR/XR industry map, historical context, and what company filings can and cannot establish."
 image: "cover.jpg"
 categories:
@@ -32,6 +32,8 @@ Now that the story is finished, let's look at today in 2026. What does the devel
 
 ## Industry chain
 
+{{< industry-map id="vr-xr" >}}
+
 First is the upstream of this industry:
 
 Chips: Qualcomm (XR2 series), Apple (M-series + R-series chips).
@@ -53,6 +55,8 @@ C-end ecosystem: SteamVR, Meta Quest Store, App Store. Core applications are gam
 B-end applications: Originally used for Air Force flight training and space navigation, later expanded to other fields, such as medical simulation training, industrial digital twins, automobile design, etc.
 
 ## Competition and adoption
+
+{{< market-share id="xr-headsets-2024" >}}
 
 XR (Extended Reality) is often used as an umbrella term for VR, AR and MR. Categories overlap; market-share claims require carefully defined devices and time periods.
 

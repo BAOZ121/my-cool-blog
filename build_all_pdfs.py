@@ -14,6 +14,8 @@ import markdown
 import weasyprint
 import yaml
 
+from scripts.article_visuals_pdf import replace_article_visuals
+
 
 CONTENT_DIR = Path("content/post")
 OUTPUT_DIR = Path("static/pdf")
@@ -99,7 +101,7 @@ def output_slug(filepath: Path, metadata: dict) -> str:
 
 def render_html(title: str, date: str, body_markdown: str) -> str:
     body_html = markdown.markdown(
-        body_markdown,
+        replace_article_visuals(body_markdown),
         extensions=["tables", "fenced_code", "toc"],
         output_format="html5",
     )

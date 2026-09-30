@@ -1,7 +1,7 @@
 ---
 title: "Semiconductors and Chips: Industry History, Value Chain, Markets, and Risks"
 date: 2026-09-28
-lastmod: 2026-09-28
+lastmod: 2026-09-29
 description: "An evidence-based guide to semiconductor history, design and manufacturing, market structure, AI demand, policy, and supply-chain risks."
 tags: ["Industry Research Report", "DEX", "Semiconductors", "Chips"]
 categories:
@@ -73,6 +73,8 @@ As the cost of designing and producing a single large die rises, chiplets and ad
 
 ## 2. The Semiconductor Value Chain
 
+{{< industry-map id="semiconductors" >}}
+
 ### 2.1 Chip Design, EDA, and Semiconductor IP
 
 Chip design begins with product requirements and system architecture, then proceeds through logic design, functional verification, synthesis, placement and routing, timing closure, physical verification, and tape-out preparation. EDA software links design rules, foundry process design kits, and manufacturing constraints. Its value comes from algorithms, complete tool flows, process compatibility, and years of accumulated validation data.
@@ -126,6 +128,8 @@ General-purpose processors, mobile SoCs, analog chips, and AI accelerators each 
 AMD and Intel offer GPUs or other accelerators, while cloud providers develop in-house or custom ASICs such as TPUs and Trainium. In-house chips can improve performance, cost, or supply control for specific workloads, but they do not automatically displace commercial GPUs. Their results depend on software tools, utilization, model fit, networking, and deployment scale.
 
 ### 3.3 Foundries and Advanced Processes
+
+{{< market-share id="foundry-q4-2025" >}}
 
 TSMC is the leading dedicated foundry. In its 2025 annual report, the company defined “Foundry 2.0” broadly to include logic wafer fabrication, packaging, testing, masks, and non-memory IDM activity, and estimated that market at US$305 billion in 2025. This is substantially broader than conventional dedicated foundry services; a Foundry 2.0 share should not be directly compared with a third-party pure-foundry share. TSMC also reported that its 3 nm process accounted for 24% of its own wafer revenue in 2025 and that its 2 nm process entered volume production in the fourth quarter of that year.[M02](https://investor.tsmc.com/static/annualReports/2025/english/index.html) Those figures describe TSMC's revenue mix and manufacturing progress, not the entire industry's 3 nm or 2 nm market share.
 

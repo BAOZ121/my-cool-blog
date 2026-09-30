@@ -1,0 +1,1 @@
+<li><span>{{ .name }}</span>{{ with .children }}<ul>{{ range . }}{{ partial "article-visuals/outline.html" . }}{{ end }}</ul>{{ end }}</li>
