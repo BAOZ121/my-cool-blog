@@ -61,15 +61,20 @@ export function safeVendorURL(value, base) {
 }
 
 const palettes = {
-  light: ["#171717", "#666666", "#383838", "#767676", "#242424", "#575757", "#454545", "#6e6e6e"],
+  light: ["#d6b56f", "#f0dfb3", "#a8874a", "#dec799", "#bf9855", "#f4e9cf", "#9d7841", "#c9b78c"],
   dark: ["#d6b56f", "#f0dfb3", "#a8874a", "#dec799", "#bf9855", "#f4e9cf", "#9d7841", "#c9b78c"],
+};
+// Thin map connections need deeper gold against the light background.
+const mapPalettes = {
+  light: ["#89651e", "#9b742d", "#76551e", "#94723a", "#886026", "#a37c39", "#71521f", "#806633"],
+  dark: palettes.dark,
 };
 
 export function pieOptions(data, { dark = false, compact = false, reducedMotion = false, width = 700, height = 360 } = {}) {
   validateShare(data);
   const centerPeriod = compact ? data.period.replace(/^Full year\s+/i, "").replace(/^(Q\d)\s+(\d{4})$/, "$1\n$2") : data.period;
-  const ink = dark ? "#f5f3ed" : "#171717";
-  const muted = dark ? "#c3bcae" : "#5f5f5f";
+  const ink = dark ? "#f5f3ed" : "#211d16";
+  const muted = dark ? "#c3bcae" : "#6b6254";
   const surface = dark ? "#161616" : "#ffffff";
   return {
     animation: !reducedMotion,
@@ -78,7 +83,7 @@ export function pieOptions(data, { dark = false, compact = false, reducedMotion 
     textStyle: { fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif", color: ink },
     aria: { enabled: true, label: { description: `${data.title}. ${data.period}. ${data.geography}. ${data.metric}. ${data.series.map((item) => `${item.name}: ${item.value}%`).join("; ")}.` } },
     tooltip: {
-      trigger: "item", confine: true, renderMode: "html", backgroundColor: surface, borderColor: dark ? "#494136" : "#d9d9d9", textStyle: { color: ink },
+      trigger: "item", confine: true, renderMode: "html", backgroundColor: surface, borderColor: dark ? "#494136" : "#e5d7b8", textStyle: { color: ink },
       formatter: (item) => `${escapeHTML(item.name)}<br><strong>${Number(item.value)}%</strong>`,
     },
     legend: {
@@ -90,7 +95,7 @@ export function pieOptions(data, { dark = false, compact = false, reducedMotion 
       type: "pie", radius: compact ? ["37%", "64%"] : ["38%", "66%"], center: compact ? ["50%", "48%"] : ["32%", "50%"],
       avoidLabelOverlap: true, minAngle: 0, padAngle: 1, selectedMode: false,
       itemStyle: { borderRadius: 3, borderWidth: 2, borderColor: surface },
-      label: { show: compact, position: "inside", formatter: (item) => item.value >= 5 ? `${item.value}%` : "", fontSize: 13, color: dark ? "#101010" : "#fff", textBorderWidth: 0 },
+      label: { show: compact, position: "inside", formatter: (item) => item.value >= 5 ? `${item.value}%` : "", fontSize: 13, color: "#101010", textBorderWidth: 0 },
       labelLine: { show: false }, emphasis: { scale: !reducedMotion, scaleSize: 4, label: { show: compact }, itemStyle: { shadowBlur: 0 } },
       data: data.series.map((item) => ({ name: item.name, value: item.value })),
     }],
@@ -177,7 +182,7 @@ async function renderMap(figure, stage, toolbar, data, vendor, labels) {
     autoFit: false, duration: motionReduced() ? 0 : 200, maxWidth: compact ? 105 : 190, paddingX: compact ? 6 : 12,
     spacingHorizontal: compact ? 20 : 65, spacingVertical: compact ? 24 : 14, fitRatio: 0.94, maxInitialScale: 1,
     initialExpandLevel: -1, scrollForPan: false, zoom: true, pan: false,
-    color: (node) => palettes[isDark() ? "dark" : "light"][(node.payload?.branch || 0) % 8],
+    color: (node) => mapPalettes[isDark() ? "dark" : "light"][(node.payload?.branch || 0) % 8],
   });
   // D3 otherwise captures every wheel/touch gesture, including ordinary page scrolling.
   map.zoom.filter((event) => {

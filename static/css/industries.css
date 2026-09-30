@@ -1,9 +1,9 @@
 .ix, .ix-breakdowns {
-  --ix-ink: #171717;
-  --ix-muted: #5f5f5f;
-  --ix-border: #d9d9d9;
-  --ix-accent: #171717;
-  --ix-accent-soft: #f4f4f4;
+  --ix-ink: #211d16;
+  --ix-muted: #6b6254;
+  --ix-border: #e5d7b8;
+  --ix-accent: #89651e;
+  --ix-accent-soft: #f8f2e5;
   --ix-surface: #fff;
   --ix-primary-ink: #fff;
   color: var(--ix-ink);

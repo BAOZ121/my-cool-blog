@@ -1,3 +1,131 @@
+/* Shared white/gold and black/gold colors, including the Stack theme shell. */
+:root {
+    --body-background: #f7f5ef;
+    --body-text-color: #6b6254;
+    --accent-color: #89651e;
+    --accent-color-darker: #6e5016;
+    --accent-color-text: #fff;
+    --card-background: #fff;
+    --card-background-selected: #f8f2e5;
+    --card-text-color-main: #211d16;
+    --card-text-color-secondary: #6b6254;
+    --card-text-color-tertiary: #6b6254;
+    --card-separator-color: #e5d7b8;
+    --blockquote-background-color: #f8f2e5;
+    --link-background-color: 214, 181, 111;
+    --link-background-opacity: .25;
+    --link-background-opacity-hover: .4;
+    --code-background-color: #f8f2e5;
+    --code-text-color: #89651e;
+    --pre-background-color: #f8f2e5;
+    --pre-text-color: #211d16;
+    --table-border-color: #e5d7b8;
+    --tr-even-background-color: #f8f2e5;
+    --kbd-border-color: #e5d7b8;
+    --mermaid-toolbar-btn-bg: #fff;
+    --mermaid-toolbar-btn-text: #89651e;
+    --mermaid-modal-content-bg: #fff;
+    --mermaid-modal-btn-bg: #fff;
+    --mermaid-modal-btn-hover: #f8f2e5;
+
+    @each $type in note, tip, important, warning, caution {
+        --alert-#{$type}-color: var(--accent-color);
+        --alert-#{$type}-background: var(--blockquote-background-color);
+    }
+}
+
+:root[data-scheme="dark"] {
+    --body-background: #101010;
+    --body-text-color: #c3bcae;
+    --accent-color: #d6b56f;
+    --accent-color-darker: #e8cd93;
+    --accent-color-text: #161616;
+    --card-background: #161616;
+    --card-background-selected: #22201b;
+    --card-text-color-main: #f5f3ed;
+    --card-text-color-secondary: #c3bcae;
+    --card-text-color-tertiary: #c3bcae;
+    --card-separator-color: #494136;
+    --blockquote-background-color: #22201b;
+    --link-background-color: 214, 181, 111;
+    --link-background-opacity: .2;
+    --link-background-opacity-hover: .3;
+    --code-background-color: #22201b;
+    --code-text-color: #d6b56f;
+    --pre-background-color: #22201b;
+    --pre-text-color: #f5f3ed;
+    --table-border-color: #494136;
+    --tr-even-background-color: #22201b;
+    --kbd-border-color: #494136;
+    --mermaid-toolbar-btn-bg: #161616;
+    --mermaid-toolbar-btn-text: #d6b56f;
+    --mermaid-modal-content-bg: #161616;
+    --mermaid-modal-btn-bg: #22201b;
+    --mermaid-modal-btn-hover: #494136;
+}
+
+/* Category metadata may supply inline colors; keep badges in the site palette. */
+.article-category a {
+    background-color: var(--accent-color) !important;
+    color: var(--accent-color-text) !important;
+
+    &:hover, &:focus-visible { background-color: var(--accent-color-darker) !important; }
+}
+
+#main-menu li a:hover,
+#main-menu li a:focus-visible {
+    color: var(--accent-color);
+}
+
+/* Keep code examples within the same palette while retaining token emphasis. */
+:root .chroma {
+    color: var(--pre-text-color);
+    background-color: var(--pre-background-color);
+
+    span { color: inherit; }
+    .n, .nb, .bp, .ni, .fm, .nl, .nn, .py, .nv, .vc, .vg, .vi, .vm, .p {
+        color: var(--pre-text-color);
+    }
+    .k, .kc, .kd, .kn, .kp, .kr, .kt, .na, .nc, .no, .nd, .ne, .nf, .nt, .nx, .l, .ld,
+    .s, .sa, .sb, .sc, .dl, .sd, .s2, .se, .sh, .si, .sx, .sr, .s1, .ss,
+    .m, .mb, .mf, .mh, .mi, .il, .mo, .o, .ow, .gi, .gd, .err {
+        color: var(--accent-color);
+    }
+    .c, .ch, .cm, .c1, .cs, .cp, .cpf, .ln, .lnt, .gu {
+        color: var(--card-text-color-secondary);
+    }
+    .hl { background-color: var(--card-background-selected); }
+}
+
+.site-avatar.has-theme-avatar {
+    .site-logo-light { display: block; }
+    .site-logo-dark { display: none; }
+}
+
+[data-scheme="dark"] .site-avatar.has-theme-avatar {
+    .site-logo-light { display: none; }
+    .site-logo-dark { display: block; }
+}
+
+/* The contact page supplies inline form styles; match the active site theme. */
+#contact-form {
+    --card-border: var(--card-separator-color);
+
+    input::placeholder, textarea::placeholder { color: var(--card-text-color-secondary); opacity: 1; }
+    input:focus-visible, textarea:focus-visible, button:focus-visible {
+        outline: 3px solid var(--accent-color);
+        outline-offset: 3px;
+    }
+    button[type="submit"] {
+        background: var(--accent-color) !important;
+        color: var(--accent-color-text) !important;
+        min-height: 44px;
+
+        &:hover { background: var(--accent-color-darker) !important; }
+    }
+    #form-status { color: var(--accent-color) !important; font-size: 1.4rem !important; line-height: 1.5; }
+}
+
 /*
  * Keep report typography readable in both color schemes.
  * Some existing posts contain inline color declarations; only those
@@ -65,7 +193,7 @@
         label { display: block; margin-bottom: 8px; font-weight: 600; }
         div { display: flex; gap: 8px; }
         input { flex: 1; min-width: 0; padding: 10px 12px; border: 1px solid var(--card-separator-color); border-radius: 8px; background: var(--body-background); color: var(--body-text-color); }
-        button { padding: 10px 16px; border: 0; border-radius: 8px; background: var(--accent-color); color: #fff; cursor: pointer; }
+        button { padding: 10px 16px; border: 0; border-radius: 8px; background: var(--accent-color); color: var(--accent-color-text); cursor: pointer; }
         input:focus-visible, button:focus-visible { outline: 2px solid var(--accent-color); outline-offset: 2px; }
     }
 
@@ -175,6 +303,28 @@
 }
 
 @media print {
+    :root, :root[data-scheme="dark"] {
+        --body-background: #fff;
+        --body-text-color: #333;
+        --accent-color: #111;
+        --accent-color-darker: #111;
+        --accent-color-text: #fff;
+        --card-background: #fff;
+        --card-background-selected: #fff;
+        --card-text-color-main: #111;
+        --card-text-color-secondary: #333;
+        --card-text-color-tertiary: #333;
+        --card-separator-color: #aaa;
+        --blockquote-background-color: #fff;
+        --code-background-color: #fff;
+        --code-text-color: #111;
+        --pre-background-color: #fff;
+        --pre-text-color: #111;
+        --table-border-color: #aaa;
+        --tr-even-background-color: #fff;
+        --kbd-border-color: #aaa;
+    }
+
     @page {
         size: A4;
         margin: 15mm;
@@ -206,11 +356,12 @@
 
     .article-content,
     .article-content * {
-        color: #111827 !important;
+        color: #111 !important;
     }
 
     .article-content a {
         text-decoration: underline;
+        box-shadow: none;
     }
 
     .article-content pre,
