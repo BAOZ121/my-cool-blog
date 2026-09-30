@@ -29,6 +29,8 @@ try {
     for (const slug of slugs) {
       const page = await context.newPage();
       const errors = [];
+      const imageViewerRequests = [];
+      page.on('request', request => { if (/photoswipe/i.test(request.url())) imageViewerRequests.push(request.url()); });
       page.on('pageerror', error => errors.push(error.message));
       page.on('console', message => { if (message.type() === 'warning' || message.type() === 'error') console.log(`[browser ${slug}] ${message.text()}`); });
       await page.goto(`${base}/post/${slug}/`, { waitUntil: 'domcontentloaded' });
@@ -91,6 +93,7 @@ try {
       await page.emulateMedia({ media: 'screen' });
       await page.evaluate(() => window.dispatchEvent(new Event('afterprint')));
       assert.deepEqual(errors, [], `${slug} browser errors`);
+      assert.deepEqual(imageViewerRequests, [], `${slug}: charts must not load the photograph viewer`);
       console.log(`PASS ${slug}: ${width}px, both charts, controls, dark theme and print`);
       await page.close();
     }

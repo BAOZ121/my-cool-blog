@@ -1,0 +1,29 @@
+{{- $opts := dict "minify" hugo.IsProduction "format" "esm" -}}
+{{- $galleryScript := resources.Get "ts/gallery.ts" | js.Build $opts -}}
+{{- $style := hugo.Data.external.PhotoSwipe.Style -}}
+{{- $core := hugo.Data.external.PhotoSwipe.Core -}}
+{{- $lightbox := hugo.Data.external.PhotoSwipe.Lightbox -}}
+<script type="module">
+    const articleContent = document.querySelector('.article-content');
+    // Charts also use figures; only photographs can open the image viewer.
+    if (articleContent?.querySelector('img.gallery-image, figure a.image-link img')) {
+        try {
+            const gallery = (await import('{{ $galleryScript.RelPermalink }}')).default;
+            gallery(articleContent);
+            if (articleContent.querySelector('figure a.image-link img')) {
+                const PhotoSwipeLightbox = (await import('{{ $lightbox | safeJS }}')).default;
+                const styleTag = document.createElement('link');
+                styleTag.rel = 'stylesheet';
+                styleTag.href = '{{ $style | safeJS }}';
+                document.head.appendChild(styleTag);
+                new PhotoSwipeLightbox({
+                    gallerySelector: '.article-content',
+                    childSelector: 'figure a.image-link',
+                    pswpModule: () => import('{{ $core | safeJS }}')
+                }).init();
+            }
+        } catch {
+            // Image links remain usable when the optional viewer is unavailable.
+        }
+    }
+</script>

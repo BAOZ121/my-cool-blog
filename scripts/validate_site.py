@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import csv
+from datetime import date
 import hashlib
 import json
 import sys
@@ -17,18 +18,23 @@ class Links(HTMLParser):
     def __init__(self, path: Path):
         super().__init__()
         self.urls: list[str] = []
+        self.ids: set[str] = set()
         self.feed(path.read_text(encoding="utf-8"))
 
     def handle_starttag(self, tag, attrs):
         fields = dict(attrs)
         self.urls.extend(fields[key] for key in ("href", "src") if fields.get(key))
+        if fields.get("id"):
+            self.ids.add(fields["id"])
 
 
 class IndustryTable(HTMLParser):
     def __init__(self, path: Path):
         super().__init__()
         self.dataset = ""
+        self.research_links = ""
         self.in_dataset = False
+        self.in_research_links = False
         self.in_table = False
         self.select = None
         self.ranks = []
@@ -39,6 +45,8 @@ class IndustryTable(HTMLParser):
         fields = dict(attrs)
         if tag == "script" and fields.get("id") == "ix-dataset":
             self.in_dataset = True
+        elif tag == "script" and fields.get("id") == "ix-research-links":
+            self.in_research_links = True
         elif tag == "tbody" and fields.get("id") == "ix-tbody":
             self.in_table = True
         elif tag == "tr" and self.in_table:
@@ -52,10 +60,13 @@ class IndustryTable(HTMLParser):
     def handle_data(self, data):
         if self.in_dataset:
             self.dataset += data
+        elif self.in_research_links:
+            self.research_links += data
 
     def handle_endtag(self, tag):
         if tag == "script":
             self.in_dataset = False
+            self.in_research_links = False
         elif tag == "tbody":
             self.in_table = False
         elif tag == "select":
@@ -69,8 +80,39 @@ def main() -> None:
     items = data["industries"]
     assert len(items) == len(rows) == 50, "Expected 50 industry records in both formats"
     assert [int(row["rank"]) for row in rows] == [item["rank"] for item in items] == list(range(1, 51))
+    baseline_fields = (
+        "year", "value", "unit", "currency", "metric", "geography",
+        "market_definition", "relationship_to_estimate",
+    )
+    source_fields = ("publisher", "title", "published", "url")
     for item, row in zip(items, rows):
-        for key, value in item.items():
+        flat = {key: value for key, value in item.items() if key != "sourced_baseline"}
+        flat.update({f"baseline_{key}": "" for key in baseline_fields})
+        flat.update({f"baseline_source_{key}": "" for key in source_fields})
+        baseline = item.get("sourced_baseline")
+        status = item.get("verification_status")
+        assert status in {"unverified", "partial", "context"}, f"Row {item['rank']}: unsupported evidence status"
+        assert item.get("estimate_verification_status") == "unverified", "Original screening estimates remain unverified"
+        for key in ("numeric_source_url", "source_date", "geography", "market_definition"):
+            assert item[key] == "", f"Row {item['rank']}: original estimate provenance changed"
+        if baseline is None:
+            assert status == "unverified" and item["reviewed"] == "", "Missing evidence must not imply source review"
+        else:
+            assert status in {"partial", "context"}, "Separate evidence must not verify the original estimate"
+            assert all(baseline.get(key) not in (None, "") for key in baseline_fields), "Incomplete baseline scope"
+            assert all(baseline["source"].get(key) for key in source_fields), "Incomplete baseline source"
+            assert isinstance(baseline["value"], (int, float)) and baseline["value"] > 0
+            assert baseline["currency"] == "USD" and baseline["unit"] == "billion", "Unexpected source unit"
+            reviewed = date.fromisoformat(item["reviewed"])
+            published = baseline["source"]["published"]
+            assert len(published) in {4, 7, 10}, "Publication date precision must be explicit"
+            publication_date = date.fromisoformat(published + {4: "-01-01", 7: "-01", 10: ""}[len(published)])
+            assert publication_date <= reviewed and baseline["year"] <= reviewed.year, "Source cannot postdate review"
+            assert urlsplit(baseline["source"]["url"]).scheme == "https", "Source requires HTTPS"
+            flat.update({f"baseline_{key}": baseline[key] for key in baseline_fields})
+            flat.update({f"baseline_source_{key}": baseline["source"][key] for key in source_fields})
+        assert set(row) == set(flat), f"Row {item['rank']}: CSV fields diverge from JSON"
+        for key, value in flat.items():
             assert row[key] == ("" if value is None else str(value)), f"Row {item['rank']}: {key} mismatch"
 
     assert BUILD.is_dir(), "Build the site first"
@@ -81,12 +123,40 @@ def main() -> None:
     assert industry_page.ranks == list(range(1, 51)), "Static industry rows are missing or out of order"
     for select, field in (("ix-category", "category"), ("ix-maturity", "maturity")):
         assert set(industry_page.options[select]) == {"", *(item[field] for item in items)}, select
+    parsed_industry = Links(BUILD / "industries/index.html")
+    assert all(f"ix-industry-{item['rank']}" in parsed_industry.ids for item in items), "Missing stable dataset destinations"
+    research_links = json.loads(industry_page.research_links)
+    profiles = json.loads((ROOT / "data/breakdowns.json").read_text(encoding="utf-8"))["profiles"]
+    assert all(str(profile["dataset_rank"]) in research_links for profile in profiles), "Missing dataset-to-breakdown navigation"
+    assert "47" in research_links, "XR report must be reachable from the broader XR dataset row"
+    for rank, links in research_links.items():
+        assert int(rank) in {item["rank"] for item in items}, "Research linked to an unknown dataset row"
+        for link in links:
+            parsed = urlsplit(link["url"])
+            assert not parsed.netloc and not parsed.scheme and parsed.path.startswith("/"), "Research routes must be internal"
+            target = BUILD / unquote(parsed.path).lstrip("/") / "index.html"
+            assert target.is_file(), f"Research route has no generated page: {link['url']}"
+            assert link["url"] in parsed_industry.urls, f"Research route unavailable without JavaScript: {link['url']}"
+            if parsed.fragment:
+                assert unquote(parsed.fragment) in Links(target).ids, f"Research route has no rendered graphic: {link['url']}"
+    for rank in (2, 8, 21, 47):
+        labels = {link["label"] for link in research_links[str(rank)]}
+        assert {"Read report", "View industry mind map", "View share chart"} <= labels, f"Incomplete article/graphic navigation for row {rank}"
     search_index = json.loads((BUILD / "search/index.json").read_text(encoding="utf-8"))
     indexed_urls = {entry["permalink"] for entry in search_index}
     assert all(
         f"/industry-breakdowns/{profile['id']}/" in indexed_urls
-        for profile in json.loads((ROOT / "data/breakdowns.json").read_text(encoding="utf-8"))["profiles"]
+        for profile in profiles
     ), "Industry maps must be searchable"
+    for profile in profiles:
+        content = next(entry["content"] for entry in search_index if entry["permalink"] == f"/industry-breakdowns/{profile['id']}/")
+        searchable = [profile[key] for key in ("summary", "scope", "question", "geography", "economics")]
+        searchable += profile["drivers"] + profile["risks"]
+        searchable += [stage[key] for stage in profile["chain"] for key in ("title", "actors", "role", "revenue", "bottleneck")]
+        searchable += [metric[key] for metric in profile["metrics"] for key in ("name", "meaning")]
+        searchable += [evidence["text"] for evidence in profile["evidence"]]
+        searchable += [source[key] for source in profile["sources"] for key in ("publisher", "title", "published", "type", "supports")]
+        assert all(value in content for value in searchable), f"Search omits visible breakdown content: {profile['id']}"
     assert "/industries/" in indexed_urls and "/post/my-first-post/" not in indexed_urls
     assert "See the structure. Check the evidence." in (BUILD / "index.html").read_text(encoding="utf-8")
     for slug in ("pharmaceutical-industry", "cybersecurity-industry-report", "vr-industry-report-2026"):

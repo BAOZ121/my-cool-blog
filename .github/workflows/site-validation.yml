@@ -39,6 +39,8 @@ jobs:
         run: node --test tests/industries.test.mjs
       - name: Test article graphics and source data
         run: node --test tests/article-visuals.test.mjs
+      - name: Test contact submission safeguards
+        run: node --test tests/contact.test.mjs
       - name: Build production HTML without warnings
         run: hugo --environment production --minify --panicOnWarning
       - name: Check industry data and site links
@@ -53,3 +55,5 @@ jobs:
         run: npx playwright install --with-deps chromium
       - name: Verify interactive articles on desktop and mobile
         run: node tests/article-visuals.browser.mjs
+      - name: Verify contact and keyboard controls on desktop and mobile
+        run: node tests/site-controls.browser.mjs

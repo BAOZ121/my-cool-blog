@@ -5,9 +5,21 @@
     {{- with .Params.industryId -}}
       {{- $matches := where hugo.Data.breakdowns.profiles "id" . -}}
       {{- with index $matches 0 -}}
-        {{- $content = printf "%s %s %s %s" $content .summary .keywords .scope -}}
+        {{- $content = printf "%s %s %s %s %s %s %s" $content .summary .keywords .scope .question .geography .economics -}}
         {{- range .chain -}}
-          {{- $content = printf "%s %s %s" $content .title .role -}}
+          {{- $content = printf "%s %s %s %s %s %s" $content .title .actors .role .revenue .bottleneck -}}
+        {{- end -}}
+        {{- range .drivers -}}{{- $content = printf "%s %s" $content . -}}{{- end -}}
+        {{- range .risks -}}{{- $content = printf "%s %s" $content . -}}{{- end -}}
+        {{- range .metrics -}}
+          {{- $content = printf "%s %s %s" $content .name .meaning -}}
+        {{- end -}}
+        {{- range .evidence -}}{{- $content = printf "%s %s" $content .text -}}{{- end -}}
+        {{- range .sources -}}
+          {{- $content = printf "%s %s %s %s %s %s" $content .publisher .title .published .type .supports -}}
+        {{- end -}}
+        {{- range .related -}}
+          {{- $content = printf "%s %s" $content .title -}}
         {{- end -}}
       {{- end -}}
     {{- end -}}

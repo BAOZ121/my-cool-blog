@@ -1,13 +1,14 @@
 ---
 title: "Industries"
-description: "Explore a provisional 50-industry screening list, inspect its fields and limitations, and test CAGR scenarios."
+description: "Explore a provisional 50-industry screening list, inspect sourced baselines and their limits, and test CAGR scenarios."
 date: 2026-09-21
+lastmod: 2026-09-30
 slug: "industries"
 ---
 
 <link rel="stylesheet" href="/css/industries.css">
 
-Explore a provisional 50-industry screening list and test CAGR scenarios. Every row now exposes explicit slots for a numeric source, source date, geography, and market definition; **all four remain blank until the corresponding estimate is verified**. Selected rows link to relevant primary reading, clearly separated from numerical evidence. Current estimates are research leads, not comparable, validated measurements. Categories and maturity labels are editorial classifications.
+Explore a provisional 50-industry screening list and test CAGR scenarios. **The original market ranges, growth rates and projections remain unverified research leads.** The semiconductor and cybersecurity rows now include separately sourced historical baselines; the biopharmaceutical row includes broader prescription-medicine market context. Each has its own year, geography, definition and source. These additions do not validate the original estimates or make different market definitions comparable. Select a row to inspect the evidence and its limits. Categories and maturity labels are editorial classifications.
 
 {{< breakdown-links >}}
 
@@ -17,7 +18,7 @@ Explore a provisional 50-industry screening list and test CAGR scenarios. Every 
 <a class="ix-btn" href="/post/50-high-potential-industries/">Read the report</a>
 <a class="ix-btn" href="/about/#research-methodology">Research methodology</a>
 </div>
-<p class="ix-note">File updated September 2026 (not a source-verification date). Numeric market sizes are in USD billions where available. The CAGR filter uses a range midpoint only when both bounds exist; a one-sided value is treated as a lower bound.</p>
+<p class="ix-note">File updated September 2026. Added source records were reviewed on September 30, 2026; this is separate from the measurement year and publication date. Original numeric market sizes are in USD billions where available. Filters and scenarios still use the original indicative estimates, not the separately sourced baselines. The CAGR filter uses a range midpoint only when both bounds exist; a one-sided value is treated as a lower bound.</p>
 <p id="ix-coverage" class="ix-coverage" aria-live="polite">The full screening list is available below. Numeric coverage appears when the interactive controls load.</p>
 <div class="ix-filters">
 <label>Search
@@ -90,3 +91,15 @@ Explore a provisional 50-industry screening list and test CAGR scenarios. Every 
 </div>
 
 <script src="/js/industries.js" defer></script>
+
+## Source review notes
+
+The original screening estimates are unchanged. The following records are shown separately so their boundaries remain visible:
+
+| Industry row | Sourced figure | What it establishes |
+| --- | --- | --- |
+| Semiconductors | USD 795.6 billion in 2025 | Annual semiconductor product sales in [WSTS's March 6, 2026 release](https://www.wsts.org/76/103/Global-Semiconductor-Market-grows-26-in-2025-to-796B). This is above the original screening range and does not establish its CAGR or forecast. |
+| Cybersecurity | USD 193.408 billion in 2024 | Gartner's historical estimate of worldwide information security end-user spending, from its [July 29, 2025 release](https://www.gartner.com/en/newsroom/press-releases/2025-07-29-gartner-forecasts-worldwide-end-user-spending-on-information-security-to-total-213-billion-us-dollars-in-2025). The source's later-year numbers are forecasts. End-user spending is not necessarily vendor revenue. |
+| Biopharmaceuticals | USD 1,667.671 billion in 2025 | Broader global prescription-medicine sales at ex-manufacturer prices, reported by [EFPIA / IQVIA MIDAS, Key Data 2026, page 14](https://www.efpia.eu/media/uj0popel/the-pharmaceutical-industry-in-figures-2026.pdf#page=14). Includes medicines beyond biological products and does not measure the biopharmaceutical-only market. |
+
+The downloadable CSV includes separate `baseline_*` columns for these records. Empty original-source fields still mean the original estimate has not been verified. A sourced baseline or broader-market context is not a forecast validation.

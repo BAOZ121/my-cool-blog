@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#f5dfa3"/><stop offset=".5" stop-color="#d6b56f"/><stop offset="1" stop-color="#9c7635"/>
+    </linearGradient>
+    <radialGradient id="surface" cx=".85" cy=".15" r="1">
+      <stop stop-color="#26231c"/><stop offset="1" stop-color="#101010"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#surface)"/>
+  <rect x="32" y="32" width="1136" height="566" rx="12" fill="none" stroke="#d6b56f" stroke-opacity=".35"/>
+  <path d="M872 178h142v103h106M872 281h94v125h154M872 406h94M1014 178v-60h106" fill="none" stroke="#d6b56f" stroke-width="2" opacity=".24"/>
+  <g fill="#d6b56f" opacity=".35"><circle cx="872" cy="178" r="5"/><circle cx="872" cy="281" r="5"/><circle cx="872" cy="406" r="5"/><circle cx="1120" cy="118" r="5"/><circle cx="1120" cy="281" r="5"/><circle cx="1120" cy="406" r="5"/></g>
+  <text x="92" y="306" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="208" letter-spacing="-10" fill="url(#gold)">DEX</text>
+  <text x="100" y="390" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="42" letter-spacing="3" fill="#f5f3ed">RESEARCH</text>
+  <path d="M100 431h625" stroke="#d6b56f" stroke-opacity=".45"/>
+  <text x="100" y="477" font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#c3bcae">Independent Industry Research</text>
+  <text x="100" y="533" font-family="Arial, Helvetica, sans-serif" font-size="20" letter-spacing="2" fill="#d6b56f">THEDEXS.COM</text>
+</svg>

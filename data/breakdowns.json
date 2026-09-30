@@ -60,7 +60,7 @@
       ],
       "evidence": [{"text": "SIA's primer distinguishes design, front-end fabrication and back-end assembly, test and packaging. The three-stage map here follows that production sequence.", "source": "sia"}],
       "sources": [{"id": "sia", "publisher": "Semiconductor Industry Association", "title": "Semiconductor Industry Primer: The Stages of Production and Business Models", "url": "https://www.semiconductors.org/semiconductor-industry-primer-the-stages-of-production-and-business-models/", "published": "2015-02-25", "type": "Industry-body explainer", "supports": "Production stages; foundational reference, not current market sizing."}],
-      "related": []
+      "related": [{"title": "Semiconductor industry report", "url": "/post/semiconductor-industry-report/"}]
     },
     {
       "id": "battery-storage",

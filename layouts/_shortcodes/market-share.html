@@ -7,7 +7,7 @@
     {{- $csv = printf "%s\"%s\",%v,\"%s\",\"%s\",\"%s\",\"%s\"\n" $csv (replace .name "\"" "\"\"") .value (replace $chart.period "\"" "\"\"") (replace $chart.geography "\"" "\"\"") (replace $chart.metric "\"" "\"\"") (replace $chart.source.url "\"" "\"\"") -}}
 {{- end -}}
 {{- $download := resources.FromString (printf "data/charts/%s.csv" $id) $csv -}}
-<figure class="article-visual" data-visual="share" data-vendor="{{ "vendor/article-visuals/echarts.js" | relURL }}" aria-labelledby="{{ $uid }}-title">
+<figure id="market-share-{{ $id }}" class="article-visual" data-visual="share" data-vendor="{{ "vendor/article-visuals/echarts.js" | relURL }}" aria-labelledby="{{ $uid }}-title">
     <header class="visual-header">
         <p class="visual-eyebrow">MARKET SHARE · {{ $chart.period }}</p>
         <h3 id="{{ $uid }}-title">{{ $chart.title }}</h3>

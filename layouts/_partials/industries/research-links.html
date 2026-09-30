@@ -1,0 +1,39 @@
+{{- /* Only publish routes to existing pages and graphics rendered by those reports. */ -}}
+{{- $site := .Site -}}
+{{- $result := dict -}}
+{{- $associations := slice -}}
+{{- range hugo.Data.breakdowns.profiles -}}
+  {{- $associations = $associations | append (dict "rank" .dataset_rank "industryId" .id "reports" .related) -}}
+{{- end -}}
+{{- /* The XR report has no standalone atlas page; the dataset row is broader than its scope. */ -}}
+{{- $associations = $associations | append (dict "rank" 47 "reports" (slice (dict "url" "/post/vr-industry-report-2026/"))) -}}
+{{- range $associations -}}
+  {{- $links := slice -}}
+  {{- with .industryId -}}
+    {{- range where $site.RegularPages "Params.industryId" . -}}
+      {{- $links = $links | append (dict "label" "View industry breakdown" "url" .RelPermalink) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- range .reports -}}
+    {{- range where $site.RegularPages "RelPermalink" .url -}}
+      {{- $report := . -}}
+      {{- $links = $links | append (dict "label" "Read report" "url" .RelPermalink) -}}
+      {{- range findRESubmatch `{{<\s*industry-map\s+id="([a-z0-9-]+)"\s*>}}` .RawContent -}}
+        {{- $id := index . 1 -}}
+        {{- with index hugo.Data.article_visuals.maps $id -}}
+          {{- $links = $links | append (dict "label" "View industry mind map" "url" (printf "%s#industry-map-%s" $report.RelPermalink $id)) -}}
+        {{- end -}}
+      {{- end -}}
+      {{- range findRESubmatch `{{<\s*market-share\s+id="([a-z0-9-]+)"\s*>}}` .RawContent -}}
+        {{- $id := index . 1 -}}
+        {{- with index hugo.Data.article_visuals.shares $id -}}
+          {{- $links = $links | append (dict "label" "View share chart" "url" (printf "%s#market-share-%s" $report.RelPermalink $id)) -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if $links -}}
+    {{- $result = merge $result (dict (printf "%v" .rank) $links) -}}
+  {{- end -}}
+{{- end -}}
+{{- return $result -}}
