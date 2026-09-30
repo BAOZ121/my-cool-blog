@@ -8,14 +8,22 @@
     <header>
         {{ with .Site.Params.sidebar.avatar }}
             {{- $avatar := partial "helper/image" (dict "Image" . "Resources" resources "Context" $) -}}
-            <figure class="site-avatar">
+            {{- $darkAvatar := resources.Get "img/avatar-dark.jpg" -}}
+            {{- if $darkAvatar }}{{ $darkAvatar = $darkAvatar.Resize "240x jpg q88" }}{{ end -}}
+            <figure class="site-avatar{{ if $darkAvatar }} has-theme-avatar{{ end }}">
                 <a href="{{ $.Site.Home.RelPermalink }}">
                     <img src="{{ $avatar.Permalink }}"
-                        width="{{ $avatar.Width }}"
-                        height="{{ $avatar.Height }}"
-                        class="site-logo"
-                        loading="lazy"
-                        alt="Avatar">
+                        width="{{ $avatar.Width | default 120 }}"
+                        height="{{ $avatar.Height | default 120 }}"
+                        class="site-logo site-logo-light"
+                        alt="{{ $.Site.Title }}">
+                    {{ with $darkAvatar }}
+                    <img src="{{ .RelPermalink }}"
+                        width="{{ .Width }}"
+                        height="{{ .Height }}"
+                        class="site-logo site-logo-dark"
+                        alt="{{ $.Site.Title }}">
+                    {{ end }}
                 </a>
                 {{ with $.Site.Params.sidebar.emoji }}
                     <span class="emoji">{{ . }}</span>
