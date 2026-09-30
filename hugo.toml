@@ -79,10 +79,17 @@ enableRobotsTXT = true
             params = { icon = "search" }
 
         [[languages.en.menu.main]]
+            identifier = "contact"
+            name = "Contact"
+            url = "/contact/"
+            weight = 6
+            params = { icon = "mail" }
+
+        [[languages.en.menu.main]]
             identifier = "about"
             name = "About & Methodology"
             url = "/about/"
-            weight = 6
+            weight = 7
             params = { icon = "user" }
 
         # Social links (sidebar)
