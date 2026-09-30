@@ -22,7 +22,15 @@ try {
   browser = await chromium.launch({ headless: true, ...(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : {}) });
   for (const width of [1440, 390]) {
     const context = await browser.newContext({ viewport: { width, height: 900 }, colorScheme: "light", reducedMotion: "reduce" });
-    await context.addInitScript(() => localStorage.setItem("StackColorScheme", "auto"));
+    await context.addInitScript(() => {
+      localStorage.setItem("StackColorScheme", "auto");
+      // Exercise Chromium's CSS-hide-before-media-callback order on every platform.
+      window.matchMedia("(min-width: 768px)").addEventListener("change", event => {
+        const menu = document.getElementById("main-menu");
+        const active = document.activeElement;
+        if (!event.matches && menu?.contains(active) && menu.getClientRects().length === 0) active.blur();
+      });
+    });
     let submissions = 0;
     let scenario = "delayed-rejection";
     let pendingRoute;
@@ -88,6 +96,17 @@ try {
       await page.setViewportSize({ width, height: 900 });
       await page.waitForFunction(() => document.getElementById("toggle-menu").getAttribute("aria-expanded") === "false");
       assert.equal(await menuToggle.evaluate(element => element === document.activeElement), true);
+
+      // A previous menu focus must not steal focus back from a reader typing a message.
+      await page.setViewportSize({ width: 1440, height: 900 });
+      await page.waitForFunction(() => document.getElementById("toggle-menu").getAttribute("aria-expanded") === "true");
+      await themeToggle.focus();
+      const message = page.getByLabel("Message", { exact: true });
+      await message.fill("Keep this draft focused during a resize.");
+      await page.setViewportSize({ width, height: 900 });
+      await page.waitForFunction(() => document.getElementById("toggle-menu").getAttribute("aria-expanded") === "false");
+      assert.equal(await message.evaluate(element => element === document.activeElement), true, "Closing the menu at a breakpoint must not steal form focus");
+      assert.equal(await message.inputValue(), "Keep this draft focused during a resize.");
     }
 
     const form = page.locator("#contact-form");
