@@ -18,8 +18,7 @@ Typical topics:
 - General questions about the methodology
 
 <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" style="max-width: 560px; margin-top: 1.5rem;">
-  <!-- Replace YOUR_ACCESS_KEY with the key from https://web3forms.com -->
-  <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY">
+  <input type="hidden" name="access_key" value="f99122f6-5041-4e00-8a3c-ec7649fb6289">
   <input type="hidden" name="subject" value="New message from thedexs.com">
   <input type="hidden" name="from_name" value="DEX Research Contact Form">
   <input type="checkbox" name="botcheck" style="display: none;">
