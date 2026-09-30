@@ -61,16 +61,16 @@ export function safeVendorURL(value, base) {
 }
 
 const palettes = {
-  light: ["#087f75", "#446db1", "#bd8031", "#8d65ac", "#c26b72", "#658d52", "#5d879c", "#8d8c91"],
-  dark: ["#62d3bb", "#85a8ed", "#e5b769", "#ba9ad6", "#e298a0", "#a2c780", "#8ab6cc", "#aeb6c0"],
+  light: ["#171717", "#666666", "#383838", "#767676", "#242424", "#575757", "#454545", "#6e6e6e"],
+  dark: ["#d6b56f", "#f0dfb3", "#a8874a", "#dec799", "#bf9855", "#f4e9cf", "#9d7841", "#c9b78c"],
 };
 
 export function pieOptions(data, { dark = false, compact = false, reducedMotion = false, width = 700, height = 360 } = {}) {
   validateShare(data);
   const centerPeriod = compact ? data.period.replace(/^Full year\s+/i, "").replace(/^(Q\d)\s+(\d{4})$/, "$1\n$2") : data.period;
-  const ink = dark ? "#e7eff5" : "#213b49";
-  const muted = dark ? "#b5c4d0" : "#526475";
-  const surface = dark ? "#243340" : "#ffffff";
+  const ink = dark ? "#f5f3ed" : "#171717";
+  const muted = dark ? "#c3bcae" : "#5f5f5f";
+  const surface = dark ? "#161616" : "#ffffff";
   return {
     animation: !reducedMotion,
     animationDuration: 350,
@@ -78,7 +78,7 @@ export function pieOptions(data, { dark = false, compact = false, reducedMotion 
     textStyle: { fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif", color: ink },
     aria: { enabled: true, label: { description: `${data.title}. ${data.period}. ${data.geography}. ${data.metric}. ${data.series.map((item) => `${item.name}: ${item.value}%`).join("; ")}.` } },
     tooltip: {
-      trigger: "item", confine: true, renderMode: "html", backgroundColor: surface, borderColor: dark ? "#536779" : "#d6e3e7", textStyle: { color: ink },
+      trigger: "item", confine: true, renderMode: "html", backgroundColor: surface, borderColor: dark ? "#494136" : "#d9d9d9", textStyle: { color: ink },
       formatter: (item) => `${escapeHTML(item.name)}<br><strong>${Number(item.value)}%</strong>`,
     },
     legend: {
@@ -90,7 +90,7 @@ export function pieOptions(data, { dark = false, compact = false, reducedMotion 
       type: "pie", radius: compact ? ["37%", "64%"] : ["38%", "66%"], center: compact ? ["50%", "48%"] : ["32%", "50%"],
       avoidLabelOverlap: true, minAngle: 0, padAngle: 1, selectedMode: false,
       itemStyle: { borderRadius: 3, borderWidth: 2, borderColor: surface },
-      label: { show: compact, position: "inside", formatter: (item) => item.value >= 5 ? `${item.value}%` : "", fontSize: 13, color: "#fff", textBorderColor: "rgba(0,0,0,.4)", textBorderWidth: 2 },
+      label: { show: compact, position: "inside", formatter: (item) => item.value >= 5 ? `${item.value}%` : "", fontSize: 13, color: dark ? "#101010" : "#fff", textBorderWidth: 0 },
       labelLine: { show: false }, emphasis: { scale: !reducedMotion, scaleSize: 4, label: { show: compact }, itemStyle: { shadowBlur: 0 } },
       data: data.series.map((item) => ({ name: item.name, value: item.value })),
     }],
