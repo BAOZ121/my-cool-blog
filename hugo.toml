@@ -39,7 +39,7 @@ enableRobotsTXT = true
 
         [languages.en.params.sidebar]
             compact = false
-            avatar = "/avatar.svg"
+            avatar = "/avatar-gold.svg"
             subtitle = "Independent Industry Research"
 
         # Main navigation
