@@ -1,0 +1,5 @@
+{{- $id := .Get "id" -}}
+{{- $name := .Get "name" -}}
+{{- $icon := .Page.Resources.GetMatch (printf "brands/%s.*" $id) -}}
+{{- if not $icon -}}{{ errorf "Missing company icon %q in %s" $id .Page.File.Path }}{{- end -}}
+<span class="ai-company"><span class="ai-company-icon"><img src="{{ $icon.RelPermalink }}" alt="" width="24" height="24" loading="lazy" decoding="async"></span><span>{{ $name }}</span></span>

@@ -19,7 +19,7 @@ const server = createServer(async (req, res) => {
 await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
 const base = `http://127.0.0.1:${server.address().port}`;
 const browser = await chromium.launch({ headless: true, ...(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : {}) });
-const slugs = ['cybersecurity-industry-report', 'pharmaceutical-industry', 'vr-industry-report-2026', 'semiconductor-industry-report'];
+const slugs = ['cybersecurity-industry-report', 'pharmaceutical-industry', 'vr-industry-report-2026', 'semiconductor-industry-report', 'ai-computing-infrastructure'];
 const captures = process.env.VISUAL_SCREENSHOT_DIR;
 if (captures) await mkdir(captures, { recursive: true });
 const failures = [];
@@ -36,6 +36,12 @@ try {
       await page.goto(`${base}/post/${slug}/`, { waitUntil: 'domcontentloaded' });
       const figures = page.locator('figure.article-visual');
       assert.equal(await figures.count(), 2);
+      if (slug === 'ai-computing-infrastructure') {
+        assert.equal(await page.locator('.article-content h2').count(), 5, 'Four parts and a separate appendix are required');
+        assert.equal(await page.locator('.ai-company-icon img').count(), 28, 'Both company tables must retain their brand icons');
+        for (const table of await page.locator('.article-content table').all()) await table.scrollIntoViewIfNeeded();
+        await page.waitForFunction(() => Array.from(document.querySelectorAll('.ai-company-icon img')).every(img => img.complete && img.naturalWidth > 0));
+      }
       for (let index = 0; index < 2; index++) {
         const figure = figures.nth(index);
         await figure.scrollIntoViewIfNeeded();
@@ -67,7 +73,7 @@ try {
         await figure.locator('.visual-fallback summary').click();
         assert.equal(await figure.locator('.visual-fallback').evaluate(el => el.open), true);
         await figure.locator('.visual-fallback summary').click();
-        if (captures && slug === 'vr-industry-report-2026') await figure.screenshot({ path: resolve(captures, `xr-${index ? 'share' : 'map'}-${width}.png`) });
+        if (captures && (slug === 'vr-industry-report-2026' || slug === 'ai-computing-infrastructure')) await figure.screenshot({ path: resolve(captures, `${slug === 'ai-computing-infrastructure' ? 'ai' : 'xr'}-${index ? 'share' : 'map'}-${width}.png`) });
       }
       const share = figures.nth(1);
       const light = await share.evaluate(el => getComputedStyle(el).backgroundColor);

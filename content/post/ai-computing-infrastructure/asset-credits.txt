@@ -1,0 +1,96 @@
+AI computing infrastructure article asset credits
+Cover: the user-selected black logo-grid image.
+Brand icons are separate source assets used beside company names.
+
+nvidia
+brands/nvidia.svg
+https://github.com/simple-icons/simple-icons/blob/1089fb7d2bf0e323f834c205ab76265005a6d5e8/icons/nvidia.svg
+CC0-1.0
+
+amd
+brands/amd.svg
+https://github.com/simple-icons/simple-icons/blob/1089fb7d2bf0e323f834c205ab76265005a6d5e8/icons/amd.svg
+CC0-1.0
+
+huawei
+brands/huawei.svg
+https://github.com/simple-icons/simple-icons/blob/1089fb7d2bf0e323f834c205ab76265005a6d5e8/icons/huawei.svg
+CC0-1.0
+
+google
+brands/google.svg
+https://github.com/simple-icons/simple-icons/blob/1089fb7d2bf0e323f834c205ab76265005a6d5e8/icons/google.svg
+CC0-1.0
+
+google-cloud
+brands/google-cloud.svg
+https://github.com/simple-icons/simple-icons/blob/1089fb7d2bf0e323f834c205ab76265005a6d5e8/icons/googlecloud.svg
+CC0-1.0
+
+samsung
+brands/samsung.svg
+https://github.com/simple-icons/simple-icons/blob/1089fb7d2bf0e323f834c205ab76265005a6d5e8/icons/samsung.svg
+CC0-1.0
+
+broadcom
+brands/broadcom.svg
+https://github.com/simple-icons/simple-icons/blob/1089fb7d2bf0e323f834c205ab76265005a6d5e8/icons/broadcom.svg
+CC0-1.0
+
+dell
+brands/dell.svg
+https://github.com/simple-icons/simple-icons/blob/1089fb7d2bf0e323f834c205ab76265005a6d5e8/icons/dell.svg
+CC0-1.0
+
+supermicro
+brands/supermicro.svg
+https://github.com/simple-icons/simple-icons/blob/1089fb7d2bf0e323f834c205ab76265005a6d5e8/icons/supermicro.svg
+CC0-1.0
+
+schneider-electric
+brands/schneider-electric.svg
+https://github.com/simple-icons/simple-icons/blob/1089fb7d2bf0e323f834c205ab76265005a6d5e8/icons/schneiderelectric.svg
+CC0-1.0
+
+coreweave
+brands/coreweave.png
+https://cdn.prod.website-files.com/62ba1fb86485b6d5029975c4/676dd5669fb4341cd25ca792_logo_coreweave_solo_32x32.png
+Corporate website favicon; trademark remains with the brand owner
+
+sk-hynix
+brands/sk-hynix.png
+https://news.skhynix.com/en/wp-content/themes/skhynix/assets/images/ico_favi.png
+Corporate website favicon; trademark remains with the brand owner
+
+micron
+brands/micron.png
+https://www.micron.com/content/dam/micron/global/favicon/favicon-32x32.png
+Corporate website favicon; trademark remains with the brand owner
+
+vertiv
+brands/vertiv.png
+https://www.vertiv.com/apple-touch-icon.png
+Corporate website favicon; trademark remains with the brand owner
+
+aws
+brands/aws.svg
+https://github.com/lobehub/lobe-icons/blob/79b551cf26aab9ea4ac701fb807160950a5b860f/packages/static-svg/icons/aws-color.svg
+MIT
+
+azure
+brands/azure.svg
+https://github.com/lobehub/lobe-icons/blob/79b551cf26aab9ea4ac701fb807160950a5b860f/packages/static-svg/icons/azure-color.svg
+MIT
+
+ase
+brands/ase.png
+https://cdn.prod.website-files.com/64367fc53a6c9c22a4baffe3/6667ef18e24e956d4aecaafe_favicon%202.png
+Corporate favicon; trademark remains with the brand owner
+
+tsmc
+brands/tsmc.png
+https://www.google.com/s2/favicons?domain=tsmc.com&sz=128
+Corporate favicon; trademark remains with the brand owner
+
+Simple Icons: CC0-1.0. See simple-icons-license.txt.
+LobeHub Icons: MIT. See lobe-icons-license.txt.

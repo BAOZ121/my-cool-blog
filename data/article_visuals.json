@@ -576,6 +576,225 @@
       ],
       "note": "DEX editorial map based on the accompanying report. Examples are illustrative, not exhaustive or ranked. Companies can operate across several stages; connections show categories, not verified supplier contracts.",
       "reviewed": "2026-09-29"
+    },
+    "ai-computing-infrastructure": {
+      "title": "The AI computing infrastructure value chain",
+      "description": "Follow the capabilities needed to turn chips into usable computing services.",
+      "root": {
+        "name": "AI computing infrastructure",
+        "children": [
+          {
+            "name": "Upstream · Design and components",
+            "children": [
+              {
+                "name": "Accelerators and software",
+                "children": [
+                  {
+                    "name": "GPUs, development tools and model execution"
+                  },
+                  {
+                    "name": "Representative companies",
+                    "children": [
+                      {
+                        "name": "NVIDIA"
+                      },
+                      {
+                        "name": "AMD"
+                      },
+                      {
+                        "name": "Huawei"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Cloud provider chips",
+                "children": [
+                  {
+                    "name": "Specialized accelerators for cloud workloads"
+                  },
+                  {
+                    "name": "Representative companies",
+                    "children": [
+                      {
+                        "name": "AWS · Trainium"
+                      },
+                      {
+                        "name": "Google · TPU"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Fabrication and advanced packaging",
+                "children": [
+                  {
+                    "name": "Wafer production and system integration"
+                  },
+                  {
+                    "name": "Representative companies",
+                    "children": [
+                      {
+                        "name": "TSMC"
+                      },
+                      {
+                        "name": "ASE"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "HBM memory",
+                "children": [
+                  {
+                    "name": "Data capacity and transfer bandwidth"
+                  },
+                  {
+                    "name": "Representative companies",
+                    "children": [
+                      {
+                        "name": "SK hynix"
+                      },
+                      {
+                        "name": "Micron"
+                      },
+                      {
+                        "name": "Samsung"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Midstream · Systems and facilities",
+            "children": [
+              {
+                "name": "Networking and interconnects",
+                "children": [
+                  {
+                    "name": "Communication between servers and computing nodes"
+                  },
+                  {
+                    "name": "Representative companies",
+                    "children": [
+                      {
+                        "name": "NVIDIA"
+                      },
+                      {
+                        "name": "Broadcom"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Servers and integration",
+                "children": [
+                  {
+                    "name": "Assembly, testing and delivery of complete systems"
+                  },
+                  {
+                    "name": "Representative companies",
+                    "children": [
+                      {
+                        "name": "Dell"
+                      },
+                      {
+                        "name": "Supermicro"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Power and cooling",
+                "children": [
+                  {
+                    "name": "Power distribution, thermal management and site readiness"
+                  },
+                  {
+                    "name": "Representative companies",
+                    "children": [
+                      {
+                        "name": "Vertiv"
+                      },
+                      {
+                        "name": "Schneider Electric"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Downstream · Computing services",
+            "children": [
+              {
+                "name": "Cloud computing services",
+                "children": [
+                  {
+                    "name": "Capacity, service availability and cluster operations"
+                  },
+                  {
+                    "name": "Representative companies",
+                    "children": [
+                      {
+                        "name": "AWS"
+                      },
+                      {
+                        "name": "Microsoft Azure"
+                      },
+                      {
+                        "name": "Google Cloud"
+                      },
+                      {
+                        "name": "CoreWeave"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Customer uses",
+                "children": [
+                  {
+                    "name": "Model training"
+                  },
+                  {
+                    "name": "Inference and business applications"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "NVIDIA · computing and networking business",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027"
+        },
+        {
+          "title": "TSMC · CoWoS advanced packaging",
+          "url": "https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm"
+        },
+        {
+          "title": "Dell · AI server revenue and delivery pipeline",
+          "url": "https://investors.delltechnologies.com/news-releases/news-release-details/dell-technologies-delivers-second-quarter-fiscal-2027-financial"
+        },
+        {
+          "title": "IEA · energy and infrastructure constraints",
+          "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary"
+        }
+      ],
+      "note": "DEX editorial map based on Part 3 and the supporting appendix. Company examples are illustrative and may span several stages. Branches group business roles; they do not establish supplier contracts, market shares or an exhaustive list.",
+      "reviewed": "2026-10-01"
     }
   },
   "shares": {
@@ -743,6 +962,37 @@
       "unit": "%",
       "reviewed": "2026-09-29",
       "dimension": "Sales region"
+    },
+    "nvidia-revenue-mix-fy2027-q2": {
+      "title": "NVIDIA revenue mix",
+      "eyebrow": "REVENUE MIX",
+      "dimension": "Business grouping",
+      "period": "FY2027 Q2 · quarter ended July 26, 2026",
+      "geography": "Worldwide company revenue",
+      "scope": "Data Center as a share of NVIDIA's total quarterly revenue. This measures one company's revenue composition, not its industry market share or AI-only sales.",
+      "metric": "Share of NVIDIA revenue (%)",
+      "series": [
+        {
+          "name": "Data Center",
+          "value": 92.5,
+          "derived": true
+        },
+        {
+          "name": "All other businesses",
+          "value": 7.5,
+          "derived": true
+        }
+      ],
+      "source": {
+        "publisher": "NVIDIA",
+        "title": "Financial results for second quarter fiscal 2027",
+        "published": "2026-08-26",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+        "locator": "Opening revenue summary and Q2 FY2027 GAAP table"
+      },
+      "note": "Calculated from approximately $89.0 billion in Data Center revenue and $96.221 billion in total revenue. Data Center share = 89.0 / 96.221 × 100, rounded to one decimal place; the other category is the residual to 100%. Data Center includes computing and networking and is not synonymous with AI. The source rounds Data Center revenue, so the percentages are approximate.",
+      "unit": "%",
+      "reviewed": "2026-10-01"
     }
   }
 }
