@@ -967,9 +967,9 @@
       "title": "NVIDIA revenue mix",
       "eyebrow": "REVENUE MIX",
       "dimension": "Business grouping",
-      "period": "FY2027 Q2 · quarter ended July 26, 2026",
+      "period": "FY2027 Q2",
       "geography": "Worldwide company revenue",
-      "scope": "Data Center as a share of NVIDIA's total quarterly revenue. This measures one company's revenue composition, not its industry market share or AI-only sales.",
+      "scope": "Quarter ended July 26, 2026. Data Center as a share of NVIDIA's total quarterly revenue. This measures one company's revenue composition, not its industry market share or AI-only sales.",
       "metric": "Share of NVIDIA revenue (%)",
       "series": [
         {
