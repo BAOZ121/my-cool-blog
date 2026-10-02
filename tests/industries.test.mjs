@@ -19,7 +19,7 @@ test("numeric provenance stays separate from contextual reading", () => {
 
 const researchLinks = {
   "2": [
-    { label: "View industry breakdown", url: "/industry-breakdowns/semiconductors/" },
+    { label: "Read industry guide", url: "/industry-breakdowns/semiconductors/" },
     { label: "Read report", url: "/post/semiconductor-industry-report/" },
     { label: "View industry mind map", url: "/post/semiconductor-industry-report/#industry-map-semiconductors" },
     { label: "View share chart", url: "/post/semiconductor-industry-report/#market-share-foundry-q4-2025" }
@@ -95,11 +95,12 @@ test("an early input event cannot clear static rows while a fallback fetch is pe
   assert.equal(elements.get("ix-count").textContent, "Full industry list");
 });
 
-test("rendered rows retain stable destinations and valid research links before selection", () => {
+test("rendered rows retain stable destinations and a single details action per industry", () => {
   const { elements } = page();
   const table = elements.get("ix-tbody").innerHTML;
   assert.equal((table.match(/id="ix-industry-\d+"/g) || []).length, 50);
-  for (const link of researchLinks["2"]) assert.ok(table.includes('href="' + link.url + '"'));
+  assert.equal((table.match(/aria-haspopup="dialog"/g) || []).length, 50);
+  assert.doesNotMatch(table, /<nav|Read industry guide|View share chart/);
   assert.doesNotMatch(table, /#industry-map-battery|#market-share-robotics/);
 });
 

@@ -49,7 +49,7 @@ function directory(search = "") {
 test("directory initializes from a shared URL and reveals progressive controls", () => {
   const d = directory("?q=CHIPS");
   assert.equal(d.form.hidden, false);
-  assert.equal(d.count.textContent, "Showing 1 of 2 breakdowns");
+  assert.equal(d.count.textContent, "Showing 1 of 2 guides");
   assert.deepEqual(d.cards.map((card) => card.hidden), [false, true]);
 });
 test("empty state and reset recover all cards and focus the search field", () => {
@@ -57,11 +57,11 @@ test("empty state and reset recover all cards and focus the search field", () =>
   d.query.value = "missing-industry";
   d.query.dispatchEvent(new Event("input"));
   assert.equal(d.empty.hidden, false);
-  assert.equal(d.count.textContent, "Showing 0 of 2 breakdowns");
+  assert.equal(d.count.textContent, "Showing 0 of 2 guides");
   d.form.dispatchEvent(new Event("reset", { cancelable: true }));
   assert.equal(d.empty.hidden, true);
   assert.equal(d.query.focused, true);
-  assert.equal(d.count.textContent, "Showing 2 of 2 breakdowns");
+  assert.equal(d.count.textContent, "Showing 2 of 2 guides");
   assert.equal(d.nav.location.search, "");
 });
 test("category changes and popstate restore the visible result set", () => {
@@ -76,7 +76,7 @@ test("category changes and popstate restore the visible result set", () => {
 test("HTML-like search remains plain text and cannot create a result", () => {
   const d = directory("?q=%3Cimg%20onerror%3Dalert(1)%3E");
   assert.equal(d.query.value, "<img onerror=alert(1)>");
-  assert.equal(d.count.textContent, "Showing 0 of 2 breakdowns");
+  assert.equal(d.count.textContent, "Showing 0 of 2 guides");
 });
 test("native disclosures, expand/collapse control and print restore state", () => {
   const savedWindow = global.window;

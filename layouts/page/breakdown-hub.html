@@ -3,42 +3,41 @@
 {{ define "main" }}
 {{ $profiles := hugo.Data.breakdowns.profiles }}
 {{ $dataset := os.ReadFile "static/data/industries.json" | transform.Unmarshal }}
-<article class="bd" id="bd-main">
+<article class="bd bd-hub" id="bd-main">
   <header class="bd-hero">
-    <p class="bd-eyebrow">DEX RESEARCH / INDUSTRY ATLAS</p>
-    <h1>Industry breakdowns</h1>
-    <p class="bd-lead">See the structure.<br>Ask better questions.</p>
+    <p class="bd-eyebrow">DEX RESEARCH / INDUSTRY GUIDES</p>
+    <h1>Understand how an industry works.</h1>
     <div class="bd-intro">{{ .Content }}</div>
-    <div class="bd-hero-meta"><span>{{ len $profiles }} research maps</span><span>Primary-source anchors</span><span>No black-box scores</span></div>
+    <div class="bd-hero-actions"><a class="bd-button bd-button-primary" href="#industry-guides">Explore {{ len $profiles }} industry guides <span aria-hidden="true">↓</span></a><a class="bd-button" href="{{ "/industry-breakdowns/semiconductors/" | relURL }}">Start with semiconductors <span aria-hidden="true">→</span></a></div>
+    <p class="bd-hero-caption">Each guide covers the value chain, industry economics, and key research questions.</p>
   </header>
 
-  <section class="bd-panel bd-guide" aria-labelledby="bd-guide-title">
-    <div><p class="bd-kicker">HOW TO READ</p><h2 id="bd-guide-title">An industry, in three lenses.</h2></div>
-    <ol><li><strong>Follow the chain</strong><span>Who supplies whom?</span></li><li><strong>Trace the economics</strong><span>Who pays, and for what?</span></li><li><strong>Test the thesis</strong><span>Which signals and risks matter?</span></li></ol>
-  </section>
-
-  <section class="bd-directory" aria-labelledby="bd-directory-title" data-breakdown-directory>
-    <div class="bd-section-heading"><div><p class="bd-kicker">EXPLORE THE ATLAS</p><h2 id="bd-directory-title">Choose an industry</h2></div><a href="{{ "/industries/" | relURL }}">Open the 50-industry dataset <span aria-hidden="true">↗</span></a></div>
-    <p class="bd-muted">Starter coverage: {{ len $profiles }} of {{ len $dataset.industries }} dataset entries have a scoped breakdown. These are research frameworks, not complete sector reports or rankings.</p>
-    <form class="bd-filters" role="search" aria-label="Filter industry breakdowns" hidden>
+  <section class="bd-directory" id="industry-guides" aria-labelledby="bd-directory-title" data-breakdown-directory>
+    <div class="bd-section-heading"><div><h2 id="bd-directory-title">Choose an industry</h2></div><a href="{{ "/industries/" | relURL }}">Compare {{ len $dataset.industries }} industries in the Explorer <span aria-hidden="true">→</span></a></div>
+    <form class="bd-filters" role="search" aria-label="Filter industry guides" hidden>
       <label for="bd-query">Search industries<input id="bd-query" type="search" name="q" placeholder="Try chips, storage or cybersecurity" autocomplete="off"></label>
       <label for="bd-category">Category<select id="bd-category" name="category"><option value="">All categories</option>{{ range (slice "AI Foundation" "Energy" "Digitization" "Hard Tech" "Bio & Health") }}<option value="{{ . }}">{{ . }}</option>{{ end }}</select></label>
       <button class="bd-button" type="reset">Clear filters</button>
     </form>
-    <p class="bd-count" data-breakdown-count role="status" aria-live="polite">Showing {{ len $profiles }} of {{ len $profiles }} breakdowns</p>
+    <p class="bd-count" data-breakdown-count role="status" aria-live="polite">Showing {{ len $profiles }} of {{ len $profiles }} guides</p>
     <div class="bd-cards">
     {{ range $profiles }}
       <article class="bd-card" data-breakdown-card data-category="{{ .category }}" data-search="{{ printf "%s %s %s %s" .name .category .summary .keywords }}" aria-labelledby="card-{{ .id }}">
-        <div class="bd-card-top"><span class="bd-tag">{{ .category }}</span><span class="bd-index" aria-label="Dataset row {{ .dataset_rank }}">{{ printf "%02d" (int .dataset_rank) }}</span></div>
+        <div class="bd-card-top"><span class="bd-tag">{{ .category }}</span></div>
         <h3 id="card-{{ .id }}"><a href="{{ printf "/industry-breakdowns/%s/" .id | relURL }}">{{ .name }}</a></h3>
         <p>{{ .summary }}</p>
         <ol class="bd-mini-chain" aria-label="Value-chain stages">{{ range .chain }}<li>{{ .title }}</li>{{ end }}</ol>
-        <div class="bd-card-bottom"><span>{{ len .sources }} source{{ if ne (len .sources) 1 }}s{{ end }} · 3 metrics</span><a href="{{ printf "/industry-breakdowns/%s/" .id | relURL }}" aria-label="Explore {{ .name }} breakdown">Explore breakdown <span aria-hidden="true">→</span></a></div>
+        <div class="bd-card-bottom"><span>Value chain · Business model · Research questions</span><a href="{{ printf "/industry-breakdowns/%s/" .id | relURL }}" aria-label="Explore the {{ .name }} industry guide">Explore industry guide <span aria-hidden="true">→</span></a></div>
       </article>
     {{ end }}
     </div>
-    <div class="bd-panel bd-empty" data-breakdown-empty hidden><h3>No matching breakdowns yet</h3><p>Try another term or clear the filters. The broader dataset still covers 50 industries.</p><a href="{{ "/industries/" | relURL }}">Browse all industries</a></div>
-    <noscript><p class="bd-note">Search needs JavaScript. All industry links and complete breakdown pages remain available below and above.</p></noscript>
+    <div class="bd-panel bd-empty" data-breakdown-empty hidden><h3>No matching guides yet</h3><p>Try another term or clear the filters. The Explorer covers {{ len $dataset.industries }} industries.</p><a href="{{ "/industries/" | relURL }}">Browse Industry Explorer</a></div>
+    <noscript><p class="bd-note">All {{ len $profiles }} guides are available above. Enable JavaScript to search and filter them.</p></noscript>
+  </section>
+
+  <section class="bd-panel bd-guide" aria-labelledby="bd-guide-title">
+    <div><p class="bd-kicker">WHAT YOU WILL LEARN</p><h2 id="bd-guide-title">Three questions for every industry.</h2></div>
+    <ol><li><strong>How does the value chain connect?</strong><span>Follow the suppliers, producers, and customers.</span></li><li><strong>How do businesses make money?</strong><span>Understand revenue models, costs, and bottlenecks.</span></li><li><strong>What should you investigate next?</strong><span>Explore growth drivers, risks, and useful metrics.</span></li></ol>
   </section>
 
   <aside class="bd-panel bd-method" aria-labelledby="bd-method-title">

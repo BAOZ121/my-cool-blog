@@ -40,6 +40,19 @@
 .bd-hero-meta { display: flex; flex-wrap: wrap; gap: 10px 24px; margin-top: 30px; padding-top: 18px; border-top: 1px solid var(--bd-line); font-size: 13px; color: var(--bd-muted); }
 .bd-hero-meta a { color: var(--bd-accent); text-decoration: underline; }
 .bd-hero :is(a, button):focus-visible { outline-color: var(--bd-accent); }
+.bd-hub .bd-hero { padding: clamp(24px, 3vw, 36px); }
+.bd-hub .bd-eyebrow { margin-bottom: 14px !important; }
+.bd-hub h1 { max-width: 850px; font-size: clamp(30px, 3.2vw, 44px); }
+.bd-hub .bd-intro { margin-top: 14px; max-width: 780px; }
+.bd-hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+.bd-hero-caption { margin-top: 16px !important; font-size: 13px; color: var(--bd-muted); }
+.bd-hub .bd-directory { margin-top: 28px; scroll-margin-top: 24px; }
+.bd-hub .bd-directory h2 { margin: 0; }
+.bd-hub .bd-filters { margin-top: 16px; }
+.bd-hub .bd-card { padding: 22px; }
+.bd-hub .bd-card h3 { margin-top: 14px; }
+.bd-hub .bd-card-bottom { gap: 8px; }
+.bd-hub .bd-card-bottom > span { flex-basis: 100%; }
 .bd-panel { padding: 26px; background: var(--bd-surface); border: 1px solid var(--bd-line); border-radius: 12px; }
 .bd-guide, .bd-method, .bd-next { display: grid; grid-template-columns: minmax(0, 1fr) minmax(240px, 1.25fr); gap: 24px; margin-top: 24px; }
 .bd-guide { align-items: center; }
@@ -138,6 +151,16 @@
   .bd-jump { gap: 6px; }
   .bd-jump a { padding: 9px 11px; font-size: 13px; }
   .bd-section-heading { align-items: flex-start; }
+  .bd-hub .bd-filters { grid-template-columns: minmax(0, 1fr) auto; }
+  .bd-hub .bd-filters > label:first-child { grid-column: 1 / -1; }
+  .bd-hub .bd-hero-caption { display: none; }
+}
+@media (max-width: 767px) {
+  .bd-page .left-sidebar { --sidebar-avatar-size: 48px; --sidebar-element-separation: 12px; margin-bottom: 0; }
+  .bd-page .left-sidebar > header { flex-direction: row; align-items: center; gap: 12px; padding-right: 44px; margin-bottom: 8px; }
+  .bd-page .left-sidebar .site-meta { gap: 5px; }
+  .bd-page .left-sidebar .site-description { font-size: 12px; }
+  .bd-page .left-sidebar .menu-social { margin-left: 60px; margin-bottom: 0; }
 }
 @media (prefers-reduced-motion: reduce) { .bd *, .bd *::before, .bd *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
 @media print {

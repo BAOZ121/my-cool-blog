@@ -40,7 +40,7 @@ export function initDirectory(root, navigation = window) {
       card.hidden = !matchesProfile(card.dataset, query.value, category.value);
       if (!card.hidden) visible += 1;
     });
-    count.textContent = `Showing ${visible} of ${cards.length} breakdowns`;
+    count.textContent = `Showing ${visible} of ${cards.length} guides`;
     empty.hidden = visible !== 0;
     if (syncURL) {
       navigation.history.replaceState(null, "", filterURL(navigation.location.href, query.value, category.value));

@@ -11,7 +11,7 @@
   {{- $links := slice -}}
   {{- with .industryId -}}
     {{- range where $site.RegularPages "Params.industryId" . -}}
-      {{- $links = $links | append (dict "label" "View industry breakdown" "url" .RelPermalink) -}}
+      {{- $links = $links | append (dict "label" "Read industry guide" "url" .RelPermalink) -}}
     {{- end -}}
   {{- end -}}
   {{- range .reports -}}

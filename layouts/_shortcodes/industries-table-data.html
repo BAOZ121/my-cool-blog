@@ -4,18 +4,20 @@
 {{- range $dataset.industries }}
 {{- $row := . -}}
 <tr id="ix-industry-{{ .rank }}" data-rank="{{ .rank }}">
-<td>{{ .rank }}</td>
-<td><strong>{{ .name }}</strong><br>
+<td class="ix-rank">{{ .rank }}</td>
+<td class="ix-industry-cell"><strong class="ix-industry-name">{{ .name }}</strong><span class="ix-chip">{{ .category }}</span>
 {{- with .sourced_baseline -}}
-  <small class="ix-note"><a href="{{ .source.url }}">{{ if eq $row.verification_status "context" }}Sourced context{{ else }}Sourced baseline{{ end }} · {{ .year }}</a></small><br>
+  <small class="ix-evidence"><a href="{{ .source.url }}">{{ if eq $row.verification_status "context" }}Sourced context{{ else }}Sourced baseline{{ end }} · {{ .year }}</a></small>
 {{- end -}}
-<small class="ix-note">Original ~2025 estimates unverified</small>
-{{- with index $researchLinks (printf "%v" .rank) }}<nav class="ix-note" aria-label="Related research for {{ $row.name }}">{{ range $index, $link := . }}{{ if $index }}<br>{{ end }}<a href="{{ $link.url }}">{{ $link.label }}</a>{{ end }}</nav>{{ end -}}
+<small class="ix-evidence">Original estimates unverified</small>
+<details class="ix-static-research"><summary>Details &amp; research</summary><p><strong>Maturity:</strong> {{ .maturity }} (editorial)</p><p><strong>Projected size:</strong> {{ .projected_label }} (unverified)</p><p>{{ .notes }}</p>
+{{- with .sourced_baseline }}<p><strong>Separate {{ if eq $row.verification_status "context" }}context{{ else }}baseline{{ end }}:</strong> {{ .currency }} {{ .value }} {{ .unit }} · {{ .year }}. {{ .metric }}. {{ .geography }}. {{ .market_definition }}. {{ .relationship_to_estimate }} <a href="{{ .source.url }}">{{ .source.publisher }}</a></p>{{ end -}}
+{{- with index $researchLinks (printf "%v" .rank) }}<nav aria-label="Related research for {{ $row.name }}">{{ range . }}<a href="{{ .url }}">{{ .label }}</a>{{ end }}</nav>{{ end -}}
+</details>
 </td>
-<td>{{ .tech }}</td>
-<td>{{ .market_label }}</td>
-<td>{{ .cagr_label }}</td>
-<td><span class="ix-chip">{{ .category }}</span></td>
+<td class="ix-tech" data-label="Key technologies">{{ .tech }}</td>
+<td data-label="Market size · ~2025">{{ .market_label }}</td>
+<td data-label="Growth · CAGR">{{ .cagr_label }}</td>
 </tr>
 {{- end }}
 </tbody>
