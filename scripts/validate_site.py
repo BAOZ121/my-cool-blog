@@ -141,6 +141,8 @@ def main() -> None:
         assert set(industry_page.options[select]) == {"", *(item[field] for item in items)}, select
     article = Links(BUILD / "post/50-high-potential-industries/index.html")
     parsed_industry = Links(BUILD / "industries/index.html")
+    script_digest = hashlib.sha256((ROOT / "static/js/industries.js").read_bytes()).hexdigest()
+    assert f"/js/industries.js?v={script_digest}" in parsed_industry.urls, "Explorer script URL must change when its contents change"
     for item in items:
         if item.get("evidence_appendix_url"):
             link = item["evidence_appendix_url"]
