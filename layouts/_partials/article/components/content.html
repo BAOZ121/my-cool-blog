@@ -5,6 +5,7 @@
     {{- with .Params.dataDownload }}
     <a class="research-action" href="{{ . | relURL }}" download>Download data (CSV)</a>
     {{- end }}
+    <a class="research-action" href="{{ "/evidence-library/" | relURL }}?article={{ path.Base .File.Dir }}">Evidence Library</a>
     <a class="research-action" href="{{ "/about/" | relLangURL }}#research-methodology">Research methodology</a>
 </nav>
 {{- end }}

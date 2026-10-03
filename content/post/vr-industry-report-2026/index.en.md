@@ -1,7 +1,7 @@
 ---
 title: "Meta Reality Labs' $19.2B 2025 Loss: A VR/XR Industry Map"
 date: 2026-08-11
-lastmod: 2026-09-29
+lastmod: 2026-10-03
 description: "A simplified VR/XR industry map, historical context, and what company filings can and cannot establish."
 image: "cover.jpg"
 categories:
@@ -11,7 +11,7 @@ tags:
   - "VR"
   - "XR"
 ---
-What does it mean for a company to spend heavily on an emerging computing platform? Meta's Reality Labs segment reported an operating loss of **$19.193 billion for full-year 2025**; that is a segment accounting result, not the net loss of Meta Platforms as a whole. Meta acquired Oculus in 2014 and continues to invest in virtual reality, augmented reality, and related devices.
+What does it mean for a company to spend heavily on an emerging computing platform? Meta's Reality Labs segment reported an operating loss of **$19.193 billion for full-year 2025** in its unaudited results release; that is a segment accounting result, not the net loss of Meta Platforms as a whole. Meta acquired Oculus in 2014 and continues to invest in virtual reality, augmented reality, and related devices.
 
 VR, as the name suggests, is Virtual Reality.
 
@@ -84,7 +84,7 @@ Weight distribution, thermal design and fit can limit comfortable use. Rendering
 
 Fourth, upstream supply chain and scarce materials.
 
-Supply chains for chips, displays and optics can be exposed to bottlenecks, but the supplied company reports do not establish a direct causal chain from particular minerals to XR display costs. Meta's **$19.193 billion 2025 Reality Labs operating loss** is verified in its results; it alone cannot prove why individual suppliers or competitors changed product plans in 2026.
+Supply chains for chips, displays and optics can be exposed to bottlenecks, but the supplied company reports do not establish a direct causal chain from particular minerals to XR display costs. Meta's **$19.193 billion 2025 Reality Labs operating loss** is reported in its unaudited results release; it alone cannot prove why individual suppliers or competitors changed product plans in 2026.
 
 Where the VR/XR industry will ultimately go is a question that only time can answer.
 
@@ -94,18 +94,18 @@ That's the simplified map for this video. It is a starting point for checking hi
 
 ## Source notes and primary materials
 
-- [Meta: fourth-quarter and full-year 2025 results](https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Fourth-Quarter-and-Full-Year-2025-Results/) — source for Reality Labs' **2025 segment operating loss**, not a headset unit count or company-wide net loss.
-- [Ivan Sutherland, *The Ultimate Display* (1965)](https://www.eng.utah.edu/~cs6360/Readings/UltimateDisplay.pdf) — the supplied historical paper about an interactive display vision; not a 2026 product or market forecast.
+- [Meta: fourth-quarter and full-year 2025 results](https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Fourth-Quarter-and-Full-Year-2025-Results/) — source for Reality Labs' **2025 segment operating loss**; the release's segment table is **unaudited**. It is not a headset unit count or company-wide net loss.
+- [Ivan Sutherland, *The Ultimate Display* (1965)](https://www.eng.utah.edu/~cs6360/Readings/UltimateDisplay.pdf) — a **University of Utah-hosted reproduction** of the historical paper, which cites *Proceedings of IFIP Congress*, pp. 506–508 (1965). It supports an interactive-display vision, not a 2026 product or market forecast, and is not an original publisher-hosted file.
 - [Goertek investor relations: 2024 annual report](https://www.goertek.com/en/IR/dingqi.html) — company-wide filing supplied for manufacturing context; no brand-specific headset shipment claim is inferred.
-- [Luxshare Precision investor relations: 2025 annual report and Q1 2026 report](https://www.luxshare-ict.com/investors/financial-reports.html) — company-wide financial filings supplied for manufacturing context; neither independently measures the entire VR market.
+- [Luxshare Precision investor relations: 2025 annual report and Q1 2026 report](https://ir.luxshare-ict.com/cn/investor-relations/financial-reports/a-share/) — the current official financial-report directory lists the annual report on **April 15, 2026**, and the Q1 report on **April 29, 2026**. These are company-wide filings supplied for manufacturing context; the Q1 financial statements are **unaudited**, and neither report independently measures the entire VR market.
 
 The supplied China Mobile Research Institute *VR/AR Product Development Status and Trend* report dates from **November 2022**. An original publisher-hosted URL was not verified, so it is recorded here bibliographically rather than linked to an unlicensed copy or used to justify a 2026 market-share claim. The Goertek and Luxshare reports likewise cannot substitute for a defined current shipment survey.
 
-## Supplied original documents
+## Supplied documents and reproductions {#supplied-original-documents}
 
-The following documents can be opened from their publishers. They are not copied to this website while redistribution rights remain unverified:
+The following links open company-hosted filings, filings on the company's disclosure platform, or the university-hosted reproduction identified below. They are not copied to this website while redistribution rights remain unverified:
 
-- [Sutherland, *The Ultimate Display* (1965): University of Utah PDF](https://www.eng.utah.edu/~cs6360/Readings/UltimateDisplay.pdf).
+- [Sutherland, *The Ultimate Display* (1965): University of Utah-hosted reproduction (PDF)](https://www.eng.utah.edu/~cs6360/Readings/UltimateDisplay.pdf).
 - [Goertek, 2024 Annual Report: publisher-hosted PDF](https://www.goertek.com/en/Upload/202505/20250519154009_5706.pdf).
 - [Luxshare Precision, 2025 Annual Report (English): PDF on the company's disclosure platform](https://static.cninfo.com.cn/finalpage/2026-06-17/1225373512.PDF).
 - [Luxshare Precision, 2026 Q1 Report (Chinese): PDF on the company's disclosure platform](https://static.cninfo.com.cn/finalpage/2026-04-29/1225249986.PDF).

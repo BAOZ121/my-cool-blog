@@ -1,0 +1,73 @@
+{{ define "body-class" }}article-page evidence-page{{ end }}
+{{ define "head" }}
+  {{ $style := resources.Get "scss/evidence-library.scss" | css.Sass | resources.Minify | resources.Fingerprint "sha256" }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+  {{ $script := resources.Get "js/evidence-library.mjs" | resources.Minify | resources.Fingerprint "sha256" }}
+  <script type="module" src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+{{ end }}
+{{ define "main" }}
+{{ $library := hugo.Data.evidence_library }}
+<article class="el" data-evidence-library>
+  <header class="el-hero">
+    <p class="el-eyebrow">DEX RESEARCH / SOURCES &amp; DOCUMENTS</p>
+    <h1>Evidence Library</h1>
+    <div class="el-intro">{{ .Content }}</div>
+    <dl class="el-stats" aria-label="Library coverage">
+      <div><dt>Articles</dt><dd>{{ $library.counts.articles }}</dd></div>
+      <div><dt>Materials</dt><dd>{{ $library.counts.materials }}</dd></div>
+      <div><dt>File links</dt><dd>{{ $library.counts.files }}</dd></div>
+    </dl>
+    <p class="el-count-note">Materials are counted once per article. A source used in several articles appears in each.</p>
+  </header>
+
+  <aside class="el-scope" aria-labelledby="el-scope-title">
+    <h2 id="el-scope-title">Read the source. Keep the context.</h2>
+    <p>This is an index of published citations and reading leads, not a certification of every claim. Estimates, forecasts and unverified ranges keep the qualifications given in their articles. Source titles and citation notes come from the articles; external pages may change or require access.</p>
+    <p>Source access and citation scope were reviewed on October 3, 2026. References whose content could not be confirmed are labelled in their citation notes; they remain reading leads. The seven unsupported original industry ranges remain unverified.</p>
+    <p><a href="{{ "/about/" | relURL }}#research-methodology">Our research methodology <span aria-hidden="true">↗</span></a></p>
+  </aside>
+
+  <section class="el-directory" aria-labelledby="el-directory-title">
+    <div class="el-section-heading"><h2 id="el-directory-title">Browse by article</h2><span>{{ $library.counts.hosted_files }} existing files hosted by DEX</span></div>
+    <form class="el-filters" role="search" aria-label="Search the Evidence Library" hidden>
+      <label class="el-query" for="el-query">Search the library<input id="el-query" name="q" type="search" placeholder="Try NVIDIA, battery or NIST" autocomplete="off" aria-describedby="el-search-help"></label>
+      <label for="el-article">Article<select id="el-article" name="article"><option value="">All articles</option>{{ range $library.articles }}<option value="{{ .id }}">{{ .title }}</option>{{ end }}</select></label>
+      <label for="el-type">Material type<select id="el-type" name="type"><option value="">All materials</option><option value="link">Web links</option><option value="file">Files &amp; data</option></select></label>
+      <button type="reset" class="el-button">Clear filters</button>
+      <p id="el-search-help">Search article titles, source titles, domains and citation notes. All words must match.</p>
+    </form>
+    <div class="el-results-bar"><p class="el-result-count" role="status" aria-live="polite" aria-atomic="true" data-result-count>{{ $library.counts.materials }} materials across {{ $library.counts.articles }} articles</p><button class="el-text-button" type="button" data-expand-all hidden>Expand all</button></div>
+    <div class="el-empty" data-empty hidden><h3>No matching materials</h3><p>Try fewer words, a different source name, or another article.</p><button class="el-button" type="button" data-clear-empty>Clear filters</button></div>
+    <div class="el-articles">
+      {{ range $library.articles }}
+      {{ $article := . }}
+      <details class="el-article" id="article-{{ .id }}" data-article="{{ .id }}" data-article-title="{{ .title }}">
+        <summary><span class="el-article-heading"><span class="el-article-meta">ARTICLE · {{ .published }}</span><span class="el-article-title" role="heading" aria-level="3">{{ .title }}</span><span class="el-article-count" data-article-count>{{ len .entries }} materials</span></span><span class="el-chevron" aria-hidden="true">+</span></summary>
+        <div class="el-article-body">
+          <p class="el-article-link"><a href="{{ .url | relURL }}">Read the article &amp; original appendix <span aria-hidden="true">↗</span></a><a href="#article-{{ .id }}" aria-label="Permanent link to sources for {{ .title }}">Link to this collection</a></p>
+          {{ with .notices }}<div class="el-article-notice"><strong>Article evidence notes</strong>{{ range . }}<p>{{ . }}</p>{{ end }}</div>{{ end }}
+          <ul class="el-materials">
+            {{ range .entries }}
+            <li class="el-material" data-kind="{{ .kind }}" data-evidence-item>
+              <div class="el-material-meta"><span class="el-badge">{{ if eq .kind "file" }}{{ .format }}{{ else }}Web link{{ end }}</span><span>{{ .host }}{{ if .local }} · Hosted file{{ end }}</span></div>
+              <h4><a href="{{ .url | safeURL }}">{{ .title }} <span aria-hidden="true">↗</span></a></h4>
+              <p class="el-location">Cited in: {{ (index .citations 0).section }}</p>
+              <details class="el-context">
+                <summary>Citation context{{ if gt (len .citations) 1 }} · {{ len .citations }} locations{{ end }}</summary>
+                {{ range .citations }}
+                <div class="el-citation"><a class="el-citation-link" href="{{ .url | relURL }}">{{ .section }} <span aria-hidden="true">↗</span></a><p>{{ .text }}</p>{{ range .notes }}<p>{{ . }}</p>{{ end }}</div>
+                {{ end }}
+              </details>
+            </li>
+            {{ else }}<li class="el-no-sources">No public source links or files are listed in this article yet.</li>{{ end }}
+          </ul>
+        </div>
+      </details>
+      {{ end }}
+    </div>
+    <noscript><p class="el-noscript">All materials are available above. Open an article to browse its sources. JavaScript is needed only for search and filters.</p></noscript>
+  </section>
+  <footer class="el-footer"><p>Original article appendices remain the reference for claim scope and verification status. Files link to existing public downloads or their external hosts; this library does not reproduce third-party reports.</p><a href="{{ "/archives/" | relURL }}">Browse all articles <span aria-hidden="true">→</span></a></footer>
+</article>
+{{ partialCached "footer/footer" . }}
+{{ end }}
