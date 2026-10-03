@@ -8,7 +8,7 @@ const script = readFileSync(new URL("../static/js/industries.js", import.meta.ur
 
 test("numeric provenance stays separate from contextual reading", () => {
   assert.equal(data.industries.length, 50);
-  for (const row of data.industries) {
+  for (const row of data.industries.filter((item) => item.rank !== 5)) {
     for (const field of ["numeric_source_url", "source_date", "geography", "market_definition"]) {
       assert.equal(row[field], "", `Row ${row.rank} is not numerically verified`);
     }
@@ -131,4 +131,55 @@ test("related research rejects external, executable and malformed routes without
   assert.match(markup, /Valid &lt;tag&gt;/);
   const missing = page({ embeddedLinks: "{invalid" });
   assert.doesNotMatch(missing.elements.get("ix-tbody").innerHTML, /Continue the research/);
+});
+
+
+test("eight audited rows carry explicit labels and claim-level links", () => {
+  const audited = data.industries.filter((row) => row.evidence_appendix_url);
+  assert.deepEqual(audited.map((row) => row.rank), [1, 2, 3, 4, 5, 7, 8, 9]);
+  const article = readFileSync(new URL("../content/post/50-high-potential-industries/index.en.md", import.meta.url), "utf8");
+  for (const row of audited) {
+    assert.equal(row.reviewed, "2026-10-03");
+    const anchor = row.evidence_appendix_url.split("#")[1];
+    assert.ok(article.includes("{#" + anchor + "}"));
+    assert.ok(article.includes("[Evidence](#" + anchor + ")"));
+    if (row.rank !== 5) {
+      assert.equal(row.estimate_note, "Unverified estimate; source and methodology not confirmed.");
+      assert.equal(row.estimate_verification_status, "unverified");
+      assert.equal(row.numeric_source_url, "");
+    }
+  }
+  const { elements } = page({ locationHref: "https://thedexs.com/industries/?industry=1" });
+  assert.match(elements.get("ix-details").innerHTML, /Unverified estimate; source and methodology not confirmed/);
+  assert.match(elements.get("ix-details").innerHTML, /href="\/post\/50-high-potential-industries\/#evidence-ai-software-services"/);
+});
+
+test("battery correction preserves data year, scope and forecast period through the calculator", () => {
+  const row = data.industries.find((item) => item.rank === 5);
+  assert.equal(row.estimate_verification_status, "corrected");
+  assert.equal(row.verification_status, "sourced_estimate");
+  assert.equal(row.market_year, 2022);
+  assert.equal(row.market_low, 98);
+  assert.equal(row.market_high, 98);
+  assert.equal(row.cagr_start_year, 2022);
+  assert.equal(row.cagr_end_year, 2040);
+  assert.equal(row.source_date, "2024-10-23");
+  assert.match(row.market_definition, /Battery-cell revenues/);
+  assert.match(row.numeric_source_url, /mckinsey.com.*pdf#page=140$/);
+  const { elements } = page({ locationHref: "https://thedexs.com/industries/?industry=5" });
+  const details = elements.get("ix-details").innerHTML;
+  assert.match(details, /This figure is an estimate/);
+  assert.match(details, /2022–2040/);
+  assert.doesNotMatch(details, /No numeric source recorded|Original figures are unverified/);
+  assert.equal(elements.get("ix-pv").value, "98");
+  assert.equal(elements.get("ix-rate").value, "13");
+  assert.equal(elements.get("ix-years").value, "18");
+  assert.match(elements.get("ix-loaded").textContent, /midpoint growth rate is a calculator assumption/);
+});
+
+test("claim appendix links reject external or executable values", () => {
+  const malicious = structuredClone(data);
+  malicious.industries[0].evidence_appendix_url = "//outside.example/report";
+  const { elements } = page({ embeddedData: JSON.stringify(malicious), locationHref: "https://thedexs.com/industries/?industry=1" });
+  assert.doesNotMatch(elements.get("ix-details").innerHTML, /outside.example/);
 });

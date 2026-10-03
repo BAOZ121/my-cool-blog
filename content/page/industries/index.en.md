@@ -2,7 +2,7 @@
 title: "Industry Explorer"
 description: "Explore 50 industries, compare available market-size and growth estimates, and find related industry guides and research."
 date: 2026-09-21
-lastmod: 2026-10-02
+lastmod: 2026-10-03
 slug: "industries"
 layout: "explorer"
 comments: false
@@ -14,7 +14,7 @@ toc: false
 <div><h2 id="ix-list-title">Find an industry to research</h2><p class="ix-note">Open an industry for its details, sources, and related research.</p></div>
 <a class="ix-download" href="/data/industries.csv" download>Download CSV <span aria-hidden="true">↓</span></a>
 </div>
-<p class="ix-data-status"><span class="ix-status-dot" aria-hidden="true"></span>Original screening estimates are unverified. Sourced records are shown separately. <a href="#source-review-notes">About the data</a></p>
+<p class="ix-data-status"><span class="ix-status-dot" aria-hidden="true"></span>The battery-cell row has a sourced 2022 correction. Other original screening estimates are unverified. <a href="#source-review-notes">About the data</a></p>
 <div class="ix-filters" role="search" aria-label="Filter industries" hidden>
 <label>Search
 <input id="ix-q" type="search" placeholder="Try chips, energy, or cybersecurity" autocomplete="off">
@@ -52,13 +52,13 @@ toc: false
 <noscript><p class="ix-note">All industries and research links are available below. Enable JavaScript to filter, sort, and explore growth scenarios.</p></noscript>
 <div class="ix-table-wrap" role="region" aria-label="Industry comparison">
 <table class="ix-table">
-<caption class="ix-sr-only">Original industry screening estimates, unverified. Market values are approximately 2025. Open an industry to inspect its sources and research.</caption>
+<caption class="ix-sr-only">Provisional industry screening estimates. Market years are as labeled; unlabeled values were originally presented as approximately 2025. Open an industry to inspect its sources and research.</caption>
 <thead>
 <tr>
 <th data-sort="rank" aria-sort="ascending"><button type="button" class="ix-sort" data-sort="rank">#</button></th>
 <th data-sort="name" aria-sort="none"><button type="button" class="ix-sort" data-sort="name">Industry</button></th>
 <th>Key technologies</th>
-<th>Market size · ~2025</th>
+<th>Market size · see year</th>
 <th data-sort="cagr" aria-sort="none"><button type="button" class="ix-sort" data-sort="cagr">Growth · CAGR</button></th>
 </tr>
 </thead>
@@ -98,12 +98,16 @@ toc: false
 <summary>About the data &amp; source review</summary>
 <div class="ix-source-body">
 <p id="ix-coverage" class="ix-coverage" aria-live="polite">The full screening list contains 50 industries. Numeric coverage appears when the interactive controls load.</p>
-<p>Original market ranges, growth rates, and projections are unverified research leads. Categories and maturity labels are editorial classifications. Separately sourced records have their own years, geography, and market definitions; these records do not validate the original estimates or make different definitions comparable.</p>
-<p>File updated September 2026. Added source records were reviewed on September 30, 2026; the review date is separate from the measurement year and publication date. Original numeric market sizes are in USD billions where available. Filters and scenarios use the original indicative estimates. The growth filter uses a midpoint when both CAGR bounds exist and a lower bound for a one-sided value.</p>
+<p>Except for the explicitly corrected battery-cell series, original market ranges, growth rates, and projections are unverified research leads. Categories and maturity labels are editorial classifications. Separately sourced records have their own years, geography, and market definitions; these records do not validate the original estimates or make different definitions comparable.</p>
+<p>File updated October 3, 2026. Eight industries were reviewed on that date; the biopharmaceutical context record retains its September 30 review. Review dates are separate from measurement years and publication dates. Market sizes are in USD billions where available. Filters and scenarios use the displayed values, including the corrected 2022 battery-cell baseline. Calculator midpoints are assumptions, not publisher point forecasts. The growth filter uses a midpoint when both CAGR bounds exist and a lower bound for a one-sided value.</p>
 
 ### Separately sourced records
 
-The original screening estimates are unchanged. The following records are shown separately so their boundaries remain visible:
+The [eight-industry evidence appendix](/post/50-high-potential-industries/#evidence-appendix) records publishers, links, publication dates, data years, definitions, growth periods, forecast status and correction reasons. Seven audited original ranges carry “Unverified estimate; source and methodology not confirmed.” Nearby source values are kept separate and do not validate the ranges.
+
+**Battery correction:** the $98B baseline is a **2022 global battery-cell revenue estimate**, not a 2025 energy-storage total. Its $810B–1.1T projection and 12–14% CAGR are **2022–2040 scenarios** from McKinsey Global Institute's October 23, 2024 report. **This figure is an estimate.** See the [cell-revenue definition and evidence](/post/50-high-potential-industries/#evidence-batteries). The broad industry heading remains editorial.
+
+The following pre-existing records remain separate so their boundaries stay visible:
 
 | Industry row | Sourced figure | What it establishes |
 | --- | --- | --- |
@@ -111,7 +115,7 @@ The original screening estimates are unchanged. The following records are shown 
 | Cybersecurity | USD 193.408 billion in 2024 | Gartner's historical estimate of worldwide information security end-user spending, from its [July 29, 2025 release](https://www.gartner.com/en/newsroom/press-releases/2025-07-29-gartner-forecasts-worldwide-end-user-spending-on-information-security-to-total-213-billion-us-dollars-in-2025). The source's later-year numbers are forecasts. End-user spending is not necessarily vendor revenue. |
 | Biopharmaceuticals | USD 1,667.671 billion in 2025 | Broader global prescription-medicine sales at ex-manufacturer prices, reported by [EFPIA / IQVIA MIDAS, Key Data 2026, page 14](https://www.efpia.eu/media/uj0popel/the-pharmaceutical-industry-in-figures-2026.pdf#page=14). Includes medicines beyond biological products and does not measure the biopharmaceutical-only market. |
 
-The downloadable CSV includes separate `baseline_*` columns for these records. Empty original-source fields still mean the original estimate has not been verified. A sourced baseline or broader-market context is not a forecast validation.
+The downloadable CSV includes separate `baseline_*` columns for these records, plus claim-level evidence links and estimate notes for the eight audited rows. The corrected battery-cell row supplies its numeric source, publication date, data year, definition and CAGR start/end; empty source fields on other rows still mean the original estimate has not been verified. A sourced baseline or broader-market context is not a forecast validation.
 
 <div class="ix-actions"><a class="ix-btn" href="/post/50-high-potential-industries/">Read the screening report</a><a class="ix-btn" href="/about/#research-methodology">Research methodology</a></div>
 </div>

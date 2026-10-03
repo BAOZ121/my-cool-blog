@@ -109,6 +109,24 @@ try {
       await page.goto(base + '/industries/#source-review-notes');
       assert.equal(await page.locator('#source-review-notes').getAttribute('open'), '');
       assert.equal(await page.locator('.ix-source-body table').count(), 1);
+      await page.goto(base + '/industries/?industry=5');
+      await page.getByRole('dialog').waitFor({ state: 'visible' });
+      assert.match(await page.locator('#ix-details').textContent(), /This figure is an estimate/);
+      assert.match(await page.locator('#ix-details').textContent(), /2022–2040/);
+      assert.equal(await page.locator('#ix-years').inputValue(), '18');
+      assert.match(await page.locator('#ix-loaded').textContent(), /midpoint growth rate is a calculator assumption/);
+      assert.ok(await dialog.evaluate(e => e.scrollWidth <= e.clientWidth + 1), 'Battery details overflow');
+      await page.getByRole('link', { name: 'Read claim-level evidence appendix', exact: true }).click();
+      assert.equal(new URL(page.url()).hash, '#evidence-batteries');
+      assert.equal(await page.locator('#evidence-batteries').count(), 1);
+      assert.equal(await page.locator('a[href^="#evidence-"]').filter({ hasText: 'Evidence' }).count(), 8);
+      if (width !== 1024 && scheme === 'dark') await page.screenshot({ path: resolve(output, `battery-evidence-${width}.png`), fullPage: false });
+      await page.goBack();
+      await page.getByRole('dialog').waitFor({ state: 'visible' });
+      await page.keyboard.press('Escape');
+      await page.getByRole('button', { name: 'View details for AI Software & Services', exact: true }).click();
+      assert.match(await page.locator('#ix-details').textContent(), /Unverified estimate; source and methodology not confirmed/);
+      assert.equal(await page.locator('#ix-years').inputValue(), '5');
       await context.close();
       console.log(`PASS ${width}px ${scheme}: layout, filtering, sorting, dialog, focus return, sources, calculator, and deep links`);
     }
