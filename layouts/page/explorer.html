@@ -1,7 +1,8 @@
 {{ define "body-class" }}article-page ix-page{{ end }}
 {{ define "head" }}
 <link rel="stylesheet" href="{{ "/css/industries.css" | relURL }}">
-<script src="{{ "/js/industries.js" | relURL }}" defer></script>
+{{ $explorerVersion := crypto.SHA256 (readFile "static/js/industries.js") }}
+<script src="{{ "/js/industries.js" | relURL }}?v={{ $explorerVersion }}" defer></script>
 {{ end }}
 {{ define "main" }}
 <article class="ix" id="industry-explorer">
