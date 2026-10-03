@@ -65,31 +65,38 @@ enableRobotsTXT = true
             params = { icon = "chart-bar" }
 
         [[languages.en.menu.main]]
+            identifier = "evidence-library"
+            name = "Evidence Library"
+            url = "/evidence-library/"
+            weight = 4
+            params = { icon = "link" }
+
+        [[languages.en.menu.main]]
             identifier = "archives"
             name = "Archives"
             url = "/archives/"
-            weight = 4
+            weight = 5
             params = { icon = "archives" }
 
         [[languages.en.menu.main]]
             identifier = "search"
             name = "Search"
             url = "/search/"
-            weight = 5
+            weight = 6
             params = { icon = "search" }
 
         [[languages.en.menu.main]]
             identifier = "contact"
             name = "Contact"
             url = "/contact/"
-            weight = 6
+            weight = 7
             params = { icon = "mail" }
 
         [[languages.en.menu.main]]
             identifier = "about"
             name = "About & Methodology"
             url = "/about/"
-            weight = 7
+            weight = 8
             params = { icon = "user" }
 
         # Social links (sidebar)
