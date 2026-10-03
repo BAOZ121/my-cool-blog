@@ -91,12 +91,28 @@ def main() -> None:
         flat.update({f"baseline_source_{key}": "" for key in source_fields})
         baseline = item.get("sourced_baseline")
         status = item.get("verification_status")
-        assert status in {"unverified", "partial", "context"}, f"Row {item['rank']}: unsupported evidence status"
-        assert item.get("estimate_verification_status") == "unverified", "Original screening estimates remain unverified"
-        for key in ("numeric_source_url", "source_date", "geography", "market_definition"):
-            assert item[key] == "", f"Row {item['rank']}: original estimate provenance changed"
+        assert status in {"unverified", "partial", "context", "sourced_estimate"}, f"Row {item['rank']}: unsupported evidence status"
+        corrected = item.get("estimate_verification_status") == "corrected"
+        if corrected:
+            assert item["rank"] == 5 and status == "sourced_estimate", "Only the source-matched battery row is corrected"
+            assert item["market_year"] == item["cagr_start_year"] == 2022 and item["cagr_end_year"] == 2040
+            assert item["market_low"] == item["market_high"] == 98 and item["source_date"] == "2024-10-23"
+            assert item["cagr_low"] == 12 and item["cagr_high"] == 14
+            assert all(item[key] for key in ("numeric_source_url", "geography", "market_definition", "forecast_status"))
+            assert "battery-cell" in item["market_definition"].lower()
+            assert "This figure is an estimate." in item["estimate_note"]
+        else:
+            assert item.get("estimate_verification_status") == "unverified", "Unsupported original-estimate status"
+            for key in ("numeric_source_url", "source_date", "geography", "market_definition"):
+                assert item[key] == "", f"Row {item['rank']}: unverified provenance must stay empty"
+        audited = bool(item.get("evidence_appendix_url"))
+        if audited:
+            assert item["rank"] in {1, 2, 3, 4, 5, 7, 8, 9} and item["reviewed"] == "2026-10-03"
+            assert item["estimate_note"], "Audited rows require an explicit estimate label"
+            if not corrected:
+                assert item["estimate_note"] == "Unverified estimate; source and methodology not confirmed."
         if baseline is None:
-            assert status == "unverified" and item["reviewed"] == "", "Missing evidence must not imply source review"
+            assert (corrected or status == "unverified") and (audited or item["reviewed"] == ""), "Review does not imply numerical verification"
         else:
             assert status in {"partial", "context"}, "Separate evidence must not verify the original estimate"
             assert all(baseline.get(key) not in (None, "") for key in baseline_fields), "Incomplete baseline scope"
@@ -123,7 +139,13 @@ def main() -> None:
     assert industry_page.ranks == list(range(1, 51)), "Static industry rows are missing or out of order"
     for select, field in (("ix-category", "category"), ("ix-maturity", "maturity")):
         assert set(industry_page.options[select]) == {"", *(item[field] for item in items)}, select
+    article = Links(BUILD / "post/50-high-potential-industries/index.html")
     parsed_industry = Links(BUILD / "industries/index.html")
+    for item in items:
+        if item.get("evidence_appendix_url"):
+            link = item["evidence_appendix_url"]
+            assert urlsplit(link).fragment in article.ids, f"Missing claim-level appendix: {link}"
+            assert link in parsed_industry.urls, f"Appendix unavailable without JavaScript: {link}"
     assert all(f"ix-industry-{item['rank']}" in parsed_industry.ids for item in items), "Missing stable dataset destinations"
     research_links = json.loads(industry_page.research_links)
     profiles = json.loads((ROOT / "data/breakdowns.json").read_text(encoding="utf-8"))["profiles"]

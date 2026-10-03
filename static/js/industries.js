@@ -73,7 +73,13 @@
     }
   }
 
+  function appendixLink(url) {
+    if (typeof url !== "string" || !/^\/post\/50-high-potential-industries\/#evidence-[a-z-]+$/.test(url)) return "";
+    return '<a href="' + escapeHtml(url) + '">Read claim-level evidence appendix</a>';
+  }
+
   function evidenceLabel(row) {
+    if (row.estimate_verification_status === "corrected") return "Sourced estimate · " + row.market_year;
     const baseline = row.sourced_baseline;
     if (!baseline) return "Unverified estimates";
     const kind = row.verification_status === "context" ? "Sourced context" : "Sourced baseline";
@@ -184,11 +190,12 @@
           '" aria-label="' + escapeHtml("View details for " + row.name) +
           '" aria-haspopup="dialog" aria-controls="ix-dialog"><span class="ix-industry-name">' +
           escapeHtml(row.name) + '</span><span class="ix-open-label">View details <span aria-hidden="true">→</span></span></button><span class="ix-chip">' + escapeHtml(row.category) + '</span><small class="ix-evidence">' + escapeHtml(evidenceLabel(row)) +
-          (row.sourced_baseline ? "<br>Original estimates unverified" : "") + "</small></td>" +
+          (row.sourced_baseline ? "<br>Original estimates unverified" : "") +
+          (row.estimate_note ? "<br>" + escapeHtml(row.estimate_note) : "") + "</small></td>" +
           '<td class="ix-tech" data-label="Key technologies">' +
           escapeHtml(row.tech) +
           "</td>" +
-          '<td data-label="Market size · ~2025">' +
+          '<td data-label="Market size · see year">' +
           escapeHtml(row.market_label) +
           "</td>" +
           '<td data-label="Growth · CAGR">' +
@@ -216,20 +223,24 @@
     const rate = cagrValue(selected);
     if (els.title) els.title.textContent = selected.name;
     if (els.scenario) els.scenario.open = false;
-    els.years.value = "5";
+    els.years.value = selected.estimate_verification_status === "corrected" ? String(selected.cagr_end_year - selected.cagr_start_year) : "5";
     els.loaded.textContent = "Selected: " + selected.name;
     els.details.innerHTML =
       '<p class="ix-detail-intro">' + escapeHtml(selected.tech) + "</p>" + relatedResearch(selected) +
-      '<section aria-label="Screening estimates"><h3>Screening estimates</h3><p class="ix-note">Original figures are unverified research leads.</p>' +
+      '<section aria-label="Screening estimates"><h3>Screening estimates</h3><p class="ix-note">' + escapeHtml(selected.estimate_note || "Original figures are unverified research leads.") + '</p>' +
+      (selected.evidence_appendix_url ? '<p>' + appendixLink(selected.evidence_appendix_url) + "</p>" : "") +
       "<dl><dt>Category</dt><dd>" + escapeHtml(selected.category) +
       "</dd><dt>Maturity</dt><dd>" + escapeHtml(selected.maturity) +
-      " (editorial)</dd><dt>Market size · ~2025</dt><dd>" + escapeHtml(selected.market_label) +
+      " (editorial)</dd><dt>Market size · see year</dt><dd>" + escapeHtml(selected.market_label) +
       "</dd><dt>Growth · CAGR</dt><dd>" + escapeHtml(selected.cagr_label) +
       "</dd><dt>Projected size</dt><dd>" + escapeHtml(selected.projected_label) +
       "</dd><dt>Notes</dt><dd>" + escapeHtml(selected.notes) +
       "</dd><dt>Market definition</dt><dd>" + escapeHtml(selected.market_definition || "Not recorded") +
       "</dd><dt>Geography</dt><dd>" + escapeHtml(selected.geography || "Not recorded") +
-      "</dd><dt>Numeric source and date</dt><dd>" +
+      (selected.market_year ? "</dd><dt>Data year</dt><dd>" + escapeHtml(selected.market_year) : "") +
+      (selected.cagr_start_year ? "</dd><dt>CAGR period</dt><dd>" + escapeHtml(selected.cagr_start_year + "–" + selected.cagr_end_year) : "") +
+      (selected.forecast_status ? "</dd><dt>Estimate / forecast status</dt><dd>" + escapeHtml(selected.forecast_status) : "") +
+      "</dd><dt>Numeric source and publication date</dt><dd>" +
       (safeSourceLink(selected.numeric_source_url, "Open numeric source") || "No numeric source recorded") +
       "; " + escapeHtml(selected.source_date || "date not recorded") +
       "</dd><dt>Related primary material</dt><dd>" +
@@ -248,7 +259,9 @@
     els.warn.textContent = "";
     els.pv.value = String(Math.round(pv * 10) / 10);
     els.rate.value = String(Math.round(rate * 10) / 10);
-    els.loaded.textContent = "Loaded indicative, unverified values for " + selected.name + ". Check definitions and sources before use.";
+    els.loaded.textContent = selected.estimate_verification_status === "corrected"
+      ? "Loaded the sourced " + selected.market_year + " baseline for " + selected.name + ". The midpoint growth rate is a calculator assumption, not a publisher point forecast; the source scenario covers " + selected.cagr_start_year + "–" + selected.cagr_end_year + "."
+      : "Loaded indicative, unverified values for " + selected.name + ". Check definitions and sources before use.";
     calculate();
   }
 
@@ -381,7 +394,7 @@
       calculatorCount +
       "/" +
       items.length +
-      ". Original estimates remain unverified; " + items.filter((row) => row.sourced_baseline && row.verification_status !== "context").length +
+      ". The battery-cell row has a sourced 2022 correction; other original estimates remain unverified; " + items.filter((row) => row.sourced_baseline && row.verification_status !== "context").length +
       " rows have a separate sourced baseline and " + items.filter((row) => row.sourced_baseline && row.verification_status === "context").length + " have sourced broader-market context.";
     applyFilters();
     for (const element of [els.filters, els.reset, els.mobileSortLabel]) {

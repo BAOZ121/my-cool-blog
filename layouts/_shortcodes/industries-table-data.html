@@ -9,14 +9,16 @@
 {{- with .sourced_baseline -}}
   <small class="ix-evidence"><a href="{{ .source.url }}">{{ if eq $row.verification_status "context" }}Sourced context{{ else }}Sourced baseline{{ end }} · {{ .year }}</a></small>
 {{- end -}}
-<small class="ix-evidence">Original estimates unverified</small>
-<details class="ix-static-research"><summary>Details &amp; research</summary><p><strong>Maturity:</strong> {{ .maturity }} (editorial)</p><p><strong>Projected size:</strong> {{ .projected_label }} (unverified)</p><p>{{ .notes }}</p>
+<small class="ix-evidence">{{ if eq .estimate_verification_status "corrected" }}Sourced estimate · {{ .market_year }}{{ else }}Original estimates unverified{{ end }}{{ with .estimate_note }}<br>{{ . }}{{ end }}</small>
+<details class="ix-static-research"><summary>Details &amp; research</summary><p><strong>Maturity:</strong> {{ .maturity }} (editorial)</p><p><strong>Projected size:</strong> {{ .projected_label }}{{ if ne .estimate_verification_status "corrected" }} (unverified){{ end }}</p><p>{{ .notes }}</p>
+{{- with .evidence_appendix_url }}<p><a href="{{ . }}">Read claim-level evidence appendix</a></p>{{ end -}}
+{{- if eq .estimate_verification_status "corrected" }}<p><strong>Data year:</strong> {{ .market_year }}. <strong>CAGR period:</strong> {{ .cagr_start_year }}–{{ .cagr_end_year }}. {{ .forecast_status }}. {{ .market_definition }} <a href="{{ .numeric_source_url }}">Numeric source</a>, published {{ .source_date }}.</p>{{ end -}}
 {{- with .sourced_baseline }}<p><strong>Separate {{ if eq $row.verification_status "context" }}context{{ else }}baseline{{ end }}:</strong> {{ .currency }} {{ .value }} {{ .unit }} · {{ .year }}. {{ .metric }}. {{ .geography }}. {{ .market_definition }}. {{ .relationship_to_estimate }} <a href="{{ .source.url }}">{{ .source.publisher }}</a></p>{{ end -}}
 {{- with index $researchLinks (printf "%v" .rank) }}<nav aria-label="Related research for {{ $row.name }}">{{ range . }}<a href="{{ .url }}">{{ .label }}</a>{{ end }}</nav>{{ end -}}
 </details>
 </td>
 <td class="ix-tech" data-label="Key technologies">{{ .tech }}</td>
-<td data-label="Market size · ~2025">{{ .market_label }}</td>
+<td data-label="Market size · see year">{{ .market_label }}</td>
 <td data-label="Growth · CAGR">{{ .cagr_label }}</td>
 </tr>
 {{- end }}
