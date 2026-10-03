@@ -5,7 +5,7 @@ date: 2026-09-19
 categories:
   - "News"
   - "AI & Labor"
-lastmod: 2026-09-23
+lastmod: 2026-10-03
 draft: false
 ---
 
@@ -112,7 +112,7 @@ Expectations about AI's job impact and measured employment are different types o
 ## Sources and scope
 
 - [Challenger, Gray & Christmas: August 2026 job-cuts report](https://www.challengergray.com/blog/challenger-report-august-job-cuts-up-58-consumer-products-food-lead/) — primary source for **announced U.S. job cuts and hiring plans through August**, including industry and stated-reason breakdowns. It does not establish the causal impact of AI or actual completed layoffs.
-- [Stanford Digital Economy Lab: *Canaries in the Coal Mine?*](https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/) — research on AI-exposed occupations and early-career workers; the paper explicitly says it finds no widespread economy-wide displacement.
+- [Stanford Digital Economy Lab: *Canaries in the Coal Mine?*](https://digitaleconomy.stanford.edu/publication/canaries-in-the-coal-mine-six-facts-about-the-recent-employment-effects-of-artificial-intelligence/) — observational research using ADP administrative payroll records through June 2026, in the August 12, 2026 revision. It examines AI-exposed occupations and early-career workers and explicitly says it finds no widespread economy-wide displacement. Its findings are descriptive, not causal; this is not a survey of workers.
 - [Goldman Sachs Research: AI and the U.S. labor market](https://www.goldmansachs.com/insights/articles/how-will-ai-affect-the-us-labor-market) — the **6%–7% over roughly a decade** figure is a scenario for workers potentially needing new employment, not a count of current layoffs.
 
-*Reviewed September 2026. Announcement series, survey research, and forecast scenarios answer different questions and should not be combined into a single count.*
+*Citation scope reviewed October 3, 2026. Announcement series, administrative-payroll research, and forecast scenarios answer different questions and should not be combined into a single count. Each source retains its stated reporting period.*

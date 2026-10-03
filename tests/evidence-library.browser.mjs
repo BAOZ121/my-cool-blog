@@ -46,6 +46,15 @@ try {
     await page.keyboard.press("Space");
     assert.equal(await page.locator(".el-article").first().getAttribute("open"), null);
     const q = page.locator("#el-query");
+    // Extensionless publisher PDFs remain discoverable in the Files filter.
+    await q.fill("AAAI");
+    await page.locator("#el-type").selectOption("file");
+    const aaaipdf = page.locator('[data-evidence-item]:visible a[href="https://ojs.aaai.org/index.php/AAAI/article/view/41334/45295"]');
+    assert.equal(await aaaipdf.count(), 1);
+    await page.locator('button[type="reset"]').click();
+    await q.fill("Content not confirmed in the 2026-10-03 review");
+    assert.equal(await page.locator("[data-evidence-item]:visible").count(), 9);
+    await page.locator('button[type="reset"]').click();
     await q.fill("NIST");
     assert.ok(await page.locator("[data-evidence-item]:visible").count() > 0);
     assert.ok((await page.locator("[data-result-count]").textContent()).includes("articles"));

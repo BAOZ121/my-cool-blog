@@ -61,3 +61,37 @@ test("unverified ranges, reading leads and chart scope remain searchable", () =>
   assert.match(JSON.stringify(ai.entries), /not its industry market share/);
   assert.ok(ai.entries.some(entry => entry.citations.length > 1));
 });
+
+test("review corrections preserve file typing, isolated PDF metadata and unresolved limits", () => {
+  const ai = data.articles.find(article => article.id === "ai-computing-infrastructure");
+  const retrospective = ai.entries.find(entry => entry.url === "https://ojs.aaai.org/index.php/AAAI/article/view/41334/45295");
+  assert.equal(retrospective.kind, "file");
+  assert.equal(retrospective.format, "PDF");
+  assert.ok(ai.entries.some(entry => entry.url === "https://developer.nvidia.com/blog/programming-tensor-cores-in-cuda-9/"));
+  const cyber = data.articles.find(article => article.id === "cybersecurity-industry-report");
+  const menlo = cyber.entries.find(entry => entry.url.includes("cybersecurity_market_map-091922.pdf"));
+  assert.doesNotMatch(JSON.stringify(menlo), /59 pages|NIST SP 800-207/);
+  const screening = data.articles.find(article => article.id === "50-high-potential-industries");
+  assert.ok(screening.entries.some(entry => entry.url === "https://ifr.org/ifr-press-releases/news/service-robots-see-global-growth-boom"));
+  assert.ok(!screening.entries.some(entry => entry.url === "https://ifr.org/ifr-press-releases/news/robot-race-"));
+  const chips = data.articles.find(article => article.id === "semiconductor-industry-report");
+  const asml = chips.entries.find(entry => entry.url.endsWith("/tsmc-selects-asml-for-industry-first-immersion-tool-order"));
+  assert.match(JSON.stringify(asml.citations), /not a currently accessible live copy of the release/);
+  assert.match(JSON.stringify(asml.citations), /no verified equivalent live replacement/);
+  const unresolved = [
+    ["pharmaceutical-industry", "https://endpts.com/"],
+    ["pharmaceutical-industry", "https://www.bayer.com/en/history/cl0n3-of-history"],
+    ["cybersecurity-industry-report", "https://archive.org/details/malwaremuseum"],
+    ["cybersecurity-industry-report", "https://www.cisa.gov/news-events/news/apache-log4j-vulnerability-guidance"],
+    ["cybersecurity-industry-report", "https://www.csoonline.com/search/?q=Target+data+breach+2013+timeline"],
+    ["cybersecurity-industry-report", "https://youtu.be/b_Cbfh0_9Ws?si=Nnc074hC6b-Ai_hp"],
+    ["cybersecurity-industry-report", "https://youtu.be/O4fpqXjkdQM?si=cvrBatlQCwLvKdbC"],
+    ["cybersecurity-industry-report", "https://youtu.be/tpBXSCMJXq4?si=omqdLRt6QzxRT2km"],
+    ["cybersecurity-industry-report", "https://youtu.be/PWVN3Rq4gzw?si=pIolrzQdIUM3Dgcb"]
+  ];
+  for (const [articleId, url] of unresolved) {
+    const entry = data.articles.find(article => article.id === articleId).entries.find(entry => entry.url === url);
+    assert.ok(entry, url);
+    assert.match(JSON.stringify(entry.citations), /Content not confirmed in the 2026-10-03 review/i, url);
+  }
+});

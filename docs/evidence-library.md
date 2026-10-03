@@ -2,8 +2,8 @@
 
 `/evidence-library/` indexes the existing public source links and file downloads in
 published posts. A main-menu entry and each article's tools link to the library.
-No source document is fetched or copied by the indexer. Existing appendices remain
-unchanged and authoritative for claim scope.
+No source document is fetched or copied by the indexer. Article appendices remain
+authoritative for claim scope; source corrections are made there first.
 
 ## Single source of truth
 
@@ -12,6 +12,11 @@ The article bodies and existing shortcode data remain the editorial sources.
 extract the rendered article body plus article-tool downloads. This catches raw
 HTML evidence anchors, Markdown references, PDF shortcodes and chart CSVs without
 inventing source titles, dates, publisher names or verification statuses.
+`data/evidence_file_formats.json` records inspected file formats for URLs without
+an extension (for example, a publisher's PDF endpoint). Each override requires a
+review date and an inspection basis; the generator never guesses a type from the
+host or fetches sources during a build. PDF preview metadata is scoped to its own
+component so it cannot be copied into the following source's citation context.
 
 The committed `data/evidence_library.json` is generated, not hand edited. Hugo
 renders it as static HTML. CI regenerates it in memory and fails on drift, missing
@@ -31,11 +36,16 @@ so a stale generated article cannot be re-indexed.
 
 ## Inclusion and interpretation
 
-The initial index contains 7 published posts and 191 article-specific materials:
-183 external source records and 8 existing DEX-hosted file downloads. Of these,
-26 paths identify PDF/CSV files. Identical exact URLs within one article share a
-record while retaining all citation contexts. The same URL across different
-articles appears in each collection. URL fragments and query strings are retained.
+The pre-review index contained 7 published posts and 191 article-specific
+materials: 183 external source records and 8 existing DEX-hosted downloads. The
+October 3, 2026 review inspected all 191 records and led to corrected destinations,
+additional scoped sources and explicit unresolved-content notes. The corrected
+index has 202 article-specific materials, including 30 file links and the same
+8 DEX-hosted files. Counts in the generated manifest and live page reflect future
+changes. Identical exact URLs
+within one article share a record while retaining all citation contexts. The same
+URL across different articles appears in each collection. URL fragments and query
+strings are retained.
 
 - Include external HTTP(S) links in article content and linked public document/data files
 - Exclude drafts, images, navigation, internal report/guide links, asset credits,
@@ -53,6 +63,20 @@ they remain available through their own sourced pages. The JSON counterpart of t
 50-row dataset remains on the Explorer; the article's existing CSV is indexed here.
 No external URL availability or permission to redistribute third-party files is
 inferred from inclusion.
+
+## October 3, 2026 source review
+
+The review distinguishes access from support for a claim. The corrected articles
+retain nine original references whose content could not be confirmed, explicitly
+labelled in their reading lists. Access blocks, paywalls and search portals are
+not described as dead links or as verified evidence. Verified alternatives are
+identified separately. The seven unsupported original industry ranges still have
+their unverified labels; the battery correction keeps its 2022 baseline and
+2022–2040 scenario. DEX CSV exports are derivatives, not new independent sources.
+
+Regression tests cover the extensionless AAAI PDF, the IFR release's correct
+2025/2024 citation, the Volta technical supplement, separation of NIST and Menlo
+PDF metadata, and retention/searchability of all nine unresolved references.
 
 ## Search and accessibility
 

@@ -165,7 +165,7 @@
               "url": "/post/ai-computing-infrastructure/#evidence-1",
               "text": "McCulloch & Pitts (1943) — A Logical Calculus of the Ideas Immanent in Nervous Activity",
               "notes": [
-                "Location: Turing, pp. 433–434; opening of the Dartmouth proposal; Dartmouth history page. Original papers and institutional records."
+                "Location: McCulloch and Pitts, publisher bibliographic record and public abstract; Turing, pp. 433–434; opening of the Dartmouth proposal; Dartmouth history page. Original papers and institutional records. The McCulloch–Pitts full text requires subscription access; the citation here is limited to its metadata and abstract, not a claim that the full paper was inspected."
               ]
             }
           ]
@@ -184,7 +184,7 @@
               "url": "/post/ai-computing-infrastructure/#evidence-1",
               "text": "Turing (1950) — Computing Machinery and Intelligence",
               "notes": [
-                "Location: Turing, pp. 433–434; opening of the Dartmouth proposal; Dartmouth history page. Original papers and institutional records."
+                "Location: McCulloch and Pitts, publisher bibliographic record and public abstract; Turing, pp. 433–434; opening of the Dartmouth proposal; Dartmouth history page. Original papers and institutional records. The McCulloch–Pitts full text requires subscription access; the citation here is limited to its metadata and abstract, not a claim that the full paper was inspected."
               ]
             }
           ]
@@ -203,7 +203,7 @@
               "url": "/post/ai-computing-infrastructure/#evidence-1",
               "text": "McCarthy et al. (1955) — Dartmouth research proposal",
               "notes": [
-                "Location: Turing, pp. 433–434; opening of the Dartmouth proposal; Dartmouth history page. Original papers and institutional records."
+                "Location: McCulloch and Pitts, publisher bibliographic record and public abstract; Turing, pp. 433–434; opening of the Dartmouth proposal; Dartmouth history page. Original papers and institutional records. The McCulloch–Pitts full text requires subscription access; the citation here is limited to its metadata and abstract, not a claim that the full paper was inspected."
               ]
             }
           ]
@@ -222,7 +222,7 @@
               "url": "/post/ai-computing-infrastructure/#evidence-1",
               "text": "Dartmouth — Artificial Intelligence Coined at Dartmouth",
               "notes": [
-                "Location: Turing, pp. 433–434; opening of the Dartmouth proposal; Dartmouth history page. Original papers and institutional records."
+                "Location: McCulloch and Pitts, publisher bibliographic record and public abstract; Turing, pp. 433–434; opening of the Dartmouth proposal; Dartmouth history page. Original papers and institutional records. The McCulloch–Pitts full text requires subscription access; the citation here is limited to its metadata and abstract, not a claim that the full paper was inspected."
               ]
             }
           ]
@@ -230,16 +230,16 @@
         {
           "id": "bc943c731b37",
           "url": "https://ojs.aaai.org/index.php/AAAI/article/view/41334/45295",
-          "title": "Ted E. Senator (2026) Implications for AI Research: Applying Lessons from the Expert Systems Boom and Bust to the Current Large-Language Model Boom",
-          "kind": "link",
-          "format": "Web",
+          "title": "Ted E. Senator (2026) Implications for AI Research: Applying Lessons from the Expert Systems Boom and Bust to the Current Large-Language Model Boom (PDF)",
+          "kind": "file",
+          "format": "PDF",
           "host": "ojs.aaai.org",
           "local": false,
           "citations": [
             {
               "section": "[2] AI winters and expert systems",
               "url": "/post/ai-computing-infrastructure/#evidence-2",
-              "text": "Ted E. Senator (2026) Implications for AI Research: Applying Lessons from the Expert Systems Boom and Bust to the Current Large-Language Model Boom",
+              "text": "Ted E. Senator (2026) Implications for AI Research: Applying Lessons from the Expert Systems Boom and Bust to the Current Large-Language Model Boom (PDF)",
               "notes": [
                 "Location: PDF pp. 1–2. A retrospective scholarly paper."
               ]
@@ -374,7 +374,26 @@
               "url": "/post/ai-computing-infrastructure/#evidence-8",
               "text": "NVIDIA (2017) NVIDIA Launches Revolutionary Volta GPU Platform",
               "notes": [
-                "Official announcement, 2017-05-10. Used for the launch date and matrix-computation function."
+                "Location: the May 10, 2017 announcement establishes the Volta launch and introduction of Tensor Cores. The October 17, 2017 technical article, in its original opening paragraphs, describes the matrix-multiply-and-accumulate function. The technical explanation is supported by the original technical-article body, not inferred from the launch release or the technical page’s AI-generated summary."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "66eefb57e65c",
+          "url": "https://developer.nvidia.com/blog/programming-tensor-cores-in-cuda-9/",
+          "title": "NVIDIA Technical Blog (2017) Programming Tensor Cores in CUDA 9",
+          "kind": "link",
+          "format": "Web",
+          "host": "developer.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[8] Volta and Tensor Cores",
+              "url": "/post/ai-computing-infrastructure/#evidence-8",
+              "text": "NVIDIA Technical Blog (2017) Programming Tensor Cores in CUDA 9",
+              "notes": [
+                "Location: the May 10, 2017 announcement establishes the Volta launch and introduction of Tensor Cores. The October 17, 2017 technical article, in its original opening paragraphs, describes the matrix-multiply-and-accumulate function. The technical explanation is supported by the original technical-article body, not inferred from the launch release or the technical page’s AI-generated summary."
               ]
             }
           ]
@@ -939,7 +958,7 @@
             {
               "section": "1.1 From Vacuum Tubes to Silicon Transistors",
               "url": "/post/semiconductor-industry-report/#11-from-vacuum-tubes-to-silicon-transistors",
-              "text": "Early transistors were mainly made of germanium. In 1954, Morris Tanenbaum at Bell Laboratories produced a silicon transistor, while a Texas Instruments team led by Gordon Teal produced the first commercial silicon transistors. Silicon eventually prevailed not only because of its high-temperature performance and availability, but also because its interface with silicon dioxide permits a stable insulating layer and repeatable, scalable manufacturing processes. H01",
+              "text": "Early transistors were mainly made of germanium. In 1954, Morris Tanenbaum at Bell Laboratories produced a silicon transistor. At Texas Instruments, Gordon Teal organized the research laboratory and recruited a technical team led by Willis Adcock that developed commercial silicon transistors. These devices offered a wider operating-temperature range than germanium devices. H01 A later manufacturing advantage was the use of an adherent, electrically insulating oxide layer to separate surface interconnections, as described in Robert Noyce’s device-and-lead patent. H17",
               "notes": [
                 "In 1957, eight engineers left Shockley Semiconductor Laboratory to establish Fairchild Semiconductor. Fairchild and the companies that grew out of it became an important part of Silicon Valley’s semiconductor startup network. The defensible conclusion is that this event accelerated the circulation of technical talent, venture capital, and new firms; it was not the sole origin of Silicon Valley’s entrepreneurial culture."
               ]
@@ -947,7 +966,40 @@
             {
               "section": "Historical Sources",
               "url": "/post/semiconductor-industry-report/#historical-sources",
-              "text": "[H01] Computer History Museum, “1954: Silicon Transistors Offer Superior Operating Characteristics.” https://www.computerhistory.org/siliconengine/silicon-transistors-offer-superior-operating-characteristics/",
+              "text": "[H01] Computer History Museum, “1954: Silicon Transistors Offer Superior Operating Characteristics.” https://www.computerhistory.org/siliconengine/silicon-transistors-offer-superior-operating-characteristics/ Scope: Tanenbaum’s 1954 device, Teal’s laboratory-organizing role, Adcock’s team leadership, commercial silicon transistors, and temperature performance. The later oxide-layer discussion uses [H17]; this 1954 page is not evidence for the separate 1957 Fairchild account.",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "64dee70c4b7c",
+          "url": "https://patents.google.com/patent/US2981877A/en",
+          "title": "[H17] Robert N. Noyce, US 2,981,877, “Semiconductor Device-and-Lead Structure.”",
+          "kind": "link",
+          "format": "Web",
+          "host": "patents.google.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "1.1 From Vacuum Tubes to Silicon Transistors",
+              "url": "/post/semiconductor-industry-report/#11-from-vacuum-tubes-to-silicon-transistors",
+              "text": "Early transistors were mainly made of germanium. In 1954, Morris Tanenbaum at Bell Laboratories produced a silicon transistor. At Texas Instruments, Gordon Teal organized the research laboratory and recruited a technical team led by Willis Adcock that developed commercial silicon transistors. These devices offered a wider operating-temperature range than germanium devices. H01 A later manufacturing advantage was the use of an adherent, electrically insulating oxide layer to separate surface interconnections, as described in Robert Noyce’s device-and-lead patent. H17",
+              "notes": [
+                "In 1957, eight engineers left Shockley Semiconductor Laboratory to establish Fairchild Semiconductor. Fairchild and the companies that grew out of it became an important part of Silicon Valley’s semiconductor startup network. The defensible conclusion is that this event accelerated the circulation of technical talent, venture capital, and new firms; it was not the sole origin of Silicon Valley’s entrepreneurial culture."
+              ]
+            },
+            {
+              "section": "1.2 Integrated Circuits, the Planar Process, and Moore’s Law",
+              "url": "/post/semiconductor-industry-report/#12-integrated-circuits-the-planar-process-and-moores-law",
+              "text": "Early integrated circuits took different technical approaches. Jack Kilby’s relevant patent is US 3,138,743, Miniaturized Electronic Circuits . Robert Noyce’s is US 2,981,877, Semiconductor Device-and-Lead Structure . H16 H17",
+              "notes": [
+                "Replacing vacuum tubes with individual transistors did not solve the problems of connecting large numbers of components or manufacturing them at scale. Integrated circuits and the planar process emerged in the late 1950s. Through oxidation, photolithography, diffusion, and metal interconnection, the planar process made it possible to form and connect multiple devices on the surface of a single silicon wafer. It laid the foundation for high-volume monolithic integrated circuits."
+              ]
+            },
+            {
+              "section": "Historical Sources",
+              "url": "/post/semiconductor-industry-report/#historical-sources",
+              "text": "[H17] Robert N. Noyce, US 2,981,877, “Semiconductor Device-and-Lead Structure.” https://patents.google.com/patent/US2981877A/en",
               "notes": []
             }
           ]
@@ -1003,31 +1055,6 @@
           ]
         },
         {
-          "id": "64dee70c4b7c",
-          "url": "https://patents.google.com/patent/US2981877A/en",
-          "title": "[H17] Robert N. Noyce, US 2,981,877, “Semiconductor Device-and-Lead Structure.”",
-          "kind": "link",
-          "format": "Web",
-          "host": "patents.google.com",
-          "local": false,
-          "citations": [
-            {
-              "section": "1.2 Integrated Circuits, the Planar Process, and Moore’s Law",
-              "url": "/post/semiconductor-industry-report/#12-integrated-circuits-the-planar-process-and-moores-law",
-              "text": "Early integrated circuits took different technical approaches. Jack Kilby’s relevant patent is US 3,138,743, Miniaturized Electronic Circuits . Robert Noyce’s is US 2,981,877, Semiconductor Device-and-Lead Structure . H16 H17",
-              "notes": [
-                "Replacing vacuum tubes with individual transistors did not solve the problems of connecting large numbers of components or manufacturing them at scale. Integrated circuits and the planar process emerged in the late 1950s. Through oxidation, photolithography, diffusion, and metal interconnection, the planar process made it possible to form and connect multiple devices on the surface of a single silicon wafer. It laid the foundation for high-volume monolithic integrated circuits."
-              ]
-            },
-            {
-              "section": "Historical Sources",
-              "url": "/post/semiconductor-industry-report/#historical-sources",
-              "text": "[H17] Robert N. Noyce, US 2,981,877, “Semiconductor Device-and-Lead Structure.” https://patents.google.com/patent/US2981877A/en",
-              "notes": []
-            }
-          ]
-        },
-        {
           "id": "531ee250566c",
           "url": "https://www.intel.com/content/www/us/en/newsroom/resources/moores-law.html",
           "title": "[H02] Intel, “Moore’s Law.”",
@@ -1053,24 +1080,47 @@
           ]
         },
         {
-          "id": "dbc44ed7c0a2",
-          "url": "https://newsroom.intel.com/opinion/the-chip-that-changed-the-world",
+          "id": "c8dfa2c8c6b2",
+          "url": "https://www.intel.com/content/www/us/en/newsroom/opinion/chip-that-changed-world.html",
           "title": "[H03] Intel, “The Chip that Changed the World.”",
           "kind": "link",
           "format": "Web",
-          "host": "newsroom.intel.com",
+          "host": "intel.com",
           "local": false,
           "citations": [
             {
               "section": "1.3 Microprocessors, Memory Competition, and US–Japan Adjustments",
               "url": "/post/semiconductor-industry-report/#13-microprocessors-memory-competition-and-usjapan-adjustments",
-              "text": "Intel introduced the 4004 in 1971. Developed for a calculator, it was a commercial four-bit microprocessor containing approximately 2,300 transistors. H03 Its significance lay in showing that a general-purpose programmable processor could be sold as a standardized product. The personal-computer market subsequently emerged through the combined development of eight- and 16-bit processors, memory, software, and complete computer systems. The 4004 alone did not “directly launch the PC era.”",
+              "text": "Intel introduced the 4004 in 1971 after developing it for a calculator. H03 It was a commercial four-bit microprocessor containing approximately 2,300 transistors, specifications given in Intel’s 50th-anniversary infographic. H20 Its significance lay in showing that a general-purpose programmable processor could be sold as a standardized product. The personal-computer market subsequently emerged through the combined development of eight- and 16-bit processors, memory, software, and complete computer systems. The 4004 alone did not “directly launch the PC era.”",
               "notes": []
             },
             {
               "section": "Historical Sources",
               "url": "/post/semiconductor-industry-report/#historical-sources",
-              "text": "[H03] Intel, “The Chip that Changed the World.” https://newsroom.intel.com/opinion/the-chip-that-changed-the-world",
+              "text": "[H03] Intel, “The Chip that Changed the World.” https://www.intel.com/content/www/us/en/newsroom/opinion/chip-that-changed-world.html Canonical destination of the former newsroom link. Supports the calculator origin and 1971 introduction; the four-bit and 2,300-transistor specifications are sourced separately to [H20].",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "858f4b5d388e",
+          "url": "https://download.intel.com/newsroom/2021/data-center/4004-infographic.pdf",
+          "title": "[H20] Intel, “Celebrating the 50th Anniversary of the Intel 4004,” 2021 infographic (PDF), p. 1",
+          "kind": "file",
+          "format": "PDF",
+          "host": "download.intel.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "1.3 Microprocessors, Memory Competition, and US–Japan Adjustments",
+              "url": "/post/semiconductor-industry-report/#13-microprocessors-memory-competition-and-usjapan-adjustments",
+              "text": "Intel introduced the 4004 in 1971 after developing it for a calculator. H03 It was a commercial four-bit microprocessor containing approximately 2,300 transistors, specifications given in Intel’s 50th-anniversary infographic. H20 Its significance lay in showing that a general-purpose programmable processor could be sold as a standardized product. The personal-computer market subsequently emerged through the combined development of eight- and 16-bit processors, memory, software, and complete computer systems. The 4004 alone did not “directly launch the PC era.”",
+              "notes": []
+            },
+            {
+              "section": "Historical Sources",
+              "url": "/post/semiconductor-industry-report/#historical-sources",
+              "text": "[H20] Intel, “Celebrating the 50th Anniversary of the Intel 4004,” 2021 infographic (PDF), p. 1. https://download.intel.com/newsroom/2021/data-center/4004-infographic.pdf Location: 1971 comparison column. Supports the four-bit instruction-set description and 2,300-transistor count.",
               "notes": []
             }
           ]
@@ -1122,6 +1172,29 @@
           ]
         },
         {
+          "id": "3e25e56882e7",
+          "url": "https://www.intel.com/content/dam/www/central-libraries/us/en/documents/semiconductors-and-intel-introduction.pdf",
+          "title": "[H21] Intel, “Semiconductors and Intel: An Introduction” (PDF), p. 18, “Intel’s history in 4 fast eras.”",
+          "kind": "file",
+          "format": "PDF",
+          "host": "intel.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "1.3 Microprocessors, Memory Competition, and US–Japan Adjustments",
+              "url": "/post/semiconductor-industry-report/#13-microprocessors-memory-competition-and-usjapan-adjustments",
+              "text": "Intel exited DRAM in 1985, the year it introduced the 386 processor. H21 Its consumer-facing Intel Inside cooperative marketing program formally began in 1991. H05 The 1986 US–Japan Semiconductor Agreement primarily addressed access to the Japanese market and anti-dumping concerns. Later arrangements referred to an industry expectation that foreign suppliers would reach a 20% share of the Japanese market, not a binding floor reserved for US chips. H06",
+              "notes": []
+            },
+            {
+              "section": "Historical Sources",
+              "url": "/post/semiconductor-industry-report/#historical-sources",
+              "text": "[H21] Intel, “Semiconductors and Intel: An Introduction” (PDF), p. 18, “Intel’s history in 4 fast eras.” https://www.intel.com/content/dam/www/central-libraries/us/en/documents/semiconductors-and-intel-introduction.pdf Location: 1985–1995 timeline. Supports the 1985 DRAM exit and 386 introduction; it is a separate source from the Intel Inside marketing history.",
+              "notes": []
+            }
+          ]
+        },
+        {
           "id": "6e96d061cec6",
           "url": "https://www.intel.com/content/www/us/en/history/virtual-vault/articles/end-user-marketing-intel-inside.html",
           "title": "[H05] Intel, “Ingredient Branding: End User Marketing and Intel Inside.”",
@@ -1133,13 +1206,13 @@
             {
               "section": "1.3 Microprocessors, Memory Competition, and US–Japan Adjustments",
               "url": "/post/semiconductor-industry-report/#13-microprocessors-memory-competition-and-usjapan-adjustments",
-              "text": "Facing price competition in memory, Intel exited DRAM around 1985 and redirected resources to microprocessors. Its consumer-facing Intel Inside cooperative marketing program formally began in 1991. H05 The 1986 US–Japan Semiconductor Agreement primarily addressed access to the Japanese market and anti-dumping concerns. Later arrangements referred to an industry expectation that foreign suppliers would reach a 20% share of the Japanese market, not a binding floor reserved for US chips. H06",
+              "text": "Intel exited DRAM in 1985, the year it introduced the 386 processor. H21 Its consumer-facing Intel Inside cooperative marketing program formally began in 1991. H05 The 1986 US–Japan Semiconductor Agreement primarily addressed access to the Japanese market and anti-dumping concerns. Later arrangements referred to an industry expectation that foreign suppliers would reach a 20% share of the Japanese market, not a binding floor reserved for US chips. H06",
               "notes": []
             },
             {
               "section": "Historical Sources",
               "url": "/post/semiconductor-industry-report/#historical-sources",
-              "text": "[H05] Intel, “Ingredient Branding: End User Marketing and Intel Inside.” https://www.intel.com/content/www/us/en/history/virtual-vault/articles/end-user-marketing-intel-inside.html",
+              "text": "[H05] Intel, “Ingredient Branding: End User Marketing and Intel Inside.” https://www.intel.com/content/www/us/en/history/virtual-vault/articles/end-user-marketing-intel-inside.html Scope: the 1991 campaign launch and cooperative advertising model. It does not establish the separate 1985 DRAM exit, which is sourced to [H21].",
               "notes": []
             }
           ]
@@ -1156,7 +1229,7 @@
             {
               "section": "1.3 Microprocessors, Memory Competition, and US–Japan Adjustments",
               "url": "/post/semiconductor-industry-report/#13-microprocessors-memory-competition-and-usjapan-adjustments",
-              "text": "Facing price competition in memory, Intel exited DRAM around 1985 and redirected resources to microprocessors. Its consumer-facing Intel Inside cooperative marketing program formally began in 1991. H05 The 1986 US–Japan Semiconductor Agreement primarily addressed access to the Japanese market and anti-dumping concerns. Later arrangements referred to an industry expectation that foreign suppliers would reach a 20% share of the Japanese market, not a binding floor reserved for US chips. H06",
+              "text": "Intel exited DRAM in 1985, the year it introduced the 386 processor. H21 Its consumer-facing Intel Inside cooperative marketing program formally began in 1991. H05 The 1986 US–Japan Semiconductor Agreement primarily addressed access to the Japanese market and anti-dumping concerns. Later arrangements referred to an industry expectation that foreign suppliers would reach a 20% share of the Japanese market, not a binding floor reserved for US chips. H06",
               "notes": []
             },
             {
@@ -1249,13 +1322,13 @@
             {
               "section": "1.5 Immersion Lithography, FinFETs, and EUV",
               "url": "/post/semiconductor-industry-report/#15-immersion-lithography-finfets-and-euv",
-              "text": "In the early 2000s, the industry faced growing pressure to improve the resolution of 193 nm argon-fluoride (ArF) lithography. A 157 nm exposure path had been explored, but it posed challenges for materials and optical systems. Immersion lithography placed ultrapure water between the projection lens and wafer, increasing numerical aperture and improving resolution and depth of focus while retaining the 193 nm light source. The wavelength remained 193 nm; resolution improved through the larger numerical aperture. In 2003, TSMC ordered the industry’s first immersion lithography tool from ASML. H19 Commercial production still required collaborative work across fabs, optics, light sources, photoresists, and research institutions. H09 S01",
+              "text": "In the early 2000s, the industry faced growing pressure to improve the resolution of 193 nm argon-fluoride (ArF) lithography. A 157 nm exposure path had been explored, but it posed challenges for materials and optical systems. Immersion lithography placed ultrapure water between the projection lens and wafer, increasing numerical aperture and improving resolution and depth of focus while retaining the 193 nm light source. The wavelength remained 193 nm; resolution improved through the larger numerical aperture. ASML’s December 2003 announcement reported TSMC’s order for the industry’s first immersion lithography tool. This historical reference was corroborated in search-indexed text; its original URL now redirects to a general news index rather than the announcement. H19 Commercial production still required collaborative work across fabs, optics, light sources, photoresists, and research institutions. H09 S01",
               "notes": []
             },
             {
               "section": "Historical Sources",
               "url": "/post/semiconductor-industry-report/#historical-sources",
-              "text": "[H19] ASML, “TSMC Selects ASML for Industry’s First Immersion Tool Order,” December 3, 2003. https://www.asml.com/en/news/press-releases/2003/tsmc-selects-asml-for-industry-first-immersion-tool-order",
+              "text": "[H19] ASML, “TSMC Selects ASML for Industry’s First Immersion Tool Order,” December 3, 2003. https://www.asml.com/en/news/press-releases/2003/tsmc-selects-asml-for-industry-first-immersion-tool-order Historical reference with an access limitation: the title and TSMC order statement were corroborated in search-indexed text, but the original URL redirected to ASML’s generic press-release index on October 3, 2026. This is not a currently accessible live copy of the release, and no verified equivalent live replacement was found. The accessible 2023 retrospective [H09] provides immersion-history context; it does not independently establish the full 2003 order announcement.",
               "notes": []
             }
           ]
@@ -1272,7 +1345,7 @@
             {
               "section": "1.5 Immersion Lithography, FinFETs, and EUV",
               "url": "/post/semiconductor-industry-report/#15-immersion-lithography-finfets-and-euv",
-              "text": "In the early 2000s, the industry faced growing pressure to improve the resolution of 193 nm argon-fluoride (ArF) lithography. A 157 nm exposure path had been explored, but it posed challenges for materials and optical systems. Immersion lithography placed ultrapure water between the projection lens and wafer, increasing numerical aperture and improving resolution and depth of focus while retaining the 193 nm light source. The wavelength remained 193 nm; resolution improved through the larger numerical aperture. In 2003, TSMC ordered the industry’s first immersion lithography tool from ASML. H19 Commercial production still required collaborative work across fabs, optics, light sources, photoresists, and research institutions. H09 S01",
+              "text": "In the early 2000s, the industry faced growing pressure to improve the resolution of 193 nm argon-fluoride (ArF) lithography. A 157 nm exposure path had been explored, but it posed challenges for materials and optical systems. Immersion lithography placed ultrapure water between the projection lens and wafer, increasing numerical aperture and improving resolution and depth of focus while retaining the 193 nm light source. The wavelength remained 193 nm; resolution improved through the larger numerical aperture. ASML’s December 2003 announcement reported TSMC’s order for the industry’s first immersion lithography tool. This historical reference was corroborated in search-indexed text; its original URL now redirects to a general news index rather than the announcement. H19 Commercial production still required collaborative work across fabs, optics, light sources, photoresists, and research institutions. H09 S01",
               "notes": []
             },
             {
@@ -1295,36 +1368,13 @@
             {
               "section": "1.5 Immersion Lithography, FinFETs, and EUV",
               "url": "/post/semiconductor-industry-report/#15-immersion-lithography-finfets-and-euv",
-              "text": "In the early 2000s, the industry faced growing pressure to improve the resolution of 193 nm argon-fluoride (ArF) lithography. A 157 nm exposure path had been explored, but it posed challenges for materials and optical systems. Immersion lithography placed ultrapure water between the projection lens and wafer, increasing numerical aperture and improving resolution and depth of focus while retaining the 193 nm light source. The wavelength remained 193 nm; resolution improved through the larger numerical aperture. In 2003, TSMC ordered the industry’s first immersion lithography tool from ASML. H19 Commercial production still required collaborative work across fabs, optics, light sources, photoresists, and research institutions. H09 S01",
+              "text": "In the early 2000s, the industry faced growing pressure to improve the resolution of 193 nm argon-fluoride (ArF) lithography. A 157 nm exposure path had been explored, but it posed challenges for materials and optical systems. Immersion lithography placed ultrapure water between the projection lens and wafer, increasing numerical aperture and improving resolution and depth of focus while retaining the 193 nm light source. The wavelength remained 193 nm; resolution improved through the larger numerical aperture. ASML’s December 2003 announcement reported TSMC’s order for the industry’s first immersion lithography tool. This historical reference was corroborated in search-indexed text; its original URL now redirects to a general news index rather than the announcement. H19 Commercial production still required collaborative work across fabs, optics, light sources, photoresists, and research institutions. H09 S01",
               "notes": []
             },
             {
               "section": "Technology and Value-Chain Sources",
               "url": "/post/semiconductor-industry-report/#technology-and-value-chain-sources",
               "text": "[S01] ASML, “Lenses and Mirrors—Lithography Principles.” https://www.asml.com/technology/lithography-principles/lenses-and-mirrors",
-              "notes": []
-            }
-          ]
-        },
-        {
-          "id": "91d311896772",
-          "url": "https://eecs.berkeley.edu/about/history/",
-          "title": "[H10] University of California, Berkeley EECS, “History.”",
-          "kind": "link",
-          "format": "Web",
-          "host": "eecs.berkeley.edu",
-          "local": false,
-          "citations": [
-            {
-              "section": "1.5 Immersion Lithography, FinFETs, and EUV",
-              "url": "/post/semiconductor-industry-report/#15-immersion-lithography-finfets-and-euv",
-              "text": "In transistor architecture, Hitachi researchers demonstrated a precursor to the FinFET in 1989. In the late 1990s, a University of California, Berkeley team involving Chenming Hu further developed and named the FinFET. H10 H13 Intel began high-volume production of its 22 nm tri-gate transistor in 2012. H11 FinFET is therefore best understood as the product of sustained research and industrialization by multiple teams, rather than the invention of a single researcher.",
-              "notes": []
-            },
-            {
-              "section": "Historical Sources",
-              "url": "/post/semiconductor-industry-report/#historical-sources",
-              "text": "[H10] University of California, Berkeley EECS, “History.” https://eecs.berkeley.edu/about/history/",
               "notes": []
             }
           ]
@@ -1341,13 +1391,36 @@
             {
               "section": "1.5 Immersion Lithography, FinFETs, and EUV",
               "url": "/post/semiconductor-industry-report/#15-immersion-lithography-finfets-and-euv",
-              "text": "In transistor architecture, Hitachi researchers demonstrated a precursor to the FinFET in 1989. In the late 1990s, a University of California, Berkeley team involving Chenming Hu further developed and named the FinFET. H10 H13 Intel began high-volume production of its 22 nm tri-gate transistor in 2012. H11 FinFET is therefore best understood as the product of sustained research and industrialization by multiple teams, rather than the invention of a single researcher.",
+              "text": "In transistor architecture, Hitachi researchers demonstrated the DELTA precursor in 1989; a University of California, Berkeley team led by Chenming Hu subsequently developed and named the FinFET. H13 Berkeley’s institutional history also credits Jeff Bokor and Tsu-Jae King as collaborators. These overview sources do not establish a precise date for the naming. H10 Intel began high-volume production of its 22 nm tri-gate transistor in 2012. H11 FinFET is therefore best understood as the product of sustained research and industrialization by multiple teams, rather than the invention of a single researcher.",
               "notes": []
             },
             {
               "section": "Historical Sources",
               "url": "/post/semiconductor-industry-report/#historical-sources",
-              "text": "[H13] IEEE Technology Navigator, “FinFETs.” https://technav.ieee.org/topic/finfets/",
+              "text": "[H13] IEEE Technology Navigator, “FinFETs.” https://technav.ieee.org/topic/finfets/ Location: “What Are FinFETs?” Supports the 1989 Hitachi DELTA precursor and the subsequent Berkeley development and naming, but not a precise late-1990s naming date.",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "91d311896772",
+          "url": "https://eecs.berkeley.edu/about/history/",
+          "title": "[H10] University of California, Berkeley EECS, “History.”",
+          "kind": "link",
+          "format": "Web",
+          "host": "eecs.berkeley.edu",
+          "local": false,
+          "citations": [
+            {
+              "section": "1.5 Immersion Lithography, FinFETs, and EUV",
+              "url": "/post/semiconductor-industry-report/#15-immersion-lithography-finfets-and-euv",
+              "text": "In transistor architecture, Hitachi researchers demonstrated the DELTA precursor in 1989; a University of California, Berkeley team led by Chenming Hu subsequently developed and named the FinFET. H13 Berkeley’s institutional history also credits Jeff Bokor and Tsu-Jae King as collaborators. These overview sources do not establish a precise date for the naming. H10 Intel began high-volume production of its 22 nm tri-gate transistor in 2012. H11 FinFET is therefore best understood as the product of sustained research and industrialization by multiple teams, rather than the invention of a single researcher.",
+              "notes": []
+            },
+            {
+              "section": "Historical Sources",
+              "url": "/post/semiconductor-industry-report/#historical-sources",
+              "text": "[H10] University of California, Berkeley EECS, “History.” https://eecs.berkeley.edu/about/history/ Location: semiconductor-history paragraph naming Bokor, Hu, and King as FinFET collaborators. This institutional overview does not date the naming; [H13] supports the earlier Hitachi precursor and subsequent Berkeley development.",
               "notes": []
             }
           ]
@@ -1364,7 +1437,7 @@
             {
               "section": "1.5 Immersion Lithography, FinFETs, and EUV",
               "url": "/post/semiconductor-industry-report/#15-immersion-lithography-finfets-and-euv",
-              "text": "In transistor architecture, Hitachi researchers demonstrated a precursor to the FinFET in 1989. In the late 1990s, a University of California, Berkeley team involving Chenming Hu further developed and named the FinFET. H10 H13 Intel began high-volume production of its 22 nm tri-gate transistor in 2012. H11 FinFET is therefore best understood as the product of sustained research and industrialization by multiple teams, rather than the invention of a single researcher.",
+              "text": "In transistor architecture, Hitachi researchers demonstrated the DELTA precursor in 1989; a University of California, Berkeley team led by Chenming Hu subsequently developed and named the FinFET. H13 Berkeley’s institutional history also credits Jeff Bokor and Tsu-Jae King as collaborators. These overview sources do not establish a precise date for the naming. H10 Intel began high-volume production of its 22 nm tri-gate transistor in 2012. H11 FinFET is therefore best understood as the product of sustained research and industrialization by multiple teams, rather than the invention of a single researcher.",
               "notes": []
             },
             {
@@ -1497,6 +1570,52 @@
           ]
         },
         {
+          "id": "9310331128e5",
+          "url": "https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm",
+          "title": "[S07] TSMC, “CoWoS.”",
+          "kind": "link",
+          "format": "Web",
+          "host": "3dfabric.tsmc.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "2.4 Packaging and Testing",
+              "url": "/post/semiconductor-industry-report/#24-packaging-and-testing",
+              "text": "Conventional packaging protects the die, provides electrical and mechanical connections, and supports assembly into a system. Advanced packaging also enables dense interconnects, more bandwidth, power management, and heterogeneous integration. Flip-chip packaging connects a die to its substrate through bumps. In 2.5D packaging, a silicon interposer or redistribution structure can connect multiple side-by-side dies. In 3D packaging, dies are stacked using hybrid bonding, through-silicon vias (TSVs), or other vertical interconnects. CoWoS is a 2.5D and related advanced-packaging platform; it should not be conflated with every form of 3D stacking. S07",
+              "notes": []
+            },
+            {
+              "section": "Technology and Value-Chain Sources",
+              "url": "/post/semiconductor-industry-report/#technology-and-value-chain-sources",
+              "text": "[S07] TSMC, “CoWoS.” https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm Location: technology overview and CoWoS-S/R/L descriptions. Supports the 2.5D integration of logic and HBM using silicon or redistribution-layer interposers; it is not a source for every form of 3D bonding.",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "dbd96dc7b5fd",
+          "url": "https://news.skhynix.com/en/sk-hynix-partners-with-tsmc-to-strengthen-hbm-technological-leadership/",
+          "title": "[S08] SK hynix, “SK hynix Partners with TSMC to Strengthen HBM Technological Leadership,” April 19, 2024",
+          "kind": "link",
+          "format": "Web",
+          "host": "news.skhynix.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "2.4 Packaging and Testing",
+              "url": "/post/semiconductor-industry-report/#24-packaging-and-testing",
+              "text": "HBM typically stacks DRAM dies above a base die and connects them through TSVs; the HBM package can then be integrated with a processor through advanced packaging. S08 3D NAND, by contrast, stacks memory cells vertically within a NAND device. It is a device structure and manufacturing process, not a synonym for TSV-based die stacking. S04",
+              "notes": []
+            },
+            {
+              "section": "Technology and Value-Chain Sources",
+              "url": "/post/semiconductor-industry-report/#technology-and-value-chain-sources",
+              "text": "[S08] SK hynix, “SK hynix Partners with TSMC to Strengthen HBM Technological Leadership,” April 19, 2024. https://news.skhynix.com/en/sk-hynix-partners-with-tsmc-to-strengthen-hbm-technological-leadership/ Location: base-die paragraph and TSV/CoWoS explanatory notes. Supports the DRAM/base-die stack, TSV interconnections, and integration with a processor; cited for technical structure, not for promotional leadership claims or later production outcomes.",
+              "notes": []
+            }
+          ]
+        },
+        {
           "id": "674148dc4734",
           "url": "https://semiconductor.samsung.com/support/tools-resources/dictionary/semiconductor-glossary-3d-v-nand-flash-memory/",
           "title": "[S04] Samsung Semiconductor, “3D V-NAND Flash Memory.”",
@@ -1508,40 +1627,36 @@
             {
               "section": "2.4 Packaging and Testing",
               "url": "/post/semiconductor-industry-report/#24-packaging-and-testing",
-              "text": "HBM typically stacks multiple DRAM dies connected by TSVs and integrates them with a logic chip for high bandwidth. 3D NAND, by contrast, stacks memory cells vertically within a NAND device. It is a device structure and manufacturing process, not a synonym for TSV-based die stacking. S04",
-              "notes": [
-                "Conventional packaging protects the die, provides electrical and mechanical connections, and supports assembly into a system. Advanced packaging also enables dense interconnects, more bandwidth, power management, and heterogeneous integration. Flip-chip packaging connects a die to its substrate through bumps. In 2.5D packaging, a silicon interposer or redistribution structure can connect multiple side-by-side dies. In 3D packaging, dies are stacked using hybrid bonding, through-silicon vias (TSVs), or other vertical interconnects. CoWoS is a 2.5D and related advanced-packaging platform; it should not be conflated with every form of 3D stacking."
-              ]
+              "text": "HBM typically stacks DRAM dies above a base die and connects them through TSVs; the HBM package can then be integrated with a processor through advanced packaging. S08 3D NAND, by contrast, stacks memory cells vertically within a NAND device. It is a device structure and manufacturing process, not a synonym for TSV-based die stacking. S04",
+              "notes": []
             },
             {
               "section": "Technology and Value-Chain Sources",
               "url": "/post/semiconductor-industry-report/#technology-and-value-chain-sources",
-              "text": "[S04] Samsung Semiconductor, “3D V-NAND Flash Memory.” https://semiconductor.samsung.com/support/tools-resources/dictionary/semiconductor-glossary-3d-v-nand-flash-memory/",
+              "text": "[S04] Samsung Semiconductor, “3D V-NAND Flash Memory.” https://semiconductor.samsung.com/support/tools-resources/dictionary/semiconductor-glossary-3d-v-nand-flash-memory/ Scope: vertically stacked NAND memory cells and their distinction from a single-layer arrangement. This glossary does not establish HBM’s DRAM/base-die structure or CoWoS packaging; those claims use [S08] and [S07].",
               "notes": []
             }
           ]
         },
         {
-          "id": "57eac0862ce2",
-          "url": "https://www.aecouncil.com/AECDocuments.html",
-          "title": "[S05] Automotive Electronics Council, “AEC-Q100: Failure Mechanism Based Stress Test Qualification for Integrated Circuits,” documents index",
-          "kind": "link",
-          "format": "Web",
-          "host": "aecouncil.com",
+          "id": "c1e68f7a2783",
+          "url": "https://www.guerrilla-rf.com/includes/pdfs/general/AEC_Q100_Rev_J_Base_Document.pdf",
+          "title": "Manufacturer-hosted copy at Guerrilla RF (PDF)",
+          "kind": "file",
+          "format": "PDF",
+          "host": "guerrilla-rf.com",
           "local": false,
           "citations": [
             {
               "section": "2.4 Packaging and Testing",
               "url": "/post/semiconductor-industry-report/#24-packaging-and-testing",
-              "text": "Testing includes wafer-level probing, final testing after packaging, and reliability evaluation for particular uses. Automotive integrated circuits commonly undergo failure-mechanism-based stress tests and customer qualification under specifications such as AEC-Q100. These specifications are not equivalent to a “certification certificate” issued by a single organization. S05",
-              "notes": [
-                "Conventional packaging protects the die, provides electrical and mechanical connections, and supports assembly into a system. Advanced packaging also enables dense interconnects, more bandwidth, power management, and heterogeneous integration. Flip-chip packaging connects a die to its substrate through bumps. In 2.5D packaging, a silicon interposer or redistribution structure can connect multiple side-by-side dies. In 3D packaging, dies are stacked using hybrid bonding, through-silicon vias (TSVs), or other vertical interconnects. CoWoS is a 2.5D and related advanced-packaging platform; it should not be conflated with every form of 3D stacking."
-              ]
+              "text": "Testing includes wafer-level probing, final testing after packaging, and reliability evaluation for particular uses. Automotive integrated circuits commonly undergo failure-mechanism-based stress tests and customer qualification under specifications such as AEC-Q100. AEC-Q100 Rev J states that AEC operates no certification board: suppliers perform qualification and submit the data for users to verify compliance. Qualification should therefore not be described as an AEC-issued certification. S05",
+              "notes": []
             },
             {
               "section": "Technology and Value-Chain Sources",
               "url": "/post/semiconductor-industry-report/#technology-and-value-chain-sources",
-              "text": "[S05] Automotive Electronics Council, “AEC-Q100: Failure Mechanism Based Stress Test Qualification for Integrated Circuits,” documents index. https://www.aecouncil.com/AECDocuments.html",
+              "text": "[S05] Automotive Electronics Council, “AEC-Q100: Failure Mechanism Based Stress Test Qualification for Integrated Circuits,” Rev J, August 11, 2023. Manufacturer-hosted copy at Guerrilla RF (PDF) . Location: §§1.3.1–1.3.3, printed p. 2 (PDF p. 8), on qualification, the absence of an AEC certification board, and user approval. The AEC publisher documents index could not be retrieved during the October 3, 2026 review; that access failure does not establish deletion. The inspected copy is the AEC standard hosted by a manufacturer, not the publisher’s live index, and does not establish which revision is currently latest.",
               "notes": []
             }
           ]
@@ -1549,7 +1664,7 @@
         {
           "id": "acce025b2569",
           "url": "https://ec.europa.eu/competition/mergers/cases1/202516/M_11766_10599589_2740_3.pdf",
-          "title": "[M01] European Commission, Case M.11766, NVIDIA/Run:ai merger decision, 2024 market evidence",
+          "title": "[M01] European Commission, Case M.11766, NVIDIA/Run:ai merger decision, December 20, 2024",
           "kind": "file",
           "format": "PDF",
           "host": "ec.europa.eu",
@@ -1558,7 +1673,7 @@
             {
               "section": "3.2 Chip Design and AI Computing",
               "url": "/post/semiconductor-industry-report/#32-chip-design-and-ai-computing",
-              "text": "General-purpose processors, mobile SoCs, analog chips, and AI accelerators each have different competitive structures. NVIDIA leads in data-center GPUs and their software ecosystem, but a claim that it holds 80%–90% of “AI training and inference chips” lacks a consistent market boundary. In its review of NVIDIA’s proposed acquisition of Run:ai, the European Commission estimated that NVIDIA’s shipment share of the defined global discrete data-center GPU market had exceeded 80%–90% in several preceding years and stood at 70%–80% in the first half of 2024. The decision also cautioned that shipment estimates inferred from revenue and average selling prices were less reliable. M01 The case illustrates why market share must be reported with its product scope, date, and method.",
+              "text": "General-purpose processors, mobile SoCs, analog chips, and AI accelerators each have different competitive structures. NVIDIA leads in data-center GPUs and their software ecosystem, but a claim that it holds 80%–90% of “AI training and inference chips” lacks a consistent market boundary. In its review of NVIDIA’s proposed acquisition of Run:ai, the European Commission’s decision reported NVIDIA’s volume share of the defined global discrete data-center GPU market in bracketed ranges: [80–90]% in each of 2021–2023 and [70–80]% in the first half of 2024. These are estimated ranges for the specified periods, not precise shares or a full-year 2024 result. The decision records NVIDIA’s warning, as the notifying party, that volume estimates inferred from revenue and average purchase prices were less reliable than value shares. M01 The case illustrates why market share must be reported with its product scope, date, and method.",
               "notes": [
                 "AMD and Intel offer GPUs or other accelerators, while cloud providers develop in-house or custom ASICs such as TPUs and Trainium. In-house chips can improve performance, cost, or supply control for specific workloads, but they do not automatically displace commercial GPUs. Their results depend on software tools, utilization, model fit, networking, and deployment scale."
               ]
@@ -1566,7 +1681,7 @@
             {
               "section": "Market and Company Sources",
               "url": "/post/semiconductor-industry-report/#market-and-company-sources",
-              "text": "[M01] European Commission, Case M.11766, NVIDIA/Run:ai merger decision, 2024 market evidence. https://ec.europa.eu/competition/mergers/cases1/202516/M_11766_10599589_2740_3.pdf",
+              "text": "[M01] European Commission, Case M.11766, NVIDIA/Run:ai merger decision, December 20, 2024. https://ec.europa.eu/competition/mergers/cases1/202516/M_11766_10599589_2740_3.pdf Location: §4.2.1, Table 2 and paragraph 92, printed pp. 21–22 (PDF pp. 22–23). The market is worldwide discrete data-center GPUs by volume; the bracketed ranges cover 2021–2023 and H1 2024. Paragraph 92 records the notifying party NVIDIA’s caution about the reliability of volume estimates derived from revenue and average purchase prices. That caution is attributed to NVIDIA, not presented as an independently established Commission finding.",
               "notes": []
             }
           ]
@@ -1637,18 +1752,18 @@
           ]
         },
         {
-          "id": "bba034f8f93e",
-          "url": "https://www.commerce.gov/issues/semiconductor-industry",
-          "title": "[R01] U.S. Department of Commerce, “Semiconductor Industry—CHIPS for America.”",
+          "id": "17656fc7d81a",
+          "url": "https://www.nist.gov/chips/funding-updates",
+          "title": "[R01] NIST, “Funding Updates.”",
           "kind": "link",
           "format": "Web",
-          "host": "commerce.gov",
+          "host": "nist.gov",
           "local": false,
           "citations": [
             {
               "section": "4.2 Industrial Policy, Export Controls, and Regionalization",
               "url": "/post/semiconductor-industry-report/#42-industrial-policy-export-controls-and-regionalization",
-              "text": "The US CHIPS and Science Act provided the Department of Commerce with US$50 billion for manufacturing incentives, R&D, and related programs. That figure represents statutory program funding, not cash already paid to companies. R01 The European Chips Act took effect in September 2023. The EU set a policy goal of raising its share of the global semiconductor market to 20% by 2030; that number is a target, neither an achieved share nor a firm forecast. R02 In June 2026, the European Commission proposed a Chips Act 2.0 to build on the original law. The proposal should be distinguished from the 2023 act already in force. R05",
+              "text": "The US CHIPS and Science Act allocated US$50 billion for the Department of Commerce to administer semiconductor incentives and R&D programs. That figure represents statutory program funding, not cash already paid to companies. R01 The European Chips Act took effect on September 21, 2023. In its release that day, the European Commission stated the EU’s policy goal of raising its share of the global semiconductor market to 20% by 2030; that number is a historical policy target, neither an achieved share nor a firm forecast. R02 In June 2026, the European Commission proposed a Chips Act 2.0 to build on the original law. The proposal should be distinguished from the 2023 act already in force. R05",
               "notes": [
                 "Regional incentives can add local capabilities and geographic redundancy, but they can also raise construction costs, reduce utilization, intensify competition for talent, and complicate cross-border operations. Whether a project amounts to “duplicative capacity” depends on actual demand, its technology generation, and long-term utilization. Not every localization project can be assumed in advance to destroy economies of scale."
               ]
@@ -1656,15 +1771,15 @@
             {
               "section": "Policy and Risk Sources",
               "url": "/post/semiconductor-industry-report/#policy-and-risk-sources",
-              "text": "[R01] U.S. Department of Commerce, “Semiconductor Industry—CHIPS for America.” https://www.commerce.gov/issues/semiconductor-industry",
+              "text": "[R01] NIST, “Funding Updates.” https://www.nist.gov/chips/funding-updates Location: opening program-funding paragraph. Official fallback confirming Commerce’s administration of US$50 billion in semiconductor incentives and R&D funding; this is an allocation, not cash already disbursed. Original provenance: U.S. Department of Commerce, “Semiconductor Industry—CHIPS for America” . Direct access to that Commerce page returned HTTP 403 during the October 3, 2026 review; it is access-blocked, not established to be deleted. The funding source does not independently establish the report’s regionalization cost analysis.",
               "notes": []
             }
           ]
         },
         {
-          "id": "315ffb694272",
-          "url": "https://digital-strategy.ec.europa.eu/en/policies/european-chips-act",
-          "title": "[R02] European Commission, “European Chips Act.”",
+          "id": "dd2dc332d805",
+          "url": "https://digital-strategy.ec.europa.eu/en/news/digital-sovereignty-european-chips-act-enters-force",
+          "title": "[R02] European Commission, “Digital Sovereignty: European Chips Act Enters into Force,” September 21, 2023",
           "kind": "link",
           "format": "Web",
           "host": "digital-strategy.ec.europa.eu",
@@ -1673,7 +1788,7 @@
             {
               "section": "4.2 Industrial Policy, Export Controls, and Regionalization",
               "url": "/post/semiconductor-industry-report/#42-industrial-policy-export-controls-and-regionalization",
-              "text": "The US CHIPS and Science Act provided the Department of Commerce with US$50 billion for manufacturing incentives, R&D, and related programs. That figure represents statutory program funding, not cash already paid to companies. R01 The European Chips Act took effect in September 2023. The EU set a policy goal of raising its share of the global semiconductor market to 20% by 2030; that number is a target, neither an achieved share nor a firm forecast. R02 In June 2026, the European Commission proposed a Chips Act 2.0 to build on the original law. The proposal should be distinguished from the 2023 act already in force. R05",
+              "text": "The US CHIPS and Science Act allocated US$50 billion for the Department of Commerce to administer semiconductor incentives and R&D programs. That figure represents statutory program funding, not cash already paid to companies. R01 The European Chips Act took effect on September 21, 2023. In its release that day, the European Commission stated the EU’s policy goal of raising its share of the global semiconductor market to 20% by 2030; that number is a historical policy target, neither an achieved share nor a firm forecast. R02 In June 2026, the European Commission proposed a Chips Act 2.0 to build on the original law. The proposal should be distinguished from the 2023 act already in force. R05",
               "notes": [
                 "Regional incentives can add local capabilities and geographic redundancy, but they can also raise construction costs, reduce utilization, intensify competition for talent, and complicate cross-border operations. Whether a project amounts to “duplicative capacity” depends on actual demand, its technology generation, and long-term utilization. Not every localization project can be assumed in advance to destroy economies of scale."
               ]
@@ -1681,7 +1796,7 @@
             {
               "section": "Policy and Risk Sources",
               "url": "/post/semiconductor-industry-report/#policy-and-risk-sources",
-              "text": "[R02] European Commission, “European Chips Act.” https://digital-strategy.ec.europa.eu/en/policies/european-chips-act",
+              "text": "[R02] European Commission, “Digital Sovereignty: European Chips Act Enters into Force,” September 21, 2023. https://digital-strategy.ec.europa.eu/en/news/digital-sovereignty-european-chips-act-enters-force Location: opening and paragraph stating the 20%-by-2030 goal. This dated release supports commencement and the historical policy target. The current European Chips Act policy page remains useful for policy context but no longer states that target in the version reviewed on October 3, 2026; it is not substituted for the dated evidence.",
               "notes": []
             }
           ]
@@ -1698,7 +1813,7 @@
             {
               "section": "4.2 Industrial Policy, Export Controls, and Regionalization",
               "url": "/post/semiconductor-industry-report/#42-industrial-policy-export-controls-and-regionalization",
-              "text": "The US CHIPS and Science Act provided the Department of Commerce with US$50 billion for manufacturing incentives, R&D, and related programs. That figure represents statutory program funding, not cash already paid to companies. R01 The European Chips Act took effect in September 2023. The EU set a policy goal of raising its share of the global semiconductor market to 20% by 2030; that number is a target, neither an achieved share nor a firm forecast. R02 In June 2026, the European Commission proposed a Chips Act 2.0 to build on the original law. The proposal should be distinguished from the 2023 act already in force. R05",
+              "text": "The US CHIPS and Science Act allocated US$50 billion for the Department of Commerce to administer semiconductor incentives and R&D programs. That figure represents statutory program funding, not cash already paid to companies. R01 The European Chips Act took effect on September 21, 2023. In its release that day, the European Commission stated the EU’s policy goal of raising its share of the global semiconductor market to 20% by 2030; that number is a historical policy target, neither an achieved share nor a firm forecast. R02 In June 2026, the European Commission proposed a Chips Act 2.0 to build on the original law. The proposal should be distinguished from the 2023 act already in force. R05",
               "notes": [
                 "Regional incentives can add local capabilities and geographic redundancy, but they can also raise construction costs, reduce utilization, intensify competition for talent, and complicate cross-border operations. Whether a project amounts to “duplicative capacity” depends on actual demand, its technology generation, and long-term utilization. Not every localization project can be assumed in advance to destroy economies of scale."
               ]
@@ -1760,6 +1875,57 @@
               "notes": []
             }
           ]
+        },
+        {
+          "id": "57eac0862ce2",
+          "url": "https://www.aecouncil.com/AECDocuments.html",
+          "title": "AEC publisher documents index",
+          "kind": "link",
+          "format": "Web",
+          "host": "aecouncil.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Technology and Value-Chain Sources",
+              "url": "/post/semiconductor-industry-report/#technology-and-value-chain-sources",
+              "text": "[S05] Automotive Electronics Council, “AEC-Q100: Failure Mechanism Based Stress Test Qualification for Integrated Circuits,” Rev J, August 11, 2023. Manufacturer-hosted copy at Guerrilla RF (PDF) . Location: §§1.3.1–1.3.3, printed p. 2 (PDF p. 8), on qualification, the absence of an AEC certification board, and user approval. The AEC publisher documents index could not be retrieved during the October 3, 2026 review; that access failure does not establish deletion. The inspected copy is the AEC standard hosted by a manufacturer, not the publisher’s live index, and does not establish which revision is currently latest.",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "bba034f8f93e",
+          "url": "https://www.commerce.gov/issues/semiconductor-industry",
+          "title": "U.S. Department of Commerce, “Semiconductor Industry—CHIPS for America”",
+          "kind": "link",
+          "format": "Web",
+          "host": "commerce.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "Policy and Risk Sources",
+              "url": "/post/semiconductor-industry-report/#policy-and-risk-sources",
+              "text": "[R01] NIST, “Funding Updates.” https://www.nist.gov/chips/funding-updates Location: opening program-funding paragraph. Official fallback confirming Commerce’s administration of US$50 billion in semiconductor incentives and R&D funding; this is an allocation, not cash already disbursed. Original provenance: U.S. Department of Commerce, “Semiconductor Industry—CHIPS for America” . Direct access to that Commerce page returned HTTP 403 during the October 3, 2026 review; it is access-blocked, not established to be deleted. The funding source does not independently establish the report’s regionalization cost analysis.",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "315ffb694272",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/european-chips-act",
+          "title": "current European Chips Act policy page",
+          "kind": "link",
+          "format": "Web",
+          "host": "digital-strategy.ec.europa.eu",
+          "local": false,
+          "citations": [
+            {
+              "section": "Policy and Risk Sources",
+              "url": "/post/semiconductor-industry-report/#policy-and-risk-sources",
+              "text": "[R02] European Commission, “Digital Sovereignty: European Chips Act Enters into Force,” September 21, 2023. https://digital-strategy.ec.europa.eu/en/news/digital-sovereignty-european-chips-act-enters-force Location: opening and paragraph stating the 20%-by-2030 goal. This dated release supports commencement and the historical policy target. The current European Chips Act policy page remains useful for policy context but no longer states that target in the version reviewed on October 3, 2026; it is not substituted for the dated evidence.",
+              "notes": []
+            }
+          ]
         }
       ]
     },
@@ -1784,7 +1950,7 @@
               "url": "/post/ai-risks-layoffs-industry-turbulence/#sources-and-scope",
               "text": "Challenger, Gray & Christmas: August 2026 job-cuts report — primary source for announced U.S. job cuts and hiring plans through August , including industry and stated-reason breakdowns. It does not establish the causal impact of AI or actual completed layoffs.",
               "notes": [
-                "Reviewed September 2026. Announcement series, survey research, and forecast scenarios answer different questions and should not be combined into a single count."
+                "Citation scope reviewed October 3, 2026. Announcement series, administrative-payroll research, and forecast scenarios answer different questions and should not be combined into a single count. Each source retains its stated reporting period."
               ]
             }
           ]
@@ -1801,9 +1967,9 @@
             {
               "section": "Sources and scope",
               "url": "/post/ai-risks-layoffs-industry-turbulence/#sources-and-scope",
-              "text": "Stanford Digital Economy Lab: Canaries in the Coal Mine? — research on AI-exposed occupations and early-career workers; the paper explicitly says it finds no widespread economy-wide displacement.",
+              "text": "Stanford Digital Economy Lab: Canaries in the Coal Mine? — observational research using ADP administrative payroll records through June 2026, in the August 12, 2026 revision. It examines AI-exposed occupations and early-career workers and explicitly says it finds no widespread economy-wide displacement. Its findings are descriptive, not causal; this is not a survey of workers.",
               "notes": [
-                "Reviewed September 2026. Announcement series, survey research, and forecast scenarios answer different questions and should not be combined into a single count."
+                "Citation scope reviewed October 3, 2026. Announcement series, administrative-payroll research, and forecast scenarios answer different questions and should not be combined into a single count. Each source retains its stated reporting period."
               ]
             }
           ]
@@ -1822,7 +1988,7 @@
               "url": "/post/ai-risks-layoffs-industry-turbulence/#sources-and-scope",
               "text": "Goldman Sachs Research: AI and the U.S. labor market — the 6%–7% over roughly a decade figure is a scenario for workers potentially needing new employment, not a count of current layoffs.",
               "notes": [
-                "Reviewed September 2026. Announcement series, survey research, and forecast scenarios answer different questions and should not be combined into a single count."
+                "Citation scope reviewed October 3, 2026. Announcement series, administrative-payroll research, and forecast scenarios answer different questions and should not be combined into a single count. Each source retains its stated reporting period."
               ]
             }
           ]
@@ -1995,7 +2161,7 @@
             {
               "section": "1. AI Software & Services",
               "url": "/post/50-high-potential-industries/#evidence-ai-software-services",
-              "text": "IDC , Worldwide GenAI 2025 Predictions, p. 4 : publication vintage 2024 (exact day not printed); worldwide AI-solutions spending; $307B for 2025 and $632B for 2028 , both forecasts; 29.0% forecast CAGR, 2024–2028 . This figure is an estimate. It covers AI solutions overall and is not a software/services subtotal. IDC’s August 16, 2024 scope discussion explicitly includes hardware; its inconsistent component percentages must not be used to derive a subtotal.",
+              "text": "IDC , Worldwide GenAI 2025 Predictions, p. 4 : publication vintage 2024 (exact day not printed); worldwide AI-solutions spending; $307B for 2025 and $632B for 2028 , both forecasts; 29.0% forecast CAGR, 2024–2028 . This figure is an estimate. It covers AI solutions overall and is not a software/services subtotal. IDC’s August 16, 2024 scope discussion explicitly includes hardware; its approximately 57% software, 24% hardware and 24% services add to 105% , so those inconsistent component percentages must not be used to derive a subtotal.",
               "notes": [
                 "Original claim: approximately $230–390B around 2025; CAGR 25–35%; $1.5–2.4T in 2030–32. Unverified estimate; source and methodology not confirmed. The original numerical Gartner note is also unverified in this row. The audit found broad-AI figures, not a consistently defined software-and-services-only series, so the row has not been silently replaced.",
                 "Disposition: retain the original claim with the unverified label. Broad-AI alternatives require their own broader market labels; they do not supply a source-matched software/services correction."
@@ -2015,7 +2181,7 @@
             {
               "section": "1. AI Software & Services",
               "url": "/post/50-high-potential-industries/#evidence-ai-software-services",
-              "text": "IDC , Worldwide GenAI 2025 Predictions, p. 4 : publication vintage 2024 (exact day not printed); worldwide AI-solutions spending; $307B for 2025 and $632B for 2028 , both forecasts; 29.0% forecast CAGR, 2024–2028 . This figure is an estimate. It covers AI solutions overall and is not a software/services subtotal. IDC’s August 16, 2024 scope discussion explicitly includes hardware; its inconsistent component percentages must not be used to derive a subtotal.",
+              "text": "IDC , Worldwide GenAI 2025 Predictions, p. 4 : publication vintage 2024 (exact day not printed); worldwide AI-solutions spending; $307B for 2025 and $632B for 2028 , both forecasts; 29.0% forecast CAGR, 2024–2028 . This figure is an estimate. It covers AI solutions overall and is not a software/services subtotal. IDC’s August 16, 2024 scope discussion explicitly includes hardware; its approximately 57% software, 24% hardware and 24% services add to 105% , so those inconsistent component percentages must not be used to derive a subtotal.",
               "notes": [
                 "Original claim: approximately $230–390B around 2025; CAGR 25–35%; $1.5–2.4T in 2030–32. Unverified estimate; source and methodology not confirmed. The original numerical Gartner note is also unverified in this row. The audit found broad-AI figures, not a consistently defined software-and-services-only series, so the row has not been silently replaced.",
                 "Disposition: retain the original claim with the unverified label. Broad-AI alternatives require their own broader market labels; they do not supply a source-matched software/services correction."
@@ -2195,7 +2361,7 @@
             {
               "section": "4. Electric Vehicles",
               "url": "/post/50-high-potential-industries/#evidence-electric-vehicles",
-              "text": "Precedence Research , publisher-issued dated release , published July 1, 2025 : global EV market revenue , covering BEV, PHEV and FCEV and explicit vehicle segments including scooters, motorcycles, three-wheelers, passenger cars, buses and trucks; 2024 base $890.72B , 2025 forecast-period estimate $988.70B , 2034 forecast $2,529.10B ; 11% forecast CAGR, 2025–2034 . This figure is an estimate. The approximately $990B point is supported under this definition, but not the full DEX interval or 15% endpoint. The current report page , updated September 8, 2026 , instead uses 10.82% for 2026–2035 ; do not mix vintages.",
+              "text": "Precedence Research , publisher-issued dated release , published July 1, 2025 : global EV market revenue , covering BEV, PHEV and FCEV and explicit vehicle segments including scooters, motorcycles, three-wheelers, passenger cars, buses and trucks; 2024 base $890.72B , 2025 forecast-period estimate $988.70B , 2034 forecast $2,529.10B ; 11% forecast CAGR, 2025–2034 . This figure is an estimate. The approximately $990B point is supported under this definition, but not the full DEX interval or 15% endpoint. The current report page , updated September 8, 2026 , instead reports a 2026 estimate of $1,097.46B , 2035 forecast of $2,763.17B and a publisher-stated 10.82% CAGR for 2026–2035 . Those displayed endpoints imply approximately 10.80% over nine years (audit calculation), so the stated precision is attributed, not independently reproduced. Do not mix the two forecast vintages.",
               "notes": [
                 "Original claim: approximately $900–990B around 2025; CAGR 10–15%; $1.1–3.7T in 2030–35. Unverified estimate; source and methodology not confirmed. One matching point does not establish the full range or a common forecast period.",
                 "Disposition: retain the original range as unverified. The Precedence single-source series and narrower IEA spending measure are separately attributed alternatives, not a reconstructed original range."
@@ -2215,7 +2381,7 @@
             {
               "section": "4. Electric Vehicles",
               "url": "/post/50-high-potential-industries/#evidence-electric-vehicles",
-              "text": "Precedence Research , publisher-issued dated release , published July 1, 2025 : global EV market revenue , covering BEV, PHEV and FCEV and explicit vehicle segments including scooters, motorcycles, three-wheelers, passenger cars, buses and trucks; 2024 base $890.72B , 2025 forecast-period estimate $988.70B , 2034 forecast $2,529.10B ; 11% forecast CAGR, 2025–2034 . This figure is an estimate. The approximately $990B point is supported under this definition, but not the full DEX interval or 15% endpoint. The current report page , updated September 8, 2026 , instead uses 10.82% for 2026–2035 ; do not mix vintages.",
+              "text": "Precedence Research , publisher-issued dated release , published July 1, 2025 : global EV market revenue , covering BEV, PHEV and FCEV and explicit vehicle segments including scooters, motorcycles, three-wheelers, passenger cars, buses and trucks; 2024 base $890.72B , 2025 forecast-period estimate $988.70B , 2034 forecast $2,529.10B ; 11% forecast CAGR, 2025–2034 . This figure is an estimate. The approximately $990B point is supported under this definition, but not the full DEX interval or 15% endpoint. The current report page , updated September 8, 2026 , instead reports a 2026 estimate of $1,097.46B , 2035 forecast of $2,763.17B and a publisher-stated 10.82% CAGR for 2026–2035 . Those displayed endpoints imply approximately 10.80% over nine years (audit calculation), so the stated precision is attributed, not independently reproduced. Do not mix the two forecast vintages.",
               "notes": [
                 "Original claim: approximately $900–990B around 2025; CAGR 10–15%; $1.1–3.7T in 2030–35. Unverified estimate; source and methodology not confirmed. One matching point does not establish the full range or a common forecast period.",
                 "Disposition: retain the original range as unverified. The Precedence single-source series and narrower IEA spending measure are separately attributed alternatives, not a reconstructed original range."
@@ -2515,7 +2681,7 @@
             {
               "section": "9. Robotics (Industrial + Service)",
               "url": "/post/50-high-potential-industries/#evidence-robotics",
-              "text": "ABI Research , global robotics outlook : displayed publication July 31, 2025 ; underlying report PT-3774 dated July 22, 2025 . Global robotics hardware across industrial, collaborative, mobile, humanoid and exoskeleton categories; 2025 estimate approximately $50B , 2024 $45B , 2030 forecast $110.7B . This figure is an estimate. The page states 13.8%, rounded to 14% , with a 2024–2030 table label, but $45B to $110.7B over six years implies approximately 16.19% (audit calculation). The stated rate is internally inconsistent and is not accepted as verified. The current body also refers to CES 2026, so the displayed date is not an authenticated July 2025 snapshot.",
+              "text": "ABI Research , global robotics outlook : displayed publication July 31, 2025 ; underlying report PT-3774 dated July 22, 2025 . Global robotics hardware across industrial, collaborative, mobile, humanoid and exoskeleton categories; 2025 estimate approximately $50B , 2024 $45B , 2030 forecast $110.7B . This figure is an estimate. The page states 13.8%, rounded to 14% , with a 2024–2030 table label, but $45B to $110.7B over six years implies approximately 16.19% (audit calculation). The stated rate is internally inconsistent and is not accepted as verified. The current body also refers to CES 2026, so the displayed date is not an authenticated July 2025 snapshot. The public catalogue confirms the underlying report’s identity and coverage; its paid presentation was not accessed and does not independently resolve this numerical inconsistency here.",
               "notes": [
                 "Original claim: approximately $50–90B around 2025; CAGR 14–20%; $110–205B in 2030. Unverified estimate; source and methodology not confirmed. Hardware, total robot-system revenue, installations and supplier-sample unit sales are not interchangeable.",
                 "Disposition: retain the unverified original figures. Attribute the broader Mordor estimate separately; seek underlying data or publisher clarification before using ABI’s precise growth rate."
@@ -2535,7 +2701,7 @@
             {
               "section": "9. Robotics (Industrial + Service)",
               "url": "/post/50-high-potential-industries/#evidence-robotics",
-              "text": "ABI Research , global robotics outlook : displayed publication July 31, 2025 ; underlying report PT-3774 dated July 22, 2025 . Global robotics hardware across industrial, collaborative, mobile, humanoid and exoskeleton categories; 2025 estimate approximately $50B , 2024 $45B , 2030 forecast $110.7B . This figure is an estimate. The page states 13.8%, rounded to 14% , with a 2024–2030 table label, but $45B to $110.7B over six years implies approximately 16.19% (audit calculation). The stated rate is internally inconsistent and is not accepted as verified. The current body also refers to CES 2026, so the displayed date is not an authenticated July 2025 snapshot.",
+              "text": "ABI Research , global robotics outlook : displayed publication July 31, 2025 ; underlying report PT-3774 dated July 22, 2025 . Global robotics hardware across industrial, collaborative, mobile, humanoid and exoskeleton categories; 2025 estimate approximately $50B , 2024 $45B , 2030 forecast $110.7B . This figure is an estimate. The page states 13.8%, rounded to 14% , with a 2024–2030 table label, but $45B to $110.7B over six years implies approximately 16.19% (audit calculation). The stated rate is internally inconsistent and is not accepted as verified. The current body also refers to CES 2026, so the displayed date is not an authenticated July 2025 snapshot. The public catalogue confirms the underlying report’s identity and coverage; its paid presentation was not accessed and does not independently resolve this numerical inconsistency here.",
               "notes": [
                 "Original claim: approximately $50–90B around 2025; CAGR 14–20%; $110–205B in 2030. Unverified estimate; source and methodology not confirmed. Hardware, total robot-system revenue, installations and supplier-sample unit sales are not interchangeable.",
                 "Disposition: retain the unverified original figures. Attribute the broader Mordor estimate separately; seek underlying data or publisher clarification before using ABI’s precise growth rate."
@@ -2555,7 +2721,7 @@
             {
               "section": "9. Robotics (Industrial + Service)",
               "url": "/post/50-high-potential-industries/#evidence-robotics",
-              "text": "Mordor Intelligence , robotics-market report : updated July 23, 2026 (original publication date unverified); global industrial/service robot-platform revenue , including hardware, software, integration and RaaS, excluding separately purchased sensors, generic software licenses and unrelated machinery; 2025 estimate $73.64B , 2026 estimate $88.27B , 2031 forecast $218.56B ; 19.86% forecast CAGR, 2026–2031 . This figure is an estimate. The near-$90B figure is 2026 , and this broader scope differs from ABI hardware. It does not prove the original $50–90B range or 2030 projection.",
+              "text": "Mordor Intelligence , robotics-market report : updated July 23, 2026 (original publication date unverified); global industrial/service robot-platform revenue , including hardware, software, integration and RaaS, excluding separately purchased sensors, generic software licenses and unrelated machinery; 2025 estimate $73.64B , 2026 estimate $88.27B , 2031 forecast $218.56B ; publisher-stated 19.86% forecast CAGR, 2026–2031 . This figure is an estimate. The displayed 2026 and 2031 endpoints imply approximately 19.88% over five years (audit calculation); the source’s 19.86% precision is not independently reproduced. The near-$90B figure is 2026 , and this broader scope differs from ABI hardware. It does not prove the original $50–90B range or 2030 projection.",
               "notes": [
                 "Original claim: approximately $50–90B around 2025; CAGR 14–20%; $110–205B in 2030. Unverified estimate; source and methodology not confirmed. Hardware, total robot-system revenue, installations and supplier-sample unit sales are not interchangeable.",
                 "Disposition: retain the unverified original figures. Attribute the broader Mordor estimate separately; seek underlying data or publisher clarification before using ABI’s precise growth rate."
@@ -2575,7 +2741,7 @@
             {
               "section": "9. Robotics (Industrial + Service)",
               "url": "/post/50-high-potential-industries/#evidence-robotics",
-              "text": "IFR , World Robotics 2025 industrial release , published September 25, 2025 : worldwide industrial-robot installations , 542,000 units in 2024 ; 2025 forecast 575,000 , approximately 6% YoY , not a market-value CAGR. Its service-robot release , published October 7, 2025 , reports 2024 supplier-sample unit sales and explicitly does not extrapolate the sample to the entire industry. These are adoption measures; neither establishes a combined industrial/service revenue total or revenue CAGR.",
+              "text": "IFR , World Robotics 2025 industrial release , published September 25, 2025 : worldwide industrial-robot installations , 542,000 units in 2024 ; 2025 forecast 575,000 , approximately 6% YoY , not a market-value CAGR. Its World Robotics 2025 service-robot release , published October 7, 2025 , reports 2024 supplier-sample unit sales based on 294 service-robot suppliers and explicitly does not extrapolate the sample to the entire industry. Sample composition changes each year, and IFR discourages comparisons across report editions. These are adoption measures; neither establishes a combined industrial/service revenue total or revenue CAGR.",
               "notes": [
                 "Original claim: approximately $50–90B around 2025; CAGR 14–20%; $110–205B in 2030. Unverified estimate; source and methodology not confirmed. Hardware, total robot-system revenue, installations and supplier-sample unit sales are not interchangeable.",
                 "Disposition: retain the unverified original figures. Attribute the broader Mordor estimate separately; seek underlying data or publisher clarification before using ABI’s precise growth rate."
@@ -2584,9 +2750,9 @@
           ]
         },
         {
-          "id": "a9c3a7038675",
-          "url": "https://ifr.org/ifr-press-releases/news/robot-race-",
-          "title": "service-robot release",
+          "id": "8ff73b109495",
+          "url": "https://ifr.org/ifr-press-releases/news/service-robots-see-global-growth-boom",
+          "title": "World Robotics 2025 service-robot release",
           "kind": "link",
           "format": "Web",
           "host": "ifr.org",
@@ -2595,7 +2761,7 @@
             {
               "section": "9. Robotics (Industrial + Service)",
               "url": "/post/50-high-potential-industries/#evidence-robotics",
-              "text": "IFR , World Robotics 2025 industrial release , published September 25, 2025 : worldwide industrial-robot installations , 542,000 units in 2024 ; 2025 forecast 575,000 , approximately 6% YoY , not a market-value CAGR. Its service-robot release , published October 7, 2025 , reports 2024 supplier-sample unit sales and explicitly does not extrapolate the sample to the entire industry. These are adoption measures; neither establishes a combined industrial/service revenue total or revenue CAGR.",
+              "text": "IFR , World Robotics 2025 industrial release , published September 25, 2025 : worldwide industrial-robot installations , 542,000 units in 2024 ; 2025 forecast 575,000 , approximately 6% YoY , not a market-value CAGR. Its World Robotics 2025 service-robot release , published October 7, 2025 , reports 2024 supplier-sample unit sales based on 294 service-robot suppliers and explicitly does not extrapolate the sample to the entire industry. Sample composition changes each year, and IFR discourages comparisons across report editions. These are adoption measures; neither establishes a combined industrial/service revenue total or revenue CAGR.",
               "notes": [
                 "Original claim: approximately $50–90B around 2025; CAGR 14–20%; $110–205B in 2030. Unverified estimate; source and methodology not confirmed. Hardware, total robot-system revenue, installations and supplier-sample unit sales are not interchangeable.",
                 "Disposition: retain the unverified original figures. Attribute the broader Mordor estimate separately; seek underlying data or publisher clarification before using ABI’s precise growth rate."
@@ -2628,9 +2794,47 @@
       "url": "/post/pharmaceutical-industry/",
       "published": "2026-08-21",
       "notices": [
-        "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Two links that pointed through Google searches are shown as direct destinations; duplicate links appear once."
+        "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Destinations and scope were reviewed on 2026-10-03 . Two links that pointed through Google searches are shown as direct destinations; repeated references share the same underlying source. An unresolved access or content check does not establish that a link is dead."
       ],
       "entries": [
+        {
+          "id": "f27bded9b4b8",
+          "url": "https://www.bayer.com/en/about-us/history/history-timeline",
+          "title": "Bayer: The History of Bayer — current timeline",
+          "kind": "link",
+          "format": "Web",
+          "host": "bayer.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "1. Late 19th Century - 1930s: From Dye Workshops to Chemical Synthesis (Disorderly Emergence)",
+              "url": "/post/pharmaceutical-industry/#1-late-19th-century---1930s-from-dye-workshops-to-chemical-synthesis-disorderly-emergence",
+              "text": "Bayer is one example of the connection between synthetic-dye manufacturing and pharmaceutical development. Its company history records a pharmaceutical department in 1888 and the launch of Aspirin in 1899. Bayer joined I.G. Farben in 1925. This company account illustrates one path into pharmaceuticals; it does not establish a single origin for the whole industry or the absence of clinical investigation in that period.",
+              "notes": [
+                "Plant Extraction and Accidental Discovery."
+              ]
+            },
+            {
+              "section": "Source notes and primary materials",
+              "url": "/post/pharmaceutical-industry/#source-notes-and-primary-materials",
+              "text": "Bayer: The History of Bayer — current timeline — the current company history was inspected and supports the scoped dye-business, pharmaceutical-department, Aspirin, and 1925 merger example. It is a separate verified destination; the original blocked historical URL remains labelled below.",
+              "notes": [
+                "Reference review: 2026-10-03 . The accompanying Pharmaceutical Manufacturing working note is a reading list, not an independently verified market dataset. The claim-level sources above are distinguished from research portals, commercial databases, and publication homepages below. Unverified figures have been removed rather than attributed to the note; an accessible homepage does not verify a particular drug, trial, article, or statistic."
+              ]
+            },
+            {
+              "section": "Links contained in the Pharmaceutical Manufacturing research note",
+              "url": "/post/pharmaceutical-industry/#links-contained-in-the-pharmaceutical-manufacturing-research-note",
+              "text": "Current Bayer history timeline — separately inspected company history used for the scoped historical example above; this is a verified current destination, distinct from the original reference.",
+              "notes": [
+                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Destinations and scope were reviewed on 2026-10-03 . Two links that pointed through Google searches are shown as direct destinations; repeated references share the same underlying source. An unresolved access or content check does not establish that a link is dead.",
+                "Regulation and trials:",
+                "Scientific and commercial research:",
+                "Historical reading:"
+              ]
+            }
+          ]
+        },
         {
           "id": "06594858389f",
           "url": "/data/charts/pharma-regions-2025.csv",
@@ -2687,7 +2891,7 @@
               "url": "/post/pharmaceutical-industry/#source-notes-and-primary-materials",
               "text": "FDA: Frances Oldham Kelsey and the thalidomide application — supports the opening history; it does not establish an exact modern industry-wide R&D cost.",
               "notes": [
-                "The accompanying Pharmaceutical Manufacturing working note is a reading list, not an independently verified market dataset. Its links have been matched to the relevant claims above; unverified figures have been removed rather than attributed to the note."
+                "Reference review: 2026-10-03 . The accompanying Pharmaceutical Manufacturing working note is a reading list, not an independently verified market dataset. The claim-level sources above are distinguished from research portals, commercial databases, and publication homepages below. Unverified figures have been removed rather than attributed to the note; an accessible homepage does not verify a particular drug, trial, article, or statistic."
               ]
             }
           ]
@@ -2704,9 +2908,9 @@
             {
               "section": "Source notes and primary materials",
               "url": "/post/pharmaceutical-industry/#source-notes-and-primary-materials",
-              "text": "Kefauver–Harris Drug Amendments, Public Law 87-781 (1962) — the original statute, supplied with the research materials; U.S. law, not a global law.",
+              "text": "Kefauver–Harris Drug Amendments, Public Law 87-781 (1962) — approved October 10, 1962, 76 Stat. 780–796. The original U.S. statute supports the safety/effectiveness and clinical-investigation history; it is not a global law. The 17-page scan ends on a shared page that also begins unrelated Public Law 87-782; that next law is not evidence for drug regulation.",
               "notes": [
-                "The accompanying Pharmaceutical Manufacturing working note is a reading list, not an independently verified market dataset. Its links have been matched to the relevant claims above; unverified figures have been removed rather than attributed to the note."
+                "Reference review: 2026-10-03 . The accompanying Pharmaceutical Manufacturing working note is a reading list, not an independently verified market dataset. The claim-level sources above are distinguished from research portals, commercial databases, and publication homepages below. Unverified figures have been removed rather than attributed to the note; an accessible homepage does not verify a particular drug, trial, article, or statistic."
               ]
             },
             {
@@ -2733,17 +2937,17 @@
             {
               "section": "Source notes and primary materials",
               "url": "/post/pharmaceutical-industry/#source-notes-and-primary-materials",
-              "text": "Pfizer: company history — company account of penicillin production.",
+              "text": "Pfizer: company history — self-authored company account of 1941 penicillin-production efforts and 1944 mass production using deep-tank fermentation; not an independent industry-wide history.",
               "notes": [
-                "The accompanying Pharmaceutical Manufacturing working note is a reading list, not an independently verified market dataset. Its links have been matched to the relevant claims above; unverified figures have been removed rather than attributed to the note."
+                "Reference review: 2026-10-03 . The accompanying Pharmaceutical Manufacturing working note is a reading list, not an independently verified market dataset. The claim-level sources above are distinguished from research portals, commercial databases, and publication homepages below. Unverified figures have been removed rather than attributed to the note; an accessible homepage does not verify a particular drug, trial, article, or statistic."
               ]
             },
             {
               "section": "Links contained in the Pharmaceutical Manufacturing research note",
               "url": "/post/pharmaceutical-industry/#links-contained-in-the-pharmaceutical-manufacturing-research-note",
-              "text": "Pfizer company history .",
+              "text": "Pfizer company history — the same company-authored account cited above, not a second independent historical source.",
               "notes": [
-                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Two links that pointed through Google searches are shown as direct destinations; duplicate links appear once.",
+                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Destinations and scope were reviewed on 2026-10-03 . Two links that pointed through Google searches are shown as direct destinations; repeated references share the same underlying source. An unresolved access or content check does not establish that a link is dead.",
                 "Regulation and trials:",
                 "Scientific and commercial research:",
                 "Historical reading:"
@@ -2763,9 +2967,9 @@
             {
               "section": "Source notes and primary materials",
               "url": "/post/pharmaceutical-industry/#source-notes-and-primary-materials",
-              "text": "Cencora: AmerisourceBergen becomes Cencora — verifies the distributor’s present name.",
+              "text": "Cencora: AmerisourceBergen becomes Cencora — official August 30, 2023 release confirming the completed name and ticker change; supports the naming claim only.",
               "notes": [
-                "The accompanying Pharmaceutical Manufacturing working note is a reading list, not an independently verified market dataset. Its links have been matched to the relevant claims above; unverified figures have been removed rather than attributed to the note."
+                "Reference review: 2026-10-03 . The accompanying Pharmaceutical Manufacturing working note is a reading list, not an independently verified market dataset. The claim-level sources above are distinguished from research portals, commercial databases, and publication homepages below. Unverified figures have been removed rather than attributed to the note; an accessible homepage does not verify a particular drug, trial, article, or statistic."
               ]
             }
           ]
@@ -2803,9 +3007,9 @@
             {
               "section": "Links contained in the Pharmaceutical Manufacturing research note",
               "url": "/post/pharmaceutical-industry/#links-contained-in-the-pharmaceutical-manufacturing-research-note",
-              "text": "Drugs@FDA — direct destination of the note’s search link.",
+              "text": "Drugs@FDA — official search portal and direct destination of the note’s search link; no particular drug result or approval was verified by checking its homepage.",
               "notes": [
-                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Two links that pointed through Google searches are shown as direct destinations; duplicate links appear once.",
+                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Destinations and scope were reviewed on 2026-10-03 . Two links that pointed through Google searches are shown as direct destinations; repeated references share the same underlying source. An unresolved access or content check does not establish that a link is dead.",
                 "Regulation and trials:",
                 "Scientific and commercial research:",
                 "Historical reading:"
@@ -2825,9 +3029,9 @@
             {
               "section": "Links contained in the Pharmaceutical Manufacturing research note",
               "url": "/post/pharmaceutical-industry/#links-contained-in-the-pharmaceutical-manufacturing-research-note",
-              "text": "China’s CDE .",
+              "text": "China’s CDE — official NMPA Center for Drug Evaluation research portal; use a specific notice or review record for a claim-level citation.",
               "notes": [
-                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Two links that pointed through Google searches are shown as direct destinations; duplicate links appear once.",
+                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Destinations and scope were reviewed on 2026-10-03 . Two links that pointed through Google searches are shown as direct destinations; repeated references share the same underlying source. An unresolved access or content check does not establish that a link is dead.",
                 "Regulation and trials:",
                 "Scientific and commercial research:",
                 "Historical reading:"
@@ -2847,9 +3051,9 @@
             {
               "section": "Links contained in the Pharmaceutical Manufacturing research note",
               "url": "/post/pharmaceutical-industry/#links-contained-in-the-pharmaceutical-manufacturing-research-note",
-              "text": "European Medicines Agency .",
+              "text": "European Medicines Agency — redirects to the official English homepage; an institutional research lead, not a specific medicine or regulatory decision.",
               "notes": [
-                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Two links that pointed through Google searches are shown as direct destinations; duplicate links appear once.",
+                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Destinations and scope were reviewed on 2026-10-03 . Two links that pointed through Google searches are shown as direct destinations; repeated references share the same underlying source. An unresolved access or content check does not establish that a link is dead.",
                 "Regulation and trials:",
                 "Scientific and commercial research:",
                 "Historical reading:"
@@ -2869,9 +3073,9 @@
             {
               "section": "Links contained in the Pharmaceutical Manufacturing research note",
               "url": "/post/pharmaceutical-industry/#links-contained-in-the-pharmaceutical-manufacturing-research-note",
-              "text": "ClinicalTrials.gov .",
+              "text": "ClinicalTrials.gov — official NLM trial-search and registration portal. Registration is not proof of efficacy or regulatory approval, and the U.S. government does not review or approve the safety and science of every listed study.",
               "notes": [
-                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Two links that pointed through Google searches are shown as direct destinations; duplicate links appear once.",
+                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Destinations and scope were reviewed on 2026-10-03 . Two links that pointed through Google searches are shown as direct destinations; repeated references share the same underlying source. An unresolved access or content check does not establish that a link is dead.",
                 "Regulation and trials:",
                 "Scientific and commercial research:",
                 "Historical reading:"
@@ -2891,9 +3095,9 @@
             {
               "section": "Links contained in the Pharmaceutical Manufacturing research note",
               "url": "/post/pharmaceutical-industry/#links-contained-in-the-pharmaceutical-manufacturing-research-note",
-              "text": "Chinese Clinical Trial Registry .",
+              "text": "Chinese Clinical Trial Registry — trial-search and registration lead; no individual trial record or result was verified in this review.",
               "notes": [
-                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Two links that pointed through Google searches are shown as direct destinations; duplicate links appear once.",
+                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Destinations and scope were reviewed on 2026-10-03 . Two links that pointed through Google searches are shown as direct destinations; repeated references share the same underlying source. An unresolved access or content check does not establish that a link is dead.",
                 "Regulation and trials:",
                 "Scientific and commercial research:",
                 "Historical reading:"
@@ -2904,7 +3108,7 @@
         {
           "id": "fe40ca7e0446",
           "url": "https://www.clinicaltrialsregister.eu/",
-          "title": "EU Clinical Trials Register",
+          "title": "EU Clinical Trials Register — legacy EudraCT records",
           "kind": "link",
           "format": "Web",
           "host": "clinicaltrialsregister.eu",
@@ -2913,9 +3117,31 @@
             {
               "section": "Links contained in the Pharmaceutical Manufacturing research note",
               "url": "/post/pharmaceutical-industry/#links-contained-in-the-pharmaceutical-manufacturing-research-note",
-              "text": "EU Clinical Trials Register .",
+              "text": "EU Clinical Trials Register — legacy EudraCT records — retains EudraCT trials/results and specified third-country records. Ongoing EU/EEA trials are now displayed through CTIS: search for clinical trials . CTIS supplements the legacy register; it does not replace access to its historical records. Neither portal’s inclusion verifies a particular trial’s results.",
               "notes": [
-                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Two links that pointed through Google searches are shown as direct destinations; duplicate links appear once.",
+                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Destinations and scope were reviewed on 2026-10-03 . Two links that pointed through Google searches are shown as direct destinations; repeated references share the same underlying source. An unresolved access or content check does not establish that a link is dead.",
+                "Regulation and trials:",
+                "Scientific and commercial research:",
+                "Historical reading:"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7b6593da3e0d",
+          "url": "https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en",
+          "title": "CTIS: search for clinical trials",
+          "kind": "link",
+          "format": "Web",
+          "host": "euclinicaltrials.eu",
+          "local": false,
+          "citations": [
+            {
+              "section": "Links contained in the Pharmaceutical Manufacturing research note",
+              "url": "/post/pharmaceutical-industry/#links-contained-in-the-pharmaceutical-manufacturing-research-note",
+              "text": "EU Clinical Trials Register — legacy EudraCT records — retains EudraCT trials/results and specified third-country records. Ongoing EU/EEA trials are now displayed through CTIS: search for clinical trials . CTIS supplements the legacy register; it does not replace access to its historical records. Neither portal’s inclusion verifies a particular trial’s results.",
+              "notes": [
+                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Destinations and scope were reviewed on 2026-10-03 . Two links that pointed through Google searches are shown as direct destinations; repeated references share the same underlying source. An unresolved access or content check does not establish that a link is dead.",
                 "Regulation and trials:",
                 "Scientific and commercial research:",
                 "Historical reading:"
@@ -2935,9 +3161,9 @@
             {
               "section": "Links contained in the Pharmaceutical Manufacturing research note",
               "url": "/post/pharmaceutical-industry/#links-contained-in-the-pharmaceutical-manufacturing-research-note",
-              "text": "DrugBank .",
+              "text": "DrugBank — commercial drug-data and biopharma-intelligence lead; no licensed dataset, individual molecule claim, or market figure was verified.",
               "notes": [
-                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Two links that pointed through Google searches are shown as direct destinations; duplicate links appear once.",
+                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Destinations and scope were reviewed on 2026-10-03 . Two links that pointed through Google searches are shown as direct destinations; repeated references share the same underlying source. An unresolved access or content check does not establish that a link is dead.",
                 "Regulation and trials:",
                 "Scientific and commercial research:",
                 "Historical reading:"
@@ -2957,9 +3183,9 @@
             {
               "section": "Links contained in the Pharmaceutical Manufacturing research note",
               "url": "/post/pharmaceutical-industry/#links-contained-in-the-pharmaceutical-manufacturing-research-note",
-              "text": "IUPHAR/BPS Guide to Pharmacology .",
+              "text": "IUPHAR/BPS Guide to Pharmacology — target, ligand, and pharmacology research lead. Its homepage stated that registration is required to use the website; unrestricted access should not be assumed, and no registration was attempted.",
               "notes": [
-                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Two links that pointed through Google searches are shown as direct destinations; duplicate links appear once.",
+                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Destinations and scope were reviewed on 2026-10-03 . Two links that pointed through Google searches are shown as direct destinations; repeated references share the same underlying source. An unresolved access or content check does not establish that a link is dead.",
                 "Regulation and trials:",
                 "Scientific and commercial research:",
                 "Historical reading:"
@@ -2979,9 +3205,9 @@
             {
               "section": "Links contained in the Pharmaceutical Manufacturing research note",
               "url": "/post/pharmaceutical-industry/#links-contained-in-the-pharmaceutical-manufacturing-research-note",
-              "text": "PubChem .",
+              "text": "PubChem — NCBI chemical-information search portal; no specific compound record or scientific claim was verified by inspecting the homepage.",
               "notes": [
-                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Two links that pointed through Google searches are shown as direct destinations; duplicate links appear once.",
+                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Destinations and scope were reviewed on 2026-10-03 . Two links that pointed through Google searches are shown as direct destinations; repeated references share the same underlying source. An unresolved access or content check does not establish that a link is dead.",
                 "Regulation and trials:",
                 "Scientific and commercial research:",
                 "Historical reading:"
@@ -3001,9 +3227,9 @@
             {
               "section": "Links contained in the Pharmaceutical Manufacturing research note",
               "url": "/post/pharmaceutical-industry/#links-contained-in-the-pharmaceutical-manufacturing-research-note",
-              "text": "DXY Insight .",
+              "text": "DXY Insight — commercial research-database landing page with trial, registration, marketed-drug, and company-data modules; underlying licensed data and report figures were not inspected.",
               "notes": [
-                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Two links that pointed through Google searches are shown as direct destinations; duplicate links appear once.",
+                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Destinations and scope were reviewed on 2026-10-03 . Two links that pointed through Google searches are shown as direct destinations; repeated references share the same underlying source. An unresolved access or content check does not establish that a link is dead.",
                 "Regulation and trials:",
                 "Scientific and commercial research:",
                 "Historical reading:"
@@ -3023,9 +3249,9 @@
             {
               "section": "Links contained in the Pharmaceutical Manufacturing research note",
               "url": "/post/pharmaceutical-industry/#links-contained-in-the-pharmaceutical-manufacturing-research-note",
-              "text": "FiercePharma .",
+              "text": "FiercePharma — news publication homepage, not a specific article or primary historical, scientific, or market source.",
               "notes": [
-                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Two links that pointed through Google searches are shown as direct destinations; duplicate links appear once.",
+                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Destinations and scope were reviewed on 2026-10-03 . Two links that pointed through Google searches are shown as direct destinations; repeated references share the same underlying source. An unresolved access or content check does not establish that a link is dead.",
                 "Regulation and trials:",
                 "Scientific and commercial research:",
                 "Historical reading:"
@@ -3045,9 +3271,9 @@
             {
               "section": "Links contained in the Pharmaceutical Manufacturing research note",
               "url": "/post/pharmaceutical-industry/#links-contained-in-the-pharmaceutical-manufacturing-research-note",
-              "text": "FierceBiotech .",
+              "text": "FierceBiotech — news publication homepage; a specific article and its underlying evidence are needed for a claim-level citation.",
               "notes": [
-                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Two links that pointed through Google searches are shown as direct destinations; duplicate links appear once.",
+                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Destinations and scope were reviewed on 2026-10-03 . Two links that pointed through Google searches are shown as direct destinations; repeated references share the same underlying source. An unresolved access or content check does not establish that a link is dead.",
                 "Regulation and trials:",
                 "Scientific and commercial research:",
                 "Historical reading:"
@@ -3058,7 +3284,7 @@
         {
           "id": "704ffe2e421f",
           "url": "https://endpts.com/",
-          "title": "Endpoints News",
+          "title": "Endpoints News — original reference",
           "kind": "link",
           "format": "Web",
           "host": "endpts.com",
@@ -3067,9 +3293,9 @@
             {
               "section": "Links contained in the Pharmaceutical Manufacturing research note",
               "url": "/post/pharmaceutical-industry/#links-contained-in-the-pharmaceutical-manufacturing-research-note",
-              "text": "Endpoints News .",
+              "text": "Endpoints News — original reference — Content not confirmed in the 2026-10-03 review . The exact homepage returned HTTP 403; related event pages did not verify its content or provide an equivalent replacement. This access block does not establish deletion.",
               "notes": [
-                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Two links that pointed through Google searches are shown as direct destinations; duplicate links appear once.",
+                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Destinations and scope were reviewed on 2026-10-03 . Two links that pointed through Google searches are shown as direct destinations; repeated references share the same underlying source. An unresolved access or content check does not establish that a link is dead.",
                 "Regulation and trials:",
                 "Scientific and commercial research:",
                 "Historical reading:"
@@ -3089,9 +3315,9 @@
             {
               "section": "Links contained in the Pharmaceutical Manufacturing research note",
               "url": "/post/pharmaceutical-industry/#links-contained-in-the-pharmaceutical-manufacturing-research-note",
-              "text": "BioWorld — direct destination of the note’s search link.",
+              "text": "BioWorld — direct publication destination of the note’s search link; no particular paid article or dataset was independently inspected.",
               "notes": [
-                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Two links that pointed through Google searches are shown as direct destinations; duplicate links appear once.",
+                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Destinations and scope were reviewed on 2026-10-03 . Two links that pointed through Google searches are shown as direct destinations; repeated references share the same underlying source. An unresolved access or content check does not establish that a link is dead.",
                 "Regulation and trials:",
                 "Scientific and commercial research:",
                 "Historical reading:"
@@ -3111,9 +3337,9 @@
             {
               "section": "Links contained in the Pharmaceutical Manufacturing research note",
               "url": "/post/pharmaceutical-industry/#links-contained-in-the-pharmaceutical-manufacturing-research-note",
-              "text": "NLM biography of Frances Oldham Kelsey .",
+              "text": "NLM biography of Frances Oldham Kelsey — supports the historical thalidomide-application and regulatory-career account. It does not establish that thalidomide has never subsequently been approved for any indication.",
               "notes": [
-                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Two links that pointed through Google searches are shown as direct destinations; duplicate links appear once.",
+                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Destinations and scope were reviewed on 2026-10-03 . Two links that pointed through Google searches are shown as direct destinations; repeated references share the same underlying source. An unresolved access or content check does not establish that a link is dead.",
                 "Regulation and trials:",
                 "Scientific and commercial research:",
                 "Historical reading:"
@@ -3124,7 +3350,7 @@
         {
           "id": "ae9716212365",
           "url": "https://www.bayer.com/en/history/cl0n3-of-history",
-          "title": "Bayer’s historical article",
+          "title": "Bayer’s historical article — original reference",
           "kind": "link",
           "format": "Web",
           "host": "bayer.com",
@@ -3133,9 +3359,9 @@
             {
               "section": "Links contained in the Pharmaceutical Manufacturing research note",
               "url": "/post/pharmaceutical-industry/#links-contained-in-the-pharmaceutical-manufacturing-research-note",
-              "text": "Bayer’s historical article and Bayer homepage .",
+              "text": "Bayer’s historical article — original reference — Content not confirmed in the 2026-10-03 review . Bayer’s bot-access block prevented inspection of this path; it is not established to be deleted.",
               "notes": [
-                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Two links that pointed through Google searches are shown as direct destinations; duplicate links appear once.",
+                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Destinations and scope were reviewed on 2026-10-03 . Two links that pointed through Google searches are shown as direct destinations; repeated references share the same underlying source. An unresolved access or content check does not establish that a link is dead.",
                 "Regulation and trials:",
                 "Scientific and commercial research:",
                 "Historical reading:"
@@ -3155,9 +3381,9 @@
             {
               "section": "Links contained in the Pharmaceutical Manufacturing research note",
               "url": "/post/pharmaceutical-industry/#links-contained-in-the-pharmaceutical-manufacturing-research-note",
-              "text": "Bayer’s historical article and Bayer homepage .",
+              "text": "Bayer homepage — redirects to the English corporate homepage; company context only, not evidence for a particular historical event.",
               "notes": [
-                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Two links that pointed through Google searches are shown as direct destinations; duplicate links appear once.",
+                "These are the note’s reading leads, not independent verification of every claim or an endorsement of paid databases. Destinations and scope were reviewed on 2026-10-03 . Two links that pointed through Google searches are shown as direct destinations; repeated references share the same underlying source. An unresolved access or content check does not establish that a link is dead.",
                 "Regulation and trials:",
                 "Scientific and commercial research:",
                 "Historical reading:"
@@ -3228,7 +3454,7 @@
             {
               "section": "Source notes and primary materials",
               "url": "/post/vr-industry-report-2026/#source-notes-and-primary-materials",
-              "text": "Meta: fourth-quarter and full-year 2025 results — source for Reality Labs’ 2025 segment operating loss , not a headset unit count or company-wide net loss.",
+              "text": "Meta: fourth-quarter and full-year 2025 results — source for Reality Labs’ 2025 segment operating loss ; the release’s segment table is unaudited . It is not a headset unit count or company-wide net loss.",
               "notes": [
                 "The supplied China Mobile Research Institute VR/AR Product Development Status and Trend report dates from November 2022 . An original publisher-hosted URL was not verified, so it is recorded here bibliographically rather than linked to an unlicensed copy or used to justify a 2026 market-share claim. The Goertek and Luxshare reports likewise cannot substitute for a defined current shipment survey."
               ]
@@ -3238,7 +3464,7 @@
         {
           "id": "f9f6598a0ee4",
           "url": "https://www.eng.utah.edu/~cs6360/Readings/UltimateDisplay.pdf",
-          "title": "Sutherland, The Ultimate Display (1965): University of Utah PDF",
+          "title": "Sutherland, The Ultimate Display (1965): University of Utah-hosted reproduction (PDF)",
           "kind": "file",
           "format": "PDF",
           "host": "eng.utah.edu",
@@ -3247,17 +3473,17 @@
             {
               "section": "Source notes and primary materials",
               "url": "/post/vr-industry-report-2026/#source-notes-and-primary-materials",
-              "text": "Ivan Sutherland, The Ultimate Display (1965) — the supplied historical paper about an interactive display vision; not a 2026 product or market forecast.",
+              "text": "Ivan Sutherland, The Ultimate Display (1965) — a University of Utah-hosted reproduction of the historical paper, which cites Proceedings of IFIP Congress , pp. 506–508 (1965). It supports an interactive-display vision, not a 2026 product or market forecast, and is not an original publisher-hosted file.",
               "notes": [
                 "The supplied China Mobile Research Institute VR/AR Product Development Status and Trend report dates from November 2022 . An original publisher-hosted URL was not verified, so it is recorded here bibliographically rather than linked to an unlicensed copy or used to justify a 2026 market-share claim. The Goertek and Luxshare reports likewise cannot substitute for a defined current shipment survey."
               ]
             },
             {
-              "section": "Supplied original documents",
+              "section": "Supplied documents and reproductions",
               "url": "/post/vr-industry-report-2026/#supplied-original-documents",
-              "text": "Sutherland, The Ultimate Display (1965): University of Utah PDF .",
+              "text": "Sutherland, The Ultimate Display (1965): University of Utah-hosted reproduction (PDF) .",
               "notes": [
-                "The following documents can be opened from their publishers. They are not copied to this website while redistribution rights remain unverified:",
+                "The following links open company-hosted filings, filings on the company’s disclosure platform, or the university-hosted reproduction identified below. They are not copied to this website while redistribution rights remain unverified:",
                 "The supplied 2022 China Mobile Research Institute VR/AR report is not offered here as a download because its publisher-hosted original and redistribution terms have not been confirmed."
               ]
             }
@@ -3283,18 +3509,18 @@
           ]
         },
         {
-          "id": "b0484c6e28a4",
-          "url": "https://www.luxshare-ict.com/investors/financial-reports.html",
+          "id": "3276cb5f197b",
+          "url": "https://ir.luxshare-ict.com/cn/investor-relations/financial-reports/a-share/",
           "title": "Luxshare Precision investor relations: 2025 annual report and Q1 2026 report",
           "kind": "link",
           "format": "Web",
-          "host": "luxshare-ict.com",
+          "host": "ir.luxshare-ict.com",
           "local": false,
           "citations": [
             {
               "section": "Source notes and primary materials",
               "url": "/post/vr-industry-report-2026/#source-notes-and-primary-materials",
-              "text": "Luxshare Precision investor relations: 2025 annual report and Q1 2026 report — company-wide financial filings supplied for manufacturing context; neither independently measures the entire VR market.",
+              "text": "Luxshare Precision investor relations: 2025 annual report and Q1 2026 report — the current official financial-report directory lists the annual report on April 15, 2026 , and the Q1 report on April 29, 2026 . These are company-wide filings supplied for manufacturing context; the Q1 financial statements are unaudited , and neither report independently measures the entire VR market.",
               "notes": [
                 "The supplied China Mobile Research Institute VR/AR Product Development Status and Trend report dates from November 2022 . An original publisher-hosted URL was not verified, so it is recorded here bibliographically rather than linked to an unlicensed copy or used to justify a 2026 market-share claim. The Goertek and Luxshare reports likewise cannot substitute for a defined current shipment survey."
               ]
@@ -3311,11 +3537,11 @@
           "local": false,
           "citations": [
             {
-              "section": "Supplied original documents",
+              "section": "Supplied documents and reproductions",
               "url": "/post/vr-industry-report-2026/#supplied-original-documents",
               "text": "Goertek, 2024 Annual Report: publisher-hosted PDF .",
               "notes": [
-                "The following documents can be opened from their publishers. They are not copied to this website while redistribution rights remain unverified:",
+                "The following links open company-hosted filings, filings on the company’s disclosure platform, or the university-hosted reproduction identified below. They are not copied to this website while redistribution rights remain unverified:",
                 "The supplied 2022 China Mobile Research Institute VR/AR report is not offered here as a download because its publisher-hosted original and redistribution terms have not been confirmed."
               ]
             }
@@ -3331,11 +3557,11 @@
           "local": false,
           "citations": [
             {
-              "section": "Supplied original documents",
+              "section": "Supplied documents and reproductions",
               "url": "/post/vr-industry-report-2026/#supplied-original-documents",
               "text": "Luxshare Precision, 2025 Annual Report (English): PDF on the company’s disclosure platform .",
               "notes": [
-                "The following documents can be opened from their publishers. They are not copied to this website while redistribution rights remain unverified:",
+                "The following links open company-hosted filings, filings on the company’s disclosure platform, or the university-hosted reproduction identified below. They are not copied to this website while redistribution rights remain unverified:",
                 "The supplied 2022 China Mobile Research Institute VR/AR report is not offered here as a download because its publisher-hosted original and redistribution terms have not been confirmed."
               ]
             }
@@ -3351,11 +3577,11 @@
           "local": false,
           "citations": [
             {
-              "section": "Supplied original documents",
+              "section": "Supplied documents and reproductions",
               "url": "/post/vr-industry-report-2026/#supplied-original-documents",
               "text": "Luxshare Precision, 2026 Q1 Report (Chinese): PDF on the company’s disclosure platform .",
               "notes": [
-                "The following documents can be opened from their publishers. They are not copied to this website while redistribution rights remain unverified:",
+                "The following links open company-hosted filings, filings on the company’s disclosure platform, or the university-hosted reproduction identified below. They are not copied to this website while redistribution rights remain unverified:",
                 "The supplied 2022 China Mobile Research Institute VR/AR report is not offered here as a download because its publisher-hosted original and redistribution terms have not been confirmed."
               ]
             }
@@ -3369,8 +3595,8 @@
       "url": "/post/cybersecurity-industry-report/",
       "published": "2026-08-11",
       "notices": [
-        "The accompanying Network Security document is a research reading list, not primary verification for the anonymous casino account or the removed market figures. The incident specifics remain unverified in public primary records.",
-        "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included."
+        "Reference review: 2026-10-03 . The accompanying Network Security document is a research reading list, not primary verification for the anonymous casino account or the removed market figures. The incident specifics remain unverified in public primary records. Access checks and topic matches do not independently verify every statement in a source.",
+        "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination."
       ],
       "entries": [
         {
@@ -3427,9 +3653,9 @@
             {
               "section": "Source notes and primary materials",
               "url": "/post/cybersecurity-industry-report/#source-notes-and-primary-materials",
-              "text": "NIST SP 800-207: Zero Trust Architecture (2020) — original standard supplied with the working materials. It defines an architectural approach, not market size or company share.",
+              "text": "NIST SP 800-207: Zero Trust Architecture (2020) — August 2020 architectural guidance supplied with the working materials. This Special Publication defines a zero-trust approach; it is not a product certification, market-size dataset, or company-share ranking.",
               "notes": [
-                "The accompanying Network Security document is a research reading list, not primary verification for the anonymous casino account or the removed market figures. The incident specifics remain unverified in public primary records."
+                "Reference review: 2026-10-03 . The accompanying Network Security document is a research reading list, not primary verification for the anonymous casino account or the removed market figures. The incident specifics remain unverified in public primary records. Access checks and topic matches do not independently verify every statement in a source."
               ]
             }
           ]
@@ -3446,27 +3672,23 @@
             {
               "section": "Source notes and primary materials",
               "url": "/post/cybersecurity-industry-report/#source-notes-and-primary-materials",
-              "text": "Menlo Ventures: Cybersecurity Market Map (2022) — the supplied category/company map, a 2022 snapshot rather than a 2026 revenue dataset or endorsement of the named vendors.",
+              "text": "Menlo Ventures: Cybersecurity Market Map (2022) — Menlo Ventures, 2022, 2 pages. A dated category/vendor map, not a revenue-share dataset, current ranking, or endorsement of the named vendors.",
               "notes": [
-                "The accompanying Network Security document is a research reading list, not primary verification for the anonymous casino account or the removed market figures. The incident specifics remain unverified in public primary records."
+                "Reference review: 2026-10-03 . The accompanying Network Security document is a research reading list, not primary verification for the anonymous casino account or the removed market figures. The incident specifics remain unverified in public primary records. Access checks and topic matches do not independently verify every statement in a source."
               ]
             },
             {
               "section": "View or download the supplied original",
               "url": "/post/cybersecurity-industry-report/#view-or-download-the-supplied-original",
-              "text": "The Menlo Ventures Cybersecurity Market Map PDF is available directly from its publisher; it is not hosted here because permission to redistribute that copyrighted PDF has not been established.",
-              "notes": [
-                "NIST SP 800-207: Zero Trust Architecture (2020)",
-                "Original PDF · National Institute of Standards and Technology, 59 pages",
-                "If the preview is unavailable in your browser, use “Open PDF in a new tab” above."
-              ]
+              "text": "The Menlo Ventures Cybersecurity Market Map PDF is a separate 2-page, 2022 category/vendor map, available directly from Menlo Ventures. It is not the 59-page NIST publication previewed above and does not report revenue shares. It is not hosted here because permission to redistribute that copyrighted PDF has not been established.",
+              "notes": []
             },
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "Menlo Ventures: market map PDF .",
+              "text": "Menlo Ventures: market map PDF — 2-page 2022 category/vendor map, not revenue shares or a current company ranking.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -3477,7 +3699,7 @@
         {
           "id": "7c432c30f574",
           "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa21-356a",
-          "title": "CISA: Apache Log4j vulnerability advisory",
+          "title": "CISA: Apache Log4j vulnerability advisory AA21-356A",
           "kind": "link",
           "format": "Web",
           "host": "cisa.gov",
@@ -3486,9 +3708,9 @@
             {
               "section": "Source notes and primary materials",
               "url": "/post/cybersecurity-industry-report/#source-notes-and-primary-materials",
-              "text": "CISA: Apache Log4j vulnerability advisory — primary security guidance for the software-supply-chain example.",
+              "text": "CISA: Apache Log4j vulnerability advisory AA21-356A — archived primary advisory, revised December 23, 2021, supporting the historical software-library vulnerability example. Direct retrieval returned HTTP 403; its official-domain indexed text was inspected. The 2021 mitigation instructions should not be treated as current operational advice. This advisory is separate from the unresolved CISA guidance-page link in the reading list.",
               "notes": [
-                "The accompanying Network Security document is a research reading list, not primary verification for the anonymous casino account or the removed market figures. The incident specifics remain unverified in public primary records."
+                "Reference review: 2026-10-03 . The accompanying Network Security document is a research reading list, not primary verification for the anonymous casino account or the removed market figures. The incident specifics remain unverified in public primary records. Access checks and topic matches do not independently verify every statement in a source."
               ]
             }
           ]
@@ -3536,9 +3758,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "NIST SP 800-207 PDF .",
+              "text": "NIST SP 800-207 PDF — August 2020, 59 pages, architectural guidance; no market size, company-share ranking, or product certification.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -3558,9 +3780,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "The Hacker News: aquarium thermometer incident .",
+              "text": "The Hacker News: aquarium thermometer incident — April 16, 2018 retelling of then-Darktrace CEO Nicole Eagan’s anonymous casino account; not independent incident verification.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -3580,9 +3802,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "Entrepreneur: casino thermometer account .",
+              "text": "Entrepreneur: casino thermometer account — April 14, 2021 retelling citing a 2018 account of the same Darktrace story; not a second independent case or corroboration.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -3602,9 +3824,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "Privacy International: aquarium thermometer account .",
+              "text": "Privacy International: aquarium thermometer account — April 15, 2018 summary of the same Darktrace conference account; does not independently identify the casino or confirm incident details.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -3624,9 +3846,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "Cyber Magazine: history of cybersecurity .",
+              "text": "Cyber Magazine: history of cybersecurity — October 4, 2021 secondary overview. Its historical forecasts and broad “first” claims are not verified current market data or primary evidence of priority.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -3646,9 +3868,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "History of Information: first computer virus .",
+              "text": "History of Information: first computer virus — Creeper history entry drawing on an earlier Wikipedia account; a secondary reading lead, not primary evidence for contested “first virus” terminology.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -3668,9 +3890,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "Wikipedia: Creeper and Reaper .",
+              "text": "Wikipedia: Creeper and Reaper — encyclopedia synthesis for orientation and underlying references; not primary historical verification.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -3690,9 +3912,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "KMC Controls: Creeper and Reaper .",
+              "text": "KMC Controls: Creeper and Reaper — July 1, 2024 vendor background article, itself citing a vendor explainer. Its “BBM” spelling is not evidence for the organization’s name; do not use it as a primary historical authority.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -3703,7 +3925,7 @@
         {
           "id": "c2b590df5557",
           "url": "https://www.atarimagazines.com/startv4n10/virus.php",
-          "title": "Atari Magazine: virus explainer",
+          "title": "Atari Magazine: Computer Viruses And The ST",
           "kind": "link",
           "format": "Web",
           "host": "atarimagazines.com",
@@ -3712,9 +3934,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "Atari Magazine: virus explainer .",
+              "text": "Atari Magazine: Computer Viruses And The ST — archive of George Woodside’s May 1990 START article about ST viruses and VKILLER. Historical descriptions and software advice retain their 1990 context.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -3734,9 +3956,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "Atari Mania: ST Virus Killer .",
+              "text": "Atari Mania: ST Virus Killer — legacy URL redirects to a catalogue entry attributing the program to 1991; does not establish the earliest antivirus product.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -3747,7 +3969,7 @@
         {
           "id": "9697f4f88b48",
           "url": "https://www.carifred.com/uvk/",
-          "title": "Carifred: UVK",
+          "title": "Carifred: UVK — Ultra Virus Killer for Windows",
           "kind": "link",
           "format": "Web",
           "host": "carifred.com",
@@ -3756,9 +3978,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "Carifred: UVK .",
+              "text": "Carifred: UVK — Ultra Virus Killer for Windows — modern product whose publisher dates its start to 2010. It is different from the historical Atari Ultimate Virus Killer and cannot substantiate an Atari-era antivirus claim.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -3778,9 +4000,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "Wikipedia: ESET NOD32 .",
+              "text": "Wikipedia: ESET NOD32 — encyclopedia product-history lead; inclusion does not verify a specific chronology or company metric.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -3791,7 +4013,7 @@
         {
           "id": "77f58c471581",
           "url": "https://archive.org/details/malwaremuseum",
-          "title": "Internet Archive: Malware Museum",
+          "title": "Internet Archive: Malware Museum — original reference",
           "kind": "link",
           "format": "Web",
           "host": "archive.org",
@@ -3800,9 +4022,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "Internet Archive: Malware Museum .",
+              "text": "Internet Archive: Malware Museum — original reference — Content not confirmed in the 2026-10-03 review . The collection could not be retrieved or inspected; this does not establish deletion.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -3822,9 +4044,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "Wikipedia: G Data CyberDefense .",
+              "text": "Wikipedia: G Data CyberDefense — encyclopedia company-history lead, not primary evidence for commercial-antivirus “firsts” or current company metrics.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -3844,9 +4066,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "Wikipedia: security-hacking incidents .",
+              "text": "Wikipedia: security-hacking incidents — chronological reading list; specific incident claims require their underlying records.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -3866,9 +4088,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "Purdue TAP: hackers of the 2000s .",
+              "text": "Purdue TAP: hackers of the 2000s — August 27, 2024 historical overview; institutional hosting does not make a retrospective a primary incident record.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -3888,9 +4110,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "Cofense: history of phishing .",
+              "text": "Cofense: history of phishing — June 6, 2023 vendor-authored historical background, not original incident evidence.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -3910,9 +4132,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "Wikipedia: computer virus and worm timeline .",
+              "text": "Wikipedia: computer virus and worm timeline — orientation and reference-finding only; the inspected page also carried a cleanup warning about entry noteworthiness.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -3923,7 +4145,7 @@
         {
           "id": "a46f1597b713",
           "url": "https://www.cisa.gov/news-events/news/apache-log4j-vulnerability-guidance",
-          "title": "CISA: Log4j guidance",
+          "title": "CISA: Log4j guidance — original reference",
           "kind": "link",
           "format": "Web",
           "host": "cisa.gov",
@@ -3932,9 +4154,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "CISA: Log4j guidance .",
+              "text": "CISA: Log4j guidance — original reference — Content not confirmed in the 2026-10-03 review . The exact guidance URL returned HTTP 403, and its content or current destination was not established. The separately cited AA21-356A advisory does not verify this specific page.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -3954,9 +4176,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "Wikipedia: Sony Pictures hack .",
+              "text": "Wikipedia: Sony Pictures hack — encyclopedia background; specific incident and attribution claims require underlying official evidence.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -3976,9 +4198,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "Wikipedia: WannaCry attack .",
+              "text": "Wikipedia: WannaCry attack — encyclopedia background, not a primary incident report or verified loss estimate.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -3998,9 +4220,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "Mordor Intelligence: cybersecurity market .",
+              "text": "Mordor Intelligence: cybersecurity market — commercial report landing page with a 2026–2031 outlook at review. Its changing proprietary estimates do not restore the removed market figures; the paid report was not independently inspected.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -4020,9 +4242,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "Cloudflare: next-generation firewalls .",
+              "text": "Cloudflare: next-generation firewalls — vendor-authored technical explanation of NGFW features; does not establish market share or product effectiveness.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -4033,7 +4255,7 @@
         {
           "id": "bef3795fbbd5",
           "url": "https://cybersecurityventures.com/",
-          "title": "Cybersecurity Ventures",
+          "title": "Cybersecurity Ventures / Cybercrime Magazine",
           "kind": "link",
           "format": "Web",
           "host": "cybersecurityventures.com",
@@ -4042,9 +4264,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "Cybersecurity Ventures .",
+              "text": "Cybersecurity Ventures / Cybercrime Magazine — publisher homepage and research-discovery lead, not a particular report or traceable dataset for a market number.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -4064,9 +4286,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "U.S. Securities and Exchange Commission .",
+              "text": "U.S. Securities and Exchange Commission — official research portal for filings and other materials; a specific filing is needed to substantiate an issuer’s financial or cybersecurity metric.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -4086,9 +4308,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "IBM: a decade of global cyberattacks .",
+              "text": "IBM: a decade of global cyberattacks — Mike Elgan’s retrospective covering 2013–2023; background reading rather than original evidence for all incident figures it recounts.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -4099,7 +4321,7 @@
         {
           "id": "2b3395d78e57",
           "url": "https://www.csoonline.com/search/?q=Target+data+breach+2013+timeline",
-          "title": "CSO: Target breach timeline search",
+          "title": "CSO: Target breach timeline search — original reference",
           "kind": "link",
           "format": "Web",
           "host": "csoonline.com",
@@ -4108,9 +4330,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "CSO: Target breach timeline search .",
+              "text": "CSO: Target breach timeline search — original reference — Content not confirmed in the 2026-10-03 review . This is a search URL, not a verified direct article; neither the search page nor an underlying timeline was inspected.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -4121,7 +4343,7 @@
         {
           "id": "101ab91ed1be",
           "url": "https://youtu.be/b_Cbfh0_9Ws?si=Nnc074hC6b-Ai_hp",
-          "title": "Video 1",
+          "title": "Video 1 — original reference",
           "kind": "link",
           "format": "Web",
           "host": "youtu.be",
@@ -4130,9 +4352,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "Video 1 .",
+              "text": "Video 1 — original reference — Content not confirmed in the 2026-10-03 review . Title, channel, and topic remain unconfirmed after retrieval attempts; the video is not established to be deleted.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -4143,7 +4365,7 @@
         {
           "id": "fcf137bc8185",
           "url": "https://youtu.be/O4fpqXjkdQM?si=cvrBatlQCwLvKdbC",
-          "title": "Video 2",
+          "title": "Video 2 — original reference",
           "kind": "link",
           "format": "Web",
           "host": "youtu.be",
@@ -4152,9 +4374,31 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "Video 2 .",
+              "text": "Video 2 — original reference — Content not confirmed in the 2026-10-03 review . Title, channel, and topic remain unconfirmed after retrieval attempts; the video is not established to be deleted.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
+                "Incident and industry background:",
+                "Market and technical references:",
+                "Video references from the note (third-party material, not licensed for reuse here):"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e693f69939b7",
+          "url": "https://www.youtube.com/watch?v=yn6CPQ9RioA",
+          "title": "Video 3: IBM Technology — Zero Trust Explained in 4 mins",
+          "kind": "link",
+          "format": "Web",
+          "host": "youtube.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Links contained in the Network Security research note",
+              "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
+              "text": "Video 3: IBM Technology — Zero Trust Explained in 4 mins — canonical same-ID page identifies IBM Technology, September 10, 2021, and a 3:42 runtime. Title, description, and chapter labels were inspected; the full audiovisual content and transcript were not independently reviewed. Educational reading lead only. Original short-link reference retained for provenance.",
+              "notes": [
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -4165,7 +4409,7 @@
         {
           "id": "592898bae058",
           "url": "https://youtu.be/yn6CPQ9RioA?si=1oHfRgTD8KWDVt9P",
-          "title": "Video 3",
+          "title": "Original short-link reference",
           "kind": "link",
           "format": "Web",
           "host": "youtu.be",
@@ -4174,9 +4418,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "Video 3 .",
+              "text": "Video 3: IBM Technology — Zero Trust Explained in 4 mins — canonical same-ID page identifies IBM Technology, September 10, 2021, and a 3:42 runtime. Title, description, and chapter labels were inspected; the full audiovisual content and transcript were not independently reviewed. Educational reading lead only. Original short-link reference retained for provenance.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -4187,7 +4431,7 @@
         {
           "id": "82f00f533bdd",
           "url": "https://youtu.be/tpBXSCMJXq4?si=omqdLRt6QzxRT2km",
-          "title": "Video 4",
+          "title": "Video 4 — original reference",
           "kind": "link",
           "format": "Web",
           "host": "youtu.be",
@@ -4196,9 +4440,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "Video 4 .",
+              "text": "Video 4 — original reference — Content not confirmed in the 2026-10-03 review . Title, channel, and topic remain unconfirmed after retrieval attempts; the video is not established to be deleted.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -4209,7 +4453,7 @@
         {
           "id": "0a84f9230924",
           "url": "https://youtu.be/PWVN3Rq4gzw?si=pIolrzQdIUM3Dgcb",
-          "title": "Video 5",
+          "title": "Video 5 — original reference",
           "kind": "link",
           "format": "Web",
           "host": "youtu.be",
@@ -4218,9 +4462,9 @@
             {
               "section": "Links contained in the Network Security research note",
               "url": "/post/cybersecurity-industry-report/#links-contained-in-the-network-security-research-note",
-              "text": "Video 5 .",
+              "text": "Video 5 — original reference — Content not confirmed in the 2026-10-03 review . A title-only search result was insufficient to verify the source; a Google unusual-traffic CAPTCHA then blocked inspection. Channel and video content remain unconfirmed, and deletion has not been established.",
               "notes": [
-                "These are the supplied note’s research and video links. They have not all been independently verified and should not be read as endorsement or primary evidence. Links without Word hyperlink formatting have also been included.",
+                "These are the supplied note’s research and video links, reviewed for destination and scope on 2026-10-03 . They have not all been independently verified and should not be read as endorsements or claim-level primary evidence. An unresolved access or content check does not establish that a link is dead. Original references are retained so readers can distinguish them from any separately checked destination.",
                 "Incident and industry background:",
                 "Market and technical references:",
                 "Video references from the note (third-party material, not licensed for reuse here):"
@@ -4233,8 +4477,8 @@
   ],
   "counts": {
     "articles": 7,
-    "materials": 191,
-    "files": 26,
+    "materials": 202,
+    "files": 30,
     "hosted_files": 8
   }
 }

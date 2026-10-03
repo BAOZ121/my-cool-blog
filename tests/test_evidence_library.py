@@ -17,6 +17,25 @@ class EvidenceExtractionTests(unittest.TestCase):
         self.assertIsNone(evidence.public_url("/industry-breakdowns/cybersecurity/", "/post/example/"))
         self.assertEqual(evidence.public_url("https://publisher.test/report.PDF#page=4", "/post/example/"), ("https://publisher.test/report.PDF#page=4", ".pdf", False))
         self.assertEqual(evidence.public_url("https://www.sec.gov/Archives/edgar/data/a.htm", "/post/example/")[2], False)
+        self.assertEqual(evidence.file_format("https://ojs.aaai.org/index.php/AAAI/article/view/41334/45295", ""), "PDF")
+        self.assertEqual(evidence.file_format("https://publisher.test/unknown/123", ""), "Web")
+
+    def test_pdf_preview_metadata_does_not_leak_to_next_source(self):
+        html = '''<h1 class="article-title">Cybersecurity</h1>
+        <section class="article-content"><h2 id="originals">Originals</h2>
+        <section class="research-original"><p class="research-original__title">NIST SP 800-207</p>
+        <p>Original PDF · NIST, 59 pages</p><p><a href="https://nist.test/report.pdf">Open PDF</a></p></section>
+        <p><a href="https://menlo.test/map.pdf">Menlo market map</a> is a 2-page category map.</p></section>'''
+        with tempfile.TemporaryDirectory() as directory:
+            build = Path(directory)
+            article = build / "post/example/index.html"
+            article.parent.mkdir(parents=True)
+            article.write_text(html)
+            result = evidence.parse_article(article, build)
+        nist, menlo = result["entries"]
+        self.assertIn("Original PDF · NIST, 59 pages", nist["citations"][0]["notes"])
+        self.assertNotIn("59 pages", str(menlo))
+        self.assertNotIn("NIST", str(menlo))
 
     def test_reference_titles_context_dedup_and_article_downloads(self):
         html = '''<h1 class="article-title">Example report</h1>

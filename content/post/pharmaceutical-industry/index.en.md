@@ -2,7 +2,7 @@
 title: "The Pharmaceutical Industry: History, Structure, and Challenges"
 description: "A deep dive into the 150-year evolution of the pharmaceutical industry, core market structures, and future challenges."
 date: 2026-08-21
-lastmod: 2026-09-29
+lastmod: 2026-10-03
 image: "cover.jpg"
 categories:
   - "Industry Report"
@@ -34,9 +34,7 @@ The modern pharmaceutical industry developed across more than a century of chemi
 
 Plant Extraction and Accidental Discovery.
 
-In 1899, the German dye giant Bayer launched Aspirin.
-
-Modern pharmaceuticals were born in the chemical and textile industries. Scientists, while developing synthetic dyes, discovered that certain coal tar derivatives and azo dyes had bactericidal or analgesic effects. At that time, German dye giants such as IG Farben naturally entered the pharmaceutical industry. At this time, the industry had almost no concept of "clinical trials," and drug sales were similar to folk remedies.
+Bayer is one example of the connection between synthetic-dye manufacturing and pharmaceutical development. Its [company history](https://www.bayer.com/en/about-us/history/history-timeline) records a pharmaceutical department in 1888 and the launch of Aspirin in 1899. Bayer joined I.G. Farben in 1925. This company account illustrates one path into pharmaceuticals; it does not establish a single origin for the whole industry or the absence of clinical investigation in that period.
 
 ### <span style="font-size: 1.5em; color: #1e3a8a;">2. 1940s - 1960s: Mass Production of Antibiotics and the Iron Curtain of Regulation (Foundational Period)</span>
 
@@ -159,7 +157,7 @@ Of course, high returns often come with high risks. This complex competitive lan
 
 ## Where medicines are sold
 
-The regional sales mix below describes the destinations of prescription medicine sales. It does not rank pharmaceutical companies.
+The regional sales mix below describes 2025 retail and hospital prescription medicine sales at ex-manufacturer prices, using IQVIA MIDAS figures reproduced in EFPIA’s *The Pharmaceutical Industry in Figures — Key Data 2026*, page 14. These are geographic sales destinations, not manufacturers’ headquarters or pharmaceutical-company market shares. The DEX CSV is a derivative export of this chart, not independent primary verification.
 
 {{< market-share id="pharma-regions-2025" >}}
 
@@ -191,42 +189,47 @@ The regional sales mix below describes the destinations of prescription medicine
 ## Source notes and primary materials
 
 - [FDA: Frances Oldham Kelsey and the thalidomide application](https://www.fda.gov/about-fda/fda-history-exhibits/frances-oldham-kelsey-medical-reviewer-famous-averting-public-health-tragedy) — supports the opening history; it does **not** establish an exact modern industry-wide R&D cost.
-- [Kefauver–Harris Drug Amendments, Public Law 87-781 (1962)](https://www.govinfo.gov/content/pkg/STATUTE-76/pdf/STATUTE-76-Pg780.pdf) — the original statute, supplied with the research materials; U.S. law, not a global law.
-- [Pfizer: company history](https://www.pfizer.com/about/history) — company account of penicillin production.
-- [Cencora: AmerisourceBergen becomes Cencora](https://www.cencora.com/newsroom/amerisourcebergen-becomes-cencora) — verifies the distributor's present name.
+- [Kefauver–Harris Drug Amendments, Public Law 87-781 (1962)](https://www.govinfo.gov/content/pkg/STATUTE-76/pdf/STATUTE-76-Pg780.pdf) — approved October 10, 1962, 76 Stat. 780–796. The original U.S. statute supports the safety/effectiveness and clinical-investigation history; it is not a global law. The 17-page scan ends on a shared page that also begins unrelated Public Law 87-782; that next law is not evidence for drug regulation.
+- [Pfizer: company history](https://www.pfizer.com/about/history) — self-authored company account of 1941 penicillin-production efforts and 1944 mass production using deep-tank fermentation; not an independent industry-wide history.
+- [Bayer: The History of Bayer — current timeline](https://www.bayer.com/en/about-us/history/history-timeline) — the current company history was inspected and supports the scoped dye-business, pharmaceutical-department, Aspirin, and 1925 merger example. It is a separate verified destination; the original blocked historical URL remains labelled below.
+- [Cencora: AmerisourceBergen becomes Cencora](https://www.cencora.com/newsroom/amerisourcebergen-becomes-cencora) — official August 30, 2023 release confirming the completed name and ticker change; supports the naming claim only.
 
-The accompanying *Pharmaceutical Manufacturing* working note is a reading list, not an independently verified market dataset. Its links have been matched to the relevant claims above; unverified figures have been removed rather than attributed to the note.
+Reference review: **2026-10-03**. The accompanying *Pharmaceutical Manufacturing* working note is a reading list, not an independently verified market dataset. The claim-level sources above are distinguished from research portals, commercial databases, and publication homepages below. Unverified figures have been removed rather than attributed to the note; an accessible homepage does not verify a particular drug, trial, article, or statistic.
 
 ## View or download the supplied original
 
 {{< research-pdf src="/research-files/pharmaceutical/STATUTE-76-Pg780.pdf" title="Kefauver–Harris Drug Amendments (1962)" publisher="U.S. Government Publishing Office, 17 pages" official="https://www.govinfo.gov/content/pkg/STATUTE-76/pdf/STATUTE-76-Pg780.pdf" >}}
 
+The final scanned page contains the end of Public Law 87-781 and the beginning of unrelated Public Law 87-782. Only the Drug Amendments portion supports this article’s regulatory-history discussion.
+
 ### Links contained in the Pharmaceutical Manufacturing research note
 
-These are the note's reading leads, not independent verification of every claim or an endorsement of paid databases. Two links that pointed through Google searches are shown as direct destinations; duplicate links appear once.
+These are the note's reading leads, not independent verification of every claim or an endorsement of paid databases. Destinations and scope were reviewed on **2026-10-03**. Two links that pointed through Google searches are shown as direct destinations; repeated references share the same underlying source. An unresolved access or content check does not establish that a link is dead.
 
 Regulation and trials:
 
-- [Drugs@FDA](https://www.accessdata.fda.gov/scripts/cder/daf/) — direct destination of the note's search link.
-- [China's CDE](https://www.cde.org.cn/).
-- [European Medicines Agency](https://www.ema.europa.eu/).
-- [ClinicalTrials.gov](https://clinicaltrials.gov/).
-- [Chinese Clinical Trial Registry](https://www.chictr.org.cn/).
-- [EU Clinical Trials Register](https://www.clinicaltrialsregister.eu/).
+- [Drugs@FDA](https://www.accessdata.fda.gov/scripts/cder/daf/) — official search portal and direct destination of the note's search link; no particular drug result or approval was verified by checking its homepage.
+- [China's CDE](https://www.cde.org.cn/) — official NMPA Center for Drug Evaluation research portal; use a specific notice or review record for a claim-level citation.
+- [European Medicines Agency](https://www.ema.europa.eu/) — redirects to the official English homepage; an institutional research lead, not a specific medicine or regulatory decision.
+- [ClinicalTrials.gov](https://clinicaltrials.gov/) — official NLM trial-search and registration portal. Registration is not proof of efficacy or regulatory approval, and the U.S. government does not review or approve the safety and science of every listed study.
+- [Chinese Clinical Trial Registry](https://www.chictr.org.cn/) — trial-search and registration lead; no individual trial record or result was verified in this review.
+- [EU Clinical Trials Register — legacy EudraCT records](https://www.clinicaltrialsregister.eu/) — retains EudraCT trials/results and specified third-country records. Ongoing EU/EEA trials are now displayed through [CTIS: search for clinical trials](https://euclinicaltrials.eu/search-for-clinical-trials/?lang=en). CTIS supplements the legacy register; it does not replace access to its historical records. Neither portal's inclusion verifies a particular trial's results.
 
 Scientific and commercial research:
 
-- [DrugBank](https://go.drugbank.com/).
-- [IUPHAR/BPS Guide to Pharmacology](https://www.guidetopharmacology.org/).
-- [PubChem](https://pubchem.ncbi.nlm.nih.gov/).
-- [DXY Insight](https://db.dxy.cn/).
-- [FiercePharma](https://www.fiercepharma.com/).
-- [FierceBiotech](https://www.fiercebiotech.com/).
-- [Endpoints News](https://endpts.com/).
-- [BioWorld](https://www.bioworld.com/) — direct destination of the note's search link.
+- [DrugBank](https://go.drugbank.com/) — commercial drug-data and biopharma-intelligence lead; no licensed dataset, individual molecule claim, or market figure was verified.
+- [IUPHAR/BPS Guide to Pharmacology](https://www.guidetopharmacology.org/) — target, ligand, and pharmacology research lead. Its homepage stated that registration is required to use the website; unrestricted access should not be assumed, and no registration was attempted.
+- [PubChem](https://pubchem.ncbi.nlm.nih.gov/) — NCBI chemical-information search portal; no specific compound record or scientific claim was verified by inspecting the homepage.
+- [DXY Insight](https://db.dxy.cn/) — commercial research-database landing page with trial, registration, marketed-drug, and company-data modules; underlying licensed data and report figures were not inspected.
+- [FiercePharma](https://www.fiercepharma.com/) — news publication homepage, not a specific article or primary historical, scientific, or market source.
+- [FierceBiotech](https://www.fiercebiotech.com/) — news publication homepage; a specific article and its underlying evidence are needed for a claim-level citation.
+- [Endpoints News — original reference](https://endpts.com/) — **Content not confirmed in the 2026-10-03 review**. The exact homepage returned HTTP 403; related event pages did not verify its content or provide an equivalent replacement. This access block does not establish deletion.
+- [BioWorld](https://www.bioworld.com/) — direct publication destination of the note's search link; no particular paid article or dataset was independently inspected.
 
 Historical reading:
 
-- [NLM biography of Frances Oldham Kelsey](https://www.nlm.nih.gov/exhibition/changing-the-face-of-medicine/physicians/biography_frances_kelsey.html).
-- [Bayer's historical article](https://www.bayer.com/en/history/cl0n3-of-history) and [Bayer homepage](https://www.bayer.com).
-- [Pfizer company history](https://www.pfizer.com/about/history).
+- [NLM biography of Frances Oldham Kelsey](https://www.nlm.nih.gov/exhibition/changing-the-face-of-medicine/physicians/biography_frances_kelsey.html) — supports the historical thalidomide-application and regulatory-career account. It does not establish that thalidomide has never subsequently been approved for any indication.
+- [Bayer's historical article — original reference](https://www.bayer.com/en/history/cl0n3-of-history) — **Content not confirmed in the 2026-10-03 review**. Bayer's bot-access block prevented inspection of this path; it is not established to be deleted.
+- [Current Bayer history timeline](https://www.bayer.com/en/about-us/history/history-timeline) — separately inspected company history used for the scoped historical example above; this is a verified current destination, distinct from the original reference.
+- [Bayer homepage](https://www.bayer.com) — redirects to the English corporate homepage; company context only, not evidence for a particular historical event.
+- [Pfizer company history](https://www.pfizer.com/about/history) — the same company-authored account cited above, not a second independent historical source.

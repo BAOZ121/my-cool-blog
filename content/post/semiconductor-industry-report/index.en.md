@@ -1,7 +1,7 @@
 ---
 title: "Semiconductors and Chips: Industry History, Value Chain, Markets, and Risks"
 date: 2026-09-28
-lastmod: 2026-09-29
+lastmod: 2026-10-03
 description: "An evidence-based guide to semiconductor history, design and manufacturing, market structure, AI demand, policy, and supply-chain risks."
 tags: ["Industry Research Report", "DEX", "Semiconductors", "Chips"]
 categories:
@@ -13,7 +13,7 @@ draft: false
 
 ## Scope and Data Notes
 
-In this report, the “semiconductor industry” includes chip design, electronic design automation (EDA) software and semiconductor intellectual property (IP), manufacturing equipment and materials, wafer fabrication, packaging and testing, and major end uses. Historical events are dated to when they occurred. Company financials, capacity, and process developments generally reflect information through December 31, 2025; policy information is updated through September 27, 2026. Market-share figures are cited only when the source specifies the market boundary, time period, and measurement basis. Definitions of “foundry,” “AI accelerator,” and “advanced process” vary across organizations, so figures using different definitions should not be compared directly.
+In this report, the “semiconductor industry” includes chip design, electronic design automation (EDA) software and semiconductor intellectual property (IP), manufacturing equipment and materials, wafer fabrication, packaging and testing, and major end uses. Historical events are dated to when they occurred. Company financials, capacity, and process developments generally reflect information through December 31, 2025; policy information is updated through September 27, 2026. Citation scope and access notes were reviewed on October 3, 2026; this source review does not change the stated data cutoffs. Market-share figures are cited only when the source specifies the market boundary, time period, and measurement basis. Definitions of “foundry,” “AI accelerator,” and “advanced process” vary across organizations, so figures using different definitions should not be compared directly.
 
 ## Executive Summary
 
@@ -29,7 +29,7 @@ By the end of 2025, AI training and inference demand was driving investment in a
 
 Electronic computers of the 1940s relied heavily on vacuum tubes. Tubes could amplify and switch electrical signals, but their size, power consumption, heat, and limited service life constrained miniaturization and reliability. In 1947, a Bell Laboratories team developed the point-contact transistor, establishing solid-state devices as a promising alternative.[H18](https://www.computerhistory.org/siliconengine/invention-of-the-point-contact-transistor/)
 
-Early transistors were mainly made of germanium. In 1954, Morris Tanenbaum at Bell Laboratories produced a silicon transistor, while a Texas Instruments team led by Gordon Teal produced the first commercial silicon transistors. Silicon eventually prevailed not only because of its high-temperature performance and availability, but also because its interface with silicon dioxide permits a stable insulating layer and repeatable, scalable manufacturing processes.[H01](https://www.computerhistory.org/siliconengine/silicon-transistors-offer-superior-operating-characteristics/)
+Early transistors were mainly made of germanium. In 1954, Morris Tanenbaum at Bell Laboratories produced a silicon transistor. At Texas Instruments, Gordon Teal organized the research laboratory and recruited a technical team led by Willis Adcock that developed commercial silicon transistors. These devices offered a wider operating-temperature range than germanium devices.[H01](https://www.computerhistory.org/siliconengine/silicon-transistors-offer-superior-operating-characteristics/) A later manufacturing advantage was the use of an adherent, electrically insulating oxide layer to separate surface interconnections, as described in Robert Noyce's device-and-lead patent.[H17](https://patents.google.com/patent/US2981877A/en)
 
 In 1957, eight engineers left Shockley Semiconductor Laboratory to establish Fairchild Semiconductor. Fairchild and the companies that grew out of it became an important part of Silicon Valley's semiconductor startup network. The defensible conclusion is that this event accelerated the circulation of technical talent, venture capital, and new firms; it was not the sole origin of Silicon Valley's entrepreneurial culture.
 
@@ -45,11 +45,11 @@ In 1965, Gordon Moore used the limited data then available to predict that the n
 
 ### 1.3 Microprocessors, Memory Competition, and US–Japan Adjustments
 
-Intel introduced the 4004 in 1971. Developed for a calculator, it was a commercial four-bit microprocessor containing approximately 2,300 transistors.[H03](https://newsroom.intel.com/opinion/the-chip-that-changed-the-world) Its significance lay in showing that a general-purpose programmable processor could be sold as a standardized product. The personal-computer market subsequently emerged through the combined development of eight- and 16-bit processors, memory, software, and complete computer systems. The 4004 alone did not “directly launch the PC era.”
+Intel introduced the 4004 in 1971 after developing it for a calculator.[H03](https://www.intel.com/content/www/us/en/newsroom/opinion/chip-that-changed-world.html) It was a commercial four-bit microprocessor containing approximately 2,300 transistors, specifications given in Intel's 50th-anniversary infographic.[H20](https://download.intel.com/newsroom/2021/data-center/4004-infographic.pdf) Its significance lay in showing that a general-purpose programmable processor could be sold as a standardized product. The personal-computer market subsequently emerged through the combined development of eight- and 16-bit processors, memory, software, and complete computer systems. The 4004 alone did not “directly launch the PC era.”
 
 From the late 1970s through the 1980s, DRAM became a focal point of competition between Japanese and US companies. Japan's Ministry of International Trade and Industry supported a VLSI research program, while manufacturers' production capabilities, quality control, and domestic electronics demand also contributed to their growth.[H14](https://www.meti.go.jp/report/tsuhaku2018/2018honbun/i2220000.html) A historical study by the US International Trade Commission reports that Japanese firms' share of the global DRAM market rose from less than 30% in 1978 to nearly 75% in 1986.[H04](https://usitc.gov/sites/default/files/publications/332/working_papers/semiconductor_working_paper_corrected_103119.pdf) Those dated figures are more precise than a general claim of “nearly 80% in the mid-1980s.”
 
-Facing price competition in memory, Intel exited DRAM around 1985 and redirected resources to microprocessors. Its consumer-facing Intel Inside cooperative marketing program formally began in 1991.[H05](https://www.intel.com/content/www/us/en/history/virtual-vault/articles/end-user-marketing-intel-inside.html) The 1986 US–Japan Semiconductor Agreement primarily addressed access to the Japanese market and anti-dumping concerns. Later arrangements referred to an industry expectation that foreign suppliers would reach a 20% share of the Japanese market, not a binding floor reserved for US chips.[H06](https://ustr.gov/archive/Document_Library/Reports_Publications/1996/1996_National_Trade_Estimate/1996_National_Trade_Estimate-Japan.html)
+Intel exited DRAM in 1985, the year it introduced the 386 processor.[H21](https://www.intel.com/content/dam/www/central-libraries/us/en/documents/semiconductors-and-intel-introduction.pdf) Its consumer-facing Intel Inside cooperative marketing program formally began in 1991.[H05](https://www.intel.com/content/www/us/en/history/virtual-vault/articles/end-user-marketing-intel-inside.html) The 1986 US–Japan Semiconductor Agreement primarily addressed access to the Japanese market and anti-dumping concerns. Later arrangements referred to an industry expectation that foreign suppliers would reach a 20% share of the Japanese market, not a binding floor reserved for US chips.[H06](https://ustr.gov/archive/Document_Library/Reports_Publications/1996/1996_National_Trade_Estimate/1996_National_Trade_Estimate-Japan.html)
 
 ### 1.4 Dedicated Foundries and Vertical Specialization
 
@@ -59,9 +59,9 @@ TSMC was founded in 1987 and built its business around a dedicated foundry model
 
 ### 1.5 Immersion Lithography, FinFETs, and EUV
 
-In the early 2000s, the industry faced growing pressure to improve the resolution of 193 nm argon-fluoride (ArF) lithography. A 157 nm exposure path had been explored, but it posed challenges for materials and optical systems. Immersion lithography placed ultrapure water between the projection lens and wafer, increasing numerical aperture and improving resolution and depth of focus while retaining the 193 nm light source. The wavelength remained 193 nm; resolution improved through the larger numerical aperture. In 2003, TSMC ordered the industry's first immersion lithography tool from ASML.[H19](https://www.asml.com/en/news/press-releases/2003/tsmc-selects-asml-for-industry-first-immersion-tool-order) Commercial production still required collaborative work across fabs, optics, light sources, photoresists, and research institutions.[H09](https://www.asml.com/en/company/stories/2023/how-immersion-lithography-saved-moores-law)[S01](https://www.asml.com/technology/lithography-principles/lenses-and-mirrors)
+In the early 2000s, the industry faced growing pressure to improve the resolution of 193 nm argon-fluoride (ArF) lithography. A 157 nm exposure path had been explored, but it posed challenges for materials and optical systems. Immersion lithography placed ultrapure water between the projection lens and wafer, increasing numerical aperture and improving resolution and depth of focus while retaining the 193 nm light source. The wavelength remained 193 nm; resolution improved through the larger numerical aperture. ASML's December 2003 announcement reported TSMC's order for the industry's first immersion lithography tool. This historical reference was corroborated in search-indexed text; its original URL now redirects to a general news index rather than the announcement.[H19](https://www.asml.com/en/news/press-releases/2003/tsmc-selects-asml-for-industry-first-immersion-tool-order) Commercial production still required collaborative work across fabs, optics, light sources, photoresists, and research institutions.[H09](https://www.asml.com/en/company/stories/2023/how-immersion-lithography-saved-moores-law)[S01](https://www.asml.com/technology/lithography-principles/lenses-and-mirrors)
 
-In transistor architecture, Hitachi researchers demonstrated a precursor to the FinFET in 1989. In the late 1990s, a University of California, Berkeley team involving Chenming Hu further developed and named the FinFET.[H10](https://eecs.berkeley.edu/about/history/)[H13](https://technav.ieee.org/topic/finfets/) Intel began high-volume production of its 22 nm tri-gate transistor in 2012.[H11](https://www.intel.com/content/www/us/en/history/history-moores-law-fun-facts-factsheet.html) FinFET is therefore best understood as the product of sustained research and industrialization by multiple teams, rather than the invention of a single researcher.
+In transistor architecture, Hitachi researchers demonstrated the DELTA precursor in 1989; a University of California, Berkeley team led by Chenming Hu subsequently developed and named the FinFET.[H13](https://technav.ieee.org/topic/finfets/) Berkeley's institutional history also credits Jeff Bokor and Tsu-Jae King as collaborators. These overview sources do not establish a precise date for the naming.[H10](https://eecs.berkeley.edu/about/history/) Intel began high-volume production of its 22 nm tri-gate transistor in 2012.[H11](https://www.intel.com/content/www/us/en/history/history-moores-law-fun-facts-factsheet.html) FinFET is therefore best understood as the product of sustained research and industrialization by multiple teams, rather than the invention of a single researcher.
 
 EUV lithography uses 13.5 nm light. ASML delivered its first production-oriented EUV system in 2013, and customers gradually adopted EUV for advanced logic and memory production later in the 2010s. The first High-NA EUV system was delivered in 2023.[H12](https://www.asml.com/en/products/euv-lithography-systems) Prices, configurations, and revenue-recognition practices differ significantly across system generations; any quoted equipment price must specify the model, year, currency, and accounting basis.
 
@@ -101,11 +101,11 @@ Process-node names identify generations of manufacturing platforms; they no long
 
 ### 2.4 Packaging and Testing
 
-Conventional packaging protects the die, provides electrical and mechanical connections, and supports assembly into a system. Advanced packaging also enables dense interconnects, more bandwidth, power management, and heterogeneous integration. Flip-chip packaging connects a die to its substrate through bumps. In 2.5D packaging, a silicon interposer or redistribution structure can connect multiple side-by-side dies. In 3D packaging, dies are stacked using hybrid bonding, through-silicon vias (TSVs), or other vertical interconnects. CoWoS is a 2.5D and related advanced-packaging platform; it should not be conflated with every form of 3D stacking.
+Conventional packaging protects the die, provides electrical and mechanical connections, and supports assembly into a system. Advanced packaging also enables dense interconnects, more bandwidth, power management, and heterogeneous integration. Flip-chip packaging connects a die to its substrate through bumps. In 2.5D packaging, a silicon interposer or redistribution structure can connect multiple side-by-side dies. In 3D packaging, dies are stacked using hybrid bonding, through-silicon vias (TSVs), or other vertical interconnects. CoWoS is a 2.5D and related advanced-packaging platform; it should not be conflated with every form of 3D stacking.[S07](https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm)
 
-HBM typically stacks multiple DRAM dies connected by TSVs and integrates them with a logic chip for high bandwidth. 3D NAND, by contrast, stacks memory cells vertically within a NAND device. It is a device structure and manufacturing process, not a synonym for TSV-based die stacking.[S04](https://semiconductor.samsung.com/support/tools-resources/dictionary/semiconductor-glossary-3d-v-nand-flash-memory/)
+HBM typically stacks DRAM dies above a base die and connects them through TSVs; the HBM package can then be integrated with a processor through advanced packaging.[S08](https://news.skhynix.com/en/sk-hynix-partners-with-tsmc-to-strengthen-hbm-technological-leadership/) 3D NAND, by contrast, stacks memory cells vertically within a NAND device. It is a device structure and manufacturing process, not a synonym for TSV-based die stacking.[S04](https://semiconductor.samsung.com/support/tools-resources/dictionary/semiconductor-glossary-3d-v-nand-flash-memory/)
 
-Testing includes wafer-level probing, final testing after packaging, and reliability evaluation for particular uses. Automotive integrated circuits commonly undergo failure-mechanism-based stress tests and customer qualification under specifications such as AEC-Q100. These specifications are not equivalent to a “certification certificate” issued by a single organization.[S05](https://www.aecouncil.com/AECDocuments.html)
+Testing includes wafer-level probing, final testing after packaging, and reliability evaluation for particular uses. Automotive integrated circuits commonly undergo failure-mechanism-based stress tests and customer qualification under specifications such as AEC-Q100. AEC-Q100 Rev J states that AEC operates no certification board: suppliers perform qualification and submit the data for users to verify compliance. Qualification should therefore not be described as an AEC-issued certification.[S05](https://www.guerrilla-rf.com/includes/pdfs/general/AEC_Q100_Rev_J_Base_Document.pdf)
 
 ### 2.5 End Markets
 
@@ -123,7 +123,7 @@ Regional specialization likewise cannot be reduced to closed “blocs.” US com
 
 ### 3.2 Chip Design and AI Computing
 
-General-purpose processors, mobile SoCs, analog chips, and AI accelerators each have different competitive structures. NVIDIA leads in data-center GPUs and their software ecosystem, but a claim that it holds 80%–90% of “AI training and inference chips” lacks a consistent market boundary. In its review of NVIDIA's proposed acquisition of Run:ai, the European Commission estimated that NVIDIA's *shipment* share of the defined global discrete data-center GPU market had exceeded 80%–90% in several preceding years and stood at 70%–80% in the first half of 2024. The decision also cautioned that shipment estimates inferred from revenue and average selling prices were less reliable.[M01](https://ec.europa.eu/competition/mergers/cases1/202516/M_11766_10599589_2740_3.pdf) The case illustrates why market share must be reported with its product scope, date, and method.
+General-purpose processors, mobile SoCs, analog chips, and AI accelerators each have different competitive structures. NVIDIA leads in data-center GPUs and their software ecosystem, but a claim that it holds 80%–90% of “AI training and inference chips” lacks a consistent market boundary. In its review of NVIDIA's proposed acquisition of Run:ai, the European Commission's decision reported NVIDIA's *volume* share of the defined global discrete data-center GPU market in bracketed ranges: [80–90]% in each of 2021–2023 and [70–80]% in the first half of 2024. These are estimated ranges for the specified periods, not precise shares or a full-year 2024 result. The decision records NVIDIA's warning, as the notifying party, that volume estimates inferred from revenue and average purchase prices were less reliable than value shares.[M01](https://ec.europa.eu/competition/mergers/cases1/202516/M_11766_10599589_2740_3.pdf) The case illustrates why market share must be reported with its product scope, date, and method.
 
 AMD and Intel offer GPUs or other accelerators, while cloud providers develop in-house or custom ASICs such as TPUs and Trainium. In-house chips can improve performance, cost, or supply control for specific workloads, but they do not automatically displace commercial GPUs. Their results depend on software tools, utilization, model fit, networking, and deployment scale.
 
@@ -157,7 +157,7 @@ AI capacity does not crowd out every traditional chip category in equal measure.
 
 ### 4.2 Industrial Policy, Export Controls, and Regionalization
 
-The US CHIPS and Science Act provided the Department of Commerce with US$50 billion for manufacturing incentives, R&D, and related programs. That figure represents statutory program funding, not cash already paid to companies.[R01](https://www.commerce.gov/issues/semiconductor-industry) The European Chips Act took effect in September 2023. The EU set a policy goal of raising its share of the global semiconductor market to 20% by 2030; that number is a target, neither an achieved share nor a firm forecast.[R02](https://digital-strategy.ec.europa.eu/en/policies/european-chips-act) In June 2026, the European Commission proposed a Chips Act 2.0 to build on the original law. The proposal should be distinguished from the 2023 act already in force.[R05](https://digital-strategy.ec.europa.eu/en/library/proposal-chips-act-20)
+The US CHIPS and Science Act allocated US$50 billion for the Department of Commerce to administer semiconductor incentives and R&D programs. That figure represents statutory program funding, not cash already paid to companies.[R01](https://www.nist.gov/chips/funding-updates) The European Chips Act took effect on September 21, 2023. In its release that day, the European Commission stated the EU's policy goal of raising its share of the global semiconductor market to 20% by 2030; that number is a historical policy target, neither an achieved share nor a firm forecast.[R02](https://digital-strategy.ec.europa.eu/en/news/digital-sovereignty-european-chips-act-enters-force) In June 2026, the European Commission proposed a Chips Act 2.0 to build on the original law. The proposal should be distinguished from the 2023 act already in force.[R05](https://digital-strategy.ec.europa.eu/en/library/proposal-chips-act-20)
 
 Export controls are changing customer screening and delivery procedures for equipment, software, HBM, and advanced computing chips. In January 2025, the US Bureau of Industry and Security updated advanced-computing controls and foundry due-diligence requirements; related rules also changed definitions of advanced-node integrated circuits and the Entity List.[R03](https://www.bis.gov/press-release/commerce-strengthens-restrictions-advanced-computing-semiconductors-enhance-foundry-due-diligence-prevent) Businesses consequently face licensing, end-user, resale, technical-service, and geographic compliance risks. Policies can change, so a rule in force at one point should not be treated as a permanent industrial boundary.
 
@@ -199,15 +199,15 @@ Over the next several years, competition will center on four capabilities: advan
 
 ### Historical Sources
 
-[H01] Computer History Museum, “1954: Silicon Transistors Offer Superior Operating Characteristics.” <https://www.computerhistory.org/siliconengine/silicon-transistors-offer-superior-operating-characteristics/>
+[H01] Computer History Museum, “1954: Silicon Transistors Offer Superior Operating Characteristics.” <https://www.computerhistory.org/siliconengine/silicon-transistors-offer-superior-operating-characteristics/> Scope: Tanenbaum's 1954 device, Teal's laboratory-organizing role, Adcock's team leadership, commercial silicon transistors, and temperature performance. The later oxide-layer discussion uses [H17]; this 1954 page is not evidence for the separate 1957 Fairchild account.
 
 [H02] Intel, “Moore’s Law.” <https://www.intel.com/content/www/us/en/newsroom/resources/moores-law.html>
 
-[H03] Intel, “The Chip that Changed the World.” <https://newsroom.intel.com/opinion/the-chip-that-changed-the-world>
+[H03] Intel, “The Chip that Changed the World.” <https://www.intel.com/content/www/us/en/newsroom/opinion/chip-that-changed-world.html> Canonical destination of the former newsroom link. Supports the calculator origin and 1971 introduction; the four-bit and 2,300-transistor specifications are sourced separately to [H20].
 
 [H04] U.S. International Trade Commission, “The South Korea-Japan Trade Dispute in Context: Semiconductor Manufacturing, Chemicals and Concentrated Supply Chains.” <https://usitc.gov/sites/default/files/publications/332/working_papers/semiconductor_working_paper_corrected_103119.pdf>
 
-[H05] Intel, “Ingredient Branding: End User Marketing and Intel Inside.” <https://www.intel.com/content/www/us/en/history/virtual-vault/articles/end-user-marketing-intel-inside.html>
+[H05] Intel, “Ingredient Branding: End User Marketing and Intel Inside.” <https://www.intel.com/content/www/us/en/history/virtual-vault/articles/end-user-marketing-intel-inside.html> Scope: the 1991 campaign launch and cooperative advertising model. It does not establish the separate 1985 DRAM exit, which is sourced to [H21].
 
 [H06] Office of the United States Trade Representative, “1996 National Trade Estimate—Japan: Semiconductors.” <https://ustr.gov/archive/Document_Library/Reports_Publications/1996/1996_National_Trade_Estimate/1996_National_Trade_Estimate-Japan.html>
 
@@ -217,13 +217,13 @@ Over the next several years, competition will center on four capabilities: advan
 
 [H09] ASML, “How Immersion Lithography Saved Moore’s Law,” 2023. <https://www.asml.com/en/company/stories/2023/how-immersion-lithography-saved-moores-law>
 
-[H10] University of California, Berkeley EECS, “History.” <https://eecs.berkeley.edu/about/history/>
+[H10] University of California, Berkeley EECS, “History.” <https://eecs.berkeley.edu/about/history/> Location: semiconductor-history paragraph naming Bokor, Hu, and King as FinFET collaborators. This institutional overview does not date the naming; [H13] supports the earlier Hitachi precursor and subsequent Berkeley development.
 
 [H11] Intel, “Moore’s Law: Fun Facts.” <https://www.intel.com/content/www/us/en/history/history-moores-law-fun-facts-factsheet.html>
 
 [H12] ASML, “EUV Lithography Systems.” <https://www.asml.com/en/products/euv-lithography-systems>
 
-[H13] IEEE Technology Navigator, “FinFETs.” <https://technav.ieee.org/topic/finfets/>
+[H13] IEEE Technology Navigator, “FinFETs.” <https://technav.ieee.org/topic/finfets/> Location: “What Are FinFETs?” Supports the 1989 Hitachi DELTA precursor and the subsequent Berkeley development and naming, but not a precise late-1990s naming date.
 
 [H14] Ministry of Economy, Trade and Industry of Japan, “2018 White Paper on International Economy and Trade—VLSI Project History.” <https://www.meti.go.jp/report/tsuhaku2018/2018honbun/i2220000.html>
 
@@ -235,7 +235,11 @@ Over the next several years, competition will center on four capabilities: advan
 
 [H18] Computer History Museum, “1947: Invention of the Point-Contact Transistor.” <https://www.computerhistory.org/siliconengine/invention-of-the-point-contact-transistor/>
 
-[H19] ASML, “TSMC Selects ASML for Industry’s First Immersion Tool Order,” December 3, 2003. <https://www.asml.com/en/news/press-releases/2003/tsmc-selects-asml-for-industry-first-immersion-tool-order>
+[H19] ASML, “TSMC Selects ASML for Industry’s First Immersion Tool Order,” December 3, 2003. <https://www.asml.com/en/news/press-releases/2003/tsmc-selects-asml-for-industry-first-immersion-tool-order> Historical reference with an access limitation: the title and TSMC order statement were corroborated in search-indexed text, but the original URL redirected to ASML's generic press-release index on October 3, 2026. This is not a currently accessible live copy of the release, and no verified equivalent live replacement was found. The accessible 2023 retrospective [H09] provides immersion-history context; it does not independently establish the full 2003 order announcement.
+
+[H20] Intel, “Celebrating the 50th Anniversary of the Intel 4004,” 2021 infographic (PDF), p. 1. <https://download.intel.com/newsroom/2021/data-center/4004-infographic.pdf> Location: 1971 comparison column. Supports the four-bit instruction-set description and 2,300-transistor count.
+
+[H21] Intel, “Semiconductors and Intel: An Introduction” (PDF), p. 18, “Intel’s history in 4 fast eras.” <https://www.intel.com/content/dam/www/central-libraries/us/en/documents/semiconductors-and-intel-introduction.pdf> Location: 1985–1995 timeline. Supports the 1985 DRAM exit and 386 introduction; it is a separate source from the Intel Inside marketing history.
 
 ### Technology and Value-Chain Sources
 
@@ -245,15 +249,19 @@ Over the next several years, competition will center on four capabilities: advan
 
 [S03] Intel, “Intel 18A Process Technology Simply Explained,” January 30, 2025. <https://newsroom.intel.com/intel-foundry/intel-18a-process-technology-simply-explained>
 
-[S04] Samsung Semiconductor, “3D V-NAND Flash Memory.” <https://semiconductor.samsung.com/support/tools-resources/dictionary/semiconductor-glossary-3d-v-nand-flash-memory/>
+[S04] Samsung Semiconductor, “3D V-NAND Flash Memory.” <https://semiconductor.samsung.com/support/tools-resources/dictionary/semiconductor-glossary-3d-v-nand-flash-memory/> Scope: vertically stacked NAND memory cells and their distinction from a single-layer arrangement. This glossary does not establish HBM's DRAM/base-die structure or CoWoS packaging; those claims use [S08] and [S07].
 
-[S05] Automotive Electronics Council, “AEC-Q100: Failure Mechanism Based Stress Test Qualification for Integrated Circuits,” documents index. <https://www.aecouncil.com/AECDocuments.html>
+[S05] Automotive Electronics Council, “AEC-Q100: Failure Mechanism Based Stress Test Qualification for Integrated Circuits,” Rev J, August 11, 2023. [AEC-Q100 Rev J — manufacturer-hosted copy at Guerrilla RF (PDF)](https://www.guerrilla-rf.com/includes/pdfs/general/AEC_Q100_Rev_J_Base_Document.pdf). Location: §§1.3.1–1.3.3, printed p. 2 (PDF p. 8), on qualification, the absence of an AEC certification board, and user approval. The [AEC publisher documents index](https://www.aecouncil.com/AECDocuments.html) could not be retrieved during the October 3, 2026 review; that access failure does not establish deletion. The inspected copy is the AEC standard hosted by a manufacturer, not the publisher's live index, and does not establish which revision is currently latest.
 
 [S06] Intel, “Postcard from Intel Technology Tour Arizona: Panther Lake Draws in Cameras and Crowds,” October 10, 2025. <https://www.intel.com/content/www/us/en/newsroom/news/client-computing/postcard-itt-panther-lake-draws-cameras-and-crowds.html>
 
+[S07] TSMC, “CoWoS.” <https://3dfabric.tsmc.com/english/dedicatedFoundry/technology/cowos.htm> Location: technology overview and CoWoS-S/R/L descriptions. Supports the 2.5D integration of logic and HBM using silicon or redistribution-layer interposers; it is not a source for every form of 3D bonding.
+
+[S08] SK hynix, “SK hynix Partners with TSMC to Strengthen HBM Technological Leadership,” April 19, 2024. <https://news.skhynix.com/en/sk-hynix-partners-with-tsmc-to-strengthen-hbm-technological-leadership/> Location: base-die paragraph and TSV/CoWoS explanatory notes. Supports the DRAM/base-die stack, TSV interconnections, and integration with a processor; cited for technical structure, not for promotional leadership claims or later production outcomes.
+
 ### Market and Company Sources
 
-[M01] European Commission, Case M.11766, NVIDIA/Run:ai merger decision, 2024 market evidence. <https://ec.europa.eu/competition/mergers/cases1/202516/M_11766_10599589_2740_3.pdf>
+[M01] European Commission, Case M.11766, NVIDIA/Run:ai merger decision, December 20, 2024. <https://ec.europa.eu/competition/mergers/cases1/202516/M_11766_10599589_2740_3.pdf> Location: §4.2.1, Table 2 and paragraph 92, printed pp. 21–22 (PDF pp. 22–23). The market is worldwide discrete data-center GPUs by volume; the bracketed ranges cover 2021–2023 and H1 2024. Paragraph 92 records the notifying party NVIDIA's caution about the reliability of volume estimates derived from revenue and average purchase prices. That caution is attributed to NVIDIA, not presented as an independently established Commission finding.
 
 [M02] TSMC, “2025 Annual Report.” <https://investor.tsmc.com/static/annualReports/2025/english/index.html>
 
@@ -261,9 +269,9 @@ Over the next several years, competition will center on four capabilities: advan
 
 ### Policy and Risk Sources
 
-[R01] U.S. Department of Commerce, “Semiconductor Industry—CHIPS for America.” <https://www.commerce.gov/issues/semiconductor-industry>
+[R01] NIST, “Funding Updates.” <https://www.nist.gov/chips/funding-updates> Location: opening program-funding paragraph. Official fallback confirming Commerce's administration of US$50 billion in semiconductor incentives and R&D funding; this is an allocation, not cash already disbursed. Original provenance: [U.S. Department of Commerce, “Semiconductor Industry—CHIPS for America”](https://www.commerce.gov/issues/semiconductor-industry). Direct access to that Commerce page returned HTTP 403 during the October 3, 2026 review; it is access-blocked, not established to be deleted. The funding source does not independently establish the report's regionalization cost analysis.
 
-[R02] European Commission, “European Chips Act.” <https://digital-strategy.ec.europa.eu/en/policies/european-chips-act>
+[R02] European Commission, “Digital Sovereignty: European Chips Act Enters into Force,” September 21, 2023. <https://digital-strategy.ec.europa.eu/en/news/digital-sovereignty-european-chips-act-enters-force> Location: opening and paragraph stating the 20%-by-2030 goal. This dated release supports commencement and the historical policy target. The [current European Chips Act policy page](https://digital-strategy.ec.europa.eu/en/policies/european-chips-act) remains useful for policy context but no longer states that target in the version reviewed on October 3, 2026; it is not substituted for the dated evidence.
 
 [R03] U.S. Bureau of Industry and Security, “Commerce Strengthens Restrictions on Advanced Computing Semiconductors,” January 15, 2025. <https://www.bis.gov/press-release/commerce-strengthens-restrictions-advanced-computing-semiconductors-enhance-foundry-due-diligence-prevent>
 

@@ -16,6 +16,7 @@ from urllib.parse import unquote, urljoin, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 DESTINATION = ROOT / "data/evidence_library.json"
+FORMAT_OVERRIDES = json.loads((ROOT / "data/evidence_file_formats.json").read_text(encoding="utf-8"))
 ORIGIN = "https://thedexs.com"
 FILE_TYPES = {".pdf", ".csv", ".json", ".xlsx", ".xls", ".docx", ".doc", ".txt", ".zip"}
 VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
@@ -95,6 +96,17 @@ def public_url(href, article_url):
     return url, extension, local
 
 
+def file_format(url, extension):
+    """Use inspected MIME metadata for extensionless files; never guess by host."""
+    override = FORMAT_OVERRIDES.get(url)
+    if override:
+        value = override["format"]
+        assert "." + value.lower() in FILE_TYPES, f"Unsupported file format: {value}"
+        assert override.get("checked") and override.get("basis"), f"Undocumented file metadata: {url}"
+        return value
+    return extension.lstrip(".").upper() if extension in FILE_TYPES else "Web"
+
+
 def title_for(link, block, url):
     for ancestor in link.ancestors():
         if ancestor.has_class("research-original"):
@@ -135,9 +147,9 @@ def parse_article(path, build):
     links = []
     notices = []
     def scan(node, section):
-        # A chart/map heading is local to its figure, not the following article prose.
+        # Figures and PDF previews own their metadata, not the following source.
         outer = section
-        isolated = node.tag == "figure"
+        isolated = node.tag == "figure" or node.has_class("research-original")
         if isolated:
             section = {"title": section["title"], "id": section["id"], "notes": []}
         if re.fullmatch(r"h[2-6]", node.tag):
@@ -166,6 +178,7 @@ def parse_article(path, build):
         if not parsed:
             continue
         url, extension, local = parsed
+        format_label = file_format(url, extension)
         block = next((ancestor for ancestor in link.ancestors() if ancestor.tag in {"li", "p", "td", "figcaption"}), link)
         title_label = title_for(link, block, url)
         context = block.text()
@@ -174,7 +187,7 @@ def parse_article(path, build):
         citation = {"section": section["title"], "url": article_url + ("#" + section["id"] if section["id"] else ""), "text": context, "notes": notes}
         if url not in entries:
             entry = {"id": hashlib.sha256(url.encode()).hexdigest()[:12], "url": url, "title": title_label,
-                     "kind": "file" if extension in FILE_TYPES else "link", "format": extension.lstrip(".").upper() if extension in FILE_TYPES else "Web",
+                     "kind": "file" if format_label != "Web" else "link", "format": format_label,
                      "host": "DEX Research" if local else urlsplit(url).netloc.removeprefix("www."), "local": local, "citations": []}
             entries[url] = entry
         entry = entries[url]

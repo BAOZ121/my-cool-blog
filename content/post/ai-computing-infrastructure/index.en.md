@@ -2,7 +2,7 @@
 title: "AI and Computing Infrastructure: Industry History, Value Chain, and Challenges"
 description: "How AI computing became an infrastructure business, who supplies the value chain, and what determines delivery and investment returns."
 date: 2026-10-01T21:45:00+08:00
-lastmod: 2026-10-01
+lastmod: 2026-10-03
 image: "cover.png"
 categories:
   - "Industry Report"
@@ -167,7 +167,7 @@ AI infrastructure now links model development with manufacturing, engineering an
 
 ## Appendix: Supporting Materials
 
-Source numbers correspond to the citations in the article. The appendix is separate from Parts 1 to 4.
+Source numbers correspond to the citations in the article. The appendix is separate from Parts 1 to 4. Citation scope and access notes were reviewed on October 3, 2026; the financial and statistical periods stated in the report are unchanged.
 
 <h3 id="evidence-1">[1] Early AI documents</h3>
 
@@ -179,11 +179,11 @@ Source numbers correspond to the citations in the article. The appendix is separ
 
 - [Dartmouth — Artificial Intelligence Coined at Dartmouth](https://home.dartmouth.edu/about/artificial-intelligence-ai-coined-dartmouth)
 
-Location: Turing, pp. 433–434; opening of the Dartmouth proposal; Dartmouth history page. Original papers and institutional records.
+Location: McCulloch and Pitts, publisher bibliographic record and public abstract; Turing, pp. 433–434; opening of the Dartmouth proposal; Dartmouth history page. Original papers and institutional records. The McCulloch–Pitts full text requires subscription access; the citation here is limited to its metadata and abstract, not a claim that the full paper was inspected.
 
 <h3 id="evidence-2">[2] AI winters and expert systems</h3>
 
-- [Ted E. Senator (2026) Implications for AI Research: Applying Lessons from the Expert Systems Boom and Bust to the Current Large-Language Model Boom](https://ojs.aaai.org/index.php/AAAI/article/view/41334/45295)
+- [Ted E. Senator (2026) Implications for AI Research: Applying Lessons from the Expert Systems Boom and Bust to the Current Large-Language Model Boom (PDF)](https://ojs.aaai.org/index.php/AAAI/article/view/41334/45295)
 
 Location: PDF pp. 1–2. A retrospective scholarly paper.
 
@@ -223,7 +223,9 @@ Location: opening and Overview. Original 2018 analysis of its historical sample.
 
 - [NVIDIA (2017) NVIDIA Launches Revolutionary Volta GPU Platform](https://nvidianews.nvidia.com/news/nvidia-launches-revolutionary-volta-gpu-platform-fueling-next-era-of-ai-and-high-performance-computing)
 
-Official announcement, 2017-05-10. Used for the launch date and matrix-computation function.
+- [NVIDIA Technical Blog (2017) Programming Tensor Cores in CUDA 9](https://developer.nvidia.com/blog/programming-tensor-cores-in-cuda-9/)
+
+Location: the May 10, 2017 announcement establishes the Volta launch and introduction of Tensor Cores. The October 17, 2017 technical article, in its original opening paragraphs, describes the matrix-multiply-and-accumulate function. The technical explanation is supported by the original technical-article body, not inferred from the launch release or the technical page’s AI-generated summary.
 
 <h3 id="evidence-9">[9] First-generation TPU</h3>
 
