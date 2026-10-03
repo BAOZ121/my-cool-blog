@@ -119,7 +119,7 @@ try {
       await page.getByRole('link', { name: 'Read claim-level evidence appendix', exact: true }).click();
       assert.equal(new URL(page.url()).hash, '#evidence-batteries');
       assert.equal(await page.locator('#evidence-batteries').count(), 1);
-      assert.equal(await page.locator('a[href^="#evidence-"]').filter({ hasText: 'Evidence' }).count(), 8);
+      assert.equal(await page.getByRole('link', { name: 'Evidence', exact: true }).count(), 8);
       if (width !== 1024 && scheme === 'dark') await page.screenshot({ path: resolve(output, `battery-evidence-${width}.png`), fullPage: false });
       await page.goBack();
       await page.getByRole('dialog').waitFor({ state: 'visible' });
