@@ -170,8 +170,9 @@ try {
       const last = document.createElement("a"); last.href = "/evidence-library/";
       document.body.append(first, last); first.click(); last.click();
     });
-    await page.waitForURL(origin + "/evidence-library/");
-    await page.waitForFunction(() => window.__transition.finished);
+    // The superseded request is expected to abort; observe the final document.
+    await page.waitForFunction(() => location.pathname === "/evidence-library/" && window.__transition?.finished && document.querySelector('[data-enhanced="true"]'));
+    assert.equal(page.url(), origin + "/evidence-library/");
     await page.waitForSelector('[data-enhanced="true"]');
     assert.equal(await page.locator("main").isVisible(), true);
     assert.deepEqual(errors, []);
