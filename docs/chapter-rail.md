@@ -18,7 +18,8 @@ padding, 24px column gaps, a `clamp(160px, 13vw, 200px)` left sidebar, and a
 `clamp(200px, 18vw, 280px)` expanded or 44px minimized right sidebar. The main
 card is capped at 1200px; remaining space becomes its auto margins. At viewport
 widths 1024 / 1280 / 1440 / 1920px, expected card widths are approximately
-588 / 807 / 918 / 1200px expanded and 744 / 994 / 1133 / 1200px minimized.
+588 / 807 / 918 / 1200px expanded and 744 / 994 / 1133 / 1200px minimized,
+less any native scrollbar gutter (15px in the CI Chromium) until the cap.
 Headings and prose share an approximately 100-character body-font measure
 (850px at the current 17px font), while tables and charts use the full card.
 Mobile layout is unchanged. Browsers without `:has()` retain the theme's

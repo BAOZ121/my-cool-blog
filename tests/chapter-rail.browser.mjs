@@ -83,19 +83,32 @@ try {
       const edge = await rail.evaluate(node => {
         const list = node.firstElementChild;
         const style = getComputedStyle(list, '::before');
-        return document.documentElement.clientWidth - (list.getBoundingClientRect().right - parseFloat(style.right));
+        return document.querySelector('.container.extended').getBoundingClientRect().right - (list.getBoundingClientRect().right - parseFloat(style.right));
       });
-      assert.ok(edge >= 8 && edge <= 36, `Chapter line stays at the viewport far-right edge with a safe inset: ${edge}`);
+      assert.ok(Math.abs(edge - 20) < 1, `Chapter line keeps its20px safe inset inside the native gutter: ${edge}`);
       assert.equal(await links.first().evaluate(node => getComputedStyle(node).textAlign), 'right');
     }
     async function checkDesktopWidth(minimized) {
       const layout = await page.evaluate(() => {
         const article = document.querySelector('.main-article').getBoundingClientRect();
         const sidebar = document.querySelector('.right-sidebar').getBoundingClientRect();
-        return { width: article.width, right: article.right, railLeft: sidebar.left, railWidth: sidebar.width, viewport: document.documentElement.clientWidth, window: innerWidth };
+        const container = document.querySelector('.container.extended');
+        const style = getComputedStyle(container);
+        return { width: article.width, right: article.right, railLeft: sidebar.left, railWidth: sidebar.width, viewport: document.documentElement.clientWidth, window: innerWidth,
+          available: container.getBoundingClientRect().width, containerRight: container.getBoundingClientRect().right, paddingLeft: style.paddingLeft, paddingRight: style.paddingRight, gap: style.columnGap,
+          leftWidth: document.querySelector('.left-sidebar').getBoundingClientRect().width };
+
       });
       const clamp = (min, value, max) => Math.max(min, Math.min(max, value));
-      const expected = Math.min(1200, layout.viewport - 76 - clamp(160, layout.window * .13, 200) - (minimized ? 44 : clamp(200, layout.window * .18, 280)));
+      // Stack reserves a stable native scrollbar gutter. Its container can be
+      // narrower than clientWidth in headless Chrome; measure available space,
+      // while independently verifying every fixed part of the width formula.
+      assert.equal(layout.paddingLeft, '20px');
+      assert.equal(layout.paddingRight, '8px');
+      assert.equal(layout.gap, '24px');
+      assert.ok(Math.abs(layout.leftWidth - clamp(160, layout.window * .13, 200)) < 1);
+      assert.ok(Math.abs(layout.railWidth - (minimized ? 44 : clamp(200, layout.window * .18, 280))) < 1);
+      const expected = Math.min(1200, layout.available - 76 - clamp(160, layout.window * .13, 200) - (minimized ? 44 : clamp(200, layout.window * .18, 280)));
       assert.ok(Math.abs(layout.width - expected) < 2, `Article width ${layout.width} matches ${minimized ? 'minimized' : 'expanded'} ${expected}`);
       assert.ok(layout.railLeft - layout.right >= 23, 'Both states reserve separate, non-overlapping reading space');
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
@@ -104,7 +117,7 @@ try {
         assert.equal(await rail.isVisible(), false, 'Native closed details removes chapter links from interaction');
         const axis = await page.locator('.chapter-widget__axis').boundingBox();
         assert.equal(axis.width, 1, 'Minimized rail remains one fine axis');
-        assert.ok(layout.viewport - axis.x >= 8 && layout.viewport - axis.x <= 36);
+        assert.ok(Math.abs(layout.containerRight - (axis.x + axis.width) - 20) < 1, 'Minimized axis keeps the same20px usable-edge inset');
       }
       if (js) await page.waitForFunction(() => {
         const hero = document.querySelector('.main-article .article-image img');
