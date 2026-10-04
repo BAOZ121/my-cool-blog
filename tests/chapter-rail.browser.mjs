@@ -59,10 +59,11 @@ try {
     await page.goto(origin + path);
     await page.evaluate(() => document.fonts.ready);
     const mobile = width < 1024;
-    const rail = page.locator(mobile ? '.chapter-mobile .chapter-rail' : '.chapter-widget .chapter-rail');
+    const rail = page.locator(mobile ? '.chapter-mobile .chapter-rail' : '.chapter-disclosure .chapter-rail');
     const summary = page.locator('.chapter-mobile summary');
     const desktopSummary = page.locator('.chapter-widget summary');
     const desktopDisclosure = page.locator('.chapter-disclosure');
+    const compact = page.locator('#ArticleChapterMarkers');
     if (mobile) {
       await summary.focus();
       await page.keyboard.press('Enter');
@@ -115,10 +116,16 @@ try {
       if (minimized) {
         assert.equal(layout.railWidth, 44);
         assert.equal(await rail.isVisible(), false, 'Native closed details removes chapter links from interaction');
-        const axis = await page.locator('.chapter-widget__axis').boundingBox();
-        assert.equal(axis.width, 1, 'Minimized rail remains one fine axis');
-        assert.ok(Math.abs(layout.containerRight - (axis.x + axis.width) - 20) < 1, 'Minimized axis keeps the same20px usable-edge inset');
+        assert.equal(await compact.isVisible(), true, 'Compact chapter markers remain usable');
+        const axis = await compact.evaluate(node => {
+          const list = node.firstElementChild;
+          const style = getComputedStyle(list, '::before');
+          return { width: style.width, right: list.getBoundingClientRect().right - parseFloat(style.right) };
+        });
+        assert.equal(axis.width, '1px', 'Minimized nodes remain on one fine axis');
+        assert.ok(Math.abs(layout.containerRight - axis.right - 20) < 1, 'Compact axis keeps the same20px usable-edge inset');
       }
+      if (!minimized) assert.equal(await compact.isVisible(), false, 'Expanded and compact outlines are mutually exclusive');
       if (js) await page.waitForFunction(() => {
         const hero = document.querySelector('.main-article .article-image img');
         return hero.getAttribute('sizes') === `${Math.ceil(hero.getBoundingClientRect().width)}px`;
@@ -133,7 +140,36 @@ try {
       const control = await desktopSummary.boundingBox();
       assert.ok(control.width >= 44 && control.height >= 44, 'Minimized toggle is a discoverable touch/keyboard target');
       await page.keyboard.press('Tab');
-      assert.equal(await page.evaluate(() => !!document.activeElement.closest('#ArticleChapters')), false, 'Hidden outline links are skipped by Tab');
+      assert.equal(await page.evaluate(() => document.activeElement.closest('nav')?.id), 'ArticleChapterMarkers', 'Tab reaches compact native links while expanded links remain hidden');
+      const compactLinks = compact.locator('a');
+      assert.deepEqual(await compactLinks.evaluateAll(nodes => nodes.map(node => ({ hash: new URL(node.href).hash, text: node.textContent }))), anchors, 'Compact rail keeps every original heading and full name');
+      for (const link of await compactLinks.all()) {
+        const fullName = (await link.textContent()).trim();
+        await expect(link).toHaveAccessibleName(fullName);
+        assert.equal(await link.getAttribute('title'), fullName);
+      }
+      const targetSize = await compactLinks.first().boundingBox();
+      assert.ok(targetSize.width >= 44 && targetSize.height >= 44, 'Fine nodes retain44px native hit areas');
+      assert.equal(await compact.locator('.chapter-rail__label').first().evaluate(node => getComputedStyle(node).clipPath), 'inset(50%)', 'Full names are visually hidden, not removed');
+      assert.equal(await compactLinks.first().evaluate(node => getComputedStyle(node, '::before').width), '25px');
+      const haloClearance = await compactLinks.first().evaluate(node => node.closest('nav').getBoundingClientRect().right - (node.getBoundingClientRect().right - parseFloat(getComputedStyle(node, '::before').right)));
+      assert.ok(haloClearance >= 4, 'Active main-node halo fits inside the compact scroller');
+      assert.equal(await compact.locator('li li a').first().evaluate(node => getComputedStyle(node, '::before').width), '7px');
+      // A compact subsection is a native keyboard destination, including no JS.
+      const marker = compactLinks.nth(1);
+      const markerHref = await marker.getAttribute('href');
+      await marker.focus();
+      await page.keyboard.press('Enter');
+      await page.waitForURL(new URL(markerHref, origin).href, { waitUntil: 'commit' });
+      const markerID = decodeURIComponent(new URL(page.url()).hash.slice(1));
+      await page.waitForFunction(id => Math.abs(document.getElementById(id).getBoundingClientRect().top - 24) < 3, markerID);
+      if (js) {
+        await page.waitForFunction(id => { const link = document.querySelector('#ArticleChapterMarkers a[aria-current="location"]'); return link && decodeURIComponent(new URL(link.href).hash.slice(1)) === id; }, markerID);
+        assert.equal(await page.evaluate(() => document.activeElement.id), markerID);
+        const parentFill = await compact.locator('[data-current-chapter] > a').evaluate(node => ({ color: getComputedStyle(node, '::before').backgroundColor, accent: getComputedStyle(node).color, shadow: getComputedStyle(node, '::before').boxShadow }));
+        assert.equal(parentFill.color, parentFill.accent, 'Current main circle remains filled gold during subsection reading');
+        assert.notEqual(parentFill.shadow, 'none', 'Parent chapter retains its filled halo while a subsection is current');
+      }
       await desktopSummary.focus();
       await page.keyboard.press('Space');
       await checkDesktopWidth(false);
@@ -171,7 +207,7 @@ try {
         assert.equal(page.url(), beforeToggleURL, 'Changing reading width leaves URL untouched');
         assert.equal(await page.evaluate(() => history.length), historyLength, 'Changing width creates no navigation');
         await page.waitForFunction(() => {
-          const links = [...document.querySelectorAll('#ArticleChapters a')];
+          const links = [...document.querySelectorAll('#ArticleChapterMarkers a')];
           let expected = links[0];
           for (const link of links) {
             const heading = document.getElementById(decodeURIComponent(new URL(link.href).hash.slice(1)));
@@ -263,7 +299,11 @@ try {
     const summary = page.locator('.chapter-widget summary');
     await summary.tap();
     assert.equal(await page.locator('.chapter-disclosure').evaluate(node => node.open), false);
-    assert.equal(await page.locator('.chapter-widget__axis').evaluate(node => getComputedStyle(node).backgroundColor), 'rgb(0, 0, 0)', 'Forced-colors retains a visible CanvasText axis');
+    assert.equal(await page.locator('#ArticleChapterMarkers').evaluate(node => getComputedStyle(node.firstElementChild, '::before').backgroundColor), 'rgb(0, 0, 0)', 'Forced-colors retains a visible CanvasText axis');
+    const marker = page.locator('#ArticleChapterMarkers a').nth(1);
+    const markerHref = await marker.getAttribute('href');
+    await marker.tap();
+    await page.waitForURL(new URL(markerHref, origin).href, { waitUntil: 'commit' });
     await summary.tap();
     assert.equal(await page.locator('.chapter-disclosure').evaluate(node => node.open), true);
     assert.deepEqual(errors, [], 'Unavailable persistence never breaks the native outline');

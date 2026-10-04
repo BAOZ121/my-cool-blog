@@ -83,8 +83,6 @@ export function setupChapterRails(document, window) {
     frame = 0;
     const index = chapterAtPosition(positions, window.scrollY + 72);
     const id = headings[index]?.id;
-    const widget = document.querySelector('.chapter-widget');
-    widget?.style.setProperty('--chapter-progress', `${headings.length > 1 ? index / (headings.length - 1) * 100 : 0}%`);
     if (!id || current === id) return;
     current = id;
     for (const group of groups) {

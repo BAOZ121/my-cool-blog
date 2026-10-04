@@ -12,7 +12,7 @@
     </summary>
     {{ partial "chapter-rail/nav.html" (dict "Page" .Context "Desktop" true) }}
   </details>
-  <div class="chapter-widget__axis" aria-hidden="true"><span></span></div>
+  {{ partial "chapter-rail/nav.html" (dict "Page" .Context "Compact" true) }}
   {{/* The sidebar precedes <main>. Restore its width before article parsing and
        native Back restoration, never later in the deferred module. */}}
   <script>

@@ -7,10 +7,16 @@ contents and visible scrollbar. Hugo still owns every heading ID, TOC level,
 label and link; article text and industry history sections are unchanged.
 
 On desktop (1024px and wider), the English **Minimize chapters / Expand
-chapters** summary controls a native `details` disclosure. Minimizing leaves a
-one-pixel axis and active-position dot at the far-right safe edge. The visible
+chapters** summary controls a native `details` disclosure. Minimizing preserves the same one-pixel axis, numbered main-chapter circles
+and small subsection dots at the far-right safe edge, matching the supplied
+reference. The current main chapter stays filled gold with a halo, including
+while a subsection is active. Every compact marker is an ordinary heading link
+with a full accessible name and native title; labels are only visually hidden.
+Its44px-wide,44px-high targets remain usable with touch, Tab and Enter, and a
+long compact outline scrolls naturally. The visible
 vertical “Chapters” label and chevron remain a 44px-wide keyboard/touch target;
-closed outline links are excluded by native disclosure semantics. Enter and
+the expanded text outline is excluded by native disclosure semantics while
+the compact markers remain reachable. Enter and
 Space toggle it, including without JavaScript. No floating panel covers text.
 
 The article uses the available horizontal space: 20px left / 8px right outer
@@ -56,7 +62,8 @@ also has print and forced-colors fallbacks.
 - `layouts/_partials/widget/toc.html` overrides the desktop widget
 - `layouts/_partials/article/article.html` retains the upstream header,
   content, footer and math calls, replacing only its mobile TOC
-- `chapter-rail/nav.html` reuses the theme's generated TOC and original IDs
+- `chapter-rail/nav.html` reuses the theme's generated TOC and original IDs;
+  compact links have a separate navigation ID without duplicating heading IDs
 - `chapter-rail/assets.html` conditionally loads the self-hosted CSS/module
 - `head/custom.html` includes that asset partial
 
@@ -80,6 +87,7 @@ and 320px; light/dark palettes; reduced motion; JavaScript disabled; all
 heading targets; keyboard navigation/focus; direct deep links; overflow;
 scroll highlighting; expanded/minimized widths and non-overlap; no-JS keyboard
 toggling; per-article reload/state isolation; independent mobile/desktop state;
-blocked storage; and strict semantic Back reading-position restoration after
+blocked storage; compact-node anchor/name parity, active main/subsection states,
+halo clearance and keyboard/touch activation; and strict semantic Back reading-position restoration after
 minimizing (under 4px, plus exact scrollY when geometry is unchanged). Set `CHROME_PATH` for an
 installed Chromium and `CHAPTER_SCREENSHOT_DIR` to retain visual evidence.

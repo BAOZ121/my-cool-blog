@@ -2,6 +2,14 @@
      preserves native history/focus and bypasses Stack's legacy smooth-scroll handler. */}}
 {{- $toc := partial "article/components/toc" .Page -}}
 {{- $toc = replace $toc "href=\"#" (printf "href=\"%s#" .Page.RelPermalink) -}}
-<nav class="chapter-rail" data-chapter-rail aria-label="{{ T "article.tableOfContents" }}"{{ if .Desktop }} id="ArticleChapters"{{ end }}>
+{{- if .Compact -}}
+  {{- range findRESubmatch `<a([^>]*)>(.*?)</a>` $toc -}}
+    {{- $label := index . 2 -}}
+    {{- $name := $label | plainify | htmlUnescape | htmlEscape -}}
+    {{- $link := printf `<a%s title="%s" aria-label="%s"><span class="chapter-rail__label">%s</span></a>` (index . 1) $name $name $label -}}
+    {{- $toc = replace $toc (index . 0) $link -}}
+  {{- end -}}
+{{- end -}}
+<nav class="chapter-rail{{ if .Compact }} chapter-rail--compact{{ end }}" data-chapter-rail aria-label="{{ if .Compact }}Chapter markers{{ else }}{{ T "article.tableOfContents" }}{{ end }}"{{ if .Desktop }} id="ArticleChapters"{{ else if .Compact }} id="ArticleChapterMarkers"{{ end }}>
   {{ $toc | safeHTML }}
 </nav>

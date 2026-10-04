@@ -135,3 +135,19 @@ test('desktop persistence is per article and blocked storage never disables nati
   assert.doesNotThrow(() => events.toggle());
   assert.equal(disclosure.open, true);
 });
+
+
+test('minimized outline reuses native heading links with complete names and reference-style nodes', () => {
+  const widget = readFileSync(new URL('../layouts/_partials/widget/toc.html', import.meta.url), 'utf8');
+  const nav = readFileSync(new URL('../layouts/_partials/chapter-rail/nav.html', import.meta.url), 'utf8');
+  const css = readFileSync(new URL('../assets/css/chapter-rail.css', import.meta.url), 'utf8');
+  assert.ok(widget.indexOf('"Compact" true') > widget.indexOf('</details>'), 'Compact native links stay outside the closed disclosure');
+  assert.doesNotMatch(widget, /chapter-widget__axis/);
+  assert.match(nav, /aria-label="%s"/);
+  assert.match(nav, /title="%s"/);
+  assert.match(nav, /plainify \| htmlUnescape \| htmlEscape/);
+  assert.match(nav, /id="ArticleChapterMarkers"/);
+  assert.match(css, /\.chapter-rail--compact \[data-current-chapter\] > a::before/);
+  assert.match(css, /padding: 4px 8px 14px 0/);
+  assert.match(css, /clip-path: inset\(50%\)/);
+});
