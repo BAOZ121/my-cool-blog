@@ -99,6 +99,7 @@ try {
     await page.waitForURL(origin + articlePath, { waitUntil: "commit" });
     await page.waitForFunction(expected => Math.abs(scrollY - expected) < 5, articleScroll);
     await page.waitForFunction(() => window.__transition.finished);
+    console.log(`PASS ${width}px ${scheme} ${motion}: Back/Forward restores both scroll positions`);
 
     // Ignore the theme's hidden alternate TOC when testing native hash history.
     const anchor = page.locator('a[href^="#"]').filter({ visible: true }).first();
@@ -106,7 +107,7 @@ try {
       const reveals = await page.evaluate(() => window.__transition.reveals);
       const fragment = await anchor.getAttribute("href");
       await anchor.click();
-      await page.waitForURL(url => url.hash === fragment);
+      await page.waitForURL(url => url.hash === fragment, { waitUntil: "commit" });
       assert.equal(await page.evaluate(() => window.__transition.reveals), reveals);
       await page.goBack({ waitUntil: "commit" });
     }
