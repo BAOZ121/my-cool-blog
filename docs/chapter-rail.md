@@ -1,7 +1,8 @@
 # Chapter rail
 
-The right article sidebar is a one-pixel chapter line with numbered main
-chapters and smaller subsection nodes. It replaces Stack's boxed table of
+The right article sidebar is a one-pixel chapter line at the viewport's
+far-right safe edge, with chapter labels to its left, numbered main chapters
+and smaller subsection nodes. It replaces Stack's boxed table of
 contents and visible scrollbar. Hugo still owns every heading ID, TOC level,
 label and link; article text and industry history sections are unchanged.
 
@@ -15,7 +16,9 @@ navigation. Resize, image/font loads and BFCache returns remeasure positions.
 
 On screens below 1024px, the complete outline lives in a native, keyboard
 operable `details` disclosure above the article. It stays in document flow,
-expands to its natural height, and never floats over the text. Links and the
+expands to its natural height, and never floats over the text. Its open/closed
+state is retained for the browser session so a Back navigation can restore the
+same layout even when the browser has evicted the page from BFCache. Links and the
 mobile disclosure work with JavaScript disabled. Reduced motion disables the
 small color transitions; links use native scrolling in every mode. The rail
 also has print and forced-colors fallbacks.
@@ -44,7 +47,7 @@ hugo --environment production --minify --panicOnWarning
 node tests/chapter-rail.browser.mjs
 ```
 
-The browser suite covers the long commercial-space report at 1440, 1024, 390
+The browser suite covers the long commercial-space report at 1920, 1440, 1024, 390
 and 320px; light/dark palettes; reduced motion; JavaScript disabled; all
 heading targets; keyboard navigation/focus; direct deep links; overflow;
 scroll highlighting; and Back scroll restoration. Set `CHROME_PATH` for an

@@ -24,7 +24,7 @@ if (screenshots) await mkdir(screenshots, { recursive: true });
 let browser;
 try {
   browser = await chromium.launch({ headless: true, ...(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : {}) });
-  for (const [width, scheme, motion, js] of [[1440, 'dark', 'no-preference', true], [1440, 'light', 'reduce', true], [1024, 'dark', 'reduce', true], [390, 'dark', 'no-preference', true], [320, 'light', 'reduce', true], [1440, 'light', 'reduce', false], [390, 'light', 'reduce', false]]) {
+  for (const [width, scheme, motion, js] of [[1440, 'dark', 'no-preference', true], [1920, 'light', 'reduce', true], [1024, 'dark', 'reduce', true], [390, 'dark', 'no-preference', true], [320, 'light', 'reduce', true], [1440, 'light', 'reduce', false], [390, 'light', 'reduce', false]]) {
     const context = await browser.newContext({ viewport: { width, height: 900 }, colorScheme: scheme, reducedMotion: motion, javaScriptEnabled: js });
     await context.route('https://fonts.googleapis.com/**', route => route.fulfill({ contentType: 'text/css', body: '' }));
     if (js) await context.addInitScript(scheme => localStorage.setItem('StackColorScheme', scheme), scheme);
@@ -53,6 +53,13 @@ try {
       assert.equal(await rail.evaluate(node => getComputedStyle(node.firstElementChild, '::before').width), '1px');
       const layout = await page.evaluate(() => ({ main: document.querySelector('.main-article').getBoundingClientRect().right, rail: document.querySelector('.chapter-widget').getBoundingClientRect().left }));
       assert.ok(layout.rail > layout.main, 'Rail remains beside the article, without overlap');
+      const edge = await rail.evaluate(node => {
+        const list = node.firstElementChild;
+        const style = getComputedStyle(list, '::before');
+        return document.documentElement.clientWidth - (list.getBoundingClientRect().right - parseFloat(style.right));
+      });
+      assert.ok(edge >= 8 && edge <= 36, `Chapter line stays at the viewport far-right edge with a safe inset: ${edge}`);
+      assert.equal(await links.first().evaluate(node => getComputedStyle(node).textAlign), 'right');
     }
     if (screenshots) await page.screenshot({ path: resolve(screenshots, `chapters-${width}-${scheme}-${js ? 'js' : 'no-js'}.png`) });
     // Keyboard traverses clipped/offscreen links; Enter uses native hash navigation.
@@ -80,6 +87,7 @@ try {
       await page.goto(origin + '/');
       await page.goBack({ waitUntil: 'commit' });
       await page.evaluate(() => document.fonts.ready);
+      if (mobile) await page.waitForFunction(() => document.querySelector('.chapter-mobile details').open);
       await page.waitForFunction(scroll => Math.abs(scrollY - scroll) < 4, scroll);
       await page.waitForFunction(() => document.querySelector('.chapter-rail a[aria-current="location"]'));
     }

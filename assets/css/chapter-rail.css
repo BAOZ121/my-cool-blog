@@ -131,7 +131,23 @@
 .chapter-mobile summary:focus-visible { outline: 2px solid var(--accent-color); outline-offset: 4px; }
 .chapter-mobile .chapter-rail { --rail-surface: var(--card-background); max-height: none; overflow: visible; padding-block: 8px 20px; }
 .chapter-mobile .chapter-rail a { min-height: 44px; font-size: 1.3rem; }
-@media (min-width: 1024px) { .chapter-mobile { display: none; } }
+@media (min-width: 1024px) {
+  .chapter-mobile { display: none; }
+  .article-page .container.extended { --chapter-container-width: 1280px; }
+  /* Extend only into the unused outside margin. The article keeps its own
+     layout space while the line sits at the viewport's far-right safe edge. */
+  .chapter-widget {
+    margin-inline-end: calc(8px - var(--container-padding) - max(0px, (100vw - var(--chapter-container-width)) / 2));
+  }
+  .chapter-widget__header { padding-inline: 6px 4px; }
+  .chapter-widget .chapter-rail { padding-inline: 6px 0; }
+  .chapter-widget .chapter-rail > :is(ul, ol)::before { left: auto; right: var(--rail-axis); }
+  .chapter-widget .chapter-rail a { justify-content: flex-end; padding: 8px 38px 8px 8px; text-align: right; }
+  .chapter-widget .chapter-rail a::before { left: auto; right: calc(var(--rail-axis) - 3px); }
+  .chapter-widget .chapter-rail > :is(ul, ol) > li > a::before { left: auto; right: 0; }
+  .chapter-widget .chapter-rail li li li > a { padding-inline: 8px 48px; }
+}
+@media (min-width: 1280px) { .article-page .container.extended { --chapter-container-width: 1536px; } }
 @media (prefers-reduced-motion: reduce) { .chapter-rail a { transition: none; } }
 @media (forced-colors: active) {
   .chapter-rail > :is(ul, ol)::before { background: CanvasText; }

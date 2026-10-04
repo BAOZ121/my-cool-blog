@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { chapterAtPosition, targetID } from '../assets/js/chapter-rail.mjs';
+import { chapterAtPosition, targetID, setupChapterRails } from '../assets/js/chapter-rail.mjs';
 
 test('reading line selects the preceding chapter, including before and after the article', () => {
   assert.equal(chapterAtPosition([], 100), -1);
@@ -26,6 +26,8 @@ test('the progressive rail never intercepts navigation or changes history and re
   assert.match(script, /aria-current/);
   assert.match(script, /pageshow/);
   assert.match(script, /ResizeObserver/);
+  assert.match(script, /sessionStorage\.getItem\(key\)/);
+  assert.match(script, /pagehide/);
 });
 test('mobile keeps a native in-flow disclosure; rail does not create sliding controls', () => {
   const article = readFileSync(new URL('../layouts/_partials/article/article.html', import.meta.url), 'utf8');
@@ -37,4 +39,30 @@ test('mobile keeps a native in-flow disclosure; rail does not create sliding con
   assert.match(css, /prefers-reduced-motion: reduce/);
   assert.match(css, /overflow-wrap: anywhere/);
   assert.match(css, /forced-colors: active/);
+  assert.match(css, /left: auto; right: var\(--rail-axis\)/);
+  assert.match(css, /text-align: right/);
+});
+
+test('native disclosure state survives a reload and tolerates disabled storage', () => {
+  const events = {};
+  const values = new Map([['dex-chapters-open:/post/example/', 'open']]);
+  const disclosure = { open: false, addEventListener: (name, handler) => { events[name] = handler; } };
+  const rail = { querySelectorAll: () => [] };
+  const document = { querySelectorAll: () => [rail], querySelector: selector => selector === '.chapter-mobile details' ? disclosure : {} };
+  const window = {
+    location: new URL('https://thedexs.com/post/example/'),
+    addEventListener: (name, handler) => { events[name] = handler; },
+    sessionStorage: { getItem: key => values.get(key), setItem: (key, value) => values.set(key, value) },
+  };
+  setupChapterRails(document, window);
+  assert.equal(disclosure.open, true);
+  disclosure.open = false;
+  events.toggle();
+  assert.equal(values.get('dex-chapters-open:/post/example/'), 'closed');
+  disclosure.open = true;
+  events.pagehide();
+  assert.equal(values.get('dex-chapters-open:/post/example/'), 'open');
+  Object.defineProperty(window, 'sessionStorage', { get() { throw new Error('Storage blocked'); } });
+  assert.doesNotThrow(() => setupChapterRails(document, window));
+  assert.doesNotThrow(() => events.toggle());
 });

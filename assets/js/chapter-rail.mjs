@@ -22,6 +22,18 @@ export function setupChapterRails(document, window) {
   const rails = [...document.querySelectorAll('[data-chapter-rail]')];
   const content = document.querySelector('.article-content');
   if (!rails.length || !content) return;
+  // Restore the native outline's layout before browser scroll restoration.
+  // BFCache usually retains <details> itself; this also covers an evicted page.
+  const disclosure = document.querySelector('.chapter-mobile details');
+  if (disclosure) {
+    const key = `dex-chapters-open:${window.location.pathname}`;
+    try { disclosure.open = window.sessionStorage.getItem(key) === 'open'; } catch { /* Storage can be disabled. */ }
+    const saveDisclosure = () => {
+      try { window.sessionStorage.setItem(key, disclosure.open ? 'open' : 'closed'); } catch { /* Keep native disclosure usable. */ }
+    };
+    disclosure.addEventListener('toggle', saveDisclosure);
+    window.addEventListener('pagehide', saveDisclosure);
+  }
   // Preserve an incoming query string (for example campaign attribution) when
   // following the canonical path+hash anchors rendered by Hugo.
   for (const rail of rails) for (const link of rail.querySelectorAll('a[href]')) {
