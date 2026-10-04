@@ -22,15 +22,25 @@ await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
 const browser = await chromium.launch({ headless: true, ...(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : {}) });
 const base = `http://127.0.0.1:${server.address().port}`;
 const close = (actual, expected, tolerance = 1e-6) => assert.ok(Math.abs(actual - expected) <= tolerance, `Expected ${actual} to be within ${tolerance} of ${expected}`);
+const cases = [
+  { slug: 'ai-computing-infrastructure', map: 'ai-computing-infrastructure', width: 1440, reducedMotion: 'reduce' },
+  { slug: 'ai-computing-infrastructure', map: 'ai-computing-infrastructure', width: 1440, reducedMotion: 'no-preference' },
+  { slug: 'ai-computing-infrastructure', map: 'ai-computing-infrastructure', width: 390, reducedMotion: 'reduce' },
+  { slug: 'commercial-space-advanced-engineering', map: 'commercial-space-business', width: 1440, reducedMotion: 'reduce' },
+  { slug: 'commercial-space-advanced-engineering', map: 'commercial-space-business', width: 390, reducedMotion: 'reduce' },
+];
 
 try {
-  for (const reducedMotion of ['reduce', 'no-preference']) {
-    const context = await browser.newContext({ viewport: { width: 1440, height: 1050 }, reducedMotion, hasTouch: true });
+  for (const { slug, map, width, reducedMotion } of cases) {
+    const label = `${map}, ${width}px, ${reducedMotion}`;
+    const context = await browser.newContext({ viewport: { width, height: width < 600 ? 844 : 1050 }, reducedMotion, hasTouch: true, isMobile: width < 600 });
     const page = await context.newPage();
     const errors = [];
     page.on('pageerror', error => errors.push(error.message));
-    await page.goto(`${base}/post/ai-computing-infrastructure/`, { waitUntil: 'domcontentloaded' });
-    const figure = page.locator('figure.article-visual[data-visual="map"]').first();
+    const articleURL = `${base}/post/${slug}/`;
+    const figureSelector = `#industry-map-${map}`;
+    await page.goto(articleURL, { waitUntil: 'domcontentloaded' });
+    const figure = page.locator(figureSelector);
     const svg = figure.locator('.visual-stage > svg');
     const fit = figure.locator('[data-action="fit"]');
     const zoomIn = figure.locator('[data-action="zoom-in"]');
@@ -38,7 +48,7 @@ try {
     const interaction = figure.locator('[data-action="interact"]');
     await figure.scrollIntoViewIfNeeded();
     await figure.locator('[data-action="zoom-in"]').waitFor({ state: 'visible' });
-    await page.waitForFunction(() => document.querySelector('figure.article-visual[data-visual="map"]')?.dataset.visualState === 'ready');
+    await page.waitForFunction(selector => document.querySelector(selector)?.dataset.visualState === 'ready', figureSelector);
 
     const transform = () => svg.evaluate(el => ({ k: el.__zoom.k, x: el.__zoom.x, y: el.__zoom.y }));
     const settle = async () => {
@@ -52,11 +62,21 @@ try {
       const { count = 1, fractionX = .63, fractionY = .37, ...init } = options;
       const position = { clientX: rect.left + rect.width * fractionX, clientY: rect.top + rect.height * fractionY };
       let canceled = 0;
+      let point;
+      let screenBasis;
       for (let i = 0; i < count; i++) {
         const event = new WheelEvent('wheel', { bubbles: true, cancelable: true, deltaY: -100, deltaMode: 0, ctrlKey: true, ...position, ...init });
+        // MouseEvent coordinates may be quantized by the browser. Match the
+        // dispatched event and the SVG's coordinate system, not its init data.
+        const matrix = el.getScreenCTM();
+        const screenPoint = el.createSVGPoint();
+        screenPoint.x = event.clientX; screenPoint.y = event.clientY;
+        const local = screenPoint.matrixTransform(matrix.inverse());
+        point = [local.x, local.y];
+        screenBasis = [matrix.a, matrix.b, matrix.c, matrix.d];
         if (!el.dispatchEvent(event)) canceled++;
       }
-      return { canceled, point: [position.clientX - rect.left, position.clientY - rect.top] };
+      return { canceled, point, screenBasis };
     }, options);
     const frame = () => page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
 
@@ -80,13 +100,15 @@ try {
     const ratios = [];
     for (const modifier of [{ ctrlKey: true }, { ctrlKey: false, metaKey: true }]) {
       const before = await reset();
-      const { canceled, point } = await wheel(modifier);
+      const { canceled, point, screenBasis: [a, b, c, d] } = await wheel(modifier);
       await frame();
       const after = await transform();
       assert.equal(canceled, 1, 'Accepted zoom wheel must prevent native browser/page zoom');
       assert.ok(after.k > before.k && after.k / before.k <= 1.084, 'One wheel notch must make a small bounded change');
-      close((point[0] - before.x) / before.k, (point[0] - after.x) / after.k, .02);
-      close((point[1] - before.y) / before.k, (point[1] - after.y) / after.k, .02);
+      const dx = ((point[0] - before.x) / before.k) * after.k + after.x - point[0];
+      const dy = ((point[1] - before.y) / before.k) * after.k + after.y - point[1];
+      const screenDrift = Math.hypot(a * dx + c * dy, b * dx + d * dy);
+      assert.ok(screenDrift <= .25, `Cursor anchor moved ${screenDrift}px (${label})`);
       ratios.push(after.k / before.k);
     }
     close(ratios[0], ratios[1], 1e-6);
@@ -170,6 +192,7 @@ try {
     // listeners. The same two-finger gesture is ignored while interaction is off.
     const cdp = await context.newCDPSession(page);
     const pinch = async () => {
+      await svg.scrollIntoViewIfNeeded();
       const box = await svg.boundingBox();
       const x = box.x + box.width / 2, y = box.y + box.height / 2;
       const touch = distance => [{ x: x - distance, y, id: 1 }, { x: x + distance, y, id: 2 }];
@@ -187,6 +210,7 @@ try {
     const afterPinch = await transform();
     assert.ok(afterPinch.k > touchOn.k * 1.1, 'Enabled two-finger pinch must zoom');
     {
+      await svg.scrollIntoViewIfNeeded();
       const box = await svg.boundingBox();
       const x = box.x + box.width / 2, y = box.y + box.height / 2;
       await cdp.send('Input.dispatchTouchEvent', { type: 'touchStart', touchPoints: [{ x, y, id: 1 }] });
@@ -232,8 +256,34 @@ try {
     assert.ok(Number.isFinite(restored.k) && restored.k > 0);
     await reset();
     close((await transform()).k, baseline.k, .002);
-    assert.deepEqual(errors, [], `Unexpected browser errors (${reducedMotion})`);
-    console.log(`PASS mindmap zoom (${reducedMotion}): modifiers, units, fine input, bursts, anchor, keyboard, bounds, touch, fit races, fullscreen, print`);
+
+    // Navigate with queued input, then return through real browser history.
+    // Reloaded and bfcache-restored pages must both regain one working controller.
+    const destination = `${base}/post/vr-industry-report-2026/`;
+    await Promise.all([
+      page.waitForURL(destination, { waitUntil: 'domcontentloaded' }),
+      figure.evaluate((el, destination) => {
+        const svg = el.querySelector('.visual-stage > svg');
+        const r = svg.getBoundingClientRect();
+        svg.dispatchEvent(new WheelEvent('wheel', { bubbles: true, cancelable: true, ctrlKey: true, deltaY: -100, clientX: r.left + r.width / 2, clientY: r.top + r.height / 2 }));
+        location.assign(destination);
+      }, destination),
+    ]);
+    await page.goBack({ waitUntil: 'domcontentloaded' });
+    assert.equal(page.url(), articleURL);
+    await figure.scrollIntoViewIfNeeded();
+    await page.waitForFunction(selector => document.querySelector(selector)?.dataset.visualState === 'ready', figureSelector);
+    await settle();
+    assert.equal(await figure.locator('.visual-zoom-controls').count(), 1);
+    const returned = await transform();
+    assert.ok(Number.isFinite(returned.k) && returned.k > 0);
+    const returnBaseline = await reset();
+    await zoomIn.click();
+    await settle();
+    close((await transform()).k / returnBaseline.k, 1.1, .002);
+    await reset();
+    assert.deepEqual(errors, [], `Unexpected browser errors (${label})`);
+    console.log(`PASS mindmap zoom (${label}): modifiers, units, fine input, bursts, anchor, keyboard, bounds, touch, fit races, fullscreen, print, back navigation`);
     await context.close();
   }
 } finally {
