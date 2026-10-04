@@ -10,6 +10,11 @@
             {{- if and (not $IsList) (not ($Page.Scratch.Get "hasWidget")) -}}
               {{- $sizes = "(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) calc(75vw - 70px), (max-width: 1279px) calc(80vw - 72px), (max-width: 1535px) calc(85vw - 74px), 1232px" -}}
             {{- end -}}
+            {{- if and (not $IsList) ($Page.Scratch.Get "TOCEnabled") -}}
+              {{- /* Native desktop outline defaults to expanded. Its module
+                    tracks actual width after a reader minimizes/restores it. */ -}}
+              {{- $sizes = "(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) calc(75vw - 70px), min(1200px, calc(100vw - 76px - clamp(160px, 13vw, 200px) - clamp(200px, 18vw, 280px)))" -}}
+            {{- end -}}
             {{ partial "helper/responsive-image" (dict
                 "Attributes" (merge $cover (dict
                     "alt" (printf "Featured image of post %s" $Page.Title)

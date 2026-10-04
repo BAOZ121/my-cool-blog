@@ -303,7 +303,7 @@ try {
     firstArticlePath ||= articlePath;
     await article.scrollIntoViewIfNeeded();
     await article.locator("img").evaluate(image => image.decode());
-    const selectedCover = await article.locator("img").evaluate(image => ({ url: image.currentSrc, width: image.getBoundingClientRect().width, candidate: Number(image.srcset.split(/,\s*/).find(item => new URL(item.split(" ")[0], location.href).href === image.currentSrc)?.split(" ")[1].slice(0, -1)) }));
+    const selectedCover = await article.locator("img").evaluate(image => ({ url: image.currentSrc, srcset: image.srcset, width: image.getBoundingClientRect().width, candidate: Number(image.srcset.split(/,\s*/).find(item => new URL(item.split(" ")[0], location.href).href === image.currentSrc)?.split(" ")[1].slice(0, -1)) }));
     assert.match(new URL(selectedCover.url).pathname, /\.webp$/);
     assert.ok(selectedCover.candidate >= selectedCover.width * .95 && selectedCover.candidate <= selectedCover.width * 1.6, `Avoid oversized cover selection: ${JSON.stringify(selectedCover)}`);
     const homeScroll = await page.evaluate(() => scrollY);
@@ -364,7 +364,12 @@ try {
     await assertNoNative(page);
     const hero = page.locator(".main-article [data-transition-cover] img");
     await hero.evaluate(image => image.decode());
-    assert.equal(await hero.evaluate(image => image.currentSrc), selectedCover.url, "Homepage/article must select the same cacheable cover URL");
+    const heroCover = await hero.evaluate(image => ({ url: image.currentSrc, srcset: image.srcset, width: image.getBoundingClientRect().width, candidate: Number(image.srcset.split(/,\s*/).find(item => new URL(item.split(" ")[0], location.href).href === image.currentSrc)?.split(" ")[1].slice(0, -1)) }));
+    assert.equal(heroCover.srcset, selectedCover.srcset, "List and wider article retain the same cacheable candidate URLs");
+    assert.ok(heroCover.candidate >= Math.min(heroCover.width * .95, 1376) && heroCover.candidate <= heroCover.width * 1.6, `The wider article must select a suitably sized cover: ${JSON.stringify(heroCover)}`);
+    if (Math.abs(heroCover.width - selectedCover.width) < 1) {
+      assert.equal(heroCover.url, selectedCover.url, "Unchanged display width reuses the exact homepage cover candidate");
+    }
     assert.equal(await page.locator("html").getAttribute("data-scheme"), scheme);
     assert.equal(await page.locator("main h1").count(), 1);
     assert.equal(await page.evaluate(() => scrollY < 5), true);

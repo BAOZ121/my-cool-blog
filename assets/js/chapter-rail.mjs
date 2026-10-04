@@ -33,6 +33,17 @@ export function setupChapterRails(document, window) {
     disclosure.addEventListener('toggle', saveDisclosure);
     window.addEventListener('pagehide', saveDisclosure);
   }
+  // Desktop is also a native disclosure. Its parser-time script has already
+  // restored the width before article content; enhancement only saves state.
+  const desktopDisclosure = document.querySelector('.chapter-disclosure');
+  if (desktopDisclosure) {
+    const key = `dex-chapters-minimized:${window.location.pathname}`;
+    const saveDesktop = () => {
+      try { window.sessionStorage.setItem(key, String(!desktopDisclosure.open)); } catch { /* Native toggle still works. */ }
+    };
+    desktopDisclosure.addEventListener('toggle', saveDesktop);
+    window.addEventListener('pagehide', saveDesktop);
+  }
   // Preserve an incoming query string (for example campaign attribution) when
   // following the canonical path+hash anchors rendered by Hugo.
   for (const rail of rails) for (const link of rail.querySelectorAll('a[href]')) {
@@ -41,6 +52,14 @@ export function setupChapterRails(document, window) {
       url.search = window.location.search;
       link.href = url.href;
     }
+  }
+  const hero = document.querySelector('.main-article .article-image img[sizes]');
+  const originalHeroSizes = hero?.getAttribute('sizes');
+  function syncHeroSizes() {
+    if (!hero || !originalHeroSizes) return;
+    const width = Math.ceil(hero.getBoundingClientRect().width);
+    const sizes = window.innerWidth >= 1024 && width > 0 ? `${width}px` : originalHeroSizes;
+    if (hero.getAttribute('sizes') !== sizes) hero.setAttribute('sizes', sizes);
   }
   const groups = rails.map(rail => ({
     rail,
@@ -54,6 +73,7 @@ export function setupChapterRails(document, window) {
   let current = null;
 
   function measure() {
+    syncHeroSizes();
     positions = headings.map(heading => heading.getBoundingClientRect().top + window.scrollY);
     current = null;
     schedule();
@@ -63,6 +83,8 @@ export function setupChapterRails(document, window) {
     frame = 0;
     const index = chapterAtPosition(positions, window.scrollY + 72);
     const id = headings[index]?.id;
+    const widget = document.querySelector('.chapter-widget');
+    widget?.style.setProperty('--chapter-progress', `${headings.length > 1 ? index / (headings.length - 1) * 100 : 0}%`);
     if (!id || current === id) return;
     current = id;
     for (const group of groups) {
@@ -110,6 +132,7 @@ export function setupChapterRails(document, window) {
       });
     });
   }
+  desktopDisclosure?.addEventListener('toggle', measure);
   window.addEventListener('scroll', schedule, { passive: true });
   window.addEventListener('resize', measure, { passive: true });
   window.addEventListener('hashchange', schedule);

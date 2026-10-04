@@ -6,7 +6,34 @@ and smaller subsection nodes. It replaces Stack's boxed table of
 contents and visible scrollbar. Hugo still owns every heading ID, TOC level,
 label and link; article text and industry history sections are unchanged.
 
-The rail is sticky with the existing right sidebar. Long outlines can be
+On desktop (1024px and wider), the English **Minimize chapters / Expand
+chapters** summary controls a native `details` disclosure. Minimizing leaves a
+one-pixel axis and active-position dot at the far-right safe edge. The visible
+vertical “Chapters” label and chevron remain a 44px-wide keyboard/touch target;
+closed outline links are excluded by native disclosure semantics. Enter and
+Space toggle it, including without JavaScript. No floating panel covers text.
+
+The article uses the available horizontal space: 20px left / 8px right outer
+padding, 24px column gaps, a `clamp(160px, 13vw, 200px)` left sidebar, and a
+`clamp(200px, 18vw, 280px)` expanded or 44px minimized right sidebar. The main
+card is capped at 1200px; remaining space becomes its auto margins. At viewport
+widths 1024 / 1280 / 1440 / 1920px, expected card widths are approximately
+588 / 807 / 918 / 1200px expanded and 744 / 994 / 1133 / 1200px minimized.
+Headings and prose share an approximately 100-character body-font measure
+(850px at the current 17px font), while tables and charts use the full card.
+Mobile layout is unchanged. Browsers without `:has()` retain the theme's
+reserved sidebar space and usable native disclosure rather than overlaying it.
+
+Desktop state is saved per article for the browser session. A small parser-time
+script beside the right widget restores it before `<main>` is parsed, keeping
+native Back restoration on the correct reading width. The module only saves
+state and remeasures headings. Blocked storage falls back to the working native
+control. The hero's `sizes` value tracks measured desktop width, restoring its
+original responsive expression on mobile without changing candidate URLs.
+
+Only label opacity and the control chevron receive brief 160ms transitions;
+column widths are never animated. Reduced motion removes both. The rail is
+sticky with the existing right sidebar. Long outlines can be
 scrolled with a wheel, touchpad or keyboard without a bulky scrollbar. The
 active link has `aria-current="location"`; its parent chapter and position
 counter update as the document scrolls. The rail only moves enough to keep an
@@ -47,8 +74,11 @@ hugo --environment production --minify --panicOnWarning
 node tests/chapter-rail.browser.mjs
 ```
 
-The browser suite covers the long commercial-space report at 1920, 1440, 1024, 390
+The browser suite covers the long commercial-space report at 1920, 1440, 1280, 1024, 390
 and 320px; light/dark palettes; reduced motion; JavaScript disabled; all
 heading targets; keyboard navigation/focus; direct deep links; overflow;
-scroll highlighting; and Back scroll restoration. Set `CHROME_PATH` for an
+scroll highlighting; expanded/minimized widths and non-overlap; no-JS keyboard
+toggling; per-article reload/state isolation; independent mobile/desktop state;
+blocked storage; and strict semantic Back reading-position restoration after
+minimizing (under 4px, plus exact scrollY when geometry is unchanged). Set `CHROME_PATH` for an
 installed Chromium and `CHAPTER_SCREENSHOT_DIR` to retain visual evidence.

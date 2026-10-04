@@ -30,7 +30,7 @@ test('the progressive rail never intercepts navigation or changes history and re
   assert.doesNotMatch(script, /disclosure\.open\s*=/);
   assert.match(script, /pagehide/);
 });
-test('mobile keeps a native in-flow disclosure; rail does not create sliding controls', () => {
+test('mobile keeps a native in-flow disclosure and rail avoids overlay controls', () => {
   const article = readFileSync(new URL('../layouts/_partials/article/article.html', import.meta.url), 'utf8');
   const css = readFileSync(new URL('../assets/css/chapter-rail.css', import.meta.url), 'utf8');
   assert.match(article, /<details>/);
@@ -49,7 +49,7 @@ test('native disclosure state survives a reload and tolerates disabled storage',
   const values = new Map([['dex-chapters-open:/post/example/', 'open']]);
   const disclosure = { open: false, addEventListener: (name, handler) => { events[name] = handler; } };
   const rail = { querySelectorAll: () => [] };
-  const document = { querySelectorAll: () => [rail], querySelector: selector => selector === '.chapter-mobile details' ? disclosure : {} };
+  const document = { querySelectorAll: () => [rail], querySelector: selector => selector === '.chapter-mobile details' ? disclosure : selector === '.article-content' ? {} : null };
   const window = {
     location: new URL('https://thedexs.com/post/example/'),
     addEventListener: (name, handler) => { events[name] = handler; },
@@ -78,4 +78,60 @@ test('native disclosure state survives a reload and tolerates disabled storage',
   disclosure.open = false;
   assert.doesNotThrow(() => restore({ getItem() { throw new Error('Storage blocked'); } }));
   assert.equal(disclosure.open, false, 'Blocked storage does not change native layout');
+});
+
+test('desktop native toggle and parser-time state restore work without enhancement', () => {
+  const template = readFileSync(new URL('../layouts/_partials/widget/toc.html', import.meta.url), 'utf8');
+  const css = readFileSync(new URL('../assets/css/chapter-rail.css', import.meta.url), 'utf8');
+  const restoreScript = template.match(/<script>([\s\S]*?)<\/script>/)[1];
+  assert.match(template, /<details class="chapter-disclosure" open>/);
+  assert.match(template, /<summary[^>]*aria-controls="ArticleChapters"/);
+  assert.match(template, /Minimize chapters/);
+  assert.match(template, /Expand chapters/);
+  assert.match(css, /:has\(\.chapter-disclosure:not\(\[open\]\)\)/);
+  assert.match(css, /--right-sidebar-max-width: 44px/);
+  assert.match(css, /max-width: 1200px/);
+  assert.match(css, /--chapter-prose-measure: calc\(var\(--article-font-size\) \* 50\)/);
+  assert.doesNotMatch(css, /transition:[^;}]*\b(?:all|width|height|flex|margin)\b/);
+  const disclosure = { open: true };
+  const values = new Map([['dex-chapters-minimized:/post/one/', 'true']]);
+  const restore = (pathname, storage = { getItem: key => values.get(key) }) => runInNewContext(restoreScript, {
+    document: { currentScript: { parentElement: { querySelector: () => disclosure } } },
+    sessionStorage: storage, location: { pathname },
+  });
+  restore('/post/one/');
+  assert.equal(disclosure.open, false);
+  restore('/post/two/');
+  assert.equal(disclosure.open, true, 'Another article retains its own width');
+  values.set('dex-chapters-minimized:/post/one/', 'false');
+  restore('/post/one/');
+  assert.equal(disclosure.open, true);
+  assert.doesNotThrow(() => restore('/post/one/', { getItem() { throw new Error('Storage blocked'); } }));
+  assert.equal(disclosure.open, true, 'Storage failure preserves usable native expanded layout');
+});
+
+test('desktop persistence is per article and blocked storage never disables native toggles', () => {
+  const events = {};
+  const pageEvents = {};
+  const values = new Map();
+  const disclosure = { open: true, addEventListener: (name, handler) => { events[name] = handler; } };
+  const document = {
+    querySelectorAll: () => [{ querySelectorAll: () => [] }],
+    querySelector: selector => selector === '.chapter-disclosure' ? disclosure : selector === '.article-content' ? {} : null,
+  };
+  const window = {
+    location: new URL('https://thedexs.com/post/example/'),
+    addEventListener: (name, handler) => { pageEvents[name] = handler; },
+    sessionStorage: { setItem: (key, value) => values.set(key, value) },
+  };
+  setupChapterRails(document, window);
+  disclosure.open = false;
+  events.toggle();
+  assert.equal(values.get('dex-chapters-minimized:/post/example/'), 'true');
+  disclosure.open = true;
+  pageEvents.pagehide();
+  assert.equal(values.get('dex-chapters-minimized:/post/example/'), 'false');
+  Object.defineProperty(window, 'sessionStorage', { get() { throw new Error('Storage blocked'); } });
+  assert.doesNotThrow(() => events.toggle());
+  assert.equal(disclosure.open, true);
 });
