@@ -1061,13 +1061,18 @@
             "name": "1 · 1960s · Communications demand [11]",
             "children": [
               {
-                "name": "1962 · Telstar 1 demonstrates transatlantic television"
-              },
-              {
-                "name": "1964 · INTELSAT organizational agreements"
-              },
-              {
-                "name": "1965 · Early Bird moves toward commercial service"
+                "name": "Key milestones",
+                "children": [
+                  {
+                    "name": "1962 · Telstar 1 demonstrates transatlantic television"
+                  },
+                  {
+                    "name": "1964 · INTELSAT organizational agreements"
+                  },
+                  {
+                    "name": "1965 · Early Bird moves toward commercial service"
+                  }
+                ]
               }
             ]
           },
@@ -1075,13 +1080,18 @@
             "name": "2 · 1980s · Specialized launch services [12]",
             "children": [
               {
-                "name": "1980 · Arianespace is established"
-              },
-              {
-                "name": "May 1984 · First commercial mission launches Spacenet F1"
-              },
-              {
-                "name": "Customers can purchase transportation from a launch provider"
+                "name": "Key milestones",
+                "children": [
+                  {
+                    "name": "1980 · Arianespace is established"
+                  },
+                  {
+                    "name": "May 1984 · First commercial mission launches Spacenet F1"
+                  },
+                  {
+                    "name": "Customers can purchase transportation from a launch provider"
+                  }
+                ]
               }
             ]
           },
@@ -1089,16 +1099,21 @@
             "name": "3 · From 2006 · Development and procurement [2][24]",
             "children": [
               {
-                "name": "COTS · milestone-based development agreements"
-              },
-              {
-                "name": "2007 · Rocketplane Kistler agreement ends after funding shortfall"
-              },
-              {
-                "name": "December 2008 · CRS service contracts precede completed demonstrations"
-              },
-              {
-                "name": "Development support and service procurement are distinct"
+                "name": "Key milestones",
+                "children": [
+                  {
+                    "name": "COTS · milestone-based development agreements"
+                  },
+                  {
+                    "name": "2007 · Rocketplane Kistler agreement ends after funding shortfall"
+                  },
+                  {
+                    "name": "December 2008 · CRS service contracts precede completed demonstrations"
+                  },
+                  {
+                    "name": "Development support and service procurement are distinct"
+                  }
+                ]
               }
             ]
           },
@@ -1106,13 +1121,18 @@
             "name": "4 · 2014 · Commercial crew procurement [28]",
             "children": [
               {
-                "name": "September 2014 · Boeing and SpaceX receive CCtCap contracts"
-              },
-              {
-                "name": "Companies own and operate transportation systems"
-              },
-              {
-                "name": "NASA requirements and safety certification remain essential"
+                "name": "Key milestones",
+                "children": [
+                  {
+                    "name": "September 2014 · Boeing and SpaceX receive CCtCap contracts"
+                  },
+                  {
+                    "name": "Companies own and operate transportation systems"
+                  },
+                  {
+                    "name": "NASA requirements and safety certification remain essential"
+                  }
+                ]
               }
             ]
           },
@@ -1120,13 +1140,18 @@
             "name": "5 · 2015–2017 · Recovery to reflight [1]",
             "children": [
               {
-                "name": "December 2015 · Falcon 9 first stage lands"
-              },
-              {
-                "name": "March 30, 2017 · Previously flown first stage launches SES-10"
-              },
-              {
-                "name": "First-stage reuse demonstrated; profitability is a separate question"
+                "name": "Key milestones",
+                "children": [
+                  {
+                    "name": "December 2015 · Falcon 9 first stage lands"
+                  },
+                  {
+                    "name": "March 30, 2017 · Previously flown first stage launches SES-10"
+                  },
+                  {
+                    "name": "First-stage reuse demonstrated; profitability is a separate question"
+                  }
+                ]
               }
             ]
           },
@@ -1134,16 +1159,21 @@
             "name": "6 · 2020s · Constellations and serial manufacturing [13][14][23]",
             "children": [
               {
-                "name": "2022 · Airbus describes OneWeb batch manufacturing"
-              },
-              {
-                "name": "July 2023 · Zhuque-2 Y2 reaches its intended orbit"
-              },
-              {
-                "name": "October 2, 2026 · Airbus delivers 32 next-generation OneWeb satellites"
-              },
-              {
-                "name": "Manufacturing delivery still precedes launch and in-orbit service"
+                "name": "Key milestones",
+                "children": [
+                  {
+                    "name": "2022 · Airbus describes OneWeb batch manufacturing"
+                  },
+                  {
+                    "name": "July 2023 · Zhuque-2 Y2 reaches its intended orbit"
+                  },
+                  {
+                    "name": "October 2, 2026 · Airbus delivers 32 next-generation OneWeb satellites"
+                  },
+                  {
+                    "name": "Manufacturing delivery still precedes launch and in-orbit service"
+                  }
+                ]
               }
             ]
           }
@@ -1200,13 +1230,18 @@
             "name": "1 · Technical capability",
             "children": [
               {
-                "name": "Tests and missions establish evidence within defined conditions"
-              },
-              {
-                "name": "First-stage recovery is different from reflight"
-              },
-              {
-                "name": "A successful demonstration does not establish profit"
+                "name": "Operating questions",
+                "children": [
+                  {
+                    "name": "Tests and missions establish evidence within defined conditions"
+                  },
+                  {
+                    "name": "First-stage recovery is different from reflight"
+                  },
+                  {
+                    "name": "A successful demonstration does not establish profit"
+                  }
+                ]
               }
             ]
           },
@@ -1214,13 +1249,18 @@
             "name": "2 · Customer procurement",
             "children": [
               {
-                "name": "Identify the customer and the purchased mission or service"
-              },
-              {
-                "name": "Define scope, price, schedule and acceptance requirements"
-              },
-              {
-                "name": "Backlog represents remaining contracted work, not cash"
+                "name": "Operating questions",
+                "children": [
+                  {
+                    "name": "Identify the customer and the purchased mission or service"
+                  },
+                  {
+                    "name": "Define scope, price, schedule and acceptance requirements"
+                  },
+                  {
+                    "name": "Backlog represents remaining contracted work, not cash"
+                  }
+                ]
               }
             ]
           },
@@ -1228,13 +1268,18 @@
             "name": "3 · Contract execution",
             "children": [
               {
-                "name": "Development, procurement, assembly and testing require funding"
-              },
-              {
-                "name": "Fixed-price overruns can reduce profitability"
-              },
-              {
-                "name": "Coordinate qualified supply, test capacity and launch readiness"
+                "name": "Operating questions",
+                "children": [
+                  {
+                    "name": "Development, procurement, assembly and testing require funding"
+                  },
+                  {
+                    "name": "Fixed-price overruns can reduce profitability"
+                  },
+                  {
+                    "name": "Coordinate qualified supply, test capacity and launch readiness"
+                  }
+                ]
               }
             ]
           },
@@ -1242,13 +1287,18 @@
             "name": "4 · Delivery and service",
             "children": [
               {
-                "name": "Manufacturing delivery is distinct from launch and commissioning"
-              },
-              {
-                "name": "Launch delivers the agreed transportation outcome"
-              },
-              {
-                "name": "Networks and data products must meet customer needs"
+                "name": "Operating questions",
+                "children": [
+                  {
+                    "name": "Manufacturing delivery is distinct from launch and commissioning"
+                  },
+                  {
+                    "name": "Launch delivers the agreed transportation outcome"
+                  },
+                  {
+                    "name": "Networks and data products must meet customer needs"
+                  }
+                ]
               }
             ]
           },
@@ -1256,13 +1306,18 @@
             "name": "5 · Revenue and cash",
             "children": [
               {
-                "name": "Revenue follows performance and accounting rules"
-              },
-              {
-                "name": "Cash receipts follow payment arrangements"
-              },
-              {
-                "name": "Supplier payments and customer receipts can occur at different times"
+                "name": "Operating questions",
+                "children": [
+                  {
+                    "name": "Revenue follows performance and accounting rules"
+                  },
+                  {
+                    "name": "Cash receipts follow payment arrangements"
+                  },
+                  {
+                    "name": "Supplier payments and customer receipts can occur at different times"
+                  }
+                ]
               }
             ]
           },
@@ -1270,13 +1325,18 @@
             "name": "6 · Sustained operations",
             "children": [
               {
-                "name": "Repeat orders, renewals and reliable delivery support continuity"
-              },
-              {
-                "name": "Execution costs, overhead and development spending affect profit"
-              },
-              {
-                "name": "Licensing, network upkeep and end-of-life responsibilities remain"
+                "name": "Operating questions",
+                "children": [
+                  {
+                    "name": "Repeat orders, renewals and reliable delivery support continuity"
+                  },
+                  {
+                    "name": "Execution costs, overhead and development spending affect profit"
+                  },
+                  {
+                    "name": "Licensing, network upkeep and end-of-life responsibilities remain"
+                  }
+                ]
               }
             ]
           }
