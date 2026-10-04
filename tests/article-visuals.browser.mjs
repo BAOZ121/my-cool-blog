@@ -75,8 +75,27 @@ try {
           await page.waitForFunction(({ index, initial }) => document.querySelectorAll('figure.article-visual')[index].querySelectorAll('foreignObject').length === initial, { index, initial });
           const branch = figure.locator('circle[role="button"]').first();
           assert.ok(await branch.count(), 'Map branches need keyboard controls');
+          // Node count changes before Markmap's debounced label layout settles.
+          // Match the gesture suite's renderer-readiness check before measuring Fit.
+          await page.evaluate(() => document.fonts.ready.then(() => {}));
+          let previousLayout;
+          let settled = false;
+          for (let attempt = 0; attempt < 12; attempt++) {
+            await page.waitForTimeout(150); // Markmap label ResizeObserver debounce:100ms.
+            const layout = JSON.stringify(await figure.locator('.visual-stage > svg').evaluate(svg => ({
+              width: svg.clientWidth, height: svg.clientHeight,
+              nodes: [...svg.querySelectorAll('.markmap-node')].map(node => node.__data__?.state?.rect),
+            })));
+            if (layout === previousLayout) { settled = true; break; }
+            previousLayout = layout;
+          }
+          assert.ok(settled, `${slug}: map label layout did not settle`);
           await figure.locator('[data-action="fit"]').click();
           if (width < 600) {
+            await page.waitForFunction(index => {
+              const node = document.querySelectorAll('figure.article-visual')[index]?.querySelector('foreignObject');
+              return node && parseFloat(getComputedStyle(node).fontSize) * node.getScreenCTM().a >= 10.5;
+            }, index, { timeout: 5000 });
             const size = await figure.locator('foreignObject').first().evaluate(el => parseFloat(getComputedStyle(el).fontSize) * el.getScreenCTM().a);
             assert.ok(size >= 10.5, `${slug}: mobile node text too small (${size}px)`);
           } else {

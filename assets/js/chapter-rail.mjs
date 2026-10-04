@@ -22,12 +22,11 @@ export function setupChapterRails(document, window) {
   const rails = [...document.querySelectorAll('[data-chapter-rail]')];
   const content = document.querySelector('.article-content');
   if (!rails.length || !content) return;
-  // Restore the native outline's layout before browser scroll restoration.
-  // BFCache usually retains <details> itself; this also covers an evicted page.
+  // The parser-time script beside <details> restores its layout before native
+  // history restoration. Do not reopen it here: that would shift restored Y.
   const disclosure = document.querySelector('.chapter-mobile details');
   if (disclosure) {
     const key = `dex-chapters-open:${window.location.pathname}`;
-    try { disclosure.open = window.sessionStorage.getItem(key) === 'open'; } catch { /* Storage can be disabled. */ }
     const saveDisclosure = () => {
       try { window.sessionStorage.setItem(key, disclosure.open ? 'open' : 'closed'); } catch { /* Keep native disclosure usable. */ }
     };

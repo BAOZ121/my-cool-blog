@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
+import { runInNewContext } from 'node:vm';
 import { chapterAtPosition, targetID, setupChapterRails } from '../assets/js/chapter-rail.mjs';
 
 test('reading line selects the preceding chapter, including before and after the article', () => {
@@ -26,7 +27,7 @@ test('the progressive rail never intercepts navigation or changes history and re
   assert.match(script, /aria-current/);
   assert.match(script, /pageshow/);
   assert.match(script, /ResizeObserver/);
-  assert.match(script, /sessionStorage\.getItem\(key\)/);
+  assert.doesNotMatch(script, /disclosure\.open\s*=/);
   assert.match(script, /pagehide/);
 });
 test('mobile keeps a native in-flow disclosure; rail does not create sliding controls', () => {
@@ -54,6 +55,15 @@ test('native disclosure state survives a reload and tolerates disabled storage',
     addEventListener: (name, handler) => { events[name] = handler; },
     sessionStorage: { getItem: key => values.get(key), setItem: (key, value) => values.set(key, value) },
   };
+  const article = readFileSync(new URL('../layouts/_partials/article/article.html', import.meta.url), 'utf8');
+  const restoreScript = article.match(/<script>([\s\S]*?)<\/script>/)[1];
+  assert.ok(article.indexOf('<script>') < article.indexOf('partial "article/components/content"'), 'Restore before article content is parsed');
+  const restore = storage => runInNewContext(restoreScript, {
+    document: { currentScript: { previousElementSibling: disclosure } },
+    sessionStorage: storage, location: window.location,
+  });
+  restore(window.sessionStorage);
+  assert.equal(disclosure.open, true);
   setupChapterRails(document, window);
   assert.equal(disclosure.open, true);
   disclosure.open = false;
@@ -65,4 +75,7 @@ test('native disclosure state survives a reload and tolerates disabled storage',
   Object.defineProperty(window, 'sessionStorage', { get() { throw new Error('Storage blocked'); } });
   assert.doesNotThrow(() => setupChapterRails(document, window));
   assert.doesNotThrow(() => events.toggle());
+  disclosure.open = false;
+  assert.doesNotThrow(() => restore({ getItem() { throw new Error('Storage blocked'); } }));
+  assert.equal(disclosure.open, false, 'Blocked storage does not change native layout');
 });

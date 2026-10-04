@@ -7,6 +7,15 @@
             <summary>Chapters <span aria-hidden="true">+</span></summary>
             {{ partial "chapter-rail/nav.html" (dict "Page" . "Desktop" false) }}
         </details>
+        {{/* Restore layout while parsing, before native history restoration can
+             establish a reading position in the article below. */}}
+        <script>
+        (() => {
+            try {
+                document.currentScript.previousElementSibling.open = sessionStorage.getItem(`dex-chapters-open:${location.pathname}`) === 'open';
+            } catch { /* Storage may be disabled; keep the native disclosure. */ }
+        })();
+        </script>
     </aside>
     {{ end }}
 

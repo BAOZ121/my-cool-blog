@@ -21,6 +21,25 @@ const origin = `http://127.0.0.1:${server.address().port}`;
 const path = '/post/commercial-space-advanced-engineering/';
 const screenshots = process.env.CHAPTER_SCREENSHOT_DIR;
 if (screenshots) await mkdir(screenshots, { recursive: true });
+
+// A chapter jump can start a lazy graphic import. Its readable outline is
+// replaced only after rendering, so a fixed sleep can sample transient height.
+// Wait for pending graphics and five stable animation frames without moving
+// the document, changing history, or weakening the position assertions.
+async function settleArticleLayout(page) {
+  await page.evaluate(() => { window.__chapterStableLayout = null; });
+  await page.evaluate(() => document.fonts.ready);
+  await page.waitForFunction(() => {
+    const loading = !!document.querySelector('.article-visual[data-visual-state="loading"]');
+    const key = [scrollY, document.documentElement.scrollHeight,
+      document.querySelector('.article-content')?.getBoundingClientRect().top,
+      document.querySelector('.chapter-mobile')?.getBoundingClientRect().height].join(':');
+    const previous = window.__chapterStableLayout;
+    const frames = !loading && previous?.key === key ? previous.frames + 1 : 0;
+    window.__chapterStableLayout = { key, frames };
+    return !loading && frames >= 5;
+  });
+}
 let browser;
 try {
   browser = await chromium.launch({ headless: true, ...(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : {}) });
@@ -85,7 +104,7 @@ try {
       const url = page.url();
       // Manual document scrolling changes the active chapter without rewriting URL.
       await page.evaluate(() => scrollBy(0, 1600));
-      await page.waitForTimeout(120);
+      await settleArticleLayout(page);
       assert.equal(page.url(), url);
       assert.equal(await rail.locator('a[aria-current="location"]').count(), 1);
       if (motion === 'reduce') assert.equal(await target.evaluate(node => getComputedStyle(node).transitionDuration), '0s');
@@ -103,6 +122,7 @@ try {
       await page.goBack({ waitUntil: 'commit' });
       await page.evaluate(() => document.fonts.ready);
       if (mobile) await page.waitForFunction(() => document.querySelector('.chapter-mobile details').open);
+      await settleArticleLayout(page);
       try { await page.waitForFunction(scroll => Math.abs(scrollY - scroll) < 4, scroll); }
       catch (error) {
         console.log('CHAPTER_BACK_DIAGNOSTICS', JSON.stringify({ width, before: beforeBack, after: await snapshot() }));
