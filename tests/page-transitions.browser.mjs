@@ -72,7 +72,7 @@ try {
     if (first.started !== (motion === "no-preference")) {
       console.log("Native transition diagnostics", consoleMessages, await page.evaluate(() => ({ outgoing: sessionStorage.getItem("dex-test-outgoing"), incoming: window.__transition, visibility: document.visibilityState, reduced: matchMedia("(prefers-reduced-motion: reduce)").matches, styles: [...document.querySelector('#dex-page-transitions').sheet.cssRules].map(rule => rule.cssText) })));
       const diagnostics = await browser.newBrowserCDPSession();
-      console.log("Chromium transition skip reasons", await diagnostics.send("Browser.getHistograms", { query: "Blink.ViewTransitions.SkipReason", delta: false }));
+      console.log("Chromium transition skip reasons", JSON.stringify(await diagnostics.send("Browser.getHistograms", { query: "Blink.ViewTransitions.SkipReason", delta: false })));
       await diagnostics.detach();
     }
     assert.equal(first.started, motion === "no-preference", `Native cross-document opt-in must respect reduced motion: ${JSON.stringify(first)}`);
@@ -88,16 +88,6 @@ try {
     assert.equal(named, width >= 768 && motion === "no-preference" ? "dex-navigation" : "none");
     if (screenshots) await page.screenshot({ path: resolve(screenshots, `article-${width}-${scheme}-${motion}.png`) });
 
-    // Same-document anchors remain immediate native history entries.
-    const anchor = page.locator('main a[href^="#"]').first();
-    if (await anchor.count()) {
-      const reveals = await page.evaluate(() => window.__transition.reveals);
-      const fragment = await anchor.getAttribute("href");
-      await anchor.click();
-      await page.waitForURL(url => url.hash === fragment);
-      assert.equal(await page.evaluate(() => window.__transition.reveals), reveals);
-      await page.goBack();
-    }
     await page.evaluate(() => scrollTo(0, Math.min(2500, document.documentElement.scrollHeight - innerHeight)));
     const articleScroll = await page.evaluate(() => scrollY);
     await page.goBack();
@@ -107,6 +97,17 @@ try {
     await page.waitForURL(origin + articlePath);
     await page.waitForFunction(expected => Math.abs(scrollY - expected) < 5, articleScroll);
     await page.waitForFunction(() => window.__transition.finished);
+
+    // Ignore the theme's hidden alternate TOC when testing native hash history.
+    const anchor = page.locator('a[href^="#"]').filter({ visible: true }).first();
+    if (await anchor.count()) {
+      const reveals = await page.evaluate(() => window.__transition.reveals);
+      const fragment = await anchor.getAttribute("href");
+      await anchor.click();
+      await page.waitForURL(url => url.hash === fragment);
+      assert.equal(await page.evaluate(() => window.__transition.reveals), reveals);
+      await page.goBack();
+    }
 
     // An ordinary Enter key activation also follows a real link to a fresh document.
     await page.goto(origin + "/");
