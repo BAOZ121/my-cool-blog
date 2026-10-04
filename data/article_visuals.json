@@ -795,6 +795,529 @@
       ],
       "note": "DEX editorial map based on Part 3 and the supporting appendix. Company examples are illustrative and may span several stages. Branches group business roles; they do not establish supplier contracts, market shares or an exhaustive list.",
       "reviewed": "2026-10-01"
+    },
+    "commercial-space-value-chain": {
+      "title": "The commercial space and advanced engineering value chain",
+      "description": "Explore nine business functions, the engineering capabilities behind them, and representative companies with documented roles.",
+      "root": {
+        "name": "Commercial space and supporting engineering",
+        "children": [
+          {
+            "name": "Upstream · Materials, components and engineering",
+            "children": [
+              {
+                "name": "Materials & precision manufacturing [15]",
+                "children": [
+                  {
+                    "name": "Consistent materials and engineered structures"
+                  },
+                  {
+                    "name": "Hexcel · composite materials"
+                  },
+                  {
+                    "name": "Beyond Gravity · fairings, adapters and separation systems"
+                  }
+                ]
+              },
+              {
+                "name": "Propulsion, control & space electronics [3][16]",
+                "children": [
+                  {
+                    "name": "Power, attitude control, propulsion and data handling"
+                  },
+                  {
+                    "name": "Moog · propulsion, fluid control and avionics"
+                  },
+                  {
+                    "name": "Rocket Lab · star trackers, reaction wheels and solar power"
+                  }
+                ]
+              },
+              {
+                "name": "Testing, verification & integration [17][19]",
+                "children": [
+                  {
+                    "name": "Mechanical, thermal-vacuum and compatibility tests"
+                  },
+                  {
+                    "name": "Airbus · testing services and facilities"
+                  },
+                  {
+                    "name": "Thales Alenia Space · assembly, integration and testing"
+                  },
+                  {
+                    "name": "Rocket Lab · spacecraft-level test facilities"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Midstream · Manufacturing, launch and operations",
+            "children": [
+              {
+                "name": "Launch services [18]",
+                "children": [
+                  {
+                    "name": "Payload delivery to an agreed orbit and schedule"
+                  },
+                  {
+                    "name": "SpaceX · Falcon and rideshare arrangements"
+                  },
+                  {
+                    "name": "Rocket Lab · Electron and Kick Stage"
+                  },
+                  {
+                    "name": "LandSpace · Zhuque development, manufacturing and launch"
+                  }
+                ]
+              },
+              {
+                "name": "Satellite manufacturing [19]",
+                "children": [
+                  {
+                    "name": "Bus functions, payload integration and complete satellites"
+                  },
+                  {
+                    "name": "Airbus · complete satellites or bus-only solutions"
+                  },
+                  {
+                    "name": "Thales Alenia Space · communications and observation systems"
+                  },
+                  {
+                    "name": "Rocket Lab · configurable spacecraft and mission services"
+                  }
+                ]
+              },
+              {
+                "name": "Constellation operations [6][20]",
+                "children": [
+                  {
+                    "name": "Spacecraft, ground access and network management"
+                  },
+                  {
+                    "name": "SpaceX / Starlink · low Earth orbit broadband network"
+                  },
+                  {
+                    "name": "Eutelsat · GEO business and OneWeb LEO network"
+                  },
+                  {
+                    "name": "Iridium · cross-linked LEO voice, data and IoT network"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Downstream · Connectivity, data and mission services",
+            "children": [
+              {
+                "name": "Satellite communications [20]",
+                "children": [
+                  {
+                    "name": "Connectivity, terminals, installation and customer support"
+                  },
+                  {
+                    "name": "Starlink · broadband connectivity services"
+                  },
+                  {
+                    "name": "Eutelsat · capacity and managed service packages"
+                  },
+                  {
+                    "name": "Iridium · voice, messaging, data and IoT services"
+                  }
+                ]
+              },
+              {
+                "name": "Remote sensing & data services [21]",
+                "children": [
+                  {
+                    "name": "Observation data, processing and usable analysis"
+                  },
+                  {
+                    "name": "Planet · optical imagery, mosaics and analytics"
+                  },
+                  {
+                    "name": "BlackSky · constellation and Spectra platform"
+                  },
+                  {
+                    "name": "ICEYE · SAR observations and Flood Insights"
+                  }
+                ]
+              },
+              {
+                "name": "Government & research missions [22]",
+                "children": [
+                  {
+                    "name": "Public demand spans the entire value chain"
+                  },
+                  {
+                    "name": "SpaceX · Dragon resupply transportation"
+                  },
+                  {
+                    "name": "Lockheed Martin · Orion spacecraft manufacturing"
+                  },
+                  {
+                    "name": "Rocket Lab · NASA small science mission launches"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "[15] Hexcel · space materials",
+          "url": "https://www.hexcel.com/industries/defense-space/"
+        },
+        {
+          "title": "[15] Beyond Gravity · structures and separation",
+          "url": "https://www.beyondgravity.com/en/about"
+        },
+        {
+          "title": "[16] Moog · space products",
+          "url": "https://www.moog.com/markets/space/"
+        },
+        {
+          "title": "[17] Airbus · test services",
+          "url": "https://www.airbus.com/en/products-services/space/space-customer-support/test-services"
+        },
+        {
+          "title": "[17] Thales Alenia Space · assembly, integration and testing",
+          "url": "https://www.thalesaleniaspace.com/en/press-releases/thales-alenia-space-inaugurates-state-art-space-smart-factory"
+        },
+        {
+          "title": "[18] SpaceX · Falcon User’s Guide",
+          "url": "https://www.spacex.com/assets/media/falcon-users-guide-2025-05-09.pdf"
+        },
+        {
+          "title": "[18] Rocket Lab · Electron",
+          "url": "https://rocketlabcorp.com/launch/electron/"
+        },
+        {
+          "title": "[18] LandSpace · launch activities",
+          "url": "https://www.landspace.com/index.html"
+        },
+        {
+          "title": "[19] Airbus · satellite and bus solutions",
+          "url": "https://www.airbus.com/en/products-services/space/telecommunications-and-navigation-satellites/low-earth-orbit-satellite-constellation"
+        },
+        {
+          "title": "[19] Rocket Lab · spacecraft and integration",
+          "url": "https://rocketlabcorp.com/space-systems/spacecraft/"
+        },
+        {
+          "title": "[20] Starlink · 2024 progress report",
+          "url": "https://starlink.com/public-files/starlinkProgressReport_2024.pdf"
+        },
+        {
+          "title": "[20] Iridium · network",
+          "url": "https://www.iridium.com/network"
+        },
+        {
+          "title": "[20] Eutelsat · managed connectivity",
+          "url": "https://eutelsat-com.mynewsdesk.com/pressreleases/eutelsat-launches-eutelsat-advance-for-end-to-end-managed-connectivity-services-3112157"
+        },
+        {
+          "title": "[21] Planet · products",
+          "url": "https://www.planet.com/products/"
+        },
+        {
+          "title": "[21] BlackSky · constellation and Spectra",
+          "url": "https://ir.blacksky.com/overview/"
+        },
+        {
+          "title": "[21] ICEYE · SAR data",
+          "url": "https://www.iceye.com/sar-data"
+        },
+        {
+          "title": "[21] ICEYE · Flood Insights",
+          "url": "https://www.iceye.com/solutions/insurance/flood-insights"
+        },
+        {
+          "title": "[22] NASA · resupply transportation",
+          "url": "https://www.nasa.gov/international-space-station/commercial-resupply/"
+        },
+        {
+          "title": "[22] NASA · Orion and prime contractor",
+          "url": "https://www.nasa.gov/reference/orion-spacecraft/"
+        },
+        {
+          "title": "[22] Rocket Lab · NASA Aspera launch award",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-launch-nasa-astrophysics-science-mission-electron"
+        }
+      ],
+      "note": "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial taxonomy, not a verified supplier-contract network, market-share ranking or exhaustive company list. Companies may span several stages; their revenue must not be counted twice. Government and research customers generate demand across the chain. GEO means geostationary orbit; LEO means low Earth orbit; IoT means Internet of Things; SAR means synthetic aperture radar. Advanced engineering here is limited to space-related business.",
+      "reviewed": "2026-10-03"
+    },
+    "commercial-space-history": {
+      "title": "Six stages in the development of commercial space",
+      "description": "Trace how communications demand, specialized launch, public procurement, reuse and serial manufacturing accumulated into today’s industry.",
+      "root": {
+        "name": "Commercial space · historical development",
+        "children": [
+          {
+            "name": "1 · 1960s · Communications demand [11]",
+            "children": [
+              {
+                "name": "1962 · Telstar 1 demonstrates transatlantic television"
+              },
+              {
+                "name": "1964 · INTELSAT organizational agreements"
+              },
+              {
+                "name": "1965 · Early Bird moves toward commercial service"
+              }
+            ]
+          },
+          {
+            "name": "2 · 1980s · Specialized launch services [12]",
+            "children": [
+              {
+                "name": "1980 · Arianespace is established"
+              },
+              {
+                "name": "May 1984 · First commercial mission launches Spacenet F1"
+              },
+              {
+                "name": "Customers can purchase transportation from a launch provider"
+              }
+            ]
+          },
+          {
+            "name": "3 · From 2006 · Development and procurement [2][24]",
+            "children": [
+              {
+                "name": "COTS · milestone-based development agreements"
+              },
+              {
+                "name": "2007 · Rocketplane Kistler agreement ends after funding shortfall"
+              },
+              {
+                "name": "December 2008 · CRS service contracts precede completed demonstrations"
+              },
+              {
+                "name": "Development support and service procurement are distinct"
+              }
+            ]
+          },
+          {
+            "name": "4 · 2014 · Commercial crew procurement [28]",
+            "children": [
+              {
+                "name": "September 2014 · Boeing and SpaceX receive CCtCap contracts"
+              },
+              {
+                "name": "Companies own and operate transportation systems"
+              },
+              {
+                "name": "NASA requirements and safety certification remain essential"
+              }
+            ]
+          },
+          {
+            "name": "5 · 2015–2017 · Recovery to reflight [1]",
+            "children": [
+              {
+                "name": "December 2015 · Falcon 9 first stage lands"
+              },
+              {
+                "name": "March 30, 2017 · Previously flown first stage launches SES-10"
+              },
+              {
+                "name": "First-stage reuse demonstrated; profitability is a separate question"
+              }
+            ]
+          },
+          {
+            "name": "6 · 2020s · Constellations and serial manufacturing [13][14][23]",
+            "children": [
+              {
+                "name": "2022 · Airbus describes OneWeb batch manufacturing"
+              },
+              {
+                "name": "July 2023 · Zhuque-2 Y2 reaches its intended orbit"
+              },
+              {
+                "name": "October 2, 2026 · Airbus delivers 32 next-generation OneWeb satellites"
+              },
+              {
+                "name": "Manufacturing delivery still precedes launch and in-orbit service"
+              }
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "[11] NASA · communications satellite history",
+          "url": "https://www.nasa.gov/history/communications-satellites/"
+        },
+        {
+          "title": "[12] Arianespace · commercial launch history",
+          "url": "https://newsroom.arianespace.com/four-decades-of-setting-the-launch-service-standards-is-celebrated-by-arianespace/"
+        },
+        {
+          "title": "[24] NASA · COTS final report",
+          "url": "https://www.nasa.gov/wp-content/uploads/2016/08/sp-2014-617.pdf"
+        },
+        {
+          "title": "[28] NASA · 2014 CCtCap awards",
+          "url": "https://www.nasa.gov/news-release/nasa-chooses-american-companies-to-transport-u-s-astronauts-to-international-space-station/"
+        },
+        {
+          "title": "[1] NASA · December 2015 first-stage landing",
+          "url": "https://science.nasa.gov/image-article/apod-2015-december-28-falcon-9-first-stage-landing/"
+        },
+        {
+          "title": "[1] SES · 2017 results and SES-10 reflight",
+          "url": "https://www.ses.com/sites/ses_v2/files/2018-02/180222_FY%202017_Press%20Release_FINAL_0.pdf"
+        },
+        {
+          "title": "[13] Airbus · OneWeb serial manufacturing",
+          "url": "https://www.airbus.com/en/newsroom/news/2022-02-revolutionising-satellite-production-for-a-more-connected-human-race"
+        },
+        {
+          "title": "[14] CNSA · Zhuque-2 Y2 mission",
+          "url": "https://www.cnsa.gov.cn/n6758823/n6758838/c10070146/content.html"
+        },
+        {
+          "title": "[23] Airbus · 32 OneWeb satellites delivered",
+          "url": "https://www.airbus.com/en/newsroom/press-releases/2026-10-airbus-delivers-first-batch-of-next-generation-satellites-for-eutelsats-oneweb-constellation"
+        }
+      ],
+      "note": "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. These stages summarize the report’s historical examples; they are neither an exhaustive chronology nor a universal sequence for every country. Earlier businesses continue alongside newer technologies. The 2015 and 2017 events concern the Falcon 9 first stage, not reuse of the entire rocket. The October 2026 Airbus announcement establishes manufacturing delivery and shipment preparation, not completed launch or service entry.",
+      "reviewed": "2026-10-03"
+    },
+    "commercial-space-business": {
+      "title": "From engineering capability to sustained business",
+      "description": "Separate technical validation, customer orders, execution, delivery, revenue and cash when assessing a commercial space business.",
+      "root": {
+        "name": "Capability · Contracts · Delivery · Cash",
+        "children": [
+          {
+            "name": "1 · Technical capability",
+            "children": [
+              {
+                "name": "Tests and missions establish evidence within defined conditions"
+              },
+              {
+                "name": "First-stage recovery is different from reflight"
+              },
+              {
+                "name": "A successful demonstration does not establish profit"
+              }
+            ]
+          },
+          {
+            "name": "2 · Customer procurement",
+            "children": [
+              {
+                "name": "Identify the customer and the purchased mission or service"
+              },
+              {
+                "name": "Define scope, price, schedule and acceptance requirements"
+              },
+              {
+                "name": "Backlog represents remaining contracted work, not cash"
+              }
+            ]
+          },
+          {
+            "name": "3 · Contract execution",
+            "children": [
+              {
+                "name": "Development, procurement, assembly and testing require funding"
+              },
+              {
+                "name": "Fixed-price overruns can reduce profitability"
+              },
+              {
+                "name": "Coordinate qualified supply, test capacity and launch readiness"
+              }
+            ]
+          },
+          {
+            "name": "4 · Delivery and service",
+            "children": [
+              {
+                "name": "Manufacturing delivery is distinct from launch and commissioning"
+              },
+              {
+                "name": "Launch delivers the agreed transportation outcome"
+              },
+              {
+                "name": "Networks and data products must meet customer needs"
+              }
+            ]
+          },
+          {
+            "name": "5 · Revenue and cash",
+            "children": [
+              {
+                "name": "Revenue follows performance and accounting rules"
+              },
+              {
+                "name": "Cash receipts follow payment arrangements"
+              },
+              {
+                "name": "Supplier payments and customer receipts can occur at different times"
+              }
+            ]
+          },
+          {
+            "name": "6 · Sustained operations",
+            "children": [
+              {
+                "name": "Repeat orders, renewals and reliable delivery support continuity"
+              },
+              {
+                "name": "Execution costs, overhead and development spending affect profit"
+              },
+              {
+                "name": "Licensing, network upkeep and end-of-life responsibilities remain"
+              }
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "[1] SES · evidence of first-stage reflight",
+          "url": "https://www.ses.com/sites/ses_v2/files/2018-02/180222_FY%202017_Press%20Release_FINAL_0.pdf"
+        },
+        {
+          "title": "[3] Rocket Lab · 2025 Form 10-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000013/rklb-20251231.htm"
+        },
+        {
+          "title": "[9] Rocket Lab · 2025 financial results",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-fourth-quarter-and-full-year-2025-financial"
+        },
+        {
+          "title": "[13] Airbus · batch manufacturing",
+          "url": "https://www.airbus.com/en/newsroom/news/2022-02-revolutionising-satellite-production-for-a-more-connected-human-race"
+        },
+        {
+          "title": "[17] Airbus · testing and verification",
+          "url": "https://www.airbus.com/en/products-services/space/space-customer-support/test-services"
+        },
+        {
+          "title": "[23] Airbus · manufacturing delivery status",
+          "url": "https://www.airbus.com/en/newsroom/press-releases/2026-10-airbus-delivers-first-batch-of-next-generation-satellites-for-eutelsats-oneweb-constellation"
+        },
+        {
+          "title": "[24] NASA · funding and milestone mechanisms",
+          "url": "https://www.nasa.gov/wp-content/uploads/2016/08/sp-2014-617.pdf"
+        },
+        {
+          "title": "[10] ESA · lifetime operating responsibilities",
+          "url": "https://www.esa.int/Space_Safety/Space_Debris/ESA_Space_Environment_Report_2026"
+        }
+      ],
+      "note": "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial synthesis of the operating mechanisms in Parts 1, 3 and 4. Branches organize questions and do not imply a universal accounting or payment sequence. Technical capability, signed orders, recognized revenue, cash receipts and profit are different measures; none can substitute for the others. Licensing conditions and contractual terms depend on the country and mission.",
+      "reviewed": "2026-10-03"
     }
   },
   "shares": {
@@ -993,6 +1516,79 @@
       "note": "Calculated from approximately $89.0 billion in Data Center revenue and $96.221 billion in total revenue. Data Center share = 89.0 / 96.221 × 100, rounded to one decimal place; the other category is the residual to 100%. Data Center includes computing and networking and is not synonymous with AI. The source rounds Data Center revenue, so the percentages are approximate.",
       "unit": "%",
       "reviewed": "2026-10-01"
+    },
+    "satellite-revenue-2025": {
+      "title": "Global commercial satellite industry revenue mix",
+      "eyebrow": "REVENUE MIX",
+      "dimension": "Industry segment",
+      "period": "Full year 2025",
+      "geography": "Worldwide",
+      "scope": "Commercial satellite industry under the SIA / BryceTech definition, including ground equipment, satellite services, satellite manufacturing and commercial launch. This is not company market share or the total market for commercial space and advanced engineering.",
+      "metric": "Share of commercial satellite industry revenue (%)",
+      "series": [
+        {
+          "name": "Ground equipment",
+          "value": 54.5,
+          "derived": true
+        },
+        {
+          "name": "Satellite services",
+          "value": 34.7,
+          "derived": true
+        },
+        {
+          "name": "Satellite manufacturing",
+          "value": 6.7,
+          "derived": true
+        },
+        {
+          "name": "Commercial launch",
+          "value": 4.1,
+          "derived": true
+        }
+      ],
+      "source": {
+        "publisher": "Satellite Industry Association / BryceTech",
+        "title": "29th Annual State of the Satellite Industry Report · public summary",
+        "published": "2026-05-13",
+        "url": "https://sia.org/affordability-productivity-drive-historic-satellite-industry-growth-satellite-industry-association-releases-29th-annual-state-of-the-satellite-industry-report/",
+        "locator": "Key Revenue and Industry Segment Takeaways; report appendix [4]",
+        "underlying": "SIA 2026 State of the Satellite Industry Report, covering 2025; research by BryceTech"
+      },
+      "note": "Public-summary figures: approximately US$303 billion in total, comprising US$165.2 billion of ground equipment, US$105.0 billion of satellite services, US$20.4 billion of satellite manufacturing and US$12.4 billion of commercial launch. Each share = segment revenue / 303 × 100, rounded to one decimal place. The displayed shares total 100.0%; there is no residual Other category. The source revenue values are rounded and include mature ground equipment and service businesses. This composition is not a company ranking, an estimate of an individual entrant’s addressable market, or a separate size estimate for space-related advanced engineering. The paid full report was not obtained. Sources were verified through October 3, 2026; this is a historical 2025 snapshot.",
+      "unit": "%",
+      "reviewed": "2026-10-03"
+    },
+    "rocket-lab-revenue-2025": {
+      "title": "Rocket Lab revenue mix",
+      "eyebrow": "REVENUE MIX",
+      "dimension": "Business segment",
+      "period": "Full year 2025",
+      "geography": "Worldwide company revenue",
+      "scope": "Rocket Lab consolidated revenue for the year ended December 31, 2025. Space Systems includes spacecraft, systems, components and related services. This is one company’s revenue composition, not industry market share or component revenue alone.",
+      "metric": "Share of Rocket Lab revenue (%)",
+      "series": [
+        {
+          "name": "Space Systems",
+          "value": 66.9,
+          "derived": true
+        },
+        {
+          "name": "Launch Services",
+          "value": 33.1,
+          "derived": true
+        }
+      ],
+      "source": {
+        "publisher": "Rocket Lab / U.S. Securities and Exchange Commission",
+        "title": "Rocket Lab 2025 Form 10-K",
+        "published": "2026-02-26",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000013/rklb-20251231.htm",
+        "locator": "Financial statement Note 20, business segments; report appendix [3] and [9]"
+      },
+      "note": "Original annual-report figures are in thousands of U.S. dollars: Space Systems 402,757; Launch Services 199,042; total 601,799. Converted to millions, these are US$402.757 million, US$199.042 million and US$601.799 million. Shares = each segment / 601,799 × 100, rounded to one decimal place, totaling 100.0%. Revenue is distinct from profit, backlog and cash receipts. These figures describe Rocket Lab and do not rank commercial space companies. Sources were verified through October 3, 2026; the chart does not extend that research cutoff.",
+      "unit": "%",
+      "reviewed": "2026-10-03"
     }
   }
 }
