@@ -80,6 +80,7 @@ try {
       assert.equal(first.ready, true, `The browser must run, not skip, the transition: ${JSON.stringify(first)}`);
       assert.equal(first.duration, "0.18s");
     }
+    console.log(`PASS ${width}px ${scheme} ${motion}: actual native transition ${first.started ? "started, ready, 180ms" : "opted out"}`);
     assert.equal(await page.locator("html").getAttribute("data-scheme"), scheme);
     assert.equal(await page.locator("main h1").count(), 1);
     assert.equal(await page.evaluate(() => scrollY < 5), true, "New articles start at the top");
@@ -90,11 +91,12 @@ try {
 
     await page.evaluate(() => scrollTo(0, Math.min(2500, document.documentElement.scrollHeight - innerHeight)));
     const articleScroll = await page.evaluate(() => scrollY);
-    await page.goBack();
-    await page.waitForURL(origin + "/");
+    // BFCache restores an existing document; it does not fire a new load event.
+    await page.goBack({ waitUntil: "commit" });
+    await page.waitForURL(origin + "/", { waitUntil: "commit" });
     await page.waitForFunction(expected => Math.abs(scrollY - expected) < 5, homeScroll);
-    await page.goForward();
-    await page.waitForURL(origin + articlePath);
+    await page.goForward({ waitUntil: "commit" });
+    await page.waitForURL(origin + articlePath, { waitUntil: "commit" });
     await page.waitForFunction(expected => Math.abs(scrollY - expected) < 5, articleScroll);
     await page.waitForFunction(() => window.__transition.finished);
 
@@ -106,7 +108,7 @@ try {
       await anchor.click();
       await page.waitForURL(url => url.hash === fragment);
       assert.equal(await page.evaluate(() => window.__transition.reveals), reveals);
-      await page.goBack();
+      await page.goBack({ waitUntil: "commit" });
     }
 
     // An ordinary Enter key activation also follows a real link to a fresh document.
@@ -184,8 +186,8 @@ try {
   await link.click();
   await page.waitForURL(origin + path);
   assert.equal(await page.locator("main h1").isVisible(), true);
-  await page.goBack();
-  await page.waitForURL(origin + "/");
+  await page.goBack({ waitUntil: "commit" });
+  await page.waitForURL(origin + "/", { waitUntil: "commit" });
   assert.equal(await page.locator("main").isVisible(), true);
   console.log("PASS no JavaScript: article navigation and Back stay usable");
   await noJS.close();
@@ -199,6 +201,7 @@ try {
   });
   const plain = await fallback.newPage();
   await plain.goto(origin + "/");
+  assert.equal(await plain.locator("style#dex-page-transitions").count(), 0);
   const plainLink = plain.locator(".article-list .article-title a").first();
   const plainPath = await plainLink.getAttribute("href");
   await plainLink.click();
