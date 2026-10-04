@@ -266,7 +266,7 @@ try {
     await image.evaluate(image => image.decode());
     const chosen = await image.evaluate(image => ({ url: image.currentSrc, srcset: image.srcset, width: image.getBoundingClientRect().width }));
     assert.match(new URL(chosen.url).pathname, /\.webp$/);
-    const descriptor = Number(chosen.srcset.split(/,\s*/).find(item => new URL(item.split(" ")[0], location.href).href === chosen.url).split(" ")[1].slice(0, -1));
+    const descriptor = Number(chosen.srcset.split(/,\s*/).find(item => new URL(item.split(" ")[0], origin).href === chosen.url).split(" ")[1].slice(0, -1));
     assert.ok(descriptor <= 1600 && descriptor <= chosen.width * 2.5);
     assert.ok(descriptor >= Math.min(chosen.width * 1.9, 1376));
     console.log(`PASS ${width}px 2x no JS: optimized cover candidate ${descriptor}px`);
