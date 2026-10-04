@@ -1,0 +1,56 @@
+/* Native multi-page transitions: links, history and page scripts stay native. */
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+
+  /* Fade viewport snapshots so long pages and restored scroll never stretch. */
+  ::view-transition-group(root) {
+    animation: none;
+  }
+
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 180ms;
+    animation-timing-function: ease-out;
+  }
+
+  /* Keep the transition overlay from intercepting pointer input. */
+  ::view-transition {
+    pointer-events: none;
+  }
+}
+
+/* The desktop navigation stays in place; mobile headers scroll with the page. */
+@media (prefers-reduced-motion: no-preference) and (min-width: 768px) {
+  .left-sidebar {
+    view-transition-name: dex-navigation;
+  }
+
+  ::view-transition-group(dex-navigation),
+  ::view-transition-old(dex-navigation),
+  ::view-transition-new(dex-navigation) {
+    animation: none;
+  }
+
+  ::view-transition-old(dex-navigation) {
+    display: none;
+  }
+
+  ::view-transition-new(dex-navigation) {
+    mix-blend-mode: normal;
+  }
+}
+
+/* Opt out altogether, including native default animations, when motion is reduced. */
+@media (prefers-reduced-motion: reduce) {
+  @view-transition {
+    navigation: none;
+  }
+
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}

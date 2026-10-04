@@ -67,3 +67,7 @@ jobs:
         run: node tests/industry-pages.browser.mjs
       - name: Verify Evidence Library search, links and keyboard controls
         run: node tests/evidence-library.browser.mjs
+      - name: Verify native page transitions and navigation fallbacks
+        run: |
+          node --test tests/page-transitions.test.mjs
+          node tests/page-transitions.browser.mjs
