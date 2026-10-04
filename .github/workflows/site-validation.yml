@@ -61,6 +61,8 @@ jobs:
         run: npx playwright install --with-deps chromium
       - name: Verify interactive articles on desktop and mobile
         run: node tests/article-visuals.browser.mjs
+      - name: Verify fine mind map zoom and gesture boundaries
+        run: node tests/mindmap-zoom.browser.mjs
       - name: Verify contact and keyboard controls on desktop and mobile
         run: node tests/site-controls.browser.mjs
       - name: Verify industry pages, details and mobile filtering

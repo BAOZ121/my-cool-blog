@@ -25,9 +25,20 @@ try {
   browser = await chromium.launch({ headless: true, channel: "chromium", ignoreDefaultArgs: ["--disable-back-forward-cache"], ...(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : {}) });
   for (const [width, scheme, motion] of [[1440, "light", "no-preference"], [390, "dark", "no-preference"], [1440, "dark", "reduce"], [390, "light", "reduce"]]) {
     const context = await browser.newContext({ viewport: { width, height: 900 }, colorScheme: scheme, reducedMotion: motion });
+    // Keep this timing-sensitive check independent of external font availability.
+    await context.route("https://fonts.googleapis.com/**", route => route.fulfill({ contentType: "text/css", body: "" }));
     await context.addInitScript(({ scheme }) => {
       localStorage.setItem("StackColorScheme", scheme);
       window.__transition = { started: false, finished: false, reveals: 0 };
+      window.addEventListener("pageswap", event => {
+        sessionStorage.setItem("dex-test-outgoing", JSON.stringify({
+          started: Boolean(event.viewTransition), visibility: document.visibilityState, time: Date.now(),
+          type: event.activation?.navigationType, from: location.href, to: event.activation?.entry?.url,
+          reduced: matchMedia("(prefers-reduced-motion: reduce)").matches,
+          root: getComputedStyle(document.documentElement).viewTransitionName,
+          sidebar: getComputedStyle(document.querySelector(".left-sidebar")).viewTransitionName,
+        }));
+      });
       // Observe the actual browser event; production ships no navigation script.
       window.addEventListener("pagereveal", event => {
         const state = window.__transition = { started: Boolean(event.viewTransition), finished: !event.viewTransition, ready: false, reveals: window.__transition.reveals + 1 };
@@ -47,11 +58,15 @@ try {
     const article = page.locator(".article-list .article-title a").first();
     const articlePath = await article.getAttribute("href");
     await article.scrollIntoViewIfNeeded();
+    await page.evaluate(() => document.fonts.ready);
+    // A screenshot waits for a real compositor frame before the navigation test.
+    await page.screenshot();
     const homeScroll = await page.evaluate(() => scrollY);
     await article.click();
     await page.waitForURL(origin + articlePath);
     await page.waitForFunction(() => window.__transition.finished);
     const first = await page.evaluate(() => window.__transition);
+    if (first.started !== (motion === "no-preference")) console.log("Native transition diagnostics", await page.evaluate(() => ({ outgoing: sessionStorage.getItem("dex-test-outgoing"), incoming: window.__transition, visibility: document.visibilityState, reduced: matchMedia("(prefers-reduced-motion: reduce)").matches, styles: [...document.styleSheets].filter(sheet => sheet.href?.includes("page-transitions")).map(sheet => [...sheet.cssRules].map(rule => rule.cssText)) })));
     assert.equal(first.started, motion === "no-preference", `Native cross-document opt-in must respect reduced motion: ${JSON.stringify(first)}`);
     if (first.started) {
       assert.equal(first.ready, true, `The browser must run, not skip, the transition: ${JSON.stringify(first)}`);

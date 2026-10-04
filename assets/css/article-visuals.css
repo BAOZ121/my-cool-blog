@@ -42,6 +42,10 @@
 .article-visual .visual-toolbar { display: flex; flex-wrap: wrap; gap: 7px; padding: 0; margin: 16px 0 0; }
 .article-visual .visual-toolbar button { appearance: none; display: inline-flex; align-items: center; justify-content: center; min-height: 42px; padding: 8px 12px; border: 1px solid var(--visual-line); border-radius: 7px; background: var(--visual-surface); color: var(--visual-ink); font: inherit; font-size: 12px; line-height: 1.4; cursor: pointer; }
 .article-visual .visual-toolbar button:hover, .article-visual .visual-toolbar button[aria-pressed="true"] { color: var(--visual-accent); background: var(--visual-soft); border-color: var(--visual-accent); }
+.article-visual .visual-zoom-controls { display: inline-flex; align-items: center; gap: 4px; }
+.article-visual .visual-zoom-controls button { min-width: 42px; font-size: 20px; padding-inline: 8px; }
+.article-visual .visual-zoom-value { min-width: 4.5ch; text-align: center; font-size: 12px; font-variant-numeric: tabular-nums; color: var(--visual-muted); }
+.article-visual .visual-toolbar button:disabled { opacity: .45; cursor: default; }
 .article-visual :is(button, a, summary, [tabindex]):focus-visible { outline: 3px solid var(--visual-accent); outline-offset: 3px; }
 .article-visual .visual-stage { min-width: 0; width: 100%; border: 1px solid var(--visual-line); border-radius: 9px; overflow: hidden; margin: 16px 0 0; }
 .article-visual[data-visual="map"] .visual-stage { height: 470px; background: var(--visual-soft); }
