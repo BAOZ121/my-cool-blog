@@ -1,4 +1,35 @@
 /* Native controls retain the sidebar layout and a visible keyboard focus ring. */
+/* Style only the site's left navigation scroller. Keep native wheel, keyboard
+   and thumb dragging, and leave the document/browser scrollbar untouched. */
+@media (forced-colors: none) {
+    #main-menu {
+        scrollbar-width: thin;
+        scrollbar-color: var(--accent-color) var(--body-background);
+    }
+
+    /* Fallback for engines which do not yet implement CSS Scrollbars. */
+    #main-menu::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+        background: var(--body-background);
+    }
+    #main-menu::-webkit-scrollbar-track { background: var(--body-background); }
+    #main-menu::-webkit-scrollbar-thumb {
+        min-height: 36px;
+        border: 2px solid var(--body-background);
+        border-radius: 999px;
+        background: var(--accent-color);
+    }
+    #main-menu::-webkit-scrollbar-thumb:hover { background: var(--accent-color-darker); }
+    #main-menu::-webkit-scrollbar-button { display: none; }
+}
+
+/* Touch and high-contrast users retain the platform's full-size controls. */
+@media (pointer: coarse) {
+    #main-menu { scrollbar-width: auto; }
+    #main-menu::-webkit-scrollbar { width: auto; height: auto; }
+}
+
 #dark-mode-toggle {
     appearance: none;
     background: transparent;

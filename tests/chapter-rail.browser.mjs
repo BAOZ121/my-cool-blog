@@ -27,7 +27,13 @@ try {
   for (const [width, scheme, motion, js] of [[1440, 'dark', 'no-preference', true], [1920, 'light', 'reduce', true], [1024, 'dark', 'reduce', true], [390, 'dark', 'no-preference', true], [320, 'light', 'reduce', true], [1440, 'light', 'reduce', false], [390, 'light', 'reduce', false]]) {
     const context = await browser.newContext({ viewport: { width, height: 900 }, colorScheme: scheme, reducedMotion: motion, javaScriptEnabled: js });
     await context.route('https://fonts.googleapis.com/**', route => route.fulfill({ contentType: 'text/css', body: '' }));
-    if (js) await context.addInitScript(scheme => localStorage.setItem('StackColorScheme', scheme), scheme);
+    if (js) await context.addInitScript(scheme => {
+      localStorage.setItem('StackColorScheme', scheme);
+      window.__chapterLifecycle = [];
+      for (const name of ['DOMContentLoaded', 'load', 'pageshow', 'pagehide', 'hashchange']) addEventListener(name, event => {
+        window.__chapterLifecycle.push({ name, persisted: event.persisted, y: scrollY, height: document.documentElement.scrollHeight, disclosure: document.querySelector('.chapter-mobile details')?.open, disclosureHeight: document.querySelector('.chapter-mobile')?.getBoundingClientRect().height });
+      });
+    }, scheme);
     const page = await context.newPage();
     const errors = [];
     page.on('pageerror', error => errors.push(error.message));
@@ -83,12 +89,25 @@ try {
       assert.equal(page.url(), url);
       assert.equal(await rail.locator('a[aria-current="location"]').count(), 1);
       if (motion === 'reduce') assert.equal(await target.evaluate(node => getComputedStyle(node).transitionDuration), '0s');
-      const scroll = await page.evaluate(() => scrollY);
+      const snapshot = () => page.evaluate(id => ({
+        y: scrollY, height: document.documentElement.scrollHeight,
+        targetTop: document.getElementById(id)?.getBoundingClientRect().top,
+        details: { open: document.querySelector('.chapter-mobile details')?.open, height: document.querySelector('.chapter-mobile')?.getBoundingClientRect().height },
+        article: document.querySelector('.article-content')?.getBoundingClientRect().toJSON(),
+        visuals: [...document.querySelectorAll('figure.article-visual')].map(figure => ({ id: figure.id, state: figure.dataset.visualState, height: figure.getBoundingClientRect().height, top: figure.getBoundingClientRect().top, outlineOpen: figure.querySelector('details')?.open })),
+        lifecycle: window.__chapterLifecycle,
+      }), id);
+      const beforeBack = await snapshot();
+      const scroll = beforeBack.y;
       await page.goto(origin + '/');
       await page.goBack({ waitUntil: 'commit' });
       await page.evaluate(() => document.fonts.ready);
       if (mobile) await page.waitForFunction(() => document.querySelector('.chapter-mobile details').open);
-      await page.waitForFunction(scroll => Math.abs(scrollY - scroll) < 4, scroll);
+      try { await page.waitForFunction(scroll => Math.abs(scrollY - scroll) < 4, scroll); }
+      catch (error) {
+        console.log('CHAPTER_BACK_DIAGNOSTICS', JSON.stringify({ width, before: beforeBack, after: await snapshot() }));
+        throw error;
+      }
       await page.waitForFunction(() => document.querySelector('.chapter-rail a[aria-current="location"]'));
     }
     // Direct deep links work independently of enhancement and preserve the heading ID.

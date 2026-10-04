@@ -61,17 +61,23 @@ jobs:
         run: npx playwright install --with-deps chromium
       - name: Verify native page transitions and navigation fallbacks
         run: |
-          node --test tests/page-transitions.test.mjs tests/chapter-rail.test.mjs
+          node --test tests/page-transitions.test.mjs tests/chapter-rail.test.mjs tests/sidebar-scrollbar.test.mjs
           node tests/page-transitions.browser.mjs
       - name: Verify chapter rail anchors, keyboard and mobile reading
+        id: chapter_rail
         run: node tests/chapter-rail.browser.mjs
       - name: Verify interactive articles on desktop and mobile
+        if: ${{ success() || (failure() && steps.chapter_rail.conclusion == 'failure') }}
         run: node tests/article-visuals.browser.mjs
       - name: Verify fine mind map zoom and gesture boundaries
+        if: ${{ success() || (failure() && steps.chapter_rail.conclusion == 'failure') }}
         run: node tests/mindmap-zoom.browser.mjs
       - name: Verify contact and keyboard controls on desktop and mobile
+        if: ${{ success() || (failure() && steps.chapter_rail.conclusion == 'failure') }}
         run: node tests/site-controls.browser.mjs
       - name: Verify industry pages, details and mobile filtering
+        if: ${{ success() || (failure() && steps.chapter_rail.conclusion == 'failure') }}
         run: node tests/industry-pages.browser.mjs
       - name: Verify Evidence Library search, links and keyboard controls
+        if: ${{ success() || (failure() && steps.chapter_rail.conclusion == 'failure') }}
         run: node tests/evidence-library.browser.mjs
