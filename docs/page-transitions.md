@@ -12,14 +12,25 @@ or delaying them. A one-time session marker permits an entrance only on a fresh
 navigation with a matching source/destination. Direct entry, reload, Back/Forward,
 hashes, new tabs, disabled storage and reduced motion use normal rendering.
 
-At DOM readiness, at most four already-visible real elements get a short Web
-Animation: a loaded hero gently fades for 260 ms; selected titles/intro text rise 12 px
-for 200 ms. Only transform and opacity animate. Nodes containing links/controls use opacity only, keeping their hit boxes stationary. No document-sized element,
-snapshot, custom overlay, router or navigation timeout is used. Controls remain
-real hit-test targets. Pointer, keyboard, touch or wheel input cancels only the
-decoration, never the input; animations also stop on hidden/pagehide/BFCache.
-The fill mode is none, and underlying content is never hidden. Missing or slow
-images are skipped without waiting, decoding, replaying or deferring navigation.
+At DOM readiness, an eligible article entry follows three bounded phases:
+- A decorative black curtain holds briefly and fades away within 180 ms
+- Loaded cover pixels pop in at 120–380 ms
+- Title and introductory content reveal at 360–640 ms
+
+At most five small visible real elements animate with transform/opacity. Cover
+and title pixels move inside fixed, clipped links; control containers use opacity
+only. Generic internal pages use the same curtain and a shorter content reveal.
+The curtain is aria-hidden, pointer-events:none, and transparent by default; its
+finite CSS animation removes the black even if script cleanup misses an event.
+It is removed on animationend, on any input, and by an independent 900 ms cleanup
+deadline. This timer never delays navigation or waits for a download.
+
+Real content is visible in normal CSS. Finite Web Animations fill backwards only
+during their short phase delays, never retain final state, and are cancelled by
+pointer, keyboard, touch, wheel, hidden/pagehide/BFCache events. The input itself
+is never cancelled or replayed. Missing/slow images are skipped rather than
+awaited; the content timeline still completes. No document-sized element,
+snapshot, routing replacement, inert state or scroll lock is used.
 
 The theme now initializes menu/theme controls at DOM readiness rather than waiting
 for window.load and every image. The early-pointer regression exposed that
@@ -56,7 +67,9 @@ Tests assert actual real-element playback and real pointer input during that
 playback, with no native snapshot transition. They retain desktop/mobile,
 light/dark, reduced-motion, history/scroll, reload, keyboard, forms, new-tab,
 download, rapid navigation, slow/missing image, no-JS and unavailable-animation
-fallback coverage. Existing article graphics, zoom, contact, industry and
+fallback coverage. The graphic renderer prepares its hidden stage out of normal flow and commits
+the stage/outline swap atomically, avoiding a temporary height spike during native
+history restoration. Existing article graphics, zoom, contact, industry and
 Evidence Library suites still run against the same build.
 
 References:

@@ -5,6 +5,8 @@
   let entry;
   let interrupted = false;
   let animations = [];
+  let curtain;
+  let cleanupTimer;
   try {
     entry = JSON.parse(sessionStorage.getItem(key));
     sessionStorage.removeItem(key);
@@ -14,6 +16,9 @@
 
   const stop = () => {
     interrupted = true;
+    window.clearTimeout(cleanupTimer);
+    curtain?.remove();
+    curtain = undefined;
     for (const animation of animations) animation.cancel();
     animations = [];
   };
@@ -47,30 +52,50 @@
         navigationType !== "navigate" || location.hash || location.href !== entry.to ||
         document.referrer !== entry.from || !Number.isFinite(entry.time) ||
         Date.now() - entry.time < 0 || Date.now() - entry.time > 15000) return;
-    const hero = document.querySelector(".main-article .article-image img");
+    const article = document.querySelector(".main-article");
+    const hero = article?.querySelector(".article-image img");
     const nodes = [];
     if (hero?.complete && hero.naturalWidth) nodes.push(hero);
-    for (const node of document.querySelectorAll(".main-article .article-details, .main-article .article-content > :first-child, .research-landing > h2, .research-landing > p, main > header, main > h1, main > h2, main .section-title")) {
-      if (!nodes.some(parent => parent.contains(node))) nodes.push(node);
-    }
-    // Read geometry first, then animate at most four small, visible surfaces.
+    const selector = article
+      ? ".main-article .article-details, .main-article [data-entry-title], .main-article .research-actions, .main-article .article-content > :first-child"
+      : ".research-landing > h2, .research-landing > p, main > header, main > h1, main > h2, main .section-title";
+    for (const node of document.querySelectorAll(selector)) nodes.push(node);
+    // All geometry reads precede animation writes. Never animate a whole report.
     const visible = nodes.filter(node => {
       const rect = node.getBoundingClientRect();
       return typeof node.animate === "function" && rect.width > 0 && rect.height > 0 &&
         rect.top < innerHeight && rect.bottom > 0 && rect.height <= innerHeight;
-    }).slice(0, 4);
+    }).slice(0, 5);
+    if (!visible.length) return;
     try {
+      curtain = document.createElement("div");
+      curtain.className = "dex-entry-curtain";
+      curtain.setAttribute("aria-hidden", "true");
+      const mask = curtain;
+      mask.addEventListener("animationend", () => mask.remove(), { once: true });
+      document.body.append(mask);
+      // Cleanup deadline only: never await this timer or an image to navigate.
+      cleanupTimer = window.setTimeout(stop, 900);
       for (const node of visible) {
         const cover = node === hero;
-        // Keep every link/control hit box stationary, including while cancelling.
-        const interactive = node.closest?.("a,button,summary") || node.querySelector?.("a,button,input,select,textarea,summary,[tabindex]");
-        const frames = interactive ? [
-          { opacity: cover ? .85 : .65 }, { opacity: 1 },
+        const title = node.matches("[data-entry-title]");
+        const interactive = node.closest("a,button,summary") || node.querySelector("a,button,input,select,textarea,summary,[tabindex]");
+        // Image/title pixels move inside fixed clipped links; actual controls
+        // and every anchor's layout box remain stationary during cancellation.
+        const frames = cover ? [
+          { opacity: 0, transform: "scale(.92)" }, { opacity: 1, transform: "scale(1)" },
+        ] : title ? [
+          { transform: "translateY(28px)" }, { transform: "translateY(0)" },
+        ] : interactive ? [
+          { opacity: 0 }, { opacity: 1 },
         ] : [
-          { opacity: .65, transform: "translateY(12px)" }, { opacity: 1, transform: "translateY(0)" },
+          { opacity: 0, transform: "translateY(28px)" }, { opacity: 1, transform: "translateY(0)" },
         ];
-        const animation = node.animate(frames, { id: cover ? "dex-cover-settle" : "dex-content-enter", duration: cover ? 260 : 200,
-          easing: "cubic-bezier(.22, 1, .36, 1)", fill: "none" });
+        const animation = node.animate(frames, {
+          id: cover ? "dex-cover-pop" : "dex-content-enter", duration: cover ? 260 : 280,
+          delay: cover ? 120 : article ? 360 : 160,
+          easing: "cubic-bezier(.22, 1, .36, 1)", fill: "backwards",
+        });
         animations.push(animation);
         animation.finished.then(() => { animations = animations.filter(item => item !== animation); }, () => {});
       }

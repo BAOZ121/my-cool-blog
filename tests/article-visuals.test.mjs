@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { escapeHTML, validateMap, toMarkmapTree, validateShare, pieOptions, safeVendorURL, mapWheelPixels, mapScaleExtent } from "../assets/js/article-visuals.mjs";
+import { escapeHTML, validateMap, toMarkmapTree, validateShare, pieOptions, safeVendorURL, mapWheelPixels, mapScaleExtent, stageVisualOffFlow } from "../assets/js/article-visuals.mjs";
 
 const example = () => ({
   title: "Foundry share", scope: "Foundry services", geography: "Global", metric: "Revenue", period: "2025", unit: "%",
@@ -96,4 +96,16 @@ test("map zoom limits allow very large trees to fit without unbounded magnificat
   assert.deepEqual(mapScaleExtent(0.4), [0.2, 3]);
   assert.deepEqual(mapScaleExtent(0.001), [0.0005, 3]);
   assert.ok(mapScaleExtent(0)[0] > 0);
+});
+
+
+test("loading graphics render out of flow and restore original styles atomically", () => {
+  const stage = { hidden: true, style: { position: "", width: "", visibility: "", color: "red" } };
+  const restore = stageVisualOffFlow(stage, 311.5);
+  assert.equal(stage.hidden, false);
+  assert.equal(stage.style.position, "absolute");
+  assert.equal(stage.style.width, "311.5px");
+  assert.equal(stage.style.visibility, "hidden");
+  restore();
+  assert.deepEqual(stage.style, { position: "", width: "", visibility: "", color: "red" });
 });

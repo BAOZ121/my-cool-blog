@@ -40,7 +40,26 @@ async function observe(context, { scheme = "light", animationAvailable = true } 
     // Observe real input before the production cancellation handler runs.
     for (const type of ["pointerdown", "wheel", "keydown", "touchstart"]) {
       window.addEventListener(type, event => {
-        window.__entry.inputs.push({ type, active: active().length, control: event.target.closest?.("button, a")?.id || "", target: event.target.tagName });
+        const running = active();
+        const anchor = event.target.closest?.("a");
+        const curtain = document.querySelector(".dex-entry-curtain");
+        const rectangle = element => {
+          if (!element) return null;
+          const { x, y, width, height } = element.getBoundingClientRect();
+          return { x, y, width, height };
+        };
+        const input = { type, active: running.length, activeIds: running.map(animation => animation.id),
+          control: event.target.closest?.("button, a")?.id || "", target: event.target.tagName,
+          href: anchor?.href, titleLink: Boolean(anchor?.querySelector("[data-entry-title]")), anchorBefore: rectangle(anchor),
+          curtain: curtain ? { pointerEvents: getComputedStyle(curtain).pointerEvents, position: getComputedStyle(curtain).position,
+            opacity: getComputedStyle(curtain).opacity, ariaHidden: curtain.getAttribute("aria-hidden"),
+            animationName: getComputedStyle(curtain).animationName, duration: getComputedStyle(curtain).animationDuration,
+            fill: getComputedStyle(curtain).animationFillMode } : null };
+        window.__entry.inputs.push(input);
+        queueMicrotask(() => {
+          input.anchorAfter = rectangle(anchor);
+          sessionStorage.setItem("dex-test-last-input", JSON.stringify(input));
+        });
       }, { capture: true, passive: true });
     }
     if (!animationAvailable) {
@@ -53,7 +72,11 @@ async function observe(context, { scheme = "light", animationAvailable = true } 
       const animation = animate.apply(this, args);
       const timing = animation.effect.getTiming();
       const call = {
-        tag: this.tagName, id: this.id, classes: this.className,
+        tag: this.tagName, id: this.id, classes: this.className, animationId: animation.id,
+        curtain: this.matches(".dex-entry-curtain"), titlePixels: this.matches("[data-entry-title]"),
+        controlAncestor: this.closest("a,button,summary")?.tagName || null,
+        controlTransform: this.closest("a,button,summary") ? getComputedStyle(this.closest("a,button,summary")).transform : null,
+        clippedTitle: this.matches("[data-entry-title]") && getComputedStyle(this.closest("a")).overflow === "hidden",
         broadCapture: this.matches("html, body, main, .main, .main-article, .article-header"),
         visible: rect.width > 0 && rect.height > 0 && rect.bottom > 0 && rect.top < innerHeight,
         imageLoaded: this.tagName !== "IMG" || (this.complete && this.naturalWidth > 0),
@@ -78,8 +101,23 @@ async function assertNoNative(page) {
   assert.equal(await page.locator("html").getAttribute("data-dex-transition"), null);
 }
 async function finished(page) {
-  await page.waitForFunction(() => window.__entryAnimations.every(animation => !animation.pending && animation.playState !== "running"));
+  await page.waitForFunction(() => window.__entryAnimations.every(animation => !animation.pending && animation.playState !== "running") && !document.querySelector(".dex-entry-curtain"), null, { timeout: 1500 });
 }
+function assertArticleTimeline(calls) {
+  assert.ok(calls.some(call => call.animationId === "dex-content-enter"), "Article content must have its own reveal phase");
+  for (const call of calls) {
+    assert.ok(["dex-cover-pop", "dex-content-enter"].includes(call.animationId), `Unexpected entry animation: ${call.animationId}`);
+    if (call.animationId === "dex-cover-pop") {
+      assert.equal(call.tag, "IMG");
+      assert.equal(call.delay, 120, "Cover starts after the initial black curtain");
+      assert.equal(call.duration, 260);
+    } else {
+      assert.equal(call.delay, 360, "Article content reveals after the cover begins");
+      assert.equal(call.duration, 280);
+    }
+  }
+}
+
 async function internalArticle(page, articlePath) {
   await Promise.all([
     page.waitForURL(origin + articlePath, { waitUntil: "domcontentloaded" }),
@@ -100,6 +138,7 @@ try {
     await page.goto(origin + "/");
     assert.equal(await page.locator("style#dex-page-transitions").count(), 1);
     assert.equal(await page.evaluate(() => window.__entry.calls.length), 0, "Direct entry never animates");
+    assert.equal(await page.locator(".dex-entry-curtain").count(), 0);
     const controlId = width < 768 ? "toggle-menu" : "dark-mode-toggle";
     const controlBox = await page.locator(`#${controlId}`).boundingBox();
     assert.ok(controlBox && controlBox.y >= 0 && controlBox.y + controlBox.height <= 900, "The real site control must be on screen");
@@ -127,22 +166,39 @@ try {
     assert.ok(input, `Pointer input must hit the real ${controlId}, not a snapshot or overlay: ${JSON.stringify(entry.inputs)}`);
     if (motion === "no-preference") {
       assert.ok(input.active > 0, "The real pointer click must occur during actual playback");
-      assert.ok(entry.calls.length > 0 && entry.calls.length <= 4, "Animate only a bounded set of visible elements");
+      assert.ok(input.curtain, "The real pointer must pass through the curtain while entry is active");
+      assert.equal(input.curtain.pointerEvents, "none");
+      assert.equal(input.curtain.position, "fixed");
+      assert.equal(input.curtain.ariaHidden, "true");
+      assert.equal(input.curtain.animationName, "dex-entry-blackout");
+      assert.equal(input.curtain.duration, "0.18s");
+      assert.equal(input.curtain.fill, "none");
+      assert.ok(Number(input.curtain.opacity) > 0, "Input must pass through a currently visible curtain");
+      assertArticleTimeline(entry.calls);
+      assert.ok(entry.calls.filter(call => !call.curtain).length > 0 && entry.calls.filter(call => !call.curtain).length <= 5, "Animate only a bounded set of visible content elements");
       for (const call of entry.calls) {
         assert.equal(call.broadCapture, false, "Never animate the root, main container or whole article");
         assert.equal(call.visible, true);
         assert.equal(call.imageLoaded, true, "Unloaded images cannot gate or participate in entry");
-        if (call.interactive) assert.equal(call.properties.includes("transform"), false, "Control hit boxes must not move during cancellation");
+        if (call.interactive && call.properties.includes("transform")) {
+          assert.ok(call.tag === "IMG" || call.titlePixels, "Move only inner image/title pixels, never an interactive container");
+          assert.equal(call.controlTransform, "none", "The interactive ancestor must keep a stationary hit box");
+          if (call.titlePixels) assert.equal(call.clippedTitle, true, "Title pixels reveal inside their clipped anchor");
+        }
         assert.equal(Boolean(call.pseudo), false, "Animate the real element, not a pseudo overlay");
-        assert.ok(call.duration >= 0 && call.duration + call.delay <= 400, `Entry must be short and bounded: ${JSON.stringify(call)}`);
+        assert.ok(call.duration >= 0 && call.duration + call.delay <= 700, `Entry must be short and bounded: ${JSON.stringify(call)}`);
         assert.equal(call.iterations, 1);
-        assert.equal(call.fill, "none", "Animation state cannot persist after finish or cancellation");
+        assert.equal(call.fill, "backwards", "Finite delays may fill backwards, never retain final animation state");
         assert.ok(call.properties.every(property => ["offset", "computedOffset", "easing", "composite", "opacity", "transform"].includes(property)), "Only compositor-friendly transform/opacity properties animate");
       }
-    } else assert.equal(entry.calls.length, 0, "Reduced motion creates no entry animations");
+    } else {
+      assert.equal(entry.calls.length, 0, "Reduced motion creates no entry animations");
+      assert.equal(await page.locator(".dex-entry-curtain").count(), 0, "Reduced motion has no curtain");
+    }
     await finished(page);
     if (motion === "no-preference") assert.equal(await page.evaluate(() => window.__entry.calls.some(call => call.state === "cancelled")), true, "Real input cancels ongoing decoration");
-    assert.equal(await page.evaluate(() => window.__entryAnimations.every(animation => getComputedStyle(animation.effect.target).opacity === "1")), true, "Cancellation leaves real content fully visible");
+    assert.equal(await page.locator(".dex-entry-curtain").count(), 0, "Input removes the decorative curtain");
+    assert.equal(await page.evaluate(() => window.__entryAnimations.filter(animation => !animation.effect.target.matches(".dex-entry-curtain")).every(animation => getComputedStyle(animation.effect.target).opacity === "1")), true, "Cancellation leaves real content fully visible");
     if (width < 768) {
       assert.equal(await page.locator("#toggle-menu").getAttribute("aria-expanded"), "true");
       await page.locator("#toggle-menu").click();
@@ -231,6 +287,16 @@ try {
       assert.equal(await page.locator("main").isVisible(), true);
       if (path === "/evidence-library/") await page.waitForSelector('[data-enhanced="true"]');
       if (path === "/industries/") assert.equal(await page.locator("#industry-explorer").count(), 1);
+      const pageEntry = await page.evaluate(() => ({ article: Boolean(document.querySelector(".main-article")), calls: window.__entry.calls }));
+      if (pageEntry.calls.length) {
+        if (pageEntry.article) assertArticleTimeline(pageEntry.calls);
+        else for (const call of pageEntry.calls) {
+          assert.equal(call.animationId, "dex-content-enter");
+          assert.equal(call.delay, 160, "Generic pages reveal after their short curtain");
+          assert.equal(call.duration, 280);
+          assert.equal(call.fill, "backwards");
+        }
+      }
       await assertNoNative(page);
     }
 
@@ -256,6 +322,50 @@ try {
     console.log(`PASS ${width}px ${scheme} ${motion}: real input during bounded element playback, no native snapshots, history/scroll, keyboard, anchors, forms, new tabs, downloads and rapid navigation`);
     await context.close();
   }
+
+  // Click the fixed title anchor while its inner pixels are still revealing.
+  const revealContext = await browser.newContext({ viewport: { width: 1440, height: 1200 }, reducedMotion: "no-preference" });
+  await observe(revealContext);
+  const revealPage = await revealContext.newPage();
+  const revealErrors = [];
+  revealPage.on("pageerror", error => revealErrors.push(error.message));
+  await revealPage.goto(origin + firstArticlePath);
+  await revealPage.locator(".main-article [data-transition-cover] img").evaluate(image => image.decode());
+  const titleBox = await revealPage.locator(".main-article .article-title a").boundingBox();
+  assert.ok(titleBox && titleBox.y >= 0 && titleBox.y + titleBox.height <= 1200, "Title link must be in the test viewport");
+  await revealPage.goto(origin + "/");
+  await internalArticle(revealPage, firstArticlePath);
+  await revealPage.waitForFunction(() => window.__entryAnimations.some(animation =>
+    animation.id === "dex-content-enter" && animation.effect.target.matches("[data-entry-title]") &&
+    animation.currentTime >= 360 && animation.currentTime < 640 && animation.playState === "running"), null, { polling: 1 });
+  await Promise.all([
+    revealPage.waitForNavigation({ waitUntil: "domcontentloaded" }),
+    revealPage.mouse.click(titleBox.x + Math.min(12, titleBox.width / 2), titleBox.y + Math.min(6, titleBox.height / 2)),
+  ]);
+  const titleInput = await revealPage.evaluate(() => JSON.parse(sessionStorage.getItem("dex-test-last-input")));
+  assert.equal(titleInput.type, "pointerdown");
+  assert.equal(titleInput.titleLink, true, "The clipped title anchor must receive the first real click");
+  assert.ok(titleInput.active > 0 && titleInput.activeIds.includes("dex-content-enter"));
+  assert.equal(titleInput.curtain, null, "The curtain must already be gone during the body phase");
+  assert.equal(titleInput.href, origin + firstArticlePath);
+  for (const property of ["x", "y", "width", "height"]) {
+    assert.ok(Math.abs(titleInput.anchorBefore[property] - titleInput.anchorAfter[property]) < .5, `Cancellation must preserve the title anchor ${property}`);
+  }
+  assert.equal(revealPage.url(), origin + firstArticlePath);
+  assert.equal(await revealPage.evaluate(() => window.__entry.calls.length), 0, "Same-page native title navigation cannot replay entry");
+  await assertNoNative(revealPage);
+
+  // Let a complete sequence finish without input, including curtain disposal.
+  await revealPage.goto(origin + "/");
+  await internalArticle(revealPage, firstArticlePath);
+  assertArticleTimeline(await revealPage.evaluate(() => window.__entry.calls));
+  await finished(revealPage);
+  assert.equal(await revealPage.evaluate(() => window.__entry.calls.every(call => call.state === "finished")), true, "The finite choreography must complete naturally");
+  assert.equal(await revealPage.locator(".dex-entry-curtain").count(), 0, "Natural completion removes its decorative layer");
+  assert.equal(await revealPage.locator(".main-article .article-details").evaluate(element => getComputedStyle(element).opacity), "1");
+  assert.deepEqual(revealErrors, []);
+  console.log("PASS title reveal: first real link click works with a stationary anchor; uninterrupted choreography finishes and removes the curtain");
+  await revealContext.close();
 
   // Fresh high-density contexts: cached larger candidates cannot skew selection.
   for (const width of [390, 1440]) {
@@ -291,6 +401,7 @@ try {
       assert.equal(await page.locator(".main-article [data-transition-cover] img").evaluate(image => image.complete && image.naturalWidth > 0), false);
       assert.equal(await page.locator("main h1").isVisible(), true, "A pending/failed image cannot hide article content");
       assert.equal(await page.evaluate(() => window.__entry.calls.some(call => call.tag === "IMG")), false, "Skip image animation rather than awaiting it");
+      assertArticleTimeline(await page.evaluate(() => window.__entry.calls));
       await page.locator("#dark-mode-toggle").click();
       assert.equal(await page.locator("html").getAttribute("data-scheme"), "dark");
       await Promise.all([
@@ -329,6 +440,7 @@ try {
   await internalArticle(plain, firstArticlePath);
   assert.equal(await plain.locator("main h1").isVisible(), true);
   assert.equal(await plain.evaluate(() => window.__entry.calls.length), 0);
+  assert.equal(await plain.locator(".dex-entry-curtain").count(), 0, "Unavailable animation cannot leave a curtain");
   await plain.locator("#dark-mode-toggle").click();
   assert.equal(await plain.locator("html").getAttribute("data-scheme"), "dark");
   await assertNoNative(plain);

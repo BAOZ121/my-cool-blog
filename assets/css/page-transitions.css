@@ -1,11 +1,25 @@
-/* Do not capture the document into a native transition layer: captured controls
-   can be excluded from browser hit-testing while that transition is active. */
-@view-transition {
-  navigation: none;
-}
+/* Real elements retain normal hit testing; never snapshot the document. */
+@view-transition { navigation: none; }
 
-/* The optional image settle stays inside its existing crop. Real content is
-   visible by default; this file never hides a page, disables input or waits. */
-.article-image {
-  overflow: hidden;
+.article-image { overflow: hidden; background: var(--card-background); }
+.article-image a, .article-title a, [data-entry-title] { display: block; }
+.main-article .article-title a { overflow: hidden; }
+
+/* A decorative curtain only. Its default is transparent, so failed/disabled
+   CSS animation cannot strand the page behind black. No input or scroll lock. */
+.dex-entry-curtain {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483000;
+  background: #080909;
+  opacity: 0;
+  pointer-events: none;
+  animation: dex-entry-blackout 180ms ease-out;
+}
+@keyframes dex-entry-blackout {
+  0%, 40% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dex-entry-curtain { display: none !important; animation: none; }
 }

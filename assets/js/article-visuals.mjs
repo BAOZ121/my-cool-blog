@@ -358,6 +358,15 @@ async function renderShare(figure, stage, _toolbar, data, vendor, labels) {
   return { resize: update, hint: labels.chartReady };
 }
 
+// Measure/render the replacement without briefly adding a second graphic's
+// height to the document. This preserves native history scroll anchoring.
+export function stageVisualOffFlow(stage, width) {
+  const previous = { position: stage.style.position, width: stage.style.width, visibility: stage.style.visibility };
+  Object.assign(stage.style, { position: "absolute", width: `${Math.max(0, width)}px`, visibility: "hidden" });
+  stage.hidden = false;
+  return () => Object.assign(stage.style, previous);
+}
+
 export async function initVisual(figure) {
   if (figure.dataset.visualState) return;
   figure.dataset.visualState = "loading";
@@ -367,6 +376,7 @@ export async function initVisual(figure) {
   const status = figure.querySelector(".visual-status");
   const labels = strings[document.documentElement.lang.startsWith("zh") ? "zh" : "en"];
   if (status) status.textContent = labels.loading;
+  let restoreStage = () => {};
   try {
     if (!stage || !toolbar || !fallback) throw new Error("Missing graphic containers");
     const data = JSON.parse(figure.querySelector("script.visual-data").textContent);
@@ -374,11 +384,13 @@ export async function initVisual(figure) {
     if (!render) throw new Error("Unknown graphic type");
     if (figure.dataset.visual === "map") validateMap(data); else validateShare(data);
     const vendor = await import(safeVendorURL(figure.dataset.vendor, document.baseURI));
-    stage.hidden = false;
-    stage.style.visibility = "hidden";
+    const padding = getComputedStyle(figure);
+    const width = figure.clientWidth - parseFloat(padding.paddingLeft) - parseFloat(padding.paddingRight);
+    restoreStage = stageVisualOffFlow(stage, width);
     await nextFrame();
     const view = await render(figure, stage, toolbar, data, vendor, labels);
-    stage.style.visibility = "";
+    // Commit in one turn: no painted/intermediate in-flow stage + open outline.
+    restoreStage();
     toolbar.hidden = false;
     fallback.open = false;
     figure.dataset.visualState = "ready";
@@ -390,7 +402,7 @@ export async function initVisual(figure) {
     console.warn("Article graphic unavailable; readable content retained.", error);
     figure.dataset.visualState = "fallback";
     figure.dataset.enhanced = "false";
-    if (stage) { stage.hidden = true; stage.replaceChildren(); }
+    if (stage) { stage.hidden = true; restoreStage(); stage.replaceChildren(); }
     if (toolbar) toolbar.hidden = true;
     if (fallback) fallback.open = true;
     if (status) status.textContent = labels.failed;
