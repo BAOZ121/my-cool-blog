@@ -51,6 +51,32 @@ try {
     await page.waitForFunction(selector => document.querySelector(selector)?.dataset.visualState === 'ready', figureSelector);
 
     const transform = () => svg.evaluate(el => ({ k: el.__zoom.k, x: el.__zoom.x, y: el.__zoom.y }));
+    const layout = () => svg.evaluate(el => ({
+      width: el.clientWidth,
+      height: el.clientHeight,
+      fonts: document.fonts.status,
+      fontFamily: getComputedStyle(el).fontFamily,
+      nodes: [...el.querySelectorAll('.markmap-node')].map(node => node.__data__?.state?.rect),
+    }));
+    const waitForLayout = async () => {
+      await page.evaluate(() => document.fonts.ready.then(() => {}));
+      // Markmap debounces its label ResizeObserver by 100ms, then relayouts
+      // on the next animation frame. Font readiness alone is therefore early.
+      let previous;
+      for (let attempt = 0; attempt < 12; attempt++) {
+        await page.waitForTimeout(150);
+        const current = JSON.stringify(await layout());
+        if (current === previous) return;
+        previous = current;
+      }
+      assert.fail(`Renderer layout did not settle (${label}): ${previous}`);
+    };
+    const assertFit = async (expected, reason) => {
+      const actual = await transform();
+      if (!Number.isFinite(actual.k) || Math.abs(actual.k - expected.k) > .002) {
+        assert.fail(`${reason} (${label}): ${JSON.stringify({ expected, actual, layout: await layout() })}`);
+      }
+    };
     const settle = async () => {
       // Fit is animated for readers without a reduced-motion preference.
       await page.waitForTimeout(reducedMotion === 'reduce' ? 70 : 300);
@@ -82,6 +108,7 @@ try {
 
     assert.match(await zoomIn.getAttribute('aria-label') || await zoomIn.innerText(), /zoom in/i);
     assert.match(await zoomOut.getAttribute('aria-label') || await zoomOut.innerText(), /zoom out/i);
+    await waitForLayout();
     const baseline = await reset();
     assert.ok(Number.isFinite(baseline.k) && baseline.k > 0);
 
@@ -161,7 +188,7 @@ try {
     close((await transform()).k, beforeDoubleClick.k);
 
     // Fit must cancel pending input; it must not be overwritten one frame later.
-    await reset();
+    const beforeCanceledWheel = await reset();
     await figure.evaluate(el => {
       const svg = el.querySelector('.visual-stage > svg');
       const r = svg.getBoundingClientRect();
@@ -169,11 +196,12 @@ try {
       el.querySelector('[data-action="fit"]').click();
     });
     await settle();
-    close((await transform()).k, baseline.k, .002);
+    await assertFit(beforeCanceledWheel, 'Fit failed to cancel queued wheel');
 
     // Both wheel and buttons must respect limits. Accepted Ctrl-wheel stays
     // canceled at a limit rather than leaking through to browser page zoom.
-    for (const [deltaY, control, expected] of [[-1000, zoomIn, 3], [1000, zoomOut, Math.min(.25, baseline.k * .5)]]) {
+    const boundsBaseline = await reset();
+    for (const [deltaY, control, expected] of [[-1000, zoomIn, 3], [1000, zoomOut, Math.min(.25, boundsBaseline.k * .5)]]) {
       for (let i = 0; i < 110 && !(await control.isDisabled()); i++) {
         await wheel({ deltaY, count: 10 });
         await frame();
@@ -227,6 +255,7 @@ try {
 
     const fullscreen = figure.locator('[data-action="fullscreen"]');
     for (let cycle = 0; cycle < 2; cycle++) {
+      const beforeFullscreen = await reset();
       await fullscreen.click();
       await page.waitForFunction(() => !!document.fullscreenElement || !!document.querySelector('figure.article-visual.is-expanded'));
       await settle();
@@ -234,9 +263,10 @@ try {
       await fullscreen.click();
       await page.waitForFunction(() => !document.fullscreenElement && !document.querySelector('figure.article-visual.is-expanded'));
       await settle();
-      close((await transform()).k, baseline.k, .002);
+      await assertFit(beforeFullscreen, `Fullscreen cycle ${cycle + 1} did not restore fit`);
     }
     // Explicitly cover the fallback dialog and its Escape/focus-return path.
+    const beforeFallback = await reset();
     await figure.evaluate(el => { el.requestFullscreen = undefined; });
     await fullscreen.click();
     assert.equal(await figure.getAttribute('role'), 'dialog');
@@ -244,10 +274,11 @@ try {
     await settle();
     assert.equal(await figure.evaluate(el => el.classList.contains('is-expanded')), false);
     assert.equal(await fullscreen.evaluate(el => el === document.activeElement), true);
-    close((await transform()).k, baseline.k, .002);
+    await assertFit(beforeFallback, 'Fallback fullscreen did not restore fit');
 
     // Printing hides the stage and emits resize callbacks. Restoring screen
     // media must never leave a zero/NaN scale or stale animated fit behind.
+    const beforePrint = await reset();
     await page.emulateMedia({ media: 'print' });
     await settle();
     await page.emulateMedia({ media: 'screen' });
@@ -255,7 +286,7 @@ try {
     const restored = await transform();
     assert.ok(Number.isFinite(restored.k) && restored.k > 0);
     await reset();
-    close((await transform()).k, baseline.k, .002);
+    await assertFit(beforePrint, 'Print restoration changed fit');
 
     // Navigate with queued input, then return through real browser history.
     // Reloaded and bfcache-restored pages must both regain one working controller.
@@ -273,6 +304,7 @@ try {
     assert.equal(page.url(), articleURL);
     await figure.scrollIntoViewIfNeeded();
     await page.waitForFunction(selector => document.querySelector(selector)?.dataset.visualState === 'ready', figureSelector);
+    await waitForLayout();
     await settle();
     assert.equal(await figure.locator('.visual-zoom-controls').count(), 1);
     const returned = await transform();
