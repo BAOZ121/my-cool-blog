@@ -19,7 +19,7 @@ const server = createServer(async (req, res) => {
 await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
 const base = `http://127.0.0.1:${server.address().port}`;
 const browser = await chromium.launch({ headless: true, ...(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : {}) });
-const slugs = ['cybersecurity-industry-report', 'pharmaceutical-industry', 'vr-industry-report-2026', 'semiconductor-industry-report', 'ai-computing-infrastructure'];
+const slugs = ['cybersecurity-industry-report', 'pharmaceutical-industry', 'vr-industry-report-2026', 'semiconductor-industry-report', 'ai-computing-infrastructure', 'commercial-space-advanced-engineering'];
 const captures = process.env.VISUAL_SCREENSHOT_DIR;
 if (captures) await mkdir(captures, { recursive: true });
 const failures = [];
@@ -35,14 +35,31 @@ try {
       page.on('console', message => { if (message.type() === 'warning' || message.type() === 'error') console.log(`[browser ${slug}] ${message.text()}`); });
       await page.goto(`${base}/post/${slug}/`, { waitUntil: 'domcontentloaded' });
       const figures = page.locator('figure.article-visual');
-      assert.equal(await figures.count(), 2);
+      const isSpace = slug === 'commercial-space-advanced-engineering';
+      const figureCount = await figures.count();
+      assert.equal(figureCount, isSpace ? 5 : 2);
+      if (isSpace) {
+        assert.equal(await page.locator('figure.article-visual[data-visual="map"]').count(), 3, 'Space report requires three mind maps');
+        assert.equal(await page.locator('figure.article-visual[data-visual="share"]').count(), 2, 'Space report requires two revenue charts');
+        assert.equal(await page.locator('.article-content h2').count(), 5, 'Four parts and a separate appendix are required');
+        const evidenceIds = await page.locator('.article-content [id^="evidence-"]').evaluateAll(els => els.map(el => el.id));
+        assert.equal(evidenceIds.length, 28, 'Space report must retain all 28 evidence anchors');
+        assert.deepEqual(new Set(evidenceIds), new Set(Array.from({ length: 28 }, (_, index) => `evidence-${index + 1}`)), 'Space evidence numbering must be complete and unique');
+        const cover = page.locator('.article-header .article-image img').first();
+        assert.equal(await cover.count(), 1, 'Space report featured cover is required');
+        await cover.scrollIntoViewIfNeeded();
+        await page.waitForFunction(() => {
+          const img = document.querySelector('.article-header .article-image img');
+          return img?.complete && img.naturalWidth > 0;
+        });
+      }
       if (slug === 'ai-computing-infrastructure') {
         assert.equal(await page.locator('.article-content h2').count(), 5, 'Four parts and a separate appendix are required');
         assert.equal(await page.locator('.ai-company-icon img').count(), 28, 'Both company tables must retain their brand icons');
         for (const table of await page.locator('.article-content table').all()) await table.scrollIntoViewIfNeeded();
         await page.waitForFunction(() => Array.from(document.querySelectorAll('.ai-company-icon img')).every(img => img.complete && img.naturalWidth > 0));
       }
-      for (let index = 0; index < 2; index++) {
+      for (let index = 0; index < figureCount; index++) {
         const figure = figures.nth(index);
         await figure.scrollIntoViewIfNeeded();
         await page.waitForFunction(index => document.querySelectorAll('figure.article-visual')[index]?.dataset.visualState === 'ready', index, { timeout: 20000 });
@@ -50,7 +67,7 @@ try {
         assert.equal(await figure.locator('.visual-fallback').evaluate(el => el.open), false);
         const box = await figure.boundingBox();
         assert.ok(box.x >= -1 && box.x + box.width <= width + 1, `${slug}: graphic overflows at ${width}px`);
-        if (index === 0) {
+        if (await figure.getAttribute('data-visual') === 'map') {
           const initial = await figure.locator('foreignObject').count();
           await figure.locator('[data-action="expand"]').click();
           await page.waitForFunction(({ index, initial }) => document.querySelectorAll('figure.article-visual')[index].querySelectorAll('foreignObject').length > initial, { index, initial });
@@ -74,8 +91,9 @@ try {
         assert.equal(await figure.locator('.visual-fallback').evaluate(el => el.open), true);
         await figure.locator('.visual-fallback summary').click();
         if (captures && (slug === 'vr-industry-report-2026' || slug === 'ai-computing-infrastructure')) await figure.screenshot({ path: resolve(captures, `${slug === 'ai-computing-infrastructure' ? 'ai' : 'xr'}-${index ? 'share' : 'map'}-${width}.png`) });
+        if (captures && isSpace) await figure.screenshot({ path: resolve(captures, `space-${index + 1}-${await figure.getAttribute('data-visual')}-${width}.png`) });
       }
-      const share = figures.nth(1);
+      const share = page.locator('figure.article-visual[data-visual="share"]').first();
       const light = await share.evaluate(el => getComputedStyle(el).backgroundColor);
       await page.evaluate(() => document.documentElement.dataset.scheme = 'dark');
       await page.waitForTimeout(100);
@@ -95,12 +113,12 @@ try {
       await page.emulateMedia({ media: 'print' });
       assert.equal(await share.evaluate(el => getComputedStyle(el).backgroundColor), 'rgb(255, 255, 255)', 'Dark mode must print on white');
       assert.equal(await share.locator('.visual-stage').evaluate(el => getComputedStyle(el).display), 'none');
-      for (let index = 0; index < 2; index++) assert.equal(await figures.nth(index).locator('.visual-fallback').evaluate(el => el.open), true);
+      for (let index = 0; index < figureCount; index++) assert.equal(await figures.nth(index).locator('.visual-fallback').evaluate(el => el.open), true);
       await page.emulateMedia({ media: 'screen' });
       await page.evaluate(() => window.dispatchEvent(new Event('afterprint')));
       assert.deepEqual(errors, [], `${slug} browser errors`);
       assert.deepEqual(imageViewerRequests, [], `${slug}: charts must not load the photograph viewer`);
-      console.log(`PASS ${slug}: ${width}px, both charts, controls, dark theme and print`);
+      console.log(`PASS ${slug}: ${width}px, all ${figureCount} graphics, controls, dark theme and print`);
       await page.close();
     }
     await context.close();
