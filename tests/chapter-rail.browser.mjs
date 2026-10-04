@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { createServer } from 'node:http';
 import { readFile, mkdir } from 'node:fs/promises';
 import { resolve, sep, extname } from 'node:path';
-import { chromium } from '@playwright/test';
+import { chromium, expect } from '@playwright/test';
 
 const root = resolve('public');
 const types = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.mjs': 'text/javascript', '.svg': 'image/svg+xml', '.jpg': 'image/jpeg', '.webp': 'image/webp', '.png': 'image/png' };
@@ -129,7 +129,7 @@ try {
       await desktopSummary.focus();
       await page.keyboard.press('Enter');
       await checkDesktopWidth(true);
-      assert.equal(await page.getByRole('button', { name: 'Expand chapters', exact: true }).count(), 1);
+      await expect(desktopSummary).toHaveAccessibleName('Expand chapters');
       const control = await desktopSummary.boundingBox();
       assert.ok(control.width >= 44 && control.height >= 44, 'Minimized toggle is a discoverable touch/keyboard target');
       await page.keyboard.press('Tab');
@@ -137,7 +137,7 @@ try {
       await desktopSummary.focus();
       await page.keyboard.press('Space');
       await checkDesktopWidth(false);
-      assert.equal(await page.getByRole('button', { name: 'Minimize chapters', exact: true }).count(), 1);
+      await expect(desktopSummary).toHaveAccessibleName('Minimize chapters');
       if (motion === 'reduce') assert.equal(await rail.evaluate(node => getComputedStyle(node).animationName), 'none');
     }
     if (screenshots) await page.screenshot({ path: resolve(screenshots, `chapters-${width}-${scheme}-${js ? 'js' : 'no-js'}.png`) });
