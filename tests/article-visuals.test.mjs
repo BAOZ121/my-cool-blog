@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { escapeHTML, validateMap, toMarkmapTree, validateShare, pieOptions, safeVendorURL, mapWheelPixels, mapScaleExtent, stageVisualOffFlow, commitVisualLayout } from "../assets/js/article-visuals.mjs";
+import { escapeHTML, validateMap, toMarkmapTree, validateShare, pieOptions, safeVendorURL, mapWheelPixels, mapScaleExtent, stageVisualOffFlow, commitVisualLayout, visualNearViewport, initVisual } from "../assets/js/article-visuals.mjs";
 
 const example = () => ({
   title: "Foundry share", scope: "Foundry services", geography: "Global", metric: "Revenue", period: "2025", unit: "%",
@@ -121,4 +121,17 @@ test("graphic swaps settle position changes before releasing natural height", ()
   assert.equal(figure.style.height, "auto");
   assert.throws(() => commitVisualLayout(figure, () => { throw new Error("render failed"); }), /render failed/);
   assert.equal(figure.style.height, "auto", "failed enhancement never leaves a fixed-height article graphic");
+});
+
+test("stale lazy-graphic notifications cannot initialize offscreen or detached geometry", async () => {
+  const rect = { width: 800, height: 1000, top: -1320, bottom: -320 };
+  assert.equal(visualNearViewport(rect, 900), false, "Restored reading view is beyond the240px lazy margin");
+  assert.equal(visualNearViewport({ ...rect, top: -1240, bottom: -240 }, 900), true);
+  assert.equal(visualNearViewport({ ...rect, top: 1140, bottom: 2140 }, 900), true);
+  assert.equal(visualNearViewport({ ...rect, top: 1141, bottom: 2141 }, 900), false);
+  assert.equal(visualNearViewport({ ...rect, width: 0 }, 900), false);
+  assert.equal(visualNearViewport({ ...rect, height: 0 }, 900), false);
+  const figure = { dataset: {}, querySelector() { throw new Error("No rendering work should start"); } };
+  assert.equal(await initVisual(figure, () => false), "deferred");
+  assert.deepEqual(figure.dataset, {});
 });

@@ -381,13 +381,19 @@ export function commitVisualLayout(figure, commit) {
   }
 }
 
-export async function initVisual(figure) {
+export function visualNearViewport(rect, viewportHeight) {
+  return rect.width > 0 && rect.height > 0 && rect.bottom >= -240 && rect.top <= viewportHeight + 240;
+}
+
+export async function initVisual(figure, stillRelevant = () => true) {
   if (figure.dataset.visualState) return;
+  if (!stillRelevant()) return "deferred";
   figure.dataset.visualState = "loading";
   const stage = figure.querySelector(".visual-stage");
   const toolbar = figure.querySelector(".visual-toolbar");
   const fallback = figure.querySelector(".visual-fallback");
   const status = figure.querySelector(".visual-status");
+  const previousStatus = status?.textContent;
   const labels = strings[document.documentElement.lang.startsWith("zh") ? "zh" : "en"];
   if (status) status.textContent = labels.loading;
   let restoreStage = () => {};
@@ -398,6 +404,14 @@ export async function initVisual(figure) {
     if (!render) throw new Error("Unknown graphic type");
     if (figure.dataset.visual === "map") validateMap(data); else validateShare(data);
     const vendor = await import(safeVendorURL(figure.dataset.vendor, document.baseURI));
+    // Intersection notifications and module downloads are asynchronous. Native
+    // Back restoration or a fast reader may have moved this figure away since
+    // it was queued. Keep its readable outline; observe it again when needed.
+    if (!stillRelevant()) {
+      delete figure.dataset.visualState;
+      if (status) status.textContent = previousStatus;
+      return "deferred";
+    }
     const padding = getComputedStyle(figure);
     const width = figure.clientWidth - parseFloat(padding.paddingLeft) - parseFloat(padding.paddingRight);
     restoreStage = stageVisualOffFlow(stage, width);
@@ -428,9 +442,17 @@ export async function initVisual(figure) {
 export function initArticleVisuals(root = document) {
   const figures = [...root.querySelectorAll("figure.article-visual[data-visual]")];
   if (!figures.length) return;
-  if (typeof IntersectionObserver === "undefined") { figures.forEach(initVisual); return; }
+  if (typeof IntersectionObserver === "undefined") { figures.forEach(figure => { void initVisual(figure); }); return; }
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => { if (entry.isIntersecting) { observer.unobserve(entry.target); void initVisual(entry.target); } });
+    entries.forEach((entry) => {
+      const figure = entry.target;
+      const stillRelevant = () => figure.isConnected && visualNearViewport(figure.getBoundingClientRect(), innerHeight);
+      if (!entry.isIntersecting || !stillRelevant()) return;
+      observer.unobserve(figure);
+      void initVisual(figure, stillRelevant).then(result => {
+        if (result === "deferred" && figure.isConnected) observer.observe(figure);
+      });
+    });
   }, { rootMargin: "240px 0px" });
   figures.forEach((figure) => observer.observe(figure));
   // Opening details for print also works in browsers that hide closed <details> descendants.

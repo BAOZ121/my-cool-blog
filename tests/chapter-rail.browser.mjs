@@ -49,6 +49,43 @@ try {
     if (js) await context.addInitScript(scheme => {
       localStorage.setItem('StackColorScheme', scheme);
       window.__chapterLifecycle = [];
+      window.__chapterGraphicTrace = [];
+      // Failure-only evidence for native Back restoration versus lazy graphic
+      // hydration. Read geometry in one rAF per change, cap storage, and never
+      // move the document, alter graphic readiness, or change the assertion.
+      addEventListener('DOMContentLoaded', () => {
+        const figure = document.getElementById('industry-map-commercial-space-value-chain');
+        if (!figure) return;
+        let frame = 0;
+        let previous = '';
+        const pending = new Set();
+        let observer;
+        const sample = reason => {
+          frame = 0;
+          if (window.__chapterGraphicTrace.length >= 40) { observer?.disconnect(); return; }
+          const rect = figure.getBoundingClientRect();
+          const stage = figure.querySelector('.visual-stage');
+          const entry = { reason, ms: Math.round(performance.now()), y: scrollY,
+            documentHeight: document.documentElement.scrollHeight,
+            state: figure.dataset.visualState || 'uninitialized', height: rect.height,
+            top: rect.top, bottom: rect.bottom, stageHidden: stage?.hidden,
+            stagePosition: stage?.style.position || '', outlineOpen: figure.querySelector('.visual-fallback')?.open };
+          const key = [entry.y, entry.documentHeight, entry.state, entry.height, entry.top, entry.stageHidden, entry.stagePosition, entry.outlineOpen].join(':');
+          if (key !== previous) { window.__chapterGraphicTrace.push(entry); previous = key; }
+        };
+        const queue = reason => {
+          if (window.__chapterGraphicTrace.length >= 40) return;
+          pending.add(reason);
+          if (!frame) frame = requestAnimationFrame(() => { const reason = [...pending].join(','); pending.clear(); sample(reason); });
+        };
+        observer = new MutationObserver(() => queue('graphic-mutation'));
+        observer.observe(figure, { subtree: true, childList: true, attributes: true,
+          attributeFilter: ['data-visual-state', 'data-enhanced', 'open', 'hidden', 'style'] });
+        addEventListener('scroll', () => queue('document-scroll'), { passive: true });
+        addEventListener('pageshow', () => queue('pageshow'));
+        addEventListener('load', () => queue('load'));
+        sample('DOMContentLoaded');
+      }, { once: true });
       for (const name of ['DOMContentLoaded', 'load', 'pageshow', 'pagehide', 'hashchange']) addEventListener(name, event => {
         window.__chapterLifecycle.push({ name, persisted: event.persisted, y: scrollY, height: document.documentElement.scrollHeight, disclosure: document.querySelector('.chapter-mobile details')?.open, disclosureHeight: document.querySelector('.chapter-mobile')?.getBoundingClientRect().height, desktopOpen: document.querySelector('.chapter-disclosure')?.open, cardWidth: document.querySelector('.main-article')?.getBoundingClientRect().width });
       });
@@ -234,6 +271,7 @@ try {
           article: document.querySelector('.article-content')?.getBoundingClientRect().toJSON(),
           visuals: [...document.querySelectorAll('figure.article-visual')].map(figure => ({ id: figure.id, state: figure.dataset.visualState, height: figure.getBoundingClientRect().height, top: figure.getBoundingClientRect().top, outlineOpen: figure.querySelector('details')?.open })),
           lifecycle: window.__chapterLifecycle,
+          graphicTrace: window.__chapterGraphicTrace,
         };
       }, { id, readingIndex, readingTextSelector });
       const beforeBack = await snapshot();
@@ -256,6 +294,9 @@ try {
         }, { anchor: beforeBack.readingAnchor, readingTextSelector });
         const afterBack = await snapshot(beforeBack.readingAnchor.index);
         if (afterBack.height === beforeBack.height) assert.ok(Math.abs(afterBack.y - scroll) < 4, 'Identical document geometry must also restore exact scrollY');
+        if (width === 1920) console.log('CHAPTER_BACK_1920', JSON.stringify({ y: afterBack.y, documentHeight: afterBack.height,
+          readingTop: afterBack.readingAnchor.top,
+          valueChain: afterBack.visuals.find(figure => figure.id === 'industry-map-commercial-space-value-chain') }));
       }
       catch (error) {
         console.log('CHAPTER_BACK_DIAGNOSTICS', JSON.stringify({ width, before: beforeBack, after: await snapshot(beforeBack.readingAnchor.index) }));
@@ -263,6 +304,10 @@ try {
       }
       await page.waitForFunction(() => document.querySelector('.chapter-rail a[aria-current="location"]'));
       if (!mobile) {
+        // Only after verifying native reading restoration: a deferred offscreen
+        // graphic must still enhance when the reader explicitly returns to it.
+        await page.locator('#industry-map-commercial-space-value-chain').scrollIntoViewIfNeeded();
+        await page.waitForFunction(() => document.getElementById('industry-map-commercial-space-value-chain').dataset.visualState === 'ready');
         await page.reload();
         assert.equal(await desktopDisclosure.evaluate(node => node.open), false, 'Reload preserves per-article minimized state');
         await checkDesktopWidth(true);
