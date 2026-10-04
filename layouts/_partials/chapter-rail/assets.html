@@ -1,0 +1,6 @@
+{{- if and .IsPage (default .Site.Params.article.toc .Params.toc) (ge (len .TableOfContents) 100) -}}
+  {{- $style := resources.Get "css/chapter-rail.css" | minify | fingerprint -}}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
+  {{- $script := resources.Get "js/chapter-rail.mjs" | fingerprint -}}
+  <script type="module" src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" crossorigin="anonymous"></script>
+{{- end -}}

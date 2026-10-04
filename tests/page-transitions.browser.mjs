@@ -40,13 +40,21 @@ try {
           sidebar: getComputedStyle(document.querySelector(".left-sidebar")).viewTransitionName,
         }));
       });
-      // Observe the actual browser event; production ships no navigation script.
+      // Observe native playback rather than merely checking that navigation succeeds.
       window.addEventListener("pagereveal", event => {
         const state = window.__transition = { started: Boolean(event.viewTransition), finished: !event.viewTransition, ready: false, reveals: window.__transition.reveals + 1, time: Date.now(), stylesheetReady: Boolean(document.querySelector('#dex-page-transitions')?.sheet) };
         if (!event.viewTransition) return;
         event.viewTransition.ready.then(() => {
           state.ready = true;
-          state.duration = getComputedStyle(document.documentElement, "::view-transition-new(root)").animationDuration;
+          const incoming = getComputedStyle(document.documentElement, "::view-transition-new(root)");
+          const cover = getComputedStyle(document.documentElement, "::view-transition-group(dex-cover)");
+          state.duration = incoming.animationDuration;
+          state.delay = incoming.animationDelay;
+          state.name = incoming.animationName;
+          state.coverDuration = cover.animationDuration;
+          state.coverName = cover.animationName;
+          state.kind = document.documentElement.dataset.dexTransition || "fade";
+          state.animations = document.getAnimations().map(animation => ({ name: animation.animationName, pseudo: animation.effect?.pseudoElement, timing: animation.effect?.getTiming() }));
         }, error => { state.error = error.name; });
         event.viewTransition.finished.then(() => { state.finished = true; });
       });
@@ -58,12 +66,14 @@ try {
     page.on("pageerror", error => errors.push(error.message));
     await page.goto(origin + "/");
     assert.equal(await page.locator('style#dex-page-transitions').count(), 1);
-    const article = page.locator(".article-list .article-title a").first();
+    const article = page.locator(".article-list [data-transition-cover] a").first();
     const articlePath = await article.getAttribute("href");
     await article.scrollIntoViewIfNeeded();
     await page.evaluate(() => document.fonts.ready);
+    await article.locator("img").evaluate(image => image.decode());
     // A screenshot waits for a real compositor frame before the navigation test.
     await page.screenshot();
+    const sourceCover = await article.locator("..").boundingBox();
     const homeScroll = await page.evaluate(() => scrollY);
     await article.click();
     await page.waitForURL(origin + articlePath);
@@ -78,13 +88,23 @@ try {
     assert.equal(first.started, motion === "no-preference", `Native cross-document opt-in must respect reduced motion: ${JSON.stringify(first)}`);
     if (first.started) {
       assert.equal(first.ready, true, `The browser must run, not skip, the transition: ${JSON.stringify(first)}`);
-      assert.equal(first.duration, "0.18s");
+      assert.equal(first.kind, "article", "A visible cover click must select the richer entry");
+      assert.equal(first.duration, "0.24s");
+      assert.equal(first.delay, "0.32s", "Content must enter after the cover expands");
+      assert.equal(first.name, "dex-article-rise");
+      assert.equal(first.coverDuration, "0.32s");
+      assert.ok(first.animations.some(animation => animation.name === "dex-article-rise"), "The content animation must actually play");
+      assert.ok(first.animations.some(animation => animation.pseudo?.includes("dex-cover") || animation.name?.includes("dex-cover")), "The cover must be captured and animated");
     }
-    console.log(`PASS ${width}px ${scheme} ${motion}: actual native transition ${first.started ? "started, ready, 180ms" : "opted out"}`);
+    console.log(`PASS ${width}px ${scheme} ${motion}: actual native transition ${first.started ? "cover 320ms, then content 240ms" : "opted out"}`);
+    const destinationCover = await page.locator(".main-article [data-transition-cover]").boundingBox();
+    assert.ok(destinationCover.height > sourceCover.height, "The article hero must actually enlarge from its card crop");
     assert.equal(await page.locator("html").getAttribute("data-scheme"), scheme);
     assert.equal(await page.locator("main h1").count(), 1);
     assert.equal(await page.evaluate(() => scrollY < 5), true, "New articles start at the top");
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
+    assert.equal(await page.locator("html").getAttribute("data-dex-transition"), null);
+    assert.equal(await page.locator("[style*=dex-cover]").count(), 0);
     const named = await page.locator(".left-sidebar").evaluate(element => getComputedStyle(element).viewTransitionName);
     assert.equal(named, width >= 768 && motion === "no-preference" ? "dex-navigation" : "none");
     if (screenshots) await page.screenshot({ path: resolve(screenshots, `article-${width}-${scheme}-${motion}.png`) });
@@ -99,7 +119,19 @@ try {
     await page.waitForURL(origin + articlePath, { waitUntil: "commit" });
     await page.waitForFunction(expected => Math.abs(scrollY - expected) < 5, articleScroll);
     await page.waitForFunction(() => window.__transition.finished);
-    console.log(`PASS ${width}px ${scheme} ${motion}: Back/Forward restores both scroll positions`);
+    const historyTransition = await page.evaluate(() => window.__transition);
+    if (historyTransition.started) {
+      assert.equal(historyTransition.kind, "fade", "Back/Forward must never pull an offscreen cover across the viewport");
+      assert.equal(historyTransition.duration, "0.18s");
+    }
+    assert.equal(await page.locator("[style*=dex-cover]").count(), 0);
+    console.log(`PASS ${width}px ${scheme} ${motion}: Back/Forward restores both scroll positions without cover motion`);
+
+    // Reload and direct links must not replay a stale forward-entry marker.
+    await page.reload();
+    await page.waitForFunction(() => window.__transition.finished);
+    assert.equal(await page.evaluate(() => window.__transition.started), false);
+    assert.equal(await page.locator("html").getAttribute("data-dex-transition"), null);
 
     // Ignore the theme's hidden alternate TOC when testing native hash history.
     const anchor = page.locator('a[href^="#"]').filter({ visible: true }).first();
@@ -164,6 +196,17 @@ try {
       if (path === "/industries/") assert.equal(await page.locator("#industry-explorer").count(), 1);
     }
 
+    // Rapid article choices discard the first cover and preserve the winning URL.
+    await page.goto(origin + "/");
+    const nextPath = await page.locator(".article-list .article-title a").nth(1).getAttribute("href");
+    await page.evaluate(() => {
+      const articles = document.querySelectorAll(".article-list .article-title a");
+      articles[0].click(); articles[1].click();
+    });
+    await page.waitForFunction(path => location.pathname === path && window.__transition?.finished && document.querySelector("main h1"), nextPath);
+    assert.equal(await page.locator("html").getAttribute("data-dex-transition"), null);
+    assert.equal(await page.locator("[style*=dex-cover]").count(), 0);
+
     // Overlapping navigations must finish at the last destination without an overlay.
     await page.evaluate(() => {
       const first = document.createElement("a"); first.href = "/archives/";
@@ -176,7 +219,7 @@ try {
     await page.waitForSelector('[data-enhanced="true"]');
     assert.equal(await page.locator("main").isVisible(), true);
     assert.deepEqual(errors, []);
-    console.log(`PASS ${width}px ${scheme} ${motion}: native ${first.started ? "180ms transition" : "reduced-motion opt-out"}, keyboard, anchors, history/scroll, new tab, rapid navigation, search and page initialization`);
+    console.log(`PASS ${width}px ${scheme} ${motion}: native ${first.started ? "sequenced cover transition" : "reduced-motion opt-out"}, keyboard, anchors, history/scroll, new tab, rapid navigation, search and page initialization`);
     await context.close();
   }
 

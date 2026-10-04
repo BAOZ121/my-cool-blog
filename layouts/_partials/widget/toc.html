@@ -1,0 +1,9 @@
+{{- if .Context.Scratch.Get "TOCEnabled" -}}
+<section class="widget chapter-widget" aria-labelledby="chapter-rail-title">
+  <div class="chapter-widget__header">
+    <h2 id="chapter-rail-title">Chapters</h2>
+    <span class="chapter-widget__position" data-chapter-position aria-hidden="true"></span>
+  </div>
+  {{ partial "chapter-rail/nav.html" (dict "Page" .Context "Desktop" true) }}
+</section>
+{{- end -}}

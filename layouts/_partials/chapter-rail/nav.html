@@ -1,0 +1,7 @@
+{{/* Keep Hugo's heading anchors and configured TOC levels. Full path + hash
+     preserves native history/focus and bypasses Stack's legacy smooth-scroll handler. */}}
+{{- $toc := partial "article/components/toc" .Page -}}
+{{- $toc = replace $toc "href=\"#" (printf "href=\"%s#" .Page.RelPermalink) -}}
+<nav class="chapter-rail" data-chapter-rail aria-label="{{ T "article.tableOfContents" }}"{{ if .Desktop }} id="ArticleChapters"{{ end }}>
+  {{ $toc | safeHTML }}
+</nav>
