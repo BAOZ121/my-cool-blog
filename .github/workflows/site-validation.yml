@@ -47,6 +47,8 @@ jobs:
           python3 -m unittest discover -s tests -p 'test_evidence_library.py'
       - name: Build production HTML without warnings
         run: hugo --environment production --minify --panicOnWarning
+      - name: Check responsive cover bytes and shared cache paths
+        run: python3 scripts/validate_cover_images.py public
       - name: Check Evidence Library stays in sync with article citations
         run: python3 scripts/build_evidence_library.py public --check
       - name: Check industry data and site links
@@ -59,7 +61,7 @@ jobs:
         run: npm ci
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
-      - name: Verify native page transitions and navigation fallbacks
+      - name: Verify non-blocking page entrances and native navigation
         run: |
           node --test tests/page-transitions.test.mjs tests/chapter-rail.test.mjs tests/sidebar-scrollbar.test.mjs
           node tests/page-transitions.browser.mjs

@@ -20,148 +20,187 @@ await new Promise(resolve => server.listen(0, "127.0.0.1", resolve));
 const origin = `http://127.0.0.1:${server.address().port}`;
 const screenshots = process.env.TRANSITION_SCREENSHOT_DIR;
 if (screenshots) await mkdir(screenshots, { recursive: true });
+
+async function observe(context, { scheme = "light", animationAvailable = true } = {}) {
+  await context.route("https://fonts.googleapis.com/**", route => route.fulfill({ contentType: "text/css", body: "" }));
+  await context.addInitScript(({ scheme, animationAvailable }) => {
+    localStorage.setItem("StackColorScheme", scheme);
+    window.__entry = { calls: [], inputs: [], reveals: 0, nativeTransitions: 0 };
+    window.__entryAnimations = [];
+    const active = () => window.__entryAnimations.filter(animation => animation.playState === "running" || animation.pending);
+    for (const type of ["pageswap", "pagereveal"]) {
+      window.addEventListener(type, event => {
+        if (type === "pagereveal") window.__entry.reveals++;
+        if (!event.viewTransition) return;
+        window.__entry.nativeTransitions++;
+        sessionStorage.setItem("dex-test-native-transitions", String(Number(sessionStorage.getItem("dex-test-native-transitions") || 0) + 1));
+        event.viewTransition.ready.catch(() => {});
+      });
+    }
+    // Observe real input before the production cancellation handler runs.
+    for (const type of ["pointerdown", "wheel", "keydown", "touchstart"]) {
+      window.addEventListener(type, event => {
+        window.__entry.inputs.push({ type, active: active().length, control: event.target.closest?.("button, a")?.id || "", target: event.target.tagName });
+      }, { capture: true, passive: true });
+    }
+    if (!animationAvailable) {
+      Object.defineProperty(Element.prototype, "animate", { configurable: true, value: undefined });
+      return;
+    }
+    const animate = Element.prototype.animate;
+    Element.prototype.animate = function (...args) {
+      const rect = this.getBoundingClientRect();
+      const animation = animate.apply(this, args);
+      const timing = animation.effect.getTiming();
+      const call = {
+        tag: this.tagName, id: this.id, classes: this.className,
+        broadCapture: this.matches("html, body, main, .main, .main-article, .article-header"),
+        visible: rect.width > 0 && rect.height > 0 && rect.bottom > 0 && rect.top < innerHeight,
+        imageLoaded: this.tagName !== "IMG" || (this.complete && this.naturalWidth > 0),
+        duration: timing.duration, delay: timing.delay, iterations: timing.iterations, fill: timing.fill,
+        properties: [...new Set(animation.effect.getKeyframes().flatMap(frame => Object.keys(frame)))],
+        pseudo: animation.effect.pseudoElement, state: "running",
+      };
+      window.__entry.calls.push(call);
+      window.__entryAnimations.push(animation);
+      animation.finished.then(() => { call.state = "finished"; }, () => { call.state = "cancelled"; });
+      return animation;
+    };
+  }, { scheme, animationAvailable });
+}
+
+async function assertNoNative(page) {
+  assert.equal(await page.evaluate(() => window.__entry.nativeTransitions), 0, "No native document snapshot transition may start");
+  assert.equal(await page.evaluate(() => Number(sessionStorage.getItem("dex-test-native-transitions") || 0)), 0, "Outgoing and incoming documents must both stay opted out");
+  assert.equal(await page.evaluate(() => Boolean(document.activeViewTransition)), false);
+  assert.equal(await page.locator("[style*=dex-cover]").count(), 0);
+  assert.equal(await page.locator("html").getAttribute("data-dex-transition"), null);
+}
+async function finished(page) {
+  await page.waitForFunction(() => window.__entryAnimations.every(animation => !animation.pending && animation.playState !== "running"));
+}
+async function internalArticle(page, articlePath) {
+  await Promise.all([
+    page.waitForURL(origin + articlePath, { waitUntil: "domcontentloaded" }),
+    page.locator(".article-list .article-title a").first().click({ noWaitAfter: true }),
+  ]);
+}
+
 let browser;
+let firstArticlePath;
 try {
   browser = await chromium.launch({ headless: true, channel: "chromium", ignoreDefaultArgs: ["--disable-back-forward-cache"], ...(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : {}) });
   for (const [width, scheme, motion] of [[1440, "light", "no-preference"], [390, "dark", "no-preference"], [1440, "dark", "reduce"], [390, "light", "reduce"]]) {
     const context = await browser.newContext({ viewport: { width, height: 900 }, colorScheme: scheme, reducedMotion: motion });
-    // Keep this timing-sensitive check independent of external font availability.
-    await context.route("https://fonts.googleapis.com/**", route => route.fulfill({ contentType: "text/css", body: "" }));
-    await context.addInitScript(({ scheme }) => {
-      localStorage.setItem("StackColorScheme", scheme);
-      window.__transition = { started: false, finished: false, reveals: 0 };
-      window.addEventListener("pageswap", event => {
-        event.viewTransition?.ready.catch(error => console.log("Outgoing transition:", error.name, error.message));
-        sessionStorage.setItem("dex-test-outgoing", JSON.stringify({
-          started: Boolean(event.viewTransition), visibility: document.visibilityState, time: Date.now(),
-          type: event.activation?.navigationType, from: location.href, to: event.activation?.entry?.url,
-          reduced: matchMedia("(prefers-reduced-motion: reduce)").matches,
-          root: getComputedStyle(document.documentElement).viewTransitionName,
-          sidebar: getComputedStyle(document.querySelector(".left-sidebar")).viewTransitionName,
-        }));
-      });
-      // Observe native playback rather than merely checking that navigation succeeds.
-      window.addEventListener("pagereveal", event => {
-        const state = window.__transition = { started: Boolean(event.viewTransition), finished: !event.viewTransition, ready: false, reveals: window.__transition.reveals + 1, time: Date.now(), stylesheetReady: Boolean(document.querySelector('#dex-page-transitions')?.sheet) };
-        if (!event.viewTransition) return;
-        event.viewTransition.ready.then(() => {
-          state.ready = true;
-          const incoming = getComputedStyle(document.documentElement, "::view-transition-new(root)");
-          const cover = getComputedStyle(document.documentElement, "::view-transition-group(dex-cover)");
-          state.duration = incoming.animationDuration;
-          state.delay = incoming.animationDelay;
-          state.name = incoming.animationName;
-          state.coverDuration = cover.animationDuration;
-          state.coverName = cover.animationName;
-          state.kind = document.documentElement.dataset.dexTransition || "fade";
-          state.animations = document.getAnimations().map(animation => ({ name: animation.animationName, pseudo: animation.effect?.pseudoElement, timing: animation.effect?.getTiming() }));
-        }, error => { state.error = error.name; });
-        event.viewTransition.finished.then(() => { state.finished = true; });
-      });
-    }, { scheme });
+    await observe(context, { scheme });
     const page = await context.newPage();
     const errors = [];
-    const consoleMessages = [];
-    page.on("console", message => consoleMessages.push(message.text()));
     page.on("pageerror", error => errors.push(error.message));
     await page.goto(origin + "/");
-    assert.equal(await page.locator('style#dex-page-transitions').count(), 1);
+    assert.equal(await page.locator("style#dex-page-transitions").count(), 1);
+    assert.equal(await page.evaluate(() => window.__entry.calls.length), 0, "Direct entry never animates");
+    const controlId = width < 768 ? "toggle-menu" : "dark-mode-toggle";
+    const controlBox = await page.locator(`#${controlId}`).boundingBox();
+    assert.ok(controlBox && controlBox.y >= 0 && controlBox.y + controlBox.height <= 900, "The real site control must be on screen");
+    const controlPoint = { x: controlBox.x + controlBox.width / 2, y: controlBox.y + controlBox.height / 2 };
     const article = page.locator(".article-list [data-transition-cover] a").first();
     const articlePath = await article.getAttribute("href");
+    firstArticlePath ||= articlePath;
     await article.scrollIntoViewIfNeeded();
-    await page.evaluate(() => document.fonts.ready);
     await article.locator("img").evaluate(image => image.decode());
-    // A screenshot waits for a real compositor frame before the navigation test.
-    await page.screenshot();
-    const sourceCover = await article.locator("..").boundingBox();
+    const selectedCover = await article.locator("img").evaluate(image => ({ url: image.currentSrc, width: image.getBoundingClientRect().width, candidate: Number(image.srcset.split(/,\s*/).find(item => new URL(item.split(" ")[0], location.href).href === image.currentSrc)?.split(" ")[1].slice(0, -1)) }));
+    assert.match(new URL(selectedCover.url).pathname, /\.webp$/);
+    assert.ok(selectedCover.candidate >= selectedCover.width * .95 && selectedCover.candidate <= selectedCover.width * 1.6, `Avoid oversized cover selection: ${JSON.stringify(selectedCover)}`);
     const homeScroll = await page.evaluate(() => scrollY);
-    await article.click();
-    await page.waitForURL(origin + articlePath);
-    await page.waitForFunction(() => window.__transition.finished);
-    const first = await page.evaluate(() => window.__transition);
-    if (first.started !== (motion === "no-preference")) {
-      console.log("Native transition diagnostics", consoleMessages, await page.evaluate(() => ({ outgoing: sessionStorage.getItem("dex-test-outgoing"), incoming: window.__transition, visibility: document.visibilityState, reduced: matchMedia("(prefers-reduced-motion: reduce)").matches, styles: [...document.querySelector('#dex-page-transitions').sheet.cssRules].map(rule => rule.cssText) })));
-      const diagnostics = await browser.newBrowserCDPSession();
-      console.log("Chromium transition skip reasons", JSON.stringify(await diagnostics.send("Browser.getHistograms", { query: "Blink.ViewTransitions.SkipReason", delta: false })));
-      await diagnostics.detach();
+    await Promise.all([
+      page.waitForURL(origin + articlePath, { waitUntil: "domcontentloaded" }),
+      article.click({ noWaitAfter: true }),
+    ]);
+    if (motion === "no-preference") {
+      await page.waitForFunction(() => window.__entryAnimations.some(animation => animation.playState === "running" || animation.pending), null, { polling: 1 });
     }
-    assert.equal(first.started, motion === "no-preference", `Native cross-document opt-in must respect reduced motion: ${JSON.stringify(first)}`);
-    if (first.started) {
-      assert.equal(first.ready, true, `The browser must run, not skip, the transition: ${JSON.stringify(first)}`);
-      assert.equal(first.kind, "article", "A visible cover click must select the richer entry");
-      assert.equal(first.duration, "0.24s");
-      assert.equal(first.delay, "0.32s", "Content must enter after the cover expands");
-      assert.equal(first.name, "dex-article-rise");
-      assert.equal(first.coverDuration, "0.32s");
-      assert.ok(first.animations.some(animation => animation.name === "dex-article-rise"), "The content animation must actually play");
-      assert.ok(first.animations.some(animation => animation.pseudo?.includes("dex-cover") || animation.name?.includes("dex-cover")), "The cover must be captured and animated");
+    // No locator stability wait: send a real click while the entry is playing.
+    await page.mouse.click(controlPoint.x, controlPoint.y);
+    const entry = await page.evaluate(() => window.__entry);
+    const input = entry.inputs.find(event => event.type === "pointerdown" && event.control === controlId);
+    assert.ok(input, `Pointer input must hit the real ${controlId}, not a snapshot or overlay: ${JSON.stringify(entry.inputs)}`);
+    if (motion === "no-preference") {
+      assert.ok(input.active > 0, "The real pointer click must occur during actual playback");
+      assert.ok(entry.calls.length > 0 && entry.calls.length <= 4, "Animate only a bounded set of visible elements");
+      for (const call of entry.calls) {
+        assert.equal(call.broadCapture, false, "Never animate the root, main container or whole article");
+        assert.equal(call.visible, true);
+        assert.equal(call.imageLoaded, true, "Unloaded images cannot gate or participate in entry");
+        assert.equal(Boolean(call.pseudo), false, "Animate the real element, not a pseudo overlay");
+        assert.ok(call.duration >= 0 && call.duration + call.delay <= 400, `Entry must be short and bounded: ${JSON.stringify(call)}`);
+        assert.equal(call.iterations, 1);
+        assert.equal(call.fill, "none", "Animation state cannot persist after finish or cancellation");
+        assert.ok(call.properties.every(property => ["offset", "computedOffset", "easing", "composite", "opacity", "transform"].includes(property)), "Only compositor-friendly transform/opacity properties animate");
+      }
+    } else assert.equal(entry.calls.length, 0, "Reduced motion creates no entry animations");
+    await finished(page);
+    if (motion === "no-preference") assert.equal(await page.evaluate(() => window.__entry.calls.some(call => call.state === "cancelled")), true, "Real input cancels ongoing decoration");
+    assert.equal(await page.evaluate(() => window.__entryAnimations.every(animation => getComputedStyle(animation.effect.target).opacity === "1")), true, "Cancellation leaves real content fully visible");
+    if (width < 768) {
+      assert.equal(await page.locator("#toggle-menu").getAttribute("aria-expanded"), "true");
+      await page.locator("#toggle-menu").click();
+    } else {
+      assert.equal(await page.locator("html").getAttribute("data-scheme"), scheme === "light" ? "dark" : "light");
+      await page.locator("#dark-mode-toggle").click();
     }
-    console.log(`PASS ${width}px ${scheme} ${motion}: actual native transition ${first.started ? "cover 320ms, then content 240ms" : "opted out"}`);
-    const destinationCover = await page.locator(".main-article [data-transition-cover]").boundingBox();
-    assert.ok(destinationCover.height > sourceCover.height, "The article hero must actually enlarge from its card crop");
+    await assertNoNative(page);
+    const hero = page.locator(".main-article [data-transition-cover] img");
+    await hero.evaluate(image => image.decode());
+    assert.equal(await hero.evaluate(image => image.currentSrc), selectedCover.url, "Homepage/article must select the same cacheable cover URL");
     assert.equal(await page.locator("html").getAttribute("data-scheme"), scheme);
     assert.equal(await page.locator("main h1").count(), 1);
-    assert.equal(await page.evaluate(() => scrollY < 5), true, "New articles start at the top");
+    assert.equal(await page.evaluate(() => scrollY < 5), true);
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
-    assert.equal(await page.locator("html").getAttribute("data-dex-transition"), null);
-    assert.equal(await page.locator("[style*=dex-cover]").count(), 0);
-    const named = await page.locator(".left-sidebar").evaluate(element => getComputedStyle(element).viewTransitionName);
-    assert.equal(named, width >= 768 && motion === "no-preference" ? "dex-navigation" : "none");
+    assert.equal(await page.locator(".main-article .article-title").evaluate(element => getComputedStyle(element).opacity), "1", "Cancellation cannot leave the heading transparent");
     if (screenshots) await page.screenshot({ path: resolve(screenshots, `article-${width}-${scheme}-${motion}.png`) });
 
     await page.evaluate(() => scrollTo(0, Math.min(2500, document.documentElement.scrollHeight - innerHeight)));
     const articleScroll = await page.evaluate(() => scrollY);
-    // BFCache restores an existing document; it does not fire a new load event.
+    const entryCount = await page.evaluate(() => window.__entry.calls.length);
     await page.goBack({ waitUntil: "commit" });
     await page.waitForURL(origin + "/", { waitUntil: "commit" });
     await page.waitForFunction(expected => Math.abs(scrollY - expected) < 5, homeScroll);
+    assert.equal(await page.evaluate(() => window.__entry.calls.length), 0, "Back does not animate the restored homepage");
     await page.goForward({ waitUntil: "commit" });
     await page.waitForURL(origin + articlePath, { waitUntil: "commit" });
     await page.waitForFunction(expected => Math.abs(scrollY - expected) < 5, articleScroll);
-    await page.waitForFunction(() => window.__transition.finished);
-    const historyTransition = await page.evaluate(() => window.__transition);
-    if (historyTransition.started) {
-      assert.equal(historyTransition.kind, "fade", "Back/Forward must never pull an offscreen cover across the viewport");
-      assert.equal(historyTransition.duration, "0.18s");
-    }
-    assert.equal(await page.locator("[style*=dex-cover]").count(), 0);
-    console.log(`PASS ${width}px ${scheme} ${motion}: Back/Forward restores both scroll positions without cover motion`);
+    assert.ok(await page.evaluate(count => window.__entry.calls.length <= count, entryCount), "Forward must not replay entry on a cached document");
+    await finished(page);
+    await assertNoNative(page);
+    await page.reload({ waitUntil: "domcontentloaded" });
+    assert.equal(await page.evaluate(() => window.__entry.calls.length), 0, "Reload cannot replay a consumed marker");
 
-    // Reload and direct links must not replay a stale forward-entry marker.
-    await page.reload();
-    await page.waitForFunction(() => window.__transition.finished);
-    assert.equal(await page.evaluate(() => window.__transition.started), false);
-    assert.equal(await page.locator("html").getAttribute("data-dex-transition"), null);
-
-    // Ignore the theme's hidden alternate TOC when testing native hash history.
     const anchor = page.locator('a[href^="#"]').filter({ visible: true }).first();
     if (await anchor.count()) {
-      const reveals = await page.evaluate(() => window.__transition.reveals);
+      const reveals = await page.evaluate(() => window.__entry.reveals);
       const fragment = await anchor.getAttribute("href");
       await anchor.click();
       await page.waitForURL(url => url.hash === fragment, { waitUntil: "commit" });
-      assert.equal(await page.evaluate(() => window.__transition.reveals), reveals);
+      assert.equal(await page.evaluate(() => window.__entry.reveals), reveals);
+      assert.equal(await page.evaluate(() => window.__entry.calls.length), 0);
       await page.goBack({ waitUntil: "commit" });
     }
 
-    // An ordinary Enter key activation also follows a real link to a fresh document.
     await page.goto(origin + "/");
-    const archives = page.locator('#main-menu a[href="/archives/"]').first();
     if (width < 768) await page.locator("#toggle-menu").click();
-    await archives.focus();
+    await page.locator('#main-menu a[href="/archives/"]').first().focus();
     await page.keyboard.press("Enter");
     await page.waitForURL(origin + "/archives/");
     assert.equal(await page.locator("main").isVisible(), true);
+    await assertNoNative(page);
 
-    // Search remains a native GET form, including its query and fresh initialization.
     await page.goto(origin + "/");
     await page.locator("#research-home-query").fill("space");
     await page.locator("#research-home-query").press("Enter");
     await page.waitForURL(url => url.pathname === "/search/" && url.searchParams.get("keyword") === "space");
-    await page.waitForFunction(() => window.__transition.finished);
     assert.equal(await page.locator('input[name="keyword"]').inputValue(), "space");
+    await assertNoNative(page);
 
-    // New tabs and downloads are browser-owned; no click listener rewrites them.
     await page.goto(origin + "/");
     const popupPromise = context.waitForEvent("page");
     await page.locator(".article-list .article-title a").first().click({ modifiers: ["Control"] });
@@ -169,19 +208,16 @@ try {
     await popup.waitForLoadState();
     assert.equal(new URL(popup.url()).pathname, articlePath);
     assert.equal(page.url(), origin + "/");
+    assert.equal(await popup.evaluate(() => window.__entry.calls.length), 0, "New tabs do not inherit an entry marker");
     await popup.close();
     await page.evaluate(() => {
       const download = document.createElement("a");
-      download.href = "/data/industries.csv";
-      download.download = "industries.csv";
-      download.id = "test-native-download";
-      download.textContent = "Download test fixture";
+      Object.assign(download, { href: "/data/industries.csv", download: "industries.csv", id: "test-native-download", textContent: "Download test fixture" });
       document.querySelector("main").prepend(download);
     });
     const downloadPromise = page.waitForEvent("download");
     await page.locator("#test-native-download").click();
-    const download = await downloadPromise;
-    assert.equal(download.suggestedFilename(), "industries.csv");
+    assert.equal((await downloadPromise).suggestedFilename(), "industries.csv");
     assert.equal(page.url(), origin + "/");
 
     for (const path of ["/evidence-library/", "/industries/", "/industry-breakdowns/", "/about/"]) {
@@ -190,40 +226,87 @@ try {
       if (await link.count()) await link.click();
       else await page.goto(origin + path);
       await page.waitForURL(origin + path);
-      await page.waitForFunction(() => window.__transition.finished);
       assert.equal(await page.locator("main").isVisible(), true);
       if (path === "/evidence-library/") await page.waitForSelector('[data-enhanced="true"]');
       if (path === "/industries/") assert.equal(await page.locator("#industry-explorer").count(), 1);
+      await assertNoNative(page);
     }
 
-    // Rapid article choices discard the first cover and preserve the winning URL.
+    // Retain the native overlapping-navigation regression; live input is tested above.
     await page.goto(origin + "/");
     const nextPath = await page.locator(".article-list .article-title a").nth(1).getAttribute("href");
     await page.evaluate(() => {
       const articles = document.querySelectorAll(".article-list .article-title a");
       articles[0].click(); articles[1].click();
     });
-    await page.waitForFunction(path => location.pathname === path && window.__transition?.finished && document.querySelector("main h1"), nextPath);
-    assert.equal(await page.locator("html").getAttribute("data-dex-transition"), null);
-    assert.equal(await page.locator("[style*=dex-cover]").count(), 0);
-
-    // Overlapping navigations must finish at the last destination without an overlay.
+    await page.waitForFunction(path => location.pathname === path && document.querySelector("main h1"), nextPath);
+    await finished(page);
+    await assertNoNative(page);
     await page.evaluate(() => {
       const first = document.createElement("a"); first.href = "/archives/";
       const last = document.createElement("a"); last.href = "/evidence-library/";
       document.body.append(first, last); first.click(); last.click();
     });
-    // The superseded request is expected to abort; observe the final document.
-    await page.waitForFunction(() => location.pathname === "/evidence-library/" && window.__transition?.finished && document.querySelector('[data-enhanced="true"]'));
+    await page.waitForFunction(() => location.pathname === "/evidence-library/" && document.querySelector('[data-enhanced="true"]'));
     assert.equal(page.url(), origin + "/evidence-library/");
-    await page.waitForSelector('[data-enhanced="true"]');
-    assert.equal(await page.locator("main").isVisible(), true);
+    await assertNoNative(page);
     assert.deepEqual(errors, []);
-    console.log(`PASS ${width}px ${scheme} ${motion}: native ${first.started ? "sequenced cover transition" : "reduced-motion opt-out"}, keyboard, anchors, history/scroll, new tab, rapid navigation, search and page initialization`);
+    console.log(`PASS ${width}px ${scheme} ${motion}: real input during bounded element playback, no native snapshots, history/scroll, keyboard, anchors, forms, new tabs, downloads and rapid navigation`);
     await context.close();
   }
 
+  // Fresh high-density contexts: cached larger candidates cannot skew selection.
+  for (const width of [390, 1440]) {
+    const context = await browser.newContext({ viewport: { width, height: 900 }, deviceScaleFactor: 2, javaScriptEnabled: false });
+    const page = await context.newPage();
+    await page.goto(origin + firstArticlePath);
+    const image = page.locator(".main-article [data-transition-cover] img");
+    await image.evaluate(image => image.decode());
+    const chosen = await image.evaluate(image => ({ url: image.currentSrc, srcset: image.srcset, width: image.getBoundingClientRect().width }));
+    assert.match(new URL(chosen.url).pathname, /\.webp$/);
+    const descriptor = Number(chosen.srcset.split(/,\s*/).find(item => new URL(item.split(" ")[0], location.href).href === chosen.url).split(" ")[1].slice(0, -1));
+    assert.ok(descriptor <= 1600 && descriptor <= chosen.width * 2.5);
+    assert.ok(descriptor >= Math.min(chosen.width * 1.9, 1376));
+    console.log(`PASS ${width}px 2x no JS: optimized cover candidate ${descriptor}px`);
+    await context.close();
+  }
+
+  for (const mode of ["slow", "missing"]) {
+    const context = await browser.newContext({ viewport: { width: 1440, height: 900 }, reducedMotion: "no-preference" });
+    await observe(context);
+    const pending = new Set();
+    await context.route("**/*", async route => {
+      if (route.request().resourceType() !== "image" || !new URL(route.request().url()).pathname.startsWith(firstArticlePath)) return route.fallback();
+      if (mode === "missing") return route.abort("failed");
+      pending.add(route); // Deliberately unresolved until after the interactivity assertions.
+    });
+    const page = await context.newPage();
+    const errors = [];
+    page.on("pageerror", error => errors.push(error.message));
+    try {
+      await page.goto(origin + "/", { waitUntil: "domcontentloaded" });
+      await internalArticle(page, firstArticlePath);
+      assert.equal(await page.locator(".main-article [data-transition-cover] img").evaluate(image => image.complete && image.naturalWidth > 0), false);
+      assert.equal(await page.locator("main h1").isVisible(), true, "A pending/failed image cannot hide article content");
+      assert.equal(await page.evaluate(() => window.__entry.calls.some(call => call.tag === "IMG")), false, "Skip image animation rather than awaiting it");
+      await page.locator("#dark-mode-toggle").click();
+      assert.equal(await page.locator("html").getAttribute("data-scheme"), "dark");
+      await Promise.all([
+        page.waitForURL(origin + "/archives/", { waitUntil: "domcontentloaded" }),
+        page.locator('#main-menu a[href="/archives/"]').first().click({ noWaitAfter: true }),
+      ]);
+      assert.equal(await page.locator("main").isVisible(), true);
+      await assertNoNative(page);
+      assert.deepEqual(errors, []);
+      console.log(`PASS ${mode} cover: content, real theme control and native link remain usable before image completion`);
+    } finally {
+      await Promise.all([...pending].map(route => route.abort().catch(() => {})));
+      await context.close();
+    }
+  }
+
   const noJS = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 390, height: 900 }, reducedMotion: "no-preference" });
+  await noJS.route("https://fonts.googleapis.com/**", route => route.fulfill({ contentType: "text/css", body: "" }));
   const page = await noJS.newPage();
   await page.goto(origin + "/");
   const link = page.locator(".article-list .article-title a").first();
@@ -234,25 +317,20 @@ try {
   await page.goBack({ waitUntil: "commit" });
   await page.waitForURL(origin + "/", { waitUntil: "commit" });
   assert.equal(await page.locator("main").isVisible(), true);
-  console.log("PASS no JavaScript: article navigation and Back stay usable");
+  console.log("PASS no JavaScript: article navigation and Back remain visible and native");
   await noJS.close();
 
-  // A failed/unsupported enhancement cannot hide content or hijack navigation.
   const fallback = await browser.newContext();
-  await fallback.route("**/*", async route => {
-    if (route.request().resourceType() !== "document") return route.continue();
-    const response = await route.fetch();
-    await route.fulfill({ response, body: (await response.text()).replace(/<style id=["']?dex-page-transitions["']?>[\s\S]*?<\/style>/, "") });
-  });
+  await observe(fallback, { animationAvailable: false });
   const plain = await fallback.newPage();
   await plain.goto(origin + "/");
-  assert.equal(await plain.locator("style#dex-page-transitions").count(), 0);
-  const plainLink = plain.locator(".article-list .article-title a").first();
-  const plainPath = await plainLink.getAttribute("href");
-  await plainLink.click();
-  await plain.waitForURL(origin + plainPath);
+  await internalArticle(plain, firstArticlePath);
   assert.equal(await plain.locator("main h1").isVisible(), true);
-  console.log("PASS enhancement stylesheet unavailable: ordinary navigation remains visible");
+  assert.equal(await plain.evaluate(() => window.__entry.calls.length), 0);
+  await plain.locator("#dark-mode-toggle").click();
+  assert.equal(await plain.locator("html").getAttribute("data-scheme"), "dark");
+  await assertNoNative(plain);
+  console.log("PASS Web Animations unavailable: content, native navigation and controls remain usable");
   await fallback.close();
 } finally {
   if (browser) await browser.close();

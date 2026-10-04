@@ -1,0 +1,31 @@
+{{- /* Cover-only encoding. Keep originals untouched and share URLs across list/detail. */ -}}
+{{- $image := . -}}
+{{- $result := dict "src" $image.Permalink "width" $image.Width "height" $image.Height -}}
+{{- with $image.Resource -}}
+  {{- if reflect.IsImageResourceProcessable . -}}
+    {{- $resource := . -}}
+    {{- $maximum := math.Min 1600 $resource.Width | int -}}
+    {{- $widths := slice 400 640 800 1200 1600 -}}
+    {{- $widths = $widths | append $maximum | uniq | sort -}}
+    {{- $srcset := slice -}}
+    {{- range $widths -}}
+      {{- if le . $maximum -}}
+        {{- $variant := $resource.Resize (printf "%dx webp q82" .) -}}
+        {{- /* Already-efficient WebP must not grow through a second encode. */ -}}
+        {{- if and (eq $resource.MediaType.SubType "webp") (ge (len $variant.Content) (len $resource.Content)) -}}
+          {{- if eq . $resource.Width -}}
+            {{- $srcset = $srcset | append (printf "%s %dw" $resource.RelPermalink $resource.Width) -}}
+          {{- end -}}
+        {{- else -}}
+          {{- $srcset = $srcset | append (printf "%s %dw" $variant.RelPermalink $variant.Width) -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $fallback := $resource.Resize (printf "%dx webp q82" (math.Min 800 $maximum | int)) -}}
+    {{- if and (eq $resource.MediaType.SubType "webp") (le $resource.Width $maximum) (gt (len $fallback.Content) (len $resource.Content)) -}}
+      {{- $fallback = $resource -}}
+    {{- end -}}
+    {{- $result = merge $result (dict "src" $fallback.RelPermalink "srcset" (delimit $srcset ", ")) -}}
+  {{- end -}}
+{{- end -}}
+{{- return $result -}}

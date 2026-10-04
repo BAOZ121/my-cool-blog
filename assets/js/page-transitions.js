@@ -1,105 +1,78 @@
-/* Progressive enhancement only: every link and history entry remains browser-owned. */
+/* Native links + small real-element entrances. No page snapshots or router. */
 (() => {
-  const root = document.documentElement;
-  const key = "dex:article-transition";
+  const key = "dex:page-entry";
   const motion = matchMedia("(prefers-reduced-motion: reduce)");
-  let candidate;
-  let namedCover;
-  let generation = 0;
-  const clearNames = () => {
-    generation += 1;
-    if (namedCover) namedCover.style.removeProperty("view-transition-name");
-    namedCover = undefined;
-    root.removeAttribute("data-dex-transition");
-  };
-  const discard = () => {
-    try { sessionStorage.removeItem(key); } catch { /* Storage can be disabled. */ }
-  };
-  const visibleCover = cover => {
-    const image = cover?.querySelector("img");
-    if (!image?.complete || !image.naturalWidth) return false;
-    const rect = cover.getBoundingClientRect();
-    return rect.width > 80 && rect.height > 60 && rect.top >= -1 && rect.left >= -1 &&
-      rect.bottom <= innerHeight + 1 && rect.right <= innerWidth + 1;
-  };
-  const nameCover = cover => {
-    namedCover = cover;
-    cover.style.viewTransitionName = "dex-cover";
-    root.dataset.dexTransition = "article";
-  };
-  const cleanAfter = (transition, incoming = false) => {
-    const current = generation;
-    const cleanup = () => { if (current === generation) clearNames(); };
-    if (incoming) {
-      const release = () => {
-        if (current === generation && namedCover) {
-          namedCover.style.removeProperty("view-transition-name");
-          namedCover = undefined;
-        }
-      };
-      transition.ready.then(release, release);
-    }
-    // On outgoing pages ready can reject normally once the document is hidden.
-    transition.ready.catch(() => {});
-    transition.finished.then(cleanup, cleanup);
-  };
+  let entry;
+  let interrupted = false;
+  let animations = [];
+  try {
+    entry = JSON.parse(sessionStorage.getItem(key));
+    sessionStorage.removeItem(key);
+    // Discard markers from the earlier snapshot-based preview too.
+    sessionStorage.removeItem("dex:article-transition");
+  } catch { /* Storage denial leaves normal navigation intact. */ }
 
-  // Observe an ordinary link activation without cancelling or delaying navigation.
+  const stop = () => {
+    interrupted = true;
+    for (const animation of animations) animation.cancel();
+    animations = [];
+  };
+  // Cancel only decorative movement. Never cancel or replay the input itself.
+  for (const type of ["pointerdown", "touchstart", "wheel", "keydown"]) {
+    window.addEventListener(type, stop, { capture: true, passive: true });
+  }
+  window.addEventListener("pagehide", stop);
+  window.addEventListener("pageshow", event => { if (event.persisted) stop(); });
+  document.addEventListener("visibilitychange", () => { if (document.hidden) stop(); });
+  motion.addEventListener?.("change", stop);
+
   document.addEventListener("click", event => {
-    candidate = undefined;
+    try { sessionStorage.removeItem(key); } catch { /* Optional enhancement. */ }
     if (motion.matches || event.defaultPrevented || event.button !== 0 ||
         event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
     const link = event.target.closest?.("a[href]");
     if (!link || link.hasAttribute("download") || (link.target && link.target !== "_self")) return;
-    const header = link.closest("[data-article-url]");
-    const cover = header?.querySelector("[data-transition-cover]");
-    if (!header || header.closest(".main-article") || !visibleCover(cover)) return;
     const to = new URL(link.href, location.href);
-    const article = new URL(header.dataset.articleUrl, location.href);
-    if (to.origin !== location.origin || to.href !== article.href ||
-        to.href === location.href || to.hash || to.search) return;
-    candidate = { cover, from: location.href, to: to.href, time: Date.now() };
-  });
-
-  window.addEventListener("pageswap", event => {
-    clearNames();
-    discard();
-    const selected = candidate;
-    candidate = undefined;
-    if (!event.viewTransition || !window.navigation || motion.matches || !selected ||
-        event.activation?.navigationType !== "push" ||
-        event.activation.entry?.url !== selected.to ||
-        Date.now() - selected.time > 8000 || !visibleCover(selected.cover)) return;
+    if (to.origin !== location.origin || to.hash ||
+        (to.pathname === location.pathname && to.search === location.search)) return;
     try {
-      sessionStorage.setItem(key, JSON.stringify({ from: selected.from, to: selected.to, time: Date.now() }));
-    } catch { return; }
-    nameCover(selected.cover);
-    cleanAfter(event.viewTransition);
+      const from = new URL(location.href); from.hash = "";
+      sessionStorage.setItem(key, JSON.stringify({ from: from.href, to: to.href, time: Date.now() }));
+    } catch { /* Native link activation proceeds even without storage. */ }
   });
 
-  window.addEventListener("pagereveal", event => {
-    clearNames();
-    let marker;
-    try { marker = JSON.parse(sessionStorage.getItem(key)); } catch { /* Use the default fade. */ }
-    discard();
-    const activation = window.navigation?.activation;
-    if (!event.viewTransition || motion.matches || !marker ||
-        !Number.isFinite(marker.time) || activation?.navigationType !== "push" || activation.from?.url !== marker.from ||
-        activation.entry?.url !== marker.to || location.href !== marker.to || Date.now() - marker.time < 0 ||
-        Date.now() - marker.time > 15000) return;
-    const cover = document.querySelector(".main-article [data-transition-cover]");
-    if (!visibleCover(cover)) {
-      // Never hold first paint for a late image, or fly a missing/offscreen image in.
-      event.viewTransition.skipTransition();
-      return;
+  function enter() {
+    const navigationType = performance.getEntriesByType("navigation")[0]?.type;
+    if (!entry || interrupted || motion.matches || document.hidden || scrollY > 1 ||
+        navigationType !== "navigate" || location.hash || location.href !== entry.to ||
+        document.referrer !== entry.from || !Number.isFinite(entry.time) ||
+        Date.now() - entry.time < 0 || Date.now() - entry.time > 15000) return;
+    const hero = document.querySelector(".main-article .article-image img");
+    const nodes = [];
+    if (hero?.complete && hero.naturalWidth) nodes.push(hero);
+    for (const node of document.querySelectorAll(".main-article .article-details, .main-article .article-content > :first-child, .research-landing > h2, .research-landing > p, main > header, main > h1, main > h2, main .section-title")) {
+      if (!nodes.some(parent => parent.contains(node))) nodes.push(node);
     }
-    nameCover(cover);
-    cleanAfter(event.viewTransition, true);
-  });
-
-  // A cached document must never retain a named offscreen cover on Back/Forward.
-  window.addEventListener("pageshow", event => {
-    if (event.persisted) { candidate = undefined; clearNames(); discard(); }
-  });
-  motion.addEventListener?.("change", () => { candidate = undefined; clearNames(); discard(); });
+    // Read geometry first, then animate at most four small, visible surfaces.
+    const visible = nodes.filter(node => {
+      const rect = node.getBoundingClientRect();
+      return typeof node.animate === "function" && rect.width > 0 && rect.height > 0 &&
+        rect.top < innerHeight && rect.bottom > 0 && rect.height <= innerHeight;
+    }).slice(0, 4);
+    try {
+      for (const node of visible) {
+        const cover = node === hero;
+        const animation = node.animate(cover ? [
+          { transform: "scale(1.025)" }, { transform: "scale(1)" },
+        ] : [
+          { opacity: .65, transform: "translateY(12px)" }, { opacity: 1, transform: "translateY(0)" },
+        ], { id: cover ? "dex-cover-settle" : "dex-content-enter", duration: cover ? 260 : 200,
+          easing: "cubic-bezier(.22, 1, .36, 1)", fill: "none" });
+        animations.push(animation);
+        animation.finished.then(() => { animations = animations.filter(item => item !== animation); }, () => {});
+      }
+    } catch { stop(); }
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", enter, { once: true });
+  else enter();
 })();

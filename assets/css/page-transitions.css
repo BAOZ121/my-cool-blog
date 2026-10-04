@@ -1,82 +1,11 @@
-/* Native multi-page transitions: links, history and page scripts stay native. */
-@media (prefers-reduced-motion: no-preference) {
-  @view-transition {
-    navigation: auto;
-  }
-
-  /* Fade viewport snapshots so long pages and restored scroll never stretch. */
-  ::view-transition-group(root) {
-    animation: none;
-  }
-
-  ::view-transition-old(root),
-  ::view-transition-new(root) {
-    animation-duration: 180ms;
-    animation-timing-function: ease-out;
-  }
-
-  /* Forward article entry: the cover arrives first, then the reading surface. */
-  html[data-dex-transition="article"]::view-transition-group(dex-cover) {
-    animation-duration: 320ms;
-    animation-timing-function: cubic-bezier(.22, 1, .36, 1);
-    overflow: clip;
-    border-radius: 10px 10px 0 0;
-    z-index: 2;
-  }
-
-  html[data-dex-transition="article"]::view-transition-old(dex-cover),
-  html[data-dex-transition="article"]::view-transition-new(dex-cover) {
-    height: 100%;
-    object-fit: cover;
-    animation-duration: 320ms;
-    mix-blend-mode: normal;
-  }
-
-  html[data-dex-transition="article"]::view-transition-new(root) {
-    animation: dex-article-rise 240ms cubic-bezier(.22, 1, .36, 1) 320ms both;
-  }
-
-  @keyframes dex-article-rise {
-    from { opacity: 0; transform: translateY(28px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  /* Keep the transition overlay from intercepting pointer input. */
-  ::view-transition {
-    pointer-events: none;
-  }
+/* Do not capture the document into a native transition layer: captured controls
+   can be excluded from browser hit-testing while that transition is active. */
+@view-transition {
+  navigation: none;
 }
 
-/* The desktop navigation stays in place; mobile headers scroll with the page. */
-@media (prefers-reduced-motion: no-preference) and (min-width: 768px) {
-  .left-sidebar {
-    view-transition-name: dex-navigation;
-  }
-
-  ::view-transition-group(dex-navigation),
-  ::view-transition-old(dex-navigation),
-  ::view-transition-new(dex-navigation) {
-    animation: none;
-  }
-
-  ::view-transition-old(dex-navigation) {
-    display: none;
-  }
-
-  ::view-transition-new(dex-navigation) {
-    mix-blend-mode: normal;
-  }
-}
-
-/* Opt out altogether, including native default animations, when motion is reduced. */
-@media (prefers-reduced-motion: reduce) {
-  @view-transition {
-    navigation: none;
-  }
-
-  ::view-transition-group(*),
-  ::view-transition-old(*),
-  ::view-transition-new(*) {
-    animation: none !important;
-  }
+/* The optional image settle stays inside its existing crop. Real content is
+   visible by default; this file never hides a page, disables input or waits. */
+.article-image {
+  overflow: hidden;
 }
