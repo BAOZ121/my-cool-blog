@@ -31,6 +31,7 @@ try {
       localStorage.setItem("StackColorScheme", scheme);
       window.__transition = { started: false, finished: false, reveals: 0 };
       window.addEventListener("pageswap", event => {
+        event.viewTransition?.ready.catch(error => console.log("Outgoing transition:", error.name, error.message));
         sessionStorage.setItem("dex-test-outgoing", JSON.stringify({
           started: Boolean(event.viewTransition), visibility: document.visibilityState, time: Date.now(),
           type: event.activation?.navigationType, from: location.href, to: event.activation?.entry?.url,
@@ -41,7 +42,7 @@ try {
       });
       // Observe the actual browser event; production ships no navigation script.
       window.addEventListener("pagereveal", event => {
-        const state = window.__transition = { started: Boolean(event.viewTransition), finished: !event.viewTransition, ready: false, reveals: window.__transition.reveals + 1 };
+        const state = window.__transition = { started: Boolean(event.viewTransition), finished: !event.viewTransition, ready: false, reveals: window.__transition.reveals + 1, time: Date.now(), stylesheetReady: Boolean(document.querySelector('#dex-page-transitions')?.sheet) };
         if (!event.viewTransition) return;
         event.viewTransition.ready.then(() => {
           state.ready = true;
@@ -52,9 +53,11 @@ try {
     }, { scheme });
     const page = await context.newPage();
     const errors = [];
+    const consoleMessages = [];
+    page.on("console", message => consoleMessages.push(message.text()));
     page.on("pageerror", error => errors.push(error.message));
     await page.goto(origin + "/");
-    assert.equal(await page.locator('link[href*="page-transitions"]').count(), 1);
+    assert.equal(await page.locator('style#dex-page-transitions').count(), 1);
     const article = page.locator(".article-list .article-title a").first();
     const articlePath = await article.getAttribute("href");
     await article.scrollIntoViewIfNeeded();
@@ -66,7 +69,12 @@ try {
     await page.waitForURL(origin + articlePath);
     await page.waitForFunction(() => window.__transition.finished);
     const first = await page.evaluate(() => window.__transition);
-    if (first.started !== (motion === "no-preference")) console.log("Native transition diagnostics", await page.evaluate(() => ({ outgoing: sessionStorage.getItem("dex-test-outgoing"), incoming: window.__transition, visibility: document.visibilityState, reduced: matchMedia("(prefers-reduced-motion: reduce)").matches, styles: [...document.styleSheets].filter(sheet => sheet.href?.includes("page-transitions")).map(sheet => [...sheet.cssRules].map(rule => rule.cssText)) })));
+    if (first.started !== (motion === "no-preference")) {
+      console.log("Native transition diagnostics", consoleMessages, await page.evaluate(() => ({ outgoing: sessionStorage.getItem("dex-test-outgoing"), incoming: window.__transition, visibility: document.visibilityState, reduced: matchMedia("(prefers-reduced-motion: reduce)").matches, styles: [...document.querySelector('#dex-page-transitions').sheet.cssRules].map(rule => rule.cssText) })));
+      const diagnostics = await browser.newBrowserCDPSession();
+      console.log("Chromium transition skip reasons", await diagnostics.send("Browser.getHistograms", { query: "Blink.ViewTransitions.SkipReason", delta: false }));
+      await diagnostics.detach();
+    }
     assert.equal(first.started, motion === "no-preference", `Native cross-document opt-in must respect reduced motion: ${JSON.stringify(first)}`);
     if (first.started) {
       assert.equal(first.ready, true, `The browser must run, not skip, the transition: ${JSON.stringify(first)}`);
@@ -183,7 +191,11 @@ try {
 
   // A failed/unsupported enhancement cannot hide content or hijack navigation.
   const fallback = await browser.newContext();
-  await fallback.route("**/css/page-transitions.*.css", route => route.fulfill({ contentType: "text/css", body: "" }));
+  await fallback.route("**/*", async route => {
+    if (route.request().resourceType() !== "document") return route.continue();
+    const response = await route.fetch();
+    await route.fulfill({ response, body: (await response.text()).replace(/<style id=["']?dex-page-transitions["']?>[\s\S]*?<\/style>/, "") });
+  });
   const plain = await fallback.newPage();
   await plain.goto(origin + "/");
   const plainLink = plain.locator(".article-list .article-title a").first();

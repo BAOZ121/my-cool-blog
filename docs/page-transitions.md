@@ -1,7 +1,7 @@
 # Page transitions
 
-DEX remains a server-rendered Hugo multi-page site. A shared, fingerprinted CSS
-asset opts same-origin document navigations into the browser's View Transition
+DEX remains a server-rendered Hugo multi-page site. A tiny shared CSS block,
+minified inline in the head, opts same-origin navigations into the View Transition
 API. The viewport cross-fades for 180 ms; desktop navigation is captured
 separately so it stays visually steady. Mobile headers participate in the fade.
 

@@ -1,2 +1,3 @@
-{{- $style := resources.Get "css/page-transitions.css" | minify | fingerprint -}}
-<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
+{{- /* Keep this small opt-in available before the incoming document's first paint. */ -}}
+{{- $style := resources.Get "css/page-transitions.css" | minify -}}
+<style id="dex-page-transitions">{{ $style.Content | safeCSS }}</style>
