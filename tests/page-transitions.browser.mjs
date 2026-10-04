@@ -22,12 +22,12 @@ const screenshots = process.env.TRANSITION_SCREENSHOT_DIR;
 if (screenshots) await mkdir(screenshots, { recursive: true });
 let browser;
 try {
-  browser = await chromium.launch({ headless: true, ignoreDefaultArgs: ["--disable-back-forward-cache"], ...(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : {}) });
+  browser = await chromium.launch({ headless: true, channel: "chromium", ignoreDefaultArgs: ["--disable-back-forward-cache"], ...(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : {}) });
   for (const [width, scheme, motion] of [[1440, "light", "no-preference"], [390, "dark", "no-preference"], [1440, "dark", "reduce"], [390, "light", "reduce"]]) {
     const context = await browser.newContext({ viewport: { width, height: 900 }, colorScheme: scheme, reducedMotion: motion });
     await context.addInitScript(({ scheme }) => {
       localStorage.setItem("StackColorScheme", scheme);
-      window.__transition = { started: false, finished: true, reveals: 0 };
+      window.__transition = { started: false, finished: false, reveals: 0 };
       // Observe the actual browser event; production ships no navigation script.
       window.addEventListener("pagereveal", event => {
         const state = window.__transition = { started: Boolean(event.viewTransition), finished: !event.viewTransition, ready: false, reveals: window.__transition.reveals + 1 };
@@ -52,7 +52,7 @@ try {
     await page.waitForURL(origin + articlePath);
     await page.waitForFunction(() => window.__transition.finished);
     const first = await page.evaluate(() => window.__transition);
-    assert.equal(first.started, motion === "no-preference", "Native cross-document opt-in must respect reduced motion");
+    assert.equal(first.started, motion === "no-preference", `Native cross-document opt-in must respect reduced motion: ${JSON.stringify(first)}`);
     if (first.started) {
       assert.equal(first.ready, true, `The browser must run, not skip, the transition: ${JSON.stringify(first)}`);
       assert.equal(first.duration, "0.18s");
