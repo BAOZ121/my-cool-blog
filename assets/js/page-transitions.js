@@ -62,11 +62,14 @@
     try {
       for (const node of visible) {
         const cover = node === hero;
-        const animation = node.animate(cover ? [
-          { transform: "scale(1.025)" }, { transform: "scale(1)" },
+        // Keep every link/control hit box stationary, including while cancelling.
+        const interactive = node.closest?.("a,button,summary") || node.querySelector?.("a,button,input,select,textarea,summary,[tabindex]");
+        const frames = interactive ? [
+          { opacity: cover ? .85 : .65 }, { opacity: 1 },
         ] : [
           { opacity: .65, transform: "translateY(12px)" }, { opacity: 1, transform: "translateY(0)" },
-        ], { id: cover ? "dex-cover-settle" : "dex-content-enter", duration: cover ? 260 : 200,
+        ];
+        const animation = node.animate(frames, { id: cover ? "dex-cover-settle" : "dex-content-enter", duration: cover ? 260 : 200,
           easing: "cubic-bezier(.22, 1, .36, 1)", fill: "none" });
         animations.push(animation);
         animation.finished.then(() => { animations = animations.filter(item => item !== animation); }, () => {});

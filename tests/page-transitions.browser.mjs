@@ -57,6 +57,7 @@ async function observe(context, { scheme = "light", animationAvailable = true } 
         broadCapture: this.matches("html, body, main, .main, .main-article, .article-header"),
         visible: rect.width > 0 && rect.height > 0 && rect.bottom > 0 && rect.top < innerHeight,
         imageLoaded: this.tagName !== "IMG" || (this.complete && this.naturalWidth > 0),
+        interactive: Boolean(this.closest("a,button,summary") || this.querySelector("a,button,input,select,textarea,summary,[tabindex]")),
         duration: timing.duration, delay: timing.delay, iterations: timing.iterations, fill: timing.fill,
         properties: [...new Set(animation.effect.getKeyframes().flatMap(frame => Object.keys(frame)))],
         pseudo: animation.effect.pseudoElement, state: "running",
@@ -131,6 +132,7 @@ try {
         assert.equal(call.broadCapture, false, "Never animate the root, main container or whole article");
         assert.equal(call.visible, true);
         assert.equal(call.imageLoaded, true, "Unloaded images cannot gate or participate in entry");
+        if (call.interactive) assert.equal(call.properties.includes("transform"), false, "Control hit boxes must not move during cancellation");
         assert.equal(Boolean(call.pseudo), false, "Animate the real element, not a pseudo overlay");
         assert.ok(call.duration >= 0 && call.duration + call.delay <= 400, `Entry must be short and bounded: ${JSON.stringify(call)}`);
         assert.equal(call.iterations, 1);

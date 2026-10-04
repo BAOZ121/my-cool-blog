@@ -13,13 +13,17 @@ navigation with a matching source/destination. Direct entry, reload, Back/Forwar
 hashes, new tabs, disabled storage and reduced motion use normal rendering.
 
 At DOM readiness, at most four already-visible real elements get a short Web
-Animation: a loaded hero settles for 260 ms; selected titles/intro text rise 12 px
-for 200 ms. Only transform and opacity animate. No document-sized element,
+Animation: a loaded hero gently fades for 260 ms; selected titles/intro text rise 12 px
+for 200 ms. Only transform and opacity animate. Nodes containing links/controls use opacity only, keeping their hit boxes stationary. No document-sized element,
 snapshot, custom overlay, router or navigation timeout is used. Controls remain
 real hit-test targets. Pointer, keyboard, touch or wheel input cancels only the
 decoration, never the input; animations also stop on hidden/pagehide/BFCache.
 The fill mode is none, and underlying content is never hidden. Missing or slow
 images are skipped without waiting, decoding, replaying or deferring navigation.
+
+The theme now initializes menu/theme controls at DOM readiness rather than waiting
+for window.load and every image. The early-pointer regression exposed that
+independent source of temporarily unresponsive controls. Initialization is idempotent.
 
 ## Covers
 

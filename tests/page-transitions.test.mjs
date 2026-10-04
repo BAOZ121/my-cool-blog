@@ -88,3 +88,19 @@ test('only ordinary same-origin links store an optional one-time entry marker', 
     const f = fixture({ marker: false }); alter(f); f.click(); assert.equal(f.stored.size, 0);
   }
 });
+
+
+test('interactive elements never move their hit boxes during cancellation', () => {
+  const f = fixture();
+  f.nodes[0].closest = () => ({});
+  f.nodes[1].querySelector = () => ({});
+  f.fire('DOMContentLoaded');
+  assert.ok(f.calls.slice(0, 2).every(call => call.frames.every(frame => !('transform' in frame))));
+});
+
+test('theme controls initialize once at DOM readiness without waiting for image load', () => {
+  const source = readFileSync(new URL('../assets/ts/main.ts', import.meta.url), 'utf8');
+  assert.match(source, /DOMContentLoaded/);
+  assert.match(source, /if \(initialized\) return;/);
+  assert.doesNotMatch(source, /addEventListener\('load'|setTimeout/);
+});
