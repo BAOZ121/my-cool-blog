@@ -1055,10 +1055,10 @@
       "title": "Six stages in the development of commercial space",
       "description": "Trace how communications demand, specialized launch, public procurement, reuse and serial manufacturing accumulated into today’s industry.",
       "root": {
-        "name": "Commercial space history",
+        "name": "Commercial space",
         "children": [
           {
-            "name": "1 · 1960s · Communications [11]",
+            "name": "1960s · Comms [11]",
             "children": [
               {
                 "name": "Key milestones",
@@ -1077,7 +1077,7 @@
             ]
           },
           {
-            "name": "2 · 1980s · Launch services [12]",
+            "name": "1980s · Launch [12]",
             "children": [
               {
                 "name": "Key milestones",
@@ -1096,7 +1096,7 @@
             ]
           },
           {
-            "name": "3 · 2006+ · Development [2][24]",
+            "name": "2006+ · COTS [2][24]",
             "children": [
               {
                 "name": "Key milestones",
@@ -1118,7 +1118,7 @@
             ]
           },
           {
-            "name": "4 · 2014 · Crew procurement [28]",
+            "name": "2014 · Crew [28]",
             "children": [
               {
                 "name": "Key milestones",
@@ -1137,7 +1137,7 @@
             ]
           },
           {
-            "name": "5 · 2015–17 · Recovery / reflight [1]",
+            "name": "2015–17 · Reuse [1]",
             "children": [
               {
                 "name": "Key milestones",
@@ -1156,7 +1156,7 @@
             ]
           },
           {
-            "name": "6 · 2020s · Constellations [13][14][23]",
+            "name": "2020s · Scale [13][14][23]",
             "children": [
               {
                 "name": "Key milestones",
@@ -1224,10 +1224,10 @@
       "title": "From engineering capability to sustained business",
       "description": "Separate technical validation, customer orders, execution, delivery, revenue and cash when assessing a commercial space business.",
       "root": {
-        "name": "Capability to paid business",
+        "name": "Business pathway",
         "children": [
           {
-            "name": "1 · Technical validation",
+            "name": "1 · Capability",
             "children": [
               {
                 "name": "Operating questions",
@@ -1246,7 +1246,7 @@
             ]
           },
           {
-            "name": "2 · Customer procurement",
+            "name": "2 · Procurement",
             "children": [
               {
                 "name": "Operating questions",
@@ -1265,7 +1265,7 @@
             ]
           },
           {
-            "name": "3 · Contract execution",
+            "name": "3 · Execution",
             "children": [
               {
                 "name": "Operating questions",
@@ -1284,7 +1284,7 @@
             ]
           },
           {
-            "name": "4 · Delivery and service",
+            "name": "4 · Delivery",
             "children": [
               {
                 "name": "Operating questions",
@@ -1303,7 +1303,7 @@
             ]
           },
           {
-            "name": "5 · Revenue and cash",
+            "name": "5 · Revenue / cash",
             "children": [
               {
                 "name": "Operating questions",
@@ -1322,7 +1322,7 @@
             ]
           },
           {
-            "name": "6 · Sustained operations",
+            "name": "6 · Continuity",
             "children": [
               {
                 "name": "Operating questions",
