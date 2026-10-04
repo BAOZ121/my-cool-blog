@@ -2,6 +2,1590 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "commercial-space-advanced-engineering",
+      "title": "Commercial Space and Advanced Engineering Industry Report",
+      "url": "/post/commercial-space-advanced-engineering/",
+      "published": "2026-10-04",
+      "notices": [],
+      "entries": [
+        {
+          "id": "f9a913766fc9",
+          "url": "https://www.nasa.gov/history/communications-satellites/",
+          "title": "[11] NASA · communications satellite history",
+          "kind": "link",
+          "format": "Web",
+          "host": "nasa.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "Six stages in the development of commercial space",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-history-0-title",
+              "text": "Sources: [11] NASA · communications satellite history · [12] Arianespace · commercial launch history · [24] NASA · COTS final report · [28] NASA · 2014 CCtCap awards · [1] NASA · December 2015 first-stage landing · [1] SES · 2017 results and SES-10 reflight · [13] Airbus · OneWeb serial manufacturing · [14] CNSA · Zhuque-2 Y2 mission · [23] Airbus · 32 OneWeb satellites delivered . Reviewed 2026-10-03.",
+              "notes": [
+                "Trace how communications demand, specialized launch, public procurement, reuse and serial manufacturing accumulated into today’s industry.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. These stages summarize the report’s historical examples; they are neither an exhaustive chronology nor a universal sequence for every country. Earlier businesses continue alongside newer technologies. The 2015 and 2017 events concern the Falcon 9 first stage, not reuse of the entire rocket. The October 2026 Airbus announcement establishes manufacturing delivery and shipment preparation, not completed launch or service entry."
+              ]
+            },
+            {
+              "section": "[11] NASA Early Satellite Communications History",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-11",
+              "text": "NASA satellite communications history · NASA Telstar retrospective",
+              "notes": [
+                "NASA’s historical material records the launches of Telstar 1 on July 10, 1962, and Early Bird on April 6, 1965. The official Telstar retrospective was published July 10, 2012. See the beginning of that article and ‘The Billion Dollar Technology’ and ‘The Global Village’ in Communications Satellites for the transition from television demonstrations to international communications services. NASA also records the INTELSAT organizational agreement of August 20, 1964, adding context on international coordination and commercial communications.",
+                "Telstar should not be described as the ‘first active communications satellite’ without defining the claim. Historical prices, cumulative network figures, and references to what was ‘current’ in these articles do not describe the industry’s position in 2026."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b5c183ee73ec",
+          "url": "https://newsroom.arianespace.com/four-decades-of-setting-the-launch-service-standards-is-celebrated-by-arianespace/",
+          "title": "[12] Arianespace · commercial launch history",
+          "kind": "link",
+          "format": "Web",
+          "host": "newsroom.arianespace.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Six stages in the development of commercial space",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-history-0-title",
+              "text": "Sources: [11] NASA · communications satellite history · [12] Arianespace · commercial launch history · [24] NASA · COTS final report · [28] NASA · 2014 CCtCap awards · [1] NASA · December 2015 first-stage landing · [1] SES · 2017 results and SES-10 reflight · [13] Airbus · OneWeb serial manufacturing · [14] CNSA · Zhuque-2 Y2 mission · [23] Airbus · 32 OneWeb satellites delivered . Reviewed 2026-10-03.",
+              "notes": [
+                "Trace how communications demand, specialized launch, public procurement, reuse and serial manufacturing accumulated into today’s industry.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. These stages summarize the report’s historical examples; they are neither an exhaustive chronology nor a universal sequence for every country. Earlier businesses continue alongside newer technologies. The 2015 and 2017 events concern the Falcon 9 first stage, not reuse of the entire rocket. The October 2026 Airbus announcement establishes manufacturing delivery and shipment preparation, not completed launch or service entry."
+              ]
+            },
+            {
+              "section": "[12] Arianespace Dedicated Commercial Launch Services",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-12",
+              "text": "Arianespace official retrospective",
+              "notes": [
+                "Arianespace’s 40th-anniversary retrospective states that the company was founded in 1980 and conducted its first commercial mission in May 1984, placing the Spacenet F1 communications satellite in orbit. See the opening and the paragraph on the first commercial mission. The source shows that specialized commercial launch services predated later entrants associated with NewSpace.",
+                "The page does not provide a verifiable exact publication date, so none is assigned. The article uses the mission month to avoid date differences across time zones. Cumulative mission numbers and the launcher lineup in the historical retrospective are not used to assess the current market."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7c236715a56c",
+          "url": "https://www.nasa.gov/wp-content/uploads/2016/08/sp-2014-617.pdf",
+          "title": "[24] NASA · funding and milestone mechanisms",
+          "kind": "file",
+          "format": "PDF",
+          "host": "nasa.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "Six stages in the development of commercial space",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-history-0-title",
+              "text": "Sources: [11] NASA · communications satellite history · [12] Arianespace · commercial launch history · [24] NASA · COTS final report · [28] NASA · 2014 CCtCap awards · [1] NASA · December 2015 first-stage landing · [1] SES · 2017 results and SES-10 reflight · [13] Airbus · OneWeb serial manufacturing · [14] CNSA · Zhuque-2 Y2 mission · [23] Airbus · 32 OneWeb satellites delivered . Reviewed 2026-10-03.",
+              "notes": [
+                "Trace how communications demand, specialized launch, public procurement, reuse and serial manufacturing accumulated into today’s industry.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. These stages summarize the report’s historical examples; they are neither an exhaustive chronology nor a universal sequence for every country. Earlier businesses continue alongside newer technologies. The 2015 and 2017 events concern the Falcon 9 first stage, not reuse of the entire rocket. The October 2026 Airbus announcement establishes manufacturing delivery and shipment preparation, not completed launch or service entry."
+              ]
+            },
+            {
+              "section": "From engineering capability to sustained business",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-business-4-title",
+              "text": "Sources: [1] SES · evidence of first-stage reflight · [3] Rocket Lab · 2025 Form 10-K · [9] Rocket Lab · 2025 financial results · [13] Airbus · batch manufacturing · [17] Airbus · testing and verification · [23] Airbus · manufacturing delivery status · [24] NASA · funding and milestone mechanisms · [10] ESA · lifetime operating responsibilities . Reviewed 2026-10-03.",
+              "notes": [
+                "Separate technical validation, customer orders, execution, delivery, revenue and cash when assessing a commercial space business.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial synthesis of the operating mechanisms in Parts 1, 3 and 4. Branches organize questions and do not imply a universal accounting or payment sequence. Technical capability, signed orders, recognized revenue, cash receipts and profit are different measures; none can substitute for the others. Licensing conditions and contractual terms depend on the country and mission."
+              ]
+            },
+            {
+              "section": "[24] NASA 2014 COTS Final Report",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-24",
+              "text": "NASA COTS final report PDF · NASA Cygnus historical retrospective",
+              "notes": [
+                "NASA/SP-2014-617, May 2014. Printed pages 12–14 and 20–23 explain Space Act Agreements and milestone payments. Pages 31–33 discuss termination after Rocketplane Kistler’s funding shortfall and the selection of Orbital. Pages 82–83 describe the advance CRS awards on December 23, 2008, their overlap with COTS demonstrations, and service procurement under the Federal Acquisition Regulation. This article uses the complete report and distinguishes the two arrangements.",
+                "The agreements required companies to contribute their own funding and bear overruns in meeting the milestones. Printed page 38 also records additional funding in 2010; fixed milestone amounts therefore did not mean the program budget could never change. Termination of the Rocketplane Kistler agreement in 2007 was a specific historical case and should not be generalized to every project."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f316d6768044",
+          "url": "https://www.nasa.gov/news-release/nasa-chooses-american-companies-to-transport-u-s-astronauts-to-international-space-station/",
+          "title": "[28] NASA · 2014 CCtCap awards",
+          "kind": "link",
+          "format": "Web",
+          "host": "nasa.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "Six stages in the development of commercial space",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-history-0-title",
+              "text": "Sources: [11] NASA · communications satellite history · [12] Arianespace · commercial launch history · [24] NASA · COTS final report · [28] NASA · 2014 CCtCap awards · [1] NASA · December 2015 first-stage landing · [1] SES · 2017 results and SES-10 reflight · [13] Airbus · OneWeb serial manufacturing · [14] CNSA · Zhuque-2 Y2 mission · [23] Airbus · 32 OneWeb satellites delivered . Reviewed 2026-10-03.",
+              "notes": [
+                "Trace how communications demand, specialized launch, public procurement, reuse and serial manufacturing accumulated into today’s industry.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. These stages summarize the report’s historical examples; they are neither an exhaustive chronology nor a universal sequence for every country. Earlier businesses continue alongside newer technologies. The 2015 and 2017 events concern the Falcon 9 first stage, not reuse of the entire rocket. The October 2026 Airbus announcement establishes manufacturing delivery and shipment preparation, not completed launch or service entry."
+              ]
+            },
+            {
+              "section": "[28] NASA 2014 CCtCap Crew Transportation Procurement",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-28",
+              "text": "NASA 2014 CCtCap announcement · NASA Commercial Crew Essentials",
+              "notes": [
+                "NASA announced fixed-price CCtCap contracts with Boeing and SpaceX on September 16, 2014, with maximum potential values of US$4.2 billion and US$2.6 billion, respectively. They cover certification, at least one crewed test, and two to six missions after certification. The announcement and Commercial Crew Essentials explain that the companies own and operate the systems, while NASA reviews requirements and certifies safety.",
+                "The figures are potential values of contracts awarded in 2014, not recognized revenue or prices solely for operational flights. Commercialization did not remove safety verification. The 2017 return-to-flight target in the original announcement was a historical plan, not an achieved date."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3e06b5ddee7a",
+          "url": "https://science.nasa.gov/image-article/apod-2015-december-28-falcon-9-first-stage-landing/",
+          "title": "[1] NASA · December 2015 first-stage landing",
+          "kind": "link",
+          "format": "Web",
+          "host": "science.nasa.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "Six stages in the development of commercial space",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-history-0-title",
+              "text": "Sources: [11] NASA · communications satellite history · [12] Arianespace · commercial launch history · [24] NASA · COTS final report · [28] NASA · 2014 CCtCap awards · [1] NASA · December 2015 first-stage landing · [1] SES · 2017 results and SES-10 reflight · [13] Airbus · OneWeb serial manufacturing · [14] CNSA · Zhuque-2 Y2 mission · [23] Airbus · 32 OneWeb satellites delivered . Reviewed 2026-10-03.",
+              "notes": [
+                "Trace how communications demand, specialized launch, public procurement, reuse and serial manufacturing accumulated into today’s industry.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. These stages summarize the report’s historical examples; they are neither an exhaustive chronology nor a universal sequence for every country. Earlier businesses continue alongside newer technologies. The 2015 and 2017 events concern the Falcon 9 first stage, not reuse of the entire rocket. The October 2026 Airbus announcement establishes manufacturing delivery and shipment preparation, not completed launch or service entry."
+              ]
+            },
+            {
+              "section": "[1] NASA and SES Falcon 9 First-Stage Recovery and Reflight",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-1",
+              "text": "NASA APOD landing entry · SES 2017 results PDF",
+              "notes": [
+                "NASA’s Astronomy Picture of the Day entry dated December 28, 2015, describes the controlled landing of a Falcon 9 first stage on land during the previous week, while the second stage continued deploying communications satellites. SES published its full-year 2017 results on February 23, 2018. The ‘Future satellite capacity and fleet update’ section on printed page 11 states that SES-10 launched on March 30, 2017, using a previously flown Falcon 9 first stage.",
+                "The NASA source directly supports a landing in December 2015 and the mission type; the article does not use it to infer an exact day or payload count. The SES source identifies a customer and a reflight mission. Neither establishes reuse of the entire rocket, the first reuse of any spacecraft, or long-term profitability."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3566d919c538",
+          "url": "https://www.ses.com/sites/ses_v2/files/2018-02/180222_FY%202017_Press%20Release_FINAL_0.pdf",
+          "title": "[1] SES · 2017 results and SES-10 reflight",
+          "kind": "file",
+          "format": "PDF",
+          "host": "ses.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Six stages in the development of commercial space",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-history-0-title",
+              "text": "Sources: [11] NASA · communications satellite history · [12] Arianespace · commercial launch history · [24] NASA · COTS final report · [28] NASA · 2014 CCtCap awards · [1] NASA · December 2015 first-stage landing · [1] SES · 2017 results and SES-10 reflight · [13] Airbus · OneWeb serial manufacturing · [14] CNSA · Zhuque-2 Y2 mission · [23] Airbus · 32 OneWeb satellites delivered . Reviewed 2026-10-03.",
+              "notes": [
+                "Trace how communications demand, specialized launch, public procurement, reuse and serial manufacturing accumulated into today’s industry.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. These stages summarize the report’s historical examples; they are neither an exhaustive chronology nor a universal sequence for every country. Earlier businesses continue alongside newer technologies. The 2015 and 2017 events concern the Falcon 9 first stage, not reuse of the entire rocket. The October 2026 Airbus announcement establishes manufacturing delivery and shipment preparation, not completed launch or service entry."
+              ]
+            },
+            {
+              "section": "From engineering capability to sustained business",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-business-4-title",
+              "text": "Sources: [1] SES · evidence of first-stage reflight · [3] Rocket Lab · 2025 Form 10-K · [9] Rocket Lab · 2025 financial results · [13] Airbus · batch manufacturing · [17] Airbus · testing and verification · [23] Airbus · manufacturing delivery status · [24] NASA · funding and milestone mechanisms · [10] ESA · lifetime operating responsibilities . Reviewed 2026-10-03.",
+              "notes": [
+                "Separate technical validation, customer orders, execution, delivery, revenue and cash when assessing a commercial space business.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial synthesis of the operating mechanisms in Parts 1, 3 and 4. Branches organize questions and do not imply a universal accounting or payment sequence. Technical capability, signed orders, recognized revenue, cash receipts and profit are different measures; none can substitute for the others. Licensing conditions and contractual terms depend on the country and mission."
+              ]
+            },
+            {
+              "section": "[1] NASA and SES Falcon 9 First-Stage Recovery and Reflight",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-1",
+              "text": "NASA APOD landing entry · SES 2017 results PDF",
+              "notes": [
+                "NASA’s Astronomy Picture of the Day entry dated December 28, 2015, describes the controlled landing of a Falcon 9 first stage on land during the previous week, while the second stage continued deploying communications satellites. SES published its full-year 2017 results on February 23, 2018. The ‘Future satellite capacity and fleet update’ section on printed page 11 states that SES-10 launched on March 30, 2017, using a previously flown Falcon 9 first stage.",
+                "The NASA source directly supports a landing in December 2015 and the mission type; the article does not use it to infer an exact day or payload count. The SES source identifies a customer and a reflight mission. Neither establishes reuse of the entire rocket, the first reuse of any spacecraft, or long-term profitability."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "13410cb8f760",
+          "url": "https://www.airbus.com/en/newsroom/news/2022-02-revolutionising-satellite-production-for-a-more-connected-human-race",
+          "title": "[13] Airbus · OneWeb serial manufacturing",
+          "kind": "link",
+          "format": "Web",
+          "host": "airbus.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Six stages in the development of commercial space",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-history-0-title",
+              "text": "Sources: [11] NASA · communications satellite history · [12] Arianespace · commercial launch history · [24] NASA · COTS final report · [28] NASA · 2014 CCtCap awards · [1] NASA · December 2015 first-stage landing · [1] SES · 2017 results and SES-10 reflight · [13] Airbus · OneWeb serial manufacturing · [14] CNSA · Zhuque-2 Y2 mission · [23] Airbus · 32 OneWeb satellites delivered . Reviewed 2026-10-03.",
+              "notes": [
+                "Trace how communications demand, specialized launch, public procurement, reuse and serial manufacturing accumulated into today’s industry.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. These stages summarize the report’s historical examples; they are neither an exhaustive chronology nor a universal sequence for every country. Earlier businesses continue alongside newer technologies. The 2015 and 2017 events concern the Falcon 9 first stage, not reuse of the entire rocket. The October 2026 Airbus announcement establishes manufacturing delivery and shipment preparation, not completed launch or service entry."
+              ]
+            },
+            {
+              "section": "From engineering capability to sustained business",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-business-4-title",
+              "text": "Sources: [1] SES · evidence of first-stage reflight · [3] Rocket Lab · 2025 Form 10-K · [9] Rocket Lab · 2025 financial results · [13] Airbus · batch manufacturing · [17] Airbus · testing and verification · [23] Airbus · manufacturing delivery status · [24] NASA · funding and milestone mechanisms · [10] ESA · lifetime operating responsibilities . Reviewed 2026-10-03.",
+              "notes": [
+                "Separate technical validation, customer orders, execution, delivery, revenue and cash when assessing a commercial space business.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial synthesis of the operating mechanisms in Parts 1, 3 and 4. Branches organize questions and do not imply a universal accounting or payment sequence. Technical capability, signed orders, recognized revenue, cash receipts and profit are different measures; none can substitute for the others. Licensing conditions and contractual terms depend on the country and mission."
+              ]
+            },
+            {
+              "section": "[13] Airbus OneWeb Serial Manufacturing",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-13",
+              "text": "Airbus manufacturing feature",
+              "notes": [
+                "Airbus described OneWeb’s manufacturing process on February 8, 2022, including components supplied in batches, rapid satellite assembly, digital twins, automated transportation, and intelligent inspection. See the manufacturing-process and digital-tool sections. The source supports the discussion of organizational changes required to move from prototypes to serial production.",
+                "The stated rate of two satellites per day was a production capacity or speed disclosed at that time, not a continuing delivery rate for 2026. Cost claims without a clear comparison baseline and promotional claims about effects on astronomy are not treated as facts in this article."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f08e33514861",
+          "url": "https://www.cnsa.gov.cn/n6758823/n6758838/c10070146/content.html",
+          "title": "[14] CNSA · Zhuque-2 Y2 mission",
+          "kind": "link",
+          "format": "Web",
+          "host": "cnsa.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "Six stages in the development of commercial space",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-history-0-title",
+              "text": "Sources: [11] NASA · communications satellite history · [12] Arianespace · commercial launch history · [24] NASA · COTS final report · [28] NASA · 2014 CCtCap awards · [1] NASA · December 2015 first-stage landing · [1] SES · 2017 results and SES-10 reflight · [13] Airbus · OneWeb serial manufacturing · [14] CNSA · Zhuque-2 Y2 mission · [23] Airbus · 32 OneWeb satellites delivered . Reviewed 2026-10-03.",
+              "notes": [
+                "Trace how communications demand, specialized launch, public procurement, reuse and serial manufacturing accumulated into today’s industry.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. These stages summarize the report’s historical examples; they are neither an exhaustive chronology nor a universal sequence for every country. Earlier businesses continue alongside newer technologies. The 2015 and 2017 events concern the Falcon 9 first stage, not reuse of the entire rocket. The October 2026 Airbus announcement establishes manufacturing delivery and shipment preparation, not completed launch or service entry."
+              ]
+            },
+            {
+              "section": "[14] CNSA Zhuque-2 Y2 Reaches Orbit",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-14",
+              "text": "CNSA mission announcement",
+              "notes": [
+                "The China National Space Administration announced on July 12, 2023, that LandSpace’s Zhuque-2 Y2 liquid-oxygen/methane launch vehicle successfully delivered its payload to the intended orbit. This is a historical example of developing Chinese commercial launch capabilities. The event date and propellant choice come from the official announcement. Current LandSpace products and activities are covered in [18].",
+                "The evidence establishes successful orbital delivery, not reusability, lower unit costs, or company profitability. That Zhuque-2 mission must not be conflated with Zhuque-3 recovery designs or targets for later vehicles."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5292eabe8550",
+          "url": "https://www.airbus.com/en/newsroom/press-releases/2026-10-airbus-delivers-first-batch-of-next-generation-satellites-for-eutelsats-oneweb-constellation",
+          "title": "Airbus October 2, 2026, delivery announcement",
+          "kind": "link",
+          "format": "Web",
+          "host": "airbus.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Six stages in the development of commercial space",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-history-0-title",
+              "text": "Sources: [11] NASA · communications satellite history · [12] Arianespace · commercial launch history · [24] NASA · COTS final report · [28] NASA · 2014 CCtCap awards · [1] NASA · December 2015 first-stage landing · [1] SES · 2017 results and SES-10 reflight · [13] Airbus · OneWeb serial manufacturing · [14] CNSA · Zhuque-2 Y2 mission · [23] Airbus · 32 OneWeb satellites delivered . Reviewed 2026-10-03.",
+              "notes": [
+                "Trace how communications demand, specialized launch, public procurement, reuse and serial manufacturing accumulated into today’s industry.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. These stages summarize the report’s historical examples; they are neither an exhaustive chronology nor a universal sequence for every country. Earlier businesses continue alongside newer technologies. The 2015 and 2017 events concern the Falcon 9 first stage, not reuse of the entire rocket. The October 2026 Airbus announcement establishes manufacturing delivery and shipment preparation, not completed launch or service entry."
+              ]
+            },
+            {
+              "section": "From engineering capability to sustained business",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-business-4-title",
+              "text": "Sources: [1] SES · evidence of first-stage reflight · [3] Rocket Lab · 2025 Form 10-K · [9] Rocket Lab · 2025 financial results · [13] Airbus · batch manufacturing · [17] Airbus · testing and verification · [23] Airbus · manufacturing delivery status · [24] NASA · funding and milestone mechanisms · [10] ESA · lifetime operating responsibilities . Reviewed 2026-10-03.",
+              "notes": [
+                "Separate technical validation, customer orders, execution, delivery, revenue and cash when assessing a commercial space business.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial synthesis of the operating mechanisms in Parts 1, 3 and 4. Branches organize questions and do not imply a universal accounting or payment sequence. Technical capability, signed orders, recognized revenue, cash receipts and profit are different measures; none can substitute for the others. Licensing conditions and contractual terms depend on the country and mission."
+              ]
+            },
+            {
+              "section": "[23] Airbus Delivery of 32 OneWeb Satellites",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-23",
+              "text": "Airbus October 2, 2026, delivery announcement",
+              "notes": [
+                "Airbus announced on October 2, 2026, that it had delivered 32 next-generation OneWeb LEO satellites to Eutelsat. They were being prepared for shipment from the Toulouse production facility for a subsequent launch in the United States. They form the first batch of a program for 669 next-generation satellites. See the first three paragraphs. The source distinguishes orders, spacecraft delivery, and network replenishment.",
+                "As of the announcement, the supported status is delivered and being prepared for shipment, not launched or providing services in orbit. The 669 satellites are a program total, not a completed quantity. The announcement also does not map individual spacecraft to the solar panel procurement batch in [7]."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ac57f6e973de",
+          "url": "https://www.hexcel.com/industries/defense-space/",
+          "title": "[15] Hexcel · space materials",
+          "kind": "link",
+          "format": "Web",
+          "host": "hexcel.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "The commercial space and advanced engineering value chain",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-value-chain-1-title",
+              "text": "Sources: [15] Hexcel · space materials · [15] Beyond Gravity · structures and separation · [16] Moog · space products · [17] Airbus · test services · [17] Thales Alenia Space · assembly, integration and testing · [18] SpaceX · Falcon User’s Guide · [18] Rocket Lab · Electron · [18] LandSpace · launch activities · [19] Airbus · satellite and bus solutions · [19] Rocket Lab · spacecraft and integration · [20] Starlink · 2024 progress report · [20] Iridium · network · [20] Eutelsat · managed connectivity · [21] Planet · products · [21] BlackSky · constellation and Spectra · [21] ICEYE · SAR data · [21] ICEYE · Flood Insights · [22] NASA · resupply transportation · [22] NASA · Orion and prime contractor · [22] Rocket Lab · NASA Aspera launch award . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore nine business functions, the engineering capabilities behind them, and representative companies with documented roles.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial taxonomy, not a verified supplier-contract network, market-share ranking or exhaustive company list. Companies may span several stages; their revenue must not be counted twice. Government and research customers generate demand across the chain. GEO means geostationary orbit; LEO means low Earth orbit; IoT means Internet of Things; SAR means synthetic aperture radar. Advanced engineering here is limited to space-related business."
+              ]
+            },
+            {
+              "section": "[15] Hexcel and Beyond Gravity Materials and Structures",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-15",
+              "text": "Hexcel space materials · Beyond Gravity business overview",
+              "notes": [
+                "Hexcel’s Defense & Space page lists composite applications in launch vehicles and satellites. Beyond Gravity lists payload fairings, interstage structures, payload adapters, and separation systems. See Hexcel’s ‘Launchers, Missiles & Space’ and ‘Satellites’ sections and Beyond Gravity’s launcher product description. These sources support the distinction between supplying materials and supplying engineered structures.",
+                "The pages do not state clear publication dates; they were retrieved on October 3, 2026. Product catalogs do not establish that other companies in this article are customers. Claims of leadership and cumulative program counts cannot be converted directly into commercial space market share or customer numbers."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "703fed67e3a9",
+          "url": "https://www.beyondgravity.com/en/about",
+          "title": "[15] Beyond Gravity · structures and separation",
+          "kind": "link",
+          "format": "Web",
+          "host": "beyondgravity.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "The commercial space and advanced engineering value chain",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-value-chain-1-title",
+              "text": "Sources: [15] Hexcel · space materials · [15] Beyond Gravity · structures and separation · [16] Moog · space products · [17] Airbus · test services · [17] Thales Alenia Space · assembly, integration and testing · [18] SpaceX · Falcon User’s Guide · [18] Rocket Lab · Electron · [18] LandSpace · launch activities · [19] Airbus · satellite and bus solutions · [19] Rocket Lab · spacecraft and integration · [20] Starlink · 2024 progress report · [20] Iridium · network · [20] Eutelsat · managed connectivity · [21] Planet · products · [21] BlackSky · constellation and Spectra · [21] ICEYE · SAR data · [21] ICEYE · Flood Insights · [22] NASA · resupply transportation · [22] NASA · Orion and prime contractor · [22] Rocket Lab · NASA Aspera launch award . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore nine business functions, the engineering capabilities behind them, and representative companies with documented roles.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial taxonomy, not a verified supplier-contract network, market-share ranking or exhaustive company list. Companies may span several stages; their revenue must not be counted twice. Government and research customers generate demand across the chain. GEO means geostationary orbit; LEO means low Earth orbit; IoT means Internet of Things; SAR means synthetic aperture radar. Advanced engineering here is limited to space-related business."
+              ]
+            },
+            {
+              "section": "[15] Hexcel and Beyond Gravity Materials and Structures",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-15",
+              "text": "Hexcel space materials · Beyond Gravity business overview",
+              "notes": [
+                "Hexcel’s Defense & Space page lists composite applications in launch vehicles and satellites. Beyond Gravity lists payload fairings, interstage structures, payload adapters, and separation systems. See Hexcel’s ‘Launchers, Missiles & Space’ and ‘Satellites’ sections and Beyond Gravity’s launcher product description. These sources support the distinction between supplying materials and supplying engineered structures.",
+                "The pages do not state clear publication dates; they were retrieved on October 3, 2026. Product catalogs do not establish that other companies in this article are customers. Claims of leadership and cumulative program counts cannot be converted directly into commercial space market share or customer numbers."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e49fb4d61e25",
+          "url": "https://www.moog.com/markets/space/",
+          "title": "[16] Moog · space products",
+          "kind": "link",
+          "format": "Web",
+          "host": "moog.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "The commercial space and advanced engineering value chain",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-value-chain-1-title",
+              "text": "Sources: [15] Hexcel · space materials · [15] Beyond Gravity · structures and separation · [16] Moog · space products · [17] Airbus · test services · [17] Thales Alenia Space · assembly, integration and testing · [18] SpaceX · Falcon User’s Guide · [18] Rocket Lab · Electron · [18] LandSpace · launch activities · [19] Airbus · satellite and bus solutions · [19] Rocket Lab · spacecraft and integration · [20] Starlink · 2024 progress report · [20] Iridium · network · [20] Eutelsat · managed connectivity · [21] Planet · products · [21] BlackSky · constellation and Spectra · [21] ICEYE · SAR data · [21] ICEYE · Flood Insights · [22] NASA · resupply transportation · [22] NASA · Orion and prime contractor · [22] Rocket Lab · NASA Aspera launch award . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore nine business functions, the engineering capabilities behind them, and representative companies with documented roles.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial taxonomy, not a verified supplier-contract network, market-share ranking or exhaustive company list. Companies may span several stages; their revenue must not be counted twice. Government and research customers generate demand across the chain. GEO means geostationary orbit; LEO means low Earth orbit; IoT means Internet of Things; SAR means synthetic aperture radar. Advanced engineering here is limited to space-related business."
+              ]
+            },
+            {
+              "section": "[16] Moog and Rocket Lab Propulsion Avionics and Attitude Control",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-16",
+              "text": "Moog space products · Rocket Lab reaction wheels · ST-16HV datasheet · NASA JPL: SWOT spacecraft",
+              "notes": [
+                "Moog’s product page documents propulsion, fluid control, avionics, power, and mechanisms. Rocket Lab’s reaction wheel page describes speed, angular momentum, and torque commands. Version 2 of the ST-16HV datasheet, dated April 11, 2023, lists a star catalog, processor, and attitude outputs. JPL’s SWOT material explains determining attitude through stellar observations, controlling pointing with reaction wheels, and adjusting orbit with thrusters.",
+                "These sources distinguish sensor measurements from actuator commands. Data for one model should not be generalized to every product, and design targets should not be presented as universally demonstrated performance. Attitude control and orbital maneuvering are different functions. Rocket Lab’s broader component portfolio is covered in [3]."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e9dbea44addf",
+          "url": "https://www.airbus.com/en/products-services/space/space-customer-support/test-services",
+          "title": "[17] Airbus · testing and verification",
+          "kind": "link",
+          "format": "Web",
+          "host": "airbus.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "The commercial space and advanced engineering value chain",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-value-chain-1-title",
+              "text": "Sources: [15] Hexcel · space materials · [15] Beyond Gravity · structures and separation · [16] Moog · space products · [17] Airbus · test services · [17] Thales Alenia Space · assembly, integration and testing · [18] SpaceX · Falcon User’s Guide · [18] Rocket Lab · Electron · [18] LandSpace · launch activities · [19] Airbus · satellite and bus solutions · [19] Rocket Lab · spacecraft and integration · [20] Starlink · 2024 progress report · [20] Iridium · network · [20] Eutelsat · managed connectivity · [21] Planet · products · [21] BlackSky · constellation and Spectra · [21] ICEYE · SAR data · [21] ICEYE · Flood Insights · [22] NASA · resupply transportation · [22] NASA · Orion and prime contractor · [22] Rocket Lab · NASA Aspera launch award . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore nine business functions, the engineering capabilities behind them, and representative companies with documented roles.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial taxonomy, not a verified supplier-contract network, market-share ranking or exhaustive company list. Companies may span several stages; their revenue must not be counted twice. Government and research customers generate demand across the chain. GEO means geostationary orbit; LEO means low Earth orbit; IoT means Internet of Things; SAR means synthetic aperture radar. Advanced engineering here is limited to space-related business."
+              ]
+            },
+            {
+              "section": "From engineering capability to sustained business",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-business-4-title",
+              "text": "Sources: [1] SES · evidence of first-stage reflight · [3] Rocket Lab · 2025 Form 10-K · [9] Rocket Lab · 2025 financial results · [13] Airbus · batch manufacturing · [17] Airbus · testing and verification · [23] Airbus · manufacturing delivery status · [24] NASA · funding and milestone mechanisms · [10] ESA · lifetime operating responsibilities . Reviewed 2026-10-03.",
+              "notes": [
+                "Separate technical validation, customer orders, execution, delivery, revenue and cash when assessing a commercial space business.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial synthesis of the operating mechanisms in Parts 1, 3 and 4. Branches organize questions and do not imply a universal accounting or payment sequence. Technical capability, signed orders, recognized revenue, cash receipts and profit are different measures; none can substitute for the others. Licensing conditions and contractual terms depend on the country and mission."
+              ]
+            },
+            {
+              "section": "[17] Airbus and Thales Alenia Space Testing and Integration",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-17",
+              "text": "Airbus testing services · Thales Alenia Space factory announcement",
+              "notes": [
+                "Airbus Test Services lists vibration, acoustic, shock, thermal-vacuum, EMC/RF, and AIT-center services. Thales Alenia Space introduced its Rome Space Smart Factory on October 7, 2025, describing assembly, integration, testing, and modular cleanrooms. The product and factory materials support the distinction between testing services and a manufacturer’s internal spacecraft verification.",
+                "Testing assesses compliance with requirements under specified conditions; it does not guarantee no future failures. Figures such as capacity exceeding 100 satellites per year describe capability, not completed sales. Owning testing facilities does not establish high utilization, stable cash flow, or high profitability."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "747bf5039ff5",
+          "url": "https://www.thalesaleniaspace.com/en/press-releases/thales-alenia-space-inaugurates-state-art-space-smart-factory",
+          "title": "[17] Thales Alenia Space · assembly, integration and testing",
+          "kind": "link",
+          "format": "Web",
+          "host": "thalesaleniaspace.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "The commercial space and advanced engineering value chain",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-value-chain-1-title",
+              "text": "Sources: [15] Hexcel · space materials · [15] Beyond Gravity · structures and separation · [16] Moog · space products · [17] Airbus · test services · [17] Thales Alenia Space · assembly, integration and testing · [18] SpaceX · Falcon User’s Guide · [18] Rocket Lab · Electron · [18] LandSpace · launch activities · [19] Airbus · satellite and bus solutions · [19] Rocket Lab · spacecraft and integration · [20] Starlink · 2024 progress report · [20] Iridium · network · [20] Eutelsat · managed connectivity · [21] Planet · products · [21] BlackSky · constellation and Spectra · [21] ICEYE · SAR data · [21] ICEYE · Flood Insights · [22] NASA · resupply transportation · [22] NASA · Orion and prime contractor · [22] Rocket Lab · NASA Aspera launch award . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore nine business functions, the engineering capabilities behind them, and representative companies with documented roles.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial taxonomy, not a verified supplier-contract network, market-share ranking or exhaustive company list. Companies may span several stages; their revenue must not be counted twice. Government and research customers generate demand across the chain. GEO means geostationary orbit; LEO means low Earth orbit; IoT means Internet of Things; SAR means synthetic aperture radar. Advanced engineering here is limited to space-related business."
+              ]
+            },
+            {
+              "section": "[17] Airbus and Thales Alenia Space Testing and Integration",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-17",
+              "text": "Airbus testing services · Thales Alenia Space factory announcement",
+              "notes": [
+                "Airbus Test Services lists vibration, acoustic, shock, thermal-vacuum, EMC/RF, and AIT-center services. Thales Alenia Space introduced its Rome Space Smart Factory on October 7, 2025, describing assembly, integration, testing, and modular cleanrooms. The product and factory materials support the distinction between testing services and a manufacturer’s internal spacecraft verification.",
+                "Testing assesses compliance with requirements under specified conditions; it does not guarantee no future failures. Figures such as capacity exceeding 100 satellites per year describe capability, not completed sales. Owning testing facilities does not establish high utilization, stable cash flow, or high profitability."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "312b7f2fbffa",
+          "url": "https://www.spacex.com/assets/media/falcon-users-guide-2025-05-09.pdf",
+          "title": "[18] SpaceX · Falcon User’s Guide",
+          "kind": "file",
+          "format": "PDF",
+          "host": "spacex.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "The commercial space and advanced engineering value chain",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-value-chain-1-title",
+              "text": "Sources: [15] Hexcel · space materials · [15] Beyond Gravity · structures and separation · [16] Moog · space products · [17] Airbus · test services · [17] Thales Alenia Space · assembly, integration and testing · [18] SpaceX · Falcon User’s Guide · [18] Rocket Lab · Electron · [18] LandSpace · launch activities · [19] Airbus · satellite and bus solutions · [19] Rocket Lab · spacecraft and integration · [20] Starlink · 2024 progress report · [20] Iridium · network · [20] Eutelsat · managed connectivity · [21] Planet · products · [21] BlackSky · constellation and Spectra · [21] ICEYE · SAR data · [21] ICEYE · Flood Insights · [22] NASA · resupply transportation · [22] NASA · Orion and prime contractor · [22] Rocket Lab · NASA Aspera launch award . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore nine business functions, the engineering capabilities behind them, and representative companies with documented roles.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial taxonomy, not a verified supplier-contract network, market-share ranking or exhaustive company list. Companies may span several stages; their revenue must not be counted twice. Government and research customers generate demand across the chain. GEO means geostationary orbit; LEO means low Earth orbit; IoT means Internet of Things; SAR means synthetic aperture radar. Advanced engineering here is limited to space-related business."
+              ]
+            },
+            {
+              "section": "[18] SpaceX Rocket Lab and LandSpace Launch Services",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-18",
+              "text": "Rocket Lab Electron · LandSpace products · SpaceX Falcon User’s Guide",
+              "notes": [
+                "Electron’s official product page describes dedicated small-satellite launches, orbit and schedule options, and Kick Stage deployment. LandSpace’s website describes Zhuque research, manufacturing, testing, and launch activities. The article uses the 2025 Falcon User’s Guide: its changelog is dated March 2025, while the filename includes 2025-05-09. Section 3.6, printed page 14, covers multiple payloads, dedicated rideshare missions, and third-party dispensers.",
+                "These materials establish differences between transportation offerings, not rankings. Maximum advertised payload capability varies with orbit and mission conditions and should not be treated as capacity under a common recovery profile. One test does not establish mature reuse, and advertised starting prices are not complete costs for every mission."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5ff69b9e0e97",
+          "url": "https://rocketlabcorp.com/launch/electron/",
+          "title": "[18] Rocket Lab · Electron",
+          "kind": "link",
+          "format": "Web",
+          "host": "rocketlabcorp.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "The commercial space and advanced engineering value chain",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-value-chain-1-title",
+              "text": "Sources: [15] Hexcel · space materials · [15] Beyond Gravity · structures and separation · [16] Moog · space products · [17] Airbus · test services · [17] Thales Alenia Space · assembly, integration and testing · [18] SpaceX · Falcon User’s Guide · [18] Rocket Lab · Electron · [18] LandSpace · launch activities · [19] Airbus · satellite and bus solutions · [19] Rocket Lab · spacecraft and integration · [20] Starlink · 2024 progress report · [20] Iridium · network · [20] Eutelsat · managed connectivity · [21] Planet · products · [21] BlackSky · constellation and Spectra · [21] ICEYE · SAR data · [21] ICEYE · Flood Insights · [22] NASA · resupply transportation · [22] NASA · Orion and prime contractor · [22] Rocket Lab · NASA Aspera launch award . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore nine business functions, the engineering capabilities behind them, and representative companies with documented roles.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial taxonomy, not a verified supplier-contract network, market-share ranking or exhaustive company list. Companies may span several stages; their revenue must not be counted twice. Government and research customers generate demand across the chain. GEO means geostationary orbit; LEO means low Earth orbit; IoT means Internet of Things; SAR means synthetic aperture radar. Advanced engineering here is limited to space-related business."
+              ]
+            },
+            {
+              "section": "[18] SpaceX Rocket Lab and LandSpace Launch Services",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-18",
+              "text": "Rocket Lab Electron · LandSpace products · SpaceX Falcon User’s Guide",
+              "notes": [
+                "Electron’s official product page describes dedicated small-satellite launches, orbit and schedule options, and Kick Stage deployment. LandSpace’s website describes Zhuque research, manufacturing, testing, and launch activities. The article uses the 2025 Falcon User’s Guide: its changelog is dated March 2025, while the filename includes 2025-05-09. Section 3.6, printed page 14, covers multiple payloads, dedicated rideshare missions, and third-party dispensers.",
+                "These materials establish differences between transportation offerings, not rankings. Maximum advertised payload capability varies with orbit and mission conditions and should not be treated as capacity under a common recovery profile. One test does not establish mature reuse, and advertised starting prices are not complete costs for every mission."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c41db2ed4667",
+          "url": "https://www.landspace.com/index.html",
+          "title": "[18] LandSpace · launch activities",
+          "kind": "link",
+          "format": "Web",
+          "host": "landspace.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "The commercial space and advanced engineering value chain",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-value-chain-1-title",
+              "text": "Sources: [15] Hexcel · space materials · [15] Beyond Gravity · structures and separation · [16] Moog · space products · [17] Airbus · test services · [17] Thales Alenia Space · assembly, integration and testing · [18] SpaceX · Falcon User’s Guide · [18] Rocket Lab · Electron · [18] LandSpace · launch activities · [19] Airbus · satellite and bus solutions · [19] Rocket Lab · spacecraft and integration · [20] Starlink · 2024 progress report · [20] Iridium · network · [20] Eutelsat · managed connectivity · [21] Planet · products · [21] BlackSky · constellation and Spectra · [21] ICEYE · SAR data · [21] ICEYE · Flood Insights · [22] NASA · resupply transportation · [22] NASA · Orion and prime contractor · [22] Rocket Lab · NASA Aspera launch award . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore nine business functions, the engineering capabilities behind them, and representative companies with documented roles.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial taxonomy, not a verified supplier-contract network, market-share ranking or exhaustive company list. Companies may span several stages; their revenue must not be counted twice. Government and research customers generate demand across the chain. GEO means geostationary orbit; LEO means low Earth orbit; IoT means Internet of Things; SAR means synthetic aperture radar. Advanced engineering here is limited to space-related business."
+              ]
+            },
+            {
+              "section": "[18] SpaceX Rocket Lab and LandSpace Launch Services",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-18",
+              "text": "Rocket Lab Electron · LandSpace products · SpaceX Falcon User’s Guide",
+              "notes": [
+                "Electron’s official product page describes dedicated small-satellite launches, orbit and schedule options, and Kick Stage deployment. LandSpace’s website describes Zhuque research, manufacturing, testing, and launch activities. The article uses the 2025 Falcon User’s Guide: its changelog is dated March 2025, while the filename includes 2025-05-09. Section 3.6, printed page 14, covers multiple payloads, dedicated rideshare missions, and third-party dispensers.",
+                "These materials establish differences between transportation offerings, not rankings. Maximum advertised payload capability varies with orbit and mission conditions and should not be treated as capacity under a common recovery profile. One test does not establish mature reuse, and advertised starting prices are not complete costs for every mission."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e6644a05fa8e",
+          "url": "https://www.airbus.com/en/products-services/space/telecommunications-and-navigation-satellites/low-earth-orbit-satellite-constellation",
+          "title": "[19] Airbus · satellite and bus solutions",
+          "kind": "link",
+          "format": "Web",
+          "host": "airbus.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "The commercial space and advanced engineering value chain",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-value-chain-1-title",
+              "text": "Sources: [15] Hexcel · space materials · [15] Beyond Gravity · structures and separation · [16] Moog · space products · [17] Airbus · test services · [17] Thales Alenia Space · assembly, integration and testing · [18] SpaceX · Falcon User’s Guide · [18] Rocket Lab · Electron · [18] LandSpace · launch activities · [19] Airbus · satellite and bus solutions · [19] Rocket Lab · spacecraft and integration · [20] Starlink · 2024 progress report · [20] Iridium · network · [20] Eutelsat · managed connectivity · [21] Planet · products · [21] BlackSky · constellation and Spectra · [21] ICEYE · SAR data · [21] ICEYE · Flood Insights · [22] NASA · resupply transportation · [22] NASA · Orion and prime contractor · [22] Rocket Lab · NASA Aspera launch award . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore nine business functions, the engineering capabilities behind them, and representative companies with documented roles.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial taxonomy, not a verified supplier-contract network, market-share ranking or exhaustive company list. Companies may span several stages; their revenue must not be counted twice. Government and research customers generate demand across the chain. GEO means geostationary orbit; LEO means low Earth orbit; IoT means Internet of Things; SAR means synthetic aperture radar. Advanced engineering here is limited to space-related business."
+              ]
+            },
+            {
+              "section": "[19] Airbus Thales and Rocket Lab Spacecraft Platforms",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-19",
+              "text": "Airbus constellation solutions · Thales Alenia Space activities · Rocket Lab spacecraft · NASA complete spacecraft platforms review",
+              "notes": [
+                "Airbus’s constellation page offers complete satellites and platform-only solutions. Thales describes communications, observation, and other systems. The ‘Assembly, Integration & Test’ section of Rocket Lab’s spacecraft page lists spacecraft-level thermal-vacuum, vibration, and electromagnetic compatibility facilities. Chapter 2, Section 2.1 of NASA’s small spacecraft technology review describes a bus’s support functions, including power, thermal control, attitude control, and communications, and distinguishes bus procurement from payload hosting.",
+                "The sources clarify bus and payload responsibilities. Purchasing a bus does not eliminate interface or environmental verification. A bus order should not be assumed to include the customer’s payload or a complete mission. NASA’s market review is a January 2026 snapshot, and its provider list is not a market-share ranking."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e25ba0f38a81",
+          "url": "https://rocketlabcorp.com/space-systems/spacecraft/",
+          "title": "[19] Rocket Lab · spacecraft and integration",
+          "kind": "link",
+          "format": "Web",
+          "host": "rocketlabcorp.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "The commercial space and advanced engineering value chain",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-value-chain-1-title",
+              "text": "Sources: [15] Hexcel · space materials · [15] Beyond Gravity · structures and separation · [16] Moog · space products · [17] Airbus · test services · [17] Thales Alenia Space · assembly, integration and testing · [18] SpaceX · Falcon User’s Guide · [18] Rocket Lab · Electron · [18] LandSpace · launch activities · [19] Airbus · satellite and bus solutions · [19] Rocket Lab · spacecraft and integration · [20] Starlink · 2024 progress report · [20] Iridium · network · [20] Eutelsat · managed connectivity · [21] Planet · products · [21] BlackSky · constellation and Spectra · [21] ICEYE · SAR data · [21] ICEYE · Flood Insights · [22] NASA · resupply transportation · [22] NASA · Orion and prime contractor · [22] Rocket Lab · NASA Aspera launch award . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore nine business functions, the engineering capabilities behind them, and representative companies with documented roles.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial taxonomy, not a verified supplier-contract network, market-share ranking or exhaustive company list. Companies may span several stages; their revenue must not be counted twice. Government and research customers generate demand across the chain. GEO means geostationary orbit; LEO means low Earth orbit; IoT means Internet of Things; SAR means synthetic aperture radar. Advanced engineering here is limited to space-related business."
+              ]
+            },
+            {
+              "section": "[19] Airbus Thales and Rocket Lab Spacecraft Platforms",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-19",
+              "text": "Airbus constellation solutions · Thales Alenia Space activities · Rocket Lab spacecraft · NASA complete spacecraft platforms review",
+              "notes": [
+                "Airbus’s constellation page offers complete satellites and platform-only solutions. Thales describes communications, observation, and other systems. The ‘Assembly, Integration & Test’ section of Rocket Lab’s spacecraft page lists spacecraft-level thermal-vacuum, vibration, and electromagnetic compatibility facilities. Chapter 2, Section 2.1 of NASA’s small spacecraft technology review describes a bus’s support functions, including power, thermal control, attitude control, and communications, and distinguishes bus procurement from payload hosting.",
+                "The sources clarify bus and payload responsibilities. Purchasing a bus does not eliminate interface or environmental verification. A bus order should not be assumed to include the customer’s payload or a complete mission. NASA’s market review is a January 2026 snapshot, and its provider list is not a market-share ranking."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "726a28e175bb",
+          "url": "https://starlink.com/public-files/starlinkProgressReport_2024.pdf",
+          "title": "[20] Starlink · 2024 progress report",
+          "kind": "file",
+          "format": "PDF",
+          "host": "starlink.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "The commercial space and advanced engineering value chain",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-value-chain-1-title",
+              "text": "Sources: [15] Hexcel · space materials · [15] Beyond Gravity · structures and separation · [16] Moog · space products · [17] Airbus · test services · [17] Thales Alenia Space · assembly, integration and testing · [18] SpaceX · Falcon User’s Guide · [18] Rocket Lab · Electron · [18] LandSpace · launch activities · [19] Airbus · satellite and bus solutions · [19] Rocket Lab · spacecraft and integration · [20] Starlink · 2024 progress report · [20] Iridium · network · [20] Eutelsat · managed connectivity · [21] Planet · products · [21] BlackSky · constellation and Spectra · [21] ICEYE · SAR data · [21] ICEYE · Flood Insights · [22] NASA · resupply transportation · [22] NASA · Orion and prime contractor · [22] Rocket Lab · NASA Aspera launch award . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore nine business functions, the engineering capabilities behind them, and representative companies with documented roles.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial taxonomy, not a verified supplier-contract network, market-share ranking or exhaustive company list. Companies may span several stages; their revenue must not be counted twice. Government and research customers generate demand across the chain. GEO means geostationary orbit; LEO means low Earth orbit; IoT means Internet of Things; SAR means synthetic aperture radar. Advanced engineering here is limited to space-related business."
+              ]
+            },
+            {
+              "section": "[20] Starlink Eutelsat and Iridium Networks and Connectivity",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-20",
+              "text": "Starlink 2024 progress report PDF · Iridium services · Iridium network · Eutelsat ADVANCE service announcement · Eutelsat–NEC XON distribution agreement",
+              "notes": [
+                "SpaceX’s Starlink 2024 progress report documents its LEO broadband business. Iridium’s services and Network pages describe voice, data, IoT, intersatellite links, and operational support. Eutelsat launched ADVANCE managed connectivity on June 24, 2021, including capacity, terminals, and network interconnection. Its multiyear distribution agreement with NEC XON, announced November 15, 2023, specifies installation, training, bandwidth, and service-level arrangements. Both announcements come from Eutelsat’s official newsroom and support the discussion of product scope and channel responsibilities.",
+                "A company can appear in both the midstream and downstream sections without its revenue being counted twice. A service menu does not establish availability in every region or paying customers. Residential broadband and narrowband IoT are different businesses. Altitudes and performance figures on older pages are not specifications for every newer model."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a2299d4eaae9",
+          "url": "https://www.iridium.com/network",
+          "title": "[20] Iridium · network",
+          "kind": "link",
+          "format": "Web",
+          "host": "iridium.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "The commercial space and advanced engineering value chain",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-value-chain-1-title",
+              "text": "Sources: [15] Hexcel · space materials · [15] Beyond Gravity · structures and separation · [16] Moog · space products · [17] Airbus · test services · [17] Thales Alenia Space · assembly, integration and testing · [18] SpaceX · Falcon User’s Guide · [18] Rocket Lab · Electron · [18] LandSpace · launch activities · [19] Airbus · satellite and bus solutions · [19] Rocket Lab · spacecraft and integration · [20] Starlink · 2024 progress report · [20] Iridium · network · [20] Eutelsat · managed connectivity · [21] Planet · products · [21] BlackSky · constellation and Spectra · [21] ICEYE · SAR data · [21] ICEYE · Flood Insights · [22] NASA · resupply transportation · [22] NASA · Orion and prime contractor · [22] Rocket Lab · NASA Aspera launch award . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore nine business functions, the engineering capabilities behind them, and representative companies with documented roles.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial taxonomy, not a verified supplier-contract network, market-share ranking or exhaustive company list. Companies may span several stages; their revenue must not be counted twice. Government and research customers generate demand across the chain. GEO means geostationary orbit; LEO means low Earth orbit; IoT means Internet of Things; SAR means synthetic aperture radar. Advanced engineering here is limited to space-related business."
+              ]
+            },
+            {
+              "section": "[20] Starlink Eutelsat and Iridium Networks and Connectivity",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-20",
+              "text": "Starlink 2024 progress report PDF · Iridium services · Iridium network · Eutelsat ADVANCE service announcement · Eutelsat–NEC XON distribution agreement",
+              "notes": [
+                "SpaceX’s Starlink 2024 progress report documents its LEO broadband business. Iridium’s services and Network pages describe voice, data, IoT, intersatellite links, and operational support. Eutelsat launched ADVANCE managed connectivity on June 24, 2021, including capacity, terminals, and network interconnection. Its multiyear distribution agreement with NEC XON, announced November 15, 2023, specifies installation, training, bandwidth, and service-level arrangements. Both announcements come from Eutelsat’s official newsroom and support the discussion of product scope and channel responsibilities.",
+                "A company can appear in both the midstream and downstream sections without its revenue being counted twice. A service menu does not establish availability in every region or paying customers. Residential broadband and narrowband IoT are different businesses. Altitudes and performance figures on older pages are not specifications for every newer model."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b4dca60e8daf",
+          "url": "https://eutelsat-com.mynewsdesk.com/pressreleases/eutelsat-launches-eutelsat-advance-for-end-to-end-managed-connectivity-services-3112157",
+          "title": "Eutelsat ADVANCE service announcement",
+          "kind": "link",
+          "format": "Web",
+          "host": "eutelsat-com.mynewsdesk.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "The commercial space and advanced engineering value chain",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-value-chain-1-title",
+              "text": "Sources: [15] Hexcel · space materials · [15] Beyond Gravity · structures and separation · [16] Moog · space products · [17] Airbus · test services · [17] Thales Alenia Space · assembly, integration and testing · [18] SpaceX · Falcon User’s Guide · [18] Rocket Lab · Electron · [18] LandSpace · launch activities · [19] Airbus · satellite and bus solutions · [19] Rocket Lab · spacecraft and integration · [20] Starlink · 2024 progress report · [20] Iridium · network · [20] Eutelsat · managed connectivity · [21] Planet · products · [21] BlackSky · constellation and Spectra · [21] ICEYE · SAR data · [21] ICEYE · Flood Insights · [22] NASA · resupply transportation · [22] NASA · Orion and prime contractor · [22] Rocket Lab · NASA Aspera launch award . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore nine business functions, the engineering capabilities behind them, and representative companies with documented roles.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial taxonomy, not a verified supplier-contract network, market-share ranking or exhaustive company list. Companies may span several stages; their revenue must not be counted twice. Government and research customers generate demand across the chain. GEO means geostationary orbit; LEO means low Earth orbit; IoT means Internet of Things; SAR means synthetic aperture radar. Advanced engineering here is limited to space-related business."
+              ]
+            },
+            {
+              "section": "[20] Starlink Eutelsat and Iridium Networks and Connectivity",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-20",
+              "text": "Starlink 2024 progress report PDF · Iridium services · Iridium network · Eutelsat ADVANCE service announcement · Eutelsat–NEC XON distribution agreement",
+              "notes": [
+                "SpaceX’s Starlink 2024 progress report documents its LEO broadband business. Iridium’s services and Network pages describe voice, data, IoT, intersatellite links, and operational support. Eutelsat launched ADVANCE managed connectivity on June 24, 2021, including capacity, terminals, and network interconnection. Its multiyear distribution agreement with NEC XON, announced November 15, 2023, specifies installation, training, bandwidth, and service-level arrangements. Both announcements come from Eutelsat’s official newsroom and support the discussion of product scope and channel responsibilities.",
+                "A company can appear in both the midstream and downstream sections without its revenue being counted twice. A service menu does not establish availability in every region or paying customers. Residential broadband and narrowband IoT are different businesses. Altitudes and performance figures on older pages are not specifications for every newer model."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6458f24443fb",
+          "url": "https://www.planet.com/products/",
+          "title": "[21] Planet · products",
+          "kind": "link",
+          "format": "Web",
+          "host": "planet.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "The commercial space and advanced engineering value chain",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-value-chain-1-title",
+              "text": "Sources: [15] Hexcel · space materials · [15] Beyond Gravity · structures and separation · [16] Moog · space products · [17] Airbus · test services · [17] Thales Alenia Space · assembly, integration and testing · [18] SpaceX · Falcon User’s Guide · [18] Rocket Lab · Electron · [18] LandSpace · launch activities · [19] Airbus · satellite and bus solutions · [19] Rocket Lab · spacecraft and integration · [20] Starlink · 2024 progress report · [20] Iridium · network · [20] Eutelsat · managed connectivity · [21] Planet · products · [21] BlackSky · constellation and Spectra · [21] ICEYE · SAR data · [21] ICEYE · Flood Insights · [22] NASA · resupply transportation · [22] NASA · Orion and prime contractor · [22] Rocket Lab · NASA Aspera launch award . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore nine business functions, the engineering capabilities behind them, and representative companies with documented roles.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial taxonomy, not a verified supplier-contract network, market-share ranking or exhaustive company list. Companies may span several stages; their revenue must not be counted twice. Government and research customers generate demand across the chain. GEO means geostationary orbit; LEO means low Earth orbit; IoT means Internet of Things; SAR means synthetic aperture radar. Advanced engineering here is limited to space-related business."
+              ]
+            },
+            {
+              "section": "[21] Planet BlackSky and ICEYE Observation and Analysis",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-21",
+              "text": "Planet products · BlackSky corporate overview · ICEYE satellite data · ICEYE insurance solutions · PlanetScope technical documentation · ICEYE SAR data · ICEYE Flood Insights",
+              "notes": [
+                "Planet’s products and PlanetScope documentation describe optical multispectral imagery, analytics, and lighting requirements. BlackSky describes its constellation and Spectra tasking and analytics platform. ICEYE describes active SAR observations and Flood Insights, which incorporates third-party data, algorithms, and expert analysis. These sources support the distinction between optical imagery, SAR, and the delivery of application services.",
+                "A revisit does not guarantee a usable, cloud-free observation, and image resolution does not establish the quality of a business conclusion. SAR complements optical observations at night and through clouds, but should not be described as free of every operating constraint. Advertised delivery speeds are not contractual guarantees for every mission or evidence of realized customer benefits."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2b6bdd291fb6",
+          "url": "https://ir.blacksky.com/overview/",
+          "title": "[21] BlackSky · constellation and Spectra",
+          "kind": "link",
+          "format": "Web",
+          "host": "ir.blacksky.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "The commercial space and advanced engineering value chain",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-value-chain-1-title",
+              "text": "Sources: [15] Hexcel · space materials · [15] Beyond Gravity · structures and separation · [16] Moog · space products · [17] Airbus · test services · [17] Thales Alenia Space · assembly, integration and testing · [18] SpaceX · Falcon User’s Guide · [18] Rocket Lab · Electron · [18] LandSpace · launch activities · [19] Airbus · satellite and bus solutions · [19] Rocket Lab · spacecraft and integration · [20] Starlink · 2024 progress report · [20] Iridium · network · [20] Eutelsat · managed connectivity · [21] Planet · products · [21] BlackSky · constellation and Spectra · [21] ICEYE · SAR data · [21] ICEYE · Flood Insights · [22] NASA · resupply transportation · [22] NASA · Orion and prime contractor · [22] Rocket Lab · NASA Aspera launch award . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore nine business functions, the engineering capabilities behind them, and representative companies with documented roles.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial taxonomy, not a verified supplier-contract network, market-share ranking or exhaustive company list. Companies may span several stages; their revenue must not be counted twice. Government and research customers generate demand across the chain. GEO means geostationary orbit; LEO means low Earth orbit; IoT means Internet of Things; SAR means synthetic aperture radar. Advanced engineering here is limited to space-related business."
+              ]
+            },
+            {
+              "section": "[21] Planet BlackSky and ICEYE Observation and Analysis",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-21",
+              "text": "Planet products · BlackSky corporate overview · ICEYE satellite data · ICEYE insurance solutions · PlanetScope technical documentation · ICEYE SAR data · ICEYE Flood Insights",
+              "notes": [
+                "Planet’s products and PlanetScope documentation describe optical multispectral imagery, analytics, and lighting requirements. BlackSky describes its constellation and Spectra tasking and analytics platform. ICEYE describes active SAR observations and Flood Insights, which incorporates third-party data, algorithms, and expert analysis. These sources support the distinction between optical imagery, SAR, and the delivery of application services.",
+                "A revisit does not guarantee a usable, cloud-free observation, and image resolution does not establish the quality of a business conclusion. SAR complements optical observations at night and through clouds, but should not be described as free of every operating constraint. Advertised delivery speeds are not contractual guarantees for every mission or evidence of realized customer benefits."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "75c4589ba89f",
+          "url": "https://www.iceye.com/sar-data",
+          "title": "[21] ICEYE · SAR data",
+          "kind": "link",
+          "format": "Web",
+          "host": "iceye.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "The commercial space and advanced engineering value chain",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-value-chain-1-title",
+              "text": "Sources: [15] Hexcel · space materials · [15] Beyond Gravity · structures and separation · [16] Moog · space products · [17] Airbus · test services · [17] Thales Alenia Space · assembly, integration and testing · [18] SpaceX · Falcon User’s Guide · [18] Rocket Lab · Electron · [18] LandSpace · launch activities · [19] Airbus · satellite and bus solutions · [19] Rocket Lab · spacecraft and integration · [20] Starlink · 2024 progress report · [20] Iridium · network · [20] Eutelsat · managed connectivity · [21] Planet · products · [21] BlackSky · constellation and Spectra · [21] ICEYE · SAR data · [21] ICEYE · Flood Insights · [22] NASA · resupply transportation · [22] NASA · Orion and prime contractor · [22] Rocket Lab · NASA Aspera launch award . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore nine business functions, the engineering capabilities behind them, and representative companies with documented roles.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial taxonomy, not a verified supplier-contract network, market-share ranking or exhaustive company list. Companies may span several stages; their revenue must not be counted twice. Government and research customers generate demand across the chain. GEO means geostationary orbit; LEO means low Earth orbit; IoT means Internet of Things; SAR means synthetic aperture radar. Advanced engineering here is limited to space-related business."
+              ]
+            },
+            {
+              "section": "[21] Planet BlackSky and ICEYE Observation and Analysis",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-21",
+              "text": "Planet products · BlackSky corporate overview · ICEYE satellite data · ICEYE insurance solutions · PlanetScope technical documentation · ICEYE SAR data · ICEYE Flood Insights",
+              "notes": [
+                "Planet’s products and PlanetScope documentation describe optical multispectral imagery, analytics, and lighting requirements. BlackSky describes its constellation and Spectra tasking and analytics platform. ICEYE describes active SAR observations and Flood Insights, which incorporates third-party data, algorithms, and expert analysis. These sources support the distinction between optical imagery, SAR, and the delivery of application services.",
+                "A revisit does not guarantee a usable, cloud-free observation, and image resolution does not establish the quality of a business conclusion. SAR complements optical observations at night and through clouds, but should not be described as free of every operating constraint. Advertised delivery speeds are not contractual guarantees for every mission or evidence of realized customer benefits."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bd49db918297",
+          "url": "https://www.iceye.com/solutions/insurance/flood-insights",
+          "title": "[21] ICEYE · Flood Insights",
+          "kind": "link",
+          "format": "Web",
+          "host": "iceye.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "The commercial space and advanced engineering value chain",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-value-chain-1-title",
+              "text": "Sources: [15] Hexcel · space materials · [15] Beyond Gravity · structures and separation · [16] Moog · space products · [17] Airbus · test services · [17] Thales Alenia Space · assembly, integration and testing · [18] SpaceX · Falcon User’s Guide · [18] Rocket Lab · Electron · [18] LandSpace · launch activities · [19] Airbus · satellite and bus solutions · [19] Rocket Lab · spacecraft and integration · [20] Starlink · 2024 progress report · [20] Iridium · network · [20] Eutelsat · managed connectivity · [21] Planet · products · [21] BlackSky · constellation and Spectra · [21] ICEYE · SAR data · [21] ICEYE · Flood Insights · [22] NASA · resupply transportation · [22] NASA · Orion and prime contractor · [22] Rocket Lab · NASA Aspera launch award . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore nine business functions, the engineering capabilities behind them, and representative companies with documented roles.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial taxonomy, not a verified supplier-contract network, market-share ranking or exhaustive company list. Companies may span several stages; their revenue must not be counted twice. Government and research customers generate demand across the chain. GEO means geostationary orbit; LEO means low Earth orbit; IoT means Internet of Things; SAR means synthetic aperture radar. Advanced engineering here is limited to space-related business."
+              ]
+            },
+            {
+              "section": "[21] Planet BlackSky and ICEYE Observation and Analysis",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-21",
+              "text": "Planet products · BlackSky corporate overview · ICEYE satellite data · ICEYE insurance solutions · PlanetScope technical documentation · ICEYE SAR data · ICEYE Flood Insights",
+              "notes": [
+                "Planet’s products and PlanetScope documentation describe optical multispectral imagery, analytics, and lighting requirements. BlackSky describes its constellation and Spectra tasking and analytics platform. ICEYE describes active SAR observations and Flood Insights, which incorporates third-party data, algorithms, and expert analysis. These sources support the distinction between optical imagery, SAR, and the delivery of application services.",
+                "A revisit does not guarantee a usable, cloud-free observation, and image resolution does not establish the quality of a business conclusion. SAR complements optical observations at night and through clouds, but should not be described as free of every operating constraint. Advertised delivery speeds are not contractual guarantees for every mission or evidence of realized customer benefits."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "49fcc95b2af4",
+          "url": "https://www.nasa.gov/international-space-station/commercial-resupply/",
+          "title": "[22] NASA · resupply transportation",
+          "kind": "link",
+          "format": "Web",
+          "host": "nasa.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "The commercial space and advanced engineering value chain",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-value-chain-1-title",
+              "text": "Sources: [15] Hexcel · space materials · [15] Beyond Gravity · structures and separation · [16] Moog · space products · [17] Airbus · test services · [17] Thales Alenia Space · assembly, integration and testing · [18] SpaceX · Falcon User’s Guide · [18] Rocket Lab · Electron · [18] LandSpace · launch activities · [19] Airbus · satellite and bus solutions · [19] Rocket Lab · spacecraft and integration · [20] Starlink · 2024 progress report · [20] Iridium · network · [20] Eutelsat · managed connectivity · [21] Planet · products · [21] BlackSky · constellation and Spectra · [21] ICEYE · SAR data · [21] ICEYE · Flood Insights · [22] NASA · resupply transportation · [22] NASA · Orion and prime contractor · [22] Rocket Lab · NASA Aspera launch award . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore nine business functions, the engineering capabilities behind them, and representative companies with documented roles.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial taxonomy, not a verified supplier-contract network, market-share ranking or exhaustive company list. Companies may span several stages; their revenue must not be counted twice. Government and research customers generate demand across the chain. GEO means geostationary orbit; LEO means low Earth orbit; IoT means Internet of Things; SAR means synthetic aperture radar. Advanced engineering here is limited to space-related business."
+              ]
+            },
+            {
+              "section": "[22] NASA and Contractors Public and Research Missions",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-22",
+              "text": "NASA commercial resupply · NASA Orion reference · Rocket Lab Aspera award · NASA PREFIRE roles and launch announcement",
+              "notes": [
+                "NASA’s resupply page documents Dragon cargo transportation, while its Orion reference identifies Lockheed Martin as the prime contractor. Rocket Lab announced the Aspera award on May 14, 2025. NASA’s May 29, 2024, PREFIRE announcement identifies Blue Canyon as the CubeSat manufacturer, JPL as the spectrometer provider, Rocket Lab as the launch provider, and the University of Wisconsin-Madison as the data processor. PREFIRE’s stated scientific goal is to observe heat escaping from polar regions into space, making the research objective, equipment responsibilities, and contractors’ scope separately traceable.",
+                "The sources distinguish platform, payload, transportation, and research roles. An award is not a completed launch. NASA is a customer agency rather than a competing company. Deep-space research missions do not establish a mature mass-consumer business, and different procurement scopes should not be treated as the same service revenue."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "793bbf2dec5f",
+          "url": "https://www.nasa.gov/reference/orion-spacecraft/",
+          "title": "[22] NASA · Orion and prime contractor",
+          "kind": "link",
+          "format": "Web",
+          "host": "nasa.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "The commercial space and advanced engineering value chain",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-value-chain-1-title",
+              "text": "Sources: [15] Hexcel · space materials · [15] Beyond Gravity · structures and separation · [16] Moog · space products · [17] Airbus · test services · [17] Thales Alenia Space · assembly, integration and testing · [18] SpaceX · Falcon User’s Guide · [18] Rocket Lab · Electron · [18] LandSpace · launch activities · [19] Airbus · satellite and bus solutions · [19] Rocket Lab · spacecraft and integration · [20] Starlink · 2024 progress report · [20] Iridium · network · [20] Eutelsat · managed connectivity · [21] Planet · products · [21] BlackSky · constellation and Spectra · [21] ICEYE · SAR data · [21] ICEYE · Flood Insights · [22] NASA · resupply transportation · [22] NASA · Orion and prime contractor · [22] Rocket Lab · NASA Aspera launch award . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore nine business functions, the engineering capabilities behind them, and representative companies with documented roles.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial taxonomy, not a verified supplier-contract network, market-share ranking or exhaustive company list. Companies may span several stages; their revenue must not be counted twice. Government and research customers generate demand across the chain. GEO means geostationary orbit; LEO means low Earth orbit; IoT means Internet of Things; SAR means synthetic aperture radar. Advanced engineering here is limited to space-related business."
+              ]
+            },
+            {
+              "section": "[22] NASA and Contractors Public and Research Missions",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-22",
+              "text": "NASA commercial resupply · NASA Orion reference · Rocket Lab Aspera award · NASA PREFIRE roles and launch announcement",
+              "notes": [
+                "NASA’s resupply page documents Dragon cargo transportation, while its Orion reference identifies Lockheed Martin as the prime contractor. Rocket Lab announced the Aspera award on May 14, 2025. NASA’s May 29, 2024, PREFIRE announcement identifies Blue Canyon as the CubeSat manufacturer, JPL as the spectrometer provider, Rocket Lab as the launch provider, and the University of Wisconsin-Madison as the data processor. PREFIRE’s stated scientific goal is to observe heat escaping from polar regions into space, making the research objective, equipment responsibilities, and contractors’ scope separately traceable.",
+                "The sources distinguish platform, payload, transportation, and research roles. An award is not a completed launch. NASA is a customer agency rather than a competing company. Deep-space research missions do not establish a mature mass-consumer business, and different procurement scopes should not be treated as the same service revenue."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b34e82bace7c",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-launch-nasa-astrophysics-science-mission-electron",
+          "title": "[22] Rocket Lab · NASA Aspera launch award",
+          "kind": "link",
+          "format": "Web",
+          "host": "investors.rocketlabcorp.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "The commercial space and advanced engineering value chain",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-value-chain-1-title",
+              "text": "Sources: [15] Hexcel · space materials · [15] Beyond Gravity · structures and separation · [16] Moog · space products · [17] Airbus · test services · [17] Thales Alenia Space · assembly, integration and testing · [18] SpaceX · Falcon User’s Guide · [18] Rocket Lab · Electron · [18] LandSpace · launch activities · [19] Airbus · satellite and bus solutions · [19] Rocket Lab · spacecraft and integration · [20] Starlink · 2024 progress report · [20] Iridium · network · [20] Eutelsat · managed connectivity · [21] Planet · products · [21] BlackSky · constellation and Spectra · [21] ICEYE · SAR data · [21] ICEYE · Flood Insights · [22] NASA · resupply transportation · [22] NASA · Orion and prime contractor · [22] Rocket Lab · NASA Aspera launch award . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore nine business functions, the engineering capabilities behind them, and representative companies with documented roles.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial taxonomy, not a verified supplier-contract network, market-share ranking or exhaustive company list. Companies may span several stages; their revenue must not be counted twice. Government and research customers generate demand across the chain. GEO means geostationary orbit; LEO means low Earth orbit; IoT means Internet of Things; SAR means synthetic aperture radar. Advanced engineering here is limited to space-related business."
+              ]
+            },
+            {
+              "section": "[22] NASA and Contractors Public and Research Missions",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-22",
+              "text": "NASA commercial resupply · NASA Orion reference · Rocket Lab Aspera award · NASA PREFIRE roles and launch announcement",
+              "notes": [
+                "NASA’s resupply page documents Dragon cargo transportation, while its Orion reference identifies Lockheed Martin as the prime contractor. Rocket Lab announced the Aspera award on May 14, 2025. NASA’s May 29, 2024, PREFIRE announcement identifies Blue Canyon as the CubeSat manufacturer, JPL as the spectrometer provider, Rocket Lab as the launch provider, and the University of Wisconsin-Madison as the data processor. PREFIRE’s stated scientific goal is to observe heat escaping from polar regions into space, making the research objective, equipment responsibilities, and contractors’ scope separately traceable.",
+                "The sources distinguish platform, payload, transportation, and research roles. An award is not a completed launch. NASA is a customer agency rather than a competing company. Deep-space research missions do not establish a mature mass-consumer business, and different procurement scopes should not be treated as the same service revenue."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "25175d4e4be9",
+          "url": "/data/charts/satellite-revenue-2025.csv",
+          "title": "Global commercial satellite industry revenue mix — data (CSV)",
+          "kind": "file",
+          "format": "CSV",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Global commercial satellite industry revenue mix",
+              "url": "/post/commercial-space-advanced-engineering/#market-share-satellite-revenue-2025-2-title",
+              "text": "Download data (CSV)",
+              "notes": [
+                "Commercial satellite industry under the SIA / BryceTech definition, including ground equipment, satellite services, satellite manufacturing and commercial launch. This is not company market share or the total market for commercial space and advanced engineering.",
+                "Worldwide · Share of commercial satellite industry revenue (%)",
+                "Public-summary figures: approximately US$303 billion in total, comprising US$165.2 billion of ground equipment, US$105.0 billion of satellite services, US$20.4 billion of satellite manufacturing and US$12.4 billion of commercial launch. Each share = segment revenue / 303 × 100, rounded to one decimal place. The displayed shares total 100.0%; there is no residual Other category. The source revenue values are rounded and include mature ground equipment and service businesses. This composition is not a company ranking, an estimate of an individual entrant’s addressable market, or a separate size estimate for space-related advanced engineering. The paid full report was not obtained. Sources were verified through October 3, 2026; this is a historical 2025 snapshot."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ca502e2188b6",
+          "url": "https://sia.org/affordability-productivity-drive-historic-satellite-industry-growth-satellite-industry-association-releases-29th-annual-state-of-the-satellite-industry-report/",
+          "title": "Satellite Industry Association / BryceTech — 29th Annual State of the Satellite Industry Report · public summary",
+          "kind": "link",
+          "format": "Web",
+          "host": "sia.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "Global commercial satellite industry revenue mix",
+              "url": "/post/commercial-space-advanced-engineering/#market-share-satellite-revenue-2025-2-title",
+              "text": "Source: Satellite Industry Association / BryceTech — 29th Annual State of the Satellite Industry Report · public summary (2026-05-13). Reviewed 2026-10-03.",
+              "notes": [
+                "Commercial satellite industry under the SIA / BryceTech definition, including ground equipment, satellite services, satellite manufacturing and commercial launch. This is not company market share or the total market for commercial space and advanced engineering.",
+                "Worldwide · Share of commercial satellite industry revenue (%)",
+                "Public-summary figures: approximately US$303 billion in total, comprising US$165.2 billion of ground equipment, US$105.0 billion of satellite services, US$20.4 billion of satellite manufacturing and US$12.4 billion of commercial launch. Each share = segment revenue / 303 × 100, rounded to one decimal place. The displayed shares total 100.0%; there is no residual Other category. The source revenue values are rounded and include mature ground equipment and service businesses. This composition is not a company ranking, an estimate of an individual entrant’s addressable market, or a separate size estimate for space-related advanced engineering. The paid full report was not obtained. Sources were verified through October 3, 2026; this is a historical 2025 snapshot."
+              ]
+            },
+            {
+              "section": "[4] SIA Public Summary of the 2026 Satellite Industry Report",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-4",
+              "text": "SIA public summary",
+              "notes": [
+                "On May 13, 2026, SIA released the 29th edition of its report, produced by BryceTech. The public summary covers 2025. Commercial satellite industry revenue was approximately US$303 billion. Ground equipment, satellite services, satellite manufacturing, and commercial launch generated approximately US$165.2 billion, US$105.0 billion, US$20.4 billion, and US$12.4 billion, respectively. See ‘Key Revenue and Industry Segment Takeaways’ in the announcement.",
+                "This article uses the public summary; the paid full report was not obtained. These are industry revenues that include substantial ground equipment and established services. They are not a separate market estimate for commercial space and advanced engineering, nor an estimate of the market accessible to new entrants. Segment figures are approximate."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "351a295e0e6f",
+          "url": "/data/charts/rocket-lab-revenue-2025.csv",
+          "title": "Rocket Lab revenue mix — data (CSV)",
+          "kind": "file",
+          "format": "CSV",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Rocket Lab revenue mix",
+              "url": "/post/commercial-space-advanced-engineering/#market-share-rocket-lab-revenue-2025-3-title",
+              "text": "Download data (CSV)",
+              "notes": [
+                "Rocket Lab consolidated revenue for the year ended December 31, 2025. Space Systems includes spacecraft, systems, components and related services. This is one company’s revenue composition, not industry market share or component revenue alone.",
+                "Worldwide company revenue · Share of Rocket Lab revenue (%)",
+                "Original annual-report figures are in thousands of U.S. dollars: Space Systems 402,757; Launch Services 199,042; total 601,799. Converted to millions, these are US$402.757 million, US$199.042 million and US$601.799 million. Shares = each segment / 601,799 × 100, rounded to one decimal place, totaling 100.0%. Revenue is distinct from profit, backlog and cash receipts. These figures describe Rocket Lab and do not rank commercial space companies. Sources were verified through October 3, 2026; the chart does not extend that research cutoff."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d9031ee47849",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819994/000181999426000013/rklb-20251231.htm",
+          "title": "Rocket Lab / U.S. Securities and Exchange Commission — Rocket Lab 2025 Form 10-K",
+          "kind": "link",
+          "format": "Web",
+          "host": "sec.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "Rocket Lab revenue mix",
+              "url": "/post/commercial-space-advanced-engineering/#market-share-rocket-lab-revenue-2025-3-title",
+              "text": "Source: Rocket Lab / U.S. Securities and Exchange Commission — Rocket Lab 2025 Form 10-K (2026-02-26). Reviewed 2026-10-03.",
+              "notes": [
+                "Rocket Lab consolidated revenue for the year ended December 31, 2025. Space Systems includes spacecraft, systems, components and related services. This is one company’s revenue composition, not industry market share or component revenue alone.",
+                "Worldwide company revenue · Share of Rocket Lab revenue (%)",
+                "Original annual-report figures are in thousands of U.S. dollars: Space Systems 402,757; Launch Services 199,042; total 601,799. Converted to millions, these are US$402.757 million, US$199.042 million and US$601.799 million. Shares = each segment / 601,799 × 100, rounded to one decimal place, totaling 100.0%. Revenue is distinct from profit, backlog and cash receipts. These figures describe Rocket Lab and do not rank commercial space companies. Sources were verified through October 3, 2026; the chart does not extend that research cutoff."
+              ]
+            },
+            {
+              "section": "From engineering capability to sustained business",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-business-4-title",
+              "text": "Sources: [1] SES · evidence of first-stage reflight · [3] Rocket Lab · 2025 Form 10-K · [9] Rocket Lab · 2025 financial results · [13] Airbus · batch manufacturing · [17] Airbus · testing and verification · [23] Airbus · manufacturing delivery status · [24] NASA · funding and milestone mechanisms · [10] ESA · lifetime operating responsibilities . Reviewed 2026-10-03.",
+              "notes": [
+                "Separate technical validation, customer orders, execution, delivery, revenue and cash when assessing a commercial space business.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial synthesis of the operating mechanisms in Parts 1, 3 and 4. Branches organize questions and do not imply a universal accounting or payment sequence. Technical capability, signed orders, recognized revenue, cash receipts and profit are different measures; none can substitute for the others. Licensing conditions and contractual terms depend on the country and mission."
+              ]
+            },
+            {
+              "section": "[3] Rocket Lab 2025 Form 10-K",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-3",
+              "text": "SEC annual report",
+              "notes": [
+                "Rocket Lab’s annual report filed with the SEC covers the year ended December 31, 2025, and was signed on February 26, 2026. Item 1 describes launch, space systems, and component businesses. Item 1A discusses fixed-price execution risk. Financial notes 20 and 21 disclose business segments and customer concentration, respectively; the report also includes backlog and cash flow information. Sales in 2025 were predominantly fixed-price. Cost overruns can reduce profitability, and development estimates carry uncertainty. This risk disclosure does not establish that every contract lost money.",
+                "The report supports analysis of the company’s business structure and operating challenges. Space Systems includes spacecraft and systems, rather than components alone. One government customer accounted for 28% of revenue; that customer cannot automatically be identified as SDA, and the percentage is not the share of all government revenue."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4687bafccc5c",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-fourth-quarter-and-full-year-2025-financial",
+          "title": "[9] Rocket Lab · 2025 financial results",
+          "kind": "link",
+          "format": "Web",
+          "host": "investors.rocketlabcorp.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "From engineering capability to sustained business",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-business-4-title",
+              "text": "Sources: [1] SES · evidence of first-stage reflight · [3] Rocket Lab · 2025 Form 10-K · [9] Rocket Lab · 2025 financial results · [13] Airbus · batch manufacturing · [17] Airbus · testing and verification · [23] Airbus · manufacturing delivery status · [24] NASA · funding and milestone mechanisms · [10] ESA · lifetime operating responsibilities . Reviewed 2026-10-03.",
+              "notes": [
+                "Separate technical validation, customer orders, execution, delivery, revenue and cash when assessing a commercial space business.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial synthesis of the operating mechanisms in Parts 1, 3 and 4. Branches organize questions and do not imply a universal accounting or payment sequence. Technical capability, signed orders, recognized revenue, cash receipts and profit are different measures; none can substitute for the others. Licensing conditions and contractual terms depend on the country and mission."
+              ]
+            },
+            {
+              "section": "[9] Rocket Lab Full-Year 2025 Financial Results",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-9",
+              "text": "Rocket Lab full-year financial release",
+              "notes": [
+                "The February 26, 2026, financial release and the annual report in [3] show approximately US$602 million of 2025 revenue, a US$198 million net loss, and US$166 million of net cash used in operating activities. Year-end backlog was approximately US$1.847 billion. Note 20 of the annual report reports approximately US$199 million of launch revenue and US$403 million of Space Systems revenue. See the annual income and cash flow statements, backlog disclosures, and segment note. The annual report defines backlog as remaining work under enforceable contracts. Typical contracts allow termination with notice and a fee; expected revenue recognition is not a cash collection schedule.",
+                "The original tables are in thousands of U.S. dollars; the article converts and rounds the figures. Backlog excludes unexercised options and is neither revenue nor cash. Approximately 37% recognition within 12 months was a year-end expectation. The revenue mix is calculated from the original values in thousands: 402,757 ÷ 601,799 × 100% ≈ 66.9%. It is not industry market share. The release labels its financial tables unaudited; the annual report provides a cross-check."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1c8d9748ee1f",
+          "url": "https://www.esa.int/Space_Safety/Space_Debris/ESA_Space_Environment_Report_2026",
+          "title": "[10] ESA · lifetime operating responsibilities",
+          "kind": "link",
+          "format": "Web",
+          "host": "esa.int",
+          "local": false,
+          "citations": [
+            {
+              "section": "From engineering capability to sustained business",
+              "url": "/post/commercial-space-advanced-engineering/#industry-map-commercial-space-business-4-title",
+              "text": "Sources: [1] SES · evidence of first-stage reflight · [3] Rocket Lab · 2025 Form 10-K · [9] Rocket Lab · 2025 financial results · [13] Airbus · batch manufacturing · [17] Airbus · testing and verification · [23] Airbus · manufacturing delivery status · [24] NASA · funding and milestone mechanisms · [10] ESA · lifetime operating responsibilities . Reviewed 2026-10-03.",
+              "notes": [
+                "Separate technical validation, customer orders, execution, delivery, revenue and cash when assessing a commercial space business.",
+                "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial synthesis of the operating mechanisms in Parts 1, 3 and 4. Branches organize questions and do not imply a universal accounting or payment sequence. Technical capability, signed orders, recognized revenue, cash receipts and profit are different measures; none can substitute for the others. Licensing conditions and contractual terms depend on the country and mission."
+              ]
+            },
+            {
+              "section": "[10] ESA Space Environment Report 2026",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-10",
+              "text": "ESA report overview · ESA full report PDF",
+              "notes": [
+                "ESA published the overview on September 14, 2026. The full report is Issue/Revision 10.1, issued September 8, 2026, with statistical data mainly through the end of 2025. It addresses congested orbits, collisions, and end-of-life disposal. Section 7.2 of the full report examines future scenarios, including the possibility of debris increasing even after new launches cease.",
+                "These are not full-year 2026 observations. Section 7.2 uses the DELTA-4 model, with 100 Monte Carlo simulations per scenario over a 100-year horizon. Results depend on assumptions about launches, explosions, disposal, and other factors; they are not certain forecasts. The report does not establish that debris removal is profitable. ESA project standards are not global law."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "818e492029f2",
+          "url": "https://www.nasa.gov/news-release/nasa-hails-success-of-commercial-space-program-private-space-station-resupply-underway-plans-readied-for-astronauts/",
+          "title": "NASA COTS program summary",
+          "kind": "link",
+          "format": "Web",
+          "host": "nasa.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[2] NASA COTS Development and Commercial Resupply Services",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-2",
+              "text": "NASA COTS program summary · NASA commercial resupply overview",
+              "notes": [
+                "NASA’s COTS program summary and Commercial Resupply Services overview support the history of commercial transportation development beginning in 2006 and subsequent purchases of space station resupply services. The program summary was published in 2013 and describes the development and demonstration stage at that time. The resupply page explains NASA’s role as a transportation customer. Legal arrangements and payment mechanisms are detailed in [24].",
+                "COTS development support and CRS service procurement were different arrangements that overlapped in time. The first CRS awards did not wait until the demonstrations were complete. The U.S. example should not be presented as a common institutional model for every country."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8cde74fa1982",
+          "url": "https://www.nasa.gov/commercial-resupply-services-overview/",
+          "title": "NASA commercial resupply overview",
+          "kind": "link",
+          "format": "Web",
+          "host": "nasa.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[2] NASA COTS Development and Commercial Resupply Services",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-2",
+              "text": "NASA COTS program summary · NASA commercial resupply overview",
+              "notes": [
+                "NASA’s COTS program summary and Commercial Resupply Services overview support the history of commercial transportation development beginning in 2006 and subsequent purchases of space station resupply services. The program summary was published in 2013 and describes the development and demonstration stage at that time. The resupply page explains NASA’s role as a transportation customer. Legal arrangements and payment mechanisms are detailed in [24].",
+                "COTS development support and CRS service procurement were different arrangements that overlapped in time. The first CRS awards did not wait until the demonstrations were complete. The U.S. example should not be presented as a common institutional model for every country."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "9b71585c7e74",
+          "url": "https://www.sda.mil/space-development-agency-makes-awards-to-build-72-tracking-layer-satellites-for-tranche-3/",
+          "title": "SDA procurement announcement",
+          "kind": "link",
+          "format": "Web",
+          "host": "sda.mil",
+          "local": false,
+          "citations": [
+            {
+              "section": "[5] SDA Procurement of 72 Tranche 3 Tracking Layer Satellites",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-5",
+              "text": "SDA procurement announcement",
+              "notes": [
+                "The U.S. Space Development Agency announced four OTA agreements on December 19, 2025, with a combined value of approximately US$3.5 billion. Teams led by Lockheed Martin, Rocket Lab, Northrop Grumman, and L3Harris are each to deliver and operate 18 satellites, for a total of 72, with launches planned for U.S. fiscal year 2029. See the opening of the announcement and the list of four potential agreement values.",
+                "This is a specific defense program, not a measure of civilian industry growth. The figures are potential agreement values covering mission responsibilities, not cash received or unit prices for manufacturing alone."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7d7fad9df09c",
+          "url": "https://www.mynewsdesk.com/eutelsat/pressreleases/eutelsat-a-unified-brand-for-a-connected-future-3402790",
+          "title": "Eutelsat unified-brand newsroom announcement",
+          "kind": "link",
+          "format": "Web",
+          "host": "mynewsdesk.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[6] Eutelsat Integration of GEO and OneWeb Businesses",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-6",
+              "text": "Eutelsat unified-brand newsroom announcement",
+              "notes": [
+                "Eutelsat issued a unified-brand announcement on September 4, 2025, describing the integration of its GEO and OneWeb LEO businesses within one corporate organization. It supports the discussion of a multi-orbit operating approach. Additional network and product sources appear in [20]. GEO and LEO refer here to geostationary orbit and low Earth orbit, respectively.",
+                "Brand and organizational integration establish the company’s chosen approach. They do not establish that integration necessarily reduced costs, delivered superior performance across all services, or produced profitable synergies. Different orbits must be assessed against specific capacity, customer, and mission requirements."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f906b6f96365",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/airbus-awards-rocket-lab-contract-power-next-gen-oneweb",
+          "title": "Rocket Lab contract announcement",
+          "kind": "link",
+          "format": "Web",
+          "host": "investors.rocketlabcorp.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[7] Rocket Lab Airbus OneWeb Solar Panel Contract",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-7",
+              "text": "Rocket Lab contract announcement",
+              "notes": [
+                "Rocket Lab announced on March 12, 2025, that it would supply 200 solar panels for 100 Eutelsat OneWeb LEO satellites manufactured by Airbus. The panels include carbon composite substrates, solar cells, and photovoltaic assemblies, with production planned in Albuquerque. See the first four paragraphs. This is an identified procurement relationship connecting an operator, a satellite manufacturer, and a component supplier.",
+                "The announcement does not disclose the contract value, profit, or cash receipts. Two hundred panels do not mean 200 satellites. An order does not establish complete delivery or operation in orbit."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "808e7b019ef0",
+          "url": "https://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/2024/2024_zt03/zfgzbg/zfgzbg_qw/202403/t20240313_1120091.html",
+          "title": "Full text republished by the Ministry of Education",
+          "kind": "link",
+          "format": "Web",
+          "host": "moe.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[8] China 2024 Government Work Report",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-8",
+              "text": "Full text republished by the Ministry of Education · NDRC republication",
+              "notes": [
+                "The Government Work Report was delivered on March 5, 2024, at the second session of the 14th National People’s Congress. It identified commercial space among new growth engines to be developed. The original draft used a Ministry of Education republication; a National Development and Reform Commission republication is also provided. See the discussion of emerging and future industries under building a modern industrial system in ‘Tasks for 2024.’",
+                "The policy statement supports an assessment of development priorities. It does not award a contract to any company discussed in this article. It cannot establish orders, deliveries, revenue, or profit. The report date and the date of a website’s republication must also be distinguished."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4772130aabb2",
+          "url": "https://www.ndrc.gov.cn/fzggw/jgsj/zys/sjdt/202403/t20240320_1365089.html",
+          "title": "NDRC republication",
+          "kind": "link",
+          "format": "Web",
+          "host": "ndrc.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[8] China 2024 Government Work Report",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-8",
+              "text": "Full text republished by the Ministry of Education · NDRC republication",
+              "notes": [
+                "The Government Work Report was delivered on March 5, 2024, at the second session of the 14th National People’s Congress. It identified commercial space among new growth engines to be developed. The original draft used a Ministry of Education republication; a National Development and Reform Commission republication is also provided. See the discussion of emerging and future industries under building a modern industrial system in ‘Tasks for 2024.’",
+                "The policy statement supports an assessment of development priorities. It does not award a contract to any company discussed in this article. It cannot establish orders, deliveries, revenue, or profit. The report date and the date of a website’s republication must also be distinguished."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0e158f46d938",
+          "url": "https://www.sdo.esoc.esa.int/environment_report/Space_Environment_Report_I10R1_20260908.pdf",
+          "title": "ESA full report PDF",
+          "kind": "file",
+          "format": "PDF",
+          "host": "sdo.esoc.esa.int",
+          "local": false,
+          "citations": [
+            {
+              "section": "[10] ESA Space Environment Report 2026",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-10",
+              "text": "ESA report overview · ESA full report PDF",
+              "notes": [
+                "ESA published the overview on September 14, 2026. The full report is Issue/Revision 10.1, issued September 8, 2026, with statistical data mainly through the end of 2025. It addresses congested orbits, collisions, and end-of-life disposal. Section 7.2 of the full report examines future scenarios, including the possibility of debris increasing even after new launches cease.",
+                "These are not full-year 2026 observations. Section 7.2 uses the DELTA-4 model, with 100 Monte Carlo simulations per scenario over a 100-year horizon. Results depend on assumptions about launches, explosions, disposal, and other factors; they are not certain forecasts. The report does not establish that debris removal is profitable. ESA project standards are not global law."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7f0f6a5bda7e",
+          "url": "https://www.nasa.gov/history/telstar-opened-era-of-global-satellite-television/",
+          "title": "NASA Telstar retrospective",
+          "kind": "link",
+          "format": "Web",
+          "host": "nasa.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[11] NASA Early Satellite Communications History",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-11",
+              "text": "NASA satellite communications history · NASA Telstar retrospective",
+              "notes": [
+                "NASA’s historical material records the launches of Telstar 1 on July 10, 1962, and Early Bird on April 6, 1965. The official Telstar retrospective was published July 10, 2012. See the beginning of that article and ‘The Billion Dollar Technology’ and ‘The Global Village’ in Communications Satellites for the transition from television demonstrations to international communications services. NASA also records the INTELSAT organizational agreement of August 20, 1964, adding context on international coordination and commercial communications.",
+                "Telstar should not be described as the ‘first active communications satellite’ without defining the claim. Historical prices, cumulative network figures, and references to what was ‘current’ in these articles do not describe the industry’s position in 2026."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c9b727019e86",
+          "url": "https://rocketlabcorp.com/space-systems/satellite-components/reaction-wheels/",
+          "title": "Rocket Lab reaction wheels",
+          "kind": "link",
+          "format": "Web",
+          "host": "rocketlabcorp.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[16] Moog and Rocket Lab Propulsion Avionics and Attitude Control",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-16",
+              "text": "Moog space products · Rocket Lab reaction wheels · ST-16HV datasheet · NASA JPL: SWOT spacecraft",
+              "notes": [
+                "Moog’s product page documents propulsion, fluid control, avionics, power, and mechanisms. Rocket Lab’s reaction wheel page describes speed, angular momentum, and torque commands. Version 2 of the ST-16HV datasheet, dated April 11, 2023, lists a star catalog, processor, and attitude outputs. JPL’s SWOT material explains determining attitude through stellar observations, controlling pointing with reaction wheels, and adjusting orbit with thrusters.",
+                "These sources distinguish sensor measurements from actuator commands. Data for one model should not be generalized to every product, and design targets should not be presented as universally demonstrated performance. Attitude control and orbital maneuvering are different functions. Rocket Lab’s broader component portfolio is covered in [3]."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "59230ce74ce5",
+          "url": "https://rocketlabcorp.com/assets/Uploads/RL-ST-16HV-Data-Sheet-v2.pdf",
+          "title": "ST-16HV datasheet",
+          "kind": "file",
+          "format": "PDF",
+          "host": "rocketlabcorp.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[16] Moog and Rocket Lab Propulsion Avionics and Attitude Control",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-16",
+              "text": "Moog space products · Rocket Lab reaction wheels · ST-16HV datasheet · NASA JPL: SWOT spacecraft",
+              "notes": [
+                "Moog’s product page documents propulsion, fluid control, avionics, power, and mechanisms. Rocket Lab’s reaction wheel page describes speed, angular momentum, and torque commands. Version 2 of the ST-16HV datasheet, dated April 11, 2023, lists a star catalog, processor, and attitude outputs. JPL’s SWOT material explains determining attitude through stellar observations, controlling pointing with reaction wheels, and adjusting orbit with thrusters.",
+                "These sources distinguish sensor measurements from actuator commands. Data for one model should not be generalized to every product, and design targets should not be presented as universally demonstrated performance. Attitude control and orbital maneuvering are different functions. Rocket Lab’s broader component portfolio is covered in [3]."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f3a6ca088a2e",
+          "url": "https://www.jpl.nasa.gov/press-kits/swot/mission-overview/spacecraft/",
+          "title": "NASA JPL: SWOT spacecraft",
+          "kind": "link",
+          "format": "Web",
+          "host": "jpl.nasa.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[16] Moog and Rocket Lab Propulsion Avionics and Attitude Control",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-16",
+              "text": "Moog space products · Rocket Lab reaction wheels · ST-16HV datasheet · NASA JPL: SWOT spacecraft",
+              "notes": [
+                "Moog’s product page documents propulsion, fluid control, avionics, power, and mechanisms. Rocket Lab’s reaction wheel page describes speed, angular momentum, and torque commands. Version 2 of the ST-16HV datasheet, dated April 11, 2023, lists a star catalog, processor, and attitude outputs. JPL’s SWOT material explains determining attitude through stellar observations, controlling pointing with reaction wheels, and adjusting orbit with thrusters.",
+                "These sources distinguish sensor measurements from actuator commands. Data for one model should not be generalized to every product, and design targets should not be presented as universally demonstrated performance. Attitude control and orbital maneuvering are different functions. Rocket Lab’s broader component portfolio is covered in [3]."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8b2d9f42ba8c",
+          "url": "https://www.thalesaleniaspace.com/en/what-we-do",
+          "title": "Thales Alenia Space activities",
+          "kind": "link",
+          "format": "Web",
+          "host": "thalesaleniaspace.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[19] Airbus Thales and Rocket Lab Spacecraft Platforms",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-19",
+              "text": "Airbus constellation solutions · Thales Alenia Space activities · Rocket Lab spacecraft · NASA complete spacecraft platforms review",
+              "notes": [
+                "Airbus’s constellation page offers complete satellites and platform-only solutions. Thales describes communications, observation, and other systems. The ‘Assembly, Integration & Test’ section of Rocket Lab’s spacecraft page lists spacecraft-level thermal-vacuum, vibration, and electromagnetic compatibility facilities. Chapter 2, Section 2.1 of NASA’s small spacecraft technology review describes a bus’s support functions, including power, thermal control, attitude control, and communications, and distinguishes bus procurement from payload hosting.",
+                "The sources clarify bus and payload responsibilities. Purchasing a bus does not eliminate interface or environmental verification. A bus order should not be assumed to include the customer’s payload or a complete mission. NASA’s market review is a January 2026 snapshot, and its provider list is not a market-share ranking."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4889e4120aca",
+          "url": "https://www.nasa.gov/smallsat-institute/sst-soa/platforms/",
+          "title": "NASA complete spacecraft platforms review",
+          "kind": "link",
+          "format": "Web",
+          "host": "nasa.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[19] Airbus Thales and Rocket Lab Spacecraft Platforms",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-19",
+              "text": "Airbus constellation solutions · Thales Alenia Space activities · Rocket Lab spacecraft · NASA complete spacecraft platforms review",
+              "notes": [
+                "Airbus’s constellation page offers complete satellites and platform-only solutions. Thales describes communications, observation, and other systems. The ‘Assembly, Integration & Test’ section of Rocket Lab’s spacecraft page lists spacecraft-level thermal-vacuum, vibration, and electromagnetic compatibility facilities. Chapter 2, Section 2.1 of NASA’s small spacecraft technology review describes a bus’s support functions, including power, thermal control, attitude control, and communications, and distinguishes bus procurement from payload hosting.",
+                "The sources clarify bus and payload responsibilities. Purchasing a bus does not eliminate interface or environmental verification. A bus order should not be assumed to include the customer’s payload or a complete mission. NASA’s market review is a January 2026 snapshot, and its provider list is not a market-share ranking."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4adaf3ba69f3",
+          "url": "https://www.iridium.com/services/",
+          "title": "Iridium services",
+          "kind": "link",
+          "format": "Web",
+          "host": "iridium.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[20] Starlink Eutelsat and Iridium Networks and Connectivity",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-20",
+              "text": "Starlink 2024 progress report PDF · Iridium services · Iridium network · Eutelsat ADVANCE service announcement · Eutelsat–NEC XON distribution agreement",
+              "notes": [
+                "SpaceX’s Starlink 2024 progress report documents its LEO broadband business. Iridium’s services and Network pages describe voice, data, IoT, intersatellite links, and operational support. Eutelsat launched ADVANCE managed connectivity on June 24, 2021, including capacity, terminals, and network interconnection. Its multiyear distribution agreement with NEC XON, announced November 15, 2023, specifies installation, training, bandwidth, and service-level arrangements. Both announcements come from Eutelsat’s official newsroom and support the discussion of product scope and channel responsibilities.",
+                "A company can appear in both the midstream and downstream sections without its revenue being counted twice. A service menu does not establish availability in every region or paying customers. Residential broadband and narrowband IoT are different businesses. Altitudes and performance figures on older pages are not specifications for every newer model."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6afbfbee3b8e",
+          "url": "https://www.mynewsdesk.com/eutelsat/pressreleases/nec-xon-and-eutelsat-oneweb-sign-distribution-agreement-for-leo-capacity-in-sub-saharan-africa-3286564",
+          "title": "Eutelsat–NEC XON distribution agreement",
+          "kind": "link",
+          "format": "Web",
+          "host": "mynewsdesk.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[20] Starlink Eutelsat and Iridium Networks and Connectivity",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-20",
+              "text": "Starlink 2024 progress report PDF · Iridium services · Iridium network · Eutelsat ADVANCE service announcement · Eutelsat–NEC XON distribution agreement",
+              "notes": [
+                "SpaceX’s Starlink 2024 progress report documents its LEO broadband business. Iridium’s services and Network pages describe voice, data, IoT, intersatellite links, and operational support. Eutelsat launched ADVANCE managed connectivity on June 24, 2021, including capacity, terminals, and network interconnection. Its multiyear distribution agreement with NEC XON, announced November 15, 2023, specifies installation, training, bandwidth, and service-level arrangements. Both announcements come from Eutelsat’s official newsroom and support the discussion of product scope and channel responsibilities.",
+                "A company can appear in both the midstream and downstream sections without its revenue being counted twice. A service menu does not establish availability in every region or paying customers. Residential broadband and narrowband IoT are different businesses. Altitudes and performance figures on older pages are not specifications for every newer model."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1fe4714048d9",
+          "url": "https://www.iceye.com/satellite-data",
+          "title": "ICEYE satellite data",
+          "kind": "link",
+          "format": "Web",
+          "host": "iceye.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[21] Planet BlackSky and ICEYE Observation and Analysis",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-21",
+              "text": "Planet products · BlackSky corporate overview · ICEYE satellite data · ICEYE insurance solutions · PlanetScope technical documentation · ICEYE SAR data · ICEYE Flood Insights",
+              "notes": [
+                "Planet’s products and PlanetScope documentation describe optical multispectral imagery, analytics, and lighting requirements. BlackSky describes its constellation and Spectra tasking and analytics platform. ICEYE describes active SAR observations and Flood Insights, which incorporates third-party data, algorithms, and expert analysis. These sources support the distinction between optical imagery, SAR, and the delivery of application services.",
+                "A revisit does not guarantee a usable, cloud-free observation, and image resolution does not establish the quality of a business conclusion. SAR complements optical observations at night and through clouds, but should not be described as free of every operating constraint. Advertised delivery speeds are not contractual guarantees for every mission or evidence of realized customer benefits."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ecd2a5c2864e",
+          "url": "https://www.iceye.com/solutions/insurance",
+          "title": "ICEYE insurance solutions",
+          "kind": "link",
+          "format": "Web",
+          "host": "iceye.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[21] Planet BlackSky and ICEYE Observation and Analysis",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-21",
+              "text": "Planet products · BlackSky corporate overview · ICEYE satellite data · ICEYE insurance solutions · PlanetScope technical documentation · ICEYE SAR data · ICEYE Flood Insights",
+              "notes": [
+                "Planet’s products and PlanetScope documentation describe optical multispectral imagery, analytics, and lighting requirements. BlackSky describes its constellation and Spectra tasking and analytics platform. ICEYE describes active SAR observations and Flood Insights, which incorporates third-party data, algorithms, and expert analysis. These sources support the distinction between optical imagery, SAR, and the delivery of application services.",
+                "A revisit does not guarantee a usable, cloud-free observation, and image resolution does not establish the quality of a business conclusion. SAR complements optical observations at night and through clouds, but should not be described as free of every operating constraint. Advertised delivery speeds are not contractual guarantees for every mission or evidence of realized customer benefits."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "878b77687aa3",
+          "url": "https://docs.planet.com/data/imagery/planetscope/",
+          "title": "PlanetScope technical documentation",
+          "kind": "link",
+          "format": "Web",
+          "host": "docs.planet.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[21] Planet BlackSky and ICEYE Observation and Analysis",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-21",
+              "text": "Planet products · BlackSky corporate overview · ICEYE satellite data · ICEYE insurance solutions · PlanetScope technical documentation · ICEYE SAR data · ICEYE Flood Insights",
+              "notes": [
+                "Planet’s products and PlanetScope documentation describe optical multispectral imagery, analytics, and lighting requirements. BlackSky describes its constellation and Spectra tasking and analytics platform. ICEYE describes active SAR observations and Flood Insights, which incorporates third-party data, algorithms, and expert analysis. These sources support the distinction between optical imagery, SAR, and the delivery of application services.",
+                "A revisit does not guarantee a usable, cloud-free observation, and image resolution does not establish the quality of a business conclusion. SAR complements optical observations at night and through clouds, but should not be described as free of every operating constraint. Advertised delivery speeds are not contractual guarantees for every mission or evidence of realized customer benefits."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c8012c03d6e7",
+          "url": "https://www.nasa.gov/blogs/smallsatellites/2024/05/29/launch-set-for-nasas-second-prefire-climate-mission/",
+          "title": "NASA PREFIRE roles and launch announcement",
+          "kind": "link",
+          "format": "Web",
+          "host": "nasa.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[22] NASA and Contractors Public and Research Missions",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-22",
+              "text": "NASA commercial resupply · NASA Orion reference · Rocket Lab Aspera award · NASA PREFIRE roles and launch announcement",
+              "notes": [
+                "NASA’s resupply page documents Dragon cargo transportation, while its Orion reference identifies Lockheed Martin as the prime contractor. Rocket Lab announced the Aspera award on May 14, 2025. NASA’s May 29, 2024, PREFIRE announcement identifies Blue Canyon as the CubeSat manufacturer, JPL as the spectrometer provider, Rocket Lab as the launch provider, and the University of Wisconsin-Madison as the data processor. PREFIRE’s stated scientific goal is to observe heat escaping from polar regions into space, making the research objective, equipment responsibilities, and contractors’ scope separately traceable.",
+                "The sources distinguish platform, payload, transportation, and research roles. An award is not a completed launch. NASA is a customer agency rather than a competing company. Deep-space research missions do not establish a mature mass-consumer business, and different procurement scopes should not be treated as the same service revenue."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "30d0a7e0a2a0",
+          "url": "https://www.nasa.gov/history/10-years-ago-the-first-operational-cygnus-cargo-mission-to-the-space-station/",
+          "title": "NASA Cygnus historical retrospective",
+          "kind": "link",
+          "format": "Web",
+          "host": "nasa.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[24] NASA 2014 COTS Final Report",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-24",
+              "text": "NASA COTS final report PDF · NASA Cygnus historical retrospective",
+              "notes": [
+                "NASA/SP-2014-617, May 2014. Printed pages 12–14 and 20–23 explain Space Act Agreements and milestone payments. Pages 31–33 discuss termination after Rocketplane Kistler’s funding shortfall and the selection of Orbital. Pages 82–83 describe the advance CRS awards on December 23, 2008, their overlap with COTS demonstrations, and service procurement under the Federal Acquisition Regulation. This article uses the complete report and distinguishes the two arrangements.",
+                "The agreements required companies to contribute their own funding and bear overruns in meeting the milestones. Printed page 38 also records additional funding in 2010; fixed milestone amounts therefore did not mean the program budget could never change. Termination of the Rocketplane Kistler agreement in 2007 was a specific historical case and should not be generalized to every project."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2e5532f30a1a",
+          "url": "https://www.govinfo.gov/content/pkg/FR-2024-08-09/html/2024-17093.htm",
+          "title": "Federal Register rule text",
+          "kind": "link",
+          "format": "Web",
+          "host": "govinfo.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[25] FCC Five-Year Disposal Rule for Specified LEO Space Stations",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-25",
+              "text": "Federal Register rule text",
+              "notes": [
+                "The official Federal Register notice, 89 FR 65217–65223, dated August 9, 2024, includes 47 CFR 25.283(e). For covered space stations ending their mission in, or passing through, the region below 2,000 kilometers and planning disposal through uncontrolled atmospheric reentry, disposal must occur as soon as practicable after mission end and no later than five years afterward. The relevant amendments took effect September 9, with compliance requirements beginning September 29.",
+                "The scope includes relevant FCC authorizations and access to the U.S. market by systems licensed outside the United States; it is not a rule for all satellites worldwide. Satellites already in orbit when the rule was adopted are exempt. Previously licensed but unlaunched systems have a two-year transition, and individual waivers are available. For maneuverable spacecraft, mission end is when collision-avoidance maneuvers can no longer be performed; for others, it is completion of the primary mission."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dcc662b08066",
+          "url": "https://www.faa.gov/newsroom/faa-streamlines-commercial-space-license-approvals",
+          "title": "FAA 2026 licensing announcement",
+          "kind": "link",
+          "format": "Web",
+          "host": "faa.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[26] FAA Transition to Part 450 Vehicle Licensing",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-26",
+              "text": "FAA 2026 licensing announcement · FAA international jurisdiction overview",
+              "notes": [
+                "The FAA’s March 17, 2026, announcement on streamlining commercial space licensing describes the transition of launch and reentry vehicle licenses to Part 450. The legacy-license transition deadline was March 9, 2026. A license can cover an appropriate set of operations, vehicle configurations, and sites. The International page further explains licensing scope for U.S. commercial launch or reentry operators outside the United States, and for relevant non-U.S. commercial launch or reentry vehicles operating within the United States.",
+                "This is not a global licensing system, and Part 450 does not govern every space activity. Launch-site licensing is addressed by other regulations. An FAA vehicle license is not a spectrum or downstream service authorization. A rule proposed in 2023 should not be presented as an effective regulation."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "208d64723273",
+          "url": "https://www.faa.gov/international",
+          "title": "FAA international jurisdiction overview",
+          "kind": "link",
+          "format": "Web",
+          "host": "faa.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[26] FAA Transition to Part 450 Vehicle Licensing",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-26",
+              "text": "FAA 2026 licensing announcement · FAA international jurisdiction overview",
+              "notes": [
+                "The FAA’s March 17, 2026, announcement on streamlining commercial space licensing describes the transition of launch and reentry vehicle licenses to Part 450. The legacy-license transition deadline was March 9, 2026. A license can cover an appropriate set of operations, vehicle configurations, and sites. The International page further explains licensing scope for U.S. commercial launch or reentry operators outside the United States, and for relevant non-U.S. commercial launch or reentry vehicles operating within the United States.",
+                "This is not a global licensing system, and Part 450 does not govern every space activity. Launch-site licensing is addressed by other regulations. An FAA vehicle license is not a spectrum or downstream service authorization. A rule proposed in 2023 should not be presented as an effective regulation."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "abf5279c0144",
+          "url": "https://www.itu.int/en/mediacentre/backgrounders/Pages/Regulation-of-Satellite-Systems.aspx",
+          "title": "ITU official backgrounder",
+          "kind": "link",
+          "format": "Web",
+          "host": "itu.int",
+          "local": false,
+          "citations": [
+            {
+              "section": "[27] ITU Satellite Frequency Coordination and Registration",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-27",
+              "text": "ITU official backgrounder",
+              "notes": [
+                "ITU’s ‘Regulation of Satellite Systems’ backgrounder was updated in September 2026. See ‘Policy and regulatory considerations’ and ‘International coordination and registration.’ National administrations license systems and participate in network coordination, notification, and registration of frequency assignments under the Radio Regulations. Relevant status is recorded in the MIFR, and applicable systems are subject to deployment milestones.",
+                "The international framework aims to prevent harmful radio interference; deployment milestones also discourage resource hoarding. These are distinct from domestic licensing and physical collision avoidance. ITU does not issue a launch license for each satellite or grant exclusive ownership of an orbital altitude. Frequency filings are not counts of operational spacecraft or paying users."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3a3271a910f8",
+          "url": "https://www.nasa.gov/humans-in-space/commercial-space/commercial-crew-program/commercial-crew-program-essentials/",
+          "title": "NASA Commercial Crew Essentials",
+          "kind": "link",
+          "format": "Web",
+          "host": "nasa.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[28] NASA 2014 CCtCap Crew Transportation Procurement",
+              "url": "/post/commercial-space-advanced-engineering/#evidence-28",
+              "text": "NASA 2014 CCtCap announcement · NASA Commercial Crew Essentials",
+              "notes": [
+                "NASA announced fixed-price CCtCap contracts with Boeing and SpaceX on September 16, 2014, with maximum potential values of US$4.2 billion and US$2.6 billion, respectively. They cover certification, at least one crewed test, and two to six missions after certification. The announcement and Commercial Crew Essentials explain that the companies own and operate the systems, while NASA reviews requirements and certifies safety.",
+                "The figures are potential values of contracts awarded in 2014, not recognized revenue or prices solely for operational flights. Commercialization did not remove safety verification. The 2017 return-to-flight target in the original announcement was a historical plan, not an achieved date."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "ai-computing-infrastructure",
       "title": "AI and Computing Infrastructure: Industry History, Value Chain, and Challenges",
       "url": "/post/ai-computing-infrastructure/",
@@ -4476,9 +6060,9 @@
     }
   ],
   "counts": {
-    "articles": 7,
-    "materials": 202,
-    "files": 30,
-    "hosted_files": 8
+    "articles": 8,
+    "materials": 263,
+    "files": 38,
+    "hosted_files": 10
   }
 }

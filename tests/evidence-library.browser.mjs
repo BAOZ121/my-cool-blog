@@ -33,8 +33,8 @@ try {
     await page.goto(`${origin}/evidence-library/`);
     await page.waitForSelector('[data-enhanced="true"]');
     assert.equal(await page.locator("main h1").count(), 1);
-    assert.match(await page.locator("[data-result-count]").textContent(), new RegExp(`${data.counts.materials} materials across 7 articles`));
-    assert.equal(await page.locator("[data-article]").count(), 7);
+    assert.match(await page.locator("[data-result-count]").textContent(), new RegExp(`${data.counts.materials} materials across ${data.counts.articles} articles`));
+    assert.equal(await page.locator("[data-article]").count(), data.counts.articles);
     assert.equal(await page.locator("[data-evidence-item]").count(), data.counts.materials);
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
     assert.equal(await page.locator('[data-article][open]').count(), 0);
@@ -98,7 +98,7 @@ try {
     assert.equal(await page.locator("#article-cybersecurity-industry-report").getAttribute("open"), "");
     await page.goto(`${origin}/evidence-library/`);
     await page.locator("[data-expand-all]").click();
-    assert.equal(await page.locator("[data-article][open]").count(), 7);
+    assert.equal(await page.locator("[data-article][open]").count(), data.counts.articles);
     await page.locator("[data-expand-all]").click();
     assert.equal(await page.locator("[data-article][open]").count(), 0);
     // Both themes inherit the site's color tokens.
