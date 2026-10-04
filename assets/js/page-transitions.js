@@ -8,8 +8,10 @@
   let curtain;
   let cleanupTimer;
   let startedAt;
-  // Do not start/re-hide content once the opaque phase has already elapsed.
-  const blackHold = 680 * .72;
+  let disposeHeroWait = () => {};
+  const normalHold = 1190;
+  const latestHold = 2850;
+  const safetyHold = 3800;
   try {
     entry = JSON.parse(sessionStorage.getItem(key));
     sessionStorage.removeItem(key);
@@ -20,6 +22,7 @@
   const stop = () => {
     interrupted = true;
     window.clearTimeout(cleanupTimer);
+    disposeHeroWait();
     curtain?.remove();
     curtain = undefined;
     for (const animation of animations) animation.cancel();
@@ -62,7 +65,7 @@
     if (!eligible()) return;
     try {
       // This watchdog is armed before installation; it never delays navigation.
-      cleanupTimer = window.setTimeout(stop, 1700);
+      cleanupTimer = window.setTimeout(stop, 4200);
       curtain = document.createElement("div");
       curtain.className = "dex-entry-curtain";
       curtain.setAttribute("aria-hidden", "true");
@@ -95,14 +98,53 @@
 
   function enter() {
     if (startedAt === undefined || !eligible()) { stop(); return; }
-    const elapsed = performance.now() - startedAt;
-    // Slow parsing/deferred resources may outlive the black phase. Fail open:
-    // never restart a curtain or conceal content the reader can already see.
-    if (elapsed >= blackHold || !covered()) { stop(); return; }
+    // Late parser/deferred execution must not restart an already exposed page.
+    if (performance.now() - startedAt >= latestHold || !covered()) { stop(); return; }
     const article = document.querySelector(".main-article");
     const hero = article?.querySelector(".article-image img");
+    const rect = hero?.getBoundingClientRect();
+    const critical = rect && rect.width > 0 && rect.height > 0 && rect.top < innerHeight && rect.bottom > 0;
+    if (!critical) { reveal(article, hero, false); return; }
+
+    // Only the visible hero participates. Below-fold images, charts, fonts and
+    // window.load are never awaited, and downloads/navigation remain untouched.
+    let settled = false;
+    let decoding = false;
+    const status = curtain?.querySelector(".dex-entry-curtain__status");
+    if (status) status.textContent = "LOADING COVER";
+    const finish = ready => {
+      if (settled) return;
+      settled = true;
+      disposeHeroWait();
+      reveal(article, hero, ready);
+    };
+    const failed = () => finish(false);
+    const loaded = () => {
+      if (decoding || settled) return;
+      if (!hero.naturalWidth) { failed(); return; }
+      decoding = true;
+      try {
+        if (typeof hero.decode !== "function") { finish(true); return; }
+        Promise.resolve(hero.decode()).then(() => finish(true), failed);
+      } catch { failed(); }
+    };
+    const timeout = window.setTimeout(failed, Math.max(0, latestHold - (performance.now() - startedAt)));
+    disposeHeroWait = () => {
+      window.clearTimeout(timeout);
+      hero.removeEventListener("load", loaded);
+      hero.removeEventListener("error", failed);
+      disposeHeroWait = () => {};
+    };
+    hero.addEventListener("load", loaded, { once: true });
+    hero.addEventListener("error", failed, { once: true });
+    if (hero.complete) loaded();
+  }
+
+  function reveal(article, hero, heroReady) {
+    if (!eligible() || performance.now() - startedAt >= safetyHold || !covered()) { stop(); return; }
+    const revealAt = Math.min(latestHold, Math.max(normalHold, performance.now() - startedAt));
     const nodes = [];
-    if (hero?.complete && hero.naturalWidth) nodes.push(hero);
+    if (heroReady) nodes.push(hero);
     const selector = article
       ? ".main-article .article-details, .main-article [data-entry-title], .main-article .research-actions, .main-article .article-content > :first-child"
       : ".research-landing > h2, .research-landing > p, main > header, main > h1, main > h2, main .section-title";
@@ -113,12 +155,12 @@
       return typeof node.animate === "function" && rect.width > 0 && rect.height > 0 &&
         rect.top < innerHeight && rect.bottom > 0 && rect.height <= innerHeight;
     }).slice(0, 5);
-    if (!visible.length || performance.now() - startedAt >= blackHold || !covered()) { stop(); return; }
+    if (!visible.length || performance.now() - startedAt >= safetyHold || !covered()) { stop(); return; }
     try {
       const status = curtain?.querySelector(".dex-entry-curtain__status");
-      if (status && article) status.textContent = "OPENING ARTICLE";
+      if (status) status.textContent = article ? "OPENING ARTICLE" : "OPENING VIEW";
       for (const node of visible) {
-        if (performance.now() - startedAt >= blackHold || !covered()) { stop(); return; }
+        if (performance.now() - startedAt >= safetyHold || !covered()) { stop(); return; }
         const cover = node === hero;
         const title = node.matches("[data-entry-title]");
         const interactive = node.closest("a,button,summary") || node.querySelector("a,button,input,select,textarea,summary,[tabindex]");
@@ -134,8 +176,8 @@
           { opacity: 0, transform: "translateY(28px)" }, { opacity: 1, transform: "translateY(0)" },
         ];
         const animation = node.animate(frames, {
-          id: cover ? "dex-cover-pop" : "dex-content-enter", duration: cover ? 400 : 420,
-          delay: cover ? 520 : article ? 920 : 560,
+          id: cover ? "dex-cover-pop" : "dex-content-enter", duration: cover ? 550 : 570,
+          delay: revealAt + (cover ? 30 : article ? 580 : 30),
           easing: "cubic-bezier(.22, 1, .36, 1)", fill: "backwards",
         });
         // Join the head-established timeline instead of restarting at DOM ready.
@@ -143,6 +185,13 @@
         animations.push(animation);
         animation.finished.then(() => { animations = animations.filter(item => item !== animation); }, () => {});
       }
+      // Replace the independent CSS safety fade only after all content is
+      // prepared behind opaque black. This release is finite even without JS.
+      Object.assign(curtain.style, {
+        animationName: "dex-entry-release", animationDuration: "190ms",
+        animationDelay: `${Math.max(0, revealAt - (performance.now() - startedAt))}ms`,
+        animationFillMode: "backwards",
+      });
     } catch { stop(); }
   }
   arm();

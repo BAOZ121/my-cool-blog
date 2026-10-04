@@ -26,8 +26,18 @@ async function observe(context, { scheme = "light", animationAvailable = true, m
   await context.route("https://fonts.googleapis.com/**", route => route.fulfill({ contentType: "text/css", body: "" }));
   await context.addInitScript(({ scheme, animationAvailable, measurePerformance }) => {
     localStorage.setItem("StackColorScheme", scheme);
-    window.__entry = { calls: [], inputs: [], reveals: 0, nativeTransitions: 0, performance: null };
+    window.__entry = { calls: [], inputs: [], reveals: 0, nativeTransitions: 0, performance: null, armedAt: null };
     window.__entryAnimations = [];
+    const curtainObserver = new MutationObserver(records => {
+      for (const record of records) for (const node of record.addedNodes) {
+        if (node.nodeType === 1 && node.matches(".dex-entry-curtain")) {
+          window.__entry.armedAt = performance.now();
+          curtainObserver.disconnect();
+          return;
+        }
+      }
+    });
+    curtainObserver.observe(document, { childList: true, subtree: true });
     const active = () => window.__entryAnimations.filter(animation => animation.playState === "running" || animation.pending);
     // Observation only: no DOM writes, playback-rate changes or machine-speed threshold.
     function beginPerformanceObservation() {
@@ -138,19 +148,19 @@ async function assertNoNative(page) {
   assert.equal(await page.locator("html").getAttribute("data-dex-transition"), null);
 }
 async function finished(page) {
-  await page.waitForFunction(() => window.__entryAnimations.every(animation => !animation.pending && animation.playState !== "running") && !document.querySelector(".dex-entry-curtain"), null, { timeout: 2200 });
+  await page.waitForFunction(() => window.__entryAnimations.every(animation => !animation.pending && animation.playState !== "running") && !document.querySelector(".dex-entry-curtain"), null, { timeout: 6000 });
 }
-function assertArticleTimeline(calls) {
+function assertArticleTimeline(calls, hold = 1190) {
   assert.ok(calls.some(call => call.animationId === "dex-content-enter"), "Article content must have its own reveal phase");
   for (const call of calls) {
     assert.ok(["dex-cover-pop", "dex-content-enter"].includes(call.animationId), `Unexpected entry animation: ${call.animationId}`);
     if (call.animationId === "dex-cover-pop") {
       assert.equal(call.tag, "IMG");
-      assert.equal(call.delay, 520, "Cover starts after the approximately half-second black hold");
-      assert.equal(call.duration, 400);
+      assert.equal(call.delay, hold + 30, "Cover starts just after the bounded black hold");
+      assert.equal(call.duration, 550);
     } else {
-      assert.equal(call.delay, 920, "Article content reveals after the cover pop");
-      assert.equal(call.duration, 420);
+      assert.equal(call.delay, hold + 580, "Article content reveals after the cover pop");
+      assert.equal(call.duration, 570);
     }
   }
 }
@@ -249,7 +259,7 @@ async function verifyFirstPaint(browser) {
       assert.equal(first.coversViewport, true);
       assert.deepEqual(screenshotPixel(await page.screenshot({ clip: { x: 0, y: 0, width: 1, height: 1 }, animations: "allow" })), [8, 9, 9], "The rendered first-paint probe must actually be black, not merely contain a curtain node");
       // Hold parsing/deferred execution beyond the black phase, while image I/O stays pending.
-      await page.waitForFunction(() => window.__paintFrames.some(frame => !frame.domReady && !frame.curtain), null, { timeout: 2200 });
+      await page.waitForFunction(() => window.__paintFrames.some(frame => !frame.domReady && !frame.curtain), null, { timeout: 6000 });
       assert.equal(await page.evaluate(() => window.__entry.calls.length), 0, "No late content animation may begin while readiness is blocked");
       await gate.fulfill({ contentType: "text/javascript", body: "/* Readiness gate released. */" });
       gate = undefined;
@@ -315,23 +325,23 @@ try {
       assert.equal(input.curtain.pointerEvents, "none");
       assert.equal(input.curtain.position, "fixed");
       assert.equal(input.curtain.ariaHidden, "true");
-      assert.equal(input.curtain.animationName, "dex-entry-blackout");
-      assert.equal(input.curtain.duration, "0.68s");
-      assert.equal(input.curtain.fill, "none");
+      assert.ok(["dex-entry-blackout", "dex-entry-release"].includes(input.curtain.animationName));
+      assert.equal(input.curtain.duration, input.curtain.animationName === "dex-entry-blackout" ? "4s" : "0.19s");
+      assert.equal(input.curtain.fill, input.curtain.animationName === "dex-entry-blackout" ? "none" : "backwards");
       assert.ok(Number(input.curtain.opacity) > 0, "Input must pass through a currently visible curtain");
       assertArticleTimeline(entry.calls);
       assert.ok(entry.calls.filter(call => !call.curtain).length > 0 && entry.calls.filter(call => !call.curtain).length <= 5, "Animate only a bounded set of visible content elements");
       for (const call of entry.calls) {
         assert.equal(call.broadCapture, false, "Never animate the root, main container or whole article");
         assert.equal(call.visible, true);
-        assert.equal(call.imageLoaded, true, "Unloaded images cannot gate or participate in entry");
+        assert.equal(call.imageLoaded, true, "Unready images cannot participate in the cover pop");
         if (call.interactive && call.properties.includes("transform")) {
           assert.ok(call.tag === "IMG" || call.titlePixels, "Move only inner image/title pixels, never an interactive container");
           assert.equal(call.controlTransform, "none", "The interactive ancestor must keep a stationary hit box");
           if (call.titlePixels) assert.equal(call.clippedTitle, true, "Title pixels reveal inside their clipped anchor");
         }
         assert.equal(Boolean(call.pseudo), false, "Animate the real element, not a pseudo overlay");
-        assert.ok(call.duration >= 0 && call.duration + call.delay <= 1400, `Entry must remain finite and bounded: ${JSON.stringify(call)}`);
+        assert.ok(call.duration >= 0 && call.duration + call.delay <= 4000, `Entry must remain finite and bounded: ${JSON.stringify(call)}`);
         assert.equal(call.iterations, 1);
         assert.equal(call.fill, "backwards", "Finite delays may fill backwards, never retain final animation state");
         assert.ok(call.properties.every(property => ["offset", "computedOffset", "easing", "composite", "opacity", "transform"].includes(property)), "Only compositor-friendly transform/opacity properties animate");
@@ -437,8 +447,8 @@ try {
         if (pageEntry.article) assertArticleTimeline(pageEntry.calls);
         else for (const call of pageEntry.calls) {
           assert.equal(call.animationId, "dex-content-enter");
-          assert.equal(call.delay, 560, "Generic pages reveal after the black hold");
-          assert.equal(call.duration, 420);
+          assert.equal(call.delay, 1220, "Generic pages reveal just after the baseline black hold");
+          assert.equal(call.duration, 570);
           assert.equal(call.fill, "backwards");
         }
       }
@@ -482,7 +492,7 @@ try {
   await internalArticle(revealPage, firstArticlePath);
   await revealPage.waitForFunction(() => window.__entryAnimations.some(animation =>
     animation.id === "dex-content-enter" && animation.effect.target.matches("[data-entry-title]") &&
-    animation.currentTime >= 920 && animation.currentTime < 1340 && animation.playState === "running"), null, { polling: 1 });
+    animation.currentTime >= 1770 && animation.currentTime < 2340 && animation.playState === "running"), null, { polling: 1 });
   await Promise.all([
     revealPage.waitForNavigation({ waitUntil: "domcontentloaded" }),
     revealPage.mouse.click(titleBox.x + Math.min(12, titleBox.width / 2), titleBox.y + Math.min(6, titleBox.height / 2)),
@@ -503,12 +513,13 @@ try {
   // Let a complete sequence finish without input, including curtain disposal.
   await revealPage.goto(origin + "/");
   await internalArticle(revealPage, firstArticlePath);
+  await revealPage.waitForFunction(() => window.__entry.calls.length > 0, null, { timeout: 4000 });
   assertArticleTimeline(await revealPage.evaluate(() => window.__entry.calls));
   await finished(revealPage);
   assert.equal(await revealPage.evaluate(() => window.__entry.calls.every(call => call.state === "finished")), true, "The finite choreography must complete naturally");
   assert.equal(await revealPage.locator(".dex-entry-curtain").count(), 0, "Natural completion removes its decorative layer");
   assert.equal(await revealPage.locator(".main-article .article-details").evaluate(element => getComputedStyle(element).opacity), "1");
-  await revealPage.waitForFunction(() => window.__entry.performance?.complete, null, { timeout: 2200 });
+  await revealPage.waitForFunction(() => window.__entry.performance?.complete, null, { timeout: 6000 });
   const performanceMetrics = await revealPage.evaluate(() => window.__entry.performance);
   assert.ok(performanceMetrics.frames > 1, "Browser frames must continue throughout uninterrupted playback");
   console.log("OBSERVE uninterrupted entry performance", JSON.stringify({
@@ -540,27 +551,73 @@ try {
     await context.close();
   }
 
-  for (const mode of ["slow", "missing"]) {
+  for (const mode of ["cold", "slow", "missing", "timeout", "interrupt"]) {
     const context = await browser.newContext({ viewport: { width: 1440, height: 900 }, reducedMotion: "no-preference" });
     await observe(context);
     const pending = new Set();
     await context.route("**/*", async route => {
-      if (route.request().resourceType() !== "image" || !new URL(route.request().url()).pathname.startsWith(firstArticlePath)) return route.fallback();
+      const request = route.request();
+      if (request.resourceType() !== "image" || !new URL(request.url()).pathname.startsWith(firstArticlePath) ||
+          new URL(request.frame().url()).pathname !== firstArticlePath) return route.fallback();
       if (mode === "missing") return route.abort("failed");
-      pending.add(route); // Deliberately unresolved until after the interactivity assertions.
+      pending.add(route); // Hold only this destination's critical cover, never its source page.
     });
+    const release = async () => {
+      assert.ok(pending.size > 0, "The controlled destination image request must actually be pending");
+      const routes = [...pending];
+      pending.clear();
+      for (const route of routes) await route.fulfill({ response: await route.fetch() });
+    };
     const page = await context.newPage();
     const errors = [];
     page.on("pageerror", error => errors.push(error.message));
     try {
       await page.goto(origin + "/", { waitUntil: "domcontentloaded" });
       await internalArticle(page, firstArticlePath);
-      assert.equal(await page.locator(".main-article [data-transition-cover] img").evaluate(image => image.complete && image.naturalWidth > 0), false);
-      assert.equal(await page.locator("main h1").isVisible(), true, "A pending/failed image cannot hide article content");
-      assert.equal(await page.evaluate(() => window.__entry.calls.some(call => call.tag === "IMG")), false, "Skip image animation rather than awaiting it");
-      assertArticleTimeline(await page.evaluate(() => window.__entry.calls));
-      await page.locator("#dark-mode-toggle").click();
-      assert.equal(await page.locator("html").getAttribute("data-scheme"), "dark");
+      await page.waitForFunction(() => window.__entry.armedAt !== null);
+      const hero = page.locator(".main-article [data-transition-cover] img");
+      assert.equal(await hero.evaluate(image => image.complete && image.naturalWidth > 0), false);
+      if (mode !== "missing") {
+        assert.equal(await page.evaluate(() => window.__entry.calls.length), 0, "Pending critical image keeps only the finite black hold active");
+        const waitUntil = mode === "cold" ? 100 : 1600;
+        await page.waitForFunction(time => performance.now() - window.__entry.armedAt >= time, waitUntil);
+        assert.equal(await page.locator(".dex-entry-curtain").evaluate(element => getComputedStyle(element).opacity), "1");
+        assert.equal(await page.evaluate(() => window.__entry.calls.length), 0, "Slow load must not begin the article reveal early");
+      }
+      if (mode === "interrupt") {
+        // This real control click happens beyond the normal hold, while no WAAPI is running yet.
+        await page.locator("#dark-mode-toggle").click();
+        const input = await page.evaluate(() => window.__entry.inputs.find(item => item.type === "pointerdown" && item.control === "dark-mode-toggle"));
+        assert.ok(input?.curtain); assert.equal(input.curtain.pointerEvents, "none");
+        assert.equal(await page.locator("html").getAttribute("data-scheme"), "dark");
+        assert.equal(await page.locator(".dex-entry-curtain").count(), 0);
+        await release(); await hero.evaluate(image => image.decode());
+        await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+        assert.equal(await page.evaluate(() => window.__entry.calls.length), 0, "Image completion after input skip cannot revive the entrance");
+        assert.equal(await page.locator(".main-article .article-details").evaluate(element => getComputedStyle(element).opacity), "1");
+      } else {
+        if (mode === "cold" || mode === "slow") await release();
+        await page.waitForFunction(() => window.__entry.calls.length > 0, null, { timeout: 4000 });
+        const calls = await page.evaluate(() => window.__entry.calls);
+        const hold = calls.find(call => call.animationId === "dex-content-enter").delay - 580;
+        if (mode === "cold" || mode === "missing") assert.equal(hold, 1190, "Normal readiness or an early failure uses the baseline");
+        if (mode === "slow") assert.ok(hold >= 1600 && hold < 2850, `Slow readiness extends only the finite hold: ${hold}`);
+        if (mode === "timeout") assert.ok(hold >= 2848 && hold <= 2850, `A never-completing hero must hit the bounded deadline (allowing timer rounding): ${hold}`);
+        assertArticleTimeline(calls, hold);
+        assert.equal(calls.some(call => call.animationId === "dex-cover-pop"), mode === "cold" || mode === "slow");
+        assert.ok(calls.every(call => call.delay + call.duration <= 4000), "Every branch reaches real content by the hard total timeline bound");
+        await finished(page);
+        assert.equal(await page.locator(".main-article .article-details").evaluate(element => getComputedStyle(element).opacity), "1");
+        assert.equal(await page.locator(".dex-entry-curtain").count(), 0);
+        if (mode === "timeout") {
+          const count = calls.length;
+          await release(); await hero.evaluate(image => image.decode());
+          await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+          assert.equal(await page.evaluate(() => window.__entry.calls.length), count, "A hero arriving after timeout cannot replay or hide content");
+        }
+        await page.locator("#dark-mode-toggle").click();
+        assert.equal(await page.locator("html").getAttribute("data-scheme"), "dark");
+      }
       await Promise.all([
         page.waitForURL(origin + "/archives/", { waitUntil: "domcontentloaded" }),
         page.locator('#main-menu a[href="/archives/"]').first().click({ noWaitAfter: true }),
@@ -568,7 +625,7 @@ try {
       assert.equal(await page.locator("main").isVisible(), true);
       await assertNoNative(page);
       assert.deepEqual(errors, []);
-      console.log(`PASS ${mode} cover: content, real theme control and native link remain usable before image completion`);
+      console.log(`PASS ${mode} hero: bounded readiness, live controls, finite reveal and no late replay`);
     } finally {
       await Promise.all([...pending].map(route => route.abort().catch(() => {})));
       await context.close();

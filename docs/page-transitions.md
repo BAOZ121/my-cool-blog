@@ -20,31 +20,40 @@ starts immediately after a style resolution, and the later real-element animatio
 joins that same clock rather than starting a second sequence.
 
 An eligible article entry follows three bounded phases from that early start:
-- A decorative black curtain holds for about 0.5 seconds and fades away within 680 ms
-- Loaded cover pixels pop in at 520–920 ms
-- Title and introductory content reveal at 920–1340 ms
+- A decorative black curtain normally holds for 1190 ms, then fades over 190 ms
+- Ready cover pixels pop in at 1220–1770 ms
+- Title and introductory content reveal at 1770–2340 ms
+
+Only a visible article hero can extend the visual hold, while its existing request
+and decode finish. The latest hold is 2850 ms, so the remaining phases finish by
+about 4000 ms. A load error, rejected decode, missing hero or deadline skips the
+cover animation and reveals readable content/its reserved image placeholder.
+The wait never includes below-fold images, charts, fonts or window.load, and does
+not defer navigation, start duplicate requests, or slow down downloads. Cached
+ready images retain the normal 2340 ms sequence. “LOADING COVER” appears only
+while the critical hero is pending; other panel labels are decorative, without
+fake progress percentages.
 
 At most five small visible real elements animate with transform/opacity. Cover
 and title pixels move inside fixed, clipped links; control containers use opacity
-only. Generic internal pages use the same curtain and a shorter content reveal.
-A small black/gold control panel shows decorative English labels and one thin
-scan line; it has no fake progress percentage, flashing or repeating code effect.
-The curtain is aria-hidden, pointer-events:none, and transparent by default; its
-finite CSS animation removes the black even if script cleanup misses an event.
-It is removed on animationend, on any input, and by an independent 1700 ms cleanup
-deadline. This timer is armed before curtain installation and never delays navigation or
-waits for a download. If DOM readiness or a geometry read arrives after the opaque
-black hold (about 490 ms), the enhancement is abandoned: already-visible article
-content is never hidden again and the curtain is never restarted. Transparent,
-disabled or dismissed curtain CSS also prevents any backwards-fill content
-animation. Slow parsing/resources therefore fail open into normal rendering.
+only. Generic internal pages use the same normal hold and a shorter content reveal.
+The small black/gold control panel retains one thin scan line, with no flashing,
+repeating code effect or expensive filter. The curtain is aria-hidden,
+pointer-events:none, and transparent by default. Its initial 4000 ms CSS safety
+animation is finite even if JavaScript fails; after content is prepared behind
+opaque black, a finite CSS release fade replaces that safety animation. A separate
+4200 ms watchdog is armed before the curtain is installed. Animationend, input or
+page exit also removes it and disposes the pending hero listeners/timer.
 
-Real content is visible in normal CSS. Finite Web Animations fill backwards only
-during their short phase delays, never retain final state, and are cancelled by
-pointer, keyboard, touch, wheel, hidden/pagehide/BFCache events. The input itself
-is never cancelled or replayed. Missing/slow images are skipped rather than
-awaited; the content timeline still completes. No document-sized element,
-snapshot, routing replacement, inert state or scroll lock is used.
+If DOM readiness arrives after the latest hold, or the curtain is already
+transparent/dismissed/disabled, the enhancement fails open: article content is
+never hidden again and the curtain is never restarted. Real content is visible in
+normal CSS. Finite Web Animations fill backwards only during their short phase
+delays, never retain final state, and are cancelled by pointer, keyboard, touch,
+wheel, hidden/pagehide/BFCache events. The input itself is never cancelled or
+replayed. A late image cannot restart a completed or cancelled sequence. No
+document-sized content animation, snapshot, routing replacement, inert state or
+scroll lock is used.
 
 The theme now initializes menu/theme controls at DOM readiness rather than waiting
 for window.load and every image. The early-pointer regression exposed that
@@ -83,12 +92,14 @@ A rendered 1×1 screenshot verifies the black pixel; the probe also holds cover
 I/O pending and injects a script failure immediately after the early arm. These
 cases verify first-frame coverage and that late DOM readiness cannot replay or
 re-hide the article. Unit tests cover a missing body, shared elapsed timing,
-expensive layout crossing the hold deadline, disabled CSS and early input.
+expensive layout crossing the safety deadline, disabled CSS and early input.
+Controlled hero tests cover cached completion, delayed load/decode, rejection,
+missing images, timeout and input cancellation during the extended visual hold.
 
 Tests also assert actual real-element playback and real pointer input during that
 playback, with no native snapshot transition. They retain desktop/mobile,
 light/dark, reduced-motion, history/scroll, reload, keyboard, forms, new-tab,
-download, rapid navigation, slow/missing image, no-JS and unavailable-animation
+download, rapid navigation, bounded critical-hero loading, failed/missing image, no-JS and unavailable-animation
 fallback coverage. The graphic renderer prepares its hidden stage out of normal flow and commits
 the stage/outline swap atomically, avoiding a temporary height spike during native
 history restoration. Existing article graphics, zoom, contact, industry and

@@ -17,11 +17,15 @@
   pointer-events: none;
   display: grid;
   place-items: center;
-  animation: dex-entry-blackout 680ms ease-out;
+  animation: dex-entry-blackout 4000ms ease-out;
 }
 @keyframes dex-entry-blackout {
-  0%, 72% { opacity: 1; }
+  0%, 95% { opacity: 1; }
   100% { opacity: 0; }
+}
+@keyframes dex-entry-release {
+  from { opacity: 1; }
+  to { opacity: 0; }
 }
 .dex-entry-curtain__panel {
   position: relative;

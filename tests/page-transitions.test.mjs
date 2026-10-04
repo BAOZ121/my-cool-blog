@@ -11,8 +11,8 @@ test('navigation never uses captured documents or delays; curtain is decorative 
   assert.doesNotMatch(css, /navigation: auto|view-transition-name/);
   assert.match(css, /pointer-events: none/);
   assert.match(css, /opacity: 0/);
-  assert.match(css, /dex-entry-blackout 680ms/);
-  assert.match(script, /window.setTimeout\(stop, 1700\)/);
+  assert.match(css, /dex-entry-blackout 4000ms/);
+  assert.match(script, /window.setTimeout\(stop, 4200\)/);
   assert.doesNotMatch(script, /preventDefault|pushState|replaceState|startViewTransition|scrollTo|fetch\(|inert/);
   assert.match(script, /fill: "backwards"/);
   assert.match(partial, /<script id="dex-page-transition-script">/);
@@ -32,28 +32,36 @@ function fixture(options = {}) {
   if (options.marker !== false) stored.set('dex:page-entry', JSON.stringify({ from: 'https://dex.test/', to: 'https://dex.test/post/example/', time: now, ...options.marker }));
   const listen = (type, handler) => { (events[type] ||= []).push(handler); };
   const nodes = Array.from({ length: 7 }, (_, index) => ({
-    complete: options.loaded !== false, naturalWidth: options.loaded === false ? 0 : 1200,
+    complete: options.loaded !== false, naturalWidth: options.loaded === false || options.failed ? 0 : 1200,
+    listeners: {},
+    addEventListener(type, fn) { (this.listeners[type] ||= new Set()).add(fn); },
+    removeEventListener(type, fn) { this.listeners[type]?.delete(fn); },
     contains: () => false,
     matches: () => index === 2,
     closest: () => index === 0 || index === 2 ? {} : null,
     querySelector: () => index === 1 || index === 3 ? {} : null,
-    getBoundingClientRect: () => { elapsed += options.layoutCost || 0; return { width: 600, height: index === 0 ? 300 : 70, top: options.offscreen ? 1500 : 20 + index * 100, bottom: 350 + index * 100 }; },
+    getBoundingClientRect: () => { elapsed += options.layoutCost || 0; return { width: 600, height: index === 0 ? 300 : 70, top: options.offscreen || (options.heroOffscreen && index === 0) ? 1500 : 20 + index * 100, bottom: 350 + index * 100 }; },
     animate: options.unsupported ? undefined : function(frames, timing) {
       const animation = { finished: new Promise(() => {}), cancelled: false, cancel() { this.cancelled = true; } };
       calls.push({ node: this, frames, timing, animation }); return animation;
     },
   }));
+  let resolveDecode, rejectDecode;
+  if (options.decode === 'pending') nodes[0].decode = () => new Promise((resolve, reject) => { resolveDecode = resolve; rejectDecode = reject; });
+  if (options.decode === 'reject') nodes[0].decode = () => Promise.reject(new Error('decode failed'));
+  if (options.decode === 'ready') nodes[0].decode = () => Promise.resolve();
   const root = { animate: options.unsupported ? undefined : () => {}, append(node) { node.isConnected = true; masks.push(node); } };
   const document = { documentElement: root, readyState: 'loading', hidden: Boolean(options.hidden), referrer: options.referrer ?? 'https://dex.test/',
     addEventListener: listen,
     querySelector: () => ({ querySelector: () => nodes[0] }), querySelectorAll: () => nodes.slice(1),
     body: null,
-    createElement: () => ({ removed: false, isConnected: false, listeners: {}, querySelector() { return null; }, setAttribute() {}, addEventListener(type, fn) { this.listeners[type] = fn; }, append() {}, remove() { this.removed = true; this.isConnected = false; } }),
+    createElement: () => ({ style: {}, removed: false, isConnected: false, listeners: {}, querySelector() { return null; }, setAttribute() {}, addEventListener(type, fn) { this.listeners[type] = fn; }, append() {}, remove() { this.removed = true; this.isConnected = false; } }),
   };
   const motion = { matches: Boolean(options.reduced), addEventListener: (_, fn) => listen('motion', fn) };
   const window = { addEventListener: listen,
-    getComputedStyle: () => ({ opacity: options.cssDisabled ? "0" : "1", animationName: options.cssDisabled ? "none" : "dex-entry-blackout" }),
-    setTimeout(fn, delay) { timers.push({ fn, delay }); return timers.length; }, clearTimeout() {},
+    getComputedStyle: node => ({ opacity: options.cssDisabled ? "0" : "1", animationName: options.cssDisabled ? "none" : node.style.animationName || "dex-entry-blackout" }),
+    setTimeout(fn, delay) { timers.push({ fn, delay, at: elapsed + delay, active: true }); return timers.length; },
+    clearTimeout(id) { if (timers[id - 1]) timers[id - 1].active = false; },
   };
   const context = { window, document, matchMedia: () => motion, URL, Date,
     location: new URL('https://dex.test/post/example/'), innerHeight: 900, scrollY: options.scroll ?? 0,
@@ -63,18 +71,33 @@ function fixture(options = {}) {
   const fire = (type, event = {}) => { for (const fn of events[type] || []) fn(event); };
   const link = { href: 'https://dex.test/archives/', target: '', hasAttribute: () => false };
   const click = overrides => fire('click', { defaultPrevented: false, button: 0, target: { closest: () => link }, ...overrides });
-  return { calls, fire, stored, nodes, document, link, click, motion, masks, timers, advance(time) { elapsed += time; } };
+  return { calls, fire, stored, nodes, document, link, click, motion, masks, timers,
+    advance(time) {
+      const target = elapsed + time;
+      for (;;) {
+        const next = timers.filter(timer => timer.active && timer.at <= target).sort((a, b) => a.at - b.at)[0];
+        if (!next) break;
+        elapsed = Math.max(elapsed, next.at); next.active = false; next.fn();
+      }
+      elapsed = target;
+    },
+    image(type, loaded = type === 'load') {
+      nodes[0].complete = true; nodes[0].naturalWidth = loaded ? 1200 : 0;
+      for (const listener of [...(nodes[0].listeners[type] || [])]) listener();
+    },
+    resolveDecode() { resolveDecode?.(); }, rejectDecode() { rejectDecode?.(new Error('decode failed')); },
+  };
 }
 
 test('a fresh native navigation decorates at most five visible real elements', () => {
   const f = fixture(); f.fire('DOMContentLoaded');
   assert.equal(f.calls.length, 5);
   assert.equal(f.calls[0].timing.id, 'dex-cover-pop');
-  assert.equal(f.calls[0].timing.delay, 520);
-  assert.equal(f.calls[0].timing.duration, 400);
+  assert.equal(f.calls[0].timing.delay, 1220);
+  assert.equal(f.calls[0].timing.duration, 550);
   assert.equal(f.calls[1].timing.id, 'dex-content-enter');
-  assert.equal(f.calls[1].timing.duration, 420);
-  assert.equal(f.calls[1].timing.delay, 920);
+  assert.equal(f.calls[1].timing.duration, 570);
+  assert.equal(f.calls[1].timing.delay, 1770);
   assert.ok(f.calls.every(call => call.timing.fill === 'backwards'));
   assert.equal(f.stored.size, 0);
 });
@@ -93,12 +116,71 @@ test('direct loads, history, reload, disabled motion/storage and stale markers s
   }
 });
 
-test('late/missing cover images never postpone content or start a new animation later', () => {
-  const f = fixture({ loaded: false }); f.fire('DOMContentLoaded');
+test('a normally loaded hero uses the 2340ms baseline and leaves only the cleanup watchdog', async () => {
+  const f = fixture({ decode: 'ready' }); f.fire('DOMContentLoaded');
+  await new Promise(setImmediate);
+  assert.ok(f.calls.some(call => call.timing.id === 'dex-cover-pop'));
+  assert.equal(Math.max(...f.calls.map(call => call.timing.delay + call.timing.duration)), 2340);
+  assert.equal(f.masks[0].style.animationName, 'dex-entry-release');
+  assert.equal(f.masks[0].style.animationDuration, '190ms');
+  assert.equal(f.masks[0].style.animationDelay, '1190ms');
+  assert.equal(f.nodes[0].listeners.load.size, 0); assert.equal(f.nodes[0].listeners.error.size, 0);
+  assert.deepEqual(f.timers.filter(timer => timer.active).map(timer => timer.delay), [4200]);
+});
+
+test('only the critical hero may extend black while its load and decode finish', async () => {
+  const f = fixture({ loaded: false, decode: 'pending' }); f.fire('DOMContentLoaded');
+  f.advance(1600); assert.equal(f.calls.length, 0); assert.equal(f.masks[0].removed, false);
+  f.image('load'); f.advance(200); assert.equal(f.calls.length, 0, 'Load alone must not bypass pending decode');
+  f.resolveDecode(); await new Promise(setImmediate);
+  assert.equal(f.calls[0].timing.delay, 1830);
+  assert.equal(f.calls[1].timing.delay, 2380);
+  assert.equal(Math.max(...f.calls.map(call => call.timing.delay + call.timing.duration)), 2950);
+  assert.equal(f.nodes[0].listeners.load.size, 0); assert.equal(f.nodes[0].listeners.error.size, 0);
+});
+
+test('a below-fold hero cannot extend the entry or install readiness listeners', () => {
+  const f = fixture({ loaded: false, heroOffscreen: true }); f.fire('DOMContentLoaded');
   assert.ok(f.calls.length > 0);
-  assert.ok(f.calls.every(call => call.timing.id === 'dex-content-enter'));
-  f.nodes[0].complete = true; f.nodes[0].naturalWidth = 1200; f.fire('load');
-  assert.ok(f.calls.every(call => call.timing.id === 'dex-content-enter'));
+  assert.ok(f.calls.every(call => call.timing.id === 'dex-content-enter' && call.timing.delay === 1770));
+  assert.equal(f.nodes[0].listeners.load, undefined);
+  assert.deepEqual(f.timers.filter(timer => timer.active).map(timer => timer.delay), [4200]);
+});
+
+test('failed or undecodable heroes release content without animating broken pixels', async () => {
+  for (const options of [{ failed: true }, { decode: 'reject' }]) {
+    const f = fixture(options); f.fire('DOMContentLoaded');
+    await new Promise(setImmediate);
+    assert.ok(f.calls.length > 0); assert.ok(f.calls.every(call => call.timing.id === 'dex-content-enter'));
+    assert.ok(f.calls.every(call => call.timing.delay === 1770));
+  }
+  const error = fixture({ loaded: false }); error.fire('DOMContentLoaded'); error.advance(1600); error.image('error');
+  assert.ok(error.calls.every(call => call.timing.id === 'dex-content-enter' && call.timing.delay === 2180));
+});
+
+test('never-completing hero load or decode reaches the hard 4000ms total bound', async () => {
+  for (const options of [{ loaded: false }, { decode: 'pending' }]) {
+    const f = fixture(options); f.fire('DOMContentLoaded'); f.advance(2849);
+    assert.equal(f.calls.length, 0);
+    f.advance(1);
+    assert.ok(f.calls.length > 0);
+    assert.ok(f.calls.every(call => call.timing.id === 'dex-content-enter' && call.timing.delay === 3430));
+    assert.equal(Math.max(...f.calls.map(call => call.timing.delay + call.timing.duration)), 4000);
+    const count = f.calls.length;
+    f.image('load'); f.resolveDecode(); await new Promise(setImmediate);
+    assert.equal(f.calls.length, count, 'A late resource cannot restart the completed decision');
+    assert.equal(f.nodes[0].listeners.load.size, 0); assert.equal(f.nodes[0].listeners.error.size, 0);
+  }
+});
+
+test('input during an extended hero hold disposes waits and pending decode cannot resume entry', async () => {
+  for (const options of [{ loaded: false }, { decode: 'pending' }]) {
+    const f = fixture(options); f.fire('DOMContentLoaded'); f.advance(1600); f.fire('pointerdown');
+    assert.equal(f.masks[0].removed, true); assert.equal(f.timers.filter(timer => timer.active).length, 0);
+    assert.equal(f.nodes[0].listeners.load.size, 0); assert.equal(f.nodes[0].listeners.error.size, 0);
+    f.image('load'); f.resolveDecode(); await new Promise(setImmediate); f.advance(5000);
+    assert.equal(f.calls.length, 0);
+  }
 });
 
 test('only ordinary same-origin links store an optional one-time entry marker', () => {
@@ -130,7 +212,7 @@ test('curtain disappears on input and the independent cleanup deadline', () => {
   for (const interrupt of [f => f.fire('pointerdown'), f => f.timers[0].fn()]) {
     const f = fixture(); f.fire('DOMContentLoaded');
     assert.equal(f.masks.length, 1); assert.equal(f.masks[0].className, 'dex-entry-curtain');
-    assert.equal(f.timers[0].delay, 1700);
+    assert.equal(f.timers[0].delay, 4200);
     interrupt(f);
     assert.equal(f.masks[0].removed, true);
     assert.ok(f.calls.every(call => call.animation.cancelled));
@@ -152,7 +234,7 @@ test('eligible head execution installs the curtain before body or DOM readiness 
   assert.equal(f.masks.length, 1);
   assert.equal(f.masks[0].isConnected, true);
   assert.equal(f.calls.length, 0);
-  assert.equal(f.timers[0].delay, 1700, 'The watchdog is already armed before DOM readiness');
+  assert.equal(f.timers[0].delay, 4200, 'The watchdog is already armed before DOM readiness');
 });
 
 test('prompt DOM readiness joins the original clock instead of restarting the black phase', () => {
@@ -160,13 +242,13 @@ test('prompt DOM readiness joins the original clock instead of restarting the bl
   assert.equal(f.masks.length, 1);
   assert.ok(f.calls.length > 0);
   assert.ok(f.calls.every(call => call.animation.currentTime === 300));
-  assert.equal(f.calls[0].timing.delay, 520);
+  assert.equal(f.calls[0].timing.delay, 1220);
 });
 
 test('late readiness, expensive layout or transparent CSS fails open without re-hiding content', () => {
-  const late = fixture(); late.advance(500); late.fire('DOMContentLoaded');
+  const late = fixture(); late.advance(2850); late.fire('DOMContentLoaded');
   assert.equal(late.calls.length, 0); assert.equal(late.masks[0].removed, true);
-  const layout = fixture({ layoutCost: 80 }); layout.fire('DOMContentLoaded');
+  const layout = fixture({ layoutCost: 650 }); layout.fire('DOMContentLoaded');
   assert.equal(layout.calls.length, 0); assert.equal(layout.masks[0].removed, true);
   const cssDisabled = fixture({ cssDisabled: true }); cssDisabled.fire('DOMContentLoaded');
   assert.equal(cssDisabled.calls.length, 0); assert.equal(cssDisabled.masks[0].removed, true);
