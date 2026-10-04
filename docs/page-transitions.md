@@ -13,16 +13,18 @@ navigation with a matching source/destination. Direct entry, reload, Back/Forwar
 hashes, new tabs, disabled storage and reduced motion use normal rendering.
 
 At DOM readiness, an eligible article entry follows three bounded phases:
-- A decorative black curtain holds briefly and fades away within 180 ms
-- Loaded cover pixels pop in at 120–380 ms
-- Title and introductory content reveal at 360–640 ms
+- A decorative black curtain holds for about 0.5 seconds and fades away within 680 ms
+- Loaded cover pixels pop in at 520–920 ms
+- Title and introductory content reveal at 920–1340 ms
 
 At most five small visible real elements animate with transform/opacity. Cover
 and title pixels move inside fixed, clipped links; control containers use opacity
 only. Generic internal pages use the same curtain and a shorter content reveal.
+A small black/gold control panel shows decorative English labels and one thin
+scan line; it has no fake progress percentage, flashing or repeating code effect.
 The curtain is aria-hidden, pointer-events:none, and transparent by default; its
 finite CSS animation removes the black even if script cleanup misses an event.
-It is removed on animationend, on any input, and by an independent 900 ms cleanup
+It is removed on animationend, on any input, and by an independent 1700 ms cleanup
 deadline. This timer never delays navigation or waits for a download.
 
 Real content is visible in normal CSS. Finite Web Animations fill backwards only

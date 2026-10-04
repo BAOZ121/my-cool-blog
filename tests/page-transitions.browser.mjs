@@ -21,13 +21,48 @@ const origin = `http://127.0.0.1:${server.address().port}`;
 const screenshots = process.env.TRANSITION_SCREENSHOT_DIR;
 if (screenshots) await mkdir(screenshots, { recursive: true });
 
-async function observe(context, { scheme = "light", animationAvailable = true } = {}) {
+async function observe(context, { scheme = "light", animationAvailable = true, measurePerformance = false } = {}) {
   await context.route("https://fonts.googleapis.com/**", route => route.fulfill({ contentType: "text/css", body: "" }));
-  await context.addInitScript(({ scheme, animationAvailable }) => {
+  await context.addInitScript(({ scheme, animationAvailable, measurePerformance }) => {
     localStorage.setItem("StackColorScheme", scheme);
-    window.__entry = { calls: [], inputs: [], reveals: 0, nativeTransitions: 0 };
+    window.__entry = { calls: [], inputs: [], reveals: 0, nativeTransitions: 0, performance: null };
     window.__entryAnimations = [];
     const active = () => window.__entryAnimations.filter(animation => animation.playState === "running" || animation.pending);
+    // Observation only: no DOM writes, playback-rate changes or machine-speed threshold.
+    function beginPerformanceObservation() {
+      if (!measurePerformance || window.__entry.performance) return;
+      const metrics = window.__entry.performance = {
+        startedAt: performance.now(), endedAt: null, complete: false,
+        frames: 0, maxRafGapMs: 0, longTaskSupported: false, longTasks: [],
+      };
+      const recordTasks = entries => {
+        for (const entry of entries) {
+          if (entry.startTime + entry.duration >= metrics.startedAt &&
+              (metrics.endedAt === null || entry.startTime <= metrics.endedAt)) {
+            metrics.longTasks.push({ startTime: entry.startTime, duration: entry.duration });
+          }
+        }
+      };
+      let observer;
+      if (typeof PerformanceObserver === "function" && PerformanceObserver.supportedEntryTypes?.includes("longtask")) {
+        observer = new PerformanceObserver(list => recordTasks(list.getEntries()));
+        observer.observe({ type: "longtask", buffered: false });
+        metrics.longTaskSupported = true;
+      }
+      let previousFrame;
+      const sample = timestamp => {
+        metrics.frames++;
+        if (previousFrame !== undefined) metrics.maxRafGapMs = Math.max(metrics.maxRafGapMs, timestamp - previousFrame);
+        previousFrame = timestamp;
+        if (active().length || document.querySelector(".dex-entry-curtain")) requestAnimationFrame(sample);
+        else {
+          metrics.endedAt = performance.now();
+          if (observer) { recordTasks(observer.takeRecords()); observer.disconnect(); }
+          metrics.complete = true;
+        }
+      };
+      requestAnimationFrame(sample);
+    }
     for (const type of ["pageswap", "pagereveal"]) {
       window.addEventListener(type, event => {
         if (type === "pagereveal") window.__entry.reveals++;
@@ -87,10 +122,11 @@ async function observe(context, { scheme = "light", animationAvailable = true } 
       };
       window.__entry.calls.push(call);
       window.__entryAnimations.push(animation);
+      beginPerformanceObservation();
       animation.finished.then(() => { call.state = "finished"; }, () => { call.state = "cancelled"; });
       return animation;
     };
-  }, { scheme, animationAvailable });
+  }, { scheme, animationAvailable, measurePerformance });
 }
 
 async function assertNoNative(page) {
@@ -101,7 +137,7 @@ async function assertNoNative(page) {
   assert.equal(await page.locator("html").getAttribute("data-dex-transition"), null);
 }
 async function finished(page) {
-  await page.waitForFunction(() => window.__entryAnimations.every(animation => !animation.pending && animation.playState !== "running") && !document.querySelector(".dex-entry-curtain"), null, { timeout: 1500 });
+  await page.waitForFunction(() => window.__entryAnimations.every(animation => !animation.pending && animation.playState !== "running") && !document.querySelector(".dex-entry-curtain"), null, { timeout: 2200 });
 }
 function assertArticleTimeline(calls) {
   assert.ok(calls.some(call => call.animationId === "dex-content-enter"), "Article content must have its own reveal phase");
@@ -109,11 +145,11 @@ function assertArticleTimeline(calls) {
     assert.ok(["dex-cover-pop", "dex-content-enter"].includes(call.animationId), `Unexpected entry animation: ${call.animationId}`);
     if (call.animationId === "dex-cover-pop") {
       assert.equal(call.tag, "IMG");
-      assert.equal(call.delay, 120, "Cover starts after the initial black curtain");
-      assert.equal(call.duration, 260);
+      assert.equal(call.delay, 520, "Cover starts after the approximately half-second black hold");
+      assert.equal(call.duration, 400);
     } else {
-      assert.equal(call.delay, 360, "Article content reveals after the cover begins");
-      assert.equal(call.duration, 280);
+      assert.equal(call.delay, 920, "Article content reveals after the cover pop");
+      assert.equal(call.duration, 420);
     }
   }
 }
@@ -171,7 +207,7 @@ try {
       assert.equal(input.curtain.position, "fixed");
       assert.equal(input.curtain.ariaHidden, "true");
       assert.equal(input.curtain.animationName, "dex-entry-blackout");
-      assert.equal(input.curtain.duration, "0.18s");
+      assert.equal(input.curtain.duration, "0.68s");
       assert.equal(input.curtain.fill, "none");
       assert.ok(Number(input.curtain.opacity) > 0, "Input must pass through a currently visible curtain");
       assertArticleTimeline(entry.calls);
@@ -186,7 +222,7 @@ try {
           if (call.titlePixels) assert.equal(call.clippedTitle, true, "Title pixels reveal inside their clipped anchor");
         }
         assert.equal(Boolean(call.pseudo), false, "Animate the real element, not a pseudo overlay");
-        assert.ok(call.duration >= 0 && call.duration + call.delay <= 700, `Entry must be short and bounded: ${JSON.stringify(call)}`);
+        assert.ok(call.duration >= 0 && call.duration + call.delay <= 1400, `Entry must remain finite and bounded: ${JSON.stringify(call)}`);
         assert.equal(call.iterations, 1);
         assert.equal(call.fill, "backwards", "Finite delays may fill backwards, never retain final animation state");
         assert.ok(call.properties.every(property => ["offset", "computedOffset", "easing", "composite", "opacity", "transform"].includes(property)), "Only compositor-friendly transform/opacity properties animate");
@@ -292,8 +328,8 @@ try {
         if (pageEntry.article) assertArticleTimeline(pageEntry.calls);
         else for (const call of pageEntry.calls) {
           assert.equal(call.animationId, "dex-content-enter");
-          assert.equal(call.delay, 160, "Generic pages reveal after their short curtain");
-          assert.equal(call.duration, 280);
+          assert.equal(call.delay, 560, "Generic pages reveal after the black hold");
+          assert.equal(call.duration, 420);
           assert.equal(call.fill, "backwards");
         }
       }
@@ -325,7 +361,7 @@ try {
 
   // Click the fixed title anchor while its inner pixels are still revealing.
   const revealContext = await browser.newContext({ viewport: { width: 1440, height: 1200 }, reducedMotion: "no-preference" });
-  await observe(revealContext);
+  await observe(revealContext, { measurePerformance: true });
   const revealPage = await revealContext.newPage();
   const revealErrors = [];
   revealPage.on("pageerror", error => revealErrors.push(error.message));
@@ -337,7 +373,7 @@ try {
   await internalArticle(revealPage, firstArticlePath);
   await revealPage.waitForFunction(() => window.__entryAnimations.some(animation =>
     animation.id === "dex-content-enter" && animation.effect.target.matches("[data-entry-title]") &&
-    animation.currentTime >= 360 && animation.currentTime < 640 && animation.playState === "running"), null, { polling: 1 });
+    animation.currentTime >= 920 && animation.currentTime < 1340 && animation.playState === "running"), null, { polling: 1 });
   await Promise.all([
     revealPage.waitForNavigation({ waitUntil: "domcontentloaded" }),
     revealPage.mouse.click(titleBox.x + Math.min(12, titleBox.width / 2), titleBox.y + Math.min(6, titleBox.height / 2)),
@@ -363,6 +399,18 @@ try {
   assert.equal(await revealPage.evaluate(() => window.__entry.calls.every(call => call.state === "finished")), true, "The finite choreography must complete naturally");
   assert.equal(await revealPage.locator(".dex-entry-curtain").count(), 0, "Natural completion removes its decorative layer");
   assert.equal(await revealPage.locator(".main-article .article-details").evaluate(element => getComputedStyle(element).opacity), "1");
+  await revealPage.waitForFunction(() => window.__entry.performance?.complete, null, { timeout: 2200 });
+  const performanceMetrics = await revealPage.evaluate(() => window.__entry.performance);
+  assert.ok(performanceMetrics.frames > 1, "Browser frames must continue throughout uninterrupted playback");
+  console.log("OBSERVE uninterrupted entry performance", JSON.stringify({
+    frames: performanceMetrics.frames,
+    observedMs: Math.round(performanceMetrics.endedAt - performanceMetrics.startedAt),
+    maxRafGapMs: Number(performanceMetrics.maxRafGapMs.toFixed(2)),
+    longTaskSupported: performanceMetrics.longTaskSupported,
+    longTaskCount: performanceMetrics.longTasks.length,
+    totalLongTaskMs: Number(performanceMetrics.longTasks.reduce((total, task) => total + task.duration, 0).toFixed(2)),
+    maxLongTaskMs: Number(Math.max(0, ...performanceMetrics.longTasks.map(task => task.duration)).toFixed(2)),
+  }));
   assert.deepEqual(revealErrors, []);
   console.log("PASS title reveal: first real link click works with a stationary anchor; uninterrupted choreography finishes and removes the curtain");
   await revealContext.close();

@@ -11,8 +11,8 @@ test('navigation never uses captured documents or delays; curtain is decorative 
   assert.doesNotMatch(css, /navigation: auto|view-transition-name/);
   assert.match(css, /pointer-events: none/);
   assert.match(css, /opacity: 0/);
-  assert.match(css, /dex-entry-blackout 180ms/);
-  assert.match(script, /window.setTimeout\(stop, 900\)/);
+  assert.match(css, /dex-entry-blackout 680ms/);
+  assert.match(script, /window.setTimeout\(stop, 1700\)/);
   assert.doesNotMatch(script, /preventDefault|pushState|replaceState|startViewTransition|scrollTo|fetch\(|inert/);
   assert.match(script, /fill: "backwards"/);
   assert.match(partial, /<script id="dex-page-transition-script">/);
@@ -44,7 +44,7 @@ function fixture(options = {}) {
     addEventListener: listen,
     querySelector: () => ({ querySelector: () => nodes[0] }), querySelectorAll: () => nodes.slice(1),
     body: { append(node) { masks.push(node); } },
-    createElement: () => ({ removed: false, setAttribute() {}, addEventListener() {}, remove() { this.removed = true; } }),
+    createElement: () => ({ removed: false, listeners: {}, setAttribute() {}, addEventListener(type, fn) { this.listeners[type] = fn; }, append() {}, remove() { this.removed = true; } }),
   };
   const motion = { matches: Boolean(options.reduced), addEventListener: (_, fn) => listen('motion', fn) };
   const window = { addEventListener: listen,
@@ -65,11 +65,11 @@ test('a fresh native navigation decorates at most five visible real elements', (
   const f = fixture(); f.fire('DOMContentLoaded');
   assert.equal(f.calls.length, 5);
   assert.equal(f.calls[0].timing.id, 'dex-cover-pop');
-  assert.equal(f.calls[0].timing.delay, 120);
-  assert.equal(f.calls[0].timing.duration, 260);
+  assert.equal(f.calls[0].timing.delay, 520);
+  assert.equal(f.calls[0].timing.duration, 400);
   assert.equal(f.calls[1].timing.id, 'dex-content-enter');
-  assert.equal(f.calls[1].timing.duration, 280);
-  assert.equal(f.calls[1].timing.delay, 360);
+  assert.equal(f.calls[1].timing.duration, 420);
+  assert.equal(f.calls[1].timing.delay, 920);
   assert.ok(f.calls.every(call => call.timing.fill === 'backwards'));
   assert.equal(f.stored.size, 0);
 });
@@ -125,10 +125,17 @@ test('curtain disappears on input and the independent cleanup deadline', () => {
   for (const interrupt of [f => f.fire('pointerdown'), f => f.timers[0].fn()]) {
     const f = fixture(); f.fire('DOMContentLoaded');
     assert.equal(f.masks.length, 1); assert.equal(f.masks[0].className, 'dex-entry-curtain');
-    assert.equal(f.timers[0].delay, 900);
+    assert.equal(f.timers[0].delay, 1700);
     interrupt(f);
     assert.equal(f.masks[0].removed, true);
     assert.ok(f.calls.every(call => call.animation.cancelled));
   }
   const reduced = fixture({ reduced: true }); reduced.fire('DOMContentLoaded'); assert.equal(reduced.masks.length, 0);
+});
+
+
+test('decorative child animation endings cannot dismiss the black phase early', () => {
+  const f = fixture(); f.fire('DOMContentLoaded'); const mask = f.masks[0];
+  mask.listeners.animationend({ target: {} }); assert.equal(mask.removed, false);
+  mask.listeners.animationend({ target: mask }); assert.equal(mask.removed, true);
 });

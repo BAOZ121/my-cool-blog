@@ -108,24 +108,46 @@ try {
       assert.equal(page.url(), url);
       assert.equal(await rail.locator('a[aria-current="location"]').count(), 1);
       if (motion === 'reduce') assert.equal(await target.evaluate(node => getComputedStyle(node).transitionDuration), '0s');
-      const snapshot = () => page.evaluate(id => ({
-        y: scrollY, height: document.documentElement.scrollHeight,
-        targetTop: document.getElementById(id)?.getBoundingClientRect().top,
-        details: { open: document.querySelector('.chapter-mobile details')?.open, height: document.querySelector('.chapter-mobile')?.getBoundingClientRect().height },
-        article: document.querySelector('.article-content')?.getBoundingClientRect().toJSON(),
-        visuals: [...document.querySelectorAll('figure.article-visual')].map(figure => ({ id: figure.id, state: figure.dataset.visualState, height: figure.getBoundingClientRect().height, top: figure.getBoundingClientRect().top, outlineOpen: figure.querySelector('details')?.open })),
-        lifecycle: window.__chapterLifecycle,
-      }), id);
+      const readingTextSelector = 'p,h1,h2,h3,h4,h5,h6,li,td';
+      const snapshot = (readingIndex = null) => page.evaluate(({ id, readingIndex, readingTextSelector }) => {
+        // Graphic internals change during progressive enhancement. Index only
+        // static article text, then retain the exact block the reader can see.
+        const texts = [...document.querySelector('.article-content').querySelectorAll(readingTextSelector)].filter(element => !element.closest('figure'));
+        const visible = element => { const rect = element.getBoundingClientRect(); return rect.height > 0 && rect.bottom > 0 && rect.top < innerHeight; };
+        const index = readingIndex ?? texts.findIndex(visible);
+        const element = texts[index];
+        return {
+          y: scrollY, height: document.documentElement.scrollHeight,
+          targetTop: document.getElementById(id)?.getBoundingClientRect().top,
+          readingAnchor: element ? { index, tag: element.tagName, text: element.textContent.trim(), top: element.getBoundingClientRect().top } : null,
+          details: { open: document.querySelector('.chapter-mobile details')?.open, height: document.querySelector('.chapter-mobile')?.getBoundingClientRect().height },
+          article: document.querySelector('.article-content')?.getBoundingClientRect().toJSON(),
+          visuals: [...document.querySelectorAll('figure.article-visual')].map(figure => ({ id: figure.id, state: figure.dataset.visualState, height: figure.getBoundingClientRect().height, top: figure.getBoundingClientRect().top, outlineOpen: figure.querySelector('details')?.open })),
+          lifecycle: window.__chapterLifecycle,
+        };
+      }, { id, readingIndex, readingTextSelector });
       const beforeBack = await snapshot();
+      assert.ok(beforeBack.readingAnchor, 'Record a visible, stable article text block before leaving');
       const scroll = beforeBack.y;
       await page.goto(origin + '/');
       await page.goBack({ waitUntil: 'commit' });
       await page.evaluate(() => document.fonts.ready);
       if (mobile) await page.waitForFunction(() => document.querySelector('.chapter-mobile details').open);
       await settleArticleLayout(page);
-      try { await page.waitForFunction(scroll => Math.abs(scrollY - scroll) < 4, scroll); }
+      try {
+        // Native restoration can compensate for a taller, unenhanced graphic
+        // above the viewport. The same text must return to the same screen
+        // position; raw scrollY is comparable only when geometry is identical.
+        await page.waitForFunction(({ anchor, readingTextSelector }) => {
+          const texts = [...document.querySelector('.article-content').querySelectorAll(readingTextSelector)].filter(element => !element.closest('figure'));
+          const element = texts[anchor.index];
+          return element?.tagName === anchor.tag && element.textContent.trim() === anchor.text && Math.abs(element.getBoundingClientRect().top - anchor.top) < 4;
+        }, { anchor: beforeBack.readingAnchor, readingTextSelector });
+        const afterBack = await snapshot(beforeBack.readingAnchor.index);
+        if (afterBack.height === beforeBack.height) assert.ok(Math.abs(afterBack.y - scroll) < 4, 'Identical document geometry must also restore exact scrollY');
+      }
       catch (error) {
-        console.log('CHAPTER_BACK_DIAGNOSTICS', JSON.stringify({ width, before: beforeBack, after: await snapshot() }));
+        console.log('CHAPTER_BACK_DIAGNOSTICS', JSON.stringify({ width, before: beforeBack, after: await snapshot(beforeBack.readingAnchor.index) }));
         throw error;
       }
       await page.waitForFunction(() => document.querySelector('.chapter-rail a[aria-current="location"]'));

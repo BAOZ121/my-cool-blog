@@ -71,11 +71,20 @@
       curtain = document.createElement("div");
       curtain.className = "dex-entry-curtain";
       curtain.setAttribute("aria-hidden", "true");
+      const panel = document.createElement("div");
+      panel.className = "dex-entry-curtain__panel";
+      for (const [name, text] of [["label", "DEX / RESEARCH"], ["status", article ? "OPENING ARTICLE" : "OPENING VIEW"], ["mode", "READING MODE"]]) {
+        const line = document.createElement("div");
+        line.className = `dex-entry-curtain__${name}`;
+        line.textContent = text;
+        panel.append(line);
+      }
+      curtain.append(panel);
       const mask = curtain;
-      mask.addEventListener("animationend", () => mask.remove(), { once: true });
+      mask.addEventListener("animationend", event => { if (event.target === mask) mask.remove(); });
       document.body.append(mask);
       // Cleanup deadline only: never await this timer or an image to navigate.
-      cleanupTimer = window.setTimeout(stop, 900);
+      cleanupTimer = window.setTimeout(stop, 1700);
       for (const node of visible) {
         const cover = node === hero;
         const title = node.matches("[data-entry-title]");
@@ -92,8 +101,8 @@
           { opacity: 0, transform: "translateY(28px)" }, { opacity: 1, transform: "translateY(0)" },
         ];
         const animation = node.animate(frames, {
-          id: cover ? "dex-cover-pop" : "dex-content-enter", duration: cover ? 260 : 280,
-          delay: cover ? 120 : article ? 360 : 160,
+          id: cover ? "dex-cover-pop" : "dex-content-enter", duration: cover ? 400 : 420,
+          delay: cover ? 520 : article ? 920 : 560,
           easing: "cubic-bezier(.22, 1, .36, 1)", fill: "backwards",
         });
         animations.push(animation);
