@@ -60,6 +60,19 @@ export function safeVendorURL(value, base) {
   return url.href;
 }
 
+// Wheel deltaMode is pixels (0), lines (1), or pages (2). Do not use D3's
+// Ctrl-wheel multiplier: Ctrl+wheel is also our documented desktop shortcut.
+export function mapWheelPixels(event, pageHeight = 470) {
+  if (!Number.isFinite(event.deltaY)) return 0;
+  const unit = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? pageHeight : 1;
+  return Math.max(-80, Math.min(80, event.deltaY * unit));
+}
+
+export function mapScaleExtent(fitScale) {
+  // Keep even very large expanded trees fit-able, while limiting text to 3×.
+  return [Math.min(0.25, Math.max(Number.EPSILON, fitScale / 2)), 3];
+}
+
 const palettes = {
   light: ["#d6b56f", "#f0dfb3", "#a8874a", "#dec799", "#bf9855", "#f4e9cf", "#9d7841", "#c9b78c"],
   dark: ["#d6b56f", "#f0dfb3", "#a8874a", "#dec799", "#bf9855", "#f4e9cf", "#9d7841", "#c9b78c"],
@@ -104,8 +117,8 @@ export function pieOptions(data, { dark = false, compact = false, reducedMotion 
 }
 
 const strings = {
-  en: { loading: "Loading interactive graphic…", failed: "The interactive view is unavailable. The full information is shown below.", interact: "Enable pan & zoom", stop: "Stop pan & zoom", enter: "Fullscreen", exit: "Exit fullscreen", mapHint: "Select a branch to expand. Use Ctrl or ⌘ + scroll to zoom; the outline below is available for keyboard reading.", enabled: "Pan and zoom enabled. Turn it off to scroll the page.", chartReady: "Select a segment for its reported share. Complete values are in the table below." },
-  zh: { loading: "正在加载交互图表…", failed: "交互视图暂不可用，完整内容已在下方展示。", interact: "开启拖动缩放", stop: "关闭拖动缩放", enter: "全屏查看", exit: "退出全屏", mapHint: "点击分支展开；按住 Ctrl 或 ⌘ 滚动缩放。下方大纲支持键盘阅读。", enabled: "已开启拖动缩放，关闭后可继续滑动页面。", chartReady: "点击图块查看原始份额；完整数值见下方数据表。" },
+  en: { loading: "Loading interactive graphic…", failed: "The interactive view is unavailable. The full information is shown below.", interact: "Enable pan & zoom", stop: "Stop pan & zoom", enter: "Fullscreen", exit: "Exit fullscreen", zoomIn: "Zoom in", zoomOut: "Zoom out", zoomLevel: "Zoom level", mapHint: "Use − / + for fine zoom, or Ctrl / ⌘ + scroll. Enable pan & zoom to drag or pinch. Keyboard: + / − to zoom, 0 to fit.", enabled: "Drag to move; scroll or pinch to zoom. Turn pan & zoom off to scroll the page. Keyboard: arrows to move, 0 to fit.", chartReady: "Select a segment for its reported share. Complete values are in the table below." },
+  zh: { loading: "正在加载交互图表…", failed: "交互视图暂不可用，完整内容已在下方展示。", interact: "开启拖动缩放", stop: "关闭拖动缩放", enter: "全屏查看", exit: "退出全屏", zoomIn: "放大", zoomOut: "缩小", zoomLevel: "缩放比例", mapHint: "使用 − / + 精细缩放，或按 Ctrl / ⌘ 滚动。开启拖动缩放后可拖动或双指缩放。键盘：+ / − 缩放，0 适应视图。", enabled: "拖动平移，滚动或双指缩放；关闭后可继续滑动页面。键盘：方向键平移，0 适应视图。", chartReady: "点击图块查看原始份额；完整数值见下方数据表。" },
 };
 
 function isDark() { return document.documentElement.dataset.scheme === "dark"; }
@@ -175,6 +188,7 @@ async function renderMap(figure, stage, toolbar, data, vendor, labels) {
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
   svg.setAttribute("aria-label", data.title);
   svg.setAttribute("role", "group");
+  svg.setAttribute("tabindex", "0");
   stage.append(svg);
   let interacting = false;
   const compact = stage.clientWidth < 480;
@@ -184,18 +198,81 @@ async function renderMap(figure, stage, toolbar, data, vendor, labels) {
     initialExpandLevel: -1, scrollForPan: false, zoom: true, pan: false,
     color: (node) => mapPalettes[isDark() ? "dark" : "light"][(node.payload?.branch || 0) % 8],
   });
-  // D3 otherwise captures every wheel/touch gesture, including ordinary page scrolling.
-  map.zoom.filter((event) => {
-    if (event.type === "wheel") return interacting || event.ctrlKey || event.metaKey;
-    if (event.type.startsWith("touch")) return interacting;
-    return !event.button;
-  });
+  const fittedScale = () => {
+    const { x1, y1, x2, y2 } = map.state.rect;
+    return Math.min(1, svg.clientWidth * 0.94 / Math.max(1, x2 - x1), svg.clientHeight * 0.94 / Math.max(1, y2 - y1));
+  };
+  const updateExtent = () => map.zoom.scaleExtent(mapScaleExtent(fittedScale()));
+  // Keep ordinary article scrolling and browser zoom outside the map untouched.
+  // D3 still owns drag/pinch and the transform math, but not wheel or double-click.
+  map.zoom.filter((event) => interacting && !event.button && event.type !== "wheel" && event.type !== "dblclick");
+  map.svg.on("wheel.zoom", null).on("dblclick.zoom", null);
+  let wheelFrame = 0;
+  let wheelPixels = 0;
+  let wheelAnchor;
+  const cancelWheel = () => {
+    cancelAnimationFrame(wheelFrame);
+    wheelFrame = 0;
+    wheelPixels = 0;
+  };
+  const scaleBy = (factor, anchor) => {
+    updateExtent();
+    map.svg.interrupt().call(map.zoom.scaleBy, factor, anchor);
+  };
+  svg.addEventListener("wheel", (event) => {
+    if (!(interacting || event.ctrlKey || event.metaKey)) return;
+    const pixels = mapWheelPixels(event, svg.clientHeight);
+    // Prevent browser zoom even at the map's limits; never let it escape to the page.
+    event.preventDefault();
+    if (!pixels) return;
+    const point = svg.createSVGPoint();
+    point.x = event.clientX; point.y = event.clientY;
+    const local = point.matrixTransform(svg.getScreenCTM().inverse());
+    wheelAnchor = [local.x, local.y];
+    wheelPixels = Math.max(-80, Math.min(80, wheelPixels + pixels));
+    if (wheelFrame) return;
+    wheelFrame = requestAnimationFrame(() => {
+      const factor = Math.exp(-wheelPixels * 0.001);
+      wheelFrame = 0; wheelPixels = 0;
+      scaleBy(factor, wheelAnchor);
+    });
+  }, { passive: false });
+  // A gesture, fit, mode change or navigation must not leave queued zoom behind.
+  map.zoom.on("start.controls", cancelWheel);
+  window.addEventListener("pagehide", cancelWheel);
+  const zoomControls = document.createElement("div");
+  zoomControls.className = "visual-zoom-controls";
+  zoomControls.setAttribute("role", "group");
+  zoomControls.setAttribute("aria-label", labels.zoomLevel);
+  const zoomOut = document.createElement("button");
+  const zoomIn = document.createElement("button");
+  for (const [button, action, text, label] of [[zoomOut, "zoom-out", "−", labels.zoomOut], [zoomIn, "zoom-in", "+", labels.zoomIn]]) {
+    button.type = "button"; button.dataset.action = action; button.textContent = text;
+    button.setAttribute("aria-label", label); button.title = label;
+  }
+  const zoomValue = document.createElement("output");
+  zoomValue.className = "visual-zoom-value";
+  zoomValue.setAttribute("aria-label", labels.zoomLevel);
+  zoomValue.setAttribute("aria-live", "off");
+  zoomControls.append(zoomOut, zoomValue, zoomIn);
+  toolbar.prepend(zoomControls);
+  const zoomStep = (direction) => { cancelWheel(); scaleBy(1.1 ** direction); };
+  zoomOut.addEventListener("click", () => zoomStep(-1));
+  zoomIn.addEventListener("click", () => zoomStep(1));
+  const syncZoom = ({ transform }) => {
+    const [min, max] = map.zoom.scaleExtent();
+    zoomValue.value = `${Math.round(transform.k * 100)}%`;
+    zoomOut.disabled = transform.k <= min + 1e-8;
+    zoomIn.disabled = transform.k >= max - 1e-8;
+  };
+  map.zoom.on("zoom.controls", syncZoom);
   const hint = figure.querySelector(".visual-status");
   const interaction = document.createElement("button");
   interaction.type = "button"; interaction.dataset.action = "interact"; interaction.textContent = labels.interact;
   interaction.setAttribute("aria-pressed", "false");
   toolbar.append(interaction);
   interaction.addEventListener("click", () => {
+    cancelWheel();
     interacting = !interacting;
     figure.classList.toggle("is-interacting", interacting);
     interaction.textContent = interacting ? labels.stop : labels.interact;
@@ -215,14 +292,35 @@ async function renderMap(figure, stage, toolbar, data, vendor, labels) {
   svg.addEventListener("keydown", (event) => {
     if ((event.key === "Enter" || event.key === " ") && event.target.getAttribute("role") === "button") {
       event.preventDefault(); event.target.dispatchEvent(new MouseEvent("click", { bubbles: true }));
+      return;
+    }
+    if (event.ctrlKey || event.metaKey || event.altKey) return;
+    if (event.key === "+" || event.key === "=" || event.key === "-") {
+      event.preventDefault(); zoomStep(event.key === "-" ? -1 : 1);
+    } else if (event.key === "0") {
+      event.preventDefault(); void fit();
+    } else if (interacting && ["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown"].includes(event.key)) {
+      event.preventDefault(); cancelWheel();
+      const amount = 40 / svg.__zoom.k;
+      map.svg.interrupt().call(map.zoom.translateBy, event.key === "ArrowLeft" ? amount : event.key === "ArrowRight" ? -amount : 0, event.key === "ArrowUp" ? amount : event.key === "ArrowDown" ? -amount : 0);
     }
   });
   svg.addEventListener("click", () => requestAnimationFrame(accessibleNodes));
-  const fit = () => map.fit().catch(() => {});
+  const fit = async () => {
+    cancelWheel(); map.svg.interrupt();
+    if (!svg.clientWidth || !svg.clientHeight) return;
+    updateExtent();
+    await map.fit().catch(() => {});
+  };
+  let treeRevision = 0;
   const showTree = async (expanded) => {
+    const revision = ++treeRevision;
+    cancelWheel(); map.svg.interrupt();
     const tree = toMarkmapTree(data.root, expanded);
     if (!expanded && stage.clientWidth < 480) tree.children.forEach(child => { child.payload.fold = 1; });
-    await map.setData(tree); await map.fit(); accessibleNodes();
+    await map.setData(tree);
+    if (revision !== treeRevision) return;
+    await fit(); accessibleNodes();
   };
   await showTree(false);
   toolbar.querySelector('[data-action="fit"]')?.addEventListener("click", fit);

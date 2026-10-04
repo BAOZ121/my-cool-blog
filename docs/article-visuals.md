@@ -1,7 +1,6 @@
 # Article industry maps and market shares
 
-Four existing reports contain an inline Markmap industry map and an ECharts
-share chart. The components enhance server-rendered outlines and data tables.
+Reports can contain inline Markmap industry maps and ECharts share charts. The components enhance server-rendered outlines and data tables.
 They do not require a database, external chart service or runtime CDN.
 
 ## Editing content
@@ -41,7 +40,19 @@ script leaves complete information visible. A reader can open the text outline
 or data table at any time. Printing expands this content. On touch screens,
 normal vertical scrolling is preserved until pan/zoom is explicitly enabled.
 Full screen, fit, expand/collapse, light/dark colors and reduced motion are
-supported. Browser Print / Save PDF is the supported graphical article export.
+supported. Mind maps have keyboard-accessible − / + controls (10% relative steps)
+and an absolute zoom percentage. Ctrl/⌘ + wheel and trackpad pinch use the same
+pixel/line/page normalization, with no Ctrl acceleration. Accepted wheel input
+is coalesced per animation frame and limited to an 8.3% scale change per frame;
+there is no queued inertia after fit, mode changes or navigation. Zoom stays
+between half the fitted overview (at most 25%) and 300%. The lower bound adapts
+to large expanded trees, so Fit never jumps back to an unrelated minimum.
+Native touch pinch and drag are enabled only with **Enable pan & zoom**; ordinary
+page scrolling remains available otherwise. Double-click no longer doubles the
+map scale. With the map focused, + / − zoom, 0 fits, and arrow keys pan while
+interaction is enabled. The full text outline remains keyboard-readable.
+
+Browser Print / Save PDF is the supported graphical article export.
 
 ## Dependencies
 
@@ -60,6 +71,7 @@ python scripts/validate_site.py public
 python scripts/validate_breakdowns.py public
 python scripts/validate_article_visuals.py public
 node tests/article-visuals.browser.mjs
+node tests/mindmap-zoom.browser.mjs
 ```
 
 The browser check uses Playwright Chromium by default. Set `CHROME_PATH` to an

@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { escapeHTML, validateMap, toMarkmapTree, validateShare, pieOptions, safeVendorURL } from "../assets/js/article-visuals.mjs";
+import { escapeHTML, validateMap, toMarkmapTree, validateShare, pieOptions, safeVendorURL, mapWheelPixels, mapScaleExtent } from "../assets/js/article-visuals.mjs";
 
 const example = () => ({
   title: "Foundry share", scope: "Foundry services", geography: "Global", metric: "Revenue", period: "2025", unit: "%",
@@ -78,4 +78,22 @@ test("runtime graphics modules are loaded only from the website's own origin", (
   assert.equal(safeVendorURL("/vendor/article-visuals/markmap.js", "https://thedexs.com/post/test/"), "https://thedexs.com/vendor/article-visuals/markmap.js");
   assert.throws(() => safeVendorURL("https://cdn.example.com/map.js", "https://thedexs.com/"), /self-hosted/);
   assert.throws(() => safeVendorURL("data:text/javascript,alert(1)", "https://thedexs.com/"), /self-hosted/);
+});
+
+
+test("map wheel zoom normalizes units without multiplying Ctrl sensitivity", () => {
+  for (const modifier of [{}, { ctrlKey: true }, { metaKey: true }]) {
+    assert.equal(mapWheelPixels({ deltaY: 2, deltaMode: 0, ...modifier }), 2);
+    assert.equal(mapWheelPixels({ deltaY: -2, deltaMode: 1, ...modifier }), -32);
+    assert.equal(mapWheelPixels({ deltaY: 1, deltaMode: 2, ...modifier }, 320), 80);
+    assert.equal(mapWheelPixels({ deltaY: -100000, deltaMode: 0, ...modifier }), -80);
+  }
+  for (const deltaY of [NaN, Infinity, -Infinity, undefined]) assert.equal(mapWheelPixels({ deltaY }), 0);
+  assert.equal(mapWheelPixels({ deltaY: 0, deltaMode: 0 }), 0);
+});
+test("map zoom limits allow very large trees to fit without unbounded magnification", () => {
+  assert.deepEqual(mapScaleExtent(1), [0.25, 3]);
+  assert.deepEqual(mapScaleExtent(0.4), [0.2, 3]);
+  assert.deepEqual(mapScaleExtent(0.001), [0.0005, 3]);
+  assert.ok(mapScaleExtent(0)[0] > 0);
 });
