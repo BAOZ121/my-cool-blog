@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { escapeHTML, validateMap, toMarkmapTree, validateShare, pieOptions, safeVendorURL, mapWheelPixels, mapScaleExtent, stageVisualOffFlow } from "../assets/js/article-visuals.mjs";
+import { escapeHTML, validateMap, toMarkmapTree, validateShare, pieOptions, safeVendorURL, mapWheelPixels, mapScaleExtent, stageVisualOffFlow, commitVisualLayout } from "../assets/js/article-visuals.mjs";
 
 const example = () => ({
   title: "Foundry share", scope: "Foundry services", geography: "Global", metric: "Revenue", period: "2025", unit: "%",
@@ -108,4 +108,17 @@ test("loading graphics render out of flow and restore original styles atomically
   assert.equal(stage.style.visibility, "hidden");
   restore();
   assert.deepEqual(stage.style, { position: "", width: "", visibility: "", color: "red" });
+});
+
+test("graphic swaps settle position changes before releasing natural height", () => {
+  const events = [];
+  const figure = {
+    style: { height: "auto" },
+    getBoundingClientRect() { events.push(["measure", this.style.height]); return { height: 1234.5 }; },
+  };
+  commitVisualLayout(figure, () => events.push(["commit", figure.style.height]));
+  assert.deepEqual(events, [["measure", "auto"], ["commit", "1234.5px"], ["measure", "1234.5px"]]);
+  assert.equal(figure.style.height, "auto");
+  assert.throws(() => commitVisualLayout(figure, () => { throw new Error("render failed"); }), /render failed/);
+  assert.equal(figure.style.height, "auto", "failed enhancement never leaves a fixed-height article graphic");
 });

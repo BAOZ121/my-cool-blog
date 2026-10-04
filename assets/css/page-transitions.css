@@ -5,7 +5,8 @@
 .article-image a, .article-title a, [data-entry-title] { display: block; }
 .main-article .article-title a { overflow: hidden; }
 
-/* A decorative curtain only. Its default is transparent, so failed/disabled
+/* The head installs this temporary root child before any body content paints.
+   A decorative curtain only. Its default is transparent, so failed/disabled
    CSS animation cannot strand the page behind black. No input or scroll lock. */
 .dex-entry-curtain {
   position: fixed;

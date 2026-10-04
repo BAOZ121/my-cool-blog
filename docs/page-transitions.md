@@ -12,7 +12,14 @@ or delaying them. A one-time session marker permits an entrance only on a fresh
 navigation with a matching source/destination. Direct entry, reload, Back/Forward,
 hashes, new tabs, disabled storage and reduced motion use normal rendering.
 
-At DOM readiness, an eligible article entry follows three bounded phases:
+The inline head script establishes an eligible curtain before the parser exposes
+body content. The inline CSS is already present, so this does not depend on a
+network stylesheet or DOMContentLoaded. The temporary fixed curtain is attached
+to the document root without creating/replacing body. Its finite CSS animation
+starts immediately after a style resolution, and the later real-element animation
+joins that same clock rather than starting a second sequence.
+
+An eligible article entry follows three bounded phases from that early start:
 - A decorative black curtain holds for about 0.5 seconds and fades away within 680 ms
 - Loaded cover pixels pop in at 520–920 ms
 - Title and introductory content reveal at 920–1340 ms
@@ -25,7 +32,12 @@ scan line; it has no fake progress percentage, flashing or repeating code effect
 The curtain is aria-hidden, pointer-events:none, and transparent by default; its
 finite CSS animation removes the black even if script cleanup misses an event.
 It is removed on animationend, on any input, and by an independent 1700 ms cleanup
-deadline. This timer never delays navigation or waits for a download.
+deadline. This timer is armed before curtain installation and never delays navigation or
+waits for a download. If DOM readiness or a geometry read arrives after the opaque
+black hold (about 490 ms), the enhancement is abandoned: already-visible article
+content is never hidden again and the curtain is never restarted. Transparent,
+disabled or dismissed curtain CSS also prevents any backwards-fill content
+animation. Slow parsing/resources therefore fail open into normal rendering.
 
 Real content is visible in normal CSS. Finite Web Animations fill backwards only
 during their short phase delays, never retain final state, and are cancelled by
@@ -65,7 +77,15 @@ python3 scripts/validate_cover_images.py public
 node tests/page-transitions.browser.mjs
 ```
 
-Tests assert actual real-element playback and real pointer input during that
+Targeted first-paint probes hold the HTML parser or a deferred script while real
+requestAnimationFrame samples inspect the first destination render opportunity.
+A rendered 1×1 screenshot verifies the black pixel; the probe also holds cover
+I/O pending and injects a script failure immediately after the early arm. These
+cases verify first-frame coverage and that late DOM readiness cannot replay or
+re-hide the article. Unit tests cover a missing body, shared elapsed timing,
+expensive layout crossing the hold deadline, disabled CSS and early input.
+
+Tests also assert actual real-element playback and real pointer input during that
 playback, with no native snapshot transition. They retain desktop/mobile,
 light/dark, reduced-motion, history/scroll, reload, keyboard, forms, new-tab,
 download, rapid navigation, slow/missing image, no-JS and unavailable-animation

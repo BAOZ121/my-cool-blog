@@ -7,6 +7,9 @@
   let animations = [];
   let curtain;
   let cleanupTimer;
+  let startedAt;
+  // Do not start/re-hide content once the opaque phase has already elapsed.
+  const blackHold = 680 * .72;
   try {
     entry = JSON.parse(sessionStorage.getItem(key));
     sessionStorage.removeItem(key);
@@ -46,12 +49,56 @@
     } catch { /* Native link activation proceeds even without storage. */ }
   });
 
-  function enter() {
+  function eligible() {
     const navigationType = performance.getEntriesByType("navigation")[0]?.type;
-    if (!entry || interrupted || motion.matches || document.hidden || scrollY > 1 ||
-        navigationType !== "navigate" || location.hash || location.href !== entry.to ||
-        document.referrer !== entry.from || !Number.isFinite(entry.time) ||
-        Date.now() - entry.time < 0 || Date.now() - entry.time > 15000) return;
+    return entry && !interrupted && !motion.matches && !document.hidden && scrollY <= 1 &&
+      navigationType === "navigate" && !location.hash && location.href === entry.to &&
+      document.referrer === entry.from && Number.isFinite(entry.time) &&
+      Date.now() - entry.time >= 0 && Date.now() - entry.time <= 15000 &&
+      typeof document.documentElement.animate === "function";
+  }
+
+  function arm() {
+    if (!eligible()) return;
+    try {
+      // This watchdog is armed before installation; it never delays navigation.
+      cleanupTimer = window.setTimeout(stop, 1700);
+      curtain = document.createElement("div");
+      curtain.className = "dex-entry-curtain";
+      curtain.setAttribute("aria-hidden", "true");
+      const panel = document.createElement("div");
+      panel.className = "dex-entry-curtain__panel";
+      for (const [name, text] of [["label", "DEX / RESEARCH"], ["status", "OPENING VIEW"], ["mode", "READING MODE"]]) {
+        const line = document.createElement("div");
+        line.className = `dex-entry-curtain__${name}`;
+        line.textContent = text;
+        panel.append(line);
+      }
+      curtain.append(panel);
+      const mask = curtain;
+      mask.addEventListener("animationend", event => { if (event.target === mask) mask.remove(); });
+      // The head script runs before body exists. This temporary fixed root child
+      // is present before the parser can expose article content on a first paint.
+      document.documentElement.append(mask);
+      // Establish the finite CSS clock now, not when DOM readiness finally runs.
+      window.getComputedStyle(mask).opacity;
+      startedAt = performance.now();
+      if (!covered()) stop();
+    } catch { stop(); }
+  }
+
+  function covered() {
+    if (!curtain?.isConnected) return false;
+    const style = window.getComputedStyle(curtain);
+    return style.animationName === "dex-entry-blackout" && Number(style.opacity) >= .99;
+  }
+
+  function enter() {
+    if (startedAt === undefined || !eligible()) { stop(); return; }
+    const elapsed = performance.now() - startedAt;
+    // Slow parsing/deferred resources may outlive the black phase. Fail open:
+    // never restart a curtain or conceal content the reader can already see.
+    if (elapsed >= blackHold || !covered()) { stop(); return; }
     const article = document.querySelector(".main-article");
     const hero = article?.querySelector(".article-image img");
     const nodes = [];
@@ -66,26 +113,12 @@
       return typeof node.animate === "function" && rect.width > 0 && rect.height > 0 &&
         rect.top < innerHeight && rect.bottom > 0 && rect.height <= innerHeight;
     }).slice(0, 5);
-    if (!visible.length) return;
+    if (!visible.length || performance.now() - startedAt >= blackHold || !covered()) { stop(); return; }
     try {
-      curtain = document.createElement("div");
-      curtain.className = "dex-entry-curtain";
-      curtain.setAttribute("aria-hidden", "true");
-      const panel = document.createElement("div");
-      panel.className = "dex-entry-curtain__panel";
-      for (const [name, text] of [["label", "DEX / RESEARCH"], ["status", article ? "OPENING ARTICLE" : "OPENING VIEW"], ["mode", "READING MODE"]]) {
-        const line = document.createElement("div");
-        line.className = `dex-entry-curtain__${name}`;
-        line.textContent = text;
-        panel.append(line);
-      }
-      curtain.append(panel);
-      const mask = curtain;
-      mask.addEventListener("animationend", event => { if (event.target === mask) mask.remove(); });
-      document.body.append(mask);
-      // Cleanup deadline only: never await this timer or an image to navigate.
-      cleanupTimer = window.setTimeout(stop, 1700);
+      const status = curtain?.querySelector(".dex-entry-curtain__status");
+      if (status && article) status.textContent = "OPENING ARTICLE";
       for (const node of visible) {
+        if (performance.now() - startedAt >= blackHold || !covered()) { stop(); return; }
         const cover = node === hero;
         const title = node.matches("[data-entry-title]");
         const interactive = node.closest("a,button,summary") || node.querySelector("a,button,input,select,textarea,summary,[tabindex]");
@@ -105,11 +138,14 @@
           delay: cover ? 520 : article ? 920 : 560,
           easing: "cubic-bezier(.22, 1, .36, 1)", fill: "backwards",
         });
+        // Join the head-established timeline instead of restarting at DOM ready.
+        animation.currentTime = performance.now() - startedAt;
         animations.push(animation);
         animation.finished.then(() => { animations = animations.filter(item => item !== animation); }, () => {});
       }
     } catch { stop(); }
   }
+  arm();
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", enter, { once: true });
   else enter();
 })();

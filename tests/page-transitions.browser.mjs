@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { createServer } from "node:http";
 import { mkdir, readFile } from "node:fs/promises";
 import { extname, resolve, sep } from "node:path";
+import { inflateSync } from "node:zlib";
 import { chromium } from "@playwright/test";
 
 const root = resolve("public");
@@ -161,10 +162,118 @@ async function internalArticle(page, articlePath) {
   ]);
 }
 
+// A 1×1 PNG screenshot has no preceding pixels/rows for PNG filter predictors.
+function screenshotPixel(png) {
+  const chunks = [];
+  for (let offset = 8; offset < png.length;) {
+    const length = png.readUInt32BE(offset);
+    const type = png.toString("ascii", offset + 4, offset + 8);
+    const data = png.subarray(offset + 8, offset + 8 + length);
+    if (type === "IHDR") {
+      assert.equal(data.readUInt32BE(0), 1); assert.equal(data.readUInt32BE(4), 1);
+      assert.equal(data[8], 8); assert.ok([2, 6].includes(data[9]));
+    }
+    if (type === "IDAT") chunks.push(data);
+    offset += length + 12;
+  }
+  return [...inflateSync(Buffer.concat(chunks)).subarray(1, 4)];
+}
+
+async function verifyFirstPaint(browser) {
+  const css = await readFile("assets/css/page-transitions.css", "utf8");
+  const script = await readFile("assets/js/page-transitions.js", "utf8");
+  for (const mode of ["parser", "deferred", "script-failure"]) {
+    const context = await browser.newContext({ viewport: { width: 900, height: 700 }, reducedMotion: "no-preference" });
+    await observe(context);
+    await context.addInitScript(() => {
+      window.__paintFrames = [];
+      window.__probeDomReady = false;
+      window.__probeDone = false;
+      document.addEventListener("DOMContentLoaded", () => { window.__probeDomReady = true; });
+      const sample = timestamp => {
+        const article = document.querySelector(".main-article");
+        if (article) {
+          const curtain = document.querySelector(".dex-entry-curtain");
+          const style = curtain && getComputedStyle(curtain);
+          const rect = curtain?.getBoundingClientRect();
+          window.__paintFrames.push({ timestamp, domReady: window.__probeDomReady,
+            curtain: Boolean(curtain), opacity: style?.opacity || "0", background: style?.backgroundColor,
+            coversViewport: Boolean(rect && rect.x <= 0 && rect.y <= 0 && rect.right >= innerWidth && rect.bottom >= innerHeight),
+            rootChild: curtain?.parentElement === document.documentElement,
+            contentOpacity: getComputedStyle(document.querySelector(".article-details")).opacity });
+        }
+        if (!window.__probeDone) requestAnimationFrame(sample);
+      };
+      requestAnimationFrame(sample);
+    });
+    let gate;
+    let gateStarted;
+    const requested = new Promise(resolve => { gateStarted = resolve; });
+    const images = [];
+    const destination = `${origin}/__dex-paint/${mode}/`;
+    const gateURL = `${origin}/__dex-paint/gate.js`;
+    let destinationScript = script;
+    if (mode === "script-failure") {
+      assert.ok(script.includes("  arm();\n"), "Fault injection must occur immediately after the real early arm");
+      destinationScript = script.replace("  arm();\n", '  arm();\n  throw new Error("Injected failure after early arm");\n');
+    }
+    const shell = body => `<html><head><style>${css}</style><script>${script}</script></head><body>${body}</body></html>`;
+    const deferred = mode === "deferred" ? `<script defer src="${gateURL}"></script>` : "";
+    const blocking = mode === "deferred" ? "" : `<script src="${gateURL}"></script>`;
+    const html = `<html><head><style>body{margin:0;background:white;color:red}.article-image{height:180px}.article-details{padding:20px}</style><style>${css}</style><script>${destinationScript}</script>${deferred}</head><body><main><article class="main-article"><div class="article-image"><a href="${destination}"><img src="/__dex-paint/slow-cover.svg" width="400" height="180"></a></div><div class="article-details"><h1 class="article-title"><a href="${destination}"><span data-entry-title>FIRST PAINT MUST NOT FLASH THIS ARTICLE</span></a></h1></div><div class="article-content"><p>Visible content must never precede the initial black frame.</p></div></article></main>${blocking}</body></html>`;
+    await context.route(`${origin}/__dex-paint/**`, async route => {
+      const url = route.request().url();
+      if (url === gateURL) { gate = route; gateStarted(); return; }
+      if (url.endsWith("slow-cover.svg")) { images.push(route); return; }
+      if (url === destination) return route.fulfill({ contentType: "text/html", body: html });
+      return route.fulfill({ contentType: "text/html", body: shell(`<a href="${destination}">Open article</a>`) });
+    });
+    const page = await context.newPage();
+    const errors = [];
+    page.on("pageerror", error => errors.push(error.message));
+    try {
+      await page.goto(`${origin}/__dex-paint/source/`);
+      await page.locator("a").click({ noWaitAfter: true });
+      let gateTimeout;
+      try {
+        await Promise.race([requested, new Promise((_, reject) => {
+          gateTimeout = setTimeout(() => reject(new Error("The first-paint readiness gate was never requested")), 5000);
+        })]);
+      } finally { clearTimeout(gateTimeout); }
+      await page.waitForFunction(() => window.__paintFrames?.length > 0, null, { polling: 1 });
+      const first = await page.evaluate(() => window.__paintFrames[0]);
+      assert.equal(first.domReady, false, "First-frame evidence must precede DOMContentLoaded");
+      assert.equal(first.rootChild, true, "The head must establish its curtain before body parsing");
+      assert.equal(first.opacity, "1", "Destination text must be covered on its very first render opportunity");
+      assert.equal(first.background, "rgb(8, 9, 9)");
+      assert.equal(first.coversViewport, true);
+      assert.deepEqual(screenshotPixel(await page.screenshot({ clip: { x: 0, y: 0, width: 1, height: 1 }, animations: "allow" })), [8, 9, 9], "The rendered first-paint probe must actually be black, not merely contain a curtain node");
+      // Hold parsing/deferred execution beyond the black phase, while image I/O stays pending.
+      await page.waitForFunction(() => window.__paintFrames.some(frame => !frame.domReady && !frame.curtain), null, { timeout: 2200 });
+      assert.equal(await page.evaluate(() => window.__entry.calls.length), 0, "No late content animation may begin while readiness is blocked");
+      await gate.fulfill({ contentType: "text/javascript", body: "/* Readiness gate released. */" });
+      gate = undefined;
+      await page.waitForLoadState("domcontentloaded");
+      await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+      assert.equal(await page.evaluate(() => window.__entry.calls.length), 0, "Late DOM readiness must never restart or re-hide the already visible article");
+      assert.equal(await page.locator(".dex-entry-curtain").count(), 0);
+      assert.equal(await page.locator(".article-details").evaluate(element => getComputedStyle(element).opacity), "1");
+      assert.deepEqual(errors, mode === "script-failure" ? ["Injected failure after early arm"] : []);
+      await page.evaluate(() => { window.__probeDone = true; });
+      console.log(`PASS first paint ${mode}: black precedes article pixels, slow resources do not prolong it, and late readiness/failure stays visible`);
+    } finally {
+      if (gate) await gate.abort().catch(() => {});
+      await Promise.all(images.map(route => route.abort().catch(() => {})));
+      await context.close();
+    }
+  }
+}
+
 let browser;
 let firstArticlePath;
 try {
   browser = await chromium.launch({ headless: true, channel: "chromium", ignoreDefaultArgs: ["--disable-back-forward-cache"], ...(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : {}) });
+  await verifyFirstPaint(browser);
   for (const [width, scheme, motion] of [[1440, "light", "no-preference"], [390, "dark", "no-preference"], [1440, "dark", "reduce"], [390, "light", "reduce"]]) {
     const context = await browser.newContext({ viewport: { width, height: 900 }, colorScheme: scheme, reducedMotion: motion });
     await observe(context, { scheme });

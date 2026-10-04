@@ -367,6 +367,20 @@ export function stageVisualOffFlow(stage, width) {
   return () => Object.assign(stage.style, previous);
 }
 
+export function commitVisualLayout(figure, commit) {
+  const height = figure.style.height;
+  // A position change suppresses scroll anchoring for its layout window.
+  // Keep the document's height unchanged while bringing the stage into flow,
+  // then finish that window before releasing its final natural height.
+  figure.style.height = `${figure.getBoundingClientRect().height}px`;
+  try {
+    commit();
+    figure.getBoundingClientRect();
+  } finally {
+    figure.style.height = height;
+  }
+}
+
 export async function initVisual(figure) {
   if (figure.dataset.visualState) return;
   figure.dataset.visualState = "loading";
@@ -389,13 +403,15 @@ export async function initVisual(figure) {
     restoreStage = stageVisualOffFlow(stage, width);
     await nextFrame();
     const view = await render(figure, stage, toolbar, data, vendor, labels);
-    // Commit in one turn: no painted/intermediate in-flow stage + open outline.
-    restoreStage();
-    toolbar.hidden = false;
-    fallback.open = false;
-    figure.dataset.visualState = "ready";
-    figure.dataset.enhanced = "true";
-    if (status) status.textContent = view.hint;
+    // Commit without a temporary double-height layout or an unstable anchor.
+    commitVisualLayout(figure, () => {
+      restoreStage();
+      toolbar.hidden = false;
+      fallback.open = false;
+      figure.dataset.visualState = "ready";
+      figure.dataset.enhanced = "true";
+      if (status) status.textContent = view.hint;
+    });
     fullscreenControl(figure, toolbar, view.resize, labels);
     requestAnimationFrame(view.resize);
   } catch (error) {

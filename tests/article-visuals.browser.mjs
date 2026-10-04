@@ -64,6 +64,8 @@ try {
         await figure.scrollIntoViewIfNeeded();
         await page.waitForFunction(index => document.querySelectorAll('figure.article-visual')[index]?.dataset.visualState === 'ready', index, { timeout: 20000 });
         assert.ok(await figure.locator('.visual-stage svg').count());
+        assert.equal(await figure.evaluate(el => getComputedStyle(el).overflowAnchor), 'none', 'Dynamic figure contents cannot become the reading anchor');
+        assert.equal(await page.locator('.article-content').evaluate(el => getComputedStyle(el).overflowAnchor), 'auto', 'Static article text retains native anchoring');
         assert.equal(await figure.locator('.visual-fallback').evaluate(el => el.open), false);
         const box = await figure.boundingBox();
         assert.ok(box.x >= -1 && box.x + box.width <= width + 1, `${slug}: graphic overflows at ${width}px`);
