@@ -88,7 +88,7 @@ def main() -> None:
         parsed = pages[path]
         require(len(parsed.ids) == len(set(parsed.ids)), f"Duplicate IDs: {path}")
         require(sum(tag == "h1" for tag, _ in parsed.main_tags) == 1, f"Expected a single main-content h1: {path}")
-        require(sum(tag == "details" for tag, _ in parsed.tags) == 3, f"Missing native disclosures: {path}")
+        require(sum(tag == "details" for tag, _ in parsed.main_tags) == 3, f"Missing native content disclosures: {path}")
         require(all("source-" + s["id"] in parsed.ids for s in p["sources"]), "Missing source anchors")
         require(all(s["url"] in parsed.links for s in p["sources"]), "Missing primary-source links")
         require(all(r["url"] in parsed.links for r in p["related"]), "Missing related report")

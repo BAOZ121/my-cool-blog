@@ -83,3 +83,8 @@ jobs:
       - name: Verify Evidence Library search, links and keyboard controls
         if: ${{ success() || (failure() && steps.chapter_rail.conclusion == 'failure') }}
         run: node tests/evidence-library.browser.mjs
+      - name: Verify compact site navigation, independent rails and native Back
+        if: ${{ success() || (failure() && steps.chapter_rail.conclusion == 'failure') }}
+        run: |
+          node --test tests/site-navigation.test.mjs
+          node tests/site-navigation.browser.mjs

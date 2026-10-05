@@ -5,13 +5,32 @@
         </span>
     </button>
 
-    <header>
+    <details class="site-navigation-disclosure" id="site-navigation-disclosure" open>
+        <summary class="site-navigation-toggle" aria-controls="site-navigation-header main-menu">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg>
+            <span class="site-navigation-expanded-label">Minimize navigation</span>
+            <span class="site-navigation-collapsed-label">Expand navigation</span>
+        </summary>
+    </details>
+    {{/* Restore the width before article parsing and native Back restoration.
+         The module only saves changes; blocked storage keeps a native control. */}}
+    <script>
+    (() => {
+        try {
+            const returning = performance.getEntriesByType('navigation')[0]?.type === 'back_forward';
+            const prior = returning && sessionStorage.getItem(`dex-site-navigation-return:${location.pathname}`);
+            document.currentScript.previousElementSibling.open = (prior || sessionStorage.getItem('dex-site-navigation')) !== 'compact';
+        } catch { /* Keep the default expanded navigation. */ }
+    })();
+    </script>
+
+    <header id="site-navigation-header">
         {{ with .Site.Params.sidebar.avatar }}
             {{- $avatar := partial "helper/image" (dict "Image" . "Resources" resources "Context" $) -}}
             {{- $darkAvatar := resources.Get "img/avatar-dark.jpg" -}}
             {{- if $darkAvatar }}{{ $darkAvatar = $darkAvatar.Resize "240x jpg q88" }}{{ end -}}
             <figure class="site-avatar{{ if $darkAvatar }} has-theme-avatar{{ end }}">
-                <a href="{{ $.Site.Home.RelPermalink }}">
+                <a href="{{ $.Site.Home.RelPermalink }}" title="{{ $.Site.Title }} — Home">
                     <img src="{{ $avatar.Permalink }}"
                         width="{{ $avatar.Width | default 120 }}"
                         height="{{ $avatar.Height | default 120 }}"
@@ -44,7 +63,7 @@
                     <a
                         href='{{ .URL }}'
                         {{ if .Params.newTab }}target="_blank"{{ end }}
-                        {{ with .Name }}title="{{ . }}"{{ end }}
+                        {{ with .Name }}title="{{ . }}" aria-label="{{ . }}"{{ end }}
                         rel="me"
                     >
                         {{ $icon := default "link" .Params.Icon }}
@@ -62,8 +81,8 @@
         {{ range .Site.Menus.main }}
         {{ $active := or (eq $currentPage.RelPermalink .URL) (or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .)) }}
         <li {{ if $active }} class='current'{{ end }}>
-            <a href='{{ .URL }}' {{ if $active }}aria-current="page"{{ end }} {{ if .Params.newTab }}target="_blank"{{ end }}>
-                {{ with .Params.Icon }}
+            <a href='{{ .URL }}' title="{{ .Name }}" {{ if $active }}aria-current="page"{{ end }} {{ if .Params.newTab }}target="_blank"{{ end }}>
+                {{ with default "link" .Params.Icon }}
                     {{ partial "helper/icon" . }}
                 {{ end }}
                 <span>{{- .Name -}}</span>
@@ -92,7 +111,7 @@
 
                 {{ if .Site.Params.colorScheme.toggle }}
                     <li class="theme-toggle-item">
-                        <button id="dark-mode-toggle" type="button" aria-pressed="false">
+                        <button id="dark-mode-toggle" type="button" aria-pressed="false" title="{{ T `darkMode` }}">
                             {{ partial "helper/icon" "toggle-left" }}
                             {{ partial "helper/icon" "toggle-right" }}
                             <span>{{ T "darkMode" }}</span>
