@@ -22,7 +22,7 @@ test("URL state permits only known articles and material types", () => {
 test("index covers current published posts, preserves contexts, and only uses safe source URLs", () => {
   assert.equal(data.schema_version, 1);
   assert.equal(data.articles.length, data.counts.articles);
-  assert.equal(data.articles.length, 8);
+  assert.equal(data.articles.length, 9);
   let total = 0;
   let files = 0;
   const local = new Set();
@@ -45,7 +45,7 @@ test("index covers current published posts, preserves contexts, and only uses sa
   assert.equal(local.size, data.counts.hosted_files);
   assert.ok(local.has("/data/industries.csv"));
   assert.ok(local.has("/research-files/cybersecurity/NIST.SP.800-207.pdf"));
-  assert.equal([...local].filter(url => url.startsWith("/data/charts/")).length, 7);
+  assert.equal([...local].filter(url => url.startsWith("/data/charts/")).length, 8);
 });
 
 test("unverified ranges, reading leads and chart scope remain searchable", () => {
