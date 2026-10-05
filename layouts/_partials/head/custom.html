@@ -1,6 +1,10 @@
 {{ partial "page-transitions/assets.html" . }}
 {{ partial "chapter-rail/assets.html" . }}
 {{ partial "site-navigation/assets.html" . }}
+{{ if .Params.companyResearch }}
+  {{ $companyCSS := resources.Get "css/company-research.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $companyCSS.RelPermalink }}" integrity="{{ $companyCSS.Data.Integrity }}">
+{{ end }}
 {{ if or (.HasShortcode "industry-map") (.HasShortcode "market-share") }}
   {{ partial "article-visuals/assets.html" . }}
 {{ end }}

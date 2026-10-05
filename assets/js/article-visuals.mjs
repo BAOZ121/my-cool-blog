@@ -421,7 +421,7 @@ export async function initVisual(figure, stillRelevant = () => true) {
     commitVisualLayout(figure, () => {
       restoreStage();
       toolbar.hidden = false;
-      fallback.open = false;
+      fallback.open = data.keep_outline_open === true;
       figure.dataset.visualState = "ready";
       figure.dataset.enhanced = "true";
       if (status) status.textContent = view.hint;

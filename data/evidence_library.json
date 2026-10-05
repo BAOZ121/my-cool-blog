@@ -2,6 +2,1166 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "nvidia-company-research",
+      "title": "NVIDIA Company Research Report",
+      "url": "/post/nvidia-company-research/",
+      "published": "2026-10-05",
+      "notices": [],
+      "entries": [
+        {
+          "id": "1a707a7d7f2a",
+          "url": "https://www.nvidia.com/en-us/about-nvidia/corporate-timeline/",
+          "title": "Source: NVIDIA company history",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "1 Company founding and development",
+              "url": "/post/nvidia-company-research/#1-company-founding-and-development",
+              "text": "April 5, 1993 NVIDIA was founded by Jensen Huang, Chris Malachowsky, and Curtis Priem to develop 3D graphics for gaming and multimedia. Source: NVIDIA company history",
+              "notes": [
+                "A selection of documented events; the company history in the article provides additional context.",
+                "NVIDIA was founded by Jensen Huang, Chris Malachowsky, and Curtis Priem to develop 3D graphics for gaming and multimedia.",
+                "NVIDIA introduced its first product, NV1, which was used in Diamond Edge 3D products.",
+                "NVIDIA completed its initial public offering on January 22, and GeForce 256 was released on October 11.",
+                "NVIDIA unveiled CUDA, providing a programming architecture for GPU parallel computing beyond graphics rendering.",
+                "The AlexNet paper by Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton described model training on two NVIDIA GTX 580 GPUs with 3 GB of memory each.",
+                "NVIDIA announced DGX-1, an integrated deep-learning system with eight Tesla P100 GPUs and NVLink interconnects.",
+                "NVIDIA completed its acquisition of Mellanox, with an announced transaction value of US$7 billion.",
+                "NVIDIA announced the Blackwell platform, including the GB200 Grace Blackwell Superchip and the GB200 NVL72 rack-scale system."
+              ]
+            },
+            {
+              "section": "1 Company founding and development",
+              "url": "/post/nvidia-company-research/#1-company-founding-and-development",
+              "text": "2006 NVIDIA unveiled CUDA, providing a programming architecture for GPU parallel computing beyond graphics rendering. Source: NVIDIA company history",
+              "notes": [
+                "A selection of documented events; the company history in the article provides additional context.",
+                "NVIDIA was founded by Jensen Huang, Chris Malachowsky, and Curtis Priem to develop 3D graphics for gaming and multimedia.",
+                "NVIDIA introduced its first product, NV1, which was used in Diamond Edge 3D products.",
+                "NVIDIA completed its initial public offering on January 22, and GeForce 256 was released on October 11.",
+                "NVIDIA unveiled CUDA, providing a programming architecture for GPU parallel computing beyond graphics rendering.",
+                "The AlexNet paper by Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton described model training on two NVIDIA GTX 580 GPUs with 3 GB of memory each.",
+                "NVIDIA announced DGX-1, an integrated deep-learning system with eight Tesla P100 GPUs and NVLink interconnects.",
+                "NVIDIA completed its acquisition of Mellanox, with an announced transaction value of US$7 billion.",
+                "NVIDIA announced the Blackwell platform, including the GB200 Grace Blackwell Superchip and the GB200 NVL72 rack-scale system."
+              ]
+            },
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "Corporate timeline . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c36568061574",
+          "url": "https://www.nvidia.com/es-es/about-nvidia/corporate-timeline/",
+          "title": "Early product and manufacturing partnership timeline",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "1 Company founding and development",
+              "url": "/post/nvidia-company-research/#1-company-founding-and-development",
+              "text": "1995 NVIDIA introduced its first product, NV1, which was used in Diamond Edge 3D products. Source: NVIDIA early company history",
+              "notes": [
+                "A selection of documented events; the company history in the article provides additional context.",
+                "NVIDIA was founded by Jensen Huang, Chris Malachowsky, and Curtis Priem to develop 3D graphics for gaming and multimedia.",
+                "NVIDIA introduced its first product, NV1, which was used in Diamond Edge 3D products.",
+                "NVIDIA completed its initial public offering on January 22, and GeForce 256 was released on October 11.",
+                "NVIDIA unveiled CUDA, providing a programming architecture for GPU parallel computing beyond graphics rendering.",
+                "The AlexNet paper by Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton described model training on two NVIDIA GTX 580 GPUs with 3 GB of memory each.",
+                "NVIDIA announced DGX-1, an integrated deep-learning system with eight Tesla P100 GPUs and NVLink interconnects.",
+                "NVIDIA completed its acquisition of Mellanox, with an announced transaction value of US$7 billion.",
+                "NVIDIA announced the Blackwell platform, including the GB200 Grace Blackwell Superchip and the GB200 NVL72 rack-scale system."
+              ]
+            },
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "Early product and manufacturing partnership timeline . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "83caef5831cf",
+          "url": "https://investor.nvidia.com/investor-resources/faqs/default.aspx",
+          "title": "Source: NVIDIA investor FAQ",
+          "kind": "link",
+          "format": "Web",
+          "host": "investor.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "1 Company founding and development",
+              "url": "/post/nvidia-company-research/#1-company-founding-and-development",
+              "text": "1999 NVIDIA completed its initial public offering on January 22, and GeForce 256 was released on October 11. Source: NVIDIA investor FAQ Source: GeForce 256 release retrospective",
+              "notes": [
+                "A selection of documented events; the company history in the article provides additional context.",
+                "NVIDIA was founded by Jensen Huang, Chris Malachowsky, and Curtis Priem to develop 3D graphics for gaming and multimedia.",
+                "NVIDIA introduced its first product, NV1, which was used in Diamond Edge 3D products.",
+                "NVIDIA completed its initial public offering on January 22, and GeForce 256 was released on October 11.",
+                "NVIDIA unveiled CUDA, providing a programming architecture for GPU parallel computing beyond graphics rendering.",
+                "The AlexNet paper by Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton described model training on two NVIDIA GTX 580 GPUs with 3 GB of memory each.",
+                "NVIDIA announced DGX-1, an integrated deep-learning system with eight Tesla P100 GPUs and NVLink interconnects.",
+                "NVIDIA completed its acquisition of Mellanox, with an announced transaction value of US$7 billion.",
+                "NVIDIA announced the Blackwell platform, including the GB200 Grace Blackwell Superchip and the GB200 NVL72 rack-scale system."
+              ]
+            },
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "Investor relations FAQs . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0bfb548d2ed1",
+          "url": "https://blogs.nvidia.com/blog/first-gpu-gaming-ai/",
+          "title": "Source: GeForce 256 release retrospective",
+          "kind": "link",
+          "format": "Web",
+          "host": "blogs.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "1 Company founding and development",
+              "url": "/post/nvidia-company-research/#1-company-founding-and-development",
+              "text": "1999 NVIDIA completed its initial public offering on January 22, and GeForce 256 was released on October 11. Source: NVIDIA investor FAQ Source: GeForce 256 release retrospective",
+              "notes": [
+                "A selection of documented events; the company history in the article provides additional context.",
+                "NVIDIA was founded by Jensen Huang, Chris Malachowsky, and Curtis Priem to develop 3D graphics for gaming and multimedia.",
+                "NVIDIA introduced its first product, NV1, which was used in Diamond Edge 3D products.",
+                "NVIDIA completed its initial public offering on January 22, and GeForce 256 was released on October 11.",
+                "NVIDIA unveiled CUDA, providing a programming architecture for GPU parallel computing beyond graphics rendering.",
+                "The AlexNet paper by Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton described model training on two NVIDIA GTX 580 GPUs with 3 GB of memory each.",
+                "NVIDIA announced DGX-1, an integrated deep-learning system with eight Tesla P100 GPUs and NVLink interconnects.",
+                "NVIDIA completed its acquisition of Mellanox, with an announced transaction value of US$7 billion.",
+                "NVIDIA announced the Blackwell platform, including the GB200 Grace Blackwell Superchip and the GB200 NVL72 rack-scale system."
+              ]
+            },
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "GeForce 256 launch retrospective . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5f0d3a6682dd",
+          "url": "https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf",
+          "title": "Source: original AlexNet paper, pages 2 and 7",
+          "kind": "file",
+          "format": "PDF",
+          "host": "proceedings.neurips.cc",
+          "local": false,
+          "citations": [
+            {
+              "section": "1 Company founding and development",
+              "url": "/post/nvidia-company-research/#1-company-founding-and-development",
+              "text": "2012 The AlexNet paper by Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton described model training on two NVIDIA GTX 580 GPUs with 3 GB of memory each. Source: original AlexNet paper, pages 2 and 7",
+              "notes": [
+                "A selection of documented events; the company history in the article provides additional context.",
+                "NVIDIA was founded by Jensen Huang, Chris Malachowsky, and Curtis Priem to develop 3D graphics for gaming and multimedia.",
+                "NVIDIA introduced its first product, NV1, which was used in Diamond Edge 3D products.",
+                "NVIDIA completed its initial public offering on January 22, and GeForce 256 was released on October 11.",
+                "NVIDIA unveiled CUDA, providing a programming architecture for GPU parallel computing beyond graphics rendering.",
+                "The AlexNet paper by Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton described model training on two NVIDIA GTX 580 GPUs with 3 GB of memory each.",
+                "NVIDIA announced DGX-1, an integrated deep-learning system with eight Tesla P100 GPUs and NVLink interconnects.",
+                "NVIDIA completed its acquisition of Mellanox, with an announced transaction value of US$7 billion.",
+                "NVIDIA announced the Blackwell platform, including the GB200 Grace Blackwell Superchip and the GB200 NVL72 rack-scale system."
+              ]
+            },
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "Original AlexNet research paper . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "125846e443df",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-launches-world-s-first-deep-learning-supercomputer-6622436",
+          "title": "Source: DGX-1 announcement",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidianews.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "1 Company founding and development",
+              "url": "/post/nvidia-company-research/#1-company-founding-and-development",
+              "text": "April 5, 2016 NVIDIA announced DGX-1, an integrated deep-learning system with eight Tesla P100 GPUs and NVLink interconnects. Source: DGX-1 announcement",
+              "notes": [
+                "A selection of documented events; the company history in the article provides additional context.",
+                "NVIDIA was founded by Jensen Huang, Chris Malachowsky, and Curtis Priem to develop 3D graphics for gaming and multimedia.",
+                "NVIDIA introduced its first product, NV1, which was used in Diamond Edge 3D products.",
+                "NVIDIA completed its initial public offering on January 22, and GeForce 256 was released on October 11.",
+                "NVIDIA unveiled CUDA, providing a programming architecture for GPU parallel computing beyond graphics rendering.",
+                "The AlexNet paper by Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton described model training on two NVIDIA GTX 580 GPUs with 3 GB of memory each.",
+                "NVIDIA announced DGX-1, an integrated deep-learning system with eight Tesla P100 GPUs and NVLink interconnects.",
+                "NVIDIA completed its acquisition of Mellanox, with an announced transaction value of US$7 billion.",
+                "NVIDIA announced the Blackwell platform, including the GB200 Grace Blackwell Superchip and the GB200 NVL72 rack-scale system."
+              ]
+            },
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "DGX 1 launch announcement . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e86a76118d2f",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-completes-acquisition-of-mellanox-creating-major-force-driving-next-gen-data-centers",
+          "title": "Mellanox acquisition completion announcement",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidianews.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "1 Company founding and development",
+              "url": "/post/nvidia-company-research/#1-company-founding-and-development",
+              "text": "April 27, 2020 NVIDIA completed its acquisition of Mellanox, with an announced transaction value of US$7 billion. Source: acquisition completion announcement",
+              "notes": [
+                "A selection of documented events; the company history in the article provides additional context.",
+                "NVIDIA was founded by Jensen Huang, Chris Malachowsky, and Curtis Priem to develop 3D graphics for gaming and multimedia.",
+                "NVIDIA introduced its first product, NV1, which was used in Diamond Edge 3D products.",
+                "NVIDIA completed its initial public offering on January 22, and GeForce 256 was released on October 11.",
+                "NVIDIA unveiled CUDA, providing a programming architecture for GPU parallel computing beyond graphics rendering.",
+                "The AlexNet paper by Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton described model training on two NVIDIA GTX 580 GPUs with 3 GB of memory each.",
+                "NVIDIA announced DGX-1, an integrated deep-learning system with eight Tesla P100 GPUs and NVLink interconnects.",
+                "NVIDIA completed its acquisition of Mellanox, with an announced transaction value of US$7 billion.",
+                "NVIDIA announced the Blackwell platform, including the GB200 Grace Blackwell Superchip and the GB200 NVL72 rack-scale system."
+              ]
+            },
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "Mellanox acquisition completion announcement . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "24203513100c",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-blackwell-platform-arrives-to-power-a-new-era-of-computing",
+          "title": "Source: Blackwell platform announcement",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidianews.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "1 Company founding and development",
+              "url": "/post/nvidia-company-research/#1-company-founding-and-development",
+              "text": "March 18, 2024 NVIDIA announced the Blackwell platform, including the GB200 Grace Blackwell Superchip and the GB200 NVL72 rack-scale system. Source: Blackwell platform announcement",
+              "notes": [
+                "A selection of documented events; the company history in the article provides additional context.",
+                "NVIDIA was founded by Jensen Huang, Chris Malachowsky, and Curtis Priem to develop 3D graphics for gaming and multimedia.",
+                "NVIDIA introduced its first product, NV1, which was used in Diamond Edge 3D products.",
+                "NVIDIA completed its initial public offering on January 22, and GeForce 256 was released on October 11.",
+                "NVIDIA unveiled CUDA, providing a programming architecture for GPU parallel computing beyond graphics rendering.",
+                "The AlexNet paper by Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton described model training on two NVIDIA GTX 580 GPUs with 3 GB of memory each.",
+                "NVIDIA announced DGX-1, an integrated deep-learning system with eight Tesla P100 GPUs and NVLink interconnects.",
+                "NVIDIA completed its acquisition of Mellanox, with an announced transaction value of US$7 billion.",
+                "NVIDIA announced the Blackwell platform, including the GB200 Grace Blackwell Superchip and the GB200 NVL72 rack-scale system."
+              ]
+            },
+            {
+              "section": "4. GB200 NVL72 rack system",
+              "url": "/post/nvidia-company-research/",
+              "text": "Sources: NVIDIA GB200 NVL72 technical description ; GB200 NVL72 product specifications ; Blackwell platform announcement .",
+              "notes": [
+                "18 compute trays + 9 NVLink switch trays",
+                "Total: 36 Grace CPUs and 72 Blackwell GPUs. NVLink connects the GPUs within this liquid-cooled rack.",
+                "InfiniBand or Ethernet provides network connectivity beyond the rack; this is separate from the rack's NVLink GPU interconnect.",
+                "Counts apply to this single-rack reference configuration, rather than to every NVIDIA server or rack product."
+              ]
+            },
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "Blackwell platform announcement . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "caa8a67e5aac",
+          "url": "https://www.nvidia.com/en-us/products/",
+          "title": "NVIDIA product catalog",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "NVIDIA’s product and software map",
+              "url": "/post/nvidia-company-research/#industry-map-nvidia-products-0-title",
+              "text": "Sources: NVIDIA product catalog · CUDA development platform · GB200 NVL72 product documentation · Ethernet product portfolio · TensorRT documentation · AI Enterprise licensing guide · Omniverse documentation · DRIVE platform · Isaac platform · Jetson modules . Reviewed 2026-10-05.",
+              "notes": [
+                "Product uses and delivery forms. These branches are not accounting segments or verified market-share categories.",
+                "Examples of current product families described by NVIDIA. A branch indicates product use or delivery form; it does not imply a separate financial reporting segment."
+              ]
+            },
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "NVIDIA product catalog . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "981f0958041b",
+          "url": "https://developer.nvidia.com/cuda?lang=en",
+          "title": "CUDA development platform",
+          "kind": "link",
+          "format": "Web",
+          "host": "developer.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "NVIDIA’s product and software map",
+              "url": "/post/nvidia-company-research/#industry-map-nvidia-products-0-title",
+              "text": "Sources: NVIDIA product catalog · CUDA development platform · GB200 NVL72 product documentation · Ethernet product portfolio · TensorRT documentation · AI Enterprise licensing guide · Omniverse documentation · DRIVE platform · Isaac platform · Jetson modules . Reviewed 2026-10-05.",
+              "notes": [
+                "Product uses and delivery forms. These branches are not accounting segments or verified market-share categories.",
+                "Examples of current product families described by NVIDIA. A branch indicates product use or delivery form; it does not imply a separate financial reporting segment."
+              ]
+            },
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "CUDA development platform . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6499ff99cb5c",
+          "url": "https://www.nvidia.com/en-us/data-center/gb200-nvl72/",
+          "title": "GB200 NVL72 product specifications",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "NVIDIA’s product and software map",
+              "url": "/post/nvidia-company-research/#industry-map-nvidia-products-0-title",
+              "text": "Sources: NVIDIA product catalog · CUDA development platform · GB200 NVL72 product documentation · Ethernet product portfolio · TensorRT documentation · AI Enterprise licensing guide · Omniverse documentation · DRIVE platform · Isaac platform · Jetson modules . Reviewed 2026-10-05.",
+              "notes": [
+                "Product uses and delivery forms. These branches are not accounting segments or verified market-share categories.",
+                "Examples of current product families described by NVIDIA. A branch indicates product use or delivery form; it does not imply a separate financial reporting segment."
+              ]
+            },
+            {
+              "section": "4. GB200 NVL72 rack system",
+              "url": "/post/nvidia-company-research/",
+              "text": "Sources: NVIDIA GB200 NVL72 technical description ; GB200 NVL72 product specifications ; Blackwell platform announcement .",
+              "notes": [
+                "18 compute trays + 9 NVLink switch trays",
+                "Total: 36 Grace CPUs and 72 Blackwell GPUs. NVLink connects the GPUs within this liquid-cooled rack.",
+                "InfiniBand or Ethernet provides network connectivity beyond the rack; this is separate from the rack's NVLink GPU interconnect.",
+                "Counts apply to this single-rack reference configuration, rather than to every NVIDIA server or rack product."
+              ]
+            },
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "GB200 NVL72 product documentation . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "99bf845b74ea",
+          "url": "https://www.nvidia.com/en-us/networking/products/ethernet/",
+          "title": "Ethernet product portfolio",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "NVIDIA’s product and software map",
+              "url": "/post/nvidia-company-research/#industry-map-nvidia-products-0-title",
+              "text": "Sources: NVIDIA product catalog · CUDA development platform · GB200 NVL72 product documentation · Ethernet product portfolio · TensorRT documentation · AI Enterprise licensing guide · Omniverse documentation · DRIVE platform · Isaac platform · Jetson modules . Reviewed 2026-10-05.",
+              "notes": [
+                "Product uses and delivery forms. These branches are not accounting segments or verified market-share categories.",
+                "Examples of current product families described by NVIDIA. A branch indicates product use or delivery form; it does not imply a separate financial reporting segment."
+              ]
+            },
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "Ethernet product portfolio . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bfcf20124614",
+          "url": "https://docs.nvidia.com/deeplearning/tensorrt/latest/",
+          "title": "TensorRT documentation",
+          "kind": "link",
+          "format": "Web",
+          "host": "docs.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "NVIDIA’s product and software map",
+              "url": "/post/nvidia-company-research/#industry-map-nvidia-products-0-title",
+              "text": "Sources: NVIDIA product catalog · CUDA development platform · GB200 NVL72 product documentation · Ethernet product portfolio · TensorRT documentation · AI Enterprise licensing guide · Omniverse documentation · DRIVE platform · Isaac platform · Jetson modules . Reviewed 2026-10-05.",
+              "notes": [
+                "Product uses and delivery forms. These branches are not accounting segments or verified market-share categories.",
+                "Examples of current product families described by NVIDIA. A branch indicates product use or delivery form; it does not imply a separate financial reporting segment."
+              ]
+            },
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "TensorRT documentation . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "57bd39b2b567",
+          "url": "https://docs.nvidia.com/ai-enterprise/planning-resource/licensing-guide/latest/licensing.html",
+          "title": "AI Enterprise licensing guide",
+          "kind": "link",
+          "format": "Web",
+          "host": "docs.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "NVIDIA’s product and software map",
+              "url": "/post/nvidia-company-research/#industry-map-nvidia-products-0-title",
+              "text": "Sources: NVIDIA product catalog · CUDA development platform · GB200 NVL72 product documentation · Ethernet product portfolio · TensorRT documentation · AI Enterprise licensing guide · Omniverse documentation · DRIVE platform · Isaac platform · Jetson modules . Reviewed 2026-10-05.",
+              "notes": [
+                "Product uses and delivery forms. These branches are not accounting segments or verified market-share categories.",
+                "Examples of current product families described by NVIDIA. A branch indicates product use or delivery form; it does not imply a separate financial reporting segment."
+              ]
+            },
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "AI Enterprise licensing guide . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "26b486353e3e",
+          "url": "https://docs.nvidia.com/omniverse/index.html",
+          "title": "Omniverse documentation",
+          "kind": "link",
+          "format": "Web",
+          "host": "docs.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "NVIDIA’s product and software map",
+              "url": "/post/nvidia-company-research/#industry-map-nvidia-products-0-title",
+              "text": "Sources: NVIDIA product catalog · CUDA development platform · GB200 NVL72 product documentation · Ethernet product portfolio · TensorRT documentation · AI Enterprise licensing guide · Omniverse documentation · DRIVE platform · Isaac platform · Jetson modules . Reviewed 2026-10-05.",
+              "notes": [
+                "Product uses and delivery forms. These branches are not accounting segments or verified market-share categories.",
+                "Examples of current product families described by NVIDIA. A branch indicates product use or delivery form; it does not imply a separate financial reporting segment."
+              ]
+            },
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "Omniverse documentation . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fdf6501c73f8",
+          "url": "https://developer.nvidia.com/DRIVE",
+          "title": "DRIVE platform",
+          "kind": "link",
+          "format": "Web",
+          "host": "developer.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "NVIDIA’s product and software map",
+              "url": "/post/nvidia-company-research/#industry-map-nvidia-products-0-title",
+              "text": "Sources: NVIDIA product catalog · CUDA development platform · GB200 NVL72 product documentation · Ethernet product portfolio · TensorRT documentation · AI Enterprise licensing guide · Omniverse documentation · DRIVE platform · Isaac platform · Jetson modules . Reviewed 2026-10-05.",
+              "notes": [
+                "Product uses and delivery forms. These branches are not accounting segments or verified market-share categories.",
+                "Examples of current product families described by NVIDIA. A branch indicates product use or delivery form; it does not imply a separate financial reporting segment."
+              ]
+            },
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "DRIVE platform . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0c82d782354a",
+          "url": "https://developer.nvidia.com/isaac",
+          "title": "Isaac platform",
+          "kind": "link",
+          "format": "Web",
+          "host": "developer.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "NVIDIA’s product and software map",
+              "url": "/post/nvidia-company-research/#industry-map-nvidia-products-0-title",
+              "text": "Sources: NVIDIA product catalog · CUDA development platform · GB200 NVL72 product documentation · Ethernet product portfolio · TensorRT documentation · AI Enterprise licensing guide · Omniverse documentation · DRIVE platform · Isaac platform · Jetson modules . Reviewed 2026-10-05.",
+              "notes": [
+                "Product uses and delivery forms. These branches are not accounting segments or verified market-share categories.",
+                "Examples of current product families described by NVIDIA. A branch indicates product use or delivery form; it does not imply a separate financial reporting segment."
+              ]
+            },
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "Isaac platform . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "957e7f65fddc",
+          "url": "https://developer.nvidia.com/embedded/jetson-modules",
+          "title": "Jetson modules",
+          "kind": "link",
+          "format": "Web",
+          "host": "developer.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "NVIDIA’s product and software map",
+              "url": "/post/nvidia-company-research/#industry-map-nvidia-products-0-title",
+              "text": "Sources: NVIDIA product catalog · CUDA development platform · GB200 NVL72 product documentation · Ethernet product portfolio · TensorRT documentation · AI Enterprise licensing guide · Omniverse documentation · DRIVE platform · Isaac platform · Jetson modules . Reviewed 2026-10-05.",
+              "notes": [
+                "Product uses and delivery forms. These branches are not accounting segments or verified market-share categories.",
+                "Examples of current product families described by NVIDIA. A branch indicates product use or delivery form; it does not imply a separate financial reporting segment."
+              ]
+            },
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "Jetson modules . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a69266ea554e",
+          "url": "https://developer.nvidia.com/blog/nvidia-gb200-nvl72-delivers-trillion-parameter-llm-training-and-real-time-inference/",
+          "title": "GB200 NVL72 architecture and reference configuration",
+          "kind": "link",
+          "format": "Web",
+          "host": "developer.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "4. GB200 NVL72 rack system",
+              "url": "/post/nvidia-company-research/",
+              "text": "Sources: NVIDIA GB200 NVL72 technical description ; GB200 NVL72 product specifications ; Blackwell platform announcement .",
+              "notes": [
+                "18 compute trays + 9 NVLink switch trays",
+                "Total: 36 Grace CPUs and 72 Blackwell GPUs. NVLink connects the GPUs within this liquid-cooled rack.",
+                "InfiniBand or Ethernet provides network connectivity beyond the rack; this is separate from the rack's NVLink GPU interconnect.",
+                "Counts apply to this single-rack reference configuration, rather than to every NVIDIA server or rack product."
+              ]
+            },
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "GB200 NVL72 architecture and reference configuration .",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "9eeeb6649b45",
+          "url": "/data/charts/nvidia-platform-revenue-fy2026.csv",
+          "title": "NVIDIA revenue composition by market platform — data (CSV)",
+          "kind": "file",
+          "format": "CSV",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "NVIDIA revenue composition by market platform",
+              "url": "/post/nvidia-company-research/#market-share-nvidia-platform-revenue-fy2026-1-title",
+              "text": "Download data (CSV)",
+              "notes": [
+                "Share of NVIDIA’s total FY2026 revenue by its disclosed market-platform classification. This is company revenue composition, not industry market share.",
+                "NVIDIA consolidated worldwide revenue · Platform revenue / total company revenue",
+                "Percentages are calculated from the five reported platform revenues and the USD 215.938 billion total, then rounded to one decimal place. The exact amounts appear in the table below. Fiscal 2026 ended on 25 January 2026. FY2027 uses a changed platform presentation and is not treated as a continuous category trend."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f516b383fa89",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+          "title": "NVIDIA / U.S. SEC — Fiscal 2026 annual report Form 10 K",
+          "kind": "link",
+          "format": "Web",
+          "host": "sec.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "NVIDIA revenue composition by market platform",
+              "url": "/post/nvidia-company-research/#market-share-nvidia-platform-revenue-fy2026-1-title",
+              "text": "Source: NVIDIA / U.S. SEC — Fiscal 2026 annual report Form 10 K (2026-02-25). Reviewed 2026-10-05.",
+              "notes": [
+                "Share of NVIDIA’s total FY2026 revenue by its disclosed market-platform classification. This is company revenue composition, not industry market share.",
+                "NVIDIA consolidated worldwide revenue · Platform revenue / total company revenue",
+                "Percentages are calculated from the five reported platform revenues and the USD 215.938 billion total, then rounded to one decimal place. The exact amounts appear in the table below. Fiscal 2026 ended on 25 January 2026. FY2027 uses a changed platform presentation and is not treated as a continuous category trend."
+              ]
+            },
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "Fiscal 2026 annual report Form 10 K . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bf1733f77ea5",
+          "url": "https://nvidianews.nvidia.com/bios/jensen-huang",
+          "title": "Jensen Huang biography",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidianews.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "Jensen Huang biography . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7a71ed4eacc8",
+          "url": "https://nvidianews.nvidia.com/bios/chris-a-malachowsky",
+          "title": "Chris Malachowsky biography",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidianews.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "Chris Malachowsky biography . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "341f8bc9342b",
+          "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001045810/327515c2-03c2-4795-8946-5968098fa73a.pdf",
+          "title": "IPO prospectus",
+          "kind": "file",
+          "format": "PDF",
+          "host": "d18rn0p25nwr6d.cloudfront.net",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "IPO prospectus . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3ce661bbc7fd",
+          "url": "https://blogs.nvidia.com/blog/nvidia-dennys-trillion/",
+          "title": "Retrospective account of the Denny’s founding story",
+          "kind": "link",
+          "format": "Web",
+          "host": "blogs.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "Retrospective account of the Denny’s founding story . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8e0737e29500",
+          "url": "https://www.nvidia.com/content/timeline/time_01.html",
+          "title": "Corporate timeline for 2001",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "Corporate timeline for 2001 . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d18c41ebbfc1",
+          "url": "https://developer.nvidia.com/blog/inside-pascal/",
+          "title": "DGX 1 and Pascal hardware description",
+          "kind": "link",
+          "format": "Web",
+          "host": "developer.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "DGX 1 and Pascal hardware description . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "65e4300a8c47",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-reinvents-computer-graphics-with-turing-architecture",
+          "title": "Turing architecture announcement",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidianews.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "Turing architecture announcement . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dcaf38a2955c",
+          "url": "https://nvidianews.nvidia.com/news/10-years-in-the-making-nvidia-brings-real-time-ray-tracing-to-gamers-with-geforce-rtx",
+          "title": "GeForce RTX announcement",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidianews.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "GeForce RTX announcement . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "db59a500c5da",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-softbank-group-announce-termination-of-nvidias-acquisition-of-arm-limited",
+          "title": "Arm transaction termination announcement",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidianews.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "Arm transaction termination announcement . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b75e931c142a",
+          "url": "https://investor.nvidia.com/news/press-release-details/2023/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2023/",
+          "title": "Fiscal 2023 financial results announcement",
+          "kind": "link",
+          "format": "Web",
+          "host": "investor.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "Fiscal 2023 financial results announcement . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "432bd9e208d4",
+          "url": "https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory",
+          "title": "Vera Rubin production progress announcement",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidianews.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "Vera Rubin production progress announcement . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "eedf6055f8bf",
+          "url": "https://docs.nvidia.com/deeplearning/tensorrt/latest/getting-started/quick-start-guide.html",
+          "title": "TensorRT workflow documentation",
+          "kind": "link",
+          "format": "Web",
+          "host": "docs.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "TensorRT workflow documentation . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b14c2df00f72",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2026/",
+          "title": "Fiscal 2026 financial results announcement",
+          "kind": "link",
+          "format": "Web",
+          "host": "investor.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "Fiscal 2026 financial results announcement . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2799d8731e89",
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+          "title": "Second quarter fiscal 2027 financial results announcement",
+          "kind": "link",
+          "format": "Web",
+          "host": "investor.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "Second quarter fiscal 2027 financial results announcement . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "102300d281aa",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27cfocommentary.htm",
+          "title": "Second quarter fiscal 2027 CFO commentary",
+          "kind": "link",
+          "format": "Web",
+          "host": "sec.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "Second quarter fiscal 2027 CFO commentary . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "abcad3141371",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+          "title": "Second quarter fiscal 2027 quarterly report Form 10 Q",
+          "kind": "link",
+          "format": "Web",
+          "host": "sec.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "Second quarter fiscal 2027 quarterly report Form 10 Q . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "9bbde3987097",
+          "url": "https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2025/default.aspx",
+          "title": "Fiscal 2025 financial results announcement",
+          "kind": "link",
+          "format": "Web",
+          "host": "investor.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "Fiscal 2025 financial results announcement . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "eae5e029df87",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000036/nvda-20260512.htm",
+          "title": "2026 proxy statement",
+          "kind": "link",
+          "format": "Web",
+          "host": "sec.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "2026 proxy statement . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "50a1b16fb200",
+          "url": "https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2026/",
+          "title": "First quarter fiscal 2026 financial results announcement",
+          "kind": "link",
+          "format": "Web",
+          "host": "investor.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "First quarter fiscal 2026 financial results announcement . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e8aa4d799ac7",
+          "url": "https://www.amd.com/en/products/accelerators/instinct/mi350.html",
+          "title": "AMD Instinct products",
+          "kind": "link",
+          "format": "Web",
+          "host": "amd.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "AMD Instinct products . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fe55196e6d76",
+          "url": "https://cloud.google.com/tpu",
+          "title": "Google Cloud TPU",
+          "kind": "link",
+          "format": "Web",
+          "host": "cloud.google.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "Google Cloud TPU . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "10669b533ec2",
+          "url": "https://aws.amazon.com/ai/machine-learning/trainium/",
+          "title": "AWS Trainium",
+          "kind": "link",
+          "format": "Web",
+          "host": "aws.amazon.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "AWS Trainium . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "532c37ea26f0",
+          "url": "https://stockanalysis.com/stocks/nvda/history/",
+          "title": "NVIDIA historical stock prices",
+          "kind": "link",
+          "format": "Web",
+          "host": "stockanalysis.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "NVIDIA historical stock prices . Return to citation",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e3ccb7b2ba04",
+          "url": "https://nvidianews.nvidia.com/file/voyager-exterior-sign",
+          "title": "NVIDIA Voyager headquarters photograph",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidianews.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources and image credit",
+              "url": "/post/nvidia-company-research/#sources-and-image-credit",
+              "text": "NVIDIA Voyager headquarters photograph .",
+              "notes": [
+                "Source review for this website edition: 5 October 2026. The report’s information cutoff remains 3 October 2026. The Vera Rubin announcement date has been corrected to 31 May 2026, and the AlexNet paper link now points to the original NeurIPS publication."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "082e8d106193",
+          "url": "/post/nvidia-company-research/financial-data.csv",
+          "title": "Download data (CSV)",
+          "kind": "file",
+          "format": "CSV",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Article downloads",
+              "url": "/post/nvidia-company-research/",
+              "text": "Download data (CSV)",
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "commercial-space-advanced-engineering",
       "title": "Commercial Space and Advanced Engineering Industry Report",
       "url": "/post/commercial-space-advanced-engineering/",
@@ -6060,9 +7220,9 @@
     }
   ],
   "counts": {
-    "articles": 8,
-    "materials": 263,
-    "files": 38,
-    "hosted_files": 10
+    "articles": 9,
+    "materials": 309,
+    "files": 42,
+    "hosted_files": 12
   }
 }
