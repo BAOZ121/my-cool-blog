@@ -1,0 +1,69 @@
+/* Real elements retain normal hit testing; never snapshot the document. */
+@view-transition { navigation: none; }
+
+.article-image { overflow: hidden; background: var(--card-background); }
+.article-image a, .article-title a, [data-entry-title] { display: block; }
+.main-article .article-title a { overflow: hidden; }
+
+/* The head installs this temporary root child before any body content paints.
+   A decorative curtain only. Its default is transparent, so failed/disabled
+   CSS animation cannot strand the page behind black. No input or scroll lock. */
+.dex-entry-curtain {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483000;
+  background: #080909;
+  opacity: 0;
+  pointer-events: none;
+  display: grid;
+  place-items: center;
+  animation: dex-entry-blackout 4000ms ease-out;
+}
+@keyframes dex-entry-blackout {
+  0%, 95% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@keyframes dex-entry-release {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+.dex-entry-curtain__panel {
+  position: relative;
+  box-sizing: border-box;
+  width: min(390px, calc(100vw - 64px));
+  height: 116px;
+  padding: 20px 24px;
+  overflow: hidden;
+  border: 1px solid rgba(214, 181, 111, .28);
+  color: #d6b56f;
+  background: rgba(214, 181, 111, .025);
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  animation: dex-panel-enter 400ms ease-out;
+}
+.dex-entry-curtain__label { font-size: 10px; opacity: .65; }
+.dex-entry-curtain__status { margin-top: 14px; font-size: 13px; font-weight: 600; }
+.dex-entry-curtain__mode { margin-top: 12px; font-size: 9px; opacity: .5; text-align: right; }
+.dex-entry-curtain__panel::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d6b56f, transparent);
+  opacity: 0;
+  animation: dex-panel-scan 500ms ease-out;
+}
+@keyframes dex-panel-enter {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes dex-panel-scan {
+  0% { opacity: 0; transform: translateY(0); }
+  15% { opacity: .65; }
+  100% { opacity: 0; transform: translateY(114px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dex-entry-curtain { display: none !important; animation: none; }
+}

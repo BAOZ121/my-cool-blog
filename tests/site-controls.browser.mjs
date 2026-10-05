@@ -66,6 +66,19 @@ try {
     }
 
     const themeToggle = page.locator("button#dark-mode-toggle");
+    const menuScroller = page.locator('#main-menu');
+    const assertMenuScrollbar = async () => {
+      const style = await menuScroller.evaluate(element => {
+        const css = getComputedStyle(element);
+        const root = getComputedStyle(document.documentElement);
+        return { width: css.scrollbarWidth, color: css.scrollbarColor, accent: root.getPropertyValue('--accent-color').trim(), overflow: css.overflowY };
+      });
+      assert.equal(style.width, 'thin');
+      assert.notEqual(style.color, 'auto');
+      assert.equal(style.overflow, 'auto', 'Keep the native draggable scroller');
+      return style.color;
+    };
+    const lightScrollbar = await assertMenuScrollbar();
     const assertAvatar = async dark => {
       assert.equal(await page.locator(".site-logo-dark").isVisible(), dark);
       assert.equal(await page.locator(".site-logo-light").isVisible(), !dark);
@@ -79,6 +92,7 @@ try {
     assert.equal(await themeToggle.getAttribute("aria-pressed"), "true");
     assert.equal(await page.locator("html").getAttribute("data-scheme"), "dark");
     await assertAvatar(true);
+    assert.notEqual(await assertMenuScrollbar(), lightScrollbar, 'Scrollbar follows the black/gold theme');
     await page.keyboard.press("Enter");
     assert.equal(await themeToggle.getAttribute("aria-pressed"), "false");
     await assertAvatar(false);
@@ -89,6 +103,10 @@ try {
     await page.emulateMedia({ colorScheme: "light" });
     await page.waitForFunction(() => document.getElementById("dark-mode-toggle").getAttribute("aria-pressed") === "false");
     await assertAvatar(false);
+    await page.emulateMedia({ forcedColors: 'active' });
+    assert.equal(await menuScroller.evaluate(element => getComputedStyle(element).scrollbarColor), 'auto');
+    assert.equal(await menuScroller.evaluate(element => getComputedStyle(element).scrollbarWidth), 'auto');
+    await page.emulateMedia({ forcedColors: 'none' });
 
     if (width < 768) {
       await page.setViewportSize({ width: 1440, height: 900 });
@@ -117,12 +135,12 @@ try {
     assert.equal(await status.getAttribute("role"), "status");
     assert.equal(await status.getAttribute("aria-live"), "polite");
     await page.getByLabel("Name", { exact: true }).fill("Browser fixture");
-    await page.getByLabel("Email", { exact: true }).fill("test@example.invalid");
+    await form.getByLabel("Email", { exact: true }).fill("test@example.invalid");
     await page.getByLabel("Message", { exact: true }).fill("This message is intercepted locally.");
     const submit = form.locator('button[type="submit"]');
     const assertDraftAndButton = async () => {
       assert.equal(await page.getByLabel("Name", { exact: true }).inputValue(), "Browser fixture");
-      assert.equal(await page.getByLabel("Email", { exact: true }).inputValue(), "test@example.invalid");
+      assert.equal(await form.getByLabel("Email", { exact: true }).inputValue(), "test@example.invalid");
       assert.equal(await page.getByLabel("Message", { exact: true }).inputValue(), "This message is intercepted locally.");
       assert.equal(await submit.isEnabled(), true);
       assert.equal((await submit.textContent()).trim(), "Send Message");

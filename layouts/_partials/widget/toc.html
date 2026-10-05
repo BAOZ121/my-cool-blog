@@ -1,0 +1,27 @@
+{{- if .Context.Scratch.Get "TOCEnabled" -}}
+<section class="widget chapter-widget" aria-label="Article chapters">
+  <details class="chapter-disclosure" open>
+    <summary class="chapter-widget__header" aria-controls="ArticleChapters">
+      <span class="chapter-widget__title" aria-hidden="true">Chapters</span>
+      <span class="chapter-widget__position" data-chapter-position aria-hidden="true"></span>
+      <span class="chapter-widget__action">
+        <span class="chapter-widget__expanded-label">Minimize chapters</span>
+        <span class="chapter-widget__collapsed-label">Expand chapters</span>
+      </span>
+      <svg class="chapter-widget__toggle-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+    </summary>
+    {{ partial "chapter-rail/nav.html" (dict "Page" .Context "Desktop" true) }}
+  </details>
+  {{ partial "chapter-rail/nav.html" (dict "Page" .Context "Compact" true) }}
+  {{/* The sidebar precedes <main>. Restore its width before article parsing and
+       native Back restoration, never later in the deferred module. */}}
+  <script>
+  (() => {
+    try {
+      const disclosure = document.currentScript.parentElement.querySelector('.chapter-disclosure');
+      disclosure.open = sessionStorage.getItem(`dex-chapters-minimized:${location.pathname}`) !== 'true';
+    } catch { /* Native disclosure remains usable when storage is blocked. */ }
+  })();
+  </script>
+</section>
+{{- end -}}

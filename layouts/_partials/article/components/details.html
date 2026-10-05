@@ -17,7 +17,7 @@
     <div class="article-title-wrapper">
         {{ if $IsList }}<h2 class="article-title">{{ else }}<h1 class="article-title">{{ end }}
             <a href="{{ $Page.RelPermalink }}">
-                {{- $Page.Title -}}
+                <span data-entry-title>{{ $Page.Title }}</span>
             </a>
         {{ if $IsList }}</h2>{{ else }}</h1>{{ end }}
 

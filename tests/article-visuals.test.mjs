@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { escapeHTML, validateMap, toMarkmapTree, validateShare, pieOptions, safeVendorURL, mapWheelPixels, mapScaleExtent } from "../assets/js/article-visuals.mjs";
+import { escapeHTML, validateMap, toMarkmapTree, validateShare, pieOptions, safeVendorURL, mapWheelPixels, mapScaleExtent, stageVisualOffFlow, commitVisualLayout, visualNearViewport, initVisual } from "../assets/js/article-visuals.mjs";
 
 const example = () => ({
   title: "Foundry share", scope: "Foundry services", geography: "Global", metric: "Revenue", period: "2025", unit: "%",
@@ -96,4 +96,42 @@ test("map zoom limits allow very large trees to fit without unbounded magnificat
   assert.deepEqual(mapScaleExtent(0.4), [0.2, 3]);
   assert.deepEqual(mapScaleExtent(0.001), [0.0005, 3]);
   assert.ok(mapScaleExtent(0)[0] > 0);
+});
+
+
+test("loading graphics render out of flow and restore original styles atomically", () => {
+  const stage = { hidden: true, style: { position: "", width: "", visibility: "", color: "red" } };
+  const restore = stageVisualOffFlow(stage, 311.5);
+  assert.equal(stage.hidden, false);
+  assert.equal(stage.style.position, "absolute");
+  assert.equal(stage.style.width, "311.5px");
+  assert.equal(stage.style.visibility, "hidden");
+  restore();
+  assert.deepEqual(stage.style, { position: "", width: "", visibility: "", color: "red" });
+});
+
+test("graphic swaps settle position changes before releasing natural height", () => {
+  const events = [];
+  const figure = {
+    style: { height: "auto" },
+    getBoundingClientRect() { events.push(["measure", this.style.height]); return { height: 1234.5 }; },
+  };
+  commitVisualLayout(figure, () => events.push(["commit", figure.style.height]));
+  assert.deepEqual(events, [["measure", "auto"], ["commit", "1234.5px"], ["measure", "1234.5px"]]);
+  assert.equal(figure.style.height, "auto");
+  assert.throws(() => commitVisualLayout(figure, () => { throw new Error("render failed"); }), /render failed/);
+  assert.equal(figure.style.height, "auto", "failed enhancement never leaves a fixed-height article graphic");
+});
+
+test("stale lazy-graphic notifications cannot initialize offscreen or detached geometry", async () => {
+  const rect = { width: 800, height: 1000, top: -1320, bottom: -320 };
+  assert.equal(visualNearViewport(rect, 900), false, "Restored reading view is beyond the240px lazy margin");
+  assert.equal(visualNearViewport({ ...rect, top: -1240, bottom: -240 }, 900), true);
+  assert.equal(visualNearViewport({ ...rect, top: 1140, bottom: 2140 }, 900), true);
+  assert.equal(visualNearViewport({ ...rect, top: 1141, bottom: 2141 }, 900), false);
+  assert.equal(visualNearViewport({ ...rect, width: 0 }, 900), false);
+  assert.equal(visualNearViewport({ ...rect, height: 0 }, 900), false);
+  const figure = { dataset: {}, querySelector() { throw new Error("No rendering work should start"); } };
+  assert.equal(await initVisual(figure, () => false), "deferred");
+  assert.deepEqual(figure.dataset, {});
 });

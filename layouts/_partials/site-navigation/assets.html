@@ -1,0 +1,4 @@
+{{- $style := resources.Get "css/site-navigation.css" | minify | fingerprint -}}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
+{{- $script := resources.Get "js/site-navigation.mjs" | fingerprint -}}
+<script type="module" src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" crossorigin="anonymous"></script>

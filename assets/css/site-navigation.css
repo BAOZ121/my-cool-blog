@@ -1,0 +1,94 @@
+/* A native desktop disclosure controls an in-flow icon rail. Mobile keeps
+   Stack's existing menu. Without :has(), retain the complete navigation. */
+.site-navigation-disclosure { display: none; }
+@supports selector(:has(*)) {
+  @media (min-width: 1024px) {
+    .left-sidebar .site-navigation-disclosure { display: block; flex: 0 0 auto; margin-bottom: 0; }
+    .site-navigation-toggle {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 44px;
+      padding: 4px 6px;
+      cursor: pointer;
+      list-style: none;
+      border: 1px solid var(--card-separator-color);
+      border-radius: 8px;
+      color: var(--card-text-color-secondary);
+      font-size: 1.15rem;
+      line-height: 1.3;
+    }
+    .site-navigation-toggle::-webkit-details-marker { display: none; }
+    .site-navigation-toggle svg { flex: 0 0 20px; }
+    .site-navigation-toggle:hover { color: var(--accent-color); background: var(--card-background-selected); }
+    .site-navigation-toggle:focus-visible { outline: 2px solid var(--accent-color); outline-offset: 2px; }
+    .site-navigation-collapsed-label { display: none; }
+    .site-navigation-disclosure:not([open]) .site-navigation-expanded-label { display: none; }
+    .site-navigation-disclosure:not([open]) .site-navigation-collapsed-label { display: inline; }
+    .site-navigation-disclosure:not([open]) .site-navigation-toggle { justify-content: center; padding-inline: 0; }
+    .site-navigation-disclosure:not([open]) .site-navigation-toggle svg { transform: rotate(180deg); }
+
+    /* Match or exceed the article rail selector, so the recovered width really
+       goes to the article rather than remaining a blank reserved column. */
+    .container:has(.site-navigation-disclosure:not([open])),
+    .article-page .container.extended:has(.site-navigation-disclosure:not([open])) { --left-sidebar-max-width: 64px; }
+    .container > .left-sidebar:has(.site-navigation-disclosure:not([open])) {
+      flex: 0 0 64px;
+      width: 64px;
+      max-width: 64px;
+      --sidebar-avatar-size: 44px;
+      --sidebar-element-separation: 12px;
+      --menu-icon-separation: 0;
+      gap: 12px;
+    }
+    .left-sidebar:has(.site-navigation-disclosure:not([open])) header { align-items: center; }
+    .left-sidebar:has(.site-navigation-disclosure:not([open])) .site-meta,
+    .left-sidebar:has(.site-navigation-disclosure:not([open])) .emoji { display: none; }
+    .left-sidebar:has(.site-navigation-disclosure:not([open])) .menu-social {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+    .left-sidebar:has(.site-navigation-disclosure:not([open])) .menu-social a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      min-height: 44px;
+    }
+    .left-sidebar:has(.site-navigation-disclosure:not([open])) #main-menu { gap: 0; min-height: 88px; }
+    .left-sidebar:has(.site-navigation-disclosure:not([open])) #main-menu a,
+    .left-sidebar:has(.site-navigation-disclosure:not([open])) #dark-mode-toggle {
+      position: relative;
+      justify-content: center;
+      gap: 0;
+      width: 100%;
+      min-height: 44px;
+      padding: 0;
+      border-radius: 6px;
+    }
+    .left-sidebar:has(.site-navigation-disclosure:not([open])) #main-menu a:focus-visible,
+    .left-sidebar:has(.site-navigation-disclosure:not([open])) #dark-mode-toggle:focus-visible {
+      outline: 2px solid var(--accent-color);
+      outline-offset: -2px;
+    }
+    .left-sidebar:has(.site-navigation-disclosure:not([open])) #main-menu .current > a {
+      background: var(--card-background-selected);
+      box-shadow: inset 2px 0 var(--accent-color);
+    }
+    .left-sidebar:has(.site-navigation-disclosure:not([open])) #main-menu a > span,
+    .left-sidebar:has(.site-navigation-disclosure:not([open])) #dark-mode-toggle > span,
+    .site-navigation-disclosure:not([open]) .site-navigation-collapsed-label {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      overflow: hidden;
+      clip-path: inset(50%);
+      white-space: nowrap;
+    }
+    .left-sidebar:has(.site-navigation-disclosure:not([open])) #i18n-switch { flex-direction: column; align-items: center; }
+    .left-sidebar:has(.site-navigation-disclosure:not([open])) #i18n-switch select { max-width: 60px; min-height: 44px; }
+  }
+}
+@media print { .site-navigation-disclosure { display: none !important; } }

@@ -1,0 +1,231 @@
+/* A quiet chapter timeline. The line and nodes replace the old boxed TOC and
+   its large scrollbar. Links remain ordinary anchors, including without JS. */
+.chapter-widget { min-width: 0; }
+.chapter-widget__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 44px;
+  padding: 0 0 14px;
+  cursor: pointer;
+  list-style: none;
+  border-radius: 4px;
+  color: var(--card-text-color-secondary);
+}
+.chapter-widget__title {
+  margin: 0;
+  color: var(--card-text-color-secondary);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.chapter-widget__header::-webkit-details-marker { display: none; }
+.chapter-widget__header:focus-visible { outline: 2px solid var(--accent-color); outline-offset: 2px; }
+.chapter-widget__header:hover { color: var(--accent-color); }
+.chapter-widget__toggle-icon { flex: 0 0 20px; transition: transform 160ms ease; }
+.chapter-widget__action { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.chapter-widget__collapsed-label { display: none; }
+.chapter-disclosure:not([open]) .chapter-widget__expanded-label { display: none; }
+.chapter-disclosure:not([open]) .chapter-widget__collapsed-label { display: inline; }
+.chapter-rail--compact { display: none; }
+.chapter-widget__position {
+  color: var(--accent-color);
+  font-size: 1.1rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: .06em;
+}
+.chapter-rail {
+  --rail-surface: var(--body-background);
+  --rail-axis: 12px;
+  max-height: calc(100vh - 140px);
+  max-height: calc(100dvh - 140px);
+  overflow: auto;
+  scrollbar-width: none;
+  scroll-padding-block: 18px;
+  padding: 4px 6px 14px 0;
+  -webkit-overflow-scrolling: touch;
+}
+.chapter-rail::-webkit-scrollbar { display: none; }
+.chapter-rail ul, .chapter-rail ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.chapter-rail > :is(ul, ol) { position: relative; counter-reset: chapter; }
+.chapter-rail > :is(ul, ol)::before {
+  content: "";
+  position: absolute;
+  inset-block: 20px;
+  left: var(--rail-axis);
+  width: 1px;
+  background: var(--card-separator-color);
+}
+.chapter-rail li { position: relative; margin: 0; padding: 0; }
+.chapter-rail a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 8px 8px 8px 36px;
+  color: var(--card-text-color-secondary);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: color 140ms ease, background-color 140ms ease;
+}
+.chapter-rail a::before {
+  content: "";
+  position: absolute;
+  left: calc(var(--rail-axis) - 3px);
+  top: 18px;
+  width: 7px;
+  height: 7px;
+  box-sizing: border-box;
+  border: 1px solid var(--card-separator-color);
+  border-radius: 50%;
+  background: var(--rail-surface);
+}
+.chapter-rail > :is(ul, ol) > li { counter-increment: chapter; padding-bottom: 16px; }
+.chapter-rail > :is(ul, ol) > li:last-child { padding-bottom: 0; }
+.chapter-rail > :is(ul, ol) > li > a {
+  min-height: 44px;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--card-text-color-main);
+}
+.chapter-rail > :is(ul, ol) > li > a::before {
+  content: counter(chapter, decimal-leading-zero);
+  display: grid;
+  place-items: center;
+  top: 10px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  font-size: .9rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  color: var(--card-text-color-secondary);
+}
+.chapter-rail li li li > a { padding-left: 46px; font-size: 1.15rem; }
+.chapter-rail a:hover, .chapter-rail a:focus-visible { color: var(--accent-color); background: var(--card-background-selected); }
+.chapter-rail a:focus-visible { outline: 2px solid var(--accent-color); outline-offset: -2px; }
+.chapter-rail a[aria-current="location"] { color: var(--accent-color); font-weight: 700; }
+.chapter-rail a[aria-current="location"]::before {
+  border-color: var(--accent-color);
+  background: var(--accent-color);
+  color: var(--accent-color-text);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent-color) 13%, transparent);
+}
+.chapter-rail [data-current-chapter] > a { color: var(--accent-color); }
+.chapter-rail [data-current-chapter] > a::before { border-color: var(--accent-color); color: var(--accent-color); }
+.chapter-rail [data-current-chapter] > a[aria-current="location"]::before { color: var(--accent-color-text); }
+.article-content :is(h1, h2, h3, h4, h5, h6)[id] { scroll-margin-top: 24px; }
+.chapter-mobile { margin: 24px var(--card-padding); }
+.chapter-mobile details { border-block: 1px solid var(--card-separator-color); }
+.chapter-mobile summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 48px;
+  cursor: pointer;
+  list-style: none;
+  color: var(--card-text-color-secondary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.chapter-mobile summary::-webkit-details-marker { display: none; }
+.chapter-mobile summary span { color: var(--accent-color); font-size: 2rem; font-weight: 400; }
+.chapter-mobile details[open] summary span { transform: rotate(45deg); }
+.chapter-mobile summary:focus-visible { outline: 2px solid var(--accent-color); outline-offset: 4px; }
+.chapter-mobile .chapter-rail { --rail-surface: var(--card-background); max-height: none; overflow: visible; padding-block: 8px 20px; }
+.chapter-mobile .chapter-rail a { min-height: 44px; font-size: 1.3rem; }
+@media (min-width: 1024px) {
+  .chapter-mobile { display: none; }
+  /* Reserve both sidebars in normal flow. The main column grows until 1200px;
+     any remaining space becomes its auto margins, keeping the axis at right. */
+  .article-page .container.extended:has(.chapter-widget) {
+    --left-sidebar-max-width: clamp(160px, 13vw, 200px);
+    --right-sidebar-max-width: clamp(200px, 18vw, 280px);
+    max-width: none;
+    padding-inline: 20px 8px;
+    column-gap: 24px;
+  }
+  .article-page .container.extended:has(.chapter-disclosure:not([open])) { --right-sidebar-max-width: 44px; }
+  .article-page .container.extended:has(.chapter-widget) > .left-sidebar { flex: 0 0 var(--left-sidebar-max-width); }
+  .article-page .container.extended:has(.chapter-widget) > .right-sidebar { flex: 0 0 var(--right-sidebar-max-width); }
+  .article-page .container.extended:has(.chapter-widget) > main.main { flex: 1 1 0%; width: 0; max-width: 1200px; margin-inline: auto; }
+  /* One body-font-based measure also aligns larger headings; charts/tables
+     retain the full card width. Around 100 average characters, not 100 heading ch. */
+  .article-page:has(.chapter-widget) .article-content { --chapter-prose-measure: calc(var(--article-font-size) * 50); }
+  .article-page:has(.chapter-widget) .article-content > :is(h1, h2, h3, h4, h5, h6, p:not(:has(img, video, iframe)), ul, ol, blockquote) { max-width: var(--chapter-prose-measure); margin-inline: auto; }
+  .chapter-widget { width: 100%; }
+  .chapter-widget__header { padding-inline: 6px 2px; }
+  .chapter-widget .chapter-rail { padding-inline: 6px 0; }
+  .chapter-widget .chapter-rail > :is(ul, ol)::before { left: auto; right: var(--rail-axis); }
+  .chapter-widget .chapter-rail a { justify-content: flex-end; padding: 8px 38px 8px 8px; text-align: right; }
+  .chapter-widget .chapter-rail a::before { left: auto; right: calc(var(--rail-axis) - 3px); }
+  .chapter-widget .chapter-rail > :is(ul, ol) > li > a::before { left: auto; right: 0; }
+  .chapter-widget .chapter-rail li li li > a { padding-inline: 8px 48px; }
+  .chapter-disclosure[open] .chapter-rail { animation: chapter-labels-enter 160ms ease-out; }
+  .chapter-disclosure:not([open]) .chapter-widget__header { flex-direction: column; gap: 8px; padding: 8px 0 12px; }
+  .chapter-disclosure:not([open]) .chapter-widget__title { writing-mode: vertical-rl; }
+  .chapter-disclosure:not([open]) .chapter-widget__position { display: none; }
+  .chapter-disclosure:not([open]) .chapter-widget__toggle-icon { transform: rotate(180deg); }
+  /* Keep every chapter on the minimized line. Native links retain a full
+     44px target; only their visible labels disappear, never their names. */
+  .chapter-widget:has(.chapter-disclosure:not([open])) .chapter-rail--compact {
+    display: block;
+    max-height: calc(100vh - 220px);
+    max-height: calc(100dvh - 220px);
+    /* Use the existing8px outer gutter for the halo, without moving its axis
+       or reducing the native44px link target. No space overlaps the article. */
+    width: calc(100% + 8px);
+    margin-inline-end: -8px;
+    padding: 4px 8px 14px 0;
+  }
+  .chapter-widget .chapter-rail--compact a,
+  .chapter-widget .chapter-rail--compact li li li > a {
+    display: block;
+    min-height: 44px;
+    padding: 0;
+  }
+  .chapter-widget .chapter-rail--compact > :is(ul, ol) > li { padding-bottom: 12px; }
+  .chapter-widget .chapter-rail--compact > :is(ul, ol) > li:last-child { padding-bottom: 0; }
+  .chapter-widget .chapter-rail--compact a::before { top: 19px; }
+  .chapter-widget .chapter-rail--compact > :is(ul, ol) > li > a::before { top: 10px; }
+  .chapter-widget .chapter-rail--compact [data-current-chapter] > a::before {
+    border-color: var(--accent-color);
+    background: var(--accent-color);
+    color: var(--accent-color-text);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent-color) 13%, transparent);
+  }
+  .chapter-rail__label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+}
+@keyframes chapter-labels-enter { from { opacity: .35; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  .chapter-rail a, .chapter-widget__toggle-icon { transition: none; }
+  .chapter-disclosure[open] .chapter-rail { animation: none; }
+}
+@media (forced-colors: active) {
+  .chapter-rail > :is(ul, ol)::before,
+  .chapter-widget .chapter-rail > :is(ul, ol)::before { background: CanvasText; }
+  .chapter-rail a::before { border-color: CanvasText; }
+  .chapter-rail a[aria-current="location"]::before,
+  .chapter-widget .chapter-rail--compact [data-current-chapter] > a::before { background: Highlight; color: HighlightText; }
+}
+@media print { .chapter-mobile, .chapter-widget { display: none !important; } }

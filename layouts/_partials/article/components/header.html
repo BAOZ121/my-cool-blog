@@ -1,22 +1,28 @@
 {{- $IsList := .IsList -}}
 {{- $Page := .Page -}}
-<header class="article-header">
+<header class="article-header" data-article-url="{{ $Page.RelPermalink }}">
     {{- $image := partial "helper/image" (dict "Image" $Page.Params.image "Resources" $Page.Resources "Context" $Page) -}}
     {{ if $image }}
-    <div class="article-image">
+    <div class="article-image" data-transition-cover>
         <a href="{{ $Page.RelPermalink }}">
+            {{- $cover := partialCached "helper/cover-variants.html" $image $image.Permalink -}}
+            {{- $sizes := "(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) calc(75vw - 70px), (max-width: 1279px) calc(50vw - 100px), (max-width: 1535px) calc(60vw - 104px), 794px" -}}
+            {{- if and (not $IsList) (not ($Page.Scratch.Get "hasWidget")) -}}
+              {{- $sizes = "(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) calc(75vw - 70px), (max-width: 1279px) calc(80vw - 72px), (max-width: 1535px) calc(85vw - 74px), 1232px" -}}
+            {{- end -}}
+            {{- if and (not $IsList) ($Page.Scratch.Get "TOCEnabled") -}}
+              {{- /* Native desktop outline defaults to expanded. Its module
+                    tracks actual width after a reader minimizes/restores it. */ -}}
+              {{- $sizes = "(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) calc(75vw - 70px), min(1200px, calc(100vw - 76px - clamp(160px, 13vw, 200px) - clamp(200px, 18vw, 280px)))" -}}
+            {{- end -}}
             {{ partial "helper/responsive-image" (dict
-                "Resource" $image.Resource
-                "Widths" (cond $Page.Site.Params.ImageProcessing.Content.Enabled $Page.Site.Params.ImageProcessing.Content.Widths nil)
-                "Attributes" (dict
-                    "src" $image.Permalink
-                    "width" $image.Width
-                    "height" $image.Height
+                "Attributes" (merge $cover (dict
                     "alt" (printf "Featured image of post %s" $Page.Title)
                     "loading" (cond (or .IsLead (not $IsList)) "eager" "lazy")
                     "fetchpriority" (cond (or .IsLead (not $IsList)) "high" "auto")
-                    "sizes" "(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px"
-                )
+                    "decoding" "async"
+                    "sizes" $sizes
+                ))
             ) }}
         </a>
     </div>

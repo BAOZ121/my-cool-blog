@@ -358,15 +358,45 @@ async function renderShare(figure, stage, _toolbar, data, vendor, labels) {
   return { resize: update, hint: labels.chartReady };
 }
 
-export async function initVisual(figure) {
+// Measure/render the replacement without briefly adding a second graphic's
+// height to the document. This preserves native history scroll anchoring.
+export function stageVisualOffFlow(stage, width) {
+  const previous = { position: stage.style.position, width: stage.style.width, visibility: stage.style.visibility };
+  Object.assign(stage.style, { position: "absolute", width: `${Math.max(0, width)}px`, visibility: "hidden" });
+  stage.hidden = false;
+  return () => Object.assign(stage.style, previous);
+}
+
+export function commitVisualLayout(figure, commit) {
+  const height = figure.style.height;
+  // A position change suppresses scroll anchoring for its layout window.
+  // Keep the document's height unchanged while bringing the stage into flow,
+  // then finish that window before releasing its final natural height.
+  figure.style.height = `${figure.getBoundingClientRect().height}px`;
+  try {
+    commit();
+    figure.getBoundingClientRect();
+  } finally {
+    figure.style.height = height;
+  }
+}
+
+export function visualNearViewport(rect, viewportHeight) {
+  return rect.width > 0 && rect.height > 0 && rect.bottom >= -240 && rect.top <= viewportHeight + 240;
+}
+
+export async function initVisual(figure, stillRelevant = () => true) {
   if (figure.dataset.visualState) return;
+  if (!stillRelevant()) return "deferred";
   figure.dataset.visualState = "loading";
   const stage = figure.querySelector(".visual-stage");
   const toolbar = figure.querySelector(".visual-toolbar");
   const fallback = figure.querySelector(".visual-fallback");
   const status = figure.querySelector(".visual-status");
+  const previousStatus = status?.textContent;
   const labels = strings[document.documentElement.lang.startsWith("zh") ? "zh" : "en"];
   if (status) status.textContent = labels.loading;
+  let restoreStage = () => {};
   try {
     if (!stage || !toolbar || !fallback) throw new Error("Missing graphic containers");
     const data = JSON.parse(figure.querySelector("script.visual-data").textContent);
@@ -374,23 +404,35 @@ export async function initVisual(figure) {
     if (!render) throw new Error("Unknown graphic type");
     if (figure.dataset.visual === "map") validateMap(data); else validateShare(data);
     const vendor = await import(safeVendorURL(figure.dataset.vendor, document.baseURI));
-    stage.hidden = false;
-    stage.style.visibility = "hidden";
+    // Intersection notifications and module downloads are asynchronous. Native
+    // Back restoration or a fast reader may have moved this figure away since
+    // it was queued. Keep its readable outline; observe it again when needed.
+    if (!stillRelevant()) {
+      delete figure.dataset.visualState;
+      if (status) status.textContent = previousStatus;
+      return "deferred";
+    }
+    const padding = getComputedStyle(figure);
+    const width = figure.clientWidth - parseFloat(padding.paddingLeft) - parseFloat(padding.paddingRight);
+    restoreStage = stageVisualOffFlow(stage, width);
     await nextFrame();
     const view = await render(figure, stage, toolbar, data, vendor, labels);
-    stage.style.visibility = "";
-    toolbar.hidden = false;
-    fallback.open = false;
-    figure.dataset.visualState = "ready";
-    figure.dataset.enhanced = "true";
-    if (status) status.textContent = view.hint;
+    // Commit without a temporary double-height layout or an unstable anchor.
+    commitVisualLayout(figure, () => {
+      restoreStage();
+      toolbar.hidden = false;
+      fallback.open = false;
+      figure.dataset.visualState = "ready";
+      figure.dataset.enhanced = "true";
+      if (status) status.textContent = view.hint;
+    });
     fullscreenControl(figure, toolbar, view.resize, labels);
     requestAnimationFrame(view.resize);
   } catch (error) {
     console.warn("Article graphic unavailable; readable content retained.", error);
     figure.dataset.visualState = "fallback";
     figure.dataset.enhanced = "false";
-    if (stage) { stage.hidden = true; stage.replaceChildren(); }
+    if (stage) { stage.hidden = true; restoreStage(); stage.replaceChildren(); }
     if (toolbar) toolbar.hidden = true;
     if (fallback) fallback.open = true;
     if (status) status.textContent = labels.failed;
@@ -400,9 +442,17 @@ export async function initVisual(figure) {
 export function initArticleVisuals(root = document) {
   const figures = [...root.querySelectorAll("figure.article-visual[data-visual]")];
   if (!figures.length) return;
-  if (typeof IntersectionObserver === "undefined") { figures.forEach(initVisual); return; }
+  if (typeof IntersectionObserver === "undefined") { figures.forEach(figure => { void initVisual(figure); }); return; }
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => { if (entry.isIntersecting) { observer.unobserve(entry.target); void initVisual(entry.target); } });
+    entries.forEach((entry) => {
+      const figure = entry.target;
+      const stillRelevant = () => figure.isConnected && visualNearViewport(figure.getBoundingClientRect(), innerHeight);
+      if (!entry.isIntersecting || !stillRelevant()) return;
+      observer.unobserve(figure);
+      void initVisual(figure, stillRelevant).then(result => {
+        if (result === "deferred" && figure.isConnected) observer.observe(figure);
+      });
+    });
   }, { rootMargin: "240px 0px" });
   figures.forEach((figure) => observer.observe(figure));
   // Opening details for print also works in browsers that hide closed <details> descendants.

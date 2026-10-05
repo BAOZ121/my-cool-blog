@@ -1,0 +1,28 @@
+<article class="{{ if .Params.image }}has-image {{ end }}main-article">
+    {{ partial "article/components/header" (dict "Page" . "IsList" false) }}
+
+    {{ if .Scratch.Get "TOCEnabled" }}
+    <aside class="chapter-mobile">
+        <details>
+            <summary>Chapters <span aria-hidden="true">+</span></summary>
+            {{ partial "chapter-rail/nav.html" (dict "Page" . "Desktop" false) }}
+        </details>
+        {{/* Restore layout while parsing, before native history restoration can
+             establish a reading position in the article below. */}}
+        <script>
+        (() => {
+            try {
+                document.currentScript.previousElementSibling.open = sessionStorage.getItem(`dex-chapters-open:${location.pathname}`) === 'open';
+            } catch { /* Storage may be disabled; keep the native disclosure. */ }
+        })();
+        </script>
+    </aside>
+    {{ end }}
+
+    {{ partial "article/components/content" . }}
+    {{ partial "article/components/footer" . }}
+
+    {{ if or .Params.math .Site.Params.article.math }}
+        {{ partialCached "article/components/math.html" . }}
+    {{ end }}
+</article>

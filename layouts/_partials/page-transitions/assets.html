@@ -1,0 +1,7 @@
+{{- /* Keep this small opt-in available before the incoming document's first paint. */ -}}
+{{- $style := resources.Get "css/page-transitions.css" | minify -}}
+<style id="dex-page-transitions">{{ $style.Content | safeCSS }}</style>
+
+{{- /* Register before first paint; no external request or rendering wait. */ -}}
+{{- $script := resources.Get "js/page-transitions.js" | minify -}}
+<script id="dex-page-transition-script">{{ $script.Content | safeJS }}</script>

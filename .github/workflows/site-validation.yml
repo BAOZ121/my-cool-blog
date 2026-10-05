@@ -47,6 +47,8 @@ jobs:
           python3 -m unittest discover -s tests -p 'test_evidence_library.py'
       - name: Build production HTML without warnings
         run: hugo --environment production --minify --panicOnWarning
+      - name: Check responsive cover bytes and shared cache paths
+        run: python3 scripts/validate_cover_images.py public
       - name: Check Evidence Library stays in sync with article citations
         run: python3 scripts/build_evidence_library.py public --check
       - name: Check industry data and site links
@@ -58,14 +60,32 @@ jobs:
       - name: Install browser verification tools
         run: npm ci
       - name: Install Chromium
+        id: chromium
         run: npx playwright install --with-deps chromium
+      - name: Verify non-blocking page entrances and native navigation
+        run: |
+          node --test tests/page-transitions.test.mjs tests/chapter-rail.test.mjs tests/sidebar-scrollbar.test.mjs
+          node tests/page-transitions.browser.mjs
+      - name: Verify chapter rail anchors, keyboard and mobile reading
+        id: chapter_rail
+        run: node tests/chapter-rail.browser.mjs
       - name: Verify interactive articles on desktop and mobile
+        if: ${{ success() || (failure() && steps.chapter_rail.conclusion == 'failure') }}
         run: node tests/article-visuals.browser.mjs
       - name: Verify fine mind map zoom and gesture boundaries
+        if: ${{ success() || (failure() && steps.chapter_rail.conclusion == 'failure') }}
         run: node tests/mindmap-zoom.browser.mjs
       - name: Verify contact and keyboard controls on desktop and mobile
+        if: ${{ success() || (failure() && steps.chapter_rail.conclusion == 'failure') }}
         run: node tests/site-controls.browser.mjs
       - name: Verify industry pages, details and mobile filtering
+        if: ${{ success() || (failure() && steps.chapter_rail.conclusion == 'failure') }}
         run: node tests/industry-pages.browser.mjs
       - name: Verify Evidence Library search, links and keyboard controls
+        if: ${{ success() || (failure() && steps.chapter_rail.conclusion == 'failure') }}
         run: node tests/evidence-library.browser.mjs
+      - name: Verify compact site navigation, independent rails and native Back
+        if: ${{ !cancelled() && steps.chromium.conclusion == 'success' }}
+        run: |
+          node --test tests/site-navigation.test.mjs
+          node tests/site-navigation.browser.mjs

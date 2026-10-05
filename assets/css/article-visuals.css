@@ -7,6 +7,9 @@
   --visual-surface: #fff;
   box-sizing: border-box;
   position: relative;
+  /* Replaced outline/chart nodes must not anchor the reader's viewport.
+     Surrounding article text keeps native scroll anchoring enabled. */
+  overflow-anchor: none;
   min-width: 0;
   max-width: 100%;
   margin: 32px 0;
