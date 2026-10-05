@@ -135,12 +135,12 @@ try {
     assert.equal(await status.getAttribute("role"), "status");
     assert.equal(await status.getAttribute("aria-live"), "polite");
     await page.getByLabel("Name", { exact: true }).fill("Browser fixture");
-    await page.getByLabel("Email", { exact: true }).fill("test@example.invalid");
+    await form.getByLabel("Email", { exact: true }).fill("test@example.invalid");
     await page.getByLabel("Message", { exact: true }).fill("This message is intercepted locally.");
     const submit = form.locator('button[type="submit"]');
     const assertDraftAndButton = async () => {
       assert.equal(await page.getByLabel("Name", { exact: true }).inputValue(), "Browser fixture");
-      assert.equal(await page.getByLabel("Email", { exact: true }).inputValue(), "test@example.invalid");
+      assert.equal(await form.getByLabel("Email", { exact: true }).inputValue(), "test@example.invalid");
       assert.equal(await page.getByLabel("Message", { exact: true }).inputValue(), "This message is intercepted locally.");
       assert.equal(await submit.isEnabled(), true);
       assert.equal((await submit.textContent()).trim(), "Send Message");

@@ -60,6 +60,7 @@ jobs:
       - name: Install browser verification tools
         run: npm ci
       - name: Install Chromium
+        id: chromium
         run: npx playwright install --with-deps chromium
       - name: Verify non-blocking page entrances and native navigation
         run: |
@@ -84,7 +85,7 @@ jobs:
         if: ${{ success() || (failure() && steps.chapter_rail.conclusion == 'failure') }}
         run: node tests/evidence-library.browser.mjs
       - name: Verify compact site navigation, independent rails and native Back
-        if: ${{ success() || (failure() && steps.chapter_rail.conclusion == 'failure') }}
+        if: ${{ !cancelled() && steps.chromium.conclusion == 'success' }}
         run: |
           node --test tests/site-navigation.test.mjs
           node tests/site-navigation.browser.mjs
