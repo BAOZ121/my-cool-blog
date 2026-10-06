@@ -10,7 +10,7 @@
     <p class="ix-eyebrow">DEX RESEARCH / INDUSTRY EXPLORER</p>
     <h1>Explore {{ len (os.ReadFile "static/data/industries.json" | transform.Unmarshal).industries }} industries in one place.</h1>
     <p class="ix-intro">Compare available market-size and growth estimates, explore key technologies, and open related research.</p>
-    <div class="ix-actions"><a class="ix-btn ix-btn-primary" href="#industry-list">Browse industries <span aria-hidden="true">↓</span></a><a class="ix-btn" href="{{ "/industry-breakdowns/" | relURL }}">Understand an industry with a guide <span aria-hidden="true">→</span></a></div>
+    <div class="ix-actions"><a class="ix-btn ix-btn-primary" href="#industry-list">Browse industries <span aria-hidden="true">↓</span></a></div>
     <p class="ix-hero-caption">Search and compare here. Open a guide to understand the value chain and business model.</p>
   </header>
   {{ .Content }}

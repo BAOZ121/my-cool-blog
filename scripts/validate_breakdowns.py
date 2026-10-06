@@ -92,12 +92,15 @@ def main() -> None:
         require(all("source-" + s["id"] in parsed.ids for s in p["sources"]), "Missing source anchors")
         require(all(s["url"] in parsed.links for s in p["sources"]), "Missing primary-source links")
         require(all(r["url"] in parsed.links for r in p["related"]), "Missing related report")
-    hub = pages[BUILD / "industry-breakdowns/index.html"]
-    require(sum("data-breakdown-card" in attrs for _, attrs in hub.tags) == len(profiles), "Hub/profile mismatch")
+    require(not (BUILD / "industry-breakdowns/index.html").exists(), "Retired directory must not be generated")
+    redirects = (BUILD / "_redirects").read_text(encoding="utf-8").splitlines()
+    require("/industry-breakdowns /industries/ 301" in redirects, "Missing retired-directory redirect")
+    require("/industry-breakdowns/ /industries/ 301" in redirects, "Missing trailing-slash redirect")
+    require(not any(line.startswith("/industry-breakdowns/*") for line in redirects), "Redirect must preserve profile URLs")
     industry_page = pages[BUILD / "industries/index.html"]
     for p in profiles:
         link = f"/industry-breakdowns/{p['id']}/"
-        require(link in hub.links and link in industry_page.links, f"Missing integration: {link}")
+        require(link in industry_page.links, f"Missing Explorer integration: {link}")
     exported = json.loads((BUILD / "data/industry-breakdowns.json").read_text(encoding="utf-8"))
     require(exported == data, "Published JSON diverges from source data")
 
@@ -115,6 +118,8 @@ def main() -> None:
             if target.is_dir() or parsed.path.endswith("/"):
                 target = target / "index.html"
             checks += 1
+            if parsed.path.rstrip("/") == "/industry-breakdowns":
+                errors.append(f"{rel}: link to retired directory {link}")
             if not target.exists():
                 errors.append(f"{rel}: missing {link}")
             # Check fragments within the feature; old article fragments are outside this change.

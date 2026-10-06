@@ -6,6 +6,7 @@ from datetime import date
 import hashlib
 import json
 import sys
+import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urljoin, urlsplit
@@ -168,6 +169,18 @@ def main() -> None:
         assert {"Read report", "View industry mind map", "View share chart"} <= labels, f"Incomplete article/graphic navigation for row {rank}"
     search_index = json.loads((BUILD / "search/index.json").read_text(encoding="utf-8"))
     indexed_urls = {entry["permalink"] for entry in search_index}
+    assert "/industry-breakdowns/" not in indexed_urls, "Retired directory remains in search"
+    sitemap_urls = {
+        urlsplit(node.text).path.rstrip("/")
+        for path in BUILD.rglob("*sitemap*.xml")
+        for node in ET.parse(path).getroot().iter()
+        if node.tag.endswith("}loc") and node.text
+    }
+    assert "/industry-breakdowns" not in sitemap_urls, "Retired directory remains in sitemap"
+    assert all(
+        f"/industry-breakdowns/{profile['id']}" in sitemap_urls
+        for profile in profiles
+    ), "Individual industry maps must remain in sitemap"
     assert all(
         f"/industry-breakdowns/{profile['id']}/" in indexed_urls
         for profile in profiles

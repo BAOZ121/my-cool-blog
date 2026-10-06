@@ -58,13 +58,6 @@ enableRobotsTXT = true
             params = { icon = "chart-bar" }
 
         [[languages.en.menu.main]]
-            identifier = "industry-breakdowns"
-            name = "Industry Guides"
-            url = "/industry-breakdowns/"
-            weight = 3
-            params = { icon = "chart-bar" }
-
-        [[languages.en.menu.main]]
             identifier = "evidence-library"
             name = "Evidence Library"
             url = "/evidence-library/"

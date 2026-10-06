@@ -23,7 +23,11 @@ completed investment reports and do not upgrade the evidence status of the old
 50-row CSV/JSON dataset. No new market-size numbers or stock recommendations are
 introduced. Source evidence and DEX interpretation are explicitly separated.
 
-The sidebar and Industries page link to the hub and profiles. Each profile has:
+The Industry Guides directory was retired on October 6, 2026. Its sidebar and
+home/Explorer entry points are removed, and only `/industry-breakdowns` and
+`/industry-breakdowns/` redirect to `/industries/`. Do not use a wildcard redirect:
+individual profiles remain available through Explorer rows, search, and sibling
+links. Reports, citations, and downloads are preserved. Each profile has:
 
 - a permanent `/industry-breakdowns/<id>/` URL;
 - scope, geography and source-review date;
@@ -44,11 +48,11 @@ The sidebar and Industries page link to the hub and profiles. Each profile has:
 4. Review every published profile before advancing the shared review date. If
    coverage grows, migrate to per-profile dates before switching to rolling updates.
 5. Run the commands below. Verify the preview at desktop and phone widths, keyboard
-   operation, dark mode, empty search, shared filters and no-JavaScript reading.
+   operation, dark mode, native disclosures and no-JavaScript reading.
 
 Hugo generates the public JSON download from the same source; do not maintain a
-second copy. The search enhancement modifies only hidden states/text and URL
-parameters. It never inserts query strings into HTML.
+second copy. The profile enhancement expands native disclosures and restores their previous
+state after printing. All research content is available without JavaScript.
 
 ## Validation
 

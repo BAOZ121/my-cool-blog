@@ -438,7 +438,7 @@ try {
     assert.equal((await downloadPromise).suggestedFilename(), "industries.csv");
     assert.equal(page.url(), origin + "/");
 
-    for (const path of ["/evidence-library/", "/industries/", "/industry-breakdowns/", "/about/"]) {
+    for (const path of ["/evidence-library/", "/industries/", "/industry-breakdowns/semiconductors/", "/about/"]) {
       await page.goto(origin + "/");
       const link = page.locator(`a[href="${path}"]`).filter({ visible: true }).first();
       if (await link.count()) await link.click();

@@ -6,7 +6,7 @@
 {{ $profile := index $matches 0 }}
 {{ $researchLinks := index (partial "industries/research-links.html" .) (printf "%v" $profile.dataset_rank) }}
 <article class="bd bd-detail" id="bd-main">
-  <nav class="bd-breadcrumb" aria-label="Breadcrumb"><a href="{{ "/industry-breakdowns/" | relURL }}">Industry Guides</a><span aria-hidden="true"> / </span><span aria-current="page">{{ $profile.name }}</span></nav>
+  <nav class="bd-breadcrumb" aria-label="Breadcrumb"><a href="{{ "/industries/" | relURL }}">Industry Explorer</a><span aria-hidden="true"> / </span><span aria-current="page">{{ $profile.name }}</span></nav>
   <header class="bd-hero">
     <p class="bd-eyebrow">{{ $profile.category }} / RESEARCH MAP {{ printf "%02d" (int $profile.dataset_rank) }}</p>
     <h1>{{ $profile.name }}</h1>
