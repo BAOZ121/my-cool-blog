@@ -77,6 +77,7 @@ const palettes = {
   light: ["#d6b56f", "#f0dfb3", "#a8874a", "#dec799", "#bf9855", "#f4e9cf", "#9d7841", "#c9b78c"],
   dark: ["#d6b56f", "#f0dfb3", "#a8874a", "#dec799", "#bf9855", "#f4e9cf", "#9d7841", "#c9b78c"],
 };
+const nvidiaPalette = ["#76b900", "#b7e36f", "#4f8b36", "#9dba85", "#6b8f5d", "#d5e7c8", "#86c748", "#c1df9b"];
 // Thin map connections need deeper gold against the light background.
 const mapPalettes = {
   light: ["#89651e", "#9b742d", "#76551e", "#94723a", "#886026", "#a37c39", "#71521f", "#806633"],
@@ -85,18 +86,20 @@ const mapPalettes = {
 
 export function pieOptions(data, { dark = false, compact = false, reducedMotion = false, width = 700, height = 360 } = {}) {
   validateShare(data);
+  const nvidia = data.theme === "nvidia";
+  dark = dark || nvidia;
   const centerPeriod = compact ? data.period.replace(/^Full year\s+/i, "").replace(/^(Q\d)\s+(\d{4})$/, "$1\n$2") : data.period;
   const ink = dark ? "#f5f3ed" : "#211d16";
   const muted = dark ? "#c3bcae" : "#6b6254";
-  const surface = dark ? "#161616" : "#ffffff";
+  const surface = nvidia ? "#111511" : dark ? "#161616" : "#ffffff";
   return {
     animation: !reducedMotion,
     animationDuration: 350,
-    color: palettes[dark ? "dark" : "light"],
+    color: nvidia ? nvidiaPalette : palettes[dark ? "dark" : "light"],
     textStyle: { fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif", color: ink },
     aria: { enabled: true, label: { description: `${data.title}. ${data.period}. ${data.geography}. ${data.metric}. ${data.series.map((item) => `${item.name}: ${item.value}%`).join("; ")}.` } },
     tooltip: {
-      trigger: "item", confine: true, renderMode: "html", backgroundColor: surface, borderColor: dark ? "#494136" : "#e5d7b8", textStyle: { color: ink },
+      trigger: "item", confine: true, renderMode: "html", backgroundColor: surface, borderColor: nvidia ? "#2a3824" : dark ? "#494136" : "#e5d7b8", textStyle: { color: ink },
       formatter: (item) => `${escapeHTML(item.name)}<br><strong>${Number(item.value)}%</strong>`,
     },
     legend: {
@@ -196,7 +199,7 @@ async function renderMap(figure, stage, toolbar, data, vendor, labels) {
     autoFit: false, duration: motionReduced() ? 0 : 200, maxWidth: compact ? 105 : 190, paddingX: compact ? 6 : 12,
     spacingHorizontal: compact ? 20 : 65, spacingVertical: compact ? 24 : 14, fitRatio: 0.94, maxInitialScale: 1,
     initialExpandLevel: -1, scrollForPan: false, zoom: true, pan: false,
-    color: (node) => mapPalettes[isDark() ? "dark" : "light"][(node.payload?.branch || 0) % 8],
+    color: (node) => (data.theme === "nvidia" ? nvidiaPalette : mapPalettes[isDark() ? "dark" : "light"])[(node.payload?.branch || 0) % 8],
   });
   const fittedScale = () => {
     const { x1, y1, x2, y2 } = map.state.rect;
@@ -340,7 +343,9 @@ async function renderShare(figure, stage, _toolbar, data, vendor, labels) {
   legend.className = "visual-mobile-legend";
   data.series.forEach((item, index) => {
     const row = document.createElement("li");
-    const dot = document.createElement("span"); dot.className = "visual-dot"; dot.style.setProperty("--dot-light", palettes.light[index % 8]); dot.style.setProperty("--dot-dark", palettes.dark[index % 8]);
+    const dot = document.createElement("span"); dot.className = "visual-dot";
+    dot.style.setProperty("--dot-light", (data.theme === "nvidia" ? nvidiaPalette : palettes.light)[index % 8]);
+    dot.style.setProperty("--dot-dark", (data.theme === "nvidia" ? nvidiaPalette : palettes.dark)[index % 8]);
     const name = document.createElement("span"); name.textContent = item.name;
     const value = document.createElement("strong"); value.textContent = `${item.value}%`;
     row.append(dot, name, value); legend.append(row);

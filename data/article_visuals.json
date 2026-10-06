@@ -1494,7 +1494,8 @@
           "url": "https://developer.nvidia.com/embedded/jetson-modules"
         }
       ],
-      "reviewed": "2026-10-05"
+      "reviewed": "2026-10-05",
+      "theme": "nvidia"
     }
   },
   "shares": {
@@ -1815,7 +1816,8 @@
         "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
       },
       "note": "Percentages are calculated from the five reported platform revenues and the USD 215.938 billion total, then rounded to one decimal place. The exact amounts appear in the table below. Fiscal 2026 ended on 25 January 2026. FY2027 uses a changed platform presentation and is not treated as a continuous category trend.",
-      "reviewed": "2026-10-05"
+      "reviewed": "2026-10-05",
+      "theme": "nvidia"
     }
   }
 }
