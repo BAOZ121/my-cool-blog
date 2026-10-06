@@ -23,6 +23,24 @@ const slugs = ['cybersecurity-industry-report', 'pharmaceutical-industry', 'vr-i
 const captures = process.env.VISUAL_SCREENSHOT_DIR;
 if (captures) await mkdir(captures, { recursive: true });
 const failures = [];
+const pieColors = ['#d6b56f', '#67b8b0', '#7ea5dc', '#e58b78', '#a995d3', '#a4bd7e', '#d78fb3', '#8baeb8'];
+async function assertPieColors(figure) {
+  const rendered = await figure.evaluate(el => {
+    const data = JSON.parse(el.querySelector('.visual-data').textContent);
+    const chart = el.querySelector('.visual-chart');
+    return {
+      count: data.series.length,
+      compact: chart.clientWidth < 560,
+      fills: [...chart.querySelectorAll('svg path[fill]')].map(path => path.getAttribute('fill').toLowerCase()),
+      dots: [...el.querySelectorAll('.visual-dot')].map(dot => getComputedStyle(dot).backgroundColor),
+    };
+  });
+  const expected = pieColors.slice(0, rendered.count);
+  assert.deepEqual(rendered.fills.filter(fill => pieColors.includes(fill)).slice(0, rendered.count), expected, 'Pie segments retain source order and distinct gold-led colors');
+  for (const color of expected) assert.equal(rendered.fills.filter(fill => fill === color).length, rendered.compact ? 1 : 2, 'Each desktop legend swatch matches its pie segment');
+  const rgb = hex => `rgb(${hex.slice(1).match(/../g).map(channel => parseInt(channel, 16)).join(', ')})`;
+  assert.deepEqual(rendered.dots, expected.map(rgb), 'Mobile legend swatches match their pie segments');
+}
 try {
   for (const width of [1440, 390]) {
     const context = await browser.newContext({ viewport: { width, height: 1000 }, reducedMotion: 'reduce', hasTouch: width < 600, isMobile: width < 600 });
@@ -69,6 +87,7 @@ try {
         assert.equal(await figure.locator('.visual-fallback').evaluate(el => el.open), false);
         const box = await figure.boundingBox();
         assert.ok(box.x >= -1 && box.x + box.width <= width + 1, `${slug}: graphic overflows at ${width}px`);
+        if (await figure.getAttribute('data-visual') === 'share') await assertPieColors(figure);
         if (await figure.getAttribute('data-visual') === 'map') {
           const initial = await figure.locator('foreignObject').count();
           await figure.locator('[data-action="expand"]').click();
@@ -119,6 +138,7 @@ try {
       await page.evaluate(() => document.documentElement.dataset.scheme = 'dark');
       await page.waitForTimeout(100);
       assert.notEqual(await share.evaluate(el => getComputedStyle(el).backgroundColor), light);
+      for (const chart of await page.locator('figure.article-visual[data-visual="share"]').all()) await assertPieColors(chart);
       if (captures && slug === 'vr-industry-report-2026') await share.screenshot({ path: resolve(captures, `xr-share-dark-${width}.png`) });
       await share.locator('[data-action="fullscreen"]').click();
       await page.waitForFunction(() => {
