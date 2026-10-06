@@ -74,21 +74,23 @@ export function mapScaleExtent(fitScale) {
 }
 
 const palettes = {
-  light: ["#d6b56f", "#f0dfb3", "#a8874a", "#dec799", "#bf9855", "#f4e9cf", "#9d7841", "#c9b78c"],
-  dark: ["#d6b56f", "#f0dfb3", "#a8874a", "#dec799", "#bf9855", "#f4e9cf", "#9d7841", "#c9b78c"],
+  light: ["#d6b56f", "#67b8b0", "#7ea5dc", "#e58b78", "#a995d3", "#a4bd7e", "#d78fb3", "#8baeb8"],
+  dark: ["#d6b56f", "#67b8b0", "#7ea5dc", "#e58b78", "#a995d3", "#a4bd7e", "#d78fb3", "#8baeb8"],
 };
 const nvidiaPalette = ["#76b900", "#b7e36f", "#4f8b36", "#9dba85", "#6b8f5d", "#d5e7c8", "#86c748", "#c1df9b"];
 // Thin map connections need deeper gold against the light background.
 const mapPalettes = {
   light: ["#89651e", "#9b742d", "#76551e", "#94723a", "#886026", "#a37c39", "#71521f", "#806633"],
-  dark: palettes.dark,
+  dark: ["#d6b56f", "#f0dfb3", "#a8874a", "#dec799", "#bf9855", "#f4e9cf", "#9d7841", "#c9b78c"],
 };
 
 export function pieOptions(data, { dark = false, compact = false, reducedMotion = false, width = 700, height = 360 } = {}) {
   validateShare(data);
   const nvidia = data.theme === "nvidia";
   dark = dark || nvidia;
-  const centerPeriod = compact ? data.period.replace(/^Full year\s+/i, "").replace(/^(Q\d)\s+(\d{4})$/, "$1\n$2") : data.period;
+  const centerPeriod = typeof data.center_label === "string" && data.center_label.trim()
+    ? data.center_label
+    : compact ? data.period.replace(/^Full year\s+/i, "").replace(/^(Q\d)\s+(\d{4})$/, "$1\n$2") : data.period;
   const ink = dark ? "#f5f3ed" : "#211d16";
   const muted = dark ? "#c3bcae" : "#6b6254";
   const surface = nvidia ? "#111511" : dark ? "#161616" : "#ffffff";
@@ -195,11 +197,16 @@ async function renderMap(figure, stage, toolbar, data, vendor, labels) {
   stage.append(svg);
   let interacting = false;
   const compact = stage.clientWidth < 480;
+  const customMapColors = getComputedStyle(figure).getPropertyValue("--visual-map-palette")
+    .split(",").map(color => color.trim()).filter(color => /^#[0-9a-f]{6}$/i.test(color));
   const map = new vendor.Markmap(svg, {
     autoFit: false, duration: motionReduced() ? 0 : 200, maxWidth: compact ? 105 : 190, paddingX: compact ? 6 : 12,
     spacingHorizontal: compact ? 20 : 65, spacingVertical: compact ? 24 : 14, fitRatio: 0.94, maxInitialScale: 1,
     initialExpandLevel: -1, scrollForPan: false, zoom: true, pan: false,
-    color: (node) => (data.theme === "nvidia" ? nvidiaPalette : mapPalettes[isDark() ? "dark" : "light"])[(node.payload?.branch || 0) % 8],
+    color: (node) => {
+      const colors = customMapColors.length ? customMapColors : data.theme === "nvidia" ? nvidiaPalette : mapPalettes[isDark() ? "dark" : "light"];
+      return colors[(node.payload?.branch || 0) % colors.length];
+    },
   });
   const fittedScale = () => {
     const { x1, y1, x2, y2 } = map.state.rect;

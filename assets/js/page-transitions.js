@@ -4,6 +4,15 @@
   const motion = matchMedia("(prefers-reduced-motion: reduce)");
   const settings = document.currentScript?.dataset;
   const branded = settings?.entryBrand === "nvidia" && /^data:image\/(?:svg\+xml|png);base64,/.test(settings.entryLogo || "");
+  let entryView = {};
+  try {
+    entryView = JSON.parse(document.querySelector("script[data-page-entry]")?.textContent || "{}") || {};
+  } catch { /* Invalid decorative configuration leaves the default entry intact. */ }
+  // The company logo opt-in takes precedence over the existing biography card.
+  const nvidia = !branded && entryView.theme === "nvidia";
+  // Keep the biography's local-only replay option and native entry policy.
+  const previewEntry = nvidia && ["127.0.0.1", "localhost"].includes(location.hostname) &&
+    new URL(location.href).searchParams.get("preview") === "loading";
   let entry;
   let interrupted = false;
   let animations = [];
@@ -11,7 +20,7 @@
   let cleanupTimer;
   let startedAt;
   let disposeHeroWait = () => {};
-  const normalHold = branded ? 1750 : 1190;
+  const normalHold = branded ? 1750 : nvidia ? 1690 : 1190;
   const latestHold = 2850;
   const safetyHold = 3800;
   try {
@@ -59,6 +68,7 @@
     if (interrupted || motion.matches || document.hidden || scrollY > 1 || location.hash ||
         typeof document.documentElement.animate !== "function") return false;
     if (branded) return navigationType === "navigate" || navigationType === "reload";
+    if (previewEntry && ["navigate", "reload"].includes(navigationType)) return true;
     return entry && navigationType === "navigate" && location.href === entry.to &&
       document.referrer === entry.from && Number.isFinite(entry.time) &&
       Date.now() - entry.time >= 0 && Date.now() - entry.time <= 15000;
@@ -70,7 +80,8 @@
       // This watchdog is armed before installation; it never delays navigation.
       cleanupTimer = window.setTimeout(stop, 4200);
       curtain = document.createElement("div");
-      curtain.className = branded ? "dex-entry-curtain dex-entry-curtain--nvidia" : "dex-entry-curtain";
+      curtain.className = branded ? "dex-entry-curtain dex-entry-curtain--nvidia-company"
+        : nvidia ? "dex-entry-curtain dex-entry-curtain--nvidia" : "dex-entry-curtain";
       curtain.setAttribute("aria-hidden", "true");
       if (branded) {
         const scene = document.createElement("div");
@@ -90,11 +101,35 @@
       } else {
         const panel = document.createElement("div");
         panel.className = "dex-entry-curtain__panel";
-        for (const [name, text] of [["label", "DEX / RESEARCH"], ["status", "OPENING VIEW"], ["mode", "READING MODE"]]) {
+        let copy = panel;
+        if (nvidia && entryView.image) {
+          const portrait = document.createElement("div");
+          portrait.className = "dex-entry-curtain__portrait";
+          const image = document.createElement("img");
+          image.alt = "";
+          image.width = entryView.width;
+          image.height = entryView.height;
+          image.decoding = "async";
+          image.fetchPriority = "low";
+          image.addEventListener("error", () => {
+            portrait.remove();
+            panel.classList.add("dex-entry-curtain__panel--no-photo");
+          }, { once: true });
+          image.src = entryView.image;
+          const caption = document.createElement("div");
+          caption.className = "dex-entry-curtain__portrait-label";
+          caption.textContent = entryView.name;
+          portrait.append(image, caption);
+          panel.append(portrait);
+          copy = document.createElement("div");
+          copy.className = "dex-entry-curtain__copy";
+          panel.append(copy);
+        }
+        for (const [name, text] of [["label", entryView.label || "DEX / RESEARCH"], ["status", "OPENING VIEW"], ["mode", "READING MODE"]]) {
           const line = document.createElement("div");
           line.className = `dex-entry-curtain__${name}`;
           line.textContent = text;
-          panel.append(line);
+          copy.append(line);
         }
         curtain.append(panel);
       }

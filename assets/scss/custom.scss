@@ -72,6 +72,18 @@
     &:hover, &:focus-visible { background-color: var(--accent-color-darker) !important; }
 }
 
+/* The NVIDIA listing card shares its article palette in either site scheme. */
+.article-list > .article-brand-nvidia {
+    --accent-color: #76b900;
+    --accent-color-darker: #92ce2c;
+    --accent-color-text: #071000;
+    --card-background: #111511;
+    --card-text-color-main: #f3f7ef;
+    --card-text-color-secondary: #b5c1b0;
+    --card-text-color-tertiary: #a5b49e;
+    background: var(--card-background);
+}
+
 #main-menu li a:hover,
 #main-menu li a:focus-visible {
     color: var(--accent-color);
@@ -381,3 +393,37 @@
     }
 }
 @import "accessibility.scss";
+
+/* Preserve the supplied biography photograph's full composition on lists and articles. */
+.article-list article .biography-header .article-image img,
+.article-page .main-article .biography-header .article-image img {
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+}
+
+/* Carry the NVIDIA article palette into its listing card in either site scheme. */
+@media screen {
+    .article-list article.biography-card--nvidia {
+        --accent-color: #76b900;
+        --accent-color-darker: #98d642;
+        --accent-color-text: #0b1105;
+        --card-background: #11160f;
+        --card-text-color-main: #edf4e5;
+        --card-text-color-secondary: #b6c4ab;
+        --card-text-color-tertiary: #b6c4ab;
+        --card-separator-color: #34452a;
+        border: 1px solid var(--card-separator-color);
+
+        &:hover,
+        &:focus-within {
+            border-color: var(--accent-color);
+        }
+
+        .article-title a:hover,
+        .article-title a:focus-visible,
+        .article-meta svg {
+            color: var(--accent-color);
+        }
+    }
+}

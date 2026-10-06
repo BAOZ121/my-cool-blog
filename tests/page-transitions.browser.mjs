@@ -8,6 +8,7 @@ const { chromium } = await import(process.env.PLAYWRIGHT_MODULE_PATH || "@playwr
 
 const ordinaryArticlePath = "/post/commercial-space-advanced-engineering/";
 const nvidiaArticlePath = "/post/nvidia-company-research/";
+const biographyArticlePath = "/post/jensen-huang-biography/";
 
 const root = resolve("public");
 const mime = { ".html": "text/html", ".js": "text/javascript", ".mjs": "text/javascript", ".css": "text/css", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".webp": "image/webp", ".png": "image/png", ".csv": "text/csv", ".pdf": "application/pdf" };
@@ -297,7 +298,8 @@ async function verifyNvidiaEntry(browser) {
     const settings = await page.locator("#dex-page-transition-script").evaluate(script => ({ ...script.dataset }));
     assert.equal(settings.entryBrand, "nvidia");
     assert.equal(settings.entryLogo, expectedLogoURL, "Head configuration embeds the actual verified mark without a network request");
-    assert.equal(await page.locator(".dex-entry-curtain--nvidia").count(), 1);
+    assert.equal(await page.locator(".dex-entry-curtain--nvidia-company").count(), 1);
+    assert.equal(await page.locator(".dex-entry-curtain--nvidia").count(), 0, "Company entry cannot inherit the biography curtain");
     assert.equal(await page.locator(".dex-entry-curtain__panel").count(), 0, "The NVIDIA entry replaces the old DEX panel");
     const logo = page.locator(".nvidia-entry__logo");
     const rendered = await logo.evaluate(async image => {
@@ -354,7 +356,7 @@ async function verifyNvidiaEntry(browser) {
       // must not dismiss the curtain before the normal brand hold ends.
       await assertBranded(page);
       await page.waitForFunction(() => performance.now() - window.__entry.armedAt >= 1000, null, { timeout: 3000 });
-      assert.equal(await page.locator(".dex-entry-curtain--nvidia").count(), 1);
+      assert.equal(await page.locator(".dex-entry-curtain--nvidia-company").count(), 1);
       assert.ok(Number(await page.locator(".dex-entry-curtain").evaluate(element => getComputedStyle(element).opacity)) > .99);
       if (screenshots) await page.screenshot({ path: resolve(screenshots, `nvidia-entry-${width}.png`), animations: "allow" });
       const controlId = width < 768 ? "toggle-menu" : "dark-mode-toggle";
@@ -418,12 +420,93 @@ async function verifyNvidiaEntry(browser) {
   }
 }
 
+async function verifyBiographyEntry(browser) {
+  for (const [width, motion] of [[1440, "no-preference"], [390, "no-preference"], [390, "reduce"]]) {
+    const context = await browser.newContext({ viewport: { width, height: 900 }, reducedMotion: motion });
+    await observe(context);
+    const page = await context.newPage();
+    const errors = [];
+    page.on("pageerror", error => errors.push(error.message));
+    try {
+      await page.goto(origin + biographyArticlePath, { waitUntil: "domcontentloaded" });
+      const view = await page.locator("script[data-page-entry]").evaluate(script => JSON.parse(script.textContent));
+      assert.equal(view.theme, "nvidia");
+      assert.equal(view.label, "DEX / BIOGRAPHY");
+      assert.equal(await page.locator("#dex-page-transition-script").getAttribute("data-entry-brand"), null);
+      assert.equal(await page.locator(".dex-entry-curtain").count(), 0, "Biography direct loads keep their existing native-entry policy");
+      assert.equal(await page.evaluate(() => window.__entry.calls.length), 0);
+      await page.reload({ waitUntil: "domcontentloaded" });
+      assert.equal(await page.locator(".dex-entry-curtain").count(), 0, "Biography reloads are not enabled by the company exception");
+      await page.goto(origin + "/");
+      await internalArticle(page, biographyArticlePath);
+      if (motion === "reduce") {
+        assert.equal(await page.locator(".dex-entry-curtain").count(), 0);
+        assert.equal(await page.evaluate(() => window.__entry.calls.length), 0);
+        await page.goto(origin + biographyArticlePath + "?preview=loading", { waitUntil: "domcontentloaded" });
+        assert.equal(await page.locator(".dex-entry-curtain").count(), 0, "Local preview still respects reduced motion");
+        console.log(`PASS biography ${width}px reduced motion: native entry and local preview remain still`);
+        continue;
+      }
+      async function assertPortrait() {
+        assert.equal(await page.locator(".dex-entry-curtain--nvidia").count(), 1);
+        assert.equal(await page.locator(".dex-entry-curtain--nvidia-company").count(), 0);
+        assert.equal(await page.locator(".nvidia-entry__logo").count(), 0);
+        const portrait = page.locator(".dex-entry-curtain__portrait img");
+        const shown = await portrait.evaluate(async image => {
+          await image.decode();
+          const curtain = image.closest(".dex-entry-curtain");
+          const rect = image.getBoundingClientRect();
+          return { src: image.src, naturalWidth: image.naturalWidth, width: rect.width, height: rect.height,
+            pointerEvents: getComputedStyle(curtain).pointerEvents, ariaHidden: curtain.getAttribute("aria-hidden") };
+        });
+        assert.equal(shown.src, new URL(view.image, origin).href);
+        assert.ok(shown.naturalWidth > 0 && shown.width > 0 && shown.height > 0);
+        assert.equal(shown.pointerEvents, "none");
+        assert.equal(shown.ariaHidden, "true");
+        assert.equal(await page.locator(".dex-entry-curtain__portrait-label").textContent(), view.name);
+        assert.equal(await page.locator(".dex-entry-curtain__label").textContent(), view.label);
+        await page.waitForFunction(() => window.__entry.calls.length > 0, null, { timeout: 4000 });
+        assertArticleTimeline(await page.evaluate(() => window.__entry.calls), 1690);
+        await assertNoNative(page);
+      }
+      await assertPortrait();
+      await page.keyboard.press("Escape");
+      assert.equal(await page.locator(".dex-entry-curtain").count(), 0);
+      assert.ok(await page.evaluate(() => window.__entry.calls.some(call => call.state === "cancelled")));
+
+      // Preserve main's explicit local replay; it does not apply to production hosts.
+      await page.goto(origin + biographyArticlePath + "?preview=loading", { waitUntil: "domcontentloaded" });
+      await assertPortrait();
+      await page.waitForFunction(() => performance.now() - window.__entry.armedAt >= 650, null, { timeout: 3000 });
+      assert.equal(await page.locator(".dex-entry-curtain--nvidia").count(), 1, "The portrait child animation must not remove the parent curtain");
+      await finished(page);
+      assert.ok(await page.evaluate(() => window.__entry.calls.every(call => call.state === "finished")));
+      await page.reload({ waitUntil: "domcontentloaded" });
+      await assertPortrait();
+      await finished(page);
+      await page.goto(origin + "/");
+      await internalArticle(page, biographyArticlePath);
+      await assertPortrait();
+      await finished(page);
+      await page.evaluate(() => scrollTo(0, 700));
+      const readingScroll = await page.evaluate(() => scrollY);
+      await page.goBack({ waitUntil: "commit" });
+      await page.goForward({ waitUntil: "commit" });
+      await page.waitForFunction(expected => Math.abs(scrollY - expected) < 5, readingScroll);
+      assert.equal(await page.locator(".dex-entry-curtain").count(), 0, "Biography Forward preserves reading state without replay");
+      assert.deepEqual(errors, []);
+      console.log(`PASS biography ${width}px: original photo card, native-entry/reload policy, local replay, input skip, finite completion and history`);
+    } finally { await context.close(); }
+  }
+}
+
 let browser;
 let firstArticlePath;
 try {
   browser = await chromium.launch({ headless: true, channel: "chromium", ignoreDefaultArgs: ["--disable-back-forward-cache"], ...(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : {}) });
   await verifyFirstPaint(browser);
   await verifyNvidiaEntry(browser);
+  await verifyBiographyEntry(browser);
   for (const [width, scheme, motion] of [[1440, "light", "no-preference"], [390, "dark", "no-preference"], [1440, "dark", "reduce"], [390, "light", "reduce"]]) {
     const context = await browser.newContext({ viewport: { width, height: 900 }, colorScheme: scheme, reducedMotion: motion });
     await observe(context, { scheme });

@@ -56,10 +56,13 @@ function fixture(options = {}) {
   const document = { documentElement: root, readyState: 'loading', hidden: Boolean(options.hidden), referrer: options.referrer ?? 'https://dex.test/',
     currentScript: options.currentScript === false ? null : { dataset: options.brand ? { entryBrand: options.brand, entryLogo: options.logo ?? testLogo } : {} },
     addEventListener: listen,
-    querySelector: () => ({ querySelector: () => nodes[0] }), querySelectorAll: () => nodes.slice(1),
+    querySelector: selector => selector === 'script[data-page-entry]'
+      ? options.entryView === undefined ? null : { textContent: typeof options.entryView === 'string' ? options.entryView : JSON.stringify(options.entryView) }
+      : { querySelector: () => nodes[0] }, querySelectorAll: () => nodes.slice(1),
     body: null,
     createElement: tag => {
       const node = { tagName: tag.toUpperCase(), style: {}, removed: false, isConnected: false, listeners: {}, attributes: {}, children: [],
+        get classList() { return { add: name => { this.className = [this.className, name].join(' '); } }; },
         querySelector(selector) {
           const descendants = child => [child, ...child.children.flatMap(descendants)];
           return this.children.flatMap(descendants).find(child => child.className?.split(' ').includes(selector.slice(1))) || null;
@@ -80,7 +83,7 @@ function fixture(options = {}) {
     clearTimeout(id) { if (timers[id - 1]) timers[id - 1].active = false; },
   };
   const context = { window, document, matchMedia: () => motion, URL, Date,
-    location: new URL('https://dex.test/post/example/' + (options.hash || '')), innerHeight: 900, scrollY: options.scroll ?? 0,
+    location: new URL((options.url || 'https://dex.test/post/example/') + (options.hash || '')), innerHeight: 900, scrollY: options.scroll ?? 0,
     performance: { now: () => elapsed, getEntriesByType: () => [{ type: options.navigationType ?? 'navigate' }] },
     sessionStorage: { getItem(key) { if (options.storageFails) throw Error('disabled'); return stored.get(key) || null; }, removeItem(key) { if (options.storageFails) throw Error('disabled'); stored.delete(key); }, setItem(key, value) { if (options.storageFails) throw Error('disabled'); stored.set(key, value); } } };
   runInNewContext(script, context);
@@ -277,7 +280,7 @@ test('NVIDIA opt-in shows only its logo on direct entry and top reload, with a b
     const f = fixture({ brand: 'nvidia', marker: false, navigationType });
     assert.equal(f.document.body, null, 'Brand selection is available before the body exists');
     assert.equal(f.masks.length, 1);
-    assert.match(f.masks[0].className, /\bdex-entry-curtain--nvidia\b/);
+    assert.match(f.masks[0].className, /\bdex-entry-curtain--nvidia-company\b/);
     assert.equal(f.masks[0].attributes['aria-hidden'], 'true');
     const logo = f.created.find(node => node.className === 'nvidia-entry__logo');
     assert.ok(logo);
@@ -397,4 +400,82 @@ test('NVIDIA pending heroes and late readiness retain the same hard fail-open de
   late.advance(2850); late.fire('DOMContentLoaded');
   assert.equal(late.masks[0].removed, true);
   assert.equal(late.calls.length, 0);
+});
+
+const biographyView = { theme: 'nvidia', image: '/post/jensen-huang-biography/loading-card.jpg', width: 304, height: 320, label: 'DEX / BIOGRAPHY', name: 'JENSEN HUANG' };
+
+test('the existing biography uses its photograph, copy and original 1690ms hold on native entry', () => {
+  const f = fixture({ entryView: biographyView });
+  assert.equal(f.masks[0].className, 'dex-entry-curtain dex-entry-curtain--nvidia');
+  assert.ok(!f.created.some(node => node.className === 'nvidia-entry__logo'));
+  const portrait = f.created.find(node => node.className === 'dex-entry-curtain__portrait');
+  assert.ok(portrait);
+  const image = portrait.children[0];
+  assert.equal(image.src, biographyView.image);
+  assert.equal(image.width, biographyView.width);
+  assert.equal(image.height, biographyView.height);
+  assert.equal(image.alt, '');
+  assert.equal(image.decoding, 'async');
+  assert.equal(image.fetchPriority, 'low');
+  assert.equal(portrait.children[1].textContent, 'JENSEN HUANG');
+  assert.equal(f.created.find(node => node.className === 'dex-entry-curtain__label').textContent, 'DEX / BIOGRAPHY');
+  f.fire('DOMContentLoaded');
+  assert.equal(f.calls.length, 5);
+  assert.equal(f.masks[0].style.animationDelay, '1690ms');
+  assert.equal(Math.max(...f.calls.map(call => call.timing.delay + call.timing.duration)), 2840);
+  image.listeners.error({ target: image });
+  assert.equal(portrait.removed, true);
+  assert.match(f.created.find(node => node.className?.startsWith('dex-entry-curtain__panel')).className, /panel--no-photo/);
+  assert.equal(f.masks[0].removed, false, 'A failed photograph keeps the biography copy and finite release');
+  f.fire('keydown');
+  assert.equal(f.masks[0].removed, true);
+  assert.ok(f.calls.every(call => call.animation.cancelled));
+});
+
+test('biography direct loads and reloads remain still except for the existing local preview option', () => {
+  for (const options of [
+    { marker: false }, { navigationType: 'reload' }, { navigationType: 'back_forward' },
+    { reduced: true }, { hash: '#sources' }, { scroll: 500 },
+    { url: 'https://dex.test/post/example/?preview=loading', marker: false },
+  ]) {
+    const f = fixture({ entryView: biographyView, ...options });
+    f.fire('DOMContentLoaded');
+    assert.equal(f.masks.length, 0, JSON.stringify(options));
+    assert.equal(f.calls.length, 0, JSON.stringify(options));
+  }
+  for (const hostname of ['127.0.0.1', 'localhost']) for (const navigationType of ['navigate', 'reload']) {
+    const f = fixture({ entryView: biographyView, marker: false, navigationType, url: `http://${hostname}/post/example/?preview=loading` });
+    f.fire('DOMContentLoaded');
+    assert.equal(f.masks[0].className, 'dex-entry-curtain dex-entry-curtain--nvidia');
+    assert.equal(f.masks[0].style.animationDelay, '1690ms');
+    assert.ok(f.calls.length > 0);
+  }
+});
+
+test('company logo metadata wins over biography metadata without changing either CSS scope', () => {
+  const f = fixture({ brand: 'nvidia', entryView: biographyView, marker: false });
+  f.fire('DOMContentLoaded');
+  assert.equal(f.masks[0].className, 'dex-entry-curtain dex-entry-curtain--nvidia-company');
+  assert.ok(f.created.some(node => node.className === 'nvidia-entry__logo'));
+  assert.ok(!f.created.some(node => node.className === 'dex-entry-curtain__portrait'));
+  assert.ok(!f.created.some(node => node.className === 'dex-entry-curtain__panel'));
+  assert.equal(f.masks[0].style.animationDelay, '1750ms');
+  assert.match(css, /\.dex-entry-curtain--nvidia-company\s*\{\s*background: #050805/);
+  assert.match(css, /\.dex-entry-curtain--nvidia\s+\.dex-entry-curtain__panel\s*\{/);
+  assert.match(partial, /data-page-entry/);
+  assert.match(partial, /data-entry-brand="nvidia"/);
+});
+
+test('invalid company logo settings fall back to the existing biography policy and malformed JSON stays normal', () => {
+  const native = fixture({ brand: 'nvidia', logo: '', entryView: biographyView });
+  native.fire('DOMContentLoaded');
+  assert.equal(native.masks[0].className, 'dex-entry-curtain dex-entry-curtain--nvidia');
+  assert.equal(native.masks[0].style.animationDelay, '1690ms');
+  const direct = fixture({ brand: 'nvidia', logo: '', entryView: biographyView, marker: false });
+  direct.fire('DOMContentLoaded');
+  assert.equal(direct.masks.length, 0);
+  const malformed = fixture({ entryView: '{invalid json' });
+  malformed.fire('DOMContentLoaded');
+  assert.equal(malformed.masks[0].className, 'dex-entry-curtain');
+  assert.equal(malformed.masks[0].style.animationDelay, '1190ms');
 });

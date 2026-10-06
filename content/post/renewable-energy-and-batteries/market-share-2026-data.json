@@ -1,0 +1,66 @@
+{
+  "title": "Vehicle battery usage by supplier",
+  "period": "January–August 2026",
+  "geography": "80 countries covered by SNE Research",
+  "measure": "Share of battery energy in registered EV, PHEV and HEV vehicles",
+  "unit": "percent",
+  "total_usage_gwh": 844.2,
+  "year_on_year_growth_percent": 19.7,
+  "series": [
+    {
+      "label": "CATL",
+      "value_percent": 39.4,
+      "color": "#2472AB",
+      "status": "Published rounded share"
+    },
+    {
+      "label": "BYD",
+      "value_percent": 15.1,
+      "color": "#138F86",
+      "status": "Published rounded share"
+    },
+    {
+      "label": "LG Energy Solution",
+      "value_percent": 8.1,
+      "color": "#50A5C7",
+      "status": "Published rounded share"
+    },
+    {
+      "label": "CALB",
+      "value_percent": 5.3,
+      "color": "#A7772E",
+      "status": "Published rounded share"
+    },
+    {
+      "label": "Gotion",
+      "value_percent": 4.9,
+      "color": "#789463",
+      "status": "Published rounded share"
+    },
+    {
+      "label": "Other suppliers",
+      "value_percent": 27.2,
+      "color": "#BAC5D0",
+      "status": "Calculated residual"
+    }
+  ],
+  "calculation": "Other suppliers = 100 − 39.4 − 15.1 − 8.1 − 5.3 − 4.9 = 27.2%; the five named suppliers total 72.8%",
+  "discrepancy_note": "SNE publishes CATL plus BYD at 54.6%; its one-decimal company values sum to 54.5%. The reason is unverified. Company values are not renormalised. Other suppliers is the complement of the five shown, not the source table’s separate Others category.",
+  "market_exclusions": [
+    "stationary storage",
+    "company revenue",
+    "cell production",
+    "shipments",
+    "factory capacity"
+  ],
+  "source": {
+    "id": "M01",
+    "institution": "SNE Research",
+    "title": "Global EV and Battery Monthly Tracker — January to August 2026",
+    "publication_date": "2026-10-02",
+    "url": "https://www.sneresearch.com/en/insight/release_view/744/page/0",
+    "read_date": "2026-10-06",
+    "classification": "Third-party estimates; original supplier table and figures actually read"
+  },
+  "alt_text": "Ring chart of January–August 2026 vehicle battery energy usage across 80 countries: CATL 39.4%, BYD 15.1%, LG Energy Solution 8.1%, CALB 5.3%, Gotion 4.9%, and other suppliers 27.2%. Total 844.2 GWh. Source SNE Research; stationary storage excluded."
+}

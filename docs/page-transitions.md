@@ -11,8 +11,9 @@ A tiny classic script observes ordinary same-origin links without cancelling
 or delaying them. A one-time session marker permits an entrance only on a fresh
 navigation with a matching source/destination. On ordinary pages, direct entry,
 reload, Back/Forward, hashes, new tabs, disabled storage and reduced motion use
-normal rendering. The explicitly opted-in NVIDIA article has the limited direct
-entry and top-of-page reload exception described below.
+normal rendering. The explicitly opted-in NVIDIA company article has the direct
+entry and top-of-page reload exception described below. The biography keeps the
+ordinary navigation-marker policy, with a local preview exception.
 
 The inline head script establishes an eligible curtain before the parser exposes
 body content. The inline CSS is already present, so this does not depend on a
@@ -61,12 +62,17 @@ The theme now initializes menu/theme controls at DOM readiness rather than waiti
 for window.load and every image. The early-pointer regression exposed that
 independent source of temporarily unresponsive controls. Initialization is idempotent.
 
-## NVIDIA article entrance
+## NVIDIA company entrance
 
 Only `/post/nvidia-company-research/` currently declares `entryBrand: nvidia`.
 The head partial embeds `data-entry-brand="nvidia"` and a base64 image data URL
-on its inline script before the body is parsed. `companyResearch: true` alone does
-not select a brand. Other articles and the homepage retain the original DEX panel
+as `data-entry-logo` on its inline script before the body is parsed.
+`companyResearch: true` alone does not select a brand. A valid company logo
+configuration takes precedence if the biography JSON configuration is also
+present. The company scene uses the independent
+`.dex-entry-curtain--nvidia-company` class; the existing
+`.dex-entry-curtain--nvidia` photo-card styles remain scoped to the biography.
+Articles without either opt-in and the homepage retain the original DEX panel
 and eligibility rules.
 
 The mark is the genuine green-symbol/white-wordmark SVG downloaded from
@@ -102,6 +108,34 @@ A failed logo decode removes the scene and cancels pending hero work; a late
 hero cannot restart it. A child logo/ray animation ending never removes the
 parent curtain early. Late DOM readiness or unsupported CSS fails open, with no
 second blackout over already readable content.
+
+## NVIDIA biography entrance
+
+`/post/jensen-huang-biography/` retains `entryTheme: nvidia` and
+`entryImage: loading-card.jpg`. The head partial resolves that page resource and
+emits a `script[data-page-entry]` JSON configuration with `theme`, `image`,
+dimensions and the existing `DEX / BIOGRAPHY` / `JENSEN HUANG` labels. This selects
+the original `.dex-entry-curtain--nvidia` green-and-black photo card, including its
+caption and decorative progress line. It does not select the company logo scene.
+
+Production entries require the ordinary one-time same-origin navigation marker,
+matching referrer/destination and a `navigate` within 15 seconds. Direct entry,
+new tabs and reload use normal rendering. Only `localhost` or `127.0.0.1` with
+`?preview=loading` permits a direct `navigate` or top-of-page `reload` for local
+review. Both routes still skip history restoration, hashes, non-top reading
+positions, hidden documents, reduced motion and unavailable Web Animations.
+
+With a ready cover, the biography timeline lasts 2,840 ms:
+
+- Photo card holds for 1,690 ms; the curtain then fades over 190 ms.
+- Ready cover pixels appear at 1,720–2,270 ms.
+- Title and introductory content appear at 2,270–2,840 ms.
+
+The card photograph is decorative, fetched at low priority and never added to
+the critical-cover wait. If it fails, the card falls back to its text panel. The
+same immediate input cancellation, 2,850 ms latest cover hold, 4,000 ms content
+deadline and 4,200 ms cleanup watchdog apply. Generic articles keep the 1,190 ms
+normal hold and 2,340 ms ready-cover timeline.
 
 ## Covers
 
@@ -158,6 +192,14 @@ motion, Back/Forward reading-position restoration, non-top reload and fresh
 document hash entry. Unit fixtures track created children and cover invalid
 brand/image configuration, logo errors, child-animation bubbling, cancellation
 and the hard fail-open deadlines.
+
+The merged biography regressions verify its original photograph and caption on
+desktop/mobile native entry, its unchanged direct-load/reload policy, local-only
+preview replay, immediate input skip, reduced motion, finite completion and
+history restoration. Unit tests cover the 1,690 ms photo-card hold, photograph
+failure falling back to text, malformed JSON, and company-logo precedence when
+both metadata configurations are present. Separate curtain classes keep the two
+NVIDIA presentations from overriding each other's styles.
 
 For an existing local browser runtime, `CHROME_PATH` may select its executable;
 `PLAYWRIGHT_MODULE_PATH` may be a module specifier or file URL for the available

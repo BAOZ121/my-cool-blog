@@ -1,5 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import { escapeHTML, validateMap, toMarkmapTree, validateShare, pieOptions, safeVendorURL, mapWheelPixels, mapScaleExtent, stageVisualOffFlow, commitVisualLayout, visualNearViewport, initVisual } from "../assets/js/article-visuals.mjs";
 
 const example = () => ({
@@ -55,6 +56,32 @@ test("chart themes and mobile layout retain all data and respect reduced motion"
   assert.equal(mobile.series[0].label.show, true);
   assert.notEqual(mobile.textStyle.color, light.textStyle.color);
   assert.deepEqual(mobile.series[0].data, light.series[0].data);
+});
+test("share charts retain distinct site or company colors with readable percentage labels", () => {
+  const shares = JSON.parse(readFileSync(new URL("../data/article_visuals.json", import.meta.url))).shares;
+  const expected = ["#d6b56f", "#67b8b0", "#7ea5dc", "#e58b78", "#a995d3", "#a4bd7e", "#d78fb3", "#8baeb8"];
+  const nvidiaColors = ["#76b900", "#b7e36f", "#4f8b36", "#9dba85", "#6b8f5d", "#d5e7c8", "#86c748", "#c1df9b"];
+  const luminance = (hex) => {
+    const [r, g, b] = hex.slice(1).match(/../g).map((channel) => {
+      const value = parseInt(channel, 16) / 255;
+      return value <= 0.04045 ? value / 12.92 : ((value + 0.055) / 1.055) ** 2.4;
+    });
+    return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+  };
+  for (const data of Object.values(shares)) {
+    const original = structuredClone(data);
+    for (const dark of [false, true]) for (const compact of [false, true]) {
+      const options = pieOptions(data, { dark, compact });
+      assert.deepEqual(options.color, data.theme === "nvidia" ? nvidiaColors : expected);
+      assert.equal(new Set(options.color.slice(0, data.series.length)).size, data.series.length);
+      assert.deepEqual(options.series[0].data, data.series.map(({ name, value }) => ({ name, value })));
+      for (const color of options.color) {
+        const contrast = (luminance(color) + 0.05) / (luminance(options.series[0].label.color) + 0.05);
+        assert.ok(contrast >= 4.5, `${color} must retain readable compact percentage labels`);
+      }
+    }
+    assert.deepEqual(data, original, "Color selection must not mutate chart data");
+  }
 });
 test("map text is escaped before it reaches Markmap's HTML rendering", () => {
   const map = { title: "Industry", root: { name: 'A <script>alert("x")</script> & B', children: [{ name: "Upstream", children: [{ name: "Materials", children: [{ name: "Company" }] }] }] } };

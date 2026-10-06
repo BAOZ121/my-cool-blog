@@ -12,14 +12,14 @@ class Covers(HTMLParser):
         self.preloads = []
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
-        if tag == "img" and (attrs.get("alt") or "").startswith("Featured image of post "):
+        if tag == "img" and attrs.get("data-article-cover") == "true":
             self.images.append(attrs)
         if tag == "link" and attrs.get("as") == "image" and attrs.get("rel") == "preload":
             self.preloads.append(attrs)
 
 def parse(path):
     parser = Covers()
-    parser.feed(path.read_text())
+    parser.feed(path.read_text(encoding="utf-8"))
     return parser
 
 root = Path(sys.argv[1] if len(sys.argv) > 1 else "public")

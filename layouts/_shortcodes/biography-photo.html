@@ -1,0 +1,26 @@
+{{- $id := .Get "id" -}}
+{{- $register := .Page.Resources.GetMatch "photo-credits.json" -}}
+{{- if not $register -}}{{ errorf "Missing biography photo register in %s" .Page.File.Path }}{{- end -}}
+{{- $credits := $register.Content | transform.Unmarshal -}}
+{{- $photo := index $credits.photos $id -}}
+{{- if not $photo -}}{{ errorf "Unknown biography-photo %q in %s" $id .Page.File.Path }}{{- end -}}
+{{- $resource := .Page.Resources.GetMatch $photo.file -}}
+{{- if not $resource -}}{{ errorf "Missing photo %q in %s" $photo.file .Page.File.Path }}{{- end -}}
+{{- $image := partial "helper/image" (dict "Image" $photo.file "Resources" .Page.Resources "Context" .Page) -}}
+{{- $variants := partialCached "helper/cover-variants.html" $image $image.Permalink -}}
+{{- $uid := printf "biography-photo-%s-%d" $id .Ordinal -}}
+<figure class="biography-photo" id="photo-{{ $id }}" aria-labelledby="{{ $uid }}-caption">
+  <a class="biography-photo__image" href="{{ $resource.RelPermalink }}" target="_blank" rel="noopener" aria-label="Open the original {{ $photo.width }} by {{ $photo.height }} pixel photograph">
+    {{ partial "helper/responsive-image" (dict "Attributes" (merge $variants (dict
+      "alt" $photo.alt
+      "loading" "lazy"
+      "decoding" "async"
+      "sizes" "(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) calc(75vw - 70px), min(1200px, calc(100vw - 76px - clamp(160px, 13vw, 200px) - clamp(200px, 18vw, 280px)))"
+    ))) }}
+  </a>
+  <figcaption id="{{ $uid }}-caption">
+    <p class="biography-photo__caption">{{ $photo.caption }}</p>
+    <p class="biography-photo__credit">Photo: {{ $photo.author }} · <a href="{{ $photo.source }}">Source</a> · <a href="{{ $photo.license_url }}">{{ $photo.license }}</a>.</p>
+    <a class="biography-photo__original" href="{{ $resource.RelPermalink }}" target="_blank" rel="noopener">View full-size photo · {{ $photo.width }} × {{ $photo.height }}</a>
+  </figcaption>
+</figure>

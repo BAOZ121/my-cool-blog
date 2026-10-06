@@ -1379,6 +1379,366 @@
       "note": "Based on the accompanying report and its evidence appendix, with sources verified through October 3, 2026. Diagram preparation does not extend that research cutoff. DEX editorial synthesis of the operating mechanisms in Parts 1, 3 and 4. Branches organize questions and do not imply a universal accounting or payment sequence. Technical capability, signed orders, recognized revenue, cash receipts and profit are different measures; none can substitute for the others. Licensing conditions and contractual terms depend on the country and mission.",
       "reviewed": "2026-10-03"
     },
+    "renewable-energy-batteries-v2": {
+      "title": "Renewable energy and battery value chain",
+      "description": "Global; examples retain their original geographic and business scope. Classification as of 3 October 2026.",
+      "root": {
+        "name": "Renewable energy and batteries",
+        "children": [
+          {
+            "name": "Upstream",
+            "children": [
+              {
+                "name": "Mineral extraction and conversion [C11]",
+                "children": [
+                  {
+                    "name": "Albemarle lithium [C11]"
+                  }
+                ]
+              },
+              {
+                "name": "Generation manufacturing inputs [G10,H02]",
+                "children": [
+                  {
+                    "name": "Polysilicon; wafers [G10]"
+                  },
+                  {
+                    "name": "Blades; towers; drivetrains [H02]"
+                  }
+                ]
+              },
+              {
+                "name": "Battery materials and components [H03,G09]",
+                "children": [
+                  {
+                    "name": "Electrode materials [H03]"
+                  },
+                  {
+                    "name": "Hard-carbon anodes [G09]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Midstream",
+            "children": [
+              {
+                "name": "Generation equipment [C07,C08,C12]",
+                "children": [
+                  {
+                    "name": "First Solar; Vestas [C07,C08]"
+                  },
+                  {
+                    "name": "JinkoSolar modules [C12]"
+                  }
+                ]
+              },
+              {
+                "name": "Battery cells and packs [C05,C06]",
+                "children": [
+                  {
+                    "name": "CATL [C05]"
+                  },
+                  {
+                    "name": "LG Energy Solution [C06]"
+                  }
+                ]
+              },
+              {
+                "name": "Storage systems [C10]",
+                "children": [
+                  {
+                    "name": "Tesla Megapack [C10]"
+                  },
+                  {
+                    "name": "Tesla Powerwall [C10]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Downstream",
+            "children": [
+              {
+                "name": "Project development [C12]",
+                "children": [
+                  {
+                    "name": "Masdar project [C12]"
+                  }
+                ]
+              },
+              {
+                "name": "Generation and storage operation [C03,C04]",
+                "children": [
+                  {
+                    "name": "Vistra assets [C03,C04]"
+                  }
+                ]
+              },
+              {
+                "name": "Vehicle and household use [G03,C10]",
+                "children": [
+                  {
+                    "name": "EV batteries [G03]"
+                  },
+                  {
+                    "name": "Household storage [C10]"
+                  }
+                ]
+              },
+              {
+                "name": "Service and material recovery [C08,G03]",
+                "children": [
+                  {
+                    "name": "Vestas service [C08]"
+                  },
+                  {
+                    "name": "Recovered battery materials [G03]"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "[C11] Albemarle Corporation; United States Securities and Exchange Commission filing",
+          "url": "/post/renewable-energy-and-batteries/#evidence-c11"
+        },
+        {
+          "title": "[G10] International Renewable Energy Agency (IRENA)",
+          "url": "/post/renewable-energy-and-batteries/#evidence-g10"
+        },
+        {
+          "title": "[H02] U.S. Department of Energy",
+          "url": "/post/renewable-energy-and-batteries/#evidence-h02"
+        },
+        {
+          "title": "[H03] Royal Swedish Academy of Sciences; Olof Ramström, Nobel Committee for Chemistry",
+          "url": "/post/renewable-energy-and-batteries/#evidence-h03"
+        },
+        {
+          "title": "[G09] International Renewable Energy Agency (IRENA); collaboration with China Electric Power Research Institute (CEPRI)",
+          "url": "/post/renewable-energy-and-batteries/#evidence-g09"
+        },
+        {
+          "title": "[C07] First Solar, Inc.; United States Securities and Exchange Commission filing",
+          "url": "/post/renewable-energy-and-batteries/#evidence-c07"
+        },
+        {
+          "title": "[C08] Vestas Wind Systems A/S",
+          "url": "/post/renewable-energy-and-batteries/#evidence-c08"
+        },
+        {
+          "title": "[C12] JinkoSolar, official corporate news",
+          "url": "/post/renewable-energy-and-batteries/#evidence-c12"
+        },
+        {
+          "title": "[C05] Contemporary Amperex Technology Co., Limited (CATL)",
+          "url": "/post/renewable-energy-and-batteries/#evidence-c05"
+        },
+        {
+          "title": "[C06] LG Energy Solution, official Battery Inside publication",
+          "url": "/post/renewable-energy-and-batteries/#evidence-c06"
+        },
+        {
+          "title": "[C10] Tesla, Inc.; United States Securities and Exchange Commission filing",
+          "url": "/post/renewable-energy-and-batteries/#evidence-c10"
+        },
+        {
+          "title": "[C03] Vistra Corp.; filed with the United States Securities and Exchange Commission",
+          "url": "/post/renewable-energy-and-batteries/#evidence-c03"
+        },
+        {
+          "title": "[C04] Vistra Corp.; United States Securities and Exchange Commission filing",
+          "url": "/post/renewable-energy-and-batteries/#evidence-c04"
+        },
+        {
+          "title": "[G03] International Energy Agency (IEA)",
+          "url": "/post/renewable-energy-and-batteries/#evidence-g03"
+        }
+      ],
+      "note": "Connecting lines classify functions and do not establish supplier contracts. Companies can operate at several stages. The original figure and editable SVG are linked below.",
+      "reviewed": "2026-10-06"
+    },
+    "jensen-huang-career": {
+      "title": "Education, work and public milestones",
+      "eyebrow": "BIOGRAPHY MAP",
+      "description": "Explore the institutions, roles and events documented in this biography.",
+      "root": {
+        "name": "Jensen Huang",
+        "children": [
+          {
+            "name": "Education",
+            "children": [
+              {
+                "name": "School years",
+                "children": [
+                  {
+                    "name": "Oneida Elementary · classes"
+                  },
+                  {
+                    "name": "Oneida Baptist Institute · boarding"
+                  },
+                  {
+                    "name": "Aloha High School · Oregon"
+                  }
+                ]
+              },
+              {
+                "name": "Earned university degrees",
+                "children": [
+                  {
+                    "name": "Oregon State · electrical engineering B.S., 1984"
+                  },
+                  {
+                    "name": "Stanford · electrical engineering M.S., 1992"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Semiconductor employment",
+            "children": [
+              {
+                "name": "AMD · microprocessor designer"
+              },
+              {
+                "name": "LSI Logic · director of CoreWare"
+              },
+              {
+                "name": "NVIDIA · since 1993",
+                "children": [
+                  {
+                    "name": "Co-founder with Malachowsky and Priem"
+                  },
+                  {
+                    "name": "President, CEO and director"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "NVIDIA milestones during his tenure",
+            "children": [
+              {
+                "name": "Public listing and graphics",
+                "children": [
+                  {
+                    "name": "1999 · Nasdaq IPO"
+                  },
+                  {
+                    "name": "1999 · GeForce 256 release"
+                  }
+                ]
+              },
+              {
+                "name": "Parallel computing and AI systems",
+                "children": [
+                  {
+                    "name": "2006 · CUDA architecture unveiled"
+                  },
+                  {
+                    "name": "2016 · DGX-1 announced; delivery to OpenAI"
+                  },
+                  {
+                    "name": "2024 · Blackwell announced"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Education gifts",
+            "children": [
+              {
+                "name": "Universities",
+                "children": [
+                  {
+                    "name": "Stanford · Huang Engineering Center"
+                  },
+                  {
+                    "name": "Oregon State · Collaborative Innovation Complex"
+                  },
+                  {
+                    "name": "HKUST · Top Engineering Scholars Award"
+                  }
+                ]
+              },
+              {
+                "name": "School campus",
+                "children": [
+                  {
+                    "name": "Oneida · Jen-Hsun Huang Hall"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "note": "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14.",
+      "sources": [
+        {
+          "title": "NVIDIA: Jensen Huang executive biography",
+          "url": "https://nvidianews.nvidia.com/bios/jensen-huang"
+        },
+        {
+          "title": "Oneida Baptist Institute: July–August 2018 newsletter",
+          "url": "https://www.oneidaschool.org/copy094915_2018_JulAug_Mountaineer.pdf"
+        },
+        {
+          "title": "HKUST: 2024 honorary doctorate citation",
+          "url": "https://ccss.hkust.edu.hk/sites/default/files/pdf%20files/honorary-doctorates2024/Dr_Jensen_HUANG_EN.pdf"
+        },
+        {
+          "title": "Oregon State: Huang Engineering Hall of Fame biography",
+          "url": "https://engineering.oregonstate.edu/alumni-partners/oregon-stater-awards/searchable-awards-database/jen-hsun-huang-engineering-hall"
+        },
+        {
+          "title": "Stanford Technology Ventures Program: Huang biography",
+          "url": "https://stvp.stanford.edu/people/jensen-huang"
+        },
+        {
+          "title": "NVIDIA: corporate history timeline",
+          "url": "https://www.nvidia.com/en-us/about-nvidia/corporate-timeline/"
+        },
+        {
+          "title": "NVIDIA: DGX-1 launch announcement, April 5, 2016",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-launches-world-s-first-deep-learning-supercomputer-6622436"
+        },
+        {
+          "title": "NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive)",
+          "url": "https://www.marketscreener.com/quote/stock/NVIDIA-CORPORATION-10282/news/NVIDIA-CEO-Delivers-World-s-First-AI-Supercomputer-in-a-Box-to-OpenAI-22903545/"
+        },
+        {
+          "title": "NVIDIA: Blackwell platform announcement, March 18, 2024",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-blackwell-platform-arrives-to-power-a-new-era-of-computing"
+        },
+        {
+          "title": "Stanford: fiscal 2008 financial review, Huang gift commitment",
+          "url": "https://bondholder-information.stanford.edu/sites/g/files/sbiybj21416/files/media/file/stanford-annual-financial-review-2008.pdf"
+        },
+        {
+          "title": "Oneida Baptist Institute: Fall 2019 On Campus newsletter",
+          "url": "https://www.oneidaschool.org/2019_Fall_OnCampus.pdf"
+        },
+        {
+          "title": "Oregon State: $50 million Huang gift, October 14, 2022",
+          "url": "https://news.oregonstate.edu/news/50-million-gift-nvidia-founder-and-spouse-helps-launch-oregon-state-university-research-center"
+        },
+        {
+          "title": "HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025",
+          "url": "https://seng.hkust.edu.hk/news/20250902/hkust-thanks-esteemed-alumni-jensen-huang-and-terry-tsang-generous-donation-establish-top-engineering-scholars-award"
+        }
+      ],
+      "reviewed": "2026-10-03"
+    },
     "nvidia-products": {
       "title": "NVIDIA’s product and software map",
       "eyebrow": "COMPANY PRODUCT MAP",
@@ -1767,6 +2127,52 @@
       "note": "Original annual-report figures are in thousands of U.S. dollars: Space Systems 402,757; Launch Services 199,042; total 601,799. Converted to millions, these are US$402.757 million, US$199.042 million and US$601.799 million. Shares = each segment / 601,799 × 100, rounded to one decimal place, totaling 100.0%. Revenue is distinct from profit, backlog and cash receipts. These figures describe Rocket Lab and do not rank commercial space companies. Sources were verified through October 3, 2026; the chart does not extend that research cutoff.",
       "unit": "%",
       "reviewed": "2026-10-03"
+    },
+    "global-vehicle-battery-2026-jan-aug": {
+      "title": "Vehicle battery usage by supplier",
+      "period": "January–August 2026",
+      "geography": "80 countries covered by SNE Research",
+      "center_label": "Jan–Aug\n2026",
+      "scope": "EV, PHEV and HEV registered during the period; stationary storage is excluded. Total installed battery energy: 844.2 GWh. This is a vehicle-battery segment, not the entire renewable-energy industry.",
+      "metric": "Share of battery energy in registered EV, PHEV and HEV vehicles (%)",
+      "dimension": "Supplier",
+      "series": [
+        {
+          "name": "CATL",
+          "value": 39.4
+        },
+        {
+          "name": "BYD",
+          "value": 15.1
+        },
+        {
+          "name": "LG Energy Solution",
+          "value": 8.1
+        },
+        {
+          "name": "CALB",
+          "value": 5.3
+        },
+        {
+          "name": "Gotion",
+          "value": 4.9
+        },
+        {
+          "name": "Other suppliers",
+          "value": 27.2,
+          "derived": true
+        }
+      ],
+      "source": {
+        "publisher": "SNE Research",
+        "title": "Global EV and Battery Monthly Tracker — January to August 2026",
+        "published": "2026-10-02",
+        "url": "https://www.sneresearch.com/en/insight/release_view/744/page/0",
+        "locator": "Original Top 10 supplier table and footnotes; published one-decimal shares"
+      },
+      "note": "Other suppliers = 100 − 39.4 − 15.1 − 8.1 − 5.3 − 4.9 = 27.2%; the five named suppliers total 72.8%. SNE publishes CATL plus BYD at 54.6%; its one-decimal company values sum to 54.5%. The reason is unverified. Company values are not renormalised. Other suppliers is the complement of the five shown, not the source table’s separate Others category.",
+      "unit": "%",
+      "reviewed": "2026-10-06"
     },
     "nvidia-platform-revenue-fy2026": {
       "title": "NVIDIA revenue composition by market platform",

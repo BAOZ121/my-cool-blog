@@ -2,6 +2,1437 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "renewable-energy-and-batteries",
+      "title": "Global Renewable Energy and Battery Industry Report",
+      "url": "/post/renewable-energy-and-batteries/",
+      "published": "2026-10-06",
+      "notices": [],
+      "entries": [
+        {
+          "id": "10de2ca2e743",
+          "url": "/data/charts/global-vehicle-battery-2026-jan-aug.csv",
+          "title": "Vehicle battery usage by supplier — data (CSV)",
+          "kind": "file",
+          "format": "CSV",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Vehicle battery usage by supplier",
+              "url": "/post/renewable-energy-and-batteries/#market-share-global-vehicle-battery-2026-jan-aug-1-title",
+              "text": "Download data (CSV)",
+              "notes": [
+                "EV, PHEV and HEV registered during the period; stationary storage is excluded. Total installed battery energy: 844.2 GWh. This is a vehicle-battery segment, not the entire renewable-energy industry.",
+                "80 countries covered by SNE Research · Share of battery energy in registered EV, PHEV and HEV vehicles (%)",
+                "Other suppliers = 100 − 39.4 − 15.1 − 8.1 − 5.3 − 4.9 = 27.2%; the five named suppliers total 72.8%. SNE publishes CATL plus BYD at 54.6%; its one-decimal company values sum to 54.5%. The reason is unverified. Company values are not renormalised. Other suppliers is the complement of the five shown, not the source table’s separate Others category."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5979ba85a699",
+          "url": "https://www.sneresearch.com/en/insight/release_view/744/page/0",
+          "title": "SNE Research — Global EV and Battery Monthly Tracker — January to August 2026",
+          "kind": "link",
+          "format": "Web",
+          "host": "sneresearch.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Vehicle battery usage by supplier",
+              "url": "/post/renewable-energy-and-batteries/#market-share-global-vehicle-battery-2026-jan-aug-1-title",
+              "text": "Source: SNE Research — Global EV and Battery Monthly Tracker — January to August 2026 (2026-10-02). Reviewed 2026-10-06.",
+              "notes": [
+                "EV, PHEV and HEV registered during the period; stationary storage is excluded. Total installed battery energy: 844.2 GWh. This is a vehicle-battery segment, not the entire renewable-energy industry.",
+                "80 countries covered by SNE Research · Share of battery energy in registered EV, PHEV and HEV vehicles (%)",
+                "Other suppliers = 100 − 39.4 − 15.1 − 8.1 − 5.3 − 4.9 = 27.2%; the five named suppliers total 72.8%. SNE publishes CATL plus BYD at 54.6%; its one-decimal company values sum to 54.5%. The reason is unverified. Company values are not renormalised. Other suppliers is the complement of the five shown, not the source table’s separate Others category."
+              ]
+            },
+            {
+              "section": "[M01] January to August 2026 global EV battery usage",
+              "url": "/post/renewable-energy-and-batteries/#evidence-m01",
+              "text": "Original source: January to August 2026 global EV battery usage",
+              "notes": [
+                "Supports: 844.2 GWh and 19.7% growth; top five shares 39.4%, 15.1%, 8.1%, 5.3% and 4.9%.",
+                "Institution or author: SNE Research",
+                "Publication date: 2026-10-02",
+                "Event date: Not applicable",
+                "Statistical period: 2026-01 to 2026-08",
+                "Page or section: Opening, supplier paragraphs, Top 10 table image and footnotes 1 and 2",
+                "Geography: 80 countries in SNE coverage",
+                "Units: GWh and percent",
+                "Market definition: Energy in batteries installed in registered EV, PHEV and HEV vehicles; excludes stationary storage.",
+                "Evidence classification: Third-party estimate published by its originator",
+                "Read date: 2026-10-06",
+                "Method and calculation: Other suppliers = 100 − 39.4 − 15.1 − 8.1 − 5.3 − 4.9 = 27.2%.",
+                "Limits and uncertainty: Rounded estimates. CATL plus BYD is separately stated as 54.6%, versus 54.5% from components; cause unverified. No normalization.",
+                "Attachments and redistribution: Publisher link only; no original redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7d69bf20bb50",
+          "url": "/post/renewable-energy-and-batteries/market-share-2026-data.csv",
+          "title": "Download complete chart data (CSV)",
+          "kind": "file",
+          "format": "CSV",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Battery demand and factory capacity have different boundaries",
+              "url": "/post/renewable-energy-and-batteries/#battery-demand-and-factory-capacity-have-different-boundaries",
+              "text": "View the original ring chart (PNG) · Download editable figure (SVG) · Download complete chart data (CSV)",
+              "notes": [
+                "Global EV battery deployment reached 1.2 TWh in 2025, growing almost 30%. [ G03 ] Global lithium-ion cell nameplate manufacturing capacity exceeded 4 TWh at year-end. [ G03 ] Deployment increased in China and the EU but stagnated in the United States. [ G03 ]",
+                "Selected regions, 2025; percent. Deployment follows vehicle sales; year-end capacity follows factory locations. Regions are not exhaustive.[G03]",
+                "Figure 2. Supplier shares of battery energy in registered EV, PHEV and HEV vehicles, January–August 2026, 80 countries. Total: 844.2 GWh. Shares in percent. Other suppliers is a calculated residual; stationary storage is excluded. Source: SNE Research [ M01 ].",
+                "CATL: 39.4% BYD: 15.1% LG Energy Solution: 8.1% CALB: 5.3% Gotion: 4.9% Other suppliers: 27.2% Other suppliers = 100 − 39.4 − 15.1 − 8.1 − 5.3 − 4.9 = 27.2%. Published CATL + BYD total: 54.6%; rounded components: 54.5%; cause unverified.",
+                "These figures cannot establish a global utilisation rate: EV deployment is one application, whereas cell capacity serves a wider market. [ G03 ] Author’s interpretation: a new factory announcement should be assessed against customer qualification, achievable output and intended applications. A large building and an expanding end market do not by themselves show that a particular production line will earn a return."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "00b413ed4ba9",
+          "url": "https://monterey.legistar.com/LegislationDetail.aspx?FullText=1&GUID=C677E11F-31B1-49D7-93DB-038D0C375CE4&ID=7100466",
+          "title": "Moss Landing local-emergency ratification report, File 25-048",
+          "kind": "link",
+          "format": "Web",
+          "host": "monterey.legistar.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C01] Moss Landing local-emergency ratification report, File 25-048",
+              "url": "/post/renewable-energy-and-batteries/#evidence-c01",
+              "text": "Original source: Moss Landing local-emergency ratification report, File 25-048",
+              "notes": [
+                "Supports: Monterey County reported a fire shortly after 3 p.m. on 16 January 2025 at Vistra’s 300 MW Phase I battery facility. Approximately 1,200 people were evacuated, and both directions of Highway 1 were closed at Salinas Road.",
+                "Institution or author: County of Monterey, Office of County Counsel / Board of Supervisors",
+                "Publication date: File created 17 January 2025; agenda dated 21 January 2025; exact online posting day is not separately displayed",
+                "Event date: Fire and evacuation on 16 January 2025; local-emergency proclamation on 17 January 2025",
+                "Statistical period: Incident status as of 17 January 2025; annual statistical period not applicable",
+                "Page or section: Summary/Discussion, two incident paragraphs in the Full Text view; File 25-048",
+                "Geography: Moss Landing, Monterey County, California, United States",
+                "Units: MW of facility electrical power; approximate count of evacuated people",
+                "Market definition: One Phase I battery energy storage facility and its immediate local consequences",
+                "Evidence classification: Primary local-government incident and emergency report",
+                "Read date: 2026-10-06",
+                "Method and calculation: Directly read the original Full Text report; no calculation",
+                "Limits and uncertainty: Early incident account: it does not establish the fire’s cause, lasting health effects, subsequent restart status or the frequency of battery fires worldwide. The evacuation count is approximate and time-specific.",
+                "Attachments and redistribution: Publisher link only; no original file redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6b9bcb9bffe6",
+          "url": "https://www.epa.gov/system/files/documents/2025-09/moss-landing-battery-fire-community-involvement-plan.pdf",
+          "title": "Moss Landing Battery Fire Community Involvement Plan",
+          "kind": "file",
+          "format": "PDF",
+          "host": "epa.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C02] Moss Landing Battery Fire Community Involvement Plan",
+              "url": "/post/renewable-energy-and-batteries/#evidence-c02",
+              "text": "Original source: Moss Landing Battery Fire Community Involvement Plan",
+              "notes": [
+                "Supports: EPA’s September 2025 plan states that the January 16 fire destroyed the Moss Landing 300 building. At California’s request, EPA was overseeing Vistra’s battery removal, including making batteries safer, packaging them and arranging recycling or disposal.",
+                "Institution or author: United States Environmental Protection Agency, Region 9",
+                "Publication date: September 2025; the PDF does not establish an exact day",
+                "Event date: Fire on 16 January 2025; EPA–Vistra agreement in July 2025; removal-plan approval in August 2025",
+                "Statistical period: Cleanup-plan status in September 2025; annual financial period not applicable",
+                "Page or section: Introduction, printed pp. 4–5 (PDF page 3); Site History, printed pp. 6–7 (PDF page 4); removal oversight and process, printed pp. 8–11 (PDF pages 5–6)",
+                "Geography: Moss Landing, California, United States",
+                "Units: Incident and cleanup responsibilities; quantitative market unit not applicable",
+                "Market definition: The damaged Vistra facility and supervised battery-removal process, rather than all storage systems",
+                "Evidence classification: Primary federal-government incident-cleanup plan",
+                "Read date: 2026-10-06",
+                "Method and calculation: Read original PDF text by the identified sections; no calculation",
+                "Limits and uncertainty: Not a fire-cause or epidemiological study. A peripheral community paragraph says January 15, inconsistent with this document’s main sections and C01, which identify January 16; that peripheral date is excluded. The plan is not proof of completed cleanup.",
+                "Attachments and redistribution: Publisher link only; no original file redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a553a8944115",
+          "url": "https://filecache.investorroom.com/mr5ir_vistracorp_ir/339/VST_10-K_2026-02-27.pdf",
+          "title": "Vistra Corp. 2025 Annual Report on Form 10-K",
+          "kind": "file",
+          "format": "PDF",
+          "host": "filecache.investorroom.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C03] Vistra Corp. 2025 Annual Report on Form 10-K",
+              "url": "/post/renewable-energy-and-batteries/#evidence-c03",
+              "text": "Original source: Vistra Corp. 2025 Annual Report on Form 10-K",
+              "notes": [
+                "Supports: Vistra combines retail electricity with power generation. Its 2025 annual report records an approximately $400 million Moss Landing 300 net-book-value write-off in first-quarter depreciation expense. That accounting charge is not the final net economic cost of the incident.",
+                "Institution or author: Vistra Corp.; filed with the United States Securities and Exchange Commission",
+                "Publication date: 27 February 2026, SEC filing date",
+                "Event date: Fire on 16 January 2025; write-off recorded in the first quarter of 2025",
+                "Statistical period: Fiscal year from 1 January to 31 December 2025",
+                "Page or section: Item 1, Business—General, printed p. 1 (PDF page 9); Note 8, Loss Events and Insurance Recoveries—Moss Landing 300 Incident, printed pp. 107–108 (PDF pages 115–116)",
+                "Geography: United States company operations; incident in California",
+                "Units: USD million; accounting asset write-off",
+                "Market definition: Vistra consolidated business and one storage asset’s net book value, not storage-market revenue",
+                "Evidence classification: Primary regulatory annual report with audited financial statements and management disclosures",
+                "Read date: 2026-10-06",
+                "Method and calculation: Read the issuer-hosted filing PDF and SEC filing index; $400 million equals $0.4 billion",
+                "Limits and uncertainty: Asset write-offs, cleanup estimates, lost revenue and insurance recoveries differ. Do not sum them as net loss. The year-end cleanup estimate is superseded by C04; the cited accounting disclosures do not establish a battery supplier for this facility.",
+                "Attachments and redistribution: Publisher link only; no original file redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "483ed9387cd7",
+          "url": "https://www.sec.gov/Archives/edgar/data/1692819/000169281926000019/vistra-20260630.htm",
+          "title": "Vistra Corp. June 2026 Quarterly Report on Form 10-Q",
+          "kind": "link",
+          "format": "Web",
+          "host": "sec.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C04] Vistra Corp. June 2026 Quarterly Report on Form 10-Q",
+              "url": "/post/renewable-energy-and-batteries/#evidence-c04",
+              "text": "Original source: Vistra Corp. June 2026 Quarterly Report on Form 10-Q",
+              "notes": [
+                "Supports: As of 30 June 2026, Vistra estimated Moss Landing removal and cleanup costs at $175 million, including a $65 million second-quarter increase. It had incurred $90 million, leaving $85 million accrued for future costs. These are dated estimates, not a completed project’s final bill. The same note discloses fully collected insurance claims by February 2026 under policies with combined limits of USD 500 million, net of deductibles; these are separate from the cleanup estimate.",
+                "Institution or author: Vistra Corp.; United States Securities and Exchange Commission filing",
+                "Publication date: 10 August 2026, SEC filing date",
+                "Event date: Moss Landing incident on 16 January 2025; cleanup-estimate revision in the second quarter of 2026",
+                "Statistical period: Quarter and six months ended 30 June 2026; estimates measured at that date",
+                "Page or section: Note 9, Loss Events and Insurance Recoveries—Moss Landing 300 Incident; original HTML Note 9 insurance paragraph, printed p.17",
+                "Geography: Moss Landing, California, United States",
+                "Units: USD million; incurred cost, estimated total cost and future-cost accrual",
+                "Market definition: Battery removal, demolition and monitoring covered by the cleanup obligation; not all incident losses",
+                "Evidence classification: Primary regulatory interim report with unaudited financial statements",
+                "Read date: 2026-10-06",
+                "Method and calculation: Read Note 9 and the filing index; retain reported estimates without projecting beyond June 2026",
+                "Limits and uncertainty: The increase reflects revised remediation timelines and costs, not a conflict with the earlier $110 million estimate. Insurance, litigation and additional operating effects remain separate. The filing did not establish completed cleanup or a definite restart date.",
+                "Attachments and redistribution: Publisher link only; no original file redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5b757cb988dd",
+          "url": "https://www.energy.gov/cmei/articles/display-smithsonian-shares-history-solar",
+          "title": "On Display: Smithsonian Shares the History of Solar",
+          "kind": "link",
+          "format": "Web",
+          "host": "energy.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H01] On Display: Smithsonian Shares the History of Solar",
+              "url": "/post/renewable-energy-and-batteries/#evidence-h01",
+              "text": "Original source: On Display: Smithsonian Shares the History of Solar",
+              "notes": [
+                "Supports: DOE dates Bell Laboratories’ photovoltaic cell to 1954 and describes early uses in remote telephone equipment and communications spacecraft.",
+                "Institution or author: U.S. Department of Energy; author Charlie Gay, then Solar Energy Technologies Office director",
+                "Publication date: 2017-03-01",
+                "Event date: 1954 Bell Laboratories PV cell; early remote-communications applications; Telstar 1 in 1962",
+                "Statistical period: Historical milestones, not a statistical series",
+                "Page or section: HTML lines 9 and 17–19; photovoltaic-history paragraphs read",
+                "Geography: United States; these examples do not establish a worldwide commercialization date",
+                "Units: Calendar years; no market-share or capacity unit used",
+                "Market definition: Photovoltaic electricity conversion; distinct from concentrating solar thermal power",
+                "Evidence classification: Official historical synthesis, not a contemporaneous 1954 experiment",
+                "Read date: 2026-10-06",
+                "Method and calculation: Direct reading of dated DOE article. No numerical calculation.",
+                "Limits and uncertainty: Supports dated examples only. The article’s 1958 first-U.S.-satellite wording is excluded; no earliest-invention claim or present-day efficiency claim is adopted.",
+                "Attachments and redistribution: Publisher link only; no original file redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fb763d1918fd",
+          "url": "https://www.energy.gov/cmei/systems/articles/1970s-pioneers-todays-wind-industry-aerospace-researchers-championed-wind",
+          "title": "From 1970s Pioneers to Today’s Wind Industry, Aerospace Researchers Championed Wind Energy",
+          "kind": "link",
+          "format": "Web",
+          "host": "energy.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H02] From 1970s Pioneers to Today’s Wind Industry, Aerospace Researchers Championed Wind Energy",
+              "url": "/post/renewable-energy-and-batteries/#evidence-h02",
+              "text": "Original source: From 1970s Pioneers to Today’s Wind Industry, Aerospace Researchers Championed Wind Energy",
+              "notes": [
+                "Supports: The DOE–NASA Mod-Series ran from the late 1970s through the 1990s. It tested turbine architectures and components, but did not itself launch the commercial wind industry.",
+                "Institution or author: U.S. Department of Energy",
+                "Publication date: 2024-04-23",
+                "Event date: Late 1970s–1990s Mod-Series engineering program",
+                "Statistical period: Program history, not a market-wide time series",
+                "Page or section: HTML lines 9, 16–24, 34–38 and 50–60; program aims, limitations and engineering contributions read",
+                "Geography: United States, drawing on U.S. and European turbine research",
+                "Units: Calendar years; no production or market-share calculation",
+                "Market definition: Utility-scale wind turbine R&D, including blades, towers, drivetrains and grid operation",
+                "Evidence classification: Official historical synthesis by the sponsoring department",
+                "Read date: 2026-10-06",
+                "Method and calculation: Direct reading of dated DOE article. No calculation.",
+                "Limits and uncertainty: U.S. program contribution only; no universal first-turbine attribution, sole-cause claim or current component-market share.",
+                "Attachments and redistribution: Publisher link only; no original file redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ad0c7231cf3d",
+          "url": "https://www.kva.se/app/uploads/2019/10/scibackkeen19.pdf",
+          "title": "Scientific Background on the Nobel Prize in Chemistry 2019: Lithium-Ion Batteries",
+          "kind": "file",
+          "format": "PDF",
+          "host": "kva.se",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H03] Scientific Background on the Nobel Prize in Chemistry 2019: Lithium-Ion Batteries",
+              "url": "/post/renewable-energy-and-batteries/#evidence-h03",
+              "text": "Original source: Scientific Background on the Nobel Prize in Chemistry 2019: Lithium-Ion Batteries",
+              "notes": [
+                "Supports: The Academy traces a rechargeable intercalation battery demonstration to 1976, the cobalt-oxide cathode breakthrough to 1979/1980, Yoshino’s carbon-anode development to 1985, and commercial release to 1991.",
+                "Institution or author: Royal Swedish Academy of Sciences; Olof Ramström, Nobel Committee for Chemistry",
+                "Publication date: 2019-10-09",
+                "Event date: 1976; 1979/1980; 1985; 1991",
+                "Statistical period: Historical scientific milestones",
+                "Page or section: PDF cover and printed pp. 5–10 (PDF pages 6–11); text on intercalation, carbon anodes and commercial release read; references pp. 12–13 checked",
+                "Geography: Research and commercialization examples in the United States, United Kingdom and Japan",
+                "Units: Calendar years; laboratory energy-density figures are not used",
+                "Market definition: Lithium-ion development; the early lithium-metal prototype differs from the later carbon-anode ion-transfer cell",
+                "Evidence classification: Official scientific historical synthesis; not the original experiments or sales records",
+                "Read date: 2026-10-06",
+                "Method and calculation: Direct reading of official Academy PDF text. Dates preserved as stated; no conversion of 1979/1980 into one exact date.",
+                "Limits and uncertainty: Avoid exclusive inventor or universal first claims. The source does not establish current battery economics, chemistry shares or today’s safety performance.",
+                "Attachments and redistribution: Publisher link only; no original file redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "113f56784fcd",
+          "url": "https://www.energy.gov/cmei/systems/articles/public-private-collaboration-paves-way-commercial-wind-power-growth",
+          "title": "Public–Private Collaboration Paves the Way for Commercial Wind Power Growth",
+          "kind": "link",
+          "format": "Web",
+          "host": "energy.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H04] Public–Private Collaboration Paves the Way for Commercial Wind Power Growth",
+              "url": "/post/renewable-energy-and-batteries/#evidence-h04",
+              "text": "Original source: Public–Private Collaboration Paves the Way for Commercial Wind Power Growth",
+              "notes": [
+                "Supports: DOE and EPRI formed the Wind Turbine Verification Program in 1993, using utility-hosted projects to evaluate precommercial turbines, operating performance and maintenance, with consistent data collection.",
+                "Institution or author: U.S. Department of Energy",
+                "Publication date: 2023-09-26",
+                "Event date: 1993 program formation; utility demonstration projects during 1995–2001",
+                "Statistical period: Demonstration-program history",
+                "Page or section: HTML lines 7, 10–11, 22–35, 38–46 and 57–61; formation, operating trials and data-sharing passages read",
+                "Geography: United States utility demonstration sites",
+                "Units: Calendar years; project capacities and funding percentages are not adopted",
+                "Market definition: Precommercial wind turbines tested in utility operating environments; not all U.S. wind deployment",
+                "Evidence classification: Official retrospective by the program sponsor",
+                "Read date: 2026-10-06",
+                "Method and calculation: Direct reading of dated DOE article. No calculation or counterfactual estimate.",
+                "Limits and uncertainty: Supports program mechanisms, not proof that this program alone caused wind growth or that every project succeeded.",
+                "Attachments and redistribution: Publisher link only; no original file redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d487cf1a6c2b",
+          "url": "https://hero.epa.gov/reference/7748087/",
+          "title": "Phospho-olivines as positive-electrode materials for rechargeable lithium batteries",
+          "kind": "link",
+          "format": "Web",
+          "host": "hero.epa.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H05] Phospho-olivines as positive-electrode materials for rechargeable lithium batteries",
+              "url": "/post/renewable-energy-and-batteries/#evidence-h05",
+              "text": "Original source: Phospho-olivines as positive-electrode materials for rechargeable lithium batteries",
+              "notes": [
+                "Supports: Padhi, Nanjundaswamy and Goodenough’s 1997 paper reported reversible lithium extraction and insertion in LiFePO4/FePO4 and identified rate-related capacity limits.",
+                "Institution or author: Journal of The Electrochemical Society; author abstract reproduced in U.S. EPA HERO",
+                "Publication date: 1997; exact original publication day not established; EPA page updated 2026-01-23",
+                "Event date: 1997 paper publication",
+                "Statistical period: Laboratory research, not a market period",
+                "Page or section: EPA HERO record 7748087, bibliography and complete reproduced abstract; journal 144(4), pp. 1188–1194 identifies the article, not full-text reading",
+                "Geography: Laboratory materials research; no geographic market coverage",
+                "Units: Qualitative reversible electrochemistry; laboratory voltage, current and capacity values not used",
+                "Market definition: LFP cathode candidate; not a finished commercial cell, pack or storage project",
+                "Evidence classification: Original research abstract reproduced by an official government database",
+                "Read date: 2026-10-06",
+                "Method and calculation: Read the full publicly reproduced abstract and metadata; original DOI 10.1149/1.1837571 could not be opened. No calculation.",
+                "Limits and uncertainty: Full paper not read. Does not establish commercial mass production, modern performance or a universal first-LFP claim.",
+                "Attachments and redistribution: Publisher link only; no original file redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "38ad5e292ced",
+          "url": "https://www.nature.com/articles/nmat732",
+          "title": "Electronically conductive phospho-olivines as lithium storage electrodes",
+          "kind": "link",
+          "format": "Web",
+          "host": "nature.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H06] Electronically conductive phospho-olivines as lithium storage electrodes",
+              "url": "/post/renewable-energy-and-batteries/#evidence-h06",
+              "text": "Original source: Electronically conductive phospho-olivines as lithium storage electrodes",
+              "notes": [
+                "Supports: A 2002 Nature Materials paper explicitly addressed the low electronic conductivity limiting LiFePO4 electrode performance and reported an engineered-material approach.",
+                "Institution or author: Nature Materials; authors Sung-Yoon Chung, Jason T. Bloking and Yet-Ming Chiang",
+                "Publication date: 2002-09-22 online; issue date 2002-10-01",
+                "Event date: 2002 research publication",
+                "Statistical period: Laboratory materials research",
+                "Page or section: Publisher page, publication metadata and public abstract; Nature Materials 1, pp. 123–128 is the article locator, not pages read",
+                "Geography: Laboratory research; no geographic market sample",
+                "Units: Qualitative conductivity constraint; numerical improvement claims not used",
+                "Market definition: Electrode-material conductivity research; distinct from commercial adoption or storage-system economics",
+                "Evidence classification: Original journal research abstract on the publisher website",
+                "Read date: 2026-10-06",
+                "Method and calculation: Direct reading of the public abstract and dates; DOI 10.1038/nmat732. Subscription full text not read.",
+                "Limits and uncertainty: Does not prove the reported mechanism applies to every modern LFP process, resolve later scientific disputes, or date mass commercialization. Authors disclosed a financial interest.",
+                "Attachments and redistribution: Publisher link only; no original file redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "498682656aee",
+          "url": "https://www.nea.gov.cn/2012-01/04/c_131260380.htm",
+          "title": "Renewable Energy Law of the People’s Republic of China, as amended in 2009",
+          "kind": "link",
+          "format": "Web",
+          "host": "nea.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H07] Renewable Energy Law of the People’s Republic of China, as amended in 2009",
+              "url": "/post/renewable-energy-and-batteries/#evidence-h07",
+              "text": "Original source: Renewable Energy Law of the People’s Republic of China, as amended in 2009",
+              "notes": [
+                "Supports: The law was adopted on 28 February 2005 and states commencement on 1 January 2006. The read 2009-amended text links targets and guaranteed purchase to grid development, storage and cost compensation.",
+                "Institution or author: National People’s Congress Standing Committee; text published by China’s National Energy Administration",
+                "Publication date: 2012-01-04 official republication",
+                "Event date: 2005-02-28 adoption; 2006-01-01 stated commencement; 2009-12-26 amendment",
+                "Statistical period: Historical statutory framework; 2009-amended version read",
+                "Page or section: Dated NEA HTML, preamble and Articles 2–4, 7, 11–14, 19–24 and 33; full displayed text read",
+                "Geography: PRC territory and other sea areas under its jurisdiction, as Article 3 states",
+                "Units: Legal dates and obligations; no tariff amount or market-share unit",
+                "Market definition: Statutory renewables include wind, solar, hydro, biomass, geothermal and ocean energy, subject to Article 2 qualifications; not battery manufacturing generally",
+                "Evidence classification: Official legal text republication, expressly amended",
+                "Read date: 2026-10-06",
+                "Method and calculation: Direct reading of full official HTML. Adoption and commencement distinguished from the republication date and amended provisions.",
+                "Limits and uncertainty: Do not backdate all read provisions to 2005. Historical framework only: no claim of universal delivery, subsidy receipt or current-law completeness.",
+                "Attachments and redistribution: Publisher link only; no original file redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "488cb03eba2d",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32009L0028",
+          "title": "Directive 2009/28/EC on the promotion of the use of energy from renewable sources",
+          "kind": "link",
+          "format": "Web",
+          "host": "eur-lex.europa.eu",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H08] Directive 2009/28/EC on the promotion of the use of energy from renewable sources",
+              "url": "/post/renewable-energy-and-batteries/#evidence-h08",
+              "text": "Original source: Directive 2009/28/EC on the promotion of the use of energy from renewable sources",
+              "notes": [
+                "Supports: The 2009 directive set binding national targets consistent with at least 20% renewable energy in Community gross final energy consumption by 2020; Article 16 also addressed grids and storage facilities.",
+                "Institution or author: European Parliament and Council; Official Journal via EUR-Lex",
+                "Publication date: 2009-06-05, Official Journal L 140",
+                "Event date: 2009-04-23 directive date; 2020 target year",
+                "Statistical period: Historical 2020 policy target, not measured 2020 outcome",
+                "Page or section: Official PDF p. 1 (OJ L140/16), p. 13 (L140/28, Article 3), pp. 20–21 (L140/35–36, Article 16); relevant text read",
+                "Geography: European Community Member States within the directive’s historical framework; text has EEA relevance",
+                "Units: Percent of gross final energy consumption; not electricity-only share or installed capacity",
+                "Market definition: All covered renewable final energy uses; national targets and grid provisions have distinct scopes",
+                "Evidence classification: Original official legislative text",
+                "Read date: 2026-10-06",
+                "Method and calculation: Direct reading of original Official Journal PDF text; target preserved as a target. No realized-share calculation.",
+                "Limits and uncertainty: Historical version, not a statement of 2026 legal requirements. Does not prove targets achieved or that grid access eliminated curtailment; Article 16 includes security conditions.",
+                "Attachments and redistribution: Publisher link only; no original file redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fc3c452bc1e2",
+          "url": "https://www.energy.gov/cmei/systems/articles/doe-pursues-sunshot-initiative-achieve-cost-competitive-solar-energy-2020",
+          "title": "DOE Pursues SunShot Initiative to Achieve Cost Competitive Solar Energy by 2020",
+          "kind": "link",
+          "format": "Web",
+          "host": "energy.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H09] DOE Pursues SunShot Initiative to Achieve Cost Competitive Solar Energy by 2020",
+              "url": "/post/renewable-energy-and-batteries/#evidence-h09",
+              "text": "Original source: DOE Pursues SunShot Initiative to Achieve Cost Competitive Solar Energy by 2020",
+              "notes": [
+                "Supports: DOE’s 4 February 2011 announcement targeted roughly a 75% reduction in total PV system costs and included manufacturing, installation and permitting work, alongside cell technology.",
+                "Institution or author: U.S. Department of Energy",
+                "Publication date: 2011-02-04",
+                "Event date: 2011-02-04 initiative announcement; end-of-decade cost goal",
+                "Statistical period: Program goal announced in 2011, not an observed cost result",
+                "Page or section: HTML date and paragraphs at lines 10–15; total-cost objective and permitting passage read",
+                "Geography: United States utility-scale PV cost-competitiveness objective",
+                "Units: Approximately 75% target reduction; baseline and price-year calculation not independently reconstructed",
+                "Market definition: Total photovoltaic system costs, extending beyond the solar cell or module price",
+                "Evidence classification: Contemporaneous official program announcement",
+                "Read date: 2026-10-06",
+                "Method and calculation: Direct reading of dated announcement. Target not treated as achievement; dollar and electricity-cost equivalents not adopted.",
+                "Limits and uncertainty: Cannot attribute later global cost reductions solely to SunShot or prove every region became competitive. It is an announced U.S. objective.",
+                "Attachments and redistribution: Publisher link only; no original file redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ae2a26c5807e",
+          "url": "https://www.ferc.gov/sites/default/files/2020-06/Order-841.pdf",
+          "title": "Order No. 841: Electric Storage Participation in Markets Operated by Regional Transmission Organizations and Independent System Operators",
+          "kind": "file",
+          "format": "PDF",
+          "host": "ferc.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H10] Order No. 841: Electric Storage Participation in Markets Operated by Regional Transmission Organizations and Independent System Operators",
+              "url": "/post/renewable-energy-and-batteries/#evidence-h10",
+              "text": "Original source: Order No. 841: Electric Storage Participation in Markets Operated by Regional Transmission Organizations and Independent System Operators",
+              "notes": [
+                "Supports: FERC issued Order 841 on 15 February 2018, requiring RTO/ISO tariff participation models that recognize storage characteristics and permit technically capable resources to offer capacity, energy and ancillary services.",
+                "Institution or author: U.S. Federal Energy Regulatory Commission",
+                "Publication date: 2018-02-15 issuance and official public announcement; official PDF compilation contains 2018-02-28 errata",
+                "Event date: 2018-02-15 Order 841 issuance; not its effective date",
+                "Statistical period: Historical wholesale-market rule",
+                "Page or section: Official PDF physical pp. 28–31, printed pp. 1–4, introduction paragraphs 1–4 and footnotes 1–2; issuance date read; contemporaneous FERC release corroborates date",
+                "Geography: U.S. RTO/ISO wholesale markets under FERC jurisdiction; not every U.S. retail market or a global rule",
+                "Units: Legal dates and service categories; no revenue, capacity or market-share estimate",
+                "Market definition: Storage can receive grid electricity, store it and later inject it; covers storage technologies beyond lithium-ion batteries",
+                "Evidence classification: Original official regulatory order and contemporaneous official announcement",
+                "Read date: 2026-10-06",
+                "Method and calculation: Direct reading of the order’s relevant introduction and dated announcement; not a full 258-page review. No calculation.",
+                "Limits and uncertainty: Issuance is not implementation or commercial success. No inference of guaranteed profit, uniform tariffs or current-law completeness.",
+                "Attachments and redistribution: Publisher link only; no original file redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8e249797fe1c",
+          "url": "https://www.sec.gov/Archives/edgar/data/915913/000091591326000018/alb-20251231.htm",
+          "title": "Albemarle 2025 Annual Report on Form 10-K—business evidence",
+          "kind": "link",
+          "format": "Web",
+          "host": "sec.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C11] Albemarle 2025 Annual Report on Form 10-K—business evidence",
+              "url": "/post/renewable-energy-and-batteries/#evidence-c11",
+              "text": "Original source: Albemarle 2025 Annual Report on Form 10-K—business evidence",
+              "notes": [
+                "Supports: Albemarle extracts lithium from brine and hard-rock resources and converts it into compounds including carbonate and hydroxide used in batteries. Its Energy Storage business is exposed to lithium pricing; many customer contracts reference variable market indices. This supports an upstream resource-and-conversion role.",
+                "Institution or author: Albemarle Corporation; United States Securities and Exchange Commission filing",
+                "Publication date: 11 February 2026, SEC filing date",
+                "Event date: FY2025 annual filing; individual contract-signing dates not provided",
+                "Statistical period: FY2025 report for the year ended 31 December 2025; business and contract-model descriptions as reported",
+                "Page or section: Item 1, Energy Storage segment; Item 2, Properties and Mining Operations; Item 7, Business Outlook",
+                "Geography: Global Albemarle upstream lithium operations and conversion business",
+                "Units: Business and contract-model descriptions; quantitative financial unit not applicable",
+                "Market definition: Lithium resource extraction and chemical conversion for multiple end uses, including batteries",
+                "Evidence classification: Primary regulatory annual-report business disclosure",
+                "Read date: 2026-10-06",
+                "Method and calculation: Read business, property and outlook sections; no financial calculation; financial figures are separately supported by C09",
+                "Limits and uncertainty: General business descriptions do not prove contracts with CATL, LG Energy Solution or Tesla. Variable-price references do not establish the price or duration of any named agreement. This record uses business evidence only, not financial statements from a later amendment.",
+                "Attachments and redistribution: Publisher link only; no original file redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "88fafd0ef4e5",
+          "url": "https://build-up.ec.europa.eu/en/resources-and-tools/tools/solar-pv-supply-chain-cost-tool-analysing-photovoltaic-manufacturing",
+          "title": "Method and calculation: Use stage/cost taxonomy; do not treat assumed profit or 2030 model values as observed results. Cutoff verification: European Commission, BUILD UP catalogue,",
+          "kind": "link",
+          "format": "Web",
+          "host": "build-up.ec.europa.eu",
+          "local": false,
+          "citations": [
+            {
+              "section": "[G10] Solar PV Supply Chain Cost Tool: Methodology, results and analysis",
+              "url": "/post/renewable-energy-and-batteries/#evidence-g10",
+              "text": "Method and calculation: Use stage/cost taxonomy; do not treat assumed profit or 2030 model values as observed results. Cutoff verification: European Commission, BUILD UP catalogue, https://build-up.ec.europa.eu/en/resources-and-tools/tools/solar-pv-supply-chain-cost-tool-analysing-photovoltaic-manufacturing .",
+              "notes": [
+                "Supports: The crystalline-silicon chain covers polysilicon, wafers, cells and module assembly. Manufacturing costs include materials, equipment, facilities, electricity, labour and overheads. The tool separates country conditions and assumes profitability; it does not report realised corporate margins.",
+                "Institution or author: International Renewable Energy Agency (IRENA)",
+                "Publication date: The European Commission’s BUILD UP catalogue records a February 2026 release for the resource; the associated same-edition report was publicly linked by its 8 May 2026 catalogue entry. The report’s own exact first release day remains unverified.",
+                "Event date: Not applicable: cost tool and analytical model.",
+                "Statistical period: 2025 model base; 2030 projections are scenarios. Country input data have source-specific dates.",
+                "Page or section: Overall approach, p7; production-stage and cost-component chapters; operating-profit assumption, p12; projection limitations, p23. PDF pages equal printed page numbers.",
+                "Geography: Six model markets: Australia, China, Germany, India, United States and Viet Nam.",
+                "Units: Modelled manufacturing USD/Wp; qualitative value-chain and cost categories.",
+                "Market definition: Crystalline-silicon manufacturing cost model from polysilicon through module assembly; not all solar technologies or installed project cost.",
+                "Evidence classification: Original IRENA methodological model with sourced inputs and explicit assumptions.",
+                "Read date: 2026-10-06",
+                "Limits and uncertainty: Six-country modelling is not a global market census. Future calculations hold material prices fixed and omit unexpected volatility, supply constraints and policy shifts. Crystalline-silicon stages cannot automatically describe thin-film manufacturers such as First Solar.",
+                "Attachments and redistribution: Link to the publisher; no original research file is included in the review package."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d632d18e49c9",
+          "url": "https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2026/Feb/IRENA_TEC_Solar_PV_Supply_Cost_Tool_2026.pdf",
+          "title": "Solar PV Supply Chain Cost Tool: Methodology, results and analysis",
+          "kind": "file",
+          "format": "PDF",
+          "host": "irena.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[G10] Solar PV Supply Chain Cost Tool: Methodology, results and analysis",
+              "url": "/post/renewable-energy-and-batteries/#evidence-g10",
+              "text": "Original source: Solar PV Supply Chain Cost Tool: Methodology, results and analysis",
+              "notes": [
+                "Supports: The crystalline-silicon chain covers polysilicon, wafers, cells and module assembly. Manufacturing costs include materials, equipment, facilities, electricity, labour and overheads. The tool separates country conditions and assumes profitability; it does not report realised corporate margins.",
+                "Institution or author: International Renewable Energy Agency (IRENA)",
+                "Publication date: The European Commission’s BUILD UP catalogue records a February 2026 release for the resource; the associated same-edition report was publicly linked by its 8 May 2026 catalogue entry. The report’s own exact first release day remains unverified.",
+                "Event date: Not applicable: cost tool and analytical model.",
+                "Statistical period: 2025 model base; 2030 projections are scenarios. Country input data have source-specific dates.",
+                "Page or section: Overall approach, p7; production-stage and cost-component chapters; operating-profit assumption, p12; projection limitations, p23. PDF pages equal printed page numbers.",
+                "Geography: Six model markets: Australia, China, Germany, India, United States and Viet Nam.",
+                "Units: Modelled manufacturing USD/Wp; qualitative value-chain and cost categories.",
+                "Market definition: Crystalline-silicon manufacturing cost model from polysilicon through module assembly; not all solar technologies or installed project cost.",
+                "Evidence classification: Original IRENA methodological model with sourced inputs and explicit assumptions.",
+                "Read date: 2026-10-06",
+                "Limits and uncertainty: Six-country modelling is not a global market census. Future calculations hold material prices fixed and omit unexpected volatility, supply constraints and policy shifts. Crystalline-silicon stages cannot automatically describe thin-film manufacturers such as First Solar.",
+                "Attachments and redistribution: Link to the publisher; no original research file is included in the review package."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ae25db331bdc",
+          "url": "https://www.mintur.gob.es/es-es/servicios/Documentacion/Biblioteca/Boletines/Boletin_novedades_ene_mar_2026.pdf",
+          "title": "Method and calculation: Use qualitative mechanisms; exclude mismatched-year cost comparisons and announced-capacity forecasts from actual-market totals. Cutoff verification: Spanish Ministry of Industry and Tourism, Library catalogue,",
+          "kind": "file",
+          "format": "PDF",
+          "host": "mintur.gob.es",
+          "local": false,
+          "citations": [
+            {
+              "section": "[G09] Sodium-ion batteries: A technology brief",
+              "url": "/post/renewable-energy-and-batteries/#evidence-g09",
+              "text": "Method and calculation: Use qualitative mechanisms; exclude mismatched-year cost comparisons and announced-capacity forecasts from actual-market totals. Cutoff verification: Spanish Ministry of Industry and Tourism, Library catalogue, https://www.mintur.gob.es/es-es/servicios/Documentacion/Biblioteca/Boletines/Boletin_novedades_ene_mar_2026.pdf .",
+              "notes": [
+                "Supports: Sodium-ion can diversify raw-material supply, but scaling depends on energy density, hard-carbon processing and competitive cost. Lower weight sensitivity makes stationary storage a potential application. Resource abundance alone does not establish mature production or a universally cheaper replacement for lithium-ion.",
+                "Institution or author: International Renewable Energy Agency (IRENA); collaboration with China Electric Power Research Institute (CEPRI)",
+                "Publication date: 2025, verified by the Spanish Ministry of Industry and Tourism’s official library bibliography. Exact month and day not independently verified.",
+                "Event date: Not applicable: technology review.",
+                "Statistical period: Technology landscape through 2025; some underlying cost and capacity studies are earlier and explicitly identified.",
+                "Page or section: Executive summary, p5; 3.1 Construction and materials, pp12–14; 3.2 Supply chain, pp14–15; 3.3 Pros and cons, pp16–17; 3.4 Applications, pp18–19; Status and outlook, pp20–21. PDF pages equal printed page numbers.",
+                "Geography: Global technology review; country examples are not a current global production census.",
+                "Units: Qualitative technical claims; no current price or market-share calculation used.",
+                "Market definition: Sodium-ion batteries transfer sodium ions; cathode choices and hard-carbon anodes have distinct material and manufacturing requirements.",
+                "Evidence classification: Original intergovernmental technical synthesis incorporating third-party studies and company announcements.",
+                "Read date: 2026-10-06",
+                "Limits and uncertainty: Some cost comparisons use sodium-ion 2022 and lithium-ion April 2024 data, so they cannot prove a 2026 price advantage. Announced production is not achieved output. Some sodium cathodes contain nickel or cobalt; universal mineral-free claims are unsupported.",
+                "Attachments and redistribution: Link to the publisher; no original research file is included in the review package."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "edfbc589f2f4",
+          "url": "https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2025/Nov/IRENA_TEC_Sodium-ion_batteries_2025.pdf",
+          "title": "Sodium-ion batteries: A technology brief",
+          "kind": "file",
+          "format": "PDF",
+          "host": "irena.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[G09] Sodium-ion batteries: A technology brief",
+              "url": "/post/renewable-energy-and-batteries/#evidence-g09",
+              "text": "Original source: Sodium-ion batteries: A technology brief",
+              "notes": [
+                "Supports: Sodium-ion can diversify raw-material supply, but scaling depends on energy density, hard-carbon processing and competitive cost. Lower weight sensitivity makes stationary storage a potential application. Resource abundance alone does not establish mature production or a universally cheaper replacement for lithium-ion.",
+                "Institution or author: International Renewable Energy Agency (IRENA); collaboration with China Electric Power Research Institute (CEPRI)",
+                "Publication date: 2025, verified by the Spanish Ministry of Industry and Tourism’s official library bibliography. Exact month and day not independently verified.",
+                "Event date: Not applicable: technology review.",
+                "Statistical period: Technology landscape through 2025; some underlying cost and capacity studies are earlier and explicitly identified.",
+                "Page or section: Executive summary, p5; 3.1 Construction and materials, pp12–14; 3.2 Supply chain, pp14–15; 3.3 Pros and cons, pp16–17; 3.4 Applications, pp18–19; Status and outlook, pp20–21. PDF pages equal printed page numbers.",
+                "Geography: Global technology review; country examples are not a current global production census.",
+                "Units: Qualitative technical claims; no current price or market-share calculation used.",
+                "Market definition: Sodium-ion batteries transfer sodium ions; cathode choices and hard-carbon anodes have distinct material and manufacturing requirements.",
+                "Evidence classification: Original intergovernmental technical synthesis incorporating third-party studies and company announcements.",
+                "Read date: 2026-10-06",
+                "Limits and uncertainty: Some cost comparisons use sodium-ion 2022 and lithium-ion April 2024 data, so they cannot prove a 2026 price advantage. Announced production is not achieved output. Some sodium cathodes contain nickel or cobalt; universal mineral-free claims are unsupported.",
+                "Attachments and redistribution: Link to the publisher; no original research file is included in the review package."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "80c65d8a1c3c",
+          "url": "https://www.sec.gov/Archives/edgar/data/1274494/000127449426000021/fslr-20251231.htm",
+          "title": "First Solar 2025 Annual Report on Form 10-K",
+          "kind": "link",
+          "format": "Web",
+          "host": "sec.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C07] First Solar 2025 Annual Report on Form 10-K",
+              "url": "/post/renewable-energy-and-batteries/#evidence-c07",
+              "text": "Original source: First Solar 2025 Annual Report on Form 10-K",
+              "notes": [
+                "Supports: First Solar makes CdTe thin-film modules and generally prices modules per watt. In 2025, net sales were $5.219 billion and operating income $1.597 billion. Year-end future sales contracts covered 50.1 GW, valued at $15.0 billion, with revenue expected through 2030.",
+                "Institution or author: First Solar, Inc.; United States Securities and Exchange Commission filing",
+                "Publication date: 24 February 2026, SEC filing date",
+                "Event date: FY2025 filing; future-contract balance measured at 31 December 2025",
+                "Statistical period: Fiscal year from 1 January to 31 December 2025; future revenue horizon through 2030",
+                "Page or section: Item 1, Advanced Module Technology; Item 7, Net Sales; Consolidated Statements of Operations; Note 14, Revenue Contracts with Customers",
+                "Geography: Global consolidated First Solar; contract backlog across its markets",
+                "Units: USD thousand in financial statements, USD billion after conversion; GW of contracted module power",
+                "Market definition: Company module sales and operating income; future contracted module sales, excluding specified unsecured India orders",
+                "Evidence classification: Primary regulatory annual report with audited US GAAP financial statements and contractual disclosures",
+                "Read date: 2026-10-06",
+                "Method and calculation: Net sales $5,219,376 thousand and operating income $1,596,864 thousand divided by 1,000,000 and rounded to three decimals in USD billion; contracts retained as reported",
+                "Limits and uncertainty: Contracted power and contract value are not delivered modules or current-year revenue. Revenue depends on control transfer. Company profitability is not an industry margin, and operating income differs from the net-profit and adjusted-EBITDA metrics used for other companies.",
+                "Attachments and redistribution: Publisher link only; no original file redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3a3495582822",
+          "url": "https://www.vestas.com/content/dam/vestas-com/global/en/investor/reports-and-presentations/financial/2025/fy-2025/Vestas%20Annual%20Report%202025.pdf",
+          "title": "Vestas Annual Report 2025",
+          "kind": "file",
+          "format": "PDF",
+          "host": "vestas.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C08] Vestas Annual Report 2025",
+              "url": "/post/renewable-energy-and-batteries/#evidence-c08",
+              "text": "Original source: Vestas Annual Report 2025",
+              "notes": [
+                "Supports: Vestas sells wind turbines and service contracts. In 2025 it reported €18.822 billion revenue and a 5.7% EBIT margin before special items. Year-end turbine backlog was €33.2 billion and service backlog €38.7 billion, totaling €71.9 billion across different fulfillment horizons.",
+                "Institution or author: Vestas Wind Systems A/S",
+                "Publication date: 5 February 2026",
+                "Event date: Annual report released on 5 February 2026; backlog measured at 31 December 2025",
+                "Statistical period: Fiscal year from 1 January to 31 December 2025; service backlog represents future contractual revenue",
+                "Page or section: Group financial performance, p. 25; Power Solutions order backlog, p. 27; Service, p. 34; Note 1.2, Revenue and contract types, pp. 142–143",
+                "Geography: Global consolidated Vestas, Power Solutions and Service businesses",
+                "Units: EUR million in financial table, EUR billion after conversion; percent EBIT margin",
+                "Market definition: Company revenue and EBIT before special items; separate future turbine and service contractual backlogs",
+                "Evidence classification: Primary company annual report with audited financial statements and operating disclosures",
+                "Read date: 2026-10-06",
+                "Method and calculation: €18,822 million divided by 1,000 gives €18.822 billion; €33.2 billion plus €38.7 billion equals the reported €71.9 billion; use the reported 5.7% margin",
+                "Limits and uncertainty: Backlog does not equal annual deliveries or cash. Service and turbine horizons differ. EBIT before special items excludes identified items and cannot be ranked directly against other firms’ net income, gross margin or adjusted EBITDA.",
+                "Attachments and redistribution: Publisher link only; no original file redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "63b9ba3126b3",
+          "url": "https://www.catl.com/en/uploads/1/file/public/202603/20260310105310_46xjbwckvn.pdf",
+          "title": "CATL Annual Report 2025",
+          "kind": "file",
+          "format": "PDF",
+          "host": "catl.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C05] CATL Annual Report 2025",
+              "url": "/post/renewable-energy-and-batteries/#evidence-c05",
+              "text": "Original source: CATL Annual Report 2025",
+              "notes": [
+                "Supports: CATL sells power and energy-storage batteries and solutions. In 2025 it reported RMB423.7 billion revenue, RMB72.2 billion profit attributable to listed-company shareholders and 661 GWh lithium-ion battery sales. Battery sales combine applications and differ from registered EV-battery usage.",
+                "Institution or author: Contemporary Amperex Technology Co., Limited (CATL)",
+                "Publication date: 10 March 2026",
+                "Event date: FY2025 results released on 10 March 2026",
+                "Statistical period: Fiscal year from 1 January to 31 December 2025",
+                "Page or section: Section II, Financial Highlights, printed p. 7 (PDF page 8); Section IV, Principal Business, Products and Business Model, printed pp. 12–14; business review, printed pp. 25–27; Note 24, Revenue, printed p. 175",
+                "Geography: Global consolidated CATL group; not the entire battery industry",
+                "Units: RMB thousand in financial tables; RMB billion when rounded; GWh of company battery sales",
+                "Market definition: Consolidated revenue, attributable profit and company lithium-ion battery sales across power and storage applications",
+                "Evidence classification: Primary company annual report with audited financial statements and operating disclosures",
+                "Read date: 2026-10-06",
+                "Method and calculation: Revenue RMB423,701,834 thousand and attributable profit RMB72,201,282 thousand divided by 1,000,000 and rounded to one decimal in RMB billion; 661 GWh reported directly",
+                "Limits and uncertainty: Attributable profit is not total group net profit. Revenue cannot be divided by an unmatched battery-market denominator. Product descriptions do not prove named customer contracts, and annual sales are not installed capacity or outstanding orders.",
+                "Attachments and redistribution: Publisher link only; no original file redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a28f3663f9d7",
+          "url": "https://inside.lgensol.com/en/2026/01/lg-energy-solution-releases-2025-financial-results/",
+          "title": "LG Energy Solution Releases 2025 Financial Results",
+          "kind": "link",
+          "format": "Web",
+          "host": "inside.lgensol.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C06] LG Energy Solution Releases 2025 Financial Results",
+              "url": "/post/renewable-energy-and-batteries/#evidence-c06",
+              "text": "Original source: LG Energy Solution Releases 2025 Financial Results",
+              "notes": [
+                "Supports: LG Energy Solution reported 2025 revenue of KRW23.7 trillion and operating profit of KRW1.3 trillion, including North American production incentives. It disclosed an ESS order backlog of 140 GWh and a 46-series backlog exceeding 300 GWh; neither is delivered volume.",
+                "Institution or author: LG Energy Solution, official Battery Inside publication",
+                "Publication date: 29 January 2026",
+                "Event date: FY2025 financial results announcement on 29 January 2026",
+                "Statistical period: Fiscal year from 1 January to 31 December 2025; 46-series backlog explicitly at year-end; ESS backlog in the 2025 business review",
+                "Page or section: Opening full-year financial results and 2025 business review, including customer-base and portfolio-diversification paragraphs",
+                "Geography: Global consolidated LG Energy Solution; North American incentive qualification affects profit",
+                "Units: KRW trillion; GWh of disclosed order backlog",
+                "Market definition: Company annual revenue and operating profit; separate ESS and 46-series backlog disclosures",
+                "Evidence classification: Primary company earnings announcement with rounded results and forward-looking statements",
+                "Read date: 2026-10-06",
+                "Method and calculation: Use reported rounded figures; do not add the two backlog categories or substitute an independently calculated margin",
+                "Limits and uncertainty: Profit includes incentives and is not subsidy-free profit. Backlog is not revenue or delivery; category overlap and fulfillment schedules are not established here. The 2026 order and capacity targets are forecasts, excluded from historical results.",
+                "Attachments and redistribution: Publisher link only; no original file redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d46535411d53",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm",
+          "title": "Tesla 2025 Annual Report on Form 10-K",
+          "kind": "link",
+          "format": "Web",
+          "host": "sec.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C10] Tesla 2025 Annual Report on Form 10-K",
+              "url": "/post/renewable-energy-and-batteries/#evidence-c10",
+              "text": "Original source: Tesla 2025 Annual Report on Form 10-K",
+              "notes": [
+                "Supports: Tesla sells Powerwall and Megapack storage products. In 2025, storage deployments were 46.7 GWh; the broader energy generation and storage segment reported $12.771 billion revenue and a 29.8% gross margin. Manufacturing credits reduced that segment’s cost of revenue by $1.12 billion.",
+                "Institution or author: Tesla, Inc.; United States Securities and Exchange Commission filing",
+                "Publication date: 29 January 2026, SEC filing date",
+                "Event date: FY2025 annual filing; separate single event date not applicable",
+                "Statistical period: Fiscal year from 1 January to 31 December 2025",
+                "Page or section: Item 1, Energy Storage Products; Item 7, Energy Generation and Storage Segment and gross-margin discussion; Note 2, Energy Generation and Storage Revenue",
+                "Geography: Global consolidated Tesla energy segment",
+                "Units: GWh of storage deployments; USD million/billion of revenue and cost credits; percent gross margin",
+                "Market definition: Storage deployment includes storage products; segment financials include both generation and storage, not Megapack alone",
+                "Evidence classification: Primary regulatory annual report with audited US GAAP financial statements and operational disclosures",
+                "Read date: 2026-10-06",
+                "Method and calculation: $12,771 million divided by 1,000 gives $12.771 billion; other deployment, margin and credit values are reported directly",
+                "Limits and uncertainty: Gross margin is not operating or net margin. Incentives affect profitability. Deployments are not orders or factory capacity. This source does not establish Tesla as a supplier to the Vistra facility involved in C01–C04.",
+                "Attachments and redistribution: Publisher link only; no original file redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8afb8c13c5fc",
+          "url": "https://www.jinkosolar.com/en/site/newsdetail/2895",
+          "title": "JinkoSolar–Masdar 2 GW Tiger Neo module purchase agreement",
+          "kind": "link",
+          "format": "Web",
+          "host": "jinkosolar.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C12] JinkoSolar–Masdar 2 GW Tiger Neo module purchase agreement",
+              "url": "/post/renewable-energy-and-batteries/#evidence-c12",
+              "text": "Original source: JinkoSolar–Masdar 2 GW Tiger Neo module purchase agreement",
+              "notes": [
+                "Supports: JinkoSolar announced a signed agreement to supply Masdar with 2 GW of Tiger Neo solar modules for an Abu Dhabi round-the-clock project. This identifies an actual manufacturer-to-developer commercial agreement, while the announcement does not establish completed module delivery or an operating project.",
+                "Institution or author: JinkoSolar, official corporate news",
+                "Publication date: 12 May 2026, verified on the issuer’s dated news index",
+                "Event date: Agreement signed by the announcement date; exact signing day not disclosed",
+                "Statistical period: One agreement announced in May 2026; annual financial period not applicable",
+                "Page or section: News article’s opening agreement paragraph; official news index dated 12 May 2026",
+                "Geography: Abu Dhabi, United Arab Emirates; JinkoSolar–Masdar supply agreement",
+                "Units: GW of contracted solar-module electrical power, not GWh of battery energy",
+                "Market definition: Announced 2 GW module purchase agreement for one project; not the full project’s capacity or installed global capacity",
+                "Evidence classification: Primary corporate announcement of a named commercial supply agreement",
+                "Read date: 2026-10-06",
+                "Method and calculation: Read original article and dated company index; retain announced contracted power without converting it to energy or revenue",
+                "Limits and uncertainty: No disclosed price, payment schedule or verified deliveries. Promotional superlatives are not independently established. The project description is a future plan, not evidence of current round-the-clock output; this agreement does not prove another company’s storage-supply contract.",
+                "Attachments and redistribution: Publisher link only; no original file redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6e7c9d58bf49",
+          "url": "https://www.iea.org/reports/global-ev-outlook-2026/electric-vehicle-batteries",
+          "title": "Global EV Outlook 2026 — Electric vehicle batteries",
+          "kind": "link",
+          "format": "Web",
+          "host": "iea.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[G03] Global EV Outlook 2026 — Electric vehicle batteries",
+              "url": "/post/renewable-energy-and-batteries/#evidence-g03",
+              "text": "Original source: Global EV Outlook 2026 — Electric vehicle batteries",
+              "notes": [
+                "Supports: 2025 EV deployment: 1.2 TWh, almost 30% growth; China 60%, EU nearly 15%, US 10% and stagnant. Cell nameplate: over 4 TWh; China over 80%, EU/US each 6–7%. Almost/all-solid-state prototypes; recycling mainly used production scrap.",
+                "Institution or author: International Energy Agency (IEA)",
+                "Publication date: 2026-05-20",
+                "Event date: Not applicable: annual report.",
+                "Statistical period: 2025 actual estimates and year-end manufacturing capacity; technology status at report publication. Future scenarios are separate.",
+                "Page or section: Battery demand; Battery chemistry; Battery manufacturing; Battery technology developments; Battery recycling; reference notes 1, 3, 8 and 9. Publication date: report overview.",
+                "Geography: Global; China, European Union and United States. Deployment geography differs from factory geography.",
+                "Units: TWh of deployed battery energy and annual nameplate capacity; percent.",
+                "Market definition: Deployment = volume-weighted average battery size × vehicle sales by mode and region; manufacturing capacity is nameplate.",
+                "Evidence classification: Original IEA analysis using registration, industry and third-party datasets; not a manufacturer census independently audited here.",
+                "Read date: 2026-10-06",
+                "Method and calculation: Deployment follows vehicle sales and battery size; capacity is nameplate, not output.",
+                "Limits and uncertainty: Different applications prevent a utilisation ratio. Prototype status is not proven commercial performance; announcements are not delivery.",
+                "Attachments and redistribution: Link to the publisher; no original research file is included in the review package."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "25d42677b3fb",
+          "url": "https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2026/Mar/IRENA_DAT_RE_capacity_statistics_2026.pdf",
+          "title": "Renewable capacity statistics 2026",
+          "kind": "file",
+          "format": "PDF",
+          "host": "irena.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[G01] Renewable capacity statistics 2026",
+              "url": "/post/renewable-energy-and-batteries/#evidence-g01",
+              "text": "Original source: Renewable capacity statistics 2026",
+              "notes": [
+                "Supports: Year-end 2025 renewable capacity: 5,149.280 GW; 2024: 4,457.340 GW. Net addition: 691.940 GW, or 15.5%. Solar stock: 2,391.584 GW; wind: 1,291.368 GW. China, the United States and the EU represented 79.5% of additions; Africa 1.6%.",
+                "Institution or author: International Renewable Energy Agency (IRENA)",
+                "Publication date: 2026; exact release day not verified. Official publication-directory path: March 2026.",
+                "Event date: Not applicable: statistical release. Capacity stock dates: 2024-12-31 and 2025-12-31.",
+                "Statistical period: Year-end 2024 and 2025; calendar-year 2025 net additions. Same 2026-edition tables.",
+                "Page or section: Foreword, PDF p3; notes, printed pIII / PDF p7; total renewable World row, printed p2 / PDF p14; wind World row, printed p14 / PDF p26; solar World row, printed p21 / PDF p33; PV World row, printed p25 / PDF p37.",
+                "Geography: Global; selected regional comparisons explicitly identified.",
+                "Units: MW in original tables; GW after division by 1,000; percent.",
+                "Market definition: Maximum net renewable generating capacity, generally installed and connected at year-end; pure pumped storage is excluded.",
+                "Evidence classification: Original intergovernmental statistical compilation.",
+                "Read date: 2026-10-06",
+                "Method and calculation: (5,149,280 − 4,457,340)/1,000 = 691.940 GW; growth = difference/4,457,340.",
+                "Limits and uncertainty: Capacity is not electricity output or revenue. Solar additions differ between the foreword (510 GW), total-solar table (511.188 GW) and PV table (510.349 GW). The exact discrepancy is unresolved; use stocks and the global total instead.",
+                "Attachments and redistribution: Link to the publisher; no original research file is included in the review package."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "638f931670cf",
+          "url": "https://www.iea.org/reports/electricity-mid-year-update-2026/executive-summary",
+          "title": "Electricity Mid-Year Update 2026 — Executive summary",
+          "kind": "link",
+          "format": "Web",
+          "host": "iea.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[G07] Electricity Mid-Year Update 2026 — Executive summary",
+              "url": "/post/renewable-energy-and-batteries/#evidence-g07",
+              "text": "Original source: Electricity Mid-Year Update 2026 — Executive summary",
+              "notes": [
+                "Supports: Global electricity demand reached 28,600 TWh in 2025, up 3%; renewables supplied 33% of generation. In the first half of 2026, South Australia and California recorded negative wholesale prices in roughly 20% of hours. Flexibility faces technical, regulatory and contractual barriers.",
+                "Institution or author: International Energy Agency (IEA)",
+                "Publication date: 2026-07-23",
+                "Event date: Not applicable: mid-year update.",
+                "Statistical period: 2025 annual estimates; observed first-half 2026 wholesale pricing. 2026–2027 full-year figures are forecasts.",
+                "Page or section: Executive summary: global demand, generation mix, wholesale prices and flexibility; report overview publication date.",
+                "Geography: Global for demand/generation; South Australia and California for negative-price frequency.",
+                "Units: TWh/year; year-on-year percent; share of wholesale-market hours.",
+                "Market definition: Electricity generation is energy output, distinct from installed capacity. Negative-price frequency counts wholesale-market hours in specified regions.",
+                "Evidence classification: Original IEA update compiling electricity-system and market data.",
+                "Read date: 2026-10-06",
+                "Method and calculation: Use annual observations and half-year pricing separately; do not extrapolate negative-price hours into an annual global rate.",
+                "Limits and uncertainty: Wholesale prices are not retail tariffs or a specific generator’s realised price. Negative prices alone cannot prove storage profitability. Forecast renewable overtaking of coal in 2026 is not a completed annual outcome. Hourly capture-price datasets were not provided here.",
+                "Attachments and redistribution: Link to the publisher; no original research file is included in the review package."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "58261735dfe0",
+          "url": "https://about.bnef.com/insights/clean-transport/lithium-ion-battery-pack-prices-fall-to-108-per-kilowatt-hour-despite-rising-metal-prices-bloombergnef/",
+          "title": "Lithium-Ion Battery Pack Prices Fall to $108 Per Kilowatt-Hour Despite Rising Metal Prices: BloombergNEF",
+          "kind": "link",
+          "format": "Web",
+          "host": "about.bnef.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[G06] Lithium-Ion Battery Pack Prices Fall to $108 Per Kilowatt-Hour Despite Rising Metal Prices: BloombergNEF",
+              "url": "/post/renewable-energy-and-batteries/#evidence-g06",
+              "text": "Original source: Lithium-Ion Battery Pack Prices Fall to $108 Per Kilowatt-Hour Despite Rising Metal Prices: BloombergNEF",
+              "notes": [
+                "Supports: BNEF’s 2025 survey estimated average lithium-ion pack prices at USD 108/kWh, down 8%; stationary-storage packs at 70, down 45%; BEV packs at 99. China averaged 84; North America and Europe were 44% and 56% higher respectively.",
+                "Institution or author: BloombergNEF (BNEF)",
+                "Publication date: 2025-12-09",
+                "Event date: 2025-12-09 public survey announcement.",
+                "Statistical period: 2025 survey; year-on-year comparison with the survey’s 2024 baseline.",
+                "Page or section: Public release body: global average; stationary-storage and BEV packs; regional prices; survey explanation.",
+                "Geography: Global, China, North America and Europe; geography as defined in the survey.",
+                "Units: USD/kWh at battery-pack level; percent.",
+                "Market definition: Surveyed average pack prices across applications, with separate application and regional averages; not total installed-system cost.",
+                "Evidence classification: Third-party survey estimate; original public announcement by the survey publisher.",
+                "Read date: 2026-10-06",
+                "Method and calculation: Report the published 8% decline; do not recompute it from an older publication vintage.",
+                "Limits and uncertainty: The paid full survey and raw weighting sample were not read. Regional averages reflect application and chemistry mix; they do not isolate causation or show a company’s margin. Pack prices exclude system integration and installation costs.",
+                "Attachments and redistribution: Link to the publisher; no original research file is included in the review package."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "edd3798024fa",
+          "url": "https://tethys-engineering.pnnl.gov/publications/renewable-power-generation-costs-2025",
+          "title": "Method and calculation: Use reported weighted averages; no pack-to-system subtraction or direct inference about project selling prices. Cutoff verification: Pacific Northwest National Laboratory, Tethys Engineering catalogue,",
+          "kind": "link",
+          "format": "Web",
+          "host": "tethys-engineering.pnnl.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[G02] Renewable power generation costs in 2025",
+              "url": "/post/renewable-energy-and-batteries/#evidence-g02",
+              "text": "Method and calculation: Use reported weighted averages; no pack-to-system subtraction or direct inference about project selling prices. Cutoff verification: Pacific Northwest National Laboratory, Tethys Engineering catalogue, https://tethys-engineering.pnnl.gov/publications/renewable-power-generation-costs-2025 .",
+              "notes": [
+                "Supports: 2025 global weighted-average LCOE: solar PV USD 44/MWh, onshore wind 33, offshore wind 78. Since 2010, these fell 89%, 71% and 63%. Four-hour utility-scale BESS installed cost averaged USD 140/kWh. Four-hour turnkey cost averaged 111/kWh, excluding EPC, grid connection and development.",
+                "Institution or author: International Renewable Energy Agency (IRENA)",
+                "Publication date: July 2026; verified to month precision through PNNL’s institutional catalogue. Exact original release day not independently verified.",
+                "Event date: Not applicable: annual cost study.",
+                "Statistical period: Projects commissioned in 2025; historical comparison with 2010; 2025 storage cost estimates.",
+                "Page or section: Executive summary, printed/PDF pp11–16; Table 1.1, pp14–15; regional comparisons, p16; exclusion-of-China comparison, p23; battery storage, pp139–144; four-hour turnkey definition and cost, p143.; solar scope: p.70, section 3.6 and footnote 17",
+                "Geography: Global cost averages; explicitly separate selected country samples.",
+                "Units: 2025 USD/MWh for LCOE; 2025 USD/kWh for BESS equipment and installed costs; percent.",
+                "Market definition: LCOE is a lifetime generation cost metric. Installed BESS, turnkey equipment and battery packs have different cost boundaries. The solar PV benchmark covers standalone utility-scale projects; rooftop PV is outside it.",
+                "Evidence classification: Original IRENA cost study; storage estimates incorporate third-party BloombergNEF data.",
+                "Read date: 2026-10-06",
+                "Limits and uncertainty: LCOE does not include the same services as firm electricity. Cost averages do not establish company margins. USD 240/kWh in the selected-market component chart is not the global USD 140/kWh benchmark. Raw survey observations were not separately audited.",
+                "Attachments and redistribution: Link to the publisher; no original research file is included in the review package."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e7132be025ba",
+          "url": "https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2026/Jul/IRENA_TEC_RPGC_in_2025_2026.pdf",
+          "title": "Renewable power generation costs in 2025",
+          "kind": "file",
+          "format": "PDF",
+          "host": "irena.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[G02] Renewable power generation costs in 2025",
+              "url": "/post/renewable-energy-and-batteries/#evidence-g02",
+              "text": "Original source: Renewable power generation costs in 2025",
+              "notes": [
+                "Supports: 2025 global weighted-average LCOE: solar PV USD 44/MWh, onshore wind 33, offshore wind 78. Since 2010, these fell 89%, 71% and 63%. Four-hour utility-scale BESS installed cost averaged USD 140/kWh. Four-hour turnkey cost averaged 111/kWh, excluding EPC, grid connection and development.",
+                "Institution or author: International Renewable Energy Agency (IRENA)",
+                "Publication date: July 2026; verified to month precision through PNNL’s institutional catalogue. Exact original release day not independently verified.",
+                "Event date: Not applicable: annual cost study.",
+                "Statistical period: Projects commissioned in 2025; historical comparison with 2010; 2025 storage cost estimates.",
+                "Page or section: Executive summary, printed/PDF pp11–16; Table 1.1, pp14–15; regional comparisons, p16; exclusion-of-China comparison, p23; battery storage, pp139–144; four-hour turnkey definition and cost, p143.; solar scope: p.70, section 3.6 and footnote 17",
+                "Geography: Global cost averages; explicitly separate selected country samples.",
+                "Units: 2025 USD/MWh for LCOE; 2025 USD/kWh for BESS equipment and installed costs; percent.",
+                "Market definition: LCOE is a lifetime generation cost metric. Installed BESS, turnkey equipment and battery packs have different cost boundaries. The solar PV benchmark covers standalone utility-scale projects; rooftop PV is outside it.",
+                "Evidence classification: Original IRENA cost study; storage estimates incorporate third-party BloombergNEF data.",
+                "Read date: 2026-10-06",
+                "Limits and uncertainty: LCOE does not include the same services as firm electricity. Cost averages do not establish company margins. USD 240/kWh in the selected-market component chart is not the global USD 140/kWh benchmark. Raw survey observations were not separately audited.",
+                "Attachments and redistribution: Link to the publisher; no original research file is included in the review package."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "eb2380a8beec",
+          "url": "https://www.iea.org/reports/energy-technology-perspectives-2026/supply-chain-risks-and-industrial-competitiveness",
+          "title": "Energy Technology Perspectives 2026 — Supply chain risks and industrial competitiveness",
+          "kind": "link",
+          "format": "Web",
+          "host": "iea.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[G04] Energy Technology Perspectives 2026 — Supply chain risks and industrial competitiveness",
+              "url": "/post/renewable-energy-and-batteries/#evidence-g04",
+              "text": "Original source: Energy Technology Perspectives 2026 — Supply chain risks and industrial competitiveness",
+              "notes": [
+                "Supports: In 2024, China held about 85% of solar PV and 80% of lithium-ion battery supply-chain capacity on a value-weighted basis excluding mining. Each examined technology had an upstream bottleneck outside China. Manufacturing efficiency explained over 40% of the modelled Europe–China battery cost gap.",
+                "Institution or author: International Energy Agency (IEA)",
+                "Publication date: 2026-03-26",
+                "Event date: Not applicable: analytical report.",
+                "Statistical period: 2024 supply-chain baseline and cost model; conditional future scenarios are separate.",
+                "Page or section: Supply chain risks and industrial competitiveness: concentration chart and notes; N−1 supply-chain analysis and notes; Manufacturing efficiency and battery production costs. Publication date: report overview.",
+                "Geography: Global manufacturing stages; China, Europe and the rest of the world.",
+                "Units: Percent of value-weighted capacity; percent of modelled cost differences.",
+                "Market definition: Concentration is value-weighted across manufacturing stages, excluding extraction; N−1 removes the largest supplying country under stated assumptions.",
+                "Evidence classification: Original IEA synthesis and scenario/cost modelling using third-party datasets.",
+                "Read date: 2026-10-06",
+                "Method and calculation: N−1 assumes 85% nameplate utilisation for manufacturing; mineral stages use actual production. Battery comparison models NMC811/graphite.",
+                "Limits and uncertainty: These are 2024 capacity/model results, not 2026 shipments, headquarters shares, contracts or actual disruption losses. Non-Chinese downstream capacity alone does not demonstrate an independent supply chain. A modelled cost gap cannot establish company profitability.",
+                "Attachments and redistribution: Link to the publisher; no original research file is included in the review package."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "daa68a890efd",
+          "url": "https://www.iea.org/reports/global-critical-minerals-outlook-2026/executive-summary",
+          "title": "Global Critical Minerals Outlook 2026 — Executive summary",
+          "kind": "link",
+          "format": "Web",
+          "host": "iea.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[G05] Global Critical Minerals Outlook 2026 — Executive summary",
+              "url": "/post/renewable-energy-and-batteries/#evidence-g05",
+              "text": "Original source: Global Critical Minerals Outlook 2026 — Executive summary",
+              "notes": [
+                "Supports: Critical-mineral investment fell 9% in 2025; battery-metal capital expenditure fell over 20%. The largest refining country’s average share, excluding rare earths, rose to 72% from 70% in 2023. New refining projects outside incumbents face higher costs and equipment, technology and skills constraints.",
+                "Institution or author: International Energy Agency (IEA)",
+                "Publication date: 2026-07-16",
+                "Event date: Not applicable: analytical report.",
+                "Statistical period: 2025 investment and refining statistics; comparisons with 2023; policy/pricing developments through report publication.",
+                "Page or section: Executive summary: Investment; Refining concentration; Diversification challenges; Supply-chain ecosystems. Publication date: report overview.",
+                "Geography: Global critical-mineral markets; leading refining country varies by mineral.",
+                "Units: Year-on-year percent investment changes; average leading-country refining share.",
+                "Market definition: Refining concentration is the leading single country’s average share across the specified minerals, excluding rare earths.",
+                "Evidence classification: Original IEA market assessment using industry datasets and project analysis.",
+                "Read date: 2026-10-06",
+                "Method and calculation: Use the specified single-country refining metric; do not compare it with older top-three-country measures.",
+                "Limits and uncertainty: Investment decline is not output decline. Announced public-finance commitments are not disbursements. Higher project costs are estimates with site-specific variation. Refining averages do not establish one country’s ownership of all minerals or guarantee future shortages.",
+                "Attachments and redistribution: Link to the publisher; no original research file is included in the review package."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f36572b67c17",
+          "url": "https://investors.albemarle.com/news-and-events/news/news-details/2026/Albemarle-Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx",
+          "title": "Albemarle Fourth Quarter and Full Year 2025 Results",
+          "kind": "link",
+          "format": "Web",
+          "host": "investors.albemarle.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C09] Albemarle Fourth Quarter and Full Year 2025 Results",
+              "url": "/post/renewable-energy-and-batteries/#evidence-c09",
+              "text": "Original source: Albemarle Fourth Quarter and Full Year 2025 Results",
+              "notes": [
+                "Supports: Albemarle’s lithium-focused Energy Storage segment reported 2025 net sales of $2.710 billion and adjusted EBITDA of $697 million, down 8%. The company attributed the EBITDA decline to lower lithium pricing partly offset by volume and cost improvements. This segment is not a battery-system manufacturer.",
+                "Institution or author: Albemarle Corporation",
+                "Publication date: 11 February 2026",
+                "Event date: FY2025 earnings announcement on 11 February 2026",
+                "Statistical period: Fiscal year from 1 January to 31 December 2025; the separate fourth-quarter figures are excluded",
+                "Page or section: Energy Storage Results, full-year EBITDA paragraph; Consolidated Summary of Segment Results, full-year 2025 net-sales column; Non-GAAP Reconciliations",
+                "Geography: Global Albemarle Energy Storage segment",
+                "Units: USD thousand for segment net sales; USD million for reported adjusted EBITDA",
+                "Market definition: Albemarle’s named lithium business segment, rather than battery storage equipment or consolidated group financials",
+                "Evidence classification: Primary company earnings announcement; unaudited tables and non-GAAP adjusted EBITDA",
+                "Read date: 2026-10-06",
+                "Method and calculation: Net sales $2,710,035 thousand divided by 1,000,000 and rounded to $2.710 billion; $697 million and 8% decline retained as reported",
+                "Limits and uncertainty: Adjusted EBITDA is not net profit. Management’s price explanation is a corporate attribution, not an independent estimate of market causality. The release’s 2026 scenarios and long-term-contract assumptions are forward-looking, excluded from 2025 realized results.",
+                "Attachments and redistribution: Publisher link only; no original file redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d49c036d77a6",
+          "url": "https://energy.ketep.re.kr/globalenergy/site/main/board/policy_report/31728",
+          "title": "Method and calculation: Model uses flat hourly demand; 43.5 + 69.7 = 113.2 USD/MWh. Cutoff verification: Korea Institute of Energy Technology Evaluation and Planning, Global Energy catalogue,",
+          "kind": "link",
+          "format": "Web",
+          "host": "energy.ketep.re.kr",
+          "local": false,
+          "citations": [
+            {
+              "section": "[G08] 24/7 renewables: The economics of firm solar and wind",
+              "url": "/post/renewable-energy-and-batteries/#evidence-g08",
+              "text": "Method and calculation: Model uses flat hourly demand; 43.5 + 69.7 = 113.2 USD/MWh. Cutoff verification: Korea Institute of Energy Technology Evaluation and Planning, Global Energy catalogue, https://energy.ketep.re.kr/globalenergy/site/main/board/policy_report/31728 .",
+              "notes": [
+                "Supports: A hypothetical 100 MW Las Vegas solar case uses 2025 costs. At a 95% energy-coverage target, solar plus storage and overbuild costs USD 113.2/MWh versus 43.5 standalone, with 591.8 MWh of storage and 61.9 MW of additional solar.",
+                "Institution or author: International Renewable Energy Agency (IRENA)",
+                "Publication date: Publicly catalogued by 20 May 2026; KETEP registration date verified. The original publisher’s first release date remains unverified.",
+                "Event date: Not applicable: model illustration, not a constructed project or contract.",
+                "Statistical period: Hypothetical reference case using 2025 cost assumptions; selected-project analysis uses 2024 commissioned projects.",
+                "Page or section: Firm LCOE definition, printed/PDF pp8–9 and p24; Las Vegas illustration, pp25–26; Table 1, p26.",
+                "Geography: Hypothetical Las Vegas, United States reference case; selected global project samples elsewhere.",
+                "Units: USD/MWh; MW solar capacity; MWh battery capacity; percent of annual demand energy.",
+                "Market definition: Firm LCOE adds a firming premium. Reliability here means energy coverage of flat annual demand, not system adequacy.",
+                "Evidence classification: Original IRENA model analysis and illustrative scenario.",
+                "Read date: 2026-10-06",
+                "Limits and uncertainty: The 95% target does not mean uninterrupted supply at every hour or guaranteed peak capacity. Results are location-specific model outputs, not project invoices, average market prices, actual orders or storage returns. Future cost trajectories are conditional projections.",
+                "Attachments and redistribution: Link to the publisher; no original research file is included in the review package."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "62b13a341518",
+          "url": "https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2026/May/IRENA_TEC_24-7_renewables_2026.pdf",
+          "title": "24/7 renewables: The economics of firm solar and wind",
+          "kind": "file",
+          "format": "PDF",
+          "host": "irena.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[G08] 24/7 renewables: The economics of firm solar and wind",
+              "url": "/post/renewable-energy-and-batteries/#evidence-g08",
+              "text": "Original source: 24/7 renewables: The economics of firm solar and wind",
+              "notes": [
+                "Supports: A hypothetical 100 MW Las Vegas solar case uses 2025 costs. At a 95% energy-coverage target, solar plus storage and overbuild costs USD 113.2/MWh versus 43.5 standalone, with 591.8 MWh of storage and 61.9 MW of additional solar.",
+                "Institution or author: International Renewable Energy Agency (IRENA)",
+                "Publication date: Publicly catalogued by 20 May 2026; KETEP registration date verified. The original publisher’s first release date remains unverified.",
+                "Event date: Not applicable: model illustration, not a constructed project or contract.",
+                "Statistical period: Hypothetical reference case using 2025 cost assumptions; selected-project analysis uses 2024 commissioned projects.",
+                "Page or section: Firm LCOE definition, printed/PDF pp8–9 and p24; Las Vegas illustration, pp25–26; Table 1, p26.",
+                "Geography: Hypothetical Las Vegas, United States reference case; selected global project samples elsewhere.",
+                "Units: USD/MWh; MW solar capacity; MWh battery capacity; percent of annual demand energy.",
+                "Market definition: Firm LCOE adds a firming premium. Reliability here means energy coverage of flat annual demand, not system adequacy.",
+                "Evidence classification: Original IRENA model analysis and illustrative scenario.",
+                "Read date: 2026-10-06",
+                "Limits and uncertainty: The 95% target does not mean uninterrupted supply at every hour or guaranteed peak capacity. Results are location-specific model outputs, not project invoices, average market prices, actual orders or storage returns. Future cost trajectories are conditional projections.",
+                "Attachments and redistribution: Link to the publisher; no original research file is included in the review package."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "adb0f3e0d095",
+          "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ21/pdf/PLAW-119publ21.pdf",
+          "title": "Public Law 119 21 clean vehicle credit provisions",
+          "kind": "file",
+          "format": "PDF",
+          "host": "govinfo.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[R04] Public Law 119 21 clean vehicle credit provisions",
+              "url": "/post/renewable-energy-and-batteries/#evidence-r04",
+              "text": "Original source: Public Law 119 21 clean vehicle credit provisions",
+              "notes": [
+                "Supports: Section 30D termination changes to vehicles acquired after 30 September 2025.",
+                "Institution or author: US Congress and Government Publishing Office",
+                "Publication date: 2025-07-04",
+                "Event date: 2025-07-04 enactment",
+                "Statistical period: Acquisition cutoff 2025-09-30",
+                "Page or section: Sections 70501 to 70503; 139 Stat. 250 to 251; PDF pages 180 and 181",
+                "Geography: United States federal law",
+                "Units: Dates",
+                "Market definition: Termination provisions for federal clean vehicle tax credits, especially section 30D.",
+                "Evidence classification: Primary enacted federal statute",
+                "Read date: 2026-10-06",
+                "Method and calculation: No demand or revenue effect estimated.",
+                "Limits and uncertainty: Does not measure the causal effect on EV sales or imply that all US support disappeared.",
+                "Attachments and redistribution: Publisher link only; no original redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "746ce544ac10",
+          "url": "https://data.consilium.europa.eu/doc/document/PE-28-2025-REV-1/en/pdf",
+          "title": "Adopted amendment on battery due diligence",
+          "kind": "link",
+          "format": "Web",
+          "host": "data.consilium.europa.eu",
+          "local": false,
+          "citations": [
+            {
+              "section": "[R01] Adopted amendment on battery due diligence",
+              "url": "/post/renewable-energy-and-batteries/#evidence-r01",
+              "text": "Original source: Adopted amendment on battery due diligence",
+              "notes": [
+                "Supports: Moves the application date from 18 August 2025 to 18 August 2027; identifies verification-body and supply-chain preparation constraints.",
+                "Institution or author: European Parliament and Council",
+                "Publication date: 2025-07-18",
+                "Event date: 2025-07-18 adoption",
+                "Statistical period: Application date 2027-08-18",
+                "Page or section: Article 1(a), printed page 5 / PDF page 6; recitals 1 to 4, printed pages 2 and 3",
+                "Geography: European Union",
+                "Units: Dates and legal obligations",
+                "Market definition: Article 48 battery due diligence obligations; not all battery regulation provisions.",
+                "Evidence classification: Primary adopted legislative text",
+                "Read date: 2026-10-06",
+                "Method and calculation: Read adopted text; no calculation.",
+                "Limits and uncertainty: Council original rather than unreadable EUR-Lex final journal. Does not establish company compliance or postpone every battery requirement.",
+                "Attachments and redistribution: Publisher link only; no original redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a84e0ada268d",
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2025/07/18/simplification-council-adopts-law-to-stop-the-clock-on-due-diligence-rules-for-batteries/",
+          "title": "Council announcement of battery due diligence postponement",
+          "kind": "link",
+          "format": "Web",
+          "host": "consilium.europa.eu",
+          "local": false,
+          "citations": [
+            {
+              "section": "[R02] Council announcement of battery due diligence postponement",
+              "url": "/post/renewable-energy-and-batteries/#evidence-r02",
+              "text": "Original source: Council announcement of battery due diligence postponement",
+              "notes": [
+                "Supports: Confirms adoption and a two-year postponement; explains time needed for third-party verification arrangements.",
+                "Institution or author: Council of the European Union",
+                "Publication date: 2025-07-18",
+                "Event date: 2025-07-18 adoption",
+                "Statistical period: Future application 2027-08-18",
+                "Page or section: Opening and paragraphs on verification bodies; Next steps",
+                "Geography: European Union",
+                "Units: Calendar dates",
+                "Market definition: Official announcement of the adopted battery due diligence amendment.",
+                "Evidence classification: Primary official adoption announcement",
+                "Read date: 2026-10-06",
+                "Method and calculation: Cross-check with R01.",
+                "Limits and uncertainty: Announcement said official publication would follow; it does not establish the eventual journal publication day.",
+                "Attachments and redistribution: Publisher link only; no original redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "33f280d2c8b3",
+          "url": "https://www.energy.gov/sites/default/files/2024-05/EED_2827_FIG_SafetyStrategy%20240505v2.pdf",
+          "title": "Energy Storage Safety Strategic Plan",
+          "kind": "file",
+          "format": "PDF",
+          "host": "energy.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[R03] Energy Storage Safety Strategic Plan",
+              "url": "/post/renewable-energy-and-batteries/#evidence-r03",
+              "text": "Original source: Energy Storage Safety Strategic Plan",
+              "notes": [
+                "Supports: LFP retains failure risks; high charging rates can cause lithium plating; a BMS has limited impact after thermal runaway begins.",
+                "Institution or author: US Department of Energy Office of Electricity",
+                "Publication date: 2024-04; day not stated",
+                "Event date: Not applicable",
+                "Statistical period: Technical review as of publication",
+                "Page or section: Sections 4.4 and 5.2, PDF pages 25 to 29; cover date on PDF page 1",
+                "Geography: US deployment context; general battery mechanisms",
+                "Units: Qualitative technical findings",
+                "Market definition: Lithium-ion stationary storage safety and system engineering.",
+                "Evidence classification: Primary government technical report",
+                "Read date: 2026-10-06",
+                "Method and calculation: No incident-rate calculation.",
+                "Limits and uncertainty: Not a current local code or a guarantee of safety. Physical damage and interruption differ; no universal loss probability is established.",
+                "Attachments and redistribution: Publisher link only; no original redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a20a794e4dde",
+          "url": "https://www.ul.com/news/ul-solutions-enhances-battery-energy-storage-system-safety-test-methods-address-industry",
+          "title": "UL Solutions announcement on 2025 storage safety testing",
+          "kind": "link",
+          "format": "Web",
+          "host": "ul.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[R05] UL Solutions announcement on 2025 storage safety testing",
+              "url": "/post/renewable-energy-and-batteries/#evidence-r05",
+              "text": "Original source: UL Solutions announcement on 2025 storage safety testing",
+              "notes": [
+                "Supports: UL 9540A provides thermal-runaway propagation test data; UL 9540 supplies complete-system safety criteria and a certification basis.",
+                "Institution or author: UL Solutions",
+                "Publication date: 2025-04-16",
+                "Event date: 2025-04-16 announcement",
+                "Statistical period: Fifth-edition testing described in 2025",
+                "Page or section: Paragraphs distinguishing UL 9540A testing and UL 9540 complete-system certification",
+                "Geography: US and Canadian standards context",
+                "Units: Qualitative testing scope",
+                "Market definition: Storage testing methods and product safety certification; not incident statistics.",
+                "Evidence classification: Primary testing-provider announcement",
+                "Read date: 2026-10-06",
+                "Method and calculation: Read public announcement, not paid standards.",
+                "Limits and uncertainty: A testing-provider description of the 2025 edition; not a claim about the latest edition, universal code adoption or zero risk.",
+                "Attachments and redistribution: Publisher link only; no original redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "62e6bbb209df",
+          "url": "/post/renewable-energy-and-batteries/evidence-register-en.json",
+          "title": "Download the English evidence register (JSON)",
+          "kind": "file",
+          "format": "JSON",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "[R05] UL Solutions announcement on 2025 storage safety testing",
+              "url": "/post/renewable-energy-and-batteries/#evidence-r05",
+              "text": "Download the English evidence register (JSON)",
+              "notes": [
+                "Supports: UL 9540A provides thermal-runaway propagation test data; UL 9540 supplies complete-system safety criteria and a certification basis.",
+                "Institution or author: UL Solutions",
+                "Publication date: 2025-04-16",
+                "Event date: 2025-04-16 announcement",
+                "Statistical period: Fifth-edition testing described in 2025",
+                "Page or section: Paragraphs distinguishing UL 9540A testing and UL 9540 complete-system certification",
+                "Geography: US and Canadian standards context",
+                "Units: Qualitative testing scope",
+                "Market definition: Storage testing methods and product safety certification; not incident statistics.",
+                "Evidence classification: Primary testing-provider announcement",
+                "Read date: 2026-10-06",
+                "Method and calculation: Read public announcement, not paid standards.",
+                "Limits and uncertainty: A testing-provider description of the 2025 edition; not a claim about the latest edition, universal code adoption or zero risk.",
+                "Attachments and redistribution: Publisher link only; no original redistributed."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "nvidia-company-research",
       "title": "NVIDIA Company Research Report",
       "url": "/post/nvidia-company-research/",
@@ -1155,6 +2586,896 @@
               "section": "Article downloads",
               "url": "/post/nvidia-company-research/",
               "text": "Download data (CSV)",
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jensen-huang-biography",
+      "title": "Jensen Huang Biography",
+      "url": "/post/jensen-huang-biography/",
+      "published": "2026-10-05",
+      "notices": [],
+      "entries": [
+        {
+          "id": "1493d9497148",
+          "url": "https://commons.wikimedia.org/wiki/File:Nvidia_CEO_Jensen_Huang_gestikuliert.jpg",
+          "title": "Source",
+          "kind": "link",
+          "format": "Web",
+          "host": "commons.wikimedia.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "Article",
+              "url": "/post/jensen-huang-biography/",
+              "text": "Cover: Jensen Huang, 5 January 2017. Photo: Maurizio Pesce · Source · CC BY 2.0 . View full-size cover · 5184 × 3456 .",
+              "notes": [
+                "Information cutoff: October 3, 2026.",
+                "This biography draws on school records, public interviews, company announcements, regulatory filings, and award organizations. Retrospective personal stories retain attribution to the speaker. The downloadable Chinese and English editions use the same reference numbers."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "faee7f95d64a",
+          "url": "https://creativecommons.org/licenses/by/2.0/",
+          "title": "CC BY 2.0",
+          "kind": "link",
+          "format": "Web",
+          "host": "creativecommons.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "Article",
+              "url": "/post/jensen-huang-biography/",
+              "text": "Cover: Jensen Huang, 5 January 2017. Photo: Maurizio Pesce · Source · CC BY 2.0 . View full-size cover · 5184 × 3456 .",
+              "notes": [
+                "Information cutoff: October 3, 2026.",
+                "This biography draws on school records, public interviews, company announcements, regulatory filings, and award organizations. Retrospective personal stories retain attribution to the speaker. The downloadable Chinese and English editions use the same reference numbers."
+              ]
+            },
+            {
+              "section": "10 Deep learning and computing systems after 2012",
+              "url": "/post/jensen-huang-biography/#10-deep-learning-and-computing-systems-after-2012",
+              "text": "Photo: NVIDIA Taiwan · Source · CC BY 2.0 .",
+              "notes": [
+                "Jensen Huang at GTC Taiwan on 21 September 2016. The stage display shows the Tesla P4 and P40 inference accelerators."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c1c659823d8c",
+          "url": "/post/jensen-huang-biography/jensen-huang-biography-bilingual.docx",
+          "title": "Download the Chinese and English biography (Word)",
+          "kind": "file",
+          "format": "DOCX",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Article",
+              "url": "/post/jensen-huang-biography/",
+              "text": "Download the Chinese and English biography (Word)",
+              "notes": [
+                "Information cutoff: October 3, 2026.",
+                "This biography draws on school records, public interviews, company announcements, regulatory filings, and award organizations. Retrospective personal stories retain attribution to the speaker. The downloadable Chinese and English editions use the same reference numbers."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bf1733f77ea5",
+          "url": "https://nvidianews.nvidia.com/bios/jensen-huang",
+          "title": "NVIDIA: Jensen Huang executive biography",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidianews.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Education, work and public milestones",
+              "url": "/post/jensen-huang-biography/#industry-map-jensen-huang-career-0-title",
+              "text": "Sources: NVIDIA: Jensen Huang executive biography · Oneida Baptist Institute: July–August 2018 newsletter · HKUST: 2024 honorary doctorate citation · Oregon State: Huang Engineering Hall of Fame biography · Stanford Technology Ventures Program: Huang biography · NVIDIA: corporate history timeline · NVIDIA: DGX-1 launch announcement, April 5, 2016 · NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) · NVIDIA: Blackwell platform announcement, March 18, 2024 · Stanford: fiscal 2008 financial review, Huang gift commitment · Oneida Baptist Institute: Fall 2019 On Campus newsletter · Oregon State: $50 million Huang gift, October 14, 2022 · HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore the institutions, roles and events documented in this biography.",
+                "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14."
+              ]
+            },
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA: Jensen Huang executive biography . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "a5d5015fdc55",
+          "url": "https://www.oneidaschool.org/copy094915_2018_JulAug_Mountaineer.pdf",
+          "title": "Oneida Baptist Institute: July–August 2018 newsletter",
+          "kind": "file",
+          "format": "PDF",
+          "host": "oneidaschool.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "Education, work and public milestones",
+              "url": "/post/jensen-huang-biography/#industry-map-jensen-huang-career-0-title",
+              "text": "Sources: NVIDIA: Jensen Huang executive biography · Oneida Baptist Institute: July–August 2018 newsletter · HKUST: 2024 honorary doctorate citation · Oregon State: Huang Engineering Hall of Fame biography · Stanford Technology Ventures Program: Huang biography · NVIDIA: corporate history timeline · NVIDIA: DGX-1 launch announcement, April 5, 2016 · NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) · NVIDIA: Blackwell platform announcement, March 18, 2024 · Stanford: fiscal 2008 financial review, Huang gift commitment · Oneida Baptist Institute: Fall 2019 On Campus newsletter · Oregon State: $50 million Huang gift, October 14, 2022 · HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore the institutions, roles and events documented in this biography.",
+                "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14."
+              ]
+            },
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Oneida Baptist Institute: July–August 2018 newsletter . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "ab4d3e21039a",
+          "url": "https://ccss.hkust.edu.hk/sites/default/files/pdf%20files/honorary-doctorates2024/Dr_Jensen_HUANG_EN.pdf",
+          "title": "HKUST: 2024 honorary doctorate citation",
+          "kind": "file",
+          "format": "PDF",
+          "host": "ccss.hkust.edu.hk",
+          "local": false,
+          "citations": [
+            {
+              "section": "Education, work and public milestones",
+              "url": "/post/jensen-huang-biography/#industry-map-jensen-huang-career-0-title",
+              "text": "Sources: NVIDIA: Jensen Huang executive biography · Oneida Baptist Institute: July–August 2018 newsletter · HKUST: 2024 honorary doctorate citation · Oregon State: Huang Engineering Hall of Fame biography · Stanford Technology Ventures Program: Huang biography · NVIDIA: corporate history timeline · NVIDIA: DGX-1 launch announcement, April 5, 2016 · NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) · NVIDIA: Blackwell platform announcement, March 18, 2024 · Stanford: fiscal 2008 financial review, Huang gift commitment · Oneida Baptist Institute: Fall 2019 On Campus newsletter · Oregon State: $50 million Huang gift, October 14, 2022 · HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore the institutions, roles and events documented in this biography.",
+                "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14."
+              ]
+            },
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "HKUST: 2024 honorary doctorate citation . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "866ed72e862e",
+          "url": "https://engineering.oregonstate.edu/alumni-partners/oregon-stater-awards/searchable-awards-database/jen-hsun-huang-engineering-hall",
+          "title": "Oregon State: Huang Engineering Hall of Fame biography",
+          "kind": "link",
+          "format": "Web",
+          "host": "engineering.oregonstate.edu",
+          "local": false,
+          "citations": [
+            {
+              "section": "Education, work and public milestones",
+              "url": "/post/jensen-huang-biography/#industry-map-jensen-huang-career-0-title",
+              "text": "Sources: NVIDIA: Jensen Huang executive biography · Oneida Baptist Institute: July–August 2018 newsletter · HKUST: 2024 honorary doctorate citation · Oregon State: Huang Engineering Hall of Fame biography · Stanford Technology Ventures Program: Huang biography · NVIDIA: corporate history timeline · NVIDIA: DGX-1 launch announcement, April 5, 2016 · NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) · NVIDIA: Blackwell platform announcement, March 18, 2024 · Stanford: fiscal 2008 financial review, Huang gift commitment · Oneida Baptist Institute: Fall 2019 On Campus newsletter · Oregon State: $50 million Huang gift, October 14, 2022 · HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore the institutions, roles and events documented in this biography.",
+                "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14."
+              ]
+            },
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Oregon State: Huang Engineering Hall of Fame biography . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "70d1e95271d2",
+          "url": "https://stvp.stanford.edu/people/jensen-huang",
+          "title": "Stanford Technology Ventures Program: Huang biography",
+          "kind": "link",
+          "format": "Web",
+          "host": "stvp.stanford.edu",
+          "local": false,
+          "citations": [
+            {
+              "section": "Education, work and public milestones",
+              "url": "/post/jensen-huang-biography/#industry-map-jensen-huang-career-0-title",
+              "text": "Sources: NVIDIA: Jensen Huang executive biography · Oneida Baptist Institute: July–August 2018 newsletter · HKUST: 2024 honorary doctorate citation · Oregon State: Huang Engineering Hall of Fame biography · Stanford Technology Ventures Program: Huang biography · NVIDIA: corporate history timeline · NVIDIA: DGX-1 launch announcement, April 5, 2016 · NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) · NVIDIA: Blackwell platform announcement, March 18, 2024 · Stanford: fiscal 2008 financial review, Huang gift commitment · Oneida Baptist Institute: Fall 2019 On Campus newsletter · Oregon State: $50 million Huang gift, October 14, 2022 · HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore the institutions, roles and events documented in this biography.",
+                "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14."
+              ]
+            },
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Stanford Technology Ventures Program: Huang biography . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "1a707a7d7f2a",
+          "url": "https://www.nvidia.com/en-us/about-nvidia/corporate-timeline/",
+          "title": "NVIDIA: corporate history timeline",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Education, work and public milestones",
+              "url": "/post/jensen-huang-biography/#industry-map-jensen-huang-career-0-title",
+              "text": "Sources: NVIDIA: Jensen Huang executive biography · Oneida Baptist Institute: July–August 2018 newsletter · HKUST: 2024 honorary doctorate citation · Oregon State: Huang Engineering Hall of Fame biography · Stanford Technology Ventures Program: Huang biography · NVIDIA: corporate history timeline · NVIDIA: DGX-1 launch announcement, April 5, 2016 · NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) · NVIDIA: Blackwell platform announcement, March 18, 2024 · Stanford: fiscal 2008 financial review, Huang gift commitment · Oneida Baptist Institute: Fall 2019 On Campus newsletter · Oregon State: $50 million Huang gift, October 14, 2022 · HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore the institutions, roles and events documented in this biography.",
+                "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14."
+              ]
+            },
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA: corporate history timeline . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "125846e443df",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-launches-world-s-first-deep-learning-supercomputer-6622436",
+          "title": "NVIDIA: DGX-1 launch announcement, April 5, 2016",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidianews.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Education, work and public milestones",
+              "url": "/post/jensen-huang-biography/#industry-map-jensen-huang-career-0-title",
+              "text": "Sources: NVIDIA: Jensen Huang executive biography · Oneida Baptist Institute: July–August 2018 newsletter · HKUST: 2024 honorary doctorate citation · Oregon State: Huang Engineering Hall of Fame biography · Stanford Technology Ventures Program: Huang biography · NVIDIA: corporate history timeline · NVIDIA: DGX-1 launch announcement, April 5, 2016 · NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) · NVIDIA: Blackwell platform announcement, March 18, 2024 · Stanford: fiscal 2008 financial review, Huang gift commitment · Oneida Baptist Institute: Fall 2019 On Campus newsletter · Oregon State: $50 million Huang gift, October 14, 2022 · HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore the institutions, roles and events documented in this biography.",
+                "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14."
+              ]
+            },
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA: DGX-1 launch announcement, April 5, 2016 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "a552d08ea621",
+          "url": "https://www.marketscreener.com/quote/stock/NVIDIA-CORPORATION-10282/news/NVIDIA-CEO-Delivers-World-s-First-AI-Supercomputer-in-a-Box-to-OpenAI-22903545/",
+          "title": "NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive)",
+          "kind": "link",
+          "format": "Web",
+          "host": "marketscreener.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Education, work and public milestones",
+              "url": "/post/jensen-huang-biography/#industry-map-jensen-huang-career-0-title",
+              "text": "Sources: NVIDIA: Jensen Huang executive biography · Oneida Baptist Institute: July–August 2018 newsletter · HKUST: 2024 honorary doctorate citation · Oregon State: Huang Engineering Hall of Fame biography · Stanford Technology Ventures Program: Huang biography · NVIDIA: corporate history timeline · NVIDIA: DGX-1 launch announcement, April 5, 2016 · NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) · NVIDIA: Blackwell platform announcement, March 18, 2024 · Stanford: fiscal 2008 financial review, Huang gift commitment · Oneida Baptist Institute: Fall 2019 On Campus newsletter · Oregon State: $50 million Huang gift, October 14, 2022 · HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore the institutions, roles and events documented in this biography.",
+                "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14."
+              ]
+            },
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "24203513100c",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-blackwell-platform-arrives-to-power-a-new-era-of-computing",
+          "title": "NVIDIA: Blackwell platform announcement, March 18, 2024",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidianews.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Education, work and public milestones",
+              "url": "/post/jensen-huang-biography/#industry-map-jensen-huang-career-0-title",
+              "text": "Sources: NVIDIA: Jensen Huang executive biography · Oneida Baptist Institute: July–August 2018 newsletter · HKUST: 2024 honorary doctorate citation · Oregon State: Huang Engineering Hall of Fame biography · Stanford Technology Ventures Program: Huang biography · NVIDIA: corporate history timeline · NVIDIA: DGX-1 launch announcement, April 5, 2016 · NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) · NVIDIA: Blackwell platform announcement, March 18, 2024 · Stanford: fiscal 2008 financial review, Huang gift commitment · Oneida Baptist Institute: Fall 2019 On Campus newsletter · Oregon State: $50 million Huang gift, October 14, 2022 · HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore the institutions, roles and events documented in this biography.",
+                "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14."
+              ]
+            },
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA: Blackwell platform announcement, March 18, 2024 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "59130ed70b54",
+          "url": "https://bondholder-information.stanford.edu/sites/g/files/sbiybj21416/files/media/file/stanford-annual-financial-review-2008.pdf",
+          "title": "Stanford: fiscal 2008 financial review, Huang gift commitment",
+          "kind": "file",
+          "format": "PDF",
+          "host": "bondholder-information.stanford.edu",
+          "local": false,
+          "citations": [
+            {
+              "section": "Education, work and public milestones",
+              "url": "/post/jensen-huang-biography/#industry-map-jensen-huang-career-0-title",
+              "text": "Sources: NVIDIA: Jensen Huang executive biography · Oneida Baptist Institute: July–August 2018 newsletter · HKUST: 2024 honorary doctorate citation · Oregon State: Huang Engineering Hall of Fame biography · Stanford Technology Ventures Program: Huang biography · NVIDIA: corporate history timeline · NVIDIA: DGX-1 launch announcement, April 5, 2016 · NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) · NVIDIA: Blackwell platform announcement, March 18, 2024 · Stanford: fiscal 2008 financial review, Huang gift commitment · Oneida Baptist Institute: Fall 2019 On Campus newsletter · Oregon State: $50 million Huang gift, October 14, 2022 · HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore the institutions, roles and events documented in this biography.",
+                "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14."
+              ]
+            },
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Stanford: fiscal 2008 financial review, Huang gift commitment . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "8dc224d5e6f5",
+          "url": "https://www.oneidaschool.org/2019_Fall_OnCampus.pdf",
+          "title": "Oneida Baptist Institute: Fall 2019 On Campus newsletter",
+          "kind": "file",
+          "format": "PDF",
+          "host": "oneidaschool.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "Education, work and public milestones",
+              "url": "/post/jensen-huang-biography/#industry-map-jensen-huang-career-0-title",
+              "text": "Sources: NVIDIA: Jensen Huang executive biography · Oneida Baptist Institute: July–August 2018 newsletter · HKUST: 2024 honorary doctorate citation · Oregon State: Huang Engineering Hall of Fame biography · Stanford Technology Ventures Program: Huang biography · NVIDIA: corporate history timeline · NVIDIA: DGX-1 launch announcement, April 5, 2016 · NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) · NVIDIA: Blackwell platform announcement, March 18, 2024 · Stanford: fiscal 2008 financial review, Huang gift commitment · Oneida Baptist Institute: Fall 2019 On Campus newsletter · Oregon State: $50 million Huang gift, October 14, 2022 · HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore the institutions, roles and events documented in this biography.",
+                "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14."
+              ]
+            },
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Oneida Baptist Institute: Fall 2019 On Campus newsletter . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "5e08e0cddc13",
+          "url": "https://news.oregonstate.edu/news/50-million-gift-nvidia-founder-and-spouse-helps-launch-oregon-state-university-research-center",
+          "title": "Oregon State: $50 million Huang gift, October 14, 2022",
+          "kind": "link",
+          "format": "Web",
+          "host": "news.oregonstate.edu",
+          "local": false,
+          "citations": [
+            {
+              "section": "Education, work and public milestones",
+              "url": "/post/jensen-huang-biography/#industry-map-jensen-huang-career-0-title",
+              "text": "Sources: NVIDIA: Jensen Huang executive biography · Oneida Baptist Institute: July–August 2018 newsletter · HKUST: 2024 honorary doctorate citation · Oregon State: Huang Engineering Hall of Fame biography · Stanford Technology Ventures Program: Huang biography · NVIDIA: corporate history timeline · NVIDIA: DGX-1 launch announcement, April 5, 2016 · NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) · NVIDIA: Blackwell platform announcement, March 18, 2024 · Stanford: fiscal 2008 financial review, Huang gift commitment · Oneida Baptist Institute: Fall 2019 On Campus newsletter · Oregon State: $50 million Huang gift, October 14, 2022 · HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore the institutions, roles and events documented in this biography.",
+                "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14."
+              ]
+            },
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Oregon State: $50 million Huang gift, October 14, 2022 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "af0594f90bc9",
+          "url": "https://seng.hkust.edu.hk/news/20250902/hkust-thanks-esteemed-alumni-jensen-huang-and-terry-tsang-generous-donation-establish-top-engineering-scholars-award",
+          "title": "HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025",
+          "kind": "link",
+          "format": "Web",
+          "host": "seng.hkust.edu.hk",
+          "local": false,
+          "citations": [
+            {
+              "section": "Education, work and public milestones",
+              "url": "/post/jensen-huang-biography/#industry-map-jensen-huang-career-0-title",
+              "text": "Sources: NVIDIA: Jensen Huang executive biography · Oneida Baptist Institute: July–August 2018 newsletter · HKUST: 2024 honorary doctorate citation · Oregon State: Huang Engineering Hall of Fame biography · Stanford Technology Ventures Program: Huang biography · NVIDIA: corporate history timeline · NVIDIA: DGX-1 launch announcement, April 5, 2016 · NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) · NVIDIA: Blackwell platform announcement, March 18, 2024 · Stanford: fiscal 2008 financial review, Huang gift commitment · Oneida Baptist Institute: Fall 2019 On Campus newsletter · Oregon State: $50 million Huang gift, October 14, 2022 · HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore the institutions, roles and events documented in this biography.",
+                "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14."
+              ]
+            },
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "ff374eba1018",
+          "url": "https://commons.wikimedia.org/wiki/File:2484_Berryessa_Road.jpg",
+          "title": "Source",
+          "kind": "link",
+          "format": "Web",
+          "host": "commons.wikimedia.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "6 Three founders in 1993",
+              "url": "/post/jensen-huang-biography/#6-three-founders-in-1993",
+              "text": "Photo: Coolcaesar · Source · CC BY-SA 4.0 .",
+              "notes": [
+                "The Denny’s restaurant at 2484 Berryessa Road in San Jose, associated with NVIDIA’s founding discussions. Photographed on 2 July 2023."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5be3f45044c7",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "title": "CC BY-SA 4.0",
+          "kind": "link",
+          "format": "Web",
+          "host": "creativecommons.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "6 Three founders in 1993",
+              "url": "/post/jensen-huang-biography/#6-three-founders-in-1993",
+              "text": "Photo: Coolcaesar · Source · CC BY-SA 4.0 .",
+              "notes": [
+                "The Denny’s restaurant at 2484 Berryessa Road in San Jose, associated with NVIDIA’s founding discussions. Photographed on 2 July 2023."
+              ]
+            },
+            {
+              "section": "14 Four documented education gifts",
+              "url": "/post/jensen-huang-biography/#14-four-documented-education-gifts",
+              "text": "Photo: Frank Schulenburg · Source · CC BY-SA 4.0 .",
+              "notes": [
+                "Jen-Hsun Huang Engineering Center at Stanford University, photographed on 16 December 2016. The dedication described in the text took place in 2010."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1115d56b816b",
+          "url": "https://commons.wikimedia.org/wiki/File:GTC_Taiwan_2016_%E2%80%93_Tesla_P40_%26_P40.jpg",
+          "title": "Source",
+          "kind": "link",
+          "format": "Web",
+          "host": "commons.wikimedia.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "10 Deep learning and computing systems after 2012",
+              "url": "/post/jensen-huang-biography/#10-deep-learning-and-computing-systems-after-2012",
+              "text": "Photo: NVIDIA Taiwan · Source · CC BY 2.0 .",
+              "notes": [
+                "Jensen Huang at GTC Taiwan on 21 September 2016. The stage display shows the Tesla P4 and P40 inference accelerators."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f9fc58d22aba",
+          "url": "https://commons.wikimedia.org/wiki/File:Jen-Hsun_Huang_Engineering_Center_in_2016.jpg",
+          "title": "Source",
+          "kind": "link",
+          "format": "Web",
+          "host": "commons.wikimedia.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "14 Four documented education gifts",
+              "url": "/post/jensen-huang-biography/#14-four-documented-education-gifts",
+              "text": "Photo: Frank Schulenburg · Source · CC BY-SA 4.0 .",
+              "notes": [
+                "Jen-Hsun Huang Engineering Center at Stanford University, photographed on 16 December 2016. The dedication described in the text took place in 2010."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5dab669d7a0a",
+          "url": "https://commencement.caltech.edu/news/2024-commencement-speaker-jensen-huang",
+          "title": "Caltech: 2024 commencement speaker biography",
+          "kind": "link",
+          "format": "Web",
+          "host": "commencement.caltech.edu",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Caltech: 2024 commencement speaker biography . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "32030adee744",
+          "url": "https://asaptext.com/asap_media/media/1002/1398/transcripts/152690.pdf",
+          "title": "NBA: Huang interview transcript, Technology Summit, February 14, 2025",
+          "kind": "file",
+          "format": "PDF",
+          "host": "asaptext.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NBA: Huang interview transcript, Technology Summit, February 14, 2025 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "cdcde6725418",
+          "url": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-04/2022%20Oregon%20Stater%20Awards%20Magazine%20-%20Owen%20F%20Perry.pdf",
+          "title": "Oregon State: 2022 Oregon Stater Awards magazine",
+          "kind": "file",
+          "format": "PDF",
+          "host": "engineering.oregonstate.edu",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Oregon State: 2022 Oregon Stater Awards magazine . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "3ce661bbc7fd",
+          "url": "https://blogs.nvidia.com/blog/nvidia-dennys-trillion/",
+          "title": "NVIDIA: Huang returns to Denny’s, September 2023",
+          "kind": "link",
+          "format": "Web",
+          "host": "blogs.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA: Huang returns to Denny’s, September 2023 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "056077f21ed9",
+          "url": "https://ecorner.stanford.edu/wp-content/uploads/sites/2/2009/04/2227.pdf",
+          "title": "Stanford eCorner: The First Six Months of NVIDIA, April 8, 2009",
+          "kind": "file",
+          "format": "PDF",
+          "host": "ecorner.stanford.edu",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Stanford eCorner: The First Six Months of NVIDIA, April 8, 2009 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "721d53f15d22",
+          "url": "https://sequoiacap.com/podcast/crucible-moments-nvidia",
+          "title": "Sequoia Capital: Crucible Moments, NVIDIA, episode 8",
+          "kind": "link",
+          "format": "Web",
+          "host": "sequoiacap.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Sequoia Capital: Crucible Moments, NVIDIA, episode 8 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "341f8bc9342b",
+          "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001045810/327515c2-03c2-4795-8946-5968098fa73a.pdf",
+          "title": "NVIDIA: initial public offering prospectus, 1999",
+          "kind": "file",
+          "format": "PDF",
+          "host": "d18rn0p25nwr6d.cloudfront.net",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA: initial public offering prospectus, 1999 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "83caef5831cf",
+          "url": "https://investor.nvidia.com/investor-resources/faqs/default.aspx",
+          "title": "NVIDIA: investor FAQs, IPO date",
+          "kind": "link",
+          "format": "Web",
+          "host": "investor.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA: investor FAQs, IPO date . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "0bfb548d2ed1",
+          "url": "https://blogs.nvidia.com/blog/first-gpu-gaming-ai/",
+          "title": "NVIDIA: GeForce 256 retrospective, October 11, 2024",
+          "kind": "link",
+          "format": "Web",
+          "host": "blogs.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA: GeForce 256 retrospective, October 11, 2024 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "748d4405187d",
+          "url": "https://developer.nvidia.com/cuda",
+          "title": "NVIDIA: CUDA developer documentation",
+          "kind": "link",
+          "format": "Web",
+          "host": "developer.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA: CUDA developer documentation . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "9c1967bf835e",
+          "url": "https://www.cs.toronto.edu/~kriz/imagenet_classification_with_deep_convolutional.pdf",
+          "title": "Krizhevsky et al.: ImageNet Classification with Deep Convolutional Neural Networks, 2012",
+          "kind": "file",
+          "format": "PDF",
+          "host": "cs.toronto.edu",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Krizhevsky et al.: ImageNet Classification with Deep Convolutional Neural Networks, 2012 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "8838000a925e",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/quarterly_reports/2009/10K-2009-Q4.pdf",
+          "title": "NVIDIA: fiscal 2009 annual report",
+          "kind": "file",
+          "format": "PDF",
+          "host": "s201.q4cdn.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA: fiscal 2009 annual report . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "e86a76118d2f",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-completes-acquisition-of-mellanox-creating-major-force-driving-next-gen-data-centers",
+          "title": "NVIDIA: completion of Mellanox acquisition, April 27, 2020",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidianews.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA: completion of Mellanox acquisition, April 27, 2020 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "db59a500c5da",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-softbank-group-announce-termination-of-nvidias-acquisition-of-arm-limited",
+          "title": "NVIDIA and SoftBank: termination of Arm acquisition, February 2022",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidianews.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA and SoftBank: termination of Arm acquisition, February 2022 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "bf855f01b2cb",
+          "url": "https://ecorner.stanford.edu/wp-content/uploads/sites/2/2003/01/1122.pdf",
+          "title": "Stanford eCorner: The Power of Corporate Culture, January 29, 2003",
+          "kind": "file",
+          "format": "PDF",
+          "host": "ecorner.stanford.edu",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Stanford eCorner: The Power of Corporate Culture, January 29, 2003 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "eeaeb3ee827b",
+          "url": "https://www.gsb.stanford.edu/insights/jensen-huang-how-use-first-principles-thinking-drive-decisions",
+          "title": "Stanford GSB: Huang on first-principles thinking, April 25, 2024",
+          "kind": "link",
+          "format": "Web",
+          "host": "gsb.stanford.edu",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Stanford GSB: Huang on first-principles thinking, April 25, 2024 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "e2ecaa145c64",
+          "url": "https://hkust.edu.hk/news/quips-chips-dr-jensen-huang-spots-world-ai",
+          "title": "HKUST: Huang–Harry Shum fireside chat, November 23, 2024",
+          "kind": "link",
+          "format": "Web",
+          "host": "hkust.edu.hk",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "HKUST: Huang–Harry Shum fireside chat, November 23, 2024 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "bb601d56c368",
+          "url": "https://engineering.stanford.edu/news/huang-center-dedicated-lauded-stanfords-engineering-anchor",
+          "title": "Stanford Engineering: Huang Center dedication",
+          "kind": "link",
+          "format": "Web",
+          "host": "engineering.stanford.edu",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Stanford Engineering: Huang Center dedication . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "0589692de432",
+          "url": "https://qeprize.org/winners/modern-machine-learning",
+          "title": "QEPrize: 2025 Modern Machine Learning laureates",
+          "kind": "link",
+          "format": "Web",
+          "host": "qeprize.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "QEPrize: 2025 Modern Machine Learning laureates . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "88c6aeea940c",
+          "url": "https://innovate.ieee.org/ieee-medal-of-honor-2026/",
+          "title": "IEEE: 2026 Medal of Honor ceremony account",
+          "kind": "link",
+          "format": "Web",
+          "host": "innovate.ieee.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "IEEE: 2026 Medal of Honor ceremony account . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "7d8b94c90c3b",
+          "url": "https://www.whitehouse.gov/releases/2026/03/president-trump-announces-appointments-to-presidents-council-of-advisors-on-science-and-technology/",
+          "title": "White House: PCAST appointments, March 25, 2026",
+          "kind": "link",
+          "format": "Web",
+          "host": "whitehouse.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "White House: PCAST appointments, March 25, 2026 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "eae5e029df87",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000036/nvda-20260512.htm",
+          "title": "NVIDIA: 2026 proxy statement",
+          "kind": "link",
+          "format": "Web",
+          "host": "sec.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA: 2026 proxy statement . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "d10a81010aa0",
+          "url": "https://engineering.stanford.edu/news/jen-hsun-huang-nvidia-co-founder-invests-next-generation-stanford-engineers",
+          "title": "Stanford Engineering: Huang interview following the 2010 Huang Center dedication",
+          "kind": "link",
+          "format": "Web",
+          "host": "engineering.stanford.edu",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Stanford Engineering: Huang interview following the 2010 Huang Center dedication . Return to citation",
               "notes": []
             }
           ]
@@ -7220,9 +9541,9 @@
     }
   ],
   "counts": {
-    "articles": 9,
-    "materials": 309,
-    "files": 42,
-    "hosted_files": 12
+    "articles": 11,
+    "materials": 397,
+    "files": 71,
+    "hosted_files": 16
   }
 }

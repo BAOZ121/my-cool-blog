@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3600" height="2400" viewBox="0 0 3600 2400" role="img" aria-labelledby="title desc">
+<title id="title">Vehicle battery usage by supplier</title>
+<desc id="desc">Ring chart of January–August 2026 vehicle battery energy usage across 80 countries: CATL 39.4%, BYD 15.1%, LG Energy Solution 8.1%, CALB 5.3%, Gotion 4.9%, and other suppliers 27.2%. Total 844.2 GWh. Source SNE Research; stationary storage excluded.</desc>
+<rect width="3600" height="2400" fill="#FFFFFF"/>
+<text x="150" y="145" font-family="Arial, sans-serif" font-size="92" font-weight="700" fill="#163049" text-anchor="start" dominant-baseline="central">Vehicle battery usage by supplier</text>
+<text x="150" y="270" font-family="Arial, sans-serif" font-size="47" font-weight="400" fill="#536577" text-anchor="start" dominant-baseline="central">January-August 2026  |  80 countries  |  Share of battery energy installed (%)</text>
+<text x="150" y="350" font-family="Arial, sans-serif" font-size="48" font-weight="400" fill="#536577" text-anchor="start" dominant-baseline="central">Registered EV, PHEV and HEV vehicles; stationary storage excluded</text>
+<path d="M 940.00000 602.50000 A 527.5 527.5 0 0 1 1265.92095 1544.76715" fill="none" stroke="#2472AB" stroke-width="255"/>
+<path d="M 1265.92095 1544.76715 A 527.5 527.5 0 0 1 792.83219 1636.55492" fill="none" stroke="#138F86" stroke-width="255"/>
+<path d="M 792.83219 1636.55492 A 527.5 527.5 0 0 1 564.66493 1500.64786" fill="none" stroke="#50A5C7" stroke-width="255"/>
+<path d="M 564.66493 1500.64786 A 527.5 527.5 0 0 1 464.12434 1357.59306" fill="none" stroke="#A7772E" stroke-width="255"/>
+<path d="M 464.12434 1357.59306 A 527.5 527.5 0 0 1 417.53160 1202.68438" fill="none" stroke="#789463" stroke-width="255"/>
+<path d="M 417.53160 1202.68438 A 527.5 527.5 0 0 1 940.00000 602.50000" fill="none" stroke="#BAC5D0" stroke-width="255"/>
+<text x="940" y="985" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#536577" text-anchor="middle" dominant-baseline="central">TOTAL USAGE</text>
+<text x="940" y="1120" font-family="Arial, sans-serif" font-size="145" font-weight="700" fill="#163049" text-anchor="middle" dominant-baseline="central">844.2</text>
+<text x="940" y="1265" font-family="Arial, sans-serif" font-size="75" font-weight="400" fill="#536577" text-anchor="middle" dominant-baseline="central">GWh</text>
+<text x="1900" y="565" font-family="Arial, sans-serif" font-size="45" font-weight="700" fill="#536577" text-anchor="start" dominant-baseline="central">SUPPLIER</text>
+<text x="3440" y="565" font-family="Arial, sans-serif" font-size="45" font-weight="700" fill="#536577" text-anchor="end" dominant-baseline="central">SHARE</text>
+<rect x="1900" y="697" width="66" height="66" rx="10" fill="#2472AB" stroke="none" stroke-width="3"/>
+<text x="2010" y="730" font-family="Arial, sans-serif" font-size="63" font-weight="700" fill="#163049" text-anchor="start" dominant-baseline="central">CATL</text>
+<text x="3440" y="730" font-family="Arial, sans-serif" font-size="88" font-weight="700" fill="#163049" text-anchor="end" dominant-baseline="central">39.4%</text>
+<rect x="1900" y="887" width="66" height="66" rx="10" fill="#138F86" stroke="none" stroke-width="3"/>
+<text x="2010" y="920" font-family="Arial, sans-serif" font-size="63" font-weight="700" fill="#163049" text-anchor="start" dominant-baseline="central">BYD</text>
+<text x="3440" y="920" font-family="Arial, sans-serif" font-size="88" font-weight="700" fill="#163049" text-anchor="end" dominant-baseline="central">15.1%</text>
+<rect x="1900" y="1077" width="66" height="66" rx="10" fill="#50A5C7" stroke="none" stroke-width="3"/>
+<text x="2010" y="1110" font-family="Arial, sans-serif" font-size="63" font-weight="700" fill="#163049" text-anchor="start" dominant-baseline="central">LG Energy Solution</text>
+<text x="3440" y="1110" font-family="Arial, sans-serif" font-size="88" font-weight="700" fill="#163049" text-anchor="end" dominant-baseline="central">8.1%</text>
+<rect x="1900" y="1267" width="66" height="66" rx="10" fill="#A7772E" stroke="none" stroke-width="3"/>
+<text x="2010" y="1300" font-family="Arial, sans-serif" font-size="63" font-weight="700" fill="#163049" text-anchor="start" dominant-baseline="central">CALB</text>
+<text x="3440" y="1300" font-family="Arial, sans-serif" font-size="88" font-weight="700" fill="#163049" text-anchor="end" dominant-baseline="central">5.3%</text>
+<rect x="1900" y="1457" width="66" height="66" rx="10" fill="#789463" stroke="none" stroke-width="3"/>
+<text x="2010" y="1490" font-family="Arial, sans-serif" font-size="63" font-weight="700" fill="#163049" text-anchor="start" dominant-baseline="central">Gotion</text>
+<text x="3440" y="1490" font-family="Arial, sans-serif" font-size="88" font-weight="700" fill="#163049" text-anchor="end" dominant-baseline="central">4.9%</text>
+<rect x="1900" y="1647" width="66" height="66" rx="10" fill="#BAC5D0" stroke="none" stroke-width="3"/>
+<text x="2010" y="1680" font-family="Arial, sans-serif" font-size="63" font-weight="700" fill="#163049" text-anchor="start" dominant-baseline="central">Other suppliers</text>
+<text x="3440" y="1680" font-family="Arial, sans-serif" font-size="88" font-weight="700" fill="#163049" text-anchor="end" dominant-baseline="central">27.2%</text>
+<polyline points="150,1930 3450,1930" fill="none" stroke="#D7E0E8" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="150" y="2020" font-family="Arial, sans-serif" font-size="45" font-weight="400" fill="#536577" text-anchor="start" dominant-baseline="central">Source: SNE Research [M01], 2 Oct 2026; original supplier table read 6 Oct 2026.</text>
+<text x="150" y="2110" font-family="Arial, sans-serif" font-size="45" font-weight="400" fill="#536577" text-anchor="start" dominant-baseline="central">Third-party estimates. Other suppliers = 100 - 39.4 - 15.1 - 8.1 - 5.3 - 4.9 = 27.2%.</text>
+<text x="150" y="2200" font-family="Arial, sans-serif" font-size="45" font-weight="400" fill="#536577" text-anchor="start" dominant-baseline="central">Other suppliers includes every supplier outside the five named companies; calculated residual.</text>
+<text x="150" y="2290" font-family="Arial, sans-serif" font-size="45" font-weight="400" fill="#536577" text-anchor="start" dominant-baseline="central">Published CATL + BYD total 54.6%; rounded components total 54.5%. Cause unverified.</text>
+</svg>
