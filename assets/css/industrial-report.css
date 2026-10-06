@@ -1,0 +1,47 @@
+.article-content .research-preview-note {
+  padding: 12px 16px;
+  border-left: 3px solid #b7924f;
+  background: var(--card-background-selected, rgba(183, 146, 79, .07));
+  font-size: 14px;
+  line-height: 1.6;
+}
+.article-content .evidence-cite { font-size: .82em; text-underline-offset: 3px; }
+.article-content .research-photo { margin: 32px 0; }
+.article-content .research-photo > a { display: block; border: 0; }
+.article-content .research-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border-radius: 8px;
+  box-shadow: none;
+}
+.article-content .research-photo figcaption {
+  margin-top: 12px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--card-text-color-secondary);
+}
+.article-content .research-photo figcaption small { font-size: 12px; }
+.article-content .research-figure-caption,
+.article-content .research-table-note,
+.article-content .research-downloads { font-size: 13px; line-height: 1.7; }
+.article-content .research-table-wrap { max-width: 100%; overflow-x: auto; margin: 18px 0 8px; }
+.article-content .research-table-wrap table { display: table; width: 100%; margin: 0; font-size: 14px; line-height: 1.65; }
+.article-content .research-table-wrap td { vertical-align: top; }
+.article-content .research-evidence { padding: 22px 0; border-top: 1px solid var(--card-separator-color, #ddd); scroll-margin-top: 80px; }
+.article-content .research-evidence > h3 { margin: 0 0 12px; font-size: 18px; line-height: 1.5; }
+.article-content .research-evidence p { font-size: 14px; line-height: 1.75; margin: 10px 0; }
+.article-content .research-source-identity { color: var(--card-text-color-secondary); font-size: 12px; }
+.article-content .research-evidence summary { cursor: pointer; padding: 8px 0; min-height: 44px; font-size: 13px; }
+.article-content .research-evidence dl { font-size: 13px; line-height: 1.75; }
+.article-content .research-evidence dt { margin-top: 12px; font-weight: 650; }
+.article-content .research-evidence dd { margin: 3px 0 0; overflow-wrap: anywhere; }
+.article-content .research-evidence a { overflow-wrap: anywhere; }
+@media (max-width: 767px) {
+  .main-article .article-header .article-image img { height: auto; object-fit: contain; }
+  .article-content .research-table-wrap table { min-width: 610px; }
+  .article-content .research-photo { margin: 24px 0; }
+  .article-content .research-evidence > h3 { font-size: 17px; }
+}

@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2500" height="1560" viewBox="0 0 2500 1560">
+<rect width="100%" height="100%" fill="white"/>
+<text x="60" y="80.9" font-family="Arial, sans-serif" font-size="51" font-weight="700" fill="#172B3A">Industrial Automation and Industrial Software</text>
+<text x="60" y="126.1" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#172B3A">Value chain | Global representative products | Evidence cutoff 5 October 2026</text>
+<rect x="55" y="520" width="290" height="265" rx="15" fill="#E8EEF2" stroke="#BAC8CF" stroke-width="2"/>
+<text x="73" y="564.4" font-family="Arial, sans-serif" font-size="36" font-weight="400" fill="#172B3A">Industrial</text>
+<text x="73" y="609.4" font-family="Arial, sans-serif" font-size="36" font-weight="400" fill="#172B3A">Automation</text>
+<text x="73" y="654.4" font-family="Arial, sans-serif" font-size="36" font-weight="400" fill="#172B3A">and Industrial</text>
+<text x="73" y="699.4" font-family="Arial, sans-serif" font-size="36" font-weight="400" fill="#172B3A">Software</text>
+<rect x="450" y="281" width="225" height="76" rx="15" fill="#E4F0F3" stroke="#BAC8CF" stroke-width="2"/>
+<text x="468" y="322.7" font-family="Arial, sans-serif" font-size="33" font-weight="400" fill="#172B3A">Upstream</text>
+<polyline points="345,652 395,652 395,316.0 450,316.0" fill="none" stroke="#728996" stroke-width="3"/>
+<polyline points="713,218 713,414" fill="none" stroke="#728996" stroke-width="3"/>
+<polyline points="675,316.0 713,316.0" fill="none" stroke="#728996" stroke-width="3"/>
+<rect x="765" y="175" width="540" height="94" rx="15" fill="#E4F0F3" stroke="#BAC8CF" stroke-width="2"/>
+<text x="783" y="215.8" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#172B3A">Semiconductors</text>
+<polyline points="713,218 765,218" fill="none" stroke="#728996" stroke-width="3"/>
+<rect x="1400" y="175" width="1040" height="94" rx="15" fill="#F7F9FA" stroke="#BAC8CF" stroke-width="2"/>
+<text x="1418" y="214.9" font-family="Arial, sans-serif" font-size="31" font-weight="400" fill="#172B3A">Texas Instruments analog and embedded chips [E004]</text>
+<polyline points="1305,218 1400,218" fill="none" stroke="#728996" stroke-width="3"/>
+<rect x="765" y="273" width="540" height="94" rx="15" fill="#E4F0F3" stroke="#BAC8CF" stroke-width="2"/>
+<text x="783" y="313.8" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#172B3A">Sensing and machine vision</text>
+<polyline points="713,316 765,316" fill="none" stroke="#728996" stroke-width="3"/>
+<rect x="1400" y="273" width="1040" height="94" rx="15" fill="#F7F9FA" stroke="#BAC8CF" stroke-width="2"/>
+<text x="1418" y="312.9" font-family="Arial, sans-serif" font-size="31" font-weight="400" fill="#172B3A">SICK sensors, cameras and encoders [E005]</text>
+<polyline points="1305,316 1400,316" fill="none" stroke="#728996" stroke-width="3"/>
+<rect x="765" y="371" width="540" height="94" rx="15" fill="#E4F0F3" stroke="#BAC8CF" stroke-width="2"/>
+<text x="783" y="411.8" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#172B3A">Drives and motors</text>
+<polyline points="713,414 765,414" fill="none" stroke="#728996" stroke-width="3"/>
+<rect x="1400" y="371" width="1040" height="94" rx="15" fill="#F7F9FA" stroke="#BAC8CF" stroke-width="2"/>
+<text x="1418" y="410.9" font-family="Arial, sans-serif" font-size="31" font-weight="400" fill="#172B3A">Inovance AC drives, servo drives and motors [E021]</text>
+<polyline points="1305,414 1400,414" fill="none" stroke="#728996" stroke-width="3"/>
+<rect x="450" y="771" width="225" height="76" rx="15" fill="#EBEEF5" stroke="#BAC8CF" stroke-width="2"/>
+<text x="468" y="812.7" font-family="Arial, sans-serif" font-size="33" font-weight="400" fill="#172B3A">Midstream</text>
+<polyline points="345,652 395,652 395,806.0 450,806.0" fill="none" stroke="#728996" stroke-width="3"/>
+<polyline points="713,512 713,1100" fill="none" stroke="#728996" stroke-width="3"/>
+<polyline points="675,806.0 713,806.0" fill="none" stroke="#728996" stroke-width="3"/>
+<rect x="765" y="469" width="540" height="94" rx="15" fill="#EBEEF5" stroke="#BAC8CF" stroke-width="2"/>
+<text x="783" y="509.8" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#172B3A">PLC and distributed control</text>
+<text x="783" y="550.8" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#172B3A">systems</text>
+<polyline points="713,512 765,512" fill="none" stroke="#728996" stroke-width="3"/>
+<rect x="1400" y="469" width="1040" height="94" rx="15" fill="#F7F9FA" stroke="#BAC8CF" stroke-width="2"/>
+<text x="1418" y="508.9" font-family="Arial, sans-serif" font-size="31" font-weight="400" fill="#172B3A">Siemens SIMATIC; SUPCON ECS-700 DCS [E019, E006]; Inovance</text>
+<text x="1418" y="548.9" font-family="Arial, sans-serif" font-size="31" font-weight="400" fill="#172B3A">H5U PLC [E024]</text>
+<polyline points="1305,512 1400,512" fill="none" stroke="#728996" stroke-width="3"/>
+<rect x="765" y="567" width="540" height="94" rx="15" fill="#EBEEF5" stroke="#BAC8CF" stroke-width="2"/>
+<text x="783" y="607.8" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#172B3A">HMI, SCADA and process data</text>
+<polyline points="713,610 765,610" fill="none" stroke="#728996" stroke-width="3"/>
+<rect x="1400" y="567" width="1040" height="94" rx="15" fill="#F7F9FA" stroke="#BAC8CF" stroke-width="2"/>
+<text x="1418" y="606.9" font-family="Arial, sans-serif" font-size="31" font-weight="400" fill="#172B3A">AVEVA Operations Control [E008]</text>
+<polyline points="1305,610 1400,610" fill="none" stroke="#728996" stroke-width="3"/>
+<rect x="765" y="665" width="540" height="94" rx="15" fill="#EBEEF5" stroke="#BAC8CF" stroke-width="2"/>
+<text x="783" y="705.8" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#172B3A">Manufacturing execution systems</text>
+<polyline points="713,708 765,708" fill="none" stroke="#728996" stroke-width="3"/>
+<rect x="1400" y="665" width="1040" height="94" rx="15" fill="#F7F9FA" stroke="#BAC8CF" stroke-width="2"/>
+<text x="1418" y="704.9" font-family="Arial, sans-serif" font-size="31" font-weight="400" fill="#172B3A">Rockwell FactoryTalk ProductionCentre and Plex [E007]</text>
+<polyline points="1305,708 1400,708" fill="none" stroke="#728996" stroke-width="3"/>
+<rect x="765" y="763" width="540" height="94" rx="15" fill="#EBEEF5" stroke="#BAC8CF" stroke-width="2"/>
+<text x="783" y="803.8" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#172B3A">CAD and engineering simulation</text>
+<polyline points="713,806 765,806" fill="none" stroke="#728996" stroke-width="3"/>
+<rect x="1400" y="763" width="1040" height="94" rx="15" fill="#F7F9FA" stroke="#BAC8CF" stroke-width="2"/>
+<text x="1418" y="802.9" font-family="Arial, sans-serif" font-size="31" font-weight="400" fill="#172B3A">Dassault Systèmes CATIA and SIMULIA [E020]</text>
+<polyline points="1305,806 1400,806" fill="none" stroke="#728996" stroke-width="3"/>
+<rect x="765" y="861" width="540" height="94" rx="15" fill="#EBEEF5" stroke="#BAC8CF" stroke-width="2"/>
+<text x="783" y="901.8" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#172B3A">Product lifecycle management</text>
+<polyline points="713,904 765,904" fill="none" stroke="#728996" stroke-width="3"/>
+<rect x="1400" y="861" width="1040" height="94" rx="15" fill="#F7F9FA" stroke="#BAC8CF" stroke-width="2"/>
+<text x="1418" y="900.9" font-family="Arial, sans-serif" font-size="31" font-weight="400" fill="#172B3A">PTC Windchill; Dassault Systèmes ENOVIA [E009, E020]</text>
+<polyline points="1305,904 1400,904" fill="none" stroke="#728996" stroke-width="3"/>
+<rect x="765" y="959" width="540" height="94" rx="15" fill="#EBEEF5" stroke="#BAC8CF" stroke-width="2"/>
+<text x="783" y="999.8" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#172B3A">Manufacturing planning and</text>
+<text x="783" y="1040.8" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#172B3A">operations</text>
+<polyline points="713,1002 765,1002" fill="none" stroke="#728996" stroke-width="3"/>
+<rect x="1400" y="959" width="1040" height="94" rx="15" fill="#F7F9FA" stroke="#BAC8CF" stroke-width="2"/>
+<text x="1418" y="998.9" font-family="Arial, sans-serif" font-size="31" font-weight="400" fill="#172B3A">Dassault Systèmes DELMIA [E020]</text>
+<polyline points="1305,1002 1400,1002" fill="none" stroke="#728996" stroke-width="3"/>
+<rect x="765" y="1057" width="540" height="94" rx="15" fill="#EBEEF5" stroke="#BAC8CF" stroke-width="2"/>
+<text x="783" y="1097.8" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#172B3A">Industrial robotic equipment</text>
+<polyline points="713,1100 765,1100" fill="none" stroke="#728996" stroke-width="3"/>
+<rect x="1400" y="1057" width="1040" height="94" rx="15" fill="#F7F9FA" stroke="#BAC8CF" stroke-width="2"/>
+<text x="1418" y="1096.9" font-family="Arial, sans-serif" font-size="31" font-weight="400" fill="#172B3A">Inovance industrial robot portfolio [E021]</text>
+<polyline points="1305,1100 1400,1100" fill="none" stroke="#728996" stroke-width="3"/>
+<rect x="450" y="1212" width="225" height="76" rx="15" fill="#F6EDE5" stroke="#BAC8CF" stroke-width="2"/>
+<text x="468" y="1253.7" font-family="Arial, sans-serif" font-size="33" font-weight="400" fill="#172B3A">Downstream</text>
+<polyline points="345,652 395,652 395,1247.0 450,1247.0" fill="none" stroke="#728996" stroke-width="3"/>
+<polyline points="713,1198 713,1296" fill="none" stroke="#728996" stroke-width="3"/>
+<polyline points="675,1247.0 713,1247.0" fill="none" stroke="#728996" stroke-width="3"/>
+<rect x="765" y="1155" width="540" height="94" rx="15" fill="#F6EDE5" stroke="#BAC8CF" stroke-width="2"/>
+<text x="783" y="1195.8" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#172B3A">Machine building and integration</text>
+<polyline points="713,1198 765,1198" fill="none" stroke="#728996" stroke-width="3"/>
+<rect x="1400" y="1155" width="1040" height="94" rx="15" fill="#F7F9FA" stroke="#BAC8CF" stroke-width="2"/>
+<text x="1418" y="1194.9" font-family="Arial, sans-serif" font-size="31" font-weight="400" fill="#172B3A">thyssenkrupp Automation Engineering [E012]</text>
+<polyline points="1305,1198 1400,1198" fill="none" stroke="#728996" stroke-width="3"/>
+<rect x="765" y="1253" width="540" height="94" rx="15" fill="#F6EDE5" stroke="#BAC8CF" stroke-width="2"/>
+<text x="783" y="1293.8" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#172B3A">Factory operations</text>
+<polyline points="713,1296 765,1296" fill="none" stroke="#728996" stroke-width="3"/>
+<rect x="1400" y="1253" width="1040" height="94" rx="15" fill="#F7F9FA" stroke="#BAC8CF" stroke-width="2"/>
+<text x="1418" y="1292.9" font-family="Arial, sans-serif" font-size="31" font-weight="400" fill="#172B3A">Siemens Electronics Factory Erlangen [E012]</text>
+<polyline points="1305,1296 1400,1296" fill="none" stroke="#728996" stroke-width="3"/>
+<text x="60" y="1444.3" font-family="Arial, sans-serif" font-size="27" font-weight="400" fill="#172B3A">Branches show product categories, not procurement contracts. Companies may appear in several roles.</text>
+<text x="60" y="1488.4" font-family="Arial, sans-serif" font-size="26" font-weight="400" fill="#172B3A">Sources: official product pages and dated announcements [E004, E005, E006, E007, E008, E009, E012, E019, E020, E021, E024].</text>
+</svg>

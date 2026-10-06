@@ -1739,6 +1739,177 @@
       ],
       "reviewed": "2026-10-03"
     },
+    "industrial-automation-software": {
+      "title": "Industrial automation and industrial software: the value chain",
+      "description": "Global representative products and users. Expand a branch to explore the four levels: industry, stage, function, and company or product.",
+      "root": {
+        "name": "Industrial Automation and Industrial Software",
+        "children": [
+          {
+            "name": "Upstream",
+            "children": [
+              {
+                "name": "Semiconductors",
+                "children": [
+                  {
+                    "name": "Texas Instruments analog and embedded chips [E004]"
+                  }
+                ]
+              },
+              {
+                "name": "Sensing and machine vision",
+                "children": [
+                  {
+                    "name": "SICK sensors, cameras and encoders [E005]"
+                  }
+                ]
+              },
+              {
+                "name": "Drives and motors",
+                "children": [
+                  {
+                    "name": "Inovance AC drives, servo drives and motors [E021]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Midstream",
+            "children": [
+              {
+                "name": "PLC and distributed control systems",
+                "children": [
+                  {
+                    "name": "Siemens SIMATIC; SUPCON ECS-700 DCS [E019, E006]"
+                  },
+                  {
+                    "name": "Inovance H5U PLC [E024]"
+                  }
+                ]
+              },
+              {
+                "name": "HMI, SCADA and process data",
+                "children": [
+                  {
+                    "name": "AVEVA Operations Control [E008]"
+                  }
+                ]
+              },
+              {
+                "name": "Manufacturing execution systems",
+                "children": [
+                  {
+                    "name": "Rockwell FactoryTalk ProductionCentre and Plex [E007]"
+                  }
+                ]
+              },
+              {
+                "name": "CAD and engineering simulation",
+                "children": [
+                  {
+                    "name": "Dassault Systèmes CATIA and SIMULIA [E020]"
+                  }
+                ]
+              },
+              {
+                "name": "Product lifecycle management",
+                "children": [
+                  {
+                    "name": "PTC Windchill; Dassault Systèmes ENOVIA [E009, E020]"
+                  }
+                ]
+              },
+              {
+                "name": "Manufacturing planning and operations",
+                "children": [
+                  {
+                    "name": "Dassault Systèmes DELMIA [E020]"
+                  }
+                ]
+              },
+              {
+                "name": "Industrial robotic equipment",
+                "children": [
+                  {
+                    "name": "Inovance industrial robot portfolio [E021]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Downstream",
+            "children": [
+              {
+                "name": "Machine building and integration",
+                "children": [
+                  {
+                    "name": "thyssenkrupp Automation Engineering [E012]"
+                  }
+                ]
+              },
+              {
+                "name": "Factory operations",
+                "children": [
+                  {
+                    "name": "Siemens Electronics Factory Erlangen [E012]"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "E004",
+          "url": "/post/industrial-automation-software-industry-report/#evidence-E004"
+        },
+        {
+          "title": "E005",
+          "url": "/post/industrial-automation-software-industry-report/#evidence-E005"
+        },
+        {
+          "title": "E021",
+          "url": "/post/industrial-automation-software-industry-report/#evidence-E021"
+        },
+        {
+          "title": "E019",
+          "url": "/post/industrial-automation-software-industry-report/#evidence-E019"
+        },
+        {
+          "title": "E006",
+          "url": "/post/industrial-automation-software-industry-report/#evidence-E006"
+        },
+        {
+          "title": "E024",
+          "url": "/post/industrial-automation-software-industry-report/#evidence-E024"
+        },
+        {
+          "title": "E008",
+          "url": "/post/industrial-automation-software-industry-report/#evidence-E008"
+        },
+        {
+          "title": "E007",
+          "url": "/post/industrial-automation-software-industry-report/#evidence-E007"
+        },
+        {
+          "title": "E020",
+          "url": "/post/industrial-automation-software-industry-report/#evidence-E020"
+        },
+        {
+          "title": "E009",
+          "url": "/post/industrial-automation-software-industry-report/#evidence-E009"
+        },
+        {
+          "title": "E012",
+          "url": "/post/industrial-automation-software-industry-report/#evidence-E012"
+        }
+      ],
+      "note": "Connections classify product roles; they do not establish procurement contracts. Companies may appear in several roles. Evidence cutoff: 5 October 2026.",
+      "reviewed": "2026-10-06"
+    },
     "nvidia-products": {
       "title": "NVIDIA’s product and software map",
       "eyebrow": "COMPANY PRODUCT MAP",
@@ -2172,6 +2343,36 @@
       },
       "note": "Other suppliers = 100 − 39.4 − 15.1 − 8.1 − 5.3 − 4.9 = 27.2%; the five named suppliers total 72.8%. SNE publishes CATL plus BYD at 54.6%; its one-decimal company values sum to 54.5%. The reason is unverified. Company values are not renormalised. Other suppliers is the complement of the five shown, not the source table’s separate Others category.",
       "unit": "%",
+      "reviewed": "2026-10-06"
+    },
+    "industrial-automation-software": {
+      "title": "China industrial-robot installations by supplier origin",
+      "eyebrow": "INDUSTRIAL ROBOT SUBMARKET",
+      "period": "Calendar 2025",
+      "geography": "China",
+      "scope": "Annual new industrial-robot installations, grouped by supplier origin. IFR reports approximately 354,000 installations in China in 2025.",
+      "metric": "Share of annual new installations (%)",
+      "dimension": "Supplier origin",
+      "series": [
+        {
+          "name": "Chinese suppliers",
+          "value": 55
+        },
+        {
+          "name": "All other suppliers",
+          "value": 45
+        }
+      ],
+      "unit": "%",
+      "percentDecimals": 0,
+      "center_label": "2025\nChina",
+      "source": {
+        "publisher": "International Federation of Robotics (IFR)",
+        "title": "Five Million Robots now Operate in Factories Globally",
+        "published": "2026-09-24",
+        "url": "https://ifr.org/ifr-press-releases/news/five-million-robots-now-operate-in-factories-globally"
+      },
+      "note": "IFR directly reports Chinese suppliers at 55%; all other suppliers = 100% − 55% = 45%. Percentages retain the published integer precision. These are shares of installations in a named submarket, not global automation or software revenue, or individual vendor shares. [E204]",
       "reviewed": "2026-10-06"
     },
     "nvidia-platform-revenue-fy2026": {
