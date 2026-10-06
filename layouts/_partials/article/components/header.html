@@ -1,6 +1,6 @@
 {{- $IsList := .IsList -}}
 {{- $Page := .Page -}}
-<header class="article-header" data-article-url="{{ $Page.RelPermalink }}">
+<header class="article-header{{ if $Page.Params.biography }} biography-header{{ end }}" data-article-url="{{ $Page.RelPermalink }}">
     {{- $image := partial "helper/image" (dict "Image" $Page.Params.image "Resources" $Page.Resources "Context" $Page) -}}
     {{ if $image }}
     <div class="article-image" data-transition-cover>
@@ -17,7 +17,8 @@
             {{- end -}}
             {{ partial "helper/responsive-image" (dict
                 "Attributes" (merge $cover (dict
-                    "alt" (printf "Featured image of post %s" $Page.Title)
+                    "data-article-cover" "true"
+                    "alt" ($Page.Params.imageAlt | default (printf "Featured image of post %s" $Page.Title))
                     "loading" (cond (or .IsLead (not $IsList)) "eager" "lazy")
                     "fetchpriority" (cond (or .IsLead (not $IsList)) "high" "auto")
                     "decoding" "async"

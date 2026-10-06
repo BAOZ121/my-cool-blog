@@ -4,7 +4,7 @@
 {{- $uid := printf "industry-map-%s-%d" $id .Ordinal -}}
 <figure id="industry-map-{{ $id }}" class="article-visual" data-visual="map" data-vendor="{{ "vendor/article-visuals/markmap.js" | relURL }}" aria-labelledby="{{ $uid }}-title">
     <header class="visual-header">
-        <p class="visual-eyebrow">INDUSTRY MAP</p>
+        <p class="visual-eyebrow">{{ $map.eyebrow | default "INDUSTRY MAP" }}</p>
         <h3 id="{{ $uid }}-title">{{ $map.title }}</h3>
         <p>{{ $map.description }}</p>
     </header>
