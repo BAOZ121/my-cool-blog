@@ -389,3 +389,29 @@
     max-height: none;
     object-fit: contain;
 }
+
+/* Carry the NVIDIA article palette into its listing card in either site scheme. */
+@media screen {
+    .article-list article.biography-card--nvidia {
+        --accent-color: #76b900;
+        --accent-color-darker: #98d642;
+        --accent-color-text: #0b1105;
+        --card-background: #11160f;
+        --card-text-color-main: #edf4e5;
+        --card-text-color-secondary: #b6c4ab;
+        --card-text-color-tertiary: #b6c4ab;
+        --card-separator-color: #34452a;
+        border: 1px solid var(--card-separator-color);
+
+        &:hover,
+        &:focus-within {
+            border-color: var(--accent-color);
+        }
+
+        .article-title a:hover,
+        .article-title a:focus-visible,
+        .article-meta svg {
+            color: var(--accent-color);
+        }
+    }
+}
