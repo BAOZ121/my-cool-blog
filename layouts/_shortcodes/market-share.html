@@ -1,6 +1,8 @@
 {{- $id := .Get "id" -}}
 {{- $chart := index hugo.Data.article_visuals.shares $id -}}
 {{- if not $chart -}}{{ errorf "Unknown market-share %q in %s" $id .Page.File.Path }}{{- end -}}
+{{- $decimals := 1 -}}
+{{- if isset $chart "percentDecimals" -}}{{- $decimals = int $chart.percentDecimals -}}{{- end -}}
 {{- $uid := printf "market-share-%s-%d" $id .Ordinal -}}
 {{- $csv := "Name,Share (%),Period,Geography,Metric,Source URL\n" -}}
 {{- range $chart.series -}}
@@ -25,7 +27,7 @@
             <table class="visual-table">
                 <caption>{{ $chart.title }} · {{ $chart.period }} · {{ $chart.metric }}</caption>
                 <thead><tr><th scope="col">{{ $chart.dimension | default "Company" }}</th><th scope="col">Share</th></tr></thead>
-                <tbody>{{ range $chart.series }}<tr><th scope="row">{{ .name }}</th><td>{{ printf "%.1f%%" (float .value) }}</td></tr>{{ end }}</tbody>
+                <tbody>{{ range $chart.series }}<tr><th scope="row">{{ .name }}</th><td>{{ printf "%.*f%%" $decimals (float .value) }}</td></tr>{{ end }}</tbody>
             </table>
         </div>
         <a class="visual-download" href="{{ $download.RelPermalink }}" download>Download data (CSV)</a>
