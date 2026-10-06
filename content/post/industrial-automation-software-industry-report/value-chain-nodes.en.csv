@@ -1,0 +1,30 @@
+ID,Parent ID,Level,Label,Role,Evidence IDs
+industry,,0,Industrial Automation and Industrial Software,Full industry scope,
+upstream,industry,1,Upstream,Foundational components,
+midstream,industry,1,Midstream,Control and industrial software,
+downstream,industry,1,Downstream,Integration and end users,
+chips,upstream,2,Semiconductors,"Signal acquisition, computing and communication",
+ti,chips,3,Texas Instruments analog and embedded chips,Representative products,E004
+sensing,upstream,2,Sensing and machine vision,Measure physical processes,
+sick,sensing,3,"SICK sensors, cameras and encoders",Representative products,E005
+drives,upstream,2,Drives and motors,Actuate motion,
+ino_drive,drives,3,"Inovance AC drives, servo drives and motors",Representative products,E021
+control,midstream,2,PLC and distributed control systems,Configured machine logic and process control,
+siemens_plc,control,3,Siemens SIMATIC; SUPCON ECS-700 DCS,Representative controls,E019; E006
+inovance_plc,control,3,Inovance H5U PLC,Machine logic and motion-control example,E024
+scada,midstream,2,"HMI, SCADA and process data",Operator visibility and records,
+aveva,scada,3,AVEVA Operations Control,Representative software,E008
+mes,midstream,2,Manufacturing execution systems,"Execution, quality and production genealogy",
+rockwell,mes,3,Rockwell FactoryTalk ProductionCentre and Plex,Representative software,E007
+engineering,midstream,2,CAD and engineering simulation,Design and virtual engineering,
+dassault,engineering,3,Dassault Systèmes CATIA and SIMULIA,Representative software,E020
+plm,midstream,2,Product lifecycle management,"Product information, revision and change processes",
+plm_products,plm,3,PTC Windchill; Dassault Systèmes ENOVIA,Representative software,E009; E020
+manufacturing_planning,midstream,2,Manufacturing planning and operations,Plan and manage manufacturing processes,
+delmia,manufacturing_planning,3,Dassault Systèmes DELMIA,Manufacturing planning and operations portfolio; not a single MES denominator,E020
+robotics,midstream,2,Industrial robotic equipment,Automated physical operations,
+ino_robot,robotics,3,Inovance industrial robot portfolio,Representative equipment,E021
+integration,downstream,2,Machine building and integration,"Application-specific mechanical, control and information integration",
+thyssen,integration,3,thyssenkrupp Automation Engineering,Disclosed special-machine builder example,E012
+factories,downstream,2,Factory operations,Operate and maintain production assets,
+erlangen,factories,3,Siemens Electronics Factory Erlangen,Disclosed factory example,E012
