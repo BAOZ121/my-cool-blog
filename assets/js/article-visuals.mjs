@@ -85,7 +85,9 @@ const mapPalettes = {
 
 export function pieOptions(data, { dark = false, compact = false, reducedMotion = false, width = 700, height = 360 } = {}) {
   validateShare(data);
-  const centerPeriod = compact ? data.period.replace(/^Full year\s+/i, "").replace(/^(Q\d)\s+(\d{4})$/, "$1\n$2") : data.period;
+  const centerPeriod = typeof data.center_label === "string" && data.center_label.trim()
+    ? data.center_label
+    : compact ? data.period.replace(/^Full year\s+/i, "").replace(/^(Q\d)\s+(\d{4})$/, "$1\n$2") : data.period;
   const ink = dark ? "#f5f3ed" : "#211d16";
   const muted = dark ? "#c3bcae" : "#6b6254";
   const surface = dark ? "#161616" : "#ffffff";
