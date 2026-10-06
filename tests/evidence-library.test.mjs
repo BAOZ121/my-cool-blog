@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import { matches, normalize, readFilters } from "../assets/js/evidence-library.mjs";
 
 const data = JSON.parse(readFileSync(new URL("../data/evidence_library.json", import.meta.url)));
@@ -22,7 +22,12 @@ test("URL state permits only known articles and material types", () => {
 test("index covers current published posts, preserves contexts, and only uses safe source URLs", () => {
   assert.equal(data.schema_version, 1);
   assert.equal(data.articles.length, data.counts.articles);
-  assert.equal(data.articles.length, 9);
+  const postRoot = new URL("../content/post/", import.meta.url);
+  const publishedIds = readdirSync(postRoot, { withFileTypes: true })
+    .filter(entry => entry.isDirectory())
+    .filter(entry => !/^draft:\s*true\s*$/m.test(readFileSync(new URL(`${entry.name}/index.en.md`, postRoot), "utf8")))
+    .map(entry => entry.name);
+  assert.deepEqual(new Set(data.articles.map(article => article.id)), new Set(publishedIds));
   let total = 0;
   let files = 0;
   const local = new Set();
@@ -45,7 +50,8 @@ test("index covers current published posts, preserves contexts, and only uses sa
   assert.equal(local.size, data.counts.hosted_files);
   assert.ok(local.has("/data/industries.csv"));
   assert.ok(local.has("/research-files/cybersecurity/NIST.SP.800-207.pdf"));
-  assert.equal([...local].filter(url => url.startsWith("/data/charts/")).length, 8);
+  const visuals = JSON.parse(readFileSync(new URL("../data/article_visuals.json", import.meta.url)));
+  assert.deepEqual(new Set([...local].filter(url => url.startsWith("/data/charts/"))), new Set(Object.keys(visuals.shares).map(id => `/data/charts/${id}.csv`)));
 });
 
 test("unverified ranges, reading leads and chart scope remain searchable", () => {

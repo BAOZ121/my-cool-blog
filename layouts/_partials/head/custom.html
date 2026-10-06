@@ -1,6 +1,10 @@
 {{ partial "page-transitions/assets.html" . }}
 {{ partial "chapter-rail/assets.html" . }}
 {{ partial "site-navigation/assets.html" . }}
+{{ if .Params.biography }}
+  {{ $biographyCSS := resources.Get "css/biography.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $biographyCSS.RelPermalink }}" integrity="{{ $biographyCSS.Data.Integrity }}">
+{{ end }}
 {{ if or (.HasShortcode "industry-map") (.HasShortcode "market-share") }}
   {{ partial "article-visuals/assets.html" . }}
 {{ end }}

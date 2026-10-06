@@ -381,3 +381,11 @@
     }
 }
 @import "accessibility.scss";
+
+/* Preserve the supplied biography photograph's full composition on lists and articles. */
+.article-list article .biography-header .article-image img,
+.article-page .main-article .biography-header .article-image img {
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+}

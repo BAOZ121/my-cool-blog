@@ -194,11 +194,16 @@ async function renderMap(figure, stage, toolbar, data, vendor, labels) {
   stage.append(svg);
   let interacting = false;
   const compact = stage.clientWidth < 480;
+  const customMapColors = getComputedStyle(figure).getPropertyValue("--visual-map-palette")
+    .split(",").map(color => color.trim()).filter(color => /^#[0-9a-f]{6}$/i.test(color));
   const map = new vendor.Markmap(svg, {
     autoFit: false, duration: motionReduced() ? 0 : 200, maxWidth: compact ? 105 : 190, paddingX: compact ? 6 : 12,
     spacingHorizontal: compact ? 20 : 65, spacingVertical: compact ? 24 : 14, fitRatio: 0.94, maxInitialScale: 1,
     initialExpandLevel: -1, scrollForPan: false, zoom: true, pan: false,
-    color: (node) => mapPalettes[isDark() ? "dark" : "light"][(node.payload?.branch || 0) % 8],
+    color: (node) => {
+      const colors = customMapColors.length ? customMapColors : mapPalettes[isDark() ? "dark" : "light"];
+      return colors[(node.payload?.branch || 0) % colors.length];
+    },
   });
   const fittedScale = () => {
     const { x1, y1, x2, y2 } = map.state.rect;

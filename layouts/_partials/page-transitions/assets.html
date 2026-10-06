@@ -2,6 +2,12 @@
 {{- $style := resources.Get "css/page-transitions.css" | minify -}}
 <style id="dex-page-transitions">{{ $style.Content | safeCSS }}</style>
 
+{{- if eq .Params.entryTheme "nvidia" -}}
+  {{- with .Resources.GetMatch .Params.entryImage -}}
+    {{- $entry := dict "theme" "nvidia" "image" .RelPermalink "width" .Width "height" .Height "label" "DEX / BIOGRAPHY" "name" "JENSEN HUANG" -}}
+    <script type="application/json" data-page-entry>{{ $entry | jsonify | safeJS }}</script>
+  {{- end -}}
+{{- end -}}
 {{- /* Register before first paint; no external request or rendering wait. */ -}}
 {{- $script := resources.Get "js/page-transitions.js" | minify -}}
 <script id="dex-page-transition-script">{{ $script.Content | safeJS }}</script>

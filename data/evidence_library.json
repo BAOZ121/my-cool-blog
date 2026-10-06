@@ -1433,6 +1433,896 @@
       ]
     },
     {
+      "id": "jensen-huang-biography",
+      "title": "Jensen Huang Biography",
+      "url": "/post/jensen-huang-biography/",
+      "published": "2026-10-05",
+      "notices": [],
+      "entries": [
+        {
+          "id": "1493d9497148",
+          "url": "https://commons.wikimedia.org/wiki/File:Nvidia_CEO_Jensen_Huang_gestikuliert.jpg",
+          "title": "Source",
+          "kind": "link",
+          "format": "Web",
+          "host": "commons.wikimedia.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "Article",
+              "url": "/post/jensen-huang-biography/",
+              "text": "Cover: Jensen Huang, 5 January 2017. Photo: Maurizio Pesce · Source · CC BY 2.0 . View full-size cover · 5184 × 3456 .",
+              "notes": [
+                "Information cutoff: October 3, 2026.",
+                "This biography draws on school records, public interviews, company announcements, regulatory filings, and award organizations. Retrospective personal stories retain attribution to the speaker. The downloadable Chinese and English editions use the same reference numbers."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "faee7f95d64a",
+          "url": "https://creativecommons.org/licenses/by/2.0/",
+          "title": "CC BY 2.0",
+          "kind": "link",
+          "format": "Web",
+          "host": "creativecommons.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "Article",
+              "url": "/post/jensen-huang-biography/",
+              "text": "Cover: Jensen Huang, 5 January 2017. Photo: Maurizio Pesce · Source · CC BY 2.0 . View full-size cover · 5184 × 3456 .",
+              "notes": [
+                "Information cutoff: October 3, 2026.",
+                "This biography draws on school records, public interviews, company announcements, regulatory filings, and award organizations. Retrospective personal stories retain attribution to the speaker. The downloadable Chinese and English editions use the same reference numbers."
+              ]
+            },
+            {
+              "section": "10 Deep learning and computing systems after 2012",
+              "url": "/post/jensen-huang-biography/#10-deep-learning-and-computing-systems-after-2012",
+              "text": "Photo: NVIDIA Taiwan · Source · CC BY 2.0 .",
+              "notes": [
+                "Jensen Huang at GTC Taiwan on 21 September 2016. The stage display shows the Tesla P4 and P40 inference accelerators."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c1c659823d8c",
+          "url": "/post/jensen-huang-biography/jensen-huang-biography-bilingual.docx",
+          "title": "Download the Chinese and English biography (Word)",
+          "kind": "file",
+          "format": "DOCX",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Article",
+              "url": "/post/jensen-huang-biography/",
+              "text": "Download the Chinese and English biography (Word)",
+              "notes": [
+                "Information cutoff: October 3, 2026.",
+                "This biography draws on school records, public interviews, company announcements, regulatory filings, and award organizations. Retrospective personal stories retain attribution to the speaker. The downloadable Chinese and English editions use the same reference numbers."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bf1733f77ea5",
+          "url": "https://nvidianews.nvidia.com/bios/jensen-huang",
+          "title": "NVIDIA: Jensen Huang executive biography",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidianews.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Education, work and public milestones",
+              "url": "/post/jensen-huang-biography/#industry-map-jensen-huang-career-0-title",
+              "text": "Sources: NVIDIA: Jensen Huang executive biography · Oneida Baptist Institute: July–August 2018 newsletter · HKUST: 2024 honorary doctorate citation · Oregon State: Huang Engineering Hall of Fame biography · Stanford Technology Ventures Program: Huang biography · NVIDIA: corporate history timeline · NVIDIA: DGX-1 launch announcement, April 5, 2016 · NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) · NVIDIA: Blackwell platform announcement, March 18, 2024 · Stanford: fiscal 2008 financial review, Huang gift commitment · Oneida Baptist Institute: Fall 2019 On Campus newsletter · Oregon State: $50 million Huang gift, October 14, 2022 · HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore the institutions, roles and events documented in this biography.",
+                "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14."
+              ]
+            },
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA: Jensen Huang executive biography . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "a5d5015fdc55",
+          "url": "https://www.oneidaschool.org/copy094915_2018_JulAug_Mountaineer.pdf",
+          "title": "Oneida Baptist Institute: July–August 2018 newsletter",
+          "kind": "file",
+          "format": "PDF",
+          "host": "oneidaschool.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "Education, work and public milestones",
+              "url": "/post/jensen-huang-biography/#industry-map-jensen-huang-career-0-title",
+              "text": "Sources: NVIDIA: Jensen Huang executive biography · Oneida Baptist Institute: July–August 2018 newsletter · HKUST: 2024 honorary doctorate citation · Oregon State: Huang Engineering Hall of Fame biography · Stanford Technology Ventures Program: Huang biography · NVIDIA: corporate history timeline · NVIDIA: DGX-1 launch announcement, April 5, 2016 · NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) · NVIDIA: Blackwell platform announcement, March 18, 2024 · Stanford: fiscal 2008 financial review, Huang gift commitment · Oneida Baptist Institute: Fall 2019 On Campus newsletter · Oregon State: $50 million Huang gift, October 14, 2022 · HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore the institutions, roles and events documented in this biography.",
+                "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14."
+              ]
+            },
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Oneida Baptist Institute: July–August 2018 newsletter . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "ab4d3e21039a",
+          "url": "https://ccss.hkust.edu.hk/sites/default/files/pdf%20files/honorary-doctorates2024/Dr_Jensen_HUANG_EN.pdf",
+          "title": "HKUST: 2024 honorary doctorate citation",
+          "kind": "file",
+          "format": "PDF",
+          "host": "ccss.hkust.edu.hk",
+          "local": false,
+          "citations": [
+            {
+              "section": "Education, work and public milestones",
+              "url": "/post/jensen-huang-biography/#industry-map-jensen-huang-career-0-title",
+              "text": "Sources: NVIDIA: Jensen Huang executive biography · Oneida Baptist Institute: July–August 2018 newsletter · HKUST: 2024 honorary doctorate citation · Oregon State: Huang Engineering Hall of Fame biography · Stanford Technology Ventures Program: Huang biography · NVIDIA: corporate history timeline · NVIDIA: DGX-1 launch announcement, April 5, 2016 · NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) · NVIDIA: Blackwell platform announcement, March 18, 2024 · Stanford: fiscal 2008 financial review, Huang gift commitment · Oneida Baptist Institute: Fall 2019 On Campus newsletter · Oregon State: $50 million Huang gift, October 14, 2022 · HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore the institutions, roles and events documented in this biography.",
+                "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14."
+              ]
+            },
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "HKUST: 2024 honorary doctorate citation . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "866ed72e862e",
+          "url": "https://engineering.oregonstate.edu/alumni-partners/oregon-stater-awards/searchable-awards-database/jen-hsun-huang-engineering-hall",
+          "title": "Oregon State: Huang Engineering Hall of Fame biography",
+          "kind": "link",
+          "format": "Web",
+          "host": "engineering.oregonstate.edu",
+          "local": false,
+          "citations": [
+            {
+              "section": "Education, work and public milestones",
+              "url": "/post/jensen-huang-biography/#industry-map-jensen-huang-career-0-title",
+              "text": "Sources: NVIDIA: Jensen Huang executive biography · Oneida Baptist Institute: July–August 2018 newsletter · HKUST: 2024 honorary doctorate citation · Oregon State: Huang Engineering Hall of Fame biography · Stanford Technology Ventures Program: Huang biography · NVIDIA: corporate history timeline · NVIDIA: DGX-1 launch announcement, April 5, 2016 · NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) · NVIDIA: Blackwell platform announcement, March 18, 2024 · Stanford: fiscal 2008 financial review, Huang gift commitment · Oneida Baptist Institute: Fall 2019 On Campus newsletter · Oregon State: $50 million Huang gift, October 14, 2022 · HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore the institutions, roles and events documented in this biography.",
+                "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14."
+              ]
+            },
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Oregon State: Huang Engineering Hall of Fame biography . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "70d1e95271d2",
+          "url": "https://stvp.stanford.edu/people/jensen-huang",
+          "title": "Stanford Technology Ventures Program: Huang biography",
+          "kind": "link",
+          "format": "Web",
+          "host": "stvp.stanford.edu",
+          "local": false,
+          "citations": [
+            {
+              "section": "Education, work and public milestones",
+              "url": "/post/jensen-huang-biography/#industry-map-jensen-huang-career-0-title",
+              "text": "Sources: NVIDIA: Jensen Huang executive biography · Oneida Baptist Institute: July–August 2018 newsletter · HKUST: 2024 honorary doctorate citation · Oregon State: Huang Engineering Hall of Fame biography · Stanford Technology Ventures Program: Huang biography · NVIDIA: corporate history timeline · NVIDIA: DGX-1 launch announcement, April 5, 2016 · NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) · NVIDIA: Blackwell platform announcement, March 18, 2024 · Stanford: fiscal 2008 financial review, Huang gift commitment · Oneida Baptist Institute: Fall 2019 On Campus newsletter · Oregon State: $50 million Huang gift, October 14, 2022 · HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore the institutions, roles and events documented in this biography.",
+                "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14."
+              ]
+            },
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Stanford Technology Ventures Program: Huang biography . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "1a707a7d7f2a",
+          "url": "https://www.nvidia.com/en-us/about-nvidia/corporate-timeline/",
+          "title": "NVIDIA: corporate history timeline",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Education, work and public milestones",
+              "url": "/post/jensen-huang-biography/#industry-map-jensen-huang-career-0-title",
+              "text": "Sources: NVIDIA: Jensen Huang executive biography · Oneida Baptist Institute: July–August 2018 newsletter · HKUST: 2024 honorary doctorate citation · Oregon State: Huang Engineering Hall of Fame biography · Stanford Technology Ventures Program: Huang biography · NVIDIA: corporate history timeline · NVIDIA: DGX-1 launch announcement, April 5, 2016 · NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) · NVIDIA: Blackwell platform announcement, March 18, 2024 · Stanford: fiscal 2008 financial review, Huang gift commitment · Oneida Baptist Institute: Fall 2019 On Campus newsletter · Oregon State: $50 million Huang gift, October 14, 2022 · HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore the institutions, roles and events documented in this biography.",
+                "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14."
+              ]
+            },
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA: corporate history timeline . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "125846e443df",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-launches-world-s-first-deep-learning-supercomputer-6622436",
+          "title": "NVIDIA: DGX-1 launch announcement, April 5, 2016",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidianews.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Education, work and public milestones",
+              "url": "/post/jensen-huang-biography/#industry-map-jensen-huang-career-0-title",
+              "text": "Sources: NVIDIA: Jensen Huang executive biography · Oneida Baptist Institute: July–August 2018 newsletter · HKUST: 2024 honorary doctorate citation · Oregon State: Huang Engineering Hall of Fame biography · Stanford Technology Ventures Program: Huang biography · NVIDIA: corporate history timeline · NVIDIA: DGX-1 launch announcement, April 5, 2016 · NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) · NVIDIA: Blackwell platform announcement, March 18, 2024 · Stanford: fiscal 2008 financial review, Huang gift commitment · Oneida Baptist Institute: Fall 2019 On Campus newsletter · Oregon State: $50 million Huang gift, October 14, 2022 · HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore the institutions, roles and events documented in this biography.",
+                "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14."
+              ]
+            },
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA: DGX-1 launch announcement, April 5, 2016 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "a552d08ea621",
+          "url": "https://www.marketscreener.com/quote/stock/NVIDIA-CORPORATION-10282/news/NVIDIA-CEO-Delivers-World-s-First-AI-Supercomputer-in-a-Box-to-OpenAI-22903545/",
+          "title": "NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive)",
+          "kind": "link",
+          "format": "Web",
+          "host": "marketscreener.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Education, work and public milestones",
+              "url": "/post/jensen-huang-biography/#industry-map-jensen-huang-career-0-title",
+              "text": "Sources: NVIDIA: Jensen Huang executive biography · Oneida Baptist Institute: July–August 2018 newsletter · HKUST: 2024 honorary doctorate citation · Oregon State: Huang Engineering Hall of Fame biography · Stanford Technology Ventures Program: Huang biography · NVIDIA: corporate history timeline · NVIDIA: DGX-1 launch announcement, April 5, 2016 · NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) · NVIDIA: Blackwell platform announcement, March 18, 2024 · Stanford: fiscal 2008 financial review, Huang gift commitment · Oneida Baptist Institute: Fall 2019 On Campus newsletter · Oregon State: $50 million Huang gift, October 14, 2022 · HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore the institutions, roles and events documented in this biography.",
+                "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14."
+              ]
+            },
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "24203513100c",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-blackwell-platform-arrives-to-power-a-new-era-of-computing",
+          "title": "NVIDIA: Blackwell platform announcement, March 18, 2024",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidianews.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Education, work and public milestones",
+              "url": "/post/jensen-huang-biography/#industry-map-jensen-huang-career-0-title",
+              "text": "Sources: NVIDIA: Jensen Huang executive biography · Oneida Baptist Institute: July–August 2018 newsletter · HKUST: 2024 honorary doctorate citation · Oregon State: Huang Engineering Hall of Fame biography · Stanford Technology Ventures Program: Huang biography · NVIDIA: corporate history timeline · NVIDIA: DGX-1 launch announcement, April 5, 2016 · NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) · NVIDIA: Blackwell platform announcement, March 18, 2024 · Stanford: fiscal 2008 financial review, Huang gift commitment · Oneida Baptist Institute: Fall 2019 On Campus newsletter · Oregon State: $50 million Huang gift, October 14, 2022 · HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore the institutions, roles and events documented in this biography.",
+                "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14."
+              ]
+            },
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA: Blackwell platform announcement, March 18, 2024 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "59130ed70b54",
+          "url": "https://bondholder-information.stanford.edu/sites/g/files/sbiybj21416/files/media/file/stanford-annual-financial-review-2008.pdf",
+          "title": "Stanford: fiscal 2008 financial review, Huang gift commitment",
+          "kind": "file",
+          "format": "PDF",
+          "host": "bondholder-information.stanford.edu",
+          "local": false,
+          "citations": [
+            {
+              "section": "Education, work and public milestones",
+              "url": "/post/jensen-huang-biography/#industry-map-jensen-huang-career-0-title",
+              "text": "Sources: NVIDIA: Jensen Huang executive biography · Oneida Baptist Institute: July–August 2018 newsletter · HKUST: 2024 honorary doctorate citation · Oregon State: Huang Engineering Hall of Fame biography · Stanford Technology Ventures Program: Huang biography · NVIDIA: corporate history timeline · NVIDIA: DGX-1 launch announcement, April 5, 2016 · NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) · NVIDIA: Blackwell platform announcement, March 18, 2024 · Stanford: fiscal 2008 financial review, Huang gift commitment · Oneida Baptist Institute: Fall 2019 On Campus newsletter · Oregon State: $50 million Huang gift, October 14, 2022 · HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore the institutions, roles and events documented in this biography.",
+                "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14."
+              ]
+            },
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Stanford: fiscal 2008 financial review, Huang gift commitment . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "8dc224d5e6f5",
+          "url": "https://www.oneidaschool.org/2019_Fall_OnCampus.pdf",
+          "title": "Oneida Baptist Institute: Fall 2019 On Campus newsletter",
+          "kind": "file",
+          "format": "PDF",
+          "host": "oneidaschool.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "Education, work and public milestones",
+              "url": "/post/jensen-huang-biography/#industry-map-jensen-huang-career-0-title",
+              "text": "Sources: NVIDIA: Jensen Huang executive biography · Oneida Baptist Institute: July–August 2018 newsletter · HKUST: 2024 honorary doctorate citation · Oregon State: Huang Engineering Hall of Fame biography · Stanford Technology Ventures Program: Huang biography · NVIDIA: corporate history timeline · NVIDIA: DGX-1 launch announcement, April 5, 2016 · NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) · NVIDIA: Blackwell platform announcement, March 18, 2024 · Stanford: fiscal 2008 financial review, Huang gift commitment · Oneida Baptist Institute: Fall 2019 On Campus newsletter · Oregon State: $50 million Huang gift, October 14, 2022 · HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore the institutions, roles and events documented in this biography.",
+                "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14."
+              ]
+            },
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Oneida Baptist Institute: Fall 2019 On Campus newsletter . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "5e08e0cddc13",
+          "url": "https://news.oregonstate.edu/news/50-million-gift-nvidia-founder-and-spouse-helps-launch-oregon-state-university-research-center",
+          "title": "Oregon State: $50 million Huang gift, October 14, 2022",
+          "kind": "link",
+          "format": "Web",
+          "host": "news.oregonstate.edu",
+          "local": false,
+          "citations": [
+            {
+              "section": "Education, work and public milestones",
+              "url": "/post/jensen-huang-biography/#industry-map-jensen-huang-career-0-title",
+              "text": "Sources: NVIDIA: Jensen Huang executive biography · Oneida Baptist Institute: July–August 2018 newsletter · HKUST: 2024 honorary doctorate citation · Oregon State: Huang Engineering Hall of Fame biography · Stanford Technology Ventures Program: Huang biography · NVIDIA: corporate history timeline · NVIDIA: DGX-1 launch announcement, April 5, 2016 · NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) · NVIDIA: Blackwell platform announcement, March 18, 2024 · Stanford: fiscal 2008 financial review, Huang gift commitment · Oneida Baptist Institute: Fall 2019 On Campus newsletter · Oregon State: $50 million Huang gift, October 14, 2022 · HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore the institutions, roles and events documented in this biography.",
+                "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14."
+              ]
+            },
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Oregon State: $50 million Huang gift, October 14, 2022 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "af0594f90bc9",
+          "url": "https://seng.hkust.edu.hk/news/20250902/hkust-thanks-esteemed-alumni-jensen-huang-and-terry-tsang-generous-donation-establish-top-engineering-scholars-award",
+          "title": "HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025",
+          "kind": "link",
+          "format": "Web",
+          "host": "seng.hkust.edu.hk",
+          "local": false,
+          "citations": [
+            {
+              "section": "Education, work and public milestones",
+              "url": "/post/jensen-huang-biography/#industry-map-jensen-huang-career-0-title",
+              "text": "Sources: NVIDIA: Jensen Huang executive biography · Oneida Baptist Institute: July–August 2018 newsletter · HKUST: 2024 honorary doctorate citation · Oregon State: Huang Engineering Hall of Fame biography · Stanford Technology Ventures Program: Huang biography · NVIDIA: corporate history timeline · NVIDIA: DGX-1 launch announcement, April 5, 2016 · NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive) · NVIDIA: Blackwell platform announcement, March 18, 2024 · Stanford: fiscal 2008 financial review, Huang gift commitment · Oneida Baptist Institute: Fall 2019 On Campus newsletter · Oregon State: $50 million Huang gift, October 14, 2022 · HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Reviewed 2026-10-03.",
+              "notes": [
+                "Explore the institutions, roles and events documented in this biography.",
+                "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14."
+              ]
+            },
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "ff374eba1018",
+          "url": "https://commons.wikimedia.org/wiki/File:2484_Berryessa_Road.jpg",
+          "title": "Source",
+          "kind": "link",
+          "format": "Web",
+          "host": "commons.wikimedia.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "6 Three founders in 1993",
+              "url": "/post/jensen-huang-biography/#6-three-founders-in-1993",
+              "text": "Photo: Coolcaesar · Source · CC BY-SA 4.0 .",
+              "notes": [
+                "The Denny’s restaurant at 2484 Berryessa Road in San Jose, associated with NVIDIA’s founding discussions. Photographed on 2 July 2023."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5be3f45044c7",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "title": "CC BY-SA 4.0",
+          "kind": "link",
+          "format": "Web",
+          "host": "creativecommons.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "6 Three founders in 1993",
+              "url": "/post/jensen-huang-biography/#6-three-founders-in-1993",
+              "text": "Photo: Coolcaesar · Source · CC BY-SA 4.0 .",
+              "notes": [
+                "The Denny’s restaurant at 2484 Berryessa Road in San Jose, associated with NVIDIA’s founding discussions. Photographed on 2 July 2023."
+              ]
+            },
+            {
+              "section": "14 Four documented education gifts",
+              "url": "/post/jensen-huang-biography/#14-four-documented-education-gifts",
+              "text": "Photo: Frank Schulenburg · Source · CC BY-SA 4.0 .",
+              "notes": [
+                "Jen-Hsun Huang Engineering Center at Stanford University, photographed on 16 December 2016. The dedication described in the text took place in 2010."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1115d56b816b",
+          "url": "https://commons.wikimedia.org/wiki/File:GTC_Taiwan_2016_%E2%80%93_Tesla_P40_%26_P40.jpg",
+          "title": "Source",
+          "kind": "link",
+          "format": "Web",
+          "host": "commons.wikimedia.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "10 Deep learning and computing systems after 2012",
+              "url": "/post/jensen-huang-biography/#10-deep-learning-and-computing-systems-after-2012",
+              "text": "Photo: NVIDIA Taiwan · Source · CC BY 2.0 .",
+              "notes": [
+                "Jensen Huang at GTC Taiwan on 21 September 2016. The stage display shows the Tesla P4 and P40 inference accelerators."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f9fc58d22aba",
+          "url": "https://commons.wikimedia.org/wiki/File:Jen-Hsun_Huang_Engineering_Center_in_2016.jpg",
+          "title": "Source",
+          "kind": "link",
+          "format": "Web",
+          "host": "commons.wikimedia.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "14 Four documented education gifts",
+              "url": "/post/jensen-huang-biography/#14-four-documented-education-gifts",
+              "text": "Photo: Frank Schulenburg · Source · CC BY-SA 4.0 .",
+              "notes": [
+                "Jen-Hsun Huang Engineering Center at Stanford University, photographed on 16 December 2016. The dedication described in the text took place in 2010."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5dab669d7a0a",
+          "url": "https://commencement.caltech.edu/news/2024-commencement-speaker-jensen-huang",
+          "title": "Caltech: 2024 commencement speaker biography",
+          "kind": "link",
+          "format": "Web",
+          "host": "commencement.caltech.edu",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Caltech: 2024 commencement speaker biography . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "32030adee744",
+          "url": "https://asaptext.com/asap_media/media/1002/1398/transcripts/152690.pdf",
+          "title": "NBA: Huang interview transcript, Technology Summit, February 14, 2025",
+          "kind": "file",
+          "format": "PDF",
+          "host": "asaptext.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NBA: Huang interview transcript, Technology Summit, February 14, 2025 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "cdcde6725418",
+          "url": "https://engineering.oregonstate.edu/sites/engineering.oregonstate.edu/files/2023-04/2022%20Oregon%20Stater%20Awards%20Magazine%20-%20Owen%20F%20Perry.pdf",
+          "title": "Oregon State: 2022 Oregon Stater Awards magazine",
+          "kind": "file",
+          "format": "PDF",
+          "host": "engineering.oregonstate.edu",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Oregon State: 2022 Oregon Stater Awards magazine . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "3ce661bbc7fd",
+          "url": "https://blogs.nvidia.com/blog/nvidia-dennys-trillion/",
+          "title": "NVIDIA: Huang returns to Denny’s, September 2023",
+          "kind": "link",
+          "format": "Web",
+          "host": "blogs.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA: Huang returns to Denny’s, September 2023 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "056077f21ed9",
+          "url": "https://ecorner.stanford.edu/wp-content/uploads/sites/2/2009/04/2227.pdf",
+          "title": "Stanford eCorner: The First Six Months of NVIDIA, April 8, 2009",
+          "kind": "file",
+          "format": "PDF",
+          "host": "ecorner.stanford.edu",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Stanford eCorner: The First Six Months of NVIDIA, April 8, 2009 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "721d53f15d22",
+          "url": "https://sequoiacap.com/podcast/crucible-moments-nvidia",
+          "title": "Sequoia Capital: Crucible Moments, NVIDIA, episode 8",
+          "kind": "link",
+          "format": "Web",
+          "host": "sequoiacap.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Sequoia Capital: Crucible Moments, NVIDIA, episode 8 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "341f8bc9342b",
+          "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001045810/327515c2-03c2-4795-8946-5968098fa73a.pdf",
+          "title": "NVIDIA: initial public offering prospectus, 1999",
+          "kind": "file",
+          "format": "PDF",
+          "host": "d18rn0p25nwr6d.cloudfront.net",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA: initial public offering prospectus, 1999 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "83caef5831cf",
+          "url": "https://investor.nvidia.com/investor-resources/faqs/default.aspx",
+          "title": "NVIDIA: investor FAQs, IPO date",
+          "kind": "link",
+          "format": "Web",
+          "host": "investor.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA: investor FAQs, IPO date . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "0bfb548d2ed1",
+          "url": "https://blogs.nvidia.com/blog/first-gpu-gaming-ai/",
+          "title": "NVIDIA: GeForce 256 retrospective, October 11, 2024",
+          "kind": "link",
+          "format": "Web",
+          "host": "blogs.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA: GeForce 256 retrospective, October 11, 2024 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "748d4405187d",
+          "url": "https://developer.nvidia.com/cuda",
+          "title": "NVIDIA: CUDA developer documentation",
+          "kind": "link",
+          "format": "Web",
+          "host": "developer.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA: CUDA developer documentation . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "9c1967bf835e",
+          "url": "https://www.cs.toronto.edu/~kriz/imagenet_classification_with_deep_convolutional.pdf",
+          "title": "Krizhevsky et al.: ImageNet Classification with Deep Convolutional Neural Networks, 2012",
+          "kind": "file",
+          "format": "PDF",
+          "host": "cs.toronto.edu",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Krizhevsky et al.: ImageNet Classification with Deep Convolutional Neural Networks, 2012 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "8838000a925e",
+          "url": "https://s201.q4cdn.com/141608511/files/doc_financials/quarterly_reports/2009/10K-2009-Q4.pdf",
+          "title": "NVIDIA: fiscal 2009 annual report",
+          "kind": "file",
+          "format": "PDF",
+          "host": "s201.q4cdn.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA: fiscal 2009 annual report . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "e86a76118d2f",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-completes-acquisition-of-mellanox-creating-major-force-driving-next-gen-data-centers",
+          "title": "NVIDIA: completion of Mellanox acquisition, April 27, 2020",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidianews.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA: completion of Mellanox acquisition, April 27, 2020 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "db59a500c5da",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-and-softbank-group-announce-termination-of-nvidias-acquisition-of-arm-limited",
+          "title": "NVIDIA and SoftBank: termination of Arm acquisition, February 2022",
+          "kind": "link",
+          "format": "Web",
+          "host": "nvidianews.nvidia.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA and SoftBank: termination of Arm acquisition, February 2022 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "bf855f01b2cb",
+          "url": "https://ecorner.stanford.edu/wp-content/uploads/sites/2/2003/01/1122.pdf",
+          "title": "Stanford eCorner: The Power of Corporate Culture, January 29, 2003",
+          "kind": "file",
+          "format": "PDF",
+          "host": "ecorner.stanford.edu",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Stanford eCorner: The Power of Corporate Culture, January 29, 2003 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "eeaeb3ee827b",
+          "url": "https://www.gsb.stanford.edu/insights/jensen-huang-how-use-first-principles-thinking-drive-decisions",
+          "title": "Stanford GSB: Huang on first-principles thinking, April 25, 2024",
+          "kind": "link",
+          "format": "Web",
+          "host": "gsb.stanford.edu",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Stanford GSB: Huang on first-principles thinking, April 25, 2024 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "e2ecaa145c64",
+          "url": "https://hkust.edu.hk/news/quips-chips-dr-jensen-huang-spots-world-ai",
+          "title": "HKUST: Huang–Harry Shum fireside chat, November 23, 2024",
+          "kind": "link",
+          "format": "Web",
+          "host": "hkust.edu.hk",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "HKUST: Huang–Harry Shum fireside chat, November 23, 2024 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "bb601d56c368",
+          "url": "https://engineering.stanford.edu/news/huang-center-dedicated-lauded-stanfords-engineering-anchor",
+          "title": "Stanford Engineering: Huang Center dedication",
+          "kind": "link",
+          "format": "Web",
+          "host": "engineering.stanford.edu",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Stanford Engineering: Huang Center dedication . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "0589692de432",
+          "url": "https://qeprize.org/winners/modern-machine-learning",
+          "title": "QEPrize: 2025 Modern Machine Learning laureates",
+          "kind": "link",
+          "format": "Web",
+          "host": "qeprize.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "QEPrize: 2025 Modern Machine Learning laureates . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "88c6aeea940c",
+          "url": "https://innovate.ieee.org/ieee-medal-of-honor-2026/",
+          "title": "IEEE: 2026 Medal of Honor ceremony account",
+          "kind": "link",
+          "format": "Web",
+          "host": "innovate.ieee.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "IEEE: 2026 Medal of Honor ceremony account . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "7d8b94c90c3b",
+          "url": "https://www.whitehouse.gov/releases/2026/03/president-trump-announces-appointments-to-presidents-council-of-advisors-on-science-and-technology/",
+          "title": "White House: PCAST appointments, March 25, 2026",
+          "kind": "link",
+          "format": "Web",
+          "host": "whitehouse.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "White House: PCAST appointments, March 25, 2026 . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "eae5e029df87",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000036/nvda-20260512.htm",
+          "title": "NVIDIA: 2026 proxy statement",
+          "kind": "link",
+          "format": "Web",
+          "host": "sec.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "NVIDIA: 2026 proxy statement . Return to citation",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "d10a81010aa0",
+          "url": "https://engineering.stanford.edu/news/jen-hsun-huang-nvidia-co-founder-invests-next-generation-stanford-engineers",
+          "title": "Stanford Engineering: Huang interview following the 2010 Huang Center dedication",
+          "kind": "link",
+          "format": "Web",
+          "host": "engineering.stanford.edu",
+          "local": false,
+          "citations": [
+            {
+              "section": "Sources",
+              "url": "/post/jensen-huang-biography/#sources",
+              "text": "Stanford Engineering: Huang interview following the 2010 Huang Center dedication . Return to citation",
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "commercial-space-advanced-engineering",
       "title": "Commercial Space and Advanced Engineering Industry Report",
       "url": "/post/commercial-space-advanced-engineering/",
@@ -7491,9 +8381,9 @@
     }
   ],
   "counts": {
-    "articles": 9,
-    "materials": 308,
-    "files": 55,
-    "hosted_files": 13
+    "articles": 10,
+    "materials": 351,
+    "files": 67,
+    "hosted_files": 14
   }
 }

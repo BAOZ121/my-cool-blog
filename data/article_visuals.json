@@ -1563,6 +1563,181 @@
       ],
       "note": "Connecting lines classify functions and do not establish supplier contracts. Companies can operate at several stages. The original figure and editable SVG are linked below.",
       "reviewed": "2026-10-06"
+    },
+    "jensen-huang-career": {
+      "title": "Education, work and public milestones",
+      "eyebrow": "BIOGRAPHY MAP",
+      "description": "Explore the institutions, roles and events documented in this biography.",
+      "root": {
+        "name": "Jensen Huang",
+        "children": [
+          {
+            "name": "Education",
+            "children": [
+              {
+                "name": "School years",
+                "children": [
+                  {
+                    "name": "Oneida Elementary · classes"
+                  },
+                  {
+                    "name": "Oneida Baptist Institute · boarding"
+                  },
+                  {
+                    "name": "Aloha High School · Oregon"
+                  }
+                ]
+              },
+              {
+                "name": "Earned university degrees",
+                "children": [
+                  {
+                    "name": "Oregon State · electrical engineering B.S., 1984"
+                  },
+                  {
+                    "name": "Stanford · electrical engineering M.S., 1992"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Semiconductor employment",
+            "children": [
+              {
+                "name": "AMD · microprocessor designer"
+              },
+              {
+                "name": "LSI Logic · director of CoreWare"
+              },
+              {
+                "name": "NVIDIA · since 1993",
+                "children": [
+                  {
+                    "name": "Co-founder with Malachowsky and Priem"
+                  },
+                  {
+                    "name": "President, CEO and director"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "NVIDIA milestones during his tenure",
+            "children": [
+              {
+                "name": "Public listing and graphics",
+                "children": [
+                  {
+                    "name": "1999 · Nasdaq IPO"
+                  },
+                  {
+                    "name": "1999 · GeForce 256 release"
+                  }
+                ]
+              },
+              {
+                "name": "Parallel computing and AI systems",
+                "children": [
+                  {
+                    "name": "2006 · CUDA architecture unveiled"
+                  },
+                  {
+                    "name": "2016 · DGX-1 announced; delivery to OpenAI"
+                  },
+                  {
+                    "name": "2024 · Blackwell announced"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Education gifts",
+            "children": [
+              {
+                "name": "Universities",
+                "children": [
+                  {
+                    "name": "Stanford · Huang Engineering Center"
+                  },
+                  {
+                    "name": "Oregon State · Collaborative Innovation Complex"
+                  },
+                  {
+                    "name": "HKUST · Top Engineering Scholars Award"
+                  }
+                ]
+              },
+              {
+                "name": "School campus",
+                "children": [
+                  {
+                    "name": "Oneida · Jen-Hsun Huang Hall"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "note": "Branches organize documented facts. NVIDIA products were developed by company teams; the map does not assign their invention to one person. Gift donors and amounts are detailed in Chapter 14.",
+      "sources": [
+        {
+          "title": "NVIDIA: Jensen Huang executive biography",
+          "url": "https://nvidianews.nvidia.com/bios/jensen-huang"
+        },
+        {
+          "title": "Oneida Baptist Institute: July–August 2018 newsletter",
+          "url": "https://www.oneidaschool.org/copy094915_2018_JulAug_Mountaineer.pdf"
+        },
+        {
+          "title": "HKUST: 2024 honorary doctorate citation",
+          "url": "https://ccss.hkust.edu.hk/sites/default/files/pdf%20files/honorary-doctorates2024/Dr_Jensen_HUANG_EN.pdf"
+        },
+        {
+          "title": "Oregon State: Huang Engineering Hall of Fame biography",
+          "url": "https://engineering.oregonstate.edu/alumni-partners/oregon-stater-awards/searchable-awards-database/jen-hsun-huang-engineering-hall"
+        },
+        {
+          "title": "Stanford Technology Ventures Program: Huang biography",
+          "url": "https://stvp.stanford.edu/people/jensen-huang"
+        },
+        {
+          "title": "NVIDIA: corporate history timeline",
+          "url": "https://www.nvidia.com/en-us/about-nvidia/corporate-timeline/"
+        },
+        {
+          "title": "NVIDIA: DGX-1 launch announcement, April 5, 2016",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-launches-world-s-first-deep-learning-supercomputer-6622436"
+        },
+        {
+          "title": "NVIDIA: DGX-1 delivery to OpenAI, August 2016 (republication archive)",
+          "url": "https://www.marketscreener.com/quote/stock/NVIDIA-CORPORATION-10282/news/NVIDIA-CEO-Delivers-World-s-First-AI-Supercomputer-in-a-Box-to-OpenAI-22903545/"
+        },
+        {
+          "title": "NVIDIA: Blackwell platform announcement, March 18, 2024",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-blackwell-platform-arrives-to-power-a-new-era-of-computing"
+        },
+        {
+          "title": "Stanford: fiscal 2008 financial review, Huang gift commitment",
+          "url": "https://bondholder-information.stanford.edu/sites/g/files/sbiybj21416/files/media/file/stanford-annual-financial-review-2008.pdf"
+        },
+        {
+          "title": "Oneida Baptist Institute: Fall 2019 On Campus newsletter",
+          "url": "https://www.oneidaschool.org/2019_Fall_OnCampus.pdf"
+        },
+        {
+          "title": "Oregon State: $50 million Huang gift, October 14, 2022",
+          "url": "https://news.oregonstate.edu/news/50-million-gift-nvidia-founder-and-spouse-helps-launch-oregon-state-university-research-center"
+        },
+        {
+          "title": "HKUST Engineering: Top Engineering Scholars Award gift, September 2, 2025",
+          "url": "https://seng.hkust.edu.hk/news/20250902/hkust-thanks-esteemed-alumni-jensen-huang-and-terry-tsang-generous-donation-establish-top-engineering-scholars-award"
+        }
+      ],
+      "reviewed": "2026-10-03"
     }
   },
   "shares": {
