@@ -212,7 +212,8 @@ try {
     const chapters = page.locator('.chapter-disclosure');
     const chapterSummary = page.locator('.chapter-widget summary');
     const names = await page.locator('#main-menu > li > a').evaluateAll(nodes => nodes.map(node => node.textContent.trim()));
-    assert.ok(names.length >= 8, 'Exercise the complete site menu');
+    assert.deepEqual(names, ['Home', 'Industry Explorer', 'Evidence Library', 'Archives', 'Search', 'Contact', 'About & Methodology'], 'Exercise every surviving menu item without the retired directory');
+    assert.deepEqual(await page.locator('#main-menu > li > a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href'))), ['/', '/industries/', '/evidence-library/', '/archives/', '/search/', '/contact/', '/about/'], 'All seven menu destinations remain intact');
     await expect(disclosure).toHaveJSProperty('open', true);
     await expect(summary).toHaveAccessibleName('Minimize navigation');
     const expanded = await desktopLayout(page, false, false);
