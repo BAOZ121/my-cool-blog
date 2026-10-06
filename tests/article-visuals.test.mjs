@@ -57,9 +57,10 @@ test("chart themes and mobile layout retain all data and respect reduced motion"
   assert.notEqual(mobile.textStyle.color, light.textStyle.color);
   assert.deepEqual(mobile.series[0].data, light.series[0].data);
 });
-test("all share charts use distinct gold-led colors with readable percentage labels", () => {
+test("share charts retain distinct site or company colors with readable percentage labels", () => {
   const shares = JSON.parse(readFileSync(new URL("../data/article_visuals.json", import.meta.url))).shares;
   const expected = ["#d6b56f", "#67b8b0", "#7ea5dc", "#e58b78", "#a995d3", "#a4bd7e", "#d78fb3", "#8baeb8"];
+  const nvidiaColors = ["#76b900", "#b7e36f", "#4f8b36", "#9dba85", "#6b8f5d", "#d5e7c8", "#86c748", "#c1df9b"];
   const luminance = (hex) => {
     const [r, g, b] = hex.slice(1).match(/../g).map((channel) => {
       const value = parseInt(channel, 16) / 255;
@@ -71,7 +72,7 @@ test("all share charts use distinct gold-led colors with readable percentage lab
     const original = structuredClone(data);
     for (const dark of [false, true]) for (const compact of [false, true]) {
       const options = pieOptions(data, { dark, compact });
-      assert.deepEqual(options.color, expected);
+      assert.deepEqual(options.color, data.theme === "nvidia" ? nvidiaColors : expected);
       assert.equal(new Set(options.color.slice(0, data.series.length)).size, data.series.length);
       assert.deepEqual(options.series[0].data, data.series.map(({ name, value }) => ({ name, value })));
       for (const color of options.color) {

@@ -1,0 +1,53 @@
+{
+  "cover": {
+    "file": "jensen-huang-2017-cover.jpg",
+    "publish_file": "cover-hd.jpg",
+    "width": 5184,
+    "height": 3456,
+    "caption": "Jensen Huang, 5 January 2017.",
+    "alt": "Jensen Huang wearing a black leather jacket and gesturing, photographed in January 2017.",
+    "author": "Maurizio Pesce",
+    "source": "https://commons.wikimedia.org/wiki/File:Nvidia_CEO_Jensen_Huang_gestikuliert.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Nvidia_CEO_Jensen_Huang_gestikuliert.jpg",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/"
+  },
+  "photos": {
+    "dennys": {
+      "file": "dennys-san-jose.jpg",
+      "width": 4568,
+      "height": 2924,
+      "caption": "The Denny’s restaurant at 2484 Berryessa Road in San Jose, associated with NVIDIA’s founding discussions. Photographed on 2 July 2023.",
+      "alt": "Exterior of the Denny’s restaurant on Berryessa Road in San Jose, photographed in 2023.",
+      "author": "Coolcaesar",
+      "source": "https://commons.wikimedia.org/wiki/File:2484_Berryessa_Road.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/4/4b/2484_Berryessa_Road.jpg",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "gtc": {
+      "file": "gtc-taiwan-2016.jpg",
+      "width": 7952,
+      "height": 5304,
+      "caption": "Jensen Huang at GTC Taiwan on 21 September 2016. The stage display shows the Tesla P4 and P40 inference accelerators.",
+      "alt": "Jensen Huang on stage at GTC Taiwan 2016, holding graphics accelerators in front of a Tesla P4 and P40 display.",
+      "author": "NVIDIA Taiwan",
+      "source": "https://commons.wikimedia.org/wiki/File:GTC_Taiwan_2016_%E2%80%93_Tesla_P40_%26_P40.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/f/f3/GTC_Taiwan_2016_%E2%80%93_Tesla_P40_%26_P40.jpg",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/"
+    },
+    "stanford": {
+      "file": "stanford-huang-center.jpg",
+      "width": 5247,
+      "height": 3498,
+      "caption": "Jen-Hsun Huang Engineering Center at Stanford University, photographed on 16 December 2016. The dedication described in the text took place in 2010.",
+      "alt": "The Jen-Hsun Huang Engineering Center at Stanford University, photographed in December 2016.",
+      "author": "Frank Schulenburg",
+      "source": "https://commons.wikimedia.org/wiki/File:Jen-Hsun_Huang_Engineering_Center_in_2016.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/b/be/Jen-Hsun_Huang_Engineering_Center_in_2016.jpg",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  }
+}

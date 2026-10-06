@@ -64,6 +64,109 @@
   15% { opacity: .65; }
   100% { opacity: 0; transform: translateY(114px); }
 }
+/* NVIDIA's genuine mark stays intact; surrounding light supplies the motion. */
+.dex-entry-curtain--nvidia-company { background: #050805; overflow: clip; }
+.nvidia-entry { position: relative; display: grid; place-items: center; width: min(620px, calc(100vw - 48px)); height: 260px; }
+.nvidia-entry__logo { position: relative; z-index: 1; display: block; width: min(360px, 70vw); max-height: 180px; height: auto; object-fit: contain; opacity: 1; animation: nvidia-logo-enter 820ms cubic-bezier(.22, 1, .36, 1) both; }
+.nvidia-entry__halo { position: absolute; inset: -90px -20%; border-radius: 50%; background: radial-gradient(ellipse at center, rgba(118,185,0,.12), rgba(118,185,0,.035) 35%, transparent 66%); opacity: 0; animation: nvidia-halo-enter 1550ms ease-out both; }
+.nvidia-entry__rays { position: absolute; inset: 0; }
+.nvidia-entry__rays::before,.nvidia-entry__rays::after { content: ""; position: absolute; height: 1px; width: 45%; left: 27.5%; opacity: 0; background: linear-gradient(90deg, transparent, #76b900, transparent); transform: scaleX(.18); animation: nvidia-rays-enter 1450ms cubic-bezier(.22, 1, .36, 1) both; }
+.nvidia-entry__rays::before { top: 20px; }
+.nvidia-entry__rays::after { bottom: 20px; animation-delay: 110ms; }
+@keyframes nvidia-logo-enter { from { opacity: 0; transform: translateY(10px) scale(.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@keyframes nvidia-halo-enter { 0% { opacity: 0; transform: scale(.7); } 60%,100% { opacity: 1; transform: scale(1); } }
+@keyframes nvidia-rays-enter { 0% { opacity: 0; transform: scaleX(.18); } 40% { opacity: .8; } 100% { opacity: .3; transform: scaleX(1.8); } }
+@media(max-width:600px) { .nvidia-entry { height: 220px; } .nvidia-entry__logo { width: min(290px, 74vw); } .nvidia-entry__halo { inset: -60px -10%; } }
+/* Biography entrance: NVIDIA green, black, and the supplied photograph. */
+html:has(> .dex-entry-curtain--nvidia) {
+  background-color: #080b07;
+  scrollbar-color: #274000 #080b07;
+}
+.dex-entry-curtain--nvidia {
+  background: #080b07;
+}
+.dex-entry-curtain--nvidia .dex-entry-curtain__panel {
+  display: grid;
+  grid-template-columns: 152px minmax(0, 1fr);
+  align-items: center;
+  gap: 24px;
+  width: min(480px, calc(100vw - 48px));
+  height: auto;
+  min-height: 190px;
+  padding: 24px;
+  border-color: rgba(118, 185, 0, .42);
+  border-radius: 12px;
+  color: #76b900;
+  background: #10150d;
+  box-shadow: 0 16px 60px rgba(0, 0, 0, .4);
+}
+.dex-entry-curtain--nvidia .dex-entry-curtain__panel::after {
+  inset-inline: 24px;
+  top: auto;
+  bottom: 14px;
+  height: 2px;
+  opacity: .9;
+  transform-origin: left;
+  background: #76b900;
+  animation: dex-nvidia-progress 1690ms cubic-bezier(.22, 1, .36, 1) both;
+}
+.dex-entry-curtain--nvidia .dex-entry-curtain__label {
+  color: #9bd341;
+  opacity: 1;
+  font-size: 10px;
+}
+.dex-entry-curtain--nvidia .dex-entry-curtain__status {
+  margin-top: 15px;
+  color: #f1f5ec;
+  font-size: 14px;
+  letter-spacing: .08em;
+  line-height: 1.5;
+}
+.dex-entry-curtain--nvidia .dex-entry-curtain__mode {
+  margin-top: 18px;
+  color: #a8b398;
+  opacity: 1;
+}
+.dex-entry-curtain__portrait {
+  overflow: hidden;
+  border: 1px solid rgba(118, 185, 0, .5);
+  border-radius: 6px;
+  background: #080b07;
+  animation: dex-portrait-enter 500ms cubic-bezier(.22, 1, .36, 1) both;
+}
+.dex-entry-curtain__portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.dex-entry-curtain__portrait-label {
+  padding: 9px 10px;
+  color: #d4e7b6;
+  font-size: 8px;
+  letter-spacing: .12em;
+}
+.dex-entry-curtain--nvidia .dex-entry-curtain__panel--no-photo {
+  grid-template-columns: minmax(0, 1fr);
+  width: min(390px, calc(100vw - 48px));
+}
+@keyframes dex-nvidia-progress {
+  from { transform: scaleX(.04); }
+  to { transform: scaleX(1); }
+}
+@keyframes dex-portrait-enter {
+  from { opacity: 0; transform: translateY(8px) scale(.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@media (max-width: 479px) {
+  .dex-entry-curtain--nvidia .dex-entry-curtain__panel {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+    padding: 22px 20px 30px;
+  }
+  .dex-entry-curtain__portrait { width: 152px; justify-self: center; }
+  .dex-entry-curtain--nvidia .dex-entry-curtain__status { font-size: 13px; }
+  .dex-entry-curtain--nvidia .dex-entry-curtain__panel::after { inset-inline: 20px; }
+}
 @media (prefers-reduced-motion: reduce) {
   .dex-entry-curtain { display: none !important; animation: none; }
 }

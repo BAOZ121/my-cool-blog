@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3600" height="2350" viewBox="0 0 3600 2350" role="img" aria-labelledby="title desc">
+<title id="title">Renewable energy and battery value chain</title>
+<desc id="desc">A four-level mind map: renewable energy and batteries, upstream/midstream/downstream, ten functional segments, then companies or products. Classification links do not prove supply contracts.</desc>
+<rect width="3600" height="2350" fill="#FFFFFF"/>
+<text x="130" y="130" font-family="Arial, sans-serif" font-size="88" font-weight="700" fill="#163049" text-anchor="start" dominant-baseline="central">Renewable energy and battery value chain</text>
+<text x="130" y="248" font-family="Arial, sans-serif" font-size="48" font-weight="400" fill="#536577" text-anchor="start" dominant-baseline="central">Global  |  3 Oct 2026  |  Industry &gt; Stages &gt; Segments &gt; Companies or products</text>
+<rect x="110" y="1060" width="495" height="260" rx="30" fill="#153B57" stroke="none" stroke-width="3"/>
+<text x="358" y="1152.5" font-family="Arial, sans-serif" font-size="54" font-weight="700" fill="white" text-anchor="middle" dominant-baseline="central">Renewable energy</text>
+<text x="358" y="1227.5" font-family="Arial, sans-serif" font-size="54" font-weight="700" fill="white" text-anchor="middle" dominant-baseline="central">and batteries</text>
+<polyline points="605,1190 685,1190 685,570.0 780,570.0" fill="none" stroke="#2472AB" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="780" y="506.0" width="460" height="128.0" rx="22" fill="#E9F3FA" stroke="#2472AB" stroke-width="4"/>
+<text x="1010" y="570.0" font-family="Arial, sans-serif" font-size="58" font-weight="700" fill="#2472AB" text-anchor="middle" dominant-baseline="central">Upstream</text>
+<polyline points="1240,570.0 1295,570.0 1295,410 1400,410" fill="none" stroke="#2472AB" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1400" y="342" width="720" height="136" rx="18" fill="#E9F3FA" stroke="#2472AB" stroke-width="3"/>
+<text x="1760" y="378.5" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="#163049" text-anchor="middle" dominant-baseline="central">Minerals and</text>
+<text x="1760" y="441.5" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="#163049" text-anchor="middle" dominant-baseline="central">chemical conversion</text>
+<polyline points="2120,410 2200,410" fill="none" stroke="#2472AB" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="2200" y="342" width="1270" height="136" rx="18" fill="#FFFFFF" stroke="#C8D6E0" stroke-width="3"/>
+<text x="2250" y="410.0" font-family="Arial, sans-serif" font-size="53" font-weight="400" fill="#163049" text-anchor="start" dominant-baseline="central">Albemarle lithium [C11]</text>
+<polyline points="1240,570.0 1295,570.0 1295,570 1400,570" fill="none" stroke="#2472AB" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1400" y="502" width="720" height="136" rx="18" fill="#E9F3FA" stroke="#2472AB" stroke-width="3"/>
+<text x="1760" y="538.5" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="#163049" text-anchor="middle" dominant-baseline="central">Generation</text>
+<text x="1760" y="601.5" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="#163049" text-anchor="middle" dominant-baseline="central">manufacturing inputs</text>
+<polyline points="2120,570 2200,570" fill="none" stroke="#2472AB" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="2200" y="502" width="1270" height="136" rx="18" fill="#FFFFFF" stroke="#C8D6E0" stroke-width="3"/>
+<text x="2250" y="537.5" font-family="Arial, sans-serif" font-size="53" font-weight="400" fill="#163049" text-anchor="start" dominant-baseline="central">Polysilicon; wafers [G10]</text>
+<text x="2250" y="602.5" font-family="Arial, sans-serif" font-size="53" font-weight="400" fill="#163049" text-anchor="start" dominant-baseline="central">Blades; towers; drivetrains [H02]</text>
+<polyline points="1240,570.0 1295,570.0 1295,730 1400,730" fill="none" stroke="#2472AB" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1400" y="662" width="720" height="136" rx="18" fill="#E9F3FA" stroke="#2472AB" stroke-width="3"/>
+<text x="1760" y="698.5" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="#163049" text-anchor="middle" dominant-baseline="central">Battery materials</text>
+<text x="1760" y="761.5" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="#163049" text-anchor="middle" dominant-baseline="central">and components</text>
+<polyline points="2120,730 2200,730" fill="none" stroke="#2472AB" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="2200" y="662" width="1270" height="136" rx="18" fill="#FFFFFF" stroke="#C8D6E0" stroke-width="3"/>
+<text x="2250" y="697.5" font-family="Arial, sans-serif" font-size="53" font-weight="400" fill="#163049" text-anchor="start" dominant-baseline="central">Electrode materials [H03]</text>
+<text x="2250" y="762.5" font-family="Arial, sans-serif" font-size="53" font-weight="400" fill="#163049" text-anchor="start" dominant-baseline="central">Hard-carbon anodes [G09]</text>
+<polyline points="605,1190 685,1190 685,1090.0 780,1090.0" fill="none" stroke="#138F86" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="780" y="1026.0" width="460" height="128.0" rx="22" fill="#E9F7F3" stroke="#138F86" stroke-width="4"/>
+<text x="1010" y="1090.0" font-family="Arial, sans-serif" font-size="58" font-weight="700" fill="#138F86" text-anchor="middle" dominant-baseline="central">Midstream</text>
+<polyline points="1240,1090.0 1295,1090.0 1295,930 1400,930" fill="none" stroke="#138F86" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1400" y="862" width="720" height="136" rx="18" fill="#E9F7F3" stroke="#138F86" stroke-width="3"/>
+<text x="1760" y="930.0" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="#163049" text-anchor="middle" dominant-baseline="central">Generation equipment</text>
+<polyline points="2120,930 2200,930" fill="none" stroke="#138F86" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="2200" y="862" width="1270" height="136" rx="18" fill="#FFFFFF" stroke="#C8D6E0" stroke-width="3"/>
+<text x="2250" y="897.5" font-family="Arial, sans-serif" font-size="53" font-weight="400" fill="#163049" text-anchor="start" dominant-baseline="central">First Solar; Vestas [C07,C08]</text>
+<text x="2250" y="962.5" font-family="Arial, sans-serif" font-size="53" font-weight="400" fill="#163049" text-anchor="start" dominant-baseline="central">JinkoSolar modules [C12]</text>
+<polyline points="1240,1090.0 1295,1090.0 1295,1090 1400,1090" fill="none" stroke="#138F86" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1400" y="1022" width="720" height="136" rx="18" fill="#E9F7F3" stroke="#138F86" stroke-width="3"/>
+<text x="1760" y="1058.5" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="#163049" text-anchor="middle" dominant-baseline="central">Battery cells</text>
+<text x="1760" y="1121.5" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="#163049" text-anchor="middle" dominant-baseline="central">and packs</text>
+<polyline points="2120,1090 2200,1090" fill="none" stroke="#138F86" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="2200" y="1022" width="1270" height="136" rx="18" fill="#FFFFFF" stroke="#C8D6E0" stroke-width="3"/>
+<text x="2250" y="1057.5" font-family="Arial, sans-serif" font-size="53" font-weight="400" fill="#163049" text-anchor="start" dominant-baseline="central">CATL [C05]</text>
+<text x="2250" y="1122.5" font-family="Arial, sans-serif" font-size="53" font-weight="400" fill="#163049" text-anchor="start" dominant-baseline="central">LG Energy Solution [C06]</text>
+<polyline points="1240,1090.0 1295,1090.0 1295,1250 1400,1250" fill="none" stroke="#138F86" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1400" y="1182" width="720" height="136" rx="18" fill="#E9F7F3" stroke="#138F86" stroke-width="3"/>
+<text x="1760" y="1250.0" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="#163049" text-anchor="middle" dominant-baseline="central">Storage systems</text>
+<polyline points="2120,1250 2200,1250" fill="none" stroke="#138F86" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="2200" y="1182" width="1270" height="136" rx="18" fill="#FFFFFF" stroke="#C8D6E0" stroke-width="3"/>
+<text x="2250" y="1217.5" font-family="Arial, sans-serif" font-size="53" font-weight="400" fill="#163049" text-anchor="start" dominant-baseline="central">Tesla Megapack [C10]</text>
+<text x="2250" y="1282.5" font-family="Arial, sans-serif" font-size="53" font-weight="400" fill="#163049" text-anchor="start" dominant-baseline="central">Tesla Powerwall [C10]</text>
+<polyline points="605,1190 685,1190 685,1690.0 780,1690.0" fill="none" stroke="#A7772E" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="780" y="1626.0" width="460" height="128.0" rx="22" fill="#FBF3E6" stroke="#A7772E" stroke-width="4"/>
+<text x="1010" y="1690.0" font-family="Arial, sans-serif" font-size="58" font-weight="700" fill="#A7772E" text-anchor="middle" dominant-baseline="central">Downstream</text>
+<polyline points="1240,1690.0 1295,1690.0 1295,1450 1400,1450" fill="none" stroke="#A7772E" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1400" y="1382" width="720" height="136" rx="18" fill="#FBF3E6" stroke="#A7772E" stroke-width="3"/>
+<text x="1760" y="1450.0" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="#163049" text-anchor="middle" dominant-baseline="central">Project development</text>
+<polyline points="2120,1450 2200,1450" fill="none" stroke="#A7772E" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="2200" y="1382" width="1270" height="136" rx="18" fill="#FFFFFF" stroke="#C8D6E0" stroke-width="3"/>
+<text x="2250" y="1450.0" font-family="Arial, sans-serif" font-size="53" font-weight="400" fill="#163049" text-anchor="start" dominant-baseline="central">Masdar project [C12]</text>
+<polyline points="1240,1690.0 1295,1690.0 1295,1610 1400,1610" fill="none" stroke="#A7772E" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1400" y="1542" width="720" height="136" rx="18" fill="#FBF3E6" stroke="#A7772E" stroke-width="3"/>
+<text x="1760" y="1578.5" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="#163049" text-anchor="middle" dominant-baseline="central">Generation and</text>
+<text x="1760" y="1641.5" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="#163049" text-anchor="middle" dominant-baseline="central">storage operation</text>
+<polyline points="2120,1610 2200,1610" fill="none" stroke="#A7772E" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="2200" y="1542" width="1270" height="136" rx="18" fill="#FFFFFF" stroke="#C8D6E0" stroke-width="3"/>
+<text x="2250" y="1610.0" font-family="Arial, sans-serif" font-size="53" font-weight="400" fill="#163049" text-anchor="start" dominant-baseline="central">Vistra assets [C03,C04]</text>
+<polyline points="1240,1690.0 1295,1690.0 1295,1770 1400,1770" fill="none" stroke="#A7772E" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1400" y="1702" width="720" height="136" rx="18" fill="#FBF3E6" stroke="#A7772E" stroke-width="3"/>
+<text x="1760" y="1738.5" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="#163049" text-anchor="middle" dominant-baseline="central">Vehicle and</text>
+<text x="1760" y="1801.5" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="#163049" text-anchor="middle" dominant-baseline="central">household use</text>
+<polyline points="2120,1770 2200,1770" fill="none" stroke="#A7772E" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="2200" y="1702" width="1270" height="136" rx="18" fill="#FFFFFF" stroke="#C8D6E0" stroke-width="3"/>
+<text x="2250" y="1737.5" font-family="Arial, sans-serif" font-size="53" font-weight="400" fill="#163049" text-anchor="start" dominant-baseline="central">EV batteries [G03]</text>
+<text x="2250" y="1802.5" font-family="Arial, sans-serif" font-size="53" font-weight="400" fill="#163049" text-anchor="start" dominant-baseline="central">Household storage [C10]</text>
+<polyline points="1240,1690.0 1295,1690.0 1295,1930 1400,1930" fill="none" stroke="#A7772E" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="1400" y="1862" width="720" height="136" rx="18" fill="#FBF3E6" stroke="#A7772E" stroke-width="3"/>
+<text x="1760" y="1898.5" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="#163049" text-anchor="middle" dominant-baseline="central">Service and</text>
+<text x="1760" y="1961.5" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="#163049" text-anchor="middle" dominant-baseline="central">material recovery</text>
+<polyline points="2120,1930 2200,1930" fill="none" stroke="#A7772E" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="2200" y="1862" width="1270" height="136" rx="18" fill="#FFFFFF" stroke="#C8D6E0" stroke-width="3"/>
+<text x="2250" y="1897.5" font-family="Arial, sans-serif" font-size="53" font-weight="400" fill="#163049" text-anchor="start" dominant-baseline="central">Vestas service [C08]</text>
+<text x="2250" y="1962.5" font-family="Arial, sans-serif" font-size="53" font-weight="400" fill="#163049" text-anchor="start" dominant-baseline="central">Recovered battery materials [G03]</text>
+<polyline points="130,2100 3470,2100" fill="none" stroke="#D7E0E8" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="130" y="2190" font-family="Arial, sans-serif" font-size="43" font-weight="400" fill="#536577" text-anchor="start" dominant-baseline="central">Sources: companies [C03–C08,C10–C12]; IEA [G03]; IRENA [G09,G10]; DOE [H02]; Nobel [H03].</text>
+<text x="130" y="2268" font-family="Arial, sans-serif" font-size="44" font-weight="400" fill="#536577" text-anchor="start" dominant-baseline="central">Classification links do not imply supply contracts. Companies may have several roles.</text>
+</svg>

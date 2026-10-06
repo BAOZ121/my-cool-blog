@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1250" viewBox="0 0 1600 1250">
+<rect width="100%" height="100%" fill="white"/>
+<text x="65" y="93.9" font-family="Arial, sans-serif" font-size="51" font-weight="700" fill="#172B3A">China Industrial Robot Installations</text>
+<text x="65" y="147.9" font-family="Arial, sans-serif" font-size="31" font-weight="400" fill="#172B3A">2025 | Share of annual new installations by supplier origin</text>
+<text x="65" y="193.2" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#172B3A">Industrial robot submarket | Reported whole percentages</text>
+<path d="M505,620 L505.0,295.0 A325,325 0 1 1 404.5694768281421,929.0933677959249 Z" fill="#256A86"/>
+<path d="M505,620 L404.5694768281421,929.0933677959249 A325,325 0 0 1 504.99999999999994,295.0 Z" fill="#C67443"/>
+<circle cx="505" cy="620" r="200" fill="white"/>
+<text x="390" y="594.1" font-family="Arial, sans-serif" font-size="49" font-weight="700" fill="#172B3A">354,000</text>
+<text x="387" y="640.1" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#172B3A">installations</text>
+<text x="389" y="679.6" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#172B3A">IFR rounded total</text>
+<rect x="910" y="425" width="54" height="54" rx="6" fill="#256A86"/>
+<text x="985" y="460.4" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#172B3A">Chinese suppliers</text>
+<text x="985" y="585.2" font-family="Arial, sans-serif" font-size="58" font-weight="700" fill="#256A86">55%</text>
+<rect x="910" y="665" width="54" height="54" rx="6" fill="#C67443"/>
+<text x="985" y="700.4" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#172B3A">All other suppliers</text>
+<text x="985" y="825.2" font-family="Arial, sans-serif" font-size="58" font-weight="700" fill="#C67443">45%</text>
+<text x="65" y="1047.0" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#172B3A">Other suppliers = 100% - Chinese suppliers (55%) = 45%.</text>
+<text x="65" y="1096.2" font-family="Arial, sans-serif" font-size="28" font-weight="400" fill="#172B3A">Source: International Federation of Robotics, 24 September 2026 [E204].</text>
+<text x="65" y="1141.4" font-family="Arial, sans-serif" font-size="26" font-weight="400" fill="#172B3A">Shares follow IFR&#x27;s supplier-origin classification; no country-of-manufacture split is shown.</text>
+<text x="65" y="1185.4" font-family="Arial, sans-serif" font-size="26" font-weight="400" fill="#172B3A">This chart does not measure automation revenue, software revenue, or individual vendor shares.</text>
+</svg>

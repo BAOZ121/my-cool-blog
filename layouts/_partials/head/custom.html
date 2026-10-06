@@ -1,8 +1,16 @@
 {{ partial "page-transitions/assets.html" . }}
 {{ partial "chapter-rail/assets.html" . }}
 {{ partial "site-navigation/assets.html" . }}
+{{ if .Params.biography }}
+  {{ $biographyCSS := resources.Get "css/biography.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $biographyCSS.RelPermalink }}" integrity="{{ $biographyCSS.Data.Integrity }}">
+{{ end }}
 {{ if or (.HasShortcode "industry-map") (.HasShortcode "market-share") }}
   {{ partial "article-visuals/assets.html" . }}
+{{ end }}
+{{ if .Params.companyResearch }}
+  {{ $companyCSS := resources.Get "css/company-research.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $companyCSS.RelPermalink }}" integrity="{{ $companyCSS.Data.Integrity }}">
 {{ end }}
 {{ $image := partial "helper/image" (dict "Image" .Params.image "Resources" .Resources "Context" .) }}
 {{ if not $image }}
@@ -18,4 +26,9 @@
 {{ if .IsHome }}
   {{ $website := dict "@context" "https://schema.org" "@type" "WebSite" "name" .Site.Title "url" .Site.BaseURL "description" .Site.Params.description }}
   <script type="application/ld+json">{{ $website | jsonify | safeJS }}</script>
+{{ end }}
+
+{{ if .Params.industrialreport }}
+  {{ $style := resources.Get "css/industrial-report.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
 {{ end }}

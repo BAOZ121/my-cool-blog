@@ -1,0 +1,30 @@
+{
+  "asset": "nvidia-logo.svg",
+  "official_source_url": "https://www.nvidia.com/content/dam/en-zz/Solutions/about-nvidia/nvidia-brochure/images/nvidia-logo-white.svg",
+  "final_response_url": "https://www.nvidia.com/content/dam/en-zz/Solutions/about-nvidia/nvidia-brochure/images/nvidia-logo-white.svg",
+  "publisher": "NVIDIA Corporation",
+  "official_asset_location": "NVIDIA website digital asset library; about-nvidia/nvidia-brochure/images",
+  "related_official_logo_reference_page": "https://nvidianews.nvidia.com/file/nvidia-logo-horiz-wht-16x9",
+  "related_reference_note": "The news item confirms the official green-symbol/white-wordmark variation; this downloaded SVG comes directly from the official website asset library, rather than from the news item PNG.",
+  "downloaded_at_utc": "2026-10-06T14:18:14.126475+00:00",
+  "bytes": 2122,
+  "sha256": "201bed0f3fc1c7f83555fe448361a8bb278a049ad3970b3a6aed7fea0502ae55",
+  "svg_view_box": "0 0 974.7 179.71",
+  "intrinsic_width": null,
+  "intrinsic_height": null,
+  "aspect_ratio": 5.423738244950197,
+  "colors": [
+    "#76b900",
+    "#fff"
+  ],
+  "path_count": 3,
+  "background": "transparent",
+  "preservation": "Official downloaded bytes saved without modification; all path data and transforms are original.",
+  "checks": {
+    "xml_valid": true,
+    "no_scripts": true,
+    "no_foreign_objects": true,
+    "no_event_handlers": true,
+    "no_external_references": true
+  }
+}

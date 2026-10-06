@@ -1,0 +1,262 @@
+[
+  {
+    "id": "industry",
+    "parent_id": "",
+    "level": 0,
+    "label_en": "Industrial Automation and Industrial Software",
+    "role": "Full industry scope",
+    "refs": []
+  },
+  {
+    "id": "upstream",
+    "parent_id": "industry",
+    "level": 1,
+    "label_en": "Upstream",
+    "role": "Foundational components",
+    "refs": []
+  },
+  {
+    "id": "midstream",
+    "parent_id": "industry",
+    "level": 1,
+    "label_en": "Midstream",
+    "role": "Control and industrial software",
+    "refs": []
+  },
+  {
+    "id": "downstream",
+    "parent_id": "industry",
+    "level": 1,
+    "label_en": "Downstream",
+    "role": "Integration and end users",
+    "refs": []
+  },
+  {
+    "id": "chips",
+    "parent_id": "upstream",
+    "level": 2,
+    "label_en": "Semiconductors",
+    "role": "Signal acquisition, computing and communication",
+    "refs": []
+  },
+  {
+    "id": "ti",
+    "parent_id": "chips",
+    "level": 3,
+    "label_en": "Texas Instruments analog and embedded chips",
+    "role": "Representative products",
+    "refs": [
+      "E004"
+    ]
+  },
+  {
+    "id": "sensing",
+    "parent_id": "upstream",
+    "level": 2,
+    "label_en": "Sensing and machine vision",
+    "role": "Measure physical processes",
+    "refs": []
+  },
+  {
+    "id": "sick",
+    "parent_id": "sensing",
+    "level": 3,
+    "label_en": "SICK sensors, cameras and encoders",
+    "role": "Representative products",
+    "refs": [
+      "E005"
+    ]
+  },
+  {
+    "id": "drives",
+    "parent_id": "upstream",
+    "level": 2,
+    "label_en": "Drives and motors",
+    "role": "Actuate motion",
+    "refs": []
+  },
+  {
+    "id": "ino_drive",
+    "parent_id": "drives",
+    "level": 3,
+    "label_en": "Inovance AC drives, servo drives and motors",
+    "role": "Representative products",
+    "refs": [
+      "E021"
+    ]
+  },
+  {
+    "id": "control",
+    "parent_id": "midstream",
+    "level": 2,
+    "label_en": "PLC and distributed control systems",
+    "role": "Configured machine logic and process control",
+    "refs": []
+  },
+  {
+    "id": "siemens_plc",
+    "parent_id": "control",
+    "level": 3,
+    "label_en": "Siemens SIMATIC; SUPCON ECS-700 DCS",
+    "role": "Representative controls",
+    "refs": [
+      "E019",
+      "E006"
+    ]
+  },
+  {
+    "id": "inovance_plc",
+    "parent_id": "control",
+    "level": 3,
+    "label_en": "Inovance H5U PLC",
+    "role": "Machine logic and motion-control example",
+    "refs": [
+      "E024"
+    ]
+  },
+  {
+    "id": "scada",
+    "parent_id": "midstream",
+    "level": 2,
+    "label_en": "HMI, SCADA and process data",
+    "role": "Operator visibility and records",
+    "refs": []
+  },
+  {
+    "id": "aveva",
+    "parent_id": "scada",
+    "level": 3,
+    "label_en": "AVEVA Operations Control",
+    "role": "Representative software",
+    "refs": [
+      "E008"
+    ]
+  },
+  {
+    "id": "mes",
+    "parent_id": "midstream",
+    "level": 2,
+    "label_en": "Manufacturing execution systems",
+    "role": "Execution, quality and production genealogy",
+    "refs": []
+  },
+  {
+    "id": "rockwell",
+    "parent_id": "mes",
+    "level": 3,
+    "label_en": "Rockwell FactoryTalk ProductionCentre and Plex",
+    "role": "Representative software",
+    "refs": [
+      "E007"
+    ]
+  },
+  {
+    "id": "engineering",
+    "parent_id": "midstream",
+    "level": 2,
+    "label_en": "CAD and engineering simulation",
+    "role": "Design and virtual engineering",
+    "refs": []
+  },
+  {
+    "id": "dassault",
+    "parent_id": "engineering",
+    "level": 3,
+    "label_en": "Dassault Systèmes CATIA and SIMULIA",
+    "role": "Representative software",
+    "refs": [
+      "E020"
+    ]
+  },
+  {
+    "id": "plm",
+    "parent_id": "midstream",
+    "level": 2,
+    "label_en": "Product lifecycle management",
+    "role": "Product information, revision and change processes",
+    "refs": []
+  },
+  {
+    "id": "plm_products",
+    "parent_id": "plm",
+    "level": 3,
+    "label_en": "PTC Windchill; Dassault Systèmes ENOVIA",
+    "role": "Representative software",
+    "refs": [
+      "E009",
+      "E020"
+    ]
+  },
+  {
+    "id": "manufacturing_planning",
+    "parent_id": "midstream",
+    "level": 2,
+    "label_en": "Manufacturing planning and operations",
+    "role": "Plan and manage manufacturing processes",
+    "refs": []
+  },
+  {
+    "id": "delmia",
+    "parent_id": "manufacturing_planning",
+    "level": 3,
+    "label_en": "Dassault Systèmes DELMIA",
+    "role": "Manufacturing planning and operations portfolio; not a single MES denominator",
+    "refs": [
+      "E020"
+    ]
+  },
+  {
+    "id": "robotics",
+    "parent_id": "midstream",
+    "level": 2,
+    "label_en": "Industrial robotic equipment",
+    "role": "Automated physical operations",
+    "refs": []
+  },
+  {
+    "id": "ino_robot",
+    "parent_id": "robotics",
+    "level": 3,
+    "label_en": "Inovance industrial robot portfolio",
+    "role": "Representative equipment",
+    "refs": [
+      "E021"
+    ]
+  },
+  {
+    "id": "integration",
+    "parent_id": "downstream",
+    "level": 2,
+    "label_en": "Machine building and integration",
+    "role": "Application-specific mechanical, control and information integration",
+    "refs": []
+  },
+  {
+    "id": "thyssen",
+    "parent_id": "integration",
+    "level": 3,
+    "label_en": "thyssenkrupp Automation Engineering",
+    "role": "Disclosed special-machine builder example",
+    "refs": [
+      "E012"
+    ]
+  },
+  {
+    "id": "factories",
+    "parent_id": "downstream",
+    "level": 2,
+    "label_en": "Factory operations",
+    "role": "Operate and maintain production assets",
+    "refs": []
+  },
+  {
+    "id": "erlangen",
+    "parent_id": "factories",
+    "level": 3,
+    "label_en": "Siemens Electronics Factory Erlangen",
+    "role": "Disclosed factory example",
+    "refs": [
+      "E012"
+    ]
+  }
+]

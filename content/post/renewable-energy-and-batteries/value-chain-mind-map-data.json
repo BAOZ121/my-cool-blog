@@ -1,0 +1,173 @@
+{
+  "title": "Renewable energy and battery value chain",
+  "root": "Renewable energy and batteries",
+  "period": "Classification at 3 October 2026",
+  "geography": "Global; examples retain their original geographic and business scope",
+  "nodes": [
+    {
+      "tier": "Upstream",
+      "segment": "Mineral extraction and conversion",
+      "segment_lines": [
+        "Minerals and",
+        "chemical conversion"
+      ],
+      "examples": [
+        "Albemarle lithium [C11]"
+      ],
+      "references": [
+        "C11"
+      ],
+      "y": 410
+    },
+    {
+      "tier": "Upstream",
+      "segment": "Generation manufacturing inputs",
+      "segment_lines": [
+        "Generation",
+        "manufacturing inputs"
+      ],
+      "examples": [
+        "Polysilicon; wafers [G10]",
+        "Blades; towers; drivetrains [H02]"
+      ],
+      "references": [
+        "G10",
+        "H02"
+      ],
+      "y": 570
+    },
+    {
+      "tier": "Upstream",
+      "segment": "Battery materials and components",
+      "segment_lines": [
+        "Battery materials",
+        "and components"
+      ],
+      "examples": [
+        "Electrode materials [H03]",
+        "Hard-carbon anodes [G09]"
+      ],
+      "references": [
+        "H03",
+        "G09"
+      ],
+      "y": 730
+    },
+    {
+      "tier": "Midstream",
+      "segment": "Generation equipment",
+      "segment_lines": [
+        "Generation equipment"
+      ],
+      "examples": [
+        "First Solar; Vestas [C07,C08]",
+        "JinkoSolar modules [C12]"
+      ],
+      "references": [
+        "C07",
+        "C08",
+        "C12"
+      ],
+      "y": 930
+    },
+    {
+      "tier": "Midstream",
+      "segment": "Battery cells and packs",
+      "segment_lines": [
+        "Battery cells",
+        "and packs"
+      ],
+      "examples": [
+        "CATL [C05]",
+        "LG Energy Solution [C06]"
+      ],
+      "references": [
+        "C05",
+        "C06"
+      ],
+      "y": 1090
+    },
+    {
+      "tier": "Midstream",
+      "segment": "Storage systems",
+      "segment_lines": [
+        "Storage systems"
+      ],
+      "examples": [
+        "Tesla Megapack [C10]",
+        "Tesla Powerwall [C10]"
+      ],
+      "references": [
+        "C10"
+      ],
+      "y": 1250
+    },
+    {
+      "tier": "Downstream",
+      "segment": "Project development",
+      "segment_lines": [
+        "Project development"
+      ],
+      "examples": [
+        "Masdar project [C12]"
+      ],
+      "references": [
+        "C12"
+      ],
+      "y": 1450
+    },
+    {
+      "tier": "Downstream",
+      "segment": "Generation and storage operation",
+      "segment_lines": [
+        "Generation and",
+        "storage operation"
+      ],
+      "examples": [
+        "Vistra assets [C03,C04]"
+      ],
+      "references": [
+        "C03",
+        "C04"
+      ],
+      "y": 1610
+    },
+    {
+      "tier": "Downstream",
+      "segment": "Vehicle and household use",
+      "segment_lines": [
+        "Vehicle and",
+        "household use"
+      ],
+      "examples": [
+        "EV batteries [G03]",
+        "Household storage [C10]"
+      ],
+      "references": [
+        "G03",
+        "C10"
+      ],
+      "y": 1770
+    },
+    {
+      "tier": "Downstream",
+      "segment": "Service and material recovery",
+      "segment_lines": [
+        "Service and",
+        "material recovery"
+      ],
+      "examples": [
+        "Vestas service [C08]",
+        "Recovered battery materials [G03]"
+      ],
+      "references": [
+        "C08",
+        "G03"
+      ],
+      "y": 1930
+    }
+  ],
+  "source_line": "Sources: companies [C03–C08,C10–C12]; IEA [G03]; IRENA [G09,G10]; DOE [H02]; Nobel [H03].",
+  "connection_definition": "Classification, not proof of contracts; only JinkoSolar–Masdar agreement is a verified named supply relationship in this report.",
+  "alt_text": "A four-level mind map: renewable energy and batteries, upstream/midstream/downstream, ten functional segments, then companies or products. Classification links do not prove supply contracts."
+}

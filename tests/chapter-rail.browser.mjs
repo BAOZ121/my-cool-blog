@@ -280,7 +280,7 @@ try {
       await page.goto(origin + '/');
       await page.goBack({ waitUntil: 'commit' });
       await page.evaluate(() => document.fonts.ready);
-      if (mobile) await page.waitForFunction(() => document.querySelector('.chapter-mobile details').open);
+      if (mobile) await page.waitForFunction(() => document.querySelector('.chapter-mobile details')?.open);
       else assert.equal(await desktopDisclosure.evaluate(node => node.open), false, 'Back restores minimized width before article layout');
       await settleArticleLayout(page);
       try {

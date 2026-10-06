@@ -1,0 +1,93 @@
+/* Loaded only by this biography; retain the site preference and print colors. */
+@media screen {
+  :root, :root[data-scheme="light"], :root[data-scheme="dark"] {
+    --body-background: #090c08;
+    --body-text-color: #b6c4ab;
+    --accent-color: #76b900;
+    --accent-color-darker: #98d642;
+    --accent-color-text: #0b1105;
+    --card-background: #11160f;
+    --card-background-selected: #1b2416;
+    --card-text-color-main: #edf4e5;
+    --card-text-color-secondary: #b6c4ab;
+    --card-text-color-tertiary: #b6c4ab;
+    --card-separator-color: #34452a;
+    --blockquote-background-color: #1b2416;
+    --link-background-color: 118, 185, 0;
+    --link-background-opacity: .18;
+    --link-background-opacity-hover: .3;
+    --code-background-color: #1b2416;
+    --code-text-color: #98d642;
+    --pre-background-color: #1b2416;
+    --pre-text-color: #edf4e5;
+    --table-border-color: #34452a;
+    --tr-even-background-color: #1b2416;
+    --kbd-border-color: #34452a;
+    --mermaid-toolbar-btn-bg: #11160f;
+    --mermaid-toolbar-btn-text: #98d642;
+    --mermaid-modal-content-bg: #11160f;
+    --mermaid-modal-btn-bg: #1b2416;
+    --mermaid-modal-btn-hover: #34452a;
+    --shadow-l1: 0 4px 18px rgba(0, 0, 0, .2);
+    --shadow-l2: 0 10px 28px rgba(0, 0, 0, .3);
+    background-color: var(--body-background);
+    scrollbar-color: #486a30 var(--body-background);
+  }
+  :root .article-content .article-visual {
+    --visual-ink: var(--card-text-color-main);
+    --visual-muted: var(--card-text-color-secondary);
+    --visual-line: var(--card-separator-color);
+    --visual-accent: var(--accent-color);
+    --visual-soft: var(--card-background-selected);
+    --visual-surface: var(--card-background);
+    --visual-map-palette: #76b900, #a4d65e, #5f9e38, #c0e58c, #8cc63f, #d6efb3, #6dae52, #97c875;
+  }
+  .main-article { border: 1px solid var(--card-separator-color); }
+  .research-action, .biography-download a { background-color: var(--card-background-selected); }
+  .research-action:hover, .biography-download a:hover { border-color: var(--accent-color); }
+}
+.biography-facts,.biography-route,.biography-timeline,.biography-gifts{--bio-ink:var(--card-text-color-main);--bio-muted:var(--card-text-color-secondary);--bio-line:var(--card-separator-color);--bio-gold:var(--accent-color);--bio-soft:var(--card-background-selected);--bio-surface:var(--card-background);color:var(--bio-ink)}
+.biography-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;border:1px solid var(--bio-line);border-radius:14px;overflow:hidden;background:var(--bio-line);margin:0 0 16px}
+.biography-facts>div{display:flex;flex-direction:column;gap:7px;padding:20px;background:var(--bio-soft);min-width:0}
+.biography-facts span{font-size:13px;color:var(--bio-muted);line-height:1.4}
+.biography-facts strong{font-size:20px;line-height:1.4;overflow-wrap:anywhere}
+.biography-facts a{font-size:12px;line-height:1.5;align-self:flex-start}
+.article-content .biography-cover-credit{font-size:12px;line-height:1.6;color:var(--card-text-color-secondary);margin:12px 0}
+.biography-download a{display:inline-block;padding:10px 14px;border:1px solid var(--card-separator-color);border-radius:8px;font-size:14px;line-height:1.5}
+.article-content .biography-route,.article-content .biography-timeline,.article-content .biography-gifts{margin:28px 0;padding:24px;border:1px solid var(--bio-line);border-radius:14px;background:var(--bio-surface);font-size:15px;line-height:1.65}
+.article-content .biography-route>figcaption,.article-content .biography-timeline>figcaption,.article-content .biography-gifts>figcaption{font-size:21px;line-height:1.4;font-weight:650;color:var(--bio-ink);text-align:left;margin:0 0 12px}
+.article-content .biography-route>p,.article-content .biography-timeline>p,.article-content .biography-gifts>p{font-size:13px;color:var(--bio-muted);margin:12px 0 20px}
+.article-content .biography-route ol{list-style:none;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));margin:20px 0;padding:0;gap:12px}
+.biography-route li{position:relative;border-top:2px solid var(--bio-line);padding-top:15px;min-width:0}
+.biography-route li::before{content:"";position:absolute;top:-5px;left:0;width:8px;height:8px;background:var(--bio-gold);border-radius:50%}
+.biography-route span{display:block;font-weight:700;font-size:15px;color:var(--bio-gold)}
+.biography-route small{display:block;font-size:12px;line-height:1.5;margin-top:6px;color:var(--bio-muted);overflow-wrap:anywhere}
+.article-content .biography-timeline ol{list-style:none;padding:0 0 0 21px;margin:22px 0 0;border-left:2px solid var(--bio-line)}
+.biography-timeline li{position:relative;margin:0 0 25px;padding-left:10px}
+.biography-timeline li:last-child{margin-bottom:0}
+.biography-timeline li::before{content:"";position:absolute;left:-28px;top:7px;width:10px;height:10px;border-radius:50%;background:var(--bio-gold);box-shadow:0 0 0 4px var(--bio-surface)}
+.biography-timeline__date{font-size:14px;font-weight:700;color:var(--bio-gold);line-height:1.4}
+.article-content .biography-timeline li p{margin:6px 0}
+.article-content .biography-timeline__source{font-size:12px;line-height:1.5;color:var(--bio-muted)}
+.biography-gifts__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.biography-gifts__grid>section{padding:18px;border:1px solid var(--bio-line);background:var(--bio-soft);border-radius:10px;min-width:0}
+.article-content .biography-gifts__grid p{margin:8px 0;font-size:13px;line-height:1.6}
+.article-content .biography-gifts__grid .biography-gifts__date{font-size:12px;letter-spacing:.02em;color:var(--bio-muted);margin-top:0}
+.article-content .biography-gifts__grid .biography-gifts__amount{font-size:26px;font-weight:650;color:var(--bio-gold);line-height:1.25;margin:10px 0}
+.article-content .biography-gifts__grid h3{font-size:16px;line-height:1.4;margin:10px 0;color:var(--bio-ink)}
+.article-content .biography-gifts__grid .biography-gifts__source{font-size:11px;overflow-wrap:anywhere;color:var(--bio-muted)}
+.article-content .biography-references{font-size:13px;line-height:1.7;padding-left:25px}
+.biography-references li{padding:3px 0 9px;overflow-wrap:anywhere;scroll-margin-top:85px}
+.biography-source-return{display:inline-block;font-size:11px;margin-left:5px;opacity:.75}
+.article-content .biography-photo{margin:30px 0;border:1px solid var(--card-separator-color);border-radius:14px;overflow:hidden;background:var(--card-background)}
+.biography-photo__image{display:block;box-shadow:none!important;line-height:0}
+.article-content .biography-photo img{display:block;width:100%;height:auto;margin:0}
+.article-content .biography-photo figcaption{padding:16px 20px;text-align:left;font-size:13px;color:var(--card-text-color-secondary)}
+.article-content .biography-photo figcaption p{text-align:left;margin:0 0 8px;line-height:1.6}
+.article-content .biography-photo .biography-photo__caption{font-size:14px;color:var(--card-text-color-main)}
+.article-content .biography-photo .biography-photo__credit{font-size:12px}
+.biography-photo__original{display:inline-block;font-size:12px;line-height:1.5}
+.biography-photo__image:focus-visible,.biography-photo__original:focus-visible{outline:3px solid var(--accent-color);outline-offset:-3px}
+@media(max-width:700px){.article-content .biography-route ol{grid-template-columns:1fr;gap:0;border-left:2px solid var(--bio-line);margin-left:4px}.biography-route li{border-top:0;padding:0 0 18px 18px}.biography-route li::before{left:-5px;top:7px}.biography-route li:last-child{padding-bottom:0}.biography-route small{margin-top:3px}.biography-gifts__grid{grid-template-columns:1fr}}
+@media(max-width:480px){.article-content .biography-route,.article-content .biography-timeline,.article-content .biography-gifts{padding:18px}.biography-facts>div{padding:14px}.biography-facts strong{font-size:17px}.biography-facts>div:last-child strong{font-size:15px}.biography-facts a{font-size:11px}.article-content .biography-gifts__grid .biography-gifts__amount{font-size:23px}}
+@media print{.biography-facts,.biography-route,.biography-gifts__grid>section{break-inside:avoid}.biography-timeline li{break-inside:avoid}.biography-source-return,.biography-download{display:none}}
