@@ -4,4 +4,9 @@
 
 {{- /* Register before first paint; no external request or rendering wait. */ -}}
 {{- $script := resources.Get "js/page-transitions.js" | minify -}}
-<script id="dex-page-transition-script">{{ $script.Content | safeJS }}</script>
+{{- $entryLogo := "" -}}
+{{- if eq .Params.entryBrand "nvidia" -}}
+  {{- $logo := resources.Get "images/nvidia-logo.svg" -}}
+  {{- $entryLogo = printf "data:image/svg+xml;base64,%s" (encoding.Base64Encode $logo.Content) -}}
+{{- end -}}
+<script id="dex-page-transition-script"{{ if $entryLogo }} data-entry-brand="nvidia" data-entry-logo="{{ $entryLogo }}"{{ end }}>{{ $script.Content | safeJS }}</script>

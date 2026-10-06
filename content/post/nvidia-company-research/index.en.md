@@ -10,6 +10,7 @@ tags:
   - "公司研究"
 dataDownload: "/post/nvidia-company-research/financial-data.csv"
 companyResearch: true
+entryBrand: "nvidia"
 draft: false
 ---
 

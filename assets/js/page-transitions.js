@@ -2,6 +2,8 @@
 (() => {
   const key = "dex:page-entry";
   const motion = matchMedia("(prefers-reduced-motion: reduce)");
+  const settings = document.currentScript?.dataset;
+  const branded = settings?.entryBrand === "nvidia" && /^data:image\/(?:svg\+xml|png);base64,/.test(settings.entryLogo || "");
   let entry;
   let interrupted = false;
   let animations = [];
@@ -9,7 +11,7 @@
   let cleanupTimer;
   let startedAt;
   let disposeHeroWait = () => {};
-  const normalHold = 1190;
+  const normalHold = branded ? 1750 : 1190;
   const latestHold = 2850;
   const safetyHold = 3800;
   try {
@@ -54,11 +56,12 @@
 
   function eligible() {
     const navigationType = performance.getEntriesByType("navigation")[0]?.type;
-    return entry && !interrupted && !motion.matches && !document.hidden && scrollY <= 1 &&
-      navigationType === "navigate" && !location.hash && location.href === entry.to &&
+    if (interrupted || motion.matches || document.hidden || scrollY > 1 || location.hash ||
+        typeof document.documentElement.animate !== "function") return false;
+    if (branded) return navigationType === "navigate" || navigationType === "reload";
+    return entry && navigationType === "navigate" && location.href === entry.to &&
       document.referrer === entry.from && Number.isFinite(entry.time) &&
-      Date.now() - entry.time >= 0 && Date.now() - entry.time <= 15000 &&
-      typeof document.documentElement.animate === "function";
+      Date.now() - entry.time >= 0 && Date.now() - entry.time <= 15000;
   }
 
   function arm() {
@@ -67,17 +70,34 @@
       // This watchdog is armed before installation; it never delays navigation.
       cleanupTimer = window.setTimeout(stop, 4200);
       curtain = document.createElement("div");
-      curtain.className = "dex-entry-curtain";
+      curtain.className = branded ? "dex-entry-curtain dex-entry-curtain--nvidia" : "dex-entry-curtain";
       curtain.setAttribute("aria-hidden", "true");
-      const panel = document.createElement("div");
-      panel.className = "dex-entry-curtain__panel";
-      for (const [name, text] of [["label", "DEX / RESEARCH"], ["status", "OPENING VIEW"], ["mode", "READING MODE"]]) {
-        const line = document.createElement("div");
-        line.className = `dex-entry-curtain__${name}`;
-        line.textContent = text;
-        panel.append(line);
+      if (branded) {
+        const scene = document.createElement("div");
+        scene.className = "nvidia-entry";
+        const halo = document.createElement("div");
+        halo.className = "nvidia-entry__halo";
+        const rays = document.createElement("div");
+        rays.className = "nvidia-entry__rays";
+        const logo = document.createElement("img");
+        logo.className = "nvidia-entry__logo";
+        logo.alt = "";
+        logo.src = settings.entryLogo;
+        logo.draggable = false;
+        logo.addEventListener("error", stop, { once: true });
+        scene.append(halo, rays, logo);
+        curtain.append(scene);
+      } else {
+        const panel = document.createElement("div");
+        panel.className = "dex-entry-curtain__panel";
+        for (const [name, text] of [["label", "DEX / RESEARCH"], ["status", "OPENING VIEW"], ["mode", "READING MODE"]]) {
+          const line = document.createElement("div");
+          line.className = `dex-entry-curtain__${name}`;
+          line.textContent = text;
+          panel.append(line);
+        }
+        curtain.append(panel);
       }
-      curtain.append(panel);
       const mask = curtain;
       mask.addEventListener("animationend", event => { if (event.target === mask) mask.remove(); });
       // The head script runs before body exists. This temporary fixed root child

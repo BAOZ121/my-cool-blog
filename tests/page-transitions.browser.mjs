@@ -3,7 +3,11 @@ import { createServer } from "node:http";
 import { mkdir, readFile } from "node:fs/promises";
 import { extname, resolve, sep } from "node:path";
 import { inflateSync } from "node:zlib";
-import { chromium } from "@playwright/test";
+import { createHash } from "node:crypto";
+const { chromium } = await import(process.env.PLAYWRIGHT_MODULE_PATH || "@playwright/test");
+
+const ordinaryArticlePath = "/post/commercial-space-advanced-engineering/";
+const nvidiaArticlePath = "/post/nvidia-company-research/";
 
 const root = resolve("public");
 const mime = { ".html": "text/html", ".js": "text/javascript", ".mjs": "text/javascript", ".css": "text/css", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".webp": "image/webp", ".png": "image/png", ".csv": "text/csv", ".pdf": "application/pdf" };
@@ -168,7 +172,7 @@ function assertArticleTimeline(calls, hold = 1190) {
 async function internalArticle(page, articlePath) {
   await Promise.all([
     page.waitForURL(origin + articlePath, { waitUntil: "domcontentloaded" }),
-    page.locator(".article-list .article-title a").first().click({ noWaitAfter: true }),
+    page.locator(`.article-list .article-title a[href="${articlePath}"]`).click({ noWaitAfter: true }),
   ]);
 }
 
@@ -224,8 +228,9 @@ async function verifyFirstPaint(browser) {
     const gateURL = `${origin}/__dex-paint/gate.js`;
     let destinationScript = script;
     if (mode === "script-failure") {
-      assert.ok(script.includes("  arm();\n"), "Fault injection must occur immediately after the real early arm");
-      destinationScript = script.replace("  arm();\n", '  arm();\n  throw new Error("Injected failure after early arm");\n');
+      const earlyArm = /^  arm\(\);\r?\n/m;
+      assert.ok(earlyArm.test(script), "Fault injection must occur immediately after the real early arm");
+      destinationScript = script.replace(earlyArm, '  arm();\n  throw new Error("Injected failure after early arm");\n');
     }
     const shell = body => `<html><head><style>${css}</style><script>${script}</script></head><body>${body}</body></html>`;
     const deferred = mode === "deferred" ? `<script defer src="${gateURL}"></script>` : "";
@@ -279,11 +284,146 @@ async function verifyFirstPaint(browser) {
   }
 }
 
+async function verifyNvidiaEntry(browser) {
+  const officialLogo = await readFile("assets/images/nvidia-logo.svg");
+  const provenance = JSON.parse(await readFile("assets/images/nvidia-logo-source.json", "utf8"));
+  const expectedHash = "201bed0f3fc1c7f83555fe448361a8bb278a049ad3970b3a6aed7fea0502ae55";
+  assert.equal(createHash("sha256").update(officialLogo).digest("hex"), expectedHash, "The published mark must preserve the verified official SVG bytes");
+  assert.equal(provenance.sha256, expectedHash);
+  assert.equal(provenance.official_source_url, "https://www.nvidia.com/content/dam/en-zz/Solutions/about-nvidia/nvidia-brochure/images/nvidia-logo-white.svg");
+  const expectedLogoURL = "data:image/svg+xml;base64," + officialLogo.toString("base64");
+
+  async function assertBranded(page) {
+    const settings = await page.locator("#dex-page-transition-script").evaluate(script => ({ ...script.dataset }));
+    assert.equal(settings.entryBrand, "nvidia");
+    assert.equal(settings.entryLogo, expectedLogoURL, "Head configuration embeds the actual verified mark without a network request");
+    assert.equal(await page.locator(".dex-entry-curtain--nvidia").count(), 1);
+    assert.equal(await page.locator(".dex-entry-curtain__panel").count(), 0, "The NVIDIA entry replaces the old DEX panel");
+    const logo = page.locator(".nvidia-entry__logo");
+    const rendered = await logo.evaluate(async image => {
+      await image.decode();
+      const curtain = image.closest(".dex-entry-curtain");
+      const { width, height } = image.getBoundingClientRect();
+      return { src: image.src, alt: image.alt, complete: image.complete, naturalWidth: image.naturalWidth,
+        width, height, pointerEvents: getComputedStyle(curtain).pointerEvents,
+        ariaHidden: curtain.getAttribute("aria-hidden"), text: curtain.textContent.trim(),
+        rootChild: curtain.parentElement === document.documentElement };
+    });
+    assert.equal(rendered.src, expectedLogoURL);
+    assert.equal(rendered.alt, "");
+    assert.equal(rendered.complete, true);
+    assert.ok(rendered.naturalWidth > 0 && rendered.width > 0 && rendered.height > 0, "The real embedded logo must successfully decode and render");
+    assert.ok(Math.abs(rendered.width / rendered.height - 974.7 / 179.71) < .03, "The original logo proportions must remain intact");
+    assert.equal(rendered.pointerEvents, "none");
+    assert.equal(rendered.ariaHidden, "true");
+    assert.equal(rendered.rootChild, true);
+    assert.equal(rendered.text, "", "No DEX labels or additional captions appear in the branded scene");
+    await page.waitForFunction(() => window.__entry.calls.length > 0, null, { timeout: 4000 });
+    const calls = await page.evaluate(() => window.__entry.calls);
+    assertArticleTimeline(calls, 1750);
+    assert.equal(Math.max(...calls.map(call => call.delay + call.duration)), 2900);
+    assert.ok(calls.length <= 5 && calls.every(call => !call.broadCapture && call.visible));
+    await assertNoNative(page);
+  }
+
+  for (const [width, motion] of [[1440, "no-preference"], [390, "no-preference"], [1440, "reduce"], [390, "reduce"]]) {
+    const context = await browser.newContext({ viewport: { width, height: 900 }, reducedMotion: motion });
+    await observe(context);
+    const page = await context.newPage();
+    const errors = [];
+    page.on("pageerror", error => errors.push(error.message));
+    try {
+      await page.goto(origin + nvidiaArticlePath, { waitUntil: "domcontentloaded" });
+      if (motion === "reduce") {
+        assert.equal(await page.locator("#dex-page-transition-script").getAttribute("data-entry-brand"), "nvidia");
+        assert.equal(await page.locator(".dex-entry-curtain").count(), 0);
+        assert.equal(await page.evaluate(() => window.__entry.calls.length), 0);
+        await page.reload({ waitUntil: "domcontentloaded" });
+        assert.equal(await page.locator(".dex-entry-curtain").count(), 0);
+        assert.equal(await page.evaluate(() => window.__entry.calls.length), 0);
+        await page.goto(origin + "/");
+        await internalArticle(page, nvidiaArticlePath);
+        assert.equal(await page.locator(".dex-entry-curtain").count(), 0);
+        assert.equal(await page.evaluate(() => window.__entry.calls.length), 0);
+        assert.equal(await page.locator(".main-article .article-title").evaluate(element => getComputedStyle(element).opacity), "1");
+        console.log(`PASS NVIDIA ${width}px reduced motion: direct, reload and internal entry remain readable without a scene`);
+        continue;
+      }
+
+      // Direct links must show the official mark, and its natural child animation
+      // must not dismiss the curtain before the normal brand hold ends.
+      await assertBranded(page);
+      await page.waitForFunction(() => performance.now() - window.__entry.armedAt >= 1000, null, { timeout: 3000 });
+      assert.equal(await page.locator(".dex-entry-curtain--nvidia").count(), 1);
+      assert.ok(Number(await page.locator(".dex-entry-curtain").evaluate(element => getComputedStyle(element).opacity)) > .99);
+      if (screenshots) await page.screenshot({ path: resolve(screenshots, `nvidia-entry-${width}.png`), animations: "allow" });
+      const controlId = width < 768 ? "toggle-menu" : "dark-mode-toggle";
+      const box = await page.locator(`#${controlId}`).boundingBox();
+      assert.ok(box);
+      await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2);
+      assert.equal(await page.locator(".dex-entry-curtain").count(), 0, "The first real pointer input immediately skips the logo");
+      const input = await page.evaluate(control => window.__entry.inputs.find(item => item.type === "pointerdown" && item.control === control), controlId);
+      assert.ok(input?.curtain && input.active > 0);
+      assert.equal(input.curtain.pointerEvents, "none");
+      await finished(page);
+      assert.ok(await page.evaluate(() => window.__entry.calls.some(call => call.state === "cancelled")));
+      if (width < 768) {
+        assert.equal(await page.locator("#toggle-menu").getAttribute("aria-expanded"), "true", "Input is not swallowed or replayed");
+        await page.locator("#toggle-menu").click();
+      } else {
+        assert.equal(await page.locator("html").getAttribute("data-scheme"), "dark", "Input is not swallowed or replayed");
+      }
+
+      await page.reload({ waitUntil: "domcontentloaded" });
+      await assertBranded(page);
+      await finished(page);
+      assert.equal(await page.locator(".dex-entry-curtain").count(), 0);
+      assert.ok(await page.evaluate(() => window.__entry.calls.every(call => call.state === "finished")), "A complete top reload finishes naturally within the brand timeline");
+
+      await page.goto(origin + "/");
+      assert.equal(await page.locator("#dex-page-transition-script").getAttribute("data-entry-brand"), null, "The homepage does not inherit article-only brand metadata");
+      assert.equal(await page.locator(".nvidia-entry").count(), 0);
+      await internalArticle(page, nvidiaArticlePath);
+      await assertBranded(page);
+      await finished(page);
+      await page.evaluate(() => scrollTo(0, 700));
+      const readingScroll = await page.evaluate(() => scrollY);
+      assert.ok(readingScroll > 100);
+      const entryCount = await page.evaluate(() => window.__entry.calls.length);
+      await page.goBack({ waitUntil: "commit" });
+      await page.waitForURL(origin + "/", { waitUntil: "commit" });
+      assert.equal(await page.locator(".dex-entry-curtain").count(), 0, "Back does not replay an article entry on the homepage");
+      await page.goForward({ waitUntil: "commit" });
+      await page.waitForURL(origin + nvidiaArticlePath, { waitUntil: "commit" });
+      await page.waitForFunction(expected => Math.abs(scrollY - expected) < 5, readingScroll);
+      assert.equal(await page.locator(".dex-entry-curtain").count(), 0, "Forward/BFCache keeps the reading position visible");
+      assert.ok(await page.evaluate(count => window.__entry.calls.length <= count, entryCount));
+
+      await page.reload({ waitUntil: "domcontentloaded" });
+      await page.waitForFunction(expected => Math.abs(scrollY - expected) < 5, readingScroll);
+      assert.equal(await page.locator(".dex-entry-curtain").count(), 0, "Reload during a non-top read does not cover the restored text");
+      assert.equal(await page.evaluate(() => window.__entry.calls.length), 0, "Reload does not force a scrolled reader through the entrance");
+
+      // Use a fresh document so this checks direct anchored entry rather than a
+      // same-document hash update that would never re-execute the head script.
+      const hashPage = await context.newPage();
+      await hashPage.goto(origin + nvidiaArticlePath + "#evidence-24", { waitUntil: "domcontentloaded" });
+      assert.equal(await hashPage.locator(".dex-entry-curtain").count(), 0);
+      assert.equal(await hashPage.evaluate(() => window.__entry.calls.length), 0);
+      assert.equal(new URL(hashPage.url()).hash, "#evidence-24");
+      await hashPage.close();
+      assert.deepEqual(errors, []);
+      console.log(`PASS NVIDIA ${width}px: genuine embedded logo, direct/internal/top reload, immediate input skip, finite completion, history/scroll and direct hash bypass`);
+    } finally { await context.close(); }
+  }
+}
+
 let browser;
 let firstArticlePath;
 try {
   browser = await chromium.launch({ headless: true, channel: "chromium", ignoreDefaultArgs: ["--disable-back-forward-cache"], ...(process.env.CHROME_PATH ? { executablePath: process.env.CHROME_PATH } : {}) });
   await verifyFirstPaint(browser);
+  await verifyNvidiaEntry(browser);
   for (const [width, scheme, motion] of [[1440, "light", "no-preference"], [390, "dark", "no-preference"], [1440, "dark", "reduce"], [390, "light", "reduce"]]) {
     const context = await browser.newContext({ viewport: { width, height: 900 }, colorScheme: scheme, reducedMotion: motion });
     await observe(context, { scheme });
@@ -298,7 +438,7 @@ try {
     const controlBox = await page.locator(`#${controlId}`).boundingBox();
     assert.ok(controlBox && controlBox.y >= 0 && controlBox.y + controlBox.height <= 900, "The real site control must be on screen");
     const controlPoint = { x: controlBox.x + controlBox.width / 2, y: controlBox.y + controlBox.height / 2 };
-    const article = page.locator(".article-list [data-transition-cover] a").first();
+    const article = page.locator(`.article-list [data-transition-cover] a[href="${ordinaryArticlePath}"]`);
     const articlePath = await article.getAttribute("href");
     firstArticlePath ||= articlePath;
     await article.scrollIntoViewIfNeeded();
@@ -421,7 +561,7 @@ try {
 
     await page.goto(origin + "/");
     const popupPromise = context.waitForEvent("page");
-    await page.locator(".article-list .article-title a").first().click({ modifiers: ["Control"] });
+    await page.locator(`.article-list .article-title a[href="${ordinaryArticlePath}"]`).click({ modifiers: ["Control"] });
     const popup = await popupPromise;
     await popup.waitForLoadState();
     assert.equal(new URL(popup.url()).pathname, articlePath);
@@ -462,10 +602,10 @@ try {
 
     // Retain the native overlapping-navigation regression; live input is tested above.
     await page.goto(origin + "/");
-    const nextPath = await page.locator(".article-list .article-title a").nth(1).getAttribute("href");
+    const nextPath = "/post/ai-computing-infrastructure/";
     await page.evaluate(() => {
-      const articles = document.querySelectorAll(".article-list .article-title a");
-      articles[0].click(); articles[1].click();
+      document.querySelector('.article-list .article-title a[href="/post/commercial-space-advanced-engineering/"]').click();
+      document.querySelector('.article-list .article-title a[href="/post/ai-computing-infrastructure/"]').click();
     });
     await page.waitForFunction(path => location.pathname === path && document.querySelector("main h1"), nextPath);
     await finished(page);
@@ -641,7 +781,7 @@ try {
   await noJS.route("https://fonts.googleapis.com/**", route => route.fulfill({ contentType: "text/css", body: "" }));
   const page = await noJS.newPage();
   await page.goto(origin + "/");
-  const link = page.locator(".article-list .article-title a").first();
+  const link = page.locator(`.article-list .article-title a[href="${ordinaryArticlePath}"]`);
   const path = await link.getAttribute("href");
   await link.click();
   await page.waitForURL(origin + path);
