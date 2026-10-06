@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "title": "Corporate timeline",
+    "url": "https://www.nvidia.com/en-us/about-nvidia/corporate-timeline/"
+  },
+  {
+    "id": 2,
+    "title": "Jensen Huang biography",
+    "url": "https://nvidianews.nvidia.com/bios/jensen-huang"
+  },
+  {
+    "id": 3,
+    "title": "Chris Malachowsky biography",
+    "url": "https://nvidianews.nvidia.com/bios/chris-a-malachowsky"
+  },
+  {
+    "id": 4,
+    "title": "IPO prospectus",
+    "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001045810/327515c2-03c2-4795-8946-5968098fa73a.pdf"
+  },
+  {
+    "id": 5,
+    "title": "Retrospective account of the Denny’s founding story",
+    "url": "https://blogs.nvidia.com/blog/nvidia-dennys-trillion/"
+  },
+  {
+    "id": 6,
+    "title": "Early product and manufacturing partnership timeline",
+    "url": "https://www.nvidia.com/es-es/about-nvidia/corporate-timeline/"
+  },
+  {
+    "id": 7,
+    "title": "Investor relations FAQs",
+    "url": "https://investor.nvidia.com/investor-resources/faqs/default.aspx"
+  },
+  {
+    "id": 8,
+    "title": "GeForce 256 launch retrospective",
+    "url": "https://blogs.nvidia.com/blog/first-gpu-gaming-ai/"
+  },
+  {
+    "id": 9,
+    "title": "Corporate timeline for 2001",
+    "url": "https://www.nvidia.com/content/timeline/time_01.html"
+  },
+  {
+    "id": 10,
+    "title": "CUDA development platform",
+    "url": "https://developer.nvidia.com/cuda?lang=en"
+  },
+  {
+    "id": 11,
+    "title": "Original AlexNet research paper",
+    "url": "https://proceedings.neurips.cc/paper/2012/file/c399862d3b9d6b76c8436e924a68c45b-Paper.pdf"
+  },
+  {
+    "id": 12,
+    "title": "DGX 1 launch announcement",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-launches-world-s-first-deep-learning-supercomputer-6622436"
+  },
+  {
+    "id": 13,
+    "title": "DGX 1 and Pascal hardware description",
+    "url": "https://developer.nvidia.com/blog/inside-pascal/"
+  },
+  {
+    "id": 14,
+    "title": "Turing architecture announcement",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-reinvents-computer-graphics-with-turing-architecture"
+  },
+  {
+    "id": 15,
+    "title": "GeForce RTX announcement",
+    "url": "https://nvidianews.nvidia.com/news/10-years-in-the-making-nvidia-brings-real-time-ray-tracing-to-gamers-with-geforce-rtx"
+  },
+  {
+    "id": 16,
+    "title": "Mellanox acquisition completion announcement",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-completes-acquisition-of-mellanox-creating-major-force-driving-next-gen-data-centers"
+  },
+  {
+    "id": 17,
+    "title": "Arm transaction termination announcement",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-and-softbank-group-announce-termination-of-nvidias-acquisition-of-arm-limited"
+  },
+  {
+    "id": 18,
+    "title": "Fiscal 2023 financial results announcement",
+    "url": "https://investor.nvidia.com/news/press-release-details/2023/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2023/"
+  },
+  {
+    "id": 19,
+    "title": "Blackwell platform announcement",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-blackwell-platform-arrives-to-power-a-new-era-of-computing"
+  },
+  {
+    "id": 20,
+    "title": "Vera Rubin production progress announcement",
+    "url": "https://nvidianews.nvidia.com/news/vera-rubin-full-production-agentic-ai-factory"
+  },
+  {
+    "id": 21,
+    "title": "NVIDIA product catalog",
+    "url": "https://www.nvidia.com/en-us/products/"
+  },
+  {
+    "id": 22,
+    "title": "TensorRT workflow documentation",
+    "url": "https://docs.nvidia.com/deeplearning/tensorrt/latest/getting-started/quick-start-guide.html"
+  },
+  {
+    "id": 23,
+    "title": "GB200 NVL72 product documentation",
+    "url": "https://www.nvidia.com/en-us/data-center/gb200-nvl72/"
+  },
+  {
+    "id": 24,
+    "title": "Fiscal 2026 financial results announcement",
+    "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2026/"
+  },
+  {
+    "id": 25,
+    "title": "Second quarter fiscal 2027 financial results announcement",
+    "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/"
+  },
+  {
+    "id": 26,
+    "title": "Ethernet product portfolio",
+    "url": "https://www.nvidia.com/en-us/networking/products/ethernet/"
+  },
+  {
+    "id": 27,
+    "title": "TensorRT documentation",
+    "url": "https://docs.nvidia.com/deeplearning/tensorrt/latest/"
+  },
+  {
+    "id": 28,
+    "title": "AI Enterprise licensing guide",
+    "url": "https://docs.nvidia.com/ai-enterprise/planning-resource/licensing-guide/latest/licensing.html"
+  },
+  {
+    "id": 29,
+    "title": "Omniverse documentation",
+    "url": "https://docs.nvidia.com/omniverse/index.html"
+  },
+  {
+    "id": 30,
+    "title": "DRIVE platform",
+    "url": "https://developer.nvidia.com/DRIVE"
+  },
+  {
+    "id": 31,
+    "title": "Isaac platform",
+    "url": "https://developer.nvidia.com/isaac"
+  },
+  {
+    "id": 32,
+    "title": "Jetson modules",
+    "url": "https://developer.nvidia.com/embedded/jetson-modules"
+  },
+  {
+    "id": 33,
+    "title": "Fiscal 2026 annual report Form 10 K",
+    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+  },
+  {
+    "id": 34,
+    "title": "Second quarter fiscal 2027 CFO commentary",
+    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27cfocommentary.htm"
+  },
+  {
+    "id": 35,
+    "title": "Second quarter fiscal 2027 quarterly report Form 10 Q",
+    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm"
+  },
+  {
+    "id": 36,
+    "title": "Fiscal 2025 financial results announcement",
+    "url": "https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2025/default.aspx"
+  },
+  {
+    "id": 37,
+    "title": "2026 proxy statement",
+    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000036/nvda-20260512.htm"
+  },
+  {
+    "id": 38,
+    "title": "First quarter fiscal 2026 financial results announcement",
+    "url": "https://investor.nvidia.com/news/press-release-details/2025/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2026/"
+  },
+  {
+    "id": 39,
+    "title": "AMD Instinct products",
+    "url": "https://www.amd.com/en/products/accelerators/instinct/mi350.html"
+  },
+  {
+    "id": 40,
+    "title": "Google Cloud TPU",
+    "url": "https://cloud.google.com/tpu"
+  },
+  {
+    "id": 41,
+    "title": "AWS Trainium",
+    "url": "https://aws.amazon.com/ai/machine-learning/trainium/"
+  },
+  {
+    "id": 42,
+    "title": "NVIDIA historical stock prices",
+    "url": "https://stockanalysis.com/stocks/nvda/history/"
+  },
+  {
+    "id": 43,
+    "title": "NVIDIA Voyager headquarters photograph",
+    "url": "https://nvidianews.nvidia.com/file/voyager-exterior-sign"
+  },
+  {
+    "id": 44,
+    "title": "GB200 NVL72 architecture and reference configuration",
+    "url": "https://developer.nvidia.com/blog/nvidia-gb200-nvl72-delivers-trillion-parameter-llm-training-and-real-time-inference/"
+  }
+]

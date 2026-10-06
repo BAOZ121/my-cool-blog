@@ -2,12 +2,15 @@
 (() => {
   const key = "dex:page-entry";
   const motion = matchMedia("(prefers-reduced-motion: reduce)");
+  const settings = document.currentScript?.dataset;
+  const branded = settings?.entryBrand === "nvidia" && /^data:image\/(?:svg\+xml|png);base64,/.test(settings.entryLogo || "");
   let entryView = {};
   try {
     entryView = JSON.parse(document.querySelector("script[data-page-entry]")?.textContent || "{}") || {};
   } catch { /* Invalid decorative configuration leaves the default entry intact. */ }
-  const nvidia = entryView.theme === "nvidia";
-  // Local review can explicitly replay the entrance without a referring page.
+  // The company logo opt-in takes precedence over the existing biography card.
+  const nvidia = !branded && entryView.theme === "nvidia";
+  // Keep the biography's local-only replay option and native entry policy.
   const previewEntry = nvidia && ["127.0.0.1", "localhost"].includes(location.hostname) &&
     new URL(location.href).searchParams.get("preview") === "loading";
   let entry;
@@ -17,7 +20,7 @@
   let cleanupTimer;
   let startedAt;
   let disposeHeroWait = () => {};
-  const normalHold = nvidia ? 1690 : 1190;
+  const normalHold = branded ? 1750 : nvidia ? 1690 : 1190;
   const latestHold = 2850;
   const safetyHold = 3800;
   try {
@@ -62,9 +65,9 @@
 
   function eligible() {
     const navigationType = performance.getEntriesByType("navigation")[0]?.type;
-    const visibleEntry = !interrupted && !motion.matches && !document.hidden && scrollY <= 1 &&
-      !location.hash && typeof document.documentElement.animate === "function";
-    if (!visibleEntry) return false;
+    if (interrupted || motion.matches || document.hidden || scrollY > 1 || location.hash ||
+        typeof document.documentElement.animate !== "function") return false;
+    if (branded) return navigationType === "navigate" || navigationType === "reload";
     if (previewEntry && ["navigate", "reload"].includes(navigationType)) return true;
     return entry && navigationType === "navigate" && location.href === entry.to &&
       document.referrer === entry.from && Number.isFinite(entry.time) &&
@@ -77,41 +80,59 @@
       // This watchdog is armed before installation; it never delays navigation.
       cleanupTimer = window.setTimeout(stop, 4200);
       curtain = document.createElement("div");
-      curtain.className = nvidia ? "dex-entry-curtain dex-entry-curtain--nvidia" : "dex-entry-curtain";
+      curtain.className = branded ? "dex-entry-curtain dex-entry-curtain--nvidia-company"
+        : nvidia ? "dex-entry-curtain dex-entry-curtain--nvidia" : "dex-entry-curtain";
       curtain.setAttribute("aria-hidden", "true");
-      const panel = document.createElement("div");
-      panel.className = "dex-entry-curtain__panel";
-      let copy = panel;
-      if (nvidia && entryView.image) {
-        const portrait = document.createElement("div");
-        portrait.className = "dex-entry-curtain__portrait";
-        const image = document.createElement("img");
-        image.alt = "";
-        image.width = entryView.width;
-        image.height = entryView.height;
-        image.decoding = "async";
-        image.fetchPriority = "low";
-        image.addEventListener("error", () => {
-          portrait.remove();
-          panel.classList.add("dex-entry-curtain__panel--no-photo");
-        }, { once: true });
-        image.src = entryView.image;
-        const caption = document.createElement("div");
-        caption.className = "dex-entry-curtain__portrait-label";
-        caption.textContent = entryView.name;
-        portrait.append(image, caption);
-        panel.append(portrait);
-        copy = document.createElement("div");
-        copy.className = "dex-entry-curtain__copy";
-        panel.append(copy);
+      if (branded) {
+        const scene = document.createElement("div");
+        scene.className = "nvidia-entry";
+        const halo = document.createElement("div");
+        halo.className = "nvidia-entry__halo";
+        const rays = document.createElement("div");
+        rays.className = "nvidia-entry__rays";
+        const logo = document.createElement("img");
+        logo.className = "nvidia-entry__logo";
+        logo.alt = "";
+        logo.src = settings.entryLogo;
+        logo.draggable = false;
+        logo.addEventListener("error", stop, { once: true });
+        scene.append(halo, rays, logo);
+        curtain.append(scene);
+      } else {
+        const panel = document.createElement("div");
+        panel.className = "dex-entry-curtain__panel";
+        let copy = panel;
+        if (nvidia && entryView.image) {
+          const portrait = document.createElement("div");
+          portrait.className = "dex-entry-curtain__portrait";
+          const image = document.createElement("img");
+          image.alt = "";
+          image.width = entryView.width;
+          image.height = entryView.height;
+          image.decoding = "async";
+          image.fetchPriority = "low";
+          image.addEventListener("error", () => {
+            portrait.remove();
+            panel.classList.add("dex-entry-curtain__panel--no-photo");
+          }, { once: true });
+          image.src = entryView.image;
+          const caption = document.createElement("div");
+          caption.className = "dex-entry-curtain__portrait-label";
+          caption.textContent = entryView.name;
+          portrait.append(image, caption);
+          panel.append(portrait);
+          copy = document.createElement("div");
+          copy.className = "dex-entry-curtain__copy";
+          panel.append(copy);
+        }
+        for (const [name, text] of [["label", entryView.label || "DEX / RESEARCH"], ["status", "OPENING VIEW"], ["mode", "READING MODE"]]) {
+          const line = document.createElement("div");
+          line.className = `dex-entry-curtain__${name}`;
+          line.textContent = text;
+          copy.append(line);
+        }
+        curtain.append(panel);
       }
-      for (const [name, text] of [["label", entryView.label || "DEX / RESEARCH"], ["status", "OPENING VIEW"], ["mode", "READING MODE"]]) {
-        const line = document.createElement("div");
-        line.className = `dex-entry-curtain__${name}`;
-        line.textContent = text;
-        copy.append(line);
-      }
-      curtain.append(panel);
       const mask = curtain;
       mask.addEventListener("animationend", event => { if (event.target === mask) mask.remove(); });
       // The head script runs before body exists. This temporary fixed root child

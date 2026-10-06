@@ -72,6 +72,18 @@
     &:hover, &:focus-visible { background-color: var(--accent-color-darker) !important; }
 }
 
+/* The NVIDIA listing card shares its article palette in either site scheme. */
+.article-list > .article-brand-nvidia {
+    --accent-color: #76b900;
+    --accent-color-darker: #92ce2c;
+    --accent-color-text: #071000;
+    --card-background: #111511;
+    --card-text-color-main: #f3f7ef;
+    --card-text-color-secondary: #b5c1b0;
+    --card-text-color-tertiary: #a5b49e;
+    background: var(--card-background);
+}
+
 #main-menu li a:hover,
 #main-menu li a:focus-visible {
     color: var(--accent-color);

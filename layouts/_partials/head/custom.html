@@ -8,6 +8,10 @@
 {{ if or (.HasShortcode "industry-map") (.HasShortcode "market-share") }}
   {{ partial "article-visuals/assets.html" . }}
 {{ end }}
+{{ if .Params.companyResearch }}
+  {{ $companyCSS := resources.Get "css/company-research.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $companyCSS.RelPermalink }}" integrity="{{ $companyCSS.Data.Integrity }}">
+{{ end }}
 {{ $image := partial "helper/image" (dict "Image" .Params.image "Resources" .Resources "Context" .) }}
 {{ if not $image }}
   <meta property="og:image" content="{{ "img/dex-social.png" | absURL }}">

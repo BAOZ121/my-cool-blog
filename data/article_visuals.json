@@ -1909,6 +1909,124 @@
       ],
       "note": "Connections classify product roles; they do not establish procurement contracts. Companies may appear in several roles. Evidence cutoff: 5 October 2026.",
       "reviewed": "2026-10-06"
+    },
+    "nvidia-products": {
+      "title": "NVIDIA’s product and software map",
+      "eyebrow": "COMPANY PRODUCT MAP",
+      "keep_outline_open": true,
+      "description": "Product uses and delivery forms. These branches are not accounting segments or verified market-share categories.",
+      "root": {
+        "name": "NVIDIA",
+        "children": [
+          {
+            "name": "Hardware",
+            "children": [
+              {
+                "name": "GeForce"
+              },
+              {
+                "name": "NVIDIA RTX"
+              },
+              {
+                "name": "Data-center GPUs / Grace CPUs"
+              },
+              {
+                "name": "DGX / GB200 systems"
+              }
+            ]
+          },
+          {
+            "name": "Networking",
+            "children": [
+              {
+                "name": "Spectrum"
+              },
+              {
+                "name": "ConnectX"
+              },
+              {
+                "name": "BlueField"
+              }
+            ]
+          },
+          {
+            "name": "Software",
+            "children": [
+              {
+                "name": "CUDA"
+              },
+              {
+                "name": "TensorRT"
+              },
+              {
+                "name": "AI Enterprise"
+              },
+              {
+                "name": "Omniverse"
+              }
+            ]
+          },
+          {
+            "name": "Platforms",
+            "children": [
+              {
+                "name": "DRIVE"
+              },
+              {
+                "name": "Isaac"
+              },
+              {
+                "name": "Jetson"
+              }
+            ]
+          }
+        ]
+      },
+      "note": "Examples of current product families described by NVIDIA. A branch indicates product use or delivery form; it does not imply a separate financial reporting segment.",
+      "sources": [
+        {
+          "title": "NVIDIA product catalog",
+          "url": "https://www.nvidia.com/en-us/products/"
+        },
+        {
+          "title": "CUDA development platform",
+          "url": "https://developer.nvidia.com/cuda?lang=en"
+        },
+        {
+          "title": "GB200 NVL72 product documentation",
+          "url": "https://www.nvidia.com/en-us/data-center/gb200-nvl72/"
+        },
+        {
+          "title": "Ethernet product portfolio",
+          "url": "https://www.nvidia.com/en-us/networking/products/ethernet/"
+        },
+        {
+          "title": "TensorRT documentation",
+          "url": "https://docs.nvidia.com/deeplearning/tensorrt/latest/"
+        },
+        {
+          "title": "AI Enterprise licensing guide",
+          "url": "https://docs.nvidia.com/ai-enterprise/planning-resource/licensing-guide/latest/licensing.html"
+        },
+        {
+          "title": "Omniverse documentation",
+          "url": "https://docs.nvidia.com/omniverse/index.html"
+        },
+        {
+          "title": "DRIVE platform",
+          "url": "https://developer.nvidia.com/DRIVE"
+        },
+        {
+          "title": "Isaac platform",
+          "url": "https://developer.nvidia.com/isaac"
+        },
+        {
+          "title": "Jetson modules",
+          "url": "https://developer.nvidia.com/embedded/jetson-modules"
+        }
+      ],
+      "reviewed": "2026-10-05",
+      "theme": "nvidia"
     }
   },
   "shares": {
@@ -2256,6 +2374,57 @@
       },
       "note": "IFR directly reports Chinese suppliers at 55%; all other suppliers = 100% − 55% = 45%. Percentages retain the published integer precision. These are shares of installations in a named submarket, not global automation or software revenue, or individual vendor shares. [E204]",
       "reviewed": "2026-10-06"
+    },
+    "nvidia-platform-revenue-fy2026": {
+      "title": "NVIDIA revenue composition by market platform",
+      "eyebrow": "REVENUE COMPOSITION",
+      "scope": "Share of NVIDIA’s total FY2026 revenue by its disclosed market-platform classification. This is company revenue composition, not industry market share.",
+      "geography": "NVIDIA consolidated worldwide revenue",
+      "metric": "Platform revenue / total company revenue",
+      "dimension": "Market platform",
+      "period": "FY2026",
+      "unit": "%",
+      "series": [
+        {
+          "name": "Data Center",
+          "value": 89.7,
+          "percentage_unrounded": 89.71880817642102,
+          "revenue_usd_billions": 193.737
+        },
+        {
+          "name": "Gaming",
+          "value": 7.4,
+          "percentage_unrounded": 7.42898424547787,
+          "revenue_usd_billions": 16.042
+        },
+        {
+          "name": "Professional Visualization",
+          "value": 1.5,
+          "percentage_unrounded": 1.4777389806333299,
+          "revenue_usd_billions": 3.191
+        },
+        {
+          "name": "Automotive",
+          "value": 1.1,
+          "percentage_unrounded": 1.0878122424029122,
+          "revenue_usd_billions": 2.349
+        },
+        {
+          "name": "OEM and Other",
+          "value": 0.3,
+          "percentage_unrounded": 0.28665635506487974,
+          "revenue_usd_billions": 0.619
+        }
+      ],
+      "source": {
+        "title": "Fiscal 2026 annual report Form 10 K",
+        "publisher": "NVIDIA / U.S. SEC",
+        "published": "2026-02-25",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+      },
+      "note": "Percentages are calculated from the five reported platform revenues and the USD 215.938 billion total, then rounded to one decimal place. The exact amounts appear in the table below. Fiscal 2026 ended on 25 January 2026. FY2027 uses a changed platform presentation and is not treated as a continuous category trend.",
+      "reviewed": "2026-10-05",
+      "theme": "nvidia"
     }
   }
 }
