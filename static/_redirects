@@ -7,3 +7,7 @@
 /zh-cn/* / 301
 /posts /post/ 301
 /posts/* /post/:splat 301
+
+# Retire the directory only; individual industry maps keep their existing URLs.
+/industry-breakdowns /industries/ 301
+/industry-breakdowns/ /industries/ 301
