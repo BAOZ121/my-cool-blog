@@ -9,11 +9,11 @@ categories: ["Industry Report"]
 tags: ["Payments", "Financial Infrastructure", "Visa", "Mastercard", "Industry Research Report"]
 draft: false
 reportversion: "1.0"
-webrevision: "preview-01"
+webrevision: "published-01"
 toc: true
 ---
 
-<p><strong>Article preview · Version 1.0 · Information cutoff: 8 October 2026</strong></p>
+<p><strong>Industry report · Version 1.0 · Information cutoff: 8 October 2026</strong></p>
 
 Global industry report centered on Visa and Mastercard. Information cutoff 8 October 2026. Version 1.0. The report examines how payment networks coordinate commerce, how the industry developed, where revenue is earned and what can change the competitive position of card and account-payment systems.
 
