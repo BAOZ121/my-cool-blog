@@ -51,7 +51,15 @@ test("index covers current published posts, preserves contexts, and only uses sa
   assert.ok(local.has("/data/industries.csv"));
   assert.ok(local.has("/research-files/cybersecurity/NIST.SP.800-207.pdf"));
   const visuals = JSON.parse(readFileSync(new URL("../data/article_visuals.json", import.meta.url)));
-  assert.deepEqual(new Set([...local].filter(url => url.startsWith("/data/charts/"))), new Set(Object.keys(visuals.shares).map(id => `/data/charts/${id}.csv`)));
+  const publishedCharts = new Set();
+  for (const id of publishedIds) {
+    const article = readFileSync(new URL(`${id}/index.en.md`, postRoot), "utf8");
+    for (const [, chartId] of article.matchAll(/{{<\s*market-share\s+id="([a-z0-9-]+)"\s*>}}/g)) {
+      assert.ok(visuals.shares[chartId], `Missing chart data for published article ${id}: ${chartId}`);
+      publishedCharts.add(`/data/charts/${chartId}.csv`);
+    }
+  }
+  assert.deepEqual(new Set([...local].filter(url => url.startsWith("/data/charts/"))), publishedCharts);
 });
 
 test("unverified ranges, reading leads and chart scope remain searchable", () => {
