@@ -1,0 +1,7 @@
+brand,purchase_value_usd_billion,purchase_value_share_pct,purchase_transactions_billion,purchase_transaction_share_pct,period,geography,evidence_id
+Visa,6498.12,37.42,140.70,38.66,2024-01-01/2024-06-30,Worldwide,M01
+UnionPay,5887.43,33.90,120.66,33.15,2024-01-01/2024-06-30,Worldwide,M01
+Mastercard,3846.20,22.15,91.39,25.11,2024-01-01/2024-06-30,Worldwide,M01
+American Express,852.37,4.91,5.83,1.60,2024-01-01/2024-06-30,Worldwide,M01
+JCB,158.42,0.91,3.39,0.93,2024-01-01/2024-06-30,Worldwide,M01
+Discover/Diners Club,122.63,0.71,1.97,0.54,2024-01-01/2024-06-30,Worldwide,M01

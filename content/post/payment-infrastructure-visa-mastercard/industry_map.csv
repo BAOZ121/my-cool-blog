@@ -1,0 +1,20 @@
+industry,layer,layer_role,subsegment,company_or_product
+Retail payment infrastructure,Upstream,Foundations,Standards and credentials,EMVCo
+Retail payment infrastructure,Upstream,Foundations,Standards and credentials,EMV chip and token specifications
+Retail payment infrastructure,Upstream,Foundations,Accounts and liquidity,Issuer accounts
+Retail payment infrastructure,Upstream,Foundations,Accounts and liquidity,Settlement bank services
+Retail payment infrastructure,Midstream,Networks and acceptance,Card schemes and switching,Visa
+Retail payment infrastructure,Midstream,Networks and acceptance,Card schemes and switching,Mastercard
+Retail payment infrastructure,Midstream,Networks and acceptance,Card schemes and switching,UnionPay
+Retail payment infrastructure,Midstream,Networks and acceptance,Card schemes and switching,American Express
+Retail payment infrastructure,Midstream,Networks and acceptance,Card schemes and switching,JCB
+Retail payment infrastructure,Midstream,Networks and acceptance,Card schemes and switching,Discover and Diners Club
+Retail payment infrastructure,Midstream,Networks and acceptance,Merchant processing and acquiring,Adyen
+Retail payment infrastructure,Midstream,Networks and acceptance,Alternative account rails,UPI
+Retail payment infrastructure,Midstream,Networks and acceptance,Alternative account rails,Pix
+Retail payment infrastructure,Downstream,Access and commerce,Wallet interfaces,Apple Pay
+Retail payment infrastructure,Downstream,Access and commerce,Wallet interfaces,Google Pay
+Retail payment infrastructure,Downstream,Access and commerce,Merchant acceptance,POS terminals
+Retail payment infrastructure,Downstream,Access and commerce,Merchant acceptance,E-commerce checkout
+Retail payment infrastructure,Downstream,Access and commerce,End-user services,Cardholder payment services
+Retail payment infrastructure,Downstream,Access and commerce,End-user services,Merchant payouts

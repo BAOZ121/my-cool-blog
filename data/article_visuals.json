@@ -2027,6 +2027,159 @@
       ],
       "reviewed": "2026-10-05",
       "theme": "nvidia"
+    },
+    "retail-payment-infrastructure": {
+      "title": "Retail payment infrastructure industry map",
+      "description": "Industry → value-chain layer → subsegment → company or product. Expand the map to explore the full hierarchy.",
+      "root": {
+        "name": "Retail payment infrastructure",
+        "children": [
+          {
+            "name": "Upstream — Foundations",
+            "children": [
+              {
+                "name": "Standards and credentials",
+                "children": [
+                  {
+                    "name": "EMVCo"
+                  },
+                  {
+                    "name": "EMV chip and token specifications"
+                  }
+                ]
+              },
+              {
+                "name": "Accounts and liquidity",
+                "children": [
+                  {
+                    "name": "Issuer accounts"
+                  },
+                  {
+                    "name": "Settlement bank services"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Midstream — Networks and acceptance",
+            "children": [
+              {
+                "name": "Card schemes and switching",
+                "children": [
+                  {
+                    "name": "Visa"
+                  },
+                  {
+                    "name": "Mastercard"
+                  },
+                  {
+                    "name": "UnionPay"
+                  },
+                  {
+                    "name": "American Express"
+                  },
+                  {
+                    "name": "JCB"
+                  },
+                  {
+                    "name": "Discover and Diners Club"
+                  }
+                ]
+              },
+              {
+                "name": "Merchant processing and acquiring",
+                "children": [
+                  {
+                    "name": "Adyen"
+                  }
+                ]
+              },
+              {
+                "name": "Alternative account rails",
+                "children": [
+                  {
+                    "name": "UPI"
+                  },
+                  {
+                    "name": "Pix"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Downstream — Access and commerce",
+            "children": [
+              {
+                "name": "Wallet interfaces",
+                "children": [
+                  {
+                    "name": "Apple Pay"
+                  },
+                  {
+                    "name": "Google Pay"
+                  }
+                ]
+              },
+              {
+                "name": "Merchant acceptance",
+                "children": [
+                  {
+                    "name": "POS terminals"
+                  },
+                  {
+                    "name": "E-commerce checkout"
+                  }
+                ]
+              },
+              {
+                "name": "End-user services",
+                "children": [
+                  {
+                    "name": "Cardholder payment services"
+                  },
+                  {
+                    "name": "Merchant payouts"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "[H06] Overview of EMVCo",
+          "url": "https://www.emvco.com/about-us/overview-of-emvco/"
+        },
+        {
+          "title": "[H07] MR22/1.10 Market review of card scheme and processing fees: final report",
+          "url": "https://www.psr.org.uk/media/sogjjvl4/mr22-110-card-sp-fees-mr-final-report-publication-redacted-mar-2025-updated.pdf"
+        },
+        {
+          "title": "[H13] Innovations in payments",
+          "url": "https://www.bis.org/publications/innovations-payments"
+        },
+        {
+          "title": "[H14] Fast payments: design and adoption",
+          "url": "https://www.bis.org/publications/qr-202403/fast-payments-design-and-adoption"
+        },
+        {
+          "title": "[M01] Global Brand Cards Worldwide — Midyear 2024, Nilson Report Issue 1276",
+          "url": "https://nilsonreport.com/wp-content/uploads/NilsonReport_Issue_1276_0L24.pdf"
+        },
+        {
+          "title": "[R01] Payments lifecycle and Global acquiring",
+          "url": "https://docs.adyen.com/account/payments-lifecycle/"
+        },
+        {
+          "title": "[R02] EMV Payment Tokenisation",
+          "url": "https://www.emvco.com/emv-technologies/payment-tokenisation/"
+        }
+      ],
+      "note": "Connections classify roles, not supply contracts. Companies can span layers. Wallets may use cards or account rails; a wallet is not automatically a separate clearing network.",
+      "reviewed": "2026-10-08"
     }
   },
   "shares": {
@@ -2425,6 +2578,52 @@
       "note": "Percentages are calculated from the five reported platform revenues and the USD 215.938 billion total, then rounded to one decimal place. The exact amounts appear in the table below. Fiscal 2026 ended on 25 January 2026. FY2027 uses a changed platform presentation and is not treated as a continuous category trend.",
       "reviewed": "2026-10-05",
       "theme": "nvidia"
+    },
+    "global-card-purchase-value-h1-2024": {
+      "title": "Global card-brand purchase value",
+      "period": "1 January–30 June 2024",
+      "center_label": "H1 2024",
+      "geography": "Worldwide",
+      "scope": "Purchase value across six global card brands; not all retail payments. Consumer, small-business and commercial credit, debit and prepaid cards; cash withdrawals excluded.",
+      "metric": "Share of purchase value (%)",
+      "dimension": "Card brand",
+      "percentDecimals": 2,
+      "unit": "%",
+      "series": [
+        {
+          "name": "Visa",
+          "value": 37.42
+        },
+        {
+          "name": "UnionPay",
+          "value": 33.9
+        },
+        {
+          "name": "Mastercard",
+          "value": 22.15
+        },
+        {
+          "name": "American Express",
+          "value": 4.91
+        },
+        {
+          "name": "JCB",
+          "value": 0.91
+        },
+        {
+          "name": "Discover/Diners Club",
+          "value": 0.71
+        }
+      ],
+      "source": {
+        "publisher": "Nilson Report / HSN Consultants",
+        "title": "Global Brand Cards Worldwide — Midyear 2024, Issue 1276",
+        "published": "2024-12-19",
+        "url": "https://nilsonreport.com/wp-content/uploads/NilsonReport_Issue_1276_0L24.pdf",
+        "locator": "pp. 16–17"
+      },
+      "note": "Historical six-brand snapshot. Values total US$17,365.17 billion. Visa and Mastercard together account for 59.57%. JCB is estimated; Mastercard excludes Maestro and Cirrus. The directly published shares total 100.00%; no normalization or residual Other category is used. This is not a 2026 share estimate.",
+      "reviewed": "2026-10-08"
     }
   }
 }

@@ -2,6 +2,819 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "payment-infrastructure-visa-mastercard",
+      "title": "Retail Payment Infrastructure and Card Networks: Visa and Mastercard",
+      "url": "/post/payment-infrastructure-visa-mastercard/",
+      "published": "2026-10-08",
+      "notices": [],
+      "entries": [
+        {
+          "id": "796925b26a79",
+          "url": "https://www.emvco.com/about-us/overview-of-emvco/",
+          "title": "[H06] Overview of EMVCo",
+          "kind": "link",
+          "format": "Web",
+          "host": "emvco.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Retail payment infrastructure industry map",
+              "url": "/post/payment-infrastructure-visa-mastercard/#industry-map-retail-payment-infrastructure-0-title",
+              "text": "Sources: [H06] Overview of EMVCo · [H07] MR22/1.10 Market review of card scheme and processing fees: final report · [H13] Innovations in payments · [H14] Fast payments: design and adoption · [M01] Global Brand Cards Worldwide — Midyear 2024, Nilson Report Issue 1276 · [R01] Payments lifecycle and Global acquiring · [R02] EMV Payment Tokenisation . Reviewed 2026-10-08.",
+              "notes": [
+                "Industry → value-chain layer → subsegment → company or product. Expand the map to explore the full hierarchy.",
+                "Connections classify roles, not supply contracts. Companies can span layers. Wallets may use cards or account rails; a wallet is not automatically a separate clearing network."
+              ]
+            },
+            {
+              "section": "[H06] Overview of EMVCo",
+              "url": "/post/payment-infrastructure-visa-mastercard/#source-H06",
+              "text": "Original: Overview of EMVCo",
+              "notes": [
+                "Publisher and type: EMVCo; Primary source — standards body’s self-description",
+                "Publication: Not displayed; accessed 2026-10-08. Event or statistical period: 1999 formation; organizational description accessed 2026-10-08.",
+                "Location: FAQs: Who is EMVCo?; How does EMVCo operate?; specifications mandate question. Read: 2026-10-08.",
+                "Scope: Global payment interoperability specifications and testing governance.",
+                "Supports: EMVCo formed in 1999 to manage interoperable secure-payment specifications and testing. Its six owners are American Express, Discover, JCB, Mastercard, UnionPay and Visa; EMVCo states that it does not mandate use of its specifications.",
+                "Limits: Undated page; access date is not publication date. Standard setting does not make EMVCo a settlement network, regulator or guarantee against all fraud."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "14aeed5e170a",
+          "url": "https://www.psr.org.uk/media/sogjjvl4/mr22-110-card-sp-fees-mr-final-report-publication-redacted-mar-2025-updated.pdf",
+          "title": "[H07] MR22/1.10 Market review of card scheme and processing fees: final report",
+          "kind": "file",
+          "format": "PDF",
+          "host": "psr.org.uk",
+          "local": false,
+          "citations": [
+            {
+              "section": "Retail payment infrastructure industry map",
+              "url": "/post/payment-infrastructure-visa-mastercard/#industry-map-retail-payment-infrastructure-0-title",
+              "text": "Sources: [H06] Overview of EMVCo · [H07] MR22/1.10 Market review of card scheme and processing fees: final report · [H13] Innovations in payments · [H14] Fast payments: design and adoption · [M01] Global Brand Cards Worldwide — Midyear 2024, Nilson Report Issue 1276 · [R01] Payments lifecycle and Global acquiring · [R02] EMV Payment Tokenisation . Reviewed 2026-10-08.",
+              "notes": [
+                "Industry → value-chain layer → subsegment → company or product. Expand the map to explore the full hierarchy.",
+                "Connections classify roles, not supply contracts. Companies can span layers. Wallets may use cards or account rails; a wallet is not automatically a separate clearing network."
+              ]
+            },
+            {
+              "section": "[H07] MR22/1.10 Market review of card scheme and processing fees: final report",
+              "url": "/post/payment-infrastructure-visa-mastercard/#source-H07",
+              "text": "Original: MR22/1.10 Market review of card scheme and processing fees: final report",
+              "notes": [
+                "Publisher and type: Payment Systems Regulator; Primary source — regulatory market review",
+                "Publication: 2025-03-06. Event or statistical period: 2017–2023 fee analysis; detailed incremental-cost baselines: Mastercard 2017, Visa 2018.",
+                "Location: P. 6; pp. 18–20, paras. 3.4–3.7; pp. 100–101, paras. 6.68–6.69. Read: 2026-10-08.",
+                "Scope: UK acquiring-side core scheme and processing fees; real growth; monetary amounts in GBP.",
+                "Supports: PSR found core fees relative to transaction value rose at least 25% in real terms over 2017–2023, implying at least GBP 170 million additional annual cost. It distinguishes issuer interchange, network charges and acquirer revenue, and describes card-linked wallets as interfaces.",
+                "Limits: UK findings, not global prices or adjudicated damages; reliable UK cost data were insufficient. Redactions remain unknown; reproduced UK Finance/BRC estimates retain their third-party status."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ca17605b367e",
+          "url": "https://www.bis.org/publications/innovations-payments",
+          "title": "[H13] Innovations in payments",
+          "kind": "link",
+          "format": "Web",
+          "host": "bis.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "Retail payment infrastructure industry map",
+              "url": "/post/payment-infrastructure-visa-mastercard/#industry-map-retail-payment-infrastructure-0-title",
+              "text": "Sources: [H06] Overview of EMVCo · [H07] MR22/1.10 Market review of card scheme and processing fees: final report · [H13] Innovations in payments · [H14] Fast payments: design and adoption · [M01] Global Brand Cards Worldwide — Midyear 2024, Nilson Report Issue 1276 · [R01] Payments lifecycle and Global acquiring · [R02] EMV Payment Tokenisation . Reviewed 2026-10-08.",
+              "notes": [
+                "Industry → value-chain layer → subsegment → company or product. Expand the map to explore the full hierarchy.",
+                "Connections classify roles, not supply contracts. Companies can span layers. Wallets may use cards or account rails; a wallet is not automatically a separate clearing network."
+              ]
+            },
+            {
+              "section": "[H13] Innovations in payments",
+              "url": "/post/payment-infrastructure-visa-mastercard/#source-H13",
+              "text": "Original: Innovations in payments",
+              "notes": [
+                "Publisher and type: Morten Bech and Jenny Hancock; BIS Quarterly Review; Institutional research — payment-systems conceptual primer",
+                "Publication: 2020-03. Event or statistical period: Conceptual framework published March 2020.",
+                "Location: Payments: a primer; PDF edition begins at printed p. 21. Read: 2026-10-08.",
+                "Scope: Global payment terminology and settlement design.",
+                "Supports: Clearing exchanges and reconciles instructions; settlement transfers funds to discharge obligations, with finality identifying an irrevocable and unconditional transfer. Net settlement economizes on liquidity while leaving exposure until settlement; real-time gross settlement needs more funding.",
+                "Limits: Use the conceptual definitions, not outdated statistics or service-launch forecasts. It does not imply all retail payments settle directly at a central bank."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f54744e61ece",
+          "url": "https://www.bis.org/publications/qr-202403/fast-payments-design-and-adoption",
+          "title": "[H14] Fast payments: design and adoption",
+          "kind": "link",
+          "format": "Web",
+          "host": "bis.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "Retail payment infrastructure industry map",
+              "url": "/post/payment-infrastructure-visa-mastercard/#industry-map-retail-payment-infrastructure-0-title",
+              "text": "Sources: [H06] Overview of EMVCo · [H07] MR22/1.10 Market review of card scheme and processing fees: final report · [H13] Innovations in payments · [H14] Fast payments: design and adoption · [M01] Global Brand Cards Worldwide — Midyear 2024, Nilson Report Issue 1276 · [R01] Payments lifecycle and Global acquiring · [R02] EMV Payment Tokenisation . Reviewed 2026-10-08.",
+              "notes": [
+                "Industry → value-chain layer → subsegment → company or product. Expand the map to explore the full hierarchy.",
+                "Connections classify roles, not supply contracts. Companies can span layers. Wallets may use cards or account rails; a wallet is not automatically a separate clearing network."
+              ]
+            },
+            {
+              "section": "[H14] Fast payments: design and adoption",
+              "url": "/post/payment-infrastructure-visa-mastercard/#source-H14",
+              "text": "Original: Fast payments: design and adoption",
+              "notes": [
+                "Publisher and type: BIS Quarterly Review; Institutional research — cross-country analysis; authors’ views",
+                "Publication: 2024-03. Event or statistical period: Research sample: 2001-04 to 2023-12; 13 jurisdictions.",
+                "Location: Key takeaways; Infrastructure; Cross-country analysis. Read: 2026-10-08.",
+                "Scope: Fast-payment system design and adoption across 13 jurisdictions.",
+                "Supports: Adoption was associated with public ownership, nonbank participation, more use cases and cross-border connections. Immediate availability to users can coexist with either real-time or deferred inter-provider settlement.",
+                "Limits: Association is not universal causal proof; authors’ views are not necessarily BIS/CPMI policy. Selected-jurisdiction data do not constitute global payment-market shares."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0224a7d95915",
+          "url": "https://nilsonreport.com/wp-content/uploads/NilsonReport_Issue_1276_0L24.pdf",
+          "title": "Nilson Report / HSN Consultants — Global Brand Cards Worldwide — Midyear 2024, Issue 1276",
+          "kind": "file",
+          "format": "PDF",
+          "host": "nilsonreport.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Retail payment infrastructure industry map",
+              "url": "/post/payment-infrastructure-visa-mastercard/#industry-map-retail-payment-infrastructure-0-title",
+              "text": "Sources: [H06] Overview of EMVCo · [H07] MR22/1.10 Market review of card scheme and processing fees: final report · [H13] Innovations in payments · [H14] Fast payments: design and adoption · [M01] Global Brand Cards Worldwide — Midyear 2024, Nilson Report Issue 1276 · [R01] Payments lifecycle and Global acquiring · [R02] EMV Payment Tokenisation . Reviewed 2026-10-08.",
+              "notes": [
+                "Industry → value-chain layer → subsegment → company or product. Expand the map to explore the full hierarchy.",
+                "Connections classify roles, not supply contracts. Companies can span layers. Wallets may use cards or account rails; a wallet is not automatically a separate clearing network."
+              ]
+            },
+            {
+              "section": "Global card-brand purchase value",
+              "url": "/post/payment-infrastructure-visa-mastercard/#market-share-global-card-purchase-value-h1-2024-1-title",
+              "text": "Source: Nilson Report / HSN Consultants — Global Brand Cards Worldwide — Midyear 2024, Issue 1276 (2024-12-19). Reviewed 2026-10-08.",
+              "notes": [
+                "Purchase value across six global card brands; not all retail payments. Consumer, small-business and commercial credit, debit and prepaid cards; cash withdrawals excluded.",
+                "Worldwide · Share of purchase value (%)",
+                "Historical six-brand snapshot. Values total US$17,365.17 billion. Visa and Mastercard together account for 59.57%. JCB is estimated; Mastercard excludes Maestro and Cirrus. The directly published shares total 100.00%; no normalization or residual Other category is used. This is not a 2026 share estimate."
+              ]
+            },
+            {
+              "section": "[M01] Global Brand Cards Worldwide — Midyear 2024, Nilson Report Issue 1276",
+              "url": "/post/payment-infrastructure-visa-mastercard/#source-M01",
+              "text": "Original: Global Brand Cards Worldwide — Midyear 2024, Nilson Report Issue 1276",
+              "notes": [
+                "Publisher and type: Nilson Report / HSN Consultants; Original industry research; third-party measurement; JCB estimated",
+                "Publication: 2024-12-19. Event or statistical period: 2024-01-01 to 2024-06-30; read 2026-10-08.",
+                "Location: pp. 16–17, Global Brand General Purpose Cards table and adjacent text. Read: 2026-10-08.",
+                "Scope: Worldwide purchases on six global card brands; consumer, small-business and commercial credit, debit and prepaid cards; USD value excludes cash advances/withdrawals.",
+                "Supports: H 1 2024 purchase value $17,365.17 bn: Visa 37.42%, UnionPay 33.90%, Mastercard 22.15%, Amex 4.91%, JCB 0.91%, Discover/Diners 0.71%. Shares sum 100.00%; Visa+Mastercard 59.57%. Purchase transactions 363.93 bn. Publisher PDF text and rendered pp 16–17 verified.",
+                "Limits: Historical six-brand universe, not all payments or all infrastructure. Mastercard excludes Maestro/Cirrus. JCB estimated. Source shares used unchanged; no normalization. Newer complete six-brand data not accessible. Source PDF retained for inspection only; distribute link, not original."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f333111c708e",
+          "url": "https://docs.adyen.com/account/payments-lifecycle/",
+          "title": "[R01] Payments lifecycle and Global acquiring",
+          "kind": "link",
+          "format": "Web",
+          "host": "docs.adyen.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Retail payment infrastructure industry map",
+              "url": "/post/payment-infrastructure-visa-mastercard/#industry-map-retail-payment-infrastructure-0-title",
+              "text": "Sources: [H06] Overview of EMVCo · [H07] MR22/1.10 Market review of card scheme and processing fees: final report · [H13] Innovations in payments · [H14] Fast payments: design and adoption · [M01] Global Brand Cards Worldwide — Midyear 2024, Nilson Report Issue 1276 · [R01] Payments lifecycle and Global acquiring · [R02] EMV Payment Tokenisation . Reviewed 2026-10-08.",
+              "notes": [
+                "Industry → value-chain layer → subsegment → company or product. Expand the map to explore the full hierarchy.",
+                "Connections classify roles, not supply contracts. Companies can span layers. Wallets may use cards or account rails; a wallet is not automatically a separate clearing network."
+              ]
+            },
+            {
+              "section": "[R01] Payments lifecycle and Global acquiring",
+              "url": "/post/payment-infrastructure-visa-mastercard/#source-R01",
+              "text": "Original: Payments lifecycle and Global acquiring",
+              "notes": [
+                "Publisher and type: Adyen; First-party product documentation",
+                "Publication: Undated live documentation; accessed 2026-10-08. Event or statistical period: Product description observed 2026-10-08.",
+                "Location: Authorization statuses; Capture and settlement statuses; Global acquiring overview. Read: 2026-10-08.",
+                "Scope: Adyen services; illustrative of card payment operations, not a universal rulebook.",
+                "Supports: Authorization reserves funds. A settled status at Adyen does not necessarily mean the merchant has been paid. Adyen provides processing and acquiring.",
+                "Limits: No publication date is displayed. No provider performance, market share or universal payout schedule is inferred."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5d629f67c2b1",
+          "url": "https://www.emvco.com/emv-technologies/payment-tokenisation/",
+          "title": "[R02] EMV Payment Tokenisation",
+          "kind": "link",
+          "format": "Web",
+          "host": "emvco.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Retail payment infrastructure industry map",
+              "url": "/post/payment-infrastructure-visa-mastercard/#industry-map-retail-payment-infrastructure-0-title",
+              "text": "Sources: [H06] Overview of EMVCo · [H07] MR22/1.10 Market review of card scheme and processing fees: final report · [H13] Innovations in payments · [H14] Fast payments: design and adoption · [M01] Global Brand Cards Worldwide — Midyear 2024, Nilson Report Issue 1276 · [R01] Payments lifecycle and Global acquiring · [R02] EMV Payment Tokenisation . Reviewed 2026-10-08.",
+              "notes": [
+                "Industry → value-chain layer → subsegment → company or product. Expand the map to explore the full hierarchy.",
+                "Connections classify roles, not supply contracts. Companies can span layers. Wallets may use cards or account rails; a wallet is not automatically a separate clearing network."
+              ]
+            },
+            {
+              "section": "[R02] EMV Payment Tokenisation",
+              "url": "/post/payment-infrastructure-visa-mastercard/#source-R02",
+              "text": "Original: EMV Payment Tokenisation",
+              "notes": [
+                "Publisher and type: EMVCo; Primary standards-body documentation",
+                "Publication: Undated overview; listed framework v2.4 publication 2026-07-09. Event or statistical period: Technology description read 2026-10-08.",
+                "Location: What is EMV Payment Tokenisation; Specifications; FAQs. Read: 2026-10-08.",
+                "Scope: EMV payment tokens in card payments worldwide.",
+                "Supports: A payment token substitutes for the primary account number and can be restricted to a merchant, device or use case while using existing payment infrastructure.",
+                "Limits: Not a blockchain token or settlement asset. This explanation is not a measured guarantee of fraud prevention. The complete v 2.4 specification was not audited."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "58ff3456efcc",
+          "url": "/post/payment-infrastructure-visa-mastercard/industry_map.csv",
+          "title": "Download source data (CSV)",
+          "kind": "file",
+          "format": "CSV",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "The value chain and who gets paid",
+              "url": "/post/payment-infrastructure-visa-mastercard/#the-value-chain-and-who-gets-paid",
+              "text": "Download PNG · Download editable SVG · Download source data (CSV)",
+              "notes": [
+                "Upstream, institutions provide accounts, liquidity and the technical standards that let a payment credential work across different devices and providers. EMVCo maintains specifications; it is not itself a merchant acquirer or a settlement network. EMV payment tokenisation substitutes a constrained token for the primary account number, allowing existing card infrastructure to support digital use cases. A payment token in this sense is distinct from a blockchain asset. [H06] [R02]",
+                "Midstream, the card scheme sets participation and transaction rules while its processing network helps institutions exchange messages. Acquirers and processors connect merchants, perform operational work and arrange payment acceptance. Adyen is an example of a company providing both processing and acquiring. Its documentation makes an instructive distinction: funds received by Adyen in a settled payment have not necessarily been paid out to the merchant. Provider receipt and merchant payout are different events. [R01]",
+                "Downstream, wallets, checkout software and terminals make these services usable in commerce. A card held in Apple Pay or Google Pay may still rely on the underlying card network; the wallet is not automatically an independent clearing rail. UPI and Pix illustrate a different category: account-payment arrangements whose adoption depends on participant access, governance and useful payment scenarios. The diagram classifies roles, not market shares or verified supply contracts. [H07] [H14]",
+                "Figure 1 Retail payment infrastructure value chain",
+                "Figure 1 follows the same sequence as the text: foundations, networks and acceptance, then access and commerce. A company can occupy several positions, and an institution providing a payment interface may rely on another institution for settlement. Names are representative rather than exhaustive. Sources: [H06] [H07] [H13] [H14] [M01] [R01] [R02] .",
+                "In a four-party card arrangement, the consumer deals with an issuer and the merchant with an acquirer, while the network coordinates their interaction. Interchange generally flows from the acquirer to the issuer. Scheme and processing fees are separate, and the merchant service charge contains several components. Treating the entire merchant charge as Visa or Mastercard revenue misidentifies both the recipient and the economics. [H07]",
+                "Our interpretation is that a new network faces a coordination problem before it faces a computing problem. Issuers need merchants willing to accept the credential; merchants need enough potential buyers; both need reliable operation and agreed procedures when a transaction goes wrong. Discounting one side can attract participants, but the discount has to be funded. Scale is valuable only if the network can retain useful participation after incentives and operating costs."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a8121921ed58",
+          "url": "/data/charts/global-card-purchase-value-h1-2024.csv",
+          "title": "Global card-brand purchase value — data (CSV)",
+          "kind": "file",
+          "format": "CSV",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Global card-brand purchase value",
+              "url": "/post/payment-infrastructure-visa-mastercard/#market-share-global-card-purchase-value-h1-2024-1-title",
+              "text": "Download data (CSV)",
+              "notes": [
+                "Purchase value across six global card brands; not all retail payments. Consumer, small-business and commercial credit, debit and prepaid cards; cash withdrawals excluded.",
+                "Worldwide · Share of purchase value (%)",
+                "Historical six-brand snapshot. Values total US$17,365.17 billion. Visa and Mastercard together account for 59.57%. JCB is estimated; Mastercard excludes Maestro and Cirrus. The directly published shares total 100.00%; no normalization or residual Other category is used. This is not a 2026 share estimate."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cbcb9b5fb3ef",
+          "url": "/post/payment-infrastructure-visa-mastercard/market_share_h1_2024.csv",
+          "title": "Download source data (CSV)",
+          "kind": "file",
+          "format": "CSV",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Market scale and a comparable share snapshot",
+              "url": "/post/payment-infrastructure-visa-mastercard/#market-scale-and-a-comparable-share-snapshot",
+              "text": "Download PNG · Download editable SVG · Download source data (CSV)",
+              "notes": [
+                "Nilson Report counts 828.10 billion goods-and-services purchase transactions across the six global card brands in calendar 2025, up 7.1% year on year. This measures branded card purchases, not all electronic payments or the revenues earned from them. The publicly readable release does not provide a complete usable set of brand shares. [M02]",
+                "The complete share chart therefore uses a separately dated historical observation: worldwide purchase value in January to June 2024. Six brands accounted for USD17,365.17 billion in that defined dataset. Visa represented 37.42%, UnionPay 33.90%, Mastercard 22.15%, American Express 4.91%, JCB 0.91%, and Discover/Diners Club 0.71%. The published shares total 100.00%; JCB is estimated and Mastercard excludes Maestro and Cirrus. [M01]",
+                "Figure 2 Purchase value shares of six global card brands",
+                "Figure 2 excludes cash withdrawals and is not a share of all retail payments, all card schemes, payment-processing revenue or financial infrastructure. The percentages are used as published without normalization. Visa and Mastercard together account for 59.57% of this defined purchase value, calculated as 37.42% + 22.15%. That supports their importance within this dataset; it does not establish a universal global payments duopoly. Source: Nilson Report, Issue 1276, published 19 December 2024, pp. 16–17. [M01]",
+                "Regional analysis changes the competitive question. A globally aggregated card chart combines markets with different institutions and payment habits. In the United States, routing and network contracting feature in the DOJ debit case. In Europe, interchange regulation and instant-transfer rules constrain different layers of the service. India and Brazil illustrate how account-payment systems can develop around domestic institutions. These observations should be compared as institutional settings, not combined into a fabricated worldwide payment-method share. [H09] [H12] [H14] [H15]"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "899183ffde15",
+          "url": "https://www.parliament.uk/globalassets/documents/commons-committees/treasury/correspondence/2017-19/visa-response-150618.pdf",
+          "title": "Letter from Visa regarding service disruption, 15 June 2018",
+          "kind": "file",
+          "format": "PDF",
+          "host": "parliament.uk",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H01] Letter from Visa regarding service disruption, 15 June 2018",
+              "url": "/post/payment-infrastructure-visa-mastercard/#source-H01",
+              "text": "Original: Letter from Visa regarding service disruption, 15 June 2018",
+              "notes": [
+                "Publisher and type: Visa Europe (Charlotte Hogg); published by the UK Parliament Treasury Committee; Primary source — company incident account submitted to Parliament",
+                "Publication: 2018-06-15. Event or statistical period: 2018-06-01 14:35 BST to 2018-06-02 00:45 BST.",
+                "Location: Printed pp. 1–5; hardware sequence p. 2; transaction attempts p. 4. Read: 2026-10-08.",
+                "Scope: Visa’s European processing systems during the incident; transaction attempts, not unique people.",
+                "Supports: Visa reported 5.2 million unsuccessful processing attempts out of 51.2 million submissions, approximately 10%; accounting for retries roughly halved the failure measure. It described a partial switch failure that disrupted failover and stated the incident was not cyber-related.",
+                "Limits: Contemporaneous company account, not the final independent root-cause review; failures are not necessarily lost purchases. Retain the source’s rounded 10%."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cf10198987ae",
+          "url": "https://www.bankofengland.co.uk/news/2019/March/boe-announces-supervisory-action-over-visa-europes-june-2018-partial-outage-incident",
+          "title": "Bank of England announces supervisory action over Visa Europe’s June 2018 partial outage incident",
+          "kind": "link",
+          "format": "Web",
+          "host": "bankofengland.co.uk",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H02] Bank of England announces supervisory action over Visa Europe’s June 2018 partial outage incident",
+              "url": "/post/payment-infrastructure-visa-mastercard/#source-H02",
+              "text": "Original: Bank of England announces supervisory action over Visa Europe’s June 2018 partial outage incident",
+              "notes": [
+                "Publisher and type: Bank of England; Primary source — supervisory announcement",
+                "Publication: 2019-03-08. Event or statistical period: 2018-06-01 outage; 2019 supervisory direction.",
+                "Location: News release, paragraphs 1–8. Read: 2026-10-08.",
+                "Scope: Visa Europe’s card authorization system; UK supervision of the European incident.",
+                "Supports: Following an independent review, the Bank directed Visa Europe to implement the recommendations and required PwC to assess progress. It identified widespread disruption and possible damage to confidence in the financial system.",
+                "Limits: The Bank expressly said this was not enforcement action and did not imply a regulatory breach; it was not a fine."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3701c9e99162",
+          "url": "https://usa.visa.com/dam/VCOM/download/corporate/media/visa-inc-factsheet.pdf",
+          "title": "Visa Inc. Facts & Figures, November 2015",
+          "kind": "file",
+          "format": "PDF",
+          "host": "usa.visa.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H03] Visa Inc. Facts & Figures, November 2015",
+              "url": "/post/payment-infrastructure-visa-mastercard/#source-H03",
+              "text": "Original: Visa Inc. Facts & Figures, November 2015",
+              "notes": [
+                "Publisher and type: Visa; Primary source — corporate historical fact sheet",
+                "Publication: 2015-11. Event or statistical period: 1958; 1976; 2007; 2008-03-19.",
+                "Location: P. 1, Our History and Key Facts. Read: 2026-10-08.",
+                "Scope: Visa’s origin, brand formation, restructuring and initial public offering.",
+                "Supports: BankAmericard launched in 1958; the Visa brand formed in 1976 and Visa Inc. was created through restructuring in 2007. The fact sheet dates Visa’s IPO to 2008-03-19.",
+                "Limits: Historical source only; its 2015 financial, leadership and scale information is not current evidence. It does not establish a world-first claim."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e2b88c680417",
+          "url": "https://www.mastercard.com/brandcenter/us/en/brand-history.html",
+          "title": "Brand History",
+          "kind": "link",
+          "format": "Web",
+          "host": "mastercard.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H04] Brand History",
+              "url": "/post/payment-infrastructure-visa-mastercard/#source-H04",
+              "text": "Original: Brand History",
+              "notes": [
+                "Publisher and type: Mastercard; Primary source — corporate historical account",
+                "Publication: Not displayed; accessed 2026-10-08. Event or statistical period: 1966; 1967 formal charter; 1979; 2002; 2006.",
+                "Location: Building a Global Brand; Brand Mark Evolution. Read: 2026-10-08.",
+                "Scope: Mastercard’s association origins, rule setting, brand and ownership changes.",
+                "Supports: The Interbank Card Association originated in 1966, with committees establishing authorization, clearing and settlement rules; Master Charge became MasterCard in 1979. The Europay merger and conversion to a private share corporation occurred in 2002, followed by an IPO in 2006.",
+                "Limits: Publication date is undisclosed; distinguish 1966 origins from the page’s 1967 formal charter. Undated marketing statistics are excluded."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6217760134ed",
+          "url": "https://www.federalreservehistory.org/essays/electronic-point-of-sale-payments",
+          "title": "Electronic Point-of-Sale Payments",
+          "kind": "link",
+          "format": "Web",
+          "host": "federalreservehistory.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H05] Electronic Point-of-Sale Payments",
+              "url": "/post/payment-infrastructure-visa-mastercard/#source-H05",
+              "text": "Original: Electronic Point-of-Sale Payments",
+              "notes": [
+                "Publisher and type: Federal Reserve History; Institutional historical synthesis — based on earlier records",
+                "Publication: 2024-09-25. Event or statistical period: 1950s–2010; 1966 licensing; 1970 reorganization; 1977 commission recommendation.",
+                "Location: Development of bank-issued credit cards; Early 1970s proposals; development of private networks. Read: 2026-10-08.",
+                "Scope: US bank-card development and the Federal Reserve’s infrastructure choices.",
+                "Supports: Expansion beyond individual banks created interbank-settlement needs, initially served through paper records and telephone authorization. The Fed considered point-of-sale switching but left its development to private actors following the 1977 commission recommendation.",
+                "Limits: Institutional synthesis, not contemporaneous primary evidence for every event; it does not establish a global chronology or privatization of all payment infrastructure."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "511d25c0e52a",
+          "url": "https://www.psr.org.uk/publications/policy-statements/ps261-market-review-of-card-scheme-and-processing-fees-final-decision-information-transparency-and-complexity-remedy-pricing-governance-remedy/",
+          "title": "PS26/1: Market review of card scheme and processing fees: Final decision — Information, transparency and complexity remedy; pricing governance remedy",
+          "kind": "link",
+          "format": "Web",
+          "host": "psr.org.uk",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H08] PS26/1: Market review of card scheme and processing fees: Final decision — Information, transparency and complexity remedy; pricing governance remedy",
+              "url": "/post/payment-infrastructure-visa-mastercard/#source-H08",
+              "text": "Original: PS26/1: Market review of card scheme and processing fees: Final decision — Information, transparency and complexity remedy; pricing governance remedy",
+              "notes": [
+                "Publisher and type: Payment Systems Regulator; Primary source — final regulatory policy decision",
+                "Publication: 2026-07-30. Event or statistical period: Final directions 2026-07-30; pricing governance from end-November 2026; substantive information requirements from end-July 2027.",
+                "Location: Policy statement webpage, opening paragraphs and implementation dates. Read: 2026-10-08.",
+                "Scope: UK Mastercard and Visa scheme/processing fee transparency and pricing governance.",
+                "Supports: Two final directions require clearer fee/reconciliation information and better evidence for pricing decisions. Relevant pricing decisions must comply from end-November 2026, and substantive information requirements apply from end-July 2027.",
+                "Limits: These compliance dates remain future at the 2026-10-08 cutoff. This is not a price cap or evidence of realized fee reductions; financial reporting was a separate measure."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8a347d67d4d7",
+          "url": "https://www.justice.gov/archives/opa/pr/justice-department-sues-visa-monopolizing-debit-markets",
+          "title": "Justice Department Sues Visa for Monopolizing Debit Markets",
+          "kind": "link",
+          "format": "Web",
+          "host": "justice.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H09] Justice Department Sues Visa for Monopolizing Debit Markets",
+              "url": "/post/payment-infrastructure-visa-mastercard/#source-H09",
+              "text": "Original: Justice Department Sues Visa for Monopolizing Debit Markets",
+              "notes": [
+                "Publisher and type: US Department of Justice; Primary source — plaintiff’s announcement of allegations",
+                "Publication: 2024-09-24; updated 2025-02-06. Event or statistical period: Civil antitrust complaint filed 2024-09-24.",
+                "Location: Press release, opening paragraphs and conduct allegations. Read: 2026-10-08.",
+                "Scope: Alleged conduct in US debit-network markets.",
+                "Supports: DOJ filed a civil antitrust suit alleging that Visa used exclusionary contracts and agreements with potential competitors to protect its debit-network position.",
+                "Limits: Allegations are not liability findings. Litigation market-share claims are excluded from the industry chart, and this announcement does not establish subsequent case status."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f9d299fba103",
+          "url": "https://www.justice.gov/atr/media/1407066/dl?inline=",
+          "title": "Memorandum Opinion and Order, United States v. Visa Inc., 24-cv-7214 (JGK), Document 89",
+          "kind": "link",
+          "format": "Web",
+          "host": "justice.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H10] Memorandum Opinion and Order, United States v. Visa Inc., 24-cv-7214 (JGK), Document 89",
+              "url": "/post/payment-infrastructure-visa-mastercard/#source-H10",
+              "text": "Original: Memorandum Opinion and Order, United States v. Visa Inc., 24-cv-7214 (JGK), Document 89",
+              "notes": [
+                "Publisher and type: US District Court, Southern District of New York; Judge John G. Koeltl; hosted by DOJ; Primary source — court order at the pleadings stage",
+                "Publication: 2025-06-23. Event or statistical period: Motion-to-dismiss decision filed 2025-06-23.",
+                "Location: Pp. 1–3 and 58. Read: 2026-10-08.",
+                "Scope: Procedural ruling on Visa’s motion to dismiss the US antitrust complaint.",
+                "Supports: The court denied Visa’s motion to dismiss and explained that complaint facts were accepted as true for that motion. Visa disputed market definition, the pricing allegations and the interpretation of its agreements.",
+                "Limits: Not a trial judgment or finding of liability; the order does not prove that no later procedural developments occurred."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8e8f9b518726",
+          "url": "https://www.ecb.europa.eu/press/pr/date/2025/html/ecb.pr251215~e133d9d683.en.html",
+          "title": "Joint EBA-ECB report on payment fraud: strong authentication remains effective but fraudsters are adapting",
+          "kind": "link",
+          "format": "Web",
+          "host": "ecb.europa.eu",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H11] Joint EBA-ECB report on payment fraud: strong authentication remains effective but fraudsters are adapting",
+              "url": "/post/payment-infrastructure-visa-mastercard/#source-H11",
+              "text": "Original: Joint EBA-ECB report on payment fraud: strong authentication remains effective but fraudsters are adapting",
+              "notes": [
+                "Publisher and type: European Banking Authority and European Central Bank; Primary source — joint regulatory statistical release",
+                "Publication: 2025-12-15. Event or statistical period: Semiannual 2022–2024 data; headline figures for 2024.",
+                "Location: Headline bullets and paragraphs 1–7. Read: 2026-10-08.",
+                "Scope: EEA payment fraud; card-loss subset covers EU/EEA-issued cards; EUR.",
+                "Supports: Reported payment fraud reached EUR 4.2 billion in 2024; card losses for EU/EEA-issued cards were EUR 1.329 billion. Strong authentication generally reduced card fraud, while exploitation of exemptions and manipulation of legitimate payers remained concerns.",
+                "Limits: EUR 4.2 billion is not card-only fraud or a global figure. Transfer fraud is not exclusively instant-payment fraud; network operators do not necessarily bear all reported losses."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "723d30e110af",
+          "url": "https://eur-lex.europa.eu/EN/legal-content/summary/fees-for-card-based-payments.html?fromSummary=24",
+          "title": "Fees for card-based payments — Summary of Regulation (EU) 2015/751",
+          "kind": "link",
+          "format": "Web",
+          "host": "eur-lex.europa.eu",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H12] Fees for card-based payments — Summary of Regulation (EU) 2015/751",
+              "url": "/post/payment-infrastructure-visa-mastercard/#source-H12",
+              "text": "Original: Fees for card-based payments — Summary of Regulation (EU) 2015/751",
+              "notes": [
+                "Publisher and type: Publications Office of the European Union / EUR-Lex; Official legislative summary",
+                "Publication: Initial summary 2015; last update 2018-08-30. Event or statistical period: Regulation dated 2015-04-29; Official Journal publication 2015-05-19.",
+                "Location: Key points; Main document. Read: 2026-10-08.",
+                "Scope: Covered consumer card interchange in the EU, subject to exemptions and national options.",
+                "Supports: Covered consumer debit interchange is capped at 0.2% and consumer credit interchange at 0.3%, with exemptions including qualifying commercial cards. These limits concern interchange rather than total merchant charges or network revenue.",
+                "Limits: The official summary was read; the full-law link redirected during this session. Do not infer the cap commencement date or universal coverage of international/commercial transactions."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ebdabfe08173",
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2024/02/26/council-adopts-regulation-on-instant-payments/",
+          "title": "Council adopts regulation on instant payments",
+          "kind": "link",
+          "format": "Web",
+          "host": "consilium.europa.eu",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H15] Council adopts regulation on instant payments",
+              "url": "/post/payment-infrastructure-visa-mastercard/#source-H15",
+              "text": "Original: Council adopts regulation on instant payments",
+              "notes": [
+                "Publisher and type: Council of the European Union; Primary source — legislative adoption announcement",
+                "Publication: 2024-02-26; last reviewed 2025-01-20. Event or statistical period: Council adoption 2024-02-26; phased transition periods.",
+                "Location: Press release, paragraphs 1–7. Read: 2026-10-08.",
+                "Scope: Euro instant credit transfers within the regulation’s EU/EEA scope.",
+                "Supports: Covered providers must offer instant euro transfers after transition periods, with ten-second availability around the clock and charges no higher than corresponding ordinary transfers. Beneficiary verification and access provisions accompany the speed requirement.",
+                "Limits: The adoption release does not prove universal compliance by 2026-10-08 or supply every implementation deadline. It does not make all instant payments free or replicate card protections automatically."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "9ddba3f141c3",
+          "url": "https://nilsonreport.com/articles/global-network-card-results-worldwide-2025/",
+          "title": "Global Network Card Results Worldwide — 2025, Issue 1310",
+          "kind": "link",
+          "format": "Web",
+          "host": "nilsonreport.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M02] Global Network Card Results Worldwide — 2025, Issue 1310",
+              "url": "/post/payment-infrastructure-visa-mastercard/#source-M02",
+              "text": "Original: Global Network Card Results Worldwide — 2025, Issue 1310",
+              "notes": [
+                "Publisher and type: Nilson Report / HSN Consultants; Original industry research, publicly readable excerpt",
+                "Publication: 2026-06-30. Event or statistical period: Calendar 2025; read 2026-10-08.",
+                "Location: Public opening paragraph; publication date on nilsonreport.com/newsletters/1310/. Read: 2026-10-08.",
+                "Scope: Worldwide goods/services purchase transactions on Visa, UnionPay, Mastercard, Amex, JCB and Discover/Diners; consumer/small-business/commercial; debit includes prepaid.",
+                "Supports: 2025 transactions 828.10 bn, up 7.1% year on year. Newer scale observation can accompany separately dated H 1 2024 share chart.",
+                "Limits: Full brand breakdown subscription-only; public chart numerals blurred. No exact 2025 brand shares used, and no splice with H 1 2024 chart."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4ccccf97d1f9",
+          "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316125000077/q42025earningsrelease.htm",
+          "title": "Visa Reports Fiscal Fourth Quarter and Full-Year 2025 Results",
+          "kind": "link",
+          "format": "Web",
+          "host": "sec.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M03] Visa Reports Fiscal Fourth Quarter and Full-Year 2025 Results",
+              "url": "/post/payment-infrastructure-visa-mastercard/#source-M03",
+              "text": "Original: Visa Reports Fiscal Fourth Quarter and Full-Year 2025 Results",
+              "notes": [
+                "Publisher and type: Visa; SEC Exhibit 99.1; Company primary financial disclosure",
+                "Publication: 2025-10-28. Event or statistical period: Fiscal year 2024-10-01 to 2025-09-30; read 2026-10-08.",
+                "Location: Full-year highlights p3; financial summary p6; consolidated operations p8. Read: 2026-10-08.",
+                "Scope: Visa worldwide consolidated fiscal results, USD; GAAP unless stated.",
+                "Supports: Revenue $40.000 bn (+11%); operating income $23.994 bn; net income $20.058 bn. Calculated operating margin 23.994/40.000=60.0% rounded. Client incentives $15.751 bn deducted from gross revenue categories. Processed transactions 257.5 bn.",
+                "Limits: Fiscal year ends September, not Mastercard’s December. Processing count is not all Visa-branded purchase count. Company revenue is not payment value or industry market share. GAAP includes litigation/severance effects."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c43e3fa7bd8b",
+          "url": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000013/ma-20251231.htm",
+          "title": "Mastercard Incorporated 2025 Form 10-K",
+          "kind": "link",
+          "format": "Web",
+          "host": "sec.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M04] Mastercard Incorporated 2025 Form 10-K",
+              "url": "/post/payment-infrastructure-visa-mastercard/#source-M04",
+              "text": "Original: Mastercard Incorporated 2025 Form 10-K",
+              "notes": [
+                "Publisher and type: Mastercard; U.S. SEC; Company annual report / primary financial disclosure",
+                "Publication: 2026-02-11. Event or statistical period: 2025-01-01 to 2025-12-31; read 2026-10-08.",
+                "Location: pp6–7,49–56,68; Note3 Revenue pp82–83. Read: 2026-10-08.",
+                "Scope: Worldwide consolidated calendar-year GAAP financial results and defined operating drivers.",
+                "Supports: Supports the annual financial table, services revenue, gross-dollar-volume definition and remaining service obligations. Calculations and units appear once in the calculation record.",
+                "Limits: Fiscal dates differ from Visa. Cash is included in GDV. Services revenue is not standalone profit; service obligations are not total company backlog."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "243e58025b88",
+          "url": "https://www.sec.gov/Archives/edgar/data/1403161/000140316126000103/q32026earningsrelease.htm",
+          "title": "Visa Reports Fiscal Third Quarter 2026 Results",
+          "kind": "link",
+          "format": "Web",
+          "host": "sec.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M05] Visa Reports Fiscal Third Quarter 2026 Results",
+              "url": "/post/payment-infrastructure-visa-mastercard/#source-M05",
+              "text": "Original: Visa Reports Fiscal Third Quarter 2026 Results",
+              "notes": [
+                "Publisher and type: Visa; SEC Exhibit 99.1; Company primary financial disclosure",
+                "Publication: 2026-07-28. Event or statistical period: 2026-04-01 to 2026-06-30; read 2026-10-08.",
+                "Location: Financial highlights p2, financial summary p5, consolidated operations p7. Read: 2026-10-08.",
+                "Scope: Worldwide consolidated GAAP quarterly results; Visa FY 2026 Q 3.",
+                "Supports: Revenue $11.633 bn (+14%; constant-dollar+13%); operating income $6.877 bn; net income $5.628 bn. Calculated margin 6.877/11.633=59.1%. Processed transactions 71.7 bn (+10%). Payments growth 10% constant dollar; client incentives $4.680 bn (+18%).",
+                "Limits: Quarter matches M 06 despite fiscal name. Service revenue uses prior-quarter payments volume. Brand volume versus processed count differ. Visa ex-Europe cross-border growth should not be compared with Mastercard total without scope caveat."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "446f3ac185b9",
+          "url": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000081/ma06302026-exx991xearnings.htm",
+          "title": "Mastercard Incorporated Reports Second Quarter 2026 Financial Results",
+          "kind": "link",
+          "format": "Web",
+          "host": "sec.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M06] Mastercard Incorporated Reports Second Quarter 2026 Financial Results",
+              "url": "/post/payment-infrastructure-visa-mastercard/#source-M06",
+              "text": "Original: Mastercard Incorporated Reports Second Quarter 2026 Financial Results",
+              "notes": [
+                "Publisher and type: Mastercard; SEC Exhibit 99.1; Company primary financial disclosure",
+                "Publication: 2026-07-30. Event or statistical period: 2026-04-01 to 2026-06-30; read 2026-10-08.",
+                "Location: Quarterly operating results p1, business drivers p2, consolidated operations p7. Read: 2026-10-08.",
+                "Scope: Worldwide consolidated GAAP calendar Q 2 2026 results.",
+                "Supports: Revenue $9.277 bn (+14%; currency-neutral+12%); operating income $5.587 bn; margin 60.2%; net income $4.388 bn. Purchase value+10% local currency; switched transactions+9%. Services revenue+20%; network revenue+10%; network rebates/incentives+22% reported.",
+                "Limits: Use this calendar quarter to match M 05. Consolidated company revenue is not a market-share denominator. Local/currency-neutral definitions and processing measures remain company-specific; no 2026 annual extrapolation."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0c0514b649d0",
+          "url": "https://www.adyen.com/global-acquiring",
+          "title": "Adyen global acquiring",
+          "kind": "link",
+          "format": "Web",
+          "host": "adyen.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[R01] Payments lifecycle and Global acquiring",
+              "url": "/post/payment-infrastructure-visa-mastercard/#source-R01",
+              "text": "Additional product page: Adyen global acquiring",
+              "notes": [
+                "Publisher and type: Adyen; First-party product documentation",
+                "Publication: Undated live documentation; accessed 2026-10-08. Event or statistical period: Product description observed 2026-10-08.",
+                "Location: Authorization statuses; Capture and settlement statuses; Global acquiring overview. Read: 2026-10-08.",
+                "Scope: Adyen services; illustrative of card payment operations, not a universal rulebook.",
+                "Supports: Authorization reserves funds. A settled status at Adyen does not necessarily mean the merchant has been paid. Adyen provides processing and acquiring.",
+                "Limits: No publication date is displayed. No provider performance, market share or universal payout schedule is inferred."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "98181d93aa9c",
+          "url": "https://corporate.visa.com/en/sites/visa-perspectives/newsroom/visa-launches-stablecoin-settlement-in-the-united-states.html",
+          "title": "Visa Launches Stablecoin Settlement in the United States",
+          "kind": "link",
+          "format": "Web",
+          "host": "corporate.visa.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[R03] Visa Launches Stablecoin Settlement in the United States",
+              "url": "/post/payment-infrastructure-visa-mastercard/#source-R03",
+              "text": "Original: Visa Launches Stablecoin Settlement in the United States",
+              "notes": [
+                "Publisher and type: Visa; First-party announcement",
+                "Publication: 2025-12-16. Event or statistical period: US launch 2025-12-16; run-rate observation 2025-11-30.",
+                "Location: Opening paragraphs; Expanding a proven foundation; FAQ; footnote 1. Read: 2026-10-08.",
+                "Scope: Selected US institutions settling Visa obligations in USDC; run rate relates to Visa stablecoin settlement activity.",
+                "Supports: Cross River Bank and Lead Bank began USDC settlement over Solana. Visa reported a monthly-volume annualized run rate above USD 3.5 bn, not realized full-year volume.",
+                "Limits: Broader 2026 availability was a plan in this release. It does not prove all Visa transactions settle onchain or that bank and issuer risks disappear."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ec1a6e025a3d",
+          "url": "https://www.bis.org/committees/cpmi/pfmi/overview",
+          "title": "Principles for Financial Market Infrastructures",
+          "kind": "link",
+          "format": "Web",
+          "host": "bis.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[R04] Principles for Financial Market Infrastructures",
+              "url": "/post/payment-infrastructure-visa-mastercard/#source-R04",
+              "text": "Original: Principles for Financial Market Infrastructures",
+              "notes": [
+                "Publisher and type: CPSS and IOSCO; BIS overview; Primary international standards",
+                "Publication: 2012-04 principles; live overview accessed 2026-10-08. Event or statistical period: International risk-management principles.",
+                "Location: Principles 8 and 9. Read: 2026-10-08.",
+                "Scope: Relevant financial market infrastructures; general analytical benchmark, not a claim of identical legal applicability to every provider.",
+                "Supports: Rules should define settlement finality. Settlement in commercial bank money requires control of credit and liquidity risk; central bank money is preferred where practical and available.",
+                "Limits: A successful authorization or blockchain confirmation alone is not a legal determination of finality. No provider compliance certification is asserted."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "518b6b9326dd",
+          "url": "/post/payment-infrastructure-visa-mastercard/report_en.txt",
+          "title": "Download the complete English text",
+          "kind": "file",
+          "format": "TXT",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Report files",
+              "url": "/post/payment-infrastructure-visa-mastercard/#report-files",
+              "text": "Download the complete English text · Download the supporting evidence",
+              "notes": [
+                "The cover is an original AI-generated conceptual illustration. It is not a documentary image of a company facility. The figures and their downloadable SVG/CSV files are original DEX editorial assets. Publisher originals are linked rather than redistributed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0460bbce76cb",
+          "url": "/post/payment-infrastructure-visa-mastercard/supporting_evidence_en.txt",
+          "title": "Download the supporting evidence",
+          "kind": "file",
+          "format": "TXT",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Report files",
+              "url": "/post/payment-infrastructure-visa-mastercard/#report-files",
+              "text": "Download the complete English text · Download the supporting evidence",
+              "notes": [
+                "The cover is an original AI-generated conceptual illustration. It is not a documentary image of a company facility. The figures and their downloadable SVG/CSV files are original DEX editorial assets. Publisher originals are linked rather than redistributed."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "renewable-energy-and-batteries",
       "title": "Global Renewable Energy and Battery Industry Report",
       "url": "/post/renewable-energy-and-batteries/",
@@ -10763,9 +11576,9 @@
     }
   ],
   "counts": {
-    "articles": 12,
-    "materials": 456,
-    "files": 85,
-    "hosted_files": 20
+    "articles": 13,
+    "materials": 487,
+    "files": 94,
+    "hosted_files": 25
   }
 }
