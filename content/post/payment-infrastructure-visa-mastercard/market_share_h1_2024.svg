@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1480" viewBox="0 0 2400 1480">
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<text x="90" y="117.47999999999999" font-family="Arial, sans-serif" font-size="64" font-weight="700" fill="#182B3B" text-anchor="start">Global card-brand purchase value</text>
+<text x="90" y="189.16" font-family="Arial, sans-serif" font-size="38" font-weight="400" fill="#576575" text-anchor="start">Six global brands  |  Worldwide  |  1 January–30 June 2024</text>
+<path d="M 540.0000 320.0000 A 390 390 0 0 1 817.1543 984.3820 L 713.3991 881.6646 A 244 244 0 0 0 540.0000 466.0000 Z" fill="#173750"/>
+<path d="M 817.1543 984.3820 A 390 390 0 0 1 160.3790 799.3749 L 302.4935 765.9166 A 244 244 0 0 0 713.3991 881.6646 Z" fill="#007F86"/>
+<path d="M 160.3790 799.3749 A 390 390 0 0 1 384.4379 352.3683 L 442.6740 486.2509 A 244 244 0 0 0 302.4935 765.9166 Z" fill="#C59735"/>
+<path d="M 384.4379 352.3683 A 390 390 0 0 1 500.3713 322.0186 L 515.2067 467.2629 A 244 244 0 0 0 442.6740 486.2509 Z" fill="#6D6C97"/>
+<path d="M 500.3713 322.0186 A 390 390 0 0 1 522.6076 320.3880 L 529.1186 466.2428 A 244 244 0 0 0 515.2067 467.2629 Z" fill="#7894A5"/>
+<path d="M 522.6076 320.3880 A 390 390 0 0 1 540.0000 320.0000 L 540.0000 466.0000 A 244 244 0 0 0 529.1186 466.2428 Z" fill="#B7C3CA"/>
+<text x="540" y="655.52" font-family="Arial, sans-serif" font-size="36" font-weight="400" fill="#576575" text-anchor="middle">Purchase value</text>
+<text x="540" y="733.46" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="#182B3B" text-anchor="middle">$17,365.17bn</text>
+<text x="540" y="796.24" font-family="Arial, sans-serif" font-size="32" font-weight="400" fill="#576575" text-anchor="middle">Six-brand total</text>
+<text x="1095" y="356.7" font-family="Arial, sans-serif" font-size="35" font-weight="700" fill="#576575" text-anchor="start">Network</text>
+<text x="1930" y="356.7" font-family="Arial, sans-serif" font-size="35" font-weight="700" fill="#576575" text-anchor="end">Share</text>
+<text x="2290" y="356.7" font-family="Arial, sans-serif" font-size="35" font-weight="700" fill="#576575" text-anchor="end">US$ billion</text>
+<polyline points="1060,390 2290,390" fill="none" stroke="#DCE3E8" stroke-width="2"/>
+<rect x="1060" y="441" width="30" height="30" rx="5" fill="#173750" stroke="none" stroke-width="2"/>
+<text x="1120" y="469.8" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#182B3B" text-anchor="start">Visa</text>
+<text x="1930" y="471.44" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#182B3B" text-anchor="end">37.42%</text>
+<text x="2290" y="471.44" font-family="Arial, sans-serif" font-size="42" font-weight="400" fill="#182B3B" text-anchor="end">6,498.12</text>
+<rect x="1060" y="545" width="30" height="30" rx="5" fill="#007F86" stroke="none" stroke-width="2"/>
+<text x="1120" y="573.8" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#182B3B" text-anchor="start">UnionPay</text>
+<text x="1930" y="575.44" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#182B3B" text-anchor="end">33.90%</text>
+<text x="2290" y="575.44" font-family="Arial, sans-serif" font-size="42" font-weight="400" fill="#182B3B" text-anchor="end">5,887.43</text>
+<rect x="1060" y="649" width="30" height="30" rx="5" fill="#C59735" stroke="none" stroke-width="2"/>
+<text x="1120" y="677.8" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#182B3B" text-anchor="start">Mastercard</text>
+<text x="1930" y="679.44" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#182B3B" text-anchor="end">22.15%</text>
+<text x="2290" y="679.44" font-family="Arial, sans-serif" font-size="42" font-weight="400" fill="#182B3B" text-anchor="end">3,846.20</text>
+<rect x="1060" y="753" width="30" height="30" rx="5" fill="#6D6C97" stroke="none" stroke-width="2"/>
+<text x="1120" y="781.8" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#182B3B" text-anchor="start">American Express</text>
+<text x="1930" y="783.44" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#182B3B" text-anchor="end">4.91%</text>
+<text x="2290" y="783.44" font-family="Arial, sans-serif" font-size="42" font-weight="400" fill="#182B3B" text-anchor="end">852.37</text>
+<rect x="1060" y="857" width="30" height="30" rx="5" fill="#7894A5" stroke="none" stroke-width="2"/>
+<text x="1120" y="885.8" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#182B3B" text-anchor="start">JCB</text>
+<text x="1930" y="887.44" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#182B3B" text-anchor="end">0.91%</text>
+<text x="2290" y="887.44" font-family="Arial, sans-serif" font-size="42" font-weight="400" fill="#182B3B" text-anchor="end">158.42</text>
+<rect x="1060" y="961" width="30" height="30" rx="5" fill="#B7C3CA" stroke="none" stroke-width="2"/>
+<text x="1120" y="989.8" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#182B3B" text-anchor="start">Discover / Diners Club</text>
+<text x="1930" y="991.44" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#182B3B" text-anchor="end">0.71%</text>
+<text x="2290" y="991.44" font-family="Arial, sans-serif" font-size="42" font-weight="400" fill="#182B3B" text-anchor="end">122.63</text>
+<polyline points="90,1170 2310,1170" fill="none" stroke="#DCE3E8" stroke-width="2"/>
+<text x="90" y="1237.88" font-family="Arial, sans-serif" font-size="34" font-weight="400" fill="#576575" text-anchor="start">Source: Nilson Report, Issue 1276, December 2024, pp. 16–17 [M01].</text>
+<text x="90" y="1297.88" font-family="Arial, sans-serif" font-size="34" font-weight="400" fill="#576575" text-anchor="start">Scope: purchase value across these six brands; this is not a share of all retail payments.</text>
+<text x="90" y="1357.88" font-family="Arial, sans-serif" font-size="34" font-weight="400" fill="#576575" text-anchor="start">JCB estimated. Mastercard excludes Maestro and Cirrus. Published shares sum to 100.00%.</text>
+</svg>

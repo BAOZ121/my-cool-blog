@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2600" height="2400" viewBox="0 0 2600 2400">
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<text x="85" y="105.84" font-family="Arial, sans-serif" font-size="62" font-weight="700" fill="#182B3B" text-anchor="start">Retail payment infrastructure industry map</text>
+<text x="85" y="176.98" font-family="Arial, sans-serif" font-size="39" font-weight="400" fill="#576575" text-anchor="start">Industry → value-chain layer → subsegment → company or product</text>
+<rect x="740" y="250" width="1120" height="120" rx="18" fill="#173750" stroke="none" stroke-width="2"/>
+<text x="1300" y="328.46" font-family="Arial, sans-serif" font-size="53" font-weight="700" fill="white" text-anchor="middle">Retail payment infrastructure</text>
+<polyline points="1300,370 1300,430 460,430 460,490" fill="none" stroke="#A6B3BD" stroke-width="5"/>
+<polyline points="1300,430 2140,430 2140,490" fill="none" stroke="#A6B3BD" stroke-width="5"/>
+<polyline points="1300,430 1300,490" fill="none" stroke="#A6B3BD" stroke-width="5"/>
+<rect x="90" y="490" width="740" height="145" rx="15" fill="#173750" stroke="none" stroke-width="2"/>
+<text x="460" y="553.36" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="white" text-anchor="middle">Upstream</text>
+<text x="460" y="607.16" font-family="Arial, sans-serif" font-size="38" font-weight="400" fill="white" text-anchor="middle">Foundations</text>
+<polyline points="460,635 460,670 108,670 108,1500" fill="none" stroke="#173750" stroke-width="4"/>
+<polyline points="108,796.5 150,796.5" fill="none" stroke="#173750" stroke-width="4"/>
+<rect x="150" y="725" width="680" height="143" rx="12" fill="#EEF4F6" stroke="#173750" stroke-width="3"/>
+<text x="490.0" y="780.76" font-family="Arial, sans-serif" font-size="43" font-weight="700" fill="#182B3B" text-anchor="middle">Standards and</text>
+<text x="490.0" y="831.76" font-family="Arial, sans-serif" font-size="43" font-weight="700" fill="#182B3B" text-anchor="middle">credentials</text>
+<polyline points="490.0,868 490.0,1040" fill="none" stroke="#173750" stroke-width="4"/>
+<rect x="150" y="1040" width="680" height="260" rx="12" fill="#FFFFFF" stroke="#C1CDD5" stroke-width="3"/>
+<text x="490.0" y="1111.9" font-family="Arial, sans-serif" font-size="45" font-weight="700" fill="#182B3B" text-anchor="middle">EMVCo</text>
+<text x="490.0" y="1186.44" font-family="Arial, sans-serif" font-size="42" font-weight="400" fill="#182B3B" text-anchor="middle">EMV chip and token</text>
+<text x="490.0" y="1240.44" font-family="Arial, sans-serif" font-size="42" font-weight="400" fill="#182B3B" text-anchor="middle">specifications</text>
+<polyline points="108,1505.0 150,1505.0" fill="none" stroke="#173750" stroke-width="4"/>
+<rect x="150" y="1440" width="680" height="130" rx="12" fill="#EEF4F6" stroke="#173750" stroke-width="3"/>
+<text x="490.0" y="1514.76" font-family="Arial, sans-serif" font-size="43" font-weight="700" fill="#182B3B" text-anchor="middle">Accounts and liquidity</text>
+<polyline points="490.0,1570 490.0,1690" fill="none" stroke="#173750" stroke-width="4"/>
+<rect x="150" y="1690" width="680" height="245" rx="12" fill="#FFFFFF" stroke="#C1CDD5" stroke-width="3"/>
+<text x="490.0" y="1759.26" font-family="Arial, sans-serif" font-size="43" font-weight="400" fill="#182B3B" text-anchor="middle">Issuer accounts</text>
+<text x="490.0" y="1831.26" font-family="Arial, sans-serif" font-size="43" font-weight="400" fill="#182B3B" text-anchor="middle">Settlement bank services</text>
+<rect x="930" y="490" width="740" height="145" rx="15" fill="#007F86" stroke="none" stroke-width="2"/>
+<text x="1300" y="553.36" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="white" text-anchor="middle">Midstream</text>
+<text x="1300" y="607.16" font-family="Arial, sans-serif" font-size="38" font-weight="400" fill="white" text-anchor="middle">Networks and acceptance</text>
+<polyline points="1300,635 1300,670 948,670 948,1870" fill="none" stroke="#007F86" stroke-width="4"/>
+<polyline points="948,795.0 990,795.0" fill="none" stroke="#007F86" stroke-width="4"/>
+<rect x="990" y="725" width="680" height="140" rx="12" fill="#EEF4F6" stroke="#007F86" stroke-width="3"/>
+<text x="1330.0" y="779.26" font-family="Arial, sans-serif" font-size="43" font-weight="700" fill="#182B3B" text-anchor="middle">Card schemes</text>
+<text x="1330.0" y="830.26" font-family="Arial, sans-serif" font-size="43" font-weight="700" fill="#182B3B" text-anchor="middle">and switching</text>
+<polyline points="1330.0,865 1330.0,930" fill="none" stroke="#007F86" stroke-width="4"/>
+<rect x="990" y="930" width="680" height="340" rx="12" fill="#FFFFFF" stroke="#C1CDD5" stroke-width="3"/>
+<text x="1330.0" y="998.44" font-family="Arial, sans-serif" font-size="42" font-weight="400" fill="#182B3B" text-anchor="middle">Visa  •  Mastercard</text>
+<text x="1330.0" y="1068.44" font-family="Arial, sans-serif" font-size="42" font-weight="400" fill="#182B3B" text-anchor="middle">UnionPay  •  JCB</text>
+<text x="1330.0" y="1138.44" font-family="Arial, sans-serif" font-size="42" font-weight="400" fill="#182B3B" text-anchor="middle">American Express</text>
+<text x="1330.0" y="1208.44" font-family="Arial, sans-serif" font-size="42" font-weight="400" fill="#182B3B" text-anchor="middle">Discover and Diners Club</text>
+<polyline points="948,1442.5 990,1442.5" fill="none" stroke="#007F86" stroke-width="4"/>
+<rect x="990" y="1370" width="680" height="145" rx="12" fill="#EEF4F6" stroke="#007F86" stroke-width="3"/>
+<text x="1330.0" y="1426.76" font-family="Arial, sans-serif" font-size="43" font-weight="700" fill="#182B3B" text-anchor="middle">Merchant processing</text>
+<text x="1330.0" y="1477.76" font-family="Arial, sans-serif" font-size="43" font-weight="700" fill="#182B3B" text-anchor="middle">and acquiring</text>
+<polyline points="1330.0,1515 1330.0,1575" fill="none" stroke="#007F86" stroke-width="4"/>
+<rect x="990" y="1575" width="680" height="165" rx="12" fill="#FFFFFF" stroke="#C1CDD5" stroke-width="3"/>
+<text x="1330.0" y="1667.9" font-family="Arial, sans-serif" font-size="45" font-weight="400" fill="#182B3B" text-anchor="middle">Adyen</text>
+<polyline points="948,1880.0 990,1880.0" fill="none" stroke="#007F86" stroke-width="4"/>
+<rect x="990" y="1810" width="680" height="140" rx="12" fill="#EEF4F6" stroke="#007F86" stroke-width="3"/>
+<text x="1330.0" y="1864.26" font-family="Arial, sans-serif" font-size="43" font-weight="700" fill="#182B3B" text-anchor="middle">Alternative</text>
+<text x="1330.0" y="1915.26" font-family="Arial, sans-serif" font-size="43" font-weight="700" fill="#182B3B" text-anchor="middle">account rails</text>
+<polyline points="1330.0,1950 1330.0,2010" fill="none" stroke="#007F86" stroke-width="4"/>
+<rect x="990" y="2010" width="680" height="165" rx="12" fill="#FFFFFF" stroke="#C1CDD5" stroke-width="3"/>
+<text x="1330.0" y="2079.26" font-family="Arial, sans-serif" font-size="43" font-weight="400" fill="#182B3B" text-anchor="middle">UPI</text>
+<text x="1330.0" y="2151.26" font-family="Arial, sans-serif" font-size="43" font-weight="400" fill="#182B3B" text-anchor="middle">Pix</text>
+<rect x="1770" y="490" width="740" height="145" rx="15" fill="#C59735" stroke="none" stroke-width="2"/>
+<text x="2140" y="553.36" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="white" text-anchor="middle">Downstream</text>
+<text x="2140" y="607.16" font-family="Arial, sans-serif" font-size="38" font-weight="400" fill="white" text-anchor="middle">Access and commerce</text>
+<polyline points="2140,635 2140,670 1788,670 1788,1870" fill="none" stroke="#C59735" stroke-width="4"/>
+<polyline points="1788,795.0 1830,795.0" fill="none" stroke="#C59735" stroke-width="4"/>
+<rect x="1830" y="725" width="680" height="140" rx="12" fill="#EEF4F6" stroke="#C59735" stroke-width="3"/>
+<text x="2170.0" y="804.76" font-family="Arial, sans-serif" font-size="43" font-weight="700" fill="#182B3B" text-anchor="middle">Wallet interfaces</text>
+<polyline points="2170.0,865 2170.0,930" fill="none" stroke="#C59735" stroke-width="4"/>
+<rect x="1830" y="930" width="680" height="340" rx="12" fill="#FFFFFF" stroke="#C1CDD5" stroke-width="3"/>
+<text x="2170.0" y="999.26" font-family="Arial, sans-serif" font-size="43" font-weight="400" fill="#182B3B" text-anchor="middle">Apple Pay</text>
+<text x="2170.0" y="1071.26" font-family="Arial, sans-serif" font-size="43" font-weight="400" fill="#182B3B" text-anchor="middle">Google Pay</text>
+<polyline points="1788,1442.5 1830,1442.5" fill="none" stroke="#C59735" stroke-width="4"/>
+<rect x="1830" y="1370" width="680" height="145" rx="12" fill="#EEF4F6" stroke="#C59735" stroke-width="3"/>
+<text x="2170.0" y="1452.26" font-family="Arial, sans-serif" font-size="43" font-weight="700" fill="#182B3B" text-anchor="middle">Merchant acceptance</text>
+<polyline points="2170.0,1515 2170.0,1575" fill="none" stroke="#C59735" stroke-width="4"/>
+<rect x="1830" y="1575" width="680" height="165" rx="12" fill="#FFFFFF" stroke="#C1CDD5" stroke-width="3"/>
+<text x="2170.0" y="1644.26" font-family="Arial, sans-serif" font-size="43" font-weight="400" fill="#182B3B" text-anchor="middle">POS terminals</text>
+<text x="2170.0" y="1716.26" font-family="Arial, sans-serif" font-size="43" font-weight="400" fill="#182B3B" text-anchor="middle">E-commerce checkout</text>
+<polyline points="1788,1880.0 1830,1880.0" fill="none" stroke="#C59735" stroke-width="4"/>
+<rect x="1830" y="1810" width="680" height="140" rx="12" fill="#EEF4F6" stroke="#C59735" stroke-width="3"/>
+<text x="2170.0" y="1889.76" font-family="Arial, sans-serif" font-size="43" font-weight="700" fill="#182B3B" text-anchor="middle">End-user services</text>
+<polyline points="2170.0,1950 2170.0,2010" fill="none" stroke="#C59735" stroke-width="4"/>
+<rect x="1830" y="2010" width="680" height="165" rx="12" fill="#FFFFFF" stroke="#C1CDD5" stroke-width="3"/>
+<text x="2170.0" y="2075.16" font-family="Arial, sans-serif" font-size="38" font-weight="400" fill="#182B3B" text-anchor="middle">Cardholder payment services</text>
+<text x="2170.0" y="2151.26" font-family="Arial, sans-serif" font-size="43" font-weight="400" fill="#182B3B" text-anchor="middle">Merchant payouts</text>
+<polyline points="85,2230 2515,2230" fill="none" stroke="#DCE3E8" stroke-width="3"/>
+<text x="85" y="2291.88" font-family="Arial, sans-serif" font-size="34" font-weight="400" fill="#576575" text-anchor="start">Sources: H06, H07, H13, H14, M01, R01 and R02. Connections categorize roles, not contracts.</text>
+<text x="85" y="2349.88" font-family="Arial, sans-serif" font-size="34" font-weight="400" fill="#576575" text-anchor="start">Companies can span layers. Wallets may use cards or account rails.</text>
+</svg>
