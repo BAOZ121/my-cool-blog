@@ -24,7 +24,7 @@
     minus.disabled = scale <= .5;
     plus.disabled = scale >= 4;
   }
-  image.addEventListener('load', () => resize(true));
+  image.addEventListener('load', () => resize());
   document.querySelectorAll('.open-chart').forEach(button => {
     button.addEventListener('click', () => {
       if (typeof dialog.showModal !== 'function') { window.open(button.dataset.image, '_blank', 'noopener'); return; }
@@ -34,7 +34,9 @@
       image.src = button.dataset.image;
       scale = 1;
       dialog.showModal();
-      requestAnimationFrame(() => resize(true));
+      viewport.scrollTop = 0;
+      viewport.scrollLeft = 0;
+      requestAnimationFrame(() => resize());
       document.querySelector('#close-chart').focus();
     });
   });
