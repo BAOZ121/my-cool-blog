@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3200" height="2400" viewBox="0 0 3200 2400">
+<rect width="3200" height="2400" fill="#FAF7F0"/>
+<rect x="780" y="72" width="1640" height="144" rx="18" fill="#FFFFFF" stroke="#172C36" stroke-width="3"/>
+<text x="1600" y="121" font-family="Arial,sans-serif" font-size="64" font-weight="700" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Power grid equipment</text>
+<text x="1600" y="178" font-family="Arial,sans-serif" font-size="45" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Transmission and distribution</text>
+<line x1="1600" y1="216" x2="1600" y2="245" stroke="#A2917E" stroke-width="4"/>
+<line x1="550" y1="245" x2="2650" y2="245" stroke="#A2917E" stroke-width="4"/>
+<line x1="550" y1="245" x2="550" y2="280" stroke="#A2917E" stroke-width="4"/>
+<line x1="1600" y1="245" x2="1600" y2="280" stroke="#A2917E" stroke-width="4"/>
+<line x1="2650" y1="245" x2="2650" y2="280" stroke="#A2917E" stroke-width="4"/>
+<rect x="90" y="280" width="920" height="132" rx="18" fill="#DCEAE3" stroke="#172C36" stroke-width="3"/>
+<text x="550" y="327" font-family="Arial,sans-serif" font-size="50" font-weight="700" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Upstream</text>
+<text x="550" y="383" font-family="Arial,sans-serif" font-size="39" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Materials and components</text>
+<line x1="550" y1="412" x2="550" y2="439" stroke="#A2917E" stroke-width="4"/>
+<line x1="550" y1="439" x2="90" y2="439" stroke="#A2917E" stroke-width="4"/>
+<line x1="90" y1="439" x2="90" y2="1857" stroke="#A2917E" stroke-width="4"/>
+<line x1="90" y1="521" x2="125" y2="521" stroke="#A2917E" stroke-width="4"/>
+<rect x="125" y="478" width="850" height="86" rx="18" fill="#DCEAE3" stroke="#A2917E" stroke-width="3"/>
+<text x="550" y="522" font-family="Arial,sans-serif" font-size="43" font-weight="700" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Conductive and magnetic materials</text>
+<line x1="550" y1="564" x2="550" y2="597" stroke="#A2917E" stroke-width="4"/>
+<rect x="150" y="597" width="800" height="157" rx="18" fill="#FFFFFF" stroke="#A2917E" stroke-width="3"/>
+<text x="550" y="651.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Copper and aluminium</text>
+<text x="550" y="699.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Grain-oriented electrical steel</text>
+<line x1="90" y1="966" x2="125" y2="966" stroke="#A2917E" stroke-width="4"/>
+<rect x="125" y="923" width="850" height="86" rx="18" fill="#DCEAE3" stroke="#A2917E" stroke-width="3"/>
+<text x="550" y="967" font-family="Arial,sans-serif" font-size="43" font-weight="700" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Insulation and accessories</text>
+<line x1="550" y1="1009" x2="550" y2="1042" stroke="#A2917E" stroke-width="4"/>
+<rect x="150" y="1042" width="800" height="157" rx="18" fill="#FFFFFF" stroke="#A2917E" stroke-width="3"/>
+<text x="550" y="1096.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">China XD Group</text>
+<text x="550" y="1144.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Insulators and bushings</text>
+<line x1="90" y1="1411" x2="125" y2="1411" stroke="#A2917E" stroke-width="4"/>
+<rect x="125" y="1368" width="850" height="86" rx="18" fill="#DCEAE3" stroke="#A2917E" stroke-width="3"/>
+<text x="550" y="1412" font-family="Arial,sans-serif" font-size="43" font-weight="700" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Transformer cooling components</text>
+<line x1="550" y1="1454" x2="550" y2="1487" stroke="#A2917E" stroke-width="4"/>
+<rect x="150" y="1487" width="800" height="157" rx="18" fill="#FFFFFF" stroke="#A2917E" stroke-width="3"/>
+<text x="550" y="1541.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Youbang Radiator</text>
+<text x="550" y="1589.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Panel radiators</text>
+<line x1="90" y1="1857" x2="125" y2="1857" stroke="#A2917E" stroke-width="4"/>
+<rect x="125" y="1814" width="850" height="86" rx="18" fill="#DCEAE3" stroke="#A2917E" stroke-width="3"/>
+<text x="550" y="1858" font-family="Arial,sans-serif" font-size="43" font-weight="700" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Power semiconductors</text>
+<line x1="550" y1="1900" x2="550" y2="1933" stroke="#A2917E" stroke-width="4"/>
+<rect x="150" y="1933" width="800" height="157" rx="18" fill="#FFFFFF" stroke="#A2917E" stroke-width="3"/>
+<text x="550" y="1987.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Hitachi Energy</text>
+<text x="550" y="2035.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Thyristors and IGBTs</text>
+<rect x="1140" y="280" width="920" height="132" rx="18" fill="#F0DFB4" stroke="#172C36" stroke-width="3"/>
+<text x="1600" y="327" font-family="Arial,sans-serif" font-size="50" font-weight="700" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Midstream</text>
+<text x="1600" y="383" font-family="Arial,sans-serif" font-size="39" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Equipment and systems</text>
+<line x1="1600" y1="412" x2="1600" y2="439" stroke="#A2917E" stroke-width="4"/>
+<line x1="1600" y1="439" x2="1140" y2="439" stroke="#A2917E" stroke-width="4"/>
+<line x1="1140" y1="439" x2="1140" y2="1857" stroke="#A2917E" stroke-width="4"/>
+<line x1="1140" y1="521" x2="1175" y2="521" stroke="#A2917E" stroke-width="4"/>
+<rect x="1175" y="478" width="850" height="86" rx="18" fill="#F0DFB4" stroke="#A2917E" stroke-width="3"/>
+<text x="1600" y="522" font-family="Arial,sans-serif" font-size="43" font-weight="700" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Transformers</text>
+<line x1="1600" y1="564" x2="1600" y2="597" stroke="#A2917E" stroke-width="4"/>
+<rect x="1200" y="597" width="800" height="157" rx="18" fill="#FFFFFF" stroke="#A2917E" stroke-width="3"/>
+<text x="1600" y="627.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Hitachi Energy</text>
+<text x="1600" y="675.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Siemens Energy</text>
+<text x="1600" y="723.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">China XD Group</text>
+<line x1="1140" y1="855" x2="1175" y2="855" stroke="#A2917E" stroke-width="4"/>
+<rect x="1175" y="812" width="850" height="86" rx="18" fill="#F0DFB4" stroke="#A2917E" stroke-width="3"/>
+<text x="1600" y="856" font-family="Arial,sans-serif" font-size="43" font-weight="700" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Switchgear</text>
+<line x1="1600" y1="898" x2="1600" y2="931" stroke="#A2917E" stroke-width="4"/>
+<rect x="1200" y="931" width="800" height="157" rx="18" fill="#FFFFFF" stroke="#A2917E" stroke-width="3"/>
+<text x="1600" y="985.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Schneider Electric</text>
+<text x="1600" y="1033.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">China XD Group</text>
+<line x1="1140" y1="1189" x2="1175" y2="1189" stroke="#A2917E" stroke-width="4"/>
+<rect x="1175" y="1146" width="850" height="86" rx="18" fill="#F0DFB4" stroke="#A2917E" stroke-width="3"/>
+<text x="1600" y="1190" font-family="Arial,sans-serif" font-size="43" font-weight="700" fill="#172C36" text-anchor="middle" dominant-baseline="middle">HVDC and grid compensation</text>
+<line x1="1600" y1="1232" x2="1600" y2="1265" stroke="#A2917E" stroke-width="4"/>
+<rect x="1200" y="1265" width="800" height="157" rx="18" fill="#FFFFFF" stroke="#A2917E" stroke-width="3"/>
+<text x="1600" y="1319.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">GE Vernova HVDC</text>
+<text x="1600" y="1367.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">NR Electric HVDC and FACTS</text>
+<line x1="1140" y1="1523" x2="1175" y2="1523" stroke="#A2917E" stroke-width="4"/>
+<rect x="1175" y="1480" width="850" height="86" rx="18" fill="#F0DFB4" stroke="#A2917E" stroke-width="3"/>
+<text x="1600" y="1524" font-family="Arial,sans-serif" font-size="43" font-weight="700" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Power cables</text>
+<line x1="1600" y1="1566" x2="1600" y2="1599" stroke="#A2917E" stroke-width="4"/>
+<rect x="1200" y="1599" width="800" height="157" rx="18" fill="#FFFFFF" stroke="#A2917E" stroke-width="3"/>
+<text x="1600" y="1653.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Prysmian</text>
+<text x="1600" y="1701.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Power cable systems</text>
+<line x1="1140" y1="1857" x2="1175" y2="1857" stroke="#A2917E" stroke-width="4"/>
+<rect x="1175" y="1814" width="850" height="86" rx="18" fill="#F0DFB4" stroke="#A2917E" stroke-width="3"/>
+<text x="1600" y="1858" font-family="Arial,sans-serif" font-size="43" font-weight="700" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Protection and network control</text>
+<line x1="1600" y1="1900" x2="1600" y2="1933" stroke="#A2917E" stroke-width="4"/>
+<rect x="1200" y="1933" width="800" height="157" rx="18" fill="#FFFFFF" stroke="#A2917E" stroke-width="3"/>
+<text x="1600" y="1987.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">NR Electric</text>
+<text x="1600" y="2035.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Relays and control systems</text>
+<rect x="2190" y="280" width="920" height="132" rx="18" fill="#DDE7ED" stroke="#172C36" stroke-width="3"/>
+<text x="2650" y="327" font-family="Arial,sans-serif" font-size="50" font-weight="700" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Downstream</text>
+<text x="2650" y="383" font-family="Arial,sans-serif" font-size="39" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Delivery and connected systems</text>
+<line x1="2650" y1="412" x2="2650" y2="439" stroke="#A2917E" stroke-width="4"/>
+<line x1="2650" y1="439" x2="2190" y2="439" stroke="#A2917E" stroke-width="4"/>
+<line x1="2190" y1="439" x2="2190" y2="1857" stroke="#A2917E" stroke-width="4"/>
+<line x1="2190" y1="521" x2="2225" y2="521" stroke="#A2917E" stroke-width="4"/>
+<rect x="2225" y="478" width="850" height="86" rx="18" fill="#DDE7ED" stroke="#A2917E" stroke-width="3"/>
+<text x="2650" y="522" font-family="Arial,sans-serif" font-size="43" font-weight="700" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Network operators</text>
+<line x1="2650" y1="564" x2="2650" y2="597" stroke="#A2917E" stroke-width="4"/>
+<rect x="2250" y="597" width="800" height="157" rx="18" fill="#FFFFFF" stroke="#A2917E" stroke-width="3"/>
+<text x="2650" y="651.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Transmission networks</text>
+<text x="2650" y="699.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Distribution networks</text>
+<line x1="2190" y1="1189" x2="2225" y2="1189" stroke="#A2917E" stroke-width="4"/>
+<rect x="2225" y="1146" width="850" height="86" rx="18" fill="#DDE7ED" stroke="#A2917E" stroke-width="3"/>
+<text x="2650" y="1190" font-family="Arial,sans-serif" font-size="43" font-weight="700" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Project delivery</text>
+<line x1="2650" y1="1232" x2="2650" y2="1265" stroke="#A2917E" stroke-width="4"/>
+<rect x="2250" y="1265" width="800" height="157" rx="18" fill="#FFFFFF" stroke="#A2917E" stroke-width="3"/>
+<text x="2650" y="1295.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Engineering and EPC</text>
+<text x="2650" y="1343.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Testing and commissioning</text>
+<text x="2650" y="1391.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Maintenance services</text>
+<line x1="2190" y1="1857" x2="2225" y2="1857" stroke="#A2917E" stroke-width="4"/>
+<rect x="2225" y="1814" width="850" height="86" rx="18" fill="#DDE7ED" stroke="#A2917E" stroke-width="3"/>
+<text x="2650" y="1858" font-family="Arial,sans-serif" font-size="43" font-weight="700" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Connected projects and large users</text>
+<line x1="2650" y1="1900" x2="2650" y2="1933" stroke="#A2917E" stroke-width="4"/>
+<rect x="2250" y="1933" width="800" height="157" rx="18" fill="#FFFFFF" stroke="#A2917E" stroke-width="3"/>
+<text x="2650" y="1963.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Generation projects</text>
+<text x="2650" y="2011.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Industrial facilities</text>
+<text x="2650" y="2059.5" font-family="Arial,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">Data centres</text>
+<text x="115" y="2170" font-family="Arial,sans-serif" font-size="44" font-weight="700" fill="#172C36" text-anchor="start" dominant-baseline="middle">Illustrative roles observed or reviewed on 8 October 2026</text>
+<text x="115" y="2227" font-family="Arial,sans-serif" font-size="44" font-weight="400" fill="#172C36" text-anchor="start" dominant-baseline="middle">Hierarchy: industry &gt; stage &gt; segment &gt; company or product.</text>
+<text x="115" y="2282" font-family="Arial,sans-serif" font-size="44" font-weight="400" fill="#172C36" text-anchor="start" dominant-baseline="middle">Lines classify roles. They do not establish supplier contracts. Companies can operate at several stages.</text>
+<text x="115" y="2340" font-family="Arial,sans-serif" font-size="44" font-weight="400" fill="#172C36" text-anchor="start" dominant-baseline="middle">Sources: C01 C02 H03 H06 M09 M10 R01 R03 R04 R07 R08 R10 R11 R12 R13 R16. See Supporting Evidence.</text>
+</svg>

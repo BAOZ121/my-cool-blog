@@ -1,0 +1,28 @@
+industry,stage,segment,company_or_product,source_ids
+Power grid equipment and transmission and distribution,Upstream,Conductive and magnetic materials,Copper and aluminium,C01;C02
+Power grid equipment and transmission and distribution,Upstream,Conductive and magnetic materials,Grain-oriented electrical steel,C01;C02
+Power grid equipment and transmission and distribution,Upstream,Insulation and accessories,China XD Group,R10
+Power grid equipment and transmission and distribution,Upstream,Insulation and accessories,Insulators and bushings,R10
+Power grid equipment and transmission and distribution,Upstream,Transformer cooling components,Youbang Radiator,M09;M10
+Power grid equipment and transmission and distribution,Upstream,Transformer cooling components,Panel radiators,M09;M10
+Power grid equipment and transmission and distribution,Upstream,Power semiconductors,Hitachi Energy,R16
+Power grid equipment and transmission and distribution,Upstream,Power semiconductors,Thyristors and IGBTs,R16
+Power grid equipment and transmission and distribution,Midstream,Transformers,Hitachi Energy,R01;R03;R10
+Power grid equipment and transmission and distribution,Midstream,Transformers,Siemens Energy,R01;R03;R10
+Power grid equipment and transmission and distribution,Midstream,Transformers,China XD Group,R01;R03;R10
+Power grid equipment and transmission and distribution,Midstream,Switchgear,Schneider Electric,R10;R12
+Power grid equipment and transmission and distribution,Midstream,Switchgear,China XD Group,R10;R12
+Power grid equipment and transmission and distribution,Midstream,HVDC and grid compensation,GE Vernova HVDC,R04;R11
+Power grid equipment and transmission and distribution,Midstream,HVDC and grid compensation,NR Electric HVDC and FACTS,R04;R11
+Power grid equipment and transmission and distribution,Midstream,Power cables,Prysmian,R13
+Power grid equipment and transmission and distribution,Midstream,Power cables,Power cable systems,R13
+Power grid equipment and transmission and distribution,Midstream,Protection and network control,NR Electric,R11
+Power grid equipment and transmission and distribution,Midstream,Protection and network control,Relays and control systems,R11
+Power grid equipment and transmission and distribution,Downstream,Network operators,Transmission networks,R07;R08;H03;H06
+Power grid equipment and transmission and distribution,Downstream,Network operators,Distribution networks,R07;R08;H03;H06
+Power grid equipment and transmission and distribution,Downstream,Project delivery,Engineering and EPC,R11;R13
+Power grid equipment and transmission and distribution,Downstream,Project delivery,Testing and commissioning,R11;R13
+Power grid equipment and transmission and distribution,Downstream,Project delivery,Maintenance services,R11;R13
+Power grid equipment and transmission and distribution,Downstream,Connected projects and large users,Generation projects,R01;R10;R11
+Power grid equipment and transmission and distribution,Downstream,Connected projects and large users,Industrial facilities,R01;R10;R11
+Power grid equipment and transmission and distribution,Downstream,Connected projects and large users,Data centres,R01;R10;R11

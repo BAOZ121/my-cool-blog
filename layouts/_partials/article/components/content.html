@@ -1,11 +1,15 @@
-{{- if eq .Section "post" -}}
+{{- if or (eq .Section "post") .Params.testpage -}}
 <div class="reading-progress" data-reading-progress aria-hidden="true"></div>
 <nav class="research-actions" aria-label="Article tools">
     <button class="research-action" type="button" data-print-article>Print / Save PDF</button>
     {{- with .Params.dataDownload }}
     <a class="research-action" href="{{ . | relURL }}" download>Download data (CSV)</a>
     {{- end }}
+    {{- if .Params.testpage }}
+    <a class="research-action" href="#supporting-evidence">Supporting Evidence</a>
+    {{- else }}
     <a class="research-action" href="{{ "/evidence-library/" | relURL }}?article={{ path.Base .File.Dir }}">Evidence Library</a>
+    {{- end }}
     <a class="research-action" href="{{ "/about/" | relLangURL }}#research-methodology">Research methodology</a>
 </nav>
 {{- end }}

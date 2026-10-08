@@ -1,3 +1,6 @@
+{{- if .Params.testpage }}
+  <meta name="robots" content="noindex, nofollow">
+{{- end }}
 {{ partial "page-transitions/assets.html" . }}
 {{ partial "chapter-rail/assets.html" . }}
 {{ partial "site-navigation/assets.html" . }}

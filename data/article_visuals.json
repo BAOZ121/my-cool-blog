@@ -2180,6 +2180,239 @@
       ],
       "note": "Connections classify roles, not supply contracts. Companies can span layers. Wallets may use cards or account rails; a wallet is not automatically a separate clearing network.",
       "reviewed": "2026-10-08"
+    },
+    "power-grid-equipment-2026": {
+      "title": "The power grid equipment value chain",
+      "description": "The industry branches into upstream materials and components, midstream equipment and systems, and downstream operators, delivery partners and connected projects. Each segment has company or product examples; lines classify roles and do not prove contracts.",
+      "root": {
+        "name": "Power grid equipment and transmission and distribution",
+        "children": [
+          {
+            "name": "Upstream · Materials and components",
+            "children": [
+              {
+                "name": "Conductive and magnetic materials",
+                "children": [
+                  {
+                    "name": "Copper and aluminium"
+                  },
+                  {
+                    "name": "Grain-oriented electrical steel"
+                  }
+                ]
+              },
+              {
+                "name": "Insulation and accessories",
+                "children": [
+                  {
+                    "name": "China XD Group"
+                  },
+                  {
+                    "name": "Insulators and bushings"
+                  }
+                ]
+              },
+              {
+                "name": "Transformer cooling components",
+                "children": [
+                  {
+                    "name": "Youbang Radiator"
+                  },
+                  {
+                    "name": "Panel radiators"
+                  }
+                ]
+              },
+              {
+                "name": "Power semiconductors",
+                "children": [
+                  {
+                    "name": "Hitachi Energy"
+                  },
+                  {
+                    "name": "Thyristors and IGBTs"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Midstream · Equipment and systems",
+            "children": [
+              {
+                "name": "Transformers",
+                "children": [
+                  {
+                    "name": "Hitachi Energy"
+                  },
+                  {
+                    "name": "Siemens Energy"
+                  },
+                  {
+                    "name": "China XD Group"
+                  }
+                ]
+              },
+              {
+                "name": "Switchgear",
+                "children": [
+                  {
+                    "name": "Schneider Electric"
+                  },
+                  {
+                    "name": "China XD Group"
+                  }
+                ]
+              },
+              {
+                "name": "HVDC and grid compensation",
+                "children": [
+                  {
+                    "name": "GE Vernova HVDC"
+                  },
+                  {
+                    "name": "NR Electric HVDC and FACTS"
+                  }
+                ]
+              },
+              {
+                "name": "Power cables",
+                "children": [
+                  {
+                    "name": "Prysmian"
+                  },
+                  {
+                    "name": "Power cable systems"
+                  }
+                ]
+              },
+              {
+                "name": "Protection and network control",
+                "children": [
+                  {
+                    "name": "NR Electric"
+                  },
+                  {
+                    "name": "Relays and control systems"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Downstream · Delivery and connected systems",
+            "children": [
+              {
+                "name": "Network operators",
+                "children": [
+                  {
+                    "name": "Transmission networks"
+                  },
+                  {
+                    "name": "Distribution networks"
+                  }
+                ]
+              },
+              {
+                "name": "Project delivery",
+                "children": [
+                  {
+                    "name": "Engineering and EPC"
+                  },
+                  {
+                    "name": "Testing and commissioning"
+                  },
+                  {
+                    "name": "Maintenance services"
+                  }
+                ]
+              },
+              {
+                "name": "Connected projects and large users",
+                "children": [
+                  {
+                    "name": "Generation projects"
+                  },
+                  {
+                    "name": "Industrial facilities"
+                  },
+                  {
+                    "name": "Data centres"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "[C01] Large Power Transformer Resilience Report to Congress",
+          "url": "https://www.energy.gov/sites/default/files/2024-10/EXEC-2022-001242%20-%20Large%20Power%20Transformer%20Resilience%20Report%20signed%20by%20Secretary%20Granholm%20on%207-10-24.pdf"
+        },
+        {
+          "title": "[C02] DOE and Industry Team Up to Keep the Lights On for America",
+          "url": "https://www.energy.gov/oe/articles/doe-and-industry-team-keep-lights-america"
+        },
+        {
+          "title": "[R10] Main products",
+          "url": "https://en.xd.com.cn/Core_business/Equipment_manufacture/Main_products.htm"
+        },
+        {
+          "title": "[M09] Response to the IPO application review inquiry for Youbang Radiator (Changshu) Co., Ltd.",
+          "url": "https://www.bse.cn/disclosure/2026/2026-07-02/1782986791_985982.pdf"
+        },
+        {
+          "title": "[M10] Youbang Radiator (Changshu) Co., Ltd. 2024 Annual Report",
+          "url": "https://static.cninfo.com.cn/finalpage/2025-04-21/1223183705.PDF"
+        },
+        {
+          "title": "[R16] Semiconductors",
+          "url": "https://www.hitachienergy.com/products-and-solutions/semiconductors"
+        },
+        {
+          "title": "[R01] Hitachi deepens commitment to U.S. manufacturing with $528 million Mississippi transformer factory",
+          "url": "https://www.hitachienergy.com/in/en/news-and-events/press-releases/2026/09/hitachi-deepens-commitment-to-u-s-manufacturing-with-528-million-mississippi-transformer-factory"
+        },
+        {
+          "title": "[R03] Earnings Release Q3 FY2026",
+          "url": "https://assets.siemens-energy.com/dam/30018eed-275d-4e73-811e-b49d004cdc3d/2026-08-05-Earnings_Release_Q3_FY26_EN-pdf_Original%20file.pdf"
+        },
+        {
+          "title": "[R12] Switchgear Medium voltage explained",
+          "url": "https://www.se.com/ww/en/knowledge-center/switchgear/"
+        },
+        {
+          "title": "[R04] GE Vernova reports second quarter 2026 financial results and raises 2026 financial guidance",
+          "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm"
+        },
+        {
+          "title": "[R11] NR Electric company products and solutions",
+          "url": "https://www.nrec.com/en/"
+        },
+        {
+          "title": "[R13] Installation Capabilities and Submarine Solutions",
+          "url": "https://www.prysmian.com/en/markets/generation-transmission-and-distribution/installation-capabilities-and-submarine-solutions"
+        },
+        {
+          "title": "[R07] Grid infrastructure investments drive increase in utility spending over last two decades",
+          "url": "https://www.eia.gov/todayinenergy/detail.php?id=63724"
+        },
+        {
+          "title": "[R08] Trend toward electric utility rate increases in regulated markets continues in 2024",
+          "url": "https://www.eia.gov/todayinenergy/detail.php?id=63024"
+        },
+        {
+          "title": "[H03] Former Associations UCPTE and UCTE",
+          "url": "https://www.entsoe.eu/news-events/former-associations/"
+        },
+        {
+          "title": "[H06] Electric Power System Reform Plan State Council Document No 5 of 2002",
+          "url": "https://www.nea.gov.cn/2011-08/17/c_131054253.htm"
+        }
+      ],
+      "note": "DEX editorial classification based on the reviewed report. Industry → upstream, midstream and downstream → segments → company or product examples. Category links, not verified contracts. Company examples are illustrative; a company can have different roles at multiple stages.",
+      "reviewed": "2026-10-08"
     }
   },
   "shares": {
@@ -2623,6 +2856,38 @@
         "locator": "pp. 16–17"
       },
       "note": "Historical six-brand snapshot. Values total US$17,365.17 billion. Visa and Mastercard together account for 59.57%. JCB is estimated; Mastercard excludes Maestro and Cirrus. The directly published shares total 100.00%; no normalization or residual Other category is used. This is not a 2026 share estimate.",
+      "reviewed": "2026-10-08"
+    },
+    "china-transformer-panel-radiators-2025": {
+      "title": "China transformer panel-radiator sales-volume share",
+      "eyebrow": "NARROW COMPONENT MARKET",
+      "dimension": "Manufacturer category",
+      "period": "Calendar 2025",
+      "center_label": "2025\nChina",
+      "geography": "China domestic market",
+      "scope": "Panel radiators used on transformers rated 110 kV and above. This is a narrow component market, not all transformers or all grid equipment.",
+      "metric": "Estimated market share by sales volume (%)",
+      "series": [
+        {
+          "name": "Youbang Radiator",
+          "value": 14.72
+        },
+        {
+          "name": "Other manufacturers",
+          "value": 85.28,
+          "derived": true
+        }
+      ],
+      "source": {
+        "publisher": "Youbang Radiator (Changshu) Co., Ltd. and China Securities Co., Ltd.; published by Beijing Stock Exchange",
+        "title": "Response to the IPO application review inquiry for Youbang Radiator (Changshu) Co., Ltd.",
+        "published": "2026-07-02",
+        "url": "https://www.bse.cn/disclosure/2026/2026-07-02/1782986791_985982.pdf",
+        "locator": "Printed p58; one-based PDF page59; zero-based PDF index58"
+      },
+      "note": "The Transformer Branch of the China Electrical Equipment Industry Association surveyed sales volumes of major domestic radiator-producing member firms, then extrapolated nationally. The issuer/sponsor filing reproduces the association estimate; it is primary evidence of the disclosure, not a census of the whole market. Other manufacturers = 100.00 - 14.72 = 85.28; total = 100.00%. Two decimal places as disclosed; no additional precision inferred. Raw survey data, sample coverage, numerical numerator/denominator and extrapolation formula were not disclosed. The physical sales-volume unit was not specified. Financial consolidation entities and elimination of related-party/internal sales were not specified for the share numerator. Other manufacturers is a calculated residual, not separately observed data; no individual competitor share or total market volume was disclosed. Source [M09], printed p58.",
+      "unit": "%",
+      "percentDecimals": 2,
       "reviewed": "2026-10-08"
     }
   }

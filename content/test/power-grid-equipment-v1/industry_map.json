@@ -1,0 +1,169 @@
+{
+  "title": "Power grid equipment and transmission and distribution",
+  "period": "Roles reviewed on 2026-10-08",
+  "hierarchy": [
+    "industry",
+    "stage",
+    "segment",
+    "company or product"
+  ],
+  "nodes": [
+    {
+      "stage": "Upstream",
+      "role": "Materials and components",
+      "color": "#DCEAE3",
+      "segments": [
+        {
+          "name": "Conductive and magnetic materials",
+          "leaves": [
+            "Copper and aluminium",
+            "Grain-oriented electrical steel"
+          ],
+          "sources": [
+            "C01",
+            "C02"
+          ]
+        },
+        {
+          "name": "Insulation and accessories",
+          "leaves": [
+            "China XD Group",
+            "Insulators and bushings"
+          ],
+          "sources": [
+            "R10"
+          ]
+        },
+        {
+          "name": "Transformer cooling components",
+          "leaves": [
+            "Youbang Radiator",
+            "Panel radiators"
+          ],
+          "sources": [
+            "M09",
+            "M10"
+          ]
+        },
+        {
+          "name": "Power semiconductors",
+          "leaves": [
+            "Hitachi Energy",
+            "Thyristors and IGBTs"
+          ],
+          "sources": [
+            "R16"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "Midstream",
+      "role": "Equipment and systems",
+      "color": "#F0DFB4",
+      "segments": [
+        {
+          "name": "Transformers",
+          "leaves": [
+            "Hitachi Energy",
+            "Siemens Energy",
+            "China XD Group"
+          ],
+          "sources": [
+            "R01",
+            "R03",
+            "R10"
+          ]
+        },
+        {
+          "name": "Switchgear",
+          "leaves": [
+            "Schneider Electric",
+            "China XD Group"
+          ],
+          "sources": [
+            "R10",
+            "R12"
+          ]
+        },
+        {
+          "name": "HVDC and grid compensation",
+          "leaves": [
+            "GE Vernova HVDC",
+            "NR Electric HVDC and FACTS"
+          ],
+          "sources": [
+            "R04",
+            "R11"
+          ]
+        },
+        {
+          "name": "Power cables",
+          "leaves": [
+            "Prysmian",
+            "Power cable systems"
+          ],
+          "sources": [
+            "R13"
+          ]
+        },
+        {
+          "name": "Protection and network control",
+          "leaves": [
+            "NR Electric",
+            "Relays and control systems"
+          ],
+          "sources": [
+            "R11"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "Downstream",
+      "role": "Delivery and connected systems",
+      "color": "#DDE7ED",
+      "segments": [
+        {
+          "name": "Network operators",
+          "leaves": [
+            "Transmission networks",
+            "Distribution networks"
+          ],
+          "sources": [
+            "R07",
+            "R08",
+            "H03",
+            "H06"
+          ]
+        },
+        {
+          "name": "Project delivery",
+          "leaves": [
+            "Engineering and EPC",
+            "Testing and commissioning",
+            "Maintenance services"
+          ],
+          "sources": [
+            "R11",
+            "R13"
+          ]
+        },
+        {
+          "name": "Connected projects and large users",
+          "leaves": [
+            "Generation projects",
+            "Industrial facilities",
+            "Data centres"
+          ],
+          "sources": [
+            "R01",
+            "R10",
+            "R11"
+          ]
+        }
+      ]
+    }
+  ],
+  "interpretation": "Category links, not verified contracts."
+}

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1880" viewBox="0 0 2400 1880" role="img" aria-labelledby="title desc">
+<title id="title">China transformer panel radiators</title>
+<desc id="desc">Donut chart of estimated 2025 sales-volume share in China&#x27;s market for plate radiators used on transformers rated 110 kV and above. Youbang Radiator: 14.72%; other manufacturers: 85.28%, calculated as the residual. This narrow component market is not the total grid-equipment market. The data is an association survey and national extrapolation reproduced in a BSE filing.</desc>
+<rect width="2400" height="1880" fill="#FAF7F0"/>
+<text x="100" y="109" font-family="Arial,DejaVu Sans,sans-serif" font-size="82" font-weight="700" fill="#172C36" text-anchor="start" dominant-baseline="middle">China transformer panel radiators</text>
+<text x="100" y="207" font-family="Arial,DejaVu Sans,sans-serif" font-size="43" font-weight="400" fill="#172C36" text-anchor="start" dominant-baseline="middle">Sales-volume share | 110 kV-and-above transformer applications | 2025</text>
+<rect x="100" y="280" width="2200" height="151" rx="18" fill="#F0DFB4"/>
+<text x="134" y="324" font-family="Arial,DejaVu Sans,sans-serif" font-size="39" font-weight="700" fill="#172C36" text-anchor="start" dominant-baseline="middle">NARROW COMPONENT MARKET</text>
+<text x="134" y="388" font-family="Arial,DejaVu Sans,sans-serif" font-size="53" font-weight="700" fill="#172C36" text-anchor="start" dominant-baseline="middle">Not the total grid-equipment market</text>
+<path d="M 655.0000 495.0000 A 415 415 0 0 1 986.3989 660.2005 L 866.6161 750.4895 A 265 265 0 0 0 655.0000 645.0000 Z" fill="#BE953E"/>
+<path d="M 986.3989 660.2005 A 415 415 0 1 1 655.0000 495.0000 L 655.0000 645.0000 A 265 265 0 1 0 866.6161 750.4895 Z" fill="#467C78"/>
+<text x="655" y="814" font-family="Arial,DejaVu Sans,sans-serif" font-size="94" font-weight="700" fill="#172C36" text-anchor="middle" dominant-baseline="middle">2025</text>
+<text x="655" y="914" font-family="Arial,DejaVu Sans,sans-serif" font-size="41" font-weight="700" fill="#172C36" text-anchor="middle" dominant-baseline="middle">CHINA</text>
+<text x="655" y="993" font-family="Arial,DejaVu Sans,sans-serif" font-size="42" font-weight="400" fill="#172C36" text-anchor="middle" dominant-baseline="middle">By sales volume</text>
+<rect x="1230" y="676" width="55" height="55" rx="8" fill="#BE953E"/>
+<text x="1314" y="703" font-family="Arial,DejaVu Sans,sans-serif" font-size="61" font-weight="700" fill="#172C36" text-anchor="start" dominant-baseline="middle">Youbang Radiator</text>
+<text x="1314" y="806" font-family="Arial,DejaVu Sans,sans-serif" font-size="102" font-weight="700" fill="#BE953E" text-anchor="start" dominant-baseline="middle">14.72%</text>
+<text x="1314" y="896" font-family="Arial,DejaVu Sans,sans-serif" font-size="41" font-weight="400" fill="#172C36" text-anchor="start" dominant-baseline="middle">Association estimate</text>
+<rect x="1230" y="1011" width="55" height="55" rx="8" fill="#467C78"/>
+<text x="1314" y="1038" font-family="Arial,DejaVu Sans,sans-serif" font-size="61" font-weight="700" fill="#172C36" text-anchor="start" dominant-baseline="middle">Other manufacturers</text>
+<text x="1314" y="1141" font-family="Arial,DejaVu Sans,sans-serif" font-size="102" font-weight="700" fill="#467C78" text-anchor="start" dominant-baseline="middle">85.28%</text>
+<text x="1314" y="1231" font-family="Arial,DejaVu Sans,sans-serif" font-size="41" font-weight="400" fill="#172C36" text-anchor="start" dominant-baseline="middle">Calculated residual</text>
+<line x1="100" y1="1443" x2="2300" y2="1443" stroke="#B5A990" stroke-width="3"/>
+<text x="100" y="1498" font-family="Arial,DejaVu Sans,sans-serif" font-size="42" font-weight="400" fill="#172C36" text-anchor="start" dominant-baseline="middle">Source [M09]: issuer/sponsor BSE reply, disclosed 2 July 2026, printed p58. China domestic market, 2025.</text>
+<text x="100" y="1563" font-family="Arial,DejaVu Sans,sans-serif" font-size="42" font-weight="400" fill="#172C36" text-anchor="start" dominant-baseline="middle">Industry-association survey of major member manufacturers, extrapolated nationally; estimate, not a census.</text>
+<text x="100" y="1628" font-family="Arial,DejaVu Sans,sans-serif" font-size="42" font-weight="400" fill="#172C36" text-anchor="start" dominant-baseline="middle">Other manufacturers = 100 - 14.72 = 85.28%. Source precision retained; residual inherits estimate uncertainty.</text>
+<text x="100" y="1693" font-family="Arial,DejaVu Sans,sans-serif" font-size="42" font-weight="400" fill="#172C36" text-anchor="start" dominant-baseline="middle">Physical volume unit, sample coverage and consolidation/related-party exclusions were not disclosed.</text>
+</svg>
