@@ -3,29 +3,21 @@ title: "Power Grid Equipment and Transmission and Distribution"
 description: "From investment plans to usable network capacity"
 date: 2026-10-08
 lastmod: 2026-10-08
-url: "/test/power-grid-equipment-v1/"
-type: "post"
-layout: "single"
+aliases:
+  - "/test/power-grid-equipment-v1/"
 image: "cover.png"
 categories:
   - "Industry Report"
+tags: ["Power Grid", "Transmission and Distribution", "Grid Equipment", "Industry Research Report"]
 imageAlt: "Conceptual illustration of a transformer substation, transmission towers and power cables in a connected grid; an AI-generated illustration rather than a documentary image."
 toc: true
 draft: false
-testpage: true
 industrialreport: true
 reportversion: "1.0"
 evidencecutoff: "2026-10-08"
-build:
-  list: never
-  render: always
-  publishResources: true
 ---
 
-<p class="research-preview-note">Test page · Version 1.0 · Evidence cutoff 8 October 2026. Prepared for review; not the formal article release.</p>
-
-
-<p class="research-figure-caption">Version 1.0 review package | Evidence cutoff 8 October 2026</p>
+<p class="research-figure-caption">Industry report · Version 1.0 · Evidence cutoff 8 October 2026</p>
 
 <p class="research-figure-caption">Global perspective with comparison of China the United States and Europe</p>
 
@@ -841,8 +833,8 @@ build:
 
 <p data-calculation-block="03">Share chart: Youbang 14.72%, exactly the source precision; Other manufacturers = 100.00 − 14.72 = 85.28%; total 100.00%. Categories are mutually exclusive relative to the reported issuer category. The residual inherits the association estimate&#x27;s uncertainty and is not an independently measured competitor total. No arbitrary normalization is used. <a class="evidence-cite" href="#evidence-M09" aria-label="Evidence M09">[M09]</a></p>
 
-<p data-calculation-block="04">Figure 1 classifies the industry through stage, segment and company or product. Figure 2 is the China domestic 2025 sales-volume component example. Actual PNG previews, editable SVG files, JSON/CSV data and build sources accompany this package. All figure labels are English; Chinese descriptions are retained in the review text.</p>
+<p data-calculation-block="04">Figure 1 classifies the industry through stage, segment and company or product. Figure 2 is the China domestic 2025 sales-volume component example. Actual PNG previews, editable SVG files, JSON/CSV data and build sources accompany this package. All figure labels are English; Chinese descriptions are retained in the Chinese text.</p>
 
-<p data-calculation-block="05">Cover COV01: version 1 draft, AI-generated conceptual illustration after report and data verification. It depicts grid equipment as an illustration, not a documentary photograph or proof of the opening factory announcement. Its prompt, generation method, dimensions and version record accompany the image. Draft-cover acceptance does not constitute article publication approval.</p>
+<p data-calculation-block="05">Cover COV01: version 1, AI-generated conceptual illustration after report and data verification. It depicts grid equipment as an illustration, not a documentary photograph or proof of the opening factory announcement. Its prompt, generation method, dimensions and version record accompany the image.</p>
 
 <p data-calculation-block="06">DEX Research was actually browsed for writing and visual reference during this task. It is not a factual source for industry claims. The private reference-reading record describes the observed industry map, share donut, evidence area and covers.</p>

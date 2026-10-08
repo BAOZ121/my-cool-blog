@@ -2,7 +2,7 @@ Power Grid Equipment and Transmission and Distribution
 
 From investment plans to usable network capacity
 
-Version 1.0 review package | Evidence cutoff 8 October 2026
+Version 1.0 | Evidence cutoff 8 October 2026
 
 Global perspective with comparison of China the United States and Europe
 
@@ -89,6 +89,53 @@ In the United States, EIA explains that regulated investor-owned utilities recov
 Figure 1 Industry map of power grid equipment and delivery roles
 Image file: charts/industry_map.png
 Alternative text: The industry branches into upstream materials and components, midstream equipment and systems, and downstream operators, delivery partners and connected projects. Each segment has company or product examples; lines classify roles and do not prove contracts.
+
+Figure 1 text transcription (original English chart labels)
+Power grid equipment and transmission and distribution
+Roles reviewed on 2026-10-08
+Upstream — Materials and components
+  Conductive and magnetic materials [C01][C02]
+    - Copper and aluminium
+    - Grain-oriented electrical steel
+  Insulation and accessories [R10]
+    - China XD Group
+    - Insulators and bushings
+  Transformer cooling components [M09][M10]
+    - Youbang Radiator
+    - Panel radiators
+  Power semiconductors [R16]
+    - Hitachi Energy
+    - Thyristors and IGBTs
+Midstream — Equipment and systems
+  Transformers [R01][R03][R10]
+    - Hitachi Energy
+    - Siemens Energy
+    - China XD Group
+  Switchgear [R10][R12]
+    - Schneider Electric
+    - China XD Group
+  HVDC and grid compensation [R04][R11]
+    - GE Vernova HVDC
+    - NR Electric HVDC and FACTS
+  Power cables [R13]
+    - Prysmian
+    - Power cable systems
+  Protection and network control [R11]
+    - NR Electric
+    - Relays and control systems
+Downstream — Delivery and connected systems
+  Network operators [R07][R08][H03][H06]
+    - Transmission networks
+    - Distribution networks
+  Project delivery [R11][R13]
+    - Engineering and EPC
+    - Testing and commissioning
+    - Maintenance services
+  Connected projects and large users [R01][R10][R11]
+    - Generation projects
+    - Industrial facilities
+    - Data centres
+Category links, not verified contracts.
 
 The scale of demand and regional differences
 
@@ -911,8 +958,8 @@ Quarterly book-to-bill: Siemens GT 5367 / 3624 = 1.48096, displayed 1.48; GE Ele
 
 Share chart: Youbang 14.72%, exactly the source precision; Other manufacturers = 100.00 − 14.72 = 85.28%; total 100.00%. Categories are mutually exclusive relative to the reported issuer category. The residual inherits the association estimate's uncertainty and is not an independently measured competitor total. No arbitrary normalization is used. [M09]
 
-Figure 1 classifies the industry through stage, segment and company or product. Figure 2 is the China domestic 2025 sales-volume component example. Actual PNG previews, editable SVG files, JSON/CSV data and build sources accompany this package. All figure labels are English; Chinese descriptions are retained in the review text.
+Figure 1 classifies the industry through stage, segment and company or product. Figure 2 is the China domestic 2025 sales-volume component example. Actual PNG previews, editable SVG files, JSON/CSV data and build sources accompany this package. All figure labels are English; Chinese descriptions are retained in the Chinese text.
 
-Cover COV01: version 1 draft, AI-generated conceptual illustration after report and data verification. It depicts grid equipment as an illustration, not a documentary photograph or proof of the opening factory announcement. Its prompt, generation method, dimensions and version record accompany the image. Draft-cover acceptance does not constitute article publication approval.
+Cover COV01: version 1, AI-generated conceptual illustration after report and data verification. It depicts grid equipment as an illustration, not a documentary photograph or proof of the opening factory announcement. Its prompt, generation method, dimensions and version record accompany the image.
 
 DEX Research was actually browsed for writing and visual reference during this task. It is not a factual source for industry claims. The private reference-reading record describes the observed industry map, share donut, evidence area and covers.

@@ -2,6 +2,1425 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "power-grid-equipment-transmission-distribution",
+      "title": "Power Grid Equipment and Transmission and Distribution",
+      "url": "/post/power-grid-equipment-transmission-distribution/",
+      "published": "2026-10-08",
+      "notices": [],
+      "entries": [
+        {
+          "id": "3bd20e1bafa6",
+          "url": "/post/power-grid-equipment-transmission-distribution/report_en.txt",
+          "title": "Download the complete English report and Supporting Evidence (UTF-8 text)",
+          "kind": "file",
+          "format": "TXT",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Article",
+              "url": "/post/power-grid-equipment-transmission-distribution/",
+              "text": "Download the complete English report and Supporting Evidence (UTF-8 text)",
+              "notes": [
+                "Industry report · Version 1.0 · Evidence cutoff 8 October 2026",
+                "Global perspective with comparison of China the United States and Europe",
+                "The industry's central task is to convert spending and orders into functioning network capacity. This report explains the technologies, supplier roles and regional demand behind that task, then examines the constraints on delivery.",
+                "The core scope is electricity transmission and distribution equipment. Project services and network investment are discussed as adjacent activities and demand context. Company examples are illustrative. The mandatory share figure uses the user-approved China panel-radiator component market in 2025; it is explicitly not a global or whole-industry share. Bracketed IDs connect claims and figures to the separate Supporting Evidence appendix."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8784f61b4ef9",
+          "url": "https://www.energy.gov/sites/default/files/2024-10/EXEC-2022-001242%20-%20Large%20Power%20Transformer%20Resilience%20Report%20signed%20by%20Secretary%20Granholm%20on%207-10-24.pdf",
+          "title": "[C01] Large Power Transformer Resilience Report to Congress",
+          "kind": "file",
+          "format": "PDF",
+          "host": "energy.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "The power grid equipment value chain",
+              "url": "/post/power-grid-equipment-transmission-distribution/#industry-map-power-grid-equipment-2026-0-title",
+              "text": "Sources: [C01] Large Power Transformer Resilience Report to Congress · [C02] DOE and Industry Team Up to Keep the Lights On for America · [R10] Main products · [M09] Response to the IPO application review inquiry for Youbang Radiator (Changshu) Co., Ltd. · [M10] Youbang Radiator (Changshu) Co., Ltd. 2024 Annual Report · [R16] Semiconductors · [R01] Hitachi deepens commitment to U.S. manufacturing with $528 million Mississippi transformer factory · [R03] Earnings Release Q3 FY2026 · [R12] Switchgear Medium voltage explained · [R04] GE Vernova reports second quarter 2026 financial results and raises 2026 financial guidance · [R11] NR Electric company products and solutions · [R13] Installation Capabilities and Submarine Solutions · [R07] Grid infrastructure investments drive increase in utility spending over last two decades · [R08] Trend toward electric utility rate increases in regulated markets continues in 2024 · [H03] Former Associations UCPTE and UCTE · [H06] Electric Power System Reform Plan State Council Document No 5 of 2002 . Reviewed 2026-10-08.",
+              "notes": [
+                "The industry branches into upstream materials and components, midstream equipment and systems, and downstream operators, delivery partners and connected projects. Each segment has company or product examples; lines classify roles and do not prove contracts.",
+                "DEX editorial classification based on the reviewed report. Industry → upstream, midstream and downstream → segments → company or product examples. Category links, not verified contracts. Company examples are illustrative; a company can have different roles at multiple stages."
+              ]
+            },
+            {
+              "section": "[C01] Large Power Transformer Resilience Report to Congress",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-C01",
+              "text": "Read the original source",
+              "notes": [
+                "Title: Large Power Transformer Resilience Report to Congress. Publisher: U.S. Department of Energy. Material: primary government report with interviews.",
+                "Report dated July 2024; posted in October 2024. Interviews: report preparation in 2024. Period: 2024 and historical comparisons. Read: 8 October 2026.",
+                "Coverage: U.S. large power transformers, commonly above 60 MVA in this report. Locator: printed pages 12–16, PDF pages 17–21. Units: MVA and months.",
+                "Supports: Producer interviews support lead times up to or beyond 36 months; the report explains customization, specialty material and skilled-labour bottlenecks.",
+                "Limitations: The figure is a dated U.S. interview observation, not a global 2026 average. The report mixes original interviews with older external estimates; those market estimates are not used. Manufacturing-capacity implications are explicitly the report's analysis."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4286e7d99752",
+          "url": "https://www.energy.gov/oe/articles/doe-and-industry-team-keep-lights-america",
+          "title": "[C02] DOE and Industry Team Up to Keep the Lights On for America",
+          "kind": "link",
+          "format": "Web",
+          "host": "energy.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "The power grid equipment value chain",
+              "url": "/post/power-grid-equipment-transmission-distribution/#industry-map-power-grid-equipment-2026-0-title",
+              "text": "Sources: [C01] Large Power Transformer Resilience Report to Congress · [C02] DOE and Industry Team Up to Keep the Lights On for America · [R10] Main products · [M09] Response to the IPO application review inquiry for Youbang Radiator (Changshu) Co., Ltd. · [M10] Youbang Radiator (Changshu) Co., Ltd. 2024 Annual Report · [R16] Semiconductors · [R01] Hitachi deepens commitment to U.S. manufacturing with $528 million Mississippi transformer factory · [R03] Earnings Release Q3 FY2026 · [R12] Switchgear Medium voltage explained · [R04] GE Vernova reports second quarter 2026 financial results and raises 2026 financial guidance · [R11] NR Electric company products and solutions · [R13] Installation Capabilities and Submarine Solutions · [R07] Grid infrastructure investments drive increase in utility spending over last two decades · [R08] Trend toward electric utility rate increases in regulated markets continues in 2024 · [H03] Former Associations UCPTE and UCTE · [H06] Electric Power System Reform Plan State Council Document No 5 of 2002 . Reviewed 2026-10-08.",
+              "notes": [
+                "The industry branches into upstream materials and components, midstream equipment and systems, and downstream operators, delivery partners and connected projects. Each segment has company or product examples; lines classify roles and do not prove contracts.",
+                "DEX editorial classification based on the reviewed report. Industry → upstream, midstream and downstream → segments → company or product examples. Category links, not verified contracts. Company examples are illustrative; a company can have different roles at multiple stages."
+              ]
+            },
+            {
+              "section": "[C02] DOE and Industry Team Up to Keep the Lights On for America",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-C02",
+              "text": "Read the original source",
+              "notes": [
+                "Title: DOE and Industry Team Up to Keep the Lights On for America. Publisher: U.S. Department of Energy. Material: primary government workshop account.",
+                "Published on 22 February 2024. Event: March 2023 workshop and 2023 supply conditions. Statistical comparison: 2019–2023. Read: 8 October 2026.",
+                "Coverage: U.S. distribution transformers. Locator: supply-stress and workshop passages. Relevant unit: months.",
+                "Supports: Supports lead times rising from 3–6 months in 2019 to 12–30 months in 2023, constraints in GOES, aluminium, copper and skilled workforce, and design-standardization efforts.",
+                "Limitations: This is a dated government account of the U.S. distribution segment. It cannot substitute for large-transformer or worldwide 2026 delivery data. Proposed supply responses are not evidence that shortages have ended or a new factory already delivers full rated output."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "797809086381",
+          "url": "https://en.xd.com.cn/Core_business/Equipment_manufacture/Main_products.htm",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "en.xd.com.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "The power grid equipment value chain",
+              "url": "/post/power-grid-equipment-transmission-distribution/#industry-map-power-grid-equipment-2026-0-title",
+              "text": "Sources: [C01] Large Power Transformer Resilience Report to Congress · [C02] DOE and Industry Team Up to Keep the Lights On for America · [R10] Main products · [M09] Response to the IPO application review inquiry for Youbang Radiator (Changshu) Co., Ltd. · [M10] Youbang Radiator (Changshu) Co., Ltd. 2024 Annual Report · [R16] Semiconductors · [R01] Hitachi deepens commitment to U.S. manufacturing with $528 million Mississippi transformer factory · [R03] Earnings Release Q3 FY2026 · [R12] Switchgear Medium voltage explained · [R04] GE Vernova reports second quarter 2026 financial results and raises 2026 financial guidance · [R11] NR Electric company products and solutions · [R13] Installation Capabilities and Submarine Solutions · [R07] Grid infrastructure investments drive increase in utility spending over last two decades · [R08] Trend toward electric utility rate increases in regulated markets continues in 2024 · [H03] Former Associations UCPTE and UCTE · [H06] Electric Power System Reform Plan State Council Document No 5 of 2002 . Reviewed 2026-10-08.",
+              "notes": [
+                "The industry branches into upstream materials and components, midstream equipment and systems, and downstream operators, delivery partners and connected projects. Each segment has company or product examples; lines classify roles and do not prove contracts.",
+                "DEX editorial classification based on the reviewed report. Industry → upstream, midstream and downstream → segments → company or product examples. Category links, not verified contracts. Company examples are illustrative; a company can have different roles at multiple stages."
+              ]
+            },
+            {
+              "section": "[R10] Main products",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-R10",
+              "text": "Read the original source",
+              "notes": [
+                "Publisher and material type: China XD Group; First-party product documentation.",
+                "Publication: Undated live product catalog. Event: Product roles observed 2026-10-08. Statistical period: Catalog as read. Read: 8 October 2026.",
+                "Scope and location: China XD Group catalog; examples of roles, not audited company sales. Locator: Transformer Products, High-voltage switch products, Power electronics, Power automation products, Insulators and sleeves.",
+                "Supports: Catalog identifies power/converter transformers, high-voltage switches, converter valves, protection/control, insulators/bushings and cables.",
+                "Limits: Group catalog does not attribute every product to listed China XD Electric or verify any contract, share or product superiority. Product roles can span stages."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "201a05242acc",
+          "url": "https://www.bse.cn/disclosure/2026/2026-07-02/1782986791_985982.pdf",
+          "title": "Youbang Radiator (Changshu) Co., Ltd. and China Securities Co., Ltd.; published by Beijing Stock Exchange — Response to the IPO application review inquiry for Youbang Radiator (Changshu) Co., Ltd.",
+          "kind": "file",
+          "format": "PDF",
+          "host": "bse.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "The power grid equipment value chain",
+              "url": "/post/power-grid-equipment-transmission-distribution/#industry-map-power-grid-equipment-2026-0-title",
+              "text": "Sources: [C01] Large Power Transformer Resilience Report to Congress · [C02] DOE and Industry Team Up to Keep the Lights On for America · [R10] Main products · [M09] Response to the IPO application review inquiry for Youbang Radiator (Changshu) Co., Ltd. · [M10] Youbang Radiator (Changshu) Co., Ltd. 2024 Annual Report · [R16] Semiconductors · [R01] Hitachi deepens commitment to U.S. manufacturing with $528 million Mississippi transformer factory · [R03] Earnings Release Q3 FY2026 · [R12] Switchgear Medium voltage explained · [R04] GE Vernova reports second quarter 2026 financial results and raises 2026 financial guidance · [R11] NR Electric company products and solutions · [R13] Installation Capabilities and Submarine Solutions · [R07] Grid infrastructure investments drive increase in utility spending over last two decades · [R08] Trend toward electric utility rate increases in regulated markets continues in 2024 · [H03] Former Associations UCPTE and UCTE · [H06] Electric Power System Reform Plan State Council Document No 5 of 2002 . Reviewed 2026-10-08.",
+              "notes": [
+                "The industry branches into upstream materials and components, midstream equipment and systems, and downstream operators, delivery partners and connected projects. Each segment has company or product examples; lines classify roles and do not prove contracts.",
+                "DEX editorial classification based on the reviewed report. Industry → upstream, midstream and downstream → segments → company or product examples. Category links, not verified contracts. Company examples are illustrative; a company can have different roles at multiple stages."
+              ]
+            },
+            {
+              "section": "China transformer panel-radiator sales-volume share",
+              "url": "/post/power-grid-equipment-transmission-distribution/#market-share-china-transformer-panel-radiators-2025-1-title",
+              "text": "Source: Youbang Radiator (Changshu) Co., Ltd. and China Securities Co., Ltd.; published by Beijing Stock Exchange — Response to the IPO application review inquiry for Youbang Radiator (Changshu) Co., Ltd. (2026-07-02). Reviewed 2026-10-08.",
+              "notes": [
+                "Panel radiators used on transformers rated 110 kV and above. This is a narrow component market, not all transformers or all grid equipment.",
+                "China domestic market · Estimated market share by sales volume (%)",
+                "The Transformer Branch of the China Electrical Equipment Industry Association surveyed sales volumes of major domestic radiator-producing member firms, then extrapolated nationally. The issuer/sponsor filing reproduces the association estimate; it is primary evidence of the disclosure, not a census of the whole market. Other manufacturers = 100.00 - 14.72 = 85.28; total = 100.00%. Two decimal places as disclosed; no additional precision inferred. Raw survey data, sample coverage, numerical numerator/denominator and extrapolation formula were not disclosed. The physical sales-volume unit was not specified. Financial consolidation entities and elimination of related-party/internal sales were not specified for the share numerator. Other manufacturers is a calculated residual, not separately observed data; no individual competitor share or total market volume was disclosed. Source [M09], printed p58."
+              ]
+            },
+            {
+              "section": "[M09] Response to the IPO application review inquiry for Youbang Radiator (Changshu) Co., Ltd.",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-M09",
+              "text": "Read the original source",
+              "notes": [
+                "Issuer/sponsor BSE reply, prepared June 2026, disclosed 2 July 2026; read 8 October 2026. Printed p 58 (PDF index 58); repeated p 19, verification procedure p 63.",
+                "Scope: China's domestic plate radiators for transformers rated 110 kV and above; calendar 2025; sales-volume share (%). Lower voltages and other transformer cooling systems fall outside this definition. This is not grid-industry share.",
+                "The Transformer Branch of the China Electrical Equipment Industry Association reported Youbang at 14.72% (2024: 13.31%), surveying major domestic member suppliers then extrapolating nationally.",
+                "The filing verifies disclosure; measurement remains an association estimate, not a census. Raw data, coverage, volume unit, numerator/denominator and extrapolation formula are absent; consolidation and related-party eliminations are unspecified. Banking-review entities do not define share scope.",
+                "Other manufacturers=100−14.72=85.28%; total 100%. This residual inherits uncertainty. No competitor shares or market volume are disclosed. Link originals; reproduction rights unverified."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "82c156d169e3",
+          "url": "https://static.cninfo.com.cn/finalpage/2025-04-21/1223183705.PDF",
+          "title": "[M10] Youbang Radiator (Changshu) Co., Ltd. 2024 Annual Report",
+          "kind": "file",
+          "format": "PDF",
+          "host": "static.cninfo.com.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "The power grid equipment value chain",
+              "url": "/post/power-grid-equipment-transmission-distribution/#industry-map-power-grid-equipment-2026-0-title",
+              "text": "Sources: [C01] Large Power Transformer Resilience Report to Congress · [C02] DOE and Industry Team Up to Keep the Lights On for America · [R10] Main products · [M09] Response to the IPO application review inquiry for Youbang Radiator (Changshu) Co., Ltd. · [M10] Youbang Radiator (Changshu) Co., Ltd. 2024 Annual Report · [R16] Semiconductors · [R01] Hitachi deepens commitment to U.S. manufacturing with $528 million Mississippi transformer factory · [R03] Earnings Release Q3 FY2026 · [R12] Switchgear Medium voltage explained · [R04] GE Vernova reports second quarter 2026 financial results and raises 2026 financial guidance · [R11] NR Electric company products and solutions · [R13] Installation Capabilities and Submarine Solutions · [R07] Grid infrastructure investments drive increase in utility spending over last two decades · [R08] Trend toward electric utility rate increases in regulated markets continues in 2024 · [H03] Former Associations UCPTE and UCTE · [H06] Electric Power System Reform Plan State Council Document No 5 of 2002 . Reviewed 2026-10-08.",
+              "notes": [
+                "The industry branches into upstream materials and components, midstream equipment and systems, and downstream operators, delivery partners and connected projects. Each segment has company or product examples; lines classify roles and do not prove contracts.",
+                "DEX editorial classification based on the reviewed report. Industry → upstream, midstream and downstream → segments → company or product examples. Category links, not verified contracts. Company examples are illustrative; a company can have different roles at multiple stages."
+              ]
+            },
+            {
+              "section": "[M10] Youbang Radiator (Changshu) Co., Ltd. 2024 Annual Report",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-M10",
+              "text": "Read the original source",
+              "notes": [
+                "Youbang's 2024 annual report, published through CNINFO on 21 April 2025; read 8 October 2026. The event date is unspecified. Locator: cover and Company Profile p 6; Business Overview p 7.",
+                "The legal names are Youbang Radiator (Changshu) Co., Ltd.; NEEQ code 874411. Scope: a China-based supplier researching, manufacturing and selling transformer radiators and components; no market-share unit or denominator.",
+                "The report names Hitachi Energy, Siemens Energy, Toshiba, Hyosung, China Electrical Equipment Group, Siyuan Electric and Wujiang Transformers among major customer groups, providing international relationship context.",
+                "Named relationships disclose neither order amount, contract duration nor purchasing commitments current in 2026. They cannot establish quantified supplier share or the precise scope of Youbang's association-estimated market share.",
+                "Only identity, products and customer disclosure are used. A later financial correction exists; this evidence does not use financial numbers. No calculation is required."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "97f7f75a5cbb",
+          "url": "https://www.hitachienergy.com/products-and-solutions/semiconductors",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "hitachienergy.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "The power grid equipment value chain",
+              "url": "/post/power-grid-equipment-transmission-distribution/#industry-map-power-grid-equipment-2026-0-title",
+              "text": "Sources: [C01] Large Power Transformer Resilience Report to Congress · [C02] DOE and Industry Team Up to Keep the Lights On for America · [R10] Main products · [M09] Response to the IPO application review inquiry for Youbang Radiator (Changshu) Co., Ltd. · [M10] Youbang Radiator (Changshu) Co., Ltd. 2024 Annual Report · [R16] Semiconductors · [R01] Hitachi deepens commitment to U.S. manufacturing with $528 million Mississippi transformer factory · [R03] Earnings Release Q3 FY2026 · [R12] Switchgear Medium voltage explained · [R04] GE Vernova reports second quarter 2026 financial results and raises 2026 financial guidance · [R11] NR Electric company products and solutions · [R13] Installation Capabilities and Submarine Solutions · [R07] Grid infrastructure investments drive increase in utility spending over last two decades · [R08] Trend toward electric utility rate increases in regulated markets continues in 2024 · [H03] Former Associations UCPTE and UCTE · [H06] Electric Power System Reform Plan State Council Document No 5 of 2002 . Reviewed 2026-10-08.",
+              "notes": [
+                "The industry branches into upstream materials and components, midstream equipment and systems, and downstream operators, delivery partners and connected projects. Each segment has company or product examples; lines classify roles and do not prove contracts.",
+                "DEX editorial classification based on the reviewed report. Industry → upstream, midstream and downstream → segments → company or product examples. Category links, not verified contracts. Company examples are illustrative; a company can have different roles at multiple stages."
+              ]
+            },
+            {
+              "section": "[R16] Semiconductors",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-R16",
+              "text": "Read the original source",
+              "notes": [
+                "Publisher and material type: Hitachi Energy; First-party product documentation.",
+                "Publication: Undated live product catalog; displayed 2026 catalog. Event: Product roles observed 2026-10-08. Statistical period: Catalog as read. Read: 8 October 2026.",
+                "Scope and location: Power semiconductors and transmission/distribution applications; examples only. Locator: Semiconductor portfolio; Applications Transmission and distribution; Our Offerings.",
+                "Supports: Catalog lists thyristors, IGBTs, diodes and associated assemblies and identifies transmission/distribution applications.",
+                "Limits: Portfolio does not establish a particular chip's sales share, customer contract or availability. Products may serve other applications as well as grids."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "956f4b5598e7",
+          "url": "https://www.hitachienergy.com/in/en/news-and-events/press-releases/2026/09/hitachi-deepens-commitment-to-u-s-manufacturing-with-528-million-mississippi-transformer-factory",
+          "title": "[R01] Hitachi deepens commitment to U.S. manufacturing with $528 million Mississippi transformer factory",
+          "kind": "link",
+          "format": "Web",
+          "host": "hitachienergy.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "The power grid equipment value chain",
+              "url": "/post/power-grid-equipment-transmission-distribution/#industry-map-power-grid-equipment-2026-0-title",
+              "text": "Sources: [C01] Large Power Transformer Resilience Report to Congress · [C02] DOE and Industry Team Up to Keep the Lights On for America · [R10] Main products · [M09] Response to the IPO application review inquiry for Youbang Radiator (Changshu) Co., Ltd. · [M10] Youbang Radiator (Changshu) Co., Ltd. 2024 Annual Report · [R16] Semiconductors · [R01] Hitachi deepens commitment to U.S. manufacturing with $528 million Mississippi transformer factory · [R03] Earnings Release Q3 FY2026 · [R12] Switchgear Medium voltage explained · [R04] GE Vernova reports second quarter 2026 financial results and raises 2026 financial guidance · [R11] NR Electric company products and solutions · [R13] Installation Capabilities and Submarine Solutions · [R07] Grid infrastructure investments drive increase in utility spending over last two decades · [R08] Trend toward electric utility rate increases in regulated markets continues in 2024 · [H03] Former Associations UCPTE and UCTE · [H06] Electric Power System Reform Plan State Council Document No 5 of 2002 . Reviewed 2026-10-08.",
+              "notes": [
+                "The industry branches into upstream materials and components, midstream equipment and systems, and downstream operators, delivery partners and connected projects. Each segment has company or product examples; lines classify roles and do not prove contracts.",
+                "DEX editorial classification based on the reviewed report. Industry → upstream, midstream and downstream → segments → company or product examples. Category links, not verified contracts. Company examples are illustrative; a company can have different roles at multiple stages."
+              ]
+            },
+            {
+              "section": "[R01] Hitachi deepens commitment to U.S. manufacturing with $528 million Mississippi transformer factory",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-R01",
+              "text": "Read the original source",
+              "notes": [
+                "Publisher and material type: Hitachi Energy; First-party company announcement.",
+                "Publication: 2026-09-15. Event: 2026-09-15 announcement; construction expected late 2026; production scheduled 2029. Statistical period: Investment announcement, not realized expenditure. Read: 8 October 2026.",
+                "Scope and location: Gallman, Mississippi, United States; USD. Locator: Opening announcement and paragraph beginning The new factory in Gallman.",
+                "Supports: A planned USD 528 m transformer plant; production expected in 2029; existing Crystal Springs production is to move after completion.",
+                "Limits: Corporate plans are not verified commissioning or expenditure. Capacity doubling refers to this local operation, not the global industry. Employment statements differ within the release, so exact job counts are excluded."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "60fdff41dc5e",
+          "url": "https://assets.siemens-energy.com/dam/30018eed-275d-4e73-811e-b49d004cdc3d/2026-08-05-Earnings_Release_Q3_FY26_EN-pdf_Original%20file.pdf",
+          "title": "[R03] Earnings Release Q3 FY2026",
+          "kind": "file",
+          "format": "PDF",
+          "host": "assets.siemens-energy.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "The power grid equipment value chain",
+              "url": "/post/power-grid-equipment-transmission-distribution/#industry-map-power-grid-equipment-2026-0-title",
+              "text": "Sources: [C01] Large Power Transformer Resilience Report to Congress · [C02] DOE and Industry Team Up to Keep the Lights On for America · [R10] Main products · [M09] Response to the IPO application review inquiry for Youbang Radiator (Changshu) Co., Ltd. · [M10] Youbang Radiator (Changshu) Co., Ltd. 2024 Annual Report · [R16] Semiconductors · [R01] Hitachi deepens commitment to U.S. manufacturing with $528 million Mississippi transformer factory · [R03] Earnings Release Q3 FY2026 · [R12] Switchgear Medium voltage explained · [R04] GE Vernova reports second quarter 2026 financial results and raises 2026 financial guidance · [R11] NR Electric company products and solutions · [R13] Installation Capabilities and Submarine Solutions · [R07] Grid infrastructure investments drive increase in utility spending over last two decades · [R08] Trend toward electric utility rate increases in regulated markets continues in 2024 · [H03] Former Associations UCPTE and UCTE · [H06] Electric Power System Reform Plan State Council Document No 5 of 2002 . Reviewed 2026-10-08.",
+              "notes": [
+                "The industry branches into upstream materials and components, midstream equipment and systems, and downstream operators, delivery partners and connected projects. Each segment has company or product examples; lines classify roles and do not prove contracts.",
+                "DEX editorial classification based on the reviewed report. Industry → upstream, midstream and downstream → segments → company or product examples. Category links, not verified contracts. Company examples are illustrative; a company can have different roles at multiple stages."
+              ]
+            },
+            {
+              "section": "[R03] Earnings Release Q3 FY2026",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-R03",
+              "text": "Read the original source",
+              "notes": [
+                "Publisher and material type: Siemens Energy; First-party financial results.",
+                "Publication: 2026-08-05. Event: Quarter ended 2026-06-30. Statistical period: Q3 FY2026 and Q3 FY2025; April to June. Read: 8 October 2026.",
+                "Scope and location: Grid Technologies reporting segment; EUR millions; worldwide company operations. Locator: Printed page 3 Grid Technologies; segment overview page VII; PDF zero-indexed pages 2 and 12.",
+                "Supports: GT orders EUR 5367 m, revenue EUR 3624 m, profit before special items EUR 722 m, margin 19.9%, backlog approximately EUR 51 bn; comparable order growth 27.6% and revenue growth 28.6%; book-to-bill 1.48.",
+                "Limits: Segment metrics are not global equipment market totals. Siemens margin definition excludes certain items and cannot be ranked directly against GE segment EBITDA. Backlog is not earned revenue or capacity already delivered."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7f768f27c9e8",
+          "url": "https://www.se.com/ww/en/knowledge-center/switchgear/",
+          "title": "[R12] Switchgear Medium voltage explained",
+          "kind": "link",
+          "format": "Web",
+          "host": "se.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "The power grid equipment value chain",
+              "url": "/post/power-grid-equipment-transmission-distribution/#industry-map-power-grid-equipment-2026-0-title",
+              "text": "Sources: [C01] Large Power Transformer Resilience Report to Congress · [C02] DOE and Industry Team Up to Keep the Lights On for America · [R10] Main products · [M09] Response to the IPO application review inquiry for Youbang Radiator (Changshu) Co., Ltd. · [M10] Youbang Radiator (Changshu) Co., Ltd. 2024 Annual Report · [R16] Semiconductors · [R01] Hitachi deepens commitment to U.S. manufacturing with $528 million Mississippi transformer factory · [R03] Earnings Release Q3 FY2026 · [R12] Switchgear Medium voltage explained · [R04] GE Vernova reports second quarter 2026 financial results and raises 2026 financial guidance · [R11] NR Electric company products and solutions · [R13] Installation Capabilities and Submarine Solutions · [R07] Grid infrastructure investments drive increase in utility spending over last two decades · [R08] Trend toward electric utility rate increases in regulated markets continues in 2024 · [H03] Former Associations UCPTE and UCTE · [H06] Electric Power System Reform Plan State Council Document No 5 of 2002 . Reviewed 2026-10-08.",
+              "notes": [
+                "The industry branches into upstream materials and components, midstream equipment and systems, and downstream operators, delivery partners and connected projects. Each segment has company or product examples; lines classify roles and do not prove contracts.",
+                "DEX editorial classification based on the reviewed report. Industry → upstream, midstream and downstream → segments → company or product examples. Category links, not verified contracts. Company examples are illustrative; a company can have different roles at multiple stages."
+              ]
+            },
+            {
+              "section": "[R12] Switchgear Medium voltage explained",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-R12",
+              "text": "Read the original source",
+              "notes": [
+                "Publisher and material type: Schneider Electric; First-party technical and product documentation.",
+                "Publication: Undated live product explanation. Event: Product roles observed 2026-10-08. Statistical period: Documentation as read. Read: 8 October 2026.",
+                "Scope and location: Medium voltage switching, measurement and protection; voltage definitions vary by region. Locator: Protection, Control, Circuit breaker, Protective relay, Instrument transformers, AirSeT sections.",
+                "Supports: Relays detect faults and command breakers; switchgear routes, isolates and controls circuits; Schneider supplies SF6-free medium voltage products.",
+                "Limits: Vendor explanations do not establish legal applicability, quantified market share or universal voltage-class boundaries. Regulation is separately sourced from the original law."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d692cd832084",
+          "url": "https://www.sec.gov/Archives/edgar/data/1996810/000199681026000147/gevpressrelease2q26.htm",
+          "title": "[R04] GE Vernova reports second quarter 2026 financial results and raises 2026 financial guidance",
+          "kind": "link",
+          "format": "Web",
+          "host": "sec.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "The power grid equipment value chain",
+              "url": "/post/power-grid-equipment-transmission-distribution/#industry-map-power-grid-equipment-2026-0-title",
+              "text": "Sources: [C01] Large Power Transformer Resilience Report to Congress · [C02] DOE and Industry Team Up to Keep the Lights On for America · [R10] Main products · [M09] Response to the IPO application review inquiry for Youbang Radiator (Changshu) Co., Ltd. · [M10] Youbang Radiator (Changshu) Co., Ltd. 2024 Annual Report · [R16] Semiconductors · [R01] Hitachi deepens commitment to U.S. manufacturing with $528 million Mississippi transformer factory · [R03] Earnings Release Q3 FY2026 · [R12] Switchgear Medium voltage explained · [R04] GE Vernova reports second quarter 2026 financial results and raises 2026 financial guidance · [R11] NR Electric company products and solutions · [R13] Installation Capabilities and Submarine Solutions · [R07] Grid infrastructure investments drive increase in utility spending over last two decades · [R08] Trend toward electric utility rate increases in regulated markets continues in 2024 · [H03] Former Associations UCPTE and UCTE · [H06] Electric Power System Reform Plan State Council Document No 5 of 2002 . Reviewed 2026-10-08.",
+              "notes": [
+                "The industry branches into upstream materials and components, midstream equipment and systems, and downstream operators, delivery partners and connected projects. Each segment has company or product examples; lines classify roles and do not prove contracts.",
+                "DEX editorial classification based on the reviewed report. Industry → upstream, midstream and downstream → segments → company or product examples. Category links, not verified contracts. Company examples are illustrative; a company can have different roles at multiple stages."
+              ]
+            },
+            {
+              "section": "[R04] GE Vernova reports second quarter 2026 financial results and raises 2026 financial guidance",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-R04",
+              "text": "Read the original source",
+              "notes": [
+                "Publisher and material type: GE Vernova; filed with US Securities and Exchange Commission; First-party SEC-filed financial results.",
+                "Publication: 2026-07-22. Event: Quarter ended 2026-06-30. Statistical period: April to June 2026 and 2025. Read: 8 October 2026.",
+                "Scope and location: Electrification reporting segment; USD millions; worldwide company operations. Locator: Electrification table and Second Quarter 2026 Performance; release printed page 4.",
+                "Supports: Orders USD 6347 m, revenue USD 3637 m, segment EBITDA USD 671 m and margin 18.4%; reported revenue growth 68%, organic 29%; Prolec GE included in reported results; reported order growth 93%, organic 66%. The release also identifies AC substation and HVDC solutions.",
+                "Limits: The segment includes businesses beyond the report's strict equipment boundary. Acquisitions affect growth. Organic measures are non-GAAP. This release is not market-share evidence."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "416d52701da2",
+          "url": "https://www.nrec.com/en/",
+          "title": "[R11] NR Electric company products and solutions",
+          "kind": "link",
+          "format": "Web",
+          "host": "nrec.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "The power grid equipment value chain",
+              "url": "/post/power-grid-equipment-transmission-distribution/#industry-map-power-grid-equipment-2026-0-title",
+              "text": "Sources: [C01] Large Power Transformer Resilience Report to Congress · [C02] DOE and Industry Team Up to Keep the Lights On for America · [R10] Main products · [M09] Response to the IPO application review inquiry for Youbang Radiator (Changshu) Co., Ltd. · [M10] Youbang Radiator (Changshu) Co., Ltd. 2024 Annual Report · [R16] Semiconductors · [R01] Hitachi deepens commitment to U.S. manufacturing with $528 million Mississippi transformer factory · [R03] Earnings Release Q3 FY2026 · [R12] Switchgear Medium voltage explained · [R04] GE Vernova reports second quarter 2026 financial results and raises 2026 financial guidance · [R11] NR Electric company products and solutions · [R13] Installation Capabilities and Submarine Solutions · [R07] Grid infrastructure investments drive increase in utility spending over last two decades · [R08] Trend toward electric utility rate increases in regulated markets continues in 2024 · [H03] Former Associations UCPTE and UCTE · [H06] Electric Power System Reform Plan State Council Document No 5 of 2002 . Reviewed 2026-10-08.",
+              "notes": [
+                "The industry branches into upstream materials and components, midstream equipment and systems, and downstream operators, delivery partners and connected projects. Each segment has company or product examples; lines classify roles and do not prove contracts.",
+                "DEX editorial classification based on the reviewed report. Industry → upstream, midstream and downstream → segments → company or product examples. Category links, not verified contracts. Company examples are illustrative; a company can have different roles at multiple stages."
+              ]
+            },
+            {
+              "section": "[R11] NR Electric company products and solutions",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-R11",
+              "text": "Read the original source",
+              "notes": [
+                "Publisher and material type: NR Electric Co. Ltd; First-party product documentation.",
+                "Publication: Undated live catalog. Event: Product roles observed 2026-10-08. Statistical period: Catalog as read. Read: 8 October 2026.",
+                "Scope and location: NR Electric legal supplier identity; not interchangeable with NARI Technology listed-company identity. Locator: Protection Automation and Control, HVDC and FACTS, Reliable EPC Contractor, Maintenance Services.",
+                "Supports: Protection/automation/control, LCC and VSC HVDC valves/control, FACTS, system studies, EPC and maintenance roles.",
+                "Limits: Does not substantiate market shares, customer contracts or the financial results of another NARI legal entity. Marketing performance assertions are not used as measured results."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "84842a6da4e2",
+          "url": "https://www.prysmian.com/en/markets/generation-transmission-and-distribution/installation-capabilities-and-submarine-solutions",
+          "title": "[R13] Installation Capabilities and Submarine Solutions",
+          "kind": "link",
+          "format": "Web",
+          "host": "prysmian.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "The power grid equipment value chain",
+              "url": "/post/power-grid-equipment-transmission-distribution/#industry-map-power-grid-equipment-2026-0-title",
+              "text": "Sources: [C01] Large Power Transformer Resilience Report to Congress · [C02] DOE and Industry Team Up to Keep the Lights On for America · [R10] Main products · [M09] Response to the IPO application review inquiry for Youbang Radiator (Changshu) Co., Ltd. · [M10] Youbang Radiator (Changshu) Co., Ltd. 2024 Annual Report · [R16] Semiconductors · [R01] Hitachi deepens commitment to U.S. manufacturing with $528 million Mississippi transformer factory · [R03] Earnings Release Q3 FY2026 · [R12] Switchgear Medium voltage explained · [R04] GE Vernova reports second quarter 2026 financial results and raises 2026 financial guidance · [R11] NR Electric company products and solutions · [R13] Installation Capabilities and Submarine Solutions · [R07] Grid infrastructure investments drive increase in utility spending over last two decades · [R08] Trend toward electric utility rate increases in regulated markets continues in 2024 · [H03] Former Associations UCPTE and UCTE · [H06] Electric Power System Reform Plan State Council Document No 5 of 2002 . Reviewed 2026-10-08.",
+              "notes": [
+                "The industry branches into upstream materials and components, midstream equipment and systems, and downstream operators, delivery partners and connected projects. Each segment has company or product examples; lines classify roles and do not prove contracts.",
+                "DEX editorial classification based on the reviewed report. Industry → upstream, midstream and downstream → segments → company or product examples. Category links, not verified contracts. Company examples are illustrative; a company can have different roles at multiple stages."
+              ]
+            },
+            {
+              "section": "[R13] Installation Capabilities and Submarine Solutions",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-R13",
+              "text": "Read the original source",
+              "notes": [
+                "Publisher and material type: Prysmian; First-party capability documentation.",
+                "Publication: Undated live capability overview. Event: Product and service roles observed 2026-10-08. Statistical period: Catalog as read. Read: 8 October 2026.",
+                "Scope and location: Submarine power cables and installation for interconnectors and offshore wind. Locator: Installation Capabilities and Monitoring and Maintenance.",
+                "Supports: Supplier describes cable installation, monitoring and maintenance capabilities in submarine power links.",
+                "Limits: Capability does not prove any specific award or measured share. Telecom submarine cables are a different market and excluded from the power-cable examples."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a9c04765093d",
+          "url": "https://www.eia.gov/todayinenergy/detail.php?id=63724",
+          "title": "[R07] Grid infrastructure investments drive increase in utility spending over last two decades",
+          "kind": "link",
+          "format": "Web",
+          "host": "eia.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "The power grid equipment value chain",
+              "url": "/post/power-grid-equipment-transmission-distribution/#industry-map-power-grid-equipment-2026-0-title",
+              "text": "Sources: [C01] Large Power Transformer Resilience Report to Congress · [C02] DOE and Industry Team Up to Keep the Lights On for America · [R10] Main products · [M09] Response to the IPO application review inquiry for Youbang Radiator (Changshu) Co., Ltd. · [M10] Youbang Radiator (Changshu) Co., Ltd. 2024 Annual Report · [R16] Semiconductors · [R01] Hitachi deepens commitment to U.S. manufacturing with $528 million Mississippi transformer factory · [R03] Earnings Release Q3 FY2026 · [R12] Switchgear Medium voltage explained · [R04] GE Vernova reports second quarter 2026 financial results and raises 2026 financial guidance · [R11] NR Electric company products and solutions · [R13] Installation Capabilities and Submarine Solutions · [R07] Grid infrastructure investments drive increase in utility spending over last two decades · [R08] Trend toward electric utility rate increases in regulated markets continues in 2024 · [H03] Former Associations UCPTE and UCTE · [H06] Electric Power System Reform Plan State Council Document No 5 of 2002 . Reviewed 2026-10-08.",
+              "notes": [
+                "The industry branches into upstream materials and components, midstream equipment and systems, and downstream operators, delivery partners and connected projects. Each segment has company or product examples; lines classify roles and do not prove contracts.",
+                "DEX editorial classification based on the reviewed report. Industry → upstream, midstream and downstream → segments → company or product examples. Category links, not verified contracts. Company examples are illustrative; a company can have different roles at multiple stages."
+              ]
+            },
+            {
+              "section": "[R07] Grid infrastructure investments drive increase in utility spending over last two decades",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-R07",
+              "text": "Read the original source",
+              "notes": [
+                "Publisher and material type: US Energy Information Administration; Lori Aniti; Government statistical analysis based on regulatory filings.",
+                "Publication: 2024-11-18. Event: Historical utility expenditure. Statistical period: 2003 to 2023; most recent observation 2023. Read: 8 October 2026.",
+                "Scope and location: Major US utilities' FERC financial reports, accessed by Ventyx Velocity Suite; real 2023 USD. Locator: Transmission and Distribution sections.",
+                "Supports: 2023 distribution capital investment USD 50.9 bn, up USD 6.5 bn from 2022. Transmission capital investment increased USD 2.7 bn or 11%. Transmission spending USD 27.7 bn is a spending metric, not silently converted into capex.",
+                "Limits: The sample is major reporting utilities, not all US buyers. Historical 2023 figures do not purport to be 2026 market size. Regulatory investment combines equipment, installation and related infrastructure."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2e1dbd5ec740",
+          "url": "https://www.eia.gov/todayinenergy/detail.php?id=63024",
+          "title": "[R08] Trend toward electric utility rate increases in regulated markets continues in 2024",
+          "kind": "link",
+          "format": "Web",
+          "host": "eia.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "The power grid equipment value chain",
+              "url": "/post/power-grid-equipment-transmission-distribution/#industry-map-power-grid-equipment-2026-0-title",
+              "text": "Sources: [C01] Large Power Transformer Resilience Report to Congress · [C02] DOE and Industry Team Up to Keep the Lights On for America · [R10] Main products · [M09] Response to the IPO application review inquiry for Youbang Radiator (Changshu) Co., Ltd. · [M10] Youbang Radiator (Changshu) Co., Ltd. 2024 Annual Report · [R16] Semiconductors · [R01] Hitachi deepens commitment to U.S. manufacturing with $528 million Mississippi transformer factory · [R03] Earnings Release Q3 FY2026 · [R12] Switchgear Medium voltage explained · [R04] GE Vernova reports second quarter 2026 financial results and raises 2026 financial guidance · [R11] NR Electric company products and solutions · [R13] Installation Capabilities and Submarine Solutions · [R07] Grid infrastructure investments drive increase in utility spending over last two decades · [R08] Trend toward electric utility rate increases in regulated markets continues in 2024 · [H03] Former Associations UCPTE and UCTE · [H06] Electric Power System Reform Plan State Council Document No 5 of 2002 . Reviewed 2026-10-08.",
+              "notes": [
+                "The industry branches into upstream materials and components, midstream equipment and systems, and downstream operators, delivery partners and connected projects. Each segment has company or product examples; lines classify roles and do not prove contracts.",
+                "DEX editorial classification based on the reviewed report. Industry → upstream, midstream and downstream → segments → company or product examples. Category links, not verified contracts. Company examples are illustrative; a company can have different roles at multiple stages."
+              ]
+            },
+            {
+              "section": "[R08] Trend toward electric utility rate increases in regulated markets continues in 2024",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-R08",
+              "text": "Read the original source",
+              "notes": [
+                "Publisher and material type: US Energy Information Administration; Lori Aniti; Government explanation with third-party rate-case data.",
+                "Publication: 2024-09-09. Event: Historical regulator decisions and business model. Statistical period: 2023 to 2024; explanatory model observed at access. Read: 8 October 2026.",
+                "Scope and location: US regulated investor-owned utilities; exceptions for nonprofit utilities. Locator: Paragraphs on rate cases, delivery charges, and nonprofit utilities.",
+                "Supports: Delivery charges remain regulated; IOUs seek rate cases when expected allowed costs exceed revenue. Allowed costs and regulator-approved investment returns form the recovery model.",
+                "Limits: The report uses the business-model explanation, not S&P's rate-case totals as primary measured data. Recovery is not automatic approval of every expenditure. State and utility structures differ."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0f545262bd04",
+          "url": "https://www.entsoe.eu/news-events/former-associations/",
+          "title": "[H03] Former Associations UCPTE and UCTE",
+          "kind": "link",
+          "format": "Web",
+          "host": "entsoe.eu",
+          "local": false,
+          "citations": [
+            {
+              "section": "The power grid equipment value chain",
+              "url": "/post/power-grid-equipment-transmission-distribution/#industry-map-power-grid-equipment-2026-0-title",
+              "text": "Sources: [C01] Large Power Transformer Resilience Report to Congress · [C02] DOE and Industry Team Up to Keep the Lights On for America · [R10] Main products · [M09] Response to the IPO application review inquiry for Youbang Radiator (Changshu) Co., Ltd. · [M10] Youbang Radiator (Changshu) Co., Ltd. 2024 Annual Report · [R16] Semiconductors · [R01] Hitachi deepens commitment to U.S. manufacturing with $528 million Mississippi transformer factory · [R03] Earnings Release Q3 FY2026 · [R12] Switchgear Medium voltage explained · [R04] GE Vernova reports second quarter 2026 financial results and raises 2026 financial guidance · [R11] NR Electric company products and solutions · [R13] Installation Capabilities and Submarine Solutions · [R07] Grid infrastructure investments drive increase in utility spending over last two decades · [R08] Trend toward electric utility rate increases in regulated markets continues in 2024 · [H03] Former Associations UCPTE and UCTE · [H06] Electric Power System Reform Plan State Council Document No 5 of 2002 . Reviewed 2026-10-08.",
+              "notes": [
+                "The industry branches into upstream materials and components, midstream equipment and systems, and downstream operators, delivery partners and connected projects. Each segment has company or product examples; lines classify roles and do not prove contracts.",
+                "DEX editorial classification based on the reviewed report. Industry → upstream, midstream and downstream → segments → company or product examples. Category links, not verified contracts. Company examples are illustrative; a company can have different roles at multiple stages."
+              ]
+            },
+            {
+              "section": "[H03] Former Associations UCPTE and UCTE",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-H03",
+              "text": "Read the original source",
+              "notes": [
+                "Title: Former Associations UCPTE and UCTE. Publisher: ENTSO-E. Material: primary institutional historical record.",
+                "Publication is undated; archived milestones: 1951, 1999 and 1 July 2009. Historical period: 1951–2009. Read: 8 October 2026.",
+                "Coverage: Continental European synchronous-grid cooperation. Locator: UCTE section of Former Associations. This is institutional history, without a market-size denominator.",
+                "Supports: Supports UCPTE's coordination from 1951, UCTE's 1999 transition toward transmission-operator cooperation, and transfer of operational functions to ENTSO-E in July 2009.",
+                "Limitations: Continental Europe is one synchronous area; the record does not imply that every European grid is synchronous with it or has one owner. Commercial implications concerning interoperability are the report's interpretation, not measured market data."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "be0bbc641ae3",
+          "url": "https://www.nea.gov.cn/2011-08/17/c_131054253.htm",
+          "title": "[H06] Electric Power System Reform Plan State Council Document No 5 of 2002",
+          "kind": "link",
+          "format": "Web",
+          "host": "nea.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "The power grid equipment value chain",
+              "url": "/post/power-grid-equipment-transmission-distribution/#industry-map-power-grid-equipment-2026-0-title",
+              "text": "Sources: [C01] Large Power Transformer Resilience Report to Congress · [C02] DOE and Industry Team Up to Keep the Lights On for America · [R10] Main products · [M09] Response to the IPO application review inquiry for Youbang Radiator (Changshu) Co., Ltd. · [M10] Youbang Radiator (Changshu) Co., Ltd. 2024 Annual Report · [R16] Semiconductors · [R01] Hitachi deepens commitment to U.S. manufacturing with $528 million Mississippi transformer factory · [R03] Earnings Release Q3 FY2026 · [R12] Switchgear Medium voltage explained · [R04] GE Vernova reports second quarter 2026 financial results and raises 2026 financial guidance · [R11] NR Electric company products and solutions · [R13] Installation Capabilities and Submarine Solutions · [R07] Grid infrastructure investments drive increase in utility spending over last two decades · [R08] Trend toward electric utility rate increases in regulated markets continues in 2024 · [H03] Former Associations UCPTE and UCTE · [H06] Electric Power System Reform Plan State Council Document No 5 of 2002 . Reviewed 2026-10-08.",
+              "notes": [
+                "The industry branches into upstream materials and components, midstream equipment and systems, and downstream operators, delivery partners and connected projects. Each segment has company or product examples; lines classify roles and do not prove contracts.",
+                "DEX editorial classification based on the reviewed report. Industry → upstream, midstream and downstream → segments → company or product examples. Category links, not verified contracts. Company examples are illustrative; a company can have different roles at multiple stages."
+              ]
+            },
+            {
+              "section": "[H06] Electric Power System Reform Plan State Council Document No 5 of 2002",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-H06",
+              "text": "Read the original source",
+              "notes": [
+                "Title (English translation): Electric Power System Reform Plan State Council Document No 5 of 2002. Publisher: State Council of China; archived by National Energy Administration. Material: primary regulatory policy text.",
+                "Policy published on 10 February 2002; NEA archive: 17 August 2011. Event: the 2002 reform plan. Period: 2002. Read: 8 October 2026.",
+                "Coverage: China's electricity-asset restructuring and regulated networks. Locator: sections 6–13 and 21. No equipment-sales unit applies.",
+                "Supports: Supports separation of generation and network assets, establishment of the State Grid and China Southern Power Grid structures, and assigned regional/cross-regional responsibilities.",
+                "Limitations: The document establishes the 2002 policy plan, not the complete present-day organizational structure or every later reform. Institutional implications are interpreted from that plan; no supplier market shares, current contract awards or guaranteed investments follow from it."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d2c89e8e30e2",
+          "url": "/post/power-grid-equipment-transmission-distribution/industry_map.csv",
+          "title": "Data CSV",
+          "kind": "file",
+          "format": "CSV",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Downstream operators and delivery partners",
+              "url": "/post/power-grid-equipment-transmission-distribution/#part-3-section-4",
+              "text": "Full-size PNG · Editable SVG · Data CSV · Figure data and methods",
+              "notes": [
+                "Downstream buyers include network operators, generation developers and large electricity users. The delivery chain adds planning, engineering, installation, testing, commissioning and lifetime maintenance. NR Electric's catalog provides examples of EPC, system studies and maintenance; Prysmian includes installation services. Such services can accompany equipment, but the business role is different from operating the regulated network. [R11] [R13]",
+                "In the United States, EIA explains that regulated investor-owned utilities recover allowed costs and a regulator-approved return through rates. Other structures, including cooperatives and municipal utilities, can differ. Manufacturers instead earn revenue from equipment and service contracts. Our interpretation is that the operator's willingness and ability to invest connects physical demand with supplier orders: an urgent engineering need may still face financing and cost-recovery decisions. [R08]",
+                "Figure 1 Industry map of power grid equipment and delivery roles"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a25394bfda67",
+          "url": "/post/power-grid-equipment-transmission-distribution/industry_map.json",
+          "title": "Figure data and methods",
+          "kind": "file",
+          "format": "JSON",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Downstream operators and delivery partners",
+              "url": "/post/power-grid-equipment-transmission-distribution/#part-3-section-4",
+              "text": "Full-size PNG · Editable SVG · Data CSV · Figure data and methods",
+              "notes": [
+                "Downstream buyers include network operators, generation developers and large electricity users. The delivery chain adds planning, engineering, installation, testing, commissioning and lifetime maintenance. NR Electric's catalog provides examples of EPC, system studies and maintenance; Prysmian includes installation services. Such services can accompany equipment, but the business role is different from operating the regulated network. [R11] [R13]",
+                "In the United States, EIA explains that regulated investor-owned utilities recover allowed costs and a regulator-approved return through rates. Other structures, including cooperatives and municipal utilities, can differ. Manufacturers instead earn revenue from equipment and service contracts. Our interpretation is that the operator's willingness and ability to invest connects physical demand with supplier orders: an urgent engineering need may still face financing and cost-recovery decisions. [R08]",
+                "Figure 1 Industry map of power grid equipment and delivery roles"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0bc6379be900",
+          "url": "/data/charts/china-transformer-panel-radiators-2025.csv",
+          "title": "China transformer panel-radiator sales-volume share — data (CSV)",
+          "kind": "file",
+          "format": "CSV",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "China transformer panel-radiator sales-volume share",
+              "url": "/post/power-grid-equipment-transmission-distribution/#market-share-china-transformer-panel-radiators-2025-1-title",
+              "text": "Download data (CSV)",
+              "notes": [
+                "Panel radiators used on transformers rated 110 kV and above. This is a narrow component market, not all transformers or all grid equipment.",
+                "China domestic market · Estimated market share by sales volume (%)",
+                "The Transformer Branch of the China Electrical Equipment Industry Association surveyed sales volumes of major domestic radiator-producing member firms, then extrapolated nationally. The issuer/sponsor filing reproduces the association estimate; it is primary evidence of the disclosure, not a census of the whole market. Other manufacturers = 100.00 - 14.72 = 85.28; total = 100.00%. Two decimal places as disclosed; no additional precision inferred. Raw survey data, sample coverage, numerical numerator/denominator and extrapolation formula were not disclosed. The physical sales-volume unit was not specified. Financial consolidation entities and elimination of related-party/internal sales were not specified for the share numerator. Other manufacturers is a calculated residual, not separately observed data; no individual competitor share or total market volume was disclosed. Source [M09], printed p58."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5b739ad0e5a2",
+          "url": "/post/power-grid-equipment-transmission-distribution/market_share.csv",
+          "title": "Data CSV",
+          "kind": "file",
+          "format": "CSV",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "A disclosed share in one upstream component market",
+              "url": "/post/power-grid-equipment-transmission-distribution/#part-3-section-8",
+              "text": "Full-size PNG · Editable SVG · Data CSV · Figure data and methods",
+              "notes": [
+                "A reliable share is possible only with a precise market definition. Youbang's BSE inquiry response reproduces an association estimate that its share of China's domestic sales-volume market for panel radiators used on transformers rated 110 kV and above was 14.72% in 2025. The association surveyed major radiator-producing members and extrapolated the domestic market. The underlying physical volume unit, complete sample coverage and group-sales elimination details are not disclosed. [M09]",
+                "Figure 2 keeps that published figure and calculates other manufacturers as 85.28%. The residual includes all suppliers outside the reported issuer category; no competitor share is invented. This is a narrow cooling-component example, not a share of all transformers or grid equipment. It demonstrates the discipline required before comparing a market percentage with a company's financial results.",
+                "Figure 2 China transformer panel-radiator sales-volume share in 2025",
+                "Source [M09] , printed page 58. Association survey extrapolation reproduced in the issuer/sponsor filing; estimate rather than census. Other = 100.00 − 14.72 = 85.28%."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0234c1386c4e",
+          "url": "/post/power-grid-equipment-transmission-distribution/market_share.json",
+          "title": "Figure data and methods",
+          "kind": "file",
+          "format": "JSON",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "A disclosed share in one upstream component market",
+              "url": "/post/power-grid-equipment-transmission-distribution/#part-3-section-8",
+              "text": "Full-size PNG · Editable SVG · Data CSV · Figure data and methods",
+              "notes": [
+                "A reliable share is possible only with a precise market definition. Youbang's BSE inquiry response reproduces an association estimate that its share of China's domestic sales-volume market for panel radiators used on transformers rated 110 kV and above was 14.72% in 2025. The association surveyed major radiator-producing members and extrapolated the domestic market. The underlying physical volume unit, complete sample coverage and group-sales elimination details are not disclosed. [M09]",
+                "Figure 2 keeps that published figure and calculates other manufacturers as 85.28%. The residual includes all suppliers outside the reported issuer category; no competitor share is invented. This is a narrow cooling-component example, not a share of all transformers or grid equipment. It demonstrates the discipline required before comparing a market percentage with a company's financial results.",
+                "Figure 2 China transformer panel-radiator sales-volume share in 2025",
+                "Source [M09] , printed page 58. Association survey extrapolation reproduced in the issuer/sponsor filing; estimate rather than census. Other = 100.00 − 14.72 = 85.28%."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "66d7959fa8e7",
+          "url": "https://www.energy.gov/oe/transformer-resilience-and-advanced-components-trac-program",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "energy.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[R14] Transformer Resilience and Advanced Components TRAC Program",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-R14",
+              "text": "Read the original source",
+              "notes": [
+                "Publisher and material type: US Department of Energy Office of Electricity; Primary government technical program documentation.",
+                "Publication: Undated live program page; cites 2023 appropriations context. Event: Technical overview observed 2026-10-08. Statistical period: Program description as read. Read: 8 October 2026.",
+                "Scope and location: Large transformers, HVDC and advanced grid components. Locator: Advanced Transformers and High Voltage Direct Current sections.",
+                "Supports: Large power transformers are often custom-made, expensive and not readily interchangeable. DOE supports HVDC converter cost reduction and advanced transformers.",
+                "Limits: Legacy typical lead-time description is not a 2026 market-wide measured lead time. Technical R&D objectives are not commercially delivered results."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "46800c6c965f",
+          "url": "https://ethw.org/Milestones:Alternating_Current_Electrification,_1886",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "ethw.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H01] Milestones Alternating Current Electrification 1886",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-H01",
+              "text": "Read the original source",
+              "notes": [
+                "Title: Milestones Alternating Current Electrification 1886. Publisher: IEEE History Center / ETHW. Material: institutional historical record.",
+                "Publication is undated; the plaque was dedicated on 2 October 2004. Event: 20 March 1886. Historical period: 1886. Read: 8 October 2026.",
+                "Coverage: Great Barrington, Massachusetts, U.S.; transformer-based AC distribution. Locator: milestone citation and historical explanation. No market-size unit applies.",
+                "Supports: Supports Stanley's public demonstration of practical AC illumination using transformers to change distribution voltage. This identifies a system milestone and the voltage-conversion architecture.",
+                "Limitations: This is a retrospective institutional history, not a contemporaneous journal. IEEE's practical-system definition does not establish a universal first for AC, transformers or electricity. The report avoids that broader inference."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a346552863c8",
+          "url": "https://ethw.org/Milestones:Long_Distance_Electric_Power_Transmission_Using_Three-Phase_Alternating_Current,_1891",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "ethw.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H02] Milestones Long Distance Electric Power Transmission Using Three Phase Alternating Current 1891",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-H02",
+              "text": "Read the original source",
+              "notes": [
+                "Title: Milestones Long Distance Electric Power Transmission Using Three Phase Alternating Current 1891. Publisher: IEEE History Center / ETHW. Material: institutional historical record.",
+                "Publication is undated; dedication: 9 June 2025. Event and historical period: 1891. Read: 8 October 2026.",
+                "Coverage: Lauffen–Frankfurt, Germany; high-voltage three-phase AC demonstration. Locator: milestone citation and justification. Relevant units: kilometres and kilovolts.",
+                "Supports: Supports the 1891 exhibition's approximately 175 km transmission demonstration and its influence on AC adoption. The report uses it to explain interoperable system architecture.",
+                "Limitations: This is an institutional retrospective. Different passages give 24 and 25 August, so the manuscript uses the year only. The scoped demonstration does not prove the first electricity transmission of any type."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3233259f9aea",
+          "url": "https://www.hitachienergy.com/se/sv/news-and-events/customer-stories/the-gotland-hvdc-link",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "hitachienergy.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H04] The Gotland HVDC link",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-H04",
+              "text": "Read the original source",
+              "notes": [
+                "Title: The Gotland HVDC link. Publisher: Hitachi Energy. Material: primary manufacturer historical record.",
+                "Publication is undated; historical events: 1954 and 1970. Period: 1954–1970. Read: 8 October 2026.",
+                "Coverage: Gotland, Sweden; commercial HVDC. Locator: opening historical account. Relevant units: MW and kV.",
+                "Supports: Supports the 1954 Gotland 1 link's 20 MW and 100 kV ratings and the addition of thyristor valves to mercury-arc technology in 1970.",
+                "Limitations: This is the manufacturer's historical account. Its first-commercial-HVDC description has a defined commercial-system scope; it does not establish the origin of every DC transmission concept. Later system upgrades are not substituted for the original link's ratings."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6d6d92fcf851",
+          "url": "https://www.hitachienergy.com/us/en/news-and-events/customer-stories/hallsjon-the-first-hvdc-light-transmission",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "hitachienergy.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H05] Hällsjön The First HVDC Light Transmission",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-H05",
+              "text": "Read the original source",
+              "notes": [
+                "Title: Hällsjön The First HVDC Light Transmission. Publisher: Hitachi Energy. Material: primary manufacturer historical record.",
+                "Publication is undated; trial operation began in March 1997. Historical period: 1997. Read: 8 October 2026.",
+                "Coverage: Hällsjön–Grängesberg, Sweden; voltage-source converter test link. Locator: historical account and main-data table. Units: MW and kV.",
+                "Supports: Supports the 3 MW, ±10 kV HVDC Light trial and the described voltage/reactive-power control and weak-network connection capability of voltage-source converters.",
+                "Limitations: The source describes a branded test-transmission milestone, not the invention of every VSC concept in 1997. The report's interpretation of greater value in network control is not an independently measured revenue effect or market share."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "24b893af74c3",
+          "url": "https://www.nea.gov.cn/2011-12/19/c_131314789.htm",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "nea.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H07] Ultra High Voltage Establishes Chinese Leadership and Expands China's Electricity Highway",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-H07",
+              "text": "Read the original source",
+              "notes": [
+                "Title (English translation): Ultra High Voltage Establishes Chinese Leadership and Expands China's Electricity Highway. Publisher: People's Daily reporter Bao Dan; reprinted by National Energy Administration. Material: officially reprinted secondary reporting.",
+                "Published on 19 December 2011. Events: initial operation in January 2009 and extension in December 2011. Period: 2009–2011. Read: 8 October 2026.",
+                "Coverage: China's Jindongnan–Nanyang–Jingmen AC pilot. Locator: commissioning and equipment passages. Relevant unit: 1,000 kV.",
+                "Supports: Supports the 2009 commissioning year, subsequent 2011 extension, and development of transformer, switchgear and insulation capability; a participant's insulator record provides cross-checking.",
+                "Limitations: This is People's Daily reporting hosted by NEA, so government republication does not turn it into primary evidence. The manuscript avoids an exact commissioning day, blanket world-first wording and claims that every component was domestically sourced."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ba28aee24915",
+          "url": "https://new.abb.com/news/detail/12798/abb-commissions-worlds-longest-and-most-powerful-transmission-link",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "new.abb.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H08] ABB Commissions the World's Longest and Most Powerful Transmission Link",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-H08",
+              "text": "Read the original source",
+              "notes": [
+                "Title: ABB Commissions the World's Longest and Most Powerful Transmission Link. Publisher: ABB. Material: primary company commissioning disclosure.",
+                "Published on 19 July 2010; commercial commissioning announced in July 2010. Period: 2010. Read: 8 October 2026.",
+                "Coverage: Xiangjiaba–Shanghai UHVDC, China. Locator: release paragraphs 1–7. Units: kV and MW.",
+                "Supports: ABB's contemporary disclosure supports commissioning of the ±800 kV link, its stated 7,200 MW rating, and ABB's disclosed delivery of converter transformers and other equipment.",
+                "Limitations: This is a participant's disclosure, not an independent comparison of every transmission project. Current heritage pages use different rounded ratings; the report retains this source's definition or omits capacity. Neither a global supplier share nor universal UHVDC cost advantage is inferred."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f0d534140fa4",
+          "url": "https://www.hitachienergy.com/jp/ja/news-and-events/customer-stories/changji-guquan-uhvdc-link",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "hitachienergy.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H09] Changji Guquan UHVDC Link",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-H09",
+              "text": "Read the original source",
+              "notes": [
+                "Title: Changji Guquan UHVDC Link. Publisher: Hitachi Energy. Material: primary manufacturer project record.",
+                "Publication is undated; commissioning year and historical period: 2019. Read: 8 October 2026.",
+                "Coverage: Changji–Guquan UHVDC, China. Locator: project description and main-data table. Units: kV and MW.",
+                "Supports: Supports 2019 commissioning, a ±1,100 kV DC rating, 12,000 MW capacity, and the manufacturer's converter-valve and converter-transformer contribution.",
+                "Limitations: The Hitachi page gives approximately 3,000 km, while NR Electric gives 3,400 km. Route definitions were not reconciled, so the manuscript omits length and the precise daily date. It does not infer a market share or guarantee that higher voltage is economically preferable in every application."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "800da50e81ee",
+          "url": "https://energy.gov/media/323194",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "energy.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H10] Distribution System Evolution",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-H10",
+              "text": "Read the original source",
+              "notes": [
+                "Title: Distribution System Evolution. Publisher: Paul De Martini; Lisa Schwartz; DOE-sponsored. Material: primary technical framework.",
+                "Published in April 2024; no single event date. Period: the April 2024 conceptual framework. Read: 8 October 2026.",
+                "Coverage: U.S. distribution grids, DER and electrification. Locator: printed pages 3–6, PDF pages 4–7. No market-size unit is used.",
+                "Supports: Supports digital modernization, operational use of distributed resources and coordinated optimization as stages of distribution-system development, with uneven adoption between areas.",
+                "Limitations: This is a DOE-sponsored authors' technical framework, not a mandatory government rule or universal timetable. Illustrative DER percentages are not universal engineering limits and are not used in the report. Commercial implications are analysis rather than quantified forecasts."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2e4376bef2db",
+          "url": "https://www.nea.gov.cn/20251231/1be7eddc38c74ec09f528c126c9bdb1c/c.html",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "nea.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H11] Guiding Opinions on Promoting High Quality Development of Power Grids Document No 1710 of 2025",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-H11",
+              "text": "Read the original source",
+              "notes": [
+                "Title (English translation): Guiding Opinions on Promoting High Quality Development of Power Grids Document No 1710 of 2025. Publisher: National Development and Reform Commission; National Energy Administration. Material: primary policy text.",
+                "NEA publication: 31 December 2025; signed: 26 December 2025. Policy periods: 2030 and 2035. Read: 8 October 2026.",
+                "Coverage: China; main grids, distribution and smart microgrids. Locator: sections 3–7 and 9–17. The report uses qualitative policy requirements, not target-capacity units.",
+                "Supports: Supports coordinated multilevel development, active bidirectional distribution, engineering verification of grid-forming technology and safety governance.",
+                "Limitations: Future targets are aspirations, not measured 2026 installations. The record does not establish that policy tasks have been completed or guarantee equipment orders. The relationship between digital controls and usable network capacity is the report's interpretation of the policy direction."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6429a0e76bd6",
+          "url": "https://www.sediver.com/case_studies/1000-kv-jindongnan-jinmen-china/",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "sediver.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H12] 2008 1000 kV Jindongnan Nanyang Jingmen China",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-H12",
+              "text": "Read the original source",
+              "notes": [
+                "Title: 2008 1000 kV Jindongnan Nanyang Jingmen China. Publisher: Sediver. Material: primary participant project record.",
+                "Publication is undated; supplier selected in 2008; operation followed in 2009. Period: 2008 onwards. Read: 8 October 2026.",
+                "Coverage: insulators for the Jindongnan–Nanyang–Jingmen AC pilot, China. Locator: What we delivered. Units: kV, kN and insulator count.",
+                "Supports: Sediver records developing 550 kN insulators and selection in 2008 to deliver more than 20,000 units for the 1,000 kV demonstration.",
+                "Limitations: This is a participant's product case. The 2008 heading concerns supplier selection, not commissioning. It provides neither an industry share nor proof of complete equipment localization; marketing claims about superiority are not treated as independent performance evidence."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1a73e680f892",
+          "url": "https://www.iea.org/reports/electricity-2026/grids",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "iea.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[R02] Grids in Electricity 2026",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-R02",
+              "text": "Read the original source",
+              "notes": [
+                "Publisher and material type: International Energy Agency; Primary international agency analysis and estimates.",
+                "Publication: 2026 report; exact publication day not displayed on the chapter read. Event: Not a single event. Statistical period: Current investment baseline in the 2026 report and modeled requirement through 2030. Read: 8 October 2026.",
+                "Scope and location: Worldwide electricity grids; annual investment USD; not equipment sales. Locator: Grid technologies and regulatory reforms unlock grid capacity; notes under hosting capacity estimates.",
+                "Supports: Annual grid investment baseline USD 400 bn; approximately 50% increase needed by 2030. Grid-enhancing capacity estimates overlap and are not additive.",
+                "Limits: An investment requirement is not contracted demand, equipment revenue or a guaranteed forecast. The chapter does not establish total vendor shares. Baseline is preserved as the report's current baseline rather than assigned an unsupported calendar year."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d0703d268566",
+          "url": "https://www.nea.gov.cn/20260129/6874f211acd0417eab7ac10c3061a7c2/c.html",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "nea.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[R05] NEA releases China nationwide electricity statistics for 2025",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-R05",
+              "text": "Read the original source",
+              "notes": [
+                "Publisher and material type: National Energy Administration of China; Primary government statistics.",
+                "Publication: 2026-01-29; text says release occurred Jan 28. Event: Year-end 2025. Statistical period: 2025 installed generating capacity. Read: 8 October 2026.",
+                "Scope and location: China; source table unit 10000 kW; generation capacity, not T&D equipment sales. Locator: Article and attached nationwide electricity statistics table, actually opened locally as nea_statistics_2025.png.",
+                "Supports: Text rounds solar to 1200 GW and wind to 640 GW, up 35.4% and 22.9%. Table gives solar 120173 units of 10000 kW and wind 64001. Full generation 389134 in source units.",
+                "Limits: Generation nameplate capacity does not measure generated energy, firm capacity, needed grid capex or equipment vendor shares. No grid investment figure appears in the viewed 2025 table."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "51090b71110c",
+          "url": "https://www.nea.gov.cn/20260717/6ba0fac6398740758e0f0de19ef8d27e/c.html",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "nea.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[R15] Reported forecast of more than CNY 5 trillion in grid investment for the 15 th Five-Year Plan",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-R15",
+              "text": "Read the original source",
+              "notes": [
+                "Publisher and material type: First Financial, republished by China's National Energy Administration; Secondary reporting hosted by a government agency, not converted into primary statistics.",
+                "Publication: 2026-07-17 republication; CEC report launch 2026-07-14. Event: CEC annual report launch 2026-07-14. Statistical period: Forecast for 2026 to 2030. Read: 8 October 2026.",
+                "Scope and location: China nationwide grid fixed-asset investment forecast; CNY. Locator: Paragraph reporting CEC planning department director's explanation of 15 th Five-Year Plan.",
+                "Supports: Report attributes a forecast of more than CNY 5 tn grid fixed-asset investment in 2026-2030 to CEC's report presentation.",
+                "Limits: The complete original CEC report was not read, so the forecast is explicitly attributed to accessible reporting. It is not approved expenditure, realized capex or equipment sales. No unsupported historical growth comparison is reproduced."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3709aaaa4287",
+          "url": "https://energy.ec.europa.eu/topics/infrastructure/european-grids_en",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "energy.ec.europa.eu",
+          "local": false,
+          "citations": [
+            {
+              "section": "[R06] European grids",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-R06",
+              "text": "Read the original source",
+              "notes": [
+                "Publisher and material type: European Commission Directorate General for Energy; Primary government policy overview.",
+                "Publication: Undated live overview; underlying grid action plan 2023-11-28; package 2025-12-10. Event: Policy milestones 2023 to 2026 described on the page. Statistical period: Investment requirement this decade through 2030. Read: 8 October 2026.",
+                "Scope and location: European Union electricity networks; EUR; cumulative decade estimate. Locator: EU Action Plan for Grids and European Grids Package sections.",
+                "Supports: EUR 584 bn electricity grid investment need this decade; 40% of distribution grids over 40 years old. December 2025 package described as proposals to revise TEN-E and accelerate permitting.",
+                "Limits: EUR 584 bn is not annual spending, signed equipment orders or corporate revenue. An undated overview cannot independently certify legislative passage by cutoff; proposals are described as proposals only. Europe-wide conclusions distinguish EU from UK."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d88c976da577",
+          "url": "https://www.hitachi.com/New/cnews/month/2025/10/251030a/Leading_in_the_Electricity_Era_Our_Strategic_Outlook_en.pdf",
+          "title": "Read the original source",
+          "kind": "file",
+          "format": "PDF",
+          "host": "hitachi.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M08] Leading in the Electricity Era: Our Strategic Outlook",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-M08",
+              "text": "Read the original source",
+              "notes": [
+                "Hitachi Energy strategy presentation by Andreas Schierenbeck, published and presented 30 October 2025; read 8 October 2026. Locator: printed p 19 (PDF index 18); portfolio on p 5, disputed HVDC figures on p 17.",
+                "Unit: USD billion. Company-defined portfolio market includes transformers, high voltage, grid integration, automation and services. Geographic coverage, precise product inclusion and estimation model are not fully enumerated.",
+                "Estimated sizes were USD 233 bn in 2024 and USD 251 bn in 2025, with forecasts of USD 350 bn in 2030 and USD 450 bn in 2035. Source-rounded CAGRs were approximately 7% for 2024–2030 and 5% for 2030–2035.",
+                "These are internal portfolio assessments, not independently observed total grid-equipment sales. Dividing company revenue by these figures cannot establish share; retain source-rounded growth rates.",
+                "The separate HVDC statement exceeds 50%, while 175/375 GW equals 46.7%; exclude this conflicting share. Original PDF/PNG redistribution rights remain unverified."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e7b534baeb16",
+          "url": "https://investors.nkt.com/files/Main/23044/4312550/nkt-annual-report-2025.pdf",
+          "title": "Read the original source",
+          "kind": "file",
+          "format": "PDF",
+          "host": "investors.nkt.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M04] NKT A/S Annual Report 2025",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-M04",
+              "text": "Read the original source",
+              "notes": [
+                "NKT A/S annual-report disclosure, published 25 February 2026; publication and presentation event coincide. Read 8 October 2026. Statistical period: calendar 2025; outlook: 2024–2030. Locator: printed p 34 (PDF index 33), with p 20 investment context.",
+                "Unit: EUR billion of high-voltage cable project awards in NKT's addressable market, mainly European projects; geography is not a standardized global equipment universe.",
+                "NKT estimated approximately EUR 4 bn awarded in 2025, largely long-distance DC interconnectors and offshore wind, and forecast average annual awards above EUR 10 bn during 2024–2030.",
+                "These are company estimates. Contract timing makes awards uneven; the 2024-to-2025 change does not measure equivalent consumption, revenue, installed capacity or physical demand. Do not calculate a precise decline from rounded ≈4 and >17.",
+                "From January 2026, onshore AC moved to Grid Solutions, limiting direct comparisons with the new Transmission market definition."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d275a5f6945a",
+          "url": "https://investors.nkt.com/files/Financial_reports/2026/nkt-h1-2026--webcast.pdf",
+          "title": "Read the original source",
+          "kind": "file",
+          "format": "PDF",
+          "host": "investors.nkt.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M05] NKT H1 2026 — Webcast Presentation",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-M05",
+              "text": "Read the original source",
+              "notes": [
+                "NKT A/S webcast presentation, published and presented 13 August 2026; read 8 October 2026. Locator: slide 8 (PDF index 7), with offerings on slide 7 and Grid Solutions on slide 9.",
+                "Scope: NKT-addressable high-voltage onshore/offshore turnkey transmission cable systems. Unit: EUR billion of awards and backlog. Periods: H1 2026 awards, 30 June 2026 backlog and 2024–2030 outlook.",
+                "NKT estimated approximately EUR 10 bn of H1 awards, mainly DC, and reported EUR 13.0 bn Transmission backlog. It retained a market forecast averaging above EUR 10 bn annually during 2024–2030; over 95% of backlog involved European transmission operators.",
+                "The market estimate is company-defined; no updated supplier-share percentage was disclosed. Backlog represents future contracted execution, not annual sales or market share.",
+                "The January 2026 transfer of onshore AC to Grid Solutions means this Transmission scope is not automatically comparable with the former High-voltage Solutions market."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c9321f649f48",
+          "url": "https://www.prysmian.com/en/media/press-releases/prysmian-continues-growth-and-margin-expansion-in-q4-25-2025-is-prysmian-s-best-year-yet",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "prysmian.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[R09] Prysmian continues growth and margin expansion in Q4'25",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-R09",
+              "text": "Read the original source",
+              "notes": [
+                "Publisher and material type: Prysmian; First-party company financial results.",
+                "Publication: 2026-02-26. Event: 2025 results approval 2026-02-26. Statistical period: Q4 calendar 2025; backlog at year-end 2025. Read: 8 October 2026.",
+                "Scope and location: Prysmian Transmission and Power Grid segments; EUR; margin at standard metal prices. Locator: Opening highlights and Q4 segment margin paragraphs; supporting results PDF.",
+                "Supports: Transmission backlog EUR 17 bn. Q4 Transmission adjusted EBITDA margin 20.9%; Power Grid 12.1%, temporarily affected by metal premium surge in overhead transmission line business.",
+                "Limits: Supplier adjusted margins at standard metal prices are not general industry profit margins and are not directly comparable with GE or Siemens. Different product mixes and accounting definitions prevent ranking."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "674b7576d0f9",
+          "url": "https://www.energy.gov/oe/supply-chain-and-market-analysis",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "energy.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C03] Supply Chain and Market Analysis",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-C03",
+              "text": "Read the original source",
+              "notes": [
+                "Title: Supply Chain and Market Analysis. Publisher: U.S. Department of Energy Office of Electricity. Material: primary government programme record.",
+                "The updated page is undated and references a 5 March 2026 webinar. Events: 2023 workshop and that webinar. Period: 2023–March 2026. Read: 8 October 2026.",
+                "Coverage: U.S. transformer specification standardization. Locator: Distribution Transformers section. Unit for the disclosed variety figure: configurations.",
+                "Supports: DOE identifies more than 80,000 distribution-transformer varieties and utility-specific specifications as contributors to production time; the working group continued in March 2026.",
+                "Limitations: Varieties describe configurations, not manufacturers or independently audited stock counts. No 2026 average delivery time is reported here for use in the manuscript. Simplifying designs is a programme response, not verified completion of every utility's conversion."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5cf08ac53fb5",
+          "url": "https://emp.lbl.gov/queues",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "emp.lbl.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C04] Queued Up 2026 Edition Characteristics of Power Plants Seeking Transmission Interconnection as of the End of 2025",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-C04",
+              "text": "Read the original source",
+              "notes": [
+                "Title: Queued Up 2026 Edition Characteristics of Power Plants Seeking Transmission Interconnection as of the End of 2025. Publisher: Lawrence Berkeley National Laboratory and GridTracker. Material: primary compiled research dataset and analysis.",
+                "Report published June 2026; data updated May 2026. Observation: end-2025. Statistical period: through 2025. Read: 8 October 2026.",
+                "Coverage: U.S. generation/storage queues, approximately 98% of installed generating capacity. Locator: 2026 highlights. Units: GW and years.",
+                "Supports: Supports 1,312 GW of generation and about 749 GW of storage in active queues, and a median request-to-operation duration exceeding five years for projects built in 2025 where data are available.",
+                "Limitations: Capacity is proposed, may represent alternatives and is not committed equipment demand. The median concerns the completed-2025 cohort with available data, not every pending project. Generation and storage serve different functions; many applications are withdrawn."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8ef63fda084b",
+          "url": "https://www.ferc.gov/news-events/news/fact-sheet-improvements-generator-interconnection-procedures-and-agreements",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "ferc.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C05] Fact Sheet Improvements to Generator Interconnection Procedures and Agreements",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-C05",
+              "text": "Read the original source",
+              "notes": [
+                "Title: Fact Sheet Improvements to Generator Interconnection Procedures and Agreements. Publisher: Federal Energy Regulatory Commission. Material: primary regulator fact sheet.",
+                "Published and reform adopted on 27 July 2023. Period: Order No. 2023 reforms. Read: 8 October 2026.",
+                "Coverage: FERC-jurisdictional U.S. generator interconnection. Locator: cluster studies, deadlines and technological-advancement sections. No market-size unit applies.",
+                "Supports: Supports first-ready cluster studies, deposits/site control, study deadlines, and updated treatment of inverter and storage study assumptions.",
+                "Limitations: This official fact sheet explains the rule rather than reproducing the full legal text. Provider implementation and subsequent clarifications can vary. The manuscript states neither a precise current compliance deadline nor that procedural reform has eliminated physical congestion, built equipment or guaranteed project completion."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "052847c78211",
+          "url": "https://hbj.nea.gov.cn/xxgk/zcfg/202403/t20240317_259075.html",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "hbj.nea.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C06] Guiding Opinions on High Quality Development of Distribution Networks under New Circumstances Document No 187 of 2024",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-C06",
+              "text": "Read the original source",
+              "notes": [
+                "Title (English translation): Guiding Opinions on High Quality Development of Distribution Networks under New Circumstances Document No 187 of 2024. Publisher: National Development and Reform Commission; National Energy Administration. Material: primary policy text.",
+                "Document dated 6 February 2024; NEA regional archive: 17 March 2024. Policy period: through 2030. Read: 8 October 2026.",
+                "Coverage: China; active distribution, DER, storage and charging. Locator: transformation goals, supply bottlenecks and connection provisions. No measured queue unit is supplied.",
+                "Supports: Supports bidirectional networks, source/load/storage coordination, transformer-overload and voltage-violation assessment, and improved connection service.",
+                "Limitations: The document sets policy tasks rather than measured achievements. It provides no comparable national curtailment or queue total used here. Flexible-connection financing and customer-risk implications are the author's analysis, not a quantified national outcome or an automatically approved contract structure."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "76396bb04d56",
+          "url": "https://www.energy.gov/oe/coordinated-interagency-transmission-authorizations-and-permits-program",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "energy.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C07] Coordinated Interagency Transmission Authorizations and Permits Program",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-C07",
+              "text": "Read the original source",
+              "notes": [
+                "Title: Coordinated Interagency Transmission Authorizations and Permits Program. Publisher: U.S. Department of Energy. Material: primary programme explanation.",
+                "Reform announced on 25 April 2024; the programme page is undated. Period: CITAP programme. Read: 8 October 2026.",
+                "Coverage: eligible U.S. federal transmission permitting. Locator: schedule/background and FAQs, including state participation and FERC exclusions. Relevant unit: years.",
+                "Supports: Supports a coordinated two-year federal-review schedule beginning after preapplication, voluntary state-siting participation, and exclusion of certain FERC Section 216(b) permitting projects.",
+                "Limitations: The schedule concerns eligible federal decisions, not all development, construction or compulsory state approval. It is not a guarantee to build a line within two years. Project-specific schedules and coverage need separate verification before using a policy announcement as an order forecast."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a3b1595d9381",
+          "url": "https://www.ferc.gov/explainer-transmission-planning-and-cost-allocation-final-rule",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "ferc.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C08] Explainer on the Transmission Planning and Cost Allocation Final Rule",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-C08",
+              "text": "Read the original source",
+              "notes": [
+                "Title: Explainer on the Transmission Planning and Cost Allocation Final Rule. Publisher: Federal Energy Regulatory Commission. Material: primary regulator explanation.",
+                "The explainer is undated; orders: 13 May 2024, 21 November 2024 and 11 April 2025. Period: Orders 1920/1920-A/1920-B. Read: 8 October 2026.",
+                "Coverage: U.S. regional transmission planning and cost allocation. Locator: introduction and Long-Term Scenarios. Unit: years.",
+                "Supports: Supports regional scenarios covering at least 20 years and stronger state participation in planning and cost allocation.",
+                "Limitations: FERC expressly says the explainer is not the governing legal text. The report does not establish that every compliance filing was approved by the cutoff, exclude subsequent legal changes or treat a planning requirement as an approved purchase order. Financing implications are analytical."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "36c268891d6f",
+          "url": "https://energy.ec.europa.eu/news/eu-guidance-ensuring-electricity-grids-are-fit-future-2025-06-02_en",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "energy.ec.europa.eu",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C09] EU Guidance on Ensuring Electricity Grids Are Fit for the Future",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-C09",
+              "text": "Read the original source",
+              "notes": [
+                "Title: EU Guidance on Ensuring Electricity Grids Are Fit for the Future. Publisher: European Commission Directorate-General for Energy. Material: primary policy guidance announcement.",
+                "Published on 2 June 2025; event: the guidance announcement that day. Period: anticipatory-investment guidance. Read: 8 October 2026.",
+                "Coverage: EU network remuneration and future-utilization risk. Locator: risk allocation, two-step approval and tariff paragraphs. No investment total is used from this source.",
+                "Supports: Supports assigning utilization risk before investment, considering separate design/permitting and construction approvals, and tariff incentives for anticipatory network development.",
+                "Limitations: This is Commission guidance, not a claim of binding new law or completed assets. The source's announced future grid package is not used as evidence of enactment. Consumer-cost and forecasting trade-offs are the report's interpretation, not a quantified forecast."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "9e742e78a901",
+          "url": "https://www.nerc.com/globalassets/programs/rapa/pa/nerc_sor_2025_overview.pdf",
+          "title": "Read the original source",
+          "kind": "file",
+          "format": "PDF",
+          "host": "nerc.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C10] 2025 State of Reliability Overview",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-C10",
+              "text": "Read the original source",
+              "notes": [
+                "Title: 2025 State of Reliability Overview. Publisher: North American Electric Reliability Corporation. Material: primary reliability event assessment.",
+                "Report dated June 2025. Events and performance period: 2024. Read: 8 October 2026.",
+                "Coverage: North American bulk-power-system inverter-based resources. Locator: printed page 16. Relevant unit: MW.",
+                "Supports: Supports four reported 2024 disturbances exceeding 500 MW involving coordinated IBR performance, including cessation of output during faults and sudden resumption.",
+                "Limitations: These are historical reported events, not a general device-failure probability. The report does not show that all inverters or renewable plants are unstable, nor that renewables inherently cause blackouts. The manuscript's purchasing implications concern verification, not a claim that any named supplier caused those events."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7e78eb44974a",
+          "url": "https://www.entsoe.eu/news/2026/03/20/entso-e-publishes-expert-panel-final-report-on-28-april-2025-blackout-in-spain-and-portugal/",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "entsoe.eu",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C11] ENTSO E Publishes Expert Panel Final Report on the 28 April 2025 Blackout in Spain and Portugal",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-C11",
+              "text": "Read the original source",
+              "notes": [
+                "Title: ENTSO E Publishes Expert Panel Final Report on the 28 April 2025 Blackout in Spain and Portugal. Publisher: ENTSO-E. Material: primary expert-panel official conclusions.",
+                "Published on 20 March 2026. Incident: 28 April 2025. Period: final investigation findings issued in March 2026. Read: 8 October 2026.",
+                "Coverage: continental Spain and Portugal; voltage/reactive-power behaviour. Locator: official final-report announcement's main conclusions. No new numerical outage estimate is used.",
+                "Supports: Supports a multiple-factor explanation involving oscillations, voltage/reactive-power gaps, differing regulation practices and generator disconnections, causing voltage increases and cascading disconnections.",
+                "Limitations: The official announcement was actually read; the full PDF could not be fetched. Only announced conclusions are used. The record does not support invented fault timings, exclusive blame, or attributing the blackout solely to renewable generation."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b74c6b06b46c",
+          "url": "https://www.energy.gov/cmei/systems/articles/powering-grid-forming-inverters",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "energy.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C12] Powering On with Grid Forming Inverters",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-C12",
+              "text": "Read the original source",
+              "notes": [
+                "Title: Powering On with Grid Forming Inverters. Publisher: U.S. Department of Energy. Material: primary technical programme explanation.",
+                "Published on 4 January 2021. Event: explanation of the 2020 research roadmap. Period: 2020–2021. Read: 8 October 2026.",
+                "Coverage: grid-forming inverter controls, U.S. technical programme. Locator: grid-following/forming explanation and research tasks. No market-size unit is used.",
+                "Supports: The roadmap describes independent restart capability as a technical response, with further hardware, controls, modelling and standards work identified.",
+                "Limitations: This historical roadmap does not establish universal commercial readiness in 2026, direct replacement economics or a guarantee that a software change fixes every system interaction. The report's engineering implications require application-specific validation and are presented as analysis."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "59aa469c3496",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/573/oj?locale=es",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "eur-lex.europa.eu",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C13] Regulation EU 2024 573 on Fluorinated Greenhouse Gases",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-C13",
+              "text": "Read the original source",
+              "notes": [
+                "Title: Regulation EU 2024 573 on Fluorinated Greenhouse Gases. Publisher: European Parliament and Council; EUR-Lex. Material: primary legal text, official Spanish language version.",
+                "Published 20 February 2024; adopted 7 February 2024. Commissioning restrictions start in 2026/2028/2030/2032; period: Article 13. Read: 8 October 2026.",
+                "Coverage: EU primary/secondary MV and specified HV switchgear. Locator: Article 13(7)–(18). Units: kV, kA and GWP.",
+                "Supports: Supports MV≤24 kV from 2026; >24–52 kV from 2030; HV 52–145 kV/≤50 kA with GWP≥1 from 2028; >145 kV or >50 kA with GWP≥1 from 2032. Tender availability, pre-11-March-2024 orders, incompatible extensions and other derogations require conditions and records.",
+                "Limitations: Official Spanish law was read after English access failed. This is not immediate removal of installed SF6 equipment or an all-SF6 ban. The original text is not an exhaustive later-amendment audit."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "34cd6997b56c",
+          "url": "https://www.cyber.gov.au/publication/principles-of-operational-technology-cyber-security",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "cyber.gov.au",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C14] Principles of Operational Technology Cyber Security",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-C14",
+              "text": "Read the original source",
+              "notes": [
+                "Title: Principles of Operational Technology Cyber Security. Publisher: Australian Signals Directorate ACSC; co-sealed U.S., UK, European and other partner agencies. Material: primary joint security guidance.",
+                "Published on 2 October 2024; event and guidance period: October 2024. Read: 8 October 2026.",
+                "Coverage: critical-infrastructure OT internationally, including U.S. and European partners. Locator: six principles and safety/segregation/supply-chain sections. No attack-count or market-size unit applies.",
+                "Supports: Supports physical and human safety as central to OT decisions, with network separation, secure supply chains and skilled people among the recommended principles.",
+                "Limitations: This is joint operational guidance, not binding law for every jurisdiction. It does not quantify attacks, particular company incidents or grid-market size. The report's procurement and operating-life implications are analytical applications of the guidance."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0ff1eeb0d6ad",
+          "url": "https://www.cyber.gov.au/publication/secure-connectivity-principles-for-operational-technology",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "cyber.gov.au",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C15] Secure Connectivity Principles for Operational Technology",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-C15",
+              "text": "Read the original source",
+              "notes": [
+                "Title: Secure Connectivity Principles for Operational Technology. Publisher: UK National Cyber Security Centre with ASD ACSC, CISA, FBI, BSI, NCSC-NL and other partners. Material: primary joint security guidance.",
+                "Published on 15 January 2026; event and guidance period: January 2026. Read: 8 October 2026.",
+                "Coverage: international critical-infrastructure OT connectivity. Locator: introduction, obsolete products, network separation and monitoring. No grid-attack statistic is supplied.",
+                "Supports: Supports the risks from legacy controls and vendor connectivity, controlled remote access and logging, and segmentation as a temporary mitigation while obsolete assets are replaced.",
+                "Limitations: This is operational guidance rather than grid-specific incident or market data. Replacement schedules remain owner-specific. Segmentation cannot permanently resolve unsupported products, and the report does not claim every old device is compromised or every update can be applied without operating validation."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "556ce33f5a82",
+          "url": "https://www.nea.gov.cn/2024-11/27/c_1310787372.htm",
+          "title": "Read the original source",
+          "kind": "link",
+          "format": "Web",
+          "host": "nea.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C16] Opinions on Strengthening Electricity Safety Governance to Support High Quality Development of New Power Systems through High Standards of Safety",
+              "url": "/post/power-grid-equipment-transmission-distribution/#evidence-title-C16",
+              "text": "Read the original source",
+              "notes": [
+                "Title (English translation): Opinions on Strengthening Electricity Safety Governance to Support High Quality Development of New Power Systems through High Standards of Safety. Publisher: National Energy Administration. Material: primary policy text.",
+                "Published on 27 November 2024; signed on 20 November 2024. Period: the November 2024 policy. Read: 8 October 2026.",
+                "Coverage: China; new-power-system safety, distribution observability and control. Locator: system risk, distribution management and cybersecurity provisions. No measured nationwide performance unit is provided.",
+                "Supports: Supports reasonable grid strength and safety margins, together with observable, measurable, adjustable and controllable distributed resources.",
+                "Limitations: These are policy requirements and objectives, not evidence of successful nationwide implementation. No system-strength score, equipment performance guarantee or measured reduction in blackouts is disclosed for use here. The report's connection between operating responsibility and equipment qualification is an analytical inference."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "payment-infrastructure-visa-mastercard",
       "title": "Retail Payment Infrastructure and Card Networks: Visa and Mastercard",
       "url": "/post/payment-infrastructure-visa-mastercard/",
@@ -11576,9 +12995,9 @@
     }
   ],
   "counts": {
-    "articles": 13,
-    "materials": 487,
-    "files": 94,
-    "hosted_files": 25
+    "articles": 14,
+    "materials": 542,
+    "files": 108,
+    "hosted_files": 31
   }
 }

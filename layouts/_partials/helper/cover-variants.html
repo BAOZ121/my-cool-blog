@@ -10,7 +10,14 @@
     {{- $srcset := slice -}}
     {{- range $widths -}}
       {{- if le . $maximum -}}
+        {{- $width := . -}}
         {{- $variant := $resource.Resize (printf "%dx webp q82" .) -}}
+        {{- /* Keep detailed covers within the site's 160 KB transfer budget. */ -}}
+        {{- range slice 75 68 60 50 40 -}}
+          {{- if gt (len $variant.Content) 160000 -}}
+            {{- $variant = $resource.Resize (printf "%dx webp q%d" $width .) -}}
+          {{- end -}}
+        {{- end -}}
         {{- /* Already-efficient WebP must not grow through a second encode. */ -}}
         {{- if and (eq $resource.MediaType.SubType "webp") (ge (len $variant.Content) (len $resource.Content)) -}}
           {{- if eq . $resource.Width -}}

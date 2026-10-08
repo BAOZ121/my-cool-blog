@@ -11,3 +11,8 @@
 # Retire the directory only; individual industry maps keep their existing URLs.
 /industry-breakdowns /industries/ 301
 /industry-breakdowns/ /industries/ 301
+
+# The reviewed grid-equipment report is now a published article.
+/test/power-grid-equipment-v1 /post/power-grid-equipment-transmission-distribution/ 301
+/test/power-grid-equipment-v1/ /post/power-grid-equipment-transmission-distribution/ 301
+/test/power-grid-equipment-v1/* /post/power-grid-equipment-transmission-distribution/:splat 301
