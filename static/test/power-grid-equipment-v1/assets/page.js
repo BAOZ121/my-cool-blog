@@ -41,11 +41,11 @@
   minus.addEventListener('click', () => { scale = Math.max(.5, scale - .25); resize(); });
   plus.addEventListener('click', () => { scale = Math.min(4, scale + .25); resize(); });
   document.querySelector('#zoom-fit').addEventListener('click', () => resize(true));
-  fullscreen.hidden = !dialog.requestFullscreen;
+  fullscreen.hidden = !document.documentElement.requestFullscreen;
   fullscreen.addEventListener('click', async () => {
     try {
       if (document.fullscreenElement) await document.exitFullscreen();
-      else await dialog.requestFullscreen();
+      else await document.documentElement.requestFullscreen();
       resize(true);
     } catch (_) { fullscreen.textContent = 'Full screen unavailable'; }
   });
