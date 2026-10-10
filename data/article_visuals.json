@@ -2413,6 +2413,183 @@
       ],
       "note": "DEX editorial classification based on the reviewed report. Industry → upstream, midstream and downstream → segments → company or product examples. Category links, not verified contracts. Company examples are illustrative; a company can have different roles at multiple stages.",
       "reviewed": "2026-10-08"
+    },
+    "solid-waste-resource-recovery": {
+      "title": "Global solid waste management and resource recovery value chain",
+      "eyebrow": "INDUSTRY MAP · GLOBAL",
+      "description": "Four-level classification map connecting the industry to upstream, midstream and downstream branches, then activities and representative companies or products.",
+      "root": {
+        "name": "Solid waste management and resource recovery",
+        "children": [
+          {
+            "name": "Upstream",
+            "children": [
+              {
+                "name": "Waste generators and source separation",
+                "children": [
+                  {
+                    "name": "Household and commercial material streams"
+                  },
+                  {
+                    "name": "Industrial and construction residues"
+                  }
+                ]
+              },
+              {
+                "name": "Equipment and project engineering",
+                "children": [
+                  {
+                    "name": "TOMRA sorting and reverse vending"
+                  },
+                  {
+                    "name": "Kanadevia Inova thermal EPC"
+                  }
+                ]
+              },
+              {
+                "name": "Design and financing",
+                "children": [
+                  {
+                    "name": "Producer responsibility schemes"
+                  },
+                  {
+                    "name": "Design for reuse and recycling"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Midstream",
+            "children": [
+              {
+                "name": "Collection and transfer",
+                "children": [
+                  {
+                    "name": "WM and Waste Connections"
+                  }
+                ]
+              },
+              {
+                "name": "Sorting and material processing",
+                "children": [
+                  {
+                    "name": "Republic Polymer Center"
+                  },
+                  {
+                    "name": "Sims metal recycling"
+                  }
+                ]
+              },
+              {
+                "name": "Treatment and final disposal",
+                "children": [
+                  {
+                    "name": "Veolia solid and hazardous waste"
+                  },
+                  {
+                    "name": "SUEZ waste and thermal treatment"
+                  },
+                  {
+                    "name": "Composting and anaerobic digestion"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Downstream",
+            "children": [
+              {
+                "name": "Secondary material products",
+                "children": [
+                  {
+                    "name": "Secondary metals and recycled polymer feedstock"
+                  },
+                  {
+                    "name": "Recovered fibre and compost"
+                  }
+                ]
+              },
+              {
+                "name": "Energy products",
+                "children": [
+                  {
+                    "name": "WM renewable natural gas"
+                  },
+                  {
+                    "name": "Electricity and heat"
+                  }
+                ]
+              },
+              {
+                "name": "Residual destinations",
+                "children": [
+                  {
+                    "name": "Permitted disposal and pollution control"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "C01 · Waste Management Inc",
+          "url": "/post/solid-waste-resource-recovery/#evidence-C01"
+        },
+        {
+          "title": "C02 · Republic Services Inc",
+          "url": "/post/solid-waste-resource-recovery/#evidence-C02"
+        },
+        {
+          "title": "C03 · Waste Connections Inc",
+          "url": "/post/solid-waste-resource-recovery/#evidence-C03"
+        },
+        {
+          "title": "C04 · Veolia Environnement",
+          "url": "/post/solid-waste-resource-recovery/#evidence-C04"
+        },
+        {
+          "title": "C05 · TOMRA Systems ASA",
+          "url": "/post/solid-waste-resource-recovery/#evidence-C05"
+        },
+        {
+          "title": "C06 · Sims Limited",
+          "url": "/post/solid-waste-resource-recovery/#evidence-C06"
+        },
+        {
+          "title": "C07 · SUEZ",
+          "url": "/post/solid-waste-resource-recovery/#evidence-C07"
+        },
+        {
+          "title": "C08 · TOMRA",
+          "url": "/post/solid-waste-resource-recovery/#evidence-C08"
+        },
+        {
+          "title": "C09 · Kanadevia Inova",
+          "url": "/post/solid-waste-resource-recovery/#evidence-C09"
+        },
+        {
+          "title": "H06 · European Parliament and Council of the European Union",
+          "url": "/post/solid-waste-resource-recovery/#evidence-H06"
+        },
+        {
+          "title": "H08 · European Commission, Directorate-General for Environment",
+          "url": "/post/solid-waste-resource-recovery/#evidence-H08"
+        },
+        {
+          "title": "H09 · Organisation for Economic Co-operation and Development (OECD)",
+          "url": "/post/solid-waste-resource-recovery/#evidence-H09"
+        },
+        {
+          "title": "H12 · United Nations Environment Programme; International Solid Waste Association (ISWA)",
+          "url": "/post/solid-waste-resource-recovery/#evidence-H12"
+        }
+      ],
+      "note": "Role classification as of 10 October 2026. Company names are examples; lines do not establish supply contracts. Companies may appear in more than one role.",
+      "reviewed": "2026-10-10"
     }
   },
   "shares": {
@@ -2889,6 +3066,57 @@
       "unit": "%",
       "percentDecimals": 2,
       "reviewed": "2026-10-08"
+    },
+    "global-msw-pathways-2022": {
+      "title": "Global municipal solid waste pathways, 2022",
+      "eyebrow": "TREATMENT PATHWAYS",
+      "scope": "Municipal solid waste only; a physical mass composition, not company revenue shares or the whole solid-waste industry's market share.",
+      "geography": "Worldwide",
+      "metric": "Percent of municipal solid waste generated by mass",
+      "dimension": "Treatment pathway",
+      "period": "2022 modeled baseline",
+      "center_label": "2022\nMSW",
+      "unit": "%",
+      "percentDecimals": 0,
+      "series": [
+        {
+          "name": "Uncollected",
+          "value": 17
+        },
+        {
+          "name": "Recycling",
+          "value": 15
+        },
+        {
+          "name": "Composting & anaerobic digestion",
+          "value": 6
+        },
+        {
+          "name": "Incineration with energy recovery",
+          "value": 20
+        },
+        {
+          "name": "Sanitary landfill",
+          "value": 17
+        },
+        {
+          "name": "Controlled landfill",
+          "value": 12
+        },
+        {
+          "name": "Dumpsite",
+          "value": 13
+        }
+      ],
+      "source": {
+        "publisher": "World Bank",
+        "title": "Cook, Ionkova, Bhada-Tata, Yadav and van Woerden (2026), What a Waste 3.0, World Bank, Figure 2.16, printed page 29, PDF page 65",
+        "published": "March 2026; public by 2026-03-26",
+        "url": "https://documents1.worldbank.org/curated/en/099031926140025768/pdf/P501986-ef2864e0-591b-4258-9e00-75af80be0e56.pdf",
+        "locator": "Figure 2.16 printed p. 29 / PDF p. 65; methodology section 1.2 printed pp. 5–7 / PDF pp. 41–43; incineration definition printed p. 5 / PDF p. 41"
+      },
+      "note": "Shares of global municipal solid waste generated by mass; World Bank's modeled 2022 baseline. National observations are harmonized and weighted by 2022 waste generation. Published integer percentages sum to 100%. This chart is not company market share or a breakdown of all solid-waste streams. Use the seven original published percentages directly. 17+15+6+20+17+12+13=100. No normalization, midpoint substitution, or reverse calculation of absolute tonnes. Adapted from World Bank data under CC BY 3.0 IGO. The views and interpretations in the adaptation are the report authors’ and are not endorsed by the World Bank.",
+      "reviewed": "2026-10-10"
     }
   }
 }
