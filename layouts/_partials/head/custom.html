@@ -4,6 +4,15 @@
 {{ partial "page-transitions/assets.html" . }}
 {{ partial "chapter-rail/assets.html" . }}
 {{ partial "site-navigation/assets.html" . }}
+{{ if .Draft }}
+  <meta name="robots" content="noindex, nofollow">
+{{ end }}
+{{ if .Params.solidwastereview }}
+  {{ $reviewCSS := resources.Get "css/solid-waste-review.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $reviewCSS.RelPermalink }}" integrity="{{ $reviewCSS.Data.Integrity }}" crossorigin="anonymous">
+  {{ $reviewJS := resources.Get "js/solid-waste-review.js" | minify | fingerprint }}
+  <script defer src="{{ $reviewJS.RelPermalink }}" integrity="{{ $reviewJS.Data.Integrity }}" crossorigin="anonymous"></script>
+{{ end }}
 {{ if .Params.biography }}
   {{ $biographyCSS := resources.Get "css/biography.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $biographyCSS.RelPermalink }}" integrity="{{ $biographyCSS.Data.Integrity }}">

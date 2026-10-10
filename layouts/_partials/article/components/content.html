@@ -5,7 +5,7 @@
     {{- with .Params.dataDownload }}
     <a class="research-action" href="{{ . | relURL }}" download>Download data (CSV)</a>
     {{- end }}
-    {{- if .Params.testpage }}
+    {{- if or .Draft .Params.testpage }}
     <a class="research-action" href="#supporting-evidence">Supporting Evidence</a>
     {{- else }}
     <a class="research-action" href="{{ "/evidence-library/" | relURL }}?article={{ path.Base .File.Dir }}">Evidence Library</a>

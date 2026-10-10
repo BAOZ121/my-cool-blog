@@ -1,0 +1,39 @@
+{
+  "version": "cover_v2",
+  "asset_filename": "cover_v2.jpg",
+  "title": "STEINERT UniSort PR",
+  "source_url": "https://commons.wikimedia.org/wiki/File:STEINERT_UniSort_PR.jpg",
+  "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f2/STEINERT_UniSort_PR.jpg",
+  "author": "STEINERT",
+  "photographed_date": "2019-01-29",
+  "uploaded_date": "2019-11-15",
+  "accessed_date": "2026-10-10",
+  "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "width_px": 3008,
+  "height_px": 2008,
+  "mime_type": "image/jpeg",
+  "file_bytes": 7379881,
+  "sha256": "409e3f36734e33e3c6031a14ccb56a82910b03e4c35f74b732c57506143bfb08",
+  "photograph_is_ai_generated": false,
+  "modifications": "None. Downloaded Wikimedia Commons original file without enlargement, retouching, generative processing, or cropping. Responsive layout may crop the displayed viewport using CSS object-fit: cover; the downloadable original is unchanged.",
+  "caption_en": "STEINERT UniSort PR equipment in a post-consumer packaging recycling plant. Photograph dated 29 January 2019; location not identified in the source description.",
+  "alt_en": "Interior of a packaging recycling plant, with conveyors carrying mixed packaging, silver ventilation ducts, yellow sorting equipment and red railings.",
+  "attribution_en": "Photo: STEINERT, ‘STEINERT UniSort PR’ (29 January 2019), via Wikimedia Commons, CC BY 4.0. Original file unchanged; display may be cropped to fit. No endorsement implied.",
+  "evidence_checked": [
+    "Read the Wikimedia Commons file description and licensing section.",
+    "Read the Creative Commons Attribution 4.0 license deed.",
+    "Opened the direct original URL through the web tool.",
+    "Downloaded the original JPEG and visually inspected it.",
+    "Verified decoded pixel dimensions locally; no upscaling performed."
+  ],
+  "web_derivatives": "Hugo creates resized WebP variants for responsive display. The downloadable cover.jpg remains the unchanged 3008 x 2008 original.",
+  "web_asset": {
+    "filename": "cover.webp",
+    "width_px": 1200,
+    "height_px": 801,
+    "bytes": 150986,
+    "sha256": "e068a12197724402853906501ffc42c00943c388e4c55982113b6960ce2d6d60",
+    "changes": "Resized and encoded as WebP by the existing DEX Hugo cover pipeline. No generative processing, retouching or upscaling. The original photograph remains available at the recorded Wikimedia URL."
+  }
+}
