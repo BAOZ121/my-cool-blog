@@ -1,0 +1,37 @@
+/* Reuse DEX's gold light/dark tokens and the community preview's scoped controls. */
+.dex-admin .admin-back{color:var(--df-accent);font-size:1.15rem;letter-spacing:0;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.dex-admin .admin-back:hover{text-decoration:underline}
+.dex-admin .admin-back:focus-visible{outline:2px solid var(--df-accent);outline-offset:4px;border-radius:3px}
+.dex-admin .admin-gate{border:1px solid var(--df-line);border-radius:10px;padding:26px;background:var(--body-background)}
+.dex-admin .admin-gate h2{margin-top:12px}
+.dex-admin .admin-gate p{color:var(--df-muted);max-width:580px}
+.dex-admin .admin-toolbar,.dex-admin .admin-toolbar-actions,.dex-admin .admin-actions,.dex-admin .admin-editor-actions{display:flex;align-items:center;flex-wrap:wrap;gap:9px}
+.dex-admin .admin-toolbar{justify-content:space-between;margin:20px 0}
+.dex-admin .admin-session-pill{color:var(--df-accent);font-size:1.15rem;font-weight:700}
+.dex-admin .admin-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:24px 0 30px}
+.dex-admin .admin-stats>div{border:1px solid var(--df-line);background:var(--body-background);border-radius:8px;padding:18px}
+.dex-admin .admin-stats strong{display:block;color:var(--df-accent);font-size:2.8rem;line-height:1.2}
+.dex-admin .admin-stats span{display:block;font-size:1.1rem;color:var(--df-muted);margin-top:7px}
+.dex-admin .admin-filters{display:grid;grid-template-columns:minmax(0,1fr) minmax(155px,210px);gap:15px;margin-bottom:12px}
+.dex-admin .admin-filters label{margin:0}
+.dex-admin .admin-record{border:1px solid var(--df-line);border-radius:9px;padding:23px;margin-top:17px;background:var(--card-background)}
+.dex-admin .admin-record.is-hidden{border-style:dashed;background:var(--body-background)}
+.dex-admin .admin-record h3{margin:12px 0 9px;overflow-wrap:anywhere}
+.dex-admin .admin-record .admin-body{white-space:pre-wrap;overflow-wrap:anywhere;font-size:1.25rem;margin:10px 0 18px}
+.dex-admin .admin-meta,.dex-admin .admin-flags{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-size:1.05rem;color:var(--df-muted)}
+.dex-admin .admin-flags{margin:12px 0}
+.dex-admin .admin-flag{border:1px solid var(--df-line);border-radius:4px;padding:2px 7px;color:var(--df-accent);font-size:.95rem}
+.dex-admin .admin-actions button,.dex-admin .admin-replies button{font-size:1.1rem;min-height:40px}
+.dex-admin .admin-replies{margin-top:18px;border-top:1px solid var(--df-line);padding-top:14px}
+.dex-admin .admin-replies summary{cursor:pointer;min-height:36px;color:var(--df-accent);font-size:1.15rem}
+.dex-admin .admin-replies summary:focus-visible{outline:2px solid var(--df-accent);outline-offset:3px}
+.dex-admin .admin-replies .reply{padding:16px 0}
+.dex-admin .admin-replies .reply:last-child{padding-bottom:0}
+.dex-admin .admin-replies .reply-body{font-size:1.2rem}
+.dex-admin .admin-footer-note{border-top:1px solid var(--df-line);padding-top:20px;margin-top:30px;font-size:1.1rem;color:var(--df-muted)}
+.dex-admin .admin-error{border-style:dashed;overflow-wrap:anywhere}
+.dex-admin #admin-sync-notice:empty{display:none}
+.dex-admin #admin-editor{width:min(680px,calc(100vw - 28px))}
+.dex-admin .admin-editor-actions{margin-top:20px}
+.dex-admin .empty{margin-top:17px}
+@media(max-width:700px){.dex-admin .admin-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.dex-admin .admin-filters{grid-template-columns:1fr}.dex-admin .admin-record{padding:17px}.dex-admin .admin-toolbar-actions{width:100%}.dex-admin .admin-toolbar-actions button{flex:1}.dex-admin .topbar{gap:12px;flex-wrap:wrap}.dex-admin .admin-actions button{flex:1 0 auto}.dex-admin .admin-gate{padding:20px}}

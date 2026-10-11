@@ -1,0 +1,79 @@
+{{ define "body-class" }}article-page forum-admin-test-page{{ end }}
+{{ define "head" }}
+{{ $baseCSS := resources.Get "css/forum-test.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $baseCSS.RelPermalink }}" integrity="{{ $baseCSS.Data.Integrity }}">
+{{ $css := resources.Get "css/forum-admin-test.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{ $js := resources.Get "js/forum-admin-test.js" | minify | fingerprint }}
+<script type="module" src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+{{ end }}
+{{ define "main" }}
+<div class="dex-forum dex-admin" id="community-admin">
+  <header class="topbar">
+    <span>DEX / <b>MANAGEMENT TEST</b></span>
+    <a class="admin-back" href="{{ "/test/forum-v1/" | relURL }}">← Back to community</a>
+  </header>
+  <section class="hero">
+    <div class="eyebrow">COMMUNITY / MODERATOR WORKSPACE</div>
+    <h1>A little care.<br><span>Better conversations.</span></h1>
+    <p>Review discussions and message-board entries in a separate management workspace.</p>
+  </section>
+  <div class="preview-note">
+    <strong>Local demo only · No real authentication or security</strong>
+    <span>This is a UI simulation. Anyone can enter the moderator demo. Changes affect only preview content in this browser, never published research or other visitors’ content. No real account or server-side permissions are connected. Please avoid personal or sensitive information.</span>
+  </div>
+  <p id="admin-session-status" class="muted" role="status" aria-live="polite">Visitor mode · management tools are closed.</p>
+  <section id="admin-gate" class="admin-gate" aria-labelledby="admin-gate-title">
+    <div class="eyebrow">TRY THE MANAGEMENT PREVIEW</div>
+    <h2 id="admin-gate-title">Enter the moderator demo</h2>
+    <p>This explicit demo role opens local editing and moderation tools. It is not a secure sign-in.</p>
+    <button id="admin-enter" class="primary" type="button">Enter moderator demo</button>
+  </section>
+  <section id="admin-tools" hidden aria-label="Local moderation tools">
+    <div class="admin-toolbar">
+      <span class="admin-session-pill">Moderator demo · local only</span>
+      <div class="admin-toolbar-actions"><button id="admin-refresh" class="outline" type="button">Refresh local data</button><button id="admin-exit" class="outline" type="button">Exit moderator demo</button></div>
+    </div>
+    <div class="admin-stats" aria-label="Local content totals">
+      <div><strong id="admin-topic-total">0</strong><span>Discussions</span></div>
+      <div><strong id="admin-reply-total">0</strong><span>Replies</span></div>
+      <div><strong id="admin-board-total">0</strong><span>Board messages</span></div>
+      <div><strong id="admin-hidden-total">0</strong><span>Hidden items</span></div>
+    </div>
+    <nav class="test-tabs" aria-label="Manage community sections">
+      <button id="admin-show-discussions" type="button" aria-pressed="true" aria-controls="admin-discussions-panel">Discussions</button>
+      <button id="admin-show-board" type="button" aria-pressed="false" aria-controls="admin-board-panel">Message board</button>
+    </nav>
+    <div class="admin-filters">
+      <label for="admin-search">Search local content<input id="admin-search" type="search" placeholder="Title, message, reply, or author…"></label>
+      <label for="admin-status-filter">Status<select id="admin-status-filter"><option value="all">All statuses</option><option value="visible">Visible</option><option value="hidden">Hidden</option><option value="pinned">Pinned discussions</option><option value="locked">Locked discussions</option></select></label>
+    </div>
+    <p id="admin-data-error" class="auth-notice admin-error" role="alert" hidden></p>
+    <p id="admin-sync-notice" class="muted" role="status" aria-live="polite"></p>
+    <section id="admin-discussions-panel" aria-labelledby="admin-discussions-title">
+      <div class="section-head"><div><h2 id="admin-discussions-title">Discussions</h2><p id="admin-discussion-count"></p></div></div>
+      <div id="admin-discussions"></div>
+    </section>
+    <section id="admin-board-panel" aria-labelledby="admin-board-title" hidden>
+      <div class="section-head"><div><h2 id="admin-board-title">Message board</h2><p id="admin-board-count"></p></div></div>
+      <div id="admin-board"></div>
+    </section>
+    <p class="admin-footer-note">Edits, hidden status, pins and locks persist in this browser. Hide is reversible; there is no permanent delete. Frontend and management data sync when you return to either page.</p>
+  </section>
+  <dialog id="admin-editor" aria-labelledby="admin-editor-title">
+    <button id="admin-editor-close" type="button" class="close" aria-label="Cancel editing">×</button>
+    <div class="eyebrow">EDIT LOCAL PREVIEW CONTENT</div>
+    <h2 id="admin-editor-title">Edit discussion</h2>
+    <form id="admin-edit-form">
+      <label id="admin-title-label">Title<input id="admin-edit-title" name="title" minlength="5" maxlength="140"></label>
+      <label>Body<textarea id="admin-edit-body" name="body" required rows="7" maxlength="6000"></textarea></label>
+      <p class="muted">Plain text only. Saving changes this browser’s preview content.</p>
+      <p id="admin-edit-error" class="auth-notice admin-error" role="alert" hidden></p>
+      <div class="admin-editor-actions"><button class="primary" type="submit">Save local changes</button><button id="admin-edit-cancel" type="button" class="outline">Cancel editing</button></div>
+    </form>
+  </dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="auth-notice">JavaScript is needed for this local management demo. No content has been changed.</p></noscript>
+</div>
+{{ partialCached "footer/footer" . }}
+{{ end }}
