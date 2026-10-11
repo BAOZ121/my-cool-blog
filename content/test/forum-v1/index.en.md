@@ -5,6 +5,7 @@ url: "/test/forum-v1/"
 type: "page"
 layout: "forum-test"
 testpage: true
+forumtest: true
 robots: "noindex, nofollow"
 sitemap:
   disable: true
