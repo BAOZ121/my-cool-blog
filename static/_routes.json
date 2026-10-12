@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "include": [
+    "/api/community",
+    "/api/community/*",
+    "/api/admin",
+    "/api/admin/*"
+  ],
+  "exclude": []
+}

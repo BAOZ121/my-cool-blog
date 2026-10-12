@@ -1,0 +1,4 @@
+{{- $config := partial "community/config.html" . -}}
+{{- $connect := "'self'" -}}
+{{- if eq $config.enabled true }}{{ $connect = printf "'self' %s" $config.supabaseUrl }}{{ end -}}
+{{- return (printf "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src %s; base-uri 'none'; form-action 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'; manifest-src 'none'" $connect) -}}

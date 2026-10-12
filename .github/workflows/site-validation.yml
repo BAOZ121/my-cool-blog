@@ -45,6 +45,11 @@ jobs:
         run: |
           node --test tests/evidence-library.test.mjs
           python3 -m unittest discover -s tests -p 'test_evidence_library.py'
+      - name: Install pinned build tools and self-hosted community SDK
+        run: |
+          npm ci --ignore-scripts
+          npm ci --prefix backend --ignore-scripts
+          npm run build:community
       - name: Build production HTML without warnings
         run: hugo --environment production --minify --panicOnWarning
       - name: Check responsive cover bytes and shared cache paths
@@ -57,8 +62,13 @@ jobs:
         run: python3 scripts/validate_breakdowns.py public
       - name: Check article graphics, provenance and CSV exports
         run: python3 scripts/validate_article_visuals.py public
-      - name: Install browser verification tools
-        run: npm ci
+      - name: Verify inert community integration and both HTML modes
+        run: |
+          node --test tests/community-real.test.mjs
+          npm test --prefix backend
+          npm ci --prefix backend/supabase --ignore-scripts
+          npm test --prefix backend/supabase
+          node scripts/validate-community-build.mjs
       - name: Install Chromium
         id: chromium
         run: npx playwright install --with-deps chromium

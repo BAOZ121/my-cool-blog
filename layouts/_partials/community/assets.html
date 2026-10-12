@@ -1,0 +1,6 @@
+{{ $css := resources.Get "css/community-real.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{ with resources.Get "js/generated/community-real.js" }}
+{{ $script := . | fingerprint }}
+<script type="module" src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+{{ else }}{{ errorf "Real community bundle missing. Run npm ci, npm ci --prefix backend, then npm run build:community." }}{{ end }}

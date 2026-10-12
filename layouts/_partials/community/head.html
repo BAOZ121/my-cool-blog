@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="{{ partial "community/csp.html" . }}">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow">
+<title>{{ .Title }} | {{ .Site.Title }}</title>
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="icon" href="/favicon.svg">
+{{ $themeInit := resources.Get "js/community-theme-init.js" | minify | fingerprint }}
+<script{{ if and (ne (partial "community/config.html" .).enabled true) (in (slice "/test/auth/callback-v1/" "/test/auth/recovery-v1/") .RelPermalink) }} data-disabled-callback="true"{{ end }} src="{{ $themeInit.RelPermalink }}" integrity="{{ $themeInit.Data.Integrity }}"></script>
+{{ partial "head/style.html" . }}
+{{ partial "site-navigation/assets.html" . }}
+{{ $config := partial "community/config.html" . }}
+{{ if eq $config.enabled true }}
+<meta name="dex-community-origin" content="{{ $config.allowedOrigin }}">
+<meta name="dex-community-supabase" content="{{ $config.supabaseUrl }}">
+<meta name="dex-community-publishable-key" content="{{ $config.publishableKey }}">
+<meta name="dex-community-google" content="{{ eq $config.googleEnabled true }}">
+{{ end }}

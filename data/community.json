@@ -1,0 +1,7 @@
+{
+  "enabled": false,
+  "googleEnabled": false,
+  "allowedOrigin": "",
+  "supabaseUrl": "",
+  "publishableKey": ""
+}

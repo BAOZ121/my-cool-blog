@@ -14,6 +14,10 @@
     </details>
     {{/* Restore the width before article parsing and native Back restoration.
          The module only saves changes; blocked storage keeps a native control. */}}
+    {{ if partial "community/is-test.html" . }}
+    {{ $navInit := resources.Get "js/community-navigation-init.js" | minify | fingerprint }}
+    <script src="{{ $navInit.RelPermalink }}" integrity="{{ $navInit.Data.Integrity }}"></script>
+    {{ else }}
     <script>
     (() => {
         try {
@@ -23,6 +27,7 @@
         } catch { /* Keep the default expanded navigation. */ }
     })();
     </script>
+    {{ end }}
 
     <header id="site-navigation-header">
         {{ with .Site.Params.sidebar.avatar }}
@@ -55,7 +60,7 @@
             <p class="site-description">{{ .Site.Params.sidebar.subtitle }}</p>
         </div>
     </header>
-    {{ if .Params.forumtest }}{{ partial "forum-test/account.html" . }}{{ end }}
+    {{ if .Params.forumtest }}{{ if eq (partial "community/config.html" .).enabled true }}{{ partial "community/account.html" . }}{{ else }}{{ partial "forum-test/account.html" . }}{{ end }}{{ end }}
 
     {{- with .Site.Menus.social -}}
         <ol class="menu-social">

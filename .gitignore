@@ -9,3 +9,21 @@ Thumbs.db
 /node_modules/
 /test-results/
 /playwright-report/
+
+# Community backend: local runtime values and credentials are never source assets
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+/backend/supabase/.temp/
+
+/backend/supabase/node_modules/
+
+/backend/node_modules/
+
+# Self-hosted pinned community bundle is generated before enabled builds
+/assets/js/generated/community-real*
+
+/.wrangler/

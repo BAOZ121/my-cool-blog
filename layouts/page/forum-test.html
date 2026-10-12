@@ -2,10 +2,17 @@
 {{ define "head" }}
 {{ $css := resources.Get "css/forum-test.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{ if eq (partial "community/config.html" .).enabled true }}
+{{ partial "community/assets.html" . }}
+{{ else }}
 {{ $js := resources.Get "js/forum-test.js" | minify | fingerprint }}
 <script type="module" src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 {{ end }}
+{{ end }}
 {{ define "main" }}
+{{ if eq (partial "community/config.html" .).enabled true }}
+{{ partial "community/forum.html" . }}
+{{ else }}
 <div class="dex-forum" id="community">
 <header class="topbar"><span>DEX / <b>COMMUNITY TEST</b></span><div class="df-top-account"><button id="account" class="outline">Sign in</button><button id="top-register" class="primary">Register</button></div></header><section class="hero"><div class="eyebrow">RESEARCH IS A CONVERSATION</div><h1>Better questions.<br><span>Sharper perspectives.</span></h1><p>Discuss industries, challenge assumptions, and follow the evidence. A place for thoughtful research to keep evolving.</p></section>
 <div class="preview-note"><strong>On-site test · 站内测试页</strong><span>Forum posts, replies and message-board entries are local demos stored only in this browser. They are not shared with other visitors. Email/password and Google sign-in are not connected. Do not enter real credentials.</span></div>
@@ -14,5 +21,6 @@
 <dialog id="composer"><button class="close" data-close aria-label="Close">×</button><div class="eyebrow">START A DISCUSSION</div><h2>What are you researching?</h2><form id="topic-form"><label>Category<select name="category"><option>Industry research</option><option>Questions & ideas</option><option>Site feedback</option></select></label><label>Title<input name="title" required minlength="5" maxlength="140" placeholder="A clear question invites a better answer"></label><label>Your perspective<textarea name="body" required minlength="10" maxlength="6000" rows="6" placeholder="Share your question, context and sources…"></textarea></label><p class="muted">Demo content is stored only in this browser. Nothing is published to DEX.</p><button class="primary" type="submit">Post to local demo</button></form></dialog>
 <dialog id="thread"><button class="close" data-close aria-label="Close">×</button><div id="thread-content"></div></dialog><div id="toast" role="status" aria-live="polite"></div>
 </div>
+{{ end }}
 {{ partialCached "footer/footer" . }}
 {{ end }}

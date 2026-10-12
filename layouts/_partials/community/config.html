@@ -1,0 +1,7 @@
+{{- $config := hugo.Data.community -}}
+{{- if eq $config.enabled true -}}
+  {{- if or (not (findRE `^https://[a-z0-9-]+\.supabase\.co$` $config.supabaseUrl)) (not (findRE `^sb_publishable_[A-Za-z0-9_-]{16,512}$` $config.publishableKey)) (not (findRE `^https://[a-zA-Z0-9.-]+(:[0-9]+)?$` $config.allowedOrigin)) -}}
+    {{- errorf "Enabled community requires an exact HTTPS origin, hosted Supabase origin and public publishable key. Never put a secret key in site data." -}}
+  {{- end -}}
+{{- end -}}
+{{- return $config -}}

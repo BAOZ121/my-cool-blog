@@ -35,6 +35,11 @@ jobs:
           printf '%s\n' "$hugo_dir" >> "$GITHUB_PATH"
       - name: Test enhancement logic
         run: node --test tests/breakdowns.test.mjs
+      - name: Install pinned build tools and self-hosted community SDK
+        run: |
+          npm ci --ignore-scripts
+          npm ci --prefix backend --ignore-scripts
+          npm run build:community
       - name: Build production HTML without warnings
         run: hugo --environment production --minify --panicOnWarning
       - name: Check data, source mappings and internal links

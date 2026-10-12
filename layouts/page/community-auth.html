@@ -1,0 +1,21 @@
+{{ define "body-class" }}article-page forum-test-page{{ end }}
+{{ define "head" }}
+{{ $css := resources.Get "css/forum-test.css" | minify | fingerprint }}<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{ if eq (partial "community/config.html" .).enabled true }}{{ partial "community/assets.html" . }}{{ end }}
+{{ end }}
+{{ define "main" }}
+<div class="dex-forum rc-community" id="rc-root" data-community-mode="{{ .Params.authmode }}">
+<header class="topbar"><span>DEX / <b>ACCOUNT SECURITY</b></span><a href="/test/forum-v1/">Back to community</a></header>
+<section class="hero"><div class="eyebrow">YOUR DEX ACCOUNT</div><h1>{{ .Title }}</h1></section>
+{{ if eq (partial "community/config.html" .).enabled true }}
+<p id="rc-status" role="status" aria-live="polite" class="auth-notice">Checking this link…</p>
+<p class="muted">Open the verification or reset link in the same browser tab where you requested it. If that tab is no longer available, request a fresh link. No email link can grant management access by itself.</p>
+<form method="post" id="rc-recovery-form" hidden><fieldset disabled><label>New password<input name="password" type="password" autocomplete="new-password" required minlength="12" maxlength="1024"></label><label>Confirm new password<input name="confirmPassword" type="password" autocomplete="new-password" required minlength="12" maxlength="1024"></label><button type="submit" class="primary">Update password & sign out</button></fieldset></form>
+<button type="button" id="rc-recovery-mfa" class="outline" hidden>Verify authenticator to continue</button>
+<a class="rc-link-button" href="/test/forum-v1/">Continue to community</a>
+<button type="button" class="text-button" id="rc-recovery-retry" data-auth-open="reset" hidden>Request a fresh password reset link</button>
+{{ partial "community/auth.html" . }}
+{{ else }}<p class="auth-notice">The community backend is disabled. Account verification and password recovery are not connected. No credentials can be entered here.</p>{{ end }}
+</div>
+{{ partialCached "footer/footer" . }}
+{{ end }}

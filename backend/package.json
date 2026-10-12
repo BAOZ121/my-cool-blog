@@ -1,0 +1,10 @@
+{
+  "name": "dex-community-auth-preparation",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Local, disabled-by-default Supabase Auth integration and intercepted SDK contract tests.",
+  "engines": { "node": ">=22.0.0" },
+  "scripts": { "test": "node --test tests/*.test.mjs", "test:auth": "node --test tests/auth-*.test.mjs" },
+  "dependencies": { "@supabase/supabase-js": "2.117.3" }
+}

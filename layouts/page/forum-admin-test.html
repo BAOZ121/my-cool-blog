@@ -4,10 +4,17 @@
 <link rel="stylesheet" href="{{ $baseCSS.RelPermalink }}" integrity="{{ $baseCSS.Data.Integrity }}">
 {{ $css := resources.Get "css/forum-admin-test.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{ if eq (partial "community/config.html" .).enabled true }}
+{{ partial "community/assets.html" . }}
+{{ else }}
 {{ $js := resources.Get "js/forum-admin-test.js" | minify | fingerprint }}
 <script type="module" src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 {{ end }}
+{{ end }}
 {{ define "main" }}
+{{ if eq (partial "community/config.html" .).enabled true }}
+{{ partial "community/admin.html" . }}
+{{ else }}
 <div class="dex-forum dex-admin" id="community-admin">
   <header class="topbar">
     <span>DEX / <b>MANAGEMENT TEST</b></span>
@@ -75,5 +82,6 @@
   <div id="toast" role="status" aria-live="polite"></div>
   <noscript><p class="auth-notice">JavaScript is needed for this local management demo. No content has been changed.</p></noscript>
 </div>
+{{ end }}
 {{ partialCached "footer/footer" . }}
 {{ end }}
