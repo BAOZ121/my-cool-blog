@@ -11,6 +11,8 @@ const MAX_REQUEST_BYTES = 100_000;
 const MAX_UPSTREAM_BYTES = 8_000_000;
 const POST_COLUMNS = 'id,kind,topic_id,title,body,author_id,version,hidden,pinned,locked,created_at,updated_at';
 const WRITES = new Set(['POST', 'PATCH']);
+const DIAGNOSTIC_STAGES = new Set(['configuration', 'request_guard', 'authorization', 'validation',
+  'headers', 'upstream_fetch', 'upstream_read', 'upstream_status', 'upstream_timeout', 'request_body', 'request_timeout']);
 const ERROR_MESSAGES = Object.freeze({
   backend_disabled: 'Community backend is not enabled.',
   backend_unavailable: 'Community backend is temporarily unavailable.',
@@ -27,15 +29,24 @@ const ERROR_MESSAGES = Object.freeze({
 });
 
 class ApiError extends Error {
-  constructor(status, code) {
+  constructor(status, code, diagnosticStage) {
     super(ERROR_MESSAGES[code]);
     this.status = status;
     this.code = code;
+    this.diagnosticStage = diagnosticStage;
   }
 }
 const fail = (status, code) => { throw new ApiError(status, code); };
 const isObject = (v) => v !== null && typeof v === 'object' && !Array.isArray(v);
 const charLength = (v) => [...v].length;
+function exceptionKind(error) {
+  try {
+    if (error instanceof TypeError) return 'TypeError';
+    if (error instanceof RangeError) return 'RangeError';
+    if (error?.name === 'AbortError') return 'AbortError';
+  } catch { /* An untrusted exception property cannot affect diagnostics. */ }
+  return 'other';
+}
 
 function config(env) {
   if (env?.COMMUNITY_BACKEND_ENABLED !== 'true') fail(503, 'backend_disabled');
@@ -125,7 +136,7 @@ async function boundedJson(body, headers, max, { upstream = false, signal } = {}
   }
 }
 
-async function deadline(callback, timeoutMs) {
+async function deadline(callback, timeoutMs, timeoutStage) {
   const controller = new AbortController();
   let timer;
   try {
@@ -134,7 +145,7 @@ async function deadline(callback, timeoutMs) {
       new Promise((_, reject) => {
         timer = setTimeout(() => {
           controller.abort();
-          reject(new ApiError(503, 'backend_unavailable'));
+          reject(new ApiError(503, 'backend_unavailable', timeoutStage));
         }, timeoutMs);
       }),
     ]);
@@ -226,19 +237,26 @@ export function createCommunityHandler({ fetch: fetchImpl = globalThis.fetch, ti
   if (!Number.isInteger(timeoutMs) || timeoutMs < 1 || timeoutMs > 10_000) throw new TypeError('Invalid timeout');
   return async function handleCommunityRequest(request, env = {}) {
     let routeName = 'unmatched';
+    let stage = 'configuration', upstreamStatus = null;
+    const startedAt = Date.now();
     try {
       const settings = config(env);
+      stage = 'request_guard';
       const url = new URL(request.url);
       const route = matchRoute(url, request.method);
       routeName = route.name;
       guardOrigin(request, url, settings);
       if (route.match[1]) id(route.match[1]);
       const call = async (path, { token, body, method = 'POST' } = {}) => deadline(async (signal) => {
+        stage = 'headers'; upstreamStatus = null;
         const headers = { apikey: settings.key, Accept: 'application/json',
           'Cache-Control': 'no-store, no-cache, max-age=0', Pragma: 'no-cache' };
         // Publishable keys belong only in apikey, never in Authorization.
         if (token) headers.Authorization = `Bearer ${token}`;
         if (body !== undefined) headers['Content-Type'] = 'application/json';
+        // Validate separately so invalid header values are distinguishable from fetch failures.
+        new Headers(headers);
+        stage = 'upstream_fetch';
         const result = await fetchImpl(`${settings.upstream}${path}`, {
           // Older Pages runtimes reject RequestInit.cache before making a request.
           // Negative TTL explicitly excludes GET responses from Cloudflare caching.
@@ -246,13 +264,17 @@ export function createCommunityHandler({ fetch: fetchImpl = globalThis.fetch, ti
           cf: { cacheTtlByStatus: { '100-599': -1 } },
           ...(body !== undefined ? { body: JSON.stringify(body) } : {}),
         });
+        upstreamStatus = Number.isInteger(result.status) && result.status >= 100 && result.status <= 599 ? result.status : null;
+        stage = 'upstream_read';
         const data = await boundedJson(result.body, result.headers, MAX_UPSTREAM_BYTES, { upstream: true, signal });
-        if (!result.ok) upstreamError(result.status, data);
+        if (!result.ok) { stage = 'upstream_status'; upstreamError(result.status, data); }
+        stage = 'validation'; upstreamStatus = null;
         return data;
-      }, timeoutMs);
+      }, timeoutMs, 'upstream_timeout');
       const rpc = (name, payload = {}, token) => call(`/rest/v1/rpc/community_${name}`, { body: payload, token });
       let token;
       let session;
+      stage = 'authorization';
       if (route.access !== 'public') {
         const authorization = request.headers.get('Authorization') || '';
         const match = /^Bearer ([A-Za-z0-9._~-]{16,8192})$/i.exec(authorization);
@@ -274,11 +296,14 @@ export function createCommunityHandler({ fetch: fetchImpl = globalThis.fetch, ti
         if (route.access === 'owner' && session.role !== 'owner') fail(403, 'forbidden');
       }
       let body;
+      stage = 'validation';
       if (WRITES.has(request.method)) {
         query(url);
         if (!/^application\/json(?:\s*;\s*charset=utf-8)?$/i.test(request.headers.get('Content-Type') || '')
           || request.headers.has('Content-Encoding')) fail(415, 'unsupported_media_type');
-        body = await deadline((signal) => boundedJson(request.body, request.headers, MAX_REQUEST_BYTES, { signal }), timeoutMs);
+        stage = 'request_body';
+        body = await deadline((signal) => boundedJson(request.body, request.headers, MAX_REQUEST_BYTES, { signal }), timeoutMs, 'request_timeout');
+        stage = 'validation';
       }
       const list = async (filters, paging, order) => {
         const params = new URLSearchParams({ select: POST_COLUMNS, hidden: 'eq.false', ...filters,
@@ -361,12 +386,17 @@ export function createCommunityHandler({ fetch: fetchImpl = globalThis.fetch, ti
       fail(404, 'not_found');
     } catch (error) {
       const safe = error instanceof ApiError ? error : new ApiError(503, 'backend_unavailable');
-      // Deliberately exclude URL, request, headers, body and upstream error text.
-      try { logger?.({ event: 'community_api_error', route: routeName, status: safe.status, code: safe.code }); }
+      const selectedStage = error instanceof ApiError && error.diagnosticStage ? error.diagnosticStage : stage;
+      const elapsed = Date.now() - startedAt;
+      // Only fixed classifications and bounded numbers; never serialize the exception or request.
+      try { logger?.({ event: 'community_api_error', route: routeName, status: safe.status, code: safe.code,
+        stage: DIAGNOSTIC_STAGES.has(selectedStage) ? selectedStage : 'validation', exception_kind: exceptionKind(error),
+        elapsed_ms: Number.isFinite(elapsed) ? Math.max(0, Math.min(600_000, Math.trunc(elapsed))) : 0,
+        upstream_status: upstreamStatus }); }
       catch { /* Logging must never change a response or disclose an error. */ }
       return response({ error: { code: safe.code, message: ERROR_MESSAGES[safe.code] } }, safe.status);
     }
   };
 }
 
-export const handleCommunityRequest = createCommunityHandler();
+export const handleCommunityRequest = createCommunityHandler({ logger: (event) => console.warn(JSON.stringify(event)) });

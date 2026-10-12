@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { createCommunityHandler } from '../api/handler.mjs';
+import { createCommunityHandler, handleCommunityRequest } from '../api/handler.mjs';
 import { onRequest } from '../api/pages-template.mjs';
 
 const USER = '11111111-1111-4111-8111-111111111111';
@@ -8,6 +8,7 @@ const POST = '22222222-2222-4222-8222-222222222222';
 const OTHER = '33333333-3333-4333-8333-333333333333';
 const ORIGIN = 'https://community.example.com';
 const TOKEN = 'test-user-bearer-not-a-real-token';
+const DIAGNOSTIC_KEYS = ['code', 'elapsed_ms', 'event', 'exception_kind', 'route', 'stage', 'status', 'upstream_status'];
 const ENV = Object.freeze({
   COMMUNITY_BACKEND_ENABLED: 'true',
   COMMUNITY_ALLOWED_ORIGIN: ORIGIN,
@@ -473,8 +474,94 @@ test('upstream error text and thrown errors never leak to response or logs; no a
     assert.ok(!combined.includes(ENV.SUPABASE_PUBLISHABLE_KEY));
     assert.ok(!combined.includes('private SQL'));
     assert.equal(calls.length, 3);
-    assert.deepEqual(Object.keys(logs[0]).sort(), ['code', 'event', 'route', 'status']);
+    assert.deepEqual(Object.keys(logs[0]).sort(), DIAGNOSTIC_KEYS);
+    assert.equal(logs[0].stage, throwing ? 'upstream_fetch' : 'upstream_status');
+    assert.equal(logs[0].upstream_status, throwing ? null : 500);
   }
+});
+
+test('deployed handler emits one secret-safe structured warning without changing public errors', async () => {
+  const warnings = [], previous = console.warn;
+  console.warn = (...args) => warnings.push(args);
+  let result;
+  try { result = await handleCommunityRequest(request('/api/community/topics'), {}); }
+  finally { console.warn = previous; }
+  assert.equal(warnings.length, 1);
+  assert.equal(warnings[0].length, 1);
+  const record = JSON.parse(warnings[0][0]);
+  assert.deepEqual(Object.keys(record).sort(), DIAGNOSTIC_KEYS);
+  assert.equal(record.event, 'community_api_error');
+  assert.equal(record.stage, 'configuration');
+  assert.equal(record.exception_kind, 'other');
+  assert.equal(record.upstream_status, null);
+  assert.ok(Number.isInteger(record.elapsed_ms) && record.elapsed_ms >= 0 && record.elapsed_ms <= 600_000);
+  assert.deepEqual(await result.json(), { error: { code: 'backend_disabled', message: 'Community backend is not enabled.' } });
+  assert.ok(!JSON.stringify(record).includes(TOKEN));
+});
+
+test('fetch diagnostics allowlist exception kinds and exclude raw names messages stacks and credentials', async () => {
+  const secret = `${TOKEN} ${ENV.SUPABASE_PUBLISHABLE_KEY} ${ENV.SUPABASE_URL} private-user@example.test`;
+  const hostileName = Object.defineProperty(new Error(secret), 'name', { get() { throw new Error(secret); } });
+  for (const [error, kind] of [[new TypeError(secret), 'TypeError'], [new RangeError(secret), 'RangeError'],
+    [new DOMException(secret, 'AbortError'), 'AbortError'], [Object.assign(new Error(secret), { name: secret }), 'other'],
+    [hostileName, 'other'], [secret, 'other']]) {
+    const { handler, calls, logs } = fixture({ resolve: () => { throw error; } });
+    const result = await handler(request('/api/community/topics'), ENV);
+    assert.equal(result.status, 503);
+    assert.equal(calls.length, 1);
+    assert.equal(logs.length, 1);
+    assert.deepEqual(Object.keys(logs[0]).sort(), DIAGNOSTIC_KEYS);
+    assert.equal(logs[0].stage, 'upstream_fetch');
+    assert.equal(logs[0].exception_kind, kind);
+    assert.equal(logs[0].upstream_status, null);
+    const output = (await result.text()) + JSON.stringify(logs);
+    for (const value of [TOKEN, ENV.SUPABASE_PUBLISHABLE_KEY, ENV.SUPABASE_URL, 'private-user@example.test']) assert.ok(!output.includes(value));
+  }
+});
+
+test('diagnostics distinguish response reads from upstream HTTP status without exposing provider payloads', async () => {
+  for (const [upstream, stage, kind, status] of [
+    [new Response(`<html>${TOKEN}</html>`, { status: 401 }), 'upstream_read', 'other', 401],
+    [new Response(new ReadableStream({ start(controller) { controller.error(new TypeError(TOKEN)); } })), 'upstream_read', 'TypeError', 200],
+    [json({ code: 'provider-private-code', message: TOKEN }, 401), 'upstream_status', 'other', 401],
+    [json({ code: 'provider-private-code', message: TOKEN }, 500), 'upstream_status', 'other', 500],
+  ]) {
+    const { handler, logs } = fixture({ resolve: () => upstream });
+    const result = await handler(request('/api/community/messages'), ENV);
+    assert.equal(logs[0].stage, stage);
+    assert.equal(logs[0].exception_kind, kind);
+    assert.equal(logs[0].upstream_status, status);
+    const output = (await result.text()) + JSON.stringify(logs);
+    assert.ok(!output.includes(TOKEN));
+    assert.ok(!output.includes('provider-private-code'));
+  }
+});
+
+test('header construction and request guards have separate fixed diagnostic stages', async () => {
+  const { handler, calls, logs } = fixture();
+  const req = request('/api/community/topics');
+  const originalHeaders = globalThis.Headers;
+  globalThis.Headers = class { constructor() { throw new TypeError(TOKEN); } };
+  let result;
+  try { result = await handler(req, ENV); }
+  finally { globalThis.Headers = originalHeaders; }
+  assert.equal(result.status, 503);
+  assert.equal(calls.length, 0);
+  assert.equal(logs[0].stage, 'headers');
+  assert.equal(logs[0].exception_kind, 'TypeError');
+  assert.equal(logs[0].upstream_status, null);
+  assert.ok(!JSON.stringify(logs).includes(TOKEN));
+  await handler(request('/api/community/topics', { headers: { Origin: 'https://different.example.test' } }), ENV);
+  assert.equal(logs.at(-1).stage, 'request_guard');
+});
+
+test('logger failures cannot replace the sanitized response or cause a retry', async () => {
+  let calls = 0;
+  const handler = createCommunityHandler({ fetch: async () => { calls++; throw new TypeError(TOKEN); }, logger: () => { throw new Error(TOKEN); } });
+  const result = await handler(request('/api/community/topics'), ENV);
+  assert.equal(calls, 1);
+  assert.equal(result.status, 503);
+  assert.deepEqual(await result.json(), { error: { code: 'backend_unavailable', message: 'Community backend is temporarily unavailable.' } });
 });
 
 test('invalid or oversized upstream JSON fails closed', async () => {
@@ -491,7 +578,8 @@ test('invalid or oversized upstream JSON fails closed', async () => {
 test('upstream fetch timeout aborts and gives a sanitized unavailable error', async () => {
   let aborted = false;
   let count = 0;
-  const handler = createCommunityHandler({ timeoutMs: 10, fetch: async (_url, options) => {
+  const logs = [];
+  const handler = createCommunityHandler({ timeoutMs: 10, logger: event => logs.push(event), fetch: async (_url, options) => {
     count += 1;
     return new Promise((_, reject) => options.signal.addEventListener('abort', () => {
       aborted = true;
@@ -502,6 +590,8 @@ test('upstream fetch timeout aborts and gives a sanitized unavailable error', as
   assert.equal(result.status, 503);
   assert.equal(aborted, true);
   assert.equal(count, 1);
+  assert.equal(logs[0].stage, 'upstream_timeout');
+  assert.equal(logs[0].upstream_status, null);
   assert.ok(!(await result.text()).includes(TOKEN));
 });
 
@@ -555,12 +645,16 @@ test('stalled request bodies and stalled upstream bodies time out and cancel', a
   assert.equal((await fixture1.handler(req, ENV)).status, 503);
   assert.equal(requestCancelled, true);
   assert.equal(fixture1.calls.length, 2);
+  assert.equal(fixture1.logs[0].stage, 'request_timeout');
+  assert.equal(fixture1.logs[0].upstream_status, null);
   let upstreamCancelled = false;
   const fixture2 = fixture({ timeoutMs: 15, resolve: () => new Response(new ReadableStream({
     cancel() { upstreamCancelled = true; },
   })) });
   assert.equal((await fixture2.handler(request('/api/community/topics'), ENV)).status, 503);
   assert.equal(upstreamCancelled, true);
+  assert.equal(fixture2.logs[0].stage, 'upstream_timeout');
+  assert.equal(fixture2.logs[0].upstream_status, 200);
 });
 
 test('invalid UTF-8 request JSON is refused before mutation', async () => {
