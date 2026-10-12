@@ -98,7 +98,7 @@ test('public reads use fixed anonymous PostgREST queries and never forward an ad
   assert.equal(calls[0].init.headers.Authorization, undefined);
   assert.equal(calls[0].init.headers.Cookie, undefined);
   assert.equal(calls[0].init.headers.apikey, ENV.SUPABASE_PUBLISHABLE_KEY);
-  assert.equal(calls[0].init.redirect, 'error');
+  assert.equal(calls[0].init.redirect, 'manual');
   assert.equal(calls[0].init.credentials, 'omit');
   assert.equal(Object.hasOwn(calls[0].init, 'cache'), false);
   assert.deepEqual((await result.json()).page, { limit: 10, offset: 20 });
@@ -126,6 +126,34 @@ test('public and protected subrequests remain uncached without unsupported legac
   assert.equal(calls.length, 7);
   assert.ok(calls.some(({ url }) => url.pathname === '/auth/v1/user'));
   assert.ok(calls.some(({ url }) => url.pathname === '/rest/v1/rpc/community_create_post'));
+});
+
+test('Workers-compatible manual mode rejects all upstream redirects before body reads or credential forwarding', async () => {
+  const location = `https://untrusted.example.test/private?token=${TOKEN}`;
+  for (const status of [300, 301, 302, 303, 304, 307, 308, 399]) {
+    for (const path of ['/api/community/topics', '/api/admin/session']) {
+      let bodyReads = 0;
+      const upstream = new Response(status === 304 ? null : `private redirect body ${TOKEN}`, { status, headers: { Location: location } });
+      if (upstream.body) upstream.body.getReader = () => { bodyReads++; throw new Error(TOKEN); };
+      const { handler, calls, logs } = fixture({ resolve: ({ init }) => {
+        // Native workerd rejects redirect:'error'; manual is required for this policy.
+        if (init.redirect === 'error') throw new TypeError('Invalid redirect value');
+        assert.equal(init.redirect, 'manual');
+        return upstream;
+      } });
+      const result = await handler(request(path), ENV);
+      assert.equal(result.status, 503);
+      assert.equal(result.headers.get('Location'), null);
+      assert.equal(calls.length, 1);
+      assert.equal(calls[0].url.origin, ENV.SUPABASE_URL);
+      assert.equal(calls[0].init.headers.Authorization, path.includes('/admin/') ? `Bearer ${TOKEN}` : undefined);
+      assert.equal(bodyReads, 0);
+      assert.equal(logs[0].stage, 'upstream_status');
+      assert.equal(logs[0].upstream_status, status);
+      const output = (await result.text()) + JSON.stringify(logs);
+      for (const forbidden of [location, TOKEN, ENV.SUPABASE_PUBLISHABLE_KEY, 'private redirect body']) assert.ok(!output.includes(forbidden));
+    }
+  }
 });
 
 test('all successes and errors are JSON no-store with no CORS or cookies', async () => {

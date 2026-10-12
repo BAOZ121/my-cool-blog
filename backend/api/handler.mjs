@@ -260,11 +260,18 @@ export function createCommunityHandler({ fetch: fetchImpl = globalThis.fetch, ti
         const result = await fetchImpl(`${settings.upstream}${path}`, {
           // Older Pages runtimes reject RequestInit.cache before making a request.
           // Negative TTL explicitly excludes GET responses from Cloudflare caching.
-          method, headers, signal, redirect: 'error', credentials: 'omit',
+          method, headers, signal, redirect: 'manual', credentials: 'omit',
           cf: { cacheTtlByStatus: { '100-599': -1 } },
           ...(body !== undefined ? { body: JSON.stringify(body) } : {}),
         });
         upstreamStatus = Number.isInteger(result.status) && result.status >= 100 && result.status <= 599 ? result.status : null;
+        // Workers supports manual/follow only. Never follow or expose a redirect,
+        // and reject it before reading a possibly non-JSON or stalled body.
+        if (upstreamStatus >= 300 && upstreamStatus <= 399) {
+          stage = 'upstream_status';
+          void result.body?.cancel().catch(() => {});
+          fail(503, 'backend_unavailable');
+        }
         stage = 'upstream_read';
         const data = await boundedJson(result.body, result.headers, MAX_UPSTREAM_BYTES, { upstream: true, signal });
         if (!result.ok) { stage = 'upstream_status'; upstreamError(result.status, data); }

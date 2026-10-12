@@ -117,7 +117,7 @@ test('adapter forwards public reads only to controlled Supabase origin without c
   assert.equal(calls[0].init.headers.Authorization, undefined);
   assert.equal(calls[0].init.headers.Cookie, undefined);
   assert.equal(calls[0].init.headers.apikey, ENV.SUPABASE_PUBLISHABLE_KEY);
-  assert.equal(calls[0].init.redirect, 'error');
+  assert.equal(calls[0].init.redirect, 'manual');
 });
 
 test('Hugo invocation manifest includes only exact API namespaces and leaves site assets static', async () => {
