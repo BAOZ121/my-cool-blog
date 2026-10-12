@@ -99,8 +99,32 @@ test('public reads use fixed anonymous PostgREST queries and never forward an ad
   assert.equal(calls[0].init.headers.apikey, ENV.SUPABASE_PUBLISHABLE_KEY);
   assert.equal(calls[0].init.redirect, 'error');
   assert.equal(calls[0].init.credentials, 'omit');
-  assert.equal(calls[0].init.cache, 'no-store');
+  assert.equal(Object.hasOwn(calls[0].init, 'cache'), false);
   assert.deepEqual((await result.json()).page, { limit: 10, offset: 20 });
+});
+
+test('public and protected subrequests remain uncached without unsupported legacy cache init', async () => {
+  const { handler, calls } = fixture({ session: OWNER, resolve: ({ init }) => {
+    // Reproduce the pre-2024-11-11 Workers failure rather than accepting browser-only options.
+    if (Object.hasOwn(init, 'cache')) throw new TypeError("The 'cache' field on 'RequestInitializerDict' is not implemented.");
+    assert.equal(init.headers['Cache-Control'], 'no-store, no-cache, max-age=0');
+    assert.equal(init.headers.Pragma, 'no-cache');
+    assert.deepEqual(init.cf, { cacheTtlByStatus: { '100-599': -1 } });
+  } });
+  for (const [path, options, status] of [
+    ['/api/community/topics', {}, 200],
+    ['/api/community/messages', {}, 200],
+    ['/api/admin/session', {}, 200],
+    ['/api/community/topics', { method: 'POST', body: { title: 'Synthetic topic', body: 'Synthetic body' } }, 201],
+  ]) {
+    const result = await handler(request(path, options), ENV);
+    assert.equal(result.status, status);
+    assert.equal(result.headers.get('Cache-Control'), 'no-store');
+    assert.equal(result.headers.get('CDN-Cache-Control'), 'no-store');
+  }
+  assert.equal(calls.length, 7);
+  assert.ok(calls.some(({ url }) => url.pathname === '/auth/v1/user'));
+  assert.ok(calls.some(({ url }) => url.pathname === '/rest/v1/rpc/community_create_post'));
 });
 
 test('all successes and errors are JSON no-store with no CORS or cookies', async () => {

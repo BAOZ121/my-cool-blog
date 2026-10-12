@@ -234,12 +234,16 @@ export function createCommunityHandler({ fetch: fetchImpl = globalThis.fetch, ti
       guardOrigin(request, url, settings);
       if (route.match[1]) id(route.match[1]);
       const call = async (path, { token, body, method = 'POST' } = {}) => deadline(async (signal) => {
-        const headers = { apikey: settings.key, Accept: 'application/json' };
+        const headers = { apikey: settings.key, Accept: 'application/json',
+          'Cache-Control': 'no-store, no-cache, max-age=0', Pragma: 'no-cache' };
         // Publishable keys belong only in apikey, never in Authorization.
         if (token) headers.Authorization = `Bearer ${token}`;
         if (body !== undefined) headers['Content-Type'] = 'application/json';
         const result = await fetchImpl(`${settings.upstream}${path}`, {
-          method, headers, signal, redirect: 'error', cache: 'no-store', credentials: 'omit',
+          // Older Pages runtimes reject RequestInit.cache before making a request.
+          // Negative TTL explicitly excludes GET responses from Cloudflare caching.
+          method, headers, signal, redirect: 'error', credentials: 'omit',
+          cf: { cacheTtlByStatus: { '100-599': -1 } },
           ...(body !== undefined ? { body: JSON.stringify(body) } : {}),
         });
         const data = await boundedJson(result.body, result.headers, MAX_UPSTREAM_BYTES, { upstream: true, signal });
