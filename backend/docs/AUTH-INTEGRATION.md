@@ -28,6 +28,8 @@ Required when enabled:
 - `replaceUrl(path)`: normally `history.replaceState(null, '', path)`; callback handling invokes this before constructing the SDK, because SDK initialization may refresh a persisted session.
 - `callbackPath` and `recoveryPath`: two distinct exact same-origin paths. Controller defaults are `/auth/callback` and `/auth/recovery`; the prepared test-site wiring passes `/test/auth/callback-v1/` and `/test/auth/recovery-v1/`. Match those exact trailing slashes in later approved redirect settings.
 
+Google is independently default-off: pass `googleEnabled: true` only after the approved provider setup is ready. A disabled Google method never constructs the SDK; a pending Google callback is rejected if the switch is turned off. Email/password, signup and recovery remain independent.
+
 Optional fetch, clock, UUID and scheduler injections are test seams. Production uses native fetch/WebCrypto and the real clock. SDK requests are pinned to the exact Auth origin, with omitted cookies, no redirects, no referrer, a 12-second per-request deadline and a 256 KiB response limit covering streamed bodies.
 
 | Method | Purpose |

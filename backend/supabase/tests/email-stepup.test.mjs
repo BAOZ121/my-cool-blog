@@ -68,7 +68,7 @@ test('production migration purpose-specific email step-up',async t=>{
   await db.query('update community_private.community_admin_stepup_config set hmac_secret_id=$1,transport_configured=true,enabled=true',['20000000-0000-4000-8000-000000000001']);
  });
  await t.test('only exact existing owner and original password AMR may begin',async()=>{
-  for(const amr of [[],[{method:'otp'}],[{method:'recovery'}],[{method:'password'},{method:'recovery'}],[{method:'password'},{method:'otp'}],[{method:'magiclink'}]])
+  for(const amr of [[],[{method:'oauth'}],[{method:'password'},{method:'oauth'}],[{method:'otp'}],[{method:'recovery'}],[{method:'password'},{method:'recovery'}],[{method:'password'},{method:'otp'}],[{method:'magiclink'}]])
     await rejects(()=>rpc('community_admin_stepup_begin',[],{amr}),'PT403',/password_owner_required/);
   await rejects(()=>rpc('community_admin_stepup_begin',[],{},mod),'PT403');
   await rejects(()=>rpc('community_admin_stepup_begin',[],{session_id:sid2,amr:[{method:'otp'}]}),'PT403');
@@ -90,12 +90,21 @@ test('production migration purpose-specific email step-up',async t=>{
   assert.equal((await rpc('community_admin_stepup_status')).admitted,true);
   assert.equal((await rpc('community_admin_stepup_status',[],{session_id:sid2})).admitted,false);
  });
- await t.test('recovery or native OTP tokens cannot register, activate, verify or query admission',async()=>{
+ await t.test('OAuth, recovery or native OTP tokens cannot register, activate, verify or query admission',async()=>{
   const c=await begin();const d=codeDigest(c);
-  for(const amr of [[{method:'otp'}],[{method:'recovery'}],[{method:'password'},{method:'recovery'}]]){
+  for(const amr of [[{method:'oauth'}],[{method:'password'},{method:'oauth'}],[{method:'otp'}],[{method:'recovery'}],[{method:'password'},{method:'recovery'}]]){
    for(const [name,args] of [['register',[c.id,d,sign(c,d)]],['activate',[c.id,sign(c,d,'activate-v1')]],['verify',[c.id,'001234']],['status',[]]])
     await rejects(()=>rpc('community_admin_stepup_'+name,args,{amr}),'PT403');
   }
+ });
+ await t.test('existing admission and AAL2 do not authorize OAuth owner sessions',async()=>{
+  await admit();
+  for(const amr of [[{method:'oauth'}],[{method:'oauth'},{method:'totp'}],[{method:'password'},{method:'oauth'}]]){
+   const claims={aal:'aal2',amr};const me=await rpc('community_me',[],claims);
+   assert.equal(me.can_request_email_stepup,false);assert.equal(me.can_moderate,false);
+   await rejects(()=>rpc('community_admin_list',[],claims),'PT403');
+  }
+  assert.equal((await rpc('community_admin_stepup_status')).admitted,true);
  });
  await t.test('wrong-code counters persist across calls and activation cannot reset attempts',async()=>{
   const c=await begin();const d=await issue(c);

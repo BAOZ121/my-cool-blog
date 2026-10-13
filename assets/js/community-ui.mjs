@@ -4,6 +4,7 @@ import { communityIntent } from './community-intents.mjs';
 const UUID = /^[a-f0-9]{8}-[a-f0-9]{4}-[1-8][a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/i;
 const LIMIT = 25;
 const ERROR_TEXT = Object.freeze({
+  GOOGLE_DISABLED: 'Google sign-in is not available yet. Use email and password to sign in.',
   INVALID_CONFIG: 'Real sign-in is not configured. Please try again after setup is complete.',
   INVALID_INPUT: 'Check the required fields and try again.', AUTH_BUSY: 'Please wait for the current account step to finish.',
   AUTH_FAILED: 'Sign-in could not be completed. Check your details and try again.',

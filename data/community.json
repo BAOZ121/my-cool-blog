@@ -1,6 +1,6 @@
 {
   "enabled": true,
-  "googleEnabled": false,
+  "googleEnabled": true,
   "allowedOrigin": "https://thedexs.com",
   "supabaseUrl": "https://ltopqphxiulyfaivdjfq.supabase.co",
   "publishableKey": "sb_publishable_CsthP17vgQwqWXlnP_JwOQ_yk4Sicqo",

@@ -10,7 +10,7 @@ const SESSION = '22222222-2222-4222-8222-222222222222';
 const FACTOR = '33333333-3333-4333-8333-333333333333';
 const CHALLENGE = '44444444-4444-4444-8444-444444444444';
 const tab = () => { const values = new Map(); return { values, getItem: (k) => values.get(k) ?? null, setItem: (k, v) => values.set(k, v), removeItem: (k) => values.delete(k) }; };
-function harness({ storage = tab(), aal = 'aal1', providerTokens = false } = {}) {
+function harness({ storage = tab(), aal = 'aal1', providerTokens = false, googleEnabled = true, emailStepupEnabled = false, adminStatus = 200 } = {}) {
   const requests = [], replacements = [];
   let sdk, sdkOptions, factor = false, pendingFactor = false, sequence = 0, authMethod = 'password';
   const user = () => ({ id: USER, aud: 'authenticated', role: 'authenticated', email: 'sdk-synthetic@example.invalid', email_confirmed_at: '2026-01-01T00:00:00Z', is_anonymous: false, app_metadata: { provider: 'email', providers: ['email'] }, user_metadata: {}, factors: factor ? [{ id: FACTOR, factor_type: 'totp', status: 'verified' }] : pendingFactor ? [{ id: FACTOR, factor_type: 'totp', status: 'unverified' }] : [] });
@@ -21,7 +21,7 @@ function harness({ storage = tab(), aal = 'aal1', providerTokens = false } = {})
   };
   const session = () => ({ access_token: token(), refresh_token: `sdk_synthetic_refresh_${++sequence}`, expires_in: 3600, expires_at: Math.floor(Date.now() / 1000) + 3600, token_type: 'bearer', user: user(), ...(providerTokens ? { provider_token: 'synthetic_provider_access', provider_refresh_token: 'synthetic_provider_refresh' } : {}) });
   const response = (body, status = 200) => new Response(status === 204 ? null : JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json' } });
-  const controller = createSupabaseAuthController({ enabled: true, origin: ORIGIN, supabaseUrl: UPSTREAM,
+  const controller = createSupabaseAuthController({ enabled: true, googleEnabled, emailStepupEnabled, origin: ORIGIN, supabaseUrl: UPSTREAM,
     publishableKey: 'sb_publishable_SYNTHETIC_SDK_TEST_ONLY_0123456789', tabStorage: storage,
     callbackPath: '/test/auth/callback-v1/', recoveryPath: '/test/auth/recovery-v1/',
     replaceUrl: (url) => replacements.push(url),
@@ -30,11 +30,11 @@ function harness({ storage = tab(), aal = 'aal1', providerTokens = false } = {})
       const url = new URL(input); const method = init.method ?? 'GET';
       const body = init.body ? JSON.parse(init.body) : null;
       requests.push({ path: url.pathname, query: url.searchParams, method, body });
-      if (url.origin === ORIGIN && url.pathname === '/api/admin/session') return response({ data: { user_id: USER, state: 'active', email_verified: true, role: 'owner', aal: 'aal2', can_post: true, can_moderate: true } });
+      if (url.origin === ORIGIN && url.pathname === '/api/admin/session') return response({ data: { user_id: USER, state: 'active', email_verified: true, role: 'owner', aal: 'aal2', can_post: true, can_moderate: true } }, adminStatus);
       assert.equal(url.origin, UPSTREAM, 'every actual SDK fetch is intercepted; no other origin is allowed');
       if (url.pathname === '/auth/v1/token' && method === 'POST') {
         if (url.searchParams.get('grant_type') === 'password') authMethod = 'password';
-        if (body?.auth_code?.includes('reset')) authMethod = 'recovery';
+        if (url.searchParams.get('grant_type') === 'pkce') authMethod = body?.auth_code?.includes('reset') ? 'recovery' : 'oauth';
         return response(session());
       }
       if (url.pathname === '/auth/v1/user' && method === 'GET') return response(user());
@@ -184,4 +184,34 @@ test('pinned SDK exposes unfinished TOTP factor for resume and prevents duplicat
   assert.equal(a.controller.getState().mfa.pendingFactorId, null);
   assert.equal(a.requests.some((r) => r.method === 'DELETE'), false);
   a.controller.dispose();
+});
+
+test('real SDK OAuth identity keeps community token but cannot obtain owner email admission', async () => {
+  const a = harness({ emailStepupEnabled: true, adminStatus: 403, providerTokens: true });
+  const { url } = await a.controller.signInWithGoogle(); const params = new URL(url).searchParams;
+  assert.equal(params.get('provider'), 'google');
+  assert.equal(params.has('access_type'), false); assert.equal(params.has('prompt'), false);
+  assert.equal(params.has('scopes'), false);
+  a.controller.dispose();
+  const b = harness({ storage: a.storage, emailStepupEnabled: true, adminStatus: 403, providerTokens: true });
+  await b.controller.handleCallback(ORIGIN + '/test/auth/callback-v1/?code=synthetic-google-code');
+  const token = await b.controller.getAccessToken();
+  assert.equal(JSON.parse(Buffer.from(token.split('.')[1], 'base64url')).amr[0].method, 'oauth');
+  const admin = b.controller.getState().admin;
+  assert.equal(admin.canRequestEmailStepup, false); assert.equal(admin.admitted, false);
+  assert.equal(admin.canModerate, false); assert.equal(admin.canManageUsers, false);
+  assert.equal(admin.canReadAudit, false);
+  assert.ok(b.requests.some(r => r.path === '/api/admin/session'));
+  assert.doesNotMatch(JSON.stringify([...b.storage.values]), /synthetic_provider|provider_token|provider_refresh_token/);
+  await assert.rejects(b.controller.completePasswordReset({ password: 'new-synthetic-password', confirmPassword: 'new-synthetic-password' }), errorCode('RECOVERY_REQUIRED'));
+  assert.equal(b.requests.some(r => r.path === '/auth/v1/user' && r.method === 'PUT'), false);
+  b.controller.dispose();
+});
+test('real SDK recovery remains available with Google explicitly disabled', async () => {
+  const a = harness({ googleEnabled: false });
+  await a.controller.requestPasswordReset({ email: 'sdk-synthetic@example.invalid' }); a.controller.dispose();
+  const b = harness({ storage: a.storage, googleEnabled: false });
+  await b.controller.handleCallback(ORIGIN + '/test/auth/recovery-v1/?code=synthetic-reset-code');
+  assert.equal(b.controller.getState().status, 'recovery_ready');
+  assert.equal(await b.controller.getAccessToken(), null); b.controller.dispose();
 });

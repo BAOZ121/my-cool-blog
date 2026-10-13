@@ -438,3 +438,15 @@ test('promoted discussion and message-board routes select their HTTPS panels wit
     }
   }
 });
+
+test('Google enablement is forwarded and explicit click navigates current tab only', async () => {
+  const entry = readFileSync(new URL('../assets/js/community-entry.mjs', import.meta.url), 'utf8');
+  assert.match(entry, /googleEnabled: config\.googleEnabled/);
+  const f = await fixture({ extraConfig: { googleEnabled: true } });
+  assert.equal(f.auth.calls.some(call => call[0] === 'google'), false);
+  assert.equal(f.window.assigned, undefined); assert.equal(f.$('rc-google').disabled, false);
+  f.$('rc-google').click(); await flush();
+  assert.equal(f.auth.calls.filter(call => call[0] === 'google').length, 1);
+  assert.equal(f.window.assigned, 'https://test-project.supabase.co/auth/v1/authorize?provider=google');
+  f.ui.dispose();
+});

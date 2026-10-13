@@ -34,7 +34,7 @@ try {
   // Use the normal self-hosted bundle pipeline under synthetic server-secret
   // environment values, then prove those values never enter public artifacts.
   execFileSync(process.execPath, ['scripts/build-community.mjs'], { cwd: root, env: buildEnv, stdio: 'pipe' });
-  for (const [name, config] of [['disabled', sourceConfig], ['totp-enabled', enabled], ['email-enabled', { ...enabled, emailStepupEnabled: true }]]) {
+  for (const [name, config] of [['disabled', sourceConfig], ['totp-enabled', enabled], ['email-enabled', { ...enabled, emailStepupEnabled: true }], ['google-enabled', { ...enabled, emailStepupEnabled: true, googleEnabled: true }]]) {
     const fixture = join(temporary, name), data = join(fixture, 'data'), staticDir = join(fixture, 'static'), output = join(fixture, 'public');
     await mkdir(fixture); await cp(resolve('data'), data, { recursive: true }); await mkdir(staticDir);
     await writeFile(join(data, 'community.json'), JSON.stringify(config));
@@ -60,6 +60,8 @@ try {
       if (config.enabled) {
         assert.match(html, /data-community-mode=/); assert.doesNotMatch(html, /dex-onsite-forum|Enter member demo|Enter moderator demo/);
         assert.match(html, /dex-community-publishable-key/);
+        const googleMeta = [...html.matchAll(/<meta\b[^>]*>/g)].map(match => attributes(match[0])).find(attrs => attrs.name === 'dex-community-google');
+        assert.equal(googleMeta?.content, String(config.googleEnabled), 'Template Google flag must exactly match validated public config.');
         const emailMeta = [...html.matchAll(/<meta\b[^>]*>/g)].map(match => attributes(match[0])).find(attrs => attrs.name === 'dex-community-email-stepup');
         assert.equal(emailMeta?.content, String(config.emailStepupEnabled), 'Template email-mode flag must exactly match validated public config.');
         assert.match(html, /community-real\.[a-f0-9]+\.js/);

@@ -51,7 +51,7 @@ function fixture(overrides = {}) {
     calls.push(['fetch', url, init]);
     return new Response(JSON.stringify({ data: { user_id: USER, email_verified: true, state: 'active', role: overrides.adminRole ?? 'owner', aal: 'aal2', can_post: true, can_moderate: true, ...overrides.adminData } }), { status: overrides.adminStatus ?? 200 });
   });
-  const controller = createSupabaseAuthController({ enabled: true, origin: ORIGIN, supabaseUrl: UPSTREAM, publishableKey: KEY,
+  const controller = createSupabaseAuthController({ enabled: true, googleEnabled: true, origin: ORIGIN, supabaseUrl: UPSTREAM, publishableKey: KEY,
     tabStorage, now: () => currentTime, randomUUID: () => TAB, fetchImpl, timeoutMs: 100,
     replaceUrl: (url) => calls.push(['replaceUrl', url]),
     createClient(url, key, options) { instanceCount += 1; calls.push(['createClient', url, key]); opts = options; return sdk; },
@@ -477,4 +477,33 @@ test('Auth capability crosses the real integrated API with mocked DB/Auth; same-
   assert.equal(f.controller.getState().sessionGeneration, generation); assert.equal(f.controller.getState().admin.idleExpiresAt, expiry);
   assert.ok(calls.every(path => ['/auth/v1/user', '/rest/v1/rpc/community_me', '/rest/v1/rpc/community_admin_stepup_status'].includes(path)));
   sid = FACTOR; await f.controller.refresh(); assert.ok(f.controller.getState().sessionGeneration > generation);
+});
+
+test('Google requires literal independent enablement before SDK creation or tab storage mutation', async () => {
+  for (const googleEnabled of [undefined, false, 'true', 1]) {
+    const f = fixture({ controller: { googleEnabled } });
+    await assert.rejects(f.controller.signInWithGoogle(), codeError('GOOGLE_DISABLED'));
+    assert.equal(f.count(), 0); assert.equal(f.tabStorage.values.size, 0);
+    await login(f); assert.equal(f.controller.getState().status, 'signed_in');
+    f.controller.dispose();
+  }
+});
+test('disabling Google rejects pending Google callback without exchanging and preserves email callbacks', async () => {
+  const a = fixture(); await a.controller.signInWithGoogle(); a.controller.dispose();
+  const b = fixture({ tabStorage: a.tabStorage, controller: { googleEnabled: false } });
+  await assert.rejects(b.controller.handleCallback(ORIGIN + '/auth/callback?code=synthetic-code'), codeError('GOOGLE_DISABLED'));
+  assert.equal(b.calls.some(x => x[0] === 'exchange'), false);
+  assert.equal(b.tabStorage.values.has('dex-community-auth:synthetic-auth.supabase.co:pkce'), false);
+  assert.deepEqual(b.calls.filter(x => x[0] === 'replaceUrl'), [['replaceUrl', '/auth/callback']]); b.controller.dispose();
+  const c = fixture({ controller: { googleEnabled: false } }); await signup(c); c.controller.dispose();
+  const d = fixture({ tabStorage: c.tabStorage, controller: { googleEnabled: false } });
+  await d.controller.handleCallback(ORIGIN + '/auth/callback?code=synthetic-email-code');
+  assert.equal(d.controller.getState().status, 'signed_in'); d.controller.dispose();
+});
+test('Google callback in fresh tab is rejected without consuming initiating tab flow', async () => {
+  const a = fixture(); await a.controller.signInWithGoogle();
+  const b = fixture(); await assert.rejects(b.controller.handleCallback(ORIGIN + '/auth/callback?code=synthetic-code'), codeError('CALLBACK_INVALID'));
+  assert.equal(b.calls.some(x => x[0] === 'exchange'), false);
+  assert.equal(a.tabStorage.values.has('dex-community-auth:synthetic-auth.supabase.co:pkce'), true);
+  a.controller.dispose(); b.controller.dispose();
 });

@@ -7,7 +7,7 @@ import { createAuthStorage, resolveStorageKey } from './auth-storage.mjs';
 const UUID = /^[a-f0-9]{8}-[a-f0-9]{4}-[1-8][a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/i;
 const TOKEN = /^[A-Za-z0-9._~-]{16,8192}$/;
 const MESSAGES = Object.freeze({
-  AUTH_DISABLED: 'Real sign-in is not enabled.', INVALID_CONFIG: 'Real sign-in is not configured.',
+  AUTH_DISABLED: 'Real sign-in is not enabled.', GOOGLE_DISABLED: 'Google sign-in is not enabled.', INVALID_CONFIG: 'Real sign-in is not configured.',
   INVALID_INPUT: 'Check the required fields.', AUTH_BUSY: 'A sign-in operation is already in progress.',
   AUTH_FAILED: 'Sign-in could not be completed. Check your details and try again.',
   RATE_LIMITED: 'Please wait before trying again.', EMAIL_VERIFICATION_REQUIRED: 'Check your email to verify your account, then sign in.',
@@ -291,6 +291,9 @@ export function createSupabaseAuthController(options = {}) {
     }, { preserveSession: true });
   }
   function signInWithGoogle() {
+    // Gate before SDK creation or storage access; provider enablement is separate.
+    try { assertOpen(); if (options.googleEnabled !== true) throw failure('GOOGLE_DISABLED'); }
+    catch (error) { return Promise.reject(safeError(error)); }
     return run('redirect_ready', async (generation) => {
       if (currentSession) throw failure('AUTH_BUSY');
       storage.clearRecovery(); storage.beginFlow('google', config.callbackUrl);
@@ -329,6 +332,7 @@ export function createSupabaseAuthController(options = {}) {
         const flowId = url.searchParams.get('sb_flow_id');
         if (flowId !== null && !/^[A-Za-z0-9_-]{8,64}$/.test(flowId)) throw failure('CALLBACK_INVALID');
         const pending = storage.pending();
+        if (pending?.kind === 'google' && options.googleEnabled !== true) throw failure('GOOGLE_DISABLED');
         if (!pending || pending.callbackUrl !== `${config.origin}${url.pathname}` || !storage.hasVerifier(flowId)
           || ((pending.kind === 'recovery') !== (url.pathname === config.recoveryPath))) throw failure('CALLBACK_INVALID');
         if (pending.kind === 'recovery') storage.setRecovery({ pending: true, expiresAt: now() + 10 * 60_000 });

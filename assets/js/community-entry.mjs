@@ -19,7 +19,7 @@ if (root) {
     let tabStorage;
     try { tabStorage = window.sessionStorage; } catch { throw Object.assign(new Error('Tab storage is unavailable.'), { code: 'STORAGE_UNAVAILABLE' }); }
     const auth = createSupabaseAuthController({ enabled: config.enabled, createClient, origin: config.allowedOrigin, supabaseUrl: config.supabaseUrl,
-      publishableKey: config.publishableKey, emailStepupEnabled: config.emailStepupEnabled, callbackPath: COMMUNITY_PATHS.callback, recoveryPath: COMMUNITY_PATHS.recovery, tabStorage,
+      publishableKey: config.publishableKey, googleEnabled: config.googleEnabled, emailStepupEnabled: config.emailStepupEnabled, callbackPath: COMMUNITY_PATHS.callback, recoveryPath: COMMUNITY_PATHS.recovery, tabStorage,
       replaceUrl: path => history.replaceState(null, '', path) });
     const hints = createAccountHintStore({ storage: tabStorage, project: new URL(config.supabaseUrl).hostname });
     bindCommunityAccountHint(auth, hints);
