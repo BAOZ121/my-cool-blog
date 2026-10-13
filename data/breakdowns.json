@@ -149,7 +149,7 @@
       ],
       "evidence": [{"text": "ABB's robotics services cover installation, support, maintenance and modernization, illustrating commercial activity beyond the initial equipment sale.", "source": "abb"}],
       "sources": [{"id": "abb", "publisher": "ABB", "title": "Robotics Services", "url": "https://www.abb.com/global/en/areas/robotics/services", "published": "Undated; product/service page", "type": "Company documentation", "supports": "One vendor's service offerings; not independent evidence of achieved returns or industry-wide revenue mix."}],
-      "related": []
+      "related": [{"title": "Global embodied intelligence and humanoid robotics industry report", "url": "/post/embodied-intelligence-humanoid-robotics/"}]
     },
     {
       "id": "biopharmaceuticals",

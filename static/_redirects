@@ -16,3 +16,8 @@
 /test/power-grid-equipment-v1 /post/power-grid-equipment-transmission-distribution/ 301
 /test/power-grid-equipment-v1/ /post/power-grid-equipment-transmission-distribution/ 301
 /test/power-grid-equipment-v1/* /post/power-grid-equipment-transmission-distribution/:splat 301
+
+# The reviewed embodied intelligence report is now a published article.
+/test/embodied-intelligence-humanoid-robotics-v2 /post/embodied-intelligence-humanoid-robotics/ 301
+/test/embodied-intelligence-humanoid-robotics-v2/ /post/embodied-intelligence-humanoid-robotics/ 301
+/test/embodied-intelligence-humanoid-robotics-v2/* /post/embodied-intelligence-humanoid-robotics/:splat 301
