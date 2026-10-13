@@ -1,7 +1,7 @@
 {{- if .Params.testpage }}
   <meta name="robots" content="noindex, nofollow">
 {{- end }}
-{{ partial "page-transitions/assets.html" . }}
+{{ if not .Params.amdResearch }}{{ partial "page-transitions/assets.html" . }}{{ end }}
 {{ partial "chapter-rail/assets.html" . }}
 {{ partial "site-navigation/assets.html" . }}
 {{ if .Draft }}
@@ -20,9 +20,16 @@
 {{ if or (.HasShortcode "industry-map") (.HasShortcode "market-share") }}
   {{ partial "article-visuals/assets.html" . }}
 {{ end }}
-{{ if .Params.companyResearch }}
+{{ if and .Params.companyResearch (not .Params.amdResearch) }}
   {{ $companyCSS := resources.Get "css/company-research.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $companyCSS.RelPermalink }}" integrity="{{ $companyCSS.Data.Integrity }}">
+{{ end }}
+
+{{ if .Params.amdResearch }}
+  {{ $amdCSS := resources.Get "css/amd-company-research.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $amdCSS.RelPermalink }}" integrity="{{ $amdCSS.Data.Integrity }}" crossorigin="anonymous">
+  {{ $amdJS := resources.Get "js/amd-company-research.js" | minify | fingerprint }}
+  <script defer src="{{ $amdJS.RelPermalink }}" integrity="{{ $amdJS.Data.Integrity }}" crossorigin="anonymous"></script>
 {{ end }}
 {{ $image := partial "helper/image" (dict "Image" .Params.image "Resources" .Resources "Context" .) }}
 {{ if not $image }}

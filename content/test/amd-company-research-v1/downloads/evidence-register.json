@@ -1,0 +1,806 @@
+[
+  {
+    "id": "H01",
+    "material": "AMD 2021 Form 10-K：https://ir.amd.com/financial-information/sec-filings/content/0000002488-22-000016/amd-20211225.htm",
+    "dates": "2022-02-03；注册 1969-05-01、公众公司 1972",
+    "location": "Part I, Item 1, General，网页行 188",
+    "limits": "注册地与日期，公开上市年份；不支持 IPO 月日及发行价格",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/financial-information/sec-filings/content/0000002488-22-000016/amd-20211225.htm"
+    ]
+  },
+  {
+    "id": "H02",
+    "material": "CHM, Fairchildren：https://computerhistory.org/fairchildren/",
+    "dates": "页面未见发布日期；事件 1969",
+    "location": "Advanced Micro Devices, Sunnyvale, CA (1969)，行 118–127",
+    "limits": "八人全部来自 Fairchild，早期逻辑和模拟器件策略；创办名单中 L. Stegner 的拼写与其他二手资料不同，正文未擅自扩全名",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://computerhistory.org/fairchildren/"
+    ]
+  },
+  {
+    "id": "H03",
+    "material": "Report to the Computer History Museum on the Information Technology Corporate Histories Project — Semiconductor Sector：https://archive.computerhistory.org/resources/access/text/2012/10/102746515-05-01-acc.pdf",
+    "dates": "档案录入 Sanders 条目 2006-10-01；原访谈 2002-10-18；毕业 1958、入 Fairchild 1961",
+    "location": "PDF 第 211–212 页（零起算 P210–211），Sanders, Jerry — Interview 条目",
+    "limits": "实际读到 Stanford 访谈摘要中的 Sanders 履历；完整访谈链接打开失败，未声称阅读全文",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://archive.computerhistory.org/resources/access/text/2012/10/102746515-05-01-acc.pdf"
+    ]
+  },
+  {
+    "id": "H04",
+    "material": "AMD 2900 Microprocessor Family Oral History Panel：https://archive.computerhistory.org/resources/access/text/2013/05/102658341-05-01-acc.pdf",
+    "dates": "录制／版权 2009-02-11；回忆事件 1969、1970 年代、1975-07-21",
+    "location": "PDF 封面；第 3–4 页（创办、融资、9300 与客户）；第 14–15 页（2901 公告）；第 18–19 页（研讨会及设计导入）",
+    "limits": "创办人和产品开发参与者回忆；明确 155 万美元来自多年后口述；客户拜访不是合同或成立当年客户名单",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://archive.computerhistory.org/resources/access/text/2013/05/102658341-05-01-acc.pdf"
+    ]
+  },
+  {
+    "id": "H05",
+    "material": "David Laws, It's a Good Year for Asparagus：https://computerhistory.org/blog/it-s-a-good-year-for-asparagus-advanced-micro-devices-amd-celebrates-50-years-as-an-independent-computer-chip-supplier/",
+    "dates": "2019-05-01；广告及事件 1969–1983",
+    "location": "正文及历史广告图注，行 67–108；作者声明行 117",
+    "limits": "早期 64 位 RAM、测试营销、1978 Zilog、1979-10-15 NYSE、1983 IBM PC 第二来源；作者曾在 AMD 任职十二年；不采用文章赞誉及竞争评价",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://computerhistory.org/blog/it-s-a-good-year-for-asparagus-advanced-micro-devices-amd-celebrates-50-years-as-an-independent-computer-chip-supplier/"
+    ]
+  },
+  {
+    "id": "H06",
+    "material": "AMD 1995 Annual Report：https://ir.amd.com/financial-information/sec-filings/content/0000898430-96-000902/EX-13.txt",
+    "dates": "1996-03-21；1972／1979",
+    "location": "Corporate Profile，行 38–51",
+    "limits": "上市与纽交所挂牌年份交叉核验；不支持上市发行股数和价格",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/financial-information/sec-filings/content/0000898430-96-000902/EX-13.txt"
+    ]
+  },
+  {
+    "id": "H07",
+    "material": "Supreme Court of California, Advanced Micro Devices, Inc. v. Intel Corp., 9 Cal.4th 362：https://scocal.stanford.edu/opinion/advanced-micro-devices-inc-v-intel-corp-31610/",
+    "dates": "判决 1994-12-30；合同 1982-02、Am386 1991-03",
+    "location": "多数意见开篇及案情，行 33–66；处理结果行 39",
+    "limits": "技术交换机制、仲裁／司法审查和 Am386 时间；不能概括为所有争议 AMD 胜诉",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://scocal.stanford.edu/opinion/advanced-micro-devices-inc-v-intel-corp-31610/"
+    ]
+  },
+  {
+    "id": "H08",
+    "material": "AMD/Intel 联合公告，AMD 8-K Exhibit 28.2：https://ir.amd.com/financial-information/sec-filings/content/0000898430-95-000048/EX-28_2.txt",
+    "dates": "公告 1995-01-11；申报 1995-01-19",
+    "location": "主公告及协议要点，行 31–60",
+    "limits": "386/486 永久微码许可及范围排除、5,800 万／约 1,800 万美元、当时未决案件结算；金额均为美元",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/financial-information/sec-filings/content/0000898430-95-000048/EX-28_2.txt"
+    ]
+  },
+  {
+    "id": "H09",
+    "material": "AMD Form 8-K：https://ir.amd.com/financial-information/sec-filings/content/0000898430-96-000281/8-K.txt",
+    "dates": "申报 1996-02-01；并购 1996-01-17",
+    "location": "Item 2，行 44–58",
+    "limits": "NexGen 完成日、0.8 股交换率；与 1995-10-20 签约日区分",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/financial-information/sec-filings/content/0000898430-96-000281/8-K.txt"
+    ]
+  },
+  {
+    "id": "H10",
+    "material": "AMD Prospectus, Form 424B5：https://ir.amd.com/financial-information/sec-filings/content/0000950109-96-005024/424B5.txt",
+    "dates": "1996-08-09；当时产品状态",
+    "location": "Risk Factors — Microprocessor Products — Dependence on New AMD Microprocessor Products，S-12（行 810–840）",
+    "limits": "K5 经营困难、NexGen 收购目的和 K6 设计源流；文件里的 1997 出货是当时计划，不能单用此文件证明已交付",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/financial-information/sec-filings/content/0000950109-96-005024/424B5.txt"
+    ]
+  },
+  {
+    "id": "H11",
+    "material": "AMD 1998 Form 10-K：https://ir.amd.com/financial-information/sec-filings/content/0001012870-99-000892/10-K.txt",
+    "dates": "1999-03-29；K6 批量交付 1997 Q2，FASL 1993",
+    "location": "Computation Products Group，行 307–320；Certain Material Agreements — FASL，行 640–645",
+    "limits": "K6 实际批量出货和 Fujitsu 合资起点；避免采用公司当时市场领先表述",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/financial-information/sec-filings/content/0001012870-99-000892/10-K.txt"
+    ]
+  },
+  {
+    "id": "H12",
+    "material": "AMD 1999 Annual Report，公司文件保存副本：https://www.annualreports.com/HostedData/AnnualReportArchive/a/NYSE_AMD_1999.pdf",
+    "dates": "1999 财年；股东信 2000-02-29（含后加的 2000-03-06 公告）",
+    "location": "PDF 第 4–6 页，To My Fellow Shareholders；第 3 页 Financial Highlights",
+    "limits": "Athlon 在 1999 推出，K6-2 良率与速度档位不足，1999 年收入 2,857.604 百万美元、净亏损 88.936 百万美元；为公司年报副本，市场评价仅是管理层意见",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://www.annualreports.com/HostedData/AnnualReportArchive/a/NYSE_AMD_1999.pdf"
+    ]
+  },
+  {
+    "id": "H13",
+    "material": "AMD 2000 Annual Report，公司文件保存副本：https://www.annualreports.com/HostedData/AnnualReportArchive/a/NYSE_AMD_2000.pdf",
+    "dates": "2000 财年；事件 2000-03-06",
+    "location": "PDF 第 7 页（零起算 P6），Letter to Our Shareholders",
+    "limits": "1 GHz Athlon 推出日期；不采用“全球最快”或未限定的第一表述",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://www.annualreports.com/HostedData/AnnualReportArchive/a/NYSE_AMD_2000.pdf"
+    ]
+  },
+  {
+    "id": "H14",
+    "material": "AMD Q2 2003 Results, 8-K Exhibit 99.1：https://ir.amd.com/financial-information/sec-filings/content/0001193125-03-020249/dex991.htm",
+    "dates": "2003-07-16；Opteron 推出 2003-04-22",
+    "location": "Highlights of the Quarter，行 103–126",
+    "limits": "Opteron 发布日期、IBM 服务器计划、Microsoft 与软件支持承诺；不把计划写成当日服务器交付",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/financial-information/sec-filings/content/0001193125-03-020249/dex991.htm"
+    ]
+  },
+  {
+    "id": "H15",
+    "material": "AMD 2003 Form 10-K：https://ir.amd.com/financial-information/sec-filings/content/0001193125-04-037179/d10k.htm",
+    "dates": "2004-03-09；2003-04／09",
+    "location": "Part I, Computation Products — Microprocessor Products，行 243、326–342",
+    "limits": "Athlon 64 推出月份及 AMD64 的 64 位扩展／32 位应用兼容设计；不保证任意软件配置",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/financial-information/sec-filings/content/0001193125-04-037179/d10k.htm"
+    ]
+  },
+  {
+    "id": "H16",
+    "material": "AMD 2006 Form 10-K：https://ir.amd.com/financial-information/sec-filings/content/0001193125-07-044191/d10k.htm",
+    "dates": "2007-03-01；Spansion IPO 2005-12-21、ATI 2006-10-25",
+    "location": "MD&A — ATI Acquisition，第 54–55 页（行 1967–1993）；Spansion IPO 行 2150–2153；Note 4",
+    "limits": "ATI 总购买价 5,604 百万美元与计量范围；Spansion 股权／并表改变",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/financial-information/sec-filings/content/0001193125-07-044191/d10k.htm"
+    ]
+  },
+  {
+    "id": "H17",
+    "material": "AMD Completes ATI Acquisition, 8-K Exhibit 99.1：https://ir.amd.com/financial-information/sec-filings/content/0001193125-06-217735/dex991.htm",
+    "dates": "公告 2006-10-25；申报 2006-10-30",
+    "location": "Transaction Details，行 61–70；Fusion 计划标题",
+    "limits": "当时约 54 亿美元估值、股价计量日、不含承接奖励、现金和股份及借款；Fusion 是提出的计划",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/financial-information/sec-filings/content/0001193125-06-217735/dex991.htm"
+    ]
+  },
+  {
+    "id": "H18",
+    "material": "AMD Form 8-K：https://ir.amd.com/financial-information/sec-filings/content/0001193125-09-046101/d8k.htm",
+    "dates": "2009-03-05；交割 2009-03-02、改名 2009-03-04",
+    "location": "Items 1.01/2.01，行 101–107；Wafer Supply Agreement 行 165–168",
+    "limits": "德累斯顿工厂及资产投入、GF 命名和采购关系；2009 年不等于 AMD 已完全退出股权",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/financial-information/sec-filings/content/0001193125-09-046101/d8k.htm"
+    ]
+  },
+  {
+    "id": "H19",
+    "material": "AMD Amends Wafer Supply Agreement With GLOBALFOUNDRIES：https://ir.amd.com/news-events/press-releases/detail/408/amd-amends-wafer-supply-agreement-with-globalfoundries",
+    "dates": "2012-03-04",
+    "location": "公告开篇与协议要点，行 35–43",
+    "limits": "剩余股权转出与供应协议继续；正文不采用未来费用指引作为实际费用",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/news-events/press-releases/detail/408/amd-amends-wafer-supply-agreement-with-globalfoundries"
+    ]
+  },
+  {
+    "id": "H20",
+    "material": "AMD Form 8-K：https://ir.amd.com/financial-information/sec-filings/content/0001193125-09-236705/d8k.htm；联合公告：https://www.intel.com/pressroom/archive/releases/2009/20091112corp_a.htm?lang=en",
+    "dates": "8-K 2009-11-17；签约 2009-11-11；联合公告 2009-11-12",
+    "location": "8-K Items 1.01/8.01，行 103–131；联合公告协议条款段",
+    "limits": "12.5 亿美元、私人诉讼结算、新交叉许可；协议签约与公开公告分开；监管机构独立案件不因私人和解自动终结",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/financial-information/sec-filings/content/0001193125-09-236705/d8k.htm",
+      "https://www.intel.com/pressroom/archive/releases/2009/20091112corp_a.htm?lang=en"
+    ]
+  },
+  {
+    "id": "H21",
+    "material": "AMD 原公告，经 GlobeNewswire 分发：https://www.globenewswire.com/news-release/2014/10/08/1011346/0/en/AMD-Appoints-Dr-Lisa-Su-as-President-and-Chief-Executive-Officer.html",
+    "dates": "2014-10-08；任命当日生效",
+    "location": "公告首段；About Dr. Lisa Su，行 57–70",
+    "limits": "Lisa Su 任命、2012 加入、Freescale／IBM 履历；不采用发布稿主观评价",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://www.globenewswire.com/news-release/2014/10/08/1011346/0/en/AMD-Appoints-Dr-Lisa-Su-as-President-and-Chief-Executive-Officer.html"
+    ]
+  },
+  {
+    "id": "H22",
+    "material": "AMD Ryzen 7 Desktop Processors Available Worldwide Today：https://ir.amd.com/news-events/press-releases/detail/753/amd-ryzentm-7-desktop-processors-featuring-record-breaking-overclocking-performance-available-worldwide-today",
+    "dates": "2017-03-02",
+    "location": "开篇、Availability、型号表，行 38–58",
+    "limits": "首批 Ryzen 7 三型号、8C16T、Zen 和四年开发公司自述；不采用通用性能领先结论",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/news-events/press-releases/detail/753/amd-ryzentm-7-desktop-processors-featuring-record-breaking-overclocking-performance-available-worldwide-today"
+    ]
+  },
+  {
+    "id": "H23",
+    "material": "AMD EPYC Datacenter Processor Launch：https://ir.amd.com/news-events/press-releases/detail/773/amd-epyc-datacenter-processor-launches-with-record-setting-performance-optimized-platforms-and-global-server-ecosystem-support",
+    "dates": "2017-06-20",
+    "location": "开篇、Zen／核心数和 OEM 支持段（行 41–51）；测试脚注（行 145–150）",
+    "limits": "EPYC 7000 发布日、Zen 和最高 32 核；厂商性能比较及投射值不用于历史结论",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/news-events/press-releases/detail/773/amd-epyc-datacenter-processor-launches-with-record-setting-performance-optimized-platforms-and-global-server-ecosystem-support"
+    ]
+  },
+  {
+    "id": "H24",
+    "material": "AMD Form 8-K：https://ir.amd.com/financial-information/sec-filings/content/0000002488-22-000031/amd-20220214.htm",
+    "dates": "2022-02-14",
+    "location": "Introductory Note 与 Item 2.01, Merger Consideration，行 83–98",
+    "limits": "Xilinx 完成日期、全资子公司与交换率 1.7234",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/financial-information/sec-filings/content/0000002488-22-000031/amd-20220214.htm"
+    ]
+  },
+  {
+    "id": "H25",
+    "material": "AMD Completes Acquisition of Xilinx, 8-K Exhibit 99.1：https://ir.amd.com/financial-information/sec-filings/content/0000002488-22-000031/xilinxacquisitionclosepres.htm",
+    "dates": "2022-02-14；首次宣布 2020-10-27",
+    "location": "主公告，行 44–51",
+    "limits": "全股票交易与 FPGA／自适应 SoC 等技术范围；不将管理层市场机会估算当成实际收入",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/financial-information/sec-filings/content/0000002488-22-000031/xilinxacquisitionclosepres.htm"
+    ]
+  },
+  {
+    "id": "H26",
+    "material": "AMD 2022 Form 10-K：https://ir.amd.com/financial-information/sec-filings/content/0000002488-23-000047/amd-20221231.htm",
+    "dates": "2023-02-27；2022-02-14 并购",
+    "location": "Note 5 — Acquisitions, Xilinx Acquisition，行 2141–2145／印刷第 68 页",
+    "limits": "488 亿美元总对价、2022-02-11 股价计量、并表期间与分部；不混用最初宣布估值",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/financial-information/sec-filings/content/0000002488-23-000047/amd-20221231.htm"
+    ]
+  },
+  {
+    "id": "F01",
+    "material": "AMD FY2021 Form 10-K；2022-02-03；https://ir.amd.com/financial-information/sec-filings/content/0000002488-22-000016/amd-20211225.htm",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "Item 7；Item 8 pp.48–54；年度损益、资产负债、现金流；原始两分部；Note 2 财年；Note 分部披露",
+    "limits": "2021 公司范围尚未包含 Xilinx/Pensando；旧分部不能直接与新结构比较",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/financial-information/sec-filings/content/0000002488-22-000016/amd-20211225.htm"
+    ]
+  },
+  {
+    "id": "F02",
+    "material": "AMD FY2022 Form 10-K；2023-02-27；https://ir.amd.com/financial-information/sec-filings/content/0000002488-23-000047/amd-20221231.htm",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "Item 8 pp.51–57；Note 4 pp.64–66；Note 5 pp.68–70；Note 9 pp.73–74；Note 12 SBC；FY2021/2022 财务及重列分部；客户比例",
+    "limits": "FY2022 为 53 周；收购自完成日并表；客户匿名；Pro forma 是未审计假设口径，未用于本表",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/financial-information/sec-filings/content/0000002488-23-000047/amd-20221231.htm"
+    ]
+  },
+  {
+    "id": "F03",
+    "material": "AMD FY2024 Form 10-K；2025-02-05；https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000012/amd-20241228.htm",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "Item 8 balance sheets、cash flows；Note 9 债务；FY2023/2024 期末现金/债务和现金支付回购交叉核验",
+    "limits": "2025 分部变更前结构；主表 FY2023/24 损益使用 F05 最新可比列示",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000012/amd-20241228.htm"
+    ]
+  },
+  {
+    "id": "F05",
+    "material": "AMD FY2025 Form 10-K；2026-02-04；https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000018/amd-20251227.htm",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "Item 8 pp.58–63；Note 2 p.64；Note 3 pp.69–70；Note 4 pp.70–72；Note 5 pp.72–74；Note 9 pp.78–79；Note 14 pp.83–84；审计报告 pp.92–93",
+    "limits": "FY2025 有持续/终止经营区分；Client ASP/销量原 MD&A 错误须由 F06 修正；正式年度报表本身未修订",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000018/amd-20251227.htm"
+    ]
+  },
+  {
+    "id": "F06",
+    "material": "AMD FY2025 Form 10-K/A；2026-02-04；https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000021/amd-20251227.htm",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "Explanatory Note 及 Item 7：将 Client 出货量/ASP 更正为 +15%/+31%",
+    "limits": "仅更正指定 MD&A 表述，非整份后续事项更新或财报重述",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000021/amd-20251227.htm"
+    ]
+  },
+  {
+    "id": "F07",
+    "material": "AMD Q2 2026 Form 10-Q；2026-08-05；https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000123/amd-20260627.htm",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "pp.3–7 中期报表；Note 4 pp.10–12；Note 9 pp.16–17；Note 10 p.17；Note 12 pp.19–20；MD&A pp.24–29",
+    "limits": "未审计；损益分别单季/半年，现金流半年累计；后续租赁时间界限截至申报日；不能制造 Q3 实际结果",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000123/amd-20260627.htm"
+    ]
+  },
+  {
+    "id": "F08",
+    "material": "AMD Reports Second Quarter 2026 Financial Results；2026-08-04；https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "GAAP Quarterly Financial Results；附现金流/FCF调节表：单季 CFO 2,366、capex 808；前期比较",
+    "limits": "新闻稿包含公司未来指引和宣传说法；研究使用已发生数据，未将指引混为实际",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results"
+    ]
+  },
+  {
+    "id": "F09",
+    "material": "AMD Reports First Quarter 2026 Financial Results；2026-05-05；https://ir.amd.com/news-events/press-releases/detail/1284/amd-reports-first-quarter-2026-financial-results",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "GAAP Quarterly Financial Results、财务附表；Q1 比較、现金流 2,955 及 capex 389",
+    "limits": "未审计；公司 forward-looking statements 不作为已实现事实",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/news-events/press-releases/detail/1284/amd-reports-first-quarter-2026-financial-results"
+    ]
+  },
+  {
+    "id": "F10",
+    "material": "AMD 2026 Definitive Proxy Statement (DEF 14A)；2026-03-27；https://ir.amd.com/financial-information/sec-filings/content/0001193125-26-129057/d85856ddef14a.htm",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "Q&A pp.1–3；Board Leadership p.19；Security Ownership pp.36–37；Executive Officers pp.38–43",
+    "limits": "2026-03-19 股东记录日；机构持仓脚注依赖 2024 13G，不能当即时持仓；董事列表须加后续变更",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/financial-information/sec-filings/content/0001193125-26-129057/d85856ddef14a.htm"
+    ]
+  },
+  {
+    "id": "F11",
+    "material": "AMD Board of Directors；页面未标独立发布日期；https://ir.amd.com/governance/board-of-directors",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "实际读取当期全名单及 Su/Denzel 身份；2026-10-13 页面快照",
+    "limits": "随时更新；只能证明读取时官网列示信息，历史日期以公告/代理声明核验",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/governance/board-of-directors"
+    ]
+  },
+  {
+    "id": "F12",
+    "material": "AMD Appoints Tim Ryan to Board of Directors；2026-08-19；https://ir.amd.com/news-events/press-releases/detail/1297/amd-appoints-tim-ryan-to-board-of-directors",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "新闻稿全文：Ryan 当日加入、Householder 退休、委员会变更",
+    "limits": "该公告不替代全部董事独立性判断或最新股东持仓",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/news-events/press-releases/detail/1297/amd-appoints-tim-ryan-to-board-of-directors"
+    ]
+  },
+  {
+    "id": "F13",
+    "material": "AMD to Report Fiscal Third Quarter 2026 Financial Results；2026-10-06；https://ir.amd.com/news-events/press-releases/detail/1300/amd-to-report-fiscal-third-quarter-2026-financial-results",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "公告正文：计划 2026-11-03 披露 Q3",
+    "limits": "只证明公告时间表，未披露 Q3 结果",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/news-events/press-releases/detail/1300/amd-to-report-fiscal-third-quarter-2026-financial-results"
+    ]
+  },
+  {
+    "id": "OP01",
+    "material": "[AMD 2025 Form 10-K](https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000018/amd-20251227.htm)，AMD，2026-02-04；年度截至2025-12-27",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "Part I Item1：Customers、Competition、Manufacturing Arrangements and Assembly and Test Facilities；Item1A供应/出口；Item7 ZT；Note segment/concentration、ZT",
+    "limits": "只读相关章节；制造安排不是逐型号采购表；未具名客户不能补猜",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000018/amd-20251227.htm"
+    ]
+  },
+  {
+    "id": "OP02",
+    "material": "[AMD Q2 2026 Form 10-Q](https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000123/amd-20260627.htm)，AMD，2026-08-05；季度截至2026-06-27",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "Part II Item1A Legal and Regulatory Risks，抽取行1432-1434、1541-1545；Item2相关MI308解释",
+    "limits": "事项状态按提交时披露；本稿没有把法规内容升级为独立法律判断",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000123/amd-20260627.htm"
+    ]
+  },
+  {
+    "id": "OP03",
+    "material": "[EPYC 9006 / Venice 技术介绍](https://www.amd.com/en/blogs/2026/agentic-ai-amd-epyc-9005-cpus-wins-today-epyc-9006.html)，AMD，2026-07-23",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "正文开头架构与家族最高规格，抽取行449-455",
+    "limits": "性能领先属AMD分析；未采用厂商对比结论",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://www.amd.com/en/blogs/2026/agentic-ai-amd-epyc-9005-cpus-wins-today-epyc-9006.html"
+    ]
+  },
+  {
+    "id": "OP04",
+    "material": "[Venice 台积电2nm生产爬坡公告](https://newsroom.amd.com/news/amd-announces-production-ramp-of-next-generation-a/)，AMD，2026-05-21",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "正文80-87：台湾生产、Arizona未来计划、封装技术",
+    "limits": "有TSMC CEO公开引述；不支持任何良率、产能分配、Arizona实际开工时间",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://newsroom.amd.com/news/amd-announces-production-ramp-of-next-generation-a/"
+    ]
+  },
+  {
+    "id": "OP05",
+    "material": "[CES 2026 Ryzen/ROCm公告](https://ir.amd.com/news-events/press-releases/detail/1270/amd-expands-ai-leadership-across-client-graphics-and-software-with-new-ryzen-ryzen-ai-and-amd-rocm-announcements-at-ces-2026)，AMD，2026-01-05",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "Ryzen AI400移动家族、Pricing and Availability、规格表",
+    "limits": "最多60TOPS为NPU厂商规格；不是整机有效AI应用吞吐",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/news-events/press-releases/detail/1270/amd-expands-ai-leadership-across-client-graphics-and-software-with-new-ryzen-ryzen-ai-and-amd-rocm-announcements-at-ces-2026"
+    ]
+  },
+  {
+    "id": "OP06",
+    "material": "[Ryzen AI400桌面扩展](https://newsroom.amd.com/news/amd-gives-consumers-and-businesses-more-ai-pc-opti/)，AMD，2026-03-02",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "Desktop Availability、规格表、移动工作站计划",
+    "limits": "公告預期可用，不作为逐地区实际铺货证据",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://newsroom.amd.com/news/amd-gives-consumers-and-businesses-more-ai-pc-opti/"
+    ]
+  },
+  {
+    "id": "OP07",
+    "material": "[Threadripper PRO9000 WX](https://www.amd.com/en/blogs/2025/amd-introduces-new-zen-5-based-ryzen-threadripper-pro.html)，AMD，2025-07-17",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "正文454-458、AMD PRO与规格表",
+    "limits": "仅采用定位、最高核数、公告交付日期；不采用最快/领先",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://www.amd.com/en/blogs/2025/amd-introduces-new-zen-5-based-ryzen-threadripper-pro.html"
+    ]
+  },
+  {
+    "id": "OP08",
+    "material": "[Threadripper9000 HEDT](https://www.amd.com/en/blogs/2025/designed-to-create-built-to-inspire-amd-introduces-new.html)，AMD，2025-07-25",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "正文开头发货日期、定位与R9700描述",
+    "limits": "用途说明不是第三方性能验证",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://www.amd.com/en/blogs/2025/designed-to-create-built-to-inspire-amd-introduces-new.html"
+    ]
+  },
+  {
+    "id": "OP09",
+    "material": "[RDNA4/Radeon RX9000 发布](https://ir.amd.com/news-events/press-releases/detail/1238/amd-unveils-next-generation-amd-rdna-4-architecture-with-the-launch-of-amd-radeon-rx-9000-series-graphics-cards)，AMD，2025-02-28",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "正文开头、Pricing and Availability、FSR4说明",
+    "limits": "发布日期与预计availability分开；不采用无条件性能提升",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/news-events/press-releases/detail/1238/amd-unveils-next-generation-amd-rdna-4-architecture-with-the-launch-of-amd-radeon-rx-9000-series-graphics-cards"
+    ]
+  },
+  {
+    "id": "OP10",
+    "material": "[Radeon RX 产品页](https://www.amd.com/en/products/graphics/desktops/radeon.html)，AMD，未标原发布日期",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "产品家族、FSR功能及脚注；截至读取日页面",
+    "limits": "动态页，具体游戏与版本随时间变化；未拿营销测试作全面比较",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://www.amd.com/en/products/graphics/desktops/radeon.html"
+    ]
+  },
+  {
+    "id": "OP11",
+    "material": "[Advancing AI2025发布](https://ir.amd.com/news-events/press-releases/detail/1255/amd-unveils-vision-for-an-open-ai-ecosystem-detailing-new-silicon-software-and-systems-at-advancing-ai-2025)，AMD，2025-06-12",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "MI350系列、已有部署与2H2025availability、客户现有生产任务",
+    "limits": "芯片发布/部署与所有OEM可用不同；伙伴发言不是未披露采购金额",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/news-events/press-releases/detail/1255/amd-unveils-vision-for-an-open-ai-ecosystem-detailing-new-silicon-software-and-systems-at-advancing-ai-2025"
+    ]
+  },
+  {
+    "id": "OP12",
+    "material": "[MI350 架构技术文档](https://rocmdocs.amd.com/en/latest/reference/gpu-arch/mi350.html)，AMD ROCm文档，页面当前10.1.0",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "产品形态、Chiplet、Memory、Node-level architecture，约行150-201",
+    "limits": "版本动态；带宽与FLOPS为峰值理论规格，本稿只采用形态/容量差异",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://rocmdocs.amd.com/en/latest/reference/gpu-arch/mi350.html"
+    ]
+  },
+  {
+    "id": "OP13",
+    "material": "[AAI2026 全栈发布](https://ir.amd.com/news-events/press-releases/detail/1294/aai-2026-amd-delivers-full-stack-compute-for-the-agentic-ai-era)，AMD，2026-07-23",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "正文44-61：Helios生产、配置、OpenAI计划、Meta验证；roadmap",
+    "limits": "所有TAM、tokens/dollar、2027后路线是预测，本稿不作事实领先判断",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/news-events/press-releases/detail/1294/aai-2026-amd-delivers-full-stack-compute-for-the-agentic-ai-era"
+    ]
+  },
+  {
+    "id": "OP14",
+    "material": "[Instinct 当前产品家族](https://www.amd.com/en/products/accelerators/instinct.html)，AMD，未标原发布日期",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "MI400/MI350/MI300组合；ROCm说明，行471-482、611-614",
+    "limits": "动态页，可证当前列表，不证每型号客户出货",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://www.amd.com/en/products/accelerators/instinct.html"
+    ]
+  },
+  {
+    "id": "OP15",
+    "material": "[Helion agentic rack](https://ir.amd.com/news-events/press-releases/detail/1301/introducing-amd-helion-agentic-ai-compute-at-rack-scale)，AMD，2026-10-12",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "正文41-49；Ecosystem Support",
+    "limits": "11月可用、OCP贡献均为计划；伙伴引述是支持关系，不是已交付订单",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/news-events/press-releases/detail/1301/introducing-amd-helion-agentic-ai-compute-at-rack-scale"
+    ]
+  },
+  {
+    "id": "OP16",
+    "material": "[Versal adaptive SoC 产品页](https://www.amd.com/en/products/adaptive-socs-and-fpgas/versal.html)，AMD，未标原发布日期",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "Overview、Portfolio；逻辑、CPU、AIEngine和片上网络说明",
+    "limits": "家族配置不同，不是每系列都有同样AI Engine/接口",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://www.amd.com/en/products/adaptive-socs-and-fpgas/versal.html"
+    ]
+  },
+  {
+    "id": "OP17",
+    "material": "[ROCm Core SDK10.1.0 Release Notes](https://rocm.docs.amd.com/en/docs-10.1.0/about/release-notes.html)，AMD，2026-10-05",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "日期、Applies、Release Highlights、已知/已解决问题索引，行175-213、1675-1722",
+    "limits": "不声称对所有设备支持同等；技术预览须保留状态",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://rocm.docs.amd.com/en/docs-10.1.0/about/release-notes.html"
+    ]
+  },
+  {
+    "id": "OP18",
+    "material": "[Vitis Unified Software Platform](https://www.amd.com/en/products/software/adaptive-socs-and-fpgas/vitis.html)，AMD，当前2026.1",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "Licensing Structure、Development Environment、HLS与Vivado",
+    "limits": "本次未核验每个许可条款细节或软件营收，不支持相应推算",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://www.amd.com/en/products/software/adaptive-socs-and-fpgas/vitis.html"
+    ]
+  },
+  {
+    "id": "OP19",
+    "material": "[Amazon EC2 M8a/M8azn](https://aws.amazon.com/ec2/instance-types/m8a/)，AWS，未标原发布日期",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "产品定位、5thGenEPYC、规格、Launch入口，行238-278/376-382",
+    "limits": "AWS生产关系；页面客户引述是AWS客户，不是AMD直接客户名单",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://aws.amazon.com/ec2/instance-types/m8a/"
+    ]
+  },
+  {
+    "id": "OP20",
+    "material": "[Microsoft Azure AI/HPC with AMD](https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/)，Microsoft，2026-07-20",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "HDv2、HXv2、ND MI455X v7，正文12-33",
+    "limits": "可证明Microsoft官方介绍；未确认每系列区域GA日期",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/"
+    ]
+  },
+  {
+    "id": "OP21",
+    "material": "[Microsoft/AMD扩大战略伙伴公告](https://newsroom.amd.com/news/microsoft-azure-ai-infrastructure/)，AMD，2026-07-20",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "正文76-83发货计划、Azure产品和DPU",
+    "limits": "与OP20交叉核验；不补采购金额",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://newsroom.amd.com/news/microsoft-azure-ai-infrastructure/"
+    ]
+  },
+  {
+    "id": "OP22",
+    "material": "[OpenAI/AMD6GW协议](https://openai.com/index/openai-amd-strategic-partnership/)，OpenAI，2025-10-06",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "协议、首1GW、权证/里程碑说明",
+    "limits": "买方原始披露；不代表全部GW已建成或权证已归属",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://openai.com/index/openai-amd-strategic-partnership/"
+    ]
+  },
+  {
+    "id": "OP23",
+    "material": "[Meta/AMD多年基础设施协议](https://about.fb.com/news/2026/02/meta-amd-partner-longterm-ai-infrastructure-agreement/)，Meta，2026-02-24",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "正文250-264：up to6GW、2H2026、Helios和多供应商策略",
+    "limits": "多供应商策略包括Meta自有MTIA，不写排他性",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://about.fb.com/news/2026/02/meta-amd-partner-longterm-ai-infrastructure-agreement/"
+    ]
+  },
+  {
+    "id": "OP24",
+    "material": "[Anthropic/AMD合作](https://ir.amd.com/news-events/press-releases/detail/1292/amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gigawatts-of-amd-instinct-mi450-series-gpus)，AMD双方联合公告，2026-07-22",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "正文38-46：既有MI355X、首1GW2027H1、投资承诺、软件",
+    "limits": "未找到Anthropic独立同日页面；事实归于联合公告",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/news-events/press-releases/detail/1292/amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gigawatts-of-amd-instinct-mi450-series-gpus"
+    ]
+  },
+  {
+    "id": "OP25",
+    "material": "[AMD/Cisco/HUMAIN沙特投产](https://ir.amd.com/news-events/press-releases/detail/1298/amd-cisco-and-humain-expand-saudi-arabias-ai-infrastructure-as-amd-instinct-systems-go-live)，AMD三方公告，2026-08-31",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "正文38-45实际运营与计划扩张",
+    "limits": "已投产容量未披露；不把250MW/1GW视为现有容量",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/news-events/press-releases/detail/1298/amd-cisco-and-humain-expand-saudi-arabias-ai-infrastructure-as-amd-instinct-systems-go-live"
+    ]
+  },
+  {
+    "id": "OP26",
+    "material": "[Xbox/AMD未来芯片合作](https://news.xbox.com/en-us/2025/06/19/xbox-amd-next-generation-xbox/)，Microsoft Xbox Wire，2025-06-19",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "正文33-42",
+    "limits": "未来产品路线，无主机售价/芯片单价/销量证据",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://news.xbox.com/en-us/2025/06/19/xbox-amd-next-generation-xbox/"
+    ]
+  },
+  {
+    "id": "OP27",
+    "material": "[升级PSSR推出](https://blog.playstation.com/2026/03/16/upgraded-pssr-rolling-out-to-silent-hill-f-monster-hunter-wilds-final-fantasy-vii-rebirth-crimson-desert-and-more/)，Sony PlayStation，2026-03-16",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "193-203系统更新与Project Amethyst说明",
+    "limits": "原生软件关系；不推出芯片合同收入",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://blog.playstation.com/2026/03/16/upgraded-pssr-rolling-out-to-silent-hill-f-monster-hunter-wilds-final-fantasy-vii-rebirth-crimson-desert-and-more/"
+    ]
+  },
+  {
+    "id": "OP28",
+    "material": "[PS5 QSSR](https://blog.playstation.com/?p=424016)，Sony PlayStation，2026-10-01",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "正文58-64：共同技术、两款首发游戏",
+    "limits": "功能公告；没有推断未宣布主机的推出日期",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://blog.playstation.com/?p=424016"
+    ]
+  },
+  {
+    "id": "OP29",
+    "material": "[Supply Chain Responsibility](https://www.amd.com/en/corporate/corporate-responsibility/supply-chain-responsibility.html)，AMD，未标原发布日期",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "正文505 fabless、Supplier Management、Footnotes600-601",
+    "limits": "自报供应审计数字未采用；页面称AMD并不独立验证供应商提供的数据",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://www.amd.com/en/corporate/corporate-responsibility/supply-chain-responsibility.html"
+    ]
+  },
+  {
+    "id": "OP30",
+    "material": "[Samsung/AMD下一代AI存储MOU](https://news.samsung.com/global/samsung-and-amd-expand-strategic-collaboration-on-next-generation-ai-memory-solutions)，Samsung，2026-03-18",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "正文79-88：HBM4、DDR5、HBM3E、潜在foundry讨论",
+    "limits": "不写排他供货或具体数量；foundry仅讨论，不是已签晶圆代工合同",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://news.samsung.com/global/samsung-and-amd-expand-strategic-collaboration-on-next-generation-ai-memory-solutions"
+    ]
+  },
+  {
+    "id": "OP31",
+    "material": "[Sanmina完成ZT制造业务收购](https://ir.sanmina.com/news/news-details/2025/SANMINA-COMPLETES-ACQUISITION-OF-ZT-SYSTEMS-DATA-CENTER-INFRASTRUCTURE-MANUFACTURING-BUSINESS-FROM-AMD/default.aspx)，Sanmina，2025-10-27",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "正文61-68收购完成、NPI伙伴、制造设施",
+    "limits": "可交叉确认交易完成；金额如采用须区分总对价/现金净收款与条件对价",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.sanmina.com/news/news-details/2025/SANMINA-COMPLETES-ACQUISITION-OF-ZT-SYSTEMS-DATA-CENTER-INFRASTRUCTURE-MANUFACTURING-BUSINESS-FROM-AMD/default.aspx"
+    ]
+  },
+  {
+    "id": "OP32",
+    "material": "[Taalas收购公告](https://ir.amd.com/news-events/press-releases/detail/1296/amd-acquires-taalas-to-advance-compute-solutions-for-rapidly-growing-ai-inference-market)，AMD，2026-08-06",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "正文41-47，协议与交割限制",
+    "limits": "标题Acquires与正文协议状态不同；未查到完成公告",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/news-events/press-releases/detail/1296/amd-acquires-taalas-to-advance-compute-solutions-for-rapidly-growing-ai-inference-market"
+    ]
+  },
+  {
+    "id": "OP33",
+    "material": "[World Labs收购协议](https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute)，AMD，2026-09-28",
+    "dates": "材料说明中列示；读取日期为 2026-10-13",
+    "location": "正文38-43；金额、全股票、预计完成及交割后职位",
+    "limits": "約82亿美元公告交易估值；未完成，不列为已并入主体/现任高管",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute"
+    ]
+  },
+  {
+    "id": "H27",
+    "material": "AMD 完成 Pensando 收购公告，AMD；https://www.amd.com/en/newsroom/press-releases/2022-5-26-amd-expands-data-center-solutions-capabilities-wit.html",
+    "dates": "2022-05-26 公告与完成",
+    "location": "正文首段及产品说明",
+    "limits": "公告交易价值约 19 亿美元；不采用厂商性能比较或未披露客户金额",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://www.amd.com/en/newsroom/press-releases/2022-5-26-amd-expands-data-center-solutions-capabilities-wit.html"
+    ]
+  },
+  {
+    "id": "H28",
+    "material": "AMD Completes Acquisition of Silo AI，AMD；https://ir.amd.com/news-events/press-releases/detail/1210/amd-completes-acquisition-of-silo-ai-to-accelerate-development-and-deployment-of-ai-models-on-amd-hardware",
+    "dates": "2024-08-12 完成公告发布日期",
+    "location": "正文首段及 AI 团队说明",
+    "limits": "约 6.65 亿美元现金交易；厂商对未来部署收益的期待不作已实现事实",
+    "read_date": "2026-10-13",
+    "urls": [
+      "https://ir.amd.com/news-events/press-releases/detail/1210/amd-completes-acquisition-of-silo-ai-to-accelerate-development-and-deployment-of-ai-models-on-amd-hardware"
+    ]
+  }
+]
