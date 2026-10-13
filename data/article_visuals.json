@@ -3125,6 +3125,170 @@
           "V26"
         ]
       }
+    },
+    "lisa-su-career": {
+      "title": "Education, engineering and leadership",
+      "eyebrow": "BIOGRAPHY MAP",
+      "description": "Explore the education, engineering roles, business responsibilities and support programs documented in this biography.",
+      "root": {
+        "name": "Lisa Su",
+        "children": [
+          {
+            "name": "Education and research",
+            "children": [
+              {
+                "name": "MIT · electrical engineering",
+                "children": [
+                  {
+                    "name": "B.S. 1990 · M.S. 1991 · Ph.D. 1994"
+                  },
+                  {
+                    "name": "UROP · semiconductor experiments"
+                  },
+                  {
+                    "name": "6A program · Analog Devices internships"
+                  },
+                  {
+                    "name": "Doctoral research · SOI MOSFETs"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Semiconductor engineering",
+            "children": [
+              {
+                "name": "Texas Instruments · process and device engineering"
+              },
+              {
+                "name": "IBM · engineering and management",
+                "children": [
+                  {
+                    "name": "Semiconductor R&D leadership"
+                  },
+                  {
+                    "name": "PowerPC Products · director"
+                  },
+                  {
+                    "name": "Cell microprocessor introduction"
+                  },
+                  {
+                    "name": "Technical assistant to Lou Gerstner · recalled experience"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Business leadership",
+            "children": [
+              {
+                "name": "Freescale",
+                "children": [
+                  {
+                    "name": "CTO · joined June 2007"
+                  },
+                  {
+                    "name": "Networking and Multimedia leadership · September 2008"
+                  }
+                ]
+              },
+              {
+                "name": "AMD",
+                "children": [
+                  {
+                    "name": "Global Business Units · joined January 3, 2012"
+                  },
+                  {
+                    "name": "COO · July 1, 2014"
+                  },
+                  {
+                    "name": "President and CEO · October 8, 2014"
+                  },
+                  {
+                    "name": "Chair · February 14, 2022"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Support for women in technical education",
+            "children": [
+              {
+                "name": "MIT fellowship fund · established 2018"
+              },
+              {
+                "name": "IEEE Women in Engineering Fund · prize donation"
+              },
+              {
+                "name": "AMD and AnitaB.org · 25 female students in 2021"
+              }
+            ]
+          }
+        ]
+      },
+      "note": "Branches organize documented facts. Company technologies were developed by teams; the map does not assign their invention to one person. Dates identify individual appointments, and some responsibilities overlapped. UROP and technical-assistant experiences are Su's retrospective accounts. The student-support program is described in AMD's corporate responsibility report. Further context and attribution appear in the chapters.",
+      "sources": [
+        {
+          "title": "IEEE Member Highlight Lisa Su",
+          "url": "https://life.ieee.org/2023/03/ieee-member-highlight-lisa-su/"
+        },
+        {
+          "title": "MIT thesis Extreme-submicrometer silicon-on-insulator SOI MOSFETs",
+          "url": "https://dspace.mit.edu/handle/1721.1/11618"
+        },
+        {
+          "title": "MIT Commencement address by Lisa Su",
+          "url": "https://news.mit.edu/2026/commencement-address-lisa-su-0528"
+        },
+        {
+          "title": "Lisa Su: Senior Vice President and CTO of Freescale Semiconductor — MTL Micronotes",
+          "url": "https://mtlsites.mit.edu/micronotes/micronotes_08.pdf"
+        },
+        {
+          "title": "AMD Dr Lisa Su executive biography",
+          "url": "https://www.amd.com/en/corporate/leadership/lisa-su.html"
+        },
+        {
+          "title": "Dream Big: Lisa Su Talks Chips, Curiosity, and Chance",
+          "url": "https://www.gsb.stanford.edu/insights/dream-big-lisa-su-talks-chips-curiosity-chance"
+        },
+        {
+          "title": "Ben Thompson An interview with AMD CEO Lisa Su about solving hard problems",
+          "url": "https://stratechery.com/2024/an-interview-with-amd-ceo-lisa-su-about-solving-hard-problems/"
+        },
+        {
+          "title": "Freescale Semiconductor 2010 Form 10-K",
+          "url": "https://investors.nxp.com/static-files/7bbc05a8-d449-4de4-9ba7-62e7824f746f"
+        },
+        {
+          "title": "AMD to appoint Dr Lisa Su as senior vice president and general manager Global Business Units",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/200/amd-to-appoint-dr-lisa-su-as-senior-vice-president-and-general-manager-global-business-units"
+        },
+        {
+          "title": "AMD Form 8-K COO appointment effective July 1 2014",
+          "url": "https://ir.amd.com/financial-information/sec-filings/content/0001193125-14-234226/d743024d8k.htm"
+        },
+        {
+          "title": "AMD appoints Dr Lisa Su as president and chief executive officer",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/568/amd-appoints-dr-lisa-su-as-president-and-chief-executive-officer"
+        },
+        {
+          "title": "AMD Board of Directors announces new appointments",
+          "url": "https://ir.amd.com/news-events/press-releases/detail/1048/amd-board-of-directors-announces-new-appointments"
+        },
+        {
+          "title": "MIT to name Building 12 home of MIT nano in honor of Lisa Su",
+          "url": "https://news.mit.edu/2022/mit-name-building-12-home-mitnano-honor-lisa-su-0407"
+        },
+        {
+          "title": "2021-22 AMD Corporate Responsibility Report Summary",
+          "url": "https://www.amd.com/content/dam/amd/en/documents/corporate/cr/2021-22-global-cr-report-summary.pdf"
+        }
+      ],
+      "reviewed": "2026-10-13"
     }
   },
   "shares": {

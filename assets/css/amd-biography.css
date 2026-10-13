@@ -1,5 +1,4 @@
-/* Lisa Su uses the existing article components. Only its palette and the
-   portrait's position in the standard cover banner differ from other reports. */
+/* Lisa Su reuses the site's biography components with an AMD palette. */
 @media screen {
   :root, :root[data-scheme="light"] {
     --body-background: #f7f5f5;
@@ -49,8 +48,41 @@
     --kbd-border-color: #59353f;
   }
 }
-.main-article .article-image img { object-position: 50% 29%; }
+/* Preserve the real portrait's complete composition, like the reference
+   biography. Its vertical source needs a finite height on wide screens. */
+.article-page .main-article .biography-header .article-image img {
+  height: auto;
+  max-height: 75vh;
+  object-fit: contain;
+  object-position: center;
+}
+@media print {
+  .article-page .main-article .biography-header .article-image img {
+    max-height: 120mm;
+  }
+}
+@media (min-width: 701px) {
+  .article-content .biography-route ol {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+@media screen {
+  :root .article-content .article-visual {
+    --visual-ink: var(--card-text-color-main);
+    --visual-muted: var(--card-text-color-secondary);
+    --visual-line: var(--card-separator-color);
+    --visual-accent: var(--accent-color);
+    --visual-soft: var(--card-background-selected);
+    --visual-surface: var(--card-background);
+    --visual-map-palette: #b5092d, #d33e5e, #98516b, #ca647c, #8e304f, #d7889b;
+  }
+  :root[data-scheme="dark"] .article-content .article-visual {
+    --visual-map-palette: #ff7594, #ffabc0, #ef7ba7, #d694ab, #ffcfda, #e96182;
+  }
+}
 /* These native biography figures reset the theme's full-bleed margins.
    Their width must reset with them for reading and printing. */
 .article-content .biography-photo,
+.article-content .biography-route,
+.article-content .biography-gifts,
 .article-content .biography-timeline { width: auto; }

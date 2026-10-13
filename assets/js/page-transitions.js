@@ -13,6 +13,8 @@
   const nvidia = !branded && entryView.theme === "nvidia";
   const amd = !branded && entryView.theme === "amd";
   const portraitCard = nvidia || amd;
+  // Only explicitly configured test biographies may also preview on direct entry.
+  const directEntry = portraitCard && entryView.onDirect === true;
   // Keep the biography's local-only replay option and native entry policy.
   const previewEntry = portraitCard && ["127.0.0.1", "localhost"].includes(location.hostname) &&
     new URL(location.href).searchParams.get("preview") === "loading";
@@ -71,7 +73,7 @@
     if (interrupted || motion.matches || document.hidden || scrollY > 1 || location.hash ||
         typeof document.documentElement.animate !== "function") return false;
     if (branded) return navigationType === "navigate" || navigationType === "reload";
-    if (previewEntry && ["navigate", "reload"].includes(navigationType)) return true;
+    if ((directEntry || previewEntry) && ["navigate", "reload"].includes(navigationType)) return true;
     return entry && navigationType === "navigate" && location.href === entry.to &&
       document.referrer === entry.from && Number.isFinite(entry.time) &&
       Date.now() - entry.time >= 0 && Date.now() - entry.time <= 15000;

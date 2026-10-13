@@ -9,11 +9,11 @@ type: "post"
 layout: "single"
 image: "assets/lisa-su-cover.jpg"
 imageAlt: "Lisa Su at SXSW in Austin, Texas, on March 11, 2024."
+biography: true
 amdbiography: true
 entryTheme: "amd"
 entryImage: "assets/lisa-su-cover.jpg"
-wordDownload: "/test/lisa-su/assets/biography-bilingual.docx"
-textDownload: "/test/lisa-su/assets/biography-bilingual.txt"
+entryPreview: true
 categories:
   - "个人传记"
 categoryLabel: "Personal Biography · Test"
@@ -33,12 +33,13 @@ outputs:
 
 <section class="biography-facts" aria-label="Biographical facts">
 <div><span>Current roles</span><strong>AMD Chair · President · CEO</strong><a href="#evidence-1">AMD executive biography</a></div>
-<div><span>MIT degrees</span><strong>B.S. 1990 · M.S. 1991 · Ph.D. 1994</strong><a href="#evidence-17">MIT degree record</a></div>
+<div><span>MIT degrees</span><strong>B.S. 1990 · M.S. 1991 · Ph.D. 1994</strong><a href="#evidence-3">MIT degree record</a></div>
 <div><span>AMD CEO appointment</span><strong>October 8, 2014</strong><a href="#evidence-9">Appointment announcement</a></div>
 <div><span>IEEE Noyce Medal</span><strong>2021 · First woman recipient</strong><a href="#evidence-5">Award record</a></div>
 </section>
 
 <p class="biography-cover-credit">Cover: Lisa Su at SXSW in Austin Texas on March 11 2024. Photo: Fuzheado · <a href="https://commons.wikimedia.org/wiki/File:SXSW-2024-alih-OB7A0861-Lisa_Su.jpg">Source</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. <a href="assets/lisa-su-cover.jpg" target="_blank" rel="noopener">View full-size cover · 3840 × 5760</a>.</p>
+<p class="biography-download"><a href="assets/biography-bilingual.docx" download>Download the Chinese and English biography (Word)</a> <a href="assets/biography-bilingual.txt" download>Download the Chinese and English biography (plain text)</a> <a href="/test/lisa-su/?preview=loading">Replay introduction</a></p>
 <p class="biography-cover-credit">Website test edition · Both downloads contain Chinese and English.</p>
 <p>Information cutoff: October 13, 2026.</p>
 
@@ -47,6 +48,12 @@ outputs:
 <p data-biography-intro="2">As a symbol of female empowerment, her engineering and leadership experience and support for women researchers and engineers offer concrete examples of women’s roles in technology.<sup id="cite-17-1"><a href="#evidence-17" aria-label="Source 17">[17]</a></sup><sup id="cite-26-1"><a href="#evidence-26" aria-label="Source 26">[26]</a></sup></p>
 
 ## 1 From Taiwan and New York to MIT {#early-life}
+
+<figure class="biography-route" aria-labelledby="lisa-route-title" data-biography-component="early-life-route">
+<figcaption id="lisa-route-title">Early life and education</figcaption>
+<ol><li><span>Tainan, Taiwan</span><small>Birthplace</small></li><li><span>Queens, New York</span><small>Grew up after moving to the United States</small></li><li><span>Bronx High School of Science</span><small>Secondary education</small></li><li><span>MIT</span><small>Entered in fall 1986, recalled in her 2026 remarks</small></li></ol>
+<p>A sequence of documented places and education, without assigning an exact migration age. Sources: <a href="#evidence-2">Carnegie profile [2]</a> · <a href="#evidence-26">MIT announcement [26]</a> · <a href="#evidence-18">MIT remarks [18]</a>.</p>
+</figure>
 
 <p data-biography-paragraph="early-life-1">Su was born in Tainan, Taiwan, moved to the United States with her family as a young child and grew up in Queens, New York. Carnegie’s honoree profile records her attendance at the Bronx High School of Science and her parents’ backgrounds in statistics and accounting. Mathematics and science form a documented thread between her schooling and her later choice of engineering.<sup id="cite-2-1"><a href="#evidence-2" aria-label="Source 2">[2]</a></sup><sup id="cite-26-2"><a href="#evidence-26" aria-label="Source 26">[26]</a></sup></p>
 
@@ -71,6 +78,8 @@ outputs:
 <p data-biography-paragraph="engineering-6">In her 2025 Stanford GSB interview, Su recalled serving as technical assistant to IBM CEO Lou Gerstner. She explained that introducing him to new technologies also allowed her to observe how a company of global scale was led. She interpreted the assignment as someone taking a chance on a young employee. Her lesson for other leaders was to give promising people responsibilities they might not yet be fully ready for, together with the support needed to succeed. This is her retrospective interpretation of management development and opportunity.<sup id="cite-29-1"><a href="#evidence-29" aria-label="Source 29">[29]</a></sup><sup id="cite-16-2"><a href="#evidence-16" aria-label="Source 16">[16]</a></sup></p>
 
 ## 3 From Technology Planning to Business Management {#business-management}
+
+{{< industry-map id="lisa-su-career" >}}
 
 <p data-biography-paragraph="business-management-1">In June 2007, Su joined Freescale Semiconductor as chief technology officer. Its 2010 annual report records that she held the CTO role until August 2009 and became senior vice president and general manager of Networking and Multimedia in September 2008. The positions overlapped for a time, linking technology management with business responsibility.<sup id="cite-6-1"><a href="#evidence-6" aria-label="Source 6">[6]</a></sup></p>
 
@@ -133,6 +142,16 @@ outputs:
 <p data-biography-paragraph="leadership-views-4">In November 2024, Lawrence Livermore National Laboratory reported El Capitan at 1.742 exaflops on HPL. Its AMD Instinct MI300A packages combined CPU cores, GPU cores and high-bandwidth memory, within a system developed by the laboratory, HPE and AMD. This measured speed is a different metric from theoretical peak performance. The projects give more concrete context to leadership responsibilities: product roadmaps extend into system integration, customer software and sustained validation, while the measured achievement belongs to the complete system built by the participating organizations.<sup id="cite-44-1"><a href="#evidence-44" aria-label="Source 44">[44]</a></sup></p>
 
 ## 8 Female Empowerment and Support for Education {#women-and-education}
+
+<figure class="biography-gifts" aria-labelledby="lisa-support-title" data-biography-component="education-support">
+<figcaption id="lisa-support-title">Documented support for women in technical education</figcaption>
+<p>Three distinct forms of support recorded by MIT, IEEE and AMD. Amounts and program scope are shown only where documented.</p>
+<div class="biography-gifts__grid">
+<section data-support-card="mit"><p class="biography-gifts__date">Established 2018</p><p class="biography-gifts__amount">Graduate fellowships</p><h3>MIT Lisa Su Fellowship Fund</h3><p>Established to support female graduate students progressing in nanotechnology.</p><p class="biography-gifts__source"><a href="#evidence-3">Source: MIT [3]</a></p></section>
+<section data-support-card="ieee"><p class="biography-gifts__date">2021 medal · Subsequent prize donation</p><p class="biography-gifts__amount">US$20,000</p><h3>IEEE Women in Engineering Fund</h3><p>Su donated the prize associated with her IEEE Robert N. Noyce Medal to the fund managed by the IEEE Foundation. The label gives the medal year rather than a precise donation date.</p><p class="biography-gifts__source"><a href="#evidence-17">Source: IEEE [17]</a></p></section>
+<section data-support-card="anitab"><p class="biography-gifts__date">2021 program · AMD company account</p><p class="biography-gifts__amount">25 female students</p><h3>AMD and AnitaB.org</h3><p>AMD’s report records scholarships, Grace Hopper Celebration participation, coaching and a discussion with AMD women technologists. Funding included Abie Award money and an additional personal donation.</p><p class="biography-gifts__source"><a href="#evidence-33">Source: AMD corporate responsibility report [33]</a></p></section>
+</div>
+</figure>
 
 <p data-biography-paragraph="women-and-education-1">On June 8, 2017, she returned to MIT to address its doctoral graduates. She connected the training in thinking and difficult problem solving that she received during her doctorate with her later confidence in making business decisions. She encouraged graduates to take risks and learn from mistakes. The occasion allowed her to draw on her experience as an alumna, engineer and company leader when speaking to a new generation of researchers completing their doctoral work.<sup id="cite-31-1"><a href="#evidence-31" aria-label="Source 31">[31]</a></sup></p>
 

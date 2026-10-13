@@ -181,8 +181,8 @@ html:has(> .dex-entry-curtain--nvidia) {
   .dex-entry-curtain { display: none !important; animation: none; }
 }
 
-/* AMD reuses the biography card's existing geometry and animation above.
-   Its additional modifier changes only the palette; NVIDIA remains unchanged. */
+/* AMD reuses the biography card's geometry and animation above, with its
+   palette and a landscape photo window; NVIDIA remains unchanged. */
 html:has(> .dex-entry-curtain--amd) {
   background-color: #16080b;
   scrollbar-color: #7d2335 #16080b;
@@ -202,3 +202,9 @@ html:has(> .dex-entry-curtain--amd) {
   background: #16080b;
 }
 .dex-entry-curtain--amd .dex-entry-curtain__portrait-label { color: #f1c5ce; }
+.dex-entry-curtain--amd .dex-entry-curtain__portrait img {
+  aspect-ratio: 3 / 2;
+  height: auto;
+  object-fit: cover;
+  object-position: 50% 29%;
+}

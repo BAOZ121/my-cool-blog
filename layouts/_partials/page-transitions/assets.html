@@ -9,11 +9,12 @@
     <script type="application/json" data-page-entry>{{ $entry | jsonify | safeJS }}</script>
   {{- end -}}
 {{- else if eq .Params.entryTheme "amd" -}}
+  {{- $onDirect := and (eq .Params.testpage true) (eq .Params.entryPreview true) -}}
   {{- with .Resources.GetMatch .Params.entryImage -}}
     {{- $filter := images.AutoOrient -}}
     {{- $portrait := . | images.Filter $filter -}}
     {{- $portrait = $portrait.Resize "304x webp q82" -}}
-    {{- $entry := dict "theme" "amd" "image" $portrait.RelPermalink "width" $portrait.Width "height" $portrait.Height "label" "DEX / BIOGRAPHY" "name" "LISA SU" -}}
+    {{- $entry := dict "theme" "amd" "image" $portrait.RelPermalink "width" $portrait.Width "height" $portrait.Height "label" "DEX / BIOGRAPHY" "name" "LISA SU" "onDirect" $onDirect -}}
     <script type="application/json" data-page-entry>{{ $entry | jsonify | safeJS }}</script>
   {{- end -}}
 {{- end -}}
