@@ -479,3 +479,50 @@ test('invalid company logo settings fall back to the existing biography policy a
   assert.equal(malformed.masks[0].className, 'dex-entry-curtain');
   assert.equal(malformed.masks[0].style.animationDelay, '1190ms');
 });
+
+test('AMD direct entry and top refresh use the embedded official mark and the finite company sequence', () => {
+  for (const navigationType of ['navigate', 'reload']) {
+    const f = fixture({ brand: 'amd', marker: false, navigationType, entryView: biographyView });
+    assert.equal(f.masks.length, 1);
+    assert.equal(f.masks[0].className, 'dex-entry-curtain dex-entry-curtain--amd-company');
+    const logo = f.created.find(node => node.className === 'amd-company-entry__logo');
+    assert.equal(logo.src, f.document.currentScript.dataset.entryLogo);
+    assert.ok(!f.created.some(node => node.className === 'dex-entry-curtain__portrait'));
+    f.fire('DOMContentLoaded');
+    assert.equal(f.masks[0].style.animationDelay, '1750ms');
+    assert.equal(Math.max(...f.calls.map(call => call.timing.delay + call.timing.duration)), 2900);
+    f.advance(4200);
+    assert.equal(f.masks[0].removed, true);
+  }
+});
+
+test('AMD keeps native history, anchor reading, reduced motion and unsupported-browser fallback', () => {
+  for (const options of [
+    { navigationType: 'back_forward' }, { navigationType: 'reload', scroll: 500 },
+    { hash: '#amd-sources-and-reading-scope' }, { reduced: true }, { hidden: true }, { unsupported: true },
+    { logo: '' }, { logo: 'https://external.test/logo.svg' },
+  ]) {
+    const f = fixture({ brand: 'amd', marker: false, ...options });
+    f.fire('DOMContentLoaded');
+    assert.equal(f.masks.length, 0, JSON.stringify(options));
+    assert.equal(f.calls.length, 0, JSON.stringify(options));
+  }
+});
+
+test('AMD input cancels decoration and broken logo resources leave the article accessible', async () => {
+  for (const type of ['pointerdown', 'touchstart', 'wheel', 'keydown', 'pagehide', 'motion']) {
+    const f = fixture({ brand: 'amd', marker: false, decode: 'pending' });
+    f.fire('DOMContentLoaded'); f.fire(type);
+    f.resolveDecode(); await new Promise(setImmediate); f.advance(5000);
+    assert.equal(f.masks[0].removed, true, type);
+    assert.equal(f.calls.length, 0, type);
+    assert.equal(f.timers.filter(timer => timer.active).length, 0, type);
+  }
+  const broken = fixture({ brand: 'amd', marker: false, decode: 'pending' });
+  broken.fire('DOMContentLoaded');
+  const logo = broken.created.find(node => node.className === 'amd-company-entry__logo');
+  logo.listeners.error({ target: logo });
+  broken.resolveDecode(); await new Promise(setImmediate); broken.advance(5000);
+  assert.equal(broken.masks[0].removed, true);
+  assert.equal(broken.calls.length, 0);
+});

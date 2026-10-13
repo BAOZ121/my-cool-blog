@@ -3,7 +3,8 @@
   const key = "dex:page-entry";
   const motion = matchMedia("(prefers-reduced-motion: reduce)");
   const settings = document.currentScript?.dataset;
-  const branded = settings?.entryBrand === "nvidia" && /^data:image\/(?:svg\+xml|png);base64,/.test(settings.entryLogo || "");
+  const companyBrand = settings?.entryBrand;
+  const branded = ["nvidia", "amd"].includes(companyBrand) && /^data:image\/(?:svg\+xml|png);base64,/.test(settings.entryLogo || "");
   let entryView = {};
   try {
     entryView = JSON.parse(document.querySelector("script[data-page-entry]")?.textContent || "{}") || {};
@@ -82,19 +83,20 @@
       // This watchdog is armed before installation; it never delays navigation.
       cleanupTimer = window.setTimeout(stop, 4200);
       curtain = document.createElement("div");
-      curtain.className = branded ? "dex-entry-curtain dex-entry-curtain--nvidia-company"
+      curtain.className = branded ? `dex-entry-curtain dex-entry-curtain--${companyBrand}-company`
         : amd ? "dex-entry-curtain dex-entry-curtain--nvidia dex-entry-curtain--amd"
         : nvidia ? "dex-entry-curtain dex-entry-curtain--nvidia" : "dex-entry-curtain";
       curtain.setAttribute("aria-hidden", "true");
       if (branded) {
+        const sceneClass = companyBrand === "amd" ? "amd-company-entry" : "nvidia-entry";
         const scene = document.createElement("div");
-        scene.className = "nvidia-entry";
+        scene.className = sceneClass;
         const halo = document.createElement("div");
-        halo.className = "nvidia-entry__halo";
+        halo.className = `${sceneClass}__halo`;
         const rays = document.createElement("div");
-        rays.className = "nvidia-entry__rays";
+        rays.className = `${sceneClass}__rays`;
         const logo = document.createElement("img");
-        logo.className = "nvidia-entry__logo";
+        logo.className = `${sceneClass}__logo`;
         logo.alt = "";
         logo.src = settings.entryLogo;
         logo.draggable = false;
