@@ -2809,6 +2809,322 @@
       ],
       "note": "Industry → upstream midstream downstream → segments → representative companies or products. The map is an analytical classification, not a list of verified supply contracts. Several firms appear in multiple roles; early product programs remain identified as such in the text.",
       "reviewed": "2026-10-12"
+    },
+    "nuclear-equipment-services-v1": {
+      "title": "Figure 1 Nuclear equipment and services value chain",
+      "description": "Industry → value-chain stage → segment → company examples. Expand the map to explore the full hierarchy.",
+      "root": {
+        "name": "Nuclear equipment and services",
+        "children": [
+          {
+            "name": "Upstream",
+            "children": [
+              {
+                "name": "Uranium feed and conversion",
+                "children": [
+                  {
+                    "name": "Cameco · Orano"
+                  }
+                ]
+              },
+              {
+                "name": "Enrichment services",
+                "children": [
+                  {
+                    "name": "Urenco · Orano"
+                  },
+                  {
+                    "name": "Rosatom · CNNC"
+                  }
+                ]
+              },
+              {
+                "name": "Nuclear castings and forgings",
+                "children": [
+                  {
+                    "name": "Doosan Enerbility"
+                  }
+                ]
+              },
+              {
+                "name": "Fuel assemblies",
+                "children": [
+                  {
+                    "name": "Westinghouse · Framatome"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Midstream",
+            "children": [
+              {
+                "name": "Reactor systems",
+                "children": [
+                  {
+                    "name": "Westinghouse · Rosatom"
+                  },
+                  {
+                    "name": "GE Vernova Hitachi"
+                  }
+                ]
+              },
+              {
+                "name": "Nuclear island components",
+                "children": [
+                  {
+                    "name": "Framatome · Doosan"
+                  },
+                  {
+                    "name": "BWXT"
+                  }
+                ]
+              },
+              {
+                "name": "Steam turbines and generators",
+                "children": [
+                  {
+                    "name": "Arabelle Solutions · Doosan"
+                  }
+                ]
+              },
+              {
+                "name": "Controls and construction",
+                "children": [
+                  {
+                    "name": "I&C: Framatome · Curtiss-Wright"
+                  },
+                  {
+                    "name": "EPC: Bechtel"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Downstream",
+            "children": [
+              {
+                "name": "Outage and maintenance",
+                "children": [
+                  {
+                    "name": "Westinghouse · Framatome"
+                  }
+                ]
+              },
+              {
+                "name": "Testing and inspection",
+                "children": [
+                  {
+                    "name": "BWXT · Kinectrics"
+                  },
+                  {
+                    "name": "Curtiss-Wright"
+                  }
+                ]
+              },
+              {
+                "name": "Operating life extension",
+                "children": [
+                  {
+                    "name": "Framatome · Westinghouse"
+                  }
+                ]
+              },
+              {
+                "name": "Waste and decommissioning",
+                "children": [
+                  {
+                    "name": "Orano"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "id": "V01",
+          "title": "[V01] 2025 Annual Report",
+          "url": "https://www.cameco.com/invest/financial-information/annual-reports/2025"
+        },
+        {
+          "id": "V02",
+          "title": "[V02] Management discussion and analysis for the quarter ended June 30, 2026",
+          "url": "https://www.sec.gov/Archives/edgar/data/1009001/000119312526326768/d125942dex992.htm"
+        },
+        {
+          "id": "V03",
+          "title": "[V03] Framatome reports 2025 financial results",
+          "url": "https://www.framatome.com/medias/framatome-reports-2025-financial-results/"
+        },
+        {
+          "id": "V04",
+          "title": "[V04] Full year 2025 audited financial results",
+          "url": "https://www.urenco.com/news/global/2026/full-year-2025-audited-results"
+        },
+        {
+          "id": "V06",
+          "title": "[V06] Annual Activity Report 2025, review of key figures by business segment",
+          "url": "https://www.orano.group/finance-raa/2025/en/56/"
+        },
+        {
+          "id": "V07",
+          "title": "[V07] BWX Technologies 2025 Form 10-K",
+          "url": "https://www.sec.gov/Archives/edgar/data/1486957/000148695726000007/bwxt-20251231.htm"
+        },
+        {
+          "id": "V10",
+          "title": "[V10] Naval & Power",
+          "url": "https://curtisswright.com/organization/naval-power"
+        },
+        {
+          "id": "V11",
+          "title": "[V11] Doosan Enerbility Signs Steam Turbine Contract with Doosan Skoda Power for Czech Nuclear Power Plant",
+          "url": "https://www.doosanenerbility.com/en/about/news_board_view?id=21000799&page=0&pageSize=9"
+        },
+        {
+          "id": "V12",
+          "title": "[V12] Large-Scale Nuclear Components / MMIS",
+          "url": "https://www.doosanenerbility.com/en/business/nuclear_large"
+        },
+        {
+          "id": "V13",
+          "title": "[V13] Castings & Forgings",
+          "url": "https://www.doosanenerbility.com/en/business/gasting_forging"
+        },
+        {
+          "id": "V14",
+          "title": "[V14] Services for Operational Power Plants",
+          "url": "https://www.doosanenerbility.com/en/business/nuclear_power_plant"
+        },
+        {
+          "id": "V15",
+          "title": "[V15] About GE Vernova Hitachi Nuclear Energy",
+          "url": "https://www.gevernova.com/nuclear/about"
+        },
+        {
+          "id": "V16",
+          "title": "[V16] Key Operating Results of State Atomic Energy Corporation ROSATOM 2025",
+          "url": "https://report.rosatom.ru/go_eng/go_rosatom_eng_2025/rosatom_key_2025_eng.pdf"
+        },
+        {
+          "id": "V17",
+          "title": "[V17] Our services",
+          "url": "https://www.arabellesolutions.com/en/our-services"
+        },
+        {
+          "id": "V21",
+          "title": "[V21] Integrated Report 2024, Strategy by Business: Material and Engineering Business",
+          "url": "https://www.jsw.co.jp/pdf/en/ir/library/integrated/IntegratedReport2024_story.pdf"
+        },
+        {
+          "id": "V23",
+          "title": "[V23] Plants: overseas nuclear projects",
+          "url": "https://www.khnp.co.kr/eng/contents.do?key=4591"
+        },
+        {
+          "id": "V24",
+          "title": "[V24] Contract Signed on A/E Services for Dukovany Units 5&6 in the Czech Republic",
+          "url": "https://www.kepco-enc.com/board.es?act=view&bid=0039&list_no=44544&mid=a20501000000&tag="
+        },
+        {
+          "id": "V25",
+          "title": "[V25] Arabelle Solutions to supply Steam Turbine Island equipment for AP1000 at Poland's First Nuclear Power Plant",
+          "url": "https://www.arabellesolutions.com/sites/simba/files/2026-01/Press%20Release%20-%20Arabelle%20Solutions%20to%20supply%20Steam%20Turbine%20Island%20equipment%20for%20AP1000%20in%20Poland%20_0.pdf"
+        },
+        {
+          "id": "V26",
+          "title": "[V26] Nuclear Energy",
+          "url": "https://www.kinectrics.com/solutions/energy-infrastructure/nuclear-energy"
+        },
+        {
+          "id": "V27",
+          "title": "[V27] Commercial Grade Dedication",
+          "url": "https://npc.framatome.com/services/commercialgradededication"
+        },
+        {
+          "id": "V28",
+          "title": "[V28] License Renewal",
+          "url": "https://westinghousenuclear.com/operating-plants/engineered-solutions/license-renewal"
+        },
+        {
+          "id": "V29",
+          "title": "[V29] Long-term operations",
+          "url": "https://www.framatome.com/solutions-portfolio/portfolio/solutions/plant-in-operation/long-term-operation"
+        },
+        {
+          "id": "M01",
+          "title": "[M01] Uranium Enrichment",
+          "url": "https://world-nuclear.org/information-library/nuclear-fuel-cycle/conversion-enrichment-and-fabrication/uranium-enrichment"
+        },
+        {
+          "id": "S03",
+          "title": "[S03] Plant Vogtle Unit 4 Achieves Commercial Operation",
+          "url": "https://www.bechtel.com/press-releases/plant-vogtle-unit-4-achieves-commercial-operation/"
+        }
+      ],
+      "note": "Representative roles only. Category links do not establish contracts, customer relationships or market shares. Companies can span stages. Uranium feed is input context; electricity sales, mining revenue and military uses remain outside the equipment-and-services market boundary.",
+      "reviewed": "2026-10-13",
+      "scope": "Global civil nuclear equipment and services",
+      "diagram_sources": {
+        "upstream_materials": [
+          "V13",
+          "V21"
+        ],
+        "upstream_fuel": [
+          "V01",
+          "V02",
+          "V04",
+          "V06"
+        ],
+        "reactor_technology": [
+          "V02",
+          "V15",
+          "V16",
+          "V25"
+        ],
+        "nuclear_island": [
+          "V03",
+          "V07",
+          "V12"
+        ],
+        "conventional_island": [
+          "V11",
+          "V17",
+          "V25"
+        ],
+        "instrumentation_control": [
+          "V03",
+          "V10",
+          "V12"
+        ],
+        "epc_construction": [
+          "V23",
+          "V24",
+          "V25"
+        ],
+        "outages_life_extension": [
+          "V02",
+          "V03",
+          "V14",
+          "V17",
+          "V28",
+          "V29"
+        ],
+        "testing_inspection": [
+          "V10",
+          "V26",
+          "V27"
+        ],
+        "decommissioning_waste": [
+          "V06",
+          "V16",
+          "V26"
+        ]
+      }
     }
   },
   "shares": {
@@ -3474,6 +3790,72 @@
       "unit": "%",
       "percentDecimals": 0,
       "reviewed": "2026-10-12"
+    },
+    "uranium-enrichment-capacity-2025": {
+      "title": "Figure 2 Global uranium enrichment service capacity in 2025",
+      "eyebrow": "CAPACITY COMPOSITION",
+      "period": "2025",
+      "center_label": "2025",
+      "geography": "Worldwide",
+      "scope": "One World Nuclear Association 2025 uranium-enrichment service capacity series. Includes operators primarily serving domestic demand. This is a service submarket, not the whole nuclear-equipment-and-services industry.",
+      "metric": "Author-calculated share of capacity (%)",
+      "dimension": "Operator",
+      "percentDecimals": 1,
+      "unit": "%",
+      "theme": "nuclear-gold",
+      "series": [
+        {
+          "name": "Rosatom",
+          "value": 42.8,
+          "capacity_thousand_swu_per_year": 29133,
+          "estimate_flag": false
+        },
+        {
+          "name": "Urenco",
+          "value": 25.4,
+          "capacity_thousand_swu_per_year": 17300,
+          "estimate_flag": false
+        },
+        {
+          "name": "CNNC (estimated)",
+          "value": 20.3,
+          "capacity_thousand_swu_per_year": 13789,
+          "estimate_flag": true
+        },
+        {
+          "name": "Orano",
+          "value": 11,
+          "capacity_thousand_swu_per_year": 7500,
+          "estimate_flag": false
+        },
+        {
+          "name": "Other (INB, JNFL)",
+          "value": 0.5,
+          "capacity_thousand_swu_per_year": 355,
+          "estimate_flag": false
+        }
+      ],
+      "source": {
+        "id": "M01",
+        "publisher": "World Nuclear Association",
+        "title": "[M01] Uranium Enrichment",
+        "published": "2026-09-29 (page updated)",
+        "url": "https://world-nuclear.org/information-library/nuclear-fuel-cycle/conversion-enrichment-and-fabrication/uranium-enrichment",
+        "locator": "Enrichment capacity; World enrichment capacity table; 2025 column from Nuclear Fuel Report 2025; CNNC estimate footnote"
+      },
+      "note": "Capacity is not revenue or actual deliveries. CNNC is estimated. Source rows sum to 68,077 thousand SWU/year, compared with the published total of 68,076; the source does not explain the difference. Author-calculated share = each source row / row sum × 100. Shares are displayed to one decimal and total 100.0%. All disclosed capacities are preserved. [M01]",
+      "reviewed": "2026-10-13",
+      "capacity_units": "thousand SWU/year",
+      "calculation": {
+        "source_reported_total": 68076,
+        "computed_row_total": 68077,
+        "denominator": 68077,
+        "source_total_difference": 1,
+        "difference_explanation": "The source does not explain the difference.",
+        "formula": "each unmodified source row / sum(all five source rows) × 100",
+        "rounding": "One decimal; displayed shares sum to 100.0%",
+        "do_not_mix": "Keep the complete WNA series; do not substitute Urenco's 17.2m SWU/year company annual-report measure or Orano's demand-market denominator."
+      }
     }
   }
 }

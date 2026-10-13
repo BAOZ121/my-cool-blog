@@ -61,6 +61,10 @@ test("share charts retain distinct site or company colors with readable percenta
   const shares = JSON.parse(readFileSync(new URL("../data/article_visuals.json", import.meta.url))).shares;
   const expected = ["#d6b56f", "#67b8b0", "#7ea5dc", "#e58b78", "#a995d3", "#a4bd7e", "#d78fb3", "#8baeb8"];
   const nvidiaColors = ["#76b900", "#b7e36f", "#4f8b36", "#9dba85", "#6b8f5d", "#d5e7c8", "#86c748", "#c1df9b"];
+  const nuclearColors = {
+    light: ["#202020", "#a98428", "#969696", "#d3bd7b", "#eeeeee"],
+    dark: ["#eeeeee", "#d6b56f", "#a4a4a4", "#f0dfb3", "#555555"],
+  };
   const luminance = (hex) => {
     const [r, g, b] = hex.slice(1).match(/../g).map((channel) => {
       const value = parseInt(channel, 16) / 255;
@@ -72,16 +76,36 @@ test("share charts retain distinct site or company colors with readable percenta
     const original = structuredClone(data);
     for (const dark of [false, true]) for (const compact of [false, true]) {
       const options = pieOptions(data, { dark, compact });
-      assert.deepEqual(options.color, data.theme === "nvidia" ? nvidiaColors : expected);
+      assert.deepEqual(options.color, data.theme === "nuclear-gold" ? nuclearColors[dark ? "dark" : "light"] : data.theme === "nvidia" ? nvidiaColors : expected);
       assert.equal(new Set(options.color.slice(0, data.series.length)).size, data.series.length);
-      assert.deepEqual(options.series[0].data, data.series.map(({ name, value }) => ({ name, value })));
-      for (const color of options.color) {
-        const contrast = (luminance(color) + 0.05) / (luminance(options.series[0].label.color) + 0.05);
+      assert.deepEqual(options.series[0].data.map(({ name, value }) => ({ name, value })), data.series.map(({ name, value }) => ({ name, value })));
+      if (data.theme !== "nuclear-gold") assert.ok(options.series[0].data.every((item) => !item.label), "Existing charts retain their label defaults");
+      for (const [index, color] of options.color.entries()) {
+        const labelColor = options.series[0].data[index]?.label?.color || options.series[0].label.color;
+        const light = Math.max(luminance(color), luminance(labelColor));
+        const dark = Math.min(luminance(color), luminance(labelColor));
+        const contrast = (light + 0.05) / (dark + 0.05);
         assert.ok(contrast >= 4.5, `${color} must retain readable compact percentage labels`);
       }
     }
     assert.deepEqual(data, original, "Color selection must not mutate chart data");
   }
+});
+
+test("nuclear capacity shares preserve one decimal in every interactive percentage", () => {
+  const data = JSON.parse(readFileSync(new URL("../data/article_visuals.json", import.meta.url))).shares["uranium-enrichment-capacity-2025"];
+  const original = structuredClone(data);
+  for (const dark of [false, true]) {
+    const options = pieOptions(data, { dark, compact: true });
+    const orano = data.series.find((item) => item.name === "Orano");
+    assert.equal(orano.value, 11);
+    assert.match(options.tooltip.formatter(orano), /11\.0%/);
+    assert.match(options.legend.formatter("Orano"), /11\.0%/);
+    assert.equal(options.series[0].label.formatter(orano), "11.0%");
+    assert.match(options.aria.label.description, /Orano: 11\.0%/);
+    assert.deepEqual(options.series[0].data.map(({ name, value }) => ({ name, value })), data.series.map(({ name, value }) => ({ name, value })));
+  }
+  assert.deepEqual(data, original);
 });
 test("map text is escaped before it reaches Markmap's HTML rendering", () => {
   const map = { title: "Industry", root: { name: 'A <script>alert("x")</script> & B', children: [{ name: "Upstream", children: [{ name: "Materials", children: [{ name: "Company" }] }] }] } };
