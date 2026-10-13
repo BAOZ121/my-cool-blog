@@ -12,7 +12,7 @@
     <a class="research-action" href="{{ . | relURL }}" download>Download data (CSV)</a>
     {{- end }}
     {{- if or .Draft .Params.testpage }}
-    <a class="research-action" href="#supporting-evidence">Supporting Evidence</a>
+    <a class="research-action" href="{{ if .Params.amdResearch }}#amd-sources-and-reading-scope{{ else }}#supporting-evidence{{ end }}">Supporting Evidence</a>
     {{- else }}
     <a class="research-action" href="{{ "/evidence-library/" | relURL }}?article={{ path.Base .File.Dir }}">Evidence Library</a>
     {{- end }}

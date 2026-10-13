@@ -402,6 +402,32 @@
     object-fit: contain;
 }
 
+/* AMD cards opt in when the reviewed article is formally added to listings. */
+@media screen {
+    .article-list article.article-brand-amd {
+        --accent-color: #ed1c24;
+        --accent-color-darker: #ff6268;
+        --accent-color-text: #fff;
+        --card-background: #101112;
+        --card-text-color-main: #f7f7f7;
+        --card-text-color-secondary: #c0c2c4;
+        --card-text-color-tertiary: #c0c2c4;
+        --card-separator-color: #383a3c;
+        border: 1px solid var(--card-separator-color);
+
+        &:hover,
+        &:focus-within {
+            border-color: var(--accent-color);
+        }
+
+        .article-title a:hover,
+        .article-title a:focus-visible,
+        .article-meta svg {
+            color: var(--accent-color);
+        }
+    }
+}
+
 /* Carry the NVIDIA article palette into its listing card in either site scheme. */
 @media screen {
     .article-list article.biography-card--nvidia {

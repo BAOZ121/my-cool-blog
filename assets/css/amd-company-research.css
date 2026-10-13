@@ -1,0 +1,87 @@
+/* AMD article components. The DEX shell, navigation, theme and TOC remain native. */
+.amd-company-research{--accent-color:#ED1C24;--accent-color-darker:#C51C25;--accent-color-text:#fff}
+.amd-research{--amd-accent:#C51C25;--amd-soft:#fff0f0;--amd-surface:#fff;--amd-text:#17191b;--amd-muted:#62656b;--amd-border:#dedddb;--amd-grid:#e5e3e1;--amd-cg:#242629;--amd-cg-text:#fff;--amd-em:#c9c9cc;--amd-em-text:#17191b;min-width:0;color:var(--amd-text);overflow-wrap:break-word}
+[data-scheme="dark"] .amd-research{--amd-accent:#ff777d;--amd-soft:#3b181b;--amd-surface:#1d1f22;--amd-text:#f3f3f2;--amd-muted:#b2b3b8;--amd-border:#45474b;--amd-grid:#3b3d40;--amd-cg:#ececee;--amd-cg-text:#17191b;--amd-em:#7d8087;--amd-em-text:#fff}
+.amd-company-research .article-image img{width:100%;height:auto!important;aspect-ratio:3/2;object-fit:contain!important}
+.amd-company-research [data-reading-progress]{background:#ED1C24}
+.amd-research *{box-sizing:border-box}
+.amd-research a{color:var(--amd-accent);text-underline-offset:3px}
+.amd-research a:hover{text-decoration:underline}
+.amd-research button{font:inherit;cursor:pointer;touch-action:manipulation}
+.amd-research button:focus-visible,.amd-research a:focus-visible,.amd-research [tabindex]:focus-visible{outline:3px solid var(--amd-accent);outline-offset:4px}
+.amd-research .amd-entry-logo{display:flex;align-items:center;gap:18px;background:#08090a;color:#fff;padding:18px 22px;margin:0 0 24px;animation:amd-logo-fade 1s ease-out both}
+.amd-research .amd-entry-logo img{display:block;width:114px;max-width:38%;height:auto;margin:0;flex:none}
+.amd-research .amd-entry-logo span{font-size:11px;letter-spacing:.1em;text-transform:uppercase;line-height:1.6}
+.amd-research .amd-cover-credit{font-size:11px;line-height:1.8;color:var(--amd-muted)}
+.amd-research .overview{padding:0 0 24px}
+.amd-research .section-kicker{display:flex;align-items:baseline;justify-content:space-between;gap:18px;border-top:1px solid var(--amd-border);padding-top:16px;margin-bottom:18px}
+.amd-research .section-kicker h2{font-size:21px;line-height:1.4;margin:0;font-weight:600}
+.amd-research .section-kicker>span{font-size:10px;color:var(--amd-muted);text-transform:uppercase;letter-spacing:.1em}
+.amd-research .stat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--amd-border);background:var(--amd-surface)}
+.amd-research .stat{padding:18px 16px;min-width:0}
+.amd-research .stat+.stat{border-left:1px solid var(--amd-border)}
+.amd-research .stat>span{display:block;font-size:11px;color:var(--amd-muted);line-height:1.5;min-height:33px}
+.amd-research .stat>strong{display:block;font-size:clamp(25px,2.2vw,36px);font-weight:600;letter-spacing:-.045em;line-height:1.25;margin-top:9px}
+.amd-research .stat strong small{font-size:13px;font-weight:400;letter-spacing:0;margin-left:4px}
+.amd-research .stat p{font-size:10px;color:var(--amd-muted);line-height:1.6;margin:10px 0 0}
+.amd-research #amd-report-body{min-width:0;line-height:1.85}
+.amd-research #amd-report-body h2{border-top:1px solid var(--amd-border);padding-top:28px;margin-top:36px;scroll-margin-top:90px}
+.amd-research #amd-report-body h3{scroll-margin-top:90px;line-height:1.45}
+.amd-research #amd-report-body p{margin-bottom:20px}
+.amd-research .citation{font-size:.77em;white-space:nowrap;text-decoration:none;font-family:Arial,sans-serif}
+.amd-research .source-label{font-size:.83em;font-weight:700;color:var(--amd-accent);scroll-margin-top:95px}
+.amd-research .source-entry{font-size:12px;line-height:1.8;overflow-wrap:anywhere}
+.amd-research .source-entry a,.amd-research #amd-report-body a{overflow-wrap:anywhere}
+.amd-research .table-scroll{max-width:100%;overflow:auto;margin:24px 0 30px;border:1px solid var(--amd-border)}
+.amd-research table{border-collapse:collapse;width:100%;font-size:12px;line-height:1.65}
+.amd-research th,.amd-research td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--amd-border);vertical-align:top}
+.amd-research th{background:var(--amd-soft);font-weight:700;white-space:normal}
+.amd-research tbody tr:last-child td{border-bottom:0}
+.amd-research .financial-explorer{padding:0 0 24px}
+.amd-research .charts-grid{display:grid;grid-template-columns:1fr;gap:20px}
+.amd-research .chart-card{background:var(--amd-surface);border:1px solid var(--amd-border);padding:24px;margin:0;min-width:0}
+.article-content .amd-research figure.chart-card{width:100%;max-width:100%;margin-inline:0;text-align:left}
+.amd-research .chart-heading{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+.amd-research .chart-heading h3{font-size:20px;line-height:1.4;font-weight:600;margin:0}
+.amd-research .eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:var(--amd-accent);font-weight:700;margin:0 0 8px}
+.amd-research .chart-controls{display:flex;flex-wrap:wrap;gap:6px}
+.amd-research .chart-controls button{border:1px solid var(--amd-border);background:var(--amd-surface);color:var(--amd-text);border-radius:3px;padding:8px 12px;font-size:11px;line-height:1.4}
+.amd-research .chart-controls button[aria-pressed="true"]{background:var(--amd-text);color:var(--amd-surface);border-color:var(--amd-text)}
+.amd-research #amd-annual-chart{margin-top:22px}
+.amd-research #amd-annual-chart{overflow-x:auto}
+.amd-research #amd-annual-chart svg{display:block;width:100%;height:auto}
+.amd-research .chart-grid{stroke:var(--amd-grid);stroke-width:1}
+.amd-research .chart-axis{font-size:15px;fill:var(--amd-muted);font-family:Arial,sans-serif}
+.amd-research .chart-unit{font-size:13px;fill:var(--amd-muted);font-family:Arial,sans-serif}
+.amd-research .chart-value{font-size:17px;fill:var(--amd-text);font-family:Arial,sans-serif;font-weight:600}
+.amd-research .chart-bar rect{fill:#ED1C24}
+.amd-research .chart-bar:hover rect,.amd-research .chart-bar:focus rect{opacity:.85}
+.amd-research .chart-bar:focus{outline:none}
+.amd-research .chart-bar:focus rect{stroke:var(--amd-text);stroke-width:3}
+.amd-research .chart-reading{font-size:11px;color:var(--amd-text);margin:12px 0 20px;padding-top:12px;border-top:1px solid var(--amd-border)}
+.amd-research .chart-card figcaption{font-size:11px;color:var(--amd-muted);line-height:1.8}
+.amd-research .mix-strip{display:flex;width:100%;height:65px;overflow:hidden;border-radius:3px;margin:30px 0 24px}
+.amd-research .mix-strip>span{display:grid;place-items:center;min-width:0;font-size:12px;font-weight:700;line-height:1}
+.amd-research .mix-dc{background:#ED1C24;color:#000}
+.amd-research .mix-cg{background:var(--amd-cg);color:var(--amd-cg-text)}
+.amd-research .mix-em{background:var(--amd-em);color:var(--amd-em-text)}
+.amd-research .mix-legend{display:grid;gap:16px;margin-bottom:24px}
+.amd-research .mix-legend>div{display:grid;grid-template-columns:12px 1fr auto;align-items:center;gap:0 9px;font-size:12px}
+.amd-research .legend-swatch{width:8px;height:8px;display:block}
+.amd-research .mix-legend strong{font-size:14px;font-weight:600}
+.amd-research .mix-legend small{grid-column:2/4;color:var(--amd-muted);font-size:11px;margin-top:3px}
+.amd-research .downloads{padding:12px 0 24px}
+.amd-research .downloads>p{font-size:13px;color:var(--amd-muted)}
+.amd-research .download-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid var(--amd-border);border-left:1px solid var(--amd-border);margin-top:24px}
+.amd-research .download-grid>a{position:relative;text-decoration:none;background:var(--amd-surface);color:var(--amd-text);border-right:1px solid var(--amd-border);border-bottom:1px solid var(--amd-border);padding:18px 42px 18px 18px;min-width:0}
+.amd-research .download-grid>a:hover{background:var(--amd-soft)}
+.amd-research .download-grid a>span{display:block;font-size:12px;font-weight:600}
+.amd-research .download-grid small{display:block;font-size:10px;color:var(--amd-muted);margin-top:4px;line-height:1.7}
+.amd-research .download-grid b{position:absolute;right:18px;top:18px;font-size:18px;font-weight:400;color:var(--amd-accent)}
+@keyframes amd-logo-fade{from{opacity:0}to{opacity:1}}
+@media(max-width:600px){.amd-research #amd-annual-chart svg{min-width:520px}.amd-research .mix-strip>.mix-em>span{display:none}}
+@media(max-width:720px){.amd-research .stat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.amd-research .stat+.stat{border-left:0}.amd-research .stat:nth-child(even){border-left:1px solid var(--amd-border)}.amd-research .stat:nth-child(n+3){border-top:1px solid var(--amd-border)}.amd-research .stat{padding:16px 12px}.amd-research .stat>strong{font-size:29px}.amd-research .stat>span{font-size:10px}.amd-research .chart-card{padding:17px}.amd-research .chart-heading h3{font-size:18px}.amd-research .chart-controls button{padding:9px 11px}.amd-research .download-grid{grid-template-columns:1fr}.amd-research .amd-entry-logo{padding:16px}.amd-research .amd-entry-logo span{font-size:9px;letter-spacing:.08em}.amd-research .section-kicker>span{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.amd-research .amd-entry-logo{animation:none}}
+@media print{.amd-company-research .amd-research{--amd-accent:#C51C25;--amd-soft:#fff0f0;--amd-surface:#fff;--amd-text:#17191b;--amd-muted:#555;--amd-border:#bbb;--amd-grid:#ddd;--amd-cg:#242629;--amd-cg-text:#fff;--amd-em:#c9c9cc;--amd-em-text:#17191b;color:#17191b}.amd-research .amd-entry-logo{animation:none;-webkit-print-color-adjust:exact;print-color-adjust:exact}.amd-research .chart-controls,.amd-research .downloads{display:none}.amd-research .chart-card,.amd-research .stat-grid{break-inside:avoid;box-shadow:none}.amd-research .chart-bar rect,.amd-research .mix-strip,.amd-research .legend-swatch{-webkit-print-color-adjust:exact;print-color-adjust:exact}.amd-research .source-entry{font-size:10px}.amd-research .table-scroll{overflow:visible}.amd-research table{font-size:10px}.amd-research #amd-report-body h2{break-after:avoid}}
+
+@media print{.amd-research .mix-cg>span{color:#fff!important}.amd-research .mix-dc>span,.amd-research .mix-em>span{color:#17191b!important}}

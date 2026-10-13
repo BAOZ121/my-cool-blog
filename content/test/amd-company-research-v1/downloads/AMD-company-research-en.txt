@@ -1,0 +1,690 @@
+AMD Company Research Report
+
+Information cutoff: October 13, 2026
+
+Research entity: Advanced Micro Devices, Inc. and its consolidated subsidiaries
+
+This report covers AMD's founding and business evolution, chips and software, customer and manufacturing relationships, five years of financial results, and the latest disclosed developments. AMD has developed from an early supplier of compatible components into a design company spanning CPUs, GPUs, programmable chips, and AI systems. Revenue was US$34,639 million in 2025; the latest reported financial quarter was Q2 2026, with revenue of US$11,536 million. Its revenue scope, reporting segments, and manufacturing model have changed several times, so historical figures must be understood alongside their periods and acquisition accounting scope.[F05][F07]
+
+1 Founding and development
+
+1969: A founding team from Fairchild
+
+Advanced Micro Devices, Inc. (AMD) was incorporated under Delaware law on May 1, 1969.[H01] The Computer History Museum (CHM) lists it among the Fairchild spin-offs founded in Sunnyvale, California, in 1969, recording that all eight cofounders had worked at Fairchild Semiconductor, including Jerry Sanders. Its initial strategy was to supply improved logic and analog integrated circuits corresponding to existing products from Fairchild and Texas Instruments.[H02]
+
+Sanders' background was primarily in sales and marketing. CHM's archival catalog reproduces the abstract of his 2002 interview for Stanford's Silicon Genesis: he earned an electrical engineering degree in 1958, joined Fairchild in 1961, and later led worldwide sales; he was dismissed after Fairchild changed its management team.[H03] These career details come from the interview abstract preserved by the museum.
+
+In CHM's Am2900 oral history recorded on February 11, 2009, cofounder Sven Simonsen recalled that Sanders and John Carey were dismissed after new management arrived at Fairchild, and that the other founders gradually came together and decided to establish their own company. He recalled total capital raised in 1969 of US$1.55 million and described AMD initially second-sourcing Fairchild's 9300 series of medium-scale integrated circuits before expanding into proprietary products.[H04] The funding figure is a cofounder's recollection forty years later, rather than an amount independently verified against contemporary accounts or offering documents.
+
+The 1970s: Compatible components, proprietary designs, and customer support
+
+AMD's early business extended beyond personal computer processors. Advertisements preserved by CHM show early sales of 64-bit RAM and marketing that emphasized commercial devices meeting the testing specifications required for high-reliability aerospace applications, with a slogan highlighting MIL-STD-883 testing. This describes the products and marketing of the period; it does not establish any particular aerospace company as a direct customer.[H05]
+
+Proprietary products and second-source products coexisted during the 1970s. The Am2900 bit-slice processor family was an important proprietary product of this period: customers could combine multiple slices and control components to implement the processors they needed. John Springer, a participant in its development, recalled July 21, 1975, as the Am2901 announcement date. Clive Ghest recalled earlier visits to computer companies including Digital Equipment Corporation, Data General, and Honeywell to understand their system structures, with the aim of designing components for different commercial and military systems. Sales and application engineers subsequently explained the design approach through customer seminars.[H04] These names reflect participants' recollections of contacts during the 1970s, and are not evidence of customers in AMD's founding year, procurement contracts, or transaction amounts.
+
+AMD became a public company in 1972. Its shares were listed on the New York Stock Exchange on October 15, 1979. Becoming a public company and moving trading to the NYSE were separate events; they should not be combined into a statement that AMD first went public in 1979.[H06][H05] CHM's historical advertising archive also records a second-source agreement with Zilog for the Z8000 in 1978, followed by a shift, by 1983, to producing the 8086/8088 family for the IBM PC under an agreement with Intel.[H05]
+
+1982–1995: Intel technology cooperation and disputes
+
+AMD's relationship with Intel included both cooperation and litigation. The contract reviewed in the California Supreme Court's 1994 opinion was signed in February 1982 to enable an exchange of technical information, allowing each party to become an alternative source for the other's products. The contract had a ten-year term, with termination possible after five years subject to the specified advance notice. Disputes subsequently arose over product exchanges, 80386 technology, and contractual duties; the opinion records that AMD's Am386 appeared in March 1991.[H07]
+
+On December 30, 1994, the California Supreme Court reversed the Court of Appeal's contrary determination concerning the arbitrator's remedial authority, holding that the relief awarded in this case was within that authority.[H07] This report describes a specific arbitration and judicial review outcome; it does not characterize it as AMD prevailing in every intellectual property dispute or every subsequent antitrust dispute.
+
+On January 11, 1995, the companies announced a settlement of all legal disputes then outstanding. The agreement granted AMD a perpetual license to use Intel 386 and 486 microcode, while specifying that AMD had no right to copy other microcode, including Pentium, P6, and 486 ICE. The announcement also stated that AMD would pay Intel US$58 million for past damages in the 486 ICE matter, while Intel would pay AMD approximately US$18 million, including interest, under the earlier arbitration award. Both parties would dismiss their pending court cases and appeals and negotiate a separate patent cross-license.[H08] This settlement does not mean that AMD's subsequent processors all used Intel designs.
+
+1996–2003: NexGen, K6, Athlon, and AMD64
+
+AMD completed its acquisition of NexGen on January 17, 1996, through a share exchange in which each NexGen common share was converted into the right to receive 0.8 AMD common shares.[H09] AMD's prospectus in August of that year disclosed that K5 had been introduced relatively late and had not yet achieved broad market acceptance. One purpose of the NexGen acquisition was to accelerate the introduction of next-generation processors, and AMD was combining NexGen's sixth-generation design with its own design, verification, and manufacturing technologies for K6.[H10] Its FY1998 Form 10-K subsequently confirmed that volume shipments of K6 began in the second quarter of 1997.[H11]
+
+AMD introduced Athlon in 1999. Its 1999 annual report disclosed problems earlier that year with K6-2 yields and the distribution of speed grades, resulting in insufficient supplies of the high-frequency products some customers needed. Operating performance improved in the second half of the same year, but the full year still produced a net loss of US$88.936 million on revenue of US$2.8576 billion.[H12] These historical figures preserve the distinction between product developments and annual operating results; the launch of a single product does not establish sustained profitability. AMD also introduced the 1 GHz Athlon on March 6, 2000. This report records the model and release date without adopting the annual report's broad performance leadership claims, which were not independently tested for this research.[H13]
+
+On April 22, 2003, AMD introduced Opteron for servers and workstations.[H14] Athlon 64 followed in September of the same year. AMD's 2003 annual report explained that both used AMD64 technology, extending the x86 instruction set architecture to 64-bit computing while retaining the ability to run existing 32-bit applications, with corresponding products for servers, workstations, desktops, and mobile computers.[H15] This technical description does not establish verified compatibility for every operating system or every legacy application in any configuration. Names such as IBM, Microsoft, and Oracle in AMD's announcement referred respectively to planned server products, operating system development, or software support commitments; these must be distinguished from procurement and delivery that had already occurred.[H14]
+
+2005–2012: Ending flash-memory consolidation, acquiring ATI, and separating wafer manufacturing
+
+AMD previously operated a flash-memory business. It established the FASL flash-memory joint venture with Fujitsu in 1993.[H11] On December 21, 2005, Spansion, previously a majority-owned subsidiary, completed its initial public offering, reducing AMD's ownership to approximately 38%. From that date, AMD ceased consolidating Spansion's operating results and financial position into its own statements. A further share sale in November 2006 reduced its year-end holding to approximately 21%.[H16] Comparisons of AMD's total revenue across this period therefore require attention to changes in consolidation scope.
+
+On October 25, 2006, AMD completed the acquisition of ATI Technologies, adding graphics processors, chipsets, and consumer electronics products. The approximately US$5.4 billion transaction value in the completion announcement was measured using AMD's share price on October 24, 2006, and excluded assumed equity awards. Consideration included approximately US$4.3 billion in cash and approximately 58 million AMD common shares, with a US$2.5 billion term loan financing part of the cash consideration.[H17] The total purchase price recorded under acquisition accounting in the 2006 annual report was US$5.604 billion, including the value of vested options and restricted stock units and US$25 million of transaction costs.[H16] The two amounts have different definitions and should not be treated as contradictory figures. The completion announcement also introduced the Fusion initiative; the integrated CPU/GPU objective proposed at that time was not a product already delivered that day.
+
+The manufacturing model also changed. AMD, ATIC, and related investment entities completed the transaction establishing a manufacturing joint venture on March 2, 2009. AMD contributed the German subsidiaries owning Dresden's Fab 30/38 and Fab 36, certain manufacturing assets, personnel, and intellectual property to The Foundry Company. It was renamed GLOBALFOUNDRIES on March 4. A separate wafer supply agreement arranged AMD's purchases of products manufactured by the company.[H18] On March 4, 2012, AMD announced an amended supply agreement and agreed to transfer its remaining GLOBALFOUNDRIES equity interest, ending its ownership.[H19] The 2009 asset separation and the 2012 equity exit arrangement were therefore different stages; ending equity ownership did not mean the wafer procurement relationship immediately ended.
+
+The legal disputes also reached a new settlement during this period. AMD's November 17, 2009, Form 8-K records that the parties signed settlement and patent cross-license agreements on November 11. Intel was required to pay AMD US$1.25 billion, and AMD agreed to dismiss the litigation then pending in Delaware and Japan and withdraw its regulatory complaints worldwide. The joint announcement was released on November 12.[H20] This private settlement was separate from cases or rulings by independent regulators.
+
+2014–2022: Leadership changes, Zen products, and adaptive computing
+
+On October 8, 2014, AMD's board appointed Lisa Su president, chief executive officer, and a director, effective immediately, succeeding Rory Read. The announcement recorded that she joined AMD in 2012, previously held technology and business management roles at Freescale, and had worked at IBM for thirteen years.[H21]
+
+On March 2, 2017, AMD began selling its first three Ryzen 7 desktop processors: the 1800X, 1700X, and 1700, each with eight cores and sixteen threads. The company described Ryzen as its first processor using the new Zen microarchitecture and stated that development had taken four years.[H22] The EPYC 7000 series of data center processors, using Zen cores and configurations of up to thirty-two cores, launched on June 20 that year.[H23] This report records the architecture, models, uses, and delivery status without generalizing the company's comparative tests into performance conclusions for all workloads.
+
+AMD completed the acquisition of Xilinx on February 14, 2022, making it a wholly owned subsidiary. Each Xilinx common share was converted into the right to receive 1.7234 AMD common shares, with fractional shares handled as specified.[H24] The acquisition announcement stated that the all-stock transaction had originally been announced on October 27, 2020, and added technologies including FPGAs, adaptive SoCs, AI engines, and software.[H25] AMD's 2022 annual report recorded total purchase consideration of US$48.8 billion. The fair value of the common shares issued was measured using the share price on February 11, 2022, the trading day preceding completion. The annual report stated that Xilinx's results were consolidated from the acquisition date and reported in the Embedded and Data Center segments.[H26] The valuation at the initial announcement and the accounting consideration at closing must therefore also be distinguished.
+
+2022–2026: Expanding networking and AI systems businesses
+
+On May 26, 2022, AMD completed its approximately US$1.9 billion acquisition of Pensando, adding data processing units and software for networking, security, and storage services.[H27] On August 12, 2024, AMD announced that it had completed the approximately US$665 million cash acquisition of Silo AI, adding engineering teams for AI models and deployment.[H28] ZT Systems' design team was subsequently retained separately from the manufacturing business that was sold. Helios, Helion, and proposed acquisitions in 2026 are discussed in the product, manufacturing, and latest developments sections. Transaction prices in announcements do not automatically equal purchase accounting measurements.[OP31][OP13][OP15][OP32][OP33]
+
+2 Corporate entity and revenue composition
+
+Advanced Micro Devices, Inc. (AMD) is a Delaware-incorporated public company headquartered in Santa Clara, California. Its common shares trade on Nasdaq under the symbol AMD. This report covers the global operations of AMD and its consolidated subsidiaries. It designs computing chips and related software and sells through direct customers, equipment manufacturers, and distribution channels; design and wafer manufacturing are separate stages.[F05][OP29]
+
+Since 2025, AMD's reporting segments have been Data Center, Client and Gaming, and Embedded. Data Center includes server CPUs, AI accelerators, and certain networking products; Client and Gaming includes PC processors, graphics cards, and semi-custom chips for gaming devices; Embedded includes programmable logic, adaptive SoCs, and embedded processors. Product brands do not map one-to-one to reporting segments: for example, both Instinct and Radeon are GPUs, but serve different markets and segments.[F05][OP01]
+
+Table 1. Reporting segment revenue for the latest three years. US$ million.[F05]
+
+Segment	FY2023	FY2024	FY2025
+Data Center	6,496	12,579	16,635
+Client and Gaming	10,863	9,649	14,550
+Embedded	5,321	3,557	3,454
+Total	22,680	25,785	34,639
+
+Segment data for 2021 and 2022 come from the recast historical businesses in the 2022 annual report; this report adds Client and Gaming arithmetically. Data for 2023 and 2024 use the figures recast under the new structure in the 2025 annual report. In 2025, Client business revenue of 10,640 and Gaming business revenue of 3,910 totaled 14,550, although they were no longer separate reporting segments.[F02][F05]
+
+Based on 2025 revenue, Data Center, Client and Gaming, and Embedded represented 48.0%, 42.0%, and 10.0%, respectively. These percentages describe AMD's own revenue composition. Data Center includes different products such as EPYC and Instinct, and the table does not disclose precise revenue for each; the entire segment's revenue cannot be equated with AI GPU revenue.[F05]
+
+3 Uses of chips, products, and systems
+
+AMD's products are easier to understand by distinguishing CPUs, GPUs, NPUs, and FPGAs. CPUs handle general-purpose computing and system control; GPUs perform parallel computing or graphics tasks; NPUs are specialized computing units for certain AI tasks; FPGA logic is configurable. Chips, accelerator cards, servers, and racks are also different delivery formats. Announcing a chip does not establish that a complete customer system is operational.
+
+Product line	Principal uses	Format and factual limits
+EPYC	General-purpose computing and GPU hosts for cloud, enterprise servers, HPC, and AI	EPYC 9006, released in 2026, uses Zen 6 and TSMC 2nm; the family supports up to 256 cores, with specifications varying by model.[OP03][OP04]
+Ryzen and Ryzen AI	Computing, graphics, and local AI in desktop and mobile PCs	The manufacturer's NPU specification is up to 60 TOPS for the Ryzen AI 400 mobile series and 50 TOPS for the 2026 desktop series; the limits for these formats must not be mixed.[OP05][OP06]
+Ryzen Threadripper	Rendering, compilation, and simulation for workstations and high-end desktops	The PRO 9000 WX family supports up to 96 cores and enterprise platform features; channels and platforms differ between the standard 9000 and PRO series.[OP07][OP08]
+Instinct	AI training, inference, and scientific computing	MI350X and MI355X are OAM modules with 288GB HBM3E; MI350P is a PCIe card with 144GB. Deployment and cooling requirements differ.[OP11][OP12]
+Radeon	PC gaming and professional graphics	RX 9000 uses RDNA 4; features such as FSR depend on the graphics card, driver, and specific game support.[OP09][OP10]
+Adaptive computing	Networking, industrial, automotive, aerospace, and other embedded computing	Versal combines programmable logic, CPUs, and a network on chip, with AI Engines in some series; the portfolio also includes FPGAs, Zynq, and Kria modules.[OP16]
+
+EPYC 9006 was announced on July 23, 2026; on May 21, AMD had already announced that Venice was ramping production on TSMC's 2nm lines in Taiwan. A production ramp, a product announcement, and an actual customer deployment are distinct events. Ryzen AI combines CPUs, graphics, and NPUs, while PRO series products add enterprise security and management functions. TOPS is a manufacturer specification and does not directly measure an application's tested throughput.[OP03][OP04][OP05][OP06]
+
+Instinct uses the CDNA compute architecture, while Radeon uses the RDNA graphics architecture. MI350X and MI355X have the same memory capacity, but MI355X targets liquid cooling; MI350P has a different PCIe format and air-cooled deployment approach. This report uses product roles and public specifications without turning manufacturer descriptions such as “fastest” or “leading” into competitive conclusions across all workloads.[OP09][OP12]
+
+On July 23, 2026, AMD announced that the Helios rack platform had entered production, with a disclosed configuration of 72 Instinct MI455X accelerators, 18 sixth-generation EPYC processors, Pensando networking, and ROCm software. MI455X is a model in the MI450 series, which belongs to the MI400 family. The announcement still described OpenAI deployment as expected in the fourth quarter and Meta's status as testing and validation. Rack production does not mean every customer has begun operating the system.[OP13][OP14]
+
+Helion, introduced on October 12, 2026, is a different rack blueprint for agentic AI, supporting sixth-generation EPYC CPU-only configurations and combinations of EPYC with MI350P. The announcement stated that partners were still developing products, with availability planned for November. As of this report's date, its status was introduced and in development.[OP15]
+
+4 Software and development tools
+
+ROCm provides runtimes, compilers, mathematical and communication libraries, and development tools for AMD compute devices, serving AI and HPC. Developers must check support by device, operating system, framework, and version. The October 5, 2026, release notes for ROCm Core SDK 10.1.0 cover Linux and Windows and identify technical previews and known issues. Support for a platform does not mean all components and graphics cards have identical support coverage.[OP17]
+
+Programmable chips use a different development workflow. Vivado supports hardware design and implementation, while Vitis supports application and system development for FPGA fabric, Arm processors, and AI Engines. Vitis HLS can synthesize C/C++ functions into RTL. At the time of reading, the page listed version 2026.1 and described free development alongside certain implementation workflows requiring valid licenses. The product page provides no financial breakdown from which independent software revenue can be calculated.[OP18]
+
+ROCm and Vitis address different compute devices and development tasks. Their public documentation supports statements about functionality and compatibility, but does not independently establish customer switching costs, performance in every application, or software business revenue. This report does not convert the number of open-source, licensed, or technical support products into an undisclosed scale of charges.[OP17][OP18]
+
+5 Customers and sales channels
+
+AMD's customer categories include hyperscale cloud providers, OEMs, ODMs, system integrators, distributors, graphics board partners, and gaming device manufacturers. OEMs sell branded complete systems; ODMs design or manufacture equipment; end tenants of cloud platforms use instances. End users, partners, and AMD's direct purchasing customers should be understood separately.[OP01]
+
+Counterparty	Publicly disclosed relationship	Limits as of the source date
+AWS	Official M8a/M8azn pages list cloud instances using fifth-generation EPYC.[OP19]	Establishes CPU use; does not establish Instinct purchases or disclose amounts received by AMD.
+Microsoft	In July 2026, introduced HDv2/HXv2 using sixth-generation EPYC and the Helios-based ND MI455X v7.[OP20][OP21]	Product introductions and shipment arrangements do not establish general availability in every region.
+OpenAI	On October 6, 2025, announced a multiyear, multigeneration 6GW agreement and a conditional warrant.[OP22]	Initial deployments remain subject to planned timing and milestones; the agreement cannot be treated as fully delivered or recognized revenue.
+Meta	On February 24, 2026, confirmed a multiyear agreement for up to 6GW of Instinct.[OP23]	Retains “up to” and a multi-supplier strategy; the July announcement still described system validation.[OP13]
+Anthropic	A July 2026 joint announcement described existing MI355X use and future Helios plans for up to 2GW.[OP24]	The first 1GW is planned to begin in the first half of 2027; AMD's future equity investment of up to US$5 billion is a commitment.
+HUMAIN and Cisco	A joint announcement on August 31, 2026, stated that Saudi systems using MI355X, EPYC, and Cisco networking were serving customers.[OP25]	Expansion of up to 250MW from 2027 and up to 1GW by 2030 are targets; existing operational capacity was not disclosed.
+Microsoft Xbox	Announced a multiyear chip co-design relationship in June 2025.[OP26]	Future product plans do not establish chip prices, unit sales, or delivery of a specific new console.
+Sony PlayStation	Official 2026 announcements described PSSR and QSSR as arising from AMD's Project Amethyst collaboration.[OP27][OP28]	Establishes joint graphics technology development, without disclosing semi-custom chip contract amounts.
+
+The GW and MW figures above refer to computing infrastructure capacity as defined in the announcements; some are limits, future deployments, or multiyear arrangements. They are not GPU unit counts and cannot be added together as completed revenue. The OpenAI and Meta agreements include warrants, whose status is discussed in the governance section.[OP22][OP23][F07]
+
+AMD's 2025 annual report attributes revenue by customers' billing addresses: United States 11,363; China including Hong Kong 7,751; Taiwan 5,186; Singapore 4,284; and other countries 6,055, totaling 34,639, all in US$ million. The United States represented 32.8%, and China including Hong Kong 22.4%. This classification does not identify end-user locations or revenue from export-restricted products.[F05]
+
+No single customer accounted for 10% of consolidated revenue in 2025 or 2024. In 2023, one unnamed Client and Gaming customer accounted for 18%. The disclosure does not identify that customer, and this report does not assign it to any specific company. A threshold disclosure also does not establish that all future customer relationships will be diversified.[F05]
+
+6 Supply chain and manufacturing arrangements
+
+AMD operates a fabless model, designing chips and relying on external wafer production, packaging and testing, and related supplies. Its 2025 annual report disclosed reliance on TSMC for microprocessor and GPU wafers at 7nm and below, with GlobalFoundries used for 12nm/14nm HPC products. Programmable logic also uses TSMC, UMC, and Samsung. Packaging and testing arrangements include two ATMP joint ventures associated with Tongfu, along with SPIL, KYEC, and others. A public supplier list does not establish that every supplier manufactures every model.[OP01][OP29]
+
+The production process can be understood as chip design, wafer fabrication, packaging and testing, board or system integration, and channel delivery. HBM memory and advanced packaging for GPUs are separate supply stages from logic wafers. The Venice announcement in May 2026 described a TSMC 2nm production ramp in Taiwan and mentioned SoIC-X and CoWoS-L. Arizona production remained a future plan; the announcement did not provide complete capacity allocations or yields by product.[OP04]
+
+Samsung announced a memorandum of understanding on March 18, 2026, covering primary HBM4 supply for MI455X and DDR5 for sixth-generation EPYC, while describing its existing primary HBM3E partnership for MI350X/MI355X. References to logic foundry work in the announcement were limited to discussions of opportunities. They do not establish that Samsung has taken on Venice logic wafer manufacturing.[OP30]
+
+ZT Systems' system design and manufacturing businesses now have different ownership. AMD completed the acquisition in March 2025, retaining design-related IP and personnel. The data center infrastructure manufacturing business was sold to Sanmina on October 27, 2025, with the buyer's announcement confirming completion and describing a manufacturing partnership for new product introductions. This report does not continue to classify the complete manufacturing business that was sold as AMD-owned manufacturing capacity.[OP31][F05]
+
+7 Five fiscal years of financial results and capital allocation
+
+The following figures are global consolidated US GAAP data, in US$ million unless percentages or dates are shown. Annual financial statements have been audited. FY2022 comprised 53 weeks, and the other years 52 weeks. Xilinx and Pensando were included in 2022 from February 14 and May 26, respectively. Five-year revenue changes therefore include acquisitions and differences in period length, and are not equivalent to organic growth within a fixed business scope.[F01][F02][F05]
+
+Table 2. Five-year financial performance. US$ million, except percentages and dates.[F02][F05]
+
+Metric	FY2021	FY2022	FY2023	FY2024	FY2025
+Fiscal year end	2021-12-25	2022-12-31	2023-12-30	2024-12-28	2025-12-27
+Weeks	52	53	52	52	52
+Revenue	16,434	23,601	22,680	25,785	34,639
+Gross profit	7,929	10,603	10,460	12,725	17,152
+GAAP operating income	3,648	1,264	401	1,900	3,694
+Net income from continuing operations	3,162	1,320	854	1,641	4,269
+Consolidated net income	3,162	1,320	854	1,641	4,335
+Operating cash flow from continuing operations	3,521	3,565	1,667	3,041	6,493
+Consolidated operating cash flow	3,521	3,565	1,667	3,041	7,709
+Capital expenditure from continuing operations	301	450	546	636	974
+Company-reported gross margin	48%	45%	46%	49%	50%
+
+Table 3. Five-year assets and capital allocation. US$ million.[F02][F03][F05]
+
+Metric	FY2021	FY2022	FY2023	FY2024	FY2025
+Year-end cash and cash equivalents	2,535	4,835	3,933	3,787	5,539
+Year-end short-term investments	1,073	1,020	1,840	1,345	5,013
+Total cash and short-term investments	3,608	5,855	5,773	5,132	10,552
+Net carrying amount of debt	313	2,467	2,468	1,721	3,222
+Research and development expense	2,845	5,005	5,872	6,456	8,091
+Pre-tax stock-based compensation	379	1,081	1,384	1,407	1,638
+Cash spent under share repurchase programs	1,762	3,702	985	862	1,316
+Cash spent on share repurchases for employee equity tax withholding	237	406	427	728	607
+Cash dividends paid	0	0	0	0	0
+
+Year-over-year revenue growth, calculated as current-period revenue divided by prior-period revenue minus 1, was 43.6%, −3.9%, 13.7%, and 34.3% for 2022 through 2025, respectively. GAAP operating margin, calculated as operating income divided by revenue, was 10.7% in 2025, 7.4% in 2024, and 1.8% in 2023. The gross margin table retains the company's whole-percentage disclosures; rounding calculated metrics does not imply that the company disclosed additional precision.[F02][F05]
+
+In 2025, net income from continuing operations of 4,269 and net income from discontinued operations of 66 produced consolidated net income of 4,335. Discontinued operations primarily corresponded to the ZT manufacturing business. Operating cash flow from continuing operations of 6,493 and discontinued operations of 1,216 totaled 7,709. Capital expenditure was 974 for continuing operations and 38 for discontinued operations, totaling 1,012. Calculating cash flow less capital expenditure requires matching operating scope; cash flow including discontinued operations must not be reduced by only the capital expenditure of continuing operations.[F05]
+
+Research and development expense in 2025 was 8,091, or 23.4% of revenue; pre-tax stock-based compensation was 1,638, and amortization of acquisition-related intangible assets was 2,254. GAAP profit already includes these expenses. Certain costs are unallocated in reported segment operating income, which therefore cannot be mixed directly with consolidated GAAP margins. Capital expenditure refers only to cash purchases of property and equipment in the cash flow statement, and does not include all acquisitions, equity investments, or supply prepayments.[F05]
+
+Cash spent under common share repurchase programs is shown separately from shares repurchased for tax withholding when employee equity awards vest. The 2021–2025 cash flow statements show no cash dividend payments; this historical observation does not guarantee future policy. Total cash in the table includes short-term investments; debt consistently uses net carrying amounts and must not be mixed with principal amounts.[F02][F03][F05]
+
+The amendment to the 2025 annual report clarified that Client revenue grew 51% year over year, processor unit shipments rose 15%, and average selling prices increased 31%; the original MD&A had reversed the latter two figures. The correction did not change the consolidated financial statements. Using the corrected volume and price measures avoids attributing revenue changes to incorrect unit shipment data.[F06]
+
+8 Latest quarter and balance sheet
+
+As of October 13, 2026, the latest reported financial quarter was Q2 2026, ended June 27. Results were announced on August 4, and the Form 10-Q was filed on August 5. An October 6 announcement scheduled Q3 results for November 3; this report does not treat third-quarter guidance or plans as actual financial results.[F07][F08][F13]
+
+Table 4. Latest quarterly and half-year data. US$ million, except percentages.[F07][F08][F09]
+
+Metric	Q2 2025	Q1 2026	Q2 2026	H1 2025	H1 2026
+Revenue	7,685	10,253	11,536	15,123	21,789
+Company-reported gross margin	40%	53%	54%	45%	53%
+GAAP operating income or loss	-134	1,476	1,990	672	3,466
+Net income from continuing operations	768	1,372	2,305	1,477	3,677
+Consolidated net income	872	1,383	2,297	1,581	3,680
+Research and development expense	1,894	2,397	2,528	3,622	4,925
+Pre-tax stock-based compensation	369	487	503	733	990
+Operating cash flow from continuing operations	1,462	2,955	2,366	2,401	5,321
+Capital expenditure from continuing operations	282	389	808	494	1,197
+
+Q2 2026 revenue was 11,536, up 50.1% year over year and 12.5% sequentially. H1 2026 revenue was 21,789, up 44.1% year over year, with all calculations based on the disclosed whole-number amounts. Q2 segment revenue was 6,718 for Data Center, 3,841 for Client and Gaming, and 977 for Embedded. Quarterly and half-year results are unaudited; a single quarter cannot be directly annualized as actual full-year revenue.[F07][F08][F09]
+
+Q2 2025 included approximately 800 of MI308-related inventory and other charges, an important factor in the gross margin comparison base; the full-year 2025 net charge was approximately 440. The Q2 2026 gross margin of 54% exceeded the prior-year quarter's 40% by 14 percentage points, but the entire difference cannot be attributed to an improvement in underlying product profitability. Operating income, net income, and operating cash flow are also affected by expenses, taxes, investments, and working capital.[F05][F07]
+
+As of June 27, 2026, cash and cash equivalents were 5,086 and short-term investments 8,025, totaling 13,111. Interest-bearing debt had a net carrying amount of 3,226 and principal of 3,250; inventories were 8,468 and net accounts receivable 7,281. H1 operating cash flow from continuing operations was 5,321, with capital expenditure from continuing operations of 1,197. Quarterly cash flow figures must be checked against the earnings release's financial tables; the principal cash flow statement in the Form 10-Q shows half-year cumulative amounts.[F07][F08]
+
+In the first half of 2026, actual share repurchase program spending was 221, with a separate 341 spent on share repurchases for employee award tax withholding. Remaining authorization was approximately 9,200. Authorization is a permitted spending ceiling, rather than a guarantee of future expenditure.[F07]
+
+9 Governance and conditional commercial arrangements
+
+Lisa T. Su serves as chair, president, and CEO. She has been CEO since October 2014 and chair since February 2022. Nora M. Denzel is the independent lead director. Jean Hu has served as CFO since January 2023. Directors are elected annually, and each common share has one vote.[F10][F11]
+
+At the time of reading, the official website listed eight directors: Lisa T. Su, Nora M. Denzel, Mike Gregoire, John W. Marren, KC McClure, Timothy F. Ryan, Abhi Y. Talwalkar, and Elizabeth W. Vanderslice. Tim Ryan joined on August 19, 2026, when Joseph Householder retired, and committee memberships changed. The March proxy statement's list therefore cannot be used directly as the complete current board in October.[F11][F12]
+
+The 2026 proxy statement listed Vanguard and BlackRock as institutional shareholders holding more than 5%, but its footnotes relied on institutional filings from February 2024. This report uses them to explain the ownership disclosure structure and does not label those percentages as real-time holdings in October 2026. Beneficial ownership and voting power are also not identical.[F10]
+
+AMD issued warrants to OpenAI in October 2025 and Meta in February 2026, each for up to 160 million shares at an exercise price of US$0.01 per share, subject to purchasing, commercial, technical, share-price, and other conditions. As of June 27, 2026, neither warrant was vested or exercisable. The maximum amounts cannot be classified directly as current holdings, vested voting rights, or dilution that has already occurred in full. That date does not automatically establish subsequent status as of October.[F07]
+
+The same Form 10-Q disclosed future unconditional purchase, cloud computing, and other commitments totaling 30,276 as of June 27, including wafers, substrates, components, computing capacity, and software and technology licenses. Future payments under signed leases that had not commenced were a separate approximately 4,500. Subsequent long-term data center leases disclosed by the filing date had a further approximately 9,500 of future payments and were expected to commence in 2027 or 2028. These contractual payments differ in definition from interest-bearing debt on the balance sheet and cannot be combined as recognized debt.[F07]
+
+10 Markets and comparable companies
+
+AMD operates across several computing markets: server and PC CPUs, AI accelerators, discrete graphics, programmable chips, embedded computing, and networking. Server CPUs can be compared with Intel and Arm platforms; AI accelerators involve NVIDIA and customer-designed ASICs; PC CPUs also include Intel and Arm platforms; discrete graphics includes NVIDIA and Intel; and programmable logic includes Altera, Lattice, and others. Companies have different business scopes and reporting segments, so dividing their total revenues does not produce a particular product's market share.[OP01][OP23]
+
+This research did not obtain complete, publicly verifiable CPU, discrete GPU, or AI accelerator market share data with matching periods and metrics. It therefore provides product relationship descriptions and AMD's internal revenue composition without inventing a market share chart. Performance comparisons should specify product models, software, workloads, precision, power, and test conditions; this report makes no unconditional performance ranking.
+
+11 Disclosed developments and current status
+
+Export licenses directly affect the saleable scope of certain products and inventory accounting. AMD's Q2 2026 Form 10-Q disclosed that MI308 shipments to Chinese customers began under certain licenses in late 2025. Certain MI325 licenses were obtained in February 2026, but the filing still stated that AMD did not know whether China would permit imports. The licenses require inspection in the United States first, with a 25% tariff on the related imports for inspection. This report retains the filing's timing and does not conclude that sales of all restricted products have resumed.[OP02]
+
+The same filing recorded that US officials expressed an expectation in August 2025 of receiving 15% of revenue from licensed MI308 sales to China, but that no regulations implementing the requirement had been published as of the disclosure. Official statements, formal rules, payments made, and completed sales are different evidence states; this report does not describe the percentage as a cost already in force and paid.[OP02]
+
+External manufacturing and supplies of memory, advanced packaging, and components involve capacity, delivery, and product transitions. Customer adoption also involves equipment, software, and framework compatibility. Public materials do not establish complete procurement volumes, manufacturing costs, or yields by model, nor do they disclose all customer contract prices. This report retains those information limits without assigning its own risk probabilities or ratings.[OP04][OP17][OP29][OP30]
+
+Recent acquisitions must be presented according to transaction progress. Although the August 6, 2026, Taalas headline used “Acquires,” the body described a definitive agreement still subject to closing conditions and regulatory approvals. This research did not obtain a subsequent completion announcement. On September 28, 2026, AMD announced an approximately US$8.2 billion all-stock agreement to acquire World Labs, expected to close by year-end and subject to approvals. The arrangement for Fei-Fei Li to join AMD's management takes effect after closing, so she cannot be listed as a current executive as of this report's date.[OP32][OP33]
+
+12 Statistical methods and research coverage
+
+The information cutoff and reading date are both October 13, 2026. Annual reports cover FY2021 through FY2025, and the latest actual financial period is Q2 2026. Product and transaction announcements are updated through October 12. The research uses regulatory filings, company announcements, product documentation, counterparty disclosures, and historical archives. Each source supports only its registered reading scope, with manufacturer statements, contractual plans, transaction completion, and actual customer deployment described separately.
+
+Amounts are in US$ million by default. Fiscal year ends and week counts are shown in the tables; fiscal years are not mechanically equated with calendar years. Annual figures are audited GAAP data, while interim figures are unaudited. Gross margins retain the company's whole-percentage disclosures; other derived percentages are calculated from the original whole-number amounts and displayed to one decimal place. Year-over-year comparisons use the corresponding prior-year period; sequential comparisons use adjacent quarters; segment revenue shares divide segment revenue by consolidated revenue for the same period.
+
+Total cash means cash and cash equivalents plus short-term investments; the main debt table uses net carrying amounts. Capital expenditure is limited to cash purchases of property and equipment. Continuing and discontinued operations, single-quarter and half-year periods, segment and consolidated figures, and internal revenue composition and market share have distinct labels. Data files retain original whole-number amounts and sources to support recalculation.
+
+Product-specific revenue, undisclosed customer purchase amounts, complete supplier shares, real-time institutional holdings, and consistent market-wide shares not provided in the materials have not been estimated. The report explains the business and disclosed financial results without investment ratings, price targets, or the author's forecasts of performance.
+
+Sources and reading scope
+
+The listed sections of all materials below were read on October 13, 2026. Different identifiers for the same original document locate different claims and do not represent independent evidence. Complete source limitations are retained in the downloadable evidence register.
+
+[H01] AMD 2021 Form 10-K: https://ir.amd.com/financial-information/sec-filings/content/0000002488-22-000016/amd-20211225.htm
+
+Dates and location: 2022-02-03; incorporated 1969-05-01; public company in 1972. Part I, Item 1, General, webpage line 188.
+
+Support and limits: Incorporation jurisdiction and date, and the year of going public; does not support the IPO month, day, or offer price.
+
+[H02] CHM, Fairchildren: https://computerhistory.org/fairchildren/
+
+Dates and location: No publication date visible; event in 1969. Advanced Micro Devices, Sunnyvale, CA (1969), lines 118–127.
+
+Support and limits: All eight founders came from Fairchild, and the early strategy concerned logic and analog components. The spelling L. Stegner in the founding list differs from other secondary materials; the body does not infer a full name.
+
+[H03] Report to the Computer History Museum on the Information Technology Corporate Histories Project — Semiconductor Sector: https://archive.computerhistory.org/resources/access/text/2012/10/102746515-05-01-acc.pdf
+
+Dates and location: Sanders catalog entry recorded 2006-10-01; original interview 2002-10-18; graduation in 1958 and entry to Fairchild in 1961. PDF pages 211–212, zero-based P210–211, Sanders, Jerry — Interview entry.
+
+Support and limits: Sanders' career details were read in the Stanford interview abstract. The complete interview link failed to open, and no claim is made that the full interview was read.
+
+[H04] AMD 2900 Microprocessor Family Oral History Panel: https://archive.computerhistory.org/resources/access/text/2013/05/102658341-05-01-acc.pdf
+
+Dates and location: Recording/copyright 2009-02-11; recollected events in 1969, the 1970s, and 1975-07-21. PDF cover; pages 3–4 on founding, financing, 9300, and customers; pages 14–15 on the 2901 announcement; pages 18–19 on seminars and design-in work.
+
+Support and limits: Recollections by a founder and product development participants. The US$1.55 million figure is explicitly from an oral history recorded many years later; customer visits do not establish contracts or a customer list for the founding year.
+
+[H05] David Laws, It's a Good Year for Asparagus: https://computerhistory.org/blog/it-s-a-good-year-for-asparagus-advanced-micro-devices-amd-celebrates-50-years-as-an-independent-computer-chip-supplier/
+
+Dates and location: 2019-05-01; advertisements and events from 1969–1983. Body and historical advertising captions, lines 67–108; author's disclosure at line 117.
+
+Support and limits: Early 64-bit RAM, testing-based marketing, Zilog in 1978, NYSE listing on 1979-10-15, and IBM PC second sourcing in 1983. The author worked at AMD for twelve years. The article's praise and competitive evaluations are not adopted.
+
+[H06] AMD 1995 Annual Report: https://ir.amd.com/financial-information/sec-filings/content/0000898430-96-000902/EX-13.txt
+
+Dates and location: 1996-03-21; 1972/1979. Corporate Profile, lines 38–51.
+
+Support and limits: Cross-checks the years of going public and NYSE listing; does not support the number of shares issued or the offering price.
+
+[H07] Supreme Court of California, Advanced Micro Devices, Inc. v. Intel Corp., 9 Cal.4th 362: https://scocal.stanford.edu/opinion/advanced-micro-devices-inc-v-intel-corp-31610/
+
+Dates and location: Judgment 1994-12-30; contract 1982-02; Am386 1991-03. Opening and facts in the majority opinion, lines 33–66; disposition at line 39.
+
+Support and limits: Technology exchange mechanism, arbitration/judicial review, and Am386 timing. Cannot be generalized as AMD prevailing in every dispute.
+
+[H08] AMD/Intel joint announcement, AMD 8-K Exhibit 28.2: https://ir.amd.com/financial-information/sec-filings/content/0000898430-95-000048/EX-28_2.txt
+
+Dates and location: Announcement 1995-01-11; filing 1995-01-19. Main announcement and agreement terms, lines 31–60.
+
+Support and limits: Perpetual 386/486 microcode licenses and exclusions, US$58 million/approximately US$18 million, and settlement of disputes then pending. All amounts are in US dollars.
+
+[H09] AMD Form 8-K: https://ir.amd.com/financial-information/sec-filings/content/0000898430-96-000281/8-K.txt
+
+Dates and location: Filing 1996-02-01; acquisition 1996-01-17. Item 2, lines 44–58.
+
+Support and limits: NexGen completion date and the 0.8-share exchange ratio, distinguished from the 1995-10-20 agreement date.
+
+[H10] AMD Prospectus, Form 424B5: https://ir.amd.com/financial-information/sec-filings/content/0000950109-96-005024/424B5.txt
+
+Dates and location: 1996-08-09; product status at that time. Risk Factors — Microprocessor Products — Dependence on New AMD Microprocessor Products, S-12, lines 810–840.
+
+Support and limits: K5 operating difficulties, the purpose of acquiring NexGen, and K6's design origins. The 1997 shipments described in the document were plans at the time; this document alone cannot establish completed deliveries.
+
+[H11] AMD 1998 Form 10-K: https://ir.amd.com/financial-information/sec-filings/content/0001012870-99-000892/10-K.txt
+
+Dates and location: 1999-03-29; K6 volume shipments in 1997 Q2; FASL in 1993. Computation Products Group, lines 307–320; Certain Material Agreements — FASL, lines 640–645.
+
+Support and limits: Actual K6 volume shipments and the start of the Fujitsu joint venture; the company's contemporaneous market leadership claims are not adopted.
+
+[H12] AMD 1999 Annual Report, preserved copy of a company document: https://www.annualreports.com/HostedData/AnnualReportArchive/a/NYSE_AMD_1999.pdf
+
+Dates and location: FY1999; shareholder letter dated 2000-02-29, with an added 2000-03-06 announcement. PDF pages 4–6, To My Fellow Shareholders; page 3, Financial Highlights.
+
+Support and limits: Athlon's 1999 introduction, K6-2 yield and speed-grade shortages, 1999 revenue of US$2,857.604 million, and a net loss of US$88.936 million. This is a copy of the company annual report; market evaluations are management opinions only.
+
+[H13] AMD 2000 Annual Report, preserved copy of a company document: https://www.annualreports.com/HostedData/AnnualReportArchive/a/NYSE_AMD_2000.pdf
+
+Dates and location: FY2000; event 2000-03-06. PDF page 7, zero-based P6, Letter to Our Shareholders.
+
+Support and limits: Introduction date of the 1 GHz Athlon; “world's fastest” and unqualified “first” claims are not adopted.
+
+[H14] AMD Q2 2003 Results, 8-K Exhibit 99.1: https://ir.amd.com/financial-information/sec-filings/content/0001193125-03-020249/dex991.htm
+
+Dates and location: 2003-07-16; Opteron introduction 2003-04-22. Highlights of the Quarter, lines 103–126.
+
+Support and limits: Opteron announcement date, IBM server plans, and Microsoft and software support commitments. Plans are not represented as server deliveries on the announcement date.
+
+[H15] AMD 2003 Form 10-K: https://ir.amd.com/financial-information/sec-filings/content/0001193125-04-037179/d10k.htm
+
+Dates and location: 2004-03-09; 2003-04/09. Part I, Computation Products — Microprocessor Products, lines 243 and 326–342.
+
+Support and limits: Athlon 64's introduction month and AMD64's 64-bit extension/32-bit application compatibility design; does not guarantee every software configuration.
+
+[H16] AMD 2006 Form 10-K: https://ir.amd.com/financial-information/sec-filings/content/0001193125-07-044191/d10k.htm
+
+Dates and location: 2007-03-01; Spansion IPO 2005-12-21; ATI 2006-10-25. MD&A — ATI Acquisition, pages 54–55, lines 1967–1993; Spansion IPO, lines 2150–2153; Note 4.
+
+Support and limits: ATI's total purchase price of US$5,604 million and its measurement scope; changes in Spansion ownership/consolidation.
+
+[H17] AMD Completes ATI Acquisition, 8-K Exhibit 99.1: https://ir.amd.com/financial-information/sec-filings/content/0001193125-06-217735/dex991.htm
+
+Dates and location: Announcement 2006-10-25; filing 2006-10-30. Transaction Details, lines 61–70; Fusion initiative heading.
+
+Support and limits: The approximately US$5.4 billion valuation at the time, share-price measurement date, exclusion of assumed awards, cash, shares, and borrowing. Fusion was a proposed initiative.
+
+[H18] AMD Form 8-K: https://ir.amd.com/financial-information/sec-filings/content/0001193125-09-046101/d8k.htm
+
+Dates and location: 2009-03-05; closing 2009-03-02; renaming 2009-03-04. Items 1.01/2.01, lines 101–107; Wafer Supply Agreement, lines 165–168.
+
+Support and limits: Contribution of Dresden factories and assets, GF naming, and procurement relationships. The 2009 transaction does not mean AMD had completely exited equity ownership.
+
+[H19] AMD Amends Wafer Supply Agreement With GLOBALFOUNDRIES: https://ir.amd.com/news-events/press-releases/detail/408/amd-amends-wafer-supply-agreement-with-globalfoundries
+
+Dates and location: 2012-03-04. Announcement opening and agreement terms, lines 35–43.
+
+Support and limits: Transfer of the remaining equity interest and continuation of the supply agreement. Future expense guidance is not used as actual expense in the body.
+
+[H20] AMD Form 8-K: https://ir.amd.com/financial-information/sec-filings/content/0001193125-09-236705/d8k.htm ; joint announcement: https://www.intel.com/pressroom/archive/releases/2009/20091112corp_a.htm?lang=en
+
+Dates and location: 8-K 2009-11-17; agreement 2009-11-11; joint announcement 2009-11-12. 8-K Items 1.01/8.01, lines 103–131; agreement terms in the joint announcement.
+
+Support and limits: US$1.25 billion, settlement of private litigation, and a new cross-license. Agreement signing and public announcement are separate; independent regulatory cases do not automatically end because of a private settlement.
+
+[H21] AMD original announcement, distributed through GlobeNewswire: https://www.globenewswire.com/news-release/2014/10/08/1011346/0/en/AMD-Appoints-Dr-Lisa-Su-as-President-and-Chief-Executive-Officer.html
+
+Dates and location: 2014-10-08; appointment effective that day. Opening paragraph; About Dr. Lisa Su, lines 57–70.
+
+Support and limits: Lisa Su's appointment, joining AMD in 2012, and Freescale/IBM career details; subjective assessments in the release are not adopted.
+
+[H22] AMD Ryzen 7 Desktop Processors Available Worldwide Today: https://ir.amd.com/news-events/press-releases/detail/753/amd-ryzentm-7-desktop-processors-featuring-record-breaking-overclocking-performance-available-worldwide-today
+
+Dates and location: 2017-03-02. Opening, Availability, and model table, lines 38–58.
+
+Support and limits: The first three Ryzen 7 models, 8C16T, Zen, and the company's account of four years of development; no general performance leadership conclusion is adopted.
+
+[H23] AMD EPYC Datacenter Processor Launch: https://ir.amd.com/news-events/press-releases/detail/773/amd-epyc-datacenter-processor-launches-with-record-setting-performance-optimized-platforms-and-global-server-ecosystem-support
+
+Dates and location: 2017-06-20. Opening, Zen/core counts, and OEM support paragraphs, lines 41–51; testing footnotes, lines 145–150.
+
+Support and limits: EPYC 7000 announcement date, Zen, and up to 32 cores. Manufacturer performance comparisons and projections are not used for historical conclusions.
+
+[H24] AMD Form 8-K: https://ir.amd.com/financial-information/sec-filings/content/0000002488-22-000031/amd-20220214.htm
+
+Dates and location: 2022-02-14. Introductory Note and Item 2.01, Merger Consideration, lines 83–98.
+
+Support and limits: Xilinx completion date, wholly owned subsidiary status, and the 1.7234 exchange ratio.
+
+[H25] AMD Completes Acquisition of Xilinx, 8-K Exhibit 99.1: https://ir.amd.com/financial-information/sec-filings/content/0000002488-22-000031/xilinxacquisitionclosepres.htm
+
+Dates and location: 2022-02-14; initial announcement 2020-10-27. Main announcement, lines 44–51.
+
+Support and limits: All-stock transaction and technologies including FPGAs/adaptive SoCs. Management's market opportunity estimates are not treated as actual revenue.
+
+[H26] AMD 2022 Form 10-K: https://ir.amd.com/financial-information/sec-filings/content/0000002488-23-000047/amd-20221231.htm
+
+Dates and location: 2023-02-27; acquisition 2022-02-14. Note 5 — Acquisitions, Xilinx Acquisition, lines 2141–2145/printed page 68.
+
+Support and limits: US$48.8 billion total consideration, share-price measurement on 2022-02-11, consolidation period, and segments. The initial announcement valuation is not mixed with this amount.
+
+[F01] AMD FY2021 Form 10-K; 2022-02-03; https://ir.amd.com/financial-information/sec-filings/content/0000002488-22-000016/amd-20211225.htm
+
+Dates and location: As listed in the material description; read on 2026-10-13. Item 7; Item 8 pp.48–54; annual income, balance sheet, and cash flow statements; original two segments; Note 2 fiscal year; segment disclosures in the notes.
+
+Support and limits: The 2021 entity scope did not yet include Xilinx/Pensando; old segments cannot be compared directly with the new structure.
+
+[F02] AMD FY2022 Form 10-K; 2023-02-27; https://ir.amd.com/financial-information/sec-filings/content/0000002488-23-000047/amd-20221231.htm
+
+Dates and location: As listed in the material description; read on 2026-10-13. Item 8 pp.51–57; Note 4 pp.64–66; Note 5 pp.68–70; Note 9 pp.73–74; Note 12 SBC; FY2021/2022 financial data and recast segments; customer percentages.
+
+Support and limits: FY2022 comprised 53 weeks; acquisitions were consolidated from completion dates; customers are anonymous. Pro forma figures are unaudited hypothetical measures and are not used in this table.
+
+[F03] AMD FY2024 Form 10-K; 2025-02-05; https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000012/amd-20241228.htm
+
+Dates and location: As listed in the material description; read on 2026-10-13. Item 8 balance sheets and cash flows; Note 9 debt; cross-checks FY2023/2024 closing cash/debt and cash paid for repurchases.
+
+Support and limits: Structure before the 2025 segment change; the main table uses the latest comparable FY2023/24 income statement figures in F05.
+
+[F05] AMD FY2025 Form 10-K; 2026-02-04; https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000018/amd-20251227.htm
+
+Dates and location: As listed in the material description; read on 2026-10-13. Item 8 pp.58–63; Note 2 p.64; Note 3 pp.69–70; Note 4 pp.70–72; Note 5 pp.72–74; Note 9 pp.78–79; Note 14 pp.83–84; audit report pp.92–93.
+
+Support and limits: FY2025 distinguishes continuing and discontinued operations. The original Client ASP/unit volume error in MD&A must be corrected using F06; the formal annual financial statements themselves were not amended.
+
+[F06] AMD FY2025 Form 10-K/A; 2026-02-04; https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000021/amd-20251227.htm
+
+Dates and location: As listed in the material description; read on 2026-10-13. Explanatory Note and Item 7: corrects Client unit shipments/ASP to +15%/+31%.
+
+Support and limits: Corrects only the specified MD&A statements; it is not a comprehensive update of subsequent events or a restatement of financial statements.
+
+[F07] AMD Q2 2026 Form 10-Q; 2026-08-05; https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000123/amd-20260627.htm
+
+Dates and location: As listed in the material description; read on 2026-10-13. pp.3–7 interim statements; Note 4 pp.10–12; Note 9 pp.16–17; Note 10 p.17; Note 12 pp.19–20; MD&A pp.24–29.
+
+Support and limits: Unaudited; income statements distinguish the quarter and half-year, while cash flows are cumulative for the half-year. Subsequent lease disclosure extends only to the filing date; Q3 actual results must not be invented.
+
+[F08] AMD Reports Second Quarter 2026 Financial Results; 2026-08-04; https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results
+
+Dates and location: As listed in the material description; read on 2026-10-13. GAAP Quarterly Financial Results; accompanying cash flow/FCF reconciliation: quarterly CFO 2,366 and capex 808; prior-period comparisons.
+
+Support and limits: The release includes future company guidance and promotional claims; the research uses actual historical data and does not mix guidance with actual results.
+
+[F09] AMD Reports First Quarter 2026 Financial Results; 2026-05-05; https://ir.amd.com/news-events/press-releases/detail/1284/amd-reports-first-quarter-2026-financial-results
+
+Dates and location: As listed in the material description; read on 2026-10-13. GAAP Quarterly Financial Results and financial tables; Q1 comparisons, cash flow 2,955, and capex 389.
+
+Support and limits: Unaudited; company forward-looking statements are not treated as accomplished facts.
+
+[F10] AMD 2026 Definitive Proxy Statement (DEF 14A); 2026-03-27; https://ir.amd.com/financial-information/sec-filings/content/0001193125-26-129057/d85856ddef14a.htm
+
+Dates and location: As listed in the material description; read on 2026-10-13. Q&A pp.1–3; Board Leadership p.19; Security Ownership pp.36–37; Executive Officers pp.38–43.
+
+Support and limits: Shareholder record date 2026-03-19; institutional holding footnotes rely on 2024 Schedule 13G filings and are not real-time holdings. The director list requires subsequent changes.
+
+[F11] AMD Board of Directors; page has no separate publication date; https://ir.amd.com/governance/board-of-directors
+
+Dates and location: As listed in the material description; read on 2026-10-13. The full current list and Su/Denzel roles were read; page snapshot on 2026-10-13.
+
+Support and limits: Updated dynamically; establishes only what the official site listed when read. Historical dates are checked against announcements/proxy statements.
+
+[F12] AMD Appoints Tim Ryan to Board of Directors; 2026-08-19; https://ir.amd.com/news-events/press-releases/detail/1297/amd-appoints-tim-ryan-to-board-of-directors
+
+Dates and location: As listed in the material description; read on 2026-10-13. Full release: Ryan's appointment that day, Householder's retirement, and committee changes.
+
+Support and limits: The announcement does not replace a complete director independence assessment or the latest shareholder holdings.
+
+[F13] AMD to Report Fiscal Third Quarter 2026 Financial Results; 2026-10-06; https://ir.amd.com/news-events/press-releases/detail/1300/amd-to-report-fiscal-third-quarter-2026-financial-results
+
+Dates and location: As listed in the material description; read on 2026-10-13. Announcement body: Q3 disclosure planned for 2026-11-03.
+
+Support and limits: Establishes only the announced schedule; no Q3 results were disclosed.
+
+[OP01] AMD 2025 Form 10-K (https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000018/amd-20251227.htm), AMD, 2026-02-04; year ended 2025-12-27.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Part I Item 1: Customers, Competition, Manufacturing Arrangements and Assembly and Test Facilities; Item 1A supply/exports; Item 7 ZT; notes on segments/concentration and ZT.
+
+Support and limits: Only the relevant sections were read. Manufacturing arrangements are not model-specific procurement tables; unnamed customers cannot be guessed.
+
+[OP02] AMD Q2 2026 Form 10-Q (https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000123/amd-20260627.htm), AMD, 2026-08-05; quarter ended 2026-06-27.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Part II Item 1A Legal and Regulatory Risks, extracted lines 1432-1434 and 1541-1545; Item 2 explanations relating to MI308.
+
+Support and limits: Status reflects disclosure at filing; this report does not elevate descriptions of regulations into independent legal judgments.
+
+[OP03] EPYC 9006 / Venice technical introduction (https://www.amd.com/en/blogs/2026/agentic-ai-amd-epyc-9005-cpus-wins-today-epyc-9006.html), AMD, 2026-07-23.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Architecture and maximum family specifications in the opening, extracted lines 449-455.
+
+Support and limits: Performance leadership is AMD's analysis; manufacturer comparative conclusions are not adopted.
+
+[OP04] Venice TSMC 2nm production ramp announcement (https://newsroom.amd.com/news/amd-announces-production-ramp-of-next-generation-a/), AMD, 2026-05-21.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Body lines 80-87: Taiwan production, future Arizona plans, and packaging technology.
+
+Support and limits: Includes a public quotation from TSMC's CEO; does not support any yield, capacity allocation, or actual Arizona production start date.
+
+[OP05] CES 2026 Ryzen/ROCm announcement (https://ir.amd.com/news-events/press-releases/detail/1270/amd-expands-ai-leadership-across-client-graphics-and-software-with-new-ryzen-ryzen-ai-and-amd-rocm-announcements-at-ces-2026), AMD, 2026-01-05.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Ryzen AI400 mobile family, Pricing and Availability, and specification table.
+
+Support and limits: Up to 60 TOPS is the manufacturer's NPU specification, rather than effective AI application throughput for a complete computer.
+
+[OP06] Ryzen AI400 desktop expansion (https://newsroom.amd.com/news/amd-gives-consumers-and-businesses-more-ai-pc-opti/), AMD, 2026-03-02.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Desktop Availability, specification table, and mobile workstation plans.
+
+Support and limits: Announced expected availability is not evidence of actual retail supply in each region.
+
+[OP07] Threadripper PRO9000 WX (https://www.amd.com/en/blogs/2025/amd-introduces-new-zen-5-based-ryzen-threadripper-pro.html), AMD, 2025-07-17.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Body lines 454-458, AMD PRO, and specification table.
+
+Support and limits: Only positioning, maximum core counts, and announced delivery dates are used; “fastest”/“leading” claims are not adopted.
+
+[OP08] Threadripper9000 HEDT (https://www.amd.com/en/blogs/2025/designed-to-create-built-to-inspire-amd-introduces-new.html), AMD, 2025-07-25.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Shipment date, positioning, and R9700 description in the opening.
+
+Support and limits: Descriptions of uses are not third-party performance verification.
+
+[OP09] RDNA4/Radeon RX9000 announcement (https://ir.amd.com/news-events/press-releases/detail/1238/amd-unveils-next-generation-amd-rdna-4-architecture-with-the-launch-of-amd-radeon-rx-9000-series-graphics-cards), AMD, 2025-02-28.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Opening, Pricing and Availability, and FSR4 explanation.
+
+Support and limits: Announcement dates are distinguished from expected availability; unconditional performance improvement claims are not adopted.
+
+[OP10] Radeon RX product page (https://www.amd.com/en/products/graphics/desktops/radeon.html), AMD, no original publication date shown.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Product families, FSR functions, and footnotes; page as of the reading date.
+
+Support and limits: Dynamic page; specific games and versions change over time. Marketing tests are not used as comprehensive comparisons.
+
+[OP11] Advancing AI2025 announcement (https://ir.amd.com/news-events/press-releases/detail/1255/amd-unveils-vision-for-an-open-ai-ecosystem-detailing-new-silicon-software-and-systems-at-advancing-ai-2025), AMD, 2025-06-12.
+
+Dates and location: As listed in the material description; read on 2026-10-13. MI350 series, existing deployments, 2H2025 availability, and customers' existing production workloads.
+
+Support and limits: Chip announcements/deployments differ from availability through every OEM; partner statements do not establish undisclosed purchase amounts.
+
+[OP12] MI350 architecture technical documentation (https://rocmdocs.amd.com/en/latest/reference/gpu-arch/mi350.html), AMD ROCm documentation, current page version 10.1.0.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Product formats, Chiplet, Memory, and Node-level architecture, approximately lines 150-201.
+
+Support and limits: Version is dynamic; bandwidth and FLOPS are theoretical peak specifications. This report uses only format/capacity differences.
+
+[OP13] AAI2026 full-stack announcement (https://ir.amd.com/news-events/press-releases/detail/1294/aai-2026-amd-delivers-full-stack-compute-for-the-agentic-ai-era), AMD, 2026-07-23.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Body lines 44-61: Helios production, configuration, OpenAI plans, and Meta validation; roadmap.
+
+Support and limits: All TAM, tokens/dollar, and post-2027 roadmap statements are forecasts; this report makes no factual leadership judgment from them.
+
+[OP14] Current Instinct product family (https://www.amd.com/en/products/accelerators/instinct.html), AMD, no original publication date shown.
+
+Dates and location: As listed in the material description; read on 2026-10-13. MI400/MI350/MI300 portfolio and ROCm explanation, lines 471-482 and 611-614.
+
+Support and limits: Dynamic page; supports the current listing, rather than customer shipments for each model.
+
+[OP15] Helion agentic rack (https://ir.amd.com/news-events/press-releases/detail/1301/introducing-amd-helion-agentic-ai-compute-at-rack-scale), AMD, 2026-10-12.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Body lines 41-49; Ecosystem Support.
+
+Support and limits: November availability and OCP contributions are plans. Partner quotations establish support relationships, rather than delivered orders.
+
+[OP16] Versal adaptive SoC product page (https://www.amd.com/en/products/adaptive-socs-and-fpgas/versal.html), AMD, no original publication date shown.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Overview and Portfolio; explanations of logic, CPUs, AI Engines, and networks on chip.
+
+Support and limits: Family configurations vary; not every series has the same AI Engines/interfaces.
+
+[OP17] ROCm Core SDK10.1.0 Release Notes (https://rocm.docs.amd.com/en/docs-10.1.0/about/release-notes.html), AMD, 2026-10-05.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Date, Applies, Release Highlights, and known/resolved issue indexes, lines 175-213 and 1675-1722.
+
+Support and limits: No claim of equal support for all devices; technical preview status must be retained.
+
+[OP18] Vitis Unified Software Platform (https://www.amd.com/en/products/software/adaptive-socs-and-fpgas/vitis.html), AMD, current version 2026.1.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Licensing Structure, Development Environment, HLS, and Vivado.
+
+Support and limits: This research did not verify every licensing provision or software revenue, and does not support corresponding estimates.
+
+[OP19] Amazon EC2 M8a/M8azn (https://aws.amazon.com/ec2/instance-types/m8a/), AWS, no original publication date shown.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Product positioning, fifth-generation EPYC, specifications, and Launch entry points, lines 238-278/376-382.
+
+Support and limits: AWS production relationship; customer quotations on the page refer to AWS customers, rather than AMD's direct customer list.
+
+[OP20] Microsoft Azure AI/HPC with AMD (https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/), Microsoft, 2026-07-20.
+
+Dates and location: As listed in the material description; read on 2026-10-13. HDv2, HXv2, and ND MI455X v7, body lines 12-33.
+
+Support and limits: Supports Microsoft's official product introduction; regional general availability dates for each series were not confirmed.
+
+[OP21] Microsoft/AMD expanded strategic partnership announcement (https://newsroom.amd.com/news/microsoft-azure-ai-infrastructure/), AMD, 2026-07-20.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Body lines 76-83: shipment plans, Azure products, and DPUs.
+
+Support and limits: Cross-checked against OP20; no purchase amount is inferred.
+
+[OP22] OpenAI/AMD 6GW agreement (https://openai.com/index/openai-amd-strategic-partnership/), OpenAI, 2025-10-06.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Agreement, first 1GW, and warrant/milestone descriptions.
+
+Support and limits: Original buyer disclosure; does not mean all GW capacity has been built or that the warrant has vested.
+
+[OP23] Meta/AMD multiyear infrastructure agreement (https://about.fb.com/news/2026/02/meta-amd-partner-longterm-ai-infrastructure-agreement/), Meta, 2026-02-24.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Body lines 250-264: up to 6GW, 2H2026, Helios, and the multi-supplier strategy.
+
+Support and limits: The multi-supplier strategy includes Meta's own MTIA; no exclusivity is claimed.
+
+[OP24] Anthropic/AMD partnership (https://ir.amd.com/news-events/press-releases/detail/1292/amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gigawatts-of-amd-instinct-mi450-series-gpus), AMD joint announcement by both companies, 2026-07-22.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Body lines 38-46: existing MI355X use, the first 1GW in 2027 H1, investment commitments, and software.
+
+Support and limits: No separate Anthropic page for the same date was found; facts are attributed to the joint announcement.
+
+[OP25] AMD/Cisco/HUMAIN systems operational in Saudi Arabia (https://ir.amd.com/news-events/press-releases/detail/1298/amd-cisco-and-humain-expand-saudi-arabias-ai-infrastructure-as-amd-instinct-systems-go-live), AMD announcement by the three companies, 2026-08-31.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Body lines 38-45: actual operations and planned expansion.
+
+Support and limits: Operational capacity was not disclosed; 250MW/1GW are not treated as existing capacity.
+
+[OP26] Xbox/AMD future chip partnership (https://news.xbox.com/en-us/2025/06/19/xbox-amd-next-generation-xbox/), Microsoft Xbox Wire, 2025-06-19.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Body lines 33-42.
+
+Support and limits: Future product roadmap; no evidence of console prices/chip unit prices/unit sales.
+
+[OP27] Upgraded PSSR rollout (https://blog.playstation.com/2026/03/16/upgraded-pssr-rolling-out-to-silent-hill-f-monster-hunter-wilds-final-fantasy-vii-rebirth-crimson-desert-and-more/), Sony PlayStation, 2026-03-16.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Lines 193-203 on the system update and Project Amethyst.
+
+Support and limits: Native software relationship; does not establish chip contract revenue.
+
+[OP28] PS5 QSSR (https://blog.playstation.com/?p=424016), Sony PlayStation, 2026-10-01.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Body lines 58-64: jointly developed technology and two launch games.
+
+Support and limits: Feature announcement; no release date is inferred for an unannounced console.
+
+[OP29] Supply Chain Responsibility (https://www.amd.com/en/corporate/corporate-responsibility/supply-chain-responsibility.html), AMD, no original publication date shown.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Body line 505 on the fabless model, Supplier Management, and Footnotes 600-601.
+
+Support and limits: Self-reported supplier audit figures are not used; the page states that AMD does not independently verify supplier-provided data.
+
+[OP30] Samsung/AMD next-generation AI memory MOU (https://news.samsung.com/global/samsung-and-amd-expand-strategic-collaboration-on-next-generation-ai-memory-solutions), Samsung, 2026-03-18.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Body lines 79-88: HBM4, DDR5, HBM3E, and discussions of potential foundry opportunities.
+
+Support and limits: No exclusive supply or specific quantities are claimed; foundry work is only under discussion, rather than an executed wafer foundry contract.
+
+[OP31] Sanmina completes acquisition of ZT manufacturing business (https://ir.sanmina.com/news/news-details/2025/SANMINA-COMPLETES-ACQUISITION-OF-ZT-SYSTEMS-DATA-CENTER-INFRASTRUCTURE-MANUFACTURING-BUSINESS-FROM-AMD/default.aspx), Sanmina, 2025-10-27.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Body lines 61-68: acquisition completion, NPI partnership, and manufacturing facilities.
+
+Support and limits: Cross-checks transaction completion; any amounts used must distinguish total consideration/net cash receipts from contingent consideration.
+
+[OP32] Taalas acquisition announcement (https://ir.amd.com/news-events/press-releases/detail/1296/amd-acquires-taalas-to-advance-compute-solutions-for-rapidly-growing-ai-inference-market), AMD, 2026-08-06.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Body lines 41-47 on the agreement and closing conditions.
+
+Support and limits: The headline's “Acquires” differs from the agreement status in the body; no completion announcement was found.
+
+[OP33] World Labs acquisition agreement (https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute), AMD, 2026-09-28.
+
+Dates and location: As listed in the material description; read on 2026-10-13. Body lines 38-43: amount, all-stock structure, expected completion, and post-closing role.
+
+Support and limits: Announced transaction valuation of approximately US$8.2 billion; not completed and not classified as an already consolidated entity/current executive.
+
+[H27] AMD Pensando acquisition completion announcement, AMD; https://www.amd.com/en/newsroom/press-releases/2022-5-26-amd-expands-data-center-solutions-capabilities-wit.html
+
+Dates and location: Announcement and completion on 2022-05-26; opening paragraph and product explanation.
+
+Support and limits: Announced transaction value of approximately US$1.9 billion; manufacturer performance comparisons and undisclosed customer amounts are not adopted.
+
+[H28] AMD Completes Acquisition of Silo AI, AMD; https://ir.amd.com/news-events/press-releases/detail/1210/amd-completes-acquisition-of-silo-ai-to-accelerate-development-and-deployment-of-ai-models-on-amd-hardware
+
+Dates and location: Completion announcement published 2024-08-12; opening paragraph and AI team description.
+
+Support and limits: Approximately US$665 million cash transaction; the manufacturer's expectations of future deployment benefits are not treated as accomplished facts.
+
+[IMG01] Cover: Real photograph of AMD's Santa Clara headquarters. Author: Lijiaxuan; photographed March 19, 2024, and uploaded August 26, 2024; original image 5472 × 3648 pixels; CC0 1.0. Original page: https://commons.wikimedia.org/wiki/File:AMD_headquarter_20240318.jpg . The photograph records the building's exterior at the time it was taken; it has not been composited, enlarged, or given added text on the image.
+
+[BRAND01] Official AMD white logo. Source: https://newsroom.amd.com/ ; original SVG: https://newsroom.amd.com/_astro/amd-header-logo.NP9ywpkQ.svg . Original proportions are preserved. The material was read on October 13, 2026. AMD trademarks belong to AMD; this report is not an official AMD document or endorsement. Trademark information: https://www.amd.com/en/legal/trademarks.html .

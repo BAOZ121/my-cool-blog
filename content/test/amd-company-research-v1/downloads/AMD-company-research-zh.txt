@@ -1,0 +1,692 @@
+AMD 公司研究报告
+
+资料截止日期 2026 年 10 月 13 日
+
+研究主体 Advanced Micro Devices, Inc. 及其合并子公司
+
+本报告介绍 AMD 的创办与业务演变、芯片和软件、客户与制造关系、五年财务以及最新已披露事项。AMD 从早期兼容器件供应商发展为覆盖 CPU、GPU、可编程芯片与 AI 系统的设计公司。2025 年收入为 34,639 百万美元；最新实际财务季度为 Q2 2026，收入为 11,536 百万美元。收入范围、业务分部与制造模式历经多次变化，历史数字需连同期间及并购口径理解。[F05][F07]
+
+1 创办历史与发展历程
+
+1969 年 从 Fairchild 出来的创业团队
+
+Advanced Micro Devices, Inc.（AMD）于 1969 年 5 月 1 日按照特拉华州法律注册成立。[H01] 计算机历史博物馆（Computer History Museum，CHM）把公司列在 1969 年于加州 Sunnyvale 创办的 Fairchild 衍生企业中，记载其八名共同创办人全部曾在 Fairchild Semiconductor 工作，Jerry Sanders 是其中一员。公司早期策略是供应经过改进的逻辑和模拟集成电路，所对应的已有产品来自 Fairchild 和 Texas Instruments。[H02]
+
+Sanders 的背景主要在销售与市场工作。CHM 的档案目录转录了 Stanford Silicon Genesis 对其 2002 年访谈的摘要：他在 1958 年取得电气工程学位，1961 年进入 Fairchild，后来负责全球销售；Fairchild 更换管理团队后，他被解雇。[H03] 相关履历取自博物馆保存的访谈摘要。
+
+共同创办人 Sven Simonsen 在 2009 年 2 月 11 日的 CHM Am2900 口述史中回忆，Fairchild 新管理层到来后，Sanders 与 John Carey 被解雇，其他创办成员随后逐渐聚到一起，决定成立自己的公司；他将 1969 年筹得的资本总额记为 155 万美元，并说明 AMD 最初为 Fairchild 9300 系列中规模集成电路提供第二来源，之后扩展自主产品。[H04] 该资金数字属于创办人四十年后的回忆，不是由当年账簿或发行文件独立验证的金额。
+
+1970 年代 兼容器件、自主设计和客户支持
+
+AMD 早期并非只做个人电脑处理器。CHM 保存的广告显示，公司很早就销售 64 位 RAM，并以商业器件达到高可靠性航空航天应用所要求的测试规格为卖点，宣传语强调按 MIL-STD-883 测试。这里描述的是当年产品与营销方式，并不据此推定某家航空航天企业是其直接客户。[H05]
+
+1970 年代，自主产品与第二来源产品同时存在。Am2900 位片处理器家族是这一阶段的重要自主产品：客户可以把多个位片及控制器件组合起来实现所需的处理器。参与该家族开发的 John Springer 在口述史中将 Am2901 的公告日期记为 1975 年 7 月 21 日。Clive Ghest 回忆，团队此前拜访 Digital Equipment Corporation、Data General 和 Honeywell 等计算机企业，了解其系统结构，并希望设计出能用于不同商业和军事系统的器件；销售与应用工程人员随后通过客户研讨会解释其设计方法。[H04] 这些名单属于参与者对 1970 年代接触对象的回忆，不能当作 AMD 创办当年的客户清单、采购合同或交易金额证明。
+
+AMD 于 1972 年成为公众公司。1979 年 10 月 15 日，其股票在纽约证券交易所挂牌。两者分别是首次成为公众公司与转到纽交所交易，不能合并为“1979 年首次上市”。[H06][H05] CHM 的历史广告档案还记载，AMD 在 1978 年与 Zilog 签订 Z8000 的第二来源协议，到 1983 年则已转向按照 Intel 协议生产用于 IBM PC 的 8086/8088 系列。[H05]
+
+1982 至 1995 年 Intel 技术合作与争议
+
+AMD 与 Intel 的关系既包含合作，也包含诉讼。1994 年加州最高法院判决所回顾的合同签订于 1982 年 2 月，目的是让双方交换技术信息，使一方能够作为另一方产品的替代供应来源。合同为十年期，约定五年后可按规定提前通知终止。随后双方围绕产品交换、80386 技术和契约义务发生争议；判决记载，AMD 的 Am386 于 1991 年 3 月出现。[H07]
+
+1994 年 12 月 30 日，加州最高法院推翻上诉法院对仲裁救济权限的相反判断，认定本案仲裁员授予相关救济没有超出其权限。[H07] 本报告将其表述为具体仲裁与司法审查结果，不概括成 AMD 赢得了全部知识产权或全部后续反垄断争议。
+
+1995 年 1 月 11 日，两家公司宣布解决当时全部未决法律争议。协议给予 AMD 使用 Intel 386 和 486 微码的永久许可，同时明确 AMD 无权复制 Pentium、P6 及 486 ICE 等其他微码。公告还列明 AMD 就 486 ICE 过去损害向 Intel 支付 5,800 万美元，Intel 按此前仲裁裁决向 AMD 支付约 1,800 万美元（含利息），双方撤销当时的法院案件与上诉，并拟另行谈判专利交叉许可。[H08] 这一结算不能理解为 AMD 此后处理器都使用 Intel 的设计。
+
+1996 至 2003 年 NexGen、K6、Athlon 和 AMD64
+
+AMD 在 1996 年 1 月 17 日完成 NexGen 并购；该交易以股份交换实施，每股 NexGen 普通股转换为获得 0.8 股 AMD 普通股的权利。[H09] AMD 同年 8 月的招股文件披露，K5 推出较晚且尚未取得广泛市场接受，公司收购 NexGen 的一项目的是加快下一代处理器推出，并正在把 NexGen 的第六代设计与 AMD 的设计、验证和制造技术结合，用于 K6。[H10] 1998 财年 10-K 随后确认 K6 于 1997 年第二季度开始批量交付。[H11]
+
+1999 年，AMD 推出 Athlon。其 1999 年报披露，当年较早时期 K6-2 的良率和速度档位分布存在问题，部分客户需要的高频产品供应不足；同一年度后半年的经营表现有所改善，但全年仍录得净亏损 8,893.6 万美元，收入为 28.576 亿美元。[H12] 这些历史数字的用途是保留产品转折与年度经营结果的区别，不根据单款产品推出就推断公司已经持续盈利。AMD 还于 2000 年 3 月 6 日推出 1 GHz Athlon；这里记载型号和发布日期，不采用年报中未经独立检验的整体性能领先宣传。[H13]
+
+2003 年 4 月 22 日，AMD 推出面向服务器与工作站的 Opteron。[H14] 同年 9 月推出 Athlon 64。公司 2003 年报说明，两者采用 AMD64 技术，把 x86 指令集架构扩展到 64 位计算，同时保留运行已有 32 位应用的能力；服务器、工作站、台式机和移动电脑由此分别有对应产品。[H15] 该技术说明不表示所有操作系统或所有旧软件在任意配置下都已被验证兼容。AMD 当年公告里的 IBM、Microsoft、Oracle 等名称，分别对应拟推出服务器、操作系统开发或软件支持承诺，应与已经发生的采购和交付区分。[H14]
+
+2005 至 2012 年 退出闪存并表、收购 ATI 和分离晶圆制造
+
+AMD 曾经营闪存业务。1993 年，公司与 Fujitsu 设立 FASL 闪存合资企业。[H11] 2005 年 12 月 21 日，原多数控股子公司 Spansion 完成首次公开募股，AMD 的股权比例降至约 38%，公司自该日起不再将 Spansion 的经营结果和财务状况合并到自身报表；2006 年 11 月进一步出售股份后，年末持股约 21%。[H16] 所以跨越这一时期比较 AMD 总收入时，必须注意业务合并范围变化。
+
+2006 年 10 月 25 日，AMD 完成 ATI Technologies 收购，把图形处理器、芯片组及消费电子相关产品纳入业务。完成公告的约 54 亿美元交易价值以 2006 年 10 月 24 日 AMD 股价计量，不含承接的股权奖励；现金约 43 亿美元，并发行约 5,800 万股 AMD 普通股，部分现金对价由 25 亿美元定期贷款融资。[H17] 2006 年报按收购会计记录的总购买价为 56.04 亿美元，含已归属期权及限制股单位的价值和 2,500 万美元交易费用。[H16] 两个金额定义不同，不应作为相互矛盾的数字。完成公告同时提出 Fusion 计划，不能将当时提出的 CPU/GPU 集成目标写成当日已经交付的产品。
+
+制造模式也发生了改变。AMD、ATIC 及相关投资主体于 2009 年 3 月 2 日完成组建制造合资公司的交易；AMD 将拥有德累斯顿 Fab 30/38 和 Fab 36 的德国子公司、部分制造资产、人员以及知识产权等投入 The Foundry Company。该公司于 3 月 4 日改名 GLOBALFOUNDRIES。双方另订晶圆供应协议，安排 AMD 向该公司采购制造产品。[H18] 2012 年 3 月 4 日，AMD 宣布修订供应协议，并同意转出剩余 GLOBALFOUNDRIES 股权、结束对其持股。[H19] 因而 2009 年的资产分离与 2012 年的股权退出安排是不同阶段；股权退出也不表示双方晶圆采购关系随即结束。
+
+同期法律争议亦有新的结算。AMD 的 2009 年 11 月 17 日 8-K 记载，双方于 11 月 11 日签订和解及专利交叉许可协议，Intel 须向 AMD 支付 12.5 亿美元，AMD 同意撤销当时在美国特拉华州与日本的诉讼及其全球监管投诉。联合公告于 11 月 12 日发布。[H20] 此次私人和解与独立监管机构的案件或裁决并非同一事项。
+
+2014 至 2022 年 管理层更替、Zen 产品与自适应计算
+
+2014 年 10 月 8 日，AMD 董事会任命 Lisa Su（苏姿丰）为总裁、首席执行官和董事，立即生效，接替 Rory Read。公告记载，她在 2012 年加入 AMD，此前在 Freescale 任技术和业务管理职务，并曾在 IBM 工作十三年。[H21]
+
+2017 年 3 月 2 日，AMD 开始销售首批三款 Ryzen 7 台式机处理器，型号为 1800X、1700X 和 1700，均为八核、十六线程。公司公告把 Ryzen 记为其采用全新 Zen 微架构的首款处理器，并说明此前开发历时四年。[H22] 同年 6 月 20 日，采用 Zen 核心的 EPYC 7000 系列数据中心处理器发布，产品配置最高三十二个核心。[H23] 此处只记录架构、型号、用途和交付状态，不把公司比较测试推广为所有工作负载中的性能结论。
+
+2022 年 2 月 14 日，AMD 完成对 Xilinx 的收购，后者成为全资子公司；每股 Xilinx 普通股转换为获得 1.7234 股 AMD 普通股的权利（另按规定处理零碎股份）。[H24] 并购公告说明，这项全股票交易最初于 2020 年 10 月 27 日宣布，加入的技术范围包括 FPGA、自适应 SoC、AI 引擎和软件。[H25] AMD 的 2022 年报记录总购买对价为 488 亿美元；其中发行普通股公允价值以完成日前一交易日 2022 年 2 月 11 日的股价计量。年报说明，Xilinx 相关经营结果从收购日起并表，列在嵌入式和数据中心分部。[H26] 因此最初宣布时的估值与交割后的会计对价也应区别。
+
+2022 至 2026 年 网络与 AI 系统业务扩展
+
+2022 年 5 月 26 日，AMD 完成约 19 亿美元的 Pensando 收购，加入用于网络、安全和存储服务的数据处理单元与软件。[H27] 2024 年 8 月 12 日，AMD 公告已完成约 6.65 亿美元现金收购 Silo AI，纳入 AI 模型及部署工程团队。[H28] 随后 ZT Systems 的设计团队与已出售制造业务分开保留；2026 年的 Helios、Helion 与拟收购事项分别在产品、制造和最新事项章节说明。各公告的交易价格与购买会计计量不自动相同。[OP31][OP13][OP15][OP32][OP33]
+
+
+2 公司主体与收入构成
+
+Advanced Micro Devices, Inc.（AMD）是美国特拉华州注册、总部设在加利福尼亚州圣克拉拉的上市公司，普通股在 Nasdaq 交易，代码 AMD。报告研究 AMD 及其合并子公司的全球经营情况。它设计计算芯片和相关软件，通过直接客户、设备厂商及分销渠道销售；设计与晶圆制造属于不同环节。[F05][OP29]
+
+2025 年起，AMD 的报告分部为 Data Center、Client and Gaming、Embedded。数据中心分部包括服务器 CPU、AI 加速器及部分网络产品；客户端与游戏分部包括 PC 处理器、显卡和游戏设备半定制芯片；嵌入式分部包括可编程逻辑、adaptive SoC 及嵌入式处理器。产品品牌与报告分部并非一一对应：例如同样属于 GPU，Instinct 和 Radeon 服务的市场及分部不同。[F05][OP01]
+
+表 1 最近三年报告分部收入 单位为百万美元 [F05]
+
+分部	FY2023	FY2024	FY2025
+Data Center	6,496	12,579	16,635
+Client and Gaming	10,863	9,649	14,550
+Embedded	5,321	3,557	3,454
+合计	22,680	25,785	34,639
+
+2021 和 2022 年的分部数据取自 2022 年报对旧业务的重列，Client 与 Gaming 合计为本报告算术加总；2023 和 2024 年使用 2025 年报按新结构重列的数据。2025 年 Client 业务收入 10,640、Gaming 业务收入 3,910，合计 14,550，但两者已不再分别构成报告分部。[F02][F05]
+
+按 2025 年收入计算，Data Center、Client and Gaming、Embedded 的收入占比分别为 48.0%、42.0%、10.0%。这是 AMD 自身收入结构。Data Center 包含 EPYC 与 Instinct 等不同产品，公司未在该表披露两者各自精确收入，不能将整个分部收入等同于 AI GPU 收入。[F05]
+
+3 芯片产品与系统的用途
+
+理解 AMD 的产品，应先区分 CPU、GPU、NPU 和 FPGA。CPU 处理通用计算与系统控制；GPU 用于并行计算或图形；NPU 是面向部分 AI 任务的专用计算单元；FPGA 的逻辑可以配置。芯片、加速卡、服务器和机架也是不同交付形态，某种芯片被发布不能证明完整客户系统已经上线。
+
+产品线	主要用途	形态与事实边界
+EPYC	云、企业服务器、HPC 与 AI 的通用计算及 GPU 主机	2026 年发布的 EPYC 9006 使用 Zen 6 与 TSMC 2nm；家族最高为 256 核，型号规格不同。[OP03][OP04]
+Ryzen 与 Ryzen AI	桌面和移动 PC 的计算、图形及本地 AI	Ryzen AI 400 移动系列的厂商 NPU 上限为 60 TOPS，2026 年桌面系列为 50 TOPS；不能混用两种形态的上限。[OP05][OP06]
+Ryzen Threadripper	工作站及高端桌面的渲染、编译、仿真	PRO 9000 WX 家族最高 96 核，具有企业平台功能；普通 9000 与 PRO 系列的渠道和平台不同。[OP07][OP08]
+Instinct	AI 训练、推理与科学计算	MI350X 与 MI355X 为 288GB HBM3E 的 OAM 模块，MI350P 为 144GB 的 PCIe 卡；部署及散热要求不同。[OP11][OP12]
+Radeon	PC 游戏和专业图形	RX 9000 使用 RDNA 4；FSR 等功能取决于显卡、驱动及具体游戏支持。[OP09][OP10]
+Adaptive computing	网络、工业、汽车、航天及其他嵌入式计算	Versal 组合可编程逻辑、CPU、片上网络，部分系列含 AI Engines；另有 FPGA、Zynq 与 Kria 模块。[OP16]
+
+EPYC 9006 于 2026 年 7 月 23 日发布，此前 5 月 21 日 AMD 已宣布 Venice 在台湾 TSMC 2nm 产线生产爬坡。生产爬坡、产品发布和某个客户的实际部署分别是不同事件。Ryzen AI 将 CPU、图形与 NPU 组合，PRO 系列另提供面向企业的安全和管理功能；TOPS 为厂商规格，不能直接代表某个应用的实测吞吐。[OP03][OP04][OP05][OP06]
+
+Instinct 使用 CDNA 计算架构，Radeon 使用 RDNA 图形架构。MI350X 和 MI355X 的内存容量相同，但 MI355X 面向液冷，MI350P 的 PCIe 形态和风冷部署方式又不同。报告采用产品角色与公开规格，不把厂商“最快”“领先”等表述转化为所有工作负载的竞争结论。[OP09][OP12]
+
+2026 年 7 月 23 日，AMD 宣布 Helios 机架平台已进入生产，其公开组合为 72 块 Instinct MI455X、18 颗第六代 EPYC、Pensando 网络及 ROCm 软件。MI455X 是 MI450 系列中的型号，MI450 属于 MI400 家族。该公告仍将 OpenAI 上线时间写为第四季度预期，将 Meta 状态写为测试与验证；机架生产不等于所有客户已投入运行。[OP13][OP14]
+
+2026 年 10 月 12 日介绍的 Helion 是另一种 agentic AI 机架蓝图，支持第六代 EPYC 的纯 CPU 配置及 EPYC 与 MI350P 的组合。公告说明伙伴仍在开发，计划 11 月可用。截至本报告日期，其状态为已介绍、开发中。[OP15]
+
+4 软件与开发工具
+
+ROCm 为 AMD 计算设备提供运行时、编译器、数学和通信库及开发工具，用于 AI 和 HPC。开发者须按设备、操作系统、框架和版本核对支持情况。2026 年 10 月 5 日的 ROCm Core SDK 10.1.0 发布说明覆盖 Linux 与 Windows，并列出技术预览及已知问题；支持某个平台不意味着所有组件与显卡具有相同支持范围。[OP17]
+
+可编程芯片使用另一套开发流程。Vivado 用于硬件设计与实现，Vitis 面向 FPGA fabric、Arm 处理器和 AI Engine 的应用及系统开发，Vitis HLS 可以将 C/C++ 函数综合为 RTL。读取时页面列示 2026.1，且说明免费开发与部分需要有效许可的实现流程。产品页没有给出可据以计算独立软件收入的财务分拆。[OP18]
+
+ROCm 与 Vitis 对应不同计算设备和开发任务。它们的公开文档能证明功能和兼容范围，不能独立证明客户迁移成本、所有应用的性能或软件业务收入。报告未把开源、授权与技术支持产品数量换算为未披露的收费规模。[OP17][OP18]
+
+5 客户与销售渠道
+
+AMD 的客户类别包括超大规模云厂商、OEM、ODM、系统集成商、分销商、显卡板卡伙伴和游戏设备制造商。OEM 销售品牌整机，ODM 设计或制造设备，云平台的最终租户使用实例。终端使用者、合作伙伴与 AMD 直接采购客户应分别理解。[OP01]
+
+关系对象	公开关系	截至资料日期的限制
+AWS	M8a/M8azn 官方页面列示第五代 EPYC 云实例。[OP19]	证明 CPU 使用关系；不证明 Instinct 采购，未披露 AMD 取得的金额。
+Microsoft	2026 年 7 月介绍第六代 EPYC 的 HDv2/HXv2 与基于 Helios 的 ND MI455X v7。[OP20][OP21]	产品介绍及发货安排不证明所有区域已正式可用。
+OpenAI	2025 年 10 月 6 日公布多年代际 6GW 协议与附条件权证。[OP22]	首批上线仍有计划时间与里程碑；不能当作全部交付或已确认收入。
+Meta	2026 年 2 月 24 日确认多年最多 6GW 的 Instinct 协议。[OP23]	保留“最多”，采用多供应商策略；7 月公告仍有系统验证。[OP13]
+Anthropic	2026 年 7 月联合公告提及既有 MI355X 使用及未来最多 2GW 的 Helios 计划。[OP24]	首 1GW 计划从 2027 年上半年开始；AMD 未来最多 50 亿美元股权投资为承诺。
+HUMAIN 与 Cisco	2026 年 8 月 31 日联合公告称沙特 MI355X、EPYC 和 Cisco 网络系统已服务客户。[OP25]	2027 年起最多 250MW 扩张与 2030 年最多 1GW 为目标，未披露现有投产容量。
+Microsoft Xbox	2025 年 6 月宣布多年芯片共同设计关系。[OP26]	未来产品规划不证明芯片售价、销量或具体新主机已经交付。
+Sony PlayStation	2026 年官方公告说明 PSSR 与 QSSR 来自 AMD 的 Project Amethyst 合作。[OP27][OP28]	证明共同图形技术开发，不披露半定制芯片合同金额。
+
+上述 GW 与 MW 是公告中的计算基础设施容量口径，部分为上限、未来部署或多年安排。它们不是 GPU 台数，也不能加总为已完成的收入。OpenAI 和 Meta 的协议附带认股权证，权证状态见治理章节。[OP22][OP23][F07]
+
+AMD 2025 年报按客户账单地址归属收入：美国 11,363，中国含香港 7,751，台湾 5,186，新加坡 4,284，其他地区 6,055，合计 34,639，单位均为百万美元。美国占比 32.8%，中国含香港为 22.4%。该分类不代表最终用户所在地或受出口限制产品收入。[F05]
+
+2025 和 2024 年没有单一客户达到合并收入的 10%；2023 年一个未具名的 Client and Gaming 客户占 18%。披露未给出该客户名称，本报告不将其对应到任何具体企业。门槛披露也不能证明所有未来客户关系都分散。[F05]
+
+6 供应链与制造安排
+
+AMD 采用 fabless 经营方式，设计芯片并依赖外部晶圆生产、封装测试与相关供应。2025 年报披露，微处理器和 GPU 的 7nm 及以下晶圆依赖 TSMC，HPC 的 12nm/14nm 使用 GlobalFoundries；可编程逻辑另使用 TSMC、UMC 与 Samsung。封装测试包括与通富相关的两家 ATMP 合资公司，以及 SPIL、KYEC 等。公开名单不能证明每个供应商制造所有型号。[OP01][OP29]
+
+生产流程可理解为芯片设计、晶圆制造、封装与测试、板卡或系统集成、渠道交付。GPU 的 HBM 内存与先进封装是不同于逻辑晶圆的供给环节。2026 年 5 月的 Venice 公告称台湾 TSMC 2nm 生产爬坡，并提到 SoIC-X、CoWoS-L；亚利桑那生产仍属未来计划，公告未给出逐产品的完整产能分配或良率。[OP04]
+
+Samsung 于 2026 年 3 月 18 日公告合作备忘录，涉及 MI455X 的主要 HBM4 供给和第六代 EPYC 的 DDR5，并说明其已有 MI350X/MI355X 的主要 HBM3E 伙伴关系。公告中对逻辑代工的表述仅为讨论机会，不能据此写成 Samsung 已承接 Venice 的逻辑晶圆制造。[OP30]
+
+ZT Systems 的系统设计和制造业务已有不同归属。AMD 在 2025 年 3 月完成收购，保留设计相关 IP 与人员；其数据中心基础设施制造业务于 2025 年 10 月 27 日出售给 Sanmina，买方公告确认完成，并说明新产品导入制造伙伴关系。报告不把已出售的完整制造业务继续列作 AMD 自有制造能力。[OP31][F05]
+
+7 最近五个财年的财务与资本配置
+
+以下为全球合并美国 GAAP 数据，单位为百万美元，比例与日期除外。年度财务报表已经审计。2022 财年为 53 周，其余为 52 周；2022 年纳入 Xilinx 与 Pensando 的时间分别为 2 月 14 日和 5 月 26 日。因此五年收入变化包含并购与期间长度影响，不等于固定业务范围的有机增长。[F01][F02][F05]
+
+表 2 五年财务表现 单位为百万美元 比例和日期除外 [F02][F05]
+
+指标	FY2021	FY2022	FY2023	FY2024	FY2025
+财年截止	2021-12-25	2022-12-31	2023-12-30	2024-12-28	2025-12-27
+周数	52	53	52	52	52
+收入	16,434	23,601	22,680	25,785	34,639
+毛利	7,929	10,603	10,460	12,725	17,152
+GAAP 营业利润	3,648	1,264	401	1,900	3,694
+持续经营净利润	3,162	1,320	854	1,641	4,269
+合并净利润	3,162	1,320	854	1,641	4,335
+持续经营经营现金流	3,521	3,565	1,667	3,041	6,493
+合并经营现金流	3,521	3,565	1,667	3,041	7,709
+持续经营资本支出	301	450	546	636	974
+公司披露毛利率	48%	45%	46%	49%	50%
+
+表 3 五年资产与资本配置 单位为百万美元 [F02][F03][F05]
+
+指标	FY2021	FY2022	FY2023	FY2024	FY2025
+年末现金及现金等价物	2,535	4,835	3,933	3,787	5,539
+年末短期投资	1,073	1,020	1,840	1,345	5,013
+现金与短期投资合计	3,608	5,855	5,773	5,132	10,552
+债务账面净额	313	2,467	2,468	1,721	3,222
+研发费用	2,845	5,005	5,872	6,456	8,091
+税前股权激励	379	1,081	1,384	1,407	1,638
+回购计划现金支出	1,762	3,702	985	862	1,316
+员工股权代扣税购回现金	237	406	427	728	607
+现金股利支付	0	0	0	0	0
+
+收入同比按“本期收入 ÷ 上期收入 − 1”计算，2022 至 2025 年分别为 43.6%、−3.9%、13.7%、34.3%。2025 年 GAAP 营业利润率为 10.7%，2024 年为 7.4%，2023 年为 1.8%，公式为营业利润 ÷ 收入。毛利率表保留公司整数披露，计算指标的舍入不代表公司披露了更多精度。[F02][F05]
+
+2025 年持续经营净利润为 4,269，终止经营净利润为 66，合并净利润为 4,335。终止经营主要对应 ZT 制造业务。持续经营经营现金流为 6,493，终止经营经营现金流为 1,216，合计 7,709；持续经营资本支出 974，终止经营资本支出 38，合计 1,012。若计算现金流减资本支出，须使用相同经营范围，不能用含终止经营的现金流减仅持续经营资本支出。[F05]
+
+2025 年研发费用为 8,091，占收入 23.4%；税前股权激励为 1,638，收购无形资产摊销为 2,254。GAAP 利润已经包含这些费用。报告分部营业利润未分配部分费用，不能与合并 GAAP 利润率直接混用。资本支出仅为现金流量表固定资产购置现金，不包括全部并购、股权投资或供货预付款。[F05]
+
+普通股回购计划的现金支出与员工股权归属时的代扣税股份购回分别列示。2021 至 2025 年现金流量表未列现金股利支付，这一历史观察不构成未来政策保证。表中现金合计包含短期投资；债务统一用账面净额，不能与本金口径混算。[F02][F03][F05]
+
+2025 年报更正公告明确：Client 收入同比增长 51%，处理器出货量增长 15%，平均售价增长 31%；原 MD&A 将后两项调换。更正没有改变合并财务报表。使用更正后的数量与售价口径，能够避免将收入变化误归因于错误的销量数据。[F06]
+
+8 最新季度与资产负债表
+
+截至 2026 年 10 月 13 日，最新已经披露的财务季度为截至 6 月 27 日的 2026 年第二季度，业绩公告为 8 月 4 日，10-Q 为 8 月 5 日。10 月 6 日的公告安排于 11 月 3 日发布第三季度结果；本报告不把第三季度指引或计划当作实际财务数据。[F07][F08][F13]
+
+表 4 最新季度与半年数据 单位为百万美元 比例除外 [F07][F08][F09]
+
+指标	Q2 2025	Q1 2026	Q2 2026	H1 2025	H1 2026
+收入	7,685	10,253	11,536	15,123	21,789
+公司披露毛利率	40%	53%	54%	45%	53%
+GAAP 营业利润或亏损	-134	1,476	1,990	672	3,466
+持续经营净利润	768	1,372	2,305	1,477	3,677
+合并净利润	872	1,383	2,297	1,581	3,680
+研发费用	1,894	2,397	2,528	3,622	4,925
+税前股权激励	369	487	503	733	990
+持续经营经营现金流	1,462	2,955	2,366	2,401	5,321
+持续经营资本支出	282	389	808	494	1,197
+
+Q2 2026 收入为 11,536，同比增加 50.1%、环比增加 12.5%；H1 2026 收入为 21,789，同比增加 44.1%，均按披露整数计算。Q2 分部收入为 Data Center 6,718、Client and Gaming 3,841、Embedded 977。季度与半年结果未审计，单季不能直接年化为本年实际收入。[F07][F08][F09]
+
+Q2 2025 计入约 800 的 MI308 相关库存和费用，是毛利率比较的重要基数因素；2025 全年净费用约 440。Q2 2026 的 54% 毛利率与上年同期 40% 相差 14 个百分点，不能将这一差额全部解释为固定产品盈利能力的改善。营业利润、净利润与经营现金流还受费用、税务、投资和营运资本影响。[F05][F07]
+
+截至 2026 年 6 月 27 日，现金及现金等价物 5,086，短期投资 8,025，合计 13,111；有息债务账面净额 3,226，本金 3,250；存货 8,468，应收账款净额 7,281。H1 持续经营现金流 5,321，持续经营资本支出 1,197。季度现金流表需用业绩公告附表核对，10-Q 主现金流量表为半年累计。[F07][F08]
+
+2026 年上半年，回购计划实际支出 221，员工奖励代扣税股份购回另为 341；剩余授权约 9,200。授权属于可执行上限，不等于未来一定支出。[F07]
+
+9 治理与附条件商业安排
+
+Lisa T. Su（苏姿丰）任董事长、总裁及 CEO，2014 年 10 月起任 CEO，2022 年 2 月起任董事长；Nora M. Denzel 任独立首席董事。Jean Hu 自 2023 年 1 月起任 CFO。董事每年选举，普通股每股一票。[F10][F11]
+
+读取时官网列示八位董事：Lisa T. Su、Nora M. Denzel、Mike Gregoire、John W. Marren、KC McClure、Timothy F. Ryan、Abhi Y. Talwalkar、Elizabeth W. Vanderslice。2026 年 8 月 19 日 Tim Ryan 加入，Joseph Householder 退休，相关委员会成员调整，因此 3 月代理声明名单不能直接作为 10 月完整现任名单。[F11][F12]
+
+2026 年代理声明中列示超过 5% 的机构股东为 Vanguard 与 BlackRock，但脚注依据的机构申报分别来自 2024 年 2 月。本报告仅据其说明所有权披露结构，不将所列比例称作 2026 年 10 月实时持仓。受益所有权与投票权也不完全相同。[F10]
+
+AMD 分别在 2025 年 10 月和 2026 年 2 月向 OpenAI 与 Meta 发出最多各 1.6 亿股、行权价每股 0.01 美元的认股权证，附带采购、商业、技术及股价等条件。截至 2026 年 6 月 27 日，两份均未归属或可行使。不能将上限直接列作现有持股、既得投票权或已经发生的全部稀释；该时间点不自动代表截至 10 月的后续状态。[F07]
+
+同一 10-Q 披露，截至 6 月 27 日无条件采购、云计算等未来承诺合计 30,276，包括晶圆、基板、部件、算力容量、软件和技术授权。已签但未开始租赁的未来付款另约 4,500；截至申报日披露的期后长期数据中心租赁未来付款另约 9,500，预计 2027 或 2028 年开始。这些合同付款与资产负债表有息债务的口径不同，不能混算为已确认债务。[F07]
+
+10 参与市场与可比公司
+
+AMD 跨越多个计算市场：服务器与 PC CPU，AI 加速器，独立图形，可编程芯片，嵌入式计算和网络。服务器 CPU 可与 Intel 及 Arm 平台比较；AI 加速器涉及 NVIDIA 和客户自有 ASIC；PC CPU 还有 Intel 和 Arm 平台；独立显卡有 NVIDIA、Intel；可编程逻辑涉及 Altera、Lattice 等。各企业的业务范围和报告分部不同，公司总收入不能直接相除得到某一产品市场份额。[OP01][OP23]
+
+本报告没有取得可公开核验、期间与指标一致的完整 CPU、独立 GPU 或 AI 加速器市场份额数据，因此提供产品关系说明和 AMD 内部收入构成，不编造份额图。比较性能也应落实到产品型号、软件、工作负载、精度、功耗与测试条件；本报告没有作无条件性能排名。
+
+11 已披露事项与当前状态
+
+出口许可直接影响部分产品的可销售范围与库存会计处理。AMD 的 Q2 2026 10-Q 披露，MI308 自 2025 年底在部分许可证下开始向中国客户发货。2026 年 2 月取得部分 MI325 许可证，但该文件仍表示不知中国是否允许进口；许可证要求先在美国检验，相关进口检验须缴纳 25% 关税。报告保留该申报时点，不据此认定所有受限产品均已恢复销售。[OP02]
+
+同一文件记载，美国官员在 2025 年 8 月表达过希望取得许可 MI308 中国销售收入 15% 的期待，但截至该文件披露尚未公布落实该要求的规章。官员表态、正式规则、已付款和已完成销售是不同证据状态，本报告不将该比例写成已经生效并支付的成本。[OP02]
+
+外部制造与内存、先进封装、部件供给涉及容量、交付和产品更替；客户采用还涉及设备、软件与框架兼容。公开材料不足以说明逐型号完整采购量、制造成本或良率，也未披露全部客户合同价格。本报告保留这些信息边界，不自行赋予风险概率或评级。[OP04][OP17][OP29][OP30]
+
+最新并购须按交易进程呈现。2026 年 8 月 6 日 Taalas 新闻标题虽使用“Acquires”，正文实际为达成确定性协议、仍待交割条件及监管批准；本次未取得后续完成公告。2026 年 9 月 28 日，AMD 公布约 82 亿美元全股票收购 World Labs 协议，预计年底完成并待批准。Fei-Fei Li 加入 AMD 管理层的安排在交割后生效，不能列作本报告日期的现任高管。[OP32][OP33]
+
+12 统计方法与资料覆盖
+
+资料截止和读取日期均为 2026 年 10 月 13 日。年报覆盖 FY2021 至 FY2025，最新实际财务期为 Q2 2026；产品和交易公告更新至 10 月 12 日。研究采用监管申报、公司公告、产品文档、交易对方披露及历史档案。每条来源仅支持登记的实际阅读范围，厂商声明、合同计划、交割完成与客户实际部署分开说明。
+
+金额单位默认百万美元。财年截止与周数见表，不将财年机械等同自然年；年度为审计 GAAP，中期未审计。毛利率保留公司整数披露，其余派生比例按原始整数计算后显示一位小数。同比为本期与上年同期比较，环比为相邻季度比较，分部收入占比为分部收入除以同期间合并收入。
+
+现金合计为现金及现金等价物加短期投资；债务主表为账面净额。资本支出限定固定资产购置现金。持续经营与终止经营、单季与半年、分部与合并、公司内部收入构成与市场份额均使用不同标签。数据文件保留原始整数和来源，便于复算。
+
+资料未提供的逐产品收入、客户未公开采购金额、完整供应商份额、实时机构持仓及同口径全市场份额未作估计。报告说明业务与已披露财务，没有加入投资评级、目标价或作者业绩预测。
+
+
+来源与阅读范围
+
+以下材料均于 2026 年 10 月 13 日实际读取所列章节。相同原始文件的不同编号用于定位不同主张，不代表不同独立证据。完整来源限制保留在可下载证据登记表。
+
+[H01] AMD 2021 Form 10-K：https://ir.amd.com/financial-information/sec-filings/content/0000002488-22-000016/amd-20211225.htm
+
+日期与定位 2022-02-03；注册 1969-05-01、公众公司 1972；Part I, Item 1, General，网页行 188。
+
+支持边界 注册地与日期，公开上市年份；不支持 IPO 月日及发行价格。
+
+[H02] CHM, Fairchildren：https://computerhistory.org/fairchildren/
+
+日期与定位 页面未见发布日期；事件 1969；Advanced Micro Devices, Sunnyvale, CA (1969)，行 118–127。
+
+支持边界 八人全部来自 Fairchild，早期逻辑和模拟器件策略；创办名单中 L. Stegner 的拼写与其他二手资料不同，正文未擅自扩全名。
+
+[H03] Report to the Computer History Museum on the Information Technology Corporate Histories Project — Semiconductor Sector：https://archive.computerhistory.org/resources/access/text/2012/10/102746515-05-01-acc.pdf
+
+日期与定位 档案录入 Sanders 条目 2006-10-01；原访谈 2002-10-18；毕业 1958、入 Fairchild 1961；PDF 第 211–212 页（零起算 P210–211），Sanders, Jerry — Interview 条目。
+
+支持边界 实际读到 Stanford 访谈摘要中的 Sanders 履历；完整访谈链接打开失败，未声称阅读全文。
+
+[H04] AMD 2900 Microprocessor Family Oral History Panel：https://archive.computerhistory.org/resources/access/text/2013/05/102658341-05-01-acc.pdf
+
+日期与定位 录制／版权 2009-02-11；回忆事件 1969、1970 年代、1975-07-21；PDF 封面；第 3–4 页（创办、融资、9300 与客户）；第 14–15 页（2901 公告）；第 18–19 页（研讨会及设计导入）。
+
+支持边界 创办人和产品开发参与者回忆；明确 155 万美元来自多年后口述；客户拜访不是合同或成立当年客户名单。
+
+[H05] David Laws, It's a Good Year for Asparagus：https://computerhistory.org/blog/it-s-a-good-year-for-asparagus-advanced-micro-devices-amd-celebrates-50-years-as-an-independent-computer-chip-supplier/
+
+日期与定位 2019-05-01；广告及事件 1969–1983；正文及历史广告图注，行 67–108；作者声明行 117。
+
+支持边界 早期 64 位 RAM、测试营销、1978 Zilog、1979-10-15 NYSE、1983 IBM PC 第二来源；作者曾在 AMD 任职十二年；不采用文章赞誉及竞争评价。
+
+[H06] AMD 1995 Annual Report：https://ir.amd.com/financial-information/sec-filings/content/0000898430-96-000902/EX-13.txt
+
+日期与定位 1996-03-21；1972／1979；Corporate Profile，行 38–51。
+
+支持边界 上市与纽交所挂牌年份交叉核验；不支持上市发行股数和价格。
+
+[H07] Supreme Court of California, Advanced Micro Devices, Inc. v. Intel Corp., 9 Cal.4th 362：https://scocal.stanford.edu/opinion/advanced-micro-devices-inc-v-intel-corp-31610/
+
+日期与定位 判决 1994-12-30；合同 1982-02、Am386 1991-03；多数意见开篇及案情，行 33–66；处理结果行 39。
+
+支持边界 技术交换机制、仲裁／司法审查和 Am386 时间；不能概括为所有争议 AMD 胜诉。
+
+[H08] AMD/Intel 联合公告，AMD 8-K Exhibit 28.2：https://ir.amd.com/financial-information/sec-filings/content/0000898430-95-000048/EX-28_2.txt
+
+日期与定位 公告 1995-01-11；申报 1995-01-19；主公告及协议要点，行 31–60。
+
+支持边界 386/486 永久微码许可及范围排除、5,800 万／约 1,800 万美元、当时未决案件结算；金额均为美元。
+
+[H09] AMD Form 8-K：https://ir.amd.com/financial-information/sec-filings/content/0000898430-96-000281/8-K.txt
+
+日期与定位 申报 1996-02-01；并购 1996-01-17；Item 2，行 44–58。
+
+支持边界 NexGen 完成日、0.8 股交换率；与 1995-10-20 签约日区分。
+
+[H10] AMD Prospectus, Form 424B5：https://ir.amd.com/financial-information/sec-filings/content/0000950109-96-005024/424B5.txt
+
+日期与定位 1996-08-09；当时产品状态；Risk Factors — Microprocessor Products — Dependence on New AMD Microprocessor Products，S-12（行 810–840）。
+
+支持边界 K5 经营困难、NexGen 收购目的和 K6 设计源流；文件里的 1997 出货是当时计划，不能单用此文件证明已交付。
+
+[H11] AMD 1998 Form 10-K：https://ir.amd.com/financial-information/sec-filings/content/0001012870-99-000892/10-K.txt
+
+日期与定位 1999-03-29；K6 批量交付 1997 Q2，FASL 1993；Computation Products Group，行 307–320；Certain Material Agreements — FASL，行 640–645。
+
+支持边界 K6 实际批量出货和 Fujitsu 合资起点；避免采用公司当时市场领先表述。
+
+[H12] AMD 1999 Annual Report，公司文件保存副本：https://www.annualreports.com/HostedData/AnnualReportArchive/a/NYSE_AMD_1999.pdf
+
+日期与定位 1999 财年；股东信 2000-02-29（含后加的 2000-03-06 公告）；PDF 第 4–6 页，To My Fellow Shareholders；第 3 页 Financial Highlights。
+
+支持边界 Athlon 在 1999 推出，K6-2 良率与速度档位不足，1999 年收入 2,857.604 百万美元、净亏损 88.936 百万美元；为公司年报副本，市场评价仅是管理层意见。
+
+[H13] AMD 2000 Annual Report，公司文件保存副本：https://www.annualreports.com/HostedData/AnnualReportArchive/a/NYSE_AMD_2000.pdf
+
+日期与定位 2000 财年；事件 2000-03-06；PDF 第 7 页（零起算 P6），Letter to Our Shareholders。
+
+支持边界 1 GHz Athlon 推出日期；不采用“全球最快”或未限定的第一表述。
+
+[H14] AMD Q2 2003 Results, 8-K Exhibit 99.1：https://ir.amd.com/financial-information/sec-filings/content/0001193125-03-020249/dex991.htm
+
+日期与定位 2003-07-16；Opteron 推出 2003-04-22；Highlights of the Quarter，行 103–126。
+
+支持边界 Opteron 发布日期、IBM 服务器计划、Microsoft 与软件支持承诺；不把计划写成当日服务器交付。
+
+[H15] AMD 2003 Form 10-K：https://ir.amd.com/financial-information/sec-filings/content/0001193125-04-037179/d10k.htm
+
+日期与定位 2004-03-09；2003-04／09；Part I, Computation Products — Microprocessor Products，行 243、326–342。
+
+支持边界 Athlon 64 推出月份及 AMD64 的 64 位扩展／32 位应用兼容设计；不保证任意软件配置。
+
+[H16] AMD 2006 Form 10-K：https://ir.amd.com/financial-information/sec-filings/content/0001193125-07-044191/d10k.htm
+
+日期与定位 2007-03-01；Spansion IPO 2005-12-21、ATI 2006-10-25；MD&A — ATI Acquisition，第 54–55 页（行 1967–1993）；Spansion IPO 行 2150–2153；Note 4。
+
+支持边界 ATI 总购买价 5,604 百万美元与计量范围；Spansion 股权／并表改变。
+
+[H17] AMD Completes ATI Acquisition, 8-K Exhibit 99.1：https://ir.amd.com/financial-information/sec-filings/content/0001193125-06-217735/dex991.htm
+
+日期与定位 公告 2006-10-25；申报 2006-10-30；Transaction Details，行 61–70；Fusion 计划标题。
+
+支持边界 当时约 54 亿美元估值、股价计量日、不含承接奖励、现金和股份及借款；Fusion 是提出的计划。
+
+[H18] AMD Form 8-K：https://ir.amd.com/financial-information/sec-filings/content/0001193125-09-046101/d8k.htm
+
+日期与定位 2009-03-05；交割 2009-03-02、改名 2009-03-04；Items 1.01/2.01，行 101–107；Wafer Supply Agreement 行 165–168。
+
+支持边界 德累斯顿工厂及资产投入、GF 命名和采购关系；2009 年不等于 AMD 已完全退出股权。
+
+[H19] AMD Amends Wafer Supply Agreement With GLOBALFOUNDRIES：https://ir.amd.com/news-events/press-releases/detail/408/amd-amends-wafer-supply-agreement-with-globalfoundries
+
+日期与定位 2012-03-04；公告开篇与协议要点，行 35–43。
+
+支持边界 剩余股权转出与供应协议继续；正文不采用未来费用指引作为实际费用。
+
+[H20] AMD Form 8-K：https://ir.amd.com/financial-information/sec-filings/content/0001193125-09-236705/d8k.htm；联合公告：https://www.intel.com/pressroom/archive/releases/2009/20091112corp_a.htm?lang=en
+
+日期与定位 8-K 2009-11-17；签约 2009-11-11；联合公告 2009-11-12；8-K Items 1.01/8.01，行 103–131；联合公告协议条款段。
+
+支持边界 12.5 亿美元、私人诉讼结算、新交叉许可；协议签约与公开公告分开；监管机构独立案件不因私人和解自动终结。
+
+[H21] AMD 原公告，经 GlobeNewswire 分发：https://www.globenewswire.com/news-release/2014/10/08/1011346/0/en/AMD-Appoints-Dr-Lisa-Su-as-President-and-Chief-Executive-Officer.html
+
+日期与定位 2014-10-08；任命当日生效；公告首段；About Dr. Lisa Su，行 57–70。
+
+支持边界 Lisa Su 任命、2012 加入、Freescale／IBM 履历；不采用发布稿主观评价。
+
+[H22] AMD Ryzen 7 Desktop Processors Available Worldwide Today：https://ir.amd.com/news-events/press-releases/detail/753/amd-ryzentm-7-desktop-processors-featuring-record-breaking-overclocking-performance-available-worldwide-today
+
+日期与定位 2017-03-02；开篇、Availability、型号表，行 38–58。
+
+支持边界 首批 Ryzen 7 三型号、8C16T、Zen 和四年开发公司自述；不采用通用性能领先结论。
+
+[H23] AMD EPYC Datacenter Processor Launch：https://ir.amd.com/news-events/press-releases/detail/773/amd-epyc-datacenter-processor-launches-with-record-setting-performance-optimized-platforms-and-global-server-ecosystem-support
+
+日期与定位 2017-06-20；开篇、Zen／核心数和 OEM 支持段（行 41–51）；测试脚注（行 145–150）。
+
+支持边界 EPYC 7000 发布日、Zen 和最高 32 核；厂商性能比较及投射值不用于历史结论。
+
+[H24] AMD Form 8-K：https://ir.amd.com/financial-information/sec-filings/content/0000002488-22-000031/amd-20220214.htm
+
+日期与定位 2022-02-14；Introductory Note 与 Item 2.01, Merger Consideration，行 83–98。
+
+支持边界 Xilinx 完成日期、全资子公司与交换率 1.7234。
+
+[H25] AMD Completes Acquisition of Xilinx, 8-K Exhibit 99.1：https://ir.amd.com/financial-information/sec-filings/content/0000002488-22-000031/xilinxacquisitionclosepres.htm
+
+日期与定位 2022-02-14；首次宣布 2020-10-27；主公告，行 44–51。
+
+支持边界 全股票交易与 FPGA／自适应 SoC 等技术范围；不将管理层市场机会估算当成实际收入。
+
+[H26] AMD 2022 Form 10-K：https://ir.amd.com/financial-information/sec-filings/content/0000002488-23-000047/amd-20221231.htm
+
+日期与定位 2023-02-27；2022-02-14 并购；Note 5 — Acquisitions, Xilinx Acquisition，行 2141–2145／印刷第 68 页。
+
+支持边界 488 亿美元总对价、2022-02-11 股价计量、并表期间与分部；不混用最初宣布估值。
+
+[F01] AMD FY2021 Form 10-K；2022-02-03；https://ir.amd.com/financial-information/sec-filings/content/0000002488-22-000016/amd-20211225.htm
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；Item 7；Item 8 pp.48–54；年度损益、资产负债、现金流；原始两分部；Note 2 财年；Note 分部披露。
+
+支持边界 2021 公司范围尚未包含 Xilinx/Pensando；旧分部不能直接与新结构比较。
+
+[F02] AMD FY2022 Form 10-K；2023-02-27；https://ir.amd.com/financial-information/sec-filings/content/0000002488-23-000047/amd-20221231.htm
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；Item 8 pp.51–57；Note 4 pp.64–66；Note 5 pp.68–70；Note 9 pp.73–74；Note 12 SBC；FY2021/2022 财务及重列分部；客户比例。
+
+支持边界 FY2022 为 53 周；收购自完成日并表；客户匿名；Pro forma 是未审计假设口径，未用于本表。
+
+[F03] AMD FY2024 Form 10-K；2025-02-05；https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000012/amd-20241228.htm
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；Item 8 balance sheets、cash flows；Note 9 债务；FY2023/2024 期末现金/债务和现金支付回购交叉核验。
+
+支持边界 2025 分部变更前结构；主表 FY2023/24 损益使用 F05 最新可比列示。
+
+[F05] AMD FY2025 Form 10-K；2026-02-04；https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000018/amd-20251227.htm
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；Item 8 pp.58–63；Note 2 p.64；Note 3 pp.69–70；Note 4 pp.70–72；Note 5 pp.72–74；Note 9 pp.78–79；Note 14 pp.83–84；审计报告 pp.92–93。
+
+支持边界 FY2025 有持续/终止经营区分；Client ASP/销量原 MD&A 错误须由 F06 修正；正式年度报表本身未修订。
+
+[F06] AMD FY2025 Form 10-K/A；2026-02-04；https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000021/amd-20251227.htm
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；Explanatory Note 及 Item 7：将 Client 出货量/ASP 更正为 +15%/+31%。
+
+支持边界 仅更正指定 MD&A 表述，非整份后续事项更新或财报重述。
+
+[F07] AMD Q2 2026 Form 10-Q；2026-08-05；https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000123/amd-20260627.htm
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；pp.3–7 中期报表；Note 4 pp.10–12；Note 9 pp.16–17；Note 10 p.17；Note 12 pp.19–20；MD&A pp.24–29。
+
+支持边界 未审计；损益分别单季/半年，现金流半年累计；后续租赁时间界限截至申报日；不能制造 Q3 实际结果。
+
+[F08] AMD Reports Second Quarter 2026 Financial Results；2026-08-04；https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；GAAP Quarterly Financial Results；附现金流/FCF调节表：单季 CFO 2,366、capex 808；前期比较。
+
+支持边界 新闻稿包含公司未来指引和宣传说法；研究使用已发生数据，未将指引混为实际。
+
+[F09] AMD Reports First Quarter 2026 Financial Results；2026-05-05；https://ir.amd.com/news-events/press-releases/detail/1284/amd-reports-first-quarter-2026-financial-results
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；GAAP Quarterly Financial Results、财务附表；Q1 比較、现金流 2,955 及 capex 389。
+
+支持边界 未审计；公司 forward-looking statements 不作为已实现事实。
+
+[F10] AMD 2026 Definitive Proxy Statement (DEF 14A)；2026-03-27；https://ir.amd.com/financial-information/sec-filings/content/0001193125-26-129057/d85856ddef14a.htm
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；Q&A pp.1–3；Board Leadership p.19；Security Ownership pp.36–37；Executive Officers pp.38–43。
+
+支持边界 2026-03-19 股东记录日；机构持仓脚注依赖 2024 13G，不能当即时持仓；董事列表须加后续变更。
+
+[F11] AMD Board of Directors；页面未标独立发布日期；https://ir.amd.com/governance/board-of-directors
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；实际读取当期全名单及 Su/Denzel 身份；2026-10-13 页面快照。
+
+支持边界 随时更新；只能证明读取时官网列示信息，历史日期以公告/代理声明核验。
+
+[F12] AMD Appoints Tim Ryan to Board of Directors；2026-08-19；https://ir.amd.com/news-events/press-releases/detail/1297/amd-appoints-tim-ryan-to-board-of-directors
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；新闻稿全文：Ryan 当日加入、Householder 退休、委员会变更。
+
+支持边界 该公告不替代全部董事独立性判断或最新股东持仓。
+
+[F13] AMD to Report Fiscal Third Quarter 2026 Financial Results；2026-10-06；https://ir.amd.com/news-events/press-releases/detail/1300/amd-to-report-fiscal-third-quarter-2026-financial-results
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；公告正文：计划 2026-11-03 披露 Q3。
+
+支持边界 只证明公告时间表，未披露 Q3 结果。
+
+[OP01] AMD 2025 Form 10-K (https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000018/amd-20251227.htm)，AMD，2026-02-04；年度截至2025-12-27
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；Part I Item1：Customers、Competition、Manufacturing Arrangements and Assembly and Test Facilities；Item1A供应/出口；Item7 ZT；Note segment/concentration、ZT。
+
+支持边界 只读相关章节；制造安排不是逐型号采购表；未具名客户不能补猜。
+
+[OP02] AMD Q2 2026 Form 10-Q (https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000123/amd-20260627.htm)，AMD，2026-08-05；季度截至2026-06-27
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；Part II Item1A Legal and Regulatory Risks，抽取行1432-1434、1541-1545；Item2相关MI308解释。
+
+支持边界 事项状态按提交时披露；本稿没有把法规内容升级为独立法律判断。
+
+[OP03] EPYC 9006 / Venice 技术介绍 (https://www.amd.com/en/blogs/2026/agentic-ai-amd-epyc-9005-cpus-wins-today-epyc-9006.html)，AMD，2026-07-23
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；正文开头架构与家族最高规格，抽取行449-455。
+
+支持边界 性能领先属AMD分析；未采用厂商对比结论。
+
+[OP04] Venice 台积电2nm生产爬坡公告 (https://newsroom.amd.com/news/amd-announces-production-ramp-of-next-generation-a/)，AMD，2026-05-21
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；正文80-87：台湾生产、Arizona未来计划、封装技术。
+
+支持边界 有TSMC CEO公开引述；不支持任何良率、产能分配、Arizona实际开工时间。
+
+[OP05] CES 2026 Ryzen/ROCm公告 (https://ir.amd.com/news-events/press-releases/detail/1270/amd-expands-ai-leadership-across-client-graphics-and-software-with-new-ryzen-ryzen-ai-and-amd-rocm-announcements-at-ces-2026)，AMD，2026-01-05
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；Ryzen AI400移动家族、Pricing and Availability、规格表。
+
+支持边界 最多60TOPS为NPU厂商规格；不是整机有效AI应用吞吐。
+
+[OP06] Ryzen AI400桌面扩展 (https://newsroom.amd.com/news/amd-gives-consumers-and-businesses-more-ai-pc-opti/)，AMD，2026-03-02
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；Desktop Availability、规格表、移动工作站计划。
+
+支持边界 公告預期可用，不作为逐地区实际铺货证据。
+
+[OP07] Threadripper PRO9000 WX (https://www.amd.com/en/blogs/2025/amd-introduces-new-zen-5-based-ryzen-threadripper-pro.html)，AMD，2025-07-17
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；正文454-458、AMD PRO与规格表。
+
+支持边界 仅采用定位、最高核数、公告交付日期；不采用最快/领先。
+
+[OP08] Threadripper9000 HEDT (https://www.amd.com/en/blogs/2025/designed-to-create-built-to-inspire-amd-introduces-new.html)，AMD，2025-07-25
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；正文开头发货日期、定位与R9700描述。
+
+支持边界 用途说明不是第三方性能验证。
+
+[OP09] RDNA4/Radeon RX9000 发布 (https://ir.amd.com/news-events/press-releases/detail/1238/amd-unveils-next-generation-amd-rdna-4-architecture-with-the-launch-of-amd-radeon-rx-9000-series-graphics-cards)，AMD，2025-02-28
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；正文开头、Pricing and Availability、FSR4说明。
+
+支持边界 发布日期与预计availability分开；不采用无条件性能提升。
+
+[OP10] Radeon RX 产品页 (https://www.amd.com/en/products/graphics/desktops/radeon.html)，AMD，未标原发布日期
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；产品家族、FSR功能及脚注；截至读取日页面。
+
+支持边界 动态页，具体游戏与版本随时间变化；未拿营销测试作全面比较。
+
+[OP11] Advancing AI2025发布 (https://ir.amd.com/news-events/press-releases/detail/1255/amd-unveils-vision-for-an-open-ai-ecosystem-detailing-new-silicon-software-and-systems-at-advancing-ai-2025)，AMD，2025-06-12
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；MI350系列、已有部署与2H2025availability、客户现有生产任务。
+
+支持边界 芯片发布/部署与所有OEM可用不同；伙伴发言不是未披露采购金额。
+
+[OP12] MI350 架构技术文档 (https://rocmdocs.amd.com/en/latest/reference/gpu-arch/mi350.html)，AMD ROCm文档，页面当前10.1.0
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；产品形态、Chiplet、Memory、Node-level architecture，约行150-201。
+
+支持边界 版本动态；带宽与FLOPS为峰值理论规格，本稿只采用形态/容量差异。
+
+[OP13] AAI2026 全栈发布 (https://ir.amd.com/news-events/press-releases/detail/1294/aai-2026-amd-delivers-full-stack-compute-for-the-agentic-ai-era)，AMD，2026-07-23
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；正文44-61：Helios生产、配置、OpenAI计划、Meta验证；roadmap。
+
+支持边界 所有TAM、tokens/dollar、2027后路线是预测，本稿不作事实领先判断。
+
+[OP14] Instinct 当前产品家族 (https://www.amd.com/en/products/accelerators/instinct.html)，AMD，未标原发布日期
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；MI400/MI350/MI300组合；ROCm说明，行471-482、611-614。
+
+支持边界 动态页，可证当前列表，不证每型号客户出货。
+
+[OP15] Helion agentic rack (https://ir.amd.com/news-events/press-releases/detail/1301/introducing-amd-helion-agentic-ai-compute-at-rack-scale)，AMD，2026-10-12
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；正文41-49；Ecosystem Support。
+
+支持边界 11月可用、OCP贡献均为计划；伙伴引述是支持关系，不是已交付订单。
+
+[OP16] Versal adaptive SoC 产品页 (https://www.amd.com/en/products/adaptive-socs-and-fpgas/versal.html)，AMD，未标原发布日期
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；Overview、Portfolio；逻辑、CPU、AIEngine和片上网络说明。
+
+支持边界 家族配置不同，不是每系列都有同样AI Engine/接口。
+
+[OP17] ROCm Core SDK10.1.0 Release Notes (https://rocm.docs.amd.com/en/docs-10.1.0/about/release-notes.html)，AMD，2026-10-05
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；日期、Applies、Release Highlights、已知/已解决问题索引，行175-213、1675-1722。
+
+支持边界 不声称对所有设备支持同等；技术预览须保留状态。
+
+[OP18] Vitis Unified Software Platform (https://www.amd.com/en/products/software/adaptive-socs-and-fpgas/vitis.html)，AMD，当前2026.1
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；Licensing Structure、Development Environment、HLS与Vivado。
+
+支持边界 本次未核验每个许可条款细节或软件营收，不支持相应推算。
+
+[OP19] Amazon EC2 M8a/M8azn (https://aws.amazon.com/ec2/instance-types/m8a/)，AWS，未标原发布日期
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；产品定位、5thGenEPYC、规格、Launch入口，行238-278/376-382。
+
+支持边界 AWS生产关系；页面客户引述是AWS客户，不是AMD直接客户名单。
+
+[OP20] Microsoft Azure AI/HPC with AMD (https://blogs.microsoft.com/blog/2026/07/20/microsoft-expands-azure-ai-and-hpc-infrastructure-with-amd/)，Microsoft，2026-07-20
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；HDv2、HXv2、ND MI455X v7，正文12-33。
+
+支持边界 可证明Microsoft官方介绍；未确认每系列区域GA日期。
+
+[OP21] Microsoft/AMD扩大战略伙伴公告 (https://newsroom.amd.com/news/microsoft-azure-ai-infrastructure/)，AMD，2026-07-20
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；正文76-83发货计划、Azure产品和DPU。
+
+支持边界 与OP20交叉核验；不补采购金额。
+
+[OP22] OpenAI/AMD6GW协议 (https://openai.com/index/openai-amd-strategic-partnership/)，OpenAI，2025-10-06
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；协议、首1GW、权证/里程碑说明。
+
+支持边界 买方原始披露；不代表全部GW已建成或权证已归属。
+
+[OP23] Meta/AMD多年基础设施协议 (https://about.fb.com/news/2026/02/meta-amd-partner-longterm-ai-infrastructure-agreement/)，Meta，2026-02-24
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；正文250-264：up to6GW、2H2026、Helios和多供应商策略。
+
+支持边界 多供应商策略包括Meta自有MTIA，不写排他性。
+
+[OP24] Anthropic/AMD合作 (https://ir.amd.com/news-events/press-releases/detail/1292/amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gigawatts-of-amd-instinct-mi450-series-gpus)，AMD双方联合公告，2026-07-22
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；正文38-46：既有MI355X、首1GW2027H1、投资承诺、软件。
+
+支持边界 未找到Anthropic独立同日页面；事实归于联合公告。
+
+[OP25] AMD/Cisco/HUMAIN沙特投产 (https://ir.amd.com/news-events/press-releases/detail/1298/amd-cisco-and-humain-expand-saudi-arabias-ai-infrastructure-as-amd-instinct-systems-go-live)，AMD三方公告，2026-08-31
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；正文38-45实际运营与计划扩张。
+
+支持边界 已投产容量未披露；不把250MW/1GW视为现有容量。
+
+[OP26] Xbox/AMD未来芯片合作 (https://news.xbox.com/en-us/2025/06/19/xbox-amd-next-generation-xbox/)，Microsoft Xbox Wire，2025-06-19
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；正文33-42。
+
+支持边界 未来产品路线，无主机售价/芯片单价/销量证据。
+
+[OP27] 升级PSSR推出 (https://blog.playstation.com/2026/03/16/upgraded-pssr-rolling-out-to-silent-hill-f-monster-hunter-wilds-final-fantasy-vii-rebirth-crimson-desert-and-more/)，Sony PlayStation，2026-03-16
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；193-203系统更新与Project Amethyst说明。
+
+支持边界 原生软件关系；不推出芯片合同收入。
+
+[OP28] PS5 QSSR (https://blog.playstation.com/?p=424016)，Sony PlayStation，2026-10-01
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；正文58-64：共同技术、两款首发游戏。
+
+支持边界 功能公告；没有推断未宣布主机的推出日期。
+
+[OP29] Supply Chain Responsibility (https://www.amd.com/en/corporate/corporate-responsibility/supply-chain-responsibility.html)，AMD，未标原发布日期
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；正文505 fabless、Supplier Management、Footnotes600-601。
+
+支持边界 自报供应审计数字未采用；页面称AMD并不独立验证供应商提供的数据。
+
+[OP30] Samsung/AMD下一代AI存储MOU (https://news.samsung.com/global/samsung-and-amd-expand-strategic-collaboration-on-next-generation-ai-memory-solutions)，Samsung，2026-03-18
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；正文79-88：HBM4、DDR5、HBM3E、潜在foundry讨论。
+
+支持边界 不写排他供货或具体数量；foundry仅讨论，不是已签晶圆代工合同。
+
+[OP31] Sanmina完成ZT制造业务收购 (https://ir.sanmina.com/news/news-details/2025/SANMINA-COMPLETES-ACQUISITION-OF-ZT-SYSTEMS-DATA-CENTER-INFRASTRUCTURE-MANUFACTURING-BUSINESS-FROM-AMD/default.aspx)，Sanmina，2025-10-27
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；正文61-68收购完成、NPI伙伴、制造设施。
+
+支持边界 可交叉确认交易完成；金额如采用须区分总对价/现金净收款与条件对价。
+
+[OP32] Taalas收购公告 (https://ir.amd.com/news-events/press-releases/detail/1296/amd-acquires-taalas-to-advance-compute-solutions-for-rapidly-growing-ai-inference-market)，AMD，2026-08-06
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；正文41-47，协议与交割限制。
+
+支持边界 标题Acquires与正文协议状态不同；未查到完成公告。
+
+[OP33] World Labs收购协议 (https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute)，AMD，2026-09-28
+
+日期与定位 材料说明中列示；读取日期为 2026-10-13；正文38-43；金额、全股票、预计完成及交割后职位。
+
+支持边界 約82亿美元公告交易估值；未完成，不列为已并入主体/现任高管。
+
+[H27] AMD 完成 Pensando 收购公告，AMD；https://www.amd.com/en/newsroom/press-releases/2022-5-26-amd-expands-data-center-solutions-capabilities-wit.html
+
+日期与定位 2022-05-26 公告与完成；正文首段及产品说明。
+
+支持边界 公告交易价值约 19 亿美元；不采用厂商性能比较或未披露客户金额。
+
+[H28] AMD Completes Acquisition of Silo AI，AMD；https://ir.amd.com/news-events/press-releases/detail/1210/amd-completes-acquisition-of-silo-ai-to-accelerate-development-and-deployment-of-ai-models-on-amd-hardware
+
+日期与定位 2024-08-12 完成公告发布日期；正文首段及 AI 团队说明。
+
+支持边界 约 6.65 亿美元现金交易；厂商对未来部署收益的期待不作已实现事实。
+
+[IMG01] 封面 AMD 圣克拉拉总部实拍照片。作者 Lijiaxuan；拍摄日期 2024 年 3 月 19 日，上传日期 2024 年 8 月 26 日；原图 5472 × 3648 像素；CC0 1.0。原始页面 https://commons.wikimedia.org/wiki/File:AMD_headquarter_20240318.jpg 。照片记录拍摄时建筑外观，未作合成、放大或添加图上文字。
+
+[BRAND01] AMD 官方白色 Logo。来源 https://newsroom.amd.com/ ，原始 SVG https://newsroom.amd.com/_astro/amd-header-logo.NP9ywpkQ.svg 。原始比例保持不变，资料读取于 2026 年 10 月 13 日。AMD 商标归 AMD 所有；本报告不是 AMD 官方文件或背书。商标说明 https://www.amd.com/en/legal/trademarks.html 。
