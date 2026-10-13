@@ -27,6 +27,20 @@ const origin = `http://127.0.0.1:${server.address().port}`;
 const screenshots = process.env.TRANSITION_SCREENSHOT_DIR;
 if (screenshots) await mkdir(screenshots, { recursive: true });
 
+async function visibleControlPoint(page, id) {
+  // The current menu can exceed the sidebar viewport. Scroll its real control
+  // into view without a pointer/key event or a locator animation-stability wait.
+  const bounds = await page.locator(`#${id}`).evaluate(element => {
+    element.scrollIntoView({ block: "nearest", inline: "nearest", behavior: "instant" });
+    const { x, y, width, height } = element.getBoundingClientRect();
+    return { x, y, width, height, viewportWidth: innerWidth, viewportHeight: innerHeight };
+  });
+  assert.ok(bounds.width > 0 && bounds.height > 0 && bounds.x >= 0 && bounds.y >= 0 &&
+    bounds.x + bounds.width <= bounds.viewportWidth && bounds.y + bounds.height <= bounds.viewportHeight,
+    `The real ${id} must be visible before pointer input: ${JSON.stringify(bounds)}`);
+  return { x: bounds.x + bounds.width / 2, y: bounds.y + bounds.height / 2 };
+}
+
 async function observe(context, { scheme = "light", animationAvailable = true, measurePerformance = false } = {}) {
   await context.route("https://fonts.googleapis.com/**", route => route.fulfill({ contentType: "text/css", body: "" }));
   await context.addInitScript(({ scheme, animationAvailable, measurePerformance }) => {
@@ -360,9 +374,8 @@ async function verifyNvidiaEntry(browser) {
       assert.ok(Number(await page.locator(".dex-entry-curtain").evaluate(element => getComputedStyle(element).opacity)) > .99);
       if (screenshots) await page.screenshot({ path: resolve(screenshots, `nvidia-entry-${width}.png`), animations: "allow" });
       const controlId = width < 768 ? "toggle-menu" : "dark-mode-toggle";
-      const box = await page.locator(`#${controlId}`).boundingBox();
-      assert.ok(box);
-      await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2);
+      const point = await visibleControlPoint(page, controlId);
+      await page.mouse.click(point.x, point.y);
       assert.equal(await page.locator(".dex-entry-curtain").count(), 0, "The first real pointer input immediately skips the logo");
       const input = await page.evaluate(control => window.__entry.inputs.find(item => item.type === "pointerdown" && item.control === control), controlId);
       assert.ok(input?.curtain && input.active > 0);
@@ -518,9 +531,7 @@ try {
     assert.equal(await page.evaluate(() => window.__entry.calls.length), 0, "Direct entry never animates");
     assert.equal(await page.locator(".dex-entry-curtain").count(), 0);
     const controlId = width < 768 ? "toggle-menu" : "dark-mode-toggle";
-    const controlBox = await page.locator(`#${controlId}`).boundingBox();
-    assert.ok(controlBox && controlBox.y >= 0 && controlBox.y + controlBox.height <= 900, "The real site control must be on screen");
-    const controlPoint = { x: controlBox.x + controlBox.width / 2, y: controlBox.y + controlBox.height / 2 };
+    await visibleControlPoint(page, controlId);
     const article = page.locator(`.article-list [data-transition-cover] a[href="${ordinaryArticlePath}"]`);
     const articlePath = await article.getAttribute("href");
     firstArticlePath ||= articlePath;
@@ -538,6 +549,7 @@ try {
       await page.waitForFunction(() => window.__entryAnimations.some(animation => animation.playState === "running" || animation.pending), null, { polling: 1 });
     }
     // No locator stability wait: send a real click while the entry is playing.
+    const controlPoint = await visibleControlPoint(page, controlId);
     await page.mouse.click(controlPoint.x, controlPoint.y);
     const entry = await page.evaluate(() => window.__entry);
     const input = entry.inputs.find(event => event.type === "pointerdown" && event.control === controlId);
