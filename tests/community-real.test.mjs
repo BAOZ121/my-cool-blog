@@ -418,3 +418,23 @@ test('URL intents reject arbitrary redirects, codes, other pages and repeated ha
   f.$('rc-auth').close(); await flush(); assert.equal(f.$('rc-auth').open, false);
   assert.deepEqual(f.auth.calls.map(call => call[0]), ['initialize']); f.ui.dispose();
 });
+
+test('promoted discussion and message-board routes select their HTTPS panels without account side effects', async () => {
+  for (const role of [null, '']) {
+    for (const hash of ['#discussion', '#message-board']) {
+      const f = await fixture({ role, configureDom(dom) { dom.window.location.href += hash; dom.window.location.hash = hash; } });
+      const board = hash === '#message-board';
+      assert.equal(f.$('rc-forum-panel').hidden, board);
+      assert.equal(f.$('rc-board-panel').hidden, !board);
+      assert.equal(f.$('rc-auth').open, false); assert.equal(f.$('rc-profile').open, false);
+      assert.deepEqual(f.auth.calls.map(call => call[0]), ['initialize']);
+      assert.ok(f.calls.every(call => !call.options.method && call.path.startsWith('/api/community/')));
+      f.window.location.hash = board ? '#discussion' : '#message-board';
+      f.window.dispatch('hashchange');
+      assert.equal(f.$('rc-forum-panel').hidden, !board);
+      assert.equal(f.$('rc-board-panel').hidden, board);
+      assert.deepEqual(f.auth.calls.map(call => call[0]), ['initialize']);
+      f.ui.dispose();
+    }
+  }
+});

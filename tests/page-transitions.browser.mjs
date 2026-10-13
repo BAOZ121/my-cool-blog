@@ -145,6 +145,25 @@ async function observe(context, { scheme = "light", animationAvailable = true, m
   }, { scheme, animationAvailable, measurePerformance });
 }
 
+// A bounding box can be below the scrollable menu's clipping region. Raw
+// mouse input never scrolls a target into view. Expose the existing control and
+// hit-test its current destination-page position without an input or body scroll.
+async function visibleControlPoint(page, controlId) {
+  const point = await page.locator(`#${controlId}`).evaluate(node => {
+    const menu = node.closest('#main-menu');
+    if (menu) menu.scrollTop = menu.scrollHeight;
+    const box = node.getBoundingClientRect();
+    const x = box.x + box.width / 2, y = box.y + box.height / 2;
+    const hit = document.elementFromPoint(x, y);
+    return { x, y, width: box.width, height: box.height,
+      inViewport: box.width > 0 && box.height > 0 && box.left >= 0 && box.top >= 0 && box.right <= innerWidth && box.bottom <= innerHeight,
+      hitTarget: !!hit && (node === hit || node.contains(hit)), hitTag: hit?.tagName, hitId: hit?.id,
+      menuScroll: menu?.scrollTop, pageScroll: scrollY };
+  });
+  assert.ok(point.inViewport && point.hitTarget, `Real ${controlId} must be visible and hit-testable before raw pointer input: ${JSON.stringify(point)}`);
+  return point;
+}
+
 async function assertNoNative(page) {
   assert.equal(await page.evaluate(() => window.__entry.nativeTransitions), 0, "No native document snapshot transition may start");
   assert.equal(await page.evaluate(() => Number(sessionStorage.getItem("dex-test-native-transitions") || 0)), 0, "Outgoing and incoming documents must both stay opted out");
@@ -360,12 +379,11 @@ async function verifyNvidiaEntry(browser) {
       assert.ok(Number(await page.locator(".dex-entry-curtain").evaluate(element => getComputedStyle(element).opacity)) > .99);
       if (screenshots) await page.screenshot({ path: resolve(screenshots, `nvidia-entry-${width}.png`), animations: "allow" });
       const controlId = width < 768 ? "toggle-menu" : "dark-mode-toggle";
-      const box = await page.locator(`#${controlId}`).boundingBox();
-      assert.ok(box);
-      await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2);
+      const point = await visibleControlPoint(page, controlId);
+      await page.mouse.click(point.x, point.y);
       assert.equal(await page.locator(".dex-entry-curtain").count(), 0, "The first real pointer input immediately skips the logo");
       const input = await page.evaluate(control => window.__entry.inputs.find(item => item.type === "pointerdown" && item.control === control), controlId);
-      assert.ok(input?.curtain && input.active > 0);
+      assert.ok(input?.curtain && input.active > 0, `The first pointer must hit ${controlId} during the live curtain and animation: ${JSON.stringify(input)}`);
       assert.equal(input.curtain.pointerEvents, "none");
       await finished(page);
       assert.ok(await page.evaluate(() => window.__entry.calls.some(call => call.state === "cancelled")));
@@ -518,9 +536,6 @@ try {
     assert.equal(await page.evaluate(() => window.__entry.calls.length), 0, "Direct entry never animates");
     assert.equal(await page.locator(".dex-entry-curtain").count(), 0);
     const controlId = width < 768 ? "toggle-menu" : "dark-mode-toggle";
-    const controlBox = await page.locator(`#${controlId}`).boundingBox();
-    assert.ok(controlBox && controlBox.y >= 0 && controlBox.y + controlBox.height <= 900, "The real site control must be on screen");
-    const controlPoint = { x: controlBox.x + controlBox.width / 2, y: controlBox.y + controlBox.height / 2 };
     const article = page.locator(`.article-list [data-transition-cover] a[href="${ordinaryArticlePath}"]`);
     const articlePath = await article.getAttribute("href");
     firstArticlePath ||= articlePath;
@@ -537,7 +552,9 @@ try {
     if (motion === "no-preference") {
       await page.waitForFunction(() => window.__entryAnimations.some(animation => animation.playState === "running" || animation.pending), null, { polling: 1 });
     }
+    // Measure the destination, not the differently sized homepage sidebar.
     // No locator stability wait: send a real click while the entry is playing.
+    const controlPoint = await visibleControlPoint(page, controlId);
     await page.mouse.click(controlPoint.x, controlPoint.y);
     const entry = await page.evaluate(() => window.__entry);
     const input = entry.inputs.find(event => event.type === "pointerdown" && event.control === controlId);
@@ -814,7 +831,8 @@ try {
       }
       if (mode === "interrupt") {
         // This real control click happens beyond the normal hold, while no WAAPI is running yet.
-        await page.locator("#dark-mode-toggle").click();
+        const point = await visibleControlPoint(page, "dark-mode-toggle");
+        await page.mouse.click(point.x, point.y);
         const input = await page.evaluate(() => window.__entry.inputs.find(item => item.type === "pointerdown" && item.control === "dark-mode-toggle"));
         assert.ok(input?.curtain); assert.equal(input.curtain.pointerEvents, "none");
         assert.equal(await page.locator("html").getAttribute("data-scheme"), "dark");

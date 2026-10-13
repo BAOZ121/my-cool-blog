@@ -212,8 +212,8 @@ try {
     const chapters = page.locator('.chapter-disclosure');
     const chapterSummary = page.locator('.chapter-widget summary');
     const names = await page.locator('#main-menu > li > a').evaluateAll(nodes => nodes.map(node => node.textContent.trim()));
-    assert.deepEqual(names, ['Home', 'Industry Explorer', 'Evidence Library', 'Archives', 'Search', 'Contact', 'About & Methodology'], 'Exercise every surviving menu item without the retired directory');
-    assert.deepEqual(await page.locator('#main-menu > li > a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href'))), ['/', '/industries/', '/evidence-library/', '/archives/', '/search/', '/contact/', '/about/'], 'All seven menu destinations remain intact');
+    assert.deepEqual(names, ['Discussion', 'Message board', 'Home', 'Industry Explorer', 'Evidence Library', 'Archives', 'Search', 'Contact', 'About & Methodology'], 'Exercise both promoted community entries and every surviving original menu item');
+    assert.deepEqual(await page.locator('#main-menu > li > a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href'))), ['/test/forum-v1/#discussion', '/test/forum-v1/#message-board', '/', '/industries/', '/evidence-library/', '/archives/', '/search/', '/contact/', '/about/'], 'All nine menu destinations remain intact');
     await expect(disclosure).toHaveJSProperty('open', true);
     await expect(summary).toHaveAccessibleName('Minimize navigation');
     const expanded = await desktopLayout(page, false, false);
@@ -274,6 +274,21 @@ try {
       await expect(disclosure).toHaveJSProperty('open', true);
       await page.reload();
       await expect(disclosure).toHaveJSProperty('open', true);
+    }
+    // Activate the real anchors, including in no-JS mode. This HTTP fixture
+    // deliberately fails closed for HTTPS Auth; panel behavior is tested with
+    // the matching HTTPS synthetic community UI, without real credentials.
+    const sourceURL = page.url();
+    for (const [label, route] of [['Discussion', '/test/forum-v1/#discussion'], ['Message board', '/test/forum-v1/#message-board']]) {
+      const link = page.locator(`#main-menu > li > a[href="${route}"]`);
+      await expect(link).toHaveAccessibleName(label);
+      await link.focus();
+      await page.keyboard.press('Enter');
+      await page.waitForURL(origin + route, { waitUntil: 'domcontentloaded' });
+      await expect(page.locator('#rc-root[data-community-mode="forum"]')).toBeVisible();
+      assert.equal(page.url(), origin + route, 'Native navigation preserves the exact allowlisted panel hash');
+      await page.goBack({ waitUntil: 'domcontentloaded' });
+      await page.waitForURL(sourceURL);
     }
     assert.deepEqual(errors, [], 'No runtime errors');
     console.log(`PASS site navigation ${width}px ${scheme} ${motion} ${js ? 'JS' : 'no JS'}: keyboard, accessible icons, geometry, independent rails${js ? ', global persistence and strict native Back' : ''}`);
