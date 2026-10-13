@@ -48,9 +48,9 @@
     --tr-even-background-color: #2b1a20;
     --kbd-border-color: #59353f;
   }
-  .main-article .article-image img { object-position: 50% 29%; }
-  /* These native biography figures reset the theme's full-bleed margins.
-     Their width must reset with them to prevent internal sideways scrolling. */
-  .article-content .biography-photo,
-  .article-content .biography-timeline { width: auto; }
 }
+.main-article .article-image img { object-position: 50% 29%; }
+/* These native biography figures reset the theme's full-bleed margins.
+   Their width must reset with them for reading and printing. */
+.article-content .biography-photo,
+.article-content .biography-timeline { width: auto; }
