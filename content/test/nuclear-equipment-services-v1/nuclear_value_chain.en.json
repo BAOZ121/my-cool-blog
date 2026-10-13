@@ -1,0 +1,99 @@
+{
+  "scope": "Global civil nuclear equipment and services",
+  "cutoff": "2026-10-13",
+  "note": "Category links, not contracts; company examples are not exhaustive or ranked.",
+  "hierarchy": [
+    {
+      "stage": "Upstream",
+      "segments": [
+        {
+          "segment": "Uranium feed and conversion",
+          "examples": [
+            "Cameco · Orano"
+          ]
+        },
+        {
+          "segment": "Enrichment services",
+          "examples": [
+            "Urenco · Orano",
+            "Rosatom · CNNC"
+          ]
+        },
+        {
+          "segment": "Nuclear castings and forgings",
+          "examples": [
+            "Doosan Enerbility"
+          ]
+        },
+        {
+          "segment": "Fuel assemblies",
+          "examples": [
+            "Westinghouse · Framatome"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "Midstream",
+      "segments": [
+        {
+          "segment": "Reactor systems",
+          "examples": [
+            "Westinghouse · Rosatom",
+            "GE Vernova Hitachi"
+          ]
+        },
+        {
+          "segment": "Nuclear island components",
+          "examples": [
+            "Framatome · Doosan",
+            "BWXT"
+          ]
+        },
+        {
+          "segment": "Steam turbines and generators",
+          "examples": [
+            "Arabelle Solutions · Doosan"
+          ]
+        },
+        {
+          "segment": "Controls and construction",
+          "examples": [
+            "I&C: Framatome · Curtiss-Wright",
+            "EPC: Bechtel"
+          ]
+        }
+      ]
+    },
+    {
+      "stage": "Downstream",
+      "segments": [
+        {
+          "segment": "Outage and maintenance",
+          "examples": [
+            "Westinghouse · Framatome"
+          ]
+        },
+        {
+          "segment": "Testing and inspection",
+          "examples": [
+            "BWXT · Kinectrics",
+            "Curtiss-Wright"
+          ]
+        },
+        {
+          "segment": "Operating life extension",
+          "examples": [
+            "Framatome · Westinghouse"
+          ]
+        },
+        {
+          "segment": "Waste and decommissioning",
+          "examples": [
+            "Orano"
+          ]
+        }
+      ]
+    }
+  ]
+}
