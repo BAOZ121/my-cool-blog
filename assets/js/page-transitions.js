@@ -10,8 +10,10 @@
   } catch { /* Invalid decorative configuration leaves the default entry intact. */ }
   // The company logo opt-in takes precedence over the existing biography card.
   const nvidia = !branded && entryView.theme === "nvidia";
+  const amd = !branded && entryView.theme === "amd";
+  const portraitCard = nvidia || amd;
   // Keep the biography's local-only replay option and native entry policy.
-  const previewEntry = nvidia && ["127.0.0.1", "localhost"].includes(location.hostname) &&
+  const previewEntry = portraitCard && ["127.0.0.1", "localhost"].includes(location.hostname) &&
     new URL(location.href).searchParams.get("preview") === "loading";
   let entry;
   let interrupted = false;
@@ -20,7 +22,7 @@
   let cleanupTimer;
   let startedAt;
   let disposeHeroWait = () => {};
-  const normalHold = branded ? 1750 : nvidia ? 1690 : 1190;
+  const normalHold = branded ? 1750 : portraitCard ? 1690 : 1190;
   const latestHold = 2850;
   const safetyHold = 3800;
   try {
@@ -81,6 +83,7 @@
       cleanupTimer = window.setTimeout(stop, 4200);
       curtain = document.createElement("div");
       curtain.className = branded ? "dex-entry-curtain dex-entry-curtain--nvidia-company"
+        : amd ? "dex-entry-curtain dex-entry-curtain--nvidia dex-entry-curtain--amd"
         : nvidia ? "dex-entry-curtain dex-entry-curtain--nvidia" : "dex-entry-curtain";
       curtain.setAttribute("aria-hidden", "true");
       if (branded) {
@@ -102,7 +105,7 @@
         const panel = document.createElement("div");
         panel.className = "dex-entry-curtain__panel";
         let copy = panel;
-        if (nvidia && entryView.image) {
+        if (portraitCard && entryView.image) {
           const portrait = document.createElement("div");
           portrait.className = "dex-entry-curtain__portrait";
           const image = document.createElement("img");

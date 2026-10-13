@@ -170,3 +170,25 @@ html:has(> .dex-entry-curtain--nvidia) {
 @media (prefers-reduced-motion: reduce) {
   .dex-entry-curtain { display: none !important; animation: none; }
 }
+
+/* AMD reuses the biography card's existing geometry and animation above.
+   Its additional modifier changes only the palette; NVIDIA remains unchanged. */
+html:has(> .dex-entry-curtain--amd) {
+  background-color: #16080b;
+  scrollbar-color: #7d2335 #16080b;
+}
+.dex-entry-curtain--amd { background: #16080b; }
+.dex-entry-curtain--amd .dex-entry-curtain__panel {
+  border-color: rgba(200, 16, 46, .42);
+  color: #e83054;
+  background: #211014;
+}
+.dex-entry-curtain--amd .dex-entry-curtain__panel::after { background: #c8102e; }
+.dex-entry-curtain--amd .dex-entry-curtain__label { color: #eb4768; }
+.dex-entry-curtain--amd .dex-entry-curtain__status { color: #fff6f7; }
+.dex-entry-curtain--amd .dex-entry-curtain__mode { color: #bc9ca4; }
+.dex-entry-curtain--amd .dex-entry-curtain__portrait {
+  border-color: rgba(200, 16, 46, .5);
+  background: #16080b;
+}
+.dex-entry-curtain--amd .dex-entry-curtain__portrait-label { color: #f1c5ce; }

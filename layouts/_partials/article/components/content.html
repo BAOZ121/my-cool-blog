@@ -2,6 +2,12 @@
 <div class="reading-progress" data-reading-progress aria-hidden="true"></div>
 <nav class="research-actions" aria-label="Article tools">
     <button class="research-action" type="button" data-print-article>Print / Save PDF</button>
+    {{- with .Params.wordDownload }}
+    <a class="research-action" href="{{ . | relURL }}" download>Download bilingual Word</a>
+    {{- end }}
+    {{- with .Params.textDownload }}
+    <a class="research-action" href="{{ . | relURL }}" download>Download bilingual text</a>
+    {{- end }}
     {{- with .Params.dataDownload }}
     <a class="research-action" href="{{ . | relURL }}" download>Download data (CSV)</a>
     {{- end }}

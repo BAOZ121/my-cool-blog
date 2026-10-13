@@ -2,6 +2,11 @@
 {{- $Page := .Page -}}
 <header class="article-header{{ if $Page.Params.biography }} biography-header{{ end }}" data-article-url="{{ $Page.RelPermalink }}">
     {{- $image := partial "helper/image" (dict "Image" $Page.Params.image "Resources" $Page.Resources "Context" $Page) -}}
+    {{- if and $Page.Params.amdbiography $image.Resource -}}
+      {{- /* Respect the real photograph's EXIF rotation before WebP encoding. */ -}}
+      {{- $oriented := $image.Resource | images.Filter (images.AutoOrient) -}}
+      {{- $image = dict "Resource" $oriented "Permalink" $oriented.RelPermalink "Width" $oriented.Width "Height" $oriented.Height -}}
+    {{- end -}}
     {{ if $image }}
     <div class="article-image" data-transition-cover>
         <a href="{{ $Page.RelPermalink }}">

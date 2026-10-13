@@ -1,0 +1,56 @@
+/* Lisa Su uses the existing article components. Only its palette and the
+   portrait's position in the standard cover banner differ from other reports. */
+@media screen {
+  :root, :root[data-scheme="light"] {
+    --body-background: #f7f5f5;
+    --body-text-color: #665b5d;
+    --accent-color: #b5092d;
+    --accent-color-darker: #8e0621;
+    --accent-color-text: #fff;
+    --card-background: #fff;
+    --card-background-selected: #faf0f2;
+    --card-text-color-main: #241b1d;
+    --card-text-color-secondary: #665b5d;
+    --card-text-color-tertiary: #665b5d;
+    --card-separator-color: #e8cfd5;
+    --blockquote-background-color: #faf0f2;
+    --link-background-color: 181, 9, 45;
+    --link-background-opacity: .13;
+    --link-background-opacity-hover: .23;
+    --code-background-color: #faf0f2;
+    --code-text-color: #b5092d;
+    --pre-background-color: #faf0f2;
+    --pre-text-color: #241b1d;
+    --table-border-color: #e8cfd5;
+    --tr-even-background-color: #faf0f2;
+    --kbd-border-color: #e8cfd5;
+    scrollbar-color: var(--accent-color) var(--body-background);
+  }
+  :root[data-scheme="dark"] {
+    --body-background: #110b0d;
+    --body-text-color: #cbbcc0;
+    --accent-color: #ff7594;
+    --accent-color-darker: #ffabc0;
+    --accent-color-text: #2b0710;
+    --card-background: #1b1215;
+    --card-background-selected: #2b1a20;
+    --card-text-color-main: #faedf0;
+    --card-text-color-secondary: #cbbcc0;
+    --card-text-color-tertiary: #cbbcc0;
+    --card-separator-color: #59353f;
+    --blockquote-background-color: #2b1a20;
+    --link-background-color: 255, 117, 148;
+    --code-background-color: #2b1a20;
+    --code-text-color: #ffabc0;
+    --pre-background-color: #2b1a20;
+    --pre-text-color: #faedf0;
+    --table-border-color: #59353f;
+    --tr-even-background-color: #2b1a20;
+    --kbd-border-color: #59353f;
+  }
+  .main-article .article-image img { object-position: 50% 29%; }
+  /* These native biography figures reset the theme's full-bleed margins.
+     Their width must reset with them to prevent internal sideways scrolling. */
+  .article-content .biography-photo,
+  .article-content .biography-timeline { width: auto; }
+}

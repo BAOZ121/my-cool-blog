@@ -1,0 +1,28 @@
+{
+  "cover": {
+    "file": "assets/lisa-su-cover.jpg",
+    "width": 3840,
+    "height": 5760,
+    "caption": "Lisa Su at SXSW in Austin Texas on March 11 2024",
+    "alt": "Lisa Su at SXSW in Austin, Texas, on March 11, 2024.",
+    "author": "Fuzheado",
+    "source": "https://commons.wikimedia.org/wiki/File:SXSW-2024-alih-OB7A0861-Lisa_Su.jpg",
+    "original": "https://upload.wikimedia.org/wikipedia/commons/d/dd/SXSW-2024-alih-OB7A0861-Lisa_Su.jpg",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "photos": {
+    "lisa-su-2015": {
+      "file": "assets/lisa-su-2015.jpg",
+      "width": 3000,
+      "height": 2360,
+      "caption": "Lisa Su holding a chip photographed on June 3 2015.",
+      "alt": "Lisa Su holding a chip, photographed on June 3, 2015.",
+      "author": "Gene Wang",
+      "source": "https://commons.wikimedia.org/wiki/File:AMD_CEO_Lisa_Su_20150603.jpg",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/6/60/AMD_CEO_Lisa_Su_20150603.jpg",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/"
+    }
+  }
+}
