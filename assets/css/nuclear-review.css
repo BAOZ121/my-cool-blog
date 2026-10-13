@@ -47,7 +47,7 @@
   margin: 16px 0;
 }
 .nuclear-report .nuclear-downloads a { line-height: 1.6; }
-.nuclear-report :is(#nuclear-expand-evidence, #nuclear-collapse-evidence, [data-nuclear-figure]) {
+.nuclear-report :is(#nuclear-expand-evidence, #nuclear-collapse-evidence) {
   appearance: none;
   display: inline-flex;
   justify-content: center;
@@ -65,11 +65,11 @@
   cursor: pointer;
   text-decoration: none;
 }
-.nuclear-report :is(#nuclear-expand-evidence, #nuclear-collapse-evidence, [data-nuclear-figure]):hover {
+.nuclear-report :is(#nuclear-expand-evidence, #nuclear-collapse-evidence):hover {
   border-color: var(--nuclear-gold);
   background: var(--nuclear-soft);
 }
-.nuclear-report .nuclear-figure a[data-nuclear-figure]:has(img) {
+.nuclear-report .nuclear-figure a:has(img) {
   display: block;
   width: 100%;
   min-height: 0;
@@ -79,7 +79,7 @@
   background: transparent;
   line-height: 0;
 }
-.nuclear-report .nuclear-figure a[data-nuclear-figure]:has(img):hover {
+.nuclear-report .nuclear-figure a:has(img):hover {
   border: 0;
   background: transparent;
 }
@@ -216,115 +216,6 @@
 }
 .nuclear-report .nuclear-source-links p { margin: 8px 0 0; }
 
-/* A native dialog is isolated from article layout and scrolls its own image viewport. */
-#nuclear-figure-dialog {
-  --nuclear-ink: var(--card-text-color-main, #211d16);
-  --nuclear-muted: var(--card-text-color-secondary, #6b6254);
-  --nuclear-gold: var(--accent-color, #89651e);
-  --nuclear-line: var(--card-separator-color, #e5d7b8);
-  --nuclear-surface: var(--card-background, #fff);
-  --nuclear-soft: var(--card-background-selected, #f8f2e5);
-  width: min(1180px, calc(100vw - 36px));
-  max-width: calc(100vw - 36px);
-  max-height: calc(100dvh - 36px);
-  padding: 20px;
-  border: 1px solid var(--nuclear-line);
-  border-radius: 8px;
-  margin: auto;
-  background: var(--nuclear-surface);
-  color: var(--nuclear-ink);
-  box-shadow: 0 16px 60px rgba(0, 0, 0, .28);
-  overflow: auto;
-  overscroll-behavior: contain;
-  font: 15px/1.6 var(--base-font-family, system-ui, sans-serif);
-}
-#nuclear-figure-dialog * { box-sizing: border-box; }
-#nuclear-figure-dialog::backdrop { background: rgba(0, 0, 0, .72); }
-#nuclear-figure-dialog:not([open]) { display: none; }
-#nuclear-figure-dialog .nuclear-dialog-header {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 12px;
-}
-#nuclear-figure-dialog #nuclear-figure-title {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  color: var(--nuclear-ink);
-  font-size: 20px;
-  line-height: 1.4;
-  overflow-wrap: anywhere;
-}
-#nuclear-figure-dialog #nuclear-figure-title::before,
-#nuclear-figure-dialog #nuclear-figure-title::after { display: none; }
-#nuclear-figure-dialog .nuclear-dialog-controls {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px 14px;
-  margin: 12px 0;
-}
-#nuclear-figure-dialog :is(button, #nuclear-figure-download) {
-  appearance: none;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  min-height: 44px;
-  padding: 8px 12px;
-  border: 1px solid var(--nuclear-line);
-  border-radius: 5px;
-  background: var(--nuclear-surface);
-  color: var(--nuclear-gold);
-  font: inherit;
-  font-size: 13px;
-  cursor: pointer;
-  text-decoration: none;
-}
-#nuclear-figure-dialog :is(button, #nuclear-figure-download):hover {
-  border-color: var(--nuclear-gold);
-  background: var(--nuclear-soft);
-}
-#nuclear-figure-dialog :is(button, a, input):focus-visible {
-  outline: 3px solid var(--nuclear-gold);
-  outline-offset: 3px;
-}
-#nuclear-figure-dialog #nuclear-zoom {
-  width: 170px;
-  max-width: 100%;
-  min-height: 32px;
-  accent-color: var(--nuclear-gold);
-}
-#nuclear-figure-dialog #nuclear-zoom-value {
-  min-width: 4ch;
-  color: var(--nuclear-muted);
-  font-variant-numeric: tabular-nums;
-}
-#nuclear-figure-dialog #nuclear-figure-canvas {
-  width: 100%;
-  min-width: 0;
-  height: min(66dvh, 740px);
-  padding: 16px;
-  border: 1px solid var(--nuclear-line);
-  border-radius: 5px;
-  background: #fff;
-  overflow: auto;
-  overscroll-behavior: contain;
-  touch-action: pan-x pan-y;
-}
-#nuclear-figure-dialog #nuclear-figure-image {
-  display: block;
-  max-width: none;
-  height: auto;
-  margin: 0 auto;
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  box-shadow: none;
-  background: #fff;
-}
 @media (max-width: 600px) {
   .nuclear-report figure.nuclear-figure { margin: 24px 0; padding: 12px; }
   .nuclear-report .nuclear-source-fields {
@@ -336,15 +227,6 @@
   .nuclear-report .nuclear-source-fields dd:last-child { margin-bottom: 0; }
   .nuclear-report .nuclear-evidence-record summary { padding: 12px 14px; }
   .nuclear-report .nuclear-data-table { min-width: 640px; }
-  #nuclear-figure-dialog {
-    width: calc(100vw - 20px);
-    max-width: calc(100vw - 20px);
-    max-height: calc(100dvh - 20px);
-    padding: 14px;
-  }
-  #nuclear-figure-dialog #nuclear-figure-title { font-size: 17px; }
-  #nuclear-figure-dialog #nuclear-figure-canvas { height: 57dvh; padding: 10px; }
-  #nuclear-figure-dialog #nuclear-zoom { width: 130px; }
 }
 @media print {
   .nuclear-report {
@@ -356,9 +238,8 @@
     --nuclear-soft: #fff;
   }
   .nuclear-report .nuclear-evidence-controls,
-  .nuclear-report .nuclear-figure-controls,
-  #nuclear-figure-dialog { display: none !important; }
-  .nuclear-report .nuclear-figure > a[data-nuclear-figure] { display: block !important; }
+  .nuclear-report .nuclear-figure-controls { display: none !important; }
+  .nuclear-report .nuclear-figure > a { display: block !important; }
   .nuclear-report figure.nuclear-figure { break-inside: avoid; overflow: visible; }
   .nuclear-report .nuclear-table-scroll { overflow: visible; border: 0; }
   .nuclear-report .nuclear-data-table { min-width: 0; font-size: 10pt; }
@@ -369,3 +250,8 @@
   .nuclear-report .nuclear-evidence-record summary { font-weight: 700; }
   .nuclear-report .nuclear-source-links { overflow-wrap: anywhere; }
 }
+
+.nuclear-report .nuclear-native-figure { margin: 30px 0; min-width: 0; }
+.nuclear-report .nuclear-static-figure { margin: 20px 0; }
+.nuclear-report .nuclear-static-figure > summary { cursor: pointer; padding: 8px 0; font-weight: 600; }
+@media print { .nuclear-report .nuclear-static-figure { display: none; } }

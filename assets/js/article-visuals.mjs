@@ -78,6 +78,17 @@ const palettes = {
   dark: ["#d6b56f", "#67b8b0", "#7ea5dc", "#e58b78", "#a995d3", "#a4bd7e", "#d78fb3", "#8baeb8"],
 };
 const nvidiaPalette = ["#76b900", "#b7e36f", "#4f8b36", "#9dba85", "#6b8f5d", "#d5e7c8", "#86c748", "#c1df9b"];
+const nuclearPalettes = {
+  light: ["#202020", "#a98428", "#969696", "#d3bd7b", "#eeeeee"],
+  dark: ["#eeeeee", "#d6b56f", "#a4a4a4", "#f0dfb3", "#555555"],
+};
+function sharePalette(data, dark) {
+  return data.theme === "nuclear-gold" ? nuclearPalettes[dark ? "dark" : "light"]
+    : data.theme === "nvidia" ? nvidiaPalette : palettes[dark ? "dark" : "light"];
+}
+function shareValue(data, value) {
+  return data.theme === "nuclear-gold" ? Number(value).toFixed(data.percentDecimals ?? 1) : String(value);
+}
 // Thin map connections need deeper gold against the light background.
 const mapPalettes = {
   light: ["#89651e", "#9b742d", "#76551e", "#94723a", "#886026", "#a37c39", "#71521f", "#806633"],
@@ -97,25 +108,27 @@ export function pieOptions(data, { dark = false, compact = false, reducedMotion 
   return {
     animation: !reducedMotion,
     animationDuration: 350,
-    color: nvidia ? nvidiaPalette : palettes[dark ? "dark" : "light"],
+    color: sharePalette(data, dark),
     textStyle: { fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif", color: ink },
-    aria: { enabled: true, label: { description: `${data.title}. ${data.period}. ${data.geography}. ${data.metric}. ${data.series.map((item) => `${item.name}: ${item.value}%`).join("; ")}.` } },
+    aria: { enabled: true, label: { description: `${data.title}. ${data.period}. ${data.geography}. ${data.metric}. ${data.series.map((item) => `${item.name}: ${shareValue(data, item.value)}%`).join("; ")}.` } },
     tooltip: {
       trigger: "item", confine: true, renderMode: "html", backgroundColor: surface, borderColor: nvidia ? "#2a3824" : dark ? "#494136" : "#e5d7b8", textStyle: { color: ink },
-      formatter: (item) => `${escapeHTML(item.name)}<br><strong>${Number(item.value)}%</strong>`,
+      formatter: (item) => `${escapeHTML(item.name)}<br><strong>${shareValue(data, item.value)}%</strong>`,
     },
     legend: {
       show: !compact, orient: "vertical", right: "3%", top: "center", selectedMode: false,
       itemWidth: 11, itemHeight: 11, itemGap: 16, textStyle: { color: ink, fontSize: 13 },
-      formatter: (name) => `${name}  ${data.series.find((item) => item.name === name)?.value}%`,
+      formatter: (name) => `${name}  ${shareValue(data, data.series.find((item) => item.name === name)?.value)}%`,
     },
     series: [{
       type: "pie", radius: compact ? ["37%", "64%"] : ["38%", "66%"], center: compact ? ["50%", "48%"] : ["32%", "50%"],
       avoidLabelOverlap: true, minAngle: 0, padAngle: 1, selectedMode: false,
       itemStyle: { borderRadius: 3, borderWidth: 2, borderColor: surface },
-      label: { show: compact, position: "inside", formatter: (item) => item.value >= 5 ? `${item.value}%` : "", fontSize: 13, color: "#101010", textBorderWidth: 0 },
+      label: { show: compact, position: "inside", formatter: (item) => item.value >= 5 ? `${shareValue(data, item.value)}%` : "", fontSize: 13, color: "#101010", textBorderWidth: 0 },
       labelLine: { show: false }, emphasis: { scale: !reducedMotion, scaleSize: 4, label: { show: compact }, itemStyle: { shadowBlur: 0 } },
-      data: data.series.map((item) => ({ name: item.name, value: item.value })),
+      data: data.series.map((item, index) => ({ name: item.name, value: item.value,
+        ...(data.theme === "nuclear-gold" ? { label: { color: dark ? (index === 4 ? "#ffffff" : "#101010") : (index === 0 ? "#ffffff" : "#101010") } } : {}),
+      })),
     }],
     graphic: [{ type: "text", x: width * (compact ? .5 : .32), y: height * (compact ? .44 : .46), style: { text: centerPeriod, fill: ink, fontSize: compact ? 16 : 18, lineHeight: 20, fontWeight: 650, align: "center", verticalAlign: "middle" } }, { type: "text", x: width * (compact ? .5 : .32), y: height * (compact ? .57 : .55), style: { text: "%", fill: muted, fontSize: 14, align: "center", verticalAlign: "middle" } }],
   };
@@ -351,10 +364,11 @@ async function renderShare(figure, stage, _toolbar, data, vendor, labels) {
   data.series.forEach((item, index) => {
     const row = document.createElement("li");
     const dot = document.createElement("span"); dot.className = "visual-dot";
-    dot.style.setProperty("--dot-light", (data.theme === "nvidia" ? nvidiaPalette : palettes.light)[index % 8]);
-    dot.style.setProperty("--dot-dark", (data.theme === "nvidia" ? nvidiaPalette : palettes.dark)[index % 8]);
+    const lightColors = sharePalette(data, false), darkColors = sharePalette(data, true);
+    dot.style.setProperty("--dot-light", lightColors[index % lightColors.length]);
+    dot.style.setProperty("--dot-dark", darkColors[index % darkColors.length]);
     const name = document.createElement("span"); name.textContent = item.name;
-    const value = document.createElement("strong"); value.textContent = `${item.value}%`;
+    const value = document.createElement("strong"); value.textContent = `${shareValue(data, item.value)}%`;
     row.append(dot, name, value); legend.append(row);
   });
   stage.append(legend);
