@@ -60,7 +60,7 @@
             <p class="site-description">{{ .Site.Params.sidebar.subtitle }}</p>
         </div>
     </header>
-    {{ if .Params.forumtest }}{{ if eq (partial "community/config.html" .).enabled true }}{{ partial "community/account.html" . }}{{ else }}{{ partial "forum-test/account.html" . }}{{ end }}{{ end }}
+    {{ if .Params.forumtest }}{{ if eq (partial "community/config.html" .).enabled true }}{{ partial "community/account.html" . }}{{ else }}{{ partial "forum-test/account.html" . }}{{ end }}{{ else if not (partial "community/is-test.html" .) }}{{ partial "site-navigation/account.html" . }}{{ end }}
 
     {{- with .Site.Menus.social -}}
         <ol class="menu-social">
@@ -83,10 +83,8 @@
     {{- end -}}
 
     <ol class="menu" id="main-menu">
-        {{ if .Params.forumtest }}
-        <li class="df-community-nav current"><a href="#discussion" data-forum-panel="forum" aria-current="page" title="Discussion · Test"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 11a8 8 0 0 1-8 8H6l-4 3 1-6a8 8 0 0 1-1-5 9 9 0 0 1 19 0Z"/></svg><span>Discussion <small>TEST</small></span></a></li>
-        <li class="df-community-nav"><a href="#message-board" data-forum-panel="board" title="Message board · Test"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h4"/></svg><span>Message board <small>TEST</small></span></a></li>
-        {{ end }}
+        <li class="df-community-nav{{ if .Params.forumtest }} current{{ end }}"><a href="/test/forum-v1/#discussion" data-forum-panel="forum" data-panel="forum" title="Discussion"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 11a8 8 0 0 1-8 8H6l-4 3 1-6a8 8 0 0 1-1-5 9 9 0 0 1 19 0Z"/></svg><span>Discussion</span></a></li>
+        <li class="df-community-nav"><a href="/test/forum-v1/#message-board" data-forum-panel="board" data-panel="board" title="Message board"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h4"/></svg><span>Message board</span></a></li>
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
         {{ $active := or (eq $currentPage.RelPermalink .URL) (or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .)) }}

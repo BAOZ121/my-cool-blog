@@ -1,3 +1,5 @@
+import { communityIntent } from './community-intents.mjs';
+
 /** Connected test UI. Server RBAC and Auth are authoritative; browser state never grants a role. */
 const UUID = /^[a-f0-9]{8}-[a-f0-9]{4}-[1-8][a-f0-9]{3}-[89ab][a-f0-9]{3}-[a-f0-9]{12}$/i;
 const LIMIT = 25;
@@ -399,6 +401,16 @@ export function setupCommunityUI({ document: doc, window: win, auth, api, config
     renderControls();
   }
   function showAuth(view) { if (authBlocked || state.user || state.busy) return; authViewSet(view); open($('rc-auth')); $('rc-email').focus(); }
+  function applyAccountIntent() {
+    if (mode !== 'forum' || !initialized || disposed || authBlocked || state.busy || state.recovery) return;
+    const intent = communityIntent(win.location.href, config.allowedOrigin);
+    if (!intent) return;
+    // Consume presentation-only intent without retaining a URL command in
+    // history. No credentials, OTP, logout or destination is read from the URL.
+    win.history?.replaceState(null, '', '/test/forum-v1/#discussion');
+    if (signedIn()) open($('rc-profile'));
+    else showAuth(intent === 'signup' ? 'signup' : 'signin');
+  }
   all('[data-auth-open]').forEach(element => element.addEventListener('click', () => showAuth(element.dataset.authOpen)));
   all('[data-auth-view]').forEach(element => element.addEventListener('click', () => authViewSet(element.dataset.authView)));
   all('[role="tab"][data-auth-view]').forEach(element => element.addEventListener('keydown', event => {
@@ -535,7 +547,7 @@ export function setupCommunityUI({ document: doc, window: win, auth, api, config
     if (write) win.location.hash = board ? '#message-board' : '#discussion';
   }
   all('[data-panel]').forEach(element => element.addEventListener('click', () => syncPanel(true, element.dataset.panel)));
-  win.addEventListener('hashchange', () => syncPanel());
+  win.addEventListener('hashchange', () => { syncPanel(); applyAccountIntent(); });
   $('rc-search')?.addEventListener('input', renderTopics);
   $('rc-topics-more')?.addEventListener('click', () => { if (!$('rc-topics-more').disabled) void loadPublic('topics', true); });
   $('rc-messages-more')?.addEventListener('click', () => { if (!$('rc-messages-more').disabled) void loadPublic('messages', true); });
@@ -709,7 +721,7 @@ export function setupCommunityUI({ document: doc, window: win, auth, api, config
       } else await auth.initialize();
     } catch (error) { authBlocked = ['INVALID_CONFIG', 'STORAGE_UNAVAILABLE', 'AUTH_DISABLED'].includes(error?.code); notice(safeUiError(error)); if ($('rc-recovery-retry')) $('rc-recovery-retry').hidden = false; }
     finally { initialized = true; renderSession(auth.getState()); }
-    if (mode === 'forum') { syncPanel(); await Promise.all([loadPublic('topics'), loadPublic('messages')]); }
+    if (mode === 'forum') { syncPanel(); applyAccountIntent(); await Promise.all([loadPublic('topics'), loadPublic('messages')]); }
   })();
   return Object.freeze({ ready, dispose });
 }

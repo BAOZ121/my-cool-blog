@@ -397,3 +397,24 @@ test('email admin access requires both finite future server deadlines while TOTP
   }
   const f = await fixture({ mode: 'admin', role: 'owner', extraConfig: { emailStepupEnabled: true } }); assert.equal(f.$('rc-admin-tools').hidden, false); assert.match(f.$('rc-admin-list').textContent, /synthetic discussion/); f.ui.dispose();
 });
+
+test('fixed sign-in/register/account intents open views only after real session initialization', async () => {
+  for (const [hash, expected] of [['#signin', 'Sign in'], ['#register', 'Create account'], ['#account', 'Sign in']]) {
+    const replaced = []; const f = await fixture({ configureDom(dom) { dom.window.location.href += hash; dom.window.location.hash = hash; dom.window.history = { replaceState(...args) { replaced.push(args); } }; } });
+    assert.equal(f.$('rc-auth').open, true); assert.equal(f.$('rc-auth-submit').textContent, expected);
+    assert.equal(replaced[0][2], '/test/forum-v1/#discussion');
+    assert.deepEqual(f.auth.calls.map(call => call[0]), ['initialize']); assert.ok(f.calls.every(call => !call.options.method));
+    f.ui.dispose();
+  }
+  const f = await fixture({ role: '', configureDom(dom) { dom.window.location.href += '#account'; dom.window.history = { replaceState() {} }; } });
+  assert.equal(f.$('rc-profile').open, true); assert.equal(f.$('rc-auth').open, false); assert.equal(f.auth.calls.some(call => call[0] === 'signOut'), false); f.ui.dispose();
+});
+test('URL intents reject arbitrary redirects, codes, other pages and repeated hash events never authenticate', async () => {
+  for (const suffix of ['#signout', '#reset', '#signin?next=https://evil.invalid', '?next=https://evil.invalid#signin', '#register&code=123456', '#%73ignin']) {
+    const f = await fixture({ configureDom(dom) { dom.window.location.href += suffix; } }); assert.equal(f.$('rc-auth').open, false); assert.equal(f.$('rc-profile').open, false); f.ui.dispose();
+  }
+  const f = await fixture(); f.window.location.href += '#register'; f.window.location.hash = '#register'; f.window.history = { replaceState() {} };
+  f.window.dispatch('hashchange'); f.window.dispatch('hashchange'); assert.equal(f.$('rc-auth').open, true);
+  f.$('rc-auth').close(); await flush(); assert.equal(f.$('rc-auth').open, false);
+  assert.deepEqual(f.auth.calls.map(call => call[0]), ['initialize']); f.ui.dispose();
+});
