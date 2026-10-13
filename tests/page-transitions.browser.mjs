@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { createServer } from "node:http";
-import { mkdir, readFile } from "node:fs/promises";
+import { mkdir, readFile, readdir } from "node:fs/promises";
 import { extname, resolve, sep } from "node:path";
 import { inflateSync } from "node:zlib";
 import { createHash } from "node:crypto";
@@ -189,11 +189,42 @@ function assertArticleTimeline(calls, hold = 1190) {
   }
 }
 
+// Publishing new reports can move a fixture to another home-listing page.
+// Discover the real generated card instead of changing the site's pagination
+// or substituting a synthetic link; native entry and Back keep that source URL.
+const articleListings = new Map();
+async function findArticleListing(articlePath) {
+  if (articleListings.has(articlePath)) return articleListings.get(articlePath);
+  const pageDirectories = await readdir(resolve(root, "page"), { withFileTypes: true }).catch(error => {
+    if (error.code === "ENOENT") return [];
+    throw error;
+  });
+  const listings = ["/", ...pageDirectories.filter(entry => entry.isDirectory() && /^\d+$/.test(entry.name) && Number(entry.name) > 1)
+    .sort((a, b) => Number(a.name) - Number(b.name)).map(entry => `/page/${entry.name}/`)];
+  const escapedPath = articlePath.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const href = new RegExp(`\\bhref=(?:"${escapedPath}"|'${escapedPath}'|${escapedPath}(?=[\\s>]))`);
+  for (const listing of listings) {
+    const html = await readFile(resolve(root, "." + listing, "index.html"), "utf8");
+    const cards = html.match(/<article\b[\s\S]*?<\/article>/g) || [];
+    if (cards.some(card => card.includes("article-title") && href.test(card))) {
+      articleListings.set(articlePath, listing);
+      return listing;
+    }
+  }
+  assert.fail(`No generated home-listing card for ${articlePath}; checked ${listings.join(", ")}`);
+}
+async function articleListing(page, articlePath) {
+  const listing = await findArticleListing(articlePath);
+  if (page.url() !== origin + listing) await page.goto(origin + listing);
+  return listing;
+}
 async function internalArticle(page, articlePath) {
+  const listing = await articleListing(page, articlePath);
   await Promise.all([
     page.waitForURL(origin + articlePath, { waitUntil: "domcontentloaded" }),
     page.locator(`.article-list .article-title a[href="${articlePath}"]`).click({ noWaitAfter: true }),
   ]);
+  return listing;
 }
 
 // A 1×1 PNG screenshot has no preceding pixels/rows for PNG filter predictors.
@@ -403,7 +434,7 @@ async function verifyNvidiaEntry(browser) {
       await page.goto(origin + "/");
       assert.equal(await page.locator("#dex-page-transition-script").getAttribute("data-entry-brand"), null, "The homepage does not inherit article-only brand metadata");
       assert.equal(await page.locator(".nvidia-entry").count(), 0);
-      await internalArticle(page, nvidiaArticlePath);
+      const listing = await internalArticle(page, nvidiaArticlePath);
       await assertBranded(page);
       await finished(page);
       await page.evaluate(() => scrollTo(0, 700));
@@ -411,7 +442,7 @@ async function verifyNvidiaEntry(browser) {
       assert.ok(readingScroll > 100);
       const entryCount = await page.evaluate(() => window.__entry.calls.length);
       await page.goBack({ waitUntil: "commit" });
-      await page.waitForURL(origin + "/", { waitUntil: "commit" });
+      await page.waitForURL(origin + listing, { waitUntil: "commit" });
       assert.equal(await page.locator(".dex-entry-curtain").count(), 0, "Back does not replay an article entry on the homepage");
       await page.goForward({ waitUntil: "commit" });
       await page.waitForURL(origin + nvidiaArticlePath, { waitUntil: "commit" });
@@ -531,7 +562,7 @@ try {
     const page = await context.newPage();
     const errors = [];
     page.on("pageerror", error => errors.push(error.message));
-    await page.goto(origin + "/");
+    const listing = await articleListing(page, ordinaryArticlePath);
     assert.equal(await page.locator("style#dex-page-transitions").count(), 1);
     assert.equal(await page.evaluate(() => window.__entry.calls.length), 0, "Direct entry never animates");
     assert.equal(await page.locator(".dex-entry-curtain").count(), 0);
@@ -621,7 +652,7 @@ try {
     const articleScroll = await page.evaluate(() => scrollY);
     const entryCount = await page.evaluate(() => window.__entry.calls.length);
     await page.goBack({ waitUntil: "commit" });
-    await page.waitForURL(origin + "/", { waitUntil: "commit" });
+    await page.waitForURL(origin + listing, { waitUntil: "commit" });
     await page.waitForFunction(expected => Math.abs(scrollY - expected) < 5, homeScroll);
     assert.equal(await page.evaluate(() => window.__entry.calls.length), 0, "Back does not animate the restored homepage");
     await page.goForward({ waitUntil: "commit" });
@@ -659,13 +690,13 @@ try {
     assert.equal(await page.locator('input[name="keyword"]').inputValue(), "space");
     await assertNoNative(page);
 
-    await page.goto(origin + "/");
+    await page.goto(origin + listing);
     const popupPromise = context.waitForEvent("page");
     await page.locator(`.article-list .article-title a[href="${ordinaryArticlePath}"]`).click({ modifiers: ["Control"] });
     const popup = await popupPromise;
     await popup.waitForLoadState();
     assert.equal(new URL(popup.url()).pathname, articlePath);
-    assert.equal(page.url(), origin + "/");
+    assert.equal(page.url(), origin + listing);
     assert.equal(await popup.evaluate(() => window.__entry.calls.length), 0, "New tabs do not inherit an entry marker");
     await popup.close();
     await page.evaluate(() => {
@@ -676,7 +707,7 @@ try {
     const downloadPromise = page.waitForEvent("download");
     await page.locator("#test-native-download").click();
     assert.equal((await downloadPromise).suggestedFilename(), "industries.csv");
-    assert.equal(page.url(), origin + "/");
+    assert.equal(page.url(), origin + listing);
 
     for (const path of ["/evidence-library/", "/industries/", "/industry-breakdowns/semiconductors/", "/about/"]) {
       await page.goto(origin + "/");
@@ -883,14 +914,14 @@ try {
   const noJS = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 390, height: 900 }, reducedMotion: "no-preference" });
   await noJS.route("https://fonts.googleapis.com/**", route => route.fulfill({ contentType: "text/css", body: "" }));
   const page = await noJS.newPage();
-  await page.goto(origin + "/");
+  const noJSListing = await articleListing(page, ordinaryArticlePath);
   const link = page.locator(`.article-list .article-title a[href="${ordinaryArticlePath}"]`);
   const path = await link.getAttribute("href");
   await link.click();
   await page.waitForURL(origin + path);
   assert.equal(await page.locator("main h1").isVisible(), true);
   await page.goBack({ waitUntil: "commit" });
-  await page.waitForURL(origin + "/", { waitUntil: "commit" });
+  await page.waitForURL(origin + noJSListing, { waitUntil: "commit" });
   assert.equal(await page.locator("main").isVisible(), true);
   console.log("PASS no JavaScript: article navigation and Back remain visible and native");
   await noJS.close();
