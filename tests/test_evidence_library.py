@@ -68,6 +68,74 @@ class EvidenceExtractionTests(unittest.TestCase):
         self.assertIn("Location: p. 4. Not a market share.", report["citations"][0]["notes"])
         self.assertEqual(result["entries"][3]["url"], "/data/example.csv")
 
+    def test_amd_source_scopes_keep_independent_citations_and_complete_notes(self):
+        shared_url = "https://publisher.test/shared-filing"
+        h01_notes = [
+            "Dates and location: Historical incorporation section, page 1.",
+            "Support and limits: Supports the incorporation date only; "
+            "does not establish an offering price or later financial results.",
+        ]
+        f01_notes = [
+            "Dates and location: Audited financial statements, pages 40-54.",
+            "Support and limits: " + "Retain each qualification without truncation. " * 30
+            + "This source does not establish subsequent quarterly results.",
+        ]
+        op01_notes = [
+            "Dates and location: Manufacturing disclosures, page 12.",
+            "Support and limits: A supplier relationship does not establish model-specific quantities.",
+        ]
+        html = f'''<h1 class="article-title">AMD scope regression</h1>
+        <section class="article-content"><h2 id="history">History</h2>
+        <p>Ordinary historical section note.</p>
+        <p><a href="https://publisher.test/history">Historical source</a></p>
+        <h2 id="sources">Sources and reading scope</h2>
+        <p class="source-entry">General appendix introduction.</p>
+        <p class="source-entry"><span class="source-label" id="amd-source-H01">[H01]</span>
+        Historical reading of <a href="{shared_url}">Shared filing</a></p>
+        <p class="source-entry">{h01_notes[0]}</p><p class="source-entry">{h01_notes[1]}</p>
+        <p class="source-entry"><span class="source-label" id="amd-source-F01">[F01]</span>
+        Financial reading of <a href="{shared_url}">Shared filing</a></p>
+        <p class="source-entry">{f01_notes[0]}</p><p class="source-entry">{f01_notes[1]}</p>
+        <p class="source-entry"><span class="source-label" id="amd-source-OP01">[OP01]</span>
+        <a href="https://publisher.test/manufacturing">Manufacturing source</a></p>
+        <p class="source-entry">{op01_notes[0]}</p><p class="source-entry">{op01_notes[1]}</p>
+        <h2 id="ordinary">Ordinary section</h2><p>Ordinary section qualification.</p>
+        <p><span class="source-label" id="ordinary-source-1">[1]</span>
+        <a href="https://publisher.test/ordinary">Ordinary source</a></p>
+        <p>Ordinary trailing limitation.</p></section>'''
+        with tempfile.TemporaryDirectory() as directory:
+            build = Path(directory)
+            article = build / "post/amd-company-research/index.html"
+            article.parent.mkdir(parents=True)
+            article.write_text(html, encoding="utf-8")
+            result = evidence.parse_article(article, build)
+
+        entries = {entry["url"]: entry for entry in result["entries"]}
+        self.assertEqual(len(entries), 4)
+        shared = entries[shared_url]
+        self.assertEqual(len(shared["citations"]), 2)
+        for citation, source_id, notes in zip(
+            shared["citations"], ("H01", "F01"), (h01_notes, f01_notes)
+        ):
+            with self.subTest(source_id=source_id):
+                self.assertEqual(citation["url"], "/post/amd-company-research/#amd-source-" + source_id)
+                self.assertEqual(citation["section"], "Sources and reading scope — [" + source_id + "]")
+                self.assertIn("[" + source_id + "]", citation["text"])
+                self.assertEqual(citation["notes"], notes)
+        manufacturing = entries["https://publisher.test/manufacturing"]["citations"][0]
+        self.assertEqual(manufacturing["url"], "/post/amd-company-research/#amd-source-OP01")
+        self.assertEqual(manufacturing["notes"], op01_notes)
+
+        history = entries["https://publisher.test/history"]["citations"][0]
+        self.assertEqual(history["url"], "/post/amd-company-research/#history")
+        self.assertEqual(history["notes"], ["Ordinary historical section note."])
+        ordinary = entries["https://publisher.test/ordinary"]["citations"][0]
+        self.assertEqual(ordinary["url"], "/post/amd-company-research/#ordinary")
+        self.assertEqual(ordinary["section"], "Ordinary section")
+        self.assertEqual(ordinary["notes"], [
+            "Ordinary section qualification.", "Ordinary trailing limitation."
+        ])
+
 
 if __name__ == "__main__":
     unittest.main()

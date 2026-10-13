@@ -1,2 +1,2 @@
 # Preserve the reviewed AMD download bytes on Windows and Linux builds.
-/content/test/amd-company-research-v1/downloads/* -text
+/content/post/amd-company-research/downloads/* -text

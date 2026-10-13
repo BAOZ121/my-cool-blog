@@ -26,3 +26,10 @@
 /test/nuclear-equipment-services-v1 /post/nuclear-equipment-services/ 301
 /test/nuclear-equipment-services-v1/ /post/nuclear-equipment-services/ 301
 /test/nuclear-equipment-services-v1/* /post/nuclear-equipment-services/:splat 301
+
+# The reviewed AMD report and its card are now published.
+/test/amd-company-research-v1 /post/amd-company-research/ 301
+/test/amd-company-research-v1/ /post/amd-company-research/ 301
+/test/amd-company-research-v1/* /post/amd-company-research/:splat 301
+/test/amd-company-research-card-v1 /post/amd-company-research/ 301
+/test/amd-company-research-card-v1/ /post/amd-company-research/ 301

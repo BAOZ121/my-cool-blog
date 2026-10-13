@@ -155,6 +155,13 @@ def parse_article(path, build):
         if re.fullmatch(r"h[2-6]", node.tag):
             section = {"title": node.text().rstrip(" #"), "id": node.attrs.get("id", ""), "notes": []}
         elif node.tag == "p":
+            source = next((item for item in node.walk()
+                           if item.has_class("source-label")
+                           and re.fullmatch(r"amd-source-[A-Z]+\d+", item.attrs.get("id", ""))), None)
+            if source is not None:
+                # AMD source records own their following date and support notes.
+                section = {"title": "Sources and reading scope — " + source.text(),
+                           "id": source.attrs["id"], "notes": []}
             text = node.text()
             if not any(item.tag == "a" and public_url(item.attrs.get("href", ""), article_url) for item in node.walk()):
                 section["notes"].append(text)
