@@ -1,0 +1,6 @@
+﻿operator,year,geography,capacity_thousand_SWU_per_year,author_calculated_capacity_share_pct,estimate,source_id,calculation_denominator_thousand_SWU_per_year
+Rosatom,2025,Global,29133,42.794188933120,False,M01,68077
+Urenco,2025,Global,17300,25.412400663954,False,M01,68077
+CNNC,2025,Global,13789,20.255005361576,True,M01,68077
+Orano,2025,Global,7500,11.016936704026,False,M01,68077
+"Other (INB, JNFL)",2025,Global,355,0.521468337324,False,M01,68077

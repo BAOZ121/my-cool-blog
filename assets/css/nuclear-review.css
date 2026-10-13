@@ -1,0 +1,371 @@
+/* Article-specific review controls. The surrounding DEX/Stack theme is inherited. */
+.nuclear-report {
+  --nuclear-ink: var(--card-text-color-main, #211d16);
+  --nuclear-muted: var(--card-text-color-secondary, #6b6254);
+  --nuclear-gold: var(--accent-color, #89651e);
+  --nuclear-line: var(--card-separator-color, #e5d7b8);
+  --nuclear-surface: var(--card-background, #fff);
+  --nuclear-soft: var(--card-background-selected, #f8f2e5);
+  min-width: 0;
+  max-width: 100%;
+  color: var(--nuclear-ink);
+  overflow-wrap: anywhere;
+}
+.nuclear-report *, .nuclear-report *::before, .nuclear-report *::after {
+  box-sizing: border-box;
+}
+.nuclear-report a { overflow-wrap: anywhere; }
+.nuclear-report :is(button, a, summary, input):focus-visible {
+  outline: 3px solid var(--nuclear-gold);
+  outline-offset: 3px;
+}
+.nuclear-report .nuclear-review-note {
+  margin: 0 0 24px;
+  padding: 12px 0 12px 16px;
+  border-left: 3px solid var(--nuclear-gold);
+  color: var(--nuclear-muted);
+  font-size: 0.88em;
+  line-height: 1.65;
+}
+.nuclear-report .nuclear-cite {
+  font-size: 0.78em;
+  line-height: 1.3;
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--nuclear-gold);
+  text-decoration: none;
+  vertical-align: baseline;
+}
+.nuclear-report .nuclear-cite:hover { text-decoration: underline; }
+.nuclear-report .nuclear-downloads,
+.nuclear-report .nuclear-evidence-controls,
+.nuclear-report .nuclear-figure-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  margin: 16px 0;
+}
+.nuclear-report .nuclear-downloads a { line-height: 1.6; }
+.nuclear-report :is(#nuclear-expand-evidence, #nuclear-collapse-evidence, [data-nuclear-figure]) {
+  appearance: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 44px;
+  max-width: 100%;
+  padding: 9px 13px;
+  border: 1px solid var(--nuclear-line);
+  border-radius: 5px;
+  background: var(--nuclear-surface);
+  color: var(--nuclear-gold);
+  font: inherit;
+  font-size: 0.78em;
+  line-height: 1.4;
+  cursor: pointer;
+  text-decoration: none;
+}
+.nuclear-report :is(#nuclear-expand-evidence, #nuclear-collapse-evidence, [data-nuclear-figure]):hover {
+  border-color: var(--nuclear-gold);
+  background: var(--nuclear-soft);
+}
+.nuclear-report .nuclear-figure a[data-nuclear-figure]:has(img) {
+  display: block;
+  width: 100%;
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  line-height: 0;
+}
+.nuclear-report .nuclear-figure a[data-nuclear-figure]:has(img):hover {
+  border: 0;
+  background: transparent;
+}
+.article-content .nuclear-report figure.nuclear-figure,
+.nuclear-report figure.nuclear-figure {
+  display: block;
+  max-width: 100%;
+  margin: 30px 0;
+  padding: 18px;
+  border: 1px solid var(--nuclear-line);
+  border-radius: 6px;
+  background: var(--nuclear-surface);
+  text-align: left;
+  overflow: hidden;
+}
+.nuclear-report figure.nuclear-figure::before,
+.nuclear-report figure.nuclear-figure::after { display: none; }
+.article-content .nuclear-report .nuclear-figure img,
+.nuclear-report .nuclear-figure img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: #fff;
+}
+.nuclear-report .nuclear-figure figcaption {
+  display: block;
+  margin: 14px 0 0;
+  color: var(--nuclear-muted);
+  font-size: 0.77em;
+  line-height: 1.6;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+.nuclear-report .nuclear-figure figcaption p { margin: 8px 0; }
+.nuclear-report .nuclear-table-scroll {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  margin: 22px 0;
+  border: 1px solid var(--nuclear-line);
+  border-radius: 5px;
+}
+.article-content .nuclear-report .nuclear-data-table,
+.nuclear-report .nuclear-data-table {
+  display: table;
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+  font-size: 0.79em;
+  line-height: 1.6;
+}
+.nuclear-report .nuclear-data-table :is(th, td) {
+  padding: 12px 13px;
+  border: 0;
+  border-bottom: 1px solid var(--nuclear-line);
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+.nuclear-report .nuclear-data-table th { background: var(--nuclear-soft); }
+.nuclear-report .nuclear-data-table tr:last-child td { border-bottom: 0; }
+.nuclear-report .nuclear-data-table caption {
+  padding: 12px 13px;
+  color: var(--nuclear-muted);
+  text-align: left;
+}
+.nuclear-report .nuclear-evidence-record {
+  min-width: 0;
+  max-width: 100%;
+  margin: 12px 0;
+  border: 1px solid var(--nuclear-line);
+  border-radius: 5px;
+  background: var(--nuclear-surface);
+  scroll-margin-top: 25px;
+}
+.nuclear-report .nuclear-evidence-record summary {
+  padding: 14px 16px;
+  color: var(--nuclear-ink);
+  font-size: 0.83em;
+  line-height: 1.65;
+  font-weight: 600;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+.nuclear-report .nuclear-evidence-record summary::marker { color: var(--nuclear-gold); }
+.nuclear-report .nuclear-source-id {
+  margin-inline-end: 8px;
+  letter-spacing: 0.04em;
+}
+.nuclear-report .nuclear-source-body > p[data-evidence-summary] {
+  margin: 0;
+  padding: 0 16px 16px;
+}
+.nuclear-report .nuclear-evidence-record[open] summary {
+  border-bottom: 1px solid var(--nuclear-line);
+  background: var(--nuclear-soft);
+}
+.nuclear-report .nuclear-source-fields {
+  display: grid;
+  grid-template-columns: minmax(110px, 0.24fr) minmax(0, 1fr);
+  gap: 8px 18px;
+  margin: 0;
+  padding: 16px;
+  font-size: 0.8em;
+  line-height: 1.65;
+}
+.nuclear-report .nuclear-source-fields dt {
+  margin: 0;
+  font-weight: 600;
+  color: var(--nuclear-muted);
+}
+.nuclear-report .nuclear-source-fields dd {
+  min-width: 0;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.nuclear-report .nuclear-source-links {
+  min-width: 0;
+  padding: 0 16px 16px;
+  margin: 0;
+  font-size: 0.78em;
+  line-height: 1.65;
+}
+.nuclear-report .nuclear-source-links a {
+  display: inline-block;
+  max-width: 100%;
+  margin-inline-end: 14px;
+  overflow-wrap: anywhere;
+}
+.nuclear-report .nuclear-source-links p { margin: 8px 0 0; }
+
+/* A native dialog is isolated from article layout and scrolls its own image viewport. */
+#nuclear-figure-dialog {
+  --nuclear-ink: var(--card-text-color-main, #211d16);
+  --nuclear-muted: var(--card-text-color-secondary, #6b6254);
+  --nuclear-gold: var(--accent-color, #89651e);
+  --nuclear-line: var(--card-separator-color, #e5d7b8);
+  --nuclear-surface: var(--card-background, #fff);
+  --nuclear-soft: var(--card-background-selected, #f8f2e5);
+  width: min(1180px, calc(100vw - 36px));
+  max-width: calc(100vw - 36px);
+  max-height: calc(100dvh - 36px);
+  padding: 20px;
+  border: 1px solid var(--nuclear-line);
+  border-radius: 8px;
+  margin: auto;
+  background: var(--nuclear-surface);
+  color: var(--nuclear-ink);
+  box-shadow: 0 16px 60px rgba(0, 0, 0, .28);
+  overflow: auto;
+  overscroll-behavior: contain;
+  font: 15px/1.6 var(--base-font-family, system-ui, sans-serif);
+}
+#nuclear-figure-dialog * { box-sizing: border-box; }
+#nuclear-figure-dialog::backdrop { background: rgba(0, 0, 0, .72); }
+#nuclear-figure-dialog:not([open]) { display: none; }
+#nuclear-figure-dialog .nuclear-dialog-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+#nuclear-figure-dialog #nuclear-figure-title {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: var(--nuclear-ink);
+  font-size: 20px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+#nuclear-figure-dialog #nuclear-figure-title::before,
+#nuclear-figure-dialog #nuclear-figure-title::after { display: none; }
+#nuclear-figure-dialog .nuclear-dialog-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  margin: 12px 0;
+}
+#nuclear-figure-dialog :is(button, #nuclear-figure-download) {
+  appearance: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  min-height: 44px;
+  padding: 8px 12px;
+  border: 1px solid var(--nuclear-line);
+  border-radius: 5px;
+  background: var(--nuclear-surface);
+  color: var(--nuclear-gold);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: none;
+}
+#nuclear-figure-dialog :is(button, #nuclear-figure-download):hover {
+  border-color: var(--nuclear-gold);
+  background: var(--nuclear-soft);
+}
+#nuclear-figure-dialog :is(button, a, input):focus-visible {
+  outline: 3px solid var(--nuclear-gold);
+  outline-offset: 3px;
+}
+#nuclear-figure-dialog #nuclear-zoom {
+  width: 170px;
+  max-width: 100%;
+  min-height: 32px;
+  accent-color: var(--nuclear-gold);
+}
+#nuclear-figure-dialog #nuclear-zoom-value {
+  min-width: 4ch;
+  color: var(--nuclear-muted);
+  font-variant-numeric: tabular-nums;
+}
+#nuclear-figure-dialog #nuclear-figure-canvas {
+  width: 100%;
+  min-width: 0;
+  height: min(66dvh, 740px);
+  padding: 16px;
+  border: 1px solid var(--nuclear-line);
+  border-radius: 5px;
+  background: #fff;
+  overflow: auto;
+  overscroll-behavior: contain;
+  touch-action: pan-x pan-y;
+}
+#nuclear-figure-dialog #nuclear-figure-image {
+  display: block;
+  max-width: none;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: #fff;
+}
+@media (max-width: 600px) {
+  .nuclear-report figure.nuclear-figure { margin: 24px 0; padding: 12px; }
+  .nuclear-report .nuclear-source-fields {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 3px;
+    padding: 14px;
+  }
+  .nuclear-report .nuclear-source-fields dd { margin-bottom: 9px; }
+  .nuclear-report .nuclear-source-fields dd:last-child { margin-bottom: 0; }
+  .nuclear-report .nuclear-evidence-record summary { padding: 12px 14px; }
+  .nuclear-report .nuclear-data-table { min-width: 640px; }
+  #nuclear-figure-dialog {
+    width: calc(100vw - 20px);
+    max-width: calc(100vw - 20px);
+    max-height: calc(100dvh - 20px);
+    padding: 14px;
+  }
+  #nuclear-figure-dialog #nuclear-figure-title { font-size: 17px; }
+  #nuclear-figure-dialog #nuclear-figure-canvas { height: 57dvh; padding: 10px; }
+  #nuclear-figure-dialog #nuclear-zoom { width: 130px; }
+}
+@media print {
+  .nuclear-report {
+    --nuclear-ink: #111;
+    --nuclear-muted: #333;
+    --nuclear-gold: #6e5016;
+    --nuclear-line: #bbb;
+    --nuclear-surface: #fff;
+    --nuclear-soft: #fff;
+  }
+  .nuclear-report .nuclear-evidence-controls,
+  .nuclear-report .nuclear-figure-controls,
+  #nuclear-figure-dialog { display: none !important; }
+  .nuclear-report .nuclear-figure > a[data-nuclear-figure] { display: block !important; }
+  .nuclear-report figure.nuclear-figure { break-inside: avoid; overflow: visible; }
+  .nuclear-report .nuclear-table-scroll { overflow: visible; border: 0; }
+  .nuclear-report .nuclear-data-table { min-width: 0; font-size: 10pt; }
+  .nuclear-report .nuclear-data-table tr { break-inside: avoid; }
+  .nuclear-report .nuclear-evidence-record { break-inside: auto; }
+  .nuclear-report .nuclear-evidence-record > :not(summary) { display: block !important; }
+  .nuclear-report .nuclear-evidence-record > .nuclear-source-fields { display: grid !important; }
+  .nuclear-report .nuclear-evidence-record summary { font-weight: 700; }
+  .nuclear-report .nuclear-source-links { overflow-wrap: anywhere; }
+}

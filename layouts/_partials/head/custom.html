@@ -44,3 +44,11 @@
   {{ $style := resources.Get "css/industrial-report.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous">
 {{ end }}
+
+{{ if .Params.nuclearreview }}
+  {{ $nuclearCSS := resources.Get "css/nuclear-review.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $nuclearCSS.RelPermalink }}" integrity="{{ $nuclearCSS.Data.Integrity }}" crossorigin="anonymous">
+  {{ $nuclearJS := resources.Get "js/nuclear-review.js" | minify | fingerprint }}
+  <script defer src="{{ $nuclearJS.RelPermalink }}" integrity="{{ $nuclearJS.Data.Integrity }}" crossorigin="anonymous"></script>
+  <style>body:has(.nuclear-report) .main-article .article-image img{height:auto!important;aspect-ratio:3/2;object-fit:contain!important}body:has(.nuclear-report) .research-actions{flex-wrap:wrap}body:has(.nuclear-report),body:has(.nuclear-report) *,body:has(.nuclear-report) *::before,body:has(.nuclear-report) *::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}</style>
+{{ end }}

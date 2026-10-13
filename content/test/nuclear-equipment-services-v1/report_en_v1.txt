@@ -1,0 +1,739 @@
+Global Nuclear Equipment and Services Industry Report
+
+Review version 1.0 | Evidence cutoff 2026-10-13 | Global scope
+
+This report examines the global suppliers of equipment, engineering, fuel-cycle processing and technical services used by civilian nuclear-power plants. It covers construction, operation, life extension and the back end. Uranium feed appears as supply-chain context; electricity sales, uranium mining revenue, military uses and medical-isotope revenue are outside the market boundary.
+
+The commercial opportunity depends on both new projects and the existing fleet. The report follows how qualified equipment becomes an operating plant and how long-term fuel, inspection and maintenance contracts create service demand. Announced projects, orders, revenue and cash flow represent different stages. The analysis uses original disclosures and preserves their reporting periods and business boundaries.
+
+Sources were reviewed on 13 October 2026, with a public-information cutoff of that date. No unified global equipment-and-services revenue total is asserted. The share figure is explicitly limited to 2025 uranium-enrichment service capacity. Future production dates remain company plans. This is review version 1.0.
+
+Reactor hall at the existing Dukovany Nuclear Power Plant, Czech Republic, 6 November 2012. Photo: Petr Pavlicek / IAEA, IAEA Imagebank, CC BY-SA 2.0. Used unchanged as an industry illustration; it does not show the later Dukovany new-build project. [I01]
+
+Part 1 Industry Story
+
+Part 1: Industry Story | One reactor enters service, an entire supply chain comes into view
+
+On 29 April 2024, Georgia Power announced that Unit 4 at Plant Vogtle in Georgia, United States, had entered commercial operation. Unit 3 had entered service on 31 July 2023. A same-day securities filing confirmed Unit 4's placement in service. The milestone marked the transition from construction, commissioning and acceptance to electricity supplied commercially.[S01][S02]
+
+The participants performed different jobs. Georgia Power is a co-owner, Southern Nuclear operates the plant, and Bechtel was brought in during 2017 to help complete the engineering, procurement and construction of Units 3 and 4. Bechtel reported a peak project workforce exceeding 9,000. Commercial operation depended on coordinated delivery by owners, operators, contractors and construction workers.[S01][S03]
+
+Vogtle offers a concrete way to understand this industry. Equipment becomes useful through installation, system integration, commissioning and regulatory acceptance; services continue during operation. The author's interpretation is that nuclear equipment and services form a group of businesses spanning the plant lifecycle. Competitiveness therefore includes technology, delivery quality, verifiable operating performance and long-term maintenance capability.[S14]
+
+Milestones also need precise interpretation. When EDF announced Flamanville 3's first grid connection on 21 December 2024, it said further tests, connections and disconnections would follow as output increased towards full power. First grid connection, commercial operation and sustained operation provide different evidence. Supplier achievements should be assessed against the stage actually completed, alongside subsequent engineering and financial disclosures.[S13]
+
+Part 2 Industry History
+
+Part 2: Industry History | From electricity experiments to a lifecycle industry
+
+The starting point depends on the definition. DOE records that EBR-I first produced usable fission electricity on 20 December 1951, initially lighting four 200-watt bulbs. IAEA identifies Obninsk's supply to a national grid in June 1954 as another milestone. Calder Hall opened in 1956 as an important full-scale commercialization example. Experimental electricity, grid supply and full-scale commercial facilities represent distinct stages; an unqualified claim of the world's first would obscure them.[S04][S05][S24]
+
+During the 1960s and 1970s, nuclear moved from demonstration towards large orders. David Fischer's IAEA-published history describes demonstration reactors operating in leading industrial countries by the early 1960s and greater interest after the 1973 oil crisis. Orders were already declining by the mid-1970s, before Three Mile Island, while optimistic capacity forecasts later proved excessive. The author's reading is that energy-security needs encourage procurement, but demand, construction costs and economic conditions can change investment decisions; development does not follow a continuously accelerating curve.[S07]
+
+Accidents reshaped equipment and service requirements. On 28 March 1979, equipment failures, a malfunctioning valve, misleading indications and operator actions contributed to a partial core meltdown at Three Mile Island Unit 2. DOE describes subsequent improvements in operator training and the establishment of INPO in 1979 to improve plant management, training and operation. Reliability therefore requires attention to equipment, instrument information and people's understanding of the entire system.[S08]
+
+Chernobyl Unit 4's accident occurred on 26 April 1986. INSAG-7 examined design deficiencies, regulatory arrangements and safety culture. The Convention on Nuclear Safety, adopted on 17 June 1994 and effective from 24 October 1996, covers regulation, technical safety, resources, quality assurance and emergency preparedness, supported by reporting and peer review. Equipment and engineering services supplied across borders consequently need to accommodate national regulation and international safety cooperation.[S09][S11]
+
+Fukushima Daiichi's accident on 11 March 2011 reinforced attention to extreme external events. IAEA's technical assessment describes earthquake and tsunami impacts on cooling and containment, with multiple units, sites and surrounding infrastructure potentially affected together. The author's interpretation is that power, cooling, instrumentation and emergency measures must be assessed as an integrated system. Additional components provide meaningful improvements when accompanied by analysis of common-cause failures, independence and accident response arrangements.[S10]
+
+Mature plants created another development path. IEA's 2019 analysis highlighted ageing reactors built during the 1970s and 1980s in advanced economies. On 12 December 2025, NRC announced renewed licences for Browns Ferry's three units permitting operation up to 80 years, following safety and environmental reviews. This illustrates continuing opportunities for equipment upgrades and engineering services; actual operating periods remain dependent on plant conditions and regulatory decisions.[S19][S15]
+
+Decommissioning also became long-term business. Calder Hall stopped generating in 2003, started defuelling in 2011 and announced completion of fuel removal in 2019, with further decommissioning still ahead. The author's interpretation is that ending electricity sales does not end engineering responsibilities. Historic plants create work across successive stages, while owners need to plan the associated funding, facilities and execution capability.[S06]
+
+The next commercialization wave includes large reactors, SMRs and other advanced reactors. IAEA defines SMRs as units of up to 300 MWe and highlights factory assembly and modular installation. Its 2023 article records Akademik Lomonosov entering commercial operation in May 2020 with two 35 MWe reactors. On 23 April 2026, Bechtel announced field execution at TerraPower's Natrium Kemmerer Unit 1 as EPC partner. That is a construction milestone for another advanced-reactor route; it does not establish commercial operation or competitive costs.[S16][S22]
+
+These developments explain two sources of demand: existing plants require maintenance, upgrades, lifetime extension and decommissioning, while new projects require design, manufacturing, construction and commissioning. Procurement timing, risks and competitive advantages differ. The author's framework examines them within one lifecycle value chain and distinguishes individual markets, keeping claims about each technology or service tied to the evidence available.
+
+Part 3 Market Landscape
+
+Market boundaries: different deliveries behind one plant
+
+This report defines the industry as specialist equipment, engineering, fuel-cycle processing and technical services purchased throughout the life of civilian nuclear-power plants. The nuclear island includes vessels, steam generators and reactor pumps; the conventional island includes turbines and their services. Operations require fuel, instrumentation and control, inspections and upgrades, while the back end includes packages, dismantling and waste-related services. Electricity sales, uranium mining itself, military work and medical-isotope revenue fall outside this research boundary. [M06][M09][M11]
+
+Each activity has its own suppliers, approvals and contracts. A diversified company can cooperate with another supplier in one activity and compete in another. Supplier nationality, reactors served and consolidated revenue therefore provide different information. This report uses a value-chain matrix and reserves quantitative shares for one clearly defined service segment. [M09][M11]
+
+The value chain: new construction and operating services
+
+Customers for nuclear equipment and services are chiefly plant owners, project organisations and operating utilities. This report treats nuclear-grade materials and the fuel chain as supporting upstream activities, while focusing on reactor technology, nuclear-island and turbine-island equipment, I&C, construction, maintenance, life extension and decommissioning. Electricity sales and supplier revenue have different economic meanings and cannot be added to estimate this equipment-and-services market.
+
+Value-chain analysis must follow both new projects and the operating fleet. New construction creates demand for design, long-lead equipment and site work; operating plants require fuel, outages, replacement components and modernisation. Product catalogues and disclosed contracts suggest that suppliers can serve both demand streams, but responsibilities, pricing and revenue recognition remain contract-specific. This is an analytical inference.[V02][V12][V14]
+
+Upstream: heavy forgings and fuel processing address different constraints
+
+Upstream supply includes heavy castings and forgings, special materials, heat treatment and precision machining. Doosan lists forgings for reactors and steam generators. JSW's 2024 integrated report describes pressure-vessel and steam-generator components and turbine/generator shafts. These examples show that upstream value lies in producing components for specific equipment requirements, rather than simply supplying steel by weight.[V13][V21]
+
+The supporting fuel chain is distinct. Cameco participates in uranium production, conversion and some fuel manufacturing; Urenco supplies enrichment; Orano's Front End includes chemistry and enrichment; Westinghouse, Framatome and GE Vernova-led Global Nuclear Fuel participate in fabrication or fuel services. Mine output, conversion kgU, enrichment SWU and assembly counts measure different stages and cannot form one capacity indicator.[V01][V02][V04][V06][V15]
+
+At year-end 2025, Cameco disclosed about 83 million kgU of UF6 conversion commitments, while Urenco's order book was EUR 21.3 billion, extending into the 2040s. These are multi-year supply arrangements, not 2025 revenue. Fuel security helps explain why technology vendors discuss reactor deployment and subsequent fuel services together, although actual commitments depend on each contract.[V01][V04]
+
+Midstream: reactor technology, nuclear-island equipment and I&C
+
+Reactor-technology vendors provide design systems and technical services, while manufacturers build particular components; these roles can overlap. Westinghouse combines reactor technology with operating-plant equipment and fuel. Former GE Hitachi is named GE Vernova Hitachi Nuclear Energy (GVH) in current official material and supplies reactor technology, fuel and services, including BWRX-300 deployment support. Rosatom spans fuel, construction, generation and back-end management, making business boundaries essential.[V02][V15][V16]
+
+Nuclear-island equipment includes reactor vessels and internals, steam generators, coolant pumps, pressurisers and handling equipment, with configurations varying by reactor type. Framatome, Doosan and BWXT each cover parts of this scope. Curtiss-Wright supplies AP1000 coolant-pump technology; Dongfang lists nuclear- and turbine-island supply capabilities; Shanghai Electric's 2025 sustainability report records coolant pumps and nuclear/turbine-island supplies for Zhangzhou unit 1. This does not establish direct competition across every reactor design.[V03][V07][V10][V12][V18][V22]
+
+I&C covers monitoring, control and protection. Doosan's MMIS includes emergency safety functions; Framatome reports new-build and modernisation work in safety I&C; Curtiss-Wright's portfolio includes I&C and nuclear qualification support. A useful analytical comparison examines compatibility, nuclear qualification and continuing support before comparing prices or order values.[V03][V10][V12][V27]
+
+Turbine islands and construction: responsibilities follow the project
+
+The turbine island converts steam energy into electricity through turbines, generators and associated water-steam systems. Arabelle Solutions supplies turbine-island technology and services. In January 2026 it announced selection by Bechtel and Westinghouse for three turbine-generator sets and related equipment at Poland's first nuclear plant. Reactor technology, construction and turbine equipment represent different responsibilities; selection does not mean the plant has been completed.[V25]
+
+Korean project arrangements also show this division of labour. KHNP signed the final two-unit Dukovany contract in June 2025. KEPCO E&C subsequently disclosed an architect-engineering contract with KHNP covering auxiliary procurement and licensing support. In February 2026, Doosan announced a contract of about KRW 320 billion with Czech subsidiary Doosan Skoda Power for two turbine/control-system sets, linking Korean project organisation with Czech equipment capabilities.[V11][V23][V24]
+
+These examples suggest that EPC and other delivery organisations manage equipment interfaces as well as engineering, procurement and construction responsibilities. Similar contract labels do not establish identical schedule or cost exposure. The value-chain diagram should place construction firms such as Bechtel separately from I&C manufacturers, and intra-group equipment contracts must not be counted twice as industry sales. This is an inference from the disclosed scopes.[V11][V24][V25]
+
+Downstream: operating plants extend equipment relationships into services
+
+After delivery, utilities continue buying outage maintenance, parts, inspections and upgrades. Most recurring Westinghouse Operating Plants business is arranged through contracts lasting three to more than ten years. Doosan lists maintenance, replacement, engineering and I&C updates; Arabelle provides turbine/generator overhauls and serves legacy equipment made by other manufacturers. Service opportunities can therefore involve both a vendor's own equipment and other installed brands.[V02][V14][V17]
+
+Major-component replacement reconnects manufacturing with field engineering. Framatome reported such work in North America and South Africa in 2025 and began replacing four Flamanville 2 steam generators in November. BWXT supplies commercial nuclear equipment, fuel and engineering/maintenance and acquired Kinectrics in 2025. Kinectrics adds materials testing, operating inspections, lifecycle management and licensing support, illustrating the need for evidence on equipment fitness as well as field execution.[V03][V07][V26]
+
+Spare parts also face declining OEM support. Framatome's Nuclear Parts Center describes quality records, compatibility, qualification and acceptance requirements for safety-related items while some original manufacturers reduce support or exit. The analytical implication is that suppliers must establish suitability and preserve auditable evidence, not merely locate replacements. Supplier analysis and life-extension support must also be distinguished from an actual licensing decision.[V27]
+
+Life-extension support also includes licensing analyses. Westinghouse lists integrated plant assessment, time-limited aging analysis and environmental-report support; Framatome covers licence renewal, aging and asset management and modernisation. These services help utilities prepare for continued operation, while actual extension depends on regulatory approval and plant-specific conditions.[V28][V29]
+
+Decommissioning and waste services continue the equipment lifecycle
+
+Decommissioning involves dismantling, decontamination, packaging, transport arrangements and radioactive-waste management. Orano's Back End combines recycling, nuclear packages and services, dismantling/services and engineering; its 2025 revenue was EUR 2.352 billion. This is a portfolio of end-of-lifecycle activities rather than a pure decommissioning-market figure, and it does not imply identical spent-fuel pathways in every country.[V06]
+
+Rosatom's 2025 operating results include spent-fuel and radioactive-waste management, while Kinectrics also provides waste-related capabilities. Such overlapping roles show that upstream, midstream and downstream are analytical categories rather than exclusive company classifications. Project scope, material categories and long-term responsibilities help explain back-end business models better than a single group-revenue figure.[V16][V26]
+
+Contracts and estimate revisions can also affect back-end performance. Orano identified a one-off Japanese-utility contribution in the 2024 comparison base and end-of-lifecycle estimate revisions affecting 2025 adjusted earnings; its H1 2026 disclosure also reported disruption in Mining and Front End. These factors must be separated before attributing group earnings changes to decommissioning demand.[V05][V19]
+
+Financial evidence: reporting boundaries matter more than simple rankings
+
+Financial disclosures validate activity without automatically defining a global market. Framatome reported 2025 revenue of EUR 5.399 billion and new orders of EUR 5.924 billion. BWXT Commercial Operations revenue was USD 853.070 million but also included medical activities. The segment reported USD 586.158 million in H1 2026 revenue and USD 1,600.454 million in June-end backlog. Backlog is remaining contractual work rather than current sales, and half-year revenue should not simply be doubled.[V03][V07][V08]
+
+Curtiss-Wright's 2025 group sales of USD 3,498.372 million and Naval & Power sales of USD 1,503.002 million both include activities outside commercial nuclear power. Urenco enrichment revenue and Orano fuel-chain revenue also refer to different stages. Operator sales, supplier group sales, nuclear-segment revenue and contract values must remain distinct. This report describes competitive roles and bounded disclosures rather than adding incompatible figures or ranking global equipment-and-service companies from them.[V04][V06][V09]
+
+Contract structures also govern reported revenue, cash and risk. BWXT describes fixed-price and time-and-materials commercial contracts, with large custom-component and service revenue generally recognised over time and most contracts paid at milestones. New orders, revenue recognition and cash collection can therefore fall in different periods. Assessing suppliers requires connecting contract execution, cost estimates, payment terms and cash flow.[V07]
+
+Global demand: the operating fleet and new construction
+
+WNA’s 8 October 2026 table lists 442 operable reactors with 405,227 MWe net capacity and 80 under construction with 87,031 MWe gross capacity. Operable means grid-connected; construction includes suspended projects. Net and gross capacity cannot be added directly. These are demand indicators, not supplier orders or revenue. [M02]
+
+Regional differences: different weights of services and construction
+
+The same table lists 94 operable reactors in the USA and 57 in France. Construction includes 38 in China, eight in India, seven in Russia and four each in South Korea, Turkey and Egypt. The mix suggests different entry points: replacement equipment, maintenance and fuel for established fleets, and manufacturing and engineering where construction is stronger. This is an inference from reactor status, not national supplier shares; individual procurement arrangements still matter. [M02]
+
+Competition: technology platforms overlap with equipment and services
+
+Framatome spans nuclear steam-supply systems, heavy components, instrumentation and control, fuel and maintenance; EDF reports work on more than 380 reactors. GE Vernova’s Nuclear Power unit covers boiling-water-reactor technology, fuel, support services and SMRs developed with Hitachi, while some nuclear-turbine services sit in Steam Power. Technology ownership, equipment manufacture and recurring services are therefore not exclusive categories, and reactor-service footprints can overlap. [M09][M11]
+
+A comparable segment: global enrichment-service capacity
+
+The chart uses one WNA 2025 capacity table, in thousand SWU/year: Rosatom 29,133; Urenco 17,300; CNNC 13,789; Orano 7,500; INB and JNFL together 355. Author-calculated shares are 42.8%, 25.4%, 20.3%, 11.0% and 0.5%. They describe enrichment capacity, not revenue or deliveries; CNNC is estimated and some capacity primarily serves domestic demand. [M01]
+
+The rows sum to 68,077, versus the published total of 68,076 thousand SWU/year: a roughly 0.0015% discrepancy that the source does not explain. Shares use the row sum; all source rows are preserved. [M01]
+
+Orders and capacity: demand signals need a delivery timetable
+
+Urenco disclosed a €27.3bn order book at June 2026, up from €21.3bn at December 2025, with contracts extending into the 2040s. H1 revenue fell from €830.4m to €645.4m; the company mainly cited delivery timing. Long-term commitments and one half-year’s revenue therefore measure different things, and a multi-year backlog is not annual market size. [M03][M04]
+
+Expansion also takes time. Orano’s 7.5-million-SWU/year Georges Besse II plant is adding a planned 2.5 million SWU/year, with first production scheduled for 2028 and full commissioning for 2030. Planned capacity belongs in the pipeline until commissioned, rather than in the current-capacity share chart. Orders, investment approval, construction and production are separate stages. [M05]
+
+Company finances: useful signals with different reporting boundaries
+
+Framatome disclosed 2025 revenue of €5,399m and new orders of €5,924m; EDF reported H1 2026 order intake of about €2.7bn. GE Vernova’s 2025 Nuclear Power revenue was US$1,018m, but nuclear-related turbine services also appear in Steam Power alongside coal activities. Such figures describe specific businesses; they do not provide comparable whole-industry share numerators. [M08][M09][M12]
+
+BWXT Commercial Operations reported US$853.070m in 2025, including medical activities and US$231.0m contributed by its Kinectrics acquisition. Orano’s €2,696m H1 2026 group revenue includes mining, front-end and back-end activities. Acquisitions, currencies, business boundaries and supply-chain transactions require adjustment. Our primary-source review found no common-period, common-perimeter global revenue total that avoids double counting. We therefore omit an unverified total; this is a limitation of the evidence reviewed, not a claim that the market has no size. [M06][M10]
+
+Figure 1 Value chain outline
+
+Upstream
+
+  Uranium feed and conversion → Cameco · Orano
+
+  Enrichment services → Urenco · Orano, Rosatom · CNNC
+
+  Nuclear castings and forgings → Doosan Enerbility
+
+  Fuel assemblies → Westinghouse · Framatome
+
+Midstream
+
+  Reactor systems → Westinghouse · Rosatom, GE Vernova Hitachi
+
+  Nuclear island components → Framatome · Doosan, BWXT
+
+  Steam turbines and generators → Arabelle Solutions · Doosan
+
+  Controls and construction → I&C: Framatome · Curtiss-Wright, EPC: Bechtel
+
+Downstream
+
+  Outage and maintenance → Westinghouse · Framatome
+
+  Testing and inspection → BWXT · Kinectrics, Curtiss-Wright
+
+  Operating life extension → Framatome · Westinghouse
+
+  Waste and decommissioning → Orano
+
+Category links do not establish contracts or market shares. Companies may span stages. Uranium feed is input context. Sources are mapped in figure_methodology.txt.
+
+Figure 2 Global uranium enrichment service capacity 2025
+
+Rosatom | 29,133 thousand SWU/year | 42.8%
+
+Urenco | 17,300 thousand SWU/year | 25.4%
+
+CNNC | 13,789 thousand SWU/year | 20.3%
+
+Orano | 7,500 thousand SWU/year | 11.0%
+
+Other (INB, JNFL) | 355 thousand SWU/year | 0.5%
+
+Author calculation: each source row divided by row total 68,077, times 100. Published total 68,076; source does not explain difference. CNNC estimated. Not revenue or deliveries. Source M01. Chart data and notes appear in the independent appendix.
+
+Part 4 Industry Challenges
+
+Part 4: Industry Challenges | Turning demand into deliverable, profitable projects
+
+Engineering delivery. Quality problems can change schedules and funding needs. On 16 December 2022, EDF raised Flamanville 3's estimated completion cost from EUR 12.7 billion to EUR 13.2 billion, in 2015 euros excluding construction-period interest. It principally linked the schedule adjustment to studies of stress-relief heat treatment for repaired welds; pass-through weld repair required over twelve months of studies and qualification. The author's interpretation is that designs, processes and interfaces should mature together. Earlier validation can reduce rework, but cannot guarantee timely delivery. This was a dated estimate, not a final outturn cost.[S12]
+
+Financing and risk allocation. IEA's 2025 report identifies capital intensity, long construction and complexity as financing challenges; repeated designs and clearer revenues can help. Sizewell C's UK investment decision on 22 July 2025 specified an approximately GBP 38 billion construction target in 2024 prices, with RAB arrangements sharing costs among consumers, taxpayers and investors. The author's interpretation is that financing reallocates risks and cash-flow timing; cost control remains necessary. Targets, electricity-price commitments and realised returns require separate assessment.[S20][S18]
+
+People and execution. Vogtle illustrates the scale of specialized staffing, while retaining experience requires continuing projects and training. On 6 October 2026, Bechtel and the University of South Carolina announced a nuclear workforce fund connecting universities, technical colleges and training partners across engineering, project management and skilled trades. The announcement establishes a programme, not demonstrated graduates, resolved shortages or measured productivity gains. The author's interpretation is that suppliers expanding orders should also assess qualified personnel, site management and training times.[S03][S21]
+
+Fuel and diversification. IEA's 2025 report attributes over 99% of uranium-enrichment capacity to four suppliers: a specific capacity measure, not nuclear-equipment revenue share. Some advanced reactors requiring HALEU also need downstream processing. DOE awarded six deconversion frameworks on 8 October 2024 for subsequent tasks. The author's interpretation is that procurement supports demand visibility, while supply requires facilities, approvals and delivery. Ceilings are not revenue; 2024 supply conditions are not treated as current.[S20][S17]
+
+SMR economics. IAEA's 2023 explanation says lower upfront capital per unit still requires deployed evidence of economic competitiveness. The author's interpretation is that factory assembly must be supported by repeat orders, transportation, installation, site infrastructure and approvals. Target prices are promises or forecasts; learning effects require observed hours, costs and performance across repeated deliveries. Comparisons with large reactors need consistent price years, financing assumptions, cost boundaries and electricity-output measures.[S16]
+
+Lifetime extension. IAEA SSG-48 recommends managing physical ageing and obsolescence, re-evaluating embrittlement and cumulative fatigue, and retaining auditable, retrievable evidence. The author's interpretation is that services create value by turning inspections, equipment records and safety analyses into a reviewable case for continued operation. Regulatory permission allows continued operation; economic viability also depends on upgrade costs, outage plans and subsequent performance. Browns Ferry's 80-year permissions cannot establish the same potential for every plant.[S14][S15]
+
+Safety, decommissioning and public acceptance. Fukushima underlines the need to review extreme external hazards and protective arrangements. DOE's 2024 explanation addresses spent-fuel transport, storage and disposal planning, including community participation in interim-storage siting. Calder Hall's lengthy defuelling illustrates post-generation requirements. The author's interpretation is that facilities, transport, permissions, funding and continuing responsibilities belong within the project boundary. Progress on storage does not establish completion of final disposal.[S10][S23][S06]
+
+The quality of order conversion depends on these issues. The author's assessment framework asks what stage permits cover, whether financing is in place, whether key processes are qualified, whether equipment is accepted and whether operational results match announced milestones. Framework agreements, construction progress and commercial operation represent different stages; supplier revenue and profit require contract execution and financial evidence. This framework does not predict any company's profits or a definitive future market size.
+
+Appendix Supporting Evidence
+
+[S01] Vogtle Unit 4 enters commercial operation
+
+Publisher Georgia Power. Published 2024-04-29. Event 2024-04-29. Period Unit 3: 2023-07-31; Unit 4: 2024-04-29. Location main announcement paragraphs 1-3; forward-looking note. Scope Georgia, United States; units dates; years.
+
+Confirms operating dates and operator identity. Expected service life is forward-looking; achieved lifetime and returns are not established.
+
+https://www.georgiapower.com/news-hub/press-releases/vogtle-unit-4-enters-commercial-operation.html
+
+[S02] Form 8-K, Item 8.01 Other Events, Southern Company and Georgia Power
+
+Publisher Southern Company / Georgia Power, filed with SEC. Published 2024-04-29. Event 2024-04-29. Period 2024-04-29. Location Item 8.01; signatures. Scope Georgia, United States; units date.
+
+Same-day securities filing corroborates Unit 4 entering service. It does not establish costs, profit or future performance.
+
+https://www.sec.gov/Archives/edgar/data/92122/000009212224000039/so-20240429.htm
+
+[S03] Plant Vogtle Unit 4 Achieves Commercial Operation
+
+Publisher Bechtel. Published 2024-04-29. Event 2017 and 2024-04-29. Period Vogtle construction through 2024. Location announcement; Background. Scope United States; units workers; dates.
+
+Supports Bechtel's 2017 appointment and project staffing. Project figures and supplier assessments cannot establish global industry outcomes.
+
+https://www.bechtel.com/press-releases/plant-vogtle-unit-4-achieves-commercial-operation/
+
+[S04] 9 Notable Facts About the World’s First Nuclear Power Plant - EBR-I
+
+Publisher US Department of Energy, Office of Nuclear Energy. Published 2019-06-18. Event 1951-12-20; 1954. Period historical milestones. Location facts 1-3. Scope United States and former USSR; units watts; megawatts; dates.
+
+Supports EBR-I's 1951 usable-electricity milestone. This definition differs from national-grid supply and full-scale commercial generation.
+
+https://www.energy.gov/ne/articles/9-notable-facts-about-worlds-first-nuclear-power-plant-ebr-i
+
+[S05] International Conference on Fifty Years of Nuclear Power - the Next Fifty Years, IAEA-CN-114, Announcement and Call for Papers
+
+Publisher IAEA. Published undisclosed; conference held 2004-06-27 to 2004-07-02. Event 1954-06. Period 1954 milestone. Location PDF page 1, Background. Scope Obninsk, former USSR; units year and month.
+
+Undated announcement for a 2004 conference supports the June 1954 grid milestone. It does not establish a specific day.
+
+https://www-pub.iaea.org/Mtcd/Meetings/PDFplus/2004/cn114ann.pdf
+
+[S06] History made as final fuel leaves iconic nuclear plant
+
+Publisher Sellafield Ltd / UK Nuclear Decommissioning Authority. Published 2019-09-03. Event 1956; 2003; 2011; 2019-09. Period 1956-2019 operating and defuelling lifecycle. Location announcement paragraphs; decommissioning details. Scope United Kingdom; units years; fuel rods; dates.
+
+Documents Calder Hall's generation, defuelling and subsequent stages. Completed fuel removal does not establish completed decommissioning.
+
+https://www.gov.uk/government/news/history-made-as-final-fuel-leaves-iconic-nuclear-plant
+
+[S07] History of the International Atomic Energy Agency: The First Forty Years
+
+Publisher David Fischer, published by IAEA. Published 1997-09. Event 1960s-1995. Period historical retrospective through 1997. Location printed pages 146-147 and 158; PDF pages 158-159 and 170; copyright PDF page 8. Scope global, with advanced-economy examples; units years; qualitative history.
+
+Historical research supports commercialization and order cycles. The author does not represent IAEA; old forecasts are not current data.
+
+https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1032_web.pdf
+
+[S08] 5 Facts to Know About Three Mile Island
+
+Publisher US Department of Energy, Office of Nuclear Energy. Published 2022-05-04. Event 1979-03-28. Period 1979 accident and aftermath. Location facts 2 and 4. Scope United States; units date.
+
+DOE's retrospective supports accident mechanisms and training changes. The inaccessible NRC page and additional health conclusions are excluded.
+
+https://www.energy.gov/ne/articles/5-facts-know-about-three-mile-island
+
+[S09] The Chernobyl Accident: Updating of INSAG-1, Safety Series 75-INSAG-7
+
+Publisher International Nuclear Safety Advisory Group / IAEA. Published 1992-11. Event 1986-04-26. Period 1986 accident reviewed by 1992. Location Introduction; conclusions; Annex I printed pp. 85-88 (PDF pp. 95-98); copyright PDF p.4. Scope former USSR / Ukraine; units date; qualitative safety assessment.
+
+INSAG-7 supports design, regulation and safety-culture findings. The accident investigation does not characterize every reactor design.
+
+https://pub.iaea.org/MTCD/publications/PDF/Pub913e_web.pdf
+
+[S10] The Fukushima Daiichi Accident, Technical Volume 2: Safety Assessment
+
+Publisher IAEA. Published 2015-08. Event 2011-03-11. Period 2011 accident; investigation through 2015. Location Introduction pp.1-2; sections 2.1.7-2.1.8 and 2.2.14; PDF pp.12-13, 57-61, 92. Scope Japan; lessons relevant globally; units date; qualitative safety functions.
+
+The 2015 technical volume supports external-event and defence findings. It provides neither present accident probabilities nor legal blame allocation.
+
+https://www-pub.iaea.org/MTCD/Publications/PDF/AdditionalVolumes/P1710/Pub1710-TV2-Web.pdf
+
+[S11] Convention on Nuclear Safety: Introduction to the CNS and Its Associated Rules of Procedure and Guidelines
+
+Publisher IAEA. Published 2017-01. Event 1994-06-17; 1996-10-24. Period historical treaty adoption and entry into force. Location CNS Brochure Introduction, printed page 2; cover January 2017. Scope contracting parties globally; units dates.
+
+The 2017 brochure supports treaty dates and obligation scope. Historical party counts are not presented as current.
+
+https://www.iaea.org/sites/default/files/19/09/19-00679e_web_cns.pdf
+
+[S12] Update on the Flamanville EPR
+
+Publisher EDF. Published 2022-12-16. Event 2022-12-16 schedule/cost update. Period project forecast at 2022-12-16. Location opening paragraphs; industrial milestones; footnote 2. Scope France; units billion EUR, 2015 prices, excluding interim interest.
+
+Supports the 2022 estimate and weld-process issue. EUR 13.2 billion uses 2015 prices, excluding construction-period interest; final costs are unproven.
+
+https://www.edf.fr/groupe-edf/espaces-dedies/journalistes/tous-les-communiques-de-presse/point-dactualite-sur-lepr-de-flamanville
+
+[S13] Update on the Flamanville EPR: the reactor produces its first electrons on the national electricity grid
+
+Publisher EDF. Published 2024-12-21. Event 2024-12-21. Period first nuclear reaction 2024-09-03; first grid connection 2024-12-21. Location announcement paragraphs 1-4. Scope France; units MW; dates; local time.
+
+Supports first grid connection and further testing in December 2024. It does not establish full-power or sustained performance.
+
+https://www.edf.fr/en/the-edf-group/dedicated-sections/journalists/all-press-releases/update-on-the-flamanville-epr-the-reactor-produces-its-first-electrons-on-the-national-electricity-grid
+
+[S14] Ageing Management and Development of a Programme for Long Term Operation of Nuclear Power Plants, SSG-48
+
+Publisher IAEA. Published 2018-11. Event not applicable. Period technical safety guide. Location Original PDF printed pp. 1-3, 47, 55-61; paras 1.2, 5.67, 7.13-7.39. Both PDF and IAEA online edition were actually read.. Scope global technical guidance; units neutron fluence; fatigue criteria; no market units.
+
+Supports ageing assessments and auditable documentation. Technical guidance does not substitute for plant-specific regulatory permission.
+
+https://www-pub.iaea.org/MTCD/Publications/PDF/P1814_web.pdf
+
+[S15] NRC Renews Browns Ferry Operating License, No. 25-065
+
+Publisher US Nuclear Regulatory Commission. Published 2025-12-12. Event 2025-12-12. Period licence renewal review safety July 2025, environment August 2025. Location one-page announcement. Scope United States; units operating years; dates.
+
+Supports Browns Ferry's 2025 permissions and reviews. Plant-specific permission cannot establish 80-year operation for all reactors.
+
+https://ww2.nrc.gov/sites/default/files/cdn/doc-collection-news/2025/25-065.pdf
+
+[S16] What are Small Modular Reactors (SMRs)?
+
+Publisher Joanne Liou, IAEA. Published 2023-09-13. Event 2020-05 commercial operation example. Period status as of 2023 article. Location definition; Advantages; What is the status of SMRs?. Scope global; units MW(e) per unit.
+
+The 2023 article supports SMR definition, examples and economic uncertainty. Historic design counts are not current totals.
+
+https://www.iaea.org/newscenter/news/what-are-small-modular-reactors-smrs
+
+[S17] Biden-Harris Administration Announces 6 Contracts to Spur America’s Domestic HALEU Supply Chain as Part of Investing in America Agenda
+
+Publisher US Department of Energy, Office of Nuclear Energy. Published 2024-10-08. Event 2024-10-08. Period framework awards announced 2024. Location announcement paragraphs; six awardees; contract terms. Scope United States; units USD; contract years.
+
+Supports six 2024 deconversion frameworks. Contract ceilings and eligibility establish neither material delivery nor realised revenue.
+
+https://www.energy.gov/ne/articles/biden-harris-administration-announces-6-contracts-spur-americas-domestic-haleu-supply
+
+[S18] Sizewell C gets green light with final investment decision
+
+Publisher UK Department for Energy Security and Net Zero. Published 2025-07-22. Event 2025-07-22. Period FID July 2025; estimated construction cost at 2024 prices. Location financing explanation; Notes to editors. Scope United Kingdom; units billion GBP, 2024 prices.
+
+Supports Sizewell C's decision, financing and target. Costs in 2024 prices and projected benefits are not realised results.
+
+https://www.gov.uk/government/news/sizewell-c-gets-green-light-with-final-investment-decision
+
+[S19] Nuclear Power in a Clean Energy System
+
+Publisher IEA. Published 2019-05. Event not applicable. Period IEA 2019 report using fleet status circa 2018. Location Policy and regulatory decisions; ageing reactors; security. Scope global advanced economies; units years; GW; qualitative assessment.
+
+The 2019 report informs ageing-fleet history. Its capacity and average-age figures are not treated as current.
+
+https://www.iea.org/reports/nuclear-power-in-a-clean-energy-system
+
+[S20] The Path to a New Era for Nuclear Energy, Executive Summary
+
+Publisher IEA. Published 2025-01-16. Event not applicable. Period 2025 report; 2017-2024 starts; forecast scenarios to 2050. Location Diversifying supply chains; financing; cash-flow visibility. Scope global; units GW; USD; years; percentages.
+
+Supports financing and enrichment concentration in 2025. Capacity, revenue and future scenarios measure different things.
+
+https://www.iea.org/reports/the-path-to-a-new-era-for-nuclear-energy/executive-summary
+
+[S21] Bechtel and USC Partner to Build South Carolina’s Nuclear Workforce
+
+Publisher Bechtel / University of South Carolina partnership announcement. Published 2026-10-06. Event 2026-10-06. Period programme announcement as of cutoff. Location announcement and fund objectives. Scope South Carolina, United States; units programme; date.
+
+Supports the October 2026 workforce programme. Graduate numbers, resolved shortages and productivity gains are not demonstrated.
+
+https://www.bechtel.com/press-releases/bechtel-and-usc-partner-to-build-south-carolinas-nuclear-workforce/
+
+[S22] Bechtel and TerraPower Begin Construction at Natrium Kemmerer Unit 1
+
+Publisher Bechtel. Published 2026-04-23. Event 2026-04-23. Period project milestone April 2026. Location opening announcement; early works and field execution. Scope Wyoming, United States; units date; construction stage.
+
+Supports April 2026 construction progress and EPC role. Commercial operation, competitive cost and regulatory firsts are not established.
+
+https://www.bechtel.com/press-releases/bechtel-and-terrapower-begin-construction-at-natrium-kemmerer-unit-1/
+
+[S23] Advantages and Challenges of Nuclear Energy
+
+Publisher US Department of Energy, Office of Nuclear Energy. Published 2024-06-11. Event not applicable. Period 2024 explanatory snapshot. Location Used Fuel Transportation, Storage and Disposal. Scope United States; units qualitative policy and project planning.
+
+The 2024 US explanation supports spent-fuel planning and community involvement. Global policy uniformity and completed disposal are unproven.
+
+https://www.energy.gov/ne/articles/advantages-and-challenges-nuclear-energy
+
+[S24] 60 years since the day that changed the nuclear industry
+
+Publisher Sellafield Ltd, published on GOV.UK. Published 2016-10-17. Event 1956-10-17. Period 1956 opening milestone. Location opening paragraph and dated milestone. Scope United Kingdom; units dates.
+
+Supports Calder Hall's 1956 opening. The article's conflicting, unqualified first-grid claim is excluded.
+
+https://www.gov.uk/government/news/60-years-since-the-day-that-changed-the-nuclear-industry
+
+[V01] 2025 Annual Report
+
+Publisher Cameco. Published Not stated. Event 2025-12-31. Period FY2025 and year-end commitments. Location Operational and marketing performance; Fuel services; Contracting. Scope Global / Canadian operations; units million kgU of UF6.
+
+Year-end conversion-service commitments totalled about 83 million kgU of UF6; Westinghouse participates as a subcontractor in the KHNP-led Dukovany project and has fuel-fabrication responsibilities for a specified period. Limit: Conversion kgU differs from enrichment SWU; the page does not state its publication date; Cameco's ownership-share figures are not Westinghouse's 100% revenue.
+
+https://www.cameco.com/invest/financial-information/annual-reports/2025
+
+[V02] Management discussion and analysis for the quarter ended June 30, 2026
+
+Publisher Cameco / SEC filing. Published Not stated. Event 2026-07-30. Period Q2 and H1 2026; information as of July 30, 2026. Location pp.31-33; Westinghouse 2026 Q2 updates; Operating Plants Business. Scope Global; units years; customer reactor coverage.
+
+Westinghouse Operating Plants includes engineered equipment, reactor services and fuel products and services; Most recurring business is secured in advance under contracts lasting three to more than ten years; Cameco Fuel Services includes UO2, UF6 and heavy-water-reactor fuel bundles. Limit: Management's recurring-business description does not guarantee quarterly growth; customer coverage is not exclusive market share; illustrative economics in this section are not forecasts or guidance; publication date not independently verified.
+
+https://www.sec.gov/Archives/edgar/data/1009001/000119312526326768/d125942dex992.htm
+
+[V03] Framatome reports 2025 financial results
+
+Publisher Framatome. Published 2026-03-04. Event 2025-12-31. Period FY2025. Location Financial results table and commentary; Installed Base; I&C; footnote. Scope Global; units EUR million.
+
+2025 revenue was EUR 5,399 million, new orders EUR 5,924 million and EBITDA EUR 665 million; Growth involved EPR projects, fuel, I&C and installed-base services; Major-component work included North America and South Africa; replacement of four steam generators at Flamanville 2 began in November 2025. Limit: Use Framatome's own reporting perimeter; its footnote identifies EUR 641 million under EDF reporting, which must not be mixed with EUR 665 million; avoid the potentially stale ownership boilerplate.
+
+https://www.framatome.com/medias/framatome-reports-2025-financial-results/
+
+[V04] Full year 2025 audited financial results
+
+Publisher Urenco. Published 2026-03-12. Event 2025-12-31. Period FY2025 and 2025 year-end. Location Financial highlights and Outlook and Order Book. Scope Global; facilities in four countries; units EUR million / EUR billion.
+
+2025 revenue was EUR 2,096.2 million and the year-end order book EUR 21.3 billion; Contracted orders extend into the 2040s. Limit: The order book spans multiple years rather than current revenue; exchange rates affect its euro value; it is not reactor-equipment revenue or global equipment market share.
+
+https://www.urenco.com/news/global/2026/full-year-2025-audited-results
+
+[V05] 2025 annual results
+
+Publisher Orano. Published 2026-02-20. Event 2025-12-31. Period FY2025. Location Annual results financial highlights. Scope Global; units EUR million.
+
+2025 group revenue was EUR 5,138 million; A one-off Japanese-utility back-end contract contribution raised the 2024 comparison base; Revised end-of-lifecycle estimates affected 2025 adjusted earnings. Limit: The group includes mining and other activities; group revenue and its annual change do not measure the reactor-maintenance market.
+
+https://www.orano.group/en/news/news-group/2026/february/annual-results-2025
+
+[V06] Annual Activity Report 2025, review of key figures by business segment
+
+Publisher Orano. Published Not stated. Event 2025-12-31. Period FY2025. Location Printed p.56; section 2.5.2.5; online page 56. Scope Global; units EUR million.
+
+Segments comprise Mining, Front End (Chemistry and Enrichment), and Back End (Recycling, Nuclear Packages and Services, Dismantling and Services, Engineering); Back End revenue was EUR 2,352 million in 2025. Limit: Back End includes recycling, packages and engineering and is not pure decommissioning revenue; publication date is not displayed.
+
+https://www.orano.group/finance-raa/2025/en/56/
+
+[V07] BWX Technologies 2025 Form 10-K
+
+Publisher BWX Technologies / SEC. Published 2026-02-23. Event 2025-12-31. Period FY2025; year-end backlog. Location pp.2-4, 36-37, 64-65 and 90-91; Business; Backlog; Note 3; Segment reporting; signed February 23, 2026. Scope Global; commercial utility exposure primarily Canada; units USD million.
+
+Commercial Operations revenue was USD 853.070 million in 2025, with approximately USD 1,720 million in year-end backlog; The segment supplies heavy nuclear components, fuel, engineering and maintenance and also includes medical isotope and pharmaceutical-related activities; Kinectrics acquisition closed on May 20, 2025 and entered Commercial Operations; Commercial contracts include fixed-price and time-and-materials arrangements, with large custom-component and service revenue generally recognised over time. Limit: Commercial Operations is not pure civilian nuclear-power revenue; acquisitions affect growth; government and naval nuclear work is separate; backlog methodology need not match peers; date is the report signature date.
+
+https://www.sec.gov/Archives/edgar/data/1486957/000148695726000007/bwxt-20251231.htm
+
+[V08] BWX Technologies Reports Second Quarter 2026 Results
+
+Publisher BWX Technologies. Published 2026-08-03. Event 2026-06-30. Period Q2 and H1 2026; June 30 backlog. Location Exhibit 4, segment revenues and backlog; revenue commentary. Scope Global; commercial nuclear and nuclear medicine; units USD million.
+
+Commercial Operations revenue was USD 586.158 million in H1 2026; The segment's June 30 backlog was USD 1,600.454 million; Q2 growth included nuclear components, field services, fuel handling, medical activities and Kinectrics. Limit: Interim results are unaudited, include medical activities and acquisition effects, and should not be annualised by simple doubling.
+
+https://investors.bwxt.com/news-releases/news-release-details/bwx-technologies-reports-second-quarter-2026-results
+
+[V09] Curtiss-Wright Reports Fourth Quarter and Full-Year 2025 Financial Results
+
+Publisher Curtiss-Wright. Published 2026-02-11. Event 2025-12-31. Period FY2025. Location Condensed consolidated statements; Naval & Power and end-market commentary. Scope Global; units USD million.
+
+2025 group sales were USD 3,498.372 million; Naval & Power sales were USD 1,503.002 million; Commercial nuclear solutions grew, while the segment also includes naval and process-industry activities. Limit: Neither figure is pure nuclear-power equipment-and-service revenue; total orders and backlog also include aerospace, defence and other business.
+
+https://curtisswright.com/news/press-releases/news-release-details/2026/Curtiss-Wright-reports-fourth-quarter-and-fullyear-2025-financial-results-fullyear-2026-outlook-reflects-higher-sales-operating-margin-expansion-doubledigit-eps-growth-and-strong-free-cash-flow
+
+[V10] Naval & Power
+
+Publisher Curtiss-Wright. Published Not stated. Event Not separately stated. Period Current business description viewed 2026-10-13. Location Commercial nuclear discussion. Scope Global; units Products; no comparable market-share denominator.
+
+Supplies reactor-coolant-pump technology for AP1000; Provides nuclear products, parts, I&C, testing, field and obsolescence support, alongside defence nuclear business. Limit: Installed-product coverage and self-described leadership do not establish exclusive revenue market share; no publication date is shown.
+
+https://curtisswright.com/organization/naval-power
+
+[V11] Doosan Enerbility Signs Steam Turbine Contract with Doosan Skoda Power for Czech Nuclear Power Plant
+
+Publisher Doosan Enerbility. Published 2026-02-19. Event 2026-02-16. Period Contract for Dukovany units 5 and 6. Location News, paragraphs 1-4. Scope Czech Republic; South Korea; units KRW billion; two sets.
+
+A contract of about KRW 320 billion covers two steam-turbine and turbine-control-system sets for Dukovany 5 and 6; The counterparty is Czech subsidiary Doosan Skoda Power; ceremony held February 16, 2026; KHNP signed the principal project contract in June 2025. Limit: An intra-group contract cannot simply be added as sales of both companies; contract value is not current-year revenue or proof of commissioning.
+
+https://www.doosanenerbility.com/en/about/news_board_view?id=21000799&page=0&pageSize=9
+
+[V12] Large-Scale Nuclear Components / MMIS
+
+Publisher Doosan Enerbility. Published Not stated. Event Not separately stated. Period Business catalogue viewed 2026-10-13. Location Large-Scale Nuclear Components and MMIS. Scope Global; units Product categories.
+
+Products include reactor and internals, steam generators, coolant pumps, pressurisers and fuel-handling equipment; MMIS covers control, monitoring, instrumentation and emergency safety functions. Limit: Do not use the company's unqualified 'largest supplier' claim as a ranking; equipment configurations differ by reactor type.
+
+https://www.doosanenerbility.com/en/business/nuclear_large
+
+[V13] Castings & Forgings
+
+Publisher Doosan Enerbility. Published Not stated. Event Not separately stated. Period Business description viewed 2026-10-13. Location Power Plant Components. Scope Global; manufacturing in South Korea; units Product categories.
+
+Supplies large castings and forgings for nuclear reactors and steam generators as well as turbine and generator components. Limit: The business also serves other generation technologies and industrial users; no pure nuclear revenue or share is established.
+
+https://www.doosanenerbility.com/en/business/gasting_forging
+
+[V14] Services for Operational Power Plants
+
+Publisher Doosan Enerbility. Published Not stated. Event Not separately stated. Period Business description viewed 2026-10-13. Location Service Offerings. Scope Global; units Service categories.
+
+Provides component replacement, repair/refurbishment, routine and outage maintenance, upgrades, engineering and I&C replacement. Limit: A service menu identifies capabilities rather than revenue or a specific current contract for every offering.
+
+https://www.doosanenerbility.com/en/business/nuclear_power_plant
+
+[V15] About GE Vernova Hitachi Nuclear Energy
+
+Publisher GE Vernova Hitachi. Published Not stated. Event Not separately stated. Period Company description viewed 2026-10-13. Location What is GVH? and GNF. Scope Global; United States/Japan/Canada; units Business roles.
+
+The current name is GE Vernova Hitachi Nuclear Energy (GVH); Provides reactor technology, fuel and nuclear services; GE Vernova-led GNF operates fuel plants; Canadian activities support BWRX-300 deployment. Limit: GE Vernova group revenue must not be treated as nuclear-business revenue; the page has no publication date.
+
+https://www.gevernova.com/nuclear/about
+
+[V16] Key Operating Results of State Atomic Energy Corporation ROSATOM 2025
+
+Publisher Rosatom. Published Not stated. Event 2025-12-31. Period FY2025. Location Printed pp.2-5 and 18-19; PDF pp.3-4 and 11; ROSATOM TODAY / SAFE ENERGY / RAW and SNF management. Scope Russia and international projects; units Business activities; kWh only contextual.
+
+Activities span uranium production, enrichment, fabrication, domestic and international nuclear construction, generation and spent-fuel/radioactive-waste management. Limit: Self-reported rankings are not independent market-share evidence; generation and non-nuclear businesses broaden the group perimeter; total revenue is not an equipment-service market estimate; publication date is not stated.
+
+https://report.rosatom.ru/go_eng/go_rosatom_eng_2025/rosatom_key_2025_eng.pdf
+
+[V17] Our services
+
+Publisher Arabelle Solutions. Published Not stated. Event Not separately stated. Period Business description viewed 2026-10-13. Location Service & retrofit expertise; Overhaul planning; Multi-year agreements. Scope Global; units Service categories.
+
+Maintains turbines, generators and other turbine-island equipment and supports upgrades and life extension; Services legacy equipment from other manufacturers and offers multi-year agreements. Limit: Supplier support is not regulatory authority to grant life extension; customer or installed-base coverage is not exclusive share.
+
+https://www.arabellesolutions.com/en/our-services
+
+[V18] Nuclear Power Capabilities
+
+Publisher Dongfang Electric Corporation. Published Not stated. Event Not separately stated. Period Business description viewed 2026-10-13. Location Nuclear power section. Scope China; equipment technologies used in several reactor designs; units Business capabilities.
+
+Has serial-supply capabilities for nuclear-island main equipment and turbine-generator sets for the conventional island. Limit: Group capabilities differ from listed-company financial scope; unqualified leadership/share language is not used; no publication date is shown.
+
+https://www.dongfang.com/ywbt/cygj/ldbj.htm
+
+[V19] 2026 half-year results
+
+Publisher Orano. Published 2026-07-31. Event 2026-06-30. Period H1 2026. Location Financial highlights and production stoppages. Scope Global; units EUR million.
+
+H1 2026 revenue was EUR 2,696 million and EBITDA EUR 595 million; The company attributed Mining and Front End disruption to exceptional weather. Limit: Group results span multiple activities; do not extrapolate the half-year result; operational attribution is management's explanation.
+
+https://www.orano.group/en/news/news-group/2026/july/2026-half-year-results
+
+[V20] 2025 annual results management report
+
+Publisher EDF. Published 2026-02-20. Event 2025-12-31. Period FY2025. Location p.10, Industry and services; sales by Framatome alone. Scope Global; units EUR million.
+
+EDF reports Framatome sales of EUR 5,372 million and Arabelle Solutions sales of EUR 990 million. Limit: Different from Framatome's own EUR 5,399 million disclosure; this source does not separately explain the EUR 27 million sales difference, so no specific cause is inferred; EDF electricity sales are not equipment-service revenue.
+
+https://www.edf.fr/sites/groupe/files/2026-02/edf-annual-results-2025-management-report.pdf
+
+[V21] Integrated Report 2024, Strategy by Business: Material and Engineering Business
+
+Publisher The Japan Steel Works. Published Not stated. Event Not separately stated. Period 2024 integrated report; historical capabilities. Location Printed pp.34-35 / excerpt PDF p.17; downloaded and read with pypdf on 2026-10-13. Scope Japan and international supply; units Product categories.
+
+Manufactures reactor-pressure-vessel and steam-generator components and turbine/generator shafts; Highlights steelmaking, forging, heat treatment and large machining, and notes standardisation limits in build-to-order production. Limit: Used for manufacturing processes and business types rather than 2026 capacity; unqualified market-leadership claims are excluded.
+
+https://www.jsw.co.jp/pdf/en/ir/library/integrated/IntegratedReport2024_story.pdf
+
+[V22] Shanghai Electric Group Sustainability Report 2025
+
+Publisher Shanghai Electric. Published 2026-03-30. Event 2025-12-31. Period FY2025. Location Printed p. 60 / PDF p. 61; Core clean technologies table. Scope China; units Product/project participation.
+
+The report lists Guohe-series reactor-coolant pumps and nuclear-island/conventional-island equipment supplied to Zhangzhou unit 1. Limit: Used as company evidence of equipment roles; total group revenue is not nuclear revenue, and no ranking without a comparable denominator is adopted.
+
+https://www.hkexnews.hk/listedco/listconews/sehk/2026/0330/2026033001419_c.pdf
+
+[V23] Plants: overseas nuclear projects
+
+Publisher KHNP. Published Not stated. Event 2025-06. Period Historical agreements and project status viewed 2026-10-13. Location Barakah and Czech sections. Scope UAE, Czech Republic, Egypt; units Business roles; agreements.
+
+KHNP signed the final two-unit Dukovany contract in June 2025; Its Barakah role includes joint project management and operating-support/long-term-maintenance agreements; Its El-Dabaa scope covers turbine-island construction for four VVER-1200 units. Limit: Contract scope differs by project; operator total revenue does not identify equipment/service revenue; no publication date is displayed.
+
+https://www.khnp.co.kr/eng/contents.do?key=4591
+
+[V24] Contract Signed on A/E Services for Dukovany Units 5&6 in the Czech Republic
+
+Publisher KEPCO Engineering & Construction. Published 2025-12-29. Event 2025-12-12. Period Dukovany 5 and 6 A/E contract. Location News. Scope Czech Republic; South Korea; units EUR million.
+
+Signed the Dukovany 5/6 A/E-services contract with KHNP on December 12, 2025; Scope includes auxiliary-equipment procurement and licensing support. Limit: This subcontracted engineering scope is neither total project investment nor fully recognised 2025 revenue.
+
+https://www.kepco-enc.com/board.es?act=view&bid=0039&list_no=44544&mid=a20501000000&tag=
+
+[V25] Arabelle Solutions to supply Steam Turbine Island equipment for AP1000 at Poland's First Nuclear Power Plant
+
+Publisher Arabelle Solutions. Published 2026-01-13. Event 2026-01-13. Period Supplier selection for Poland project. Location PDF pp.1-2; selection and equipment scope. Scope Poland; international supply chain; units Three turbine-generator sets.
+
+Bechtel and Westinghouse selected Arabelle to supply three turbine-generator sets and related turbine-island equipment for Poland; Arabelle is an EDF Group subsidiary. Limit: Selection does not establish full financing, construction start or commercial operation; no contract value is stated; do not compare its ranking with nuclear-island suppliers.
+
+https://www.arabellesolutions.com/sites/simba/files/2026-01/Press%20Release%20-%20Arabelle%20Solutions%20to%20supply%20Steam%20Turbine%20Island%20equipment%20for%20AP1000%20in%20Poland%20_0.pdf
+
+[V26] Nuclear Energy
+
+Publisher Kinectrics. Published Not stated. Event Not separately stated. Period Business description viewed 2026-10-13. Location Nuclear Energy Overview. Scope Global; units Service categories.
+
+Provides materials/component testing, safety and licensing support, outage inspections, lifecycle and waste management. Limit: The service catalogue is not revenue segmentation; parent-company relationship is evidenced by V07.
+
+https://www.kinectrics.com/solutions/energy-infrastructure/nuclear-energy
+
+[V27] Commercial Grade Dedication
+
+Publisher Framatome Nuclear Parts Center. Published Not stated. Event Not separately stated. Period Business description viewed 2026-10-13. Location Challenge and Solution. Scope Global; units Service categories.
+
+Safety-related parts require quality records, design compatibility and acceptance criteria; some OEMs reduce support or exit; Commercial-grade dedication, inspections and witnessed tests support qualification for nuclear use. Limit: Company guidance is not the governing regulation and does not imply unconditional acceptance of every commercial item in safety-related equipment.
+
+https://npc.framatome.com/services/commercialgradededication
+
+[V28] License Renewal
+
+Publisher Westinghouse. Published Not stated. Event Not separately stated. Period Service description viewed 2026-10-13. Location License Renewal main text. Scope Global; units Service categories.
+
+Supports integrated plant assessment, time-limited aging analyses and environmental reporting; Licence extension requires regulatory approval. Limit: Supplier technical support does not replace regulatory approval; jurisdiction-specific rules require separate verification.
+
+https://westinghousenuclear.com/operating-plants/engineered-solutions/license-renewal
+
+[V29] Long-term operations
+
+Publisher Framatome. Published 2025-10-05. Event Not separately stated. Period Service description viewed 2026-10-13. Location Official HTML introduction and product list; retrieved directly after web-tool failure; metadata modified 2026-03-13. Scope Global; units Service categories.
+
+Long-term-operation services cover licence renewal, aging and asset management, modernisation and upgrades. Limit: The page describes capabilities rather than approval of a particular plant extension; publication date comes from structured page metadata.
+
+https://www.framatome.com/solutions-portfolio/portfolio/solutions/plant-in-operation/long-term-operation
+
+[M01] Uranium Enrichment
+
+Publisher World Nuclear Association. Published 2026-09-29 (page updated). Event Not separately stated. Period 2025 capacity column, sourced to Nuclear Fuel Report 2025. Location Enrichment capacity; World enrichment capacity table. Scope Global; units thousand SWU/year.
+
+WNA, Uranium Enrichment, updated 2026-09-29; 2025 global capacity; thousand SWU/year; capacity table and footnote. Supports enrichment-capacity composition; CNNC is estimated. Rows total 68,077 versus reported 68,076; author calculations use rows. The source does not explain the difference. Capacity is not revenue or deliveries.
+
+https://world-nuclear.org/information-library/nuclear-fuel-cycle/conversion-enrichment-and-fabrication/uranium-enrichment
+
+[M02] World Nuclear Power Reactors & Uranium Requirements
+
+Publisher World Nuclear Association. Published 2026-10-08 (page updated). Event 2026-10-08 snapshot. Period Reactor status as of update; nuclear generation 2025 separately. Location WORLD row; column headers; Notes. Scope Global; units reactors; MWe (net for operable, gross for construction).
+
+WNA, World Nuclear Power Reactors & Uranium Requirements, updated 2026-10-08; global status snapshot; reactors/MWe; WORLD row and Notes. Supports fleet and construction indicators. Operable means grid-connected; construction includes suspended projects. Operable capacity is net and construction capacity gross; do not sum them.
+
+https://world-nuclear.org/information-library/facts-and-figures/world-nuclear-power-reactors-and-uranium-requireme
+
+[M03] Full year 2025 audited financial results
+
+Publisher Urenco. Published 2026-03-12. Event 2025-12-31 financial year end. Period FY2025. Location Financial highlights and Outlook and Order Book. Scope Global; units EUR million; EUR billion.
+
+Urenco, Full year 2025 audited financial results, published 2026-03-12; FY2025/2025-12-31 backlog; global group; EUR; Financial highlights/Outlook. Supports €2,096.2m revenue and €21.3bn backlog. Backlog spans multiple years; group scope and exchange-rate effects prevent treating it as annual segment-market size.
+
+https://www.urenco.com/news/financial/2026/full-year-2025-audited-results
+
+[M04] Half year 2026 unaudited financial results
+
+Publisher Urenco. Published 2026-08-13. Event 2026-06-30 interim financial period end. Period H1 2026. Location Summary and Outlook/Order Book. Scope Global; units EUR million; EUR billion.
+
+Urenco, Half year 2026 unaudited financial results, published 2026-08-13; H1 2026/2026-06-30; global group; EUR; Summary/backlog discussion. Supports €27.3bn backlog, €645.4m revenue and the delivery-timing explanation. Unaudited; do not mechanically annualize or infer falling demand from one revenue period.
+
+https://www.urenco.com/news/global/2026/half-year-2026-unaudited-financial-results
+
+[M05] Orano Annual Activity Report 2025
+
+Publisher Orano. Published 2026 (exact publication date not displayed in opened PDF). Event 2025 reporting year; expansion dates separately. Period FY2025; prospective expansion 2028-2030. Location Printed p.39 (PDF page index 40), section 2.3.2 Front End. Scope Global; units million SWU/year; EUR billion.
+
+Orano, Annual Activity Report 2025, issued 2026; exact PDF publication date not displayed; FY2025 and 2028–2030 expansion plans; French facility/global customers; million SWU/year; printed p.39. Supports 7.5 million existing capacity, 2.5 million expansion and its schedule. Expansion is prospective; the approximately 50-million-SWU demand market described in the report cannot replace the WNA capacity denominator.
+
+https://cdn.orano.group/orano/docs/default-source/orano-doc/finance/publications-financieres-et-reglementees/2025/orano_-annual-activity-report-2025_mel.pdf?sfvrsn=316136e0_24
+
+[M06] Orano 2026 Half-year Results
+
+Publisher Orano. Published 2026-07-31. Event 2026-06-30. Period H1 2026. Location Printed pp.2-3 (PDF indices 1-2); Appendix 1 pp.9-10. Scope Global; units EUR million; EUR billion.
+
+Orano, 2026 Half-year Results, published 2026-07-31; H1/2026-06-30; global group; EUR; printed pp.2–3 and definitions. Supports €2,696m revenue, €34,393m backlog and €619m Front End revenue. Group figures include mining; Front End combines conversion and enrichment. Neither is a pure enrichment/equipment market total; backlog is a multi-year valuation.
+
+https://cdn.orano.group/orano/docs/default-source/orano-doc/finance/publications-financieres-et-reglementees/2026/r%C3%A9sultats-semestriels-2026/20260731_orano2026half-year-results.pdf?sfvrsn=3df142da_4
+
+[M07] EDF Management Report 2025
+
+Publisher EDF. Published 2026-02-20 (2025 annual results release). Event 2025-12-31. Period FY2025. Location Printed p.10 of 17 (PDF index 9), Industry and services; p.11 (PDF index10) EBITDA. Scope Global; units EUR million; EUR billion.
+
+EDF, Management Report 2025, released with results on 2026-02-20; FY2025; global Framatome/Arabelle; EUR; printed pp.10–11. EDF reports €5,372m Framatome sales versus €5,399m in M12. A complete revenue reconciliation is not provided in the reviewed texts. The narrative consistently uses M12.
+
+https://www.edf.fr/sites/groupe/files/2026-02/edf-annual-results-2025-management-report.pdf
+
+[M08] EDF 2026 half-year results press release
+
+Publisher EDF. Published 2026-07-31. Event 2026-06-30. Period H1 2026. Location Printed p.6 (PDF index 5), Industry and services. Scope Global; units EUR million; EUR billion.
+
+EDF, 2026 half-year results, published 2026-07-31; H1 2026; global Framatome; EUR; printed p.6. Supports order intake of about €2.7bn and contributions from Installed Base/Fuel activities and EPR2 component production. Industry and services sales include other businesses and cannot be labelled Framatome sales; EBITDA, revenue and orders are distinct measures.
+
+https://www.edf.fr/sites/groupe/files/2026-07/2026-07-31-edf-half-year-results-pr.pdf
+
+[M09] GE Vernova 2025 Annual Report and Form 10-K
+
+Publisher GE Vernova. Published 2026 (January 30 release is listed by official search metadata; exact PDF publication date not displayed). Event 2025-12-31. Period FY2025. Location Form 10-K printed pp.5,26 (PDF indices 16,37), Power business description and revenue by business unit. Scope Global; units USD million.
+
+GE Vernova, 2025 Annual Report/10-K, issued 2026; FY2025; global; USD; 10-K printed pp.5 and 26. Supports Nuclear Power revenue of US$1,018m and BWR, fuel and SMR scope. Some nuclear-turbine activities sit in Steam Power, which also includes coal; total group/Power revenue is not nuclear revenue.
+
+https://www.gevernova.com/sites/default/files/gevernova_2025_annual_report.pdf
+
+[M10] BWX Technologies Form 10-K, fiscal year 2025
+
+Publisher BWX Technologies; U.S. Securities and Exchange Commission filing. Published 2026-02-23 (Form 10-K signature date). Event 2025-12-31. Period FY2025. Location Item 7, Commercial Operations; Form 10-K printed p.36. Scope Global; units USD million.
+
+BWXT, FY2025 Form 10-K, signed 2026-02-23; FY2025; global group; USD; printed p.36, Commercial Operations. Supports US$853.070m revenue and US$231.0m acquisition contribution. Commercial Operations includes medical activities; group scope includes government/naval nuclear work. Growth is not entirely organic, and these figures cannot establish pure civil nuclear-power shares.
+
+https://www.sec.gov/Archives/edgar/data/1486957/000148695726000007/bwxt-20251231.htm
+
+[M11] EDF Universal Registration Document 2025, Framatome activities
+
+Publisher EDF. Published 2026-04-02 (English PDF file date; French document filed 2026-03-31). Event 2025 operating year. Period FY2025. Location Printed pp.41-43 (PDF indices40-42), section 1.4.1.1.4 Framatome. Scope Global; units reactors; qualitative product scope.
+
+EDF, Universal Registration Document 2025, English PDF dated 2026-04-02; FY2025; global Framatome; product scope/reactors; printed pp.41–43. Supports nuclear steam-supply systems, instrumentation and control, fuel and operating-plant services, and work on more than 380 reactors. Service coverage overlaps and is not exclusive share; company scope also includes defence and healthcare.
+
+https://www.edf.fr/sites/groupe/files/2026-04/2026-04-02-urd-edf-2025-en.pdf
+
+[M12] Framatome reports 2025 financial results
+
+Publisher Framatome. Published 2026-03-04. Event 2025-12-31 financial-year end. Period FY2025. Location Financial table and narrative. Scope Global; units EUR million.
+
+Framatome, Framatome reports 2025 financial results, published 2026-03-04; FY2025; global group; EUR; financial table, commentary and EBITDA footnote. Supports €5,399m revenue, €5,924m orders and €665m EBITDA. The footnote explains adjustments versus EDF's €641m EBITDA; it does not separately reconcile the revenue difference. Adjacent businesses prevent treating group revenue as a pure nuclear-power market share.
+
+https://www.framatome.com/medias/framatome-reports-2025-financial-results/
+
+[I01] 03210491 Inside the reactor hall at Dukovany Nuclear Power Plant
+
+Publisher IAEA Imagebank. Published 2013-03-18 uploaded. Event 2012-11-06 photograph taken. Period Photograph of existing plant in 2012. Location IAEA original photo description, date metadata, licensing link and Original size page. Scope Dukovany, Czech Republic; units 3000 × 2000 pixels.
+
+IAEA Imagebank photograph 03210491 by Petr Pavlicek / IAEA, taken 2012-11-06 and uploaded 2013-03-18. The original-size page and downloaded JPEG both show 3000 × 2000 pixels. The source page links CC BY-SA 2.0, permitting redistribution with attribution and its licence. The original file is included unchanged and displayed proportionally. It depicts the existing Dukovany plant and cannot prove later new-build progress or supplier relationships. Licence https://creativecommons.org/licenses/by-sa/2.0/ . Original https://live.staticflickr.com/8234/8567099193_0272213db3_o.jpg .
+
+https://www.flickr.com/photos/iaea_imagebank/8567099193/
+
+All sources read 13 October 2026. Full metadata: evidence_register.json. Only the licensed photograph is included; original research publications are linked to publishers.
