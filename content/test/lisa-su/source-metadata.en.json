@@ -1,0 +1,30 @@
+{
+  "27": {
+    "locator": "PDF and printed pages 24–25; Judy L. Hoyt; page 24: the 6A program and Analog Devices internships; page 25: the IEDM award and Cell/PowerPC responsibilities.",
+    "type": "Original alumni interview and attributed recollections written by an MIT faculty member; the full PDF was downloaded, and the relevant text and images of pages 24–25 were reviewed."
+  },
+  "28": {
+    "locator": "Abstract: the first-generation Cell multicore architecture and 90 nm SOI process; the authors are a multi-person research team.",
+    "type": "Original IBM Research paper catalog entry and abstract; the complete abstract was reviewed, without claiming review of the full paper."
+  },
+  "29": {
+    "locator": "Full transcript: Michael Liu’s question about historically overlooked talent; Su’s answers about being Lou Gerstner’s technical assistant, observing the CEO’s work and providing opportunities.",
+    "type": "Original Stanford GSB interview transcript, automatically generated and lightly edited; the publisher cautions that errors may remain. Relevant questions and answers reviewed in the official HTML."
+  },
+  "30": {
+    "locator": "Suzanne Deffree’s original interview; questions about mentorship, career advice and changes to R&D strategy; web text lines 48–51 and 74–75.",
+    "type": "Contemporary first-person interview excerpts; the article body was reviewed."
+  },
+  "31": {
+    "locator": "Peter Dizikes’s MIT on-site report; text lines 147–160 on the doctoral hooding speech, risk and learning, and technical education and business judgment.",
+    "type": "MIT’s original on-site reporting of the speech; the relevant article text was reviewed."
+  },
+  "32": {
+    "locator": "Source: AnitaB.org; line 514: Technical Leadership Award criteria and recipient; line 517: the planned award acceptance and speech at the September 2020 virtual Grace Hopper Celebration.",
+    "type": "Original award-organizer announcement distributed through PRNewswire; the article body was reviewed."
+  },
+  "33": {
+    "locator": "PDF and printed page 20; the complete section on partnerships supporting women in technical education.",
+    "type": "Original AMD corporate responsibility report and company account; the relevant complete page of the original PDF was reviewed."
+  }
+}
