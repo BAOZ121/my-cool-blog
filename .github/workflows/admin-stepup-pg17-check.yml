@@ -32,20 +32,32 @@ jobs:
           mkdir -p /tmp/dex-pg-test/socket
           # This directory contains only the disposable, network-disabled test socket.
           chmod 777 /tmp/dex-pg-test/socket
-          trap 'docker rm -f "$container" >/dev/null 2>&1 || true' EXIT
-          docker pull postgres:17.11
-          docker image inspect postgres:17.11 --format '{{json .RepoDigests}}'
-          docker run --detach --rm --name "$container" --network none \
+          image='postgres@sha256:2d2b8998d31037bf721cfdf764d76ba74171b4fab3431b7f72c27c56ddbdf9e3'
+          cleanup() {
+            status=$?
+            trap - EXIT
+            docker inspect "$container" --format '{{json .State}}' || true
+            docker logs "$container" || true
+            docker rm -fv "$container" || true
+            exit "$status"
+          }
+          trap cleanup EXIT
+          docker pull "$image"
+          docker image inspect "$image" --format '{{json .RepoDigests}}'
+          docker run --detach --name "$container" --network none \
             -e POSTGRES_USER=agent -e POSTGRES_DB=postgres -e PGDATA=/tmp/dex-pg-test/data \
-            -e POSTGRES_HOST_AUTH_METHOD=trust \
-            -v /tmp/dex-pg-test/socket:/tmp/dex-pg-test/socket \
-            postgres:17.11 \
+            -e POSTGRES_HOST_AUTH_METHOD=trust -e PGPORT=55439 \
+            -v /tmp/dex-pg-test/socket:/var/run/postgresql \
+            "$image" \
             -c listen_addresses='' \
-            -c unix_socket_directories=/tmp/dex-pg-test/socket \
+            -c unix_socket_directories=/var/run/postgresql \
             -c port=55439
           for attempt in $(seq 1 60); do
-            if docker logs "$container" 2>&1 | grep -q "PostgreSQL init process complete; ready for start up." && \
-               docker exec "$container" pg_isready -h /tmp/dex-pg-test/socket -p 55439 -U agent -d postgres; then
+            state="$(docker inspect "$container" --format '{{.State.Status}}')"
+            case "$state" in exited|dead) echo "Test database exited before readiness"; exit 1;; esac
+            logs="$(docker logs "$container" 2>&1)"
+            if grep -Fq "PostgreSQL init process complete; ready for start up." <<< "$logs" && \
+               docker exec "$container" pg_isready -h /var/run/postgresql -p 55439 -U agent -d postgres; then
               break
             fi
             if [ "$attempt" = 60 ]; then
