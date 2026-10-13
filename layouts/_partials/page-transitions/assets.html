@@ -8,6 +8,14 @@
     {{- $entry := dict "theme" "nvidia" "image" .RelPermalink "width" .Width "height" .Height "label" "DEX / BIOGRAPHY" "name" "JENSEN HUANG" -}}
     <script type="application/json" data-page-entry>{{ $entry | jsonify | safeJS }}</script>
   {{- end -}}
+{{- else if eq .Params.entryTheme "amd" -}}
+  {{- with .Resources.GetMatch .Params.entryImage -}}
+    {{- $filter := images.AutoOrient -}}
+    {{- $portrait := . | images.Filter $filter -}}
+    {{- $portrait = $portrait.Resize "304x webp q82" -}}
+    {{- $entry := dict "theme" "amd" "image" $portrait.RelPermalink "width" $portrait.Width "height" $portrait.Height "label" "DEX / BIOGRAPHY" "name" "LISA SU" -}}
+    <script type="application/json" data-page-entry>{{ $entry | jsonify | safeJS }}</script>
+  {{- end -}}
 {{- end -}}
 {{- /* Register before first paint; no external request or rendering wait. */ -}}
 {{- $script := resources.Get "js/page-transitions.js" | minify -}}
