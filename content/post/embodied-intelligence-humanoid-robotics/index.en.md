@@ -3,7 +3,9 @@ title: "Global Embodied Intelligence and Humanoid Robotics Industry Report"
 description: "Industry story history market structure and operating challenges"
 date: 2026-10-13
 lastmod: 2026-10-13
-url: "/test/embodied-intelligence-humanoid-robotics-v2/"
+url: "/post/embodied-intelligence-humanoid-robotics/"
+aliases:
+  - "/test/embodied-intelligence-humanoid-robotics-v2/"
 type: "post"
 layout: "single"
 image: "cover.jpg"
@@ -12,20 +14,13 @@ categories:
   - "Industry Report"
 toc: true
 draft: false
-testpage: true
 industrialreport: true
 reportversion: "2.0"
 evidencecutoff: "2026-10-12"
-build:
-  list: never
-  render: always
-  publishResources: true
-sitemap:
-  disable: true
 ---
 
 
-<p class="research-preview-note">Test page · Report v2 · Evidence cutoff 12 October 2026.</p>
+<p class="research-preview-note">Report v2 · Evidence cutoff 12 October 2026.</p>
 
 <p class="research-figure-caption" data-cover-caption="true">Unitree G1 humanoid robot and Go2 quadruped on an exhibition stage at Japan Mobility Show 2025, Tokyo Big Sight, October 31, 2025. The photograph illustrates robot hardware and does not establish industrial autonomy. Photo: RuinDig / Yuki Uchida, via Wikimedia Commons. CC BY 4.0. Original photograph; reproduced without pixel changes.</p>
 
@@ -971,4 +966,4 @@ sitemap:
 
 </section>
 
-<p class="research-figure-caption">For this web test page, the original JPEG is retained. Responsive copies use proportional resizing and standard image compression.</p>
+<p class="research-figure-caption">For this web page, the original JPEG is retained. Responsive copies use proportional resizing and standard image compression.</p>
