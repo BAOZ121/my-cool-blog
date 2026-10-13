@@ -1,0 +1,929 @@
+﻿女性力量的代表 苏姿丰的人生与 AMD 领导历程
+
+Lisa Su A Symbol of Female Empowerment and Her Leadership Journey at AMD
+
+从半导体工程师到 AMD 董事长 总裁兼首席执行官
+
+From Semiconductor Engineer to AMD Chair President and Chief Executive Officer
+
+资料截至 2026-10-13  |  Information current to 2026-10-13
+
+苏姿丰在美国得克萨斯州奥斯汀 SXSW 活动现场 2024 年 3 月 11 日
+
+Lisa Su at SXSW in Austin Texas on March 11 2024
+
+目录 Contents
+
+中文传记
+
+1 台湾出生纽约成长与 MIT 求学
+
+2 器件研究与 IBM 的工程管理经历
+
+3 从技术路线走向业务管理
+
+4 接任 CEO 与转型初期的压力
+
+5 Zen 与高性能计算产品的落地
+
+6 收购整合与董事长职责
+
+7 技术判断与团队协作
+
+8 女性力量与教育支持
+
+9 行业荣誉与公共职责
+
+10 当前职责 经营结果与近期进展
+
+11 竞争 供应链与政策约束
+
+English Biography
+
+1 From Taiwan and New York to MIT
+
+2 Device Research and Engineering Management at IBM
+
+3 From Technology Planning to Business Management
+
+4 Becoming CEO and the Pressures of Transformation
+
+5 Delivering Zen and High Performance Computing Products
+
+6 Acquisition Integration and the Responsibilities of the Chair
+
+7 Technology Decisions and Collaboration
+
+8 Female Empowerment and Support for Education
+
+9 Professional Recognition and Industry Responsibilities
+
+10 Current Responsibilities Results and Recent Developments
+
+11 Competition Supply Chains and Policy Constraints
+
+时间线 Timeline
+
+参考资料 References
+
+图片资料 Photograph Credits
+
+中文传记
+
+苏姿丰的职业经历跨越了半导体器件研究、产品开发、业务管理和大型科技公司的领导工作。她在麻省理工学院取得电气工程博士学位，先后任职于德州仪器、IBM 和飞思卡尔，2012 年加入 AMD，2014 年出任总裁兼首席执行官，2022 年兼任董事长。[1][4][5]
+
+作为女性力量的代表，她的工程与领导经历，以及支持女性研究者和工程师的行动，为理解女性在科技行业中的多种角色提供了具体事例。[17][26]
+
+1 台湾出生纽约成长与 MIT 求学
+
+苏姿丰出生于台湾台南，幼年随家人移居美国，在纽约皇后区成长。卡内基机构的获奖人物介绍记录了她就读布朗克斯科学高中，以及父母分别具有统计和会计背景的经历。她的早年教育与后来选择工程专业之间，有一条可以追溯的数学和科学学习主线。[2][26]
+
+她在 2026 年 MIT 毕业典礼演讲稿中回忆，自己于 1986 年秋季入学。本科期间，她通过 UROP 在 Hank Smith 实验室为研究生制作 X 射线光刻掩模基板，开始接触半导体实验。这是她对早期研究经历的回顾。[18]
+
+本科阶段的训练还包含产业实习。MIT 2008 年校友专访记载，她参加 6A 计划，在 Analog Devices 实习；她把这段经历视为接触真实工程工作的机会。同一刊物记录，她在研究生阶段于 1992 年因 SOI 自热效应研究获 IEEE IEDM 最佳学生论文奖，发表论文也让她与半导体产业人员交流。这个阶段包含实验研究、工业实践和公开介绍研究成果的训练。[27]
+
+MIT 记录的学位年份分别为 1990 年本科、1991 年硕士和 1994 年博士，专业均为电气工程。博士阶段的研究使她进入半导体器件领域，也为毕业后的工程工作提供了技术基础。[17][4]
+
+2 器件研究与 IBM 的工程管理经历
+
+MIT 保存的博士论文题为《极深亚微米绝缘体上硅 MOSFET》，研究对象是绝缘体上硅技术中的金属氧化物半导体场效应晶体管。论文档案列出导师 Dimitri A. Antoniadis 和 James E. Chung。这个研究方向涉及晶体管器件与制造，而不只是应用软件开发。[4]
+
+1994 至 1995 年，她在德州仪器的半导体工艺与器件中心担任技术人员，随后进入 IBM。AMD 官方履历记载，她在 IBM 历任工程和业务领导职务，后来出任半导体研发中心副总裁，负责硅技术方向、联合开发合作和研发运营。[5]
+
+卡内基的人物资料将她列为 IBM 铜互连技术工作的重要参与者。铜互连用来连接芯片内部的电路，相关开发是多人协作的工程项目。她在 2024 年接受 Ben Thompson 采访时回忆，铜互连产品的后期工作让她认识到，量产良率和可靠性同样决定技术能否成为可交付的产品。[2][16]
+
+MIT 的专访还记录，她在 IBM 参与 Cell 微处理器上市工作，并担任过 PowerPC 产品总监。[27]
+
+IBM 的首代 Cell 研究摘要描述，这款芯片采用 90 纳米 SOI 工艺，将 64 位 Power 核心、多个流处理核心，以及存储与输入输出控制模块组合在一起。它体现了多种计算模块在同一芯片中协作的设计思路，也为理解她参与的产品项目提供了技术背景。[28]
+
+她在斯坦福商学院 2025 年访谈中回忆，担任 IBM CEO 郭士纳（Lou Gerstner）的技术助理时，工作包括向他介绍新技术，也借机观察大型公司的最高管理工作。她把这段经历看作有人愿意给年轻员工机会，并由此主张：领导者应让有潜力的人尝试尚未完全准备好的职责，同时提供支持。这里呈现的是她对管理成长和人才培养的个人解释。[29][16]
+
+3 从技术路线走向业务管理
+
+2007 年 6 月，苏姿丰加入飞思卡尔半导体，担任首席技术官。公司的 2010 年年报记载，她的 CTO 任期延续至 2009 年 8 月；从 2008 年 9 月起，她同时担任网络与多媒体业务高级副总裁兼总经理。两项任职一度重叠，体现了技术管理与业务职责的衔接。[6]
+
+这项业务岗位覆盖嵌入式通信和应用处理器的全球战略、市场与工程。与负责研发路线相比，她需要同时组织技术开发与业务执行。飞思卡尔的岗位记录和 AMD 后来的聘任公告都说明，她加入 AMD 之前已经有直接管理产品业务的经历。[6][7]
+
+在 2008 年 EDN 采访中，她说博士导师 Antoniadis 帮助她思考技术与业务问题，并建议尽可能保留技术工作。谈到飞思卡尔研发时，她主张从围绕制造工艺转向完整解决方案，把软件、模拟技术、系统和封装纳入产品能力。这个当时的表述补充了她业务转型的具体内容：客户最终使用的，是多种技术共同组成的产品与应用。[30]
+
+AMD 在 2011 年 12 月 15 日宣布聘任她，入职日期为 2012 年 1 月 3 日。她担任全球业务部门高级副总裁兼总经理，向时任 CEO Rory Read 汇报，负责产品策略、产品定义、业务计划与执行。这个角色把她放在产品技术与公司经营之间。[7]
+
+2013年的游戏机合作，让她在AMD的业务职责有了具体落点。5月2日，公司公布半定制业务方向，将已有CPU、图形与多媒体技术和客户专属设计组合成芯片。该部门由Saeid Moshkelani领导，并向仍任全球业务部门高级副总裁兼总经理的苏姿丰汇报。她在公告中强调硬件、软件与系统知识的结合。这一组织关系说明，她的工作已涉及客户项目及产品组合，而不只是技术研究。[34]
+
+索尼同期公布的PS4规格列出AMD Jaguar CPU和Radeon图形技术；AMD年报则记载，为PS4和Xbox One供货的半定制芯片于第二季度开始出货，两款主机在第四季度上市。合作过程需要把可复用技术变成客户能按计划推出的产品，并随量产兑现收入。年报还记载客户支付设计开发费用及芯片采购价。这使她所管理的业务同时面对工程开发、客户要求和交付节奏。[35][36]
+
+苏姿丰展示芯片的实拍照片 2015 年 6 月 3 日
+
+Lisa Su holding a chip photographed on June 3 2015
+
+4 接任 CEO 与转型初期的压力
+
+AMD 董事会于 2014 年 6 月批准她出任首席运营官，任命于 7 月 1 日生效。10 月 8 日，她进一步获任总裁、首席执行官及董事，即时生效。作为 COO，她已经承担整合业务部门、销售和全球运营的职责。CEO 任命公告同时肯定了 Rory Read 此前建立的转型基础。[8][9]
+
+她接任后的经营困难，在 2015 年全年财务结果中清楚显现：AMD 营收为 39.91 亿美元，同比下降 28%；按美国公认会计原则 GAAP 计算，净亏损为 6.60 亿美元。公司将营收下滑主要归因于客户处理器销售减少。这些是 2015 年全年数据，不能当作她 2014 年 10 月接任当天的经营数字。[11][37]
+
+2015 年 5 月的分析师大会上，AMD 公布了聚焦游戏、沉浸式平台与数据中心的多年战略，并公开新一代 Zen 核心的研发方向。对于苏姿丰和管理团队，任务包括在经营压力下安排关键研发投入，以及把长期路线落实为有明确发布时间的产品。[10][11]
+
+5 Zen 与高性能计算产品的落地
+
+2017 年 3 月 2 日，首批三款 Ryzen 7 桌面处理器全球上市，采用新的 Zen 微架构。AMD 的上市公告称，这一研发历时四年。Zen 是芯片核心组织和执行计算的架构，Ryzen 则是面向个人电脑的产品品牌；两者并非同一个概念。[12]
+
+同年 6 月 20 日，AMD 发布首代 EPYC 7000 数据中心处理器，将 Zen 技术带入服务器市场。公告列出了服务器厂商、软件企业和云服务伙伴的支持，表明产品落地也包含平台与软件生态的协作。[13]
+
+两项发布把长期路线落实到桌面与服务器产品。苏姿丰负责方向、投入和执行组织，芯片、软件及平台由团队和伙伴开发。[12][13]
+
+产品路线的进展随后出现在全年经营结果中。AMD的2017年10-K采用同一张财务表记录：2015年营收39.91亿美元、GAAP净亏损6.60亿美元；2017年营收53.29亿美元、GAAP净利润4300万美元。两个财年均为52周。公司由全年亏损转为规模仍有限的盈利，为苏姿丰任CEO期间的转型提供了可核对的经营节点。[37]
+
+这项改善也包含产品以外的经营因素。2017年财报将全年营收增长主要归于计算与图形业务，并说明毛利和营业利润改善受益于销售增长，以及2016年晶圆供应协议相关费用不再发生，同时受到营业费用增加的抵消。苏姿丰当时把这一年称为转折点；财务记录呈现的则是产品组合、市场需求、成本与供应安排共同变化的结果。[38]
+
+2019年的第二代EPYC把这条路线推向新的架构阶段。AMD在此前的2018年11月公开chiplet设计：通过Infinity Fabric连接同一封装内的多块硅片，计算核心使用7纳米制程，输入输出部分使用成熟的14纳米制程，分别匹配不同任务的需要。公告明确涉及台积电的7纳米技术；苏姿丰则把这一进展放在多年硬件与软件路线投入中说明。[39]
+
+2019年8月7日，代号Rome的第二代EPYC正式发布，最高提供64个Zen 2核心。次日，Google自己的公告确认已用于内部工作负载，并计划随后向云客户提供相关虚拟机。由研发公布到客户采用，路线需要架构团队、制造伙伴和客户系统共同推进；CEO负责的长期产品方向，最终要在客户实际环境中得到验证。[40][41]
+
+6 收购整合与董事长职责
+
+2022 年 2 月 14 日，AMD 完成对赛灵思 Xilinx 的收购。交易最初于 2020 年 10 月宣布，采用全股票方式。赛灵思带来的 FPGA、适应性系统级芯片、AI 引擎和软件能力，扩大了 AMD 的产品范围；Victor Peng 加入领导团队，负责新业务组织。[14]
+
+同一天，AMD 董事会选举苏姿丰为董事长，原董事长 John Caldwell 转任首席独立董事。她继续担任总裁和 CEO，因此同时承担管理层与董事会的领导职责。独立董事及其治理角色仍是公司治理结构的一部分。[1][15]
+
+对她的职业主线而言，这一阶段意味着工作范围从处理器产品和经营转型，进一步扩展到大型收购后的业务整合、技术组合和董事会治理。收购完成是已发生的交易事实；协同效果则需要持续的组织执行和后续经营结果来体现。[14][15]
+
+Xilinx之外，AMD也通过并购扩展数据中心能力。2022年5月完成的Pensando收购公布交易估值约19亿美元，将数据处理单元DPU及配套软件纳入组合，原团队进入Forrest Norrod领导的业务组织。已任董事长兼CEO的苏姿丰在公告中解释，其作用是让云、企业和边缘客户按工作负载选择更完整的计算方案。她此时负责的产品范围，已从处理器性能延伸到网络、软件与团队整合。[45]
+
+2025年3月，AMD完成ZT Systems收购，引入机架级设计及客户部署经验，并与CPU、GPU、网络芯片和ROCm软件结合。同年10月，公司完成向Sanmina出售其数据中心基础设施制造业务，保留设计与客户支持团队，建立制造合作关系。对她所领导的企业而言，这一安排把系统设计能力与制造伙伴分工结合起来；交割后的管理工作也包括团队协作、系统验证及客户部署，而不仅是增加芯片型号。[46][47]
+
+7 技术判断与团队协作
+
+在 2024 年 Stratechery 采访中，苏姿丰谈到与 CTO Mark Papermaster 的合作，以及将技术能力与业务策略、客户需求和制造伙伴联系起来的工作。这是她对管理职责的公开解释。[16]
+
+在 2026 年 MIT 毕业典礼演讲稿中，她回顾了 AMD 的高性能计算路线，并认为分解困难、逐步解决问题的工程方法，在成为团队共同的工作方式时更有作用。[18]
+
+大型科学计算项目进一步检验了AMD的CPU与GPU路线。2019年公布的Frontier合作涉及AMD、Cray和橡树岭国家实验室，既有定制处理器与互连，也有共同开发的软件环境。2022年5月，实验室公布HPL基准实测约1.1 exaflops，即每秒约110亿亿次浮点运算。结果来自芯片、整机、软件与科研团队的系统工作，也让她领导的企业进入需要多年协作和支持的科学计算项目。[42][43]
+
+2024年11月，劳伦斯利弗莫尔国家实验室公布El Capitan在HPL测试中达到1.742 exaflops。它采用把CPU、GPU和高带宽内存置于同一共享封装的AMD Instinct MI300A，并由实验室、HPE与AMD协作完成。这里的实测速度与理论峰值属于不同指标。这些项目使传记中的领导责任有了更具体的背景：产品路线需要延伸到整机集成、客户软件及长期验证，计算成绩属于参与各方共同完成的系统。[44]
+
+8 女性力量与教育支持
+
+2017 年 6 月 8 日，她返回 MIT 为博士毕业生发表演讲。她把读博期间学会思考和处理困难问题的训练，与后来相信自己能够作出业务判断联系起来，并鼓励毕业生承担风险、从错误中学习。这个公开场合让她以校友、工程师和公司领导的经历，向刚结束博士研究的新一代研究者介绍自己的职业经验。[31]
+
+2021 年，苏姿丰获得 IEEE Robert N. Noyce Medal，成为这项奖章的首位女性得主。授奖与职业记录提供了她作为女性技术领导者的具体里程碑。[5][17]
+
+获奖后，她把 2 万美元奖金捐给 IEEE Foundation 管理的 IEEE Women in Engineering Fund，支持女性工程师群体。[17]
+
+2018 年，她在 MIT 设立 Lisa Su Fellowship Fund，支持在纳米技术领域取得进展和成果的女性研究生。[3]
+
+2022 年，MIT 宣布将 MIT.nano 所在建筑命名为 Lisa T. Su Building。她是首位通过捐赠让建筑以本人名字命名的 MIT 女校友；这座设施在 2018 年已启用。[3]
+
+2020 年，AnitaB.org 授予她技术领导 Abie 奖。该机构的评选标准同时关注对商业或社会产生影响的技术成果，以及增加科技行业女性代表性的承诺。公告安排获奖者在当年虚拟 Grace Hopper 大会领奖并演讲。这项荣誉因此同时关联技术领导评价和女性技术人员之间的交流。[32]
+
+AMD《2021–22 企业责任报告》记载，公司与 AnitaB.org 在 2021 年合作支持 25 名女性学生，资金包含她的 2020 年 Abie 奖相关款项和个人追加捐赠。学生获得技术教育奖学金、参加 Grace Hopper 大会，接受辅导，并与 AMD 女性技术人员进行线上交流，讨论职业成长与个人经历。项目把资金支持、同行网络与职业指导结合在一起，这是公司报告记载的具体实施过程。[33]
+
+9 行业荣誉与公共职责
+
+除了前文的 IEEE 奖章，半导体行业协会 SIA 的正式获奖名单还列出，她是 2020 年 Robert N. Noyce Award 得主。这个奖项表彰技术或公共政策方面对半导体产业作出贡献的领导者。SIA 的行业奖与 IEEE 的奖章分别由不同机构颁授，为她的职业认可提供了各自的记录。[48][17]
+
+她的行业公共职责也在扩大。2025 年 11 月 20 日，SIA 公布她当选协会董事会主席，现行董事会资料列她为 2026 年主席。她在任命公告中提出，与协会董事会同事共同加强半导体竞争力和创新基础。SIA 与立法和行政机构合作，参与产业政策讨论；这使她在 AMD 的企业管理之外，还承担跨企业行业组织的领导工作。[49][50]
+
+10 当前职责 经营结果与近期进展
+
+截至 2026 年 10 月 13 日，AMD 治理资料列出的苏姿丰职务是董事长、总裁兼首席执行官。2026 年 10 月 8 日，白宫公布她获得美国国家科学奖章。这项荣誉来自授奖机构；其表彰内容涉及半导体工程与高性能计算领导工作。[1][19]
+
+AMD 2025 财年营收为 346.39 亿美元，同比增长 34%；GAAP 净利润为 43.35 亿美元。最新已公布的季度是截至 2026 年 6 月 27 日的第二季度：营收为 115.36 亿美元，同比增长 50%；GAAP 净利润为 22.97 亿美元。全年和季度数据属于不同报告期。[20][21]
+
+第二季度数据中心业务营收为 67.18 亿美元，同比增长 107%。这个分部包括 EPYC CPU、Instinct GPU 等产品，不能整体等同于 AI GPU 收入。2026 年第三季度业绩计划于 11 月 3 日发布，截止日期时仍未公布。这些结果记录了她任期内企业的规模与业务变化，也包含团队和伙伴的共同贡献。[21][22]
+
+近期工作进一步延伸至 AI 研究和系统平台。2026 年 9 月 28 日，AMD 宣布签署约 82 亿美元全股票收购 World Labs 的协议，预计年底完成并须满足监管等条件。10 月 12 日，公司介绍面向代理式 AI 的 Helion 开放机架蓝图，伙伴配置预计 11 月可用。两者分别属于待交割交易与后续供货计划，不是截止日期前已经完成的全部成果。[23][24]
+
+11 竞争 供应链与政策约束
+
+AMD 在 2026 年第二季度 10-Q 中披露，Nvidia 的数据中心 GPU 地位及软件生态、Intel 的 CPU 定价，以及客户自研 AI 芯片，都构成竞争压力。这些是风险披露，不代表竞争结果已经确定。[25]
+
+AMD 的 7 纳米及以下 CPU 和 GPU 依赖台积电。工艺能力、晶圆供应、良率、第三方封装和组件供给都会影响交付，供应链合作因而也是产品执行的一部分。[25]
+
+出口政策已产生实际费用：2025 年 MI308 出口限制带来的全年净库存及相关费用约为 4.40 亿美元，区别于第二季度初始计提的 8 亿美元。这说明经营结果也受到监管和供给条件影响。[20][21][25]
+
+English Biography
+
+Lisa Su’s career spans semiconductor research, product development, business management and the leadership of a major technology company. She earned a doctorate in electrical engineering at MIT and worked at Texas Instruments, IBM and Freescale before joining AMD in 2012. She became president and chief executive officer in 2014 and chair in 2022.[1][4][5]
+
+As a symbol of female empowerment, her engineering and leadership experience and support for women researchers and engineers offer concrete examples of women’s roles in technology.[17][26]
+
+1 From Taiwan and New York to MIT
+
+Su was born in Tainan, Taiwan, moved to the United States with her family as a young child and grew up in Queens, New York. Carnegie’s honoree profile records her attendance at the Bronx High School of Science and her parents’ backgrounds in statistics and accounting. Mathematics and science form a documented thread between her schooling and her later choice of engineering.[2][26]
+
+In her prepared 2026 MIT Commencement remarks, she recalled arriving in fall 1986. Through UROP, she made X-ray lithography mask blanks for a graduate student in Hank Smith’s laboratory, beginning her experience of semiconductor experiments. This is her retrospective account.[18]
+
+Her undergraduate training also included industrial experience. MIT’s 2008 alumni interview records her participation in the 6A program and internships at Analog Devices, which she recalled as an opportunity to encounter engineering in practice. The publication also records a 1992 IEEE IEDM Best Student Paper Award for her work on SOI self-heating during graduate study. Presenting research gave her opportunities to meet people from the semiconductor industry. This period combined laboratory research, industrial practice and experience explaining her findings to a professional audience.[27]
+
+MIT records her electrical engineering bachelor’s degree in 1990, master’s degree in 1991 and doctorate in 1994. Her doctoral work brought her into semiconductor device research and supplied a technical foundation for her subsequent industrial career.[17][4]
+
+2 Device Research and Engineering Management at IBM
+
+MIT retains her doctoral thesis, Extreme-submicrometer silicon-on-insulator (SOI) MOSFETs. It concerns metal-oxide-semiconductor field-effect transistors using silicon-on-insulator technology. The archive names Dimitri A. Antoniadis and James E. Chung as advisers. This was work on semiconductor devices and fabrication rather than application software alone.[4]
+
+From 1994 to 1995, she served on the technical staff at Texas Instruments’ Semiconductor Process and Device Center before moving to IBM. AMD’s official biography records her progression through engineering and business leadership roles there. She eventually became vice president of the Semiconductor Research and Development Center, with responsibilities for silicon technology strategy, joint development alliances and R&D operations.[5]
+
+Carnegie’s profile identifies her as an important participant in IBM’s copper interconnect work. Interconnects link circuits within a chip, and their development involved collaborative engineering. In a 2024 interview with Ben Thompson, she recalled learning through the later stages of a copper interconnect product that manufacturing yield and reliability determine whether a technology becomes a deliverable product.[2][16]
+
+MIT’s interview also records her work on the introduction of IBM’s Cell microprocessor and her role as director of PowerPC Products.[27]
+
+IBM’s research abstract describes the first-generation Cell as a 90-nanometer SOI chip combining a 64-bit Power processor, multiple streaming processors, and memory and input/output control. This was a design in which several kinds of computing modules operated together on one chip. Those details provide technical context for the product project in which she participated, while preserving the distinction between her management responsibilities and the engineering team’s architecture.[28]
+
+In her 2025 Stanford GSB interview, Su recalled serving as technical assistant to IBM CEO Lou Gerstner. She explained that introducing him to new technologies also allowed her to observe how a company of global scale was led. She interpreted the assignment as someone taking a chance on a young employee. Her lesson for other leaders was to give promising people responsibilities they might not yet be fully ready for, together with the support needed to succeed. This is her retrospective interpretation of management development and opportunity.[29][16]
+
+3 From Technology Planning to Business Management
+
+In June 2007, Su joined Freescale Semiconductor as chief technology officer. Its 2010 annual report records that she held the CTO role until August 2009 and became senior vice president and general manager of Networking and Multimedia in September 2008. The positions overlapped for a time, linking technology management with business responsibility.[6]
+
+The business role covered global strategy, marketing and engineering for embedded communications and applications processors. Her responsibilities therefore extended from an R&D roadmap to the coordination of technology and business execution. Freescale’s records and AMD’s subsequent appointment announcement establish that she managed a product business before joining AMD.[6][7]
+
+In a 2008 EDN interview, she said that her doctoral adviser, Antoniadis, helped her think through technical and business situations and advised her to remain technical for as long as possible. Discussing Freescale’s R&D, she described a move from a process-centered approach toward complete solutions, including software, analog technology, systems and packaging. This contemporary account gives specific content to her transition into business responsibilities: customers ultimately use products and applications assembled from several kinds of technology.[30]
+
+AMD announced her appointment on December 15, 2011, with a start date of January 3, 2012. As senior vice president and general manager of Global Business Units, she reported to then-CEO Rory Read and oversaw product strategy, product definition, business planning and execution. The position placed her at the intersection of product technology and company operations.[7]
+
+The console partnerships of 2013 give a concrete picture of her business responsibilities at AMD. On May 2, the company outlined its semi-custom approach: combining existing CPU, graphics and multimedia technology with customer-specific designs. Saeid Moshkelani led the unit and reported to Su, then senior vice president and general manager of Global Business Units. In the announcement, she emphasized combining hardware, software and system knowledge. The reporting relationship places her work within customer projects and product portfolios, beyond technology research alone.[34]
+
+Sony's contemporary PS4 specifications named AMD Jaguar CPU cores and Radeon graphics. AMD's annual filing records semi-custom shipments beginning in the second quarter for PS4 and Xbox One, which launched in the fourth quarter. This work turned reusable technology into products customers could bring to market on a schedule and purchase at volume. Customers paid design-development fees and a purchase price for the chips. The business under her management therefore combined engineering development, customer requirements and delivery schedules.[35][36]
+
+4 Becoming CEO and the Pressures of Transformation
+
+AMD’s board approved her appointment as chief operating officer in June 2014, effective July 1. On October 8, she became president, chief executive officer and a director with immediate effect. As COO, she had already been responsible for integrating business units, sales and global operations. The CEO announcement also acknowledged the transformation groundwork established under Rory Read.[8][9]
+
+The operating difficulties following her appointment are visible in AMD’s 2015 annual results: revenue was US$3.991 billion, down 28%, and the net loss under U.S. generally accepted accounting principles, or GAAP, was US$660 million. AMD primarily attributed the revenue decline to lower client processor sales. These are full-year 2015 figures, rather than a snapshot of the day she became CEO in October 2014.[11][37]
+
+At its May 2015 analyst day, AMD presented a multiyear strategy focused on gaming, immersive platforms and data centers, including plans for the new Zen processor core. Su and the management team had to allocate resources to critical research under financial pressure and turn the long-term roadmap into products with defined release schedules.[10][11]
+
+5 Delivering Zen and High Performance Computing Products
+
+On March 2, 2017, the first three Ryzen 7 desktop processors became available worldwide using the new Zen microarchitecture. AMD’s launch announcement described four years of development. Zen specifies how processor cores organize and execute computation, while Ryzen is a product brand for personal computers; the two terms refer to different things.[12]
+
+On June 20 that year, AMD launched the first EPYC 7000 data center processors, bringing Zen into servers. Its announcement listed server manufacturers, software companies and cloud partners, showing the collaborative platform and software work involved in delivering the products.[13]
+
+The launches brought AMD’s strategy to desktop and server products. Su led direction, investment and execution, while teams and partners developed the chips, software and platforms.[12][13]
+
+Progress in the product roadmap subsequently appeared in full-year operating results. AMD's 2017 Form 10-K records both periods in the same financial table: 2015 revenue of US$3.991 billion and a GAAP net loss of US$660 million; 2017 revenue of US$5.329 billion and GAAP net income of US$43 million. Both years contained 52 weeks. The move from an annual loss to a still-modest profit provides a verifiable operating milestone in the transformation during Su's CEO tenure.[37]
+
+The improvement also involved factors beyond product launches. AMD attributed annual revenue growth mainly to Computing and Graphics. Higher sales and the absence of the prior year's wafer-supply-agreement charge helped improve margins and operating income, partly offset by higher operating expenses. Su called 2017 an inflection point. The financial record describes changes in the product mix, market demand, costs and supply arrangements together, rather than isolating a single product as the cause of profitability.[38]
+
+Second-generation EPYC took that roadmap into a new architectural phase in 2019. AMD had described its chiplet approach in November 2018: Infinity Fabric linked separate pieces of silicon within one package, with 7-nanometer technology for compute cores and a mature 14-nanometer process for input/output functions. Different parts could use processes suited to their tasks. The announcement explicitly identified TSMC's 7-nanometer technology, while Su explained the development through multiyear investment in hardware and software roadmaps.[39]
+
+On August 7, 2019, the second-generation EPYC family, codenamed Rome, launched with up to 64 Zen 2 cores. The following day, Google's own announcement confirmed use for internal workloads and described planned virtual machines for cloud customers. Moving from an architectural announcement to customer adoption required chip design, manufacturing partners and customer systems to work together. The long-term product direction overseen by the CEO ultimately had to demonstrate its value in customers' operating environments.[40][41]
+
+6 Acquisition Integration and the Responsibilities of the Chair
+
+On February 14, 2022, AMD completed its acquisition of Xilinx, first announced in October 2020 as an all-stock transaction. Xilinx added FPGAs, adaptive system-on-chips, AI engines and software capabilities to AMD’s portfolio. Victor Peng joined the leadership team to lead the new business organization.[14]
+
+The same day, AMD’s board elected Su as chair, while former chair John Caldwell became lead independent director. She continued as president and CEO, combining executive management with leadership of the board. Independent directors and their governance responsibilities remained part of the company’s structure.[1][15]
+
+This stage extended her remit from processor products and an operating transformation to integration following a major acquisition, a broader technology portfolio and board governance. Completion of the transaction is a documented event; realizing its intended benefits requires sustained organizational execution and subsequent operating results.[14][15]
+
+Beyond Xilinx, AMD used acquisitions to broaden its data center capabilities. The Pensando transaction completed in May 2022, with an announced value of approximately US$1.9 billion, added data processing units, or DPUs, and associated software. The team joined the organization led by Forrest Norrod. Su, by then chair and CEO, explained the addition as giving cloud, enterprise and edge customers a broader range of computing options for their workloads. The product remit she led now extended beyond processor performance into networking, software and organizational integration.[45]
+
+AMD completed the ZT Systems acquisition in March 2025, adding rack-level design and customer deployment expertise alongside its CPUs, GPUs, networking chips and ROCm software. In October, it completed the sale of the infrastructure manufacturing business to Sanmina while retaining design and customer enablement teams and establishing a manufacturing partnership. For the company she led, this arrangement combined systems design expertise with a partner's manufacturing role. Management after completion involved cooperation between teams, system validation and customer deployment, as well as the development of individual chips.[46][47]
+
+7 Technology Decisions and Collaboration
+
+In her 2024 Stratechery interview, Su discussed working with CTO Mark Papermaster and connecting technical capability with business strategy, customers and manufacturing partners. This is her public account of management responsibilities.[16]
+
+In her prepared 2026 MIT Commencement remarks, she recalled AMD’s high performance computing direction and argued that methodically breaking down difficult problems becomes more effective when it is shared across a team.[18]
+
+Large scientific systems further tested AMD's CPU and GPU roadmap. The Frontier partnership announced in 2019 involved AMD, Cray and Oak Ridge National Laboratory, with custom processors, interconnects and a jointly developed software environment. In May 2022, the laboratory reported approximately 1.1 exaflops on the HPL benchmark, or 1.1 quintillion floating-point operations per second. The result depended on chips, the complete machine, software and scientific teams. It also placed the company Su led within scientific projects requiring years of collaboration and support.[42][43]
+
+In November 2024, Lawrence Livermore National Laboratory reported El Capitan at 1.742 exaflops on HPL. Its AMD Instinct MI300A packages combined CPU cores, GPU cores and high-bandwidth memory, within a system developed by the laboratory, HPE and AMD. This measured speed is a different metric from theoretical peak performance. The projects give more concrete context to leadership responsibilities: product roadmaps extend into system integration, customer software and sustained validation, while the measured achievement belongs to the complete system built by the participating organizations.[44]
+
+8 Female Empowerment and Support for Education
+
+On June 8, 2017, she returned to MIT to address its doctoral graduates. She connected the training in thinking and difficult problem solving that she received during her doctorate with her later confidence in making business decisions. She encouraged graduates to take risks and learn from mistakes. The occasion allowed her to draw on her experience as an alumna, engineer and company leader when speaking to a new generation of researchers completing their doctoral work.[31]
+
+In 2021, Su received the IEEE Robert N. Noyce Medal as its first female recipient. The award and her career record provide a concrete milestone in her role as a female technology leader.[5][17]
+
+After receiving it, she donated the US$20,000 prize to the IEEE Women in Engineering Fund, managed by the IEEE Foundation, supporting women engineers.[17]
+
+In 2018, she established the Lisa Su Fellowship Fund at MIT, supporting female graduate students making progress and achieving results in nanotechnology.[3]
+
+In 2022, MIT announced that the MIT.nano building would be named the Lisa T. Su Building. She was the first MIT alumna whose gift led to a building bearing her own name. The facility had opened in 2018.[3]
+
+In 2020, AnitaB.org selected her for its Technical Leadership Abie Award. The organization’s criteria recognize technical achievements with an impact on business or society, together with a commitment to increasing women’s representation in technology. Its announcement planned for recipients to accept their awards and speak at that year’s virtual Grace Hopper Celebration. The honor therefore connected recognition of technical leadership with a forum for women technologists.[32]
+
+AMD’s 2021–22 Corporate Responsibility Report records a partnership with AnitaB.org supporting 25 female students in 2021. Its funding included money associated with Su’s 2020 Abie Award and an additional personal donation. The students received scholarships supporting technical education, attended the Grace Hopper Celebration, undertook coaching and joined an online discussion with AMD women technologists about career development and personal experiences. The program combined financial assistance, peer networks and career guidance. These are the specific activities documented in the company’s account of its implementation.[33]
+
+9 Professional Recognition and Industry Responsibilities
+
+Alongside the IEEE medal discussed earlier, SIA’s official recipient list records her as the 2020 Robert N. Noyce Award honoree. The award recognizes leaders’ contributions to the semiconductor industry in technology or public policy. SIA’s industry award and IEEE’s medal are conferred by separate institutions, supplying distinct records of professional recognition.[48][17]
+
+Her responsibilities within the industry have also broadened. On November 20, 2025, SIA announced her election as board chair; its current governance page identifies her as the 2026 chair. In the announcement, she described working with fellow board members to strengthen semiconductor competitiveness and innovation. SIA works with legislative and executive institutions on industry policy. Alongside managing AMD, she therefore holds a leadership role in an organization bringing together multiple semiconductor companies.[49][50]
+
+10 Current Responsibilities Results and Recent Developments
+
+As of October 13, 2026, AMD’s governance materials identify Su as chair, president and chief executive officer. On October 8, the White House announced her receipt of the U.S. National Medal of Science. The awarding institution recognized her leadership in semiconductor engineering and high performance computing.[1][19]
+
+AMD reported fiscal 2025 revenue of US$34.639 billion, up 34%, and GAAP net income of US$4.335 billion. Its latest reported quarter was the second quarter ended June 27, 2026, with revenue of US$11.536 billion, up 50%, and GAAP net income of US$2.297 billion. The annual and quarterly figures cover different periods.[20][21]
+
+Second-quarter Data Center revenue was US$6.718 billion, up 107%. The segment includes EPYC CPUs, Instinct GPUs and other products, so its entire revenue cannot be described as AI GPU sales. Third-quarter results were scheduled for November 3 and remained unpublished at the cutoff. The results document changes in AMD during her tenure and reflect the work of teams and partners.[21][22]
+
+Recent work extends to AI research and system platforms. On September 28, 2026, AMD announced an agreement to acquire World Labs in an approximately US$8.2 billion all-stock transaction, expected to close by year-end subject to regulatory and other conditions. On October 12, it introduced the Helion open rack blueprint for agentic AI, with partner configurations expected in November. These were a pending transaction and a future availability plan, rather than fully completed outcomes at the cutoff.[23][24]
+
+11 Competition Supply Chains and Policy Constraints
+
+AMD’s second-quarter 2026 Form 10-Q identifies competition from Nvidia’s data center GPUs and software ecosystem, Intel’s CPU pricing and customers’ own AI chips. These are disclosed risks rather than predetermined outcomes.[25]
+
+AMD relies on TSMC for CPUs and GPUs at 7 nanometers and below. Process capability, wafers, yield, third-party packaging and components affect delivery, making supply relationships part of product execution.[25]
+
+MI308 export restrictions produced approximately US$440 million of net inventory and related charges for fiscal 2025, distinct from the initial US$800 million second-quarter charge. Operating results therefore also reflect regulatory and supply constraints.[20][21][25]
+
+时间线 Timeline
+
+日期 Date  |  中文  |  English
+
+1986
+
+秋季进入 MIT 学习 她在 2026 年演讲中的回忆 [18]
+
+Entered MIT in the fall as recalled in her 2026 remarks [18]
+
+1990 1991 1994
+
+先后取得 MIT 电气工程本科 硕士和博士学位 [17] [4]
+
+Earned MIT bachelor’s, master’s and doctoral degrees in electrical engineering [17] [4]
+
+1994–1995
+
+在德州仪器半导体工艺与器件中心工作 [5]
+
+Worked at Texas Instruments in semiconductor process and device engineering [5]
+
+1995–2007
+
+在 IBM 担任工程与业务领导岗位 [5] [6]
+
+Held engineering and business leadership roles at IBM [5] [6]
+
+2007-06
+
+加入飞思卡尔 担任首席技术官 [6]
+
+Joined Freescale as chief technology officer [6]
+
+2008-09
+
+开始领导飞思卡尔网络与多媒体业务 [6]
+
+Began leading Freescale Networking and Multimedia [6]
+
+2012-01-03
+
+加入 AMD 担任全球业务部门高级副总裁兼总经理 [7]
+
+Joined AMD as senior vice president and general manager of Global Business Units [7]
+
+2013-05-02
+
+AMD 公布由她负责的全球业务组织下的半定制业务方向 [34]
+
+AMD announced the semi-custom business within her Global Business Units organization [34]
+
+2014-07-01
+
+出任 AMD 首席运营官 [8]
+
+Became AMD chief operating officer [8]
+
+2014-10-08
+
+出任 AMD 总裁 首席执行官及董事 [9]
+
+Became AMD president chief executive officer and a director [9]
+
+2017-03-02
+
+AMD 团队推出首批 Ryzen 7 处理器 [12]
+
+AMD teams launched the first Ryzen 7 processors [12]
+
+2017-06-20
+
+AMD 发布首代 EPYC 数据中心处理器 [13]
+
+AMD launched the first EPYC data center processors [13]
+
+FY 2017
+
+2017 财年 AMD 实现 GAAP 净利润 4300 万美元 [37]
+
+AMD reported full-year GAAP net income of US$43 million [37]
+
+2018
+
+设立支持女性纳米技术研究生的 MIT 奖学金基金 [3]
+
+Established an MIT fellowship fund supporting female nanotechnology graduate students [3]
+
+2019-08-07
+
+AMD 推出第二代 EPYC 处理器 [40]
+
+AMD launched second-generation EPYC processors [40]
+
+2020
+
+获 AnitaB.org 技术领导 Abie 奖及 SIA Robert N Noyce Award [32] [48]
+
+Received the AnitaB.org Technical Leadership Abie Award and SIA Robert N Noyce Award [32] [48]
+
+2021
+
+成为首位获得 IEEE Robert N. Noyce Medal 的女性 [5] [17]
+
+Became the first woman to receive the IEEE Robert N. Noyce Medal [5] [17]
+
+2021
+
+AMD 与 AnitaB.org 项目支持 25 名女性学生 [33]
+
+An AMD and AnitaB.org program supported 25 female students [33]
+
+2022-02-14
+
+AMD 完成赛灵思收购 她同日获任董事长 [14] [15]
+
+AMD completed the Xilinx acquisition and elected her chair the same day [14] [15]
+
+2022-04-07
+
+MIT 宣布以她的名字命名 MIT.nano 所在建筑 [3]
+
+MIT announced the naming of the MIT.nano building in her honor [3]
+
+2022-05-26
+
+AMD 完成 Pensando 收购 [45]
+
+AMD completed the Pensando acquisition [45]
+
+2025-03-31
+
+AMD 完成 ZT Systems 收购 [46]
+
+AMD completed the ZT Systems acquisition [46]
+
+2025-10-27
+
+AMD 完成出售 ZT 制造业务 保留设计团队 [47]
+
+AMD completed the sale of ZT manufacturing while retaining design teams [47]
+
+2025-11-20
+
+当选 SIA 董事会主席 [49]
+
+Elected chair of the SIA board [49]
+
+2026-05-28
+
+在 MIT 毕业典礼发表演讲 [18]
+
+Delivered MIT Commencement remarks [18]
+
+2026-10-08
+
+获美国国家科学奖章 [19]
+
+Received the U.S. National Medal of Science [19]
+
+参考资料 References
+
+[1] AMD Board of Directors Lisa T Su biography
+
+日期 Date  Undated current page  |  查阅 Accessed  2026-10-13  |  类型 Type  Corporate governance record
+
+定位 Locator  Dr Lisa T Su biography
+
+https://ir.amd.com/governance/board-of-directors
+
+[2] Carnegie 2020 Great Immigrants Lisa Su
+
+日期 Date  2020 honoree profile  |  查阅 Accessed  2026-10-13  |  类型 Type  Award organization profile
+
+定位 Locator  Biographical paragraphs
+
+https://carnegie.org/great-immigrants/lisa-su/
+
+[3] MIT to name Building 12 home of MIT nano in honor of Lisa Su
+
+日期 Date  2022-04-07  |  查阅 Accessed  2026-10-13  |  类型 Type  University announcement
+
+定位 Locator  Degree dates facility history and Lisa Su Fellowship Fund
+
+https://news.mit.edu/2022/mit-name-building-12-home-mitnano-honor-lisa-su-0407
+
+[4] MIT thesis Extreme-submicrometer silicon-on-insulator SOI MOSFETs
+
+日期 Date  1994  |  查阅 Accessed  2026-10-13  |  类型 Type  University thesis archive
+
+定位 Locator  Author advisers and doctoral thesis metadata
+
+https://dspace.mit.edu/handle/1721.1/11618
+
+[5] AMD Dr Lisa Su executive biography
+
+日期 Date  Undated current page  |  查阅 Accessed  2026-10-13  |  类型 Type  Official corporate biography
+
+定位 Locator  Texas Instruments IBM and Freescale career history
+
+https://www.amd.com/en/corporate/leadership/lisa-su.html
+
+[6] Freescale Semiconductor 2010 Form 10-K
+
+日期 Date  2011-02-11  |  查阅 Accessed  2026-10-13  |  类型 Type  Regulatory annual filing
+
+定位 Locator  Printed page 112 executive officers Lisa Su
+
+https://investors.nxp.com/static-files/7bbc05a8-d449-4de4-9ba7-62e7824f746f
+
+[7] AMD to appoint Dr Lisa Su as senior vice president and general manager Global Business Units
+
+日期 Date  2011-12-15  |  查阅 Accessed  2026-10-13  |  类型 Type  Contemporary company announcement
+
+定位 Locator  Appointment responsibilities and January 3 2012 start date
+
+https://ir.amd.com/news-events/press-releases/detail/200/amd-to-appoint-dr-lisa-su-as-senior-vice-president-and-general-manager-global-business-units
+
+[8] AMD Form 8-K COO appointment effective July 1 2014
+
+日期 Date  2014-06-12  |  查阅 Accessed  2026-10-13  |  类型 Type  Regulatory current filing
+
+定位 Locator  Item 5.02
+
+https://ir.amd.com/financial-information/sec-filings/content/0001193125-14-234226/d743024d8k.htm
+
+[9] AMD appoints Dr Lisa Su as president and chief executive officer
+
+日期 Date  2014-10-08  |  查阅 Accessed  2026-10-13  |  类型 Type  Contemporary company announcement
+
+定位 Locator  Appointment and predecessor responsibilities
+
+https://ir.amd.com/news-events/press-releases/detail/568/amd-appoints-dr-lisa-su-as-president-and-chief-executive-officer
+
+[10] AMD outlines sharpened focus at 2015 Financial Analyst Day
+
+日期 Date  2015-05-06  |  查阅 Accessed  2026-10-13  |  类型 Type  Contemporary strategy announcement
+
+定位 Locator  Strategic focus Zen roadmap and leadership responsibilities
+
+https://ir.amd.com/news-events/press-releases/detail/611/amd-outlines-sharpened-focus-at-2015-financial-analyst-day
+
+[11] AMD reports 2015 fourth quarter and annual results
+
+日期 Date  2016-01-19  |  查阅 Accessed  2026-10-13  |  类型 Type  Company financial results
+
+定位 Locator  2015 annual revenue and GAAP net loss
+
+https://ir.amd.com/news-events/press-releases/detail/662/amd-reports-2015-fourth-quarter-and-annual-results
+
+[12] AMD Ryzen 7 desktop processors available worldwide
+
+日期 Date  2017-03-02  |  查阅 Accessed  2026-10-13  |  类型 Type  Contemporary product announcement
+
+定位 Locator  Three Ryzen 7 products Zen and four years of development
+
+https://ir.amd.com/news-events/press-releases/detail/753/amd-ryzentm-7-desktop-processors-featuring-record-breaking-overclocking-performance-available-worldwide-today
+
+[13] AMD EPYC datacenter processor launches with server ecosystem support
+
+日期 Date  2017-06-20  |  查阅 Accessed  2026-10-13  |  类型 Type  Contemporary product announcement
+
+定位 Locator  EPYC 7000 launch and platform partners
+
+https://ir.amd.com/news-events/press-releases/detail/773/amd-epyc-datacenter-processor-launches-with-record-setting-performance-optimized-platforms-and-global-server-ecosystem-support
+
+[14] AMD completes acquisition of Xilinx
+
+日期 Date  2022-02-14  |  查阅 Accessed  2026-10-13  |  类型 Type  Transaction completion announcement
+
+定位 Locator  Completion product capabilities and Victor Peng role
+
+https://ir.amd.com/news-events/press-releases/detail/1047/amd-completes-acquisition-of-xilinx
+
+[15] AMD Board of Directors announces new appointments
+
+日期 Date  2022-02-14  |  查阅 Accessed  2026-10-13  |  类型 Type  Governance announcement
+
+定位 Locator  Lisa Su elected chair and John Caldwell lead independent director
+
+https://ir.amd.com/news-events/press-releases/detail/1048/amd-board-of-directors-announces-new-appointments
+
+[16] Ben Thompson An interview with AMD CEO Lisa Su about solving hard problems
+
+日期 Date  2024-06-06  |  查阅 Accessed  2026-10-13  |  类型 Type  Original interview retrospective account
+
+定位 Locator  Lessons from IBM and technology business collaboration
+
+https://stratechery.com/2024/an-interview-with-amd-ceo-lisa-su-about-solving-hard-problems/
+
+[17] IEEE Member Highlight Lisa Su
+
+日期 Date  2023-03-28  |  查阅 Accessed  2026-10-13  |  类型 Type  IEEE official reporting reprinted from The Institute
+
+定位 Locator  Degree years first female Noyce Medal recipient and US 20000 prize donation
+
+https://life.ieee.org/2023/03/ieee-member-highlight-lisa-su/
+
+[18] MIT Commencement address by Lisa Su
+
+日期 Date  2026-05-28  |  查阅 Accessed  2026-10-13  |  类型 Type  Original speech prepared for delivery
+
+定位 Locator  Prepared remarks MIT arrival UROP and team leadership
+
+https://news.mit.edu/2026/commencement-address-lisa-su-0528
+
+[19] White House National Medals of Science and National Medals of Technology and Innovation
+
+日期 Date  2026-10-08  |  查阅 Accessed  2026-10-13  |  类型 Type  Awarding government announcement
+
+定位 Locator  Recipients of the National Medal of Science Lisa Su
+
+https://www.whitehouse.gov/releases/2026/10/president-trump-presents-national-medals-of-science-and-national-medals-of-technology-and-innovation/
+
+[20] AMD reports fourth quarter and full year 2025 financial results
+
+日期 Date  2026-02-03  |  查阅 Accessed  2026-10-13  |  类型 Type  Company financial results
+
+定位 Locator  Annual Financial Results and consolidated statements
+
+https://ir.amd.com/news-events/press-releases/detail/1276/amd-reports-fourth-quarter-and-full-year-2025-financial-results
+
+[21] AMD reports second quarter 2026 financial results
+
+日期 Date  2026-08-04  |  查阅 Accessed  2026-10-13  |  类型 Type  Company financial results
+
+定位 Locator  GAAP Quarterly Financial Results and Data Center segment
+
+https://ir.amd.com/news-events/press-releases/detail/1295/amd-reports-second-quarter-2026-financial-results
+
+[22] AMD to report fiscal third quarter 2026 financial results
+
+日期 Date  2026-10-06  |  查阅 Accessed  2026-10-13  |  类型 Type  Future reporting schedule announcement
+
+定位 Locator  November 3 2026 reporting date
+
+https://ir.amd.com/news-events/press-releases/detail/1300/amd-to-report-fiscal-third-quarter-2026-financial-results
+
+[23] AMD to acquire World Labs to advance the future of AI compute
+
+日期 Date  2026-09-28  |  查阅 Accessed  2026-10-13  |  类型 Type  Pending transaction announcement
+
+定位 Locator  Agreement value all stock terms and expected close
+
+https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute
+
+[24] Introducing AMD Helion agentic AI compute at rack scale
+
+日期 Date  2026-10-12  |  查阅 Accessed  2026-10-13  |  类型 Type  Product blueprint announcement
+
+定位 Locator  Open rack blueprint and planned November availability
+
+https://ir.amd.com/news-events/press-releases/detail/1301/introducing-amd-helion-agentic-ai-compute-at-rack-scale
+
+[25] AMD second quarter 2026 Form 10-Q
+
+日期 Date  2026-08-05  |  查阅 Accessed  2026-10-13  |  类型 Type  Regulatory quarterly filing
+
+定位 Locator  Risk Factors competition manufacturing and MI308 export restrictions
+
+https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000123/amd-20260627.htm
+
+[26] Lisa Su to deliver MIT 2026 Commencement address
+
+日期 Date  2025-12-11  |  查阅 Accessed  2026-10-13  |  类型 Type  University announcement
+
+定位 Locator  Biography Taiwan birthplace Queens upbringing and MIT career
+
+https://news.mit.edu/2025/lisa-su-mit-2026-commencement-address-1211
+
+[27] Lisa Su: Senior Vice President and CTO of Freescale Semiconductor — MTL Micronotes
+
+日期 Date  Fall 2008, Volume Two, Issue One  |  查阅 Accessed  2026-10-13  |  类型 Type  MIT教授撰写的校友原始专访与具名回忆；已下载全文、提取并查看相关两页实图
+
+定位 Locator  PDF及印刷第24-25页；作者Judy L. Hoyt；第24页6A及Analog Devices实习，第25页IEDM奖和Cell/PowerPC职责
+
+https://mtlsites.mit.edu/micronotes/micronotes_08.pdf
+
+[28] The design and implementation of a first-generation CELL processor
+
+日期 Date  2005-12-06 IBM catalog entry for ISSCC 2005  |  查阅 Accessed  2026-10-13  |  类型 Type  IBM Research原始论文目录与摘要；本次已阅读全文摘要，不声称已阅读全文论文
+
+定位 Locator  Abstract，首代Cell多核结构及90nm SOI工艺；Authors列为多人团队
+
+https://research.ibm.com/publications/the-design-and-implementation-of-a-first-generation-cell-processor--1
+
+[29] Dream Big: Lisa Su Talks Chips, Curiosity, and Chance
+
+日期 Date  2025-06-04  |  查阅 Accessed  2026-10-13  |  类型 Type  斯坦福商学院原始访谈全文；自动转写并轻度编辑，网页明示可能有错误；已直接下载官方HTML并读取相关问答
+
+定位 Locator  Full Transcript，Michael Liu关于historically overlooked talent的问题；Lisa Su关于Lou Gerstner technical assistant、观察CEO工作及提供机会的回答
+
+https://www.gsb.stanford.edu/insights/dream-big-lisa-su-talks-chips-curiosity-chance
+
+[30] Voices: Freescale’s Lisa Su: embedding future growth
+
+日期 Date  2008-03-18  |  查阅 Accessed  2026-10-13  |  类型 Type  当时本人原始采访摘录；已读取正文
+
+定位 Locator  Suzanne Deffree原始采访；Who’s your mentor/Best piece of career advice及How have you been changing up your R&D strategy问题；网页L48-51、L74-75
+
+https://www.edn.com/voices-freescales-lisa-su-embedding-future-growth/
+
+[31] Lisa Su urges doctoral graduates to dream big and change the world
+
+日期 Date  2017-06-08  |  查阅 Accessed  2026-10-13  |  类型 Type  MIT对当日演讲的原始现场报道；已阅读全文相关正文
+
+定位 Locator  Peter Dizikes校方现场报道；正文L147-160，博士授帽演讲、风险/学习及技术教育与业务判断
+
+https://news.mit.edu/2017/hooding-ceremony-doctoral-lisa-su-0608
+
+[32] AnitaB.org Recognizes Five Inspirational Women Technologists with 2020 Abie Award Honor
+
+日期 Date  2020-08-03  |  查阅 Accessed  2026-10-13  |  类型 Type  奖项机构原始公告，经PRNewswire发布；已读取正文
+
+定位 Locator  SOURCE AnitaB.org；L514技术领导奖标准及获奖者，L517计划在2020年9月虚拟Grace Hopper Celebration领奖并演讲
+
+https://www.prnewswire.com/news-releases/anitaborg-recognizes-five-inspirational-women-technologists-with-2020-abie-award-honor-301104847.html
+
+[33] 2021-22 AMD Corporate Responsibility Report Summary
+
+日期 Date  2021-22 corporate responsibility report  |  查阅 Accessed  2026-10-13  |  类型 Type  AMD原始企业责任报告，企业自述；已下载并读取原PDF相关完整页
+
+定位 Locator  PDF及印刷第20页，PARTNERING TO SUPPORT WOMEN IN TECHNICAL EDUCATION全文
+
+https://www.amd.com/content/dam/amd/en/documents/corporate/cr/2021-22-global-cr-report-summary.pdf
+
+[34] AMD to Create Tailored Products Integrating Customer-Specific IP Through Semi-Custom Business Unit
+
+日期 Date  2013-05-02  |  查阅 Accessed  2026-10-13  |  类型 Type  Contemporaneous company announcement
+
+定位 Locator  Paragraphs on modular SoC design and Saeid Moshkelani reporting to Lisa Su; Lisa Su statement; first announced PS4 design win
+
+https://ir.amd.com/news-events/press-releases/detail/138/amd-to-create-tailored-products-integrating-customer-specific-ip-through-semi-custom-business-unit
+
+[35] Sony Computer Entertainment Introduces PlayStation 4
+
+日期 Date  2013-02-21 web page; announcement dateline 2013-02-20  |  查阅 Accessed  2026-10-13  |  类型 Type  Contemporaneous customer announcement
+
+定位 Locator  Announcement dateline and Main Processor specifications naming AMD Jaguar CPU and Radeon graphics
+
+https://sonyinteractive.com/en/press-releases/sony-computer-entertainment-inc-introduces-playstation4-ps4/
+
+[36] AMD Fiscal 2013 Form 10-K
+
+日期 Date  2014-02-18  |  查阅 Accessed  2026-10-13  |  类型 Type  Regulatory annual filing
+
+定位 Locator  Business Game Consoles; Customers; MD&A introduction: semi-custom shipments began in Q2 2013 and PS4 Xbox One launched in Q4
+
+https://ir.amd.com/financial-information/sec-filings/content/0001193125-14-057240/d674550d10k.htm
+
+[37] AMD Fiscal 2017 Form 10-K
+
+日期 Date  2018-02-27  |  查阅 Accessed  2026-10-13  |  类型 Type  Regulatory annual filing
+
+定位 Locator  Item 6 Selected Financial Data: 2017 and 2015 net revenue and net income loss; both fiscal years consisted of 52 weeks
+
+https://ir.amd.com/financial-information/sec-filings/content/0000002488-18-000042/amd-12302017x10k.htm
+
+[38] AMD Reports Fourth Quarter and Annual 2017 Financial Results
+
+日期 Date  2018-01-30  |  查阅 Accessed  2026-10-13  |  类型 Type  Company financial results
+
+定位 Locator  2017 Annual Results: Computing and Graphics growth; GAAP margin and absence of 2016 WSA charge; Lisa Su statement
+
+https://ir.amd.com/news-events/press-releases/detail/811/amd-reports-fourth-quarter-and-annual-2017-financial-results
+
+[39] AMD Takes High Performance Datacenter Computing to the Next Horizon
+
+日期 Date  2018-11-06  |  查阅 Accessed  2026-10-13  |  类型 Type  Contemporaneous technical announcement
+
+定位 Locator  AMD Compute Architecture Updates: Infinity Fabric chiplets 7nm CPU cores 14nm I/O and TSMC; Lisa Su multiyear roadmap statement
+
+https://ir.amd.com/news-events/press-releases/detail/860/amd-takes-high-performance-datacenter-computing-to-the-next-horizon
+
+[40] Second Generation AMD EPYC Processors Set New Standard for the Modern Datacenter
+
+日期 Date  2019-08-07  |  查阅 Accessed  2026-10-13  |  类型 Type  Contemporaneous product announcement
+
+定位 Locator  Opening paragraphs: 64 Zen 2 cores; Customer and Partner Ecosystem: Google production deployment HPE Lenovo platforms
+
+https://ir.amd.com/news-events/press-releases/detail/904/2nd-gen-amd-epyc-processors-set-new-standard-for-the-modern-datacenter-with-record-breaking-performance-and-significant-tco-savings
+
+[41] AMD EPYC processors come to Google and to Google Cloud
+
+日期 Date  2019-08-08  |  查阅 Accessed  2026-10-13  |  类型 Type  Contemporaneous customer announcement
+
+定位 Locator  Bart Sano and Brad Calder announcement: internal workload use and planned EPYC virtual machines later that year
+
+https://cloud.google.com/blog/products/compute/amd-epyc-processors-come-to-google-and-to-google-cloud
+
+[42] AMD EPYC CPUs Radeon Instinct GPUs and ROCm Open Source Software to Power Frontier at Oak Ridge
+
+日期 Date  2019-05-07  |  查阅 Accessed  2026-10-13  |  类型 Type  Contemporaneous project announcement
+
+定位 Locator  AMD innovations: coherent CPU GPU links and ROCm developed with Cray; technology funding and multiyear support; named ORNL Cray AMD roles
+
+https://ir.amd.com/news-events/press-releases/detail/887/amd-epyc-cpus-amd-radeon-instinct-gpus-and-rocm-open-source-software-to-power-worlds-fastest-supercomputer-at-oak-ridge-national-laboratory
+
+[43] Frontier supercomputer debuts as worlds fastest breaking exascale barrier
+
+日期 Date  2022-05-30  |  查阅 Accessed  2026-10-13  |  类型 Type  National laboratory measured result
+
+定位 Locator  Opening HPL measurement 1.1 exaflops; Facts About Frontier: HPE cabinets optimized EPYC processors and AMD Instinct accelerators
+
+https://www.ornl.gov/news/frontier-supercomputer-debuts-worlds-fastest-breaking-exascale-barrier/
+
+[44] Lawrence Livermore National Laboratory El Capitan verified as worlds fastest supercomputer
+
+日期 Date  2024-11-18  |  查阅 Accessed  2026-10-13  |  类型 Type  National laboratory measured result
+
+定位 Locator  Opening HPL measurement 1.742 exaflops and separate peak 2.79; End to end approach and MI300A; HPE AMD laboratory collaboration
+
+https://www.llnl.gov/article/52061/lawrence-livermore-national-laboratorys-el-capitan-verified-worlds-fastest-supercomputer
+
+[45] AMD Expands Data Center Solutions Capabilities with Acquisition of Pensando
+
+日期 Date  2022-05-26  |  查阅 Accessed  2026-10-13  |  类型 Type  Transaction completion announcement
+
+定位 Locator  Opening completed acquisition approximately 1.9 billion dollars; DPU and software; team joins Forrest Norrod group; Lisa Su statement
+
+https://www.amd.com/en/newsroom/press-releases/2022-5-26-amd-expands-data-center-solutions-capabilities-wit.html
+
+[46] AMD Completes Acquisition of ZT Systems
+
+日期 Date  2025-03-31  |  查阅 Accessed  2026-10-13  |  类型 Type  Transaction completion announcement
+
+定位 Locator  Opening and team integration: rack scale systems design ROCm CPU GPU networking; Doug Huang design and customer enablement responsibilities
+
+https://ir.amd.com/news-events/press-releases/detail/1240/amd-completes-acquisition-of-zt-systems
+
+[47] AMD Completes Divestiture of ZT Systems Data Center Infrastructure Manufacturing Business to Sanmina
+
+日期 Date  2025-10-27  |  查阅 Accessed  2026-10-13  |  类型 Type  Regulatory filing transaction announcement
+
+定位 Locator  Exhibit 99.1 News Highlights and opening: manufacturing divestiture completed retained design teams and preferred Sanmina NPI partner
+
+https://ir.amd.com/financial-information/sec-filings/content/0001193125-25-250803/d917887dex991.htm
+
+[48] Semiconductor Industry Association Award Recipients
+
+日期 Date  Current official recipient list  |  查阅 Accessed  2026-10-13  |  类型 Type  Award organization recipient record
+
+定位 Locator  Robert N Noyce Award recipients 2020 Lisa Su and award description
+
+https://www.semiconductors.org/news-events/awards/
+
+[49] Dr Lisa Su AMD Chair and CEO Elected Chair of Semiconductor Industry Association
+
+日期 Date  2025-11-20  |  查阅 Accessed  2026-10-13  |  类型 Type  Industry association appointment announcement
+
+定位 Locator  Opening election announcement Lisa Su statement and About SIA
+
+https://www.semiconductors.org/dr-lisa-su-amd-chair-and-ceo-elected-chair-of-semiconductor-industry-association/
+
+[50] Semiconductor Industry Association Board Dr Lisa Su
+
+日期 Date  Undated current page  |  查阅 Accessed  2026-10-13  |  类型 Type  Current industry association governance record
+
+定位 Locator  2026 SIA Chair heading
+
+https://www.semiconductors.org/board/dr-lisa-su/
+
+图片资料 Photograph Credits
+
+苏姿丰在美国得克萨斯州奥斯汀 SXSW 活动现场 2024 年 3 月 11 日
+
+Lisa Su at SXSW in Austin Texas on March 11 2024
+
+摄影与来源 Credit  Fuzheado
+
+许可 License  CC BY 4.0
+
+原始尺寸 Original dimensions  3840 × 5760 pixels
+
+https://commons.wikimedia.org/wiki/File:SXSW-2024-alih-OB7A0861-Lisa_Su.jpg
+
+https://upload.wikimedia.org/wikipedia/commons/d/dd/SXSW-2024-alih-OB7A0861-Lisa_Su.jpg
+
+https://creativecommons.org/licenses/by/4.0/
+
+苏姿丰展示芯片的实拍照片 2015 年 6 月 3 日
+
+Lisa Su holding a chip photographed on June 3 2015
+
+摄影与来源 Credit  Gene Wang
+
+许可 License  CC BY 2.0
+
+原始尺寸 Original dimensions  3000 × 2360 pixels
+
+https://commons.wikimedia.org/wiki/File:AMD_CEO_Lisa_Su_20150603.jpg
+
+https://upload.wikimedia.org/wikipedia/commons/6/60/AMD_CEO_Lisa_Su_20150603.jpg
+
+https://creativecommons.org/licenses/by/2.0/
