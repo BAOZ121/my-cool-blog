@@ -10,12 +10,15 @@ const sdk = JSON.parse(await readFile(resolve(root, 'backend/node_modules/@supab
 if (sdk.version !== '2.117.3') throw new Error('Install the pinned backend lockfile before bundling community Auth.');
 const outdir = resolve(root, 'assets/js/generated');
 await mkdir(outdir, { recursive: true });
-await build({ absWorkingDir: root, entryPoints: ['assets/js/community-entry.mjs'], outfile: resolve(outdir, 'community-real.js'),
-  nodePaths: [resolve(root, 'backend/node_modules')], bundle: true, platform: 'browser', format: 'esm', target: ['es2022'],
-  minify: true, sourcemap: false, legalComments: 'eof', metafile: true,
-}).then(async result => {
+for (const [entry, name] of [['community-entry.mjs', 'community-real'], ['site-account-entry.mjs', 'site-account']]) {
+  const result = await build({ absWorkingDir: root, entryPoints: [`assets/js/${entry}`], outfile: resolve(outdir, `${name}.js`),
+    nodePaths: [resolve(root, 'backend/node_modules')], bundle: true, platform: 'browser', format: 'esm', target: ['es2022'],
+    minify: true, sourcemap: false, legalComments: 'eof', metafile: true });
+  if (name === 'site-account' && Object.keys(result.metafile.inputs).some(path => /backend\/|supabase|community-(?:entry|ui)/.test(path))) {
+    throw new Error('The global account hint must not include Auth, SDK or community UI code.');
+  }
   // Dependency paths/byte counts only. No runtime configuration or session data.
-  await writeFile(resolve(outdir, 'community-real.meta.json'), JSON.stringify(result.metafile, null, 2) + '\n');
-});
+  await writeFile(resolve(outdir, `${name}.meta.json`), JSON.stringify(result.metafile, null, 2) + '\n');
+}
 await writeFile(resolve(root, 'static/_headers'), communityHeaders(config));
-process.stdout.write('Community bundle and exact test-route headers generated. Real mode remains controlled by data/community.json.\n');
+process.stdout.write('Community bundle, passive account entry and exact test-route headers generated. Real mode remains controlled by data/community.json.\n');

@@ -1,0 +1,16 @@
+{{- $config := partial "community/config.html" . -}}
+{{- if eq $config.enabled true -}}
+{{- $project := (urls.Parse $config.supabaseUrl).Host -}}
+<section class="site-account" data-site-account data-project="{{ $project }}" aria-label="Community account">
+  <p class="site-account-label">Community</p>
+  <div class="site-account-guest" data-site-account-guest>
+    <a href="/test/forum-v1/#signin" title="Sign in">Sign in</a>
+    <a href="/test/forum-v1/#register" title="Register">Register</a>
+  </div>
+  <details data-site-account-member hidden>
+    <summary aria-label="Account menu" title="Account menu"><span class="site-account-avatar" data-site-account-avatar aria-hidden="true"></span><span class="site-account-copy">Account</span></summary>
+    <div class="site-account-menu"><p>Check your account in the community.</p><a href="/test/forum-v1/#account" data-site-account-account>Account &amp; sign out</a></div>
+  </details>
+  <p class="site-account-status" data-site-account-status aria-live="polite"></p>
+</section>
+{{- end -}}

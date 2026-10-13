@@ -27,3 +27,6 @@ Thumbs.db
 /assets/js/generated/community-real*
 
 /.wrangler/
+
+# Passive global account hint bundle
+/assets/js/generated/site-account*

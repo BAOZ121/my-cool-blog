@@ -14,7 +14,7 @@ const sourceConfig = { enabled: false, googleEnabled: false, emailStepupEnabled:
 const enabled = { enabled: true, googleEnabled: false, emailStepupEnabled: false, allowedOrigin: 'https://community.test', supabaseUrl: 'https://test-project.supabase.co', publishableKey: 'sb_publishable_synthetic_only_1234567890' };
 const secretSentinels = ['SYNTHETIC_BUILD_HMAC_SENTINEL_DO_NOT_SERIALIZE', 'SYNTHETIC_BUILD_MAIL_SENTINEL_DO_NOT_SERIALIZE'];
 const buildEnv = { ...process.env, ADMIN_STEPUP_HMAC_KEY: secretSentinels[0], ADMIN_STEPUP_RESEND_KEY: secretSentinels[1] };
-let referenceHome;
+let referenceHomeMain;
 async function checkNoSecrets(directory) {
   for (const entry of await readdir(directory, { withFileTypes: true })) {
     const path = join(directory, entry.name);
@@ -50,6 +50,7 @@ try {
       const decode = text => text.replaceAll('&#39;', "'").replaceAll('&#34;', '"').replaceAll('&amp;', '&');
       assert.equal(decode(cspTag?.content || ''), communityCsp(config));
       assert.match(html, /noindex, ?nofollow/);
+      assert.doesNotMatch(html, /site-account\.[a-f0-9]+\.js/, 'Protected routes reuse only their existing community Auth instance.');
       assert.equal([...html.matchAll(/<meta\b[^>]*>/g)].map(match => attributes(match[0])).find(attrs => attrs.name === 'referrer')?.content, 'no-referrer');
       assert.doesNotMatch(html, /<style\b|\son(?:click|load|change|submit)=|unsafe-inline|unsafe-eval|fonts\.google/);
       for (const script of html.matchAll(/<script\b[^>]*>[\s\S]*?<\/script>/g)) {
@@ -69,10 +70,24 @@ try {
       }
     }
     const home = await readFile(join(output, 'index.html'), 'utf8'); assert.doesNotMatch(home, /dex-community-publishable-key|data-community-mode|community-real\.[a-f0-9]+\.js/);
-    if (referenceHome === undefined) referenceHome = home; else assert.equal(home, referenceHome, 'Feature flags must not alter home or its navigation.');
+    const homeMain = home.match(/<main\b[^>]*>[\s\S]*?<\/main>/)?.[0];
+    assert.ok(homeMain);
+    if (referenceHomeMain === undefined) referenceHomeMain = homeMain; else assert.equal(homeMain, referenceHomeMain, 'Account presentation must not alter home content.');
+    assert.match(home, /href="?\/test\/forum-v1\/#discussion/);
+    assert.match(home, /href="?\/test\/forum-v1\/#message-board/);
+    assert.equal(/data-site-account\b/.test(home), config.enabled);
+    assert.equal(/site-account\.[a-f0-9]+\.js/.test(home), config.enabled);
+    if (config.enabled) {
+      assert.match(home, /href="?\/test\/forum-v1\/#signin/);
+      assert.match(home, /href="?\/test\/forum-v1\/#register/);
+      assert.match(home, /href="?\/test\/forum-v1\/#account/);
+      assert.doesNotMatch(home, /data-site-account-(?:email|admin|signout)/);
+    }
+    const widgetMeta = JSON.parse(await readFile(resolve('assets/js/generated/site-account.meta.json'), 'utf8'));
+    assert.ok(Object.keys(widgetMeta.inputs).every(path => /^assets\/js\/site-account(?:-hint|-entry)?\.mjs$/.test(path)), 'Formal-page bundle must be passive, without SDK/Auth/community UI imports.');
     await checkNoSecrets(output);
     const sitemap = await readFile(join(output, 'sitemap.xml'), 'utf8'); for (const path of Object.values(COMMUNITY_PATHS)) assert.ok(!sitemap.includes(path), 'Test routes must stay out of the sitemap.');
-    process.stdout.write(`${name}: four test routes, CSP/header parity, local scripts, noindex, native form safety secret exclusion, email-mode flag parity and unchanged home/navigation verified.\n`);
+    process.stdout.write(`${name}: four test routes, CSP/header parity, local scripts, noindex, native form safety secret exclusion, email-mode flag parity and unchanged home content with scoped global account navigation verified.\n`);
   }
   assert.equal(await readFile('data/community.json', 'utf8'), original);
 } finally { await rm(temporary, { recursive: true, force: true }); }
