@@ -23,5 +23,9 @@
 {{- if eq .Params.entryBrand "nvidia" -}}
   {{- $logo := resources.Get "images/nvidia-logo.svg" -}}
   {{- $entryLogo = printf "data:image/svg+xml;base64,%s" (encoding.Base64Encode $logo.Content) -}}
+{{- else if eq .Params.entryBrand "amd" -}}
+  {{- with .Resources.GetMatch "assets/amd-official-logo.svg" -}}
+    {{- $entryLogo = printf "data:image/svg+xml;base64,%s" (encoding.Base64Encode .Content) -}}
+  {{- end -}}
 {{- end -}}
-<script id="dex-page-transition-script"{{ if $entryLogo }} data-entry-brand="nvidia" data-entry-logo="{{ $entryLogo }}"{{ end }}>{{ $script.Content | safeJS }}</script>
+<script id="dex-page-transition-script"{{ if and $entryLogo (eq .Params.entryBrand "nvidia") }} data-entry-brand="nvidia" data-entry-logo="{{ $entryLogo }}"{{ else if and $entryLogo (eq .Params.entryBrand "amd") }} data-entry-brand="amd" data-entry-logo="{{ $entryLogo }}"{{ end }}>{{ $script.Content | safeJS }}</script>
