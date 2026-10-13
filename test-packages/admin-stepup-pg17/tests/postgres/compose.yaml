@@ -1,0 +1,52 @@
+# OPTIONAL USER-RUN FIXTURE ONLY. Not executed in the restricted cloud workspace.
+# Official version tags, not immutable digests; resolve/review digests before use.
+services:
+  postgres:
+    image: postgres:17.11
+    environment:
+      POSTGRES_USER: agent
+      POSTGRES_DB: postgres
+      PGDATA: /tmp/dex-pg-test/data
+      POSTGRES_HOST_AUTH_METHOD: trust
+    entrypoint:
+      - bash
+      - -ceu
+      - >-
+        mkdir -p /tmp/dex-pg-test/socket;
+        chown postgres:postgres /tmp/dex-pg-test/socket;
+        exec docker-entrypoint.sh postgres
+        -c listen_addresses=
+        -c unix_socket_directories=/tmp/dex-pg-test/socket
+        -c port=55439
+    network_mode: none
+    tmpfs:
+      - /tmp/dex-pg-test/data
+    volumes:
+      - fixture_socket:/tmp/dex-pg-test/socket
+    healthcheck:
+      test: [CMD, pg_isready, -h, /tmp/dex-pg-test/socket, -p, '55439', -U, agent, -d, postgres]
+      interval: 1s
+      timeout: 3s
+      retries: 30
+  tests:
+    image: node:22-bookworm-slim
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DEX_RUN_LOCAL_POSTGRES_RACES: 'true'
+    volumes:
+      - ../../:/suite:ro
+      - fixture_socket:/tmp/dex-pg-test/socket
+    command:
+      - bash
+      - -ceu
+      - >-
+        mkdir -p /tmp/run;
+        cp /suite/package.json /suite/package-lock.json /tmp/run/;
+        cp -r /suite/tests /suite/migrations /suite/ops /tmp/run/;
+        cd /tmp/run;
+        npm ci --ignore-scripts;
+        node --test tests/postgres/races.test.mjs
+volumes:
+  fixture_socket:

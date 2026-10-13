@@ -1,0 +1,57 @@
+name: Isolated admin step-up PostgreSQL 17 check
+
+on:
+  push:
+    branches: [codex/admin-stepup-pg17-check]
+
+permissions:
+  contents: read
+
+jobs:
+  synthetic-races:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Check out only this approved test commit
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Set up Node 22
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+      - name: Install locked test dependencies without lifecycle scripts
+        run: npm ci --prefix test-packages/admin-stepup-pg17 --ignore-scripts
+      - name: Run isolated synthetic PostgreSQL concurrency tests
+        shell: bash
+        env:
+          DEX_RUN_LOCAL_POSTGRES_RACES: 'true'
+        run: |
+          set -euo pipefail
+          container="dex-stepup-pg17-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          mkdir -p /tmp/dex-pg-test/socket
+          # This directory contains only the disposable, network-disabled test socket.
+          chmod 777 /tmp/dex-pg-test/socket
+          trap 'docker rm -f "$container" >/dev/null 2>&1 || true' EXIT
+          docker pull postgres:17.11
+          docker image inspect postgres:17.11 --format '{{json .RepoDigests}}'
+          docker run --detach --rm --name "$container" --network none \
+            -e POSTGRES_USER=agent -e POSTGRES_DB=postgres -e PGDATA=/tmp/dex-pg-test/data \
+            -e POSTGRES_HOST_AUTH_METHOD=trust \
+            -v /tmp/dex-pg-test/socket:/tmp/dex-pg-test/socket \
+            postgres:17.11 \
+            -c listen_addresses='' \
+            -c unix_socket_directories=/tmp/dex-pg-test/socket \
+            -c port=55439
+          for attempt in $(seq 1 60); do
+            if docker logs "$container" 2>&1 | grep -q "PostgreSQL init process complete; ready for start up." && \
+               docker exec "$container" pg_isready -h /tmp/dex-pg-test/socket -p 55439 -U agent -d postgres; then
+              break
+            fi
+            if [ "$attempt" = 60 ]; then
+              docker logs "$container"
+              exit 1
+            fi
+            sleep 1
+          done
+          node --test test-packages/admin-stepup-pg17/tests/postgres/races.test.mjs

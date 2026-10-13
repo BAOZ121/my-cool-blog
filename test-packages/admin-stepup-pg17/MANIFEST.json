@@ -1,0 +1,53 @@
+{
+  "status": "UNRUN: sandbox rejected Unix socket creation, including one formally escalated retry",
+  "files": [
+    {
+      "path": "migrations/20261012030809_dex_community_foundation.sql",
+      "sha256": "2b642b6dce8b73dd7633ec704152673ba5d1d4af9a611150d5e82fa6eaf8ce52"
+    },
+    {
+      "path": "migrations/20261012030835_harden_auto_rls_execute.sql",
+      "sha256": "47d5675a797803f6f4c8268c1f450d499b64477e193cb0128f1456182912164d"
+    },
+    {
+      "path": "migrations/20261013024643_community_admin_email_stepup.sql",
+      "sha256": "2eb48221bc5f7d4e304680ea68870137db186e5d68856e0cb0e208dc9d5eb751"
+    },
+    {
+      "path": "tests/auth-stubs.sql",
+      "sha256": "5259a3750f73d07aab08bcbc3c626b694957901b32c35bf0dae0dd6e874c3985"
+    },
+    {
+      "path": "tests/auto-rls-fixture.sql",
+      "sha256": "ae35b899e6514da4e3e069985f21ee50f1549d81c920cd564a20608e7f4dfc8c"
+    },
+    {
+      "path": "tests/vault-stub.sql",
+      "sha256": "0266bc3bf676baa05e81bf5223775a39e06f46faa9b0f36e9687ced682507ea1"
+    },
+    {
+      "path": "ops/disable-email-stepup.sql",
+      "sha256": "e79692e8e8adb721db0688e4bad7a27537c4afce0f403713fbed05f789b53974"
+    },
+    {
+      "path": "tests/postgres/races.test.mjs",
+      "sha256": "6dfea1f30cb66656c859a53d1d295cda41d4d342b1d8f59630ed9e815ed9ba5b"
+    },
+    {
+      "path": "tests/postgres/compose.yaml",
+      "sha256": "414cbe8a293e11785c3cc73c60495a930dca3f473d73678a046979a4e79c1f58"
+    },
+    {
+      "path": "package.json",
+      "sha256": "476a73ae80633817c49fcbfc18e23b4d8ec7b3ff8d629a187675e5b85374ca3e"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "68e54052bbde0209f305bc250a45e8f4a191672988553796f384d95e1832d310"
+    },
+    {
+      "path": "README.md",
+      "sha256": "0410afdf3606d17584d4d3ac840271b4af9b185310f065984c12d41bfad68613"
+    }
+  ]
+}
