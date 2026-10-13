@@ -212,7 +212,7 @@ try {
     const chapters = page.locator('.chapter-disclosure');
     const chapterSummary = page.locator('.chapter-widget summary');
     const names = await page.locator('#main-menu > li > a').evaluateAll(nodes => nodes.map(node => node.textContent.trim()));
-    assert.deepEqual(names, ['Discussion', 'Message board', 'Home', 'Industry Explorer', 'Evidence Library', 'Archives', 'Search', 'Contact', 'About & Methodology'], 'Exercise every current menu item without the retired directory');
+    assert.deepEqual(names, ['Discussion', 'Message board', 'Home', 'Industry Explorer', 'Evidence Library', 'Archives', 'Search', 'Contact', 'About & Methodology'], 'Exercise both promoted community entries and every surviving original menu item');
     assert.deepEqual(await page.locator('#main-menu > li > a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href'))), ['/test/forum-v1/#discussion', '/test/forum-v1/#message-board', '/', '/industries/', '/evidence-library/', '/archives/', '/search/', '/contact/', '/about/'], 'All nine menu destinations remain intact');
     await expect(disclosure).toHaveJSProperty('open', true);
     await expect(summary).toHaveAccessibleName('Minimize navigation');
@@ -275,6 +275,21 @@ try {
       await page.reload();
       await expect(disclosure).toHaveJSProperty('open', true);
     }
+    // Activate the real anchors, including in no-JS mode. This HTTP fixture
+    // deliberately fails closed for HTTPS Auth; panel behavior is tested with
+    // the matching HTTPS synthetic community UI, without real credentials.
+    const sourceURL = page.url();
+    for (const [label, route] of [['Discussion', '/test/forum-v1/#discussion'], ['Message board', '/test/forum-v1/#message-board']]) {
+      const link = page.locator(`#main-menu > li > a[href="${route}"]`);
+      await expect(link).toHaveAccessibleName(label);
+      await link.focus();
+      await page.keyboard.press('Enter');
+      await page.waitForURL(origin + route, { waitUntil: 'domcontentloaded' });
+      await expect(page.locator('#rc-root[data-community-mode="forum"]')).toBeVisible();
+      assert.equal(page.url(), origin + route, 'Native navigation preserves the exact allowlisted panel hash');
+      await page.goBack({ waitUntil: 'domcontentloaded' });
+      await page.waitForURL(sourceURL);
+    }
     assert.deepEqual(errors, [], 'No runtime errors');
     console.log(`PASS site navigation ${width}px ${scheme} ${motion} ${js ? 'JS' : 'no JS'}: keyboard, accessible icons, geometry, independent rails${js ? ', global persistence and strict native Back' : ''}`);
     await context.close();
@@ -332,33 +347,6 @@ try {
     }
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
     console.log(`PASS site navigation responsive independence ${width}px ${js ? 'JS' : 'no JS'}`);
-    await context.close();
-  }
-  // Exercise the added destinations with real keyboard navigation and native
-  // Back, in both the compact desktop rail and the open phone menu.
-  for (const width of [1280, 390]) {
-    const context = await browser.newContext({ viewport: { width, height: 900 }, reducedMotion: 'reduce' });
-    await context.route('https://fonts.googleapis.com/**', route => route.fulfill({ contentType: 'text/css', body: '' }));
-    const page = await context.newPage();
-    await page.goto(origin + articlePath);
-    if (width >= 1024) {
-      await page.locator(summarySelector).click();
-      await expect(page.locator(disclosureSelector)).toHaveJSProperty('open', false);
-    }
-    for (const [name, href] of [['Discussion', '/test/forum-v1/#discussion'], ['Message board', '/test/forum-v1/#message-board']]) {
-      if (width < 768 && !await page.locator('#main-menu').isVisible()) await page.locator('#toggle-menu').click();
-      const link = page.locator(`#main-menu > li > a[href="${href}"]`);
-      await expect(link).toHaveAccessibleName(name);
-      await link.focus();
-      await expect(link).toBeFocused();
-      await Promise.all([page.waitForURL(origin + href), page.keyboard.press('Enter')]);
-      assert.equal(page.url(), origin + href, `${name} reaches its real native destination`);
-      await page.goBack();
-      await page.waitForURL(origin + articlePath);
-      if (width >= 1024) await expect(page.locator(disclosureSelector)).toHaveJSProperty('open', false);
-    }
-    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
-    console.log(`PASS community navigation ${width}px: both added links, keyboard activation and native Back`);
     await context.close();
   }
   {

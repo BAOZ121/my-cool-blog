@@ -27,20 +27,6 @@ const origin = `http://127.0.0.1:${server.address().port}`;
 const screenshots = process.env.TRANSITION_SCREENSHOT_DIR;
 if (screenshots) await mkdir(screenshots, { recursive: true });
 
-async function visibleControlPoint(page, id) {
-  // The current menu can exceed the sidebar viewport. Scroll its real control
-  // into view without a pointer/key event or a locator animation-stability wait.
-  const bounds = await page.locator(`#${id}`).evaluate(element => {
-    element.scrollIntoView({ block: "nearest", inline: "nearest", behavior: "instant" });
-    const { x, y, width, height } = element.getBoundingClientRect();
-    return { x, y, width, height, viewportWidth: innerWidth, viewportHeight: innerHeight };
-  });
-  assert.ok(bounds.width > 0 && bounds.height > 0 && bounds.x >= 0 && bounds.y >= 0 &&
-    bounds.x + bounds.width <= bounds.viewportWidth && bounds.y + bounds.height <= bounds.viewportHeight,
-    `The real ${id} must be visible before pointer input: ${JSON.stringify(bounds)}`);
-  return { x: bounds.x + bounds.width / 2, y: bounds.y + bounds.height / 2 };
-}
-
 async function observe(context, { scheme = "light", animationAvailable = true, measurePerformance = false } = {}) {
   await context.route("https://fonts.googleapis.com/**", route => route.fulfill({ contentType: "text/css", body: "" }));
   await context.addInitScript(({ scheme, animationAvailable, measurePerformance }) => {
@@ -157,6 +143,25 @@ async function observe(context, { scheme = "light", animationAvailable = true, m
       return animation;
     };
   }, { scheme, animationAvailable, measurePerformance });
+}
+
+// A bounding box can be below the scrollable menu's clipping region. Raw
+// mouse input never scrolls a target into view. Expose the existing control and
+// hit-test its current destination-page position without an input or body scroll.
+async function visibleControlPoint(page, controlId) {
+  const point = await page.locator(`#${controlId}`).evaluate(node => {
+    const menu = node.closest('#main-menu');
+    if (menu) menu.scrollTop = menu.scrollHeight;
+    const box = node.getBoundingClientRect();
+    const x = box.x + box.width / 2, y = box.y + box.height / 2;
+    const hit = document.elementFromPoint(x, y);
+    return { x, y, width: box.width, height: box.height,
+      inViewport: box.width > 0 && box.height > 0 && box.left >= 0 && box.top >= 0 && box.right <= innerWidth && box.bottom <= innerHeight,
+      hitTarget: !!hit && (node === hit || node.contains(hit)), hitTag: hit?.tagName, hitId: hit?.id,
+      menuScroll: menu?.scrollTop, pageScroll: scrollY };
+  });
+  assert.ok(point.inViewport && point.hitTarget, `Real ${controlId} must be visible and hit-testable before raw pointer input: ${JSON.stringify(point)}`);
+  return point;
 }
 
 async function assertNoNative(page) {
@@ -378,7 +383,7 @@ async function verifyNvidiaEntry(browser) {
       await page.mouse.click(point.x, point.y);
       assert.equal(await page.locator(".dex-entry-curtain").count(), 0, "The first real pointer input immediately skips the logo");
       const input = await page.evaluate(control => window.__entry.inputs.find(item => item.type === "pointerdown" && item.control === control), controlId);
-      assert.ok(input?.curtain && input.active > 0);
+      assert.ok(input?.curtain && input.active > 0, `The first pointer must hit ${controlId} during the live curtain and animation: ${JSON.stringify(input)}`);
       assert.equal(input.curtain.pointerEvents, "none");
       await finished(page);
       assert.ok(await page.evaluate(() => window.__entry.calls.some(call => call.state === "cancelled")));
@@ -531,7 +536,6 @@ try {
     assert.equal(await page.evaluate(() => window.__entry.calls.length), 0, "Direct entry never animates");
     assert.equal(await page.locator(".dex-entry-curtain").count(), 0);
     const controlId = width < 768 ? "toggle-menu" : "dark-mode-toggle";
-    await visibleControlPoint(page, controlId);
     const article = page.locator(`.article-list [data-transition-cover] a[href="${ordinaryArticlePath}"]`);
     const articlePath = await article.getAttribute("href");
     firstArticlePath ||= articlePath;
@@ -548,6 +552,7 @@ try {
     if (motion === "no-preference") {
       await page.waitForFunction(() => window.__entryAnimations.some(animation => animation.playState === "running" || animation.pending), null, { polling: 1 });
     }
+    // Measure the destination, not the differently sized homepage sidebar.
     // No locator stability wait: send a real click while the entry is playing.
     const controlPoint = await visibleControlPoint(page, controlId);
     await page.mouse.click(controlPoint.x, controlPoint.y);
@@ -826,7 +831,8 @@ try {
       }
       if (mode === "interrupt") {
         // This real control click happens beyond the normal hold, while no WAAPI is running yet.
-        await page.locator("#dark-mode-toggle").click();
+        const point = await visibleControlPoint(page, "dark-mode-toggle");
+        await page.mouse.click(point.x, point.y);
         const input = await page.evaluate(() => window.__entry.inputs.find(item => item.type === "pointerdown" && item.control === "dark-mode-toggle"));
         assert.ok(input?.curtain); assert.equal(input.curtain.pointerEvents, "none");
         assert.equal(await page.locator("html").getAttribute("data-scheme"), "dark");
