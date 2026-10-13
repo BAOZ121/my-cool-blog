@@ -2,31 +2,28 @@
 title: "AMD Company Research Report"
 description: "Founding history, products, customers, manufacturing, financial results and governance. Public information through 13 October 2026."
 date: 2026-10-13
-url: "/test/amd-company-research-v1/"
+url: "/post/amd-company-research/"
 layout: single
 draft: false
-testpage: true
 amdResearch: true
+companyResearch: true
 entryBrand: amd
-cardCategoryLabel: "Company Research"
-cardCategoryLink: "/categories/company-research/"
+categories:
+  - "Company Research"
+tags:
+  - "AMD"
+  - "Chips"
 image: "assets/amd-headquarters-web.jpg"
 imageAlt: "AMD headquarters in Santa Clara, photographed by Lijiaxuan on 19 March 2024"
 toc: true
 comments: false
-dataDownload: "/test/amd-company-research-v1/downloads/annual_financials.csv"
-build:
-  list: never
-  render: always
-  publishResources: true
-sitemap:
-  disable: true
+dataDownload: "/post/amd-company-research/downloads/annual_financials.csv"
 ---
 
 
 <div class="amd-research">
 
-<div class="amd-entry-logo"><img src="assets/amd-official-logo.svg" alt="AMD official logo" width="180" height="43"></div><p class="review-status">Website test page · Review version 1 · Information through 13 October 2026</p>
+<div class="amd-entry-logo"><img src="assets/amd-official-logo.svg" alt="AMD official logo" width="180" height="43"></div><p class="review-status">Company research · Information through 13 October 2026</p>
 
 ## At a glance {#amd-at-a-glance}
 
@@ -438,8 +435,8 @@ sitemap:
 <p class="source-entry"><span id="amd-source-H28" class="source-label">[H28]</span> AMD Completes Acquisition of Silo AI, AMD; <a href="https://ir.amd.com/news-events/press-releases/detail/1210/amd-completes-acquisition-of-silo-ai-to-accelerate-development-and-deployment-of-ai-models-on-amd-hardware" target="_blank" rel="noopener noreferrer">https://ir.amd.com/news-events/press-releases/detail/1210/amd-completes-acquisition-of-silo-ai-to-accelerate-development-and-deployment-of-ai-models-on-amd-hardware</a></p>
 <p class="source-entry">Dates and location: Completion announcement published 2024-08-12; opening paragraph and AI team description.</p>
 <p class="source-entry">Support and limits: Approximately US$665 million cash transaction; the manufacturer&#x27;s expectations of future deployment benefits are not treated as accomplished facts.</p>
-<p class="source-entry">[IMG01] Cover: Real photograph of AMD&#x27;s Santa Clara headquarters. Author: Lijiaxuan; photographed March 19, 2024, and uploaded August 26, 2024; original image 5472 × 3648 pixels; CC0 1.0. Original page: <a href="https://commons.wikimedia.org/wiki/File:AMD_headquarter_20240318.jpg" target="_blank" rel="noopener noreferrer">https://commons.wikimedia.org/wiki/File:AMD_headquarter_20240318.jpg</a> . The photograph records the building&#x27;s exterior at the time it was taken; it has not been composited, enlarged, or given added text on the image.</p>
-<p class="source-entry">[BRAND01] Official AMD white logo. Source: <a href="https://newsroom.amd.com/" target="_blank" rel="noopener noreferrer">https://newsroom.amd.com/</a> ; original SVG: <a href="https://newsroom.amd.com/_astro/amd-header-logo.NP9ywpkQ.svg" target="_blank" rel="noopener noreferrer">https://newsroom.amd.com/_astro/amd-header-logo.NP9ywpkQ.svg</a> . Original proportions are preserved. The material was read on October 13, 2026. AMD trademarks belong to AMD; this report is not an official AMD document or endorsement. Trademark information: <a href="https://www.amd.com/en/legal/trademarks.html" target="_blank" rel="noopener noreferrer">https://www.amd.com/en/legal/trademarks.html</a> .</p>
+<p class="source-entry"><span id="amd-source-IMG01" class="source-label">[IMG01]</span> Cover: Real photograph of AMD&#x27;s Santa Clara headquarters. Author: Lijiaxuan; photographed March 19, 2024, and uploaded August 26, 2024; original image 5472 × 3648 pixels; CC0 1.0. Original page: <a href="https://commons.wikimedia.org/wiki/File:AMD_headquarter_20240318.jpg" target="_blank" rel="noopener noreferrer">https://commons.wikimedia.org/wiki/File:AMD_headquarter_20240318.jpg</a> . The photograph records the building&#x27;s exterior at the time it was taken; it has not been composited, enlarged, or given added text on the image.</p>
+<p class="source-entry"><span id="amd-source-BRAND01" class="source-label">[BRAND01]</span> Official AMD white logo. Source: <a href="https://newsroom.amd.com/" target="_blank" rel="noopener noreferrer">https://newsroom.amd.com/</a> ; original SVG: <a href="https://newsroom.amd.com/_astro/amd-header-logo.NP9ywpkQ.svg" target="_blank" rel="noopener noreferrer">https://newsroom.amd.com/_astro/amd-header-logo.NP9ywpkQ.svg</a> . Original proportions are preserved. The material was read on October 13, 2026. AMD trademarks belong to AMD; this report is not an official AMD document or endorsement. Trademark information: <a href="https://www.amd.com/en/legal/trademarks.html" target="_blank" rel="noopener noreferrer">https://www.amd.com/en/legal/trademarks.html</a> .</p>
 
 </div>
 

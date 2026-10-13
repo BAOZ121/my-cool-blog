@@ -13,7 +13,7 @@
         {{- $width := . -}}
         {{- $variant := $resource.Resize (printf "%dx webp q82" .) -}}
         {{- /* Keep detailed covers within the site's 160 KB transfer budget. */ -}}
-        {{- range slice 75 68 60 50 40 -}}
+        {{- range slice 75 68 60 50 40 35 30 -}}
           {{- if gt (len $variant.Content) 160000 -}}
             {{- $variant = $resource.Resize (printf "%dx webp q%d" $width .) -}}
           {{- end -}}
