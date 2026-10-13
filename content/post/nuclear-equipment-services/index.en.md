@@ -1,9 +1,9 @@
 +++
 title = "Global Nuclear Equipment and Services Industry Report"
 description = "Industry history, the value chain, global markets and the constraints on equipment delivery and long term services"
-date = 2026-10-13T12:00:00+08:00
+date = 2026-10-13T18:17:09+08:00
+lastmod = 2026-10-13
 draft = false
-testpage = true
 nuclearreview = true
 type = "post"
 image = "cover.jpg"
@@ -11,22 +11,17 @@ comments = false
 toc = true
 readingTime = true
 imageAlt = "Real photograph inside the reactor hall at the existing Dukovany Nuclear Power Plant in 2012, showing service platforms, an overhead crane, industrial equipment and a worker in yellow clothing."
-url = "/test/nuclear-equipment-services-v1/"
 layout = "single"
 reportversion = "1.0"
 evidencecutoff = "2026-10-13"
-[build]
-  list = "never"
-  render = "always"
-  publishResources = true
-[sitemap]
-  disable = true
+categories = ["Industry Report"]
+tags = ["Nuclear Power", "Nuclear Equipment", "Nuclear Services", "Global", "Industry Research"]
 +++
 
 
 <div class="nuclear-report">
 
-<p class="nuclear-review-note">Review edition 1.0 · Editorial test page · Not a formal report release</p>
+<p class="nuclear-review-note">Industry report · Version 1.0 · Global scope · Public information cutoff 13 October 2026.</p>
 
 <p class="nuclear-photo-credit">Reactor hall at the existing Dukovany Nuclear Power Plant, Czech Republic, 6 November 2012. Photo: Petr Pavlicek / IAEA, IAEA Imagebank, CC BY-SA 2.0. Used unchanged as an industry illustration; it does not show the later Dukovany new-build project. <a class="nuclear-cite" href="#source-I01" aria-label="Source I01">[I01]</a></p>
 
@@ -34,7 +29,7 @@ evidencecutoff = "2026-10-13"
 
 <p data-report-paragraph="scope-2">The commercial opportunity depends on both new projects and the existing fleet. The report follows how qualified equipment becomes an operating plant and how long-term fuel, inspection and maintenance contracts create service demand. Announced projects, orders, revenue and cash flow represent different stages. The analysis uses original disclosures and preserves their reporting periods and business boundaries.</p>
 
-<p data-report-paragraph="scope-3">Sources were reviewed on 13 October 2026, with a public-information cutoff of that date. No unified global equipment-and-services revenue total is asserted. The share figure is explicitly limited to 2025 uranium-enrichment service capacity. Future production dates remain company plans. This is review version 1.0.</p>
+<p data-report-paragraph="scope-3">Sources were reviewed on 13 October 2026, with a public-information cutoff of that date. No unified global equipment-and-services revenue total is asserted. The share figure is explicitly limited to 2025 uranium-enrichment service capacity. Future production dates remain company plans. This is version 1.0.</p>
 
 <p class="nuclear-downloads"><a href="report_en_v1.txt" download>Full English manuscript</a><a href="supporting_evidence_en_v1.txt" download>Supporting Evidence</a><a href="enrichment_capacity_2025.csv" download>Capacity data CSV</a></p>
 

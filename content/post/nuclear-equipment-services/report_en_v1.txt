@@ -1,12 +1,12 @@
 Global Nuclear Equipment and Services Industry Report
 
-Review version 1.0 | Evidence cutoff 2026-10-13 | Global scope
+Version 1.0 | Evidence cutoff 2026-10-13 | Global scope
 
 This report examines the global suppliers of equipment, engineering, fuel-cycle processing and technical services used by civilian nuclear-power plants. It covers construction, operation, life extension and the back end. Uranium feed appears as supply-chain context; electricity sales, uranium mining revenue, military uses and medical-isotope revenue are outside the market boundary.
 
 The commercial opportunity depends on both new projects and the existing fleet. The report follows how qualified equipment becomes an operating plant and how long-term fuel, inspection and maintenance contracts create service demand. Announced projects, orders, revenue and cash flow represent different stages. The analysis uses original disclosures and preserves their reporting periods and business boundaries.
 
-Sources were reviewed on 13 October 2026, with a public-information cutoff of that date. No unified global equipment-and-services revenue total is asserted. The share figure is explicitly limited to 2025 uranium-enrichment service capacity. Future production dates remain company plans. This is review version 1.0.
+Sources were reviewed on 13 October 2026, with a public-information cutoff of that date. No unified global equipment-and-services revenue total is asserted. The share figure is explicitly limited to 2025 uranium-enrichment service capacity. Future production dates remain company plans. This is version 1.0.
 
 Reactor hall at the existing Dukovany Nuclear Power Plant, Czech Republic, 6 November 2012. Photo: Petr Pavlicek / IAEA, IAEA Imagebank, CC BY-SA 2.0. Used unchanged as an industry illustration; it does not show the later Dukovany new-build project. [I01]
 
