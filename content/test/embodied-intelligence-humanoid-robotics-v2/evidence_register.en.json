@@ -1,0 +1,686 @@
+{
+  "cutoff": "2026-10-12",
+  "sources": [
+    {
+      "id": "H01",
+      "title": "BMW Group to deploy humanoid robots in production in Germany for the first time",
+      "url": "https://www.press.bmwgroup.com/united-kingdom/article/detail/T0455870EN_GB/bmw-group-to-deploy-humanoid-robots-in-production-in-germany-for-the-first-time",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Source: [BMW Group to deploy humanoid robots in production in Germany for the first time](https://www.press.bmwgroup.com/united-kingdom/article/detail/T0455870EN_GB/bmw-group-to-deploy-humanoid-robots-in-production-in-germany-for-the-first-time). Institution/author: BMW Group.",
+        "Published: 2026-02-27. Event/statistical period: 2025 pilot; ten months; exact start and end not disclosed. Accessed: 2026-10-12.",
+        "Support and limits: Supports a customer-reported pilot. Fleet size, interventions, prices and audited economics are undisclosed; vehicle totals describe production support."
+      ]
+    },
+    {
+      "id": "H02",
+      "title": "GXO signs industry-first multi-year agreement with Agility Robotics",
+      "url": "https://gxo.com/news_article/gxo-signs-industry-first-multi-year-agreement-with-agility-robotics/",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Source: [GXO signs industry-first multi-year agreement with Agility Robotics](https://gxo.com/news_article/gxo-signs-industry-first-multi-year-agreement-with-agility-robotics/). Institution/author: GXO Logistics / Agility Robotics.",
+        "Published: 2024-06-27. Event/statistical period: Agreement announced 2024-06-27; preceding pilot in late 2023. Accessed: 2026-10-12.",
+        "Support and limits: Supports an announced commercial RaaS agreement and described tote task. First-of-industry status is the companies' claim; contract value, fleet size and profitability are undisclosed."
+      ]
+    },
+    {
+      "id": "H03",
+      "title": "BMW Group advances the use of Physical AI in production with Figure 03 project in Spartanburg",
+      "url": "https://www.press.bmwgroup.com/global/article/detail/T0458778EN/bmw-group-advances-the-use-of-physical-ai-in-production-with-figure-03-project-in-spartanburg",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Source: [BMW Group advances the use of Physical AI in production with Figure 03 project in Spartanburg](https://www.press.bmwgroup.com/global/article/detail/T0458778EN/bmw-group-advances-the-use-of-physical-ai-in-production-with-figure-03-project-in-spartanburg). Institution/author: BMW Group.",
+        "Published: 2026-06-25. Event/statistical period: 2026 project announcement; retrospective references the 2025 Figure 02 pilot. Accessed: 2026-10-12.",
+        "Support and limits: Supports the next sequencing application and planned features. Forward-looking wording does not establish completed, stable Figure 03 operation. Ten-month production support differs from the supplier's eleven-month deployment description."
+      ]
+    },
+    {
+      "id": "H04",
+      "title": "The Robots of Waseda: A 50-Year Journey in Humanoid Innovation",
+      "url": "https://www.waseda.jp/top/en/news/88080",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Source: [The Robots of Waseda: A 50-Year Journey in Humanoid Innovation](https://www.waseda.jp/top/en/news/88080). Institution/author: Waseda University.",
+        "Published: 2026-05-08. Event/statistical period: Historical milestones: WABOT-1, 1973; WABOT-2, 1984. Accessed: 2026-10-12.",
+        "Support and limits: Supports institutional dates and capabilities. The first claim is qualified as widely regarded and full-scale; research milestones do not establish commercial readiness."
+      ]
+    },
+    {
+      "id": "H05",
+      "title": "Honda Announces the ASIMO Humanoid Robot",
+      "url": "https://global.honda/jp/news/2000/c001120b.html",
+      "title_translated_from_original": true,
+      "paragraphs": [
+        "Source: [Honda announces the humanoid robot ASIMO](https://global.honda/jp/news/2000/c001120b.html). Institution/author: Honda Motor Co.",
+        "Published: 2000-11-20. Event/statistical period: R&D began 1986; P2 1996; P3 1997; ASIMO announcement 2000-11-20. Accessed: 2026-10-12.",
+        "Support and limits: Supports original chronology, launch specifications and controller-based operation. Later autonomous or language-model capabilities must not be projected onto the launch-era machine."
+      ]
+    },
+    {
+      "id": "H06",
+      "title": "DARPA’s ATLAS Robot Unveiled",
+      "url": "https://www.darpa.mil/news/2013/atlas-robot-unveiled",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Source: [DARPA's ATLAS Robot Unveiled](https://www.darpa.mil/news/2013/atlas-robot-unveiled). Institution/author: DARPA.",
+        "Published: 2013-07-11. Event/statistical period: Team introduction 2013-07-08; platform for the 2013 trials. Accessed: 2026-10-12.",
+        "Support and limits: Supports hardware and human-supervised research context. The release's anticipated 2014 final was later changed; use H07 for the actual 2015 event."
+      ]
+    },
+    {
+      "id": "H07",
+      "title": "Robotics Challenge Workshop: From Better Robots to Better Futures",
+      "url": "https://www.darpa.mil/news/2015/robotics-challenge-workshop",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Source: [Robotics Challenge Workshop: From Better Robots to Better Futures](https://www.darpa.mil/news/2015/robotics-challenge-workshop). Institution/author: DARPA.",
+        "Published: 2015-06-08. Event/statistical period: Finals 2015-06-05 to 2015-06-06; post-event workshop. Accessed: 2026-10-12.",
+        "Support and limits: Supports the completed event and KAIST's top finish. Companion prerelease supports dates and task context; planned team count must not be presented as actual participation.",
+        "[Companion: Twenty-five Teams From around the World to Participate in DARPA Robotics Challenge Finals; DARPA; 2015-03-05.](https://www.darpa.mil/news/2015/robotics-challenge-finals) Accessed: 2026-10-12."
+      ]
+    },
+    {
+      "id": "H08",
+      "title": "PaLM-E: An Embodied Multimodal Language Model",
+      "url": "https://arxiv.org/html/2303.03378v1",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Source: [PaLM-E: An Embodied Multimodal Language Model](https://arxiv.org/html/2303.03378v1). Institution/author: Danny Driess and coauthors.",
+        "Published: 2023-03-06, arXiv v1. Event/statistical period: 2023 research publication; full-text Section 3 and conclusion read. Accessed: 2026-10-12.",
+        "Support and limits: Supports multimodal reasoning and textual planning. Execution assumes a separate low-level policy or planner; research performance does not establish production reliability."
+      ]
+    },
+    {
+      "id": "H09",
+      "title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+      "url": "https://arxiv.org/html/2307.15818v1",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Source: [RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control](https://arxiv.org/html/2307.15818v1). Institution/author: Anthony Brohan and coauthors, Google DeepMind.",
+        "Published: 2023-07-28, arXiv v1. Event/statistical period: 2023 experiments; full-text Sections 3.2 and 5 read. Accessed: 2026-10-12.",
+        "Support and limits: Supports action-token generation and semantic generalization. Authors explicitly limit physical skills to robot-data coverage; web knowledge does not alone confer new motions."
+      ]
+    },
+    {
+      "id": "H10",
+      "title": "Open X-Embodiment: Robotic Learning Datasets and RT-X Models",
+      "url": "https://arxiv.org/pdf/2310.08864v9",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Source: [Open X-Embodiment: Robotic Learning Datasets and RT-X Models](https://arxiv.org/pdf/2310.08864v9). Institution/author: Open X-Embodiment Collaboration.",
+        "Published: First version 2023-10-13; version read 2025-05-14, v9. Event/statistical period: Dataset as described in v9; PDF pages 1–2 read. Accessed: 2026-10-12.",
+        "Support and limits: Supports 22 embodiments, 21 data-contributing institutions and manipulation-transfer research. These counts are not shipments; author affiliations and contributing institutions have different denominators."
+      ]
+    },
+    {
+      "id": "H11",
+      "title": "An Electric New Era for Atlas",
+      "url": "https://bostondynamics.com/blog/electric-new-era-for-atlas",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Source: [An Electric New Era for Atlas](https://bostondynamics.com/blog/electric-new-era-for-atlas). Institution/author: Boston Dynamics.",
+        "Published: April 2024; precise day absent from the rendered original page. Event/statistical period: April 2024 electric-platform transition; original body read; month corroborated by the institutional retrospective. Accessed: 2026-10-12.",
+        "Support and limits: Supports the electric transition and staged Hyundai testing plans. Exact original publication day is unresolved; testing plans do not establish volume deployment or audited returns.",
+        "[Companion: Atlas' Evolution From Research Robot to Industrial Humanoid; Boston Dynamics; current page has no exposed publication date.](https://bostondynamics.com/blog/atlas-evolution-from-research-robot-to-industrial-humanoid/) Accessed: 2026-10-12."
+      ]
+    },
+    {
+      "id": "H12",
+      "title": "Gemini Robotics brings AI into the physical world",
+      "url": "https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Source: [Gemini Robotics brings AI into the physical world](https://deepmind.google/blog/gemini-robotics-brings-ai-into-the-physical-world/). Institution/author: Google DeepMind, Carolina Parada.",
+        "Published: 2025-03-12. Event/statistical period: Model and partnership announcement; primarily bi-arm training described. Accessed: 2026-10-12.",
+        "Support and limits: Supports announced VLA/ER roles and platform research. Demonstrations and partnerships do not establish independent industrial acceptance or general full-body autonomy."
+      ]
+    },
+    {
+      "id": "H13",
+      "title": "NVIDIA Announces Isaac GR00T N1 — the World’s First Open Humanoid Robot Foundation Model — and Simulation Frameworks to Speed Robot Development",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-isaac-gr00t-n1-open-humanoid-robot-foundation-model-simulation-frameworks",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Source: [NVIDIA Announces Isaac GR00T N1 — the World's First Open Humanoid Robot Foundation Model — and Simulation Frameworks to Speed Robot Development](https://nvidianews.nvidia.com/news/nvidia-isaac-gr00t-n1-open-humanoid-robot-foundation-model-simulation-frameworks). Institution/author: NVIDIA.",
+        "Published: 2025-03-18. Event/statistical period: Model and tools announcement. Accessed: 2026-10-12.",
+        "Support and limits: Supports customizable reasoning/action models and post-training. The title's first claim is vendor language; openness requires license-specific qualification. Demonstrations do not establish deployed profitability."
+      ]
+    },
+    {
+      "id": "H14",
+      "title": "Gemini Robotics 1.5 brings AI agents into the physical world",
+      "url": "https://deepmind.google/blog/gemini-robotics-15-brings-ai-agents-into-the-physical-world/",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Source: [Gemini Robotics 1.5 brings AI agents into the physical world](https://deepmind.google/blog/gemini-robotics-15-brings-ai-agents-into-the-physical-world/). Institution/author: Google DeepMind, Carolina Parada.",
+        "Published: 2025-09-25. Event/statistical period: Launch-time capabilities and access arrangements. Accessed: 2026-10-12.",
+        "Support and limits: Supports planning, tool use and tested cross-platform transfer. Access descriptions are launch-time; selected-platform research does not prove universal transfer, factory readiness or market-share leadership."
+      ]
+    },
+    {
+      "id": "H15",
+      "title": "Boston Dynamics Unveils New Atlas Robot to Revolutionize Industry",
+      "url": "https://bostondynamics.com/blog/boston-dynamics-unveils-new-atlas-robot-to-revolutionize-industry/",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Source: [Boston Dynamics Unveils New Atlas Robot to Revolutionize Industry](https://bostondynamics.com/blog/boston-dynamics-unveils-new-atlas-robot-to-revolutionize-industry/). Institution/author: Boston Dynamics.",
+        "Published: 2026-01-05. Event/statistical period: CES unveiling; manufacturing announcement; 2026 shipment/deployment plans. Accessed: 2026-10-12.",
+        "Support and limits: Supports the product unveiling and announced manufacturing/deployment program. Allocated or scheduled fleets do not establish completed deliveries, disclosed unit volumes, revenue or independently verified performance."
+      ]
+    },
+    {
+      "id": "H16",
+      "title": "NVIDIA Expands Open Model Families to Power the Next Wave of Agentic, Physical and Healthcare AI",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-expands-open-model-families-to-power-the-next-wave-of-agentic-physical-and-healthcare-ai",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Source: [NVIDIA Expands Open Model Families to Power the Next Wave of Agentic, Physical and Healthcare AI](https://nvidianews.nvidia.com/news/nvidia-expands-open-model-families-to-power-the-next-wave-of-agentic-physical-and-healthcare-ai). Institution/author: NVIDIA.",
+        "Published: 2026-03-16. Event/statistical period: N1.7 announcement; N2 preview with expected end-2026 availability. Accessed: 2026-10-12.",
+        "Support and limits: Supports the announced roadmap. Vendor viability and benchmark statements are not independently verified ROI; the N2 preview alone does not establish release before the cutoff."
+      ]
+    },
+    {
+      "id": "H17",
+      "title": "Successful test of humanoid robots at BMW Group Plant Spartanburg",
+      "url": "https://www.press.bmwgroup.com/usa/article/detail/T0444268EN_US/successful-test-of-humanoid-robots-at-bmw-group-plant-spartanburg?showMedia=photo",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Source: [Successful test of humanoid robots at BMW Group Plant Spartanburg](https://www.press.bmwgroup.com/usa/article/detail/T0444268EN_US/successful-test-of-humanoid-robots-at-bmw-group-plant-spartanburg?showMedia=photo). Institution/author: BMW Group.",
+        "Published: 2024-08-06. Event/statistical period: Several-week trial before publication; exact trial dates undisclosed. Accessed: 2026-10-12.",
+        "Support and limits: Supports the initial trial and release-date status. No return timetable was established then; later pilot status uses H01. Supplier capability statements remain attributed."
+      ]
+    },
+    {
+      "id": "H18",
+      "title": "Intelligence without representation",
+      "url": "https://people.csail.mit.edu/brooks/papers/representation.pdf",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Source: [Intelligence without representation](https://people.csail.mit.edu/brooks/papers/representation.pdf). Institution/author: Rodney A. Brooks, MIT Artificial Intelligence Laboratory.",
+        "Published: 1991 journal publication; manuscript received September 1987. Event/statistical period: Historical research; Artificial Intelligence 47, pages 139–159; introduction and methods read. Accessed: 2026-10-12.",
+        "Support and limits: Supports behavior-based, real-world sensing/action methodology. It establishes neither invention of all embodied intelligence nor architectural identity with contemporary foundation models."
+      ]
+    },
+    {
+      "id": "H19",
+      "title": "Interpretation of the Guiding Opinions on the Innovative Development of Humanoid Robots",
+      "url": "https://www.miit.gov.cn/zwgk/zcjd/art/2023/art_e3f5686c2f0d49f9968b7ae011d558e1.html",
+      "title_translated_from_original": true,
+      "paragraphs": [
+        "Source: [Official interpretation of the Guiding Opinions on the Innovative Development of Humanoid Robots](https://www.miit.gov.cn/zwgk/zcjd/art/2023/art_e3f5686c2f0d49f9968b7ae011d558e1.html). Institution/author: China's Ministry of Industry and Information Technology.",
+        "Published: 2023-11-02; underlying document dated 2023-10-20. Event/statistical period: Policy targets for 2025 and 2027; document number MIIT Science [2023] 193. Accessed: 2026-10-12.",
+        "Support and limits: Supports stated priorities, diagnosed gaps and policy targets. Targets are not achieved results, shipments, orders or proof of leadership across all performance measures.",
+        "[Underlying notice: MIIT; public release 2023-11-02; document dated 2023-10-20.](https://www.miit.gov.cn/jgsj/kjs/wjfb/art/2023/art_50316f76a9b1454b898c7bb2a5846b79.html) Accessed: 2026-10-12."
+      ]
+    },
+    {
+      "id": "M01",
+      "title": "SAG: Global Humanoid Robot Shipments Surged 272% YoY to 19.1K Units in 1H 2026; AGIBOT Overtook Unitree for No. 1 Position",
+      "url": "https://smartanalyticsglobal.com/global-humanoid-robot-shipments-2026-agibot-unitree/",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Publisher/author: Smart Analytics Global; Linda Sui. Published: 2026-08-10. Event/statistical period: H1 2026; H1 2025 comparator. Accessed: 2026-10-12.",
+        "Original: [SAG: Global Humanoid Robot Shipments Surged 272% YoY to 19.1K Units in 1H 2026; AGIBOT Overtook Unitree for No. 1 Position](https://smartanalyticsglobal.com/global-humanoid-robot-shipments-2026-agibot-unitree/). Location: Exhibit 1: Global Humanoid Robot Shipments and Vendor Share: 1H 2025 vs. 1H 2026; definition footnote and associated vendor paragraphs.",
+        "Support and limits: Supports a global humanoid shipment-share chart under SAG's four-form definition. The original chart was inspected again on October 12, 2026. Published H1 2026 shares sum to 100%; displayed rounded vendor volumes sum to 19,000 against the printed total of 19,100. Estimates are preliminary and include wheeled robots. This is neither whole-industry embodied-intelligence share nor productive-worker stock."
+      ]
+    },
+    {
+      "id": "M04",
+      "title": "Omdia Market Radar: General-purpose Embodied Intelligent Robots, 2026",
+      "url": "https://www.agibot.com.cn/public/uploads/file/Omdia%20Market%20Radar%20-%20General-purpose%20Embodied%20Intelligent%20Robot%20-%202026.pdf",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Publisher/author: Omdia; Lian Jye Su. Published: 2026-01-08, PDF version. Event/statistical period: Calendar 2024 and 2025; 2024–2035 forecast. Accessed: 2026-10-12.",
+        "Original: [Omdia Market Radar: General-purpose Embodied Intelligent Robots, 2026](https://www.agibot.com.cn/public/uploads/file/Omdia%20Market%20Radar%20-%20General-purpose%20Embodied%20Intelligent%20Robot%20-%202026.pdf). Location: PDF page 7, Table 1: Robotics shipments by vendor, 2024 and 2025.",
+        "Support and limits: Excluded chart source. Full public PDF read and pages 7–8 visually checked. Vendor table has a 50-unit internal discrepancy; later Unitree disclosures exceed its estimate. Wheeled torso-and-arm robots qualify. The publisher says the report was updated; current subscription-only body was not accessed."
+      ]
+    },
+    {
+      "id": "M02",
+      "title": "Global Humanoid Robot Installations Reach 16,000 Units in 2025 as Mass Production Picks Up Pace",
+      "url": "https://counterpointresearch.com/en/insights/Global-Humanoid-Robot-Installations-Reach-16%2C000-Units-in-2025-as-Mass-Production-Picks-Pace%20",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Publisher/author: Counterpoint Research; Team Counterpoint. Published: 2026-01-14. Event/statistical period: Calendar 2025 additional installations. Accessed: 2026-10-12.",
+        "Original: [Global Humanoid Robot Installations Reach 16,000 Units in 2025 as Mass Production Picks Up Pace](https://counterpointresearch.com/en/insights/Global-Humanoid-Robot-Installations-Reach-16%2C000-Units-in-2025-as-Mass-Production-Picks-Pace%20). Location: Original public article and graphic where specified.",
+        "Support and limits: Supports annual additional humanoid-installation share, with original one-decimal graphic inspected. Wheeled products are present; complete counting rules are undisclosed. Approximate units cannot produce exact vendor counts. Keep the installation metric and note the body’s apparent 2025 dateline typo; page metadata dates publication to 2026."
+      ]
+    },
+    {
+      "id": "M03",
+      "title": "Global Humanoid Robot Shipments Soar Nearly 300% YoY in H1 2026, Driven by Commercial Deployments",
+      "url": "https://counterpointresearch.com/en/insights/global-humanoid-robot-shipments-soar-nearly-300-percent-yoy-in-h1-2026",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Publisher/author: Counterpoint Research; Ethan Qi and Shaochen Wang. Published: 2026-08-20. Event/statistical period: H1 2026; full-year 2026 forecast. Accessed: 2026-10-12.",
+        "Original: [Global Humanoid Robot Shipments Soar Nearly 300% YoY in H1 2026, Driven by Commercial Deployments](https://counterpointresearch.com/en/insights/global-humanoid-robot-shipments-soar-nearly-300-percent-yoy-in-h1-2026). Location: Original public article and graphic where specified.",
+        "Support and limits: Supports separately attributed H1 2026 shipments and application categories. The full free article was read from public page HTML, and the original vendor-share graphic was inspected on October 12, 2026. It shows AGIBOT 43.1%, Unitree 31.1%, Galbot 5.0%, UBTECH 4.4%, Leju 2.9% and others 13.4%, totaling 99.9% with a rounding note. This estimate exceeds 22,000 shipments and differs from SAG's approximately 19,100; estimates and denominators must remain separate. Wheeled robots are included. Full-year 2026 figures are forecasts. The graphic is retained as an audit comparison and is not selected as a third final share chart."
+      ]
+    },
+    {
+      "id": "M05",
+      "title": "Unitree Ranks No.1 Globally in Humanoid Robot Shipments, Exceeding 5,500 Units in 2025",
+      "url": "https://www.prnewswire.com/news-releases/unitree-ranks-no1-globally-in-humanoid-robot-shipments-exceeding-5-500-units-in-2025--302674729.html",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Publisher/author: Unitree Robotics; distributed by PRNewswire. Published: 2026-01-29; statement dated 2026-01-22. Event/statistical period: Calendar 2025 shipments and production. Accessed: 2026-10-12.",
+        "Original: [Unitree Ranks No.1 Globally in Humanoid Robot Shipments, Exceeding 5,500 Units in 2025](https://www.prnewswire.com/news-releases/unitree-ranks-no1-globally-in-humanoid-robot-shipments-exceeding-5-500-units-in-2025--302674729.html). Location: Full statement numbered points 2-4.",
+        "Support and limits: Supports Unitree’s self-reported pure-humanoid shipments and production distinction, excluding dual-arm wheeled products. The announcement does not supply a comparable global denominator or independently prove its ranking. Do not substitute its unit count into an older analyst table and recalculate all shares.",
+        "The January company statement reports production above 6,500, while the May prospectus lists 5,716 produced humanoids for 2025. The public sources read here do not explain the entire difference; do not silently harmonize them. The prospectus separately distinguishes 5,511 shipments and 5,215 recognized sales."
+      ]
+    },
+    {
+      "id": "M06",
+      "title": "Unitree Response to the Exchange Review Center Letter on IPO Application Documents",
+      "url": "https://static.sse.com.cn/stock/disclosure/announcement/c/202605/002178_20260525_V4H0.pdf",
+      "title_translated_from_original": true,
+      "paragraphs": [
+        "Publisher/author: Unitree; Shanghai Stock Exchange public filing. Published: 2026-05-25. Event/statistical period: Calendar 2025; reviewed Q1 2026. Accessed: 2026-10-12.",
+        "Original: [Unitree Response to the Exchange Review Follow-up Letter (translated title)](https://static.sse.com.cn/stock/disclosure/announcement/c/202605/002178_20260525_V4H0.pdf). Location: PDF pages 3 and8 (printed8-1-3-2,8-1-3-7).",
+        "Support and limits: Supports consolidated revenue, distinct gross-margin measures and profit excluding nonrecurring items. Group business includes quadrupeds and components. Adjusted profit is not GAAP net profit or humanoid-segment profit. The short discussion’s humanoid proportion needs the full prospectus’s main-business-revenue denominator."
+      ]
+    },
+    {
+      "id": "M07",
+      "title": "Unitree Prospectus 25 May 2026 Version",
+      "url": "https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-25/3d7fc0538abe281340a95c9c77a90525.pdf",
+      "title_translated_from_original": true,
+      "paragraphs": [
+        "Publisher/author: Unitree; public prospectus hosted by CNINFO. Published: 2026-05-25. Event/statistical period: Calendar 2025; 2024 comparators. Accessed: 2026-10-12.",
+        "Original: [Unitree IPO Prospectus (25 May 2026 version; translated title)](https://dataclouds.cninfo.com.cn/sjother2/documents/2026/2026-05-25/3d7fc0538abe281340a95c9c77a90525.pdf). Location: Printed1-1-138;1-1-198 to200;1-1-206 to207.",
+        "Support and limits: Supports exact shipment-versus-recognized-sales counts, humanoid main-business revenue and average selling price. Acceptance timing explains part of the count difference. The revenue proportion uses main-business revenue, not consolidated revenue. Selling price reflects this company’s recognized product mix rather than a global quotation.",
+        "The January company statement reports production above 6,500, while the May prospectus lists 5,716 produced humanoids for 2025. The public sources read here do not explain the entire difference; do not silently harmonize them. The prospectus separately distinguishes 5,511 shipments and 5,215 recognized sales."
+      ]
+    },
+    {
+      "id": "M08",
+      "title": "ANNUAL RESULTS ANNOUNCEMENT FOR THE YEAR ENDED DECEMBER31,2025",
+      "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0331/2026033102607.pdf",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Publisher/author: UBTECH; Hong Kong Exchanges and Clearing. Published: 2026-03-31. Event/statistical period: Calendar 2025. Accessed: 2026-10-12.",
+        "Original: [Annual Results Announcement for the Year Ended December 31, 2025](https://www.hkexnews.hk/listedco/listconews/sehk/2026/0331/2026033102607.pdf). Location: PDF10(sales);24to28(financial review);29(non-GAAP reconciliation).",
+        "Support and limits: Supports group revenue and losses alongside full-size embodied-humanoid products-and-services revenue and unit sales. The segment includes services; the group has other businesses. Do not turn group margin or loss into standalone humanoid profitability, or divide group loss by robot unit sales."
+      ]
+    },
+    {
+      "id": "M09",
+      "title": "INTERIM RESULTS ANNOUNCEMENT FOR THE SIX MONTHS ENDED JUNE30,2026",
+      "url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0828/2026082801691.pdf",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Publisher/author: UBTECH; Hong Kong Exchanges and Clearing. Published: 2026-08-28. Event/statistical period: H1 2026; H1 2025 comparators. Accessed: 2026-10-12.",
+        "Original: [Interim Results Announcement for the Six Months Ended June 30, 2026](https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0828/2026082801691.pdf). Location: PDF pages 1–4: financial summary and revenue mix; page 12: unit sales; page 24: non-GAAP reconciliation; page 34: statutory net loss. PDF page 2 also contains loss for the period.",
+        "Support and limits: Supports unaudited interim economics and a closed company revenue mix. The segment includes wheeled and bipedal forms, while acquisitions changed the group perimeter and disclosure categories. Unit sales are not analyst shipments. Internal revenue composition is not market share; half-year figures are not full-year results."
+      ]
+    },
+    {
+      "id": "M10",
+      "title": "Figure Exceeds$1B in SeriesC Funding at$39B Post-Money Valuation",
+      "url": "https://www.figure.ai/news/series-c",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Publisher/author: Figure AI. Published: 2025-09-16. Event/statistical period: Financing announcement as of 2025-09-16. Accessed: 2026-10-12.",
+        "Original: [Figure Exceeds $1B in Series C Funding at $39B Post-Money Valuation](https://www.figure.ai/news/series-c). Location: Main funding announcement and use of proceeds bullets.",
+        "Support and limits: Supports committed financing and announced private valuation, plus intended manufacturing, compute and data uses. These are not revenue, guaranteed robot orders or operating profitability. Capital commitments should not automatically be described as cash already received; investor participation does not establish supply or customer contracts."
+      ]
+    },
+    {
+      "id": "M11",
+      "title": "Apptronik Closes Over$935Million SeriesA with New$520Million ExtensionRound",
+      "url": "https://apptronik.com/news-collection/apptronik-closes-over-935-million-series-a",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Publisher/author: Apptronik. Published: 2026-02-11. Event/statistical period: Financing announcement as of 2026-02-11. Accessed: 2026-10-12.",
+        "Original: [Apptronik Closes Over $935 Million Series A with New $520 Million Extension Round](https://apptronik.com/news-collection/apptronik-closes-over-935-million-series-a). Location: Funding and commercial partnerships paragraphs.",
+        "Support and limits: Supports the extension and combined Series A total, plus named company partnerships. Do not double-count the extension inside the accumulated round total. Partners and pilots do not establish unit shipments, contract revenue or capacity utilization. The release does not disclose an absolute company valuation."
+      ]
+    },
+    {
+      "id": "V02",
+      "title": "GR00T N1.6: An Improved Open Foundation Model for Generalist Humanoid Robots",
+      "url": "https://research.nvidia.com/labs/gear/gr00t-n1_6/",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Institution: NVIDIA Research. Published: 2025-12-15. Event/period: N1.6 research release. Read: 2026-10-12.",
+        "[GR00T N1.6: An Improved Open Foundation Model for Generalist Humanoid Robots](https://research.nvidia.com/labs/gear/gr00t-n1_6/)",
+        "Support/limits: N1.6 combines additional training data with evaluation on several real robot platforms. Research results and accelerated videos do not demonstrate production reliability or deployment without adaptation."
+      ]
+    },
+    {
+      "id": "V03",
+      "title": "Introducing NVIDIA Jetson Thor, the Ultimate Platform for Physical AI",
+      "url": "https://developer.nvidia.com/blog/introducing-nvidia-jetson-thor-the-ultimate-platform-for-physical-ai/",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Institution: NVIDIA Developer Blog. Published: 2025-08-25. Event/period: General availability 2025-08-25; vendor benchmarks. Read: 2026-10-12.",
+        "[Introducing NVIDIA Jetson Thor, the Ultimate Platform for Physical AI](https://developer.nvidia.com/blog/introducing-nvidia-jetson-thor-the-ultimate-platform-for-physical-ai/)",
+        "Support/limits: Thor supplies computing and development infrastructure. Module power and sparse FP4 throughput are specified measures, not total robot consumption, battery life or installed-system cost. Main text and tables were read, excluding the AI-generated summary."
+      ]
+    },
+    {
+      "id": "V05",
+      "title": "π0.5: a Vision-Language-Action Model with Open-World Generalization",
+      "url": "https://arxiv.org/html/2504.16054v1",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Institution: Physical Intelligence; Kevin Black et al.. Published: 2025-04-22. Event/period: Research experiments reported in v1. Read: 2026-10-12.",
+        "[π0.5: a Vision-Language-Action Model with Open-World Generalization](https://arxiv.org/html/2504.16054v1)",
+        "Support/limits: Research demonstrates manipulation in unseen homes while reporting handle, occlusion, context and subtask-selection limitations. A research system is not a shipped consumer service; some cancelled evaluation episodes were removed."
+      ]
+    },
+    {
+      "id": "V06",
+      "title": "Harmonic Drive Strain Wave Gear Technology",
+      "url": "https://www.harmonicdrive.net/technology/harmonicdrive",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Institution: Harmonic Drive LLC. Published: not disclosed; official page observed on cutoff. Event/period: Official product/technology page observed on 2026-10-12. Read: 2026-10-12.",
+        "[Harmonic Drive Strain Wave Gear Technology](https://www.harmonicdrive.net/technology/harmonicdrive)",
+        "Support/limits: Supports classification of strain-wave transmission and its three principal components. The manufacturer page does not identify supply contracts with the humanoid OEMs in this report or establish complete-robot accuracy."
+      ]
+    },
+    {
+      "id": "V07",
+      "title": "High Efficiency Robotic Joints",
+      "url": "https://global.maxongroup.com/high-efficiency-joints",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Institution: maxon. Published: not disclosed; official page observed on cutoff. Event/period: Official product page observed on 2026-10-12. Read: 2026-10-12.",
+        "[High Efficiency Robotic Joints](https://global.maxongroup.com/high-efficiency-joints)",
+        "Support/limits: Supports integrated quasi-direct-drive joints, separate peak/continuous ratings, and humanoid/mobile-manipulation applications. Functional safety is described as under development. Inclusion as a representative supplier does not establish an OEM contract."
+      ]
+    },
+    {
+      "id": "V08",
+      "title": "DIGIT Tactile Sensor",
+      "url": "https://www.gelsight.com/product/digit-tactile-sensor/",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Institution: GelSight. Published: not disclosed; official page observed on cutoff. Event/period: Official product page observed on 2026-10-12. Read: 2026-10-12.",
+        "[DIGIT Tactile Sensor](https://www.gelsight.com/product/digit-tactile-sensor/)",
+        "Support/limits: Supports tactile research-sensor classification and model-training use. GelSight DIGIT is distinct from Agility Digit. No humanoid OEM supply relationship or complete-robot safety claim is established."
+      ]
+    },
+    {
+      "id": "V09",
+      "title": "Humanoid Robots See Smarter: Orbbec 3D Cameras Are Integrated with NVIDIA Jetson Thor",
+      "url": "https://www.orbbec.com/news/humanoid-robots-see-smarter-orbbec-3d-cameras-are-integrated-with-nvidia-jetson-thor/",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Institution: Orbbec. Published: 2025-08-28. Event/period: Compatibility integration announcement. Read: 2026-10-12.",
+        "[Humanoid Robots See Smarter: Orbbec 3D Cameras Are Integrated with NVIDIA Jetson Thor](https://www.orbbec.com/news/humanoid-robots-see-smarter-orbbec-3d-cameras-are-integrated-with-nvidia-jetson-thor/)",
+        "Support/limits: Documents Gemini 330 depth-camera integration with Jetson Thor, illustrating visual sensing and computing interfaces. Compatibility does not establish supply contracts with all humanoid manufacturers or quantify their deployment performance."
+      ]
+    },
+    {
+      "id": "V10",
+      "title": "Unitree G1",
+      "url": "https://www.unitree.com/g1/",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Institution: Unitree Robotics. Published: not disclosed; official page observed on cutoff. Event/period: Official specifications and prices observed on 2026-10-12. Read: 2026-10-12.",
+        "[Unitree G1](https://www.unitree.com/g1/)",
+        "Support/limits: Supports G1/G1 EDU configuration and development-access distinctions; arm load depends on posture. Specifications are vendor-rated and scenario-dependent. The undated page's current price is not used to reconstruct historical pricing."
+      ]
+    },
+    {
+      "id": "V11",
+      "title": "AGIBOT’s 15,000th Robot Rolls Off the Production Line, Marking a New Milestone in Embodied AI Deployment",
+      "url": "https://agibot.com/article/231/detail/82.html",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Institution: AGIBOT. Published: 2026-06-28. Event/period: Cumulative production milestone through 2026-06-28. Read: 2026-10-12.",
+        "[AGIBOT’s 15,000th Robot Rolls Off the Production Line, Marking a New Milestone in Embodied AI Deployment](https://agibot.com/article/231/detail/82.html)",
+        "Support/limits: Documents a cumulative production milestone and an integrated model/hardware business. Production roll-off is not annual sales, customer acceptance or an installed working fleet; the announcement covers a mixed product portfolio."
+      ]
+    },
+    {
+      "id": "V12",
+      "title": "AGIBOT Open-Sources ‘AGIBOT WORLD 2026’ Dataset to Accelerate Embodied AI Development",
+      "url": "https://www.agibot.com/article/231/detail/54.html",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Institution: AGIBOT. Published: not disclosed; official page observed on cutoff. Event/period: AGIBOT WORLD 2026 release; observed on cutoff. Read: 2026-10-12.",
+        "[AGIBOT Open-Sources ‘AGIBOT WORLD 2026’ Dataset to Accelerate Embodied AI Development](https://www.agibot.com/article/231/detail/54.html)",
+        "Support/limits: Describes synchronized multimodal and teleoperated collection with annotated error recovery. Official publication date is absent. The description is not an independent data-quality audit, and dataset redistribution requires separate license verification."
+      ]
+    },
+    {
+      "id": "V13",
+      "title": "AGIBOT Data Service / DaaS",
+      "url": "https://www.agibot.com/products/AIDEA/Daas",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Institution: AGIBOT. Published: not disclosed; official page observed on cutoff. Event/period: Commercial service menu observed on 2026-10-12. Read: 2026-10-12.",
+        "[AGIBOT Data Service / DaaS](https://www.agibot.com/products/AIDEA/Daas)",
+        "Support/limits: Lists customized data, collection environments, system rental and thematic subscriptions. This supports a data-service business role, not disclosed revenue, pricing, savings or profitability. The live official page has no publication date."
+      ]
+    },
+    {
+      "id": "V15",
+      "title": "UBTECH Industrial Humanoid Robot Walker S2",
+      "url": "https://www.ubtrobot.com/en/humanoid/products/walker-s2",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Institution: UBTECH Robotics. Published: not disclosed; official page observed on cutoff. Event/period: Official product page observed on 2026-10-12. Read: 2026-10-12.",
+        "[UBTECH Industrial Humanoid Robot Walker S2](https://www.ubtrobot.com/en/humanoid/products/walker-s2)",
+        "Support/limits: Vendor advertises autonomous battery exchange within three minutes with a dual-battery system and stations. A replenishment capability is not audited 24/7 availability and does not disclose maintenance downtime or full lifecycle cost."
+      ]
+    },
+    {
+      "id": "V16",
+      "title": "F.02 Contributed to the Production of 30,000 Cars at BMW",
+      "url": "https://www.figure.ai/news/production-at-bmw",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Institution: Figure AI. Published: 2025-11-19. Event/period: Eleven-month deployment; daily operating period within it. Read: 2026-10-12.",
+        "[F.02 Contributed to the Production of 30,000 Cars at BMW](https://www.figure.ai/news/production-at-bmw)",
+        "Support/limits: Identifies forearm reliability and thermal constraints and defines operational KPIs. Stated accuracy and intervention targets remain targets."
+      ]
+    },
+    {
+      "id": "V19",
+      "title": "Atlas Humanoid Robot",
+      "url": "https://bostondynamics.com/products/atlas/",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Institution: Boston Dynamics. Published: not disclosed; official page observed on cutoff. Event/period: Official product roadmap/specifications observed on 2026-10-12. Read: 2026-10-12.",
+        "[Atlas Humanoid Robot](https://bostondynamics.com/products/atlas/)",
+        "Support/limits: Distinguishes instantaneous and sustained payload, rated battery life, enterprise interfaces and an early-customer journey. Product specifications are not average achieved customer productivity; price, installation scale and ROI are not disclosed here."
+      ]
+    },
+    {
+      "id": "V20",
+      "title": "NEO Home Robot | Order Today",
+      "url": "https://www.1x.tech/discover/neo-home-robot",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Institution: 1X Technologies. Published: 2025-10-28. Event/period: Consumer preorders and planned 2026 initial deliveries. Read: 2026-10-12.",
+        "[NEO Home Robot | Order Today](https://www.1x.tech/discover/neo-home-robot)",
+        "Support/limits: Documents the NEO preorder proposition, basic initial autonomy and expert guidance. Intended consumer delivery and advertised capabilities are not independently verified delivered units, unrestricted household competence or profitable autonomous labor."
+      ]
+    },
+    {
+      "id": "V21",
+      "title": "Order NEO",
+      "url": "https://www.1x.tech/order",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Institution: 1X Technologies. Published: not disclosed; official page observed on cutoff. Event/period: Official current order terms/specifications observed on 2026-10-12. Read: 2026-10-12.",
+        "[Order NEO](https://www.1x.tech/order)",
+        "Support/limits: Describes basic autonomy, scheduled Expert Mode and remote-control options, with different ownership/subscription packages. The offering does not disclose the intervention share or full operating cost; battery runtime is a vendor rating."
+      ]
+    },
+    {
+      "id": "V22",
+      "title": "Tesla Form 10-Q for quarter ended June 30, 2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Institution: Tesla / U.S. SEC. Published: 2026-07-23. Event/period: H1 and Q2 2026. Read: 2026-10-12.",
+        "[Tesla Form 10-Q for quarter ended June 30, 2026](https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm)",
+        "Support/limits: Describes Optimus development and large-scale production preparation. This filing does not disclose standalone robot sales, revenue or profit. EDGAR confirms filing date July 23, 2026; the report covers June 30, 2026."
+      ]
+    },
+    {
+      "id": "V23",
+      "title": "ISO 10218-1:2025 — Robotics — Safety requirements — Part 1: Industrial robots",
+      "url": "https://www.iso.org/standard/73933.html",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Institution: ISO. Published: 2025-02-05. Event/period: Third edition industrial robot design standard. Read: 2026-10-12.",
+        "[ISO 10218-1:2025 — Robotics — Safety requirements — Part 1: Industrial robots](https://www.iso.org/standard/73933.html)",
+        "Support/limits: Public scope covers industrial-robot design with specified exclusions, including household/public service and mobility hazards. The paid complete standard was not read; no company's certification is inferred."
+      ]
+    },
+    {
+      "id": "V24",
+      "title": "ISO 10218-2:2025 — Robotics — Safety requirements — Part 2: Industrial robot applications and robot cells",
+      "url": "https://www.iso.org/standard/73934.html",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Institution: ISO. Published: 2025-02-05. Event/period: Second edition application/integration standard. Read: 2026-10-12.",
+        "[ISO 10218-2:2025 — Robotics — Safety requirements — Part 2: Industrial robot applications and robot cells](https://www.iso.org/standard/73934.html)",
+        "Support/limits: Public scope covers industrial applications and integration rather than only the robot body. Its use exclusions remain material. The paid complete standard was not read, and conformity is not independently assessed."
+      ]
+    },
+    {
+      "id": "V25",
+      "title": "ISO 13482:2014 — Robots and robotic devices — Safety requirements for personal care robots",
+      "url": "https://www.iso.org/standard/53820.html",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Institution: ISO. Published: 2014-02. Event/period: Personal care robot standard; confirmed 2020; live page says to be revised. Read: 2026-10-12.",
+        "[ISO 13482:2014 — Robots and robotic devices — Safety requirements for personal care robots](https://www.iso.org/standard/53820.html)",
+        "Support/limits: Public abstract covers defined personal-care categories with exclusions, including industrial and medical-device robots. It is not a universal humanoid standard. The complete paid text was not read; dated collision-data cautions are not generalized to 2026."
+      ]
+    },
+    {
+      "id": "V26",
+      "title": "New Developments in Mobile Robot Safety and Interoperability",
+      "url": "https://www.automate.org/robotics/blogs/new-developments-mobile-robot-safety-interoperability",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Institution: Association for Advancing Automation (A3). Published: 2026-10-09. Event/period: 2026 standards update webinar; R15.08 Part 3 June 2026. Read: 2026-10-12.",
+        "[New Developments in Mobile Robot Safety and Interoperability](https://www.automate.org/robotics/blogs/new-developments-mobile-robot-safety-interoperability)",
+        "Support/limits: A3's account of its standards work covers dynamically stable mobile robots, bystanders and lifecycle risk assessment. It supports safety considerations and standard-development status, not certification of a specific robot or the absence of applicable standards."
+      ]
+    },
+    {
+      "id": "V27",
+      "title": "Agility and FORT Robotics Announce Strategic Partnership to Advance Humanoid Robot Safety",
+      "url": "https://www.agilityrobotics.com/content/agility-and-fort-robotics-announce-strategic-partnership-to-advance-humanoid-robot-safety",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Institution: Agility Robotics / FORT Robotics. Published: 2026-10-01. Event/period: MOU for Digit5; prior versions >65,000 operating hours. Read: 2026-10-12.",
+        "[Agility and FORT Robotics Announce Strategic Partnership to Advance Humanoid Robot Safety](https://www.agilityrobotics.com/content/agility-and-fort-robotics-announce-strategic-partnership-to-advance-humanoid-robot-safety)",
+        "Support/limits: The MOU describes planned Digit 5 safety interfaces and safeguards. Planned cooperation and anticipated functionality are not a deployed certification; predecessor operating hours must not be assigned to Digit 5."
+      ]
+    },
+    {
+      "id": "V28",
+      "title": "High-risk AI in regulated products",
+      "url": "https://ai-act-service-desk.ec.europa.eu/en/high-risk-ai-regulated-products",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Institution: European Commission AI Act Service Desk. Published: not disclosed; official page observed on cutoff. Event/period: Article6(1) explanatory page observed on cutoff. Read: 2026-10-12.",
+        "[High-risk AI in regulated products](https://ai-act-service-desk.ec.europa.eu/en/high-risk-ai-regulated-products)",
+        "Support/limits: Explains cumulative product-related high-risk AI conditions involving Annex I coverage and third-party assessment. It does not classify every AI robot alike. The undated official guidance is used for conditions, without asserting amended implementation dates."
+      ]
+    },
+    {
+      "id": "V30",
+      "title": "Multi-Axis Force / Torque Sensors",
+      "url": "https://www.ati-ia.com/Products/ft/sensors.aspx",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Institution: ATI Industrial Automation. Published: not disclosed; official page observed on cutoff. Event/period: Official product category observed on cutoff. Read: 2026-10-12.",
+        "[Multi-Axis Force / Torque Sensors](https://www.ati-ia.com/Products/ft/sensors.aspx)",
+        "Support/limits: Supports six-axis force/torque sensing and industrial/research uses. It is a product-category source, not evidence of supply to the named humanoid OEMs, tactile-array equivalence or conformity of a completed machine."
+      ]
+    },
+    {
+      "id": "R01",
+      "title": "Five Million Robots now Operate in Factories Globally",
+      "url": "https://ifr.org/ifr-press-releases/news/five-million-robots-now-operate-in-factories-globally",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Source: [Five Million Robots now Operate in Factories Globally](https://ifr.org/ifr-press-releases/news/five-million-robots-now-operate-in-factories-globally). International Federation of Robotics. Published 2026-09-24; statistical period 2025; read 2026-10-12. Location: opening paragraph.",
+        "Support and limits: Worldwide industrial-robot units; stock and annual installations remain separate. Neither measures humanoids or embodied AI adoption."
+      ]
+    },
+    {
+      "id": "R02",
+      "title": "Global Sales of Professional Service Robots Surge 24%",
+      "url": "https://ifr.org/ifr-press-releases/news/global-sales-of-professional-service-robots-surge-24-percent",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Source: [Global Sales of Professional Service Robots Surge 24%](https://ifr.org/ifr-press-releases/news/global-sales-of-professional-service-robots-surge-24-percent). International Federation of Robotics. Published 2026-09-30; statistical period 2025; read 2026-10-12. Location: Humanoid Robots section.",
+        "Support and limits: Sales of full-size humanoids above 140 cm for commercial/professional uses beyond research and entertainment. Its narrow scope cannot be mixed with wider humanoid counts."
+      ]
+    },
+    {
+      "id": "R03",
+      "title": "Market Presentation World Robotics Press Conference 2026",
+      "url": "https://ifr.org/downloads/press_docs/Market_Presentation_WR_Press_Conference_2026.pdf",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "Source: [Market Presentation World Robotics Press Conference 2026](https://ifr.org/downloads/press_docs/Market_Presentation_WR_Press_Conference_2026.pdf). International Federation of Robotics. Published 2026-09-24; statistical period 2025; read 2026-10-12. Location: printed pages 28–29, sample note and application pie.",
+        "Support and limits: Producer survey; not extrapolated and not comparable across changing survey waves. Figure 3 preserves six rounded shares totaling 100%; reported units total 249,568. No normalization or inferred precision."
+      ]
+    },
+    {
+      "id": "V33",
+      "title": "FCC’s Public Safety and Homeland Security Bureau Announces Addition of Foreign-Produced Power Inverters and Advanced Robotic Devices to FCC Covered List",
+      "url": "https://docs.fcc.gov/public/attachments/DA-26-786A1.pdf",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "FCC’s Public Safety and Homeland Security Bureau Announces Addition of Foreign-Produced Power Inverters and Advanced Robotic Devices to FCC Covered List",
+        "Federal Communications Commission | Published 2026-07-28 | Read 2026-10-12",
+        "[Original source](https://docs.fcc.gov/public/attachments/DA-26-786A1.pdf)",
+        "Adds foreign-produced advanced robotic devices, with DoW conditional approvals excepted; covered equipment cannot receive FCC equipment authorizations. The notice classifies equipment by production rather than by named entity. Appendix C is scanned and its content was not extracted/read. Detailed device-definition conditions are supported by V34, the official FAQ. Do not describe this as a universal prohibition on all existing foreign robots or a China-only measure.",
+        "Locator: Main notice printed pages 2–4; Appendix A listing"
+      ]
+    },
+    {
+      "id": "V34",
+      "title": "FAQs on Recent Updates to FCC Covered List Regarding Foreign-Produced Advanced Robotic Devices and Power Inverters",
+      "url": "https://www.fcc.gov/covered-list-faqs-robots-inverters",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "FAQs on Recent Updates to FCC Covered List Regarding Foreign-Produced Advanced Robotic Devices and Power Inverters",
+        "Federal Communications Commission | Published not disclosed | Read 2026-10-12",
+        "[Original source](https://www.fcc.gov/covered-list-faqs-robots-inverters)",
+        "Explains device-definition criteria, exclusions, country-neutral production test, and distinction between new authorization restrictions and previously authorized models. Existing-model importing/marketing/selling and lawful consumer use are not prohibited by the July addition itself. Undated official live page observed at cutoff; not an individualized compliance determination. Several FAQ paragraphs contain apparent copy/paste or formatting errors, including a router reference in a robotics exemption answer. Use the clear corresponding primary public notices for approvals.",
+        "Locator: Restrictions; practical impact; advanced robotic device definition; foreign-produced definition; entity nationality; country targeting"
+      ]
+    },
+    {
+      "id": "V35",
+      "title": "FCC’s Public Safety and Homeland Security Bureau Announces Conditional Approval and Exemption of Certain Advanced Robotic Devices from FCC Covered List",
+      "url": "https://docs.fcc.gov/public/attachments/DA-26-996A1.pdf",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "FCC’s Public Safety and Homeland Security Bureau Announces Conditional Approval and Exemption of Certain Advanced Robotic Devices from FCC Covered List",
+        "Federal Communications Commission | Published 2026-09-18 | Read 2026-10-12",
+        "[Original source](https://docs.fcc.gov/public/attachments/DA-26-996A1.pdf)",
+        "Announces conditional exemption for ANSCER Robotics AR250, AR650 and AR1250; ongoing compliance with the stated onshoring plan and updated product vetting is required. Model-specific conditional approval, not exemption for all ANSCER products, all AMRs, or all humanoids. No other robot maker’s approval is inferred.",
+        "Locator: Main notice printed pages 1–2, Conditional Approvals"
+      ]
+    },
+    {
+      "id": "V36",
+      "title": "AI Omnibus enters into force",
+      "url": "https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force",
+      "title_translated_from_original": false,
+      "paragraphs": [
+        "AI Omnibus enters into force",
+        "European Commission DG CONNECT | Published 2026-07-27 | Read 2026-10-12",
+        "[Original source](https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force)",
+        "The Commission states that AI Omnibus entered into force on 27 July 2026, with Annex III high-risk rules applying from 2 December 2027 and Annex I product-embedded high-risk rules from 2 August 2028. EUR-Lex Regulation (EU) 2026/1744 remained bot-blocked; this record supports an attributed Commission explanation only. It does not independently verify the complete amended legal text or classify a particular robot.",
+        "Locator: Opening paragraph; Extended timelines"
+      ]
+    }
+  ]
+}

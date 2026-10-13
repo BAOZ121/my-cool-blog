@@ -2590,6 +2590,225 @@
       ],
       "note": "Role classification as of 10 October 2026. Company names are examples; lines do not establish supply contracts. Companies may appear in more than one role.",
       "reviewed": "2026-10-10"
+    },
+    "embodied-humanoid-global-v2": {
+      "title": "The global embodied intelligence and humanoid robotics value chain",
+      "description": "Models, components, robot platforms and operating workflows, organized by industry role.",
+      "root": {
+        "name": "Embodied intelligence and humanoid robotics",
+        "children": [
+          {
+            "name": "Upstream",
+            "children": [
+              {
+                "name": "Robot Models",
+                "children": [
+                  {
+                    "name": "NVIDIA Isaac GR00T"
+                  },
+                  {
+                    "name": "Google DeepMind Gemini Robotics"
+                  },
+                  {
+                    "name": "Physical Intelligence π0.5"
+                  }
+                ]
+              },
+              {
+                "name": "Compute & Development",
+                "children": [
+                  {
+                    "name": "NVIDIA Jetson Thor / Isaac"
+                  }
+                ]
+              },
+              {
+                "name": "Data & Simulation",
+                "children": [
+                  {
+                    "name": "NVIDIA Isaac simulation/data tools"
+                  },
+                  {
+                    "name": "AGIBOT WORLD / DaaS"
+                  }
+                ]
+              },
+              {
+                "name": "Motion & Transmission",
+                "children": [
+                  {
+                    "name": "Harmonic Drive: strain-wave gears"
+                  },
+                  {
+                    "name": "maxon HEJ: integrated joints"
+                  }
+                ]
+              },
+              {
+                "name": "Visual, Force & Tactile Sensing",
+                "children": [
+                  {
+                    "name": "Orbbec Gemini 330: depth cameras"
+                  },
+                  {
+                    "name": "ATI: force/torque sensors"
+                  },
+                  {
+                    "name": "GelSight DIGIT: tactile sensor"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Midstream",
+            "children": [
+              {
+                "name": "Research & Development Platforms",
+                "children": [
+                  {
+                    "name": "Unitree G1 EDU"
+                  }
+                ]
+              },
+              {
+                "name": "Industrial Humanoids",
+                "children": [
+                  {
+                    "name": "UBTECH Walker S series"
+                  },
+                  {
+                    "name": "Figure"
+                  },
+                  {
+                    "name": "Agility Digit"
+                  },
+                  {
+                    "name": "Boston Dynamics Atlas"
+                  }
+                ]
+              },
+              {
+                "name": "Integrated Embodied Platforms",
+                "children": [
+                  {
+                    "name": "AGIBOT"
+                  }
+                ]
+              },
+              {
+                "name": "Household Product Route",
+                "children": [
+                  {
+                    "name": "1X NEO"
+                  }
+                ]
+              },
+              {
+                "name": "Development & Production Preparation",
+                "children": [
+                  {
+                    "name": "Tesla Optimus"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Downstream",
+            "children": [
+              {
+                "name": "Manufacturing Workflows",
+                "children": [
+                  {
+                    "name": "BMW / Figure (sheet-metal handling)"
+                  }
+                ]
+              },
+              {
+                "name": "Warehouse & Logistics Workflows",
+                "children": [
+                  {
+                    "name": "GXO / Agility Digit (tote transfer)"
+                  }
+                ]
+              },
+              {
+                "name": "Research & Education",
+                "children": [
+                  {
+                    "name": "Unitree G1 EDU (development platform)"
+                  }
+                ]
+              },
+              {
+                "name": "Household Assistance",
+                "children": [
+                  {
+                    "name": "1X NEO (basic autonomy / Expert Mode)"
+                  }
+                ]
+              },
+              {
+                "name": "Integration, Fleet Operation & Service",
+                "children": [
+                  {
+                    "name": "Agility Arc / Boston Dynamics Orbit"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "title": "[H01] BMW Group to deploy humanoid robots in production in Germany for the first time",
+          "url": "/test/embodied-intelligence-humanoid-robotics-v2/#evidence-H01"
+        },
+        {
+          "title": "[H02] GXO signs industry-first multi-year agreement with Agility Robotics",
+          "url": "/test/embodied-intelligence-humanoid-robotics-v2/#evidence-H02"
+        },
+        {
+          "title": "[H13] NVIDIA Announces Isaac GR00T N1 — the World’s First Open Humanoid Robot Foundation Model — and Simulation Frameworks to Speed Robot Development",
+          "url": "/test/embodied-intelligence-humanoid-robotics-v2/#evidence-H13"
+        },
+        {
+          "title": "[H14] Gemini Robotics 1.5 brings AI agents into the physical world",
+          "url": "/test/embodied-intelligence-humanoid-robotics-v2/#evidence-H14"
+        },
+        {
+          "title": "[V02] GR00T N1.6: An Improved Open Foundation Model for Generalist Humanoid Robots",
+          "url": "/test/embodied-intelligence-humanoid-robotics-v2/#evidence-V02"
+        },
+        {
+          "title": "[V03] Introducing NVIDIA Jetson Thor, the Ultimate Platform for Physical AI",
+          "url": "/test/embodied-intelligence-humanoid-robotics-v2/#evidence-V03"
+        },
+        {
+          "title": "[V08] DIGIT Tactile Sensor",
+          "url": "/test/embodied-intelligence-humanoid-robotics-v2/#evidence-V08"
+        },
+        {
+          "title": "[V10] Unitree G1",
+          "url": "/test/embodied-intelligence-humanoid-robotics-v2/#evidence-V10"
+        },
+        {
+          "title": "[V12] AGIBOT Open-Sources ‘AGIBOT WORLD 2026’ Dataset to Accelerate Embodied AI Development",
+          "url": "/test/embodied-intelligence-humanoid-robotics-v2/#evidence-V12"
+        },
+        {
+          "title": "[V30] Multi-Axis Force / Torque Sensors",
+          "url": "/test/embodied-intelligence-humanoid-robotics-v2/#evidence-V30"
+        },
+        {
+          "title": "[M08] ANNUAL RESULTS ANNOUNCEMENT FOR THE YEAR ENDED DECEMBER31,2025",
+          "url": "/test/embodied-intelligence-humanoid-robotics-v2/#evidence-M08"
+        }
+      ],
+      "note": "Industry → upstream midstream downstream → segments → representative companies or products. The map is an analytical classification, not a list of verified supply contracts. Several firms appear in multiple roles; early product programs remain identified as such in the text.",
+      "reviewed": "2026-10-12"
     }
   },
   "shares": {
@@ -3117,6 +3336,144 @@
       },
       "note": "Shares of global municipal solid waste generated by mass; World Bank's modeled 2022 baseline. National observations are harmonized and weighted by 2022 waste generation. Published integer percentages sum to 100%. This chart is not company market share or a breakdown of all solid-waste streams. Use the seven original published percentages directly. 17+15+6+20+17+12+13=100. No normalization, midpoint substitution, or reverse calculation of absolute tonnes. Adapted from World Bank data under CC BY 3.0 IGO. The views and interpretations in the adaptation are the report authors’ and are not endorsed by the World Bank.",
       "reviewed": "2026-10-10"
+    },
+    "humanoid-shipments-global-h1-2026-v2": {
+      "title": "Global humanoid robot shipment share",
+      "eyebrow": "HUMANOID MARKET",
+      "dimension": "Company",
+      "period": "H1 2026",
+      "center_label": "H1 2026\n%",
+      "geography": "Global, under SAG definition",
+      "scope": "Worldwide humanoid shipment units under SAG’s four-form definition. The preliminary, rounded estimate includes wheeled robots. Each published share is preserved. [M01]",
+      "metric": "Share of shipment units (%)",
+      "series": [
+        {
+          "name": "AGIBOT",
+          "value": 44
+        },
+        {
+          "name": "Unitree",
+          "value": 31
+        },
+        {
+          "name": "Galbot",
+          "value": 5
+        },
+        {
+          "name": "UBTECH",
+          "value": 4
+        },
+        {
+          "name": "Leju",
+          "value": 3
+        },
+        {
+          "name": "Others",
+          "value": 13
+        }
+      ],
+      "source": {
+        "publisher": "Smart Analytics Global (SAG), Robotics 360",
+        "title": "SAG: Global Humanoid Robot Shipments Surged 272% YoY to 19.1K Units in 1H 2026; AGIBOT Overtook Unitree for No. 1 Position",
+        "published": "2026-08-10",
+        "url": "https://smartanalyticsglobal.com/global-humanoid-robot-shipments-2026-agibot-unitree/"
+      },
+      "note": "Published shares total 100%. Listed vendor volumes sum to 19.0K while the total is 19.1K. This chart does not measure productive autonomous workers or total embodied intelligence. Do not compare its shares directly with Figure 2. Source: Smart Analytics Global, Robotics 360, 10 August 2026 [M01]. Read 12 October 2026. Preliminary and rounded. Preserve published shares; rounded vendor volumes do not add to the reported total. Humanoid submarket only. Not revenue share, installed stock or the whole embodied intelligence industry.",
+      "unit": "%",
+      "percentDecimals": 0,
+      "reviewed": "2026-10-12"
+    },
+    "humanoid-installations-global-2025-v2": {
+      "title": "Global humanoid robot installation share",
+      "eyebrow": "HUMANOID MARKET",
+      "dimension": "Company",
+      "period": "2025",
+      "center_label": "2025\n%",
+      "geography": "Global, under Counterpoint definition",
+      "scope": "Counterpoint’s estimate of worldwide annual additional humanoid installations. Wheeled products are present; the complete counting methodology is undisclosed. The original one-decimal shares are retained. [M02]",
+      "metric": "Share of annual additional installations (%)",
+      "series": [
+        {
+          "name": "AGIBOT",
+          "value": 31.9
+        },
+        {
+          "name": "Unitree",
+          "value": 26.5
+        },
+        {
+          "name": "UBTECH",
+          "value": 5.2
+        },
+        {
+          "name": "Leju",
+          "value": 4.9
+        },
+        {
+          "name": "Tesla",
+          "value": 4.7
+        },
+        {
+          "name": "Others",
+          "value": 26.8
+        }
+      ],
+      "source": {
+        "publisher": "Counterpoint Research",
+        "title": "Global Humanoid Robot Installations Reach 16,000 Units in 2025 as Mass Production Picks Up Pace",
+        "published": "2026-01-14 (visible public page)",
+        "url": "https://counterpointresearch.com/en/insights/Global-Humanoid-Robot-Installations-Reach-16%2C000-Units-in-2025-as-Mass-Production-Picks-Pace%20"
+      },
+      "note": "Shares total 100%. This is neither cumulative installed stock nor recognized sales. Its period, source and metric differ from Figure 1. The publication is dated January 2026; its body contains an apparent 2025 dateline typo, recorded in the appendix. Source: Counterpoint Research, annual installation-share graphic, January 2026 [M02]. Original one-decimal shares preserved; they total 100%. Approximate totals do not establish exact vendor counts. Annual additional installations, not cumulative stock or shipments. No direct comparison with Figure 1.",
+      "unit": "%",
+      "percentDecimals": 1,
+      "reviewed": "2026-10-12"
+    },
+    "professional-service-applications-2025-v2": {
+      "title": "Professional service robot application mix",
+      "eyebrow": "ADJACENT MARKET",
+      "dimension": "Application",
+      "period": "2025",
+      "center_label": "2025\n%",
+      "geography": "Worldwide producer survey sample",
+      "scope": "Adjacent-market context. IFR’s survey covers 238 of 1,001 identified producers across the reported service-robot statistics and is not extrapolated to the whole industry. This chart shows the professional-use application mix within that survey. [R03]",
+      "metric": "Application share of reported professional service robot units (%)",
+      "series": [
+        {
+          "name": "Transportation and logistics",
+          "value": 47
+        },
+        {
+          "name": "Hospitality",
+          "value": 22
+        },
+        {
+          "name": "Professional cleaning",
+          "value": 18
+        },
+        {
+          "name": "Agriculture",
+          "value": 7
+        },
+        {
+          "name": "Inspection and maintenance",
+          "value": 3
+        },
+        {
+          "name": "Others",
+          "value": 3
+        }
+      ],
+      "source": {
+        "publisher": "International Federation of Robotics",
+        "title": "Market Presentation World Robotics Press Conference 2026",
+        "published": "2026-09-24",
+        "url": "https://ifr.org/downloads/press_docs/Market_Presentation_WR_Press_Conference_2026.pdf"
+      },
+      "note": "The six published rounded shares total 100%; the listed units total 249,568. Sample composition changes annually. These categories do not measure embodied AI adoption or humanoid demand. Original values are retained rather than normalized. Source: IFR, World Robotics 2026 press presentation, pp. 28–29, 24 September 2026 [R03]. Published integer shares total 100%. Global producer sample; do not compare changing annual survey waves. Adjacent service-robot market. This is application mix, not humanoid vendor share or AI adoption share.",
+      "unit": "%",
+      "percentDecimals": 0,
+      "reviewed": "2026-10-12"
     }
   }
 }
