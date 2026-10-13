@@ -17,6 +17,14 @@
   <h2 class="research-landing__list-title">Latest research</h2>
   <section class="article-list" aria-label="Latest articles">
     {{ $firstCover := true }}
+    {{ if eq $paginator.PageNumber 1 }}
+      {{ with .Site.GetPage "/test/lisa-su" }}
+        {{ if .Params.homeCard }}
+          {{ partial "article-list/lead.html" . }}
+          {{ $firstCover = false }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
     {{ range $index, $element := $paginator.Pages }}
       {{ $cover := partial "helper/image" (dict "Image" .Params.image "Resources" .Resources "Context" .) }}
       {{ if and $firstCover $cover }}

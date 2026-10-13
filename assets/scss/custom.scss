@@ -432,8 +432,50 @@
     }
 }
 
-/* Carry the NVIDIA article palette into its listing card in either site scheme. */
+/* The Lisa Su card uses the native listing geometry and an AMD palette. */
 @media screen {
+    .article-list article.biography-card--amd {
+        --accent-color: #c4002f;
+        --accent-color-darker: #990024;
+        --accent-color-text: #fff;
+        --card-background: #fff;
+        --card-text-color-main: #251d20;
+        --card-text-color-secondary: #635359;
+        --card-text-color-tertiary: #635359;
+        --card-separator-color: #e2b7c2;
+        border: 1px solid var(--card-separator-color);
+
+        .biography-header .article-image img {
+            aspect-ratio: 3 / 2;
+            height: auto;
+            object-fit: cover;
+            object-position: 50% 22%;
+        }
+
+        .article-category a {
+            background-color: var(--accent-color) !important;
+            color: var(--accent-color-text) !important;
+        }
+
+        &:hover, &:focus-within { border-color: var(--accent-color); }
+        .article-title a:hover, .article-title a:focus-visible,
+        .article-meta svg { color: var(--accent-color); }
+    }
+
+    :root[data-scheme="dark"] .article-list article.biography-card--amd {
+        --accent-color: #ff7594;
+        --accent-color-darker: #ffabc0;
+        --accent-color-text: #290b14;
+        --card-background: #1b1216;
+        --card-text-color-main: #f6edef;
+        --card-text-color-secondary: #d0b7bf;
+        --card-text-color-tertiary: #d0b7bf;
+        --card-separator-color: #59353f;
+    }
+}
+
+@media screen {
+    /* Carry the NVIDIA article palette into its listing card in either site scheme. */
     .article-list article.biography-card--nvidia {
         --accent-color: #76b900;
         --accent-color-darker: #98d642;

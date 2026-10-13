@@ -10,9 +10,13 @@ class Covers(HTMLParser):
         super().__init__()
         self.images = []
         self.preloads = []
+        self.article_url = None
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
+        if tag == "header" and attrs.get("data-article-url"):
+            self.article_url = attrs["data-article-url"]
         if tag == "img" and attrs.get("data-article-cover") == "true":
+            attrs["article_url"] = self.article_url
             self.images.append(attrs)
         if tag == "link" and attrs.get("as") == "image" and attrs.get("rel") == "preload":
             self.preloads.append(attrs)
@@ -46,7 +50,11 @@ for index, image in enumerate(home.images):
     assert widths == sorted(set(widths))
     assert image["src"].endswith(".webp")
     assert (root / image["src"].lstrip("/")).stat().st_size <= 160_000
-    article = root / Path(image["src"].lstrip("/")).parent / "index.html"
+    # A bundle may store its original cover in a nested assets directory.
+    # Its native header identifies the article independently of asset layout.
+    article_url = urlparse(image["article_url"])
+    assert not article_url.netloc and article_url.path.startswith("/")
+    article = root / unquote(article_url.path.lstrip("/")) / "index.html"
     hero = parse(article).images[0]
     assert hero["src"] == image["src"] and hero["srcset"] == image["srcset"], "List/article must reuse image URLs"
     assert hero["loading"] == "eager" and hero["fetchpriority"] == "high"
