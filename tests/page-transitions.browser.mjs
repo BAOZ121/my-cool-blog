@@ -702,11 +702,13 @@ try {
 
     // Retain the native overlapping-navigation regression; live input is tested above.
     await page.goto(origin + "/");
-    const nextPath = "/post/ai-computing-infrastructure/";
-    await page.evaluate(() => {
-      document.querySelector('.article-list .article-title a[href="/post/commercial-space-advanced-engineering/"]').click();
-      document.querySelector('.article-list .article-title a[href="/post/ai-computing-infrastructure/"]').click();
-    });
+    const rapidPaths = await page.locator(".article-list .article-title a").evaluateAll(links => links.slice(0, 2).map(link => link.getAttribute("href")));
+    assert.equal(rapidPaths.length, 2, "Homepage must provide two real article links for overlapping navigation");
+    const nextPath = new URL(rapidPaths[1], origin).pathname;
+    await page.evaluate(paths => {
+      const links = Array.from(document.querySelectorAll(".article-list .article-title a"));
+      for (const path of paths) links.find(link => link.getAttribute("href") === path).click();
+    }, rapidPaths);
     await page.waitForFunction(path => location.pathname === path && document.querySelector("main h1"), nextPath);
     await finished(page);
     await assertNoNative(page);
