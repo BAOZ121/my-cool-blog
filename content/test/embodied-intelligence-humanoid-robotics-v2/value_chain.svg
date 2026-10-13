@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3200" height="2190" viewBox="0 0 3200 2190"><style>text{font-family:Arial,Microsoft YaHei,sans-serif}</style>
+<rect width="3200" height="2190" fill="#FBF8EF"/>
+<text x="65" y="80" font-size="27" fill="#C29A3C" font-weight="700" text-anchor="start">THE GLOBAL VALUE CHAIN</text>
+<text x="65" y="145" font-size="54" fill="#171714" font-weight="700" text-anchor="start">Embodied intelligence and humanoid robotics</text>
+<rect x="55" y="959.0" width="520" height="152" rx="12" fill="#FFFFFF" stroke="#C29A3C" stroke-width="3"/>
+<text x="80" y="1020.0" font-size="40" fill="#171714" font-weight="700" text-anchor="start">Embodied intelligence</text>
+<text x="80" y="1080.0" font-size="40" fill="#171714" font-weight="700" text-anchor="start">and humanoid robotics</text>
+<path d="M 575 1035.0 C 610 1035.0,600 460.0,650 460.0" fill="none" stroke="#C29A3C" stroke-width="3"/>
+<rect x="650" y="413.0" width="430" height="94" rx="10" fill="#FFFFFF" stroke="#C29A3C" stroke-width="3"/>
+<text x="680" y="476.0" font-size="49" fill="#171714" font-weight="700" text-anchor="start">Upstream</text>
+<path d="M 575 1035.0 C 610 1035.0,600 1035.0,650 1035.0" fill="none" stroke="#C29A3C" stroke-width="3"/>
+<rect x="650" y="988.0" width="430" height="94" rx="10" fill="#FFFFFF" stroke="#C29A3C" stroke-width="3"/>
+<text x="680" y="1051.0" font-size="49" fill="#171714" font-weight="700" text-anchor="start">Midstream</text>
+<path d="M 575 1035.0 C 610 1035.0,600 1610.0,650 1610.0" fill="none" stroke="#C29A3C" stroke-width="3"/>
+<rect x="650" y="1563.0" width="430" height="94" rx="10" fill="#FFFFFF" stroke="#C29A3C" stroke-width="3"/>
+<text x="680" y="1626.0" font-size="49" fill="#171714" font-weight="700" text-anchor="start">Downstream</text>
+<path d="M 1080 460.0 C 1170 460.0,1170 230,1260 230" fill="none" stroke="#C29A3C" stroke-width="2.5"/>
+<rect x="1260" y="183" width="760" height="94" rx="10" fill="#FFFFFF" stroke="#C29A3C" stroke-width="2"/>
+<text x="1285" y="221" font-size="44" fill="#171714" font-weight="600" text-anchor="start">Robot Models</text>
+<path d="M 2020 230 H 2075" stroke="#C29A3C" stroke-width="2.5"/>
+<text x="2100" y="221" font-size="44" fill="#171714" font-weight="400" text-anchor="start">NVIDIA Isaac GR00T / Google DeepMind Gemini</text>
+<text x="2100" y="266" font-size="44" fill="#171714" font-weight="400" text-anchor="start">Robotics / Physical Intelligence π0.5</text>
+<path d="M 1080 460.0 C 1170 460.0,1170 345,1260 345" fill="none" stroke="#C29A3C" stroke-width="2.5"/>
+<rect x="1260" y="298" width="760" height="94" rx="10" fill="#FFFFFF" stroke="#C29A3C" stroke-width="2"/>
+<text x="1285" y="336" font-size="44" fill="#171714" font-weight="600" text-anchor="start">Compute &amp; Development</text>
+<path d="M 2020 345 H 2075" stroke="#C29A3C" stroke-width="2.5"/>
+<text x="2100" y="336" font-size="44" fill="#171714" font-weight="400" text-anchor="start">NVIDIA Jetson Thor / Isaac</text>
+<path d="M 1080 460.0 C 1170 460.0,1170 460,1260 460" fill="none" stroke="#C29A3C" stroke-width="2.5"/>
+<rect x="1260" y="413" width="760" height="94" rx="10" fill="#FFFFFF" stroke="#C29A3C" stroke-width="2"/>
+<text x="1285" y="451" font-size="44" fill="#171714" font-weight="600" text-anchor="start">Data &amp; Simulation</text>
+<path d="M 2020 460 H 2075" stroke="#C29A3C" stroke-width="2.5"/>
+<text x="2100" y="451" font-size="44" fill="#171714" font-weight="400" text-anchor="start">NVIDIA Isaac simulation/data tools / AGIBOT</text>
+<text x="2100" y="496" font-size="44" fill="#171714" font-weight="400" text-anchor="start">WORLD / DaaS</text>
+<path d="M 1080 460.0 C 1170 460.0,1170 575,1260 575" fill="none" stroke="#C29A3C" stroke-width="2.5"/>
+<rect x="1260" y="528" width="760" height="94" rx="10" fill="#FFFFFF" stroke="#C29A3C" stroke-width="2"/>
+<text x="1285" y="566" font-size="44" fill="#171714" font-weight="600" text-anchor="start">Motion &amp; Transmission</text>
+<path d="M 2020 575 H 2075" stroke="#C29A3C" stroke-width="2.5"/>
+<text x="2100" y="566" font-size="44" fill="#171714" font-weight="400" text-anchor="start">Harmonic Drive / maxon HEJ</text>
+<path d="M 1080 460.0 C 1170 460.0,1170 690,1260 690" fill="none" stroke="#C29A3C" stroke-width="2.5"/>
+<rect x="1260" y="643" width="760" height="94" rx="10" fill="#FFFFFF" stroke="#C29A3C" stroke-width="2"/>
+<text x="1285" y="681" font-size="44" fill="#171714" font-weight="600" text-anchor="start">Visual, Force &amp; Tactile</text>
+<text x="1285" y="726" font-size="44" fill="#171714" font-weight="600" text-anchor="start">Sensing</text>
+<path d="M 2020 690 H 2075" stroke="#C29A3C" stroke-width="2.5"/>
+<text x="2100" y="681" font-size="44" fill="#171714" font-weight="400" text-anchor="start">Orbbec Gemini 330 / ATI / GelSight DIGIT</text>
+<path d="M 1080 1035.0 C 1170 1035.0,1170 805,1260 805" fill="none" stroke="#C29A3C" stroke-width="2.5"/>
+<rect x="1260" y="758" width="760" height="94" rx="10" fill="#FFFFFF" stroke="#C29A3C" stroke-width="2"/>
+<text x="1285" y="796" font-size="44" fill="#171714" font-weight="600" text-anchor="start">Research &amp; Development</text>
+<text x="1285" y="841" font-size="44" fill="#171714" font-weight="600" text-anchor="start">Platforms</text>
+<path d="M 2020 805 H 2075" stroke="#C29A3C" stroke-width="2.5"/>
+<text x="2100" y="796" font-size="44" fill="#171714" font-weight="400" text-anchor="start">Unitree G1 EDU</text>
+<path d="M 1080 1035.0 C 1170 1035.0,1170 920,1260 920" fill="none" stroke="#C29A3C" stroke-width="2.5"/>
+<rect x="1260" y="873" width="760" height="94" rx="10" fill="#FFFFFF" stroke="#C29A3C" stroke-width="2"/>
+<text x="1285" y="911" font-size="44" fill="#171714" font-weight="600" text-anchor="start">Industrial Humanoids</text>
+<path d="M 2020 920 H 2075" stroke="#C29A3C" stroke-width="2.5"/>
+<text x="2100" y="911" font-size="44" fill="#171714" font-weight="400" text-anchor="start">UBTECH Walker S series / Figure / Agility Digit</text>
+<text x="2100" y="956" font-size="44" fill="#171714" font-weight="400" text-anchor="start">/ Boston Dynamics Atlas</text>
+<path d="M 1080 1035.0 C 1170 1035.0,1170 1035,1260 1035" fill="none" stroke="#C29A3C" stroke-width="2.5"/>
+<rect x="1260" y="988" width="760" height="94" rx="10" fill="#FFFFFF" stroke="#C29A3C" stroke-width="2"/>
+<text x="1285" y="1026" font-size="44" fill="#171714" font-weight="600" text-anchor="start">Integrated Embodied Platforms</text>
+<path d="M 2020 1035 H 2075" stroke="#C29A3C" stroke-width="2.5"/>
+<text x="2100" y="1026" font-size="44" fill="#171714" font-weight="400" text-anchor="start">AGIBOT</text>
+<path d="M 1080 1035.0 C 1170 1035.0,1170 1150,1260 1150" fill="none" stroke="#C29A3C" stroke-width="2.5"/>
+<rect x="1260" y="1103" width="760" height="94" rx="10" fill="#FFFFFF" stroke="#C29A3C" stroke-width="2"/>
+<text x="1285" y="1141" font-size="44" fill="#171714" font-weight="600" text-anchor="start">Household Product Route</text>
+<path d="M 2020 1150 H 2075" stroke="#C29A3C" stroke-width="2.5"/>
+<text x="2100" y="1141" font-size="44" fill="#171714" font-weight="400" text-anchor="start">1X NEO</text>
+<path d="M 1080 1035.0 C 1170 1035.0,1170 1265,1260 1265" fill="none" stroke="#C29A3C" stroke-width="2.5"/>
+<rect x="1260" y="1218" width="760" height="94" rx="10" fill="#FFFFFF" stroke="#C29A3C" stroke-width="2"/>
+<text x="1285" y="1256" font-size="44" fill="#171714" font-weight="600" text-anchor="start">Development &amp; Production</text>
+<text x="1285" y="1301" font-size="44" fill="#171714" font-weight="600" text-anchor="start">Preparation</text>
+<path d="M 2020 1265 H 2075" stroke="#C29A3C" stroke-width="2.5"/>
+<text x="2100" y="1256" font-size="44" fill="#171714" font-weight="400" text-anchor="start">Tesla Optimus</text>
+<path d="M 1080 1610.0 C 1170 1610.0,1170 1380,1260 1380" fill="none" stroke="#C29A3C" stroke-width="2.5"/>
+<rect x="1260" y="1333" width="760" height="94" rx="10" fill="#FFFFFF" stroke="#C29A3C" stroke-width="2"/>
+<text x="1285" y="1371" font-size="44" fill="#171714" font-weight="600" text-anchor="start">Manufacturing Workflows</text>
+<path d="M 2020 1380 H 2075" stroke="#C29A3C" stroke-width="2.5"/>
+<text x="2100" y="1371" font-size="44" fill="#171714" font-weight="400" text-anchor="start">BMW / Figure (sheet-metal handling)</text>
+<path d="M 1080 1610.0 C 1170 1610.0,1170 1495,1260 1495" fill="none" stroke="#C29A3C" stroke-width="2.5"/>
+<rect x="1260" y="1448" width="760" height="94" rx="10" fill="#FFFFFF" stroke="#C29A3C" stroke-width="2"/>
+<text x="1285" y="1486" font-size="44" fill="#171714" font-weight="600" text-anchor="start">Warehouse &amp; Logistics</text>
+<text x="1285" y="1531" font-size="44" fill="#171714" font-weight="600" text-anchor="start">Workflows</text>
+<path d="M 2020 1495 H 2075" stroke="#C29A3C" stroke-width="2.5"/>
+<text x="2100" y="1486" font-size="44" fill="#171714" font-weight="400" text-anchor="start">GXO / Agility Digit (tote transfer)</text>
+<path d="M 1080 1610.0 C 1170 1610.0,1170 1610,1260 1610" fill="none" stroke="#C29A3C" stroke-width="2.5"/>
+<rect x="1260" y="1563" width="760" height="94" rx="10" fill="#FFFFFF" stroke="#C29A3C" stroke-width="2"/>
+<text x="1285" y="1601" font-size="44" fill="#171714" font-weight="600" text-anchor="start">Research &amp; Education</text>
+<path d="M 2020 1610 H 2075" stroke="#C29A3C" stroke-width="2.5"/>
+<text x="2100" y="1601" font-size="44" fill="#171714" font-weight="400" text-anchor="start">Unitree G1 EDU (development platform)</text>
+<path d="M 1080 1610.0 C 1170 1610.0,1170 1725,1260 1725" fill="none" stroke="#C29A3C" stroke-width="2.5"/>
+<rect x="1260" y="1678" width="760" height="94" rx="10" fill="#FFFFFF" stroke="#C29A3C" stroke-width="2"/>
+<text x="1285" y="1716" font-size="44" fill="#171714" font-weight="600" text-anchor="start">Household Assistance</text>
+<path d="M 2020 1725 H 2075" stroke="#C29A3C" stroke-width="2.5"/>
+<text x="2100" y="1716" font-size="44" fill="#171714" font-weight="400" text-anchor="start">1X NEO (basic autonomy / Expert Mode)</text>
+<path d="M 1080 1610.0 C 1170 1610.0,1170 1840,1260 1840" fill="none" stroke="#C29A3C" stroke-width="2.5"/>
+<rect x="1260" y="1793" width="760" height="94" rx="10" fill="#FFFFFF" stroke="#C29A3C" stroke-width="2"/>
+<text x="1285" y="1831" font-size="44" fill="#171714" font-weight="600" text-anchor="start">Integration, Fleet Operation &amp;</text>
+<text x="1285" y="1876" font-size="44" fill="#171714" font-weight="600" text-anchor="start">Service</text>
+<path d="M 2020 1840 H 2075" stroke="#C29A3C" stroke-width="2.5"/>
+<text x="2100" y="1831" font-size="44" fill="#171714" font-weight="400" text-anchor="start">Agility Arc / Boston Dynamics Orbit</text>
+<path d="M 65 1995 H 3135" stroke="#C29A3C" stroke-width="2"/>
+<text x="65" y="2050" font-size="35" fill="#171714" font-weight="400" text-anchor="start">Illustrative categories and roles. Connections are not verified supplier contracts. Companies may span several stages.</text>
+<text x="65" y="2105" font-size="32" fill="#171714" font-weight="400" text-anchor="start">Sources: H01, H02, H13, H14; selected V02–V30 and M08 | Read 12 October 2026 | Complete company and role descriptions in Part 3.</text>
+</svg>

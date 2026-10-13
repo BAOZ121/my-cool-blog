@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050"><style>text{font-family:Arial,Microsoft YaHei,sans-serif}</style>
+<rect width="1600" height="1050" fill="#FFFFFF"/>
+<text x="68" y="72" font-size="25" fill="#AA7B1B" font-weight="700" text-anchor="start">HUMANOID MARKET / FULL YEAR 2025</text>
+<text x="68" y="135" font-size="45" fill="#171714" font-weight="700" text-anchor="start">Global humanoid robot installation share</text>
+<text x="68" y="184" font-size="28" fill="#625F53" font-weight="400" text-anchor="start">Counterpoint estimate | Share of annual additional installation units (%)</text>
+<text x="68" y="222" font-size="28" fill="#625F53" font-weight="400" text-anchor="start">Includes wheeled products; complete counting rules are not publicly disclosed</text>
+<path d="M 425 575 L 425.000 262.000 A 313 313 0 0 1 709.043 706.487 Z" fill="#D6B76D" stroke="#FFFFFF" stroke-width="5"/>
+<rect x="820" y="329" width="25" height="25" rx="3" fill="#D6B76D"/>
+<text x="864" y="355" font-size="32" fill="#171714" font-weight="400" text-anchor="start">AGIBOT</text>
+<text x="1510" y="355" font-size="37" fill="#171714" font-weight="700" text-anchor="end">31.9%</text>
+<path d="M 425 575 L 709.043 706.487 A 313 313 0 0 1 267.366 845.408 Z" fill="#63B7B1" stroke="#FFFFFF" stroke-width="5"/>
+<rect x="820" y="412" width="25" height="25" rx="3" fill="#63B7B1"/>
+<text x="864" y="438" font-size="32" fill="#171714" font-weight="400" text-anchor="start">Unitree</text>
+<text x="1510" y="438" font-size="37" fill="#171714" font-weight="700" text-anchor="end">26.5%</text>
+<path d="M 425 575 L 267.366 845.408 A 313 313 0 0 1 188.919 780.511 Z" fill="#89733F" stroke="#FFFFFF" stroke-width="5"/>
+<rect x="820" y="495" width="25" height="25" rx="3" fill="#89733F"/>
+<text x="864" y="521" font-size="32" fill="#171714" font-weight="400" text-anchor="start">UBTECH</text>
+<text x="1510" y="521" font-size="37" fill="#171714" font-weight="700" text-anchor="end">5.2%</text>
+<path d="M 425 575 L 188.919 780.511 A 313 313 0 0 1 137.743 699.307 Z" fill="#33332D" stroke="#FFFFFF" stroke-width="5"/>
+<rect x="820" y="578" width="25" height="25" rx="3" fill="#33332D"/>
+<text x="864" y="604" font-size="32" fill="#171714" font-weight="400" text-anchor="start">Leju</text>
+<text x="1510" y="604" font-size="37" fill="#171714" font-weight="700" text-anchor="end">4.9%</text>
+<path d="M 425 575 L 137.743 699.307 A 313 313 0 0 1 114.000 610.324 Z" fill="#95A19B" stroke="#FFFFFF" stroke-width="5"/>
+<rect x="820" y="661" width="25" height="25" rx="3" fill="#95A19B"/>
+<text x="864" y="687" font-size="32" fill="#171714" font-weight="400" text-anchor="start">Tesla</text>
+<text x="1510" y="687" font-size="37" fill="#171714" font-weight="700" text-anchor="end">4.7%</text>
+<path d="M 425 575 L 114.000 610.324 A 313 313 0 0 1 425.000 262.000 Z" fill="#E7E2D4" stroke="#FFFFFF" stroke-width="5"/>
+<rect x="820" y="744" width="25" height="25" rx="3" fill="#E7E2D4"/>
+<text x="864" y="770" font-size="32" fill="#171714" font-weight="400" text-anchor="start">Others</text>
+<text x="1510" y="770" font-size="37" fill="#171714" font-weight="700" text-anchor="end">26.8%</text>
+<circle cx="425" cy="575" r="178.41" fill="#FFFFFF"/>
+<text x="425" y="565" font-size="37" fill="#171714" font-weight="700" text-anchor="middle">2025</text>
+<text x="425" y="615" font-size="29" fill="#625F53" font-weight="400" text-anchor="middle">Units share %</text>
+<path d="M 68 913 H 1532" stroke="#D5BF86" stroke-width="2"/>
+<text x="68" y="951" font-size="23" fill="#625F53" font-weight="400" text-anchor="start">Source: Counterpoint Research, annual installation-share graphic, January 2026 [M02].</text>
+<text x="68" y="981" font-size="23" fill="#625F53" font-weight="400" text-anchor="start">Original one-decimal shares preserved; they total 100%. Approximate totals do not establish exact vendor counts.</text>
+<text x="68" y="1011" font-size="23" fill="#625F53" font-weight="400" text-anchor="start">Annual additional installations, not cumulative stock or shipments. No direct comparison with Figure 1.</text>
+</svg>

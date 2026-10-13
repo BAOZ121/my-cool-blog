@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1050" viewBox="0 0 1600 1050"><style>text{font-family:Arial,Microsoft YaHei,sans-serif}</style>
+<rect width="1600" height="1050" fill="#FFFFFF"/>
+<text x="68" y="72" font-size="25" fill="#AA7B1B" font-weight="700" text-anchor="start">ADJACENT MARKET / 2025 SURVEY SAMPLE</text>
+<text x="68" y="135" font-size="45" fill="#171714" font-weight="700" text-anchor="start">Professional service robot application mix</text>
+<text x="68" y="184" font-size="28" fill="#625F53" font-weight="400" text-anchor="start">IFR survey | Share of reported professional service robot units (%)</text>
+<text x="68" y="222" font-size="28" fill="#625F53" font-weight="400" text-anchor="start">Producer sample: 238 of 1,001 identified manufacturers; not projected to the industry</text>
+<path d="M 425 575 L 425.000 262.000 A 313 313 0 0 1 483.650 882.456 Z" fill="#D6B76D" stroke="#FFFFFF" stroke-width="5"/>
+<rect x="820" y="329" width="25" height="25" rx="3" fill="#D6B76D"/>
+<text x="864" y="355" font-size="32" fill="#171714" font-weight="400" text-anchor="start">Transportation and logistics</text>
+<text x="1510" y="355" font-size="37" fill="#171714" font-weight="700" text-anchor="end">47%</text>
+<path d="M 425 575 L 483.650 882.456 A 313 313 0 0 1 133.980 690.223 Z" fill="#63B7B1" stroke="#FFFFFF" stroke-width="5"/>
+<rect x="820" y="412" width="25" height="25" rx="3" fill="#63B7B1"/>
+<text x="864" y="438" font-size="32" fill="#171714" font-weight="400" text-anchor="start">Hospitality</text>
+<text x="1510" y="438" font-size="37" fill="#171714" font-weight="700" text-anchor="end">22%</text>
+<path d="M 425 575 L 133.980 690.223 A 313 313 0 0 1 196.833 360.737 Z" fill="#89733F" stroke="#FFFFFF" stroke-width="5"/>
+<rect x="820" y="495" width="25" height="25" rx="3" fill="#89733F"/>
+<text x="864" y="521" font-size="32" fill="#171714" font-weight="400" text-anchor="start">Professional cleaning</text>
+<text x="1510" y="521" font-size="37" fill="#171714" font-weight="700" text-anchor="end">18%</text>
+<path d="M 425 575 L 196.833 360.737 A 313 313 0 0 1 309.777 283.980 Z" fill="#33332D" stroke="#FFFFFF" stroke-width="5"/>
+<rect x="820" y="578" width="25" height="25" rx="3" fill="#33332D"/>
+<text x="864" y="604" font-size="32" fill="#171714" font-weight="400" text-anchor="start">Agriculture</text>
+<text x="1510" y="604" font-size="37" fill="#171714" font-weight="700" text-anchor="end">7%</text>
+<path d="M 425 575 L 309.777 283.980 A 313 313 0 0 1 366.350 267.544 Z" fill="#95A19B" stroke="#FFFFFF" stroke-width="5"/>
+<rect x="820" y="661" width="25" height="25" rx="3" fill="#95A19B"/>
+<text x="864" y="687" font-size="32" fill="#171714" font-weight="400" text-anchor="start">Inspection and maintenance</text>
+<text x="1510" y="687" font-size="37" fill="#171714" font-weight="700" text-anchor="end">3%</text>
+<path d="M 425 575 L 366.350 267.544 A 313 313 0 0 1 425.000 262.000 Z" fill="#E7E2D4" stroke="#FFFFFF" stroke-width="5"/>
+<rect x="820" y="744" width="25" height="25" rx="3" fill="#E7E2D4"/>
+<text x="864" y="770" font-size="32" fill="#171714" font-weight="400" text-anchor="start">Others</text>
+<text x="1510" y="770" font-size="37" fill="#171714" font-weight="700" text-anchor="end">3%</text>
+<circle cx="425" cy="575" r="178.41" fill="#FFFFFF"/>
+<text x="425" y="565" font-size="37" fill="#171714" font-weight="700" text-anchor="middle">2025</text>
+<text x="425" y="615" font-size="29" fill="#625F53" font-weight="400" text-anchor="middle">Units share %</text>
+<path d="M 68 913 H 1532" stroke="#D5BF86" stroke-width="2"/>
+<text x="68" y="951" font-size="23" fill="#625F53" font-weight="400" text-anchor="start">Source: IFR, World Robotics 2026 press presentation, pp. 28–29, 24 September 2026 [R03].</text>
+<text x="68" y="981" font-size="23" fill="#625F53" font-weight="400" text-anchor="start">Published integer shares total 100%. Global producer sample; do not compare changing annual survey waves.</text>
+<text x="68" y="1011" font-size="23" fill="#625F53" font-weight="400" text-anchor="start">Adjacent service-robot market. This is application mix, not humanoid vendor share or AI adoption share.</text>
+</svg>
