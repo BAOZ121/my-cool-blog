@@ -402,12 +402,12 @@
     object-fit: contain;
 }
 
-/* AMD cards opt in when the reviewed article is formally added to listings. */
+/* AMD cards share this palette in previews and article listings. */
 @media screen {
     .article-list article.article-brand-amd {
         --accent-color: #ed1c24;
         --accent-color-darker: #ff6268;
-        --accent-color-text: #fff;
+        --accent-color-text: #000;
         --card-background: #101112;
         --card-text-color-main: #f7f7f7;
         --card-text-color-secondary: #c0c2c4;
@@ -424,6 +424,10 @@
         .article-title a:focus-visible,
         .article-meta svg {
             color: var(--accent-color);
+        }
+
+        .article-image img {
+            object-position: 50% 65%;
         }
     }
 }

@@ -12,6 +12,10 @@
             </a>
         {{ end }}
     </header>
+    {{ else if and $IsList $Page.Params.cardCategoryLabel $Page.Params.cardCategoryLink }}
+    <header class="article-category">
+        <a href="{{ $Page.Params.cardCategoryLink | relURL }}">{{ $Page.Params.cardCategoryLabel }}</a>
+    </header>
     {{ end }}
 
     <div class="article-title-wrapper">

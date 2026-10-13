@@ -8,6 +8,8 @@ draft: false
 testpage: true
 amdResearch: true
 entryBrand: amd
+cardCategoryLabel: "Company Research"
+cardCategoryLink: "/categories/company-research/"
 image: "assets/amd-headquarters-web.jpg"
 imageAlt: "AMD headquarters in Santa Clara, photographed by Lijiaxuan on 19 March 2024"
 toc: true
