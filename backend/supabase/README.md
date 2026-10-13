@@ -2,6 +2,12 @@
 
 The database foundation and the separately approved automatic-RLS privilege repair were applied to the authorized Supabase project on 2026-10-12 by the coordinating deployment task. See [the deployment record](DEPLOYMENT.md) for the verified scope and remaining gates. No user signup, real owner grant, Auth credential change, Cloudflare application deployment or paid service was performed by these database changes. SMTP/Auth delivery and full application rollout remain separate gates.
 
+## Applied, disabled email-step-up integration (2026-10-13)
+
+The coordinating task applied the approved frozen email-step-up migration as authoritative hosted version `20261013031903`, name `community_admin_email_stepup`. The local filename is now `20261013031903_community_admin_email_stepup.sql`, with unchanged SQL SHA-256 `2eb48221bc5f7d4e304680ea68870137db186e5d68856e0cb0e208dc9d5eb751`. It remains **disabled, unconfigured and without a Vault secret reference**. Do not retain/replay the preparation filename `20261013024643_community_admin_email_stepup.sql` in the deployable migrations directory.
+
+Exact objects, permissions, Vault-only secret setup, activation and non-destructive rollback are documented in [EMAIL-STEPUP.md](EMAIL-STEPUP.md); hosted verification is recorded in [DEPLOYMENT.md](DEPLOYMENT.md). The existing test command covers 58 PGlite tests. Seven real PostgreSQL 17.11 two-connection scenarios passed in a separately approved Actions run; [fixture evidence](tests/postgres/README.md) preserves its original preparation filename/hash and remaining coverage limits. No real secret or activation was performed by the migration or local reconciliation.
+
 ## Files and local verification
 
 - `migrations/20261012030809_dex_community_foundation.sql`: the applied atomic foundation migration. It was initially generated with official pinned Supabase CLI `2.120.0` (`supabase migration new dex_community_foundation --workdir backend`); its filename was reconciled to the authoritative hosted migration version after approval and application. SQL content is unchanged at SHA-256 `2b642b6dce8b73dd7633ec704152673ba5d1d4af9a611150d5e82fa6eaf8ce52`.

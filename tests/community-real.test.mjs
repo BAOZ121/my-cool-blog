@@ -4,6 +4,7 @@ import { readFileSync } from 'node:fs';
 import vm from 'node:vm';
 import { setupCommunityUI, safeUiError } from '../assets/js/community-ui.mjs';
 import { validateCommunityConfig, communityCsp, communityHeaders, COMMUNITY_PATHS } from '../assets/js/community-config.mjs';
+import { createEmailStepupClient } from '../backend/client/email-stepup-client.mjs';
 import { createCommunityClient } from '../backend/client/community-client.mjs';
 import { createDom } from './helpers/community-dom.mjs';
 const config = { enabled: true, googleEnabled: false, allowedOrigin: 'https://community.test', supabaseUrl: 'https://test-project.supabase.co', publishableKey: 'sb_publishable_' + 'x'.repeat(24) };
@@ -27,7 +28,7 @@ function mockAuth(initial = state(null), overrides = {}) {
     async completePasswordReset(args) { calls.push(['completePasswordReset', args]); mock.emit({ ...state(null), status: 'password_updated' }); return { passwordChanged: true, signOutConfirmed: true }; }, ...overrides };
   return mock;
 }
-async function fixture({ mode = 'forum', role = null, auth: provided, respond, extraConfig = {}, callbackUrl } = {}) {
+async function fixture({ mode = 'forum', role = null, auth: provided, respond, extraConfig = {}, callbackUrl, stepup, createStepup, configureDom } = {}) {
   const dom = createDom(mode), auth = provided || mockAuth(state(role)), calls = [];
   const api = { async request(path, options = {}) {
     calls.push({ path, options }); if (respond) { const value = await respond(path, options); if (value !== undefined) return value; }
@@ -38,12 +39,13 @@ async function fixture({ mode = 'forum', role = null, auth: provided, respond, e
     if (path.startsWith(`/api/community/topics/${postId}`)) return { data: { topic: post, replies: [] } };
     return { data: path.includes('/topics') ? [post] : [] };
   } };
-  const ui = setupCommunityUI({ ...dom, auth, api, config: { ...config, ...extraConfig }, callbackUrl });
+  configureDom?.(dom);
+  const ui = setupCommunityUI({ ...dom, auth, api, config: { ...config, ...extraConfig }, callbackUrl, stepup, createStepup });
   await ui.ready; await flush(); return { ...dom, auth, api, calls, ui };
 }
 
 test('real mode fails closed and accepts only exact public project config', () => {
-  assert.deepEqual(validateCommunityConfig({}), { enabled: false, googleEnabled: false });
+  assert.deepEqual(validateCommunityConfig({}), { enabled: false, googleEnabled: false, emailStepupEnabled: false });
   assert.equal(validateCommunityConfig(config, config.allowedOrigin).enabled, true);
   for (const change of [{ publishableKey: 'sb_secret_hidden' }, { supabaseUrl: 'https://test-project.supabase.co.evil.test' }, { allowedOrigin: 'http://community.test' }, { supabaseUrl: 'https://test-project.supabase.co/' }]) assert.throws(() => validateCommunityConfig({ ...config, ...change }));
   assert.throws(() => validateCommunityConfig(config, 'https://other.test'));
@@ -155,4 +157,243 @@ test('pending MFA enrollment resumes without creating or deleting a factor or re
   const f = await fixture({ auth: mockAuth(initial) }); f.document.querySelector('[data-profile-open]').click(); f.$('rc-mfa-open').click();
   assert.equal(f.$('rc-mfa-enroll').hidden, true); assert.equal(f.$('rc-mfa-secret').textContent, ''); assert.match(f.$('rc-mfa-challenge').textContent, /unfinished/); assert.match(f.$('rc-mfa-result').textContent, /cannot safely restart/);
   f.$('rc-mfa-factor').value = factorId; f.$('rc-mfa-challenge').click(); await flush(); assert.deepEqual(f.auth.calls.find(call => call[0] === 'challengeMfa'), ['challengeMfa', factorId]); assert.equal(f.auth.calls.some(call => call[0] === 'enrollMfa'), false); f.ui.dispose();
+});
+
+// Deterministic doubles are confined to tests. Production receives the reviewed
+// adapter and never inspects or invents an administrator identity or JWT claim.
+const emailAuthState = ({ admitted = false, role = 'owner', generation = 1, eligible = true } = {}) => ({
+  ...state(admitted ? role : ''), sessionGeneration: generation,
+  admin: { ...admin(admitted ? role : ''), method: 'email', status: admitted ? 'available' : 'email_required', canRequestEmailStepup: eligible,
+    idleExpiresAt: admitted ? Date.now() + 900000 : null, absoluteExpiresAt: admitted ? Date.now() + 3600000 : null },
+});
+function mockStepup(overrides = {}) {
+  let current = { status: 'idle', busy: false, resendAt: 0, cancellationStatus: 'none', actionReady: false, actionExpiresAt: null }, disposed = false;
+  const listeners = new Set(), calls = [];
+  const adapter = { calls, getState: () => structuredClone(current), emit(patch) { current = { ...current, ...patch }; if (!disposed) for (const listener of listeners) listener(adapter.getState()); },
+    subscribe(listener) { listeners.add(listener); listener(adapter.getState()); return () => listeners.delete(listener); },
+    async begin(value) { calls.push(['begin', structuredClone(value)]); adapter.emit({ status: 'code_requested', scope: value.scope }); return adapter.getState(); },
+    async verify(code) { calls.push(['verify', code]); adapter.emit({ status: 'verified', actionReady: current.scope === 'action', actionExpiresAt: current.scope === 'action' ? Date.now() + 120000 : null }); return adapter.getState(); },
+    async status() { calls.push(['status']); return adapter.getState(); },
+    async cancel() { calls.push(['cancel']); adapter.emit({ status: 'cancelled', cancellationStatus: 'confirmed', busy: false, actionReady: false }); return adapter.getState(); },
+    async consumeAction(callback) { calls.push(['consumeAction']); adapter.emit({ status: 'consuming_action', actionReady: false }); const result = await callback(new AbortController().signal); adapter.emit({ status: 'consumed' }); return result; },
+    suspend() { calls.push(['suspend']); adapter.emit({ status: 'suspended', actionReady: false, busy: false }); },
+    async dispose() { calls.push(['dispose']); disposed = true; listeners.clear(); }, ...overrides,
+  }; return adapter;
+}
+async function emailFixture(options = {}) {
+  const auth = options.auth || mockAuth(emailAuthState({ admitted: options.admitted ?? true })), stepup = options.stepup || mockStepup();
+  const f = await fixture({ ...options, mode: 'admin', auth, stepup, extraConfig: { emailStepupEnabled: true, ...options.extraConfig } });
+  return { ...f, stepup };
+}
+function startEmailEdit(f, { operation = 'Edit', values = { title: 'Exact new title', body: 'Exact new body', reason: 'Correct this text' } } = {}) {
+  f.$('rc-admin-list').querySelectorAll('button').find(button => button.textContent === operation).click();
+  f.fill('rc-admin-edit-form', values); f.submit('rc-admin-edit-form');
+}
+async function verifyEmail(f) {
+  f.$('rc-email-stepup-send').click(); await flush();
+  f.fill('rc-email-stepup-form', { code: '123456' }); f.submit('rc-email-stepup-form'); await flush();
+}
+
+test('email admission is offered only for explicit config plus server method and capability', async () => {
+  for (const [enabled, method, eligible, expected] of [[true, 'email', true, true], [false, 'email', true, false], [true, 'totp', true, false], [true, 'email', false, false], ['true', 'email', true, false]]) {
+    const initial = emailAuthState({ eligible }); initial.admin.method = method;
+    const f = await emailFixture({ auth: mockAuth(initial), extraConfig: { emailStepupEnabled: enabled } });
+    assert.equal(f.$('rc-admin-email').hidden, !expected);
+    assert.equal(f.stepup.calls.some(call => call[0] === 'begin'), false);
+    if (!expected) assert.equal(f.$('rc-admin-verify').hidden, false);
+    f.ui.dispose();
+  }
+});
+test('email admission sends no automatic mail; verification requires authoritative Auth refresh', async () => {
+  const auth = mockAuth(emailAuthState()), f = await emailFixture({ auth });
+  assert.equal(f.$('rc-admin-tools').hidden, true); f.$('rc-admin-email').click(); await flush();
+  assert.equal(f.stepup.calls.length, 0); assert.equal(f.$('rc-email-stepup').open, true);
+  await verifyEmail(f); assert.deepEqual(f.stepup.calls.find(call => call[0] === 'begin')[1], { scope: 'admission' });
+  assert.ok(auth.calls.some(call => call[0] === 'refresh')); assert.equal(f.$('rc-admin-tools').hidden, true);
+  assert.equal(f.$('rc-email-stepup-code').value, ''); assert.equal(f.calls.some(call => call.options.method === 'POST'), false); f.ui.dispose();
+});
+test('server-confirmed email admission loads real admin records after code verification', async () => {
+  const auth = mockAuth(emailAuthState()); auth.refresh = async () => { auth.calls.push(['refresh']); auth.emit(emailAuthState({ admitted: true })); return auth.getState(); };
+  const f = await emailFixture({ auth }); f.$('rc-admin-email').click(); await verifyEmail(f);
+  assert.equal(f.$('rc-admin-tools').hidden, false); assert.match(f.$('rc-admin-list').textContent, /synthetic discussion/); f.ui.dispose();
+});
+test('email edit freezes exact canonical action then waits for explicit final confirmation', async () => {
+  const f = await emailFixture(); startEmailEdit(f); await flush();
+  assert.equal(f.stepup.calls.length, 0); assert.equal(f.$('rc-admin-edit-form').querySelector('fieldset').disabled, true);
+  assert.match(f.$('rc-email-stepup-summary').textContent, /Exact new body/);
+  f.$('rc-admin-edit-body').value = 'Tampered later draft';
+  await verifyEmail(f);
+  assert.deepEqual(f.stepup.calls.find(call => call[0] === 'begin')[1], { scope: 'action', action: 'admin_edit_post', targetId: postId, expectedVersion: 3, payload: { title: 'Exact new title', body: 'Exact new body', reason: 'Correct this text' } });
+  assert.equal(f.calls.some(call => call.options.method === 'POST'), false);
+  assert.equal(f.$('rc-email-stepup-confirm').disabled, false); f.$('rc-email-stepup-confirm').click(); await flush();
+  const sent = f.calls.find(call => call.options.method === 'POST'); assert.equal(sent.path, `/api/admin/posts/${postId}/edit`);
+  assert.deepEqual(sent.options.body, { expected_version: 3, reason: 'Correct this text', title: 'Exact new title', body: 'Exact new body' });
+  assert.equal(f.$('rc-email-stepup').open, false); assert.equal(f.$('rc-admin-editor').open, false); f.ui.dispose();
+});
+test('email moderation and user state bind exact server IDs, versions and canonical payloads', async () => {
+  for (const operation of ['Hide', 'Pin', 'Lock', 'Suspend account', 'Restore account']) {
+    const account = operation.includes('account');
+    const f = await emailFixture({ respond: path => operation === 'Restore account' && path.startsWith('/api/admin/users') ? { data: [{ user_id: uid, role: 'member', state: 'suspended', version: 2 }] } : undefined });
+    if (account) { f.document.querySelector('[data-admin-view="users"]').click(); await flush(); }
+    startEmailEdit(f, { operation, values: { reason: 'Exact reason' } }); await flush(); await verifyEmail(f);
+    const binding = f.stepup.calls.find(call => call[0] === 'begin')[1];
+    assert.deepEqual(binding, { scope: 'action', action: account ? 'set_account_state' : 'moderate_post', targetId: account ? uid : postId, expectedVersion: account ? 2 : 3, payload: account ? { state: operation === 'Suspend account' ? 'suspended' : 'active', reason: 'Exact reason' } : { action: operation.toLowerCase(), reason: 'Exact reason' } });
+    f.$('rc-email-stepup-confirm').click(); await flush();
+    assert.deepEqual(f.calls.find(call => call.options.method === 'POST').options.body, { expected_version: account ? 2 : 3, reason: 'Exact reason' }); f.ui.dispose();
+  }
+});
+test('repeated email sends, verifies and confirms cannot duplicate pending operations', async () => {
+  const begin = deferred(), verify = deferred(), mutation = deferred();
+  const adapter = mockStepup({ async begin(value) { this.calls.push(['begin', value]); this.emit({ status: 'requesting_code', busy: true, scope: 'action' }); await begin.promise; this.emit({ status: 'code_requested', busy: false }); return this.getState(); },
+    async verify(code) { this.calls.push(['verify', code]); this.emit({ status: 'verifying', busy: true }); await verify.promise; this.emit({ status: 'verified', busy: false, actionReady: true, actionExpiresAt: Date.now() + 120000 }); return this.getState(); } });
+  const f = await emailFixture({ stepup: adapter, respond: (path, options) => options.method === 'POST' ? mutation.promise : undefined });
+  startEmailEdit(f); await flush(); f.$('rc-email-stepup-send').click(); f.$('rc-email-stepup-send').click(); assert.equal(adapter.calls.filter(call => call[0] === 'begin').length, 1);
+  begin.resolve(); await flush(); f.fill('rc-email-stepup-form', { code: '123456' }); f.submit('rc-email-stepup-form'); assert.equal(f.$('rc-email-stepup-code').value, ''); f.fill('rc-email-stepup-form', { code: '123456' }); f.submit('rc-email-stepup-form'); assert.equal(adapter.calls.filter(call => call[0] === 'verify').length, 1);
+  verify.resolve(); await flush(); f.$('rc-email-stepup-confirm').click(); f.$('rc-email-stepup-confirm').click(); assert.equal(f.calls.filter(call => call.options.method === 'POST').length, 1);
+  mutation.resolve({ data: post }); await flush(); f.ui.dispose();
+});
+test('cancellation remains visible and blocks action until server confirms or reports already used', async () => {
+  let attempts = 0;
+  const adapter = mockStepup({ async cancel() { this.calls.push(['cancel']); if (++attempts === 1) { this.emit({ status: 'cancellation_unconfirmed', cancellationStatus: 'unconfirmed', actionReady: false }); throw { code: 'CANCEL_UNCONFIRMED' }; } this.emit({ status: 'already_used', cancellationStatus: 'already_used' }); return this.getState(); } });
+  const f = await emailFixture({ stepup: adapter }); startEmailEdit(f); await flush(); await verifyEmail(f);
+  f.fill('rc-email-stepup-form', { code: '999999' }); f.$('rc-email-stepup-cancel').click(); await flush();
+  assert.equal(f.$('rc-email-stepup').open, true); assert.equal(f.$('rc-email-stepup-code').value, ''); assert.match(f.$('rc-email-stepup-cancel').textContent, /Retry cancellation/); assert.equal(f.$('rc-email-stepup-confirm').disabled, true);
+  assert.equal(f.$('rc-admin-edit-form').querySelector('fieldset').disabled, true);
+  f.$('rc-email-stepup-cancel').click(); await flush(); assert.equal(f.$('rc-email-stepup').open, false); assert.match(f.$('rc-status').textContent, /already used/); assert.equal(f.calls.some(call => call.options.method === 'POST'), false); f.ui.dispose();
+});
+test('closing pending send warns when only local stopping is known and fences late begin', async () => {
+  const pending = deferred(); const adapter = mockStepup({ async begin(value) { this.calls.push(['begin', value]); this.emit({ status: 'requesting_code', busy: true }); await pending.promise; this.emit({ status: 'code_requested', busy: false }); return this.getState(); },
+    async cancel() { this.calls.push(['cancel']); this.emit({ status: 'stopped', cancellationStatus: 'local_only', busy: false }); return this.getState(); } });
+  const f = await emailFixture({ admitted: false, stepup: adapter }); f.$('rc-admin-email').click(); f.$('rc-email-stepup-send').click();
+  const event = f.$('rc-email-stepup').dispatch('cancel'); assert.equal(event.defaultPrevented, true); await flush();
+  assert.match(f.$('rc-email-stepup-result').textContent, /email may still arrive/); assert.equal(f.$('rc-email-stepup').open, true);
+  pending.resolve(); await flush(); assert.equal(f.$('rc-email-stepup-form').hidden, true); assert.equal(f.$('rc-email-stepup-confirm').disabled, true);
+  f.$('rc-email-stepup-cancel').click(); await flush(); assert.equal(f.$('rc-email-stepup').open, false); assert.match(f.$('rc-status').textContent, /No server cancellation/); f.ui.dispose();
+});
+test('signout immediately disposes email flow without waiting for or claiming remote cancellation', async () => {
+  const pending = deferred(); const adapter = mockStepup({ async verify(code) { this.calls.push(['verify', code]); await pending.promise; return { ...this.getState(), actionReady: true, actionExpiresAt: Date.now() + 120000 }; } });
+  const f = await emailFixture({ stepup: adapter }); startEmailEdit(f); await flush(); f.$('rc-email-stepup-send').click(); await flush(); f.fill('rc-email-stepup-form', { code: '123456' }); f.submit('rc-email-stepup-form');
+  f.document.querySelector('[data-signout]').click(); await flush(); assert.ok(f.auth.calls.some(call => call[0] === 'signOut')); assert.ok(adapter.calls.some(call => call[0] === 'dispose')); assert.equal(adapter.calls.some(call => call[0] === 'cancel'), false);
+  pending.resolve(); await flush(); assert.equal(f.$('rc-email-stepup').open, false); assert.equal(f.$('rc-email-stepup-code').value, ''); assert.equal(f.$('rc-email-stepup-summary').textContent, ''); assert.equal(f.calls.some(call => call.options.method === 'POST'), false); f.ui.dispose();
+});
+test('same-user session swap disposes old challenge and fences its late verification', async () => {
+  const pending = deferred(), fresh = mockStepup();
+  const adapter = mockStepup({ async verify(code) { this.calls.push(['verify', code]); await pending.promise; return { ...this.getState(), actionReady: true, actionExpiresAt: Date.now() + 120000 }; } });
+  const f = await emailFixture({ stepup: adapter, createStepup: () => fresh }); startEmailEdit(f); await flush(); f.$('rc-email-stepup-send').click(); await flush(); f.fill('rc-email-stepup-form', { code: '123456' }); f.submit('rc-email-stepup-form');
+  f.auth.emit(emailAuthState({ admitted: true, generation: 2 })); pending.resolve(); await flush();
+  assert.ok(adapter.calls.some(call => call[0] === 'dispose')); assert.equal(f.$('rc-email-stepup').open, false); assert.equal(f.$('rc-email-stepup-summary').textContent, ''); assert.equal(f.$('rc-admin-editor').open, false); assert.equal(f.calls.some(call => call.options.method === 'POST'), false); f.ui.dispose();
+});
+test('routine same-session refresh preserves email challenge and uses only live server capability', async () => {
+  const f = await emailFixture(); startEmailEdit(f); await flush(); f.$('rc-email-stepup-send').click(); await flush();
+  f.auth.emit({ ...emailAuthState({ admitted: true }), busy: true, admin: { ...admin(null), status: 'unchecked' } });
+  f.auth.emit(emailAuthState({ admitted: true })); await flush(); assert.equal(f.$('rc-email-stepup').open, true); assert.equal(f.$('rc-email-stepup-form').querySelector('fieldset').disabled, false); assert.equal(f.stepup.calls.some(call => call[0] === 'dispose'), false); f.ui.dispose();
+});
+test('BFCache suspends locally without cancelling or submitting and requires explicit cancellation on return', async () => {
+  const f = await emailFixture(); startEmailEdit(f); await flush(); await verifyEmail(f); f.fill('rc-email-stepup-form', { code: '123456' });
+  f.window.dispatch('pagehide', { persisted: true }); await flush(); assert.ok(f.stepup.calls.some(call => call[0] === 'suspend')); assert.equal(f.stepup.calls.some(call => call[0] === 'cancel'), false); assert.equal(f.$('rc-email-stepup-code').value, ''); assert.equal(f.$('rc-email-stepup-summary').textContent, '');
+  f.window.dispatch('pageshow', { persisted: true }); await flush(); assert.equal(f.$('rc-email-stepup').open, true); assert.equal(f.$('rc-email-stepup-confirm').disabled, true); assert.match(f.$('rc-email-stepup-result').textContent, /interrupted/); assert.equal(f.calls.some(call => call.options.method === 'POST'), false);
+  f.$('rc-email-stepup-cancel').click(); await flush(); assert.equal(f.$('rc-email-stepup').open, false); f.ui.dispose();
+});
+test('expired action, changed server role and action transport failure never auto-submit or retry', async () => {
+  const f = await emailFixture({ respond: (path, options) => { if (options.method === 'POST') throw { code: 'version_conflict' }; } });
+  startEmailEdit(f); await flush(); await verifyEmail(f); f.$('rc-email-stepup-confirm').click(); await flush();
+  assert.equal(f.calls.filter(call => call.options.method === 'POST').length, 1); assert.equal(f.$('rc-email-stepup-confirm').disabled, true); assert.match(f.$('rc-email-stepup-result').textContent, /changed on the server/); f.$('rc-email-stepup-confirm').click(); await flush(); assert.equal(f.calls.filter(call => call.options.method === 'POST').length, 1); f.ui.dispose();
+  const g = await emailFixture(); startEmailEdit(g); await flush(); await verifyEmail(g); g.stepup.emit({ actionExpiresAt: Date.now() - 1 }); g.$('rc-email-stepup-confirm').click(); await flush(); assert.equal(g.calls.some(call => call.options.method === 'POST'), false); g.ui.dispose();
+  const h = await emailFixture(); startEmailEdit(h); await flush(); await verifyEmail(h); h.auth.emit(emailAuthState({ admitted: false, eligible: false })); await flush(); assert.equal(h.$('rc-email-stepup-confirm').disabled, true); assert.equal(h.$('rc-email-stepup-summary').textContent, ''); assert.equal(h.calls.some(call => call.options.method === 'POST'), false); h.ui.dispose();
+});
+test('linked adapter cancellation signal aborts original mutation transport', async () => {
+  const aborter = new AbortController(), pending = deferred();
+  const adapter = mockStepup({ async consumeAction(callback) { this.calls.push(['consumeAction']); this.emit({ actionReady: false }); return callback(aborter.signal); } });
+  const f = await emailFixture({ stepup: adapter, respond: (path, options) => options.method === 'POST' ? pending.promise : undefined }); startEmailEdit(f); await flush(); await verifyEmail(f); f.$('rc-email-stepup-confirm').click(); await flush();
+  const sent = f.calls.find(call => call.options.method === 'POST'); assert.equal(sent.options.signal.aborted, false); aborter.abort(); assert.equal(sent.options.signal.aborted, true); pending.resolve({ data: post }); await flush(); assert.doesNotMatch(f.$('rc-status').textContent, /saved and recorded/); f.ui.dispose();
+});
+
+test('same-session periodic capability checks never reload admin lists or keep admission alive', async () => {
+  const f = await emailFixture(); const initialReads = f.calls.filter(call => call.path.startsWith('/api/admin/')).length;
+  for (let i = 0; i < 4; i++) {
+    f.auth.emit({ ...emailAuthState({ admitted: true }), busy: true, admin: { ...admin(null), method: 'email', status: 'unchecked' } });
+    f.auth.emit(emailAuthState({ admitted: true })); await flush();
+  }
+  assert.equal(f.calls.filter(call => call.path.startsWith('/api/admin/')).length, initialReads);
+  f.auth.emit(emailAuthState({ admitted: false })); await flush();
+  assert.equal(f.$('rc-admin-tools').hidden, true); assert.equal(f.$('rc-admin-list').textContent, '');
+  assert.equal(f.calls.filter(call => call.path.startsWith('/api/admin/')).length, initialReads); f.ui.dispose();
+});
+
+test('production email adapter completes exact action through real UI only after explicit confirmation', async () => {
+  const traffic = [], challengeId = '44444444-4444-4444-8444-444444444444';
+  const stepup = createEmailStepupClient({ enabled: true, origin: config.allowedOrigin, getAccessToken: async () => 'synthetic-access-token-only',
+    fetchImpl: async (url, options) => {
+      const body = options.body ? JSON.parse(options.body) : null; traffic.push({ url, body });
+      const data = url.endsWith('/begin') ? { id: challengeId, scope: body.scope, expires_epoch: Math.floor(Date.now() / 1000) + 300 }
+        : url.endsWith('/verify') ? { id: challengeId, scope: 'action', verified: true, expires_epoch: Math.floor(Date.now() / 1000) + 120 }
+        : { cancelled: true, already_used: false };
+      return new Response(JSON.stringify({ data }));
+    } });
+  const f = await emailFixture({ stepup }); startEmailEdit(f); await flush(); await verifyEmail(f);
+  assert.equal(f.$('rc-email-stepup-confirm').disabled, false); assert.equal(f.calls.some(call => call.options.method === 'POST'), false);
+  assert.deepEqual(traffic.find(row => row.url.endsWith('/begin')).body, { scope: 'action', action: 'admin_edit_post', target_id: postId, expected_version: 3, payload: { title: 'Exact new title', body: 'Exact new body', reason: 'Correct this text' } });
+  f.$('rc-email-stepup-confirm').click(); await flush(); assert.equal(f.calls.filter(call => call.options.method === 'POST').length, 1); assert.equal(f.$('rc-email-stepup').open, false); f.ui.dispose();
+});
+test('original mutation transport times out within 25 seconds and never retries a stalled send', async t => {
+  t.mock.timers.enable({ apis: ['setTimeout'] });
+  const f = await emailFixture({ respond: (path, options) => options.method === 'POST' ? new Promise(() => {}) : undefined });
+  startEmailEdit(f); await flush(); await verifyEmail(f); f.$('rc-email-stepup-confirm').click(); await flush();
+  const sent = f.calls.find(call => call.options.method === 'POST'); assert.equal(sent.options.signal.aborted, false);
+  t.mock.timers.tick(25000); await flush(); assert.equal(sent.options.signal.aborted, true); assert.equal(f.$('rc-email-stepup-confirm').disabled, true); assert.match(f.$('rc-email-stepup-result').textContent, /timed out/); assert.equal(f.calls.filter(call => call.options.method === 'POST').length, 1); f.ui.dispose();
+});
+
+test('eligible email administrator can find management from the forum before admission', async () => {
+  const f = await fixture({ auth: mockAuth(emailAuthState()), stepup: mockStepup(), extraConfig: { emailStepupEnabled: true } });
+  assert.equal(f.document.querySelector('[data-admin-link]').hidden, false);
+  assert.match(f.$('rc-mfa-description').textContent, /separate email verification/); f.ui.dispose();
+});
+test('unconfirmed cancellation keeps an accessible signout button inside the modal', async () => {
+  const stepup = mockStepup({ async cancel() { this.emit({ cancellationStatus: 'unconfirmed' }); throw { code: 'CANCEL_UNCONFIRMED' }; } });
+  const f = await emailFixture({ stepup }); startEmailEdit(f); await flush(); await verifyEmail(f); f.$('rc-email-stepup-cancel').click(); await flush();
+  const signout = f.$('rc-email-stepup').querySelector('[data-signout]'); assert.equal(signout.disabled, false); signout.click(); await flush(); assert.ok(f.auth.calls.some(call => call[0] === 'signOut')); assert.equal(f.$('rc-email-stepup').open, false); f.ui.dispose();
+});
+
+test('polling recovery after unavailable or denied access never reloads records until user requests it', async () => {
+  const f = await emailFixture(); const initialReads = f.calls.filter(call => call.path.startsWith('/api/admin/')).length;
+  for (const status of ['unavailable', 'denied']) {
+    f.auth.emit({ ...emailAuthState({ admitted: false }), admin: { ...emailAuthState({ admitted: false }).admin, status } }); await flush();
+    f.auth.emit(emailAuthState({ admitted: true })); await flush();
+  }
+  assert.equal(f.calls.filter(call => call.path.startsWith('/api/admin/')).length, initialReads);
+  assert.equal(f.$('rc-admin-list').textContent, ''); assert.match(f.$('rc-status').textContent, /Use Refresh/);
+  f.$('rc-admin-refresh').click(); await flush(); assert.equal(f.calls.filter(call => call.path.startsWith('/api/admin/')).length, initialReads + 1); assert.match(f.$('rc-admin-list').textContent, /synthetic discussion/); f.ui.dispose();
+});
+
+test('server signout failure remains visible after local email flow and session are cleared', async () => {
+  const auth = mockAuth(emailAuthState({ admitted: true })); auth.signOut = async () => { auth.calls.push(['signOut']); auth.emit({ ...state(null), error: { code: 'SIGN_OUT_UNCONFIRMED' } }); throw { code: 'SIGN_OUT_UNCONFIRMED' }; };
+  const f = await emailFixture({ auth }); startEmailEdit(f); await flush(); await verifyEmail(f); f.$('rc-email-stepup').querySelector('[data-signout]').click(); await flush();
+  assert.equal(f.$('rc-email-stepup').open, false); assert.match(f.$('rc-status').textContent, /server sign-out could not be confirmed/i); assert.doesNotMatch(f.$('rc-status').textContent, /verification.*cancelled/i); f.ui.dispose();
+});
+test('recovery transition clears old email flow even if a fixture omits session generation change', async () => {
+  const f = await emailFixture(); startEmailEdit(f); await flush(); await verifyEmail(f);
+  f.auth.emit({ ...emailAuthState({ admitted: false }), status: 'recovery_ready', recovery: { expiresAt: Date.now() + 10000 } }); await flush();
+  assert.equal(f.$('rc-email-stepup').open, false); assert.equal(f.$('rc-email-stepup-summary').textContent, ''); assert.ok(f.stepup.calls.some(call => call[0] === 'dispose')); f.ui.dispose();
+});
+
+test('local admission deadline clears private UI and blocks action without network or Auth refresh', async t => {
+  const now = Date.now(); t.mock.timers.enable({ apis: ['Date', 'setInterval'], now });
+  const initial = emailAuthState({ admitted: true }); initial.admin.idleExpiresAt = now + 1500;
+  const auth = mockAuth(initial);
+  const f = await emailFixture({ auth, configureDom: ({ window }) => { window.setInterval = setInterval; window.clearInterval = clearInterval; } });
+  startEmailEdit(f); await flush(); await verifyEmail(f); assert.equal(f.$('rc-email-stepup-confirm').disabled, false);
+  const requestsBefore = f.calls.length, authCallsBefore = auth.calls.length, adapterCallsBefore = f.stepup.calls.length;
+  const stateBefore = auth.getState(); t.mock.timers.tick(2000); await flush();
+  assert.deepEqual(auth.getState(), stateBefore); assert.equal(f.calls.length, requestsBefore); assert.equal(auth.calls.length, authCallsBefore); assert.equal(f.stepup.calls.length, adapterCallsBefore);
+  assert.equal(f.$('rc-admin-tools').hidden, true); assert.equal(f.$('rc-admin-gate').hidden, false); assert.equal(f.$('rc-admin-list').textContent, ''); assert.equal(f.$('rc-admin-editor').open, false);
+  assert.equal(f.$('rc-email-stepup').open, true); assert.equal(f.$('rc-email-stepup-summary').textContent, ''); assert.equal(f.$('rc-email-stepup-confirm').disabled, true); assert.match(f.$('rc-status').textContent, /expired/);
+  f.$('rc-email-stepup-confirm').click(); await flush(); assert.equal(f.calls.length, requestsBefore); assert.equal(f.stepup.calls.some(call => call[0] === 'cancel'), false);
+  f.$('rc-email-stepup-cancel').click(); await flush(); assert.ok(f.stepup.calls.some(call => call[0] === 'cancel')); f.ui.dispose();
+});
+test('email admin access requires both finite future server deadlines while TOTP remains unaffected', async () => {
+  for (const change of [{ idleExpiresAt: null }, { absoluteExpiresAt: null }, { idleExpiresAt: NaN }, { absoluteExpiresAt: Infinity }, { idleExpiresAt: Date.now() - 1 }, { absoluteExpiresAt: Date.now() - 1 }]) {
+    const initial = emailAuthState({ admitted: true }); Object.assign(initial.admin, change);
+    const f = await emailFixture({ auth: mockAuth(initial) }); assert.equal(f.$('rc-admin-tools').hidden, true); assert.equal(f.calls.some(call => call.path.startsWith('/api/admin/')), false); f.ui.dispose();
+  }
+  const f = await fixture({ mode: 'admin', role: 'owner', extraConfig: { emailStepupEnabled: true } }); assert.equal(f.$('rc-admin-tools').hidden, false); assert.match(f.$('rc-admin-list').textContent, /synthetic discussion/); f.ui.dispose();
 });

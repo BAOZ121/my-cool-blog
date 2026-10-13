@@ -31,7 +31,7 @@ function safeError(error) {
   return failure('AUTH_FAILED');
 }
 const unwrap = (result) => { if (result?.error) throw safeError(result.error); if (!object(result)) throw failure('AUTH_FAILED'); return result.data; };
-const emptyAdmin = (status = 'signed_out') => ({ status, role: null, canModerate: false, canManageUsers: false, canReadAudit: false });
+const emptyAdmin = (status = 'signed_out') => ({ status, role: null, method: null, canRequestEmailStepup: false, admitted: false, idleExpiresAt: null, absoluteExpiresAt: null, canModerate: false, canManageUsers: false, canReadAudit: false });
 const emptyMfa = () => ({ currentLevel: null, nextLevel: null, required: false, factors: [] });
 const initial = (enabled) => ({ status: enabled ? 'signed_out' : 'disabled', busy: false, user: null, mfa: emptyMfa(), admin: emptyAdmin(), error: null, recovery: null });
 function credentials(email, password, signup) {
@@ -66,16 +66,17 @@ export function createSupabaseAuthController(options = {}) {
   const timeoutMs = options.timeoutMs ?? 12_000;
   let config, client, storage, subscription, currentSession = null, active = null, signingOut = null;
   let disposed = false, epoch = 0, eventScheduled = false, enrollmentId = null, challenge = null, tokenRefresh = null, ownSignout = false;
-  let recoveryMode = false;
+  let recoveryMode = false, sessionGeneration = 0, sessionIdentity = null;
   let state = initial(enabled);
   const listeners = new Set();
-  function snapshot() { const copy = structuredClone(state); copy.mfa.pendingFactorId = enrollmentId; return copy; }
+  function snapshot() { const copy = structuredClone(state); copy.mfa.pendingFactorId = enrollmentId; copy.sessionGeneration = sessionGeneration; return copy; }
   function publish(patch) {
     state = { ...state, ...patch };
     for (const listener of listeners) { try { listener(snapshot()); } catch { /* UI listeners cannot break authentication. */ } }
   }
   function clearLocal(status = 'signed_out') {
-    currentSession = null; enrollmentId = null; challenge = null; recoveryMode = false;
+    if (currentSession || sessionIdentity) sessionGeneration += 1;
+    sessionIdentity = null; currentSession = null; enrollmentId = null; challenge = null; recoveryMode = false;
     publish({ status, recovery: null, user: null, mfa: emptyMfa(), admin: emptyAdmin(), error: null });
   }
   function assertOpen() { if (!enabled) throw failure('AUTH_DISABLED'); if (disposed) throw failure('CANCELLED'); }
@@ -184,20 +185,36 @@ export function createSupabaseAuthController(options = {}) {
     return promise;
   }
   async function adminState(session, user, aal, generation) {
-    if (aal.currentLevel !== 'aal2') return emptyAdmin('mfa_required');
+    if (options.emailStepupEnabled !== true && aal.currentLevel !== 'aal2') return emptyAdmin('mfa_required');
     try {
       const response = await boundedFetch(`${config.origin}/api/admin/session`, { headers: { Accept: 'application/json', Authorization: `Bearer ${session.access_token}` } }, 'admin');
       checkpoint(generation);
       if (response.status === 401) throw failure('SESSION_EXPIRED');
-      if (response.status === 403) return emptyAdmin('denied');
+      if (response.status === 403) return emptyAdmin(aal.currentLevel === 'aal2' ? 'denied' : 'mfa_required');
       if (!response.ok) return emptyAdmin('unavailable');
       const text = await response.text();
       checkpoint(generation);
       if (text.length > 64_000) return emptyAdmin('unavailable');
       const data = JSON.parse(text)?.data;
       if (!object(data) || data.user_id !== user.id || data.email_verified !== true || data.state !== 'active'
-        || data.aal !== 'aal2' || data.can_post !== true || data.can_moderate !== true || !['moderator', 'owner'].includes(data.role)) return emptyAdmin('denied');
-      return { status: 'available', role: data.role, canModerate: true, canManageUsers: data.role === 'owner', canReadAudit: data.role === 'owner' };
+        || data.can_post !== true) return emptyAdmin('denied');
+      if (data.admin_auth_method === 'email') {
+        if (options.emailStepupEnabled !== true || data.role !== 'owner' || data.can_request_email_stepup !== true
+          || typeof data.admitted !== 'boolean' || data.can_moderate !== data.admitted || data.aal !== aal.currentLevel
+          || !UUID.test(data.session_id || '')) return emptyAdmin('denied');
+        const idle = data.idle_expires_epoch, absolute = data.absolute_expires_epoch;
+        if (data.admitted ? (!Number.isInteger(idle) || !Number.isInteger(absolute) || idle * 1000 <= now()
+          || absolute * 1000 <= now() || idle > absolute || idle * 1000 - now() > 905_000 || absolute * 1000 - now() > 3_605_000)
+          : (idle !== null || absolute !== null)) return emptyAdmin('denied');
+        return { status: data.admitted ? 'available' : 'email_required', method: 'email', role: 'owner',
+          canRequestEmailStepup: true, admitted: data.admitted, idleExpiresAt: idle === null ? null : idle * 1000,
+          absoluteExpiresAt: absolute === null ? null : absolute * 1000, canModerate: data.admitted,
+          canManageUsers: data.admitted, canReadAudit: data.admitted, sessionIdentity: data.session_id };
+      }
+      if ((data.admin_auth_method !== undefined && data.admin_auth_method !== 'totp') || data.aal !== 'aal2'
+        || aal.currentLevel !== 'aal2' || data.can_moderate !== true || !['moderator', 'owner'].includes(data.role)) return emptyAdmin('denied');
+      return { status: 'available', method: 'totp', role: data.role, canRequestEmailStepup: false, admitted: true,
+        idleExpiresAt: null, absoluteExpiresAt: null, canModerate: true, canManageUsers: data.role === 'owner', canReadAudit: data.role === 'owner' };
     } catch (error) {
       if (['SESSION_EXPIRED', 'CANCELLED'].includes(error?.code)) throw error;
       return emptyAdmin('unavailable');
@@ -227,7 +244,12 @@ export function createSupabaseAuthController(options = {}) {
     recoveryMode = !!recovery;
     const admin = recoveryMode ? emptyAdmin('recovery') : await adminState(session, user, aal, generation);
     checkpoint(generation);
-    currentSession = session;
+    // Only a server-validated same-session marker preserves an email workflow
+    // across token rotation. It is an internal lifecycle marker, never a grant.
+    const identity = admin.sessionIdentity ?? (session.access_token === currentSession?.access_token ? sessionIdentity : session.access_token);
+    delete admin.sessionIdentity;
+    if (identity !== sessionIdentity) sessionGeneration += 1;
+    sessionIdentity = identity; currentSession = session;
     publish({ status: recoveryMode ? 'recovery_ready' : 'signed_in', recovery: recoveryMode ? { expiresAt: recovery.expiresAt } : null, user: { id: user.id, email: user.email, emailVerified: true },
       mfa: { currentLevel: aal.currentLevel, nextLevel: aal.nextLevel, required: aal.currentLevel !== 'aal2' && aal.nextLevel === 'aal2', factors: verifiedFactors }, admin, error: null });
     return snapshot();
@@ -459,7 +481,7 @@ export function createSupabaseAuthController(options = {}) {
   }
   function dispose() {
     if (disposed) return;
-    disposed = true; epoch += 1; currentSession = null; enrollmentId = null; challenge = null;
+    disposed = true; epoch += 1; sessionGeneration += 1; sessionIdentity = null; currentSession = null; enrollmentId = null; challenge = null;
     subscription?.unsubscribe(); storage?.close();
     try {
       const cleanup = typeof client?.auth.dispose === 'function' ? client.auth.dispose() : client?.auth.stopAutoRefresh?.();

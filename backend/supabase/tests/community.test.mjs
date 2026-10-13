@@ -34,7 +34,7 @@ test('DEX community authorization and mutations on actual PostgreSQL (PGlite)',a
   t.after(()=>db.close());
   await db.exec(await readFile(new URL('tests/auth-stubs.sql',root),'utf8'));
   await db.exec(await readFile(new URL('tests/auto-rls-fixture.sql',root),'utf8'));
-  const migrations=(await readdir(new URL('migrations/',root))).filter(x=>x.endsWith('.sql')).sort();
+  const migrations=(await readdir(new URL('migrations/',root))).filter(x=>x.startsWith('20261012') && x.endsWith('.sql')).sort();
   assert.deepEqual(migrations,['20261012030809_dex_community_foundation.sql','20261012030835_harden_auto_rls_execute.sql']);
   for(const file of migrations) {
     try { await db.exec(await readFile(new URL(`migrations/${file}`,root),'utf8')); } catch(e) { delete e.query; throw e; }

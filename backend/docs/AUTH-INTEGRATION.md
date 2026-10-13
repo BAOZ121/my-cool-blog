@@ -92,7 +92,19 @@ TOTP enrollment alone grants nothing. Challenges are factor/ID/expiry-bound and 
 
 There is deliberately no discard/unenroll method. Supabase's public factor deletion takes a factor ID without an expected-unverified-status condition, so a client read-then-delete could race verification elsewhere and remove a now-verified factor. Closing a dialog never removes an Auth factor. Unfinished-factor cleanup, recovery codes, unenrollment and lost-factor recovery require separately reviewed, explicitly user-authorized handling; they must not be performed automatically by an assistant.
 
-Admin controls require AAL2 plus a live same-origin `GET /api/admin/session` response with the same `user_id`, confirmed email, active state, `aal2`, `can_post:true`, `can_moderate:true`, and role moderator/owner. Owner-only flags come only from that response. No email whitelist, avatar, user metadata, decoded JWT role or Google login grants admin rights. `admin.status:'mfa_required'` means MFA is needed before checking admin capability, not that a role already exists. Backend/SQL recheck each mutation even if the rendered UI is stale.
+With email step-up absent or disabled, admin controls retain the existing AAL2 requirement plus a live same-origin `GET /api/admin/session` response with the same `user_id`, confirmed email, active state, `aal2`, `can_post:true`, `can_moderate:true`, and role moderator/owner. Owner-only flags come only from that response. No email whitelist, avatar, user metadata, decoded JWT role or Google login grants admin rights. `admin.status:'mfa_required'` means MFA is needed before checking admin capability, not that a role already exists. Backend/SQL recheck each mutation even if the rendered UI is stale.
+
+## Optional email administrator step-up
+
+The locally integrated email flow is selected only when `data/community.json` explicitly sets `emailStepupEnabled:true` **and** the live server returns `admin_auth_method:'email'` with a validated eligible owner capability. The new public flag is committed as `false`. Server enablement, database configuration, HMAC/mailer credentials, approved recipient setup and deployment remain separate gates. Public configuration contains no HMAC or mailer secret. Missing/mismatched rollout configuration fails closed; it cannot reinterpret email admission as legacy AAL2.
+
+Email-mode `/api/admin/session` must match the live verified user, active account, owner role, `can_post`, `can_request_email_stepup`, current AAL, and consistent `admitted`/`can_moderate` values. Admitted state requires bounded future idle and absolute expiries; pre-admission requires null expiries. A strict UUID `session_id` from the authenticated server is retained only internally as a lifecycle marker. UI state gets a local `sessionGeneration` integer. Ordinary refresh with the same server session preserves an in-flight challenge; another same-user login, signout or account replacement fences it. This marker never grants authority or becomes a mutation input.
+
+The Auth controller still rejects recovery-mode bearer use, and the API/DB must reject recovery and OTP-only administrative sessions from trusted live claims. Neither browser email comparison, metadata nor unsigned JWT decoding selects an administrator. The custom email challenge uses the original password bearer and creates no secondary Supabase Auth session.
+
+`client/email-stepup-client.mjs` is the canonical controller used by the existing real UI. It snapshots action binding, retains known cancellation IDs, and only hands an AbortSignal to an explicit single-use `consumeAction` callback after verification. Mutation bodies stay unchanged: the DB consumes the permission by original session, action, target, version and canonical payload. The original edit/moderation/account/history/audit UI is used; the offline preview is not imported. See [email client contract](EMAIL-STEPUP-CLIENT.md).
+
+Session/status checks do not touch administrator idle time. The UI must not reload private lists automatically after routine Auth refresh or temporary status errors; explicit user loads may do so. Signout immediately blocks and disposes the email workflow before existing Auth signout, without waiting on cancellation. Unconfirmed logout retains the existing warning, never a separate cancellation claim.
 
 ## Concurrency and failure semantics
 
@@ -115,7 +127,7 @@ Before any live enablement:
 ## Official sources checked
 
 - [Official SDK registry metadata](https://registry.npmjs.org/@supabase%2Fsupabase-js/2.117.3) and the committed package integrity lock.
-- [Supabase changelog](https://supabase.com/changelog), reviewed 2026-10-12; official HTML fallback was used when the markdown index was unsupported.
+- [Supabase changelog](https://supabase.com/changelog), reviewed 2026-10-13; official HTML fallback was used when the markdown index was unsupported.
 - [PKCE](https://supabase.com/docs/guides/auth/sessions/pkce-flow), [signUp](https://supabase.com/docs/reference/javascript/auth-signup), [OAuth](https://supabase.com/docs/reference/javascript/auth-signinwithoauth), [code exchange](https://supabase.com/docs/reference/javascript/auth-exchangecodeforsession).
 - [Password reset](https://supabase.com/docs/reference/javascript/auth-resetpasswordforemail), [updateUser](https://supabase.com/docs/reference/javascript/auth-updateuser), [JWT claims and recovery AMR](https://supabase.com/docs/guides/auth/jwt-fields).
 - [Auth events](https://supabase.com/docs/reference/javascript/auth-onauthstatechange), [callback-lock advisory](https://supabase.com/docs/guides/troubleshooting/why-is-my-supabase-api-call-not-returning-PGzXw0), [signout semantics](https://supabase.com/docs/reference/javascript/auth-signout).

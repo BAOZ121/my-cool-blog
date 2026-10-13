@@ -42,7 +42,7 @@ test('all four Pages entrypoints bundle the shared handler as browser-compatible
     const { module, source, metadata } = await bundledAdapter(entry, async () => { throw new Error('Unexpected network'); });
     assert.deepEqual(Object.keys(module), ['onRequest']);
     assert.equal(typeof module.onRequest, 'function');
-    assert.deepEqual(Object.keys(metadata.inputs).sort(), ['backend/api/handler.mjs', entry].sort());
+    assert.deepEqual(Object.keys(metadata.inputs).sort(), ['backend/api/handler.mjs', 'backend/api/admin-stepup.mjs', entry].sort());
     assert.ok(!source.includes('node:'));
     assert.ok(!source.includes('process.env'));
     assert.ok(!source.includes('SUPABASE_SECRET_KEY'));
@@ -138,4 +138,45 @@ test('Hugo invocation manifest includes only exact API namespaces and leaves sit
     deployedFiles.push(...names.map((name) => `functions/api/${directory}/${name}`));
   }
   assert.deepEqual(deployedFiles.sort(), [...entrypoints].sort());
+});
+
+test('real bundled admin adapter mounts guarded email capability and cancellation without review imports', async () => {
+  const uid = '11111111-1111-4111-8111-111111111111';
+  const sid = '22222222-2222-4222-8222-222222222222';
+  const challenge = '33333333-3333-4333-8333-333333333333';
+  const token = 'not-a-real-original-password-token';
+  const calls = [];
+  const { module, metadata } = await bundledAdapter('functions/api/admin/[[path]].js', async (url, init) => {
+    calls.push({ path: new URL(url).pathname, init });
+    const body = new URL(url).pathname === '/auth/v1/user'
+      ? { id: uid, role: 'authenticated', email: 'owner@example.test', email_confirmed_at: '2026-01-01T00:00:00Z' }
+      : new URL(url).pathname.endsWith('/community_me')
+        ? { user_id: uid, role: 'owner', state: 'active', email_verified: true, can_post: true, can_moderate: false,
+          aal: 'aal1', version: 1, admin_auth_method: 'email', can_request_email_stepup: true }
+        : new URL(url).pathname.endsWith('/community_admin_stepup_status')
+          ? { enabled: true, admitted: false, original_session_id: sid, idle_expires_epoch: null, absolute_expires_epoch: null }
+          : { cancelled: true, already_used: false };
+    return new Response(JSON.stringify(body));
+  });
+  assert.ok(!Object.keys(metadata.inputs).some(path => path.includes('stepup-review')));
+  const env = { ...ENV, COMMUNITY_EMAIL_STEPUP_ENABLED: 'true',
+    ADMIN_STEPUP_HMAC_KEY: 'test-only-hmac-key-not-a-real-secret-123456789',
+    ADMIN_STEPUP_RESEND_KEY: 're_test_only_not_a_real_sending_key' };
+  const session = await module.onRequest({ env, request: new Request(`${ORIGIN}/api/admin/session`, {
+    headers: { Authorization: `Bearer ${token}` },
+  }) });
+  assert.equal(session.status, 200);
+  const data = (await session.json()).data;
+  assert.equal(data.admin_auth_method, 'email');
+  assert.equal(data.admitted, false);
+  assert.equal(data.session_id, sid);
+  const cancel = await module.onRequest({ env: { ...env, ADMIN_STEPUP_HMAC_KEY: '', ADMIN_STEPUP_RESEND_KEY: '' },
+    request: new Request(`${ORIGIN}/api/admin/stepup/cancel`, { method: 'POST',
+      headers: { Authorization: `Bearer ${token}`, Origin: ORIGIN, 'Sec-Fetch-Site': 'same-origin', 'Content-Type': 'application/json' },
+      body: JSON.stringify({ challenge_id: challenge }),
+    }) });
+  assert.equal(cancel.status, 200);
+  assert.deepEqual(await cancel.json(), { data: { cancelled: true, already_used: false } });
+  for (const call of calls) assert.equal(call.init.headers.Authorization, `Bearer ${token}`);
+  assert.equal(calls.at(-1).path, '/rest/v1/rpc/community_admin_stepup_cancel');
 });

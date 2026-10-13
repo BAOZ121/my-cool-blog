@@ -1,6 +1,6 @@
 export const COMMUNITY_PATHS = Object.freeze({ forum: '/test/forum-v1/', admin: '/test/forum-admin-v1/', callback: '/test/auth/callback-v1/', recovery: '/test/auth/recovery-v1/' });
 export function validateCommunityConfig(input = {}, runtimeOrigin) {
-  if (input.enabled !== true) return Object.freeze({ enabled: false, googleEnabled: false });
+  if (input.enabled !== true) return Object.freeze({ enabled: false, googleEnabled: false, emailStepupEnabled: false });
   const bad = () => { throw Object.assign(new Error('Community sign-in is not configured for this site.'), { code: 'INVALID_CONFIG' }); };
   let site, project;
   try { site = new URL(input.allowedOrigin); project = new URL(input.supabaseUrl); } catch { return bad(); }
@@ -8,7 +8,7 @@ export function validateCommunityConfig(input = {}, runtimeOrigin) {
     || !/^https:\/\/[a-z0-9-]+\.supabase\.co$/.test(input.supabaseUrl)
     || project.origin !== input.supabaseUrl || !/^sb_publishable_[A-Za-z0-9_-]{16,512}$/.test(input.publishableKey)
     || (runtimeOrigin !== undefined && runtimeOrigin !== site.origin)) return bad();
-  return Object.freeze({ enabled: true, googleEnabled: input.googleEnabled === true, allowedOrigin: site.origin, supabaseUrl: project.origin, publishableKey: input.publishableKey });
+  return Object.freeze({ enabled: true, googleEnabled: input.googleEnabled === true, emailStepupEnabled: input.emailStepupEnabled === true, allowedOrigin: site.origin, supabaseUrl: project.origin, publishableKey: input.publishableKey });
 }
 export function communityCsp(config, { header = false } = {}) {
   const safe = validateCommunityConfig(config);

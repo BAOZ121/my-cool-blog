@@ -2,7 +2,8 @@
  "compilerOptions": {
   "paths": {
    "*": [
-    "..\\themes\\stack\\assets\\*"
+    "*",
+    "../themes/stack/assets/*"
    ]
   }
  }

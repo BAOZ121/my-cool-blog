@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "run_url": "https://github.com/BAOZ121/my-cool-blog/actions/runs/38340448793",
+  "commit": "174450f5b73abb5f730310bd9d3a170ce2a99c0a",
+  "completed_at": "2026-10-13T03:10:56Z",
+  "postgres_version": "17.11 (Debian 17.11-1.pgdg13+2)",
+  "postgres_image_digest": "sha256:2d2b8998d31037bf721cfdf764d76ba74171b4fab3431b7f72c27c56ddbdf9e3",
+  "tests": 8,
+  "scenario_tests": 7,
+  "failures": 0,
+  "skipped": 0,
+  "migration_sha256": "2eb48221bc5f7d4e304680ea68870137db186e5d68856e0cb0e208dc9d5eb751",
+  "runner_sha256": "6dfea1f30cb66656c859a53d1d295cda41d4d342b1d8f59630ed9e815ed9ba5b",
+  "scope": "Disposable network-disabled PostgreSQL container, separate real backend connections and observed lock waits; synthetic Auth/Vault/code fixtures only. No hosted database, real mail, genuine Auth JWT or deployed browser acceptance tested.",
+  "historical_migration_filename": "20261013024643_community_admin_email_stepup.sql",
+  "authoritative_hosted_migration_filename": "20261013031903_community_admin_email_stepup.sql",
+  "reconciliation_note": "Only local deployment filename changed after hosted apply; SQL bytes and recorded Actions evidence are unchanged."
+}

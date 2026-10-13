@@ -1,3 +1,5 @@
+import { createAdminStepupHandler, hasAdminStepupConfiguration, projectAdminStepupStatus } from './admin-stepup.mjs';
+
 /**
  * LOCAL RELEASE PREPARATION. Actual Pages adapters import this shared handler.
  * Deployment and runtime configuration remain separate, explicitly approved steps.
@@ -15,6 +17,7 @@ const DIAGNOSTIC_STAGES = new Set(['configuration', 'request_guard', 'authorizat
   'headers', 'upstream_fetch', 'upstream_read', 'upstream_status', 'upstream_timeout', 'request_body', 'request_timeout']);
 const ERROR_MESSAGES = Object.freeze({
   backend_disabled: 'Community backend is not enabled.',
+  stepup_disabled: 'Administrator email verification is not enabled.',
   backend_unavailable: 'Community backend is temporarily unavailable.',
   upstream_invalid: 'Community backend returned an invalid response.',
   unauthorized: 'A valid sign-in is required.',
@@ -136,11 +139,17 @@ async function boundedJson(body, headers, max, { upstream = false, signal } = {}
   }
 }
 
-async function deadline(callback, timeoutMs, timeoutStage) {
+async function deadline(callback, timeoutMs, timeoutStage, parentSignal) {
+  if (parentSignal?.aborted) throw new ApiError(503, 'backend_unavailable', timeoutStage);
   const controller = new AbortController();
-  let timer;
+  let timer, abortParent;
+  const parentAbort = new Promise((_, reject) => {
+    abortParent = () => { controller.abort(); reject(new ApiError(503, 'backend_unavailable', timeoutStage)); };
+    parentSignal?.addEventListener('abort', abortParent, { once: true });
+  });
   try {
     return await Promise.race([
+      parentAbort,
       callback(controller.signal),
       new Promise((_, reject) => {
         timer = setTimeout(() => {
@@ -149,7 +158,7 @@ async function deadline(callback, timeoutMs, timeoutStage) {
         }, timeoutMs);
       }),
     ]);
-  } finally { clearTimeout(timer); }
+  } finally { clearTimeout(timer); parentSignal?.removeEventListener('abort', abortParent); }
 }
 
 function validateKeys(object, required, optional = []) {
@@ -232,10 +241,24 @@ function upstreamError(status, payload) {
 }
 
 /** Dependency injection is for local tests; production callers use native fetch. */
-export function createCommunityHandler({ fetch: fetchImpl = globalThis.fetch, timeoutMs = 8_000, logger } = {}) {
+export function createCommunityHandler({ fetch: fetchImpl = globalThis.fetch, timeoutMs = 8_000,
+  totalTimeoutMs = 20_000, crypto = globalThis.crypto, now = Date.now, logger } = {}) {
   if (typeof fetchImpl !== 'function') throw new TypeError('fetch is required');
-  if (!Number.isInteger(timeoutMs) || timeoutMs < 1 || timeoutMs > 10_000) throw new TypeError('Invalid timeout');
+  if (!Number.isInteger(timeoutMs) || timeoutMs < 1 || timeoutMs > 10_000
+    || !Number.isInteger(totalTimeoutMs) || totalTimeoutMs < 1 || totalTimeoutMs > 20_000) throw new TypeError('Invalid timeout');
+  let stepupHandler;
   return async function handleCommunityRequest(request, env = {}) {
+    // The existing narrow /api/admin/* Pages adapter mounts only this fixed subrouter.
+    // Instantiate lazily so a disabled email feature never needs crypto/mail setup.
+    const path = new URL(request.url).pathname;
+    if (path === '/api/admin/stepup' || path.startsWith('/api/admin/stepup/')) {
+      stepupHandler ??= createAdminStepupHandler({ fetch: fetchImpl, timeoutMs, totalTimeoutMs, crypto, now, logger });
+      return stepupHandler(request, env);
+    }
+    const overall = new AbortController(), abortRequest = () => overall.abort();
+    const overallTimer = setTimeout(abortRequest, totalTimeoutMs);
+    request.signal.addEventListener('abort', abortRequest, { once: true });
+    if (request.signal.aborted) overall.abort();
     let routeName = 'unmatched';
     let stage = 'configuration', upstreamStatus = null;
     const startedAt = Date.now();
@@ -246,6 +269,10 @@ export function createCommunityHandler({ fetch: fetchImpl = globalThis.fetch, ti
       const route = matchRoute(url, request.method);
       routeName = route.name;
       guardOrigin(request, url, settings);
+      const adminRoute = ['admin', 'owner'].includes(route.access);
+      const emailStepupEnabled = env.COMMUNITY_EMAIL_STEPUP_ENABLED === 'true';
+      // Enabling a partially configured alternative must never silently select AAL2.
+      if (adminRoute && emailStepupEnabled && !hasAdminStepupConfiguration(env)) fail(503, 'stepup_disabled');
       if (route.match[1]) id(route.match[1]);
       const call = async (path, { token, body, method = 'POST' } = {}) => deadline(async (signal) => {
         stage = 'headers'; upstreamStatus = null;
@@ -277,10 +304,11 @@ export function createCommunityHandler({ fetch: fetchImpl = globalThis.fetch, ti
         if (!result.ok) { stage = 'upstream_status'; upstreamError(result.status, data); }
         stage = 'validation'; upstreamStatus = null;
         return data;
-      }, timeoutMs, 'upstream_timeout');
+      }, timeoutMs, 'upstream_timeout', overall.signal);
       const rpc = (name, payload = {}, token) => call(`/rest/v1/rpc/community_${name}`, { body: payload, token });
       let token;
       let session;
+      let adminCapability;
       stage = 'authorization';
       if (route.access !== 'public') {
         const authorization = request.headers.get('Authorization') || '';
@@ -297,10 +325,44 @@ export function createCommunityHandler({ fetch: fetchImpl = globalThis.fetch, ti
         session = await rpc('me', {}, token);
         if (!isObject(session) || session.user_id !== user.id || session.email_verified !== true
           || session.state !== 'active' || session.can_post !== true) fail(403, 'forbidden');
-        if (['admin', 'owner'].includes(route.access)
-          && (session.can_moderate !== true || session.aal !== 'aal2'
-            || !['moderator', 'owner'].includes(session.role))) fail(403, 'forbidden');
-        if (route.access === 'owner' && session.role !== 'owner') fail(403, 'forbidden');
+        if (adminRoute) {
+          if (!['moderator', 'owner'].includes(session.role)) fail(403, 'forbidden');
+          if (route.access === 'owner' && session.role !== 'owner') fail(403, 'forbidden');
+          if (emailStepupEnabled) {
+            if (!['email', 'totp'].includes(session.admin_auth_method)
+              || typeof session.can_request_email_stepup !== 'boolean') fail(503, 'backend_unavailable');
+            if (session.admin_auth_method === 'email') {
+              // Only SQL can identify the configured UUID owner and allowed password AMR.
+              if (session.role !== 'owner' || session.can_request_email_stepup !== true) fail(403, 'forbidden');
+              let status, statusRecord;
+              try {
+                statusRecord = await rpc('admin_stepup_status', {}, token);
+                status = projectAdminStepupStatus(statusRecord);
+              }
+              catch (error) { if (error instanceof ApiError) throw error; fail(503, 'backend_unavailable'); }
+              if (!status.enabled) fail(503, 'stepup_disabled');
+              // Disagreeing snapshots fail closed; neither preflight replaces mutation authority.
+              if (typeof session.can_moderate !== 'boolean' || status.admitted !== session.can_moderate) fail(403, 'forbidden');
+              adminCapability = { admin_auth_method: 'email', can_request_email_stepup: true,
+                // Self-session UUID is a lifecycle marker only, never accepted as authority.
+                session_id: statusRecord.original_session_id,
+                admitted: status.admitted, idle_expires_epoch: status.idle_expires_epoch,
+                absolute_expires_epoch: status.absolute_expires_epoch };
+              if (route.name !== 'adminSession' && !status.admitted) fail(403, 'forbidden');
+            } else if (session.can_request_email_stepup !== false) fail(503, 'backend_unavailable');
+          }
+          if (!adminCapability) {
+            // A DB-enabled email target is not evidence of live MFA. During a
+            // mismatched rollout/rollback, never reinterpret its email admission
+            // plus stale JWT aal2 as the legacy gate. Disable DB mode as well.
+            if (!emailStepupEnabled && session.admin_auth_method === 'email') fail(503, 'stepup_disabled');
+            if (session.admin_auth_method !== undefined && session.admin_auth_method !== 'totp') fail(503, 'backend_unavailable');
+            // Missing/off feature flag preserves the original live AAL2 gate exactly.
+            if (session.can_moderate !== true || session.aal !== 'aal2') fail(403, 'forbidden');
+            adminCapability = { admin_auth_method: 'totp', can_request_email_stepup: false,
+              admitted: true, idle_expires_epoch: null, absolute_expires_epoch: null };
+          }
+        }
       }
       let body;
       stage = 'validation';
@@ -309,7 +371,7 @@ export function createCommunityHandler({ fetch: fetchImpl = globalThis.fetch, ti
         if (!/^application\/json(?:\s*;\s*charset=utf-8)?$/i.test(request.headers.get('Content-Type') || '')
           || request.headers.has('Content-Encoding')) fail(415, 'unsupported_media_type');
         stage = 'request_body';
-        body = await deadline((signal) => boundedJson(request.body, request.headers, MAX_REQUEST_BYTES, { signal }), timeoutMs, 'request_timeout');
+        body = await deadline((signal) => boundedJson(request.body, request.headers, MAX_REQUEST_BYTES, { signal }), timeoutMs, 'request_timeout', overall.signal);
         stage = 'validation';
       }
       const list = async (filters, paging, order) => {
@@ -354,7 +416,11 @@ export function createCommunityHandler({ fetch: fetchImpl = globalThis.fetch, ti
       }
       if (route.name === 'adminSession') {
         query(url);
-        return response({ data: session });
+        if (!['aal1', 'aal2'].includes(session.aal) || !Number.isInteger(session.version)
+          || session.version < 0 || session.version > 2_147_483_647) fail(502, 'upstream_invalid');
+        return response({ data: { user_id: session.user_id, email_verified: session.email_verified,
+          state: session.state, role: session.role, aal: session.aal, version: session.version,
+          can_post: session.can_post, can_moderate: session.can_moderate, ...adminCapability } });
       }
       if (route.name === 'adminPosts') {
         query(url, ['kind', 'search', 'include_hidden', 'limit', 'offset']);
@@ -402,6 +468,9 @@ export function createCommunityHandler({ fetch: fetchImpl = globalThis.fetch, ti
         upstream_status: upstreamStatus }); }
       catch { /* Logging must never change a response or disclose an error. */ }
       return response({ error: { code: safe.code, message: ERROR_MESSAGES[safe.code] } }, safe.status);
+    } finally {
+      clearTimeout(overallTimer);
+      request.signal.removeEventListener('abort', abortRequest);
     }
   };
 }

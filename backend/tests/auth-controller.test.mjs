@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createSupabaseAuthController } from '../client/auth-controller.mjs';
+import { createCommunityHandler } from '../api/handler.mjs';
 
 const ORIGIN = 'https://community.example';
 const UPSTREAM = 'https://synthetic-auth.supabase.co';
@@ -411,4 +412,69 @@ test('authoritative unfinished factor resumes after navigation instead of silent
   await assert.rejects(g.controller.enrollMfa(), codeError('MFA_PENDING'));
   assert.equal(g.calls.filter((x) => x[0] === 'enroll').length, 0);
   assert.equal(typeof g.controller.discardPendingMfa, 'undefined');
+});
+
+const emailAdmin = (change = {}) => ({ admin_auth_method: 'email', can_request_email_stepup: true, admitted: false,
+  session_id: TAB, role: 'owner', aal: 'aal1', can_moderate: false, idle_expires_epoch: null, absolute_expires_epoch: null, ...change });
+test('email admin pre-admission requires explicit public flag and live owner capability without granting moderation', async () => {
+  const f = fixture({ controller: { emailStepupEnabled: true }, adminData: emailAdmin() }); await login(f);
+  const state = f.controller.getState(); assert.equal(state.admin.method, 'email'); assert.equal(state.admin.canRequestEmailStepup, true);
+  assert.equal(state.admin.canModerate, false); assert.equal(state.admin.status, 'email_required');
+  assert.equal(f.calls.filter(call => call[0] === 'fetch').length, 1);
+  assert.doesNotMatch(JSON.stringify(state), new RegExp(TAB)); assert.equal(Number.isInteger(state.sessionGeneration), true);
+  const off = fixture({ adminData: emailAdmin() }); await login(off);
+  assert.equal(off.calls.filter(call => call[0] === 'fetch').length, 0); assert.equal(off.controller.getState().admin.canRequestEmailStepup, false);
+});
+test('email admin admission accepts only bounded live server deadlines and matching capability flags', async () => {
+  const admitted = emailAdmin({ admitted: true, can_moderate: true, idle_expires_epoch: NOW / 1000 + 900, absolute_expires_epoch: NOW / 1000 + 3600 });
+  const f = fixture({ controller: { emailStepupEnabled: true }, adminData: admitted }); await login(f);
+  assert.equal(f.controller.getState().admin.canManageUsers, true); assert.equal(f.controller.getState().admin.idleExpiresAt, NOW + 900_000);
+  for (const change of [{ role: 'member' }, { role: 'moderator' }, { can_request_email_stepup: false }, { session_id: 'invalid' }, { session_id: null }, { user_id: FACTOR }, { admitted: true, can_moderate: false }, { idle_expires_epoch: NOW / 1000 - 1 }, { absolute_expires_epoch: NOW / 1000 + 10000 }, { aal: 'aal2' }]) {
+    const denied = fixture({ controller: { emailStepupEnabled: true }, adminData: { ...admitted, ...change } }); await login(denied);
+    assert.equal(denied.controller.getState().admin.canModerate, false); assert.equal(denied.controller.getState().admin.canRequestEmailStepup, false);
+  }
+});
+test('public flag cannot downgrade legacy TOTP or accept unsolicited server email mode', async () => {
+  const off = fixture({ aal: 'aal2', adminData: emailAdmin({ aal: 'aal2', admitted: true, can_moderate: true, idle_expires_epoch: NOW / 1000 + 900, absolute_expires_epoch: NOW / 1000 + 3600 }) });
+  await login(off); assert.equal(off.controller.getState().admin.canModerate, false);
+  const legacy = fixture({ aal: 'aal2', controller: { emailStepupEnabled: true }, adminData: { admin_auth_method: 'totp' } });
+  await login(legacy); assert.equal(legacy.controller.getState().admin.method, 'totp'); assert.equal(legacy.controller.getState().admin.canModerate, true);
+});
+test('same server session preserves local generation across token rotation; new same-user session and logout fence it', async () => {
+  const overrides = { controller: { emailStepupEnabled: true }, adminData: emailAdmin() }; const f = fixture(overrides); await login(f);
+  const first = f.controller.getState().sessionGeneration;
+  f.save(f.session('rotated'), 'TOKEN_REFRESHED'); await f.controller.refresh();
+  assert.equal(f.controller.getState().sessionGeneration, first);
+  overrides.adminData.session_id = CHALLENGE; await f.controller.refresh();
+  assert.ok(f.controller.getState().sessionGeneration > first); const second = f.controller.getState().sessionGeneration;
+  const signout = f.controller.signOut(); assert.ok(f.controller.getState().sessionGeneration > second); await signout;
+});
+test('server rejection of OTP-only or other ineligible sessions cannot create email capability', async () => {
+  const f = fixture({ controller: { emailStepupEnabled: true }, adminStatus: 403 }); await login(f);
+  assert.equal(f.controller.getState().admin.canRequestEmailStepup, false); assert.equal(f.controller.getState().admin.canModerate, false);
+});
+test('Auth capability crosses the real integrated API with mocked DB/Auth; same-session refresh never touches idle', async () => {
+  const calls = []; let admitted = false, sid = TAB;
+  const env = { COMMUNITY_BACKEND_ENABLED: 'true', COMMUNITY_EMAIL_STEPUP_ENABLED: 'true', COMMUNITY_ALLOWED_ORIGIN: ORIGIN,
+    SUPABASE_URL: UPSTREAM, SUPABASE_PUBLISHABLE_KEY: KEY,
+    ADMIN_STEPUP_HMAC_KEY: 'SYNTHETIC_HMAC_KEY_ONLY_01234567890123456789', ADMIN_STEPUP_RESEND_KEY: 're_SYNTHETIC_MAIL_KEY_ONLY_0123456789' };
+  let f;
+  const handler = createCommunityHandler({ now: () => NOW, fetch: async (url) => {
+    const path = new URL(url).pathname; calls.push(path);
+    const data = path === '/auth/v1/user' ? f.user : path.endsWith('/community_me')
+      ? { user_id: USER, email_verified: true, state: 'active', can_post: true, version: 1,
+        ...emailAdmin({ admitted, can_moderate: admitted }), session_id: undefined }
+      : path.endsWith('/community_admin_stepup_status') ? { enabled: true, admitted, original_session_id: sid,
+        idle_expires_epoch: admitted ? NOW / 1000 + 900 : null, absolute_expires_epoch: admitted ? NOW / 1000 + 3600 : null }
+        : assert.fail('Unexpected synthetic upstream route');
+    return new Response(JSON.stringify(data));
+  } });
+  f = fixture({ controller: { emailStepupEnabled: true }, fetchImpl: (url, init) => handler(new Request(url, init), env) });
+  await login(f); assert.equal(f.controller.getState().admin.canRequestEmailStepup, true); const generation = f.controller.getState().sessionGeneration;
+  admitted = true; await f.controller.refresh(); assert.equal(f.controller.getState().admin.canModerate, true);
+  const expiry = f.controller.getState().admin.idleExpiresAt;
+  f.save(f.session('real-api-rotated'), 'TOKEN_REFRESHED'); await f.controller.refresh(); await f.controller.refresh();
+  assert.equal(f.controller.getState().sessionGeneration, generation); assert.equal(f.controller.getState().admin.idleExpiresAt, expiry);
+  assert.ok(calls.every(path => ['/auth/v1/user', '/rest/v1/rpc/community_me', '/rest/v1/rpc/community_admin_stepup_status'].includes(path)));
+  sid = FACTOR; await f.controller.refresh(); assert.ok(f.controller.getState().sessionGeneration > generation);
 });
