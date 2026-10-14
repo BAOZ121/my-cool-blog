@@ -478,6 +478,9 @@ export function setupArticleReadingHistory(document, window) {
   if (!content || readingHistoryRoots.has(content)) return;
   readingHistoryRoots.add(content);
   const texts = [...content.querySelectorAll(readingTextSelector)].filter(node => !node.closest("figure"));
+  const figures = [...content.querySelectorAll("figure.article-visual[data-visual]")];
+  // Before any progressive graphic, native restoration needs no correction.
+  const followsVisual = node => figures.some(figure => figure.compareDocumentPosition(node) & 4);
   const stateObject = state => state === null || (typeof state === "object" &&
     [null, Object.prototype].includes(Object.getPrototypeOf(state)));
   let frame = 0, generation = 0, fromCache = false, saveTimer = 0, returningAnchor = null;
@@ -498,7 +501,7 @@ export function setupArticleReadingHistory(document, window) {
         const rect = node.getBoundingClientRect();
         return rect.height > 0 && rect.bottom > 0 && rect.top < window.innerHeight;
       });
-      if (index < 0) {
+      if (index < 0 || !followsVisual(texts[index])) {
         if (state && Object.hasOwn(state, readingHistoryKey)) {
           const next = { ...state }; delete next[readingHistoryKey];
           window.history.replaceState(next, "");
@@ -519,7 +522,7 @@ export function setupArticleReadingHistory(document, window) {
     if (!anchor || anchor.href !== window.location.href || !Number.isInteger(anchor.index) ||
         !Number.isFinite(anchor.top) || typeof anchor.text !== "string") return;
     const node = texts[anchor.index];
-    if (!node || node.tagName !== anchor.tag || node.textContent.trim().slice(0, 240) !== anchor.text) return;
+    if (!node || !followsVisual(node) || node.tagName !== anchor.tag || node.textContent.trim().slice(0, 240) !== anchor.text) return;
     pendingRestore = true;
     returningAnchor = anchor;
     const version = generation, started = window.performance.now();

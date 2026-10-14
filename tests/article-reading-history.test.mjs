@@ -2,12 +2,13 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { setupArticleReadingHistory } from '../assets/js/article-visuals.mjs';
 
-function fixture({ history = { state: { applicationProbe: 'keep' }, replaceState(state) { this.state = state; } }, returning = false, top = 11 } = {}) {
+function fixture({ history = { state: { applicationProbe: 'keep' }, replaceState(state) { this.state = state; } }, returning = false, top = 11, afterGraphic = true } = {}) {
   const events = new Map();
   const listen = (name, handler) => { const handlers = events.get(name) || []; handlers.push(handler); events.set(name, handlers); };
   const node = { tagName: 'P', textContent: 'A stable public article paragraph.', isConnected: true, closest() { return null; },
     getBoundingClientRect() { return { top, height: 200, bottom: top + 200 }; } };
-  const content = { clientWidth: 1200, querySelectorAll() { return [node]; }, querySelector() { return null; } };
+  const figure = { compareDocumentPosition() { return afterGraphic ? 4 : 2; } };
+  const content = { clientWidth: 1200, querySelectorAll(selector) { return selector.startsWith('figure') ? [figure] : [node]; }, querySelector() { return null; } };
   const document = { hidden: false, documentElement: { scrollHeight: 40000 }, fonts: { ready: new Promise(() => {}) },
     querySelector() { return content; }, addEventListener: listen };
   const window = { history, location: { href: 'https://example.test/post/report/' }, innerHeight: 900,
@@ -41,6 +42,12 @@ test('reader input cancels the old target and lets the new position replace it',
 test('graphic-only and hero views clear stale article text without losing other history state', () => {
   const f = fixture(); f.fire('pagehide'); f.position(-1800); f.fire('pagehide');
   assert.deepEqual(f.history.state, { applicationProbe: 'keep' });
+});
+
+test('introduction text before every progressive graphic keeps entirely native restoration', () => {
+  const f = fixture({ afterGraphic: false });
+  f.fire('pagehide'); f.fire('pageshow', { persisted: false });
+  assert.deepEqual(f.history.state, { applicationProbe: 'keep' }, 'No custom reading snapshot is added before any graph');
 });
 
 test('primitive and non-plain application history state retain their original type and value', () => {

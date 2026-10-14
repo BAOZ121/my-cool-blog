@@ -65,6 +65,9 @@ line once. Native URLs, fragment links, history entries and
 `history.scrollRestoration = "auto"` remain browser-managed. Separate visits to
 the same article do not share a reading snapshot.
 
+Only text following a progressive graphic needs this correction. Article
+heroes and introductions before every graphic keep entirely native restoration.
+
 Cached documents retain native restoration. Fresh visits and reloads do not
 apply an old snapshot. Changed/missing text, denied history access and hidden
 pages keep native behavior. Wheel, touch, pointer and page-scroll keyboard
