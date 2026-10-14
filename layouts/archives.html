@@ -1,0 +1,40 @@
+{{ define "body-class" }}template-archives{{ end }}
+{{ define "head" }}{{ partial "library/assets.html" . }}{{ end }}
+{{ define "main" }}
+    {{ partial "library/navigation.html" . }}
+    <section class="library-category-header" aria-labelledby="library-archives-title">
+        <p class="library-eyebrow">DEX RESEARCH / LIBRARY</p>
+        <h1 id="library-archives-title">Archives</h1>
+        <p class="library-intro">Browse published research by year and category.</p>
+    </section>
+    <header>
+        {{- $taxonomy := $.Site.GetPage "taxonomyTerm" "categories" -}}
+        {{- $terms := $taxonomy.Pages -}}
+        {{ if $terms }}
+        <h2 class="section-title">{{ T "widget.categoriesCloud.title" }}</h2>
+        <div class="subsection-list">
+            <div class="article-list--tile">
+                {{ range $terms }}
+                    {{ partial "article-list/tile" . }}
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </header>
+
+    {{ $pages := partial "helper/pages.html" .Site.Home }}
+
+    {{ range $pages.GroupByDate "2006" }}
+    {{ $id := lower (replace .Key " " "-") }}
+    <div class="archives-group" id="{{ $id }}">
+        <h2 class="archives-date section-title"><a href="{{ $.RelPermalink }}#{{ $id }}">{{ .Key }}</a></h2>
+        <div class="article-list--compact">
+            {{ range .Pages }}
+                {{ partial "article-list/compact" . }}
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+
+    {{ partialCached "footer/footer" . }}
+{{ end }}

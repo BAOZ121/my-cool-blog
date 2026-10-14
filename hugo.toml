@@ -51,24 +51,10 @@ enableRobotsTXT = true
             params = { icon = "home" }
 
         [[languages.en.menu.main]]
-            identifier = "industries"
-            name = "Industry Explorer"
-            url = "/industries/"
+            identifier = "library"
+            name = "Library"
+            url = "/library/"
             weight = 2
-            params = { icon = "chart-bar" }
-
-        [[languages.en.menu.main]]
-            identifier = "evidence-library"
-            name = "Evidence Library"
-            url = "/evidence-library/"
-            weight = 4
-            params = { icon = "link" }
-
-        [[languages.en.menu.main]]
-            identifier = "archives"
-            name = "Archives"
-            url = "/archives/"
-            weight = 5
             params = { icon = "archives" }
 
         [[languages.en.menu.main]]

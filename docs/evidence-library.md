@@ -1,7 +1,9 @@
 # Evidence Library
 
 `/evidence-library/` indexes the existing public source links and file downloads in
-published posts. A main-menu entry and each article's tools link to the library.
+published posts. The main-menu Library hub and each article's tools link to this
+category. Its original `/evidence-library/` route, filters and article anchors
+remain available.
 No source document is fetched or copied by the indexer. Article appendices remain
 authoritative for claim scope; source corrections are made there first.
 

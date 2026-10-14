@@ -1,0 +1,27 @@
+{{ define "body-class" }}article-page library-page{{ end }}
+{{ define "head" }}{{ partial "library/assets.html" . }}{{ end }}
+{{ define "main" }}
+{{ partial "library/navigation.html" . }}
+<article class="library-hub">
+    <header class="library-hub__header">
+        <p class="library-eyebrow">DEX RESEARCH / LIBRARY</p>
+        <h1>Library</h1>
+        <div class="library-intro">{{ .Content }}</div>
+    </header>
+    <section class="library-categories" aria-label="Browse the Library">
+        {{- $industries := (os.ReadFile "static/data/industries.json" | transform.Unmarshal).industries -}}
+        {{- $articles := partial "helper/pages.html" .Site.Home -}}
+        {{- $evidence := hugo.Data.evidence_library -}}
+        {{ range partial "library/categories.html" . }}
+        <a class="library-category" href="{{ .url | relURL }}">
+            <span class="library-category__icon" aria-hidden="true">{{ partial "helper/icon" .icon }}</span>
+            <h2>{{ .name }}</h2>
+            <p>{{ .description }}</p>
+            <span class="library-category__meta">{{ if eq .url "/industries/" }}{{ len $industries }} industries{{ else if eq .url "/archives/" }}{{ len $articles }} articles{{ else }}{{ $evidence.counts.materials }} materials across {{ $evidence.counts.articles }} articles{{ end }}</span>
+            <span class="library-category__action">Browse <span aria-hidden="true">→</span></span>
+        </a>
+        {{ end }}
+    </section>
+</article>
+{{ partialCached "footer/footer" . }}
+{{ end }}

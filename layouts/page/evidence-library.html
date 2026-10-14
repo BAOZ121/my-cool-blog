@@ -1,11 +1,13 @@
 {{ define "body-class" }}article-page evidence-page{{ end }}
 {{ define "head" }}
+  {{ partial "library/assets.html" . }}
   {{ $style := resources.Get "scss/evidence-library.scss" | css.Sass | resources.Minify | resources.Fingerprint "sha256" }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
   {{ $script := resources.Get "js/evidence-library.mjs" | resources.Minify | resources.Fingerprint "sha256" }}
   <script type="module" src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
 {{ end }}
 {{ define "main" }}
+{{ partial "library/navigation.html" . }}
 {{ $library := hugo.Data.evidence_library }}
 <article class="el" data-evidence-library>
   <header class="el-hero">

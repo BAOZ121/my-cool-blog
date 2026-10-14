@@ -450,3 +450,31 @@ test('Google enablement is forwarded and explicit click navigates current tab on
   assert.equal(f.window.assigned, 'https://test-project.supabase.co/auth/v1/authorize?provider=google');
   f.ui.dispose();
 });
+
+
+test('unified forum has native section links and switching preserves public content and permissions', async () => {
+  const f = await fixture();
+  const discussions = f.$('rc-discussions-link'), board = f.$('rc-board-link');
+  assert.equal(discussions.getAttribute('href'), '#discussion');
+  assert.equal(board.getAttribute('href'), '#message-board');
+  assert.equal(discussions.getAttribute('aria-controls'), 'rc-forum-panel');
+  assert.equal(board.getAttribute('aria-controls'), 'rc-board-panel');
+  assert.equal(discussions.getAttribute('aria-current'), 'location');
+  const topics = f.$('rc-topics').textContent, callCount = f.calls.length;
+  board.dispatch('click', { ctrlKey: true });
+  assert.equal(f.$('rc-board-panel').hidden, true);
+  board.click();
+  assert.equal(f.$('rc-board-panel').hidden, false);
+  assert.equal(board.getAttribute('aria-current'), 'location');
+  assert.equal(discussions.getAttribute('aria-current'), null);
+  assert.equal(f.$('rc-board-form').querySelector('fieldset').disabled, true);
+  f.window.location.hash = '#message-board'; f.window.dispatch('hashchange');
+  assert.equal(f.$('rc-board-panel').hidden, false);
+  f.window.location.hash = '#discussion'; f.window.dispatch('hashchange');
+  assert.equal(f.$('rc-forum-panel').hidden, false);
+  assert.equal(discussions.getAttribute('aria-current'), 'location');
+  assert.equal(f.$('rc-topics').textContent, topics);
+  assert.equal(f.calls.length, callCount);
+  assert.deepEqual(f.auth.calls.map(call => call[0]), ['initialize']);
+  f.ui.dispose();
+});

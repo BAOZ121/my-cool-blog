@@ -1,5 +1,11 @@
 # Forum and message board test
 
+## Unified forum navigation
+
+The sidebar now has one **Forum** entry at `/test/forum-v1/`. Inside the forum, **Discussions** and **Message board** are native section links. Existing `/test/forum-v1/#discussion` and `/test/forum-v1/#message-board` URLs continue to open their respective sections, including reloads and browser Back/Forward.
+
+Both the connected UI and the browser-local demo use this layout. This navigation change keeps the existing topic/message API paths, account controls, server permissions and demo storage keys. It does not migrate or delete content. When JavaScript is unavailable, both section headings remain reachable by their native fragments; interactive community features still require JavaScript.
+
 This change adds only `/test/forum-v1/` to the existing Hugo site. It uses the native Stack base template, DEX sidebar, color-scheme switch, and footer. It does not add a production navigation entry or change any article.
 
 The page has `testpage: true`, `noindex, nofollow`, `build.list: never`, and `sitemap.disable: true`. These prevent ordinary indexing/list inclusion; they are not access controls. A deployment to the main DEX domain makes this test URL publicly reachable to anyone who knows it.

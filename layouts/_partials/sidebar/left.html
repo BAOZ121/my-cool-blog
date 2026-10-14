@@ -83,11 +83,13 @@
     {{- end -}}
 
     <ol class="menu" id="main-menu">
-        <li class="df-community-nav{{ if .Params.forumtest }} current{{ end }}"><a href="/test/forum-v1/#discussion" data-forum-panel="forum" data-panel="forum" title="Discussion"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 11a8 8 0 0 1-8 8H6l-4 3 1-6a8 8 0 0 1-1-5 9 9 0 0 1 19 0Z"/></svg><span>Discussion</span></a></li>
-        <li class="df-community-nav"><a href="/test/forum-v1/#message-board" data-forum-panel="board" data-panel="board" title="Message board"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h8M8 17h4"/></svg><span>Message board</span></a></li>
+        <li class="df-community-nav{{ if .Params.forumtest }} current{{ end }}"><a href="/test/forum-v1/" data-community-entry title="Forum" {{ if .Params.forumtest }}aria-current="page"{{ end }}><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 11a8 8 0 0 1-8 8H6l-4 3 1-6a8 8 0 0 1-1-5 9 9 0 0 1 19 0Z"/></svg><span>Forum</span></a></li>
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
         {{ $active := or (eq $currentPage.RelPermalink .URL) (or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .)) }}
+        {{ if eq .Identifier "library" }}
+            {{ $active = or $active (in (slice "/industries/" "/archives/" "/evidence-library/") $currentPage.RelPermalink) }}
+        {{ end }}
         <li {{ if $active }} class='current'{{ end }}>
             <a href='{{ .URL }}' title="{{ .Name }}" {{ if $active }}aria-current="page"{{ end }} {{ if .Params.newTab }}target="_blank"{{ end }}>
                 {{ with default "link" .Params.Icon }}

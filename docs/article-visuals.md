@@ -54,6 +54,25 @@ interaction is enabled. The full text outline remains keyboard-readable.
 
 Browser Print / Save PDF is the supported graphical article export.
 
+## History reading positions
+
+An article recreated by Back or Forward initially contains the text outlines;
+the previous visit may already have replaced them with shorter graphics.
+`article-visuals.mjs` saves the visible static text block and its screen position
+on that specific history entry, while preserving other application state. Once
+fonts and graphic layouts settle, a returning document corrects that reading
+line once. Native URLs, fragment links, history entries and
+`history.scrollRestoration = "auto"` remain browser-managed. Separate visits to
+the same article do not share a reading snapshot.
+
+Cached documents retain native restoration. Fresh visits and reloads do not
+apply an old snapshot. Changed/missing text, denied history access and hidden
+pages keep native behavior. Wheel, touch, pointer and page-scroll keyboard
+input cancel a pending correction, so a reader's new position takes priority.
+Idle scroll and same-document traversal keep each chapter entry's snapshot
+current. No authentication, database, session-storage or article data changes
+are involved.
+
 ## Dependencies
 
 Hugo builds consume committed vendor bundles; production does not need npm.
@@ -72,6 +91,8 @@ python scripts/validate_breakdowns.py public
 python scripts/validate_article_visuals.py public
 node tests/article-visuals.browser.mjs
 node tests/mindmap-zoom.browser.mjs
+node tests/chapter-rail.browser.mjs
+node tests/article-history.browser.mjs
 ```
 
 The browser check uses Playwright Chromium by default. Set `CHROME_PATH` to an

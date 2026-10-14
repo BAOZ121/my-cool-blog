@@ -78,7 +78,9 @@ jobs:
           node tests/page-transitions.browser.mjs
       - name: Verify chapter rail anchors, keyboard and mobile reading
         id: chapter_rail
-        run: node tests/chapter-rail.browser.mjs
+        run: |
+          node tests/chapter-rail.browser.mjs
+          node tests/article-history.browser.mjs
       - name: Verify interactive articles on desktop and mobile
         if: ${{ success() || (failure() && steps.chapter_rail.conclusion == 'failure') }}
         run: node tests/article-visuals.browser.mjs
@@ -100,3 +102,4 @@ jobs:
           node --test tests/site-navigation.test.mjs tests/site-account.test.mjs tests/community-account-hint.test.mjs
           node tests/site-navigation.browser.mjs
           node tests/site-account.browser.mjs
+          node tests/navigation-merger.browser.mjs

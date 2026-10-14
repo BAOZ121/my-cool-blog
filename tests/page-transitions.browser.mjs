@@ -677,7 +677,10 @@ try {
 
     await page.goto(origin + "/");
     if (width < 768) await page.locator("#toggle-menu").click();
-    await page.locator('#main-menu a[href="/archives/"]').first().focus();
+    await page.locator('#main-menu a[href="/library/"]').first().focus();
+    await page.keyboard.press("Enter");
+    await page.waitForURL(origin + "/library/");
+    await page.locator('.library-category[href="/archives/"]').focus();
     await page.keyboard.press("Enter");
     await page.waitForURL(origin + "/archives/");
     assert.equal(await page.locator("main").isVisible(), true);
@@ -898,8 +901,8 @@ try {
         assert.equal(await page.locator("html").getAttribute("data-scheme"), "dark");
       }
       await Promise.all([
-        page.waitForURL(origin + "/archives/", { waitUntil: "domcontentloaded" }),
-        page.locator('#main-menu a[href="/archives/"]').first().click({ noWaitAfter: true }),
+        page.waitForURL(origin + "/library/", { waitUntil: "domcontentloaded" }),
+        page.locator('#main-menu a[href="/library/"]').first().click({ noWaitAfter: true }),
       ]);
       assert.equal(await page.locator("main").isVisible(), true);
       await assertNoNative(page);

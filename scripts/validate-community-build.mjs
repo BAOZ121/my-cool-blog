@@ -75,8 +75,8 @@ try {
     const homeMain = home.match(/<main\b[^>]*>[\s\S]*?<\/main>/)?.[0];
     assert.ok(homeMain);
     if (referenceHomeMain === undefined) referenceHomeMain = homeMain; else assert.equal(homeMain, referenceHomeMain, 'Account presentation must not alter home content.');
-    assert.match(home, /href="?\/test\/forum-v1\/#discussion/);
-    assert.match(home, /href="?\/test\/forum-v1\/#message-board/);
+    assert.match(home, /href="?\/test\/forum-v1\/(?:"|\s)[^>]*data-community-entry/);
+    assert.equal((home.match(/data-community-entry\b/g) || []).length, 1, 'The unified Forum has one sidebar entry.');
     assert.equal(/data-site-account\b/.test(home), config.enabled);
     assert.equal(/site-account\.[a-f0-9]+\.js/.test(home), config.enabled);
     if (config.enabled) {

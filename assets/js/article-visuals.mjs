@@ -465,9 +465,124 @@ export async function initVisual(figure, stillRelevant = () => true) {
   }
 }
 
+const readingHistoryRoots = new WeakSet();
+const readingTextSelector = "p,h1,h2,h3,h4,h5,h6,li,td";
+const readingHistoryKey = "dexArticleReading";
+
+// A recreated document can initially contain tall text outlines where the
+// previous history entry had compact graphics. Keep the browser's history and
+// scroll restoration, then correct the reading line after those layouts settle.
+// Store it on the entry itself: separate visits to the same URL are independent.
+export function setupArticleReadingHistory(document, window) {
+  const content = document.querySelector(".article-content");
+  if (!content || readingHistoryRoots.has(content)) return;
+  readingHistoryRoots.add(content);
+  const texts = [...content.querySelectorAll(readingTextSelector)].filter(node => !node.closest("figure"));
+  const stateObject = state => state === null || (typeof state === "object" &&
+    [null, Object.prototype].includes(Object.getPrototypeOf(state)));
+  let frame = 0, generation = 0, fromCache = false, saveTimer = 0, returningAnchor = null;
+  let pendingRestore = window.performance.getEntriesByType("navigation")[0]?.type === "back_forward";
+  const stop = () => {
+    generation++; window.cancelAnimationFrame(frame); window.clearTimeout(saveTimer);
+    frame = 0; pendingRestore = false;
+  };
+  const cancel = () => { stop(); returningAnchor = null; };
+  function save() {
+    // A quick traversal/hidden page must not replace the destination's saved
+    // reading line with the temporary tall-outline position before correction.
+    if (returningAnchor?.href === window.location.href) return;
+    try {
+      const state = window.history.state;
+      if (!stateObject(state)) return;
+      const index = texts.findIndex(node => {
+        const rect = node.getBoundingClientRect();
+        return rect.height > 0 && rect.bottom > 0 && rect.top < window.innerHeight;
+      });
+      if (index < 0) {
+        if (state && Object.hasOwn(state, readingHistoryKey)) {
+          const next = { ...state }; delete next[readingHistoryKey];
+          window.history.replaceState(next, "");
+        }
+        return;
+      }
+      const node = texts[index];
+      window.history.replaceState({ ...state, [readingHistoryKey]: {
+        href: window.location.href, index, tag: node.tagName,
+        text: node.textContent.trim().slice(0, 240), top: node.getBoundingClientRect().top,
+      } }, "");
+    } catch { /* Native navigation remains available when state cannot be saved. */ }
+  }
+  function restore() {
+    cancel();
+    let anchor;
+    try { anchor = window.history.state?.[readingHistoryKey]; } catch { return; }
+    if (!anchor || anchor.href !== window.location.href || !Number.isInteger(anchor.index) ||
+        !Number.isFinite(anchor.top) || typeof anchor.text !== "string") return;
+    const node = texts[anchor.index];
+    if (!node || node.tagName !== anchor.tag || node.textContent.trim().slice(0, 240) !== anchor.text) return;
+    pendingRestore = true;
+    returningAnchor = anchor;
+    const version = generation, started = window.performance.now();
+    let previous, stable = 0;
+    const check = () => {
+      frame = 0;
+      if (generation !== version) return;
+      if (document.hidden || window.performance.now() - started > 5000) { pendingRestore = false; return; }
+      const rect = node.getBoundingClientRect();
+      const key = [rect.top, rect.height, document.documentElement.scrollHeight, content.clientWidth].join(":");
+      const loading = content.querySelector('.article-visual[data-visual-state="loading"]');
+      stable = !loading && key === previous ? stable + 1 : 0;
+      previous = key;
+      if (stable < 6) { frame = window.requestAnimationFrame(check); return; }
+      // Hidden/corrected articles and a reader's own input must never be moved.
+      pendingRestore = false;
+      returningAnchor = null;
+      if (rect.height <= 0 || !node.isConnected) return;
+      const delta = rect.top - anchor.top;
+      if (Math.abs(delta) > 2) window.scrollBy({ top: delta, behavior: "instant" });
+      save();
+    };
+    Promise.resolve(document.fonts?.ready).then(() => {
+      if (generation === version) frame = window.requestAnimationFrame(check);
+    });
+  }
+  window.addEventListener("pagehide", () => { stop(); save(); });
+  window.addEventListener("pageshow", event => {
+    fromCache = event.persisted;
+    if (fromCache) {
+      if (returningAnchor) restore(); else stop();
+      window.requestAnimationFrame(() => { fromCache = false; });
+    } else if (window.performance.getEntriesByType("navigation")[0]?.type === "back_forward") restore();
+  });
+  window.addEventListener("popstate", () => { if (!fromCache) restore(); });
+  // Same-document traversal has no pagehide. Keep idle reading snapshots
+  // current without changing history during the browser's traversal itself.
+  window.addEventListener("scrollend", () => {
+    if (!pendingRestore) { window.clearTimeout(saveTimer); save(); }
+  });
+  window.addEventListener("scroll", () => {
+    window.clearTimeout(saveTimer);
+    if (!pendingRestore) saveTimer = window.setTimeout(save, 150);
+  }, { passive: true });
+  document.addEventListener("click", event => {
+    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const link = event.target.closest?.("a[href]");
+    if (!link || link.hasAttribute("download") || (link.target && link.target !== "_self")) return;
+    const to = new URL(link.href, window.location.href), current = new URL(window.location.href);
+    if (to.origin === current.origin && to.pathname === current.pathname && to.search === current.search && to.hash !== current.hash) save();
+  }, { capture: true });
+  for (const type of ["wheel", "touchstart", "pointerdown"]) window.addEventListener(type, cancel, { capture: true, passive: true });
+  window.addEventListener("keydown", event => {
+    if (event.target.closest?.('input,textarea,select,[contenteditable="true"]')) return;
+    if (["ArrowUp", "ArrowDown", "PageUp", "PageDown", "Home", "End", " "].includes(event.key)) cancel();
+  }, { capture: true });
+  document.addEventListener("visibilitychange", () => { if (document.hidden) stop(); });
+}
+
 export function initArticleVisuals(root = document) {
   const figures = [...root.querySelectorAll("figure.article-visual[data-visual]")];
   if (!figures.length) return;
+  setupArticleReadingHistory(document, window);
   if (typeof IntersectionObserver === "undefined") { figures.forEach(figure => { void initVisual(figure); }); return; }
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {

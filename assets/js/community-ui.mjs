@@ -540,14 +540,22 @@ export function setupCommunityUI({ document: doc, window: win, auth, api, config
       else notice(safeUiError(error));
     } finally { if (sequence === (topic ? topicSeq : messageSeq)) moreButton.disabled = false; }
   }
-  function syncPanel(write = false, panel) {
+  function syncPanel(panel) {
     const board = panel ? panel === 'board' : win.location.hash === '#message-board';
     if (!$('rc-forum-panel')) return;
     $('rc-forum-panel').hidden = board; $('rc-board-panel').hidden = !board;
-    all('[data-panel]').forEach(element => element.setAttribute('aria-pressed', String(element.dataset.panel === (board ? 'board' : 'forum'))));
-    if (write) win.location.hash = board ? '#message-board' : '#discussion';
+    root.querySelectorAll('[data-community-section]').forEach(element => {
+      if (element.dataset.communitySection === (board ? 'board' : 'forum')) element.setAttribute('aria-current', 'location');
+      else element.removeAttribute('aria-current');
+    });
   }
-  all('[data-panel]').forEach(element => element.addEventListener('click', () => syncPanel(true, element.dataset.panel)));
+  // Native fragment links preserve open-in-new-tab, copied URLs and browser history.
+  // Reveal the destination before the browser scrolls to its existing anchor.
+  root.querySelectorAll('[data-community-section]').forEach(element => element.addEventListener('click', event => {
+    if (event.defaultPrevented || event.button > 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    syncPanel(element.dataset.communitySection);
+  }));
+  syncPanel();
   win.addEventListener('hashchange', () => { syncPanel(); applyAccountIntent(); });
   $('rc-search')?.addEventListener('input', renderTopics);
   $('rc-topics-more')?.addEventListener('click', () => { if (!$('rc-topics-more').disabled) void loadPublic('topics', true); });

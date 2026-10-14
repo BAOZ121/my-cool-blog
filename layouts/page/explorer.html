@@ -1,10 +1,12 @@
 {{ define "body-class" }}article-page ix-page{{ end }}
 {{ define "head" }}
+{{ partial "library/assets.html" . }}
 <link rel="stylesheet" href="{{ "/css/industries.css" | relURL }}">
 {{ $explorerVersion := crypto.SHA256 (readFile "static/js/industries.js") }}
 <script src="{{ "/js/industries.js" | relURL }}?v={{ $explorerVersion }}" defer></script>
 {{ end }}
 {{ define "main" }}
+{{ partial "library/navigation.html" . }}
 <article class="ix" id="industry-explorer">
   <header class="ix-hero">
     <p class="ix-eyebrow">DEX RESEARCH / INDUSTRY EXPLORER</p>

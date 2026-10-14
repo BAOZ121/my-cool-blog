@@ -212,8 +212,8 @@ try {
     const chapters = page.locator('.chapter-disclosure');
     const chapterSummary = page.locator('.chapter-widget summary');
     const names = await page.locator('#main-menu > li > a').evaluateAll(nodes => nodes.map(node => node.textContent.trim()));
-    assert.deepEqual(names, ['Discussion', 'Message board', 'Home', 'Industry Explorer', 'Evidence Library', 'Archives', 'Search', 'Contact', 'About & Methodology'], 'Exercise both promoted community entries and every surviving original menu item');
-    assert.deepEqual(await page.locator('#main-menu > li > a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href'))), ['/test/forum-v1/#discussion', '/test/forum-v1/#message-board', '/', '/industries/', '/evidence-library/', '/archives/', '/search/', '/contact/', '/about/'], 'All nine menu destinations remain intact');
+    assert.deepEqual(names, ['Forum', 'Home', 'Library', 'Search', 'Contact', 'About & Methodology'], 'Forum and Library each have one accessible sidebar entry');
+    assert.deepEqual(await page.locator('#main-menu > li > a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href'))), ['/test/forum-v1/', '/', '/library/', '/search/', '/contact/', '/about/'], 'Unified entries retain every remaining menu destination');
     await expect(disclosure).toHaveJSProperty('open', true);
     await expect(summary).toHaveAccessibleName('Minimize navigation');
     const expanded = await desktopLayout(page, false, false);
@@ -264,10 +264,10 @@ try {
       await desktopLayout(page, true, false);
       // A real keyboard-activated icon link must work after collapse, and the
       // site-wide choice must follow it even onto a non-article page.
-      const archives = page.locator('#main-menu > li > a[href="/archives/"]');
-      await archives.focus();
+      const library = page.locator('#main-menu > li > a[href="/library/"]');
+      await library.focus();
       await page.keyboard.press('Enter');
-      await page.waitForURL(origin + '/archives/');
+      await page.waitForURL(origin + '/library/');
       await expect(disclosure).toHaveJSProperty('open', false);
       assert.ok(Math.abs((await page.locator('.left-sidebar').boundingBox()).width - 64) < 1, 'Compact preference is global, including non-article pages');
       await summary.click();
@@ -279,14 +279,14 @@ try {
     // deliberately fails closed for HTTPS Auth; panel behavior is tested with
     // the matching HTTPS synthetic community UI, without real credentials.
     const sourceURL = page.url();
-    for (const [label, route] of [['Discussion', '/test/forum-v1/#discussion'], ['Message board', '/test/forum-v1/#message-board']]) {
+    for (const [label, route] of [['Forum', '/test/forum-v1/']]) {
       const link = page.locator(`#main-menu > li > a[href="${route}"]`);
       await expect(link).toHaveAccessibleName(label);
       await link.focus();
       await page.keyboard.press('Enter');
       await page.waitForURL(origin + route, { waitUntil: 'domcontentloaded' });
       await expect(page.locator('#rc-root[data-community-mode="forum"]')).toBeVisible();
-      assert.equal(page.url(), origin + route, 'Native navigation preserves the exact allowlisted panel hash');
+      assert.equal(page.url(), origin + route, 'Native navigation opens the unified Forum');
       await page.goBack({ waitUntil: 'domcontentloaded' });
       await page.waitForURL(sourceURL);
     }

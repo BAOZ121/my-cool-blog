@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { runInNewContext } from 'node:vm';
+import { fileURLToPath } from 'node:url';
 import { build } from 'esbuild';
 import { createAccountHintStore } from '../assets/js/site-account-hint.mjs';
 import { setupSiteAccount } from '../assets/js/site-account.mjs';
@@ -216,7 +217,7 @@ test('a malformed or throwing injected hint store cannot display arbitrary text'
 });
 
 test('global entry reads only the public project selector and skips community pages', () => {
-  const entry = source('site-account-entry').replace(/^import .*;\n/gm, '');
+  const entry = source('site-account-entry').replace(/^import .*;\r?\n/gm, '');
   const f = createSiteAccountDom(), calls = []; f.nodes.root.dataset.project = project;
   let storageReads = 0;
   Object.defineProperty(f.window, 'sessionStorage', { get() { storageReads += 1; return 'storage-fixture'; } });
@@ -229,7 +230,7 @@ test('global entry reads only the public project selector and skips community pa
 });
 
 test('blocked entry storage preserves the native guest links', () => {
-  const entry = source('site-account-entry').replace(/^import .*;\n/gm, '');
+  const entry = source('site-account-entry').replace(/^import .*;\r?\n/gm, '');
   const f = createSiteAccountDom(); f.nodes.root.dataset.project = project;
   Object.defineProperty(f.window, 'sessionStorage', { get() { throw Error('denied'); } });
   assert.doesNotThrow(() => runInNewContext(entry, { ...f, createAccountHintStore, setupSiteAccount }));
@@ -237,7 +238,7 @@ test('blocked entry storage preserves the native guest links', () => {
 });
 
 test('global entry bundles only the three passive modules and contains no auth/network/credential workflow', async () => {
-  const result = await build({ absWorkingDir: new URL('..', import.meta.url).pathname,
+  const result = await build({ absWorkingDir: fileURLToPath(new URL('..', import.meta.url)),
     entryPoints: ['assets/js/site-account-entry.mjs'], bundle: true, write: false, platform: 'browser', format: 'esm', metafile: true });
   assert.deepEqual(Object.keys(result.metafile.inputs).sort(), ['assets/js/site-account-entry.mjs', 'assets/js/site-account-hint.mjs', 'assets/js/site-account.mjs']);
   const code = ['site-account', 'site-account-entry', 'site-account-hint'].map(source).join('\n');

@@ -15,6 +15,14 @@ panel, click-blocking overlay, width animation or scroll/history replacement.
 The original mobile menu, theme initialization, chapter rail and page entrance
 remain in place. Browsers without `:has()` retain the expanded navigation.
 
+The main menu groups Industry Explorer, Archives and Evidence Library under
+**Library** at `/library/`. The hub and all three category pages share native
+links for switching categories. Their existing `/industries/`, `/archives/`
+and `/evidence-library/` URLs remain unchanged, including their search parameters
+and anchors. Library stays highlighted in the sidebar on all four pages.
+Archive categories, year groups and article links retain the theme's original
+markup and rendering logic. The hub and category links need no JavaScript.
+
 A small parser-time script restores the desktop preference from session storage
 before article content is parsed. New navigation follows the site-wide choice;
 Back/Forward restores the saved width of the returning page, even if the next

@@ -1,0 +1,9 @@
+<nav class="library-nav" aria-label="Library sections">
+    <a class="library-nav__home" href="{{ "/library/" | relURL }}"{{ if eq .RelPermalink ("/library/" | relURL) }} aria-current="page"{{ end }}>{{ partial "helper/icon" "archives" }}<span>Library</span></a>
+    <ul class="library-nav__links">
+        {{- $current := .RelPermalink -}}
+        {{- range partial "library/categories.html" . -}}
+        <li><a href="{{ .url | relURL }}"{{ if eq $current (.url | relURL) }} aria-current="page"{{ end }}>{{ .name }}</a></li>
+        {{- end -}}
+    </ul>
+</nav>
