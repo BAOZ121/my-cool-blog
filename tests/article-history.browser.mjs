@@ -221,7 +221,7 @@ async function checkRapidTraversal(context, page, test, deviations) {
     await page.waitForFunction(() => document.querySelector('.article-visual[data-visual-state="loading"]'));
     abandoning = true;
     await page.goForward({ waitUntil: 'commit' });
-    await page.waitForURL(origin + '/library/', { waitUntil: 'commit' });
+    await page.waitForURL(origin + '/library/', { waitUntil: 'domcontentloaded' });
     unlockVendor();
     await context.unroute('**/vendor/article-visuals/*.js', holdVendor);
     await page.goBack({ waitUntil: 'commit' });
@@ -299,17 +299,19 @@ try {
     // Forward into the article must restore a manually scrolled, non-hash
     // reading position just as precisely as Back into it.
     await page.goBack({ waitUntil: 'commit' });
-    await page.waitForURL(origin + '/', { waitUntil: 'commit' });
+    await page.waitForURL(origin + '/', { waitUntil: 'domcontentloaded' });
     await page.goForward({ waitUntil: 'commit' });
     await checkReading(page, reading, 'Forward to non-hash reading position', test, deviations);
 
     // Repeated cross-document Back/Forward must not accumulate graphic drift.
+    // Let each intermediate document attach before issuing another history
+    // command; navigation commit alone can still leave CDP on the old target.
     for (let round = 1; round <= 2; round++) {
       await page.goto(origin + '/library/');
       await page.goBack({ waitUntil: 'commit' });
       await checkReading(page, reading, `Repeated Back ${round}`, test, deviations);
       await page.goForward({ waitUntil: 'commit' });
-      await page.waitForURL(origin + '/library/', { waitUntil: 'commit' });
+      await page.waitForURL(origin + '/library/', { waitUntil: 'domcontentloaded' });
       await page.goBack({ waitUntil: 'commit' });
       await checkReading(page, reading, `Repeated Forward/Back ${round}`, test, deviations);
     }
@@ -330,11 +332,11 @@ try {
     await page.goBack({ waitUntil: 'commit' });
     await checkReading(page, secondReading, 'Back to second same-URL article entry', test, deviations);
     await page.goBack({ waitUntil: 'commit' });
-    await page.waitForURL(origin + '/library/', { waitUntil: 'commit' });
+    await page.waitForURL(origin + '/library/', { waitUntil: 'domcontentloaded' });
     await page.goBack({ waitUntil: 'commit' });
     await checkReading(page, reading, 'Back to first same-URL article entry', test, deviations);
     await page.goForward({ waitUntil: 'commit' });
-    await page.waitForURL(origin + '/library/', { waitUntil: 'commit' });
+    await page.waitForURL(origin + '/library/', { waitUntil: 'domcontentloaded' });
     await page.goForward({ waitUntil: 'commit' });
     await checkReading(page, secondReading, 'Forward to second same-URL article entry', test, deviations);
 
@@ -353,7 +355,7 @@ try {
     await page.goBack({ waitUntil: 'commit' });
     await checkReading(page, chapterReading, 'Back to manually read chapter', test, deviations);
     await page.goForward({ waitUntil: 'commit' });
-    await page.waitForURL(origin + '/', { waitUntil: 'commit' });
+    await page.waitForURL(origin + '/', { waitUntil: 'domcontentloaded' });
     await page.goBack({ waitUntil: 'commit' });
     await checkReading(page, chapterReading, 'Repeated Back to manually read chapter', test, deviations);
 
