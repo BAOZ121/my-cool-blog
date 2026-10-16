@@ -10,6 +10,71 @@ spec.loader.exec_module(evidence)
 
 
 class EvidenceExtractionTests(unittest.TestCase):
+    def test_research_evidence_records_keep_titles_anchors_and_independent_notes(self):
+        source_ids = ([f"H{number:02}" for number in range(1, 16)]
+                      + [f"C{number:02}" for number in range(1, 20)]
+                      + ["M01", "M02", "I01"])
+        records = []
+        for source_id in source_ids:
+            records.append(f'''<section class="research-evidence" id="source-{source_id}" data-source-id="{source_id}">
+            <h3>[{source_id}] Original source &amp; reporting scope {source_id}</h3>
+            <p class="research-source-identity">Publisher and dates for {source_id}.</p>
+            <p>Supports only {source_id}; no market-share conclusion. Retain the complete limitation.</p>
+            <p><a href="https://publisher.test/{source_id}">Publisher original</a></p></section>''')
+        html = '''<h1 class="article-title">Agricultural evidence fixture</h1>
+        <section class="article-content"><h2 id="appendix">Supporting Evidence</h2>
+        <p>Appendix introduction outside individual sources.</p>''' + "".join(records) + '''
+        <p>Ordinary note following the source records.</p>
+        <p><a href="https://publisher.test/following">Following material</a></p></section>'''
+        with tempfile.TemporaryDirectory() as directory:
+            build = Path(directory)
+            article = build / "post/agricultural-technology-equipment/index.html"
+            article.parent.mkdir(parents=True)
+            article.write_text(html, encoding="utf-8")
+            result = evidence.parse_article(article, build)
+        entries = {entry["url"]: entry for entry in result["entries"]}
+        self.assertEqual(len(source_ids), 37)
+        self.assertEqual(len(entries), 38)
+        for source_id in source_ids:
+            with self.subTest(source_id=source_id):
+                entry = entries[f"https://publisher.test/{source_id}"]
+                self.assertEqual(entry["title"], f"[{source_id}] Original source & reporting scope {source_id}")
+                citation, = entry["citations"]
+                self.assertEqual(citation["url"], "/post/agricultural-technology-equipment/#source-" + source_id)
+                self.assertEqual(citation["section"], entry["title"])
+                self.assertEqual(citation["notes"], [
+                    f"Publisher and dates for {source_id}.",
+                    f"Supports only {source_id}; no market-share conclusion. Retain the complete limitation.",
+                ])
+        following, = entries["https://publisher.test/following"]["citations"]
+        self.assertEqual(following["url"], "/post/agricultural-technology-equipment/#appendix")
+        self.assertEqual(following["notes"], [
+            "Appendix introduction outside individual sources.",
+            "Ordinary note following the source records.",
+        ])
+
+    def test_shared_research_source_keeps_each_record_anchor_and_scope(self):
+        html = '''<h1 class="article-title">Shared source fixture</h1><section class="article-content">
+        <section class="research-evidence" id="source-C01" data-source-id="C01"><h3>[C01] Shared filing: annual scope</h3>
+        <p>Annual scope only.</p><p><a href="https://publisher.test/shared">Publisher original</a></p></section>
+        <section class="research-evidence" id="source-C02" data-source-id="C02"><h3>[C02] Shared filing: interim scope</h3>
+        <p>Interim scope only.</p><p><a href="https://publisher.test/shared">Publisher original</a></p></section>
+        </section>'''
+        with tempfile.TemporaryDirectory() as directory:
+            build = Path(directory)
+            article = build / "post/example/index.html"
+            article.parent.mkdir(parents=True)
+            article.write_text(html, encoding="utf-8")
+            result = evidence.parse_article(article, build)
+        entry, = result["entries"]
+        self.assertNotEqual(entry["title"], "Publisher original")
+        self.assertEqual([citation["url"] for citation in entry["citations"]], [
+            "/post/example/#source-C01", "/post/example/#source-C02",
+        ])
+        self.assertEqual([citation["notes"] for citation in entry["citations"]], [
+            ["Annual scope only."], ["Interim scope only."],
+        ])
+
     def test_safe_urls_and_file_formats(self):
         self.assertIsNone(evidence.public_url("javascript:alert(1)", "/post/example/"))
         self.assertIsNone(evidence.public_url("#source-1", "/post/example/"))

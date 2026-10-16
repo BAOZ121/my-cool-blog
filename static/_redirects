@@ -33,3 +33,8 @@
 /test/amd-company-research-v1/* /post/amd-company-research/:splat 301
 /test/amd-company-research-card-v1 /post/amd-company-research/ 301
 /test/amd-company-research-card-v1/ /post/amd-company-research/ 301
+
+# The reviewed agricultural technology and equipment report is now published.
+/test/agricultural-technology-equipment-v1 /post/agricultural-technology-equipment/ 301
+/test/agricultural-technology-equipment-v1/ /post/agricultural-technology-equipment/ 301
+/test/agricultural-technology-equipment-v1/* /post/agricultural-technology-equipment/:splat 301

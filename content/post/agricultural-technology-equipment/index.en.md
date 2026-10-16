@@ -3,33 +3,26 @@ title: "Global Agricultural Technology and Equipment Industry Report"
 description: "Industry history, machinery and precision agriculture, drones and robots, irrigation, regional markets and farm operating economics."
 date: "2026-10-16"
 lastmod: "2026-10-16"
-url: "/test/agricultural-technology-equipment-v1/"
+url: "/post/agricultural-technology-equipment/"
 type: "post"
 layout: "single"
 image: "cover.jpg"
 imageAlt: "Planter row units in a field, with a red tractor behind, at Frick Farms in northeast Texas."
 industrialreport: true
-testpage: true
+categories: ["Industry Report"]
+tags: ["Agricultural Technology", "Agricultural Equipment", "Precision Agriculture", "Irrigation", "Global", "Industry Research"]
 toc: true
 readingTime: true
 comments: false
 draft: false
-robots: "noindex, nofollow"
 reportversion: "1.0"
 evidencecutoff: "2026-10-16"
-wordDownload: "/test/agricultural-technology-equipment-v1/assets/Agricultural_Technology_Equipment_Bilingual_v1.docx"
-textDownload: "/test/agricultural-technology-equipment-v1/assets/report-bilingual.txt"
-dataDownload: "/test/agricultural-technology-equipment-v1/assets/india-tractor-retail-fy2025-26.csv"
-sitemap:
-  disable: true
-build:
-  list: "never"
-  render: "always"
-outputs:
-  - "HTML"
+wordDownload: "/post/agricultural-technology-equipment/assets/Agricultural_Technology_Equipment_Bilingual_v1.docx"
+textDownload: "/post/agricultural-technology-equipment/assets/report-bilingual.txt"
+dataDownload: "/post/agricultural-technology-equipment/assets/india-tractor-retail-fy2025-26.csv"
 ---
 
-<p class="research-preview-note">Website test edition · Version 1.0 · Global scope · Public information through 16 October 2026.</p>
+<p class="research-preview-note">Industry report · Version 1.0 · Global scope · Public information through 16 October 2026.</p>
 
 <p class="research-figure-caption">Planter and tractor at Frick Farms, northeast Texas, 13 April 2021. USDA photo by Lance Cheung. Public Domain Mark 1.0. <a class="evidence-cite" href="#source-I01" aria-label="Source I01">[I01]</a> <a href="cover.jpg" target="_blank" rel="noopener">View original photograph · 4096 × 2731</a></p>
 
