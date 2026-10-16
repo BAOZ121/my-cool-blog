@@ -1,0 +1,122 @@
+{
+  "company-comparison": {
+    "title": "Global company comparison",
+    "caption": "Global company comparison with reported scope and period",
+    "eyebrow": "COMPANY COMPARISON",
+    "header": [
+      {
+        "label": "Company"
+      },
+      {
+        "label": "Role"
+      },
+      {
+        "label": "Disclosed metric and period"
+      },
+      {
+        "label": "Comparison limits"
+      }
+    ],
+    "rows": [
+      [
+        "Deere",
+        "Integrated field equipment and precision agriculture",
+        "FY2025 net sales: PPA US$17.311bn; SAT US$10.224bn. FY2026 first nine months: US$11.664bn and US$9.036bn.\nFY2025 ended 2025-11-02; nine months ended 2026-08-02",
+        "SAT includes turf. Excludes Construction & Forestry and Financial Services; not standalone digital revenue. [C01] [C02]"
+      ],
+      [
+        "CNH",
+        "Agricultural machines and associated technology",
+        "Agriculture net sales: US$12.390bn in CY2025; US$5.873bn in H1 2026.\nCY2025; H1 2026 ended 2026-06-30",
+        "Agriculture segment only; construction and finance excluded. Adjusted EBIT is non-GAAP. [C03] [C04]"
+      ],
+      [
+        "AGCO / PTx",
+        "Agricultural machines; mixed-fleet precision retrofit and automation",
+        "Net sales US$10.082bn in CY2025; US$4.9526bn in H1 2026.\nCY2025; H1 2026",
+        "2024 comparator includes divested G&P. PTx Trimble consolidated, 85% owned. 2026 regional boundaries recast. [C05] [C06] [C07]"
+      ],
+      [
+        "Kubota",
+        "Farm equipment and engines; separate construction business",
+        "Farm Equipment and Engines: JPY2,003.3bn in CY2025; H1 2026 customer-contract revenue JPY1,016.157bn.\nCY2025; H1 2026",
+        "Includes engines; annual headline and interim customer-contract scopes differ. Broader machinery total and finance-related other revenue excluded from pure-equipment interpretation. [C08] [C09]"
+      ],
+      [
+        "Mahindra & Mahindra",
+        "Tractors and Farm business",
+        "Consolidated Farm revenue INR42,568 crore, up 20%.\nFY2025–26 ended 2026-03-31",
+        "One crore = INR10m. Excludes automotive and financial-services group revenue; company share not interchangeable with FADA retail registrations. [C10]"
+      ],
+      [
+        "First Tractor / Weichai Lovol",
+        "Chinese powertrains, tractors and harvesting systems",
+        "First Tractor CY2025 agriculture line RMB9.89271bn, gross margin 14.04%; Lovol comparison uses disclosed ECVT/harvester products.\nFirst Tractor CY2025; Lovol product disclosure H1 2026",
+        "First Tractor line before inter-segment eliminations; no Lovol revenue inferred from Weichai group totals. [C11] [C12]"
+      ],
+      [
+        "DJI Agriculture / XAG",
+        "Agricultural drones and aerial field operations",
+        "DJI: >600,000 agricultural drones in use by end-2025; 3,500 service/repair centres as described in its April 2026 announcement. XAG P150 maximum payload: 70kg.\nDJI drone stock: end-2025, disclosed 2026-04-29; network cutoff not separately stated. XAG page read 2026-10-16.",
+        "Operational stock and conditional product specification, not revenue, annual shipments or market share. [C13] [C14]"
+      ],
+      [
+        "Lindsay",
+        "Irrigation equipment, parts and remote control",
+        "Irrigation revenue US$568.000m; segment operating income US$96.963m.\nFY2025 ended 2025-08-31",
+        "Excludes infrastructure, but includes tubing and technology services; fiscal date differs from peers. [C15]"
+      ],
+      [
+        "Valmont",
+        "Pivot/linear irrigation, aftermarket and technology",
+        "Agriculture segment sales US$1,020.750m before intersegment eliminations in FY2025; Q2 2026 US$243.7m as reported.\n52 weeks ended 2025-12-27; Q2 2026",
+        "Not group total or software-only revenue; FY2025 external agriculture sales after related eliminations US$1,014.370m. [C16] [C17]"
+      ],
+      [
+        "Netafim",
+        "Precision irrigation/fertigation and GrowSphere control",
+        "Workflow comparison: scheduling, execution monitoring, alerts and field information; no comparable standalone revenue used.\nOfficial product article published 2025-01-16",
+        "Vendor product description and customer case, not a controlled trial or independent market share. [C18]"
+      ]
+    ],
+    "sourceBlock": 71,
+    "width": "wide"
+  },
+  "utilization-model": {
+    "title": "Illustrative utilization model",
+    "caption": "Illustrative utilization model in work hectares and RMB",
+    "eyebrow": "ILLUSTRATIVE MODEL",
+    "header": [
+      {
+        "label": "Completed work hectares",
+        "numeric": true
+      },
+      {
+        "label": "Annual benefit before fixed cost RMB",
+        "numeric": true
+      },
+      {
+        "label": "After fixed cost RMB",
+        "numeric": true
+      }
+    ],
+    "rows": [
+      [
+        "500",
+        "60,000",
+        "-60,000"
+      ],
+      [
+        "1,000",
+        "120,000",
+        "0"
+      ],
+      [
+        "1,500",
+        "180,000",
+        "60,000"
+      ]
+    ],
+    "sourceBlock": 98
+  }
+}

@@ -1,12 +1,22 @@
 {{- $id := .Get "id" -}}
-{{- $chart := index hugo.Data.article_visuals.shares $id -}}
+{{- $data := hugo.Data.article_visuals -}}
+{{- with .Get "data" -}}
+    {{- $resource := $.Page.Resources.GetMatch . -}}
+    {{- if not $resource -}}{{ errorf "Missing page graphic data %q in %s" . $.Page.File.Path }}{{- end -}}
+    {{- $data = transform.Unmarshal $resource.Content -}}
+{{- end -}}
+{{- $chart := index $data.shares $id -}}
 {{- if not $chart -}}{{ errorf "Unknown market-share %q in %s" $id .Page.File.Path }}{{- end -}}
 {{- $decimals := 1 -}}
 {{- if isset $chart "percentDecimals" -}}{{- $decimals = int $chart.percentDecimals -}}{{- end -}}
 {{- $uid := printf "market-share-%s-%d" $id .Ordinal -}}
+{{- $hasUnits := isset $chart "totalUnits" -}}
 {{- $csv := "Name,Share (%),Period,Geography,Metric,Source URL\n" -}}
+{{- if $hasUnits -}}{{- $csv = "Name,Retail units,Share (%),Period,Geography,Metric,Source URL\n" -}}{{- end -}}
 {{- range $chart.series -}}
-    {{- $csv = printf "%s\"%s\",%v,\"%s\",\"%s\",\"%s\",\"%s\"\n" $csv (replace .name "\"" "\"\"") .value (replace $chart.period "\"" "\"\"") (replace $chart.geography "\"" "\"\"") (replace $chart.metric "\"" "\"\"") (replace $chart.source.url "\"" "\"\"") -}}
+    {{- $values := printf "%v" .value -}}
+    {{- if $hasUnits -}}{{- $values = printf "%v,%v" .units .value -}}{{- end -}}
+    {{- $csv = printf "%s\"%s\",%s,\"%s\",\"%s\",\"%s\",\"%s\"\n" $csv (replace .name "\"" "\"\"") $values (replace $chart.period "\"" "\"\"") (replace $chart.geography "\"" "\"\"") (replace $chart.metric "\"" "\"\"") (replace $chart.source.url "\"" "\"\"") -}}
 {{- end -}}
 {{- $download := resources.FromString (printf "data/charts/%s.csv" $id) $csv -}}
 <figure id="market-share-{{ $id }}" class="article-visual" data-visual="share" data-vendor="{{ "vendor/article-visuals/echarts.js" | relURL }}" aria-labelledby="{{ $uid }}-title">
@@ -24,10 +34,10 @@
     <details class="visual-fallback" open>
         <summary>View the data table</summary>
         <div class="table-wrapper">
-            <table class="visual-table">
+            <table class="visual-table"{{ with $chart.sourceBlock }} data-source-block="{{ . }}"{{ end }}>
                 <caption>{{ $chart.title }} · {{ $chart.period }} · {{ $chart.metric }}</caption>
-                <thead><tr><th scope="col">{{ $chart.dimension | default "Company" }}</th><th scope="col">Share</th></tr></thead>
-                <tbody>{{ range $chart.series }}<tr><th scope="row">{{ .name }}</th><td>{{ printf "%.*f%%" $decimals (float .value) }}</td></tr>{{ end }}</tbody>
+                <thead><tr><th scope="col">{{ $chart.dimension | default "Company" }}</th>{{ if $hasUnits }}<th scope="col">Retail units</th>{{ end }}<th scope="col">Share</th></tr></thead>
+                <tbody>{{ range $chart.series }}<tr><th scope="row">{{ .name }}</th>{{ if $hasUnits }}<td>{{ lang.FormatNumber 0 .units }}</td>{{ end }}<td>{{ printf "%.*f%%" $decimals (float .value) }}</td></tr>{{ end }}</tbody>
             </table>
         </div>
         <a class="visual-download" href="{{ $download.RelPermalink }}" download>Download data (CSV)</a>

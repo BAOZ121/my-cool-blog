@@ -1,5 +1,11 @@
 {{- $id := .Get "id" -}}
-{{- $map := index hugo.Data.article_visuals.maps $id -}}
+{{- $data := hugo.Data.article_visuals -}}
+{{- with .Get "data" -}}
+    {{- $resource := $.Page.Resources.GetMatch . -}}
+    {{- if not $resource -}}{{ errorf "Missing page graphic data %q in %s" . $.Page.File.Path }}{{- end -}}
+    {{- $data = transform.Unmarshal $resource.Content -}}
+{{- end -}}
+{{- $map := index $data.maps $id -}}
 {{- if not $map -}}{{ errorf "Unknown industry-map %q in %s" $id .Page.File.Path }}{{- end -}}
 {{- $uid := printf "industry-map-%s-%d" $id .Ordinal -}}
 <figure id="industry-map-{{ $id }}" class="article-visual" data-visual="map" data-vendor="{{ "vendor/article-visuals/markmap.js" | relURL }}" aria-labelledby="{{ $uid }}-title">

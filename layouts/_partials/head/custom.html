@@ -25,6 +25,14 @@
 {{ if or (.HasShortcode "industry-map") (.HasShortcode "market-share") }}
   {{ partial "article-visuals/assets.html" . }}
 {{ end }}
+{{ if .HasShortcode "research-table" }}
+  {{ if not (or (.HasShortcode "industry-map") (.HasShortcode "market-share")) }}
+    {{ $visualCSS := resources.Get "css/article-visuals.css" | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $visualCSS.RelPermalink }}" integrity="{{ $visualCSS.Data.Integrity }}" crossorigin="anonymous">
+  {{ end }}
+  {{ $tableCSS := resources.Get "css/research-tables.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $tableCSS.RelPermalink }}" integrity="{{ $tableCSS.Data.Integrity }}" crossorigin="anonymous">
+{{ end }}
 {{ if and .Params.companyResearch (not .Params.amdResearch) }}
   {{ $companyCSS := resources.Get "css/company-research.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $companyCSS.RelPermalink }}" integrity="{{ $companyCSS.Data.Integrity }}">
