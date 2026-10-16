@@ -1,0 +1,1141 @@
+Global Agricultural Technology and Equipment Industry Report
+
+English manuscript  |  Version 1.0  |  Public information through 16 October 2026
+
+
+
+Planter and tractor at Frick Farms, northeast Texas, 13 April 2021. USDA photo by Lance Cheung. Public Domain Mark 1.0. [I01]
+
+Agricultural technology and equipment convert power, location data, crop observations and agronomic decisions into work in the field. This report examines machinery, precision agriculture, agricultural drones and robots, irrigation and digital agriculture worldwide, with detailed comparisons of China, North America, Europe and India. Seeds, crop protection chemicals and biotechnology appear as related inputs; their entire industries are outside the core market boundary.
+
+The evidence points to an industry whose commercial results depend on the farming system. Large equipment platforms, retrofits, specialist irrigation systems and contracted field services address different buyers. A technology can reduce an input on a particular field while still failing to earn its purchase and operating costs. This report therefore connects product capabilities with seasonal utilization, service access and farm economics, and treats company performance separately from claims about technology effectiveness.
+
+The four Parts cover a documented industry story, history, the value chain and market landscape, and operating challenges. The company table preserves reporting periods, currencies and business scopes. The share chart covers only FADA's Indian tractor retail registration categories in FY2025-26. The independent Supporting Evidence appendix records what each source supports, its dates and limitations. Dates of publication, observation and financial reporting are kept distinct.
+
+Part 1 Industry Story
+
+Why targeted spraying produces different field results
+
+On August 22, 2024, Iowa State University Extension and Outreach reported a field demonstration of a commercial vision-guided spraying system on five soybean fields totaling 415 acres. The fields did not deliver a single uniform result: reported herbicide savings ranged from 43.9% to 90.6%. Earlier weed management and the weed pressure present at application helped explain the variation. This was a field-scale demonstration, with useful observations about operating conditions, rather than a representative national trial. Its most revealing finding was therefore not simply that less chemical could be applied. It was that the same equipment could create very different savings in different field conditions. [H02]
+
+The task sounds straightforward: identify a weed and open the appropriate nozzle while the sprayer moves past it. In practice, it joins sensing, classification and physical execution. A recommendation becomes valuable only when the machine acts at the right location and time. Stable boom height, suitable nozzles and individual nozzle control are part of this system, not peripheral accessories. The university article described these practical requirements alongside the savings. For an equipment buyer, this means that the camera and software cannot be assessed separately from the sprayer, its configuration and the operator's ability to maintain consistent application. [H02]
+
+Commercial deployment was also becoming visible. On September 18, 2024, Deere reported that See & Spray had operated on more than one million acres during that growing season, with average herbicide savings of 59% across US corn, soybean and cotton fields relative to broadcast spraying. This was a company-reported operating result for specified versions of its technology. It was not an independently audited estimate of every customer's return. The university demonstration and the manufacturer's deployment disclosure answer different questions: one shows variation under documented local conditions, while the other indicates that the technology had moved beyond an exhibition machine. [H01]
+
+The story captures the industry's change in emphasis. Agricultural equipment is increasingly expected to decide where an action is required, rather than merely repeat an action faster. Yet a successful demonstration does not settle the business case. An individual grower still has to compare chemical savings and labor benefits with acquisition, financing, service and operating costs. The report's interpretation is that the commercial unit of value is a completed agricultural task with an observable result. A sensor, model or subscription matters to the extent that it improves that task reliably within the farm's constraints.
+
+Part 2 Industry History
+
+Motorized machinery expands physical capacity
+
+The first stage replaced or amplified physical labor. Motorized equipment expanded the capacity to prepare land, sow, protect and harvest crops. FAO describes mechanization as a transformation under way since the early twentieth century, while also recognizing environmental costs alongside productivity and labor benefits. The useful historical distinction is between providing power and providing judgment. A tractor supplies traction and drives implements; it does not, by itself, determine the best agronomic treatment for each location. Later technologies were generally added to this productive base. They did not make engines, implements, maintenance or operator competence disappear. This is why the industry's history is better understood as accumulated capabilities than as a sequence in which each new technology eliminates the previous one. [H04]
+
+Positioning and the development of automatic guidance
+
+The second stage added location and repeatability. NASA's historical account describes Deere combining GPS positions with combine-sensor readings in the mid-1990s to identify yield variation within fields. NavCom licensed JPL correction software in 2001, and Deere integrated NASA reference-station information and JPL software into StarFire receivers in 2004. These are documented steps in one important development pathway, not a claim that one firm invented the whole field. Accurate navigation made consistent passes and geographically referenced records more practical. It also illustrates why terminology matters: the same NASA account says operators still monitored conditions and avoided collisions. Automatic guidance was an advance in assistance and repeatability; it should not be retrospectively described as unsupervised field autonomy. [H03]
+
+Maps and variable rate applications spread unevenly
+
+The third stage connected measurements to differentiated management. Yield maps, soil information and variable-rate application allow a producer to treat within-field variation as an operating input. Adoption was uneven rather than synchronized. ERS research covering 1996–2019 found substantially wider use of automated guidance than of some mapping and variable-rate technologies on several major US crops. Its measures included planted acreage, which must be distinguished from the number of adopting farms. The analytical implication is that a technically complete digital workflow can diffuse in separate pieces. Guidance may offer a relatively direct operational benefit, while variable treatment additionally requires usable agronomic prescriptions, compatible application equipment and confidence that changing the dose will create sufficient economic value. [H05]
+
+Computer vision connects sensing with execution
+
+The fourth stage brought perception closer to the point of action. The Iowa spraying story is one example; another workflow uses drone imagery to identify weed locations before a ground sprayer enters the field. An Iowa State demonstration published in December 2024 connected aerial imagery to an executable prescription and then to a sprayer with nozzle control. The sensing aircraft and the application machine were different assets. This distinction prevents an inflated account of what an agricultural drone actually did. More broadly, aerial sensing, ground sensing, robots and conventional machines can be complementary. A fully autonomous machine is one possible architecture, but a service that improves an existing fleet's decisions can also create value. [H14]
+
+Connected equipment and irrigation systems
+
+The fifth stage organizes equipment, data and support into continuing systems. Farm management software can connect records and planning, while connected controllers can turn decisions into repeated operations. Irrigation adds another route: pumps, filters, pipes, emitters, monitoring and scheduling must work together. India's Per Drop More Crop programme supports drip and sprinkler systems and discusses fertigation, showing that agricultural technology policy is not confined to autonomous vehicles. Its cumulative supported area exceeded 11.5 million hectares by July 2026, according to PIB. This is programme coverage rather than a count of continuously operating installations. The broader interpretation is that integration and sustained operation become more important as equipment gains digital functions; sales of an individual component describe only part of the production system. [H13]
+
+Part 3 Market Landscape
+
+Market size and the risk of counting the same value twice
+
+A useful machinery benchmark appears in VDMA's September 2025 presentation. Its nine rounded regional labels for 2024 sum to EUR144.3 billion, or roughly EUR144 billion. This is the author's addition of the published chart labels, rather than an exact total printed by the source. The presentation does not establish matching coverage for every irrigation, drone, standalone robot and digital service category in this report. Its starred 2025 and 2026 columns were forecasts made at that time. They are not treated as observed outcomes as of this report's cutoff. [M02]
+
+The wider industry's revenue cannot be obtained by adding a machinery estimate, a precision agriculture estimate and a farm software estimate. Guidance hardware may be included in the price of a tractor; a machine subscription may already be included in an OEM segment; contractor revenue can include the use of that same equipment. This report therefore uses the machinery benchmark for scale, disclosed company businesses to examine competition, and a clearly defined retail submarket for the share chart. It does not claim a unified global revenue total or an industrywide growth rate from incompatible datasets. [M02]
+
+The value chain  turning information into a completed operation
+
+The value chain starts upstream with power, transmission, sensing, positioning, control and connectivity. These components matter because field work requires both physical force and repeatable decisions under dust, vibration and variable terrain. First Tractor illustrates vertical integration through tractors, diesel engines, transmissions, axles and castings. Its autonomous and hybrid products also show why a tractor maker increasingly needs software and control capabilities. This classification identifies company roles; it does not assert a supply contract between every company connected in the accompanying map. [C11]
+
+Midstream businesses turn those capabilities into three overlapping offers: field equipment, precision control and autonomous operations, and irrigation/fertigation systems. Deere, CNH, AGCO, Kubota, Mahindra, First Tractor and Weichai Lovol provide machinery with different product mixes. PTx Trimble addresses guidance and retrofit control; DJI Agriculture and XAG provide aerial spraying, spreading or mapping; Lindsay, Valmont and Netafim combine water-delivery hardware with control functions. A company can appear in several branches. Seeds and crop-protection chemicals remain adjacent inputs here, rather than being added to the equipment market's revenue denominator. [C01][C03][C05][C07][C08][C10][C11][C12][C13][C14][C15][C16][C18]
+
+Downstream, farmers, cooperatives and contractors buy or hire productive capacity through dealers and service networks. The analytically useful unit is a completed task: land prepared, seed placed, crop treated, water delivered or harvest collected within the available window. Equipment sales, replacement parts, repair, financing and digital services can support that task through different revenue models. DJI's reported repair-centre network and Lindsay's equipment-and-control portfolio illustrate why support belongs inside the competitive analysis. Installed equipment creates service opportunities, but does not by itself demonstrate recurring software revenue. [C13][C15]
+
+Company scale without a false global league table
+
+The financial comparison deliberately retains native currencies, reporting periods and segment definitions. Deere's FY2025 Production & Precision Agriculture (PPA) sales were US$17.311 billion and Small Agriculture & Turf (SAT) sales US$10.224 billion; the latter includes turf. CNH's calendar-2025 Agriculture sales were US$12.390 billion. These figures reveal operating scale, but cannot be normalised into a whole-industry share chart: reporting dates differ, some segments include non-farm products, and the selection is not a complete population. Construction and finance are separately excluded wherever disclosed. [C01][C03]
+
+AGCO's US$10.082 billion of 2025 sales fell 13.5%, but its 2024 comparator included US$816.5 million from the majority Grain & Protein business sold on November 1, 2024. Treating that entire decline as weaker demand would mix a portfolio change with a cycle change. The 2024 formation of PTx Trimble also means that today's precision-agriculture structure cannot simply be projected backwards. AGCO owns 85% of that consolidated JV, with Trimble retaining 15%. [C05][C07]
+
+Kubota's narrower 2025 Farm Equipment and Engines category generated JPY2,003.3 billion, still including engines. Its H1 2026 securities report identifies JPY1,016.157 billion of customer-contract revenue for that product group and separately identifies other revenue sources, including interest and insurance, across the group. Mahindra's consolidated Farm revenue was INR42,568 crore in the year ended March 31, 2026. These disclosures are informative within their own boundaries; neither an arbitrary currency conversion nor a fiscal-year relabelling makes them identical markets. [C08][C09][C10]
+
+Precision agriculture  retrofit access versus whole-machine replacement
+
+Precision agriculture changes the competitive question from who sells the tractor to who controls an important operation on the installed fleet. PTx Trimble's mixed-fleet, factory-fit and retrofit positioning offers one route: a grower can add guidance, control or automation without immediately replacing every machine. Our interpretation is that interoperability broadens the addressable installed base, while installation, calibration, support and equipment compatibility become part of the product. The JV's announcement establishes this strategic direction; it does not prove that every brand/model combination works or that future revenue targets have already been achieved. [C07]
+
+Digital farming also spans different degrees of control. A record-keeping platform can document what happened; a guidance system can steer; a variable-rate application system changes execution; an irrigation controller opens a valve according to a schedule. Netafim's GrowSphere description links field information, irrigation/fertigation planning, execution monitoring and alerts. The commercial test is therefore whether information changes a consequential decision reliably. A dashboard that creates extra data-entry work can have a weaker economic case than a modest control upgrade that avoids a missed application window. That comparison is an analytical framework, not a measured performance ranking of the named products. [C18]
+
+Drones and robots  deployment scale is only one part of the business
+
+DJI's 29 April 2026 announcement said that more than 600,000 agricultural drones were already in use globally by the end of 2025. It also described deployment across more than 100 countries and regions and a worldwide network of 3,500 service and repair centres, without assigning separate reporting cutoffs to those geographic and network figures. These are vendor-reported ecosystem counts, rather than annual shipments or an industry census. XAG's P150 product page illustrates the task-based alternative to a conventional vehicle: spraying, spreading and mapping from a modular aerial platform. Its disclosed maximum payload is 70 kg; maxima and test conditions should not be converted into average commercial productivity. Neither company supplies a comparable agricultural revenue figure in the sources used here. [C13][C14]
+
+Ground automation covers different tasks from aerial spraying. AGCO describes PTx Trimble OutRun as a retrofit kit that gives an existing tractor autonomous grain-cart capability under remote management by the combine operator. PTx RowPilot uses AI to distinguish crops from weeds and enable autonomous weeding. These are specific operating roles, rather than evidence of unrestricted driverless farming. The same review says autonomous tillage and fertilizer kits were tested in 2025, with full commercial launch expected in late 2026. That timetable remains a stated expectation at this report's cutoff, not confirmation of completed commercial rollout. [C19]
+
+Our interpretation is that aerial and ground automation must be evaluated as operating systems that include transport, charging or refuelling, replenishment, maintenance, operator oversight and local permissions. A contractor may spread those fixed costs over several customers, whereas an individual farm may underuse the same asset. More autonomy can reduce manual driving, but it can also shift labour toward supervision and logistics. The relevant comparison is cost and quality per completed task under local conditions, rather than a robot's headline capacity alone. Product demonstrations establish capability in a stated setting, not universal autonomous operation. [C12][C14]
+
+Irrigation  hardware  control and project execution
+
+Irrigation economics join durable equipment with repeatable control of water and nutrients. Lindsay's Zimmatic, FieldNET and FieldWise portfolio connects irrigation machinery with remote management. Its FY2025 irrigation revenue was US$568.0 million, rather than the US$676.4 million corporate total that also includes infrastructure. Valmont's FY2025 Agriculture segment sales were US$1,020.750 million before intersegment eliminations; its separate infrastructure business is outside this comparison. Netafim illustrates a different control point through irrigation and fertigation scheduling. These businesses overlap in farm outcomes, but their equipment, project and software mixes differ. [C15][C16][C18]
+
+Project timing can dominate an apparently attractive structural market. Lindsay's group backlog fell from US$180.9 million to US$110.7 million as a large MENA irrigation project was delivered; that stock decline is not itself a revenue collapse. Valmont's Q2 2026 Agriculture sales fell 15.8%, with management attributing much of the international weakness to Middle East disruption. Our interpretation is that water scarcity creates a need, while financing, project readiness and execution determine the purchase. An irrigation supplier can face a weak quarter even when the agronomic case for efficient water use remains strong. [C15][C17]
+
+Four regions  different adoption economics
+
+North America: for a customer already operating mechanised fleets, the opportunity is often replacement, utilisation and precision upgrades. The present cycle also makes affordability central. Deere's global segment results for the first nine months of FY2026 showed PPA sales down 7% while SAT grew 16%; CNH's global H1 Agriculture sales were roughly flat even as adjusted profitability weakened. A blanket claim of an agricultural-equipment recovery would miss this divergence. Our commercial implication is to examine the economics of retrofit and maintenance alongside new-machine sales, and to distinguish dealer inventory correction from changes in farmers' actual work requirements. [C02][C04]
+
+Europe: comparisons require more than one regional headline. AGCO estimated Western Europe tractor retail sales up 3% in H1 2026, while its own Europe/Middle East regional Q2 sales declined at constant currency. CNH's Europe, Middle East and Africa demand description uses another geography and period. These are not contradictory measures of one identical market. Our interpretation is that country, crop, livestock exposure, equipment category and dealer inventory need separate attention. For a specialised farm or contractor, implement compatibility and local repair capacity can matter more than a platform's maximum acreage claim; regional average demand does not settle the purchase decision. [C04][C06]
+
+China: the competitive issue combines machinery upgrading with the economics of farm-service providers. First Tractor describes weaker crop economics, longer machinery payback periods and a shift in purchasing toward family farms, cooperatives and service organisations. Weichai Lovol's disclosed high-horsepower, harvesting and ECVT developments show that domestic competition extends beyond low-price conventional tractors. Our implication is to separate plains-based high-throughput systems from hilly or fragmented-field use. Better transmission, local service and reliable performance may determine value before full autonomy does. Company field trials and product launches should remain distinct from nationwide adoption statistics. [C11][C12]
+
+India: the business is shaped by affordable mechanisation and the ability to spread ownership costs across work. Mahindra's FY2026 Farm growth demonstrates a cycle different from the large-equipment weakness described in North America. For smaller users, hiring a machine or purchasing a completed service can be more practical than owning each asset; this is a business-model implication, not a claim that every farm uses custom hiring. The approved FADA chart describes a defined tractor-registration submarket. Mahindra's separately reported 43.6% tractor share is not substituted into it, because reporting channels and denominators can differ. [C10] [M01]
+
+Profit  orders and the durability of competitive advantage
+
+Revenue, profitability and orders answer different questions. CNH's 2025 Agriculture adjusted earnings before interest and taxes (EBIT) margin, a non-GAAP measure, was 6.2%, compared with 3.4% in H1 2026. AGCO's 2025 reported operating margin was 5.9%, versus an adjusted 7.7%; First Tractor's disclosed agricultural-machinery margin is a gross margin. These figures must not be displayed as if they ranked identical profit concepts. Inventory reductions, factory utilisation, tariffs, credit costs and the cost of supporting dealers can influence earnings before a new technology's commercial value becomes visible. [C03][C04][C05][C11]
+
+Technology does not automatically generate a successful platform business. Valmont states that it wound down Prospera in 2025; the associated tax benefit reflects an investment loss, not evidence of software success. Conversely, continued demand for parts and service need not imply rapid adoption of autonomous equipment. Our interpretation is that durable advantage combines dependable task execution, an economical upgrade path, distribution, repair and financing that customers can use. The winning position can sit in a full machine, a retrofit controller, an irrigation system or a local operating service. It must be demonstrated through retention, utilisation and economic outcomes rather than inferred from an AI label. [C06][C16]
+
+A measurable competition case  India's tractor retail market
+
+An observable competition case comes from India's tractor retail market. FADA recorded 1,050,077 tractors in FY2025-26. Its OEM table assigns 23.81% to Mahindra & Mahindra's Tractor category and 18.76% to its Swaraj Division, followed by International Tractors at 12.76%, TAFE at 11.27%, Escorts Kubota's Agri Machinery Group at 10.90%, John Deere India at 7.63%, Eicher Tractors at 6.21%, CNH Industrial India at 4.49% and other OEMs at 4.18%. The chart retains FADA's categories rather than silently consolidating parent companies. [M01]
+
+The denominator is FADA's covered tractor retail units in India, not worldwide agricultural equipment sales. The data were collated on 2 April 2026 from 1,463 of 1,466 RTOs, exclude TS, and place OEMs with less than 1% share in Others. The chart uses unit counts for sector areas; the displayed two-decimal shares total 100.01% because of rounding. This should be read as an India tractor submarket comparison, with the source's geographic and registration coverage kept visible. [M01]
+
+These figures cannot be extrapolated into global company shares or shares of industry revenue. Tractor sizes and prices differ, and the wider research scope also includes precision technology, drones, farm robots, irrigation and digital services. Those activities can sit within the same machine or company, so summing separately defined markets can count the same value more than once. The global company comparison therefore reports each business's disclosed scope and period separately, while the share chart answers the narrower question that the available evidence supports. VDMA's separate machinery-market presentation does not provide a complete matching definition for this broader scope. [M01][M02]
+
+
+
+Figure 1 Agricultural technology and equipment value chain
+
+
+
+Illustrative value chain aligned with Part 3. Branches classify roles and products; they do not establish supplier contracts, endorsements or market shares. Companies may span several stages. Representative examples are not exhaustive. Sources and editable hierarchy accompany the figures.
+
+
+
+Figure 2 India tractor retail share by OEM FY2025 26
+
+
+
+India tractor retail units by OEM, FY2025-26 (1 April 2025 to 31 March 2026). FADA coverage: 1,050,077 units; excludes Telangana (TS); collated 2 April 2026 from 1,463 of 1,466 Regional Transport Offices (RTOs). Slice areas use integer unit counts; displayed shares total 100.01% due to rounding. Source categories are retained. This is an Indian tractor submarket, not worldwide agtech share. Source [M01], p. 17.
+
+OEM	Retail units	Share
+Mahindra & Mahindra (Tractor)	249,973	23.81%
+Mahindra & Mahindra (Swaraj Division)	196,975	18.76%
+International Tractors	134,030	12.76%
+TAFE	118,326	11.27%
+Escorts Kubota (Agri Machinery Group)	114,468	10.90%
+John Deere India (Tractor Division)	80,086	7.63%
+Eicher Tractors	65,215	6.21%
+CNH Industrial (India)	47,122	4.49%
+Others	43,882	4.18%
+
+
+
+
+
+Table 1 Global company comparison
+
+Business scopes, currencies and reporting periods differ. The table is a comparison of disclosed operations, not a market-share ranking. Group totals, equipment sales, financial services and acquired or divested operations must be distinguished.
+
+Company	Role	Disclosed metric and period	Comparison limits
+Deere	Integrated field equipment and precision agriculture	FY2025 net sales: PPA US$17.311bn; SAT US$10.224bn. FY2026 first nine months: US$11.664bn and US$9.036bn.
+FY2025 ended 2025-11-02; nine months ended 2026-08-02	SAT includes turf. Excludes Construction & Forestry and Financial Services; not standalone digital revenue. [C01] [C02]
+CNH	Agricultural machines and associated technology	Agriculture net sales: US$12.390bn in CY2025; US$5.873bn in H1 2026.
+CY2025; H1 2026 ended 2026-06-30	Agriculture segment only; construction and finance excluded. Adjusted EBIT is non-GAAP. [C03] [C04]
+AGCO / PTx	Agricultural machines; mixed-fleet precision retrofit and automation	Net sales US$10.082bn in CY2025; US$4.9526bn in H1 2026.
+CY2025; H1 2026	2024 comparator includes divested G&P. PTx Trimble consolidated, 85% owned. 2026 regional boundaries recast. [C05] [C06] [C07]
+Kubota	Farm equipment and engines; separate construction business	Farm Equipment and Engines: JPY2,003.3bn in CY2025; H1 2026 customer-contract revenue JPY1,016.157bn.
+CY2025; H1 2026	Includes engines; annual headline and interim customer-contract scopes differ. Broader machinery total and finance-related other revenue excluded from pure-equipment interpretation. [C08] [C09]
+Mahindra & Mahindra	Tractors and Farm business	Consolidated Farm revenue INR42,568 crore, up 20%.
+FY2025–26 ended 2026-03-31	One crore = INR10m. Excludes automotive and financial-services group revenue; company share not interchangeable with FADA retail registrations. [C10]
+First Tractor / Weichai Lovol	Chinese powertrains, tractors and harvesting systems	First Tractor CY2025 agriculture line RMB9.89271bn, gross margin 14.04%; Lovol comparison uses disclosed ECVT/harvester products.
+First Tractor CY2025; Lovol product disclosure H1 2026	First Tractor line before inter-segment eliminations; no Lovol revenue inferred from Weichai group totals. [C11] [C12]
+DJI Agriculture / XAG	Agricultural drones and aerial field operations	DJI: >600,000 agricultural drones in use by end-2025; 3,500 service/repair centres as described in its April 2026 announcement. XAG P150 maximum payload: 70kg.
+DJI drone stock: end-2025, disclosed 2026-04-29; network cutoff not separately stated. XAG page read 2026-10-16.	Operational stock and conditional product specification, not revenue, annual shipments or market share. [C13] [C14]
+Lindsay	Irrigation equipment, parts and remote control	Irrigation revenue US$568.000m; segment operating income US$96.963m.
+FY2025 ended 2025-08-31	Excludes infrastructure, but includes tubing and technology services; fiscal date differs from peers. [C15]
+Valmont	Pivot/linear irrigation, aftermarket and technology	Agriculture segment sales US$1,020.750m before intersegment eliminations in FY2025; Q2 2026 US$243.7m as reported.
+52 weeks ended 2025-12-27; Q2 2026	Not group total or software-only revenue; FY2025 external agriculture sales after related eliminations US$1,014.370m. [C16] [C17]
+Netafim	Precision irrigation/fertigation and GrowSphere control	Workflow comparison: scheduling, execution monitoring, alerts and field information; no comparable standalone revenue used.
+Official product article published 2025-01-16	Vendor product description and customer case, not a controlled trial or independent market share. [C18]
+
+
+
+
+
+Part 4 Industry Challenges
+
+Ownership cost and the seasonal work window
+
+Total ownership cost is the first test. A buyer should annualize acquisition, financing and residual-value assumptions, then add subscriptions, connectivity, maintenance, replacement parts, training and incremental operating labor. These costs should be compared with defensible savings or additional output over the hectares actually served. Chemical expenditure avoided is only one line in that calculation. Customer segmentation matters as much as machine performance: US 2024 data show that large-scale family farms represented about 5% of farms but 50% of agricultural production value. This concentration helps explain why counting potential farm customers alone is a poor estimate of demand for expensive equipment. It does not reveal those farms' machinery spending, however, and should not be converted into a supplier revenue forecast. [H08]
+
+The second test is the season's time constraint. Agricultural machinery is often valuable because it completes a task when the crop and field require it. This report therefore distinguishes theoretical hourly capacity from hectares completed within the usable window. Moving between customers, filling tanks, charging or replacing batteries, cleaning equipment, calibration and repairs can reduce productive time. A smaller machine may work well on an individual plot yet require many units or careful scheduling to serve a large region. Conversely, a large machine may be difficult to deploy economically on fragmented land. These are evaluation conditions rather than universal quantitative claims: the correct comparison requires a local operating plan and records of completed work.
+
+Detection errors and operational reliability
+
+The third test is error management. A classification model can fail to recognize a target or mistake a crop, residue or background feature for one. The business consequences depend on which error occurs, how quickly it is detected and what corrective work is possible. A model's headline accuracy is therefore insufficient for comparing production systems. Trials should report relevant field conditions, missed and unnecessary treatments, crop injury, control effectiveness and the cost of repeat visits. The important procurement question is who carries the risk when sensing or execution fails. A supplier that offers monitoring, intervention and a clear remedy may be more useful than one that publishes a high laboratory score without explaining operational failure.
+
+Interoperability and control of farm data
+
+Interoperability is a fourth constraint. A farm may combine equipment from different years and suppliers, and the useful output of one tool must become a usable input for another. The issue includes field boundaries, equipment settings, prescription formats, permissions and the ability to retrieve historical records. This does not mean every customer needs an unrestricted common platform. It means the customer should understand the cost of connecting systems and of changing providers. JRC's nine-country survey found that privacy, security and control concerns shaped selective sharing. Those findings support a practical requirement for transparent data permissions and clear farmer benefits. They do not demonstrate that all farmers reject sharing or that a particular platform has solved the problem. [H10]
+
+Environmental efficiency and system boundaries
+
+Environmental performance also needs the right boundary. Less irrigation water delivered per hectare is not automatically less water consumed across an entire basin. Likewise, lower product volume in one spraying pass does not by itself establish lower lifetime environmental harm. As an analytical possibility, lower operating costs can encourage expansion, additional cropping or more frequent treatment, offsetting part of an initial saving. This report therefore separates application efficiency, farm-level withdrawal, actual consumption and aggregate resource use where evidence permits. The point is not to assume a rebound in every case. It is to avoid treating a component-level efficiency improvement as a measured system-level outcome without observing what farmers subsequently do.
+
+Adoption indicators have different denominators
+
+Regional adoption measures illustrate how easily the evidence can be overstated. ERS reports that 70% of large-scale US crop-producing farms used guidance or autosteering in 2023. Eurostat reports that just under 18% of eligible EU farms with agricultural area used some precision-farming technology or practice that year, with these farms managing about 44% of covered land. China reported a 76.7% combined crop mechanization rate and more than 300,000 agricultural drones for 2025. These are different technologies, populations and denominators. They cannot produce a defensible league table of national agricultural intelligence. Europe's covered population excludes very small holdings, and China's mechanization indicator measures plowing, sowing and harvesting rather than digital adoption. [H06][H09][H11]
+
+Service models and policy supported delivery
+
+Shared services offer one response to fragmented demand, but their viability is conditional. FAO's earlier global estimates indicate that approximately five in six farms operate less than two hectares; small farms and family farms are not interchangeable categories. Hiring a machine or purchasing a spraying service can reduce each customer's need to own equipment. For the provider, however, success depends on enough nearby paying demand, workable scheduling, transport and maintenance capacity, suitable operators and reliable payment. The same crop calendar that creates demand can concentrate it into a short interval. Subsidies may help acquire equipment, but the subsequent service business should be evaluated using utilization and collected revenue rather than the number of machines funded. [H07]
+
+Policy-supported delivery must also be distinguished from achieved demand. India's February 2026 parliamentary reply reports that Lead Fertilizer Companies had supplied 1,094 drones to women's self-help groups in 2023–24, including 500 counted under Namo Drone Didi; its annexure is labeled as of January 2026. Those figures must not be replaced by the programme's larger target or described as India's national agricultural-drone stock. Operational permission is a separate consideration. In the United States, FAA guidance describes registration, appropriate exemptions and agricultural-operator certification for relevant dispensing operations. A technically capable aircraft still needs an operating organization that can satisfy local requirements. Equipment delivery, legal readiness and sustained paid work are three different milestones. [H12][H15]
+
+The organization needed to keep equipment working
+
+Finally, the limiting capability may be the organization around the machine. FAO identifies financing, digital skills, electricity and connectivity among barriers to inclusive automation. These constraints imply that training, dependable repair, agronomic advice and financing arrangements can be part of the product's practical value. This report's judgment is that durable competition will concern reliable task completion and demonstrable net benefits across actual seasons. Equipment manufacturers, retrofit suppliers, irrigation integrators, digital providers and service organizations may each contribute. The existence of useful technology does not determine which business captures the value. That depends on deployment costs, local relationships and whether the customer can keep using the system after the initial purchase or supported demonstration. [H04]
+
+A transparent model for the utilization threshold
+
+An illustrative calculation clarifies why an impressive field result may not produce a profitable purchase. Let F be annual fixed ownership and support cost; let b be the benefit per hectare after extra variable operating costs; and let A be hectares of completed work in the year. Annual incremental net benefit is A times b minus F, and the break-even area is F divided by b when b is positive. Repeated passes must be counted as work hectares, with savings and costs measured for the same passes. The model is the author's arithmetic framework, not a market estimate or an observed farm result.
+
+Assume, solely for illustration, F equals RMB120,000 per year and b equals RMB120 per work hectare. The break-even point is 1,000 work hectares. At 500, 1,000 and 1,500 work hectares, the corresponding annual incremental amounts are minus RMB60,000, zero and plus RMB60,000. If b falls to RMB60, the threshold doubles to 2,000 work hectares. These inputs are assumptions, not equipment quotations, typical costs or promised savings. A real appraisal must include capital recovery, financing, maintenance, insurance, subscriptions, training and any residual value, while avoiding double counting costs already deducted from b. Capital recovery and financing must use a consistent method so interest is not counted twice.
+
+Annual theoretical capacity can overstate billable work. Rain, fragmented plots, movement between customers, charging or refilling, machine failure and simultaneous crop calendars constrain what can actually be completed. A contractor's appraisal should also include customer acquisition, collection losses and weather-related cancellations. Ownership, retrofit and contracted service should be compared on the same work quality and timing, with an allowance for the cost of missing the agricultural window.
+
+What to verify before scaling a product or service
+
+The preceding evidence supports a conditional commercial conclusion. A supplier is more convincing when it can show repeat paid use across complete seasons, reliable completion during the customer's work window, and costs that remain acceptable after parts, support and financing. For a retrofit provider, compatibility with the installed fleet and access to local service matter alongside the model's detection score. For an irrigation provider, application uniformity, pumping energy and water availability must be examined together. These are the author's evaluation criteria, not a ranking of the named companies.
+
+A practical evaluation should preserve the comparison baseline, crop and soil conditions, treated area, input quantities, quality or yield outcome and full cost record. A renewal rate needs a defined customer cohort; a backlog needs conversion and cancellation terms; connected machines need active paid usage rather than only hardware connectivity. Where those records are absent, the appropriate conclusion is that commercial performance remains unproven for that setting. The industry can expand through several business models, but the evidence does not support one universal device configuration or payback period for all farms.
+
+Completed work hectares	Annual benefit before fixed cost RMB	After fixed cost RMB
+500	60,000	-60,000
+1,000	120,000	0
+1,500	180,000	60,000
+
+
+
+Illustrative assumptions only. F = RMB120,000/year; b = RMB120/work hectare. Author calculation; not market prices, observed results or a forecast.
+
+Appendix Supporting Evidence
+
+The appendix is independent of Parts 1 to 4. IDs connect the claims and figures with actual source locations. Original documents are linked to their publishers; no redistribution right is implied by a public link. Company disclosures, official statistics, field demonstrations, estimates and author analysis have different support limits. All sources were read on 16 October 2026. The source-verified photograph and original report figures are included; third-party research publications are not redistributed.
+
+[H01] See & Spray Customers See 59% Average Herbicide Savings in 2024
+
+Publisher Deere & Company. Published 2024-09-18. Event 2024 growing season; status reported 2024-09-18. Statistical period 2024 growing season. Location Opening two paragraphs; technical description; footnotes * and **. Geography United States; units acre; US gallon of herbicide mix; percentage relative to broadcast spraying. Evidence type Company-reported deployment and estimated operating savings. Read 2026-10-16.
+
+Deere reported that See & Spray had been used on more than one million acres during the 2024 growing season, with average herbicide savings of 59% across US corn, soybean and cotton fields. The percentage compares Premium and Ultimate systems with broadcast spraying. Estimated savings of eight million gallons concern herbicide mix, calculated using an assumed application rate, rather than active ingredient mass. This supports a dated commercial-deployment story and a description of machine vision controlling nozzles. It does not establish independently audited average profitability, universal chemical reductions, or equipment payback periods.
+
+Publisher original
+https://www.deere.ca/en/news/all-news/see-spray-herbicide-savings/
+
+[H02] Precision Spraying Technology
+
+Publisher Iowa State University Extension and Outreach; Doug Houser, Matt Darr and Ryan Huffman. Published 2024-08-22. Event 2024 Iowa soybean field demonstration. Statistical period 2024 growing season. Location Key Points; Herbicide Savings; Table 1; concluding paragraph. Geography Boone and Story counties, Iowa, United States; units acre; percentage; US dollars per acre. Evidence type University extension field-scale demonstration. Read 2026-10-16.
+
+Iowa State reported a demonstration using See & Spray Ultimate on five soybean fields totaling 415 acres. Field-level herbicide savings ranged from 43.9% to 90.6%; the reported overall saving was 76%, with approximately $6,500 in reduced chemical expenditure. Initial weed pressure and earlier residual-herbicide performance affected the results. The article also identifies requirements for boom stability, nozzle control and compatible equipment. These observations support technical feasibility and substantial variation between fields. They do not represent a national randomized trial, a full ownership-cost calculation, or a guarantee of future yields and savings.
+
+Publisher original
+https://crops.extension.iastate.edu/cropnews/2024/08/precision-spraying-technology
+
+[H03] How NASA and John Deere Helped Tractors Drive Themselves
+
+Publisher NASA; Loura Hall. Published 2018-04-18; page updated 2026-06-22. Event Mid-1990s; 2001 licence; 2004 StarFire integration; 2015 licence expiry. Statistical period Historical account, principally 1990s–2015. Location Opening history; A Game of Inches; Autonomous Benefits. Geography United States technology development with international deployment; units Historical dates; positioning technology. Evidence type Participating public agency's historical account. Read 2026-10-16.
+
+NASA describes Deere combining GPS positions and combine-sensor readings in the mid-1990s to map within-field yield variation. It records NavCom licensing JPL correction software in 2001 and Deere integrating NASA ground-station data and software into StarFire receivers in 2004. Deere later developed its own system, allowing the licence to expire in 2015. This supports a specific navigation-development sequence. The same account says operators remained necessary to monitor conditions and avoid collisions. It therefore cannot support claims that these systems already provided unsupervised autonomy, or that Deere invented all precision agriculture.
+
+Publisher original
+https://www.nasa.gov/technology/tech-transfer-spinoffs/how-nasa-and-john-deere-helped-tractors-drive-themselves/
+
+[H04] The State of Food and Agriculture 2022: Leveraging agricultural automation for transforming agrifood systems
+
+Publisher Food and Agriculture Organization of the United Nations. Published 2022. Event Not separately stated. Statistical period Historical synthesis and 27 case studies; no single global survey year. Location Official overview, first three substantive paragraphs. Geography Global; units 27 case studies; qualitative findings. Evidence type International organization research synthesis. Read 2026-10-16.
+
+FAO's official overview places motorized mechanization in a transition underway since the early twentieth century and discusses a newer generation of digital agricultural automation. Its report uses 27 cases to examine adoption in different production systems. The overview identifies limited digital literacy, inadequate connectivity and electricity infrastructure, and financial constraints as barriers, particularly for smaller producers. It supports a broad historical framework and adoption constraints. The cases are not a representative global adoption census. Only the accessible official overview was read successfully; this report does not attribute unread chapter-level statistics to the full publication.
+
+Publisher original
+https://www.fao.org/agrifood-economics/publications/detail/en/c/1613500/
+
+[H05] Precision Agriculture in the Digital Era: Recent Adoption on U.S. Farms
+
+Publisher USDA Economic Research Service; Jonathan McFadden, Eric Njuki and Terry Griffin; EIB-248. Published 2023-02-22. Event Not separately stated. Statistical period 1996–2019 ARMS data, emphasizing changes since 2016. Location Overview, paragraphs 1–2. Geography United States; units Percentage of planted acreage, separately by crop and technology. Evidence type Official survey-based research. Read 2026-10-16.
+
+The ERS report documents digital-agriculture adoption from 1996 to 2019 using the Agricultural Resource Management Survey. Automated guidance covered well over half of planted acreage in the six major crops discussed: corn, cotton, rice, sorghum, soybeans and winter wheat. Maps and variable-rate technologies had substantially different adoption patterns, with selected technologies covering only 5–25% of winter-wheat, cotton, sorghum and rice acreage. This supports uneven historical diffusion by crop and technology. Acreage-based measures are not farm-count adoption rates, the technologies overlap, and the published findings must not be relabeled as measurements for 2026.
+
+Publisher original
+https://ers.usda.gov/publications/105893
+
+[H06] Precision agriculture use increases with farm size and varies widely by technology
+
+Publisher USDA Economic Research Service; Jonathan McFadden and Katherine Lim. Published 2024-12-10. Event Not separately stated. Statistical period 2023 ARMS; published with EIB-283. Location Chart title and text immediately below the chart. Geography United States; units Percentage of crop-producing farms by income-size class. Evidence type Official farm-count adoption statistics. Read 2026-10-16.
+
+ERS reports guidance or autosteering use on 52% of midsize and 70% of large-scale crop-producing farms in 2023. Adoption was generally lower among small family farms, defined by gross cash farm income below $350,000. The article discusses labor saving, fatigue reduction, input costs and environmental considerations as reported motivations. It supports a scale gradient in adoption, not a causal claim that buying technology makes farms large or profitable. Income classes are not hectare classes, and this farm-count measure cannot be directly compared with earlier US acreage-based estimates or with differently defined international indicators.
+
+Publisher original
+https://ers.usda.gov/data-products/charts-of-note/110550
+
+[H07] Small family farmers produce a third of the world's food
+
+Publisher Food and Agriculture Organization of the United Nations. Published 2021-04-23. Event 2021 publication of underlying research. Statistical period Cross-country estimates assembled from different statistical periods. Location Opening substantive paragraphs and explanation distinguishing family farms from small farms. Geography Global; units Farm-count share; share of agricultural land; hectares. Evidence type Official summary of global farm-structure research. Read 2026-10-16.
+
+FAO's account of its farm-structure research states that approximately five in six farms worldwide operate less than two hectares and manage around 12% of agricultural land. It explicitly warns against using family farms and small farms interchangeably, because family enterprises may also be large. These findings support the importance of heterogeneous customers and potential demand for shared equipment services. They do not measure the current purchasing power of small farms or the equipment market's revenue distribution. They are global estimates assembled from differing national data periods, rather than a simultaneous worldwide census conducted in 2021 or 2026.
+
+Publisher original
+https://www.fao.org/newsroom/detail/Small-family-farmers-produce-a-third-of-the-world-s-food/en
+
+[H08] America's Farms and Ranches at a Glance: 2025 Edition, and 2024 farm-structure chart
+
+Publisher USDA Economic Research Service; EIB-299. Published 2026-05-28 (chart); 2026-02-10 (EIB-299). Event Report figure-6 erratum dated 2026-02-17, unrelated to cited structure statistics. Statistical period 2024 ARMS. Location Chart text, first two paragraphs; report metadata at https://www.ers.usda.gov/publications/113786. Geography United States; units Farm-count, operated-land and production-value shares; gross cash farm income. Evidence type Official survey-based farm-structure statistics. Read 2026-10-16.
+
+The chart accompanying EIB-299 reports that small family farms represented approximately 86% of US farms and 17% of production value in 2024. Large-scale family farms represented about 5% of farms but 50% of production value. Size is defined using gross cash farm income, not land area. The report is titled the 2025 Edition but was published in February 2026 and describes 2024 survey data. These statistics support customer segmentation and economic concentration. They do not reveal machinery spending, supplier market shares or technology adoption in 2024. Independently rounded categories need not sum exactly.
+
+Publisher original
+https://www.ers.usda.gov/data-products/charts-of-note/114161
+
+[H09] Agriculture statistics — machinery and digitalisation
+
+Publisher Eurostat, Statistics Explained. Published 2026-07-03 (PDF footer). Event Data extracted May 2026. Statistical period 2023 Farm Structure Survey. Location PDF pages 1 and 3–5; ef_mp_digi and ef_mp_digicr. Geography European Union; units Percentage of eligible farms; utilised agricultural area (UAA). Evidence type Official farm-structure survey statistics. Read 2026-10-16.
+
+Eurostat reports that just under 18% of eligible farms with utilised agricultural area used some precision-farming technology or practice in 2023; these farms managed about 44% of the covered area. Approximately 43% of farms reported internet access and 7% used robotics. The survey subset excludes very small holdings while representing an estimated 98% of UAA and 99% of livestock units. This supports uneven diffusion and its association with farm size. Land managed by adopting farms is not necessarily land treated precisely in every operation, and the broad robotics indicator is not limited to autonomous field robots.
+
+Publisher original
+https://ec.europa.eu/eurostat/statistics-explained/SEPDF/cache/146710.pdf?v=9859768226619617
+
+[H10] The state of digitalisation in EU agriculture: Insights from farm surveys
+
+Publisher European Commission Joint Research Centre; JRC141259. Published 2025-09-16. Event Not separately stated. Statistical period June–October 2024; 1,444 respondents in nine EU Member States. Location Official abstract and bibliographic metadata; DOI 10.2760/4688498. Geography Germany, Ireland, Greece, Spain, France, Italy, Lithuania, Hungary and Poland; units Respondents; qualitative barriers and statistical associations. Evidence type Public research institution's farm survey. Read 2026-10-16.
+
+JRC surveyed 1,444 respondents in nine Member States between June and October 2024. Its public abstract identifies high costs and limited skills as adoption barriers, while larger farms, stronger connectivity and specialized training were associated with greater adoption. Farmers' concerns about privacy, security and control influenced selective data sharing. This supports discussion of implementation services and trusted data governance. It is not a complete EU census or a harmonized global adoption estimate. Statistical associations do not prove causation, and respondents' expected sustainability benefits should not be presented as independently measured changes in resource use or income.
+
+Publisher original
+https://publications.jrc.ec.europa.eu/repository/handle/JRC141259
+
+[H11] Press conference on accelerating agricultural and rural modernization
+
+Publisher Ministry of Agriculture and Rural Affairs of China; State Council Information Office. Published 2026-01-22. Event 2026-01-22. Statistical period 2025 annual review. Location Zhang Xingwang's opening statement, points three and five. Geography China; units Combined mechanization percentage; stock of drones; mu-times of services; households. Evidence type Government annual operating-statistics release. Read 2026-10-16.
+
+The ministry's review of 2025 reports a 76.7% combined mechanization rate for crop plowing, sowing and harvesting, and an agricultural-drone stock exceeding 300,000. It also reports more than 1.1 million commercial entities providing agricultural services. These facts support the scale of mechanization, drones and service organizations in China. The mechanization measure is not an intelligent-equipment adoption rate, drone stock is not annual sales, and service-area totals counted in mu-times include repeat operations. The page's separate drone-operation area lacks sufficient methodological explanation for a comparable penetration calculation, so it is not used for that purpose.
+
+Publisher original
+https://jhs.moa.gov.cn/jjyx/202601/t20260122_6480954.htm
+
+[H12] Distribution of Agricultural Drones under Namo Drone Didi Scheme
+
+Publisher India Ministry of Agriculture and Farmers Welfare, parliamentary reply published by PIB. Published 2026-02-13. Event Not separately stated. Statistical period Annexure as of January 2026; LFC distributions made in 2023–24. Location Opening paragraphs and Annexure I; target context: PIB release 2146922 dated 2025-07-22. Geography India; units Drones distributed to women's self-help groups; crore rupees. Evidence type Government programme funding and administrative distribution. Read 2026-10-16.
+
+The February 2026 parliamentary reply reports that Lead Fertilizer Companies supplied 1,094 drones to women's self-help groups in 2023–24, of which 500 were counted under Namo Drone Didi. Its annexure is labeled as of January 2026. A linked earlier government explanation distinguishes a 15,000-drone overall target from planned subsequent distribution. These sources support a policy-backed service model and the need to separate targets from delivery. The figures do not measure India's entire agricultural-drone fleet, hectares actually served, sustained utilization, or verified net income. The underlying viability study is mentioned but was not read in full.
+
+Publisher original
+https://www.pib.gov.in/PressReleasePage.aspx?PRID=2227743&lang=1&reg=6
+
+[H13] Water-Smart Farming with Per Drop More Crop
+
+Publisher Press Information Bureau, Government of India. Published 2026-08-29. Event Not separately stated. Statistical period Programme coverage through July 2026. Location Opening; Improving Irrigation Efficiency; Progress in Scaling; Strategic Focus. Geography India; units Lakh hectares; subsidy percentages; hectares per beneficiary. Evidence type Government cumulative programme coverage and policy description. Read 2026-10-16.
+
+PIB reports that Per Drop More Crop had covered more than 115 lakh hectares, equivalent to 11.5 million hectares, by July 2026. The programme supports drip and sprinkler irrigation and describes support for fertigation. It offers differentiated assistance for small and marginal farmers and other farmers. This supports policy-driven irrigation-equipment demand and a dated measure of programme coverage. Cumulative supported area is not the entire national installed base, annual additions or verified continuously operating equipment. Since repeat assistance on the same land is permitted after seven years, it should not automatically be treated as unique hectares.
+
+Publisher original
+https://www.pib.gov.in/PressReleasePage.aspx?PRID=2304480&lang=2&reg=48
+
+[H14] Drone-based Weed Mapping for Targeted Spraying
+
+Publisher Iowa State University Extension and Outreach; Doug Houser. Published 2024-12-09. Event 2024 soybean demonstration. Statistical period 2024 growing season. Location Product Savings, paragraphs 1–3 and conclusion. Geography Iowa, United States; units acre; US gallon of tank mix; dollars per acre; bushels per acre. Evidence type University extension field demonstration. Read 2026-10-16.
+
+This demonstration used drone imagery to prepare a weed-control prescription that was executed by a ground sprayer with nozzle control. On 8.7 acres, reported tank-mix use was 70 gallons against a 130.5-gallon broadcast reference, with chemical-cost savings of $13.42 per acre. The authors found no statistically significant yield difference from the broadcast comparison. This supports the feasibility of a sensing-to-prescription-to-ground-application workflow. It does not demonstrate that a spraying drone performed the treatment, prove yield equivalence in all conditions, or establish full-system profitability. Company accuracy claims quoted elsewhere in the article are not university measurements.
+
+Publisher original
+https://crops.extension.iastate.edu/post/drone-based-weed-mapping-targeted-spraying
+
+[H15] Dispensing Chemicals and Agricultural Products (Part 137) with UAS
+
+Publisher US Federal Aviation Administration. Published Page updated 2026-05-05. Event Not separately stated. Statistical period Regulatory guidance available as of 2026-10-16. Location What's an Agricultural Operation; How to Apply, Steps 1 and 4. Geography United States; units Regulatory requirements; 55-pound weight boundary including payload. Evidence type Regulator's official operational guidance. Read 2026-10-16.
+
+FAA explains that Part 137 governs specified agricultural dispensing activities performed by aircraft, including drones. Its guidance describes aircraft registration, remote-pilot requirements, exemptions and Agricultural Aircraft Operator Certificates, with different pathways below and at or above 55 pounds including payload. This supports the existence of material operational-entry requirements beyond buying a drone. It is not evidence of how many operators are profitable or a complete compliance checklist for a particular business. Aviation permissions also do not establish pesticide-label compliance or satisfaction of every state requirement, and US requirements cannot be transferred to other countries.
+
+Publisher original
+https://www.faa.gov/uas/advanced_operations/dispensing_chemicals
+
+[C01] Deere Reports Net Income of $1.065 Billion for Fourth Quarter, $5.027 Billion for Fiscal Year
+
+Publisher Deere & Company. Published 2025-11-26. Event 2025-11-02. Statistical period FY2025 ended 2025-11-02. Location PDF p.7, segment net sales and operating profit; pp.1–5 and Note 3. Geography Global; units USD millions. Evidence type Primary company financial disclosure; outlook separately identified. Read 2026-10-16.
+
+The segment table reports FY2025 Production & Precision Agriculture net sales of US$17,311 million and Small Agriculture & Turf net sales of US$10,224 million. Their operating profits are US$2,671 million and US$1,207 million. The reporting year ended November 2, rather than December 31. Construction & Forestry and Financial Services must remain outside the agriculture comparison; SAT itself includes turf. These are segment sales, not independent precision-agriculture software revenue or global market shares. The source supports the disclosed accounting results, while any explanation of competitive advantage in this report is analytical interpretation.
+
+Publisher original
+https://www.deere.com/assets/pdfs/common/news/deere-4q25-earnings-release.pdf
+
+[C02] Deere Reports Third Quarter Net Income of $1.379 Billion
+
+Publisher Deere & Company. Published 2026-08-20. Event 2026-08-02. Statistical period Nine months ended 2026-08-02; Q3 FY2026. Location PDF pp.1–5 and p.7 segment table. Geography Global; U.S. and Canada industry outlook; units USD millions; percentage change. Evidence type Primary company financial disclosure; management forecast. Read 2026-10-16.
+
+Nine-month PPA sales were US$11,664 million, down 7%, while SAT sales reached US$9,036 million, up 16%. The release also separates the construction and finance businesses. Its U.S./Canada large-agriculture industry outlook of a 15–20% decline is a management forecast for fiscal 2026, not a completed-year statistic. The source demonstrates divergence between product segments during the cycle. Nine-month data are not annualised here, and they are not directly interchangeable with another company's January–June period. Product mix, tariffs and price realization also affect reported results, so sales growth does not measure unit demand alone.
+
+Publisher original
+https://s22.q4cdn.com/253594569/files/doc_financials/2026/q3/DE-3Q26-News-Release.pdf
+
+[C03] CNH Industrial N.V. Reports Fourth Quarter and Full Year 2025 Results
+
+Publisher CNH Industrial N.V.. Published 2026-02-17. Event 2025-12-31. Statistical period CY2025. Location Results for the Full Year 2025 — Agriculture, Construction and Financial Services tables. Geography Global; units USD millions; adjusted EBIT margin. Evidence type Primary company financial disclosure; non-GAAP metric labelled. Read 2026-10-16.
+
+Agriculture net sales were US$12,390 million in 2025, versus US$14,007 million in 2024; Agriculture adjusted EBIT was US$772 million and its adjusted margin was 6.2%. Consolidated revenue and Industrial Activities sales include businesses outside the selected agriculture scope. Financial Services is separately presented. Adjusted EBIT is the issuer's non-GAAP measure and is not identical to gross profit, consolidated net income, or Deere's segment operating profit. These figures can describe company scale and cycle exposure; the source does not supply a compatible worldwide agricultural-equipment market denominator.
+
+Publisher original
+https://investors.cnh.com/news/news-details/2026/CNH-Industrial-N-V--Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx
+
+[C04] CNH Industrial N.V. Reports Second Quarter 2026 Results
+
+Publisher CNH Industrial N.V.. Published 2026-08-03. Event 2026-06-30. Statistical period H1 2026 and Q2 2026. Location Agriculture Q2 and YTD Q2 tables; regional industry demand; 2026 Outlook. Geography Global; North America, EMEA, South America, Asia Pacific; units USD millions; percentages. Evidence type Primary company financial disclosure; company-described industry demand. Read 2026-10-16.
+
+H1 Agriculture net sales were US$5,873 million, compared with US$5,829 million; adjusted EBIT fell to US$197 million and the adjusted margin to 3.4%. The release describes continuing production and dealer-inventory discipline. Its regional industry data use EMEA and horsepower categories, which differ from AGCO's Western Europe and North America definitions. Consequently these figures are not combined into one regional growth series. The release distinguishes reported currency effects from constant-currency changes. Management's full-year guidance remains a forecast and is not used as evidence of realised 2026 annual sales.
+
+Publisher original
+https://investors.cnh.com/news/news-details/2026/CNH-Industrial-N-V--Reports-Second-Quarter-2026-Results/default.aspx
+
+[C05] AGCO Reports Fourth Quarter and 2025 Full Year Results
+
+Publisher AGCO Corporation. Published 2026-02-05. Event 2025-12-31. Statistical period CY2025; CY2024 comparator. Location Opening results; Other revenue note (7); operating-margin reconciliation; About AGCO. Geography Global; units USD millions; percentages. Evidence type Primary company financial disclosure; portfolio adjustment limitation. Read 2026-10-16.
+
+AGCO reported 2025 net sales of US$10,082.0 million, down 13.5%, operating margin of 5.9% and adjusted operating margin of 7.7%. Its majority Grain & Protein business was divested on November 1, 2024; 2024 included US$816.5 million of that business's sales. Therefore the headline decline is not a pure unchanged-portfolio demand measure. Current core brands include Fendt, Massey Ferguson, PTx and Valtra. The source supports the portfolio caveat and reported results, but does not establish an independent worldwide brand-level share or a standalone robot market value.
+
+Publisher original
+https://investors.agcocorp.com/news-releases/news-release-details/agco-reports-fourth-quarter-and-2025-full-year-results
+
+[C06] AGCO Reports Second-Quarter Results
+
+Publisher AGCO Corporation. Published 2026-07-30. Event 2026-06-30. Statistical period H1 2026; Q2 2026. Location H1 net sales; Market Update and footnotes (4), (5), (7); financial-services JV disposal. Geography Global; North America excluding compact tractors; Western Europe; units USD millions; percentages. Evidence type Primary company financial disclosure plus explicitly labelled company estimates. Read 2026-10-16.
+
+H1 sales were US$4,952.6 million, up 5.7% reported and 0.5% excluding currency translation. Mexico moved from North America to renamed LATAM in 2026, with comparatives recast. The market table excludes compact tractors in North America and labels Western Europe figures as company estimates. The 49% interests in the U.S./Canada financing JVs were sold on April 30, 2026. These distinctions prevent regional comparability and finance-income errors. The source does not prove a broad global agricultural-equipment recovery; its sales improvement can coexist with weaker underlying industry categories.
+
+Publisher original
+https://investors.agcocorp.com/news-releases/news-release-details/agco-reports-second-quarter-results-18
+
+[C07] AGCO and Trimble Close Joint Venture, Form PTx Trimble
+
+Publisher AGCO Corporation; Trimble Inc.. Published 2024-04-01. Event 2024-04-01. Statistical period Transaction closing. Location Opening four paragraphs. Geography Global; units Ownership percentages; transaction description. Evidence type Primary transaction announcement; strategic objectives are forward-looking. Read 2026-10-16.
+
+The completed transaction combined Trimble's precision-agriculture business with AGCO's JCA Technologies in PTx Trimble. AGCO owns 85% and Trimble 15%; the JV is consolidated by AGCO. The stated applications cover guidance, autonomy, precision spraying, connected farming and data management, across factory-fit and retrofit use in mixed fleets. This supports the report's discussion of a retrofit platform, rather than treating Trimble's entire corporate revenue as agriculture revenue. Statements about future precision-ag revenue and financial accretion are targets, not realised results; they are excluded from the numerical comparison.
+
+Publisher original
+https://news.agcocorp.com/2024-04-01-AGCO-and-Trimble-Close-Joint-Venture,-Form-PTx-Trimble
+
+[C08] Kubota Financial Results for FY2025
+
+Publisher Kubota Corporation. Published 2026-02-12. Event 2025-12-31. Statistical period CY2025. Location PDF p.4, Breakdown of revenue by business segment. Geography Global; units JPY billions. Evidence type Primary company financial presentation. Read 2026-10-16.
+
+The presentation separates Farm Equipment and Engines revenue of JPY2,003.3 billion from Construction Machinery revenue of JPY625.3 billion in 2025. The broader Machinery segment totals JPY2,628.6 billion. This is a useful scope correction because the Machinery total cannot be described as pure agricultural equipment. Even the narrower product group retains engines and is not an agriculture-only equipment or software measure. Numbers are retained in yen, rather than converted through an arbitrary spot exchange rate. This presentation is used for annual context; the interim securities report supplies additional accounting-scope detail.
+
+Publisher original
+https://www.kubota.com/ir/financial/presentation/data/financial_results_25q4e.pdf
+
+[C09] Kubota Semiannual Securities Report: First Half of the 137th Business Term
+
+Publisher Kubota Corporation. Published 2026-08-07. Event 2026-06-30. Statistical period H1 2026. Location PDF p.3 filing date; PDF p.22 / printed p.19, Note 10 Revenue. Geography Global; units JPY millions. Evidence type Primary securities filing. Read 2026-10-16.
+
+Note 10 shows Farm equipment and engines customer-contract revenue of JPY1,016,157 million in H1 2026. It separately presents other sources of revenue across the group of JPY109,199 million, including interest revenue of JPY84,719 million and insurance revenue of JPY19,645 million. This explains why a product-group customer-contract subtotal and a headline revenue subtotal should not be interchanged. Engines remain in scope even after finance-related sources are excluded. The report uses the narrower disclosed contract-revenue figure for the interim comparison and does not infer an undisclosed pure-farm-machinery value.
+
+Publisher original
+https://www.kubota.com/ir/financial/securities/data/yh137q2e.pdf
+
+[C10] M&M Results Q4 F26 and FY26
+
+Publisher Mahindra & Mahindra Ltd.. Published 2026-05-05. Event 2026-03-31. Statistical period FY2025–26 ended 2026-03-31. Location Farm section and key financials; market-leadership bullets. Geography Farm business global; tractor market-share statement India; units INR crore; percentages. Evidence type Primary company financial disclosure; company-reported share. Read 2026-10-16.
+
+Mahindra's consolidated Farm revenue was INR42,568 crore in FY2026, up 20%; consolidated Farm PAT was INR4,298 crore. One crore equals ten million rupees. The period ended March 31, 2026 and does not match calendar 2025. Consolidated group revenue includes automotive, financial and service businesses and is excluded from the equipment comparison. The company reports 43.6% tractor share, but that company metric is kept separate from FADA's vehicle-registration-based chart. Standalone Farm PBIT and consolidated Farm PAT are different measures, so their margins are not merged or treated as identical.
+
+Publisher original
+https://www.mahindra.com/news-room/press-release/en/m-and-m-results-q4-f26-and-fy26
+
+[C11] First Tractor Company Limited 2025 Annual Report
+
+Publisher First Tractor Company Limited. Published 2026-04-28. Event 2025-12-31. Statistical period CY2025. Location Printed pp.12–15 products/operating modes; p.19 performance; p.27 product table; pp.39–40 market outlook. Geography China and overseas; units RMB ten-thousands in product table; units; percentages. Evidence type Primary annual report; company management interpretation labelled. Read 2026-10-16.
+
+The agricultural-machinery line, covering tractors and components, records RMB989,271 ten-thousands, or RMB9.89271 billion, before inter-segment eliminations; its gross margin is 14.04%. Company tractor sales are 63,744 units in the detailed table; the narrative rounds to 63,700 medium/large tractors. Total group revenue also includes diesel-engine operations and cannot replace the agricultural-machinery line. The report describes dealer sales, CVT/power-shift development and customers' longer payback periods. Market commentary represents company management's assessment, rather than an independent census. Product development or field verification does not establish full-scale driverless deployment.
+
+Publisher original
+https://www.hkexnews.hk/listedco/listconews/sehk/2026/0428/2026042804965.pdf
+
+[C12] Weichai Power 2026 Interim Report Summary
+
+Publisher Weichai Power Co., Ltd.. Published 2026-08-28. Event 2026-06-30. Statistical period H1 2026. Location PDF p.5, Agricultural Equipment Business. Geography China and export business; units Product descriptions; horsepower. Evidence type Primary company filing; issuer product claims. Read 2026-10-16.
+
+The agricultural-equipment section describes Weichai Lovol's high-horsepower tractors, wheat harvesters and tracked harvesters, a 410-hp new-energy ECVT tractor, and field-service developments. These disclosures establish a competitive role spanning powertrains, machines and digital services. Claims of domestic firsts or innovation rankings are issuer statements and are not adopted as independently proven rankings. The report's wider revenues include power systems, commercial vehicles and logistics, so no group total is labelled agricultural-equipment sales. The source does not provide a compatible pure-agriculture revenue figure for this table; the comparison uses products instead.
+
+Publisher original
+https://static.cninfo.com.cn/finalpage/2026-08-28/1225522040.pdf
+
+[C13] DJI Agriculture Global Adoption Report Announcement 2025/2026
+
+Publisher DJI Agriculture. Published 2026-04-29. Event 2026-04-29. Statistical period Agricultural-drone stock: end-2025. Deployment geography and service/repair network: described in the 2026-04-29 announcement; separate cutoffs not stated.. Location Date and subheading; opening paragraph; following paragraph specifying the end-2025 drone stock. Geography 100+ countries and regions; units DJI agricultural drones; service/repair centres. Evidence type Primary company operational disclosure; not independently audited market census. Read 2026-10-16.
+
+DJI's 29 April 2026 announcement states that more than 600,000 DJI agricultural drones were already in use globally by the end of 2025. It separately describes deployment across more than 100 countries and regions and a network of 3,500 service and repair centres worldwide, without specifying separate reporting cutoffs for those geographic and network figures. The drone count is vendor-reported installed/in-use stock, not annual shipments, industry-wide sales, or an independently audited market-share denominator. No revenue is inferred from drone counts. Environmental-savings headlines are omitted from the competitive table because cumulative methodologies and counterfactual assumptions would require separate evaluation. The source supports ecosystem-scale analysis while retaining the status and dates of the company's disclosures.
+
+Publisher original
+https://www.dji.com/media-center/announcements/dji-global-adoption-51mt-saves-410mts-farmers
+
+[C14] XAG P150 Agricultural Drone
+
+Publisher XAG. Published Not disclosed on product page; accessed by cutoff. Event Product specification as accessed 2026-10-16. Statistical period Current disclosed P150 specification at cutoff; not a financial year. Location Product introduction, RevoSpray, modular design, controller/network and specification footnotes. Geography Global product page; local approvals vary; units kg; litres; functions. Evidence type Primary vendor product specification; laboratory/conditional limits. Read 2026-10-16.
+
+The official P150 page describes spraying, spreading and field mapping, a maximum payload of 70 kg and a 70-litre liquid tank. It also discusses modular transport, variable-rate application and connectivity/offline arrangements. These are vendor specifications with operating conditions and footnotes, not proof of average farm throughput, lifetime economics or regulatory approval in every country. The page displays no publication date, which is explicitly recorded rather than invented; it was read at the research cutoff. No private-company revenue, market share or unverified cross-model performance comparison is supplied.
+
+Publisher original
+https://www.xa.com/en/p150
+
+[C15] Lindsay Corporation Reports Fourth Quarter and Fiscal Year 2025 Results
+
+Publisher Lindsay Corporation. Published 2025-10-23. Event 2025-08-31. Statistical period FY2025 ended 2025-08-31. Location Full-Year Summary; Summary Operating Results; backlog paragraph; About the Company. Geography Global; North America and International; units USD thousands in detailed tables. Evidence type Primary earnings release filed as SEC exhibit. Read 2026-10-16.
+
+The detailed table gives irrigation revenue of US$568.000 million and irrigation operating income of US$96.963 million. Corporate revenue of US$676.368 million includes infrastructure. The irrigation segment also encompasses parts, tubing and technology services. Group backlog at August 31, 2025 was US$110.7 million, versus US$180.9 million; management attributes most of the decline to deliveries on a large MENA irrigation project. Backlog is an unfilled-order stock, not revenue, and the disclosed group backlog is not relabelled irrigation-only. Zimmatic, FieldNET and FieldWise establish the equipment-plus-control offering.
+
+Publisher original
+https://www.sec.gov/Archives/edgar/data/836157/000119312525247621/lnn-ex99_1.htm
+
+[C16] Valmont Fourth Quarter and Full-Year 2025 Results
+
+Publisher Valmont Industries, Inc.. Published 2026-02-17. Event 2025-12-27. Statistical period 52 weeks ended 2025-12-27. Location FY Summary Operating Results, geographic/product table and intersegment eliminations; Q4 highlights; Backlog. Geography Global; units USD thousands; USD millions for backlog. Evidence type Primary company financial disclosure. Read 2026-10-16.
+
+Agriculture segment sales were US$1,020.750 million before intersegment eliminations, or US$1,014.370 million after agriculture-related eliminations; the report uses the former with an explicit label. Infrastructure remains excluded. The company states that Prospera was wound down during 2025 and links a tax benefit to the investment loss. That benefit is not evidence of successful software commercialisation. Agriculture backlog was US$105.4 million at year-end, separately from infrastructure backlog. This document supports both scope discipline and the observation that an agricultural AI investment can fail commercially; it does not establish that all digital-farming products are unprofitable.
+
+Publisher original
+https://investors.valmont.com/news-releases/news-release-details/valmont-reports-fourth-quarter-gaap-eps-905-and-adjusted-eps-492
+
+[C17] Valmont Reports Second Quarter 2026 Results and Raises Full-Year Guidance
+
+Publisher Valmont Industries, Inc.. Published 2026-07-21. Event 2026-06-27 (second quarter ended). Statistical period Q2 2026. Location Agriculture segment review; outlook clearly separated. Geography Global; North America and International; units USD millions; percentages. Evidence type Primary company financial disclosure; management explanation. Read 2026-10-16.
+
+Valmont reports Q2 Agriculture segment sales of US$243.7 million, down 15.8%, with North America irrigation sales down 2.3% and international sales down 28.9%. Management links the international decline primarily to Middle East disruption. These are company segment figures and explanations, not an independent global irrigation-market growth rate. The result provides a later checkpoint after FY2025, while the quarter is not annualised. Announced 2026 revenue guidance is forecast information. The scope still includes irrigation equipment, aftermarket parts, tubular products and technology; it must not be portrayed as pure software or robot sales.
+
+Publisher original
+https://investors.valmont.com/news-releases/news-release-details/valmont-reports-second-quarter-2026-results-and-raises-full-year
+
+[C18] Simplifying Farming: The Role of GrowSphere in Precision Irrigation
+
+Publisher Netafim; Ofer Oveed, SVP Head of Technology & Crops. Published 2025-01-16. Event 2025-01-16. Statistical period Product/workflow description and customer example; no financial period. Location Byline and product-workflow paragraphs following the coffee-farm example. Geography Global offering; Brazil example; units Functions; no market-size unit. Evidence type Primary vendor product description and customer marketing case. Read 2026-10-16.
+
+The article describes combining irrigation/fertigation scheduling, execution monitoring, alerts and soil, weather and plant information within GrowSphere. It supports the distinction between collecting farm data and using it to control an operation. The coffee-farm example is a vendor-authored case, rather than a controlled trial. Claims such as world first, improved yield or maximised profit are not adopted as proven general outcomes. No Netafim-specific revenue is inferred from parent-company results. The source establishes a product role and workflow, but not independent market share, average subscription revenue or a universal financial return.
+
+Publisher original
+https://www.netafim.com/en/blog/simplifying-farming-the-role-of-growsphere-in-precision-irrigation
+
+[C19] Precision Ag - AGCO 2025 Annual Review
+
+Publisher AGCO Corporation. Published Not separately disclosed on the strategy page; read by cutoff. Event 2025 innovation activities as described in the annual review. Statistical period 2025 innovation review; late-2026 commercial-launch expectation is forward-looking. Location 2025 Innovation Highlights: Crop protection and Harvesting. Geography Global product/strategy description; units Product functions and development stages; no standalone robot revenue. Evidence type Primary company annual-review strategy page; product descriptions and forward-looking launch timetable. Read 2026-10-16.
+
+AGCO's 2025 annual-review strategy page describes RowPilot's AI-based crop/weed discrimination and OutRun's retrofit, remotely managed grain-cart role. It separately states that tillage and fertilizer kits were tested in 2025 and expected to launch commercially in late 2026. The latter is a company timetable, not verified rollout. The page provides no standalone robot revenue, installed base or independently measured task economics.
+
+Publisher original
+https://www.agcocorp.com/us/en/home/annual_report/our-strategy/precision-ag.html
+
+[M01] FADA Releases FY'26 and March'26 Vehicle Retail Data
+
+Publisher Federation of Automobile Dealers Associations (FADA). Published 2026-04-06. Event 2026-04-02 (data collation). Statistical period FY2025-26 (1 April 2025–31 March 2026). Location PDF p. 2: publication date and fiscal period; p. 17: Tractor OEM FY'26 Market Share and disclaimer; p. 8: April 2025–March 2026 monthly sequence. Geography India, FADA reporting coverage; excludes TS; units tractors; percent of covered retail units. Evidence type Association compilation of vehicle retail data in collaboration with India's Ministry of Road Transport & Highways; observed units, not forecasts. Read 2026-10-16.
+
+The FY2025-26 table reports 1,050,077 tractors across nine OEM/division categories. The units sum exactly to the published total. Coverage is 1,463 of 1,466 RTOs and the table excludes TS; this coverage count is not a guarantee of complete nationwide tractor-sales coverage. Others contains OEMs below 1% share. Chart sectors use raw unit counts; published shares, which match independently recalculated shares rounded to two decimal places, total 100.01%. The source's separate Mahindra Tractor and Swaraj rows are retained. This is an India tractor retail submarket and cannot establish global company shares or shares by revenue. The official PDF's tractor table and coverage disclaimer are on page 17.
+
+Publisher original
+https://fada.in/images/press-release/169d329fc83770FADA%20releases%20FY%202026%20and%20March%202026%20Vehicle%20Retail%20Data.pdf
+
+[M02] Market and Economic Trends in the Ag Tech Industry
+
+Publisher VDMA Agricultural Machinery / Dr. Tobias Ehrhard. Published 2025-09-22. Event 2025-09-22 (presentation); August 2025 (data vintage). Statistical period 2024 historical chart; 2025* and 2026* forecasts. Location PDF p. 13: TOP 4 – WORLDWIDE MARKET; 2024 regional labels, annual-average exchange-rate assumption and starred forecast notes. Geography Global agricultural machinery, regional definitions as shown in the source; units billion euros. Evidence type Association market estimate/chart; 2025–2026 values are forecasts, not realized outcomes. Read 2026-10-16.
+
+This slide provides a dated machinery-scale benchmark and scope limitation; it is not the market-share chart's basis. The nine rounded 2024 regional labels are 40.5, 2.1, 4.9, 18.0, 13.4, 3.1, 31.2, 10.6 and 20.5 billion euros, summing to 144.3. No standalone 2024 total is printed: 144.3 is calculated from rounded labels, not a directly published exact total. No region is adjusted or normalized. Coverage of every drone, irrigation, standalone robotics or software category is not specified, so this machinery market cannot equal the full report scope. Starred 2025–2026 columns are contemporaneous extrapolations. The slide states annual-average exchange rates and regional extrapolation assumptions. Public readability does not establish redistribution rights.
+
+Publisher original
+https://www.agritechnica.com/fileadmin/redaktion/downloads/Presse/EN/Market_and_economic_Trends_in_the_ag_tech_industry_Dr_Tobias_Ehrhard.pdf
+
+[I01] USDA photograph 20210413-FPAC-LSC-0810: Frick Farms field equipment
+
+Publisher U.S. Department of Agriculture; photographer Lance Cheung. Published 2021-06-10 (uploaded). Event 2021-04-13 (taken). Statistical period Not applicable; historical photograph. Location Individual photo caption, taken/uploaded dates and Public Domain licence link; official /sizes/4k/ page lists actual 4096 × 2731 version and largest original 8256 × 5504.. Geography Frick Farms, northeast Texas, United States; units Pixels; historical photograph. Evidence type Official real photograph; visual illustration with verified public-domain marking. Read 2026-10-16.
+
+The selected photograph shows planter row units and a tractor in a field. The USDA individual-photo caption identifies Frick Farms in northeast Texas, credits Lance Cheung, and records capture on 13 April 2021 and upload on 10 June 2021. Its licence link is Public Domain Mark 1.0. The official 4K image was downloaded and visually inspected at 4096 × 2731 pixels; the size page lists an 8256 × 5504 largest original, which was not downloaded. The cover and source JPEG are identical unaltered files. The photograph illustrates agricultural equipment, not the 2024 spraying demonstration or measured 2026 technology performance. It implies no USDA or manufacturer endorsement.
+
+Publisher original
+https://www.flickr.com/photos/usdagov/51239108928/in/album-72157719397230701
+
+全球农业科技与装备产业研究报告
+
+完整中文审核稿  1.0版  公开资料截止2026年10月16日
+
+
+
+Frick Farms 田间播种机与拖拉机，美国得克萨斯州东北部，2021年4月13日。USDA 摄影：Lance Cheung。公共领域标记1.0。 [I01]
+
+农业科技与装备把动力、位置数据、作物观察和农艺决策转化为田间作业。本报告研究全球农业机械、精准农业、农用无人机与机器人、灌溉及数字农业，重点比较中国、北美、欧洲和印度。种子、植保化学品及生物技术作为关联投入出现，其完整产业不纳入核心市场边界。
+
+证据显示，这是一个商业结果取决于农业生产体系的产业。大型整机平台、存量设备改装、专业灌溉系统和外包田间作业面向不同买家。一项技术在某块田减少投入，并不保证足以覆盖购置和运行成本。因此，报告把产品能力与季节利用率、服务可得性及农场经济性联系起来，并区分企业经营表现与技术效果主张。
+
+正文四个部分依次讨论可核实的行业故事、发展历史、产业链与市场格局，以及经营问题。企业表保留各自的期间、币种及业务口径。份额图仅覆盖FADA的印度拖拉机零售登记分类，统计期为2025至26财年。独立的材料证明附录记录每项来源支持什么、日期及限制，并区分材料发布日期、观察期与财务报告期。
+
+P1 行业故事
+
+靶向喷施为何在不同田块得到不同结果
+
+2024 年 8 月 22 日，Iowa 州立大学农技推广团队公布了一套商业视觉喷施系统在五块合计 415 acre 的大豆田上的示范结果。结果并不整齐：各田除草剂节约为 43.9%—90.6%。此前的杂草管理，以及施药时的杂草压力，有助于解释这种差异。这是一项能观察实际作业条件的田间规模示范，而非全国代表性试验。最有启发性的发现不仅是可以少施药，而是同一套装备在不同田间条件中也可能产生明显不同的节约。[H02]
+
+任务听起来直接：识别杂草，在喷雾机经过时开启对应喷嘴。实际过程连接了感知、分类和物理执行。建议只有在机器于适当位置和时间行动时才形成价值。稳定喷杆高度、适当喷嘴和单喷嘴控制都是系统的一部分。大学文章在报告节约之外，也说明这些实际要求。对购买者而言，摄像头与软件必须和喷雾机、设备配置以及操作员维持稳定施药的能力一起评估。[H02]
+
+商业部署也开始显现。2024 年 9 月 18 日，Deere 报告 See & Spray 当季作业超过 100 万 acre，在美国玉米、大豆和棉田相对全幅喷施平均节约除草剂 59%。这是企业对特定版本技术的作业披露，并非独立审计每位客户回报后的估计。大学示范和厂家部署资料回答不同问题：前者揭示有记录的当地条件下效果如何变化，后者说明技术已超出展会样机阶段。[H01]
+
+这个故事体现产业重心的变化：农业装备越来越需要判断哪里应当行动，而不仅是更快重复动作。但成功示范没有结束商业论证。单个种植者仍要把药剂节约和劳动收益，与购置、融资、服务和运行成本比较。本文的分析判断是，商业价值的单位是具有可观察结果、已经完成的农业任务。传感器、模型或订阅的意义，取决于它们能否在农场约束内可靠改善任务。
+
+P2 行业历史
+
+机动机械扩大作业能力
+
+第一阶段替代或放大体力劳动。机动装备扩大了整地、播种、植保和收获能力。FAO 将机械化描述为自 20 世纪初以来的转变，同时承认它带来生产率、劳动收益及环境代价。历史上有用的区分，是提供动力与提供判断。拖拉机提供牵引并驱动机具，本身并不决定每个位置的最佳农艺处理。后来的技术通常加在这一生产基础上，并没有消除发动机、机具、维护和操作能力的重要性。因此，行业历史更适合被理解为能力累积，而不是每项新技术都消灭上一项技术。[H04]
+
+定位与自动导航的发展
+
+第二阶段加入位置和重复作业能力。NASA 的历史记述显示，Deere 在 1990 年代中期结合 GPS 位置和联合收获机传感数据，识别田内产量差异。NavCom 于 2001 年取得 JPL 修正软件许可，Deere 于 2004 年把 NASA 参考站信息及 JPL 软件接入 StarFire。这是某条重要发展路径中有记录的步骤，并非某一家企业发明整个领域。精确导航使稳定行驶和地理定位记录更实际，也说明术语为何重要：同一篇 NASA 记述明确仍需操作员监视条件和避碰。自动导航改善辅助与重复精度，不应被追溯写成无人监督自主作业。[H03]
+
+地图与变量施用的差异化扩散
+
+第三阶段把测量连接到差异化管理。产量图、土壤信息和变量施用，使田内差异成为生产决策的输入。采用过程并不同步。ERS 覆盖 1996—2019 年的研究显示，在美国若干主要作物上，自动导航的普及明显高于部分地图及变量技术；其中包含播种面积指标，必须和采用农场数区分。由此可以推论，一套技术上完整的数字流程可能分段扩散。导航收益较容易直接观察，而变量处理还需要可用的农艺处方、兼容施用设备，以及改变剂量能够形成充分经济价值的信心。[H05]
+
+机器视觉连接感知与执行
+
+第四阶段让感知更接近行动发生处。Iowa 喷施故事是一例，另一条流程则先用无人机影像确定杂草位置，再让地面喷雾机进入田间。Iowa 州立大学于 2024 年 12 月发表的示范，把航空影像连成可执行处方，再交给有喷嘴控制的喷雾机；感知飞机和施药机器是不同资产。区分二者，可以避免夸大农业无人机实际完成的工作。更广泛地说，航空感知、地面感知、机器人与传统机器可以互补。完全自主机器是一种架构，改善现有机群决策的服务也可能创造价值。[H14]
+
+联网设备与灌溉系统
+
+第五阶段将装备、数据和支持组织为持续运行的系统。农场管理软件可以连接记录与计划，联网控制器可以将决策转成反复作业。灌溉提供另一条路径：泵、过滤器、管道、滴头、监测和调度须共同运行。印度 Per Drop More Crop 支持滴灌、喷灌并讨论水肥一体化，表明农业技术政策并不限于自主车辆。PIB 称其截至 2026 年 7 月累计支持面积超过 1,150 万 ha；这属于项目覆盖，并非持续运行安装量。进一步的分析是，设备获得数字功能后，集成与持续运营更加重要，单一部件销售只描述生产体系的一部分。[H13]
+
+P3 市场格局
+
+市场规模与重复计算风险
+
+VDMA于2025年9月发布的演示稿提供了一个农机规模参照。其中2024年的九个地区已舍入标签相加为1,443亿欧元，即约1,440亿欧元。这是作者对来源图中地区值的加总，并非原文直接印出的精确总计。材料没有证明其范围与本报告所有灌溉、无人机、独立机器人及数字服务类别完全对应。图中带星号的2025年和2026年数值是当时作出的预测，本报告不把它们当作截止日已观察到的实际结果。[M02]
+
+更广产业的收入不能通过农机估计、精准农业估计和农业软件估计直接相加得到。导航硬件可能已计入拖拉机价格，机器订阅可能已纳入OEM分部，承包商收入又可能包含同一台设备的使用。因此，本报告以农机参照说明规模，以企业已披露业务分析竞争，以定义明确的零售子市场绘制份额图，不从不兼容的数据推导统一的全球收入总额或全行业增长率。[M02]
+
+产业链 把信息转成完成的田间作业
+
+产业链上游包括动力、传动、感知、定位、控制与连接。田间作业既需要物理作业能力，也要在粉尘、振动和复杂地形下反复做出可靠决策。一拖的拖拉机、柴油机、变速器、车桥、铸件体现垂直整合；其无人及混动产品也说明整机企业越来越需要软件与控制能力。脑图表达企业角色分类，连线不代表任意两家公司之间存在已核实供货合同。[C11]
+
+中游把这些能力组合成三个相互重叠的方案：田间装备、精准控制与自主作业、灌溉与水肥系统。迪尔、CNH、AGCO、久保田、Mahindra、一拖、潍柴雷沃产品结构不同；PTx Trimble提供导航及后装控制，大疆农业和极飞提供空中喷洒、播撒或测绘，Lindsay、Valmont、Netafim把输水硬件和控制结合。同一企业可以跨多个分支。种子和植保化学品在本文中是关联投入品，不加入农业装备收入分母。[C01][C03][C05][C07][C08][C10][C11][C12][C13][C14][C15][C16][C18]
+
+下游农户、合作社、作业承包商通过经销和服务网络购买或租用作业能力。更有分析价值的单位是“在农时内完成的任务”：整地、下种、处理作物、供水、收获。装备、备件、维修、融资、数字服务可通过不同收入模式共同支持任务。大疆披露的维修网络与Lindsay装备加控制组合，说明售后应纳入竞争分析。存量设备形成服务机会，但并不自动证明存在经常性软件收入。[C13][C15]
+
+企业规模 保留边界的比较
+
+财务比较保留原币、报告期和分部定义。迪尔FY2025生产与精准农业（PPA）销售173.11亿美元、小型农业与草坪（SAT）销售102.24亿美元，后者包含草坪；CNH 2025自然年农业销售123.90亿美元。这些数字说明经营规模，但不能归一化成全产业份额：财年日期不同，部分分部含非农业产品，样本也不是完整企业总体。能分开的建筑和金融业务单独剔除。[C01][C03]
+
+AGCO 2025销售100.82亿美元、同比下降13.5%，但2024比较期包含2024年11月1日出售的大部分谷物与蛋白业务8.165亿美元收入。把全部降幅解释为需求下降，会混淆组合变化和周期变化。2024年成立PTx Trimble也意味着不能把当前精准农业结构直接回推历史；该并表合营由AGCO持85%、Trimble持15%。[C05][C07]
+
+久保田2025较窄的农用设备与发动机类别收入20,033亿日元，仍包含发动机。2026半年证券报告列出该产品组客户合同收入10,161.57亿日元，并把集团利息、保险等另源收入单独列示。Mahindra止于2026年3月31日财年的合并Farm收入为42,568 crore卢比。各项披露在自身边界内有效；任意换汇或给财年换标签，都不能使它们变成完全相同的市场。[C08][C09][C10]
+
+精准农业 后装升级与整机更新
+
+精准农业让竞争问题从“谁卖拖拉机”扩展到“谁控制存量机群中的关键作业”。PTx Trimble的混合品牌、前装与后装定位提供一种路径：客户不必立即更换所有整机，就可增加导航、控制或自动化。本文判断，互操作可扩大可服务设备基础，同时安装、标定、售后和兼容性变成产品组成部分。合营公告证明战略方向，不证明每一品牌型号都兼容，也不证明未来营收目标已实现。[C07]
+
+数字农业也有不同控制深度：记录平台描述发生了什么，导航系统控制行驶，变量系统改变施用，灌溉控制器按计划开阀。Netafim介绍的GrowSphere把田间信息、水肥计划、执行监测和预警相连接。商业检验在于信息能否可靠改变重要决策。增加录入负担的看板，其经济性可能弱于避免错过作业窗口的小幅控制升级。这是分析框架，不是对列名产品的实测性能排名。[C18]
+
+无人机与机器人 部署规模只是生意的一部分
+
+大疆于2026年4月29日披露，截至2025年末全球已有超过60万台农业无人机投入使用。公告还描述设备覆盖100多个国家和地区、全球服务维修网络3,500家，但未分别指定这两项地域及网络数据的独立统计截止日。这些数据可用于分析生态规模，但仍是厂商披露数量，不是年度出货或行业普查。极飞P150展示了以空中模块化平台执行喷洒、播撒、测绘的方案；最大载荷70千克，最大值及测试条件不能转换成平均商业生产率。本次读取材料中，两家公司都没有可直接比较的农业业务营收。[C13][C14]
+
+地面自动化执行的任务与空中喷洒不同。AGCO介绍，PTx Trimble OutRun通过后装套件赋予现有拖拉机自主运粮能力，并由联合收割机操作员远程管理运粮车。PTx RowPilot利用AI区分作物和杂草，执行自主除草。这些是明确的作业角色，不证明不受场景限制的全无人农业。同一年度回顾称，自主耕作和施肥套件已于2025年测试，预期2026年末全面商业发布；截至本报告截止日，该时间表仍属公司预期，不能视为已完成商业推广。[C19]
+
+本文认为，应将空中和地面自动化看作包括运输、充换电或加油、补给、维修、人员监督、当地许可的作业系统。承包商可能把固定成本分摊给多个客户，单个农场可能利用不足。自主程度提高会减少驾驶，也可能把劳动转向监督和物流。应比较当地条件下每项完成作业的成本与质量，而非只看机器人标称能力。演示证明指定场景能力，不等于普遍无人化。[C12][C14]
+
+灌溉 硬件、控制与项目执行
+
+灌溉经济性把耐用装备与反复执行的水分、养分控制结合。Lindsay的Zimmatic、FieldNET、FieldWise连接灌溉机械和远程管理；FY2025灌溉收入5.680亿美元，不能用含基础设施的集团6.764亿美元替代。Valmont FY2025农业分部内部抵销前销售10.20750亿美元，其基础设施另列；Netafim体现水肥调度控制切入点。它们在农场结果上重叠，但装备、项目、软件收入组合不同。[C15][C16][C18]
+
+项目节奏可主导结构性需求良好市场中的季度表现。Lindsay大型MENA灌溉项目交付后，集团订单存量由1.809亿美元降至1.107亿美元；存量下降本身不等于收入崩塌。Valmont Q2 2026农业销售降15.8%，管理层将国际市场主要弱势归因于中东扰动。本文判断，缺水形成需求，而融资、项目准备及执行决定采购；节水农艺逻辑仍强，供应商也可能出现弱季度。[C15][C17]
+
+四个地区 不同的采纳经济性
+
+北美：对于已经拥有机械化机群的客户，机会往往在更新、提高利用率和精准升级，当前周期也使支付能力更加重要。迪尔全球分部FY2026前九个月PPA销售降7%、SAT增16%；CNH全球上半年农业销售大致持平，调整后盈利却走弱。笼统说农业装备复苏会遗漏分化。本文商业含义是同时考察后装、维修和整机销售的经济性，区分经销去库存与农户实际作业需求变化。[C02][C04]
+
+欧洲：不能只看一个区域总数。AGCO估计2026上半年西欧拖拉机零售增3%，但其欧洲/中东区域第二季度恒汇率销售下降；CNH的欧洲、中东和非洲需求又使用不同地域和期间，不能当成同一市场的矛盾指标。本文认为应分开看国家、作物、畜牧敞口、设备类别、渠道库存。对专业农场或承包商，农具兼容及当地维修可能比最大作业面积更重要，区域平均需求不能替客户做采购判断。[C04][C06]
+
+中国：竞争兼有农机升级和农业服务商经济性。一拖描述作物收益偏弱、回本期延长，购机主体向家庭农场、合作社及服务组织转移；潍柴雷沃披露的大马力、收获机和ECVT进展，说明国内竞争已超出低价传统拖拉机。本文判断应区分平原高吞吐系统与丘陵、碎片地块；更好的传动、当地服务及可靠作业可能先于全无人化决定价值。田间试验、发布与全国采用统计保持区分。[C11][C12]
+
+印度：商业模式受可负担机械化及分摊购机成本的能力影响。Mahindra FY2026 Farm增长体现了不同于北美大型装备疲弱的周期。对于较小用户，租机或购买完成的服务可能比拥有所有资产更实际；这是商业模式分析，不是说所有农户都采用代耕。已批准的FADA图表只表示明确的拖拉机登记子市场；不把Mahindra另行披露的43.6%份额替换进去，因为报告渠道及分母可能不同。[C10] [M01]
+
+利润、订单与竞争优势的持续性
+
+收入、盈利、订单回答不同问题。CNH 2025农业调整后息税前利润（EBIT）率为6.2%（非GAAP指标），2026上半年为3.4%；AGCO 2025报表营业利润率5.9%、调整后7.7%；一拖披露的农机利润率则是毛利率，不能画成同一种利润指标排名。去库存、产能利用率、关税、信用成本、经销支持，均可在新技术商业价值显现前影响盈利。[C03][C04][C05][C11]
+
+技术不自动带来成功的平台生意。Valmont披露2025年收缩关停Prospera，相关税收利益对应投资损失，并不说明软件成功；反过来，备件服务需求延续也不代表自主设备迅速普及。本文认为持续优势来自可靠完成任务、经济升级路径、渠道、维修及客户用得起的融资。优势可能在整机、后装控制器、灌溉系统或当地作业服务中，须由留存、利用率及经济结果证明，不能从AI标签推断。[C06][C16]
+
+可衡量的竞争案例 印度拖拉机零售市场
+
+印度拖拉机零售市场提供了一个可以观察的竞争案例。FADA记录的2025-26财年拖拉机零售量为1,050,077台。其OEM表中，马恒达拖拉机类别占23.81%，Swaraj部门占18.76%；随后依次为International Tractors 12.76%、TAFE 11.27%、Escorts Kubota农业机械集团10.90%、约翰迪尔印度7.63%、Eicher Tractors 6.21%、凯斯纽荷兰工业印度4.49%，以及其他OEM 4.18%。图表保留FADA的原始分类，不在未说明的情况下合并为母公司集团。[M01]
+
+这里的分母是FADA所覆盖的印度拖拉机零售台数，并非全球农业装备销量。数据截至2026年4月2日汇总，覆盖1,466个RTO中的1,463个，不含TS；份额低于1%的OEM归入其他。图扇区按台数绘制，两位小数百分比因舍入合计为100.01%。该图应作为印度拖拉机子市场的比较，并保留来源的地区及登记覆盖限制。[M01]
+
+上述数字不能外推为全球企业份额或行业收入份额。拖拉机的功率、尺寸和价格有差异，研报更广的范围还包括精准农业技术、无人机、农用机器人、灌溉和数字服务。这些活动可能同时存在于同一台机器或同一家企业中，直接加总不同定义的市场可能重复计算价值。因此，全球企业对比表分别报告各自披露的业务口径和期间，份额图则回答现有证据能够支持的更窄问题。VDMA的另一份农机市场演示稿也未给出与这一更广范围完全匹配的完整定义。[M01][M02]
+
+
+
+图1 农业科技与装备产业链脑图
+
+
+
+与P3一致的示例产业链。连线表示角色与产品分类，不证明供货合同、背书或市场份额；企业可以跨环节。代表例子并不穷尽，来源及可编辑层级随图交付。
+
+
+
+图2 印度拖拉机零售登记OEM份额 2025至26财年
+
+
+
+印度拖拉机零售登记OEM份额，2025至26财年（2025年4月1日至2026年3月31日）。FADA覆盖量1,050,077台；排除Telangana州（TS）；截至2026年4月2日汇总1,466个地区交通登记机构（RTO）中的1,463个。扇区使用整数台数，显示份额因舍入合计100.01%，保留来源分类。这是印度拖拉机子市场，不是全球农业科技份额。来源[M01]第17页。
+
+OEM	零售登记台数	份额
+马恒达（拖拉机部门）	249,973	23.81%
+马恒达（Swaraj部门）	196,975	18.76%
+International Tractors	134,030	12.76%
+TAFE	118,326	11.27%
+Escorts Kubota（农业机械集团）	114,468	10.90%
+约翰迪尔印度（拖拉机部门）	80,086	7.63%
+Eicher Tractors	65,215	6.21%
+凯斯纽荷兰工业（印度）	47,122	4.49%
+其他	43,882	4.18%
+
+
+
+
+
+表1 全球企业对比
+
+各企业业务边界、币种和期间不同。本表比较已披露经营业务，不是市场份额排名。集团总额、设备销售、金融服务及收购或剥离业务须分别理解。
+
+企业	业务角色	披露指标与期间	比较限制
+Deere	田间整机与精准农业	FY2025净销售：PPA 173.11亿美元、SAT 102.24亿美元；FY2026前九月分别116.64亿和90.36亿美元。
+FY2025截至2025-11-02；九个月截至2026-08-02	SAT含草坪；剔除建筑林业与金融；并非独立数字业务收入。 [C01] [C02]
+CNH	农业机械及相关技术	农业净销售：2025自然年123.90亿美元，2026上半年58.73亿美元。
+2025自然年；2026上半年截至2026-06-30	仅农业分部，建筑与金融剔除；调整后EBIT为非GAAP。 [C03] [C04]
+AGCO / PTx	农机及混合品牌机群精准后装、自动化	净销售2025年100.82亿美元，2026上半年49.526亿美元。
+2025自然年；2026上半年	2024比较期含已出售G&P；PTx Trimble并表且持85%；2026区域边界重分类。 [C05] [C06] [C07]
+Kubota	农用设备与发动机，另有工程机械	农用设备及发动机2025收入20,033亿日元；2026上半年该产品组客户合同收入10,161.57亿日元。
+2025自然年；2026上半年	含发动机；全年头部收入与中期客户合同范围不同。不把广义机械及金融另源收入当纯农机。 [C08] [C09]
+Mahindra & Mahindra	拖拉机及Farm业务	合并Farm收入42,568 crore卢比，同比增长20%。
+2025至26财年，截至2026-03-31	1 crore=1,000万卢比；集团汽车、金融剔除，公司份额不与FADA零售登记互换。 [C10]
+First Tractor / Weichai Lovol	中国动力传动、拖拉机与收获系统	一拖2025农机行收入98.9271亿元、毛利率14.04%；雷沃采用已披露ECVT及收获产品比较。
+一拖2025自然年；雷沃2026上半年产品披露	一拖农机行内部抵销前；不以潍柴集团收入反推雷沃农机收入。 [C11] [C12]
+DJI Agriculture / XAG	农业无人机与空中田间作业	大疆：截至2025年末农业无人机使用存量超过60万台；2026年4月公告另披露服务维修中心3,500家。极飞P150最大载荷70千克。
+大疆无人机存量截至2025年末，公告于2026-04-29；极飞页面读取于2026-10-16	属于经营存量和附条件参数，不是营收、年度出货或市场份额。 [C13] [C14]
+Lindsay	灌溉装备、备件与远程控制	灌溉收入5.68000亿美元，分部营业利润0.96963亿美元。
+2025财年截至2025-08-31	剔除基础设施，仍含管材及技术服务；财年与同业不同。 [C15]
+Valmont	中心支轴/平移灌溉、备件及技术	FY2025农业分部抵销前销售10.20750亿美元，Q2 2026公告值2.437亿美元。
+52周截至2025-12-27；2026第二季截至2026-06-27	不是集团总收入或纯软件；2025农业相关内部抵销后外部销售10.14370亿美元。 [C16] [C17]
+Netafim	精准灌溉、水肥与GrowSphere控制	功能比较：调度、执行监控、预警与田间信息；不采用未核实独立营收。
+官方产品文章发表于2025-01-16	厂商产品介绍及客户案例，不是对照试验或独立市场份额。 [C18]
+
+
+
+
+
+P4 行业问题
+
+总拥有成本与农时窗口
+
+总拥有成本是第一项检验。购买者应将购置、融资和残值假设年化，再加上订阅、连接、维护、零件更换、培训及新增操作劳动。比较基准应是实际服务面积上的可信节约或新增产出，避免的药剂支出只是其中一项。客户分层和机器性能同样重要：美国 2024 年数据显示，大型家庭农场约占户数 5%，却创造约 50% 农业产值。这种集中说明，仅统计潜在农场客户数，不足以估计昂贵设备需求。但它也没有揭示农场机械支出，不能据此转换成供应商收入预测。[H08]
+
+第二项检验是季节时间约束。农机往往因在作物和田间需要时完成任务而有价值。因此，本文区分理论每小时能力与实际可用窗口内完成的公顷数。客户间转场、装液、充电或换电、清洗、标定和维修都可能减少生产时间。小机器在单块田可能表现良好，但服务大片区域或需更多台数及精细调度；反过来，大机器也可能难以经济地服务碎片化土地。这些是评估条件，并非普遍量化结论；正确比较需要当地作业计划和实际完工记录。
+
+识别失误与作业可靠性
+
+第三项检验是失误管理。分类模型可能漏掉目标，也可能把作物、残茬或背景误认成目标。商业后果取决于错误类型、发现速度及能否补救，因此识别准确率标题数字不足以比较生产体系。试验应报告相关田间条件、漏施与多施、作物伤害、防治效果以及重复上门成本。采购中关键的是，感知或执行失败时由谁承担风险。能提供监测、干预和明确补救的供应商，可能比只展示较高实验室分数、却不解释运营失误的供应商更有用。
+
+设备互通与农场数据控制
+
+互通性是第四项约束。农场可能混用不同年份和厂家的设备，一项工具的有效输出必须能成为另一项工具可用的输入。这涉及田界、设备设定、处方格式、权限及历史记录取回能力，并不意味着所有客户都需要无限制的共同平台，而是应理解连接系统及更换服务商的成本。JRC 九国调查发现，隐私、安全和控制顾虑影响选择性分享。这支持数据权限透明、农户收益明确的实际要求，并不说明所有农户拒绝分享，或某个平台已经解决问题。[H10]
+
+环境效率与系统边界
+
+环境表现也需要适当边界。每公顷灌入更少水，不自动意味着整个流域耗水更少；单次喷施产品用量降低，也不能单独证明生命周期环境伤害下降。从分析上说，运营成本降低可能鼓励扩种、增加种植轮次或更频繁处理，抵消部分最初节约。因此，有证据时应区分施用效率、农场取水量、实际消耗及总资源使用。这并非预设每个案例都有反弹，而是避免未观察农户后续行为，就把部件效率改善写成已测得的系统结果。
+
+采用指标的分母不同
+
+区域采用指标说明证据多么容易被夸大。ERS 报告 2023 年美国大型作物生产农场中 70% 使用导航或自动转向；Eurostat 报告同年欧盟符合门槛且有农业利用面积的农场中，不足 18% 使用某种精准农业技术或实践，这些农场经营约 44% 的覆盖土地。中国报告 2025 年耕种收综合机械化率 76.7%，农用无人机超过 30 万架。技术、群体和分母均不同，无法形成可信的国家农业智能化排名。欧洲统计排除极小农场，中国机械化指标衡量耕、种、收而非数字采用。[H06][H09][H11]
+
+服务模式与政策支持的交付
+
+共享服务能够回应需求碎片化，但生存条件明确。FAO 较早的全球估计显示，约六分之五农场经营不足 2 ha，小农场与家庭农场不可互换。租机或购买喷施服务，可以降低每位客户持有设备的需要；但服务商要有足够近距离付费需求、可行调度、运输维修能力、合适操作员和可靠收款。同样的作物日历创造需求，也可能把需求压在短时段。补贴可以帮助购机，但后续服务业务应以利用率和已收收入评估，而非获资助机器数量。[H07]
+
+政策支持的交付也应与已经实现的需求区分。印度 2026 年 2 月国会答复报告，主要化肥公司于 2023 至 24 年度向妇女自助组织提供 1,094 架无人机，其中 500 架计入 Namo Drone Didi，附表标截至 2026 年 1 月；不能用更大目标替换这些实际数字，或将其写成印度全国农业无人机保有量。运营许可是另一层条件。美国 FAA 指南规定相关播撒运营所需的注册、适当豁免与农业经营人证书。技术合用的飞机仍需要能满足当地要求的运营组织；设备交付、合法就绪和持续付费作业是三种不同里程碑。[H12][H15]
+
+维持设备运行所需的组织能力
+
+最后，限制能力可能在机器周围的组织。FAO 将融资、数字技能、电力与连接列为普惠自动化的障碍。这意味着培训、可靠维修、农艺建议及融资安排，都可能构成产品实际价值。本文判断，持续竞争将围绕真实农季中的可靠任务完成和可证明净收益展开。整机企业、改装商、灌溉集成商、数字服务商及农业服务组织都可能参与。有用技术的存在，不决定哪类企业获得价值；这还取决于部署成本、当地关系，以及客户在首次购买或资助示范之后能否继续使用系统。[H04]
+
+利用率门槛的透明测算
+
+一个示例测算可以解释，为什么出色的田间效果不一定带来盈利的购置决策。设F为年度固定持有与支持成本，b为扣除额外变动作业成本后的每公顷收益，A为全年完成的作业公顷数，则年度增量净收益等于A乘b再减F；当b为正时，盈亏平衡作业面积等于F除以b。重复作业须按作业公顷计量，收益与成本必须对应同一批作业。该模型是作者的算术分析框架，不是市场估计或已观察到的农场结果。
+
+仅为演示，假设F为每年人民币120,000元，b为每作业公顷人民币120元，盈亏平衡点就是1,000作业公顷。全年完成500、1,000、1,500作业公顷，对应年度增量金额为负60,000元、零、正60,000元。若b降为人民币60元，门槛便升至2,000作业公顷。这些输入是假设，不是设备报价、典型成本或节约承诺。实际评估还须纳入资本回收、融资、维修、保险、订阅、培训和可能的残值，并避免把已经从b中扣除的成本再计一次。资本回收与融资应采用一致方法，避免重复计算利息。
+
+年度理论产能可能高估可收费作业量。降雨、地块零碎、客户间转场、充电或补液、设备故障，以及作物农时重合，都会限制实际完成量。承包商还须考虑获客、回款损失和天气取消订单。自购、改装与外包服务应在相同作业质量和时效下比较，并计入错过农时窗口的成本。
+
+扩大产品或服务规模前需要核查什么
+
+前述证据支持的是有条件的商业判断。当供应商能展示完整农季内的重复付费使用、在客户农时内可靠完成作业，以及计入零件、支持和融资后仍可接受的成本，其商业说服力更强。改装服务商除了识别模型评分，还要证明与存量设备的兼容及本地服务可得性；灌溉服务商则须同时考察施水均匀度、抽水能耗和水源条件。这些是作者的评价标准，不是对文中企业的排名。
+
+实际评估应保留比较基准、作物与土壤条件、作业面积、投入数量、质量或产量结果，以及完整成本记录。续费率需要明确客户队列；在手订单需要转换和取消条款；联网设备需要区分硬件联接与活跃付费使用。缺少这些记录时，应认定其在相应条件下的商业表现仍未得到证明。产业可通过多种模式扩展，但现有证据不支持所有农场通用的设备配置或回收期。
+
+全年完成作业公顷数	扣固定成本前年度收益 元	扣固定成本后年度收益 元
+500	60,000	-60,000
+1,000	120,000	0
+1,500	180,000	60,000
+
+
+
+仅为假设示例。F为每年人民币120,000元，b为每作业公顷人民币120元。作者计算，不是市场价格、实测结果或预测。
+
+附录 材料证明
+
+本附录独立于P1至P4。编号将正文主张及图表对应至实际来源位置。原始文件链接到出版方，公开链接不等于取得再分发权。企业披露、官方统计、田间示范、估计与作者分析具有不同证明边界。来源均于2026年10月16日读取。审核包包含有使用依据的实拍照片及原创数据图，不再分发第三方研究原文件。
+
+[H01] See & Spray 客户 2024 年平均除草剂节约 59%
+
+机构 Deere & Company。发布日期 2024-09-18。事件日期 2024生长季；2024-09-18披露进展。统计期 2024生长季。定位 开篇两段、技术说明及 *、** 脚注。范围 美国；单位 英亩；混合除草药液的美制加仑数；相对全幅喷施的百分比。证据性质 企业披露的部署情况及估算作业节约。读取日期2026-10-16。
+
+Deere 报告称，2024 生长季 See & Spray 作业超过 100 万 acre，在美国玉米、大豆及棉田平均节约除草剂 59%。该比例比较 Premium、Ultimate 系统与全幅喷施。800 万加仑节约是按假设施药量估算的混合药液，并非有效成分质量。本源支持具有明确日期的商业部署故事及机器视觉控制喷嘴的机制，不能证明独立审计的平均利润、普遍节药幅度或设备回本期。
+
+出版方原文
+https://www.deere.ca/en/news/all-news/see-spray-herbicide-savings/
+
+[H02] 精准喷施技术
+
+机构 Iowa State University Extension and Outreach; Doug Houser, Matt Darr and Ryan Huffman。发布日期 2024-08-22。事件日期 2024年Iowa大豆田示范。统计期 2024生长季。定位 要点、Herbicide Savings、表 1 及末段。范围 美国Iowa州Boone县及Story县；单位 英亩；百分比；美元/英亩。证据性质 大学农技推广机构的田间规模示范。读取日期2026-10-16。
+
+Iowa 州立大学报告了 See & Spray Ultimate 在五块大豆田、合计 415 acre 的示范。各田除草剂节约 43.9%—90.6%，整体约 76%，药剂开支减少约 6,500 美元；初始杂草压力及前期残效药表现影响结果。文章也说明喷杆稳定、喷嘴控制及设备兼容要求。这些观察支持技术可行性与田块间显著差异，不能代表全国随机试验、完整总拥有成本，或未来产量与节约保证。
+
+出版方原文
+https://crops.extension.iastate.edu/cropnews/2024/08/precision-spraying-technology
+
+[H03] NASA 与 John Deere 如何推动拖拉机自动导航
+
+机构 NASA; Loura Hall。发布日期 2018-04-18；页面更新于2026-06-22。事件日期 1990年代中期；2001年许可；2004年接入StarFire；2015年许可到期。统计期 历史记述，主要涵盖1990年代至2015年。定位 开篇历史、A Game of Inches、Autonomous Benefits。范围 美国技术开发及国际部署；单位 历史日期；定位技术。证据性质 参与该项目的公共机构所作历史记述。读取日期2026-10-16。
+
+NASA 记述 Deere 在 1990 年代中期结合 GPS 位置与收获传感数据绘制田间产量差异图，NavCom 于 2001 年获 JPL 修正软件许可，Deere 于 2004 年把 NASA 参考站数据和软件接入 StarFire。Deere 后来自研系统，许可于 2015 年到期。本源支持这条具体导航发展时间线；同文说明仍需操作员监视状况并避碰，不能证明当时已实现无人监督自主作业，也不能证明 Deere 发明全部精准农业。
+
+出版方原文
+https://www.nasa.gov/technology/tech-transfer-spinoffs/how-nasa-and-john-deere-helped-tractors-drive-themselves/
+
+[H04] 2022 年粮食及农业状况：利用农业自动化推动农业粮食体系转型
+
+机构 Food and Agriculture Organization of the United Nations。发布日期 2022。事件日期 未单独标明。统计期 历史综合研究及27项案例；无单一全球调查年份。定位 官方概要前三个实质段落。范围 全球；单位 27项案例；定性发现。证据性质 国际组织的综合研究。读取日期2026-10-16。
+
+FAO 官方概要将机动机械化放在 20 世纪初以来的长期转变中，并讨论新一代数字农业自动化。报告以 27 案例分析不同生产体系中的采用，指出数字技能不足、连接与电力基础设施薄弱以及融资约束，尤其制约小规模生产者。本源支持宏观历史框架和采用障碍；案例并非全球代表性采用普查。本次成功读取的是官方概要，不将未读全文的章节数字归入已核证据。
+
+出版方原文
+https://www.fao.org/agrifood-economics/publications/detail/en/c/1613500/
+
+[H05] 数字时代的精准农业：美国农场近期采用情况
+
+机构 USDA Economic Research Service; Jonathan McFadden, Eric Njuki and Terry Griffin; EIB-248。发布日期 2023-02-22。事件日期 未单独标明。统计期 1996–2019年ARMS数据，重点讨论2016年以来的变化。定位 Overview 第 1—2 段。范围 美国；单位 按作物与技术分别统计的播种面积百分比。证据性质 基于官方调查的研究。读取日期2026-10-16。
+
+ERS 使用农业资源管理调查，记录 1996—2019 年数字农业采用。报告涉及的玉米、棉花、水稻、高粱、大豆及冬小麦，自动导航均已覆盖明显超过一半的播种面积；地图与变量技术扩散情况不同，冬小麦、棉花、高粱及水稻的部分技术仅覆盖 5%—25% 面积。本源支持技术和作物间采用差异的历史观察。面积采用率不是农场数采用率，技术可重叠，不能把这些结果改标为 2026 年测量。
+
+出版方原文
+https://ers.usda.gov/publications/105893
+
+[H06] 精准农业采用随农场规模上升，并因技术而异
+
+机构 USDA Economic Research Service; Jonathan McFadden and Katherine Lim。发布日期 2024-12-10。事件日期 未单独标明。统计期 2023年ARMS调查；随EIB-283发表。定位 图标题及图下正文。范围 美国；单位 按收入规模分组的作物生产农场采用比例。证据性质 官方按农场数量统计的技术采用数据。读取日期2026-10-16。
+
+ERS 报告 2023 年中型、大型作物生产农场采用导航或自动转向的比例分别为 52%、70%。小型家庭农场以年现金总收入不足 35 万美元定义，采用普遍较低；农户提及节省劳动、减轻疲劳、降低投入及环境考虑。本源支持规模与采用之间的梯度，不证明购买技术使农场扩大或盈利。收入分组不等于公顷分组，农场数口径不能直接比较美国较早的面积估计或国际不同定义指标。
+
+出版方原文
+https://ers.usda.gov/data-products/charts-of-note/110550
+
+[H07] 小型家庭农场生产世界约三分之一食物
+
+机构 Food and Agriculture Organization of the United Nations。发布日期 2021-04-23。事件日期 相关研究于2021年发表。统计期 汇集不同统计期资料的跨国估计。定位 开篇实质段落及家庭农场和小农场的术语说明。范围 全球；单位 农场数量占比；农业土地占比；公顷。证据性质 全球农场结构研究的官方概要。读取日期2026-10-16。
+
+FAO 对农场结构研究的介绍称，全球约六分之五农场经营不足 2 ha，合计经营约 12% 农业土地；文章明确提醒家庭农场与小农场不能互换，因为家庭经营也可能规模很大。本源支持客户异质性及共享装备服务的潜在意义，不能测量小农当前购买力或装备市场收入分布。它是依据各国不同统计期资料形成的全球估计，并非 2021 或 2026 年同时进行的世界普查。
+
+出版方原文
+https://www.fao.org/newsroom/detail/Small-family-farmers-produce-a-third-of-the-world-s-food/en
+
+[H08] 美国农牧场概览 2025 版及 2024 年农场结构图
+
+机构 USDA Economic Research Service; EIB-299。发布日期 2026-05-28（图表）；2026-02-10（EIB-299）。事件日期 报告图6的勘误发布于2026-02-17，与所引用的结构统计无关。统计期 2024年ARMS调查。定位 图下正文前两段；报告元数据见 https://www.ers.usda.gov/publications/113786。范围 美国；单位 农场数量、经营土地及生产价值占比；农场现金总收入。证据性质 基于官方调查的农场结构统计。读取日期2026-10-16。
+
+EIB-299 配套图显示，2024 年小型家庭农场约占美国农场数 86%、产值 17%；大型家庭农场约占户数 5%、产值 50%。规模按现金总收入而非土地面积定义。报告名为 2025 版，实际于 2026 年 2 月出版，描述 2024 年调查资料。这些统计支持客户分层和生产价值集中，不能揭示机械开支、供应商份额或 2024 技术采用率。各项独立四舍五入，合计可能有偏差。
+
+出版方原文
+https://www.ers.usda.gov/data-products/charts-of-note/114161
+
+[H09] 农业统计：机械与数字化
+
+机构 Eurostat, Statistics Explained。发布日期 2026-07-03（PDF页脚）。事件日期 数据提取于2026年5月。统计期 2023年农场结构调查。定位 PDF 第 1、3—5 页；ef_mp_digi 和 ef_mp_digicr。范围 欧盟；单位 符合统计门槛的农场比例；农业利用面积（UAA）。证据性质 官方农场结构调查统计。读取日期2026-10-16。
+
+Eurostat 报告，2023 年符合统计门槛且有农业利用面积的农场中，不足 18% 使用某种精准农业技术或实践，这些农场经营约 44% 的覆盖面积。约 43% 农场报告互联网，7% 使用机器人。该子集排除极小农场，但覆盖估计 98% 农业利用面积和 99% 畜牧单位。本源支持扩散不均及与规模相关；采用农场经营土地并非每项作业都精准处理，广义机器人指标也不局限于自主田间机器人。
+
+出版方原文
+https://ec.europa.eu/eurostat/statistics-explained/SEPDF/cache/146710.pdf?v=9859768226619617
+
+[H10] 欧盟农业数字化状况：农场调查的洞见
+
+机构 European Commission Joint Research Centre; JRC141259。发布日期 2025-09-16。事件日期 未单独标明。统计期 2024年6–10月；欧盟九个成员国1,444名受访者。定位 官方摘要及书目信息；DOI 10.2760/4688498。范围 德国、爱尔兰、希腊、西班牙、法国、意大利、立陶宛、匈牙利及波兰；单位 受访者人数；定性障碍及统计关联。证据性质 公共研究机构的农场调查。读取日期2026-10-16。
+
+JRC 在 2024 年 6—10 月调查九个成员国 1,444 名受访者。公开摘要指出高成本和技能不足阻碍采用，较大农场、更好连接与专项培训和较高采用相关；隐私、安全与控制顾虑影响农户选择性共享数据。本源支持实施服务与可信数据治理的讨论，不是完整欧盟普查或统一全球采用估计。统计关联不证明因果，受访者预期的可持续收益不能写成独立测得的资源使用或收入变化。
+
+出版方原文
+https://publications.jrc.ec.europa.eu/repository/handle/JRC141259
+
+[H11] 加快农业农村现代化新闻发布会实录
+
+机构 Ministry of Agriculture and Rural Affairs of China; State Council Information Office。发布日期 2026-01-22。事件日期 2026-01-22。统计期 2025年度回顾。定位 张兴旺开场介绍第三、第五点。范围 中国；单位 综合机械化百分比；无人机保有量；服务面积亩次；户数。证据性质 政府年度经营统计发布。读取日期2026-10-16。
+
+农业农村部回顾 2025 年时报告，农作物耕种收综合机械化率 76.7%，农用无人机保有量超过 30 万架，开展农业社会化服务的经营性主体超过 110 万个。这支持中国机械化、无人机与服务组织的规模判断。综合机械化率不是智能装备采用率，保有量不是年销量，亩次服务面积包含重复作业。该页另列的无人机年作业面积缺少足以比较的口径说明，因此不用于计算渗透率。
+
+出版方原文
+https://jhs.moa.gov.cn/jjyx/202601/t20260122_6480954.htm
+
+[H12] Namo Drone Didi 计划农业无人机发放情况
+
+机构 India Ministry of Agriculture and Farmers Welfare, parliamentary reply published by PIB。发布日期 2026-02-13。事件日期 未单独标明。统计期 附表截至2026年1月；LFC发放发生于2023–24年度。定位 开篇及附录 I；目标背景见 2025-07-22 PIB 公告 2146922。范围 印度；单位 向妇女自助组织发放的无人机架数；crore卢比。证据性质 政府项目资助及行政发放统计。读取日期2026-10-16。
+
+2026 年 2 月国会书面答复称，主要化肥公司于 2023 至 24 年度向妇女自助组织发放 1,094 架无人机，其中 500 架计入 Namo Drone Didi；附表标截至 2026 年 1 月。此前政府解释区分总体 15,000 架目标与后续拟发放量。这些资料支持政策推动的服务模式及目标与交付须分开，不能代表印度全部农业无人机、实际服务面积、持续利用率或已验证净收入。文中提及经济性研究，但本次未读完整研究。
+
+出版方原文
+https://www.pib.gov.in/PressReleasePage.aspx?PRID=2227743&lang=1&reg=6
+
+[H13] Per Drop More Crop 推动节水农业
+
+机构 Press Information Bureau, Government of India。发布日期 2026-08-29。事件日期 未单独标明。统计期 项目覆盖截至2026年7月。定位 开篇、Improving Irrigation Efficiency、Progress in Scaling、Strategic Focus。范围 印度；单位 lakh公顷；补助百分比；每位受益人的公顷数。证据性质 政府累计项目覆盖统计及政策说明。读取日期2026-10-16。
+
+PIB 报告截至 2026 年 7 月，Per Drop More Crop 累计覆盖超过 115 lakh ha，即 1,150 万 ha。计划支持滴灌、喷灌及水肥一体化，并对小型/边际农户与其他农户提供不同补助。本源支持政策驱动的灌溉设备需求和有日期的项目覆盖规模。累计支持面积不是全国全部安装存量、年度新增或持续在用设备；同地七年后可重复申请，也不能自动视为不重复公顷。
+
+出版方原文
+https://www.pib.gov.in/PressReleasePage.aspx?PRID=2304480&lang=2&reg=48
+
+[H14] 基于无人机杂草地图的靶向喷施
+
+机构 Iowa State University Extension and Outreach; Doug Houser。发布日期 2024-12-09。事件日期 2024年大豆田示范。统计期 2024生长季。定位 Product Savings 前三段及结论。范围 美国Iowa州；单位 英亩；混合药液的美制加仑数；美元/英亩；蒲式耳/英亩。证据性质 大学农技推广机构的田间示范。读取日期2026-10-16。
+
+该示范用无人机影像制作除草处方，再由有喷嘴控制的地面喷雾机执行。8.7 acre 使用混合液 70 gal，全幅参考为 130.5 gal，化学品成本减少 13.42 美元/acre；作者未检出与全幅比较组有显著产量差异。本源支持感知—处方—地面施用流程可行，不证明喷药无人机实施了处理、各种条件下产量等效或全系统盈利。文中转引的企业识别准确率也不是大学测量。
+
+出版方原文
+https://crops.extension.iastate.edu/post/drone-based-weed-mapping-targeted-spraying
+
+[H15] 使用无人机播撒化学品及农业产品的 Part 137 要求
+
+机构 US Federal Aviation Administration。发布日期 页面更新于2026-05-05。事件日期 未单独标明。统计期 截至2026-10-16可获取的监管指南。定位 What's an Agricultural Operation；How to Apply 第 1、4 步。范围 美国；单位 监管要求；含载荷55磅的重量界线。证据性质 监管机构的官方作业指南。读取日期2026-10-16。
+
+FAA 说明 Part 137 管理包括无人机在内的航空器特定农业播撒活动。指南描述注册、遥控驾驶员要求、豁免及农业航空经营人证书；含载荷不足 55 lb 与不低于 55 lb 的路径不同。本源证明购买无人机之外存在实质运营准入要求，不能证明盈利经营人数，也不是某项业务完整合规清单。航空许可不能证明符合农药标签及所有州级要求，美国要求不能套用于其他国家。
+
+出版方原文
+https://www.faa.gov/uas/advanced_operations/dispensing_chemicals
+
+[C01] 迪尔2025财年及第四季度业绩公告
+
+机构 Deere & Company。发布日期 2025-11-26。事件日期 2025-11-02。统计期 FY2025，截至2025-11-02。定位 PDF第7页分部销售及营业利润；第1—5页、注3。范围 全球；单位 百万美元。证据性质 企业一手财务披露；展望另行标注。读取日期2026-10-16。
+
+分部表披露FY2025生产与精准农业净销售额173.11亿美元、小型农业与草坪102.24亿美元，营业利润分别26.71亿和12.07亿美元。财年止于11月2日，并非自然年。建筑与林业、金融服务须从农业比较中剔除；SAT本身仍包含草坪。上述数据属于分部销售，并非独立精准农业软件收入，也不能直接转成全球份额。来源支持已披露会计结果，竞争优势判断属于本文分析。
+
+出版方原文
+https://www.deere.com/assets/pdfs/common/news/deere-4q25-earnings-release.pdf
+
+[C02] 迪尔2026财年第三季度业绩公告
+
+机构 Deere & Company。发布日期 2026-08-20。事件日期 2026-08-02。统计期 截至2026-08-02的九个月；FY2026第三季度。定位 PDF第1—5页、第7页分部表。范围 全球；美国及加拿大行业展望；单位 百万美元；变化百分比。证据性质 企业一手财务披露；管理层预测。读取日期2026-10-16。
+
+前九个月PPA销售116.64亿美元，同比下降7%；SAT为90.36亿美元，同比增长16%。公告另列建筑、金融业务。美国/加拿大大型农业装备FY2026行业下降15%—20%的数字是管理层预测，并非已完成全年统计。来源证明不同分部周期分化。本报告不将九个月数据年化，也不与他企1—6月数据直接等同；结构、关税、售价同样影响收入，销售增速不等于销量变化。
+
+出版方原文
+https://s22.q4cdn.com/253594569/files/doc_financials/2026/q3/DE-3Q26-News-Release.pdf
+
+[C03] CNH 2025年全年与第四季度业绩
+
+机构 CNH Industrial N.V.。发布日期 2026-02-17。事件日期 2025-12-31。统计期 2025自然年（CY2025）。定位 2025全年业绩之Agriculture、Construction和Financial Services表。范围 全球；单位 百万美元；调整后EBIT利润率。证据性质 企业一手财务披露；非GAAP指标已标注。读取日期2026-10-16。
+
+2025年农业分部净销售额123.90亿美元，2024年为140.07亿美元；农业调整后EBIT为7.72亿美元、调整后利润率6.2%。集团营收及工业业务销售仍包含本次农业范围之外的业务，金融分列。调整后EBIT是公司非GAAP指标，不能等同毛利、集团净利润或迪尔分部营业利润。数据可说明企业规模及周期压力，不提供可匹配的全球农机市场分母。
+
+出版方原文
+https://investors.cnh.com/news/news-details/2026/CNH-Industrial-N-V--Reports-Fourth-Quarter-and-Full-Year-2025-Results/default.aspx
+
+[C04] CNH 2026年第二季度业绩
+
+机构 CNH Industrial N.V.。发布日期 2026-08-03。事件日期 2026-06-30。统计期 2026上半年及2026第二季度。定位 农业季度及上半年表、各区域行业需求段落、2026展望。范围 全球；北美、欧洲/中东/非洲（EMEA）、南美及亚太；单位 百万美元；百分比。证据性质 企业一手财务披露；企业对行业需求的描述。读取日期2026-10-16。
+
+2026上半年农业净销售额58.73亿美元，上年同期58.29亿美元；调整后EBIT降至1.97亿美元、利润率3.4%。公司继续控制生产和经销库存。区域行业数据使用EMEA及马力分类，与AGCO西欧、北美定义不同，不能拼接成同一增长序列。公告区分报表汇率效应及恒定汇率变化；全年指引仍为预测，不作为2026全年实际收入。
+
+出版方原文
+https://investors.cnh.com/news/news-details/2026/CNH-Industrial-N-V--Reports-Second-Quarter-2026-Results/default.aspx
+
+[C05] AGCO 2025全年与第四季度业绩
+
+机构 AGCO Corporation。发布日期 2026-02-05。事件日期 2025-12-31。统计期 2025自然年（CY2025）；2024自然年（CY2024）比较期。定位 开篇业绩、其他收入注7、营业利润率调节表及About AGCO。范围 全球；单位 百万美元；百分比。证据性质 企业一手财务披露；存在业务组合调整的比较限制。读取日期2026-10-16。
+
+AGCO 2025销售100.820亿美元，同比下降13.5%；营业利润率5.9%，调整后7.7%。大部分谷物与蛋白业务于2024年11月1日出售，2024仍包含该业务8.165亿美元收入，因此同比下降并非同一业务边界下的纯需求变化。现有核心品牌包括Fendt、Massey Ferguson、PTx及Valtra。来源不提供独立全球品牌份额或机器人市场规模。
+
+出版方原文
+https://investors.agcocorp.com/news-releases/news-release-details/agco-reports-fourth-quarter-and-2025-full-year-results
+
+[C06] AGCO 2026年第二季度业绩
+
+机构 AGCO Corporation。发布日期 2026-07-30。事件日期 2026-06-30。统计期 2026上半年；2026第二季度。定位 上半年销售、Market Update及注4/5/7、金融合营处置。范围 全球；北美口径排除紧凑型拖拉机；西欧；单位 百万美元；百分比。证据性质 企业一手财务披露及已明确标注的企业估计。读取日期2026-10-16。
+
+上半年销售49.526亿美元，报表增5.7%、剔除汇率增0.5%。2026年墨西哥从北美重分类至更名后的LATAM，比较期追溯调整。北美行业表排除紧凑型拖拉机，西欧数据明确为公司估计。美国/加拿大金融合营49%股权于2026年4月30日售出。这些差异用于防止地域和金融口径错误；销售改善不证明全球农机行业全面复苏。
+
+出版方原文
+https://investors.agcocorp.com/news-releases/news-release-details/agco-reports-second-quarter-results-18
+
+[C07] AGCO与Trimble完成合营交易成立PTx Trimble
+
+机构 AGCO Corporation; Trimble Inc.。发布日期 2024-04-01。事件日期 2024-04-01。统计期 交易交割时点。定位 开篇四段。范围 全球；单位 持股百分比；交易说明。证据性质 一手交易公告；战略目标属于前瞻性表述。读取日期2026-10-16。
+
+交易将Trimble精准农业业务与AGCO的JCA Technologies组合成PTx Trimble，AGCO持85%、Trimble持15%，由AGCO并表。披露应用涵盖导航、自主作业、精准喷洒、互联及数据管理，面向混合品牌设备的前装与后装。可支持后装平台分析，不能把Trimble集团收入全算成农业收入。未来收入及增厚盈利的表述属于目标，不计入实际数字比较。
+
+出版方原文
+https://news.agcocorp.com/2024-04-01-AGCO-and-Trimble-Close-Joint-Venture,-Form-PTx-Trimble
+
+[C08] 久保田2025全年业绩说明资料
+
+机构 Kubota Corporation。发布日期 2026-02-12。事件日期 2025-12-31。统计期 2025自然年（CY2025）。定位 PDF第4页分部及产品组收入拆分。范围 全球；单位 十亿日元。证据性质 企业一手财务演示资料。读取日期2026-10-16。
+
+2025年农用设备与发动机收入20,033亿日元，工程机械6,253亿日元；较广义机械分部合计26,286亿日元。不能把整个机械分部称为纯农机；较窄产品组仍含发动机，也不是纯农业装备或软件口径。数据保留日元，不以任意即期汇率换算排名。全年资料用于背景，2026半年证券报告补充会计边界。
+
+出版方原文
+https://www.kubota.com/ir/financial/presentation/data/financial_results_25q4e.pdf
+
+[C09] 久保田第137期上半年证券报告
+
+机构 Kubota Corporation。发布日期 2026-08-07。事件日期 2026-06-30。统计期 2026上半年。定位 PDF第3页申报日期；PDF第22页/印刷第19页注10收入。范围 全球；单位 百万日元。证据性质 一手证券申报文件。读取日期2026-10-16。
+
+注10列示2026上半年农用设备与发动机客户合同收入10,161.57亿日元；集团另源收入1,091.99亿日元，其中利息847.19亿、保险196.45亿日元。这说明产品组客户合同小计与头部收入小计不能互换。剔除金融相关另源收入后，发动机仍在范围内；本文采用较窄已披露合同收入，不反推未披露纯农机收入。
+
+出版方原文
+https://www.kubota.com/ir/financial/securities/data/yh137q2e.pdf
+
+[C10] Mahindra & Mahindra 2026财年及第四季度业绩
+
+机构 Mahindra & Mahindra Ltd.。发布日期 2026-05-05。事件日期 2026-03-31。统计期 FY2025–26，截至2026-03-31。定位 Farm分项、核心财务及市场地位要点。范围 Farm业务为全球；拖拉机市场份额表述针对印度；单位 crore印度卢比；百分比。证据性质 企业一手财务披露；企业披露的份额。读取日期2026-10-16。
+
+FY2026合并Farm收入42,568 crore卢比，同比增长20%；合并Farm税后利润4,298 crore。1 crore=1,000万卢比。财年止2026年3月31日，不等于2025自然年。集团收入混有汽车、金融、服务，不纳入装备比较。公司披露拖拉机份额43.6%，与FADA车辆登记图表分开。单体Farm PBIT与合并Farm税后利润不同，不拼接利润率。
+
+出版方原文
+https://www.mahindra.com/news-room/press-release/en/m-and-m-results-q4-f26-and-fy26
+
+[C11] 第一拖拉机股份有限公司2025年年度报告
+
+机构 First Tractor Company Limited。发布日期 2026-04-28。事件日期 2025-12-31。统计期 2025自然年（CY2025）。定位 印刷第12—15页产品及经营模式，第19页经营，第27页产品表，第39—40页展望。范围 中国及海外；单位 产品表以万元人民币列示；台数；百分比。证据性质 一手年报；企业管理层判断已标注。读取日期2026-10-16。
+
+农机业务（拖拉机及零部件）收入989,271万元，即98.9271亿元，分部抵销前；毛利率14.04%。明细表拖拉机销售63,744台，叙述四舍五入为大中型6.37万台。集团总收入还含柴油机，不能替代农机行。报告描述经销模式、CVT/动力换挡及客户回本期延长；市场判断属于管理层意见，不是独立普查。研发、田间验证不等于已规模化无人作业。
+
+出版方原文
+https://www.hkexnews.hk/listedco/listconews/sehk/2026/0428/2026042804965.pdf
+
+[C12] 潍柴动力股份有限公司2026年半年度报告摘要
+
+机构 Weichai Power Co., Ltd.。发布日期 2026-08-28。事件日期 2026-06-30。统计期 2026上半年。定位 PDF第5页农业装备业务。范围 中国及出口业务；单位 产品描述；马力。证据性质 企业一手申报文件；发行人的产品主张。读取日期2026-10-16。
+
+农业装备段介绍雷沃大马力拖拉机、小麦机、履带机、410马力新能源ECVT拖拉机及田间服务进展，可确立动力—整机—数字服务的竞争角色。国内首款、创新排名均为发行人表述，本文不将其作为独立核实排名。潍柴集团混有动力、商用车、物流，集团收入不标成农业装备收入。本表采用产品比较，不补造纯农业收入。
+
+出版方原文
+https://static.cninfo.com.cn/finalpage/2026-08-28/1225522040.pdf
+
+[C13] 大疆农业2025/2026农业无人机行业洞察报告发布公告
+
+机构 DJI Agriculture。发布日期 2026-04-29。事件日期 2026-04-29。统计期 农业无人机存量截至2025年末；部署地域及服务维修网络见2026-04-29公告，未分别标明各自截止时点。定位 日期及副标题、开篇段落及随后明确2025年末无人机存量的段落。范围 100多个国家及地区；单位 大疆农业无人机架数；服务维修中心数量。证据性质 企业一手经营披露；非独立审计的市场普查。读取日期2026-10-16。
+
+大疆2026年4月29日公告明确称，截至2025年末全球已有超过60万台大疆农业无人机投入使用；公告另描述设备覆盖100多个国家和地区、全球服务维修网络3,500家，但未分别指定这两项地域及网络数据的独立统计截止日。无人机数量属于企业披露的使用中存量，不是年度出货、全行业销售或独立审计份额分母，不据此反推营收。减排节水标题需要另核累计方法和反事实假设，故不纳入竞争表。来源支持生态规模分析，同时保留厂商披露的性质及不同时间口径。
+
+出版方原文
+https://www.dji.com/media-center/announcements/dji-global-adoption-51mt-saves-410mts-farmers
+
+[C14] 极飞P150农业无人机官方产品资料
+
+机构 XAG。发布日期 未标明（产品页未披露；已于资料截止日前读取）。事件日期 2026-10-16读取的产品参数。统计期 截止时点披露的P150产品参数；并非财务年度。定位 产品介绍、RevoSpray、模块化设计、控制/网络及参数脚注。范围 全球产品页；各地准入要求不同；单位 千克；升；功能。证据性质 厂商一手产品参数；实验室或附条件的能力限制。读取日期2026-10-16。
+
+P150官方页介绍喷洒、播撒、测绘，最大载荷70千克、药箱70升，以及模块化运输、变量施用、连接与离线方案。均为附条件的厂商参数，不证明平均田间效率、全寿命收益或各国准入。页面未披露发布日期，按截止日读取如实记录；不补造私企营收、份额或跨型号性能排名。
+
+出版方原文
+https://www.xa.com/en/p150
+
+[C15] Lindsay 2025财年及第四季度业绩
+
+机构 Lindsay Corporation。发布日期 2025-10-23。事件日期 2025-08-31。统计期 FY2025，截至2025-08-31。定位 全年概要、经营结果表、未履约订单段及公司介绍。范围 全球；北美与国际业务；单位 明细表以千美元列示。证据性质 作为SEC附件提交的企业一手业绩公告。读取日期2026-10-16。
+
+明细表灌溉收入5.68000亿美元、营业利润0.96963亿美元；集团6.76368亿美元还包括基础设施。灌溉段还含零件、管材及技术服务。2025年8月31日集团未履约订单1.107亿美元，上年1.809亿，公司主要归因于MENA大型灌溉项目交付。订单存量不是收入，也不改标成纯灌溉订单。Zimmatic、FieldNET、FieldWise说明装备与控制结合。
+
+出版方原文
+https://www.sec.gov/Archives/edgar/data/836157/000119312525247621/lnn-ex99_1.htm
+
+[C16] Valmont 2025全年及第四季度业绩
+
+机构 Valmont Industries, Inc.。发布日期 2026-02-17。事件日期 2025-12-27。统计期 截至2025-12-27的52周。定位 全年经营结果、地域/产品及内部抵销表，四季度要点、订单表。范围 全球；单位 千美元；订单存量以百万美元列示。证据性质 企业一手财务披露。读取日期2026-10-16。
+
+农业分部销售内部抵销前10.20750亿美元、农业相关抵销后10.14370亿美元；本文明确采用前者。基础设施不计入。公司披露Prospera于2025年收缩关停，相关投资损失带来税收利益；该利益不是软件商业化成功证明。年末农业订单1.054亿美元，区别基础设施订单。可说明农业AI投资存在商业失败，不推出所有数字农业均亏损。
+
+出版方原文
+https://investors.valmont.com/news-releases/news-release-details/valmont-reports-fourth-quarter-gaap-eps-905-and-adjusted-eps-492
+
+[C17] Valmont 2026年第二季度业绩
+
+机构 Valmont Industries, Inc.。发布日期 2026-07-21。事件日期 2026-06-27（第二季度期末）。统计期 2026第二季度。定位 农业分部回顾；展望分列。范围 全球；北美与国际业务；单位 百万美元；百分比。证据性质 企业一手财务披露；管理层解释。读取日期2026-10-16。
+
+Q2农业分部销售2.437亿美元，同比降15.8%；北美灌溉降2.3%、国际降28.9%，管理层主要归因于中东扰动。均为公司分部结果及解释，不是独立全球灌溉市场增速。本季作为FY2025之后观察点，不年化；2026指引为预测。分部包含灌溉装备、零件、管材及技术，不能称为纯软件或机器人收入。
+
+出版方原文
+https://investors.valmont.com/news-releases/news-release-details/valmont-reports-second-quarter-2026-results-and-raises-full-year
+
+[C18] GrowSphere在精准灌溉中的作用
+
+机构 Netafim; Ofer Oveed, SVP Head of Technology & Crops。发布日期 2025-01-16。事件日期 2025-01-16。统计期 产品及工作流程描述、客户案例；无财务统计期。定位 署名日期及咖啡农场案例之后的产品工作流段落。范围 全球产品；巴西案例；单位 功能；无市场规模计量单位。证据性质 厂商一手产品介绍及客户营销案例。读取日期2026-10-16。
+
+文章介绍GrowSphere整合灌溉/水肥计划、执行监控、预警及土壤/天气/植株信息，支持“采集数据”和“控制作业”之间的区别。咖啡农场例属厂商案例，不是对照试验；世界首个、增产、利润最大化不当成普遍结论。不以母公司收入反推Netafim专属收入；来源证明功能角色，不证明份额、平均订阅收入或普适回报。
+
+出版方原文
+https://www.netafim.com/en/blog/simplifying-farming-the-role-of-growsphere-in-precision-irrigation
+
+[C19] 精准农业 - AGCO 2025年度回顾
+
+机构 AGCO Corporation。发布日期 未标明（战略页未单独披露；已于资料截止日前读取）。事件日期 年度回顾所述的2025年创新活动。统计期 2025年创新回顾；2026年晚些时候商业化推出的预期属于前瞻性表述。定位 2025创新要点：Crop protection（作物保护）及Harvesting（收获）。范围 全球产品及战略描述；单位 产品功能及开发阶段；无独立机器人收入。证据性质 企业一手年度回顾战略页；产品描述及前瞻性推出时间表。读取日期2026-10-16。
+
+AGCO的2025年度回顾战略页介绍RowPilot利用AI区分作物与杂草，以及OutRun通过后装改造、由操作员远程管理运粮车的角色。另称耕作和施肥套件于2025年测试，预期2026年末商业发布；后者属于公司时间表，不是已核实完成的推广。页面不提供独立机器人收入、部署存量或经独立测量的作业经济性。
+
+出版方原文
+https://www.agcocorp.com/us/en/home/annual_report/our-strategy/precision-ag.html
+
+[M01] FADA发布2025-26财年及2026年3月汽车零售数据
+
+机构 Federation of Automobile Dealers Associations (FADA)。发布日期 2026-04-06。事件日期 2026-04-02（数据汇总）。统计期 FY2025-26（2025年4月1日至2026年3月31日）。定位 PDF第2页：发布日期及财年；第17页：拖拉机OEM FY2025-26份额及限制；第8页：2025年4月至2026年3月的月序。范围 印度，FADA报告覆盖范围；不含TS；单位 拖拉机台数；占覆盖零售台数的百分比。证据性质 协会与印度道路运输和公路部合作汇总的车辆零售数据；已观测台数，非预测值。读取日期2026-10-16。
+
+FY2025-26表列九个OEM/部门类别，合计1,050,077台，与各分类台数之和完全相等。来源覆盖1,466个RTO中的1,463个，不含TS；该覆盖数量不保证涵盖印度全国全部拖拉机销售。其他为份额低于1%的OEM。图扇区按原始台数绘制；来源百分比与按台数独立计算后四舍五入至两位的结果相同，显示合计100.01%，不人为修改。保留来源对马恒达Tractor与Swaraj的分列。此数据仅代表印度拖拉机零售子市场，不能证明全球企业份额或收入份额。官方PDF的拖拉机表及覆盖限制位于第17页。
+
+出版方原文
+https://fada.in/images/press-release/169d329fc83770FADA%20releases%20FY%202026%20and%20March%202026%20Vehicle%20Retail%20Data.pdf
+
+[M02] 农业科技产业的市场与经济趋势
+
+机构 VDMA Agricultural Machinery / Dr. Tobias Ehrhard。发布日期 2025-09-22。事件日期 2025-09-22（演示）；2025年8月数据版本。统计期 2024历史图表；2025*及2026*为预测。定位 PDF第13页：TOP 4 – WORLDWIDE MARKET；2024地区标签、年度平均汇率假设及带星号预测说明。范围 全球农业机械；地区定义按来源图示；单位 十亿欧元。证据性质 协会市场估计及图表；2025–2026数值为预测，非实际结果。读取日期2026-10-16。
+
+本页提供有日期的农机规模参照及范围限制，不作为份额图的数据基础。2024年九个地区的已舍入标签依次为40.5、2.1、4.9、18.0、13.4、3.1、31.2、10.6、20.5十亿欧元，算术和144.3。本页没有单独印出的2024年总计，因此144.3是已舍入标签的计算和，不是直接披露的精确总额；未调整或归一化地区值。演示稿未完整界定无人机、全部灌溉、独立机器人和软件是否纳入，不能等同本研报全范围。带星号的2025—2026年是当时的外推预测；来源说明年度平均汇率和地区外推假设。公开可读不等于可再分发。
+
+出版方原文
+https://www.agritechnica.com/fileadmin/redaktion/downloads/Presse/EN/Market_and_economic_Trends_in_the_ag_tech_industry_Dr_Tobias_Ehrhard.pdf
+
+[I01] USDA 照片20210413-FPAC-LSC-0810：Frick Farms 田间装备
+
+机构：美国农业部；摄影：Lance Cheung。上传：2021年6月10日；拍摄：2021年4月13日。地点：美国得克萨斯州东北部Frick Farms。实际下载并采用4096×2731像素官方4K版本；尺寸页最高原图为8256×5504，未下载最高原图。单图标记为公共领域，链接至Public Domain Mark 1.0。读取：2026年10月16日。 定位：单图说明、拍摄/上传日期及公共领域链接；官方 /sizes/4k/ 页面列明采用版本4096×2731及最高原图8256×5504。
+
+所选照片显示田间播种机行单元与拖拉机。USDA单图说明确认地点为得克萨斯州东北部Frick Farms，署名Lance Cheung，拍摄于2021年4月13日、上传于同年6月10日；许可链接为公共领域标记1.0。已下载并实际查看4096×2731像素官方4K版本，尺寸页另列最高原图8256×5504，未下载最高原图。封面与来源JPEG为相同、未修改文件。本图用于展示农业装备，不是2024喷施示范的现场证据，也不证明2026技术实测表现；不暗示USDA或厂家背书。
+
+出版方原文
+https://www.flickr.com/photos/usdagov/51239108928/in/album-72157719397230701

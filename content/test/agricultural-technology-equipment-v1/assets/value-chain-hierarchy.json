@@ -1,0 +1,108 @@
+{
+  "name": "Agricultural technology & equipment",
+  "scope": "Role categories, not supplier contracts. Companies can operate across several stages. Seeds and agrochemicals are outside the core scope.",
+  "sourceIds": [
+    "C01",
+    "C03",
+    "C05",
+    "C07",
+    "C11",
+    "C13",
+    "C14",
+    "C15",
+    "C16",
+    "C18"
+  ],
+  "children": [
+    {
+      "name": "Upstream",
+      "children": [
+        {
+          "name": "Power & motion systems",
+          "children": [
+            {
+              "name": "Engines · electric drives · hydraulics"
+            }
+          ]
+        },
+        {
+          "name": "Positioning & sensing",
+          "children": [
+            {
+              "name": "GNSS / RTK · cameras · field sensors"
+            }
+          ]
+        },
+        {
+          "name": "Computing & connectivity",
+          "children": [
+            {
+              "name": "Controllers · edge computing · telemetry · connectivity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Midstream",
+      "children": [
+        {
+          "name": "Field equipment",
+          "children": [
+            {
+              "name": "Deere · CNH · AGCO"
+            }
+          ]
+        },
+        {
+          "name": "Precision technology, UAVs & farm automation",
+          "children": [
+            {
+              "name": "PTx (precision / retrofit)"
+            },
+            {
+              "name": "DJI Agriculture · XAG (drones)"
+            }
+          ]
+        },
+        {
+          "name": "Irrigation equipment & systems",
+          "children": [
+            {
+              "name": "Lindsay · Valmont · Netafim"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Downstream",
+      "children": [
+        {
+          "name": "Equipment access",
+          "children": [
+            {
+              "name": "Dealers · rental / custom hiring"
+            }
+          ]
+        },
+        {
+          "name": "Field operations",
+          "children": [
+            {
+              "name": "Farms · agricultural contractors"
+            }
+          ]
+        },
+        {
+          "name": "Lifecycle services",
+          "children": [
+            {
+              "name": "Parts · training · finance · agronomy / decision support"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
