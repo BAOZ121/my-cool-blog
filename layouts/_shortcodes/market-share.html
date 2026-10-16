@@ -15,7 +15,7 @@
 {{- if $hasUnits -}}{{- $csv = "Name,Retail units,Share (%),Period,Geography,Metric,Source URL\n" -}}{{- end -}}
 {{- range $chart.series -}}
     {{- $values := printf "%v" .value -}}
-    {{- if $hasUnits -}}{{- $values = printf "%v,%v" .units .value -}}{{- end -}}
+    {{- if $hasUnits -}}{{- $values = printf "%v,%.*f" .units $decimals (float .value) -}}{{- end -}}
     {{- $csv = printf "%s\"%s\",%s,\"%s\",\"%s\",\"%s\",\"%s\"\n" $csv (replace .name "\"" "\"\"") $values (replace $chart.period "\"" "\"\"") (replace $chart.geography "\"" "\"\"") (replace $chart.metric "\"" "\"\"") (replace $chart.source.url "\"" "\"\"") -}}
 {{- end -}}
 {{- $download := resources.FromString (printf "data/charts/%s.csv" $id) $csv -}}

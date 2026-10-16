@@ -195,6 +195,23 @@ test("nuclear capacity shares preserve one decimal in every interactive percenta
   }
   assert.deepEqual(data, original);
 });
+
+test("compact charts can suppress cramped slice labels while keeping every share in the legend", () => {
+  const data = example();
+  data.series = [{name:"Large",value:82},{name:"Mid",value:11},{name:"Small",value:7}];
+  data.percentDecimals = 2;
+  data.compactLabelMinShare = 10;
+  const options = pieOptions(data, {compact:true});
+  assert.equal(options.series[0].label.formatter({name:"Small",value:7}), "");
+  assert.equal(options.series[0].label.formatter({name:"Mid",value:11}), "11.00%");
+  assert.match(options.legend.formatter("Small"), /7\.00%/);
+  assert.match(options.aria.label.description, /Small: 7\.00%/);
+  delete data.compactLabelMinShare;
+  assert.equal(pieOptions(data,{compact:true}).series[0].label.formatter({name:"Small",value:7}), "7.00%");
+  for (const value of [-1,101,"10",NaN,Infinity]) {
+    assert.throws(() => validateShare({...data,compactLabelMinShare:value}), /threshold/);
+  }
+});
 test("map text is escaped before it reaches Markmap's HTML rendering", () => {
   const map = { title: "Industry", root: { name: 'A <script>alert("x")</script> & B', children: [{ name: "Upstream", children: [{ name: "Materials", children: [{ name: "Company" }] }] }] } };
   assert.equal(validateMap(map), map);

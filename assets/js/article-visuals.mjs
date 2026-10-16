@@ -40,6 +40,7 @@ export function validateShare(data) {
   for (const key of ["title", "scope", "geography", "metric", "period"]) requiredText(data[key], key);
   if (!Array.isArray(data.series) || data.series.length < 2 || data.series.length > 30) throw new Error("Invalid share series");
   if (data.percentDecimals != null && (!Number.isInteger(data.percentDecimals) || data.percentDecimals < 0 || data.percentDecimals > 6)) throw new Error("Invalid percentage precision");
+  if (data.compactLabelMinShare != null && (typeof data.compactLabelMinShare !== "number" || !Number.isFinite(data.compactLabelMinShare) || data.compactLabelMinShare < 0 || data.compactLabelMinShare > 100)) throw new Error("Invalid compact label threshold");
   const names = new Set();
   let total = 0;
   for (const item of data.series) {
@@ -150,7 +151,7 @@ export function pieOptions(data, { dark = false, compact = false, reducedMotion 
       type: "pie", radius: compact ? ["37%", "64%"] : ["38%", "66%"], center: compact ? ["50%", "48%"] : ["32%", "50%"],
       avoidLabelOverlap: true, minAngle: 0, padAngle: 1, selectedMode: false,
       itemStyle: { borderRadius: 3, borderWidth: 2, borderColor: surface },
-      label: { show: compact, position: "inside", formatter: (item) => shareItemValue(data, item) >= 5 ? `${shareValue(data, shareItemValue(data, item))}%` : "", fontSize: 13, color: "#101010", textBorderWidth: 0 },
+      label: { show: compact, position: "inside", formatter: (item) => shareItemValue(data, item) >= (data.compactLabelMinShare ?? 5) ? `${shareValue(data, shareItemValue(data, item))}%` : "", fontSize: 13, color: "#101010", textBorderWidth: 0 },
       labelLine: { show: false }, emphasis: { scale: !reducedMotion, scaleSize: 4, label: { show: compact }, itemStyle: { shadowBlur: 0 } },
       data: data.series.map((item, index) => ({ name: item.name, value: item.units ?? item.value,
         ...(data.theme === "nuclear-gold" ? { label: { color: dark ? (index === 4 ? "#ffffff" : "#101010") : (index === 0 ? "#ffffff" : "#101010") } } : {}),
