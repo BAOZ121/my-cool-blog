@@ -39,6 +39,8 @@ export function validateShare(data) {
   if (!data || typeof data !== "object" || data.unit !== "%") throw new Error("Shares must use percentages");
   for (const key of ["title", "scope", "geography", "metric", "period"]) requiredText(data[key], key);
   if (!Array.isArray(data.series) || data.series.length < 2 || data.series.length > 30) throw new Error("Invalid share series");
+  if (data.percentDecimals != null && (!Number.isInteger(data.percentDecimals) || data.percentDecimals < 0 || data.percentDecimals > 6)) throw new Error("Invalid percentage precision");
+  if (data.compactLabelMinShare != null && (typeof data.compactLabelMinShare !== "number" || !Number.isFinite(data.compactLabelMinShare) || data.compactLabelMinShare < 0 || data.compactLabelMinShare > 100)) throw new Error("Invalid compact label threshold");
   const names = new Set();
   let total = 0;
   for (const item of data.series) {
@@ -49,6 +51,19 @@ export function validateShare(data) {
   }
   const tolerance = typeof data.rounding_note === "string" && data.rounding_note.trim() ? 0.2 : 0.01;
   if (Math.abs(total - 100) > tolerance + 1e-8) throw new Error("Incomplete market denominator");
+  const hasUnits = Object.hasOwn(data, "totalUnits") || data.series.some((item) => Object.hasOwn(item, "units"));
+  if (hasUnits) {
+    if (!Number.isSafeInteger(data.totalUnits) || data.totalUnits <= 0 || !Number.isInteger(data.percentDecimals)) throw new Error("Raw units require a positive integer total and percentage precision");
+    let units = 0;
+    for (const item of data.series) {
+      if (!Number.isSafeInteger(item.units) || item.units < 0) throw new Error("Invalid or incomplete raw units");
+      units += item.units;
+      const rounded = Number((item.units / data.totalUnits * 100).toFixed(data.percentDecimals));
+      if (Math.abs(item.value - rounded) > 1e-8) throw new Error("Published share disagrees with raw units");
+    }
+    if (!Number.isSafeInteger(units) || units !== data.totalUnits) throw new Error("Incomplete raw unit denominator");
+  }
+  if (data.unitsLabel != null) requiredText(data.unitsLabel, "units label");
   for (const key of ["title", "publisher", "url", "published"]) requiredText(data.source?.[key], `source ${key}`);
   if (!/^https?:\/\//i.test(data.source.url)) throw new Error("Invalid source URL");
   return data;
@@ -83,11 +98,19 @@ const nuclearPalettes = {
   dark: ["#eeeeee", "#d6b56f", "#a4a4a4", "#f0dfb3", "#555555"],
 };
 function sharePalette(data, dark) {
+  if (Array.isArray(data.colors) && data.colors.length >= data.series.length && data.colors.every((color) => typeof color === "string" && /^#[0-9a-f]{6}$/i.test(color))) return [...data.colors];
   return data.theme === "nuclear-gold" ? nuclearPalettes[dark ? "dark" : "light"]
     : data.theme === "nvidia" ? nvidiaPalette : palettes[dark ? "dark" : "light"];
 }
 function shareValue(data, value) {
-  return data.theme === "nuclear-gold" ? Number(value).toFixed(data.percentDecimals ?? 1) : String(value);
+  return data.percentDecimals != null || data.theme === "nuclear-gold" ? Number(value).toFixed(data.percentDecimals ?? 1) : String(value);
+}
+function shareRow(data, item) {
+  return data.series.find((row) => row.name === item.name);
+}
+function shareItemValue(data, item) {
+  const row = shareRow(data, item);
+  return row ? row.value : data.totalUnits == null ? item.value : undefined;
 }
 // Thin map connections need deeper gold against the light background.
 const mapPalettes = {
@@ -113,7 +136,11 @@ export function pieOptions(data, { dark = false, compact = false, reducedMotion 
     aria: { enabled: true, label: { description: `${data.title}. ${data.period}. ${data.geography}. ${data.metric}. ${data.series.map((item) => `${item.name}: ${shareValue(data, item.value)}%`).join("; ")}.` } },
     tooltip: {
       trigger: "item", confine: true, renderMode: "html", backgroundColor: surface, borderColor: nvidia ? "#2a3824" : dark ? "#494136" : "#e5d7b8", textStyle: { color: ink },
-      formatter: (item) => `${escapeHTML(item.name)}<br><strong>${shareValue(data, item.value)}%</strong>`,
+      formatter: (item) => {
+        const row = shareRow(data, item);
+        const units = row?.units != null ? `<br>${row.units.toLocaleString("en-US")} ${escapeHTML(data.unitsLabel || "units")}` : "";
+        return `${escapeHTML(item.name)}<br><strong>${shareValue(data, shareItemValue(data, item))}%</strong>${units}`;
+      },
     },
     legend: {
       show: !compact, orient: "vertical", right: "3%", top: "center", selectedMode: false,
@@ -124,9 +151,9 @@ export function pieOptions(data, { dark = false, compact = false, reducedMotion 
       type: "pie", radius: compact ? ["37%", "64%"] : ["38%", "66%"], center: compact ? ["50%", "48%"] : ["32%", "50%"],
       avoidLabelOverlap: true, minAngle: 0, padAngle: 1, selectedMode: false,
       itemStyle: { borderRadius: 3, borderWidth: 2, borderColor: surface },
-      label: { show: compact, position: "inside", formatter: (item) => item.value >= 5 ? `${shareValue(data, item.value)}%` : "", fontSize: 13, color: "#101010", textBorderWidth: 0 },
+      label: { show: compact, position: "inside", formatter: (item) => shareItemValue(data, item) >= (data.compactLabelMinShare ?? 5) ? `${shareValue(data, shareItemValue(data, item))}%` : "", fontSize: 13, color: "#101010", textBorderWidth: 0 },
       labelLine: { show: false }, emphasis: { scale: !reducedMotion, scaleSize: 4, label: { show: compact }, itemStyle: { shadowBlur: 0 } },
-      data: data.series.map((item, index) => ({ name: item.name, value: item.value,
+      data: data.series.map((item, index) => ({ name: item.name, value: item.units ?? item.value,
         ...(data.theme === "nuclear-gold" ? { label: { color: dark ? (index === 4 ? "#ffffff" : "#101010") : (index === 0 ? "#ffffff" : "#101010") } } : {}),
       })),
     }],

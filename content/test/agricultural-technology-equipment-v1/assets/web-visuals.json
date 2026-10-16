@@ -1,0 +1,232 @@
+{
+  "maps": {
+    "agricultural-value-chain": {
+      "title": "Agricultural technology and equipment value chain",
+      "description": "Industry → stages → subsegments → companies or products.",
+      "root": {
+        "name": "Agricultural technology & equipment",
+        "children": [
+          {
+            "name": "Upstream",
+            "children": [
+              {
+                "name": "Power & motion systems",
+                "children": [
+                  {
+                    "name": "Engines · electric drives · hydraulics"
+                  }
+                ]
+              },
+              {
+                "name": "Positioning & sensing",
+                "children": [
+                  {
+                    "name": "GNSS / RTK · cameras · field sensors"
+                  }
+                ]
+              },
+              {
+                "name": "Computing & connectivity",
+                "children": [
+                  {
+                    "name": "Controllers · edge computing · telemetry · connectivity"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Midstream",
+            "children": [
+              {
+                "name": "Field equipment",
+                "children": [
+                  {
+                    "name": "Deere · CNH · AGCO"
+                  }
+                ]
+              },
+              {
+                "name": "Precision technology, UAVs & farm automation",
+                "children": [
+                  {
+                    "name": "PTx (precision / retrofit)"
+                  },
+                  {
+                    "name": "DJI Agriculture · XAG (drones)"
+                  }
+                ]
+              },
+              {
+                "name": "Irrigation equipment & systems",
+                "children": [
+                  {
+                    "name": "Lindsay · Valmont · Netafim"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Downstream",
+            "children": [
+              {
+                "name": "Equipment access",
+                "children": [
+                  {
+                    "name": "Dealers · rental / custom hiring"
+                  }
+                ]
+              },
+              {
+                "name": "Field operations",
+                "children": [
+                  {
+                    "name": "Farms · agricultural contractors"
+                  }
+                ]
+              },
+              {
+                "name": "Lifecycle services",
+                "children": [
+                  {
+                    "name": "Parts · training · finance · agronomy / decision support"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "note": "Illustrative value chain aligned with Part 3. Branches classify roles and products; they do not establish supplier contracts, endorsements or market shares. Companies may span several stages. Representative examples are not exhaustive. Sources and editable hierarchy accompany the figures.",
+      "sources": [
+        {
+          "title": "[C01] Deere",
+          "url": "/test/agricultural-technology-equipment-v1/#source-C01"
+        },
+        {
+          "title": "[C03] CNH",
+          "url": "/test/agricultural-technology-equipment-v1/#source-C03"
+        },
+        {
+          "title": "[C05] AGCO",
+          "url": "/test/agricultural-technology-equipment-v1/#source-C05"
+        },
+        {
+          "title": "[C07] PTx Trimble",
+          "url": "/test/agricultural-technology-equipment-v1/#source-C07"
+        },
+        {
+          "title": "[C11] First Tractor",
+          "url": "/test/agricultural-technology-equipment-v1/#source-C11"
+        },
+        {
+          "title": "[C13] DJI Agriculture",
+          "url": "/test/agricultural-technology-equipment-v1/#source-C13"
+        },
+        {
+          "title": "[C14] XAG",
+          "url": "/test/agricultural-technology-equipment-v1/#source-C14"
+        },
+        {
+          "title": "[C15] Lindsay",
+          "url": "/test/agricultural-technology-equipment-v1/#source-C15"
+        },
+        {
+          "title": "[C16] Valmont",
+          "url": "/test/agricultural-technology-equipment-v1/#source-C16"
+        },
+        {
+          "title": "[C18] Netafim",
+          "url": "/test/agricultural-technology-equipment-v1/#source-C18"
+        }
+      ],
+      "reviewed": "2026-10-16"
+    }
+  },
+  "shares": {
+    "agricultural-india-tractor-retail-fy2025-26": {
+      "eyebrow": "TRACTOR RETAIL SHARE",
+      "title": "India tractor retail share by OEM",
+      "dimension": "OEM",
+      "scope": "FADA coverage of the India tractor retail registration submarket; source OEM and division categories are retained.",
+      "geography": "India · FADA coverage · excludes Telangana (TS)",
+      "metric": "Share of covered retail registrations, by tractor unit count",
+      "period": "FY2025–26 · 1 April 2025–31 March 2026",
+      "center_label": "FY25–26\nIndia",
+      "unit": "%",
+      "unitsLabel": "retail units",
+      "totalUnits": 1050077,
+      "percentDecimals": 2,
+      "sourceBlock": 66,
+      "colors": [
+        "#d6b56f",
+        "#67b8b0",
+        "#7ea5dc",
+        "#e58b78",
+        "#a995d3",
+        "#a4bd7e",
+        "#d78fb3",
+        "#8baeb8",
+        "#c2a688"
+      ],
+      "rounding_note": "Source percentages total 100.01% because of two-decimal rounding. Sectors use the original integer unit counts; displayed percentages are preserved.",
+      "series": [
+        {
+          "name": "Mahindra & Mahindra (Tractor)",
+          "value": 23.81,
+          "units": 249973
+        },
+        {
+          "name": "Mahindra & Mahindra (Swaraj Division)",
+          "value": 18.76,
+          "units": 196975
+        },
+        {
+          "name": "International Tractors",
+          "value": 12.76,
+          "units": 134030
+        },
+        {
+          "name": "TAFE",
+          "value": 11.27,
+          "units": 118326
+        },
+        {
+          "name": "Escorts Kubota (Agri Machinery Group)",
+          "value": 10.9,
+          "units": 114468
+        },
+        {
+          "name": "John Deere India (Tractor Division)",
+          "value": 7.63,
+          "units": 80086
+        },
+        {
+          "name": "Eicher Tractors",
+          "value": 6.21,
+          "units": 65215
+        },
+        {
+          "name": "CNH Industrial (India)",
+          "value": 4.49,
+          "units": 47122
+        },
+        {
+          "name": "Others",
+          "value": 4.18,
+          "units": 43882
+        }
+      ],
+      "note": "India tractor retail units by OEM, FY2025-26 (1 April 2025 to 31 March 2026). FADA coverage: 1,050,077 units; excludes Telangana (TS); collated 2 April 2026 from 1,463 of 1,466 Regional Transport Offices (RTOs). Slice areas use integer unit counts; displayed shares total 100.01% due to rounding. Source categories are retained. This is an Indian tractor submarket, not worldwide agtech share. Source [M01], p. 17.",
+      "source": {
+        "publisher": "FADA",
+        "title": "FADA Releases FY'26 and March'26 Vehicle Retail Data",
+        "published": "2026-04-06",
+        "url": "https://fada.in/images/press-release/169d329fc83770FADA%20releases%20FY%202026%20and%20March%202026%20Vehicle%20Retail%20Data.pdf"
+      },
+      "reviewed": "2026-10-16",
+      "compactLabelMinShare": 10
+    }
+  }
+}

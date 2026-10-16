@@ -1,0 +1,77 @@
+{{- /* Page-local plain-text data keeps the online table aligned with its source. */ -}}
+{{- $id := .Get "id" -}}
+{{- $resource := .Page.Resources.GetMatch "assets/web-tables.json" -}}
+{{- if not $resource -}}
+  {{- errorf "research-table in %s requires assets/web-tables.json" .Page.File.Path -}}
+{{- else -}}
+  {{- $tables := $resource.Content | transform.Unmarshal -}}
+  {{- $table := index $tables $id -}}
+  {{- if not $table -}}
+    {{- errorf "Unknown research-table %q in %s" $id .Page.File.Path -}}
+  {{- else -}}
+    {{- $uid := printf "research-table-%s-%d" ($id | urlize) .Ordinal -}}
+    {{- $caption := $table.caption | default $table.title -}}
+    {{- $width := "standard" -}}
+    {{- if eq $table.width "wide" -}}{{- $width = "wide" -}}{{- end -}}
+    {{- $columnCount := len $table.header -}}
+    {{- if or (not $table.title) (eq $columnCount 0) -}}
+      {{- errorf "research-table %q in %s needs a title and header" $id .Page.File.Path -}}
+    {{- end -}}
+<figure id="{{ $uid }}" class="article-visual research-table research-table--{{ $width }}" aria-labelledby="{{ $uid }}-title">
+  <header class="visual-header">
+    <p class="visual-eyebrow">{{ $table.eyebrow | default "RESEARCH DATA" }}</p>
+    <h3 id="{{ $uid }}-title">{{ $table.title }}</h3>
+    {{ with $table.description }}<p>{{ . }}</p>{{ end }}
+  </header>
+  <p id="{{ $uid }}-scroll-hint" class="research-table-scroll-hint">Scroll horizontally to read all columns.</p>
+  <div class="research-table-scroll" role="region" tabindex="0" aria-labelledby="{{ $uid }}-title" aria-describedby="{{ $uid }}-scroll-hint">
+    <table class="research-data-table"{{ with $table.sourceBlock }} data-source-block="{{ . }}"{{ end }}>
+      <caption{{ if eq $caption $table.title }} class="research-table-caption-hidden"{{ end }}>{{ $caption }}</caption>
+      <thead><tr>
+        {{- range $table.header -}}
+        <th scope="col"{{ if .numeric }} class="research-table-number"{{ end }}>{{ .label }}</th>
+        {{- end -}}
+      </tr></thead>
+      <tbody>
+        {{- range $rowIndex, $row := $table.rows -}}
+          {{- if ne (len $row) $columnCount -}}
+            {{- errorf "research-table %q row %d in %s has %d cells; expected %d" $id $rowIndex $.Page.File.Path (len $row) $columnCount -}}
+          {{- end -}}
+        <tr>
+          {{- range $columnIndex, $value := $row -}}
+            {{- $header := index $table.header $columnIndex -}}
+            {{- $cell := printf "%v" $value | htmlEscape -}}
+            {{- $cell = replaceRE `\[([A-Z][0-9]{2})\]` `<a class="evidence-cite" href="#source-${1}" aria-label="Source ${1}">[${1}]</a>` $cell -}}
+            {{- $cell = replace (replace $cell "\r\n" "\n") "\n" "<br>" -}}
+            {{- if eq $columnIndex 0 -}}
+          <th scope="row"{{ if $header.numeric }} class="research-table-number"{{ end }}>{{ $cell | safeHTML }}</th>
+            {{- else -}}
+          <td{{ if $header.numeric }} class="research-table-number"{{ end }}>{{ $cell | safeHTML }}</td>
+            {{- end -}}
+          {{- end -}}
+        </tr>
+        {{- end -}}
+      </tbody>
+    </table>
+  </div>
+  {{- if or $table.note $table.download }}
+  <figcaption class="visual-caption">
+    {{- with $table.note -}}
+      {{- $note := . | htmlEscape -}}
+      {{- $note = replaceRE `\[([A-Z][0-9]{2})\]` `<a class="evidence-cite" href="#source-${1}" aria-label="Source ${1}">[${1}]</a>` $note -}}
+      {{- $note = replace (replace $note "\r\n" "\n") "\n" "<br>" -}}
+    <p>{{ $note | safeHTML }}</p>
+    {{- end -}}
+    {{- with $table.download -}}
+      {{- $download := $.Page.Resources.GetMatch . -}}
+      {{- if not $download -}}
+        {{- errorf "research-table %q download %q does not exist in %s" $id . $.Page.File.Path -}}
+      {{- else -}}
+    <a class="visual-download" href="{{ $download.RelPermalink }}" download>{{ $table.downloadLabel | default "Download data (CSV)" }}</a>
+      {{- end -}}
+    {{- end -}}
+  </figcaption>
+  {{- end }}
+</figure>
+  {{- end -}}
+{{- end -}}

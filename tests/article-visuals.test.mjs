@@ -9,6 +9,24 @@ const example = () => ({
   source: { title: "Source report", publisher: "Research institute", url: "https://example.org/report", published: "2026-02-01" },
 });
 
+const retailExample = () => ({
+  ...example(), title: "India tractor retail registrations", period: "FY2025–26", geography: "India", metric: "Share of covered retail registrations",
+  percentDecimals: 2, totalUnits: 1050077, unitsLabel: "retail units",
+  rounding_note: "Published percentages total 100.01% because of rounding; slice areas retain the integer registrations.",
+  series: [
+    { name: "Mahindra & Mahindra (Tractor)", value: 23.81, units: 249973 },
+    { name: "Mahindra & Mahindra (Swaraj Division)", value: 18.76, units: 196975 },
+    { name: "International Tractors", value: 12.76, units: 134030 },
+    { name: "TAFE", value: 11.27, units: 118326 },
+    { name: "Escorts Kubota", value: 10.90, units: 114468 },
+    { name: "John Deere India", value: 7.63, units: 80086 },
+    { name: "Eicher Tractors", value: 6.21, units: 65215 },
+    { name: "CNH Industrial (India)", value: 4.49, units: 47122 },
+    { name: "Others", value: 4.18, units: 43882 },
+  ],
+  colors: ["#d6b56f", "#67b8b0", "#7ea5dc", "#e58b78", "#a995d3", "#a4bd7e", "#d78fb3", "#8baeb8", "#c6ab8a"],
+});
+
 test("partial markets cannot be normalized into misleading whole-market pie charts", () => {
   const data = example(); data.series.pop();
   assert.throws(() => validateShare(data), /denominator/);
@@ -56,6 +74,76 @@ test("chart themes and mobile layout retain all data and respect reduced motion"
   assert.equal(mobile.series[0].label.show, true);
   assert.notEqual(mobile.textStyle.color, light.textStyle.color);
   assert.deepEqual(mobile.series[0].data, light.series[0].data);
+});
+test("integer registrations determine slice geometry while every label retains the published share", () => {
+  const data = retailExample();
+  const original = structuredClone(data);
+  assert.equal(validateShare(data), data);
+  for (const compact of [false, true]) for (const dark of [false, true]) {
+    const options = pieOptions(data, { compact, dark });
+    assert.deepEqual(options.series[0].data.map((item) => item.value), data.series.map((item) => item.units));
+    assert.equal(options.series[0].data.reduce((sum, item) => sum + item.value, 0), data.totalUnits);
+    const row = options.series[0].data.find((item) => item.name === "Escorts Kubota");
+    const tooltip = options.tooltip.formatter({ ...row, percent: 10.900915 });
+    assert.match(tooltip, /10\.90%/);
+    assert.match(tooltip, /114,468 retail units/);
+    assert.doesNotMatch(tooltip, /114468%|114,468%|10\.900915/);
+    assert.equal(options.legend.formatter(row.name), "Escorts Kubota  10.90%");
+    assert.equal(options.series[0].label.formatter(row), "10.90%");
+    const small = options.series[0].data.find((item) => item.name === "Others");
+    assert.equal(options.series[0].label.formatter(small), "", "Small-slice label decisions use the share rather than the raw count");
+    assert.match(options.aria.label.description, /Escorts Kubota: 10\.90%/);
+    assert.doesNotMatch(options.aria.label.description, /114468%|114,468%/);
+    assert.deepEqual(options.color, data.colors);
+  }
+  assert.deepEqual(data, original, "Preparing raw-unit charts does not mutate their source data");
+});
+test("raw-unit charts reject missing, mixed, unsafe and inconsistent denominators", () => {
+  for (const units of [undefined, null, "249973", -1, 1.5, NaN, Infinity, Number.MAX_SAFE_INTEGER + 1]) {
+    const data = retailExample(); data.series[0].units = units;
+    assert.throws(() => validateShare(data), /raw units/);
+  }
+  for (const total of [undefined, null, "1050077", 0, -1, 1.5, NaN, Infinity, Number.MAX_SAFE_INTEGER + 1]) {
+    const data = retailExample(); data.totalUnits = total;
+    assert.throws(() => validateShare(data), /integer total/);
+  }
+  const missing = retailExample(); delete missing.series[0].units;
+  assert.throws(() => validateShare(missing), /incomplete raw units/);
+  const wrongTotal = retailExample(); wrongTotal.totalUnits++;
+  assert.throws(() => validateShare(wrongTotal), /raw unit denominator/);
+  const wrongShare = retailExample(); wrongShare.series[4].value = 10.91;
+  assert.throws(() => validateShare(wrongShare), /share disagrees/);
+  const missingPrecision = retailExample(); delete missingPrecision.percentDecimals;
+  assert.throws(() => validateShare(missingPrecision), /percentage precision/);
+  const zero = { ...retailExample(), totalUnits: 10, series: [{ name: "A", value: 100, units: 10 }, { name: "B", value: 0, units: 0 }] };
+  assert.equal(validateShare(zero), zero, "A disclosed zero-unit category is retained");
+});
+test("explicit generic percentage precision preserves trailing zeros without changing legacy defaults", () => {
+  const legacy = pieOptions(example());
+  assert.equal(legacy.legend.formatter("Company B"), "Company B  15.5%");
+  const data = example(); data.percentDecimals = 2;
+  const options = pieOptions(data, { compact: true });
+  assert.equal(options.legend.formatter("Company B"), "Company B  15.50%");
+  assert.equal(options.series[0].label.formatter(data.series[1]), "15.50%");
+  assert.match(options.tooltip.formatter(data.series[1]), /15\.50%/);
+  assert.match(options.aria.label.description, /Company B: 15\.50%/);
+  for (const precision of [-1, 1.5, "2", 7, Infinity]) {
+    const invalid = example(); invalid.percentDecimals = precision;
+    assert.throws(() => validateShare(invalid), /precision/);
+  }
+});
+test("valid explicit palettes work in both schemes and invalid palettes retain the existing colors", () => {
+  const data = retailExample();
+  for (const dark of [false, true]) assert.deepEqual(pieOptions(data, { dark }).color, data.colors);
+  const fallback = pieOptions(example()).color;
+  for (const colors of [[], ["#123456"], ["#123456", "red", "#abcdef"], "#abcdef", [null, "#abcdef", "#123456"]]) {
+    const invalid = example(); invalid.colors = colors;
+    assert.deepEqual(pieOptions(invalid).color, fallback);
+  }
+  data.unitsLabel = "<img onerror=evil>";
+  const tooltip = pieOptions(data).tooltip.formatter({ name: data.series[0].name, value: data.series[0].units });
+  assert.match(tooltip, /249,973 &lt;img onerror=evil&gt;/);
+  assert.doesNotMatch(tooltip, /<img/);
 });
 test("share charts retain distinct site or company colors with readable percentage labels", () => {
   const shares = JSON.parse(readFileSync(new URL("../data/article_visuals.json", import.meta.url))).shares;
@@ -106,6 +194,23 @@ test("nuclear capacity shares preserve one decimal in every interactive percenta
     assert.deepEqual(options.series[0].data.map(({ name, value }) => ({ name, value })), data.series.map(({ name, value }) => ({ name, value })));
   }
   assert.deepEqual(data, original);
+});
+
+test("compact charts can suppress cramped slice labels while keeping every share in the legend", () => {
+  const data = example();
+  data.series = [{name:"Large",value:82},{name:"Mid",value:11},{name:"Small",value:7}];
+  data.percentDecimals = 2;
+  data.compactLabelMinShare = 10;
+  const options = pieOptions(data, {compact:true});
+  assert.equal(options.series[0].label.formatter({name:"Small",value:7}), "");
+  assert.equal(options.series[0].label.formatter({name:"Mid",value:11}), "11.00%");
+  assert.match(options.legend.formatter("Small"), /7\.00%/);
+  assert.match(options.aria.label.description, /Small: 7\.00%/);
+  delete data.compactLabelMinShare;
+  assert.equal(pieOptions(data,{compact:true}).series[0].label.formatter({name:"Small",value:7}), "7.00%");
+  for (const value of [-1,101,"10",NaN,Infinity]) {
+    assert.throws(() => validateShare({...data,compactLabelMinShare:value}), /threshold/);
+  }
 });
 test("map text is escaped before it reaches Markmap's HTML rendering", () => {
   const map = { title: "Industry", root: { name: 'A <script>alert("x")</script> & B', children: [{ name: "Upstream", children: [{ name: "Materials", children: [{ name: "Company" }] }] }] } };
