@@ -107,8 +107,19 @@ def file_format(url, extension):
     return extension.lstrip(".").upper() if extension in FILE_TYPES else "Web"
 
 
+def is_source_record(node):
+    """The explicit source marker opts in without changing older appendix layouts."""
+    source_id = node.attrs.get("data-source-id", "")
+    return (node.has_class("research-evidence") and bool(source_id)
+            and node.attrs.get("id") == "source-" + source_id)
+
+
 def title_for(link, block, url):
     for ancestor in link.ancestors():
+        if is_source_record(ancestor):
+            heading = next((item for item in ancestor.walk() if re.fullmatch(r"h[2-6]", item.tag)), None)
+            if heading is not None and heading.text():
+                return heading.text().rstrip(" #")
         if ancestor.has_class("research-original"):
             title = next((item.text() for item in ancestor.walk() if item.has_class("research-original__title")), "")
             if title:
@@ -147,13 +158,15 @@ def parse_article(path, build):
     links = []
     notices = []
     def scan(node, section):
-        # Figures and PDF previews own their metadata, not the following source.
+        # Figures, PDF previews and identified source records own their metadata.
         outer = section
-        isolated = node.tag == "figure" or node.has_class("research-original")
+        isolated = node.tag == "figure" or node.has_class("research-original") or is_source_record(node)
         if isolated:
             section = {"title": section["title"], "id": section["id"], "notes": []}
         if re.fullmatch(r"h[2-6]", node.tag):
-            section = {"title": node.text().rstrip(" #"), "id": node.attrs.get("id", ""), "notes": []}
+            source = next((ancestor for ancestor in node.ancestors() if is_source_record(ancestor)), None)
+            section_id = node.attrs.get("id", "") or (source.attrs["id"] if source is not None else "")
+            section = {"title": node.text().rstrip(" #"), "id": section_id, "notes": []}
         elif node.tag == "p":
             source = next((item for item in node.walk()
                            if item.has_class("source-label")
