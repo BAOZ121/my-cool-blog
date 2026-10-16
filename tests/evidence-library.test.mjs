@@ -54,8 +54,11 @@ test("index covers current published posts, preserves contexts, and only uses sa
   const publishedCharts = new Set();
   for (const id of publishedIds) {
     const article = readFileSync(new URL(`${id}/index.en.md`, postRoot), "utf8");
-    for (const [, chartId] of article.matchAll(/{{<\s*market-share\s+id="([a-z0-9-]+)"\s*>}}/g)) {
-      assert.ok(visuals.shares[chartId], `Missing chart data for published article ${id}: ${chartId}`);
+    for (const [, chartId, resource] of article.matchAll(/{{<\s*market-share\s+id="([a-z0-9-]+)"(?:\s+data="([^"]+)")?\s*>}}/g)) {
+      const chartData = resource
+        ? JSON.parse(readFileSync(new URL(`${id}/${resource}`, postRoot), "utf8"))
+        : visuals;
+      assert.ok(chartData.shares?.[chartId], `Missing chart data for published article ${id}: ${chartId}${resource ? ` in ${resource}` : ""}`);
       publishedCharts.add(`/data/charts/${chartId}.csv`);
     }
   }
