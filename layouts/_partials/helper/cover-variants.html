@@ -23,7 +23,8 @@
           {{- if eq . $resource.Width -}}
             {{- $srcset = $srcset | append (printf "%s %dw" $resource.RelPermalink $resource.Width) -}}
           {{- end -}}
-        {{- else -}}
+        {{- else if le (len $variant.Content) 160000 -}}
+          {{- /* Omit oversize widths after the quality floor; retain smaller variants and the original download. */ -}}
           {{- $srcset = $srcset | append (printf "%s %dw" $variant.RelPermalink $variant.Width) -}}
         {{- end -}}
       {{- end -}}

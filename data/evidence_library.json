@@ -2,6 +2,1308 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "new-energy-vehicle",
+      "title": "Global New Energy Vehicle Industry Report",
+      "url": "/post/new-energy-vehicle/",
+      "published": "2026-10-18",
+      "notices": [],
+      "entries": [
+        {
+          "id": "1c32cc6d1e45",
+          "url": "/post/new-energy-vehicle/assets/report-en.txt",
+          "title": "English manuscript",
+          "kind": "file",
+          "format": "TXT",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Article",
+              "url": "/post/new-energy-vehicle/",
+              "text": "English manuscript · Supporting Evidence records · Table data",
+              "notes": [
+                "Industry report · Version 1.0 · Global scope · Public information through 18 October 2026.",
+                "EnBW HyperNetz charging hub in Hengersberg, Germany, photographed on 3 June 2025. The photograph shows charging bays beneath a solar-panel canopy; it illustrates one site rather than global infrastructure conditions. Photo: APneunzehn74 / Wikimedia Commons, CC0 1.0. Original photograph, unmodified. [P01] View original photograph · 4000 × 2992",
+                "DEX RESEARCH",
+                "Passenger vehicles and the electric mobility value chain",
+                "18 October 2026 | English manuscript",
+                "Electric mobility has reached substantial scale, but growth, profit and dependable service are different achievements. This report follows a fast-charging launch through industry history, regional markets, the value chain and company economics. Its central assessment is that competitive strength depends on turning technology into repeatable manufacturing, affordable ownership and reliable energy access, with returns evaluated within each business and statistical boundary.",
+                "Global research with emphasis on China, Europe and North America. Passenger BEVs and PHEVs, including EREVs where included by the source, form the core. Commercial vehicles and fuel-cell vehicles are separate context. Public information available through 18 October 2026. The SNE group share chart explicitly covers a broader BEV plus PHEV market including commercial vehicles in 80 countries. Complete-year 2025 results and 2026 interim observations remain separate.",
+                "Contents Part 1 Industry Story · Part 2 Industry History · Part 3 Market Landscape · Part 4 Industry Challenges · Supporting Evidence"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0631a3128d13",
+          "url": "/post/new-energy-vehicle/assets/supporting-evidence-en.json",
+          "title": "Supporting Evidence records",
+          "kind": "file",
+          "format": "JSON",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Article",
+              "url": "/post/new-energy-vehicle/",
+              "text": "English manuscript · Supporting Evidence records · Table data",
+              "notes": [
+                "Industry report · Version 1.0 · Global scope · Public information through 18 October 2026.",
+                "EnBW HyperNetz charging hub in Hengersberg, Germany, photographed on 3 June 2025. The photograph shows charging bays beneath a solar-panel canopy; it illustrates one site rather than global infrastructure conditions. Photo: APneunzehn74 / Wikimedia Commons, CC0 1.0. Original photograph, unmodified. [P01] View original photograph · 4000 × 2992",
+                "DEX RESEARCH",
+                "Passenger vehicles and the electric mobility value chain",
+                "18 October 2026 | English manuscript",
+                "Electric mobility has reached substantial scale, but growth, profit and dependable service are different achievements. This report follows a fast-charging launch through industry history, regional markets, the value chain and company economics. Its central assessment is that competitive strength depends on turning technology into repeatable manufacturing, affordable ownership and reliable energy access, with returns evaluated within each business and statistical boundary.",
+                "Global research with emphasis on China, Europe and North America. Passenger BEVs and PHEVs, including EREVs where included by the source, form the core. Commercial vehicles and fuel-cell vehicles are separate context. Public information available through 18 October 2026. The SNE group share chart explicitly covers a broader BEV plus PHEV market including commercial vehicles in 80 countries. Complete-year 2025 results and 2026 interim observations remain separate.",
+                "Contents Part 1 Industry Story · Part 2 Industry History · Part 3 Market Landscape · Part 4 Industry Challenges · Supporting Evidence"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d71fd54415dd",
+          "url": "/post/new-energy-vehicle/assets/web-tables.json",
+          "title": "Table data",
+          "kind": "file",
+          "format": "JSON",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Article",
+              "url": "/post/new-energy-vehicle/",
+              "text": "English manuscript · Supporting Evidence records · Table data",
+              "notes": [
+                "Industry report · Version 1.0 · Global scope · Public information through 18 October 2026.",
+                "EnBW HyperNetz charging hub in Hengersberg, Germany, photographed on 3 June 2025. The photograph shows charging bays beneath a solar-panel canopy; it illustrates one site rather than global infrastructure conditions. Photo: APneunzehn74 / Wikimedia Commons, CC0 1.0. Original photograph, unmodified. [P01] View original photograph · 4000 × 2992",
+                "DEX RESEARCH",
+                "Passenger vehicles and the electric mobility value chain",
+                "18 October 2026 | English manuscript",
+                "Electric mobility has reached substantial scale, but growth, profit and dependable service are different achievements. This report follows a fast-charging launch through industry history, regional markets, the value chain and company economics. Its central assessment is that competitive strength depends on turning technology into repeatable manufacturing, affordable ownership and reliable energy access, with returns evaluated within each business and statistical boundary.",
+                "Global research with emphasis on China, Europe and North America. Passenger BEVs and PHEVs, including EREVs where included by the source, form the core. Commercial vehicles and fuel-cell vehicles are separate context. Public information available through 18 October 2026. The SNE group share chart explicitly covers a broader BEV plus PHEV market including commercial vehicles in 80 countries. Complete-year 2025 results and 2026 interim observations remain separate.",
+                "Contents Part 1 Industry Story · Part 2 Industry History · Part 3 Market Landscape · Part 4 Industry Challenges · Supporting Evidence"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "858d0baeb600",
+          "url": "/data/charts/nev-group-share-2025.csv",
+          "title": "Global EV deliveries / registrations by group — data (CSV)",
+          "kind": "file",
+          "format": "CSV",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Global EV deliveries / registrations by group",
+              "url": "/post/new-energy-vehicle/#market-share-nev-group-share-2025-2-title",
+              "text": "Download data (CSV)",
+              "notes": [
+                "BEV + PHEV, including commercial vehicles. This is SNE Research's broader EV comparison alongside the report's passenger-car analysis; it is not a passenger-car-only share chart.",
+                "Global · SNE coverage of 80 countries · Share of customer deliveries or registrations by source group",
+                "Source [S01], Global EV and Battery Monthly Tracker (Jan 2026), group table and footnotes 1–2. SNE reports 21,470 thousand vehicles. The 11 published rounded group volumes sum to 21,471 thousand, and the published shares sum to 100.1%. Arcs follow the component-volume proportions; all source shares, including Others at 34.3%, remain unchanged. Volumes retain the source unit of thousand vehicles. The public release does not fully describe group, joint-venture and brand-allocation rules. This is a third-party market estimate, not an audited industry census; it must not be substituted into company shipment or IEA passenger-car totals."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "77024e9a3055",
+          "url": "https://sneresearch.com/en/insight/release_view/589/page/48",
+          "title": "SNE Research — Global EV sales in 2025 BEV plus PHEV · Global EV and Battery Monthly Tracker (Jan 2026)",
+          "kind": "link",
+          "format": "Web",
+          "host": "sneresearch.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Global EV deliveries / registrations by group",
+              "url": "/post/new-energy-vehicle/#market-share-nev-group-share-2025-2-title",
+              "text": "Source: SNE Research — Global EV sales in 2025 BEV plus PHEV · Global EV and Battery Monthly Tracker (Jan 2026) (2026-02-05). Reviewed 2026-10-18.",
+              "notes": [
+                "BEV + PHEV, including commercial vehicles. This is SNE Research's broader EV comparison alongside the report's passenger-car analysis; it is not a passenger-car-only share chart.",
+                "Global · SNE coverage of 80 countries · Share of customer deliveries or registrations by source group",
+                "Source [S01], Global EV and Battery Monthly Tracker (Jan 2026), group table and footnotes 1–2. SNE reports 21,470 thousand vehicles. The 11 published rounded group volumes sum to 21,471 thousand, and the published shares sum to 100.1%. Arcs follow the component-volume proportions; all source shares, including Others at 34.3%, remain unchanged. Volumes retain the source unit of thousand vehicles. The public release does not fully describe group, joint-venture and brand-allocation rules. This is a third-party market estimate, not an audited industry census; it must not be substituted into company shipment or IEA passenger-car totals."
+              ]
+            },
+            {
+              "section": "[S01] Global EV sales in 2025 BEV plus PHEV",
+              "url": "/post/new-energy-vehicle/#source-S01",
+              "text": "Publisher source",
+              "notes": [
+                "SNE Research | 2026-02-05 | 2025 January to December",
+                "Scope and location: 80-country coverage presented as global; BEV plus PHEV including commercial vehicles; customer deliveries or registrations; group table; Second image titled Global EV Sales by Group; footnotes 1 and 2",
+                "Supports: Published total 21470 thousand; group shares and volumes as preserved in the accompanying CSV. Scope includes commercial vehicles. Source images were actually opened and inspected.",
+                "Limits: Not passenger-car-only. Public group allocation methodology is incomplete. Rounded shares total 100.1%; component volumes total 21471 thousand. Sector angles use component-volume proportions; original labels remain unchanged. Third-party market estimate, not an audited industry census."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "eee90c45f303",
+          "url": "https://prod.byd.com/en/news-list/BYD-Unveils-Super-e-Platform-Megawatt-Flash-Charging-Electric-Vehicles-Matching-Refueling-Speeds.html",
+          "title": "[H01] BYD Unveils Super e-Platform with Megawatt Flash Charging for Electric Vehicles, Matching Refueling Speeds",
+          "kind": "link",
+          "format": "Web",
+          "host": "prod.byd.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H01] BYD Unveils Super e-Platform with Megawatt Flash Charging for Electric Vehicles, Matching Refueling Speeds",
+              "url": "/post/new-energy-vehicle/#source-H01",
+              "text": "Publisher source",
+              "notes": [
+                "BYD | 2025-03-17 | Product launch and future network plan, not a fleet performance survey",
+                "Scope and location: China launch; not worldwide charger compatibility or coverage; Opening; Megawatt Flash Charging; Megawatt Flash Charging Terminal; Han L and Tang L pre-sales sections",
+                "Supports: BYD announced Super e-Platform, a 1000 V architecture, 1000 kW peak charging and 400 km of range added in five minutes for the equipped Han L; Han L and Tang L entered pre-sales in China; BYD announced its own charging terminal and a plan for over 4000 megawatt flash-charging stations in China",
+                "Limits: Manufacturer announcement; not independently measured average or universal real-world charging performance; The text does not disclose a complete protocol specifying ambient/battery temperature, starting and ending state of charge, and the range certification or road-use basis for the headline claim; Station plan is not evidence that all stations were operational; Do not repeat world-first, fastest or world-record promotional comparisons as independently established facts"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b5b1c9307007",
+          "url": "https://afdc.energy.gov/files/u/publication/fast-charging-for-nps-road-trips.pdf",
+          "title": "[H02] Fast Charging Infrastructure for Electrifying Road Trips to and from National Parks in the Western United States",
+          "kind": "file",
+          "format": "PDF",
+          "host": "afdc.energy.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H02] Fast Charging Infrastructure for Electrifying Road Trips to and from National Parks in the Western United States",
+              "url": "/post/new-energy-vehicle/#source-H02",
+              "text": "Publisher source",
+              "notes": [
+                "National Renewable Energy Laboratory; Dong-Yeon Lee, Kaylyn Bopp, Matthew Moniot, Alicen Kandt | 2023-09 | 2023 study; model assumptions for 2020/2025/2030 vehicle cohorts",
+                "Scope and location: Western United States; Printed p. 11, PDF page 19, Figure 5 and Section 2.4; printed p. 15, PDF page 23, high-SOC charging discussion",
+                "Supports: Charging power varies with battery state of charge, vehicle class and model year; The charging curves used by the study decrease at high state of charge; Road-trip energy use depends on driving conditions as well as vehicle characteristics",
+                "Limits: US modelling study, not a test of BYD's platform; The illustrated 80–85% state-of-charge taper is a study generalisation and must not be assigned to every model; Used for the charging-curve principle, not to validate the five-minute claim"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2e8bb3975c99",
+          "url": "https://afdc.energy.gov/fuels/electricity-infrastructure-development",
+          "title": "[H03] Procurement and Installation for Electric Vehicle Charging Infrastructure",
+          "kind": "link",
+          "format": "Web",
+          "host": "afdc.energy.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H03] Procurement and Installation for Electric Vehicle Charging Infrastructure",
+              "url": "/post/new-energy-vehicle/#source-H03",
+              "text": "Publisher source",
+              "notes": [
+                "U.S. Department of Energy, Alternative Fuels Data Center | Not displayed; available by cutoff | Undated guidance available by the cutoff; accessed 2026-10-18",
+                "Scope and location: United States; cited for planning principles only; Cost Considerations; Installation; Compliance, Permitting, and Inspection; Utilities and Other Partners",
+                "Supports: Charging-site planning includes equipment, installation, electrical upgrades, permitting and operation/maintenance; Utilities assess power availability and capacity and should be engaged early",
+                "Limits: Undated, evolving US guidance; No cost figures from this page used; Does not quantify BYD deployment economics or global charger reliability"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "71cfb29d7e23",
+          "url": "https://www.energy.gov/articles/history-electric-car",
+          "title": "[H04] The History of the Electric Car",
+          "kind": "link",
+          "format": "Web",
+          "host": "energy.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H04] The History of the Electric Car",
+              "url": "/post/new-energy-vehicle/#source-H04",
+              "text": "Publisher source",
+              "notes": [
+                "U.S. Department of Energy; Rebecca Matulka | 2014-09-15 | Historical overview as published in 2014",
+                "Scope and location: Primarily United States, with international origins acknowledged; The birth of the electric vehicle; The early rise and fall of the electric car; Gas shortages spark interest in electric vehicles; Environmental concern drives electric vehicles forward",
+                "Supports: Electric vehicle development arose from multiple nineteenth-century battery and motor advances, without a single unambiguous inventor; Electric cars attracted urban users; US gasoline-car adoption benefited from cost, electric starters, roads and fuel availability; 1970s oil supply concerns revived US electric-vehicle research interest; 1976 legislation authorised federal R&D and demonstration support; US environmental and energy regulations renewed interest during the 1990s",
+                "Limits: Institutional retrospective, not a contemporaneous primary document for nineteenth-century events; US-centred account must not be presented as a complete global chronology; No early global market share, unqualified first invention or current market forecast taken from the page; Its 2014 forecasts and contemporary totals are excluded"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7d9114914791",
+          "url": "https://blog.sciencemuseum.org.uk/batteries-not-included/",
+          "title": "[H05] Batteries Not Included",
+          "kind": "link",
+          "format": "Web",
+          "host": "blog.sciencemuseum.org.uk",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H05] Batteries Not Included",
+              "url": "/post/new-energy-vehicle/#source-H05",
+              "text": "Publisher source",
+              "notes": [
+                "Science Museum; Kathleen McIlvenna | 2010-10-05 | Historical battery development",
+                "Scope and location: Battery technology history; Opening discussion of rechargeable batteries, paragraph naming Gaston Planté",
+                "Supports: Gaston Planté developed the lead-acid rechargeable battery in 1859",
+                "Limits: Museum historical account, not original 1859 experimental documentation; Used only for the lead-acid milestone; The page's separate lithium-battery introduction date is not used; the Nobel source is used for lithium-ion commercialisation chronology; No claim of a complete, linear replacement of lead-acid by lithium-ion"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "053a72cf5f56",
+          "url": "https://www.nobelprize.org/prizes/chemistry/2019/popular-information/",
+          "title": "[H06] The Nobel Prize in Chemistry 2019: Popular information",
+          "kind": "link",
+          "format": "Web",
+          "host": "nobelprize.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H06] The Nobel Prize in Chemistry 2019: Popular information",
+              "url": "/post/new-energy-vehicle/#source-H06",
+              "text": "Publisher source",
+              "notes": [
+                "Royal Swedish Academy of Sciences / Nobel Prize Outreach; Ann Fernholm | 2019-10, prize educational material; exact page publication day not displayed in retrieved body | Lithium-ion battery research and commercialisation history",
+                "Scope and location: International scientific development; Opening overview; High voltages when lithium ions hide in cobalt oxide; Yoshino builds the first commercially viable lithium-ion battery; The lithium-ion battery – necessary for a fossil fuel-free society",
+                "Supports: Whittingham's rechargeable-lithium work in the 1970s, Goodenough's high-voltage oxide cathode work in 1980, Yoshino's carbon-anode configuration in 1985; Commercial lithium-ion battery sales began in 1991 according to the prize account; The 2019 chemistry prize recognised Goodenough, Whittingham and Yoshino for lithium-ion battery development",
+                "Limits: Authoritative prize-body synthesis of scientific history; not the original papers or patents; Avoids treating the prize as a complete list of contributors; Does not establish an immediate automotive market breakthrough in 1991 or the safety of all lithium-ion systems"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fbb5de0e4d0a",
+          "url": "https://ww2.arb.ca.gov/about/history",
+          "title": "[H07] History",
+          "kind": "link",
+          "format": "Web",
+          "host": "ww2.arb.ca.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H07] History",
+              "url": "/post/new-energy-vehicle/#source-H07",
+              "text": "Publisher source",
+              "notes": [
+                "California Air Resources Board | Not displayed; available by cutoff | Regulator's own historical account, undated page available by cutoff",
+                "Scope and location: California, United States; List of automobile emission-control milestones: Zero-emission vehicle (ZEV) regulation (1990)",
+                "Supports: CARB dates adoption of its ZEV regulation to 1990 and describes a requirement for manufacturers to produce an increasing number of ZEVs",
+                "Limits: Primary institutional self-history; original rule not relied on for quantitative mandates; Historical adoption is not a claim about the legal status of California's rules in October 2026; No exact percentage mandate or current compliance advice used"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ecb1df59deea",
+          "url": "https://news.gm.com/home.detail.html/Pages/news/us/en/2026/mar/0311-ev1.html",
+          "title": "[H08] Driving the future, then and now: the story of the EV1",
+          "kind": "link",
+          "format": "Web",
+          "host": "news.gm.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H08] Driving the future, then and now: the story of the EV1",
+              "url": "/post/new-energy-vehicle/#source-H08",
+              "text": "Publisher source",
+              "notes": [
+                "General Motors | 2026-03-11 | Corporate historical account of Impact and EV1",
+                "Scope and location: United States; From Impact to EV1; A pioneering program — and a lasting legacy",
+                "Supports: GM showed the Impact concept in 1990 and operated EV1 leasing during the 1990s; EV1 was leased rather than sold",
+                "Limits: Company retrospective contains promotional first/mass-produced claims, not adopted here; The returned page duplicates portions of its article with differing first-lease dates (1997 and late 1996); the draft deliberately uses only the 1990s and does not rely on either exact date; No claim about one single cause of the programme's end"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7b6b19bb28c2",
+          "url": "https://ir.tesla.com/press-release/tesla-motors-begins-regular-production-2008-tesla-roadster",
+          "title": "[H09] Tesla Motors Begins Regular Production of 2008 Tesla Roadster",
+          "kind": "link",
+          "format": "Web",
+          "host": "ir.tesla.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H09] Tesla Motors Begins Regular Production of 2008 Tesla Roadster",
+              "url": "/post/new-energy-vehicle/#source-H09",
+              "text": "Publisher source",
+              "notes": [
+                "Tesla Investor Relations / Tesla Motors | 2008-03-16 displayed on IR archive; release dateline 2008-03-17 | Start of regular Roadster production, not announcement of a mass-market scale",
+                "Scope and location: United States; Dateline and first three paragraphs",
+                "Supports: Tesla announced that regular Roadster production began 17 March 2008; The prototype had been unveiled in July 2006",
+                "Limits: Archive display date and release dateline differ by one day; retained separately; Company release does not prove broad affordability or universal superiority; Promotional only-highway-capable or first claims excluded"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5d1f676f44a1",
+          "url": "https://www.nissan-global.com/EN/DOCUMENT/HTML/FINANCIAL/SPEECH/2010/20103rd_speech_185_e.html",
+          "title": "[H10] Fiscal Year 2010 Third-quarter Financial Results: Media Conference",
+          "kind": "link",
+          "format": "Web",
+          "host": "nissan-global.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H10] Fiscal Year 2010 Third-quarter Financial Results: Media Conference",
+              "url": "/post/new-energy-vehicle/#source-H10",
+              "text": "Publisher source",
+              "notes": [
+                "Nissan Motor Co., Ltd.; Joji Tagawa | 2011-02-09 | Quarterly corporate update confirming events in late 2010",
+                "Scope and location: Japan and United States for delivery event; Business update, paragraphs on Nissan LEAF",
+                "Supports: LEAF production started at Oppama in October 2010; LEAF customer deliveries began in Japan and the United States in December 2010",
+                "Limits: Uses a retrospective confirmation rather than a prelaunch delivery schedule; No first-ever electric-car claim or claim that the entire launch was global at the same time"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b463990a46bb",
+          "url": "https://www.mof.gov.cn/gp/xxgkml/jjjss/200902/t20090210_2499581.htm",
+          "title": "[H11] Notice on Energy-saving and New-energy Vehicle Demonstration Pilots (Caijian [2009] No. 6)",
+          "kind": "link",
+          "format": "Web",
+          "host": "mof.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H11] Notice on Energy-saving and New-energy Vehicle Demonstration Pilots (Caijian [2009] No. 6)",
+              "url": "/post/new-energy-vehicle/#source-H11",
+              "text": "Publisher source",
+              "notes": [
+                "China Ministry of Finance and Ministry of Science and Technology | 2009-01-23 official issue metadata; separate web-publication date not displayed | Initial 13-city public-service demonstration pilot",
+                "Scope and location: China; Notice first paragraph; annex Articles 2, 4 and 5",
+                "Supports: Initial pilot covered 13 cities and focused on buses, taxis, official vehicles, sanitation and postal services; Central subsidies supported vehicle procurement; local support included complementary infrastructure and maintenance",
+                "Limits: Historical programme definition includes conventional hybrids and fuel-cell vehicles, broader than the core plug-in passenger-car market in this report; 13 is the initial notice scope, not a count for all later demonstration cities; Policy design is not evidence of actual sales or programme effectiveness"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e31a4dfa2cde",
+          "url": "https://www.nea.gov.cn/2012-07/10/c_131705726.htm",
+          "title": "[H12] Energy-saving and New-energy Vehicle Industry Development Plan (2012–2020)",
+          "kind": "link",
+          "format": "Web",
+          "host": "nea.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H12] Energy-saving and New-energy Vehicle Industry Development Plan (2012–2020)",
+              "url": "/post/new-energy-vehicle/#source-H12",
+              "text": "Publisher source",
+              "notes": [
+                "China State Council; official republication by National Energy Administration | 2012-07-10 on NEA; issuing date 2012-06-28 | 2012–2020 planning horizon",
+                "Scope and location: China; Section I market definition; Section II principles; Section III.1 technical route; Section IV charging infrastructure",
+                "Supports: Selected electric drive as the main strategic direction and prioritised BEV and PHEV industrialisation; Linked vehicle production with batteries, motors, electronics, charging, after-sales and recycling",
+                "Limits: Official repost of primary State Council policy; Targets are not achieved production, sales or performance; NEV definition includes fuel-cell vehicles, so cannot be silently substituted for IEA electric-car statistics"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b75b5ef95a45",
+          "url": "https://www.mof.gov.cn/zcsjtsgb/gfxwj/202004/t20200423_3583791.htm",
+          "title": "[H13] Notice on Improving Fiscal Subsidies for New-energy Vehicle Promotion (Caijian [2020] No. 86)",
+          "kind": "link",
+          "format": "Web",
+          "host": "mof.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H13] Notice on Improving Fiscal Subsidies for New-energy Vehicle Promotion (Caijian [2020] No. 86)",
+              "url": "/post/new-energy-vehicle/#source-H13",
+              "text": "Publisher source",
+              "notes": [
+                "China Ministry of Finance, MIIT, Ministry of Science and Technology and NDRC | 2020-04-23 | Historical purchase subsidy extension through 2022",
+                "Scope and location: China; Section I extension and step-down; Section III subsidy settlement; effective-date paragraph",
+                "Supports: Extended the purchase-support programme through end-2022 with scheduled subsidy reductions",
+                "Limits: Historical notice, not a statement of all incentives applicable in 2026; No assertion that every later amendment followed the original schedule unchanged; No claim that ending purchase subsidies ended all NEV policy support"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1e5c1bbf60dd",
+          "url": "https://www.gov.cn/zhengce/content/2020-11/02/content_5556716.htm",
+          "title": "[H14] New-energy Vehicle Industry Development Plan (2021–2035)",
+          "kind": "link",
+          "format": "Web",
+          "host": "gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H14] New-energy Vehicle Industry Development Plan (2021–2035)",
+              "url": "/post/new-energy-vehicle/#source-H14",
+              "text": "Publisher source",
+              "notes": [
+                "General Office of the State Council of China | 2020-11-02 | 2021–2035 planning horizon",
+                "Scope and location: China; Chapter II principles; Chapter IV industrial ecosystem; Chapter V integrated development; Chapter VI charging/swap networks",
+                "Supports: Emphasised market-led allocation, enterprise technical choices, and integration with energy and information infrastructure; Included charging/swapping, grid planning, standards, safety and battery recycling",
+                "Limits: Policy objectives and tasks are not evidence of achieved market outcomes; Its 2025 NEV share target uses all new vehicle sales and must not be directly compared with IEA passenger-car penetration as if definitions were identical"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "83f9c2059d15",
+          "url": "https://climate.ec.europa.eu/news-other-reads/news/average-co2-emissions-new-cars-increased-2019-ahead-stricter-2020-targets-2021-06-01_en",
+          "title": "[H15] Average CO2 emissions from new cars increased in 2019 ahead of stricter 2020 targets",
+          "kind": "link",
+          "format": "Web",
+          "host": "climate.ec.europa.eu",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H15] Average CO2 emissions from new cars increased in 2019 ahead of stricter 2020 targets",
+              "url": "/post/new-energy-vehicle/#source-H15",
+              "text": "Publisher source",
+              "notes": [
+                "European Commission, Directorate-General for Climate Action | 2021-06-01 | 2019 registrations and transition to 2020 standards",
+                "Scope and location: European Union / reporting area described in source; Paragraph on stricter fleet-wide 95 g CO2/km car and 147 g CO2/km van targets applicable since 2020",
+                "Supports: The Commission describes tighter 2020 fleet-wide CO2 targets as requiring improved fleet efficiency and accelerated deployment of low- and zero-emission vehicles",
+                "Limits: Historical fleet-average compliance mechanism, not a per-car requirement or immediate ban on combustion-car sales; No current 2035 rule assertion made; Car/van categories remain separate; van figures not used in draft"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c74cb50a185c",
+          "url": "https://www.iea.org/reports/global-ev-outlook-2026/trends-in-electric-cars",
+          "title": "[H16] Global EV Outlook 2026: Trends in electric cars; Executive summary",
+          "kind": "link",
+          "format": "Web",
+          "host": "iea.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[H16] Global EV Outlook 2026: Trends in electric cars; Executive summary",
+              "url": "/post/new-energy-vehicle/#source-H16",
+              "text": "Publisher source",
+              "notes": [
+                "International Energy Agency | 2026-05-20, verified on report landing page | 2025 historical estimate; 2026 projections excluded from this history",
+                "Scope and location: Global; China; Europe; United States; Electric car sales topped 20 million globally in 2025; Across the three major electric car markets; notes defining electric cars; executive-summary opening",
+                "Supports: 2025 electric-car sales exceeded 20 million, grew 20%, and represented 25% of new-car sales globally; 2025 sales penetration was nearly 55% in China, 28% in Europe and just under 10% in the United States; The report defines electric cars as BEV and PHEV",
+                "Limits: IEA analytical compilation, not a single direct official worldwide registration census; underlying sources include EV Volumes, ACEA, EAFO and country submissions; Sales share is a share of new-car sales, not the vehicle stock, revenues, all road vehicles or fuel-cell market; Europe is not identical to European Union; Publication date verified at https://www.iea.org/reports/global-ev-outlook-2026; 2026 forecasts are not 2026 actuals"
+              ]
+            },
+            {
+              "section": "[M01] Global EV Outlook 2026 Trends in electric cars",
+              "url": "/post/new-energy-vehicle/#source-M01",
+              "text": "Publisher source",
+              "notes": [
+                "IEA | 2026-05-20 | 2025; 2026 Q1; 2026 forecast",
+                "Scope and location: Global; China; Europe; United States; Electric cars are BEV plus PHEV including EREV; Electric car sales; Across the three major electric car markets",
+                "Supports: 2025 electric car sales exceeded 20 million, rose 20% and reached 25% of new cars. BEVs were 65% of electric car sales. China exceeded 13 million and Europe reached 4.2 million; US sales were about 1.5 million.",
+                "Limits: IEA estimates, partly based on commercial datasets. Europe is not EU. Rounded totals cannot support precise OEM shares; EREV must not be added again to PHEV."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "162d27c2b25e",
+          "url": "https://www.iea.org/reports/global-ev-outlook-2026/executive-summary",
+          "title": "[M02] Global EV Outlook 2026 Executive summary",
+          "kind": "link",
+          "format": "Web",
+          "host": "iea.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M02] Global EV Outlook 2026 Executive summary",
+              "url": "/post/new-energy-vehicle/#source-M02",
+              "text": "Publisher source",
+              "notes": [
+                "IEA | 2026-05-20 | 2026 Q1; May 2026 forecast for 2026",
+                "Scope and location: Global; BEV plus PHEV electric cars; Electric cars are poised to make up a greater share of total car sales in 2026",
+                "Supports: Q1 2026 sales around 3.9 million, down 8% year on year. May forecast for 2026: 23 million sales and 28% of new cars.",
+                "Limits: A dated forecast, not 2026 actual sales or an October nowcast. Scenario and policy assumptions can change."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6e7c9d58bf49",
+          "url": "https://www.iea.org/reports/global-ev-outlook-2026/electric-vehicle-batteries",
+          "title": "[M03] Global EV Outlook 2026 Electric vehicle batteries",
+          "kind": "link",
+          "format": "Web",
+          "host": "iea.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M03] Global EV Outlook 2026 Electric vehicle batteries",
+              "url": "/post/new-energy-vehicle/#source-M03",
+              "text": "Publisher source",
+              "notes": [
+                "IEA | 2026-05-20 | 2025",
+                "Scope and location: Global; EV battery deployment by capacity; nameplate battery manufacturing capacity separately; Electric vehicle battery deployment; Battery industry trends; Battery manufacturing and trade",
+                "Supports: EV battery deployment reached 1.2 TWh. LFP exceeded 55% of deployed EV battery capacity. Battery nameplate capacity exceeded 4 TWh; China held over 80%. CATL, BYD, LG Energy Solution and Panasonic illustrate cell manufacturers.",
+                "Limits: GWh shares are not vehicle shares. Nameplate capacity covers different applications and is not usable output; do not divide deployment by nameplate to infer plant utilisation. Pack price averages include stationary storage."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6d684f183100",
+          "url": "https://www.iea.org/reports/global-ev-outlook-2026/electric-vehicle-charging-chap-6-and-10",
+          "title": "[M04] Global EV Outlook 2026 Electric vehicle charging",
+          "kind": "link",
+          "format": "Web",
+          "host": "iea.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M04] Global EV Outlook 2026 Electric vehicle charging",
+              "url": "/post/new-energy-vehicle/#source-M04",
+              "text": "Publisher source",
+              "notes": [
+                "IEA | 2026-05-20 | End 2025",
+                "Scope and location: Global; Public charging points, not stations or private chargers; Public charging infrastructure rollout further accelerated in 2025",
+                "Supports: Public charging points exceeded 7 million at end 2025 after nearly 1.8 million additions. Rated capacity, vehicle compatibility and access to private charging matter as well as point counts.",
+                "Limits: A point is not a station. Nameplate power is not delivered energy, availability or average charging speed; figures include light-duty vehicles beyond passenger cars where stated."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6ba4c5fa8dae",
+          "url": "https://www.iea.org/reports/global-ev-outlook-2026/manufacturing-and-trade",
+          "title": "[M05] Global EV Outlook 2026 Manufacturing and trade",
+          "kind": "link",
+          "format": "Web",
+          "host": "iea.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M05] Global EV Outlook 2026 Manufacturing and trade",
+              "url": "/post/new-energy-vehicle/#source-M05",
+              "text": "Publisher source",
+              "notes": [
+                "IEA | 2026-05-20 | 2025",
+                "Scope and location: Global; Electric car production, trade and maker headquarters distinguished; Electric car manufacturing and trade",
+                "Supports: Nearly 22 million electric cars were produced in 2025; China produced nearly 75%. About one-quarter of production was traded internationally.",
+                "Limits: Production location, brand ownership and sale destination are different. Exports need not equal final registrations abroad; production is not sales."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c0e50fd2dfe4",
+          "url": "https://www.cada.cn/Trends/info_91_10580.html",
+          "title": "[M06] China passenger car market analysis September 2026",
+          "kind": "link",
+          "format": "Web",
+          "host": "cada.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M06] China passenger car market analysis September 2026",
+              "url": "/post/new-energy-vehicle/#source-M06",
+              "text": "Publisher source",
+              "notes": [
+                "CADA Passenger Car Market Information Joint Committee | 2026-10-12 | 2026 January to September; September monthly",
+                "Scope and location: China; NEV passenger car domestic retail; manufacturer wholesale separately; Section 1 New energy vehicles",
+                "Supports: January to September NEV passenger retail 7.758 million, down 12.8%; wholesale 11.448 million, up 9.4%. September retail 1.084 million, down 16.7%, with 67.0% penetration.",
+                "Limits: Domestic retail and wholesale have different channels and export coverage. Their difference is not inventory accumulation. Monthly penetration does not describe annual sales growth. Only these specified statistics are used; global-share section is not used due rounded and internally differing percentages."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d2f8373038a3",
+          "url": "https://www.acea.auto/pc-registrations/new-car-registrations-1-8-in-2025-battery-electric-17-4-market-share/",
+          "title": "[M07] New car registrations 2025 battery electric 17.4 percent market share",
+          "kind": "link",
+          "format": "Web",
+          "host": "acea.auto",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M07] New car registrations 2025 battery electric 17.4 percent market share",
+              "url": "/post/new-energy-vehicle/#source-M07",
+              "text": "Publisher source",
+              "notes": [
+                "ACEA | 2026-01-27 | 2025",
+                "Scope and location: European Union; New passenger car registrations by power source; Electric cars",
+                "Supports: BEV registrations 1,880,370, share 17.4%; PHEV 1,015,887, share 9.4%. Their sum is 2,896,257 registrations.",
+                "Limits: EU is narrower than IEA Europe. HEV is not PHEV. Addition is the author's arithmetic using compatible same-source counts."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fbdeac4dc708",
+          "url": "https://www.acea.auto/?action=view&data=WzU0NzA2LCI2YjgzZjQ4NDljY2IiLDEzOTg0LCJ1dTR0MG00MDh6azBjMHM4c2trazhzODQwMDhnd28wdyIsNTQwNTQsMF0&endpoint=view_in_browser&mailpoet_router=",
+          "title": "[M08] New car registrations August 2026 year to date battery electric 21.7 percent market share",
+          "kind": "link",
+          "format": "Web",
+          "host": "acea.auto",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M08] New car registrations August 2026 year to date battery electric 21.7 percent market share",
+              "url": "/post/new-energy-vehicle/#source-M08",
+              "text": "Publisher source",
+              "notes": [
+                "ACEA | 2026-09-24 | 2026 January to August",
+                "Scope and location: European Union; New passenger car registrations; Electric cars; official ACEA email web version",
+                "Supports: BEV 1,641,333 registrations, 21.7% share; PHEV 758,082, 10.0% share; HEV 36.6% of all new cars.",
+                "Limits: An eight-month period, not full year. HEV excluded from electric-car totals. Official email version read because regular article was hard to locate."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "222542935755",
+          "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260922/dq260922c-eng.htm",
+          "title": "[M09] Vehicle registrations 2025",
+          "kind": "link",
+          "format": "Web",
+          "host": "www150.statcan.gc.ca",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M09] Vehicle registrations 2025",
+              "url": "/post/new-energy-vehicle/#source-M09",
+              "text": "Publisher source",
+              "notes": [
+                "Statistics Canada | 2026-09-22 | 2025",
+                "Scope and location: Canada; Registered vehicle stock, not new vehicle sales; Highlights; Electric vehicles",
+                "Supports: Canada registered 25.3 million light-duty vehicles in 2025. BEV plus PHEV stock was 3.5% of LDVs; broader EV category also includes HEV.",
+                "Limits: Stock is not new-sales penetration. LDVs include pickups and vans. The reported 6.5% broader EV stock share must not be called BEV plus PHEV share."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bbdac1994a51",
+          "url": "https://www.irs.gov/clean-vehicle-tax-credits",
+          "title": "[M10] Clean vehicle tax credits",
+          "kind": "link",
+          "format": "Web",
+          "host": "irs.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M10] Clean vehicle tax credits",
+              "url": "/post/new-energy-vehicle/#source-M10",
+              "text": "Publisher source",
+              "notes": [
+                "US Internal Revenue Service | Undated live official guidance available by read date | Acquisition deadline 2025-09-30",
+                "Scope and location: United States federal; Sections 30D 25E and 45W vehicle acquisition credits; Update; Planning to buy a new vehicle",
+                "Supports: Credits not available for vehicles acquired after September 30 2025; later placed-in-service cases depend on acquisition by the deadline.",
+                "Limits: Not a statement about all state incentives or manufacturing credits. No personalised tax advice; distinguish acquisition and delivery."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "28ddbe824177",
+          "url": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5207352/content.html",
+          "title": "[M11] Announcement on extending and optimising new energy vehicle purchase tax relief",
+          "kind": "link",
+          "format": "Web",
+          "host": "fgk.chinatax.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M11] Announcement on extending and optimising new energy vehicle purchase tax relief",
+              "url": "/post/new-energy-vehicle/#source-M11",
+              "text": "Publisher source",
+              "notes": [
+                "China Ministry of Finance State Taxation Administration MIIT | 2023-06-19 | 2024 to 2027",
+                "Scope and location: China; Eligible NEV passenger vehicle purchase tax relief; Paragraphs 1 and 3",
+                "Supports: 2026 to 2027 relief is half of purchase tax, capped at CNY 15000 per NEV passenger vehicle; 2024 to 2025 exemption was capped at CNY 30000.",
+                "Limits: Not a cash subsidy for every car; eligible-model and technical requirements apply. Tax relief cannot be added indiscriminately to other support."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cd0c9bf85c5e",
+          "url": "https://std.samr.gov.cn/gb/search/gbDetailed?id=31D72E7FB9BF92EDE06397BE0A0AC2E0",
+          "title": "[M12] GB 38031 2025 Electric vehicles traction battery safety requirements",
+          "kind": "link",
+          "format": "Web",
+          "host": "std.samr.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M12] GB 38031 2025 Electric vehicles traction battery safety requirements",
+              "url": "/post/new-energy-vehicle/#source-M12",
+              "text": "Publisher source",
+              "notes": [
+                "SAMR national standards platform | 2025-03-28 | Effective 2026-07-01",
+                "Scope and location: China; Mandatory traction battery safety standard; Basic information and current status",
+                "Supports: Standard published March 28 2025, implemented July 1 2026, replaces GB 38031 2020.",
+                "Limits: The registry verifies status and dates only. It does not establish real-world incident rates or prove that passing a test eliminates fires; no unviewed clause is quoted."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "66b2cee78f41",
+          "url": "https://www.theicct.org.cn/2025/07/08/欧盟乘用车全生命周期温室气体排放：2025年更新及/",
+          "title": "[M13] Life cycle greenhouse gas emissions from passenger cars in the European Union 2025 update",
+          "kind": "link",
+          "format": "Web",
+          "host": "theicct.org.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M13] Life cycle greenhouse gas emissions from passenger cars in the European Union 2025 update",
+              "url": "/post/new-energy-vehicle/#source-M13",
+              "text": "Publisher source",
+              "notes": [
+                "ICCT; Marta Negri and Georg Bieker | 2025-07-08 | Medium cars sold in 2025; projected EU electricity 2025 to 2044",
+                "Scope and location: European Union; Modelled life-cycle greenhouse gas emissions; Life-cycle assessment and methodological assumptions",
+                "Supports: Estimated BEV emissions 63 g CO2e/km vs gasoline 235, a 73% reduction under study assumptions.",
+                "Limits: Model results for EU medium cars, not measurements for every global model. Grid trajectory, lifetime, vehicle class and real driving affect results. Official Chinese research summary read; English PDF access failed."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "25828be658dd",
+          "url": "https://www.iea.org/reports/recycling-of-critical-minerals/executive-summary",
+          "title": "[M14] Recycling of Critical Minerals Executive summary",
+          "kind": "link",
+          "format": "Web",
+          "host": "iea.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M14] Recycling of Critical Minerals Executive summary",
+              "url": "/post/new-energy-vehicle/#source-M14",
+              "text": "Publisher source",
+              "notes": [
+                "IEA | 2024-11-18 | 2024 assessment and 2030 scenarios",
+                "Scope and location: Global; Battery recycling feedstock and announced capacity; Manufacturing scrap and end-of-life batteries",
+                "Supports: Manufacturing scrap dominates current battery recycling feedstock; retired batteries become more important as fleets age.",
+                "Limits: Future feedstock and capacity are scenario-based. A recycling announcement does not prove available feedstock, recovered output or profit."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fc2aa858c179",
+          "url": "https://www.nhtsa.gov/vehicle-safety/driver-assistance-technologies",
+          "title": "[M15] Driver Assistance Technologies",
+          "kind": "link",
+          "format": "Web",
+          "host": "nhtsa.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M15] Driver Assistance Technologies",
+              "url": "/post/new-energy-vehicle/#source-M15",
+              "text": "Publisher source",
+              "notes": [
+                "NHTSA | Undated official page available by read date | Technology definitions",
+                "Scope and location: US framework; Level 2 driver assistance; Level 2 Additional Assistance",
+                "Supports: Level 2 can continuously assist steering and acceleration/braking while the driver remains engaged and attentive.",
+                "Limits: Use only this definition. Other page wording about commercial availability can be stale and is not used as a worldwide availability claim."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f2b6a530e649",
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2025/05/27/co2-emissions-in-cars-council-gives-final-approval-to-additional-flexibility-for-carmakers/",
+          "title": "[M16] Council gives final approval to additional flexibility for carmakers",
+          "kind": "link",
+          "format": "Web",
+          "host": "consilium.europa.eu",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M16] Council gives final approval to additional flexibility for carmakers",
+              "url": "/post/new-energy-vehicle/#source-M16",
+              "text": "Publisher source",
+              "notes": [
+                "Council of the European Union | 2025-05-27 | 2025 to 2027",
+                "Scope and location: European Union; Car and van fleet CO2 compliance averaging; Main body",
+                "Supports: Council adopted compliance flexibility assessing manufacturers over 2025 to 2027 instead of each year separately.",
+                "Limits: A compliance-timing change is not abolition of all CO2 targets. Later long-term proposals are separate."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "807e8994d944",
+          "url": "https://cyprus-presidency.consilium.europa.eu/en/news/results-of-the-environment-council-17-march-2026/",
+          "title": "[M17] Results of the Environment Council 17 March 2026",
+          "kind": "link",
+          "format": "Web",
+          "host": "cyprus-presidency.consilium.europa.eu",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M17] Results of the Environment Council 17 March 2026",
+              "url": "/post/new-energy-vehicle/#source-M17",
+              "text": "Publisher source",
+              "notes": [
+                "Cyprus Presidency of the Council of the EU | 2026-03-17 | March 2026 policy debate",
+                "Scope and location: European Union; Proposed car CO2 amendment; Opening paragraphs",
+                "Supports: Council debated Commission proposal to lower the 2035 tailpipe reduction target from 100% to 90% with compensatory credits.",
+                "Limits: Evidence of a proposal and debate at that date, not proof of enactment by the report cutoff. Report does not claim a final 2035 rule outcome."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "12008dfea6bc",
+          "url": "https://policy.trade.ec.europa.eu/news/commission-issues-guidance-document-submission-price-undertaking-offers-battery-electric-vehicles-2026-01-12_en",
+          "title": "[M18] Guidance on price undertaking offers for BEVs from China",
+          "kind": "link",
+          "format": "Web",
+          "host": "policy.trade.ec.europa.eu",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M18] Guidance on price undertaking offers for BEVs from China",
+              "url": "/post/new-energy-vehicle/#source-M18",
+              "text": "Publisher source",
+              "notes": [
+                "European Commission DG Trade and Economic Security | 2026-01-12 | January 2026 guidance",
+                "Scope and location: China to EU trade; BEV countervailing duties and case-specific price undertakings; Main body and Background",
+                "Supports: Guidance covers minimum import prices, sales channels, cross-compensation and EU investments; offers are assessed individually.",
+                "Limits: Not removal of duties for all Chinese brands and not evidence of a particular company approval. BEV scope cannot automatically be extended to PHEV."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "89f0ba10b38a",
+          "url": "https://www.infineon.com/application/automotive-traction-inverter",
+          "title": "[M19] EV traction inverter",
+          "kind": "link",
+          "format": "Web",
+          "host": "infineon.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M19] EV traction inverter",
+              "url": "/post/new-energy-vehicle/#source-M19",
+              "text": "Publisher source",
+              "notes": [
+                "Infineon Technologies | Undated product page available by read date | Product and technology description",
+                "Scope and location: Global products; Traction inverter and silicon/SiC semiconductor offering; Overview; How traction inverters work; Technology choice",
+                "Supports: Inverters control motor torque and speed; Infineon offers silicon and silicon-carbide power components and control electronics.",
+                "Limits: Vendor description verifies its category participation, not market share, independent performance testing or a supply contract with any named OEM."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7f0afa9d1cee",
+          "url": "https://new.abb.com/ev-charging",
+          "title": "[M20] EV Charging Electric Vehicle Chargers",
+          "kind": "link",
+          "format": "Web",
+          "host": "new.abb.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M20] EV Charging Electric Vehicle Chargers",
+              "url": "/post/new-energy-vehicle/#source-M20",
+              "text": "Publisher source",
+              "notes": [
+                "ABB | Undated product page available by read date | Product portfolio",
+                "Scope and location: Global products; AC wallboxes and DC fast chargers; EV charging portfolio",
+                "Supports: ABB offers AC wallboxes, DC fast charging and connected charging products.",
+                "Limits: Product participation is not a verified network ownership share, uptime measure or profit estimate."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c718be87cc87",
+          "url": "https://afdc.energy.gov/vehicles/emissions-hydrogen",
+          "title": "[M21] Fuel Cell Electric Vehicle Emissions",
+          "kind": "link",
+          "format": "Web",
+          "host": "afdc.energy.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M21] Fuel Cell Electric Vehicle Emissions",
+              "url": "/post/new-energy-vehicle/#source-M21",
+              "text": "Publisher source",
+              "notes": [
+                "US Alternative Fuels Data Center | Undated official page available by read date | Technology and fuel pathways",
+                "Scope and location: US analytical context; Tailpipe and well-to-wheels emissions distinguished; Main body",
+                "Supports: Hydrogen is an energy carrier from different feedstocks; upstream production affects FCEV greenhouse gas emissions.",
+                "Limits: Zero tailpipe carbon does not establish zero life-cycle emissions. Fuel pathway results are not market penetration estimates."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "89b937abe270",
+          "url": "https://www.iea.org/reports/global-ev-outlook-2026/trends-in-other-ev-modes",
+          "title": "[M22] Global EV Outlook 2026 Trends in other EV modes",
+          "kind": "link",
+          "format": "Web",
+          "host": "iea.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[M22] Global EV Outlook 2026 Trends in other EV modes",
+              "url": "/post/new-energy-vehicle/#source-M22",
+              "text": "Publisher source",
+              "notes": [
+                "IEA | 2026-05-20 | 2025",
+                "Scope and location: Global; Medium and heavy freight trucks; BEV plus PHEV, separate from passenger cars; Trends in electric truck sales and notes",
+                "Supports: Electric truck sales exceeded 400000 and reached 9% of all truck sales in 2025. Nearly all electric truck sales were BEV. Route predictability and depot energy access shape use cases.",
+                "Limits: Definitions reclassify vehicles at or above 3.5 tonnes; not comparable to passenger cars or necessarily older IEA editions. Do not add truck shares to passenger-car shares."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "177424878888",
+          "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0327/2026032702970_c.pdf",
+          "title": "[C01] BYD Annual Report 2025",
+          "kind": "file",
+          "format": "PDF",
+          "host": "hkexnews.hk",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C01] BYD Annual Report 2025",
+              "url": "/post/new-energy-vehicle/#source-C01",
+              "text": "Publisher source",
+              "notes": [
+                "BYD Company Limited / HKEX | 2026-03-27 | 2025-01-01/2025-12-31",
+                "Scope and location: Global consolidated group; BYD and consolidated subsidiaries; total revenue includes automotive-related and electronics businesses. Unit sales are company reported production/sales bulletins, not global consumer registrations; Printed pp. 11, 13–14, 16, 29–30; Section III operating review and product revenue/gross-margin table",
+                "Supports: 2025 passenger company sales of 4.545m; automotive-related revenue RMB 648.65bn and gross margin 20.49%; group attributable profit RMB 32.62bn, down 18.97%.",
+                "Limits: Automotive-related product revenue includes more than passenger-vehicle sales; its gross margin is not an EV-only net margin; Group attributable profit includes non-automotive businesses and non-operating items; Cannot use company sales as numerator against IEA/SNE market denominator; 2025 passenger BEV/PHEV split is in January 2026 sales bulletin, not extracted from this annual-report source; do not invent split here."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2aa90c7b28f7",
+          "url": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-08-29/56e933c9-717e-42bd-8c21-3a0a11b8d2d0.PDF",
+          "title": "[C02] BYD Interim Report 2026",
+          "kind": "file",
+          "format": "PDF",
+          "host": "disc.static.szse.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C02] BYD Interim Report 2026",
+              "url": "/post/new-energy-vehicle/#source-C02",
+              "text": "Publisher source",
+              "notes": [
+                "BYD Company Limited / Shenzhen Stock Exchange disclosure | 2026-08-29 | 2026-01-01/2026-06-30",
+                "Scope and location: Global consolidated group; Unaudited first-half consolidated financial results; comparisons with H1 2025, not FY2025; Printed pp. 7, 14, 25–26, 150, 193 (PDF pages 6, 13, 24–25, 149, 192)",
+                "Supports: H1 automotive-related revenue fell 8.98% while product margin rose to 22.33%; group attributable profit fell 20.54%.",
+                "Limits: Unaudited half year; no full-year ranking or automatic annualisation; Neither revenue figure is an EV-only passenger-car revenue measure; Publication date follows the dated SZSE disclosure path; report cover is August 2026; No H1 passenger-unit sales extracted here."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d46535411d53",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm",
+          "title": "[C03] Tesla Form 10-K for FY2025",
+          "kind": "link",
+          "format": "Web",
+          "host": "sec.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C03] Tesla Form 10-K for FY2025",
+              "url": "/post/new-energy-vehicle/#source-C03",
+              "text": "Publisher source",
+              "notes": [
+                "Tesla, Inc. / US SEC | 2026-01-29 | 2025-01-01/2025-12-31",
+                "Scope and location: Global consolidated group; US GAAP consolidated financials; total automotive revenue includes sales, regulatory credits and leasing; total group also includes energy and services; Printed pp. 32, 37–39, 50; Results of Operations and Consolidated Statements of Operations. SEC filing index shows filing date 2026-01-29, acceptance 2026-01-28",
+                "Supports: Automotive revenue USD 69.53bn includes credits/leasing; automotive margin 17.8%; group operating income USD 4.36bn. Cells purchased from Panasonic/CATL supplement internal development.",
+                "Limits: Automotive margin includes regulatory credits and leasing and excludes services and other; cannot compare unqualified with another firm's product gross margin; Group operating margin calculated as 4355/94827=4.59%, rounded 4.6%; not passenger-EV operating margin; 10-K uses rounded deliveries; exact 1,636,129 requires separate operational release and is not represented as extracted from this source; Signed on January 28 and filed January 29; source date uses SEC filing date."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "80ad137ec403",
+          "url": "https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm",
+          "title": "[C04] Tesla Form 10-Q for H1 2026",
+          "kind": "link",
+          "format": "Web",
+          "host": "sec.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C04] Tesla Form 10-Q for H1 2026",
+              "url": "/post/new-energy-vehicle/#source-C04",
+              "text": "Publisher source",
+              "notes": [
+                "Tesla, Inc. / US SEC | 2026-07-23 | 2026-01-01/2026-06-30",
+                "Scope and location: Global consolidated group; Unaudited US GAAP first-half figures; six-month columns distinct from Q2 three-month columns; Printed pp. 4–5, 30–33; six-month income statement, Revenues, Cost of Revenues and Gross Margin. SEC filing index confirms 2026-07-23; signature dated 2026-07-22",
+                "Supports: H1 automotive margin rose to 18.7%, but Q2 margin fell to 16.9%; period length and the prior-year factory-changeover base matter.",
+                "Limits: H1 improvement should not be presented as Q2 margin improvement: H1 automotive margin rose, Q2 automotive margin fell year on year; No post-2026-10-18 Q3 financial results included; Group H1 operating margin 1339/50623=2.65% is calculated, not an EV-only segment margin."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "63b9ba3126b3",
+          "url": "https://www.catl.com/en/uploads/1/file/public/202603/20260310105310_46xjbwckvn.pdf",
+          "title": "[C05] CATL Annual Results 2025",
+          "kind": "file",
+          "format": "PDF",
+          "host": "catl.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C05] CATL Annual Results 2025",
+              "url": "/post/new-energy-vehicle/#source-C05",
+              "text": "Publisher source",
+              "notes": [
+                "Contemporary Amperex Technology Co., Limited | 2026-03-09 | 2025-01-01/2025-12-31",
+                "Scope and location: Global consolidated group; CATL and consolidated subsidiaries; battery supplier, not automaker. EV battery products serve passenger and commercial vehicles; group includes ESS, materials, recycling, mining and other businesses; Cover dated March 9; printed pp. 7, 9, 12–15, 32–33. Monetary tables in RMB thousand",
+                "Supports: EV-battery revenue RMB 316.51bn and gross margin 23.84%; wider-group gross margin 26.27% is a different boundary.",
+                "Limits: Annual-results cover calls results unaudited despite containing full annual-report text; describe the document accurately and do not silently upgrade its audit status; Battery sales/GWh are not vehicle deliveries or vehicle market share; Supplier group profits and margins cannot rank passenger-vehicle profitability; Group gross-margin improvement does not imply EV battery gross-margin improvement: EV battery gross margin fell 0.10 percentage point."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "95e919d6ca43",
+          "url": "https://disc.static.szse.cn/disc/disk03/finalpage/2026-07-25/8e6750da-b178-4be9-a74a-4b1d8fc42c58.PDF",
+          "title": "[C06] CATL Interim Report 2026",
+          "kind": "file",
+          "format": "PDF",
+          "host": "disc.static.szse.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C06] CATL Interim Report 2026",
+              "url": "/post/new-energy-vehicle/#source-C06",
+              "text": "Publisher source",
+              "notes": [
+                "CATL / Shenzhen Stock Exchange disclosure | 2026-07-25 | 2026-01-01/2026-06-30",
+                "Scope and location: Global consolidated group; Unaudited H1 consolidated battery-supplier results; product line EV power battery systems includes passenger and commercial uses; Printed pp. 7, 15–17; financial highlights, product revenue/margin table and capacity/production table",
+                "Supports: H1 EV-battery revenue grew 46.02% while gross margin declined 1.78pp to 20.63%.",
+                "Limits: H1 2026 must compare with H1 2025, not FY2025; Production 498 GWh must not be labelled sales or installed capacity; This battery supplier is shown separately from OEM volume comparisons; Publication follows dated SZSE disclosure path."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "82ef04446cff",
+          "url": "https://annualreport2025.volkswagen-group.com/consolidated-financial-statements/income-statement.html",
+          "title": "[C07] Volkswagen Group Annual Report 2025",
+          "kind": "link",
+          "format": "Web",
+          "host": "annualreport2025.volkswagen-group.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C07] Volkswagen Group Annual Report 2025",
+              "url": "/post/new-energy-vehicle/#source-C07",
+              "text": "Publisher source",
+              "notes": [
+                "Volkswagen Group | 2026-03-10 | 2025-01-01/2025-12-31",
+                "Scope and location: Global group; Consolidated Volkswagen Group across passenger/light commercial vehicles, commercial vehicles, financial services and other activities; deliveries include equity-accounted Chinese JVs; Consolidated Income Statement; management-report Deliveries table and paragraph specifying BEVs including heavy commercial vehicles; About This Report confirms publication March 10",
+                "Supports: 2025 group revenue EUR 321.91bn, operating result EUR 8.87bn, return 2.8%; disclosed BEV deliveries include heavy commercial vehicles.",
+                "Limits: BEV deliveries explicitly include heavy commercial vehicles, so cannot enter passenger-car market share; Volkswagen Group is not Volkswagen Passenger Cars brand or Volkswagen AG standalone; Equity-accounted Chinese JVs are included in volume but their revenue and operating result are not consolidated line by line."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6a2763c1f83e",
+          "url": "https://uploads.vw-mms.de/system/production/documents/cws/003/289/file_en/e916f0f9afd06d9586560cfdef53baa14b6aea78/2026-07-24-volkswagen-group-h1-2026-intrim-report-en.pdf",
+          "title": "[C08] Volkswagen Group Half-Yearly Financial Report 2026",
+          "kind": "file",
+          "format": "PDF",
+          "host": "uploads.vw-mms.de",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C08] Volkswagen Group Half-Yearly Financial Report 2026",
+              "url": "/post/new-energy-vehicle/#source-C08",
+              "text": "Publisher source",
+              "notes": [
+                "Volkswagen Group | 2026-07-24 | 2026-01-01/2026-06-30",
+                "Scope and location: Global group; IFRS consolidated six-month results, with H1 2025 comparisons; separate automotive and financial-services divisions; Printed pp.19,35 (PDF pp.20,36), Income Statement by Division and consolidated income statement; official Financial Reports index dates publication July 24",
+                "Supports: H1 revenue EUR 158.10bn and operating result EUR 5.93bn; same-period 2025 comparatives EUR 158.36bn and EUR 6.71bn.",
+                "Limits: Whole group and automotive division each include more than passenger BEVs/PHEVs; Do not combine H12026 with FY2025 into a volume or profit ranking; Dynamic key-figures page was also read; stable dated PDF now anchors these financial figures."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "377e0d9e7c6f",
+          "url": "https://www.geelyauto.com.hk/wp-content/uploads/2026/04/e00175_2025-annual-report.pdf",
+          "title": "[C09] Geely Auto Annual Report 2025",
+          "kind": "file",
+          "format": "PDF",
+          "host": "geelyauto.com.hk",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C09] Geely Auto Annual Report 2025",
+              "url": "/post/new-energy-vehicle/#source-C09",
+              "text": "Publisher source",
+              "notes": [
+                "Geely Automobile Holdings Limited | Not displayed; available by cutoff | 2025-01-01/2025-12-31",
+                "Scope and location: Global sales of listed Geely Auto group; Geely Auto listed company and consolidated subsidiaries, including Geely, Lynk & Co and ZEEKR; not all of Zhejiang Geely Holding. Common-control consolidation comparatives restated; Printed p.14 vehicle sales; p.123 consolidated income statement; p.139 common-control business-combination accounting",
+                "Supports: Listed-group revenue RMB 345.23bn, attributable profit RMB 16.85bn, BEV 1,073,805/PHEV 613,962; common-control comparisons restated.",
+                "Limits: Do not append Volvo/Polestar volumes from the wider holding-company portfolio; Do not calculate growth from previously reported, un-restated 2024 revenue; No directly comparable operating-profit subtotal extracted; attributable profit is not operating profit; Exact publication day unverified; board-approval date is not substituted."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dd2cb3d0886d",
+          "url": "https://www.geelyauto.com.hk/wp-content/uploads/2026/08/e00175_2026-interim-report.pdf",
+          "title": "[C10] Geely Auto Interim Report 2026",
+          "kind": "file",
+          "format": "PDF",
+          "host": "geelyauto.com.hk",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C10] Geely Auto Interim Report 2026",
+              "url": "/post/new-energy-vehicle/#source-C10",
+              "text": "Publisher source",
+              "notes": [
+                "Geely Automobile Holdings Limited | Not displayed; available by cutoff | 2026-01-01/2026-06-30",
+                "Scope and location: Global sales of listed Geely Auto group; Unaudited interim listed-group consolidated results; NEVs explicitly defined as BEV+PHEV; Printed p.5 consolidated income statement; p.69 definition note; p.70 vehicle sales; p.71 non-HKFRS adjustment",
+                "Supports: H1 listed-group revenue RMB 173.60bn, attributable profit RMB 9.09bn, NEV 799,454 with BEV/PHEV definition.",
+                "Limits: Listed Geely Auto boundary, not entire Geely Holding; No comparable operating-profit subtotal extracted; no invented operating margin; Core attributable profit is non-HKFRS and differs from reported attributable profit; The signature date is not presented as the PDF publication day."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "20963c78648f",
+          "url": "https://www.hyundai.com/content/hyundai/worldwide/en/newsroom/detail/0000001116.html.html",
+          "title": "[C11] Hyundai Motor FY2025 Results",
+          "kind": "link",
+          "format": "Web",
+          "host": "hyundai.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C11] Hyundai Motor FY2025 Results",
+              "url": "/post/new-energy-vehicle/#source-C11",
+              "text": "Publisher source",
+              "notes": [
+                "Hyundai Motor Company | 2026-01-29 | 2025-01-01/2025-12-31",
+                "Scope and location: Global Hyundai Motor Company; Preliminary unaudited K-IFRS consolidated company results, separate from Kia; broad electrified-vehicle total includes HEV; Opening annual-results paragraphs; Enhancing Electrification Leadership; FY/Q4 table and notes A–C",
+                "Supports: Separate preliminary unaudited company financials: revenue KRW 186.25tn, operating profit KRW 11.47tn; electrified totals include HEV.",
+                "Limits: Preliminary unaudited financial release; do not label audited annual-report figures; Not Hyundai Motor Group including Kia; Electrified total includes HEV and cannot represent BEV+PHEV; no PHEV remainder invented; Financials include non-EV businesses."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "eb50b202c351",
+          "url": "https://www.hyundaimotorgroup.com/en/news/kia-announces-2025-annual-and-fourth-quarter-business-results",
+          "title": "[C12] Kia FY2025 Results",
+          "kind": "link",
+          "format": "Web",
+          "host": "hyundaimotorgroup.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[C12] Kia FY2025 Results",
+              "url": "/post/new-energy-vehicle/#source-C12",
+              "text": "Publisher source",
+              "notes": [
+                "Kia Corporation / Hyundai Motor Group newsroom | 2026-01-28 | 2025-01-01/2025-12-31",
+                "Scope and location: Global Kia Corporation; Kia standalone reporting entity consolidated company financial results; broader electrified category includes HEV, PHEV and EV; Article body after SEOUL January 28; annual financial-results paragraphs; Sales of Electrified Vehicles. AI summary panel excluded",
+                "Supports: Kia company revenue KRW 114.1tn and operating profit KRW 9.08tn; its electrified total includes HEV.",
+                "Limits: Separate from Hyundai Motor Company; not a combined Hyundai Motor Group account; Electrified total includes ordinary HEVs and does not match report BEV+PHEV scope; Rounded electrified numbers do not support an exact residual PHEV calculation; Do not divide consolidated revenue by EV volume to estimate EV selling price."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0a9ca4b8cc25",
+          "url": "https://commons.wikimedia.org/wiki/File:EnBW_Schnellladepark_Hengersberg.jpg",
+          "title": "[P01] EnBW charging hub in Hengersberg, Germany",
+          "kind": "link",
+          "format": "Web",
+          "host": "commons.wikimedia.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[P01] EnBW charging hub in Hengersberg, Germany",
+              "url": "/post/new-energy-vehicle/#source-P01",
+              "text": "Publisher source",
+              "notes": [
+                "APneunzehn74, photographer; Wikimedia Commons, host | 2025-06-03, first file upload | A specific site photographed in June 2025; not a market statistic",
+                "Scope and location: Hengersberg, Bavaria, Germany; Original real photograph of a charging hub; 4000 × 2992 pixels; CC0 1.0 public domain dedication; Commons Summary, Licensing, File history and Metadata; downloaded original image visually inspected",
+                "Supports: The creator's page identifies the Hengersberg EnBW charging site and a 3 June 2025 photograph date. The image shows chargers, empty bays and a solar-panel canopy. The uploader dedicates the original to CC0 1.0, permitting redistribution and commercial use. The downloaded 4000 × 2992 original matches the published SHA-1 and is supplied unchanged.",
+                "Limits: A cover illustration of one German site, not evidence of global coverage, charging speed, utilisation, renewable-electricity supply or uptime. No car is visibly connected to a charger, and the background trucks' powertrains are not identified. Camera timestamps are uploader metadata rather than independently certified event timing. CC0 does not imply endorsement or clear separate trademark rights."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "94aa374dffeb",
+          "url": "/post/new-energy-vehicle/assets/Global_New_Energy_Vehicle_Industry_Report_Bilingual_v1.docx",
+          "title": "Download bilingual Word",
+          "kind": "file",
+          "format": "DOCX",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Article downloads",
+              "url": "/post/new-energy-vehicle/",
+              "text": "Download bilingual Word",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "79fb82a84408",
+          "url": "/post/new-energy-vehicle/assets/report-bilingual.txt",
+          "title": "Download bilingual text",
+          "kind": "file",
+          "format": "TXT",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Article downloads",
+              "url": "/post/new-energy-vehicle/",
+              "text": "Download bilingual text",
+              "notes": []
+            }
+          ]
+        },
+        {
+          "id": "77dfb336e9c3",
+          "url": "/post/new-energy-vehicle/assets/market-share-source.csv",
+          "title": "Download data (CSV)",
+          "kind": "file",
+          "format": "CSV",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Article downloads",
+              "url": "/post/new-energy-vehicle/",
+              "text": "Download data (CSV)",
+              "notes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "agricultural-technology-equipment",
       "title": "Global Agricultural Technology and Equipment Industry Report",
       "url": "/post/agricultural-technology-equipment/",
@@ -23992,9 +25294,9 @@
     }
   ],
   "counts": {
-    "articles": 19,
-    "materials": 866,
-    "files": 201,
-    "hosted_files": 70
+    "articles": 20,
+    "materials": 924,
+    "files": 216,
+    "hosted_files": 77
   }
 }
