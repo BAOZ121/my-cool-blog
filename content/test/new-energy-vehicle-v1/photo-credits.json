@@ -1,0 +1,19 @@
+{
+  "image": "cover.jpg",
+  "width": 4000,
+  "height": 2992,
+  "photographer": "APneunzehn74",
+  "publisher": "Wikimedia Commons",
+  "taken": "2025-06-03",
+  "uploaded": "2025-06-03",
+  "licence": "CC0 1.0 Universal",
+  "licenceURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "sourceURL": "https://commons.wikimedia.org/wiki/File:EnBW_Schnellladepark_Hengersberg.jpg",
+  "sourceId": "P01",
+  "sourceImageSha256": "0DEEA9694DAF516E98490AF9F8F2E90CC27AE877F5E69E372DB5552F6E5861C4",
+  "caption": "EnBW HyperNetz charging hub in Hengersberg, Germany, photographed on 3 June 2025. The photograph shows charging bays beneath a solar-panel canopy; it illustrates one site rather than global infrastructure conditions. Photo: APneunzehn74 / Wikimedia Commons, CC0 1.0. Original photograph, unmodified. [P01]",
+  "scopeAndLocation": "Scope and location: Hengersberg, Bavaria, Germany; Original real photograph of a charging hub; 4000 × 2992 pixels; CC0 1.0 public domain dedication; Commons Summary, Licensing, File history and Metadata; downloaded original image visually inspected",
+  "supports": "Supports: The creator's page identifies the Hengersberg EnBW charging site and a 3 June 2025 photograph date. The image shows chargers, empty bays and a solar-panel canopy. The uploader dedicates the original to CC0 1.0, permitting redistribution and commercial use. The downloaded 4000 × 2992 original matches the published SHA-1 and is supplied unchanged.",
+  "limits": "Limits: A cover illustration of one German site, not evidence of global coverage, charging speed, utilisation, renewable-electricity supply or uptime. No car is visibly connected to a charger, and the background trucks' powertrains are not identified. Camera timestamps are uploader metadata rather than independently certified event timing. CC0 does not imply endorsement or clear separate trademark rights.",
+  "note": "Original image extracted unchanged from the user-supplied DOCX. Photo provenance is transcribed from the report and linked to its publisher record."
+}

@@ -1,0 +1,100 @@
+{
+  "nev-regional-sales-2025": {
+    "title": "2025 electric car sales by market",
+    "eyebrow": "MARKET COMPARISON",
+    "header": [
+      {
+        "label": "Market"
+      },
+      {
+        "label": "2025 electric car sales",
+        "numeric": true
+      },
+      {
+        "label": "Important boundary"
+      }
+    ],
+    "rows": [
+      [
+        "Global",
+        "More than 20 million",
+        "IEA BEV plus PHEV electric cars"
+      ],
+      [
+        "China",
+        "More than 13 million",
+        "Destination market, not Chinese-owned brands worldwide"
+      ],
+      [
+        "Europe",
+        "4.2 million",
+        "IEA Europe, broader than the European Union"
+      ],
+      [
+        "United States",
+        "About 1.5 million",
+        "Does not represent all of North America"
+      ]
+    ],
+    "sourceBlock": 41
+  },
+  "nev-financial-disclosures-2025": {
+    "title": "Selected 2025 financial disclosures",
+    "eyebrow": "COMPANY COMPARISON",
+    "header": [
+      {
+        "label": "Company"
+      },
+      {
+        "label": "Group revenue",
+        "numeric": true
+      },
+      {
+        "label": "Named profit measure and value"
+      },
+      {
+        "label": "Source"
+      }
+    ],
+    "rows": [
+      [
+        "BYD",
+        "803.96 RMB billion",
+        "Attributable net profit 32.62 RMB billion",
+        "[C01]"
+      ],
+      [
+        "Tesla",
+        "94.83 USD billion",
+        "Operating income 4.36 USD billion",
+        "[C03]"
+      ],
+      [
+        "Volkswagen Group",
+        "321.91 EUR billion",
+        "Operating result 8.87 EUR billion",
+        "[C07]"
+      ],
+      [
+        "Geely Auto",
+        "345.23 RMB billion",
+        "Attributable profit 16.85 RMB billion",
+        "[C09]"
+      ],
+      [
+        "Hyundai Motor Company",
+        "186.25 KRW trillion",
+        "Operating profit 11.47 KRW trillion",
+        "[C11]"
+      ],
+      [
+        "Kia Corporation",
+        "114.10 KRW trillion",
+        "Operating profit 9.08 KRW trillion",
+        "[C12]"
+      ]
+    ],
+    "sourceBlock": 76,
+    "width": "wide"
+  }
+}
