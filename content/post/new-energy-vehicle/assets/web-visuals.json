@@ -95,17 +95,17 @@
       },
       "note": "Category links are not verified supplier contracts. Companies can operate across several stages; examples are not exhaustive or ranked. Structure: DEX editorial synthesis. Commercial vehicles and fuel-cell vehicles are outside this map's core scope. The original report's Figure 1 and evidence references are preserved.",
       "sources": [
-        { "title": "[M03] Battery supply chain", "url": "/test/new-energy-vehicle-v1/#source-M03" },
-        { "title": "[M14] Battery circularity", "url": "/test/new-energy-vehicle-v1/#source-M14" },
-        { "title": "[M19] Infineon", "url": "/test/new-energy-vehicle-v1/#source-M19" },
-        { "title": "[M20] ABB", "url": "/test/new-energy-vehicle-v1/#source-M20" },
-        { "title": "[H03] Charging", "url": "/test/new-energy-vehicle-v1/#source-H03" },
-        { "title": "[C01] BYD", "url": "/test/new-energy-vehicle-v1/#source-C01" },
-        { "title": "[C03] Tesla", "url": "/test/new-energy-vehicle-v1/#source-C03" },
-        { "title": "[C07] Volkswagen", "url": "/test/new-energy-vehicle-v1/#source-C07" },
-        { "title": "[C09] Geely Auto", "url": "/test/new-energy-vehicle-v1/#source-C09" },
-        { "title": "[C11] Hyundai Motor", "url": "/test/new-energy-vehicle-v1/#source-C11" },
-        { "title": "[C12] Kia", "url": "/test/new-energy-vehicle-v1/#source-C12" }
+        { "title": "[M03] Battery supply chain", "url": "/post/new-energy-vehicle/#source-M03" },
+        { "title": "[M14] Battery circularity", "url": "/post/new-energy-vehicle/#source-M14" },
+        { "title": "[M19] Infineon", "url": "/post/new-energy-vehicle/#source-M19" },
+        { "title": "[M20] ABB", "url": "/post/new-energy-vehicle/#source-M20" },
+        { "title": "[H03] Charging", "url": "/post/new-energy-vehicle/#source-H03" },
+        { "title": "[C01] BYD", "url": "/post/new-energy-vehicle/#source-C01" },
+        { "title": "[C03] Tesla", "url": "/post/new-energy-vehicle/#source-C03" },
+        { "title": "[C07] Volkswagen", "url": "/post/new-energy-vehicle/#source-C07" },
+        { "title": "[C09] Geely Auto", "url": "/post/new-energy-vehicle/#source-C09" },
+        { "title": "[C11] Hyundai Motor", "url": "/post/new-energy-vehicle/#source-C11" },
+        { "title": "[C12] Kia", "url": "/post/new-energy-vehicle/#source-C12" }
       ],
       "reviewed": "2026-10-18"
     }

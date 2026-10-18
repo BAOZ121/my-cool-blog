@@ -3,33 +3,26 @@ title: "Global New Energy Vehicle Industry Report"
 description: "Passenger vehicles and the electric mobility value chain. Industry history, regional markets, the value chain, company economics and industry challenges."
 date: "2026-10-18"
 lastmod: "2026-10-18"
-url: "/test/new-energy-vehicle-v1/"
+url: "/post/new-energy-vehicle/"
 type: "post"
 layout: "single"
 image: "cover.jpg"
 imageAlt: "EnBW charging units and empty marked parking bays beneath a large solar-panel canopy in Hengersberg, Germany, with trucks parked in the background."
 industrialreport: true
-testpage: true
+categories: ["Industry Report"]
+tags: ["New Energy Vehicles", "Electric Vehicles", "Automotive", "Batteries", "Charging Infrastructure", "Global", "Industry Research"]
 toc: true
 readingTime: true
 comments: false
 draft: false
-robots: "noindex, nofollow"
 reportversion: "1.0"
 evidencecutoff: "2026-10-18"
-wordDownload: "/test/new-energy-vehicle-v1/assets/Global_New_Energy_Vehicle_Industry_Report_Bilingual_v1.docx"
-textDownload: "/test/new-energy-vehicle-v1/assets/report-bilingual.txt"
-dataDownload: "/test/new-energy-vehicle-v1/assets/market-share-source.csv"
-sitemap:
-  disable: true
-build:
-  list: "never"
-  render: "always"
-outputs:
-  - "HTML"
+wordDownload: "/post/new-energy-vehicle/assets/Global_New_Energy_Vehicle_Industry_Report_Bilingual_v1.docx"
+textDownload: "/post/new-energy-vehicle/assets/report-bilingual.txt"
+dataDownload: "/post/new-energy-vehicle/assets/market-share-source.csv"
 ---
 
-<p class="research-preview-note">Website test edition · Version 1.0 · Global scope · Public information through 18 October 2026.</p>
+<p class="research-preview-note">Industry report · Version 1.0 · Global scope · Public information through 18 October 2026.</p>
 
 <p class="research-figure-caption" data-source-block="5">EnBW HyperNetz charging hub in Hengersberg, Germany, photographed on 3 June 2025. The photograph shows charging bays beneath a solar-panel canopy; it illustrates one site rather than global infrastructure conditions. Photo: APneunzehn74 / Wikimedia Commons, CC0 1.0. Original photograph, unmodified. <a class="evidence-cite" href="#source-P01" aria-label="Source P01">[P01]</a> <a href="cover.jpg" target="_blank" rel="noopener">View original photograph · 4000 × 2992</a></p>
 

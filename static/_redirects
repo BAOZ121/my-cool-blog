@@ -38,3 +38,8 @@
 /test/agricultural-technology-equipment-v1 /post/agricultural-technology-equipment/ 301
 /test/agricultural-technology-equipment-v1/ /post/agricultural-technology-equipment/ 301
 /test/agricultural-technology-equipment-v1/* /post/agricultural-technology-equipment/:splat 301
+
+# The reviewed new energy vehicle report is now a published article.
+/test/new-energy-vehicle-v1 /post/new-energy-vehicle/ 301
+/test/new-energy-vehicle-v1/ /post/new-energy-vehicle/ 301
+/test/new-energy-vehicle-v1/* /post/new-energy-vehicle/:splat 301
