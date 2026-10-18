@@ -11,8 +11,12 @@
 {{- if isset $chart "percentDecimals" -}}{{- $decimals = int $chart.percentDecimals -}}{{- end -}}
 {{- $uid := printf "market-share-%s-%d" $id .Ordinal -}}
 {{- $hasUnits := isset $chart "totalUnits" -}}
+{{- $unitsColumnLabel := $chart.unitsColumnLabel | default "Retail units" -}}
 {{- $csv := "Name,Share (%),Period,Geography,Metric,Source URL\n" -}}
-{{- if $hasUnits -}}{{- $csv = "Name,Retail units,Share (%),Period,Geography,Metric,Source URL\n" -}}{{- end -}}
+{{- if $hasUnits -}}
+    {{- $csv = "Name,Retail units,Share (%),Period,Geography,Metric,Source URL\n" -}}
+    {{- with $chart.unitsColumnLabel -}}{{- $csv = printf "Name,\"%s\",Share (%%),Period,Geography,Metric,Source URL\n" (replace . "\"" "\"\"") -}}{{- end -}}
+{{- end -}}
 {{- range $chart.series -}}
     {{- $values := printf "%v" .value -}}
     {{- if $hasUnits -}}{{- $values = printf "%v,%.*f" .units $decimals (float .value) -}}{{- end -}}
@@ -36,7 +40,7 @@
         <div class="table-wrapper">
             <table class="visual-table"{{ with $chart.sourceBlock }} data-source-block="{{ . }}"{{ end }}>
                 <caption>{{ $chart.title }} · {{ $chart.period }} · {{ $chart.metric }}</caption>
-                <thead><tr><th scope="col">{{ $chart.dimension | default "Company" }}</th>{{ if $hasUnits }}<th scope="col">Retail units</th>{{ end }}<th scope="col">Share</th></tr></thead>
+                <thead><tr><th scope="col">{{ $chart.dimension | default "Company" }}</th>{{ if $hasUnits }}<th scope="col">{{ $unitsColumnLabel }}</th>{{ end }}<th scope="col">Share</th></tr></thead>
                 <tbody>{{ range $chart.series }}<tr><th scope="row">{{ .name }}</th>{{ if $hasUnits }}<td>{{ lang.FormatNumber 0 .units }}</td>{{ end }}<td>{{ printf "%.*f%%" $decimals (float .value) }}</td></tr>{{ end }}</tbody>
             </table>
         </div>

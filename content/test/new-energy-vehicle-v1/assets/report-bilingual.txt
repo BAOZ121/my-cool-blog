@@ -1,0 +1,1910 @@
+DEX RESEARCH
+
+Global New Energy Vehicle Industry Report
+
+Passenger vehicles and the electric mobility value chain
+
+18 October 2026  |  English manuscript
+
+
+
+EnBW HyperNetz charging hub in Hengersberg, Germany, photographed on 3 June 2025. The photograph shows charging bays beneath a solar-panel canopy; it illustrates one site rather than global infrastructure conditions. Photo: APneunzehn74 / Wikimedia Commons, CC0 1.0. Original photograph, unmodified. [P01]
+
+Electric mobility has reached substantial scale, but growth, profit and dependable service are different achievements. This report follows a fast-charging launch through industry history, regional markets, the value chain and company economics. Its central assessment is that competitive strength depends on turning technology into repeatable manufacturing, affordable ownership and reliable energy access, with returns evaluated within each business and statistical boundary.
+
+Global research with emphasis on China, Europe and North America. Passenger BEVs and PHEVs, including EREVs where included by the source, form the core. Commercial vehicles and fuel-cell vehicles are separate context. Public information available through 18 October 2026. The SNE group share chart explicitly covers a broader BEV plus PHEV market including commercial vehicles in 80 countries. Complete-year 2025 results and 2026 interim observations remain separate.
+
+Contents  Part 1 Industry Story  ·  Part 2 Industry History  ·  Part 3 Market Landscape  ·  Part 4 Industry Challenges  ·  Supporting Evidence
+
+Part 1  Industry Story
+
+On 17 March 2025, BYD introduced its Super e-Platform in China with a claim designed to make charging feel familiar: the equipped Han L could add 400 kilometres of range in five minutes. The announcement described a 1,000-volt architecture and peak charging power of 1,000 kilowatts. Han L and Tang L models using the platform entered pre-sales. These were manufacturer specifications and launch claims, rather than measurements of the experience available to every electric-car owner. [H01]
+
+The distinction matters. A peak power rating describes a moment in a charging session. Energy delivered depends on the power maintained over time. NREL's road-trip research illustrates how charging power changes with a battery's state of charge; its modelled curves reduce power as the battery becomes fuller. The study does not test BYD's technology, but it explains why the headline power alone cannot determine the duration of an entire charging session. [H02]
+
+BYD's announcement does not provide a complete test protocol covering battery temperature, starting and ending charge levels, and the basis for converting the added energy into kilometres. Its five-minute figure should therefore remain attributed to the company. It cannot be read as a promise of the same usable distance in every season, on every road or from every public charger. [H01]
+
+The same launch also pointed beyond the car. BYD announced a dedicated charging terminal and plans to build more than 4,000 megawatt flash-charging stations in China. That was a construction ambition, rather than confirmation of an operating network. Official US charging guidance similarly treats a station as a project involving electrical capacity, installation, permitting and ongoing operation, with utilities involved early in planning. [H01][H03]
+
+The commercial question is how much of an impressive vehicle capability can become a dependable service. For a driver, the useful result is a convenient stop at an accessible, working station. For an operator, the equipment must earn enough over its life to support construction and operating costs. Our analysis therefore follows the complete system: the battery and vehicle, the charging site, the electricity connection and the customer paying for transport. A faster component can improve that system, but measuring the component does not measure the whole service. This relationship has shaped electric mobility for much longer than the current charging race.
+
+Part 2  Industry History
+
+1. Nineteenth century to the 1930s  an early transport option encounters a larger system
+
+Electric propulsion emerged from a sequence of nineteenth-century advances in batteries and motors. The US Department of Energy's historical account cautions against assigning the electric car to one inventor or country. Gaston Planté's rechargeable lead-acid battery, dated to 1859 by the Science Museum, was one important storage milestone. It was not a ready-made solution to every requirement of road transport. [H04][H05]
+
+In the United States around the turn of the twentieth century, electric cars appealed to urban users because they were quiet and relatively easy to operate. Their competitors also improved. The DOE account connects the expansion of gasoline cars with lower vehicle prices, electric starting, roads between cities and the availability of fuel. These changes affected the convenience and cost of owning a vehicle, beyond the merits of its motor. This is a US-centred history, rather than evidence that every country followed an identical path. [H04]
+
+The lesson for the present industry is a systems question. A vehicle competes within a network of energy supply, maintenance, finance and everyday travel needs. Our interpretation is that adoption becomes harder when improvements in one element depend on complementary investments elsewhere. The early history does not prove that electric cars were inherently unsuitable; it shows why a promising propulsion technology alone could not settle the transport market.
+
+2. The 1970s to the 1990s  battery research and air-quality regulation reopen the opportunity
+
+Oil-supply concerns renewed US interest in alternative propulsion during the 1970s. The 1976 Electric and Hybrid Vehicle Research, Development, and Demonstration Act authorised federal support. This did not immediately establish a broad consumer market. [H04]
+
+At the same time, rechargeable-battery research was changing the technical possibilities. The Nobel Prize account traces an important sequence through Stanley Whittingham's lithium-battery research in the 1970s, John Goodenough's higher-voltage oxide cathode work in 1980 and Akira Yoshino's carbon-based anode configuration in 1985. It dates the commercial sale of lithium-ion batteries to 1991. These developments were among the foundations later used in electric vehicles; they did not mean that an affordable, durable automotive battery pack appeared fully formed in 1991. The 2019 chemistry prize recognised the three scientists' contributions without providing a complete inventory of everyone involved. [H06]
+
+Regulation created a second route back to the vehicle market. California's regulator dates its zero-emission vehicle regulation to 1990. GM's own retrospective describes the Impact concept in that year and EV1 leasing during the 1990s. The programme offered an operating vehicle to customers, although a limited leasing programme was different from a broadly established retail market. [H07][H08]
+
+These developments illustrate two separate hurdles: a usable technology and an organisation capable of producing, supporting and selling it. Demonstrations could establish experience and expose problems. They could not, by themselves, establish that manufacturing costs, customer demand and supporting infrastructure would scale together. That distinction remains relevant when assessing new battery or vehicle announcements.
+
+3. From 2008 into the 2010s  production cars and industrial policy develop together
+
+Tesla's Roadster provided a visible commercial milestone. Its production announcement states that regular production began on 17 March 2008, following a prototype unveiled in 2006. The IR archive displays the release one day earlier; this report uses the event date in its dateline. The vehicle showed a route into the market through an electric sports car, without establishing that electric motoring was already affordable for the general population. [H09]
+
+An established manufacturer took a different product route. Nissan's February 2011 results statement confirms that LEAF production began at Oppama in October 2010 and deliveries to customers in Japan and the United States began that December. These are production and delivery events, rather than merely an announced future launch. [H10]
+
+China was developing an adoption and industrial framework alongside these product programmes. A January 2009 notice established an initial demonstration pilot in 13 cities, concentrating on public-service uses such as buses, taxis, official vehicles, sanitation and postal services. Its historical category included conventional hybrids and fuel-cell vehicles as well as battery-electric vehicles. It must not be treated as an early sales total for this report's narrower plug-in passenger-car market. [H11]
+
+The State Council's 2012–2020 plan then selected electric drive as the main strategic direction and prioritised industrialisation of BEVs and PHEVs. It also addressed batteries, motors, electronics, charging, after-sales support and recycling. The document expressed objectives and policy tasks, not proof that every target was achieved. [H12]
+
+Taken together, these milestones show several ways of creating a market: a specialist product, an established manufacturer's production system and coordinated public procurement. Their relative contributions cannot be reduced to a single invention or subsidy. In our reading, the emerging competitive task was to connect product development with repeatable manufacturing and an environment in which customers could operate the vehicles.
+
+4. From 2020 to 2025  policy meets scale, with different regional outcomes
+
+Around 2020, policy increasingly affected manufacturers' wider fleets. The European Commission describes tighter fleet-wide CO2 targets applying from 2020 as requiring better efficiency and faster deployment of low- and zero-emission vehicles. This was an average-fleet compliance mechanism, rather than a requirement that every car have identical emissions or an immediate prohibition of gasoline-car sales. [H15]
+
+In April 2020, China extended its purchase-support programme through the end of 2022 with scheduled reductions. Its longer-term 2021–2035 industry plan, issued in October and published in November 2020, also emphasised market mechanisms, enterprise choices and integration with electricity and information infrastructure. Charging, swapping, safety, standards and recycling remained part of the policy agenda. A timetable for purchase-subsidy reductions did not mean all industrial and demand-side support would disappear. [H13][H14]
+
+By 2025 the market had reached substantial scale. The IEA's May 2026 assessment estimates that global BEV and PHEV car sales exceeded 20 million in 2025, increasing 20% and reaching 25% of new-car sales. Penetration was nearly 55% in China, 28% in Europe and just under 10% in the United States. These are shares of new passenger-car sales; they are not shares of all vehicles already on the road, and Europe is not synonymous with the European Union. [H16]
+
+The historical result is a large market with distinct regional conditions. Our analysis should therefore test affordability, policy exposure, charging access and manufacturing economics within each market. Global growth is useful context, but it does not establish that every manufacturer, battery chemistry or charging business will earn an adequate return. The next part examines where value is created along that industrial chain.
+
+Part 3 Market Landscape
+
+1 Define the market before comparing its size
+
+The core market in this report is passenger vehicles that can be charged from the electricity grid: battery electric vehicles (BEVs) and plug-in hybrids (PHEVs). Extended-range electric vehicles (EREVs) sit within the plug-in family where the source includes them; they are not added again to an inclusive PHEV total. Conventional hybrids without external charging are an adjacent competing technology. Fuel-cell vehicles and commercial vehicles are discussed separately. China's regulatory category of new energy vehicles is broader than this passenger-car core. [M01][M11]
+
+A sale can mean a manufacturer shipment, delivery to an end customer or registration. Each answers a different question. Wholesale indicates the manufacturer's channel flow; domestic retail is closer to local consumer demand; registration is an administrative observation. None is automatically revenue recognised in audited accounts. Likewise, a company's sales growth and the growth of an industry with a different geographical or product boundary cannot be directly combined into a market share.
+
+IEA's 2025 assessment describes a mass market with considerable regional differences. Its electric cars were 25% of new car sales; BEVs represented 65% of electric car sales. The table gives sales estimates within the same framework and retains their published precision. [M01]
+
+Market	2025 electric car sales	Important boundary
+Global	More than 20 million	IEA BEV plus PHEV electric cars
+China	More than 13 million	Destination market, not Chinese-owned brands worldwide
+Europe	4.2 million	IEA Europe, broader than the European Union
+United States	About 1.5 million	Does not represent all of North America
+
+
+
+Source: IEA Global EV Outlook 2026, electric car trends. Figures retain published precision. These rows are not a complete additive regional dataset. [M01]
+
+ACEA counted 1,880,370 BEV and 1,015,887 PHEV registrations in the EU in 2025. Their compatible same-source sum is 2,896,257, calculated here. The difference from IEA's European total is not evidence that either source is wrong: EU membership and IEA's European coverage are different boundaries. [M07]
+
+2 The 2026 market is diverging across regions
+
+IEA's May 2026 report recorded about 3.9 million electric car sales in the first quarter, down 8% year on year. Its forecast at that time was 23 million for the full year, or 28% of new car sales. The forecast is a dated expectation, not an achieved annual total or an October update. Short-term weakness and a larger annual market are therefore different claims. [M02]
+
+China illustrates why penetration and volume should be read together. CADA's passenger-car committee reported 7.758 million domestic NEV passenger-car retail sales in January to September 2026, down 12.8%, while manufacturer wholesale reached 11.448 million, up 9.4%. September retail penetration was 67.0%, yet NEV retail volume declined 16.7% year on year. Wholesale includes channels that domestic retail does not; subtracting the two does not directly measure inventory. [M06]
+
+In the EU, January to August 2026 registrations reached 1,641,333 BEVs and 758,082 PHEVs. Their shares of all new cars were 21.7% and 10.0%; conventional hybrids had a separate 36.6% share. Including the latter in plug-in adoption would materially overstate the market being studied. These eight-month results must not be treated as full-year figures. [M08]
+
+North America also needs disaggregation. US demand is especially exposed to changes in federal purchase incentives, but Canadian fleet statistics describe a separate market. Statistics Canada recorded 25.3 million light-duty vehicles in use in 2025; BEV plus PHEV vehicles represented 3.5% of that stock. This is not new-sales penetration, and its light-duty category includes pickups and vans. Mexico's importance as a manufacturing location should likewise not be mistaken for the size of its domestic electric passenger-car market. [M09][M10]
+
+The analytical implication is that there is no single regional timetable. A manufacturer can face rising electric penetration, falling domestic unit demand and growing export shipments simultaneously. Regional capacity plans should be tested against local affordability, financing, electricity access and compliance requirements, rather than against one global growth rate.
+
+3 The value chain connects materials to lifetime vehicle service
+
+Figure 1 maps the passenger-vehicle value chain. Its links show categories, not verified supplier contracts. Companies may operate in several stages: BYD is an example in both batteries and vehicles. Listed companies are illustrative; the map is not a ranking. Company financial boundaries are discussed below. [M03][M19][M20][C01][C03][C07][C09][C11][C12]
+
+
+
+
+
+
+
+Upstream materials include lithium salts, graphite and cathode, anode, electrolyte and separator products. Their customers need repeatable quality as well as available tonnes. For a vehicle programme, an inexpensive material that cannot meet production consistency and qualification requirements is not an interchangeable input. The economic question is therefore how much saleable, qualified material a process can supply at a given cost, rather than how much nominal capacity has been announced.
+
+Cells and packs convert those inputs into a component with energy, power, thermal and lifetime constraints. CATL, BYD, LG Energy Solution and Panasonic illustrate this stage. IEA puts global EV battery deployment at 1.2 TWh in 2025 and LFP's share above 55% by deployed capacity. These are battery-energy measures, not numbers of vehicles. Nameplate battery manufacturing capacity above 4 TWh cannot be divided into deployment to obtain a valid factory utilisation rate: applications, inventories, production and installation timing differ. [M03]
+
+Power electronics and control connect the battery to useful motion. The traction inverter controls motor torque and speed; Infineon's portfolio illustrates silicon and silicon-carbide devices and control electronics used in this category. The system choice involves efficiency, cost, thermal design and reliability. A component supplier's claimed performance improvement is not automatically an independently measured benefit in every finished vehicle. [M19]
+
+Midstream vehicle companies integrate powertrains, structures, battery management, cooling, software and manufacturing. A dedicated electric platform can create design freedom, but it also requires development and tooling investment. Sharing parts across models can spread that spending; excessive complexity can consume the saving. Established groups must manage electric programmes alongside existing products and factories, while newer firms must build quality control, distribution and service capacity as their fleets expand.
+
+Downstream, selling the car creates a continuing service obligation. Dealers and direct sales organise delivery, financing, repairs and used-car resale in different ways. Leasing shifts attention to residual values and battery condition. A lower new-car price can improve affordability while reducing the resale value of existing vehicles, changing the economics of the same fleet contract.
+
+Charging is a related infrastructure business with several participants: equipment suppliers, site owners, network operators, electricity suppliers and payment or roaming providers. ABB illustrates AC and DC charging equipment supply. These roles should not be collapsed into one charging-market share. An equipment order, an installed connection and an operating charging point are different milestones. [M20]
+
+Collection, testing, reuse and material recovery form the circularity stage. A retired pack must be classified before a decision about repair, second use or recycling. The value of recoverable materials must cover collection, transport, processing and compliance costs. Recycling is therefore an operating business whose economics depend on feedstock and recovery quality, rather than simply a consequence of selling more new cars. [M14]
+
+4 Global production and global ownership tell different stories
+
+IEA estimates nearly 22 million electric cars were produced in 2025. China accounted for nearly 75% of production and roughly one-quarter of global production was traded internationally. A car made in China may carry a non-Chinese brand and be sold elsewhere. Production location, brand ownership and final customer location must remain separate measures. [M05]
+
+Exports can extend a manufacturer's addressable demand and spread platform spending. They also introduce freight, tariffs, local homologation, distribution, working capital and warranty costs. Announcing a factory abroad does not prove local output, and shipping a car overseas does not prove a final customer registration. In this report's analysis, durable international expansion requires evidence that local service, parts supply and customer economics remain viable after the initial shipment.
+
+5 Read the group share chart with its own denominator
+
+Figure 2 uses SNE Research's 2025 BEV plus PHEV group delivery or registration dataset covering 80 countries and including commercial vehicles. It is a broader comparison alongside the passenger-car analysis. It is not labelled a passenger-car share chart. SNE's public table reports a total of 21,470 thousand vehicles and BYD's share of 19.2%, Geely's 10.4% and Tesla's 7.6%. [S01]
+
+The published shares sum to 100.1%, and the rounded group volumes sum to 21,471 thousand, 1 thousand above the published total. Labels retain the source values; sector angles use the proportions of the published component volumes. Neither the other category nor a leading group's share is silently adjusted. The public release does not fully describe all group, joint-venture and brand-assignment rules. These figures should therefore be compared within SNE's table, not substituted into company shipment or IEA passenger-car totals. [S01]
+
+
+
+
+
+
+
+6 Compare business economics within disclosed boundaries
+
+The following company analysis uses each company's own financial and operational definitions. It is not a sales ranking. A group with combustion vehicles, financial services or electronics cannot be compared with a pure BEV company by treating every dollar of consolidated revenue as electric passenger-car revenue. The useful comparison is how each model turns sales, manufacturing investment and service obligations into cash and profit.
+
+Selected 2025 financial disclosures
+
+These are reporting entities in original currencies and distinct profit measures. They are not a revenue or profitability ranking. Hyundai figures are preliminary and unaudited. CATL is discussed separately as a supplier.
+
+Company	Group revenue	Named profit measure and value	Source
+BYD	803.96 RMB billion	Attributable net profit 32.62 RMB billion	[C01]
+Tesla	94.83 USD billion	Operating income 4.36 USD billion	[C03]
+Volkswagen Group	321.91 EUR billion	Operating result 8.87 EUR billion	[C07]
+Geely Auto	345.23 RMB billion	Attributable profit 16.85 RMB billion	[C09]
+Hyundai Motor Company	186.25 KRW trillion	Operating profit 11.47 KRW trillion	[C11]
+Kia Corporation	114.10 KRW trillion	Operating profit 9.08 KRW trillion	[C12]
+
+
+
+Competition  volume, profit and the boundary of the firm
+
+The selected companies illustrate different ways of competing in electric vehicles. BYD combines vehicle manufacturing with substantial internal component capabilities. Tesla combines vehicle production, software and charging with both purchased and internally developed cells. Volkswagen, Geely Auto, Hyundai and Kia face different transitions from existing vehicle businesses. CATL supplies a critical component to multiple manufacturers. Their accounts explain these business models, but do not create a comparable ranking of passenger-EV profitability. Group revenue can include combustion vehicles, financing, electronics, energy storage or services. A company sales bulletin is also a different measure from registrations. The figures below retain the original currencies and periods; no sales denominator is assembled from these disclosures.
+
+BYD  integration supports execution but does not guarantee profit growth
+
+BYD reported 4.545 million passenger-vehicle sales in 2025. Its broader automotive-related product category generated RMB648.65 billion of revenue and a 20.49% gross margin. Group attributable net profit fell 18.97% to RMB32.62 billion. These are different accounting boundaries: the product category includes automotive-related and other products, while group profit also includes electronics and other activities. The evidence supports a narrower conclusion than “scale guarantees earnings”: a large vehicle operation can coexist with declining group profit. [C01]
+
+The first half of 2026 reinforces the need to inspect several measures together. Automotive-related revenue fell 8.98% to RMB275.34 billion while its gross margin rose to 22.33%; group attributable profit nevertheless fell 20.54%. Revenue, product gross margin and group net profit can move in different directions. The report does not attribute this entire gap to vehicle pricing, so neither does this analysis. [C02]
+
+Analytical implication: internal batteries, motors, controls and chips can make design changes and cost coordination easier. They also place more production assets, development work and utilisation risk inside the company. Integration changes where risks are managed; demand still determines how productively those assets operate.
+
+Tesla  distinguish automotive economics from the wider company
+
+Tesla’s 2025 automotive revenue was USD69.53 billion, including USD1.99 billion of regulatory credits and vehicle leasing. Automotive gross margin was 17.8%, while consolidated operating income was USD4.36 billion on USD94.83 billion of revenue. The latter implies a calculated group operating margin of about 4.6%, rather than a passenger-vehicle segment margin. Tesla identifies incentives, mix and lower cash deliveries among the pressures on automotive revenue. It also names Panasonic and CATL as cell suppliers alongside its efforts to manufacture cells internally. [C03]
+
+In H1 2026, automotive revenue reached USD36.75 billion and automotive gross margin increased to 18.7%, from 16.8% a year earlier. Yet Q2’s corresponding margin fell to 16.9%, from 17.2%. These statements are consistent because one measures six months and the other three. The company also notes the prior-year Model Y factory changeovers affected the comparison base. A rebound should therefore be examined over several periods, rather than extrapolated from a single percentage. [C04]
+
+Volkswagen  electrification takes place within a large existing system
+
+Volkswagen’s 2025 consolidated revenue was EUR321.91 billion, with operating profit of EUR8.87 billion and a 2.8% operating return on sales. These are whole-group figures, including activities outside electric passenger cars. Its disclosed 983,120 BEV deliveries explicitly include heavy commercial vehicles. That number is useful evidence of electrification within the group, but cannot enter this report’s passenger-car market-share calculation. [C07]
+
+H1 2026 revenue was EUR158.10 billion and operating profit EUR5.93 billion, compared with EUR158.36 billion and EUR6.71 billion respectively in H1 2025. [C08] The analytical issue for an established group is the allocation of cash and engineering capacity across current products and future platforms. Existing factories, distribution and service networks offer capabilities; adapting them also consumes resources. The consolidated margin alone cannot identify the profitability of its BEV programme.
+
+Geely Auto  rapid electrification requires a precise corporate boundary
+
+Geely Auto reported 2025 revenue of RMB345.23 billion and attributable profit of RMB16.85 billion. Its reported NEV sales comprised 1,073,805 BEVs and 613,962 PHEVs. The listed group’s accounts include Lynk & Co, with the relevant comparisons restated; this is not the broader Geely Holding portfolio. [C09] In H1 2026 it reported RMB173.60 billion of revenue, RMB9.09 billion of attributable profit and 799,454 NEV sales. [C10]
+
+For a multi-brand manufacturer, shared engineering can spread development costs over more products. Brand proliferation also requires clear product positioning: several badges do not automatically create several distinct sources of demand. This is an analytical trade-off, rather than an assertion that the accounts isolate the financial effect of each brand.
+
+Hyundai and Kia  powertrain flexibility and the cost of transition
+
+The companies’ separate 2025 results releases reported Hyundai Motor revenue of KRW186.25 trillion and operating profit of KRW11.47 trillion, and Kia revenue of KRW114.1 trillion and operating profit of KRW9.08 trillion. Hyundai’s release identifies its financial figures as preliminary and unaudited. Both companies’ broader electrified-vehicle totals include ordinary hybrids, so those totals cannot represent this report’s BEV/PHEV market. Hyundai Motor Company and Kia also remain separate reporting entities, rather than a consolidated Hyundai Motor Group financial statement. [C11][C12]
+
+The strategic comparison is therefore between portfolios and operating capabilities, not a contest between headline “electrified” volumes. A hybrid can serve buyers facing charging constraints while generating cash for future vehicles. It also requires production and development resources. Flexibility can help a company adapt to uneven regional demand, but sustaining several technologies increases coordination requirements. Group profitability does not establish which powertrain earns the return.
+
+CATL  the supplier profit pool must be examined separately
+
+CATL’s 2025 results announcement, labelled unaudited, reported EV-battery revenue of RMB316.51 billion, with a 23.84% gross margin. Its overall gross margin was higher at 26.27%, reflecting a wider group that also includes storage batteries, materials, recycling and other activities. Battery-system economics therefore cannot be inferred from the group margin alone, and GWh cannot be converted into a vehicle market share without additional vehicle-level evidence. [C05]
+
+In H1 2026, EV-battery-system revenue grew 46.02% to RMB192.12 billion, while the product gross margin fell 1.78 percentage points to 20.63%. Growth and margin expansion were not synonymous. [C06] A specialist supplier can distribute research and manufacturing costs across several customers, but must still manage pricing, product mix, capacity and customer concentration. These mechanisms explain why purchasing from a specialist can remain rational even for an automaker that designs important systems internally.
+
+What the comparison means for industry structure
+
+The central decision is how to organise interfaces between the vehicle, battery, software and manufacturing process. Internal production can improve coordination where system design is tightly connected. External procurement can provide access to specialist capabilities and reduce the amount of capital an automaker must commit to every component. Neither arrangement removes the need for supplier qualification, testing, warranty support or credible production planning.
+
+The same logic applies geographically. A successful product has to work within local charging access, distribution, service and production conditions. Moving assembly closer to customers can improve responsiveness, but a factory adds fixed costs before demand is certain. The relevant question is whether the operating system can support sustained sales at an adequate return. The disclosures above show why vehicle volume, product gross margin, group operating profit and cash generation should be examined together, with their definitions kept visible. They support an analysis of industrial organisation and competitive execution, not an investment recommendation.
+
+Part 4 Industry Challenges
+
+1 Improving affordability without transferring losses elsewhere
+
+The customer's economic comparison includes purchase price, financing, energy, insurance, maintenance, taxes and resale value. A low electricity tariff alone cannot establish lower total ownership cost. A household able to charge overnight at home and one dependent on public fast charging face different bills and constraints. Similarly, a fleet's high annual mileage may improve the value of energy savings while increasing its exposure to downtime.
+
+Price competition can reduce the entry price and expand access. It can also reduce the residual value of previously sold cars, weaken dealers and squeeze component suppliers. The relevant business test is whether the manufacturer can sustain quality, warranty service and future model investment after discounting. Lower materials prices or a favourable product mix can protect margins temporarily; neither establishes a permanent industry-wide cost advantage. The company disclosures in Part 3 show why group profit, automotive gross margin and battery segment margin must remain separate measures.
+
+2 Charging performance is a system outcome
+
+A charging-power peak is not the average power over a session. The practical stop also includes finding a compatible operating charger, connecting, payment and possible queues. Battery state of charge, temperature, vehicle limits and power sharing can change the result. As an engineering illustration, four vehicles simultaneously drawing 1 MW would require 4 MW before losses; this is arithmetic, not a measured site load or a claim that any named station supplies it.
+
+IEA reports more than 7 million public charging points worldwide at end 2025, following nearly 1.8 million additions. Those counts do not establish station availability or driver experience. Operators need appropriate locations, grid connections, maintenance and utilisation; drivers need dependable access. Adding rated power without enough demand can leave an expensive asset underused, while high-demand locations can still experience queues. [M04]
+
+The solution is a mix of home and workplace charging, well-sited public infrastructure, reliable payment and maintenance, and managed charging where drivers can shift demand. Battery swapping can shorten the stop for compatible fleets, but creates requirements for standardisation, spare-battery inventory, asset ownership and battery-health assessment. No one model removes the need to pay for energy and infrastructure.
+
+3 Battery tradeoffs and manufacturing execution
+
+LFP, nickel-based lithium-ion chemistries and emerging alternatives address different requirements. Pack engineering, thermal management and vehicle efficiency can matter as much as a cell's headline energy density. LFP's growing deployment does not establish that every application should use it; a larger or heavier pack can create different vehicle constraints. Conversely, a higher-energy cell does not establish a cheaper or safer finished system. [M03]
+
+Manufacturers should be assessed through usable output, production consistency, warranty experience and the intended charging window, rather than through laboratory records alone. Solid-state and other battery announcements should be separated into research results, validated prototypes, pilot output and sustained commercial deliveries. This is an evaluation framework, not a forecast of which company or chemistry will win.
+
+Safety is a lifecycle responsibility involving cells, pack design, software, repair and emergency response. China's mandatory GB 38031 2025 standard took effect on 1 July 2026. The standard's existence and implementation date do not prove a particular fleet's incident rate, and meeting a specified test does not eliminate all real-world risk. Claims comparing fire risk require compatible denominators, vehicle age, exposure and reporting systems. [M12]
+
+4 Emissions depend on the vehicle and energy pathway
+
+Zero tailpipe emissions do not mean zero life-cycle emissions. ICCT's 2025 assessment of medium cars sold in the EU estimated BEV emissions of 63 g CO2e/km versus 235 for gasoline cars, a 73% reduction using the study's projected EU electricity mix for 2025 to 2044. The result includes manufacturing and use, but is a model with stated assumptions. It is not a universal percentage for every car and country. [M13]
+
+The practical implication is to consider vehicle size, battery production, electricity supply, lifetime mileage and actual energy consumption together. PHEVs also require attention to the fraction of driving actually done on electricity. A plug-in car routinely driven without charging should not be credited as if every kilometre were electric. Cleaner electricity and efficient vehicles can reinforce each other, while oversized vehicles can consume part of the benefit.
+
+5 Resource resilience and recycling economics
+
+Supply risk can arise from concentrated processing and qualified materials even when geological resources are widely distributed. Changing a battery chemistry can reduce dependence on one input without eliminating the need for other materials or manufacturing expertise. New regional factories require qualified equipment, labour, suppliers and customers; a nameplate-capacity announcement does not establish competitive output.
+
+IEA's recycling assessment identifies manufacturing scrap as the dominant current battery feedstock, with end-of-life packs becoming more important as fleets age. A recycler therefore needs to distinguish a future retirement opportunity from today's accessible feedstock. Collection contracts, transport, battery health, recovery quality and commodity prices affect revenue. Reuse may extend an asset's life, but testing, integration and liability also carry costs. [M14]
+
+6 Policy support can change both demand and production incentives
+
+China's published purchase-tax framework moved from exemption capped at CNY 30000 per eligible NEV passenger vehicle in 2024 to 2025 to half-tax relief capped at CNY 15000 in 2026 to 2027. This is tax relief subject to eligibility, not a uniform cash payment. In the US, IRS guidance states that the relevant federal vehicle credits are unavailable for vehicles acquired after 30 September 2025; acquisition and subsequent placement in service are distinct conditions. Neither change describes every local incentive or manufacturing credit. [M11][M10]
+
+The EU adopted flexibility allowing manufacturers' CO2 compliance to be assessed over 2025 to 2027. Separately, a March 2026 Council debate addressed a Commission proposal changing the longer-term 2035 framework. A proposal, an adopted compliance arrangement and a final enforceable rule are different stages. Long-term demand models should not treat every announcement as enacted law. [M16][M17]
+
+Trade policy also affects where value can be captured. The Commission's January 2026 guidance on Chinese BEV price undertakings addresses import prices, channels, cross-compensation and investment, with offers assessed individually. It is not a general removal of trade remedies for all brands, and BEV treatment cannot automatically be applied to PHEVs. Local production can reduce some cross-border exposure while adding fixed costs and execution risk. [M18]
+
+7 Software value requires clear responsibility
+
+Software can improve battery management, diagnostics and product functions, but feature availability is not proof of paid recurring demand. NHTSA's Level 2 definition keeps the driver engaged and attentive while the system assists steering and acceleration or braking. Such assistance should not be described as unrestricted autonomous driving. Commercial assessment should also include validation, cybersecurity, recall support and responsibility when features fail. [M15]
+
+8 Commercial vehicles and hydrogen need separate operating cases
+
+IEA reports that electric truck sales exceeded 400000 in 2025 and reached 9% of all truck sales; nearly all were BEVs. This category includes medium and heavy freight trucks, with classification revisions that limit comparisons with older editions. Its economics depend on payload, route length, depot energy, turnaround time and financing, not passenger-car buying preferences. Predictable routes can support coordinated charging or swapping, while long-distance operations impose different constraints. [M22]
+
+Fuel-cell vehicles use hydrogen to produce electricity onboard. The hydrogen production pathway affects upstream emissions, as the US Alternative Fuels Data Center explains. A fleet considering hydrogen must assess delivered fuel cost, station coverage, utilisation and reliability, alongside payload and duty cycle. It should not infer zero life-cycle emissions from water at the tailpipe or infer a mass passenger market from a demonstration programme. [M21]
+
+9 What would demonstrate a stronger industry
+
+The useful indicators are compatible terminal sales, repeatable manufacturing quality, service capacity, sound cash conversion and infrastructure that drivers can use reliably. For automakers, monitor the relation between deliveries, discounting, warranty costs and working capital. For suppliers, monitor qualified output and customer concentration. For charging operators, monitor actual energy delivered and availability alongside capital and connection costs. For recyclers, monitor accessible feedstock and recovered material quality.
+
+This report's assessment is that electrification has reached substantial scale, while the ability to earn sustainable returns remains uneven. The next stage is best evaluated through these operating measures and regional conditions. Forecast sales, announced capacity, charging demonstrations and software roadmaps should remain separate from realised commercial performance.
+
+Appendix Supporting Evidence
+
+Read date 18 October 2026. Publisher links are provided; source reports are not redistributed. Each record states what it supports and its limits.
+
+[H01] BYD Unveils Super e-Platform with Megawatt Flash Charging for Electric Vehicles, Matching Refueling Speeds
+
+BYD | 2025-03-17 | Product launch and future network plan, not a fleet performance survey
+
+Scope and location: China launch; not worldwide charger compatibility or coverage; Opening; Megawatt Flash Charging; Megawatt Flash Charging Terminal; Han L and Tang L pre-sales sections
+
+Supports: BYD announced Super e-Platform, a 1000 V architecture, 1000 kW peak charging and 400 km of range added in five minutes for the equipped Han L; Han L and Tang L entered pre-sales in China; BYD announced its own charging terminal and a plan for over 4000 megawatt flash-charging stations in China
+
+Limits: Manufacturer announcement; not independently measured average or universal real-world charging performance; The text does not disclose a complete protocol specifying ambient/battery temperature, starting and ending state of charge, and the range certification or road-use basis for the headline claim; Station plan is not evidence that all stations were operational; Do not repeat world-first, fastest or world-record promotional comparisons as independently established facts
+
+Publisher source
+https://prod.byd.com/en/news-list/BYD-Unveils-Super-e-Platform-Megawatt-Flash-Charging-Electric-Vehicles-Matching-Refueling-Speeds.html
+
+[H02] Fast Charging Infrastructure for Electrifying Road Trips to and from National Parks in the Western United States
+
+National Renewable Energy Laboratory; Dong-Yeon Lee, Kaylyn Bopp, Matthew Moniot, Alicen Kandt | 2023-09 | 2023 study; model assumptions for 2020/2025/2030 vehicle cohorts
+
+Scope and location: Western United States; Printed p. 11, PDF page 19, Figure 5 and Section 2.4; printed p. 15, PDF page 23, high-SOC charging discussion
+
+Supports: Charging power varies with battery state of charge, vehicle class and model year; The charging curves used by the study decrease at high state of charge; Road-trip energy use depends on driving conditions as well as vehicle characteristics
+
+Limits: US modelling study, not a test of BYD's platform; The illustrated 80–85% state-of-charge taper is a study generalisation and must not be assigned to every model; Used for the charging-curve principle, not to validate the five-minute claim
+
+Publisher source
+https://afdc.energy.gov/files/u/publication/fast-charging-for-nps-road-trips.pdf
+
+[H03] Procurement and Installation for Electric Vehicle Charging Infrastructure
+
+U.S. Department of Energy, Alternative Fuels Data Center | Not displayed; available by cutoff | Undated guidance available by the cutoff; accessed 2026-10-18
+
+Scope and location: United States; cited for planning principles only; Cost Considerations; Installation; Compliance, Permitting, and Inspection; Utilities and Other Partners
+
+Supports: Charging-site planning includes equipment, installation, electrical upgrades, permitting and operation/maintenance; Utilities assess power availability and capacity and should be engaged early
+
+Limits: Undated, evolving US guidance; No cost figures from this page used; Does not quantify BYD deployment economics or global charger reliability
+
+Publisher source
+https://afdc.energy.gov/fuels/electricity-infrastructure-development
+
+[H04] The History of the Electric Car
+
+U.S. Department of Energy; Rebecca Matulka | 2014-09-15 | Historical overview as published in 2014
+
+Scope and location: Primarily United States, with international origins acknowledged; The birth of the electric vehicle; The early rise and fall of the electric car; Gas shortages spark interest in electric vehicles; Environmental concern drives electric vehicles forward
+
+Supports: Electric vehicle development arose from multiple nineteenth-century battery and motor advances, without a single unambiguous inventor; Electric cars attracted urban users; US gasoline-car adoption benefited from cost, electric starters, roads and fuel availability; 1970s oil supply concerns revived US electric-vehicle research interest; 1976 legislation authorised federal R&D and demonstration support; US environmental and energy regulations renewed interest during the 1990s
+
+Limits: Institutional retrospective, not a contemporaneous primary document for nineteenth-century events; US-centred account must not be presented as a complete global chronology; No early global market share, unqualified first invention or current market forecast taken from the page; Its 2014 forecasts and contemporary totals are excluded
+
+Publisher source
+https://www.energy.gov/articles/history-electric-car
+
+[H05] Batteries Not Included
+
+Science Museum; Kathleen McIlvenna | 2010-10-05 | Historical battery development
+
+Scope and location: Battery technology history; Opening discussion of rechargeable batteries, paragraph naming Gaston Planté
+
+Supports: Gaston Planté developed the lead-acid rechargeable battery in 1859
+
+Limits: Museum historical account, not original 1859 experimental documentation; Used only for the lead-acid milestone; The page's separate lithium-battery introduction date is not used; the Nobel source is used for lithium-ion commercialisation chronology; No claim of a complete, linear replacement of lead-acid by lithium-ion
+
+Publisher source
+https://blog.sciencemuseum.org.uk/batteries-not-included/
+
+[H06] The Nobel Prize in Chemistry 2019: Popular information
+
+Royal Swedish Academy of Sciences / Nobel Prize Outreach; Ann Fernholm | 2019-10, prize educational material; exact page publication day not displayed in retrieved body | Lithium-ion battery research and commercialisation history
+
+Scope and location: International scientific development; Opening overview; High voltages when lithium ions hide in cobalt oxide; Yoshino builds the first commercially viable lithium-ion battery; The lithium-ion battery – necessary for a fossil fuel-free society
+
+Supports: Whittingham's rechargeable-lithium work in the 1970s, Goodenough's high-voltage oxide cathode work in 1980, Yoshino's carbon-anode configuration in 1985; Commercial lithium-ion battery sales began in 1991 according to the prize account; The 2019 chemistry prize recognised Goodenough, Whittingham and Yoshino for lithium-ion battery development
+
+Limits: Authoritative prize-body synthesis of scientific history; not the original papers or patents; Avoids treating the prize as a complete list of contributors; Does not establish an immediate automotive market breakthrough in 1991 or the safety of all lithium-ion systems
+
+Publisher source
+https://www.nobelprize.org/prizes/chemistry/2019/popular-information/
+
+[H07] History
+
+California Air Resources Board | Not displayed; available by cutoff | Regulator's own historical account, undated page available by cutoff
+
+Scope and location: California, United States; List of automobile emission-control milestones: Zero-emission vehicle (ZEV) regulation (1990)
+
+Supports: CARB dates adoption of its ZEV regulation to 1990 and describes a requirement for manufacturers to produce an increasing number of ZEVs
+
+Limits: Primary institutional self-history; original rule not relied on for quantitative mandates; Historical adoption is not a claim about the legal status of California's rules in October 2026; No exact percentage mandate or current compliance advice used
+
+Publisher source
+https://ww2.arb.ca.gov/about/history
+
+[H08] Driving the future, then and now: the story of the EV1
+
+General Motors | 2026-03-11 | Corporate historical account of Impact and EV1
+
+Scope and location: United States; From Impact to EV1; A pioneering program — and a lasting legacy
+
+Supports: GM showed the Impact concept in 1990 and operated EV1 leasing during the 1990s; EV1 was leased rather than sold
+
+Limits: Company retrospective contains promotional first/mass-produced claims, not adopted here; The returned page duplicates portions of its article with differing first-lease dates (1997 and late 1996); the draft deliberately uses only the 1990s and does not rely on either exact date; No claim about one single cause of the programme's end
+
+Publisher source
+https://news.gm.com/home.detail.html/Pages/news/us/en/2026/mar/0311-ev1.html
+
+[H09] Tesla Motors Begins Regular Production of 2008 Tesla Roadster
+
+Tesla Investor Relations / Tesla Motors | 2008-03-16 displayed on IR archive; release dateline 2008-03-17 | Start of regular Roadster production, not announcement of a mass-market scale
+
+Scope and location: United States; Dateline and first three paragraphs
+
+Supports: Tesla announced that regular Roadster production began 17 March 2008; The prototype had been unveiled in July 2006
+
+Limits: Archive display date and release dateline differ by one day; retained separately; Company release does not prove broad affordability or universal superiority; Promotional only-highway-capable or first claims excluded
+
+Publisher source
+https://ir.tesla.com/press-release/tesla-motors-begins-regular-production-2008-tesla-roadster
+
+[H10] Fiscal Year 2010 Third-quarter Financial Results: Media Conference
+
+Nissan Motor Co., Ltd.; Joji Tagawa | 2011-02-09 | Quarterly corporate update confirming events in late 2010
+
+Scope and location: Japan and United States for delivery event; Business update, paragraphs on Nissan LEAF
+
+Supports: LEAF production started at Oppama in October 2010; LEAF customer deliveries began in Japan and the United States in December 2010
+
+Limits: Uses a retrospective confirmation rather than a prelaunch delivery schedule; No first-ever electric-car claim or claim that the entire launch was global at the same time
+
+Publisher source
+https://www.nissan-global.com/EN/DOCUMENT/HTML/FINANCIAL/SPEECH/2010/20103rd_speech_185_e.html
+
+[H11] Notice on Energy-saving and New-energy Vehicle Demonstration Pilots (Caijian [2009] No. 6)
+
+China Ministry of Finance and Ministry of Science and Technology | 2009-01-23 official issue metadata; separate web-publication date not displayed | Initial 13-city public-service demonstration pilot
+
+Scope and location: China; Notice first paragraph; annex Articles 2, 4 and 5
+
+Supports: Initial pilot covered 13 cities and focused on buses, taxis, official vehicles, sanitation and postal services; Central subsidies supported vehicle procurement; local support included complementary infrastructure and maintenance
+
+Limits: Historical programme definition includes conventional hybrids and fuel-cell vehicles, broader than the core plug-in passenger-car market in this report; 13 is the initial notice scope, not a count for all later demonstration cities; Policy design is not evidence of actual sales or programme effectiveness
+
+Publisher source
+https://www.mof.gov.cn/gp/xxgkml/jjjss/200902/t20090210_2499581.htm
+
+[H12] Energy-saving and New-energy Vehicle Industry Development Plan (2012–2020)
+
+China State Council; official republication by National Energy Administration | 2012-07-10 on NEA; issuing date 2012-06-28 | 2012–2020 planning horizon
+
+Scope and location: China; Section I market definition; Section II principles; Section III.1 technical route; Section IV charging infrastructure
+
+Supports: Selected electric drive as the main strategic direction and prioritised BEV and PHEV industrialisation; Linked vehicle production with batteries, motors, electronics, charging, after-sales and recycling
+
+Limits: Official repost of primary State Council policy; Targets are not achieved production, sales or performance; NEV definition includes fuel-cell vehicles, so cannot be silently substituted for IEA electric-car statistics
+
+Publisher source
+https://www.nea.gov.cn/2012-07/10/c_131705726.htm
+
+[H13] Notice on Improving Fiscal Subsidies for New-energy Vehicle Promotion (Caijian [2020] No. 86)
+
+China Ministry of Finance, MIIT, Ministry of Science and Technology and NDRC | 2020-04-23 | Historical purchase subsidy extension through 2022
+
+Scope and location: China; Section I extension and step-down; Section III subsidy settlement; effective-date paragraph
+
+Supports: Extended the purchase-support programme through end-2022 with scheduled subsidy reductions
+
+Limits: Historical notice, not a statement of all incentives applicable in 2026; No assertion that every later amendment followed the original schedule unchanged; No claim that ending purchase subsidies ended all NEV policy support
+
+Publisher source
+https://www.mof.gov.cn/zcsjtsgb/gfxwj/202004/t20200423_3583791.htm
+
+[H14] New-energy Vehicle Industry Development Plan (2021–2035)
+
+General Office of the State Council of China | 2020-11-02 | 2021–2035 planning horizon
+
+Scope and location: China; Chapter II principles; Chapter IV industrial ecosystem; Chapter V integrated development; Chapter VI charging/swap networks
+
+Supports: Emphasised market-led allocation, enterprise technical choices, and integration with energy and information infrastructure; Included charging/swapping, grid planning, standards, safety and battery recycling
+
+Limits: Policy objectives and tasks are not evidence of achieved market outcomes; Its 2025 NEV share target uses all new vehicle sales and must not be directly compared with IEA passenger-car penetration as if definitions were identical
+
+Publisher source
+https://www.gov.cn/zhengce/content/2020-11/02/content_5556716.htm
+
+[H15] Average CO2 emissions from new cars increased in 2019 ahead of stricter 2020 targets
+
+European Commission, Directorate-General for Climate Action | 2021-06-01 | 2019 registrations and transition to 2020 standards
+
+Scope and location: European Union / reporting area described in source; Paragraph on stricter fleet-wide 95 g CO2/km car and 147 g CO2/km van targets applicable since 2020
+
+Supports: The Commission describes tighter 2020 fleet-wide CO2 targets as requiring improved fleet efficiency and accelerated deployment of low- and zero-emission vehicles
+
+Limits: Historical fleet-average compliance mechanism, not a per-car requirement or immediate ban on combustion-car sales; No current 2035 rule assertion made; Car/van categories remain separate; van figures not used in draft
+
+Publisher source
+https://climate.ec.europa.eu/news-other-reads/news/average-co2-emissions-new-cars-increased-2019-ahead-stricter-2020-targets-2021-06-01_en
+
+[H16] Global EV Outlook 2026: Trends in electric cars; Executive summary
+
+International Energy Agency | 2026-05-20, verified on report landing page | 2025 historical estimate; 2026 projections excluded from this history
+
+Scope and location: Global; China; Europe; United States; Electric car sales topped 20 million globally in 2025; Across the three major electric car markets; notes defining electric cars; executive-summary opening
+
+Supports: 2025 electric-car sales exceeded 20 million, grew 20%, and represented 25% of new-car sales globally; 2025 sales penetration was nearly 55% in China, 28% in Europe and just under 10% in the United States; The report defines electric cars as BEV and PHEV
+
+Limits: IEA analytical compilation, not a single direct official worldwide registration census; underlying sources include EV Volumes, ACEA, EAFO and country submissions; Sales share is a share of new-car sales, not the vehicle stock, revenues, all road vehicles or fuel-cell market; Europe is not identical to European Union; Publication date verified at https://www.iea.org/reports/global-ev-outlook-2026; 2026 forecasts are not 2026 actuals
+
+Publisher source
+https://www.iea.org/reports/global-ev-outlook-2026/trends-in-electric-cars
+
+[M01] Global EV Outlook 2026 Trends in electric cars
+
+IEA | 2026-05-20 | 2025; 2026 Q1; 2026 forecast
+
+Scope and location: Global; China; Europe; United States; Electric cars are BEV plus PHEV including EREV; Electric car sales; Across the three major electric car markets
+
+Supports: 2025 electric car sales exceeded 20 million, rose 20% and reached 25% of new cars. BEVs were 65% of electric car sales. China exceeded 13 million and Europe reached 4.2 million; US sales were about 1.5 million.
+
+Limits: IEA estimates, partly based on commercial datasets. Europe is not EU. Rounded totals cannot support precise OEM shares; EREV must not be added again to PHEV.
+
+Publisher source
+https://www.iea.org/reports/global-ev-outlook-2026/trends-in-electric-cars
+
+[M02] Global EV Outlook 2026 Executive summary
+
+IEA | 2026-05-20 | 2026 Q1; May 2026 forecast for 2026
+
+Scope and location: Global; BEV plus PHEV electric cars; Electric cars are poised to make up a greater share of total car sales in 2026
+
+Supports: Q1 2026 sales around 3.9 million, down 8% year on year. May forecast for 2026: 23 million sales and 28% of new cars.
+
+Limits: A dated forecast, not 2026 actual sales or an October nowcast. Scenario and policy assumptions can change.
+
+Publisher source
+https://www.iea.org/reports/global-ev-outlook-2026/executive-summary
+
+[M03] Global EV Outlook 2026 Electric vehicle batteries
+
+IEA | 2026-05-20 | 2025
+
+Scope and location: Global; EV battery deployment by capacity; nameplate battery manufacturing capacity separately; Electric vehicle battery deployment; Battery industry trends; Battery manufacturing and trade
+
+Supports: EV battery deployment reached 1.2 TWh. LFP exceeded 55% of deployed EV battery capacity. Battery nameplate capacity exceeded 4 TWh; China held over 80%. CATL, BYD, LG Energy Solution and Panasonic illustrate cell manufacturers.
+
+Limits: GWh shares are not vehicle shares. Nameplate capacity covers different applications and is not usable output; do not divide deployment by nameplate to infer plant utilisation. Pack price averages include stationary storage.
+
+Publisher source
+https://www.iea.org/reports/global-ev-outlook-2026/electric-vehicle-batteries
+
+[M04] Global EV Outlook 2026 Electric vehicle charging
+
+IEA | 2026-05-20 | End 2025
+
+Scope and location: Global; Public charging points, not stations or private chargers; Public charging infrastructure rollout further accelerated in 2025
+
+Supports: Public charging points exceeded 7 million at end 2025 after nearly 1.8 million additions. Rated capacity, vehicle compatibility and access to private charging matter as well as point counts.
+
+Limits: A point is not a station. Nameplate power is not delivered energy, availability or average charging speed; figures include light-duty vehicles beyond passenger cars where stated.
+
+Publisher source
+https://www.iea.org/reports/global-ev-outlook-2026/electric-vehicle-charging-chap-6-and-10
+
+[M05] Global EV Outlook 2026 Manufacturing and trade
+
+IEA | 2026-05-20 | 2025
+
+Scope and location: Global; Electric car production, trade and maker headquarters distinguished; Electric car manufacturing and trade
+
+Supports: Nearly 22 million electric cars were produced in 2025; China produced nearly 75%. About one-quarter of production was traded internationally.
+
+Limits: Production location, brand ownership and sale destination are different. Exports need not equal final registrations abroad; production is not sales.
+
+Publisher source
+https://www.iea.org/reports/global-ev-outlook-2026/manufacturing-and-trade
+
+[M06] China passenger car market analysis September 2026
+
+CADA Passenger Car Market Information Joint Committee | 2026-10-12 | 2026 January to September; September monthly
+
+Scope and location: China; NEV passenger car domestic retail; manufacturer wholesale separately; Section 1 New energy vehicles
+
+Supports: January to September NEV passenger retail 7.758 million, down 12.8%; wholesale 11.448 million, up 9.4%. September retail 1.084 million, down 16.7%, with 67.0% penetration.
+
+Limits: Domestic retail and wholesale have different channels and export coverage. Their difference is not inventory accumulation. Monthly penetration does not describe annual sales growth. Only these specified statistics are used; global-share section is not used due rounded and internally differing percentages.
+
+Publisher source
+https://www.cada.cn/Trends/info_91_10580.html
+
+[M07] New car registrations 2025 battery electric 17.4 percent market share
+
+ACEA | 2026-01-27 | 2025
+
+Scope and location: European Union; New passenger car registrations by power source; Electric cars
+
+Supports: BEV registrations 1,880,370, share 17.4%; PHEV 1,015,887, share 9.4%. Their sum is 2,896,257 registrations.
+
+Limits: EU is narrower than IEA Europe. HEV is not PHEV. Addition is the author's arithmetic using compatible same-source counts.
+
+Publisher source
+https://www.acea.auto/pc-registrations/new-car-registrations-1-8-in-2025-battery-electric-17-4-market-share/
+
+[M08] New car registrations August 2026 year to date battery electric 21.7 percent market share
+
+ACEA | 2026-09-24 | 2026 January to August
+
+Scope and location: European Union; New passenger car registrations; Electric cars; official ACEA email web version
+
+Supports: BEV 1,641,333 registrations, 21.7% share; PHEV 758,082, 10.0% share; HEV 36.6% of all new cars.
+
+Limits: An eight-month period, not full year. HEV excluded from electric-car totals. Official email version read because regular article was hard to locate.
+
+Publisher source
+https://www.acea.auto/?action=view&data=WzU0NzA2LCI2YjgzZjQ4NDljY2IiLDEzOTg0LCJ1dTR0MG00MDh6azBjMHM4c2trazhzODQwMDhnd28wdyIsNTQwNTQsMF0&endpoint=view_in_browser&mailpoet_router=
+
+[M09] Vehicle registrations 2025
+
+Statistics Canada | 2026-09-22 | 2025
+
+Scope and location: Canada; Registered vehicle stock, not new vehicle sales; Highlights; Electric vehicles
+
+Supports: Canada registered 25.3 million light-duty vehicles in 2025. BEV plus PHEV stock was 3.5% of LDVs; broader EV category also includes HEV.
+
+Limits: Stock is not new-sales penetration. LDVs include pickups and vans. The reported 6.5% broader EV stock share must not be called BEV plus PHEV share.
+
+Publisher source
+https://www150.statcan.gc.ca/n1/daily-quotidien/260922/dq260922c-eng.htm
+
+[M10] Clean vehicle tax credits
+
+US Internal Revenue Service | Undated live official guidance available by read date | Acquisition deadline 2025-09-30
+
+Scope and location: United States federal; Sections 30D 25E and 45W vehicle acquisition credits; Update; Planning to buy a new vehicle
+
+Supports: Credits not available for vehicles acquired after September 30 2025; later placed-in-service cases depend on acquisition by the deadline.
+
+Limits: Not a statement about all state incentives or manufacturing credits. No personalised tax advice; distinguish acquisition and delivery.
+
+Publisher source
+https://www.irs.gov/clean-vehicle-tax-credits
+
+[M11] Announcement on extending and optimising new energy vehicle purchase tax relief
+
+China Ministry of Finance State Taxation Administration MIIT | 2023-06-19 | 2024 to 2027
+
+Scope and location: China; Eligible NEV passenger vehicle purchase tax relief; Paragraphs 1 and 3
+
+Supports: 2026 to 2027 relief is half of purchase tax, capped at CNY 15000 per NEV passenger vehicle; 2024 to 2025 exemption was capped at CNY 30000.
+
+Limits: Not a cash subsidy for every car; eligible-model and technical requirements apply. Tax relief cannot be added indiscriminately to other support.
+
+Publisher source
+https://fgk.chinatax.gov.cn/zcfgk/c102416/c5207352/content.html
+
+[M12] GB 38031 2025 Electric vehicles traction battery safety requirements
+
+SAMR national standards platform | 2025-03-28 | Effective 2026-07-01
+
+Scope and location: China; Mandatory traction battery safety standard; Basic information and current status
+
+Supports: Standard published March 28 2025, implemented July 1 2026, replaces GB 38031 2020.
+
+Limits: The registry verifies status and dates only. It does not establish real-world incident rates or prove that passing a test eliminates fires; no unviewed clause is quoted.
+
+Publisher source
+https://std.samr.gov.cn/gb/search/gbDetailed?id=31D72E7FB9BF92EDE06397BE0A0AC2E0
+
+[M13] Life cycle greenhouse gas emissions from passenger cars in the European Union 2025 update
+
+ICCT; Marta Negri and Georg Bieker | 2025-07-08 | Medium cars sold in 2025; projected EU electricity 2025 to 2044
+
+Scope and location: European Union; Modelled life-cycle greenhouse gas emissions; Life-cycle assessment and methodological assumptions
+
+Supports: Estimated BEV emissions 63 g CO2e/km vs gasoline 235, a 73% reduction under study assumptions.
+
+Limits: Model results for EU medium cars, not measurements for every global model. Grid trajectory, lifetime, vehicle class and real driving affect results. Official Chinese research summary read; English PDF access failed.
+
+Publisher source
+https://www.theicct.org.cn/2025/07/08/欧盟乘用车全生命周期温室气体排放：2025年更新及/
+
+[M14] Recycling of Critical Minerals Executive summary
+
+IEA | 2024-11-18 | 2024 assessment and 2030 scenarios
+
+Scope and location: Global; Battery recycling feedstock and announced capacity; Manufacturing scrap and end-of-life batteries
+
+Supports: Manufacturing scrap dominates current battery recycling feedstock; retired batteries become more important as fleets age.
+
+Limits: Future feedstock and capacity are scenario-based. A recycling announcement does not prove available feedstock, recovered output or profit.
+
+Publisher source
+https://www.iea.org/reports/recycling-of-critical-minerals/executive-summary
+
+[M15] Driver Assistance Technologies
+
+NHTSA | Undated official page available by read date | Technology definitions
+
+Scope and location: US framework; Level 2 driver assistance; Level 2 Additional Assistance
+
+Supports: Level 2 can continuously assist steering and acceleration/braking while the driver remains engaged and attentive.
+
+Limits: Use only this definition. Other page wording about commercial availability can be stale and is not used as a worldwide availability claim.
+
+Publisher source
+https://www.nhtsa.gov/vehicle-safety/driver-assistance-technologies
+
+[M16] Council gives final approval to additional flexibility for carmakers
+
+Council of the European Union | 2025-05-27 | 2025 to 2027
+
+Scope and location: European Union; Car and van fleet CO2 compliance averaging; Main body
+
+Supports: Council adopted compliance flexibility assessing manufacturers over 2025 to 2027 instead of each year separately.
+
+Limits: A compliance-timing change is not abolition of all CO2 targets. Later long-term proposals are separate.
+
+Publisher source
+https://www.consilium.europa.eu/en/press/press-releases/2025/05/27/co2-emissions-in-cars-council-gives-final-approval-to-additional-flexibility-for-carmakers/
+
+[M17] Results of the Environment Council 17 March 2026
+
+Cyprus Presidency of the Council of the EU | 2026-03-17 | March 2026 policy debate
+
+Scope and location: European Union; Proposed car CO2 amendment; Opening paragraphs
+
+Supports: Council debated Commission proposal to lower the 2035 tailpipe reduction target from 100% to 90% with compensatory credits.
+
+Limits: Evidence of a proposal and debate at that date, not proof of enactment by the report cutoff. Report does not claim a final 2035 rule outcome.
+
+Publisher source
+https://cyprus-presidency.consilium.europa.eu/en/news/results-of-the-environment-council-17-march-2026/
+
+[M18] Guidance on price undertaking offers for BEVs from China
+
+European Commission DG Trade and Economic Security | 2026-01-12 | January 2026 guidance
+
+Scope and location: China to EU trade; BEV countervailing duties and case-specific price undertakings; Main body and Background
+
+Supports: Guidance covers minimum import prices, sales channels, cross-compensation and EU investments; offers are assessed individually.
+
+Limits: Not removal of duties for all Chinese brands and not evidence of a particular company approval. BEV scope cannot automatically be extended to PHEV.
+
+Publisher source
+https://policy.trade.ec.europa.eu/news/commission-issues-guidance-document-submission-price-undertaking-offers-battery-electric-vehicles-2026-01-12_en
+
+[M19] EV traction inverter
+
+Infineon Technologies | Undated product page available by read date | Product and technology description
+
+Scope and location: Global products; Traction inverter and silicon/SiC semiconductor offering; Overview; How traction inverters work; Technology choice
+
+Supports: Inverters control motor torque and speed; Infineon offers silicon and silicon-carbide power components and control electronics.
+
+Limits: Vendor description verifies its category participation, not market share, independent performance testing or a supply contract with any named OEM.
+
+Publisher source
+https://www.infineon.com/application/automotive-traction-inverter
+
+[M20] EV Charging Electric Vehicle Chargers
+
+ABB | Undated product page available by read date | Product portfolio
+
+Scope and location: Global products; AC wallboxes and DC fast chargers; EV charging portfolio
+
+Supports: ABB offers AC wallboxes, DC fast charging and connected charging products.
+
+Limits: Product participation is not a verified network ownership share, uptime measure or profit estimate.
+
+Publisher source
+https://new.abb.com/ev-charging
+
+[M21] Fuel Cell Electric Vehicle Emissions
+
+US Alternative Fuels Data Center | Undated official page available by read date | Technology and fuel pathways
+
+Scope and location: US analytical context; Tailpipe and well-to-wheels emissions distinguished; Main body
+
+Supports: Hydrogen is an energy carrier from different feedstocks; upstream production affects FCEV greenhouse gas emissions.
+
+Limits: Zero tailpipe carbon does not establish zero life-cycle emissions. Fuel pathway results are not market penetration estimates.
+
+Publisher source
+https://afdc.energy.gov/vehicles/emissions-hydrogen
+
+[M22] Global EV Outlook 2026 Trends in other EV modes
+
+IEA | 2026-05-20 | 2025
+
+Scope and location: Global; Medium and heavy freight trucks; BEV plus PHEV, separate from passenger cars; Trends in electric truck sales and notes
+
+Supports: Electric truck sales exceeded 400000 and reached 9% of all truck sales in 2025. Nearly all electric truck sales were BEV. Route predictability and depot energy access shape use cases.
+
+Limits: Definitions reclassify vehicles at or above 3.5 tonnes; not comparable to passenger cars or necessarily older IEA editions. Do not add truck shares to passenger-car shares.
+
+Publisher source
+https://www.iea.org/reports/global-ev-outlook-2026/trends-in-other-ev-modes
+
+[C01] BYD Annual Report 2025
+
+BYD Company Limited / HKEX | 2026-03-27 | 2025-01-01/2025-12-31
+
+Scope and location: Global consolidated group; BYD and consolidated subsidiaries; total revenue includes automotive-related and electronics businesses. Unit sales are company reported production/sales bulletins, not global consumer registrations; Printed pp. 11, 13–14, 16, 29–30; Section III operating review and product revenue/gross-margin table
+
+Supports: 2025 passenger company sales of 4.545m; automotive-related revenue RMB 648.65bn and gross margin 20.49%; group attributable profit RMB 32.62bn, down 18.97%.
+
+Limits: Automotive-related product revenue includes more than passenger-vehicle sales; its gross margin is not an EV-only net margin; Group attributable profit includes non-automotive businesses and non-operating items; Cannot use company sales as numerator against IEA/SNE market denominator; 2025 passenger BEV/PHEV split is in January 2026 sales bulletin, not extracted from this annual-report source; do not invent split here.
+
+Publisher source
+https://www.hkexnews.hk/listedco/listconews/sehk/2026/0327/2026032702970_c.pdf
+
+[C02] BYD Interim Report 2026
+
+BYD Company Limited / Shenzhen Stock Exchange disclosure | 2026-08-29 | 2026-01-01/2026-06-30
+
+Scope and location: Global consolidated group; Unaudited first-half consolidated financial results; comparisons with H1 2025, not FY2025; Printed pp. 7, 14, 25–26, 150, 193 (PDF pages 6, 13, 24–25, 149, 192)
+
+Supports: H1 automotive-related revenue fell 8.98% while product margin rose to 22.33%; group attributable profit fell 20.54%.
+
+Limits: Unaudited half year; no full-year ranking or automatic annualisation; Neither revenue figure is an EV-only passenger-car revenue measure; Publication date follows the dated SZSE disclosure path; report cover is August 2026; No H1 passenger-unit sales extracted here.
+
+Publisher source
+https://disc.static.szse.cn/disc/disk03/finalpage/2026-08-29/56e933c9-717e-42bd-8c21-3a0a11b8d2d0.PDF
+
+[C03] Tesla Form 10-K for FY2025
+
+Tesla, Inc. / US SEC | 2026-01-29 | 2025-01-01/2025-12-31
+
+Scope and location: Global consolidated group; US GAAP consolidated financials; total automotive revenue includes sales, regulatory credits and leasing; total group also includes energy and services; Printed pp. 32, 37–39, 50; Results of Operations and Consolidated Statements of Operations. SEC filing index shows filing date 2026-01-29, acceptance 2026-01-28
+
+Supports: Automotive revenue USD 69.53bn includes credits/leasing; automotive margin 17.8%; group operating income USD 4.36bn. Cells purchased from Panasonic/CATL supplement internal development.
+
+Limits: Automotive margin includes regulatory credits and leasing and excludes services and other; cannot compare unqualified with another firm's product gross margin; Group operating margin calculated as 4355/94827=4.59%, rounded 4.6%; not passenger-EV operating margin; 10-K uses rounded deliveries; exact 1,636,129 requires separate operational release and is not represented as extracted from this source; Signed on January 28 and filed January 29; source date uses SEC filing date.
+
+Publisher source
+https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm
+
+[C04] Tesla Form 10-Q for H1 2026
+
+Tesla, Inc. / US SEC | 2026-07-23 | 2026-01-01/2026-06-30
+
+Scope and location: Global consolidated group; Unaudited US GAAP first-half figures; six-month columns distinct from Q2 three-month columns; Printed pp. 4–5, 30–33; six-month income statement, Revenues, Cost of Revenues and Gross Margin. SEC filing index confirms 2026-07-23; signature dated 2026-07-22
+
+Supports: H1 automotive margin rose to 18.7%, but Q2 margin fell to 16.9%; period length and the prior-year factory-changeover base matter.
+
+Limits: H1 improvement should not be presented as Q2 margin improvement: H1 automotive margin rose, Q2 automotive margin fell year on year; No post-2026-10-18 Q3 financial results included; Group H1 operating margin 1339/50623=2.65% is calculated, not an EV-only segment margin.
+
+Publisher source
+https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm
+
+[C05] CATL Annual Results 2025
+
+Contemporary Amperex Technology Co., Limited | 2026-03-09 | 2025-01-01/2025-12-31
+
+Scope and location: Global consolidated group; CATL and consolidated subsidiaries; battery supplier, not automaker. EV battery products serve passenger and commercial vehicles; group includes ESS, materials, recycling, mining and other businesses; Cover dated March 9; printed pp. 7, 9, 12–15, 32–33. Monetary tables in RMB thousand
+
+Supports: EV-battery revenue RMB 316.51bn and gross margin 23.84%; wider-group gross margin 26.27% is a different boundary.
+
+Limits: Annual-results cover calls results unaudited despite containing full annual-report text; describe the document accurately and do not silently upgrade its audit status; Battery sales/GWh are not vehicle deliveries or vehicle market share; Supplier group profits and margins cannot rank passenger-vehicle profitability; Group gross-margin improvement does not imply EV battery gross-margin improvement: EV battery gross margin fell 0.10 percentage point.
+
+Publisher source
+https://www.catl.com/en/uploads/1/file/public/202603/20260310105310_46xjbwckvn.pdf
+
+[C06] CATL Interim Report 2026
+
+CATL / Shenzhen Stock Exchange disclosure | 2026-07-25 | 2026-01-01/2026-06-30
+
+Scope and location: Global consolidated group; Unaudited H1 consolidated battery-supplier results; product line EV power battery systems includes passenger and commercial uses; Printed pp. 7, 15–17; financial highlights, product revenue/margin table and capacity/production table
+
+Supports: H1 EV-battery revenue grew 46.02% while gross margin declined 1.78pp to 20.63%.
+
+Limits: H1 2026 must compare with H1 2025, not FY2025; Production 498 GWh must not be labelled sales or installed capacity; This battery supplier is shown separately from OEM volume comparisons; Publication follows dated SZSE disclosure path.
+
+Publisher source
+https://disc.static.szse.cn/disc/disk03/finalpage/2026-07-25/8e6750da-b178-4be9-a74a-4b1d8fc42c58.PDF
+
+[C07] Volkswagen Group Annual Report 2025
+
+Volkswagen Group | 2026-03-10 | 2025-01-01/2025-12-31
+
+Scope and location: Global group; Consolidated Volkswagen Group across passenger/light commercial vehicles, commercial vehicles, financial services and other activities; deliveries include equity-accounted Chinese JVs; Consolidated Income Statement; management-report Deliveries table and paragraph specifying BEVs including heavy commercial vehicles; About This Report confirms publication March 10
+
+Supports: 2025 group revenue EUR 321.91bn, operating result EUR 8.87bn, return 2.8%; disclosed BEV deliveries include heavy commercial vehicles.
+
+Limits: BEV deliveries explicitly include heavy commercial vehicles, so cannot enter passenger-car market share; Volkswagen Group is not Volkswagen Passenger Cars brand or Volkswagen AG standalone; Equity-accounted Chinese JVs are included in volume but their revenue and operating result are not consolidated line by line.
+
+Publisher source
+https://annualreport2025.volkswagen-group.com/consolidated-financial-statements/income-statement.html
+
+[C08] Volkswagen Group Half-Yearly Financial Report 2026
+
+Volkswagen Group | 2026-07-24 | 2026-01-01/2026-06-30
+
+Scope and location: Global group; IFRS consolidated six-month results, with H1 2025 comparisons; separate automotive and financial-services divisions; Printed pp.19,35 (PDF pp.20,36), Income Statement by Division and consolidated income statement; official Financial Reports index dates publication July 24
+
+Supports: H1 revenue EUR 158.10bn and operating result EUR 5.93bn; same-period 2025 comparatives EUR 158.36bn and EUR 6.71bn.
+
+Limits: Whole group and automotive division each include more than passenger BEVs/PHEVs; Do not combine H12026 with FY2025 into a volume or profit ranking; Dynamic key-figures page was also read; stable dated PDF now anchors these financial figures.
+
+Publisher source
+https://uploads.vw-mms.de/system/production/documents/cws/003/289/file_en/e916f0f9afd06d9586560cfdef53baa14b6aea78/2026-07-24-volkswagen-group-h1-2026-intrim-report-en.pdf
+
+[C09] Geely Auto Annual Report 2025
+
+Geely Automobile Holdings Limited | Not displayed; available by cutoff | 2025-01-01/2025-12-31
+
+Scope and location: Global sales of listed Geely Auto group; Geely Auto listed company and consolidated subsidiaries, including Geely, Lynk & Co and ZEEKR; not all of Zhejiang Geely Holding. Common-control consolidation comparatives restated; Printed p.14 vehicle sales; p.123 consolidated income statement; p.139 common-control business-combination accounting
+
+Supports: Listed-group revenue RMB 345.23bn, attributable profit RMB 16.85bn, BEV 1,073,805/PHEV 613,962; common-control comparisons restated.
+
+Limits: Do not append Volvo/Polestar volumes from the wider holding-company portfolio; Do not calculate growth from previously reported, un-restated 2024 revenue; No directly comparable operating-profit subtotal extracted; attributable profit is not operating profit; Exact publication day unverified; board-approval date is not substituted.
+
+Publisher source
+https://www.geelyauto.com.hk/wp-content/uploads/2026/04/e00175_2025-annual-report.pdf
+
+[C10] Geely Auto Interim Report 2026
+
+Geely Automobile Holdings Limited | Not displayed; available by cutoff | 2026-01-01/2026-06-30
+
+Scope and location: Global sales of listed Geely Auto group; Unaudited interim listed-group consolidated results; NEVs explicitly defined as BEV+PHEV; Printed p.5 consolidated income statement; p.69 definition note; p.70 vehicle sales; p.71 non-HKFRS adjustment
+
+Supports: H1 listed-group revenue RMB 173.60bn, attributable profit RMB 9.09bn, NEV 799,454 with BEV/PHEV definition.
+
+Limits: Listed Geely Auto boundary, not entire Geely Holding; No comparable operating-profit subtotal extracted; no invented operating margin; Core attributable profit is non-HKFRS and differs from reported attributable profit; The signature date is not presented as the PDF publication day.
+
+Publisher source
+https://www.geelyauto.com.hk/wp-content/uploads/2026/08/e00175_2026-interim-report.pdf
+
+[C11] Hyundai Motor FY2025 Results
+
+Hyundai Motor Company | 2026-01-29 | 2025-01-01/2025-12-31
+
+Scope and location: Global Hyundai Motor Company; Preliminary unaudited K-IFRS consolidated company results, separate from Kia; broad electrified-vehicle total includes HEV; Opening annual-results paragraphs; Enhancing Electrification Leadership; FY/Q4 table and notes A–C
+
+Supports: Separate preliminary unaudited company financials: revenue KRW 186.25tn, operating profit KRW 11.47tn; electrified totals include HEV.
+
+Limits: Preliminary unaudited financial release; do not label audited annual-report figures; Not Hyundai Motor Group including Kia; Electrified total includes HEV and cannot represent BEV+PHEV; no PHEV remainder invented; Financials include non-EV businesses.
+
+Publisher source
+https://www.hyundai.com/content/hyundai/worldwide/en/newsroom/detail/0000001116.html.html
+
+[C12] Kia FY2025 Results
+
+Kia Corporation / Hyundai Motor Group newsroom | 2026-01-28 | 2025-01-01/2025-12-31
+
+Scope and location: Global Kia Corporation; Kia standalone reporting entity consolidated company financial results; broader electrified category includes HEV, PHEV and EV; Article body after SEOUL January 28; annual financial-results paragraphs; Sales of Electrified Vehicles. AI summary panel excluded
+
+Supports: Kia company revenue KRW 114.1tn and operating profit KRW 9.08tn; its electrified total includes HEV.
+
+Limits: Separate from Hyundai Motor Company; not a combined Hyundai Motor Group account; Electrified total includes ordinary HEVs and does not match report BEV+PHEV scope; Rounded electrified numbers do not support an exact residual PHEV calculation; Do not divide consolidated revenue by EV volume to estimate EV selling price.
+
+Publisher source
+https://www.hyundaimotorgroup.com/en/news/kia-announces-2025-annual-and-fourth-quarter-business-results
+
+[S01] Global EV sales in 2025 BEV plus PHEV
+
+SNE Research | 2026-02-05 | 2025 January to December
+
+Scope and location: 80-country coverage presented as global; BEV plus PHEV including commercial vehicles; customer deliveries or registrations; group table; Second image titled Global EV Sales by Group; footnotes 1 and 2
+
+Supports: Published total 21470 thousand; group shares and volumes as preserved in the accompanying CSV. Scope includes commercial vehicles. Source images were actually opened and inspected.
+
+Limits: Not passenger-car-only. Public group allocation methodology is incomplete. Rounded shares total 100.1%; component volumes total 21471 thousand. Sector angles use component-volume proportions; original labels remain unchanged. Third-party market estimate, not an audited industry census.
+
+Publisher source
+https://sneresearch.com/en/insight/release_view/589/page/48
+
+[P01] EnBW charging hub in Hengersberg, Germany
+
+APneunzehn74, photographer; Wikimedia Commons, host | 2025-06-03, first file upload | A specific site photographed in June 2025; not a market statistic
+
+Scope and location: Hengersberg, Bavaria, Germany; Original real photograph of a charging hub; 4000 × 2992 pixels; CC0 1.0 public domain dedication; Commons Summary, Licensing, File history and Metadata; downloaded original image visually inspected
+
+Supports: The creator's page identifies the Hengersberg EnBW charging site and a 3 June 2025 photograph date. The image shows chargers, empty bays and a solar-panel canopy. The uploader dedicates the original to CC0 1.0, permitting redistribution and commercial use. The downloaded 4000 × 2992 original matches the published SHA-1 and is supplied unchanged.
+
+Limits: A cover illustration of one German site, not evidence of global coverage, charging speed, utilisation, renewable-electricity supply or uptime. No car is visibly connected to a charger, and the background trucks' powertrains are not identified. Camera timestamps are uploader metadata rather than independently certified event timing. CC0 does not imply endorsement or clear separate trademark rights.
+
+Publisher source
+https://commons.wikimedia.org/wiki/File:EnBW_Schnellladepark_Hengersberg.jpg
+
+
+
+
+DEX RESEARCH
+
+全球新能源汽车产业行业报告
+
+乘用车市场与电动出行产业链
+
+2026年10月18日  |  中文审核稿
+
+
+
+德国亨格尔斯贝格的EnBW HyperNetz充电站，摄于2025年6月3日。画面展示光伏顶棚下的充电车位，只呈现这一具体站点，不代表全球充电设施状况。 摄影：APneunzehn74／Wikimedia Commons，CC0 1.0。原始照片，未修改。 [P01]
+
+汽车电动化已达到显著规模，但增长、利润和可靠服务是不同成果。本报告从一次快充技术发布出发，梳理行业历史、地区市场、产业链与企业经济性。核心判断是：竞争力取决于能否将技术变成稳定制造、可负担的用车和可靠补能，并在清晰的业务与统计边界内检验回报。
+
+研究全球市场，重点比较中国、欧洲和北美。核心为纯电、插混及来源口径下的增程乘用车，商用车与燃料电池车单独说明。资料截止2026年10月18日。SNE集团份额图明确采用覆盖80国、包含商用车的更广纯电加插混范围；2025完整年度结果与2026阶段数据分别呈现。
+
+内容  P1 行业故事  ·  P2 行业历史  ·  P3 市场格局  ·  P4 行业问题  ·  材料证明
+
+P1 行业故事
+
+2025年3月17日，比亚迪在中国发布“超级e平台”，提出一项试图让充电变得像加油一样熟悉的主张：搭载该技术的汉L充电五分钟，可增加400公里续航。公告介绍了1000伏架构和1000千瓦峰值充电功率，采用该平台的汉L和唐L开启预售。这些是厂商公布的规格与发布主张，并非对所有电动车车主实际体验的测量。[H01]
+
+这一区别很重要。峰值功率描述的是充电过程中的某一时刻，充入多少能量取决于一段时间内实际维持的功率。美国国家可再生能源实验室（NREL）的公路出行研究展示了充电功率如何随电池荷电状态变化，其建模曲线会在电池电量较高时降低功率。这项研究并未测试比亚迪的技术，但它解释了为什么仅凭一个峰值，就不能确定整个充电过程需要多久。[H02]
+
+比亚迪的这份公告没有提供涵盖电池温度、充电起止电量以及将新增电量换算为公里数依据的完整测试协议。因此，五分钟这一指标应保留“比亚迪公布”的归属，不能理解为在任何季节、道路和公共充电桩上，都能获得同样可用行驶距离的承诺。[H01]
+
+同一场发布也把问题引向车辆之外。比亚迪公布了专用充电终端，并提出在中国建设超过4000座兆瓦闪充站的计划。这是建设目标，不能作为整个网络已经投入运行的证明。美国官方充电设施指南同样把充电站视为一项涉及供电容量、安装、许可和持续运营的工程，并建议尽早让电力公司参与规划。[H01][H03]
+
+商业上的问题是：一项出色的车辆能力，有多少能够转化为稳定可用的服务。对驾驶者而言，有价值的结果是能在交通方便、设备正常的站点完成一次顺利补能。对运营者而言，设备在使用寿命内必须产生足以支撑建设和运营成本的收入。因此，本报告沿着完整系统展开：电池与车辆、充电场站、电力接入，以及为出行付费的客户。一个部件变快可以改善系统，但测量部件并不等于测量整个服务。这种关系对电动出行的影响，远早于今天的充电竞赛。
+
+P2 行业历史
+
+1. 19世纪至20世纪30年代 早期交通选择遇到更大的系统
+
+电力驱动来自19世纪电池和电机技术的一系列进步。美国能源部的历史回顾提醒读者，很难把电动汽车的发明归于某一个人或某一个国家。英国科学博物馆将加斯东·普朗特开发可充电铅酸电池的时间记为1859年，这是储能领域的一项重要节点，但并不是一套能够直接满足道路交通全部要求的现成方案。[H04][H05]
+
+在19世纪末、20世纪初的美国，电动汽车因为安静、相对容易操作，吸引了一部分城市用户。与此同时，竞争方案也在进步。美国能源部将汽油车的扩张与更低车价、电启动、城市之间的道路以及燃油供应联系起来。这些变化影响的是拥有和使用车辆的便利程度与成本，超出了电机本身的性能。这是一段以美国为中心的历史，不能据此断言每个国家都走过完全相同的道路。[H04]
+
+对当下行业而言，其中的启示是一个系统问题：车辆是在能源供应、维护、金融和日常出行需求组成的网络中竞争的。本报告的理解是，如果一个环节的改善依赖其他环节同步投资，技术的普及就会更加困难。早期历史不能证明电动汽车天生不适用；它说明了为什么仅有一种有潜力的动力技术，还不足以决定整个交通市场。
+
+2. 20世纪70至90年代 电池研究与空气质量监管重新打开机会
+
+20世纪70年代，石油供应担忧重新推动美国关注替代动力。1976年的《电动及混合动力车辆研究、开发与示范法》授权联邦政府提供相关支持，但这没有立刻形成广泛的消费市场。[H04]
+
+与此同时，可充电电池研究正在改变技术的可能性。诺贝尔奖的说明材料梳理了一条重要发展线索：斯坦利·惠廷厄姆在20世纪70年代开展锂电池研究，约翰·古迪纳夫在1980年推进更高电压的氧化物正极研究，吉野彰在1985年形成采用碳材料负极的电池结构。该材料将锂离子电池开始商业销售的时间记为1991年。这些发展是后来电动汽车使用相关技术的基础之一，不意味着一套价格合理、耐久可靠的车用电池包在1991年便完整出现。2019年诺贝尔化学奖表彰了三位科学家的贡献，也不等于列出了所有参与者。[H06]
+
+监管提供了重新进入车辆市场的另一条路径。加州空气资源委员会把其零排放汽车法规的通过时间记为1990年。通用汽车自己的历史回顾记载了同年的Impact概念车，以及20世纪90年代的EV1租赁项目。该项目向客户提供了能够运行的车辆，不过，有限范围的租赁项目仍然不同于已经广泛建立的零售市场。[H07][H08]
+
+这些发展显示了两道不同的门槛：可用的技术，以及能够生产、支持并销售它的组织体系。示范运行可以积累经验并暴露问题，却不能单凭自身证明制造成本、客户需求和配套设施能够同步扩大。今天评估新的电池或整车发布时，这一区别仍然适用。
+
+3. 从2008年进入2010年代 商品化车辆与产业政策共同发展
+
+特斯拉Roadster提供了一个鲜明的商业化节点。其生产公告称，常规生产于2008年3月17日开始，此前原型车已于2006年亮相。投资者关系网页显示的公告日期比正文事件日期早一天，本报告采用正文电头中的事件日期。这款车展示了通过电动跑车进入市场的一条路径，但不能据此认定电动出行当时已经能够被普通大众普遍负担。[H09]
+
+一家既有汽车制造商选择了不同的产品路径。日产2011年2月的业绩说明确认，LEAF于2010年10月在追滨工厂投产，并于当年12月开始向日本和美国客户交付。这些是生产和交付已经发生的记录，而非仅仅公布未来上市安排。[H10]
+
+中国在这些产品项目推进的同时，逐步建立推广和产业框架。2009年1月的一份通知设立了最初覆盖13个城市的示范推广试点，重点放在公交、出租、公务、环卫和邮政等公共服务领域。该历史项目的分类除了纯电动车，还包括常规混合动力车和燃料电池车，不能把它当作本报告较窄的插电式乘用车市场的早期销量统计。[H11]
+
+国务院2012—2020年产业发展规划随后把纯电驱动确定为主要战略取向，重点推进纯电动车和插电式混合动力车产业化。规划同时涉及电池、电机、电子系统、充电、售后服务和回收利用。文件表达的是目标与政策任务，不是每一项目标均已完成的证明。[H12]
+
+这些节点共同展现了创造市场的几种方式：专业化产品、既有车企的生产体系，以及协调公共采购。它们各自的作用不能简单归结为某一项发明或补贴。本报告的理解是，竞争任务开始转向把产品开发、可重复的规模制造，以及客户能够正常用车的环境连接起来。
+
+4. 2020至2025年 政策与规模相遇，地区结果分化
+
+2020年前后，政策对制造商整体车队的影响进一步增强。欧盟委员会解释，自2020年适用的更严格车队平均二氧化碳排放目标，要求提高燃油效率，并加快部署低排放和零排放车辆。这是一套车队平均合规机制，不是要求每一辆车达到完全相同的排放水平，也不是立即禁止销售汽油车。[H15]
+
+2020年4月，中国把购车财政支持政策延长至2022年底，并安排补贴逐步退坡。同年10月成文、11月公布的2021—2035年产业规划，还强调市场机制、企业选择，以及汽车与电力和信息基础设施的融合。充换电、安全、标准和回收利用继续属于政策议程。购车补贴的退坡时间表，并不意味着所有产业和需求支持都会消失。[H13][H14]
+
+到2025年，市场已形成可观规模。国际能源署2026年5月的评估估计，2025年全球纯电动和插电式混合动力乘用车销量超过2000万辆，同比增长20%，占新车销量的25%。中国的新车销售渗透率接近55%，欧洲为28%，美国略低于10%。这些是乘用车新车销量占比，不是道路上全部车辆的保有量占比；欧洲也不等同于欧盟。[H16]
+
+历史形成的结果，是一个规模庞大、各地区条件又明显不同的市场。因此，本报告需要在各个市场内检验可负担性、政策影响、充电条件和制造经济性。全球增长是有用的背景，却不能证明每一家制造商、每一种电池化学体系或每一种充电业务都能获得足够回报。下一部分将拆解价值在这条产业链上的形成位置。
+
+P3 市场格局
+
+1 比较规模前先定义市场
+
+本报告核心市场是能够从电网外接充电的乘用车，包括纯电动汽车（BEV）和插电式混合动力汽车（PHEV）。增程式电动汽车（EREV）在来源将其纳入插混时属于插混家族，不能再加到已含增程的插混合计中。不能外接充电的普通混动属于相邻竞争技术，燃料电池车和商用车单独讨论。中国监管中的新能源汽车类别比这一乘用车核心范围更广。[M01][M11]
+
+一笔销量可能指厂家出货、向终端客户交付或行政注册，三者回答不同问题。批发反映厂家向渠道的流动，国内零售更接近本地消费者需求，注册是行政观察；任何一种都不自动等同于审计财务报表确认的收入。同样，不能把公司销量增速与地域或产品范围不同的行业增速直接拼成市场份额。
+
+IEA对2025年的评估描述了一个地区差异显著的大规模市场，电动乘用车占新车销量25%，纯电占电动乘用车销量65%。下表列出同一框架中的销量估计，保留来源公布精度。[M01]
+
+市场	2025年电动乘用车销量	重要边界
+全球	超过2000万辆	IEA纯电加插混电动乘用车
+中国	超过1300万辆	指销售地，不是中国品牌全球销量
+欧洲	420万辆	IEA欧洲，比欧盟范围广
+美国	约150万辆	不能代表整个北美
+
+
+
+来源为IEA《Global EV Outlook 2026》电动乘用车趋势章节，保留公布精度。此表并非可完整相加的地区数据集。[M01]
+
+ACEA统计，2025年欧盟纯电新车注册1880370辆，插混1015887辆。作者将同源且兼容的两项相加，得到2896257辆。它与IEA欧洲合计不同，并不能证明某一方错误，因为欧盟成员国范围与IEA欧洲范围不同。[M07]
+
+2 2026年市场出现地区分化
+
+IEA于2026年5月发布的报告记录，一季度电动乘用车销量约390万辆，同比下降8%；当时对全年预测为2300万辆、新车占比28%。该预测是有日期的预期，不是已实现的全年销量，也不是10月更新值。因此，短期承压与全年市场可能扩大是两种不同主张。[M02]
+
+中国体现了为何要把渗透率和绝对量放在一起看。中国汽车流通协会乘联分会报告，2026年1—9月新能源乘用车国内零售775.8万辆，同比下降12.8%；厂家批发1144.8万辆，同比增长9.4%。9月零售渗透率为67.0%，但新能源零售量同比下降16.7%。批发覆盖国内零售不包含的渠道，两者相减不能直接衡量库存。[M06]
+
+欧盟2026年1—8月纯电注册1641333辆，插混758082辆，占全部新车分别为21.7%和10.0%；普通混动另占36.6%。如果把普通混动算入插电采用程度，就会明显高估本报告研究的市场。这些前八个月数据也不能写成全年结果。[M08]
+
+北美同样需要拆开。美国需求尤其受到联邦购车激励变化影响，加拿大保有量统计则描述另一个市场。加拿大统计局记录，2025年轻型车保有量2530万辆，其中纯电加插混占3.5%。这不是新车渗透率，而且轻型车包括皮卡和厢式车。墨西哥作为制造地的重要性，也不能等同于其国内电动乘用车市场规模。[M09][M10]
+
+作者分析认为，各地并不存在同一张转型时间表。一家车企可能同时面对电动渗透率上升、国内销量下降和出口出货增加。地区产能规划应检验本地可负担性、融资、用电条件与合规要求，不能只根据全球统一增速外推。
+
+3 产业链从材料延伸到车辆全寿命服务
+
+图1展示乘用车产业链。连线表示分类，不代表已核实的供货合同。公司可能跨环节经营，例如比亚迪同时涉及电池与整车。所列企业仅为例子，不是排名；公司财务边界在后文说明。[M03][M19][M20][C01][C03][C07][C09][C11][C12]
+
+
+
+
+
+
+
+上游材料包括锂盐、石墨以及正极、负极、电解液、隔膜等产品。客户需要的不只是可获得吨数，还包括稳定质量。对于整车项目，不能满足量产一致性与认证要求的便宜材料，不能视为可随意替换的投入品。因此，经济问题是某种工艺能以何种成本提供多少合格可售材料，而不只是宣布了多少名义产能。
+
+电芯和电池包将材料转化为具有能量、功率、热管理和寿命约束的部件。宁德时代、比亚迪、LG新能源、松下是这一环节的例子。IEA估计，2025年全球电动车电池部署量1.2 TWh，磷酸铁锂按部署容量占比超过55%。这些是电池能量指标，不是整车数量。不能把超过4 TWh的名义制造产能直接与部署量相除，得出工厂利用率，因为应用、库存、生产和安装时间并不一致。[M03]
+
+功率电子和控制系统把电池能量变成车辆运动。牵引逆变器控制电机转矩和转速，英飞凌产品组合展示了这一类别中的硅、碳化硅器件及控制电子产品。系统选择涉及效率、成本、散热与可靠性；部件供应商宣称的性能改善，不自动等于所有整车经过独立实测的收益。[M19]
+
+中游整车企业整合动力系统、车身结构、电池管理、冷却、软件和制造。专用电动平台可以提供设计自由，同时也需要研发及工装投入。跨车型共用部件可分摊投入，过多复杂性则可能消耗这些节约。传统集团要同时管理电动项目、现有产品和工厂；新企业则需要随着车队扩大而建设质量控制、销售与服务能力。
+
+下游中，汽车售出后仍有持续服务责任。经销商和直营通过不同方式组织交付、融资、维修和二手转售；租赁则把残值和电池状态变得更加重要。新车降价可以改善可负担性，同时降低存量车辆残值，改变同一份车队合同的经济性。
+
+充电是关联基础设施业务，参与者包括设备商、场地业主、网络运营商、电力供应商及支付或漫游服务商。ABB是交流与直流充电设备供应的例子，不能把这些角色折叠为一种充电市场份额。设备订单、已安装接电和已投入运营的充电点，是不同里程碑。[M20]
+
+收集、检测、梯次利用和材料回收构成循环环节。退役电池包需要先分类，再决定维修、再利用或回收。可回收材料价值必须覆盖收集、运输、处理与合规成本。因此，回收是一项取决于原料与回收质量的经营活动，不能仅由新车销量增长推断其盈利。[M14]
+
+4 全球生产地与全球所有权是不同问题
+
+IEA估计，2025年全球电动乘用车产量接近2200万辆，中国占接近75%，约四分之一全球产量发生跨境贸易。中国制造车辆可能属于非中国品牌并销往其他地区，因此生产地、品牌归属和最终客户所在地必须保持为不同指标。[M05]
+
+出口可以扩大潜在需求并分摊平台投入，也会增加运费、关税、本地认证、销售渠道、营运资金与保修成本。海外工厂公告不能证明已有本地产量，车辆出海也不能证明最终客户注册。作者分析认为，可持续的国际扩张需要证明首批出货之后，本地服务、零件供应和客户经济性仍然成立。
+
+5 按自身分母阅读集团份额图
+
+图2采用SNE Research的2025年纯电加插混集团交付或注册数据，覆盖80国且包含商用车。这是与乘用车分析并列的一项更广范围比较，不标为乘用车份额图。SNE公开表报告总量21470千辆，比亚迪份额19.2%，吉利10.4%，特斯拉7.6%。[S01]
+
+公布份额合计100.1%，各集团舍入后的数量合计21471千辆，比公布总量多1千辆。标签保留来源原值，图弧按公布分项数量的比例显示，不暗中修改“其他”或头部集团份额。公开发布并未完整说明所有集团、合资企业与品牌归属规则，因此应在SNE表内部比较，不能用企业出货量或IEA乘用车总量替换其中分子分母。[S01]
+
+
+
+
+
+
+
+6 在披露边界内比较企业经济性
+
+下列企业分析采用各自财务和运营定义，不是销量排名。包含燃油车、金融服务或电子业务的集团，不能把全部合并收入都当成电动乘用车收入来与纯电企业比较。更有用的问题是，不同模式如何把销量、制造投资和服务义务转化为现金与利润。
+
+2025年部分财务披露
+
+下列为不同报告主体，保留原币种并明确利润指标，不构成收入或盈利排名。现代汽车数据为初步未经审计结果，宁德时代作为供应商另行讨论。
+
+企业	集团收入	具名利润指标及数值	来源
+BYD	803.96 十亿元人民币	归母净利润 32.62 十亿元人民币	[C01]
+Tesla	94.83 十亿美元	营业利润 4.36 十亿美元	[C03]
+Volkswagen Group	321.91 十亿欧元	营业利润 8.87 十亿欧元	[C07]
+Geely Auto	345.23 十亿元人民币	归属母公司利润 16.85 十亿元人民币	[C09]
+Hyundai Motor Company	186.25 万亿韩元	营业利润 11.47 万亿韩元	[C11]
+Kia Corporation	114.10 万亿韩元	营业利润 9.08 万亿韩元	[C12]
+
+
+
+企业竞争 销量、利润与企业边界
+
+这些企业代表了新能源汽车产业不同的竞争路径。比亚迪把整车制造与大量内部零部件能力结合；特斯拉在整车、软件和充电体系之外，同时使用外购和自研电芯；大众、吉利汽车、现代和起亚则分别推进既有整车业务的转型；宁德时代向多家车企提供关键零部件。报表有助于理解经营模式，但不能直接生成新能源乘用车盈利能力排行榜。集团收入可能包含燃油车、金融、电子、储能或服务业务，公司产销快报也不同于终端注册。本节保留原始币种和统计期间，不从企业披露拼接市场份额分母。
+
+比亚迪 垂直整合有助于执行，利润增长仍取决于经营结果
+
+比亚迪2025年公司披露的乘用车销量为454.5万辆。范围更宽的“汽车、汽车相关产品及其他产品”收入为6,486.5亿元人民币，毛利率20.49%；集团归母净利润下降18.97%，至326.2亿元。两者边界不同：前一产品类别不仅包括乘用车，后一集团利润还包含电子及其他业务。能够确认的是，大规模整车经营与集团利润下降可以同时发生，不能据销量规模推出利润必然增长。[C01]
+
+2026年上半年继续说明，应同时观察多个指标。汽车相关产品收入下降8.98%，至2,753.4亿元，毛利率却升至22.33%；集团归母净利润仍下降20.54%。收入、产品毛利率与集团净利润可以向不同方向变动。原报告没有把全部差异归因于整车价格，本节也不作这种归因。[C02]
+
+从经营机制分析，内部电池、电机、电控和芯片能力有助于协调设计修改与成本目标，但也把更多生产资产、开发工作和产能利用风险放在企业内部。垂直整合改变了风险的管理位置，资产能否高效运转仍取决于需求。
+
+特斯拉 区分汽车业务与整个公司的经济表现
+
+特斯拉2025年汽车收入695.3亿美元，其中包括19.9亿美元监管积分收入及汽车租赁收入。汽车毛利率为17.8%；集团营业利润43.6亿美元，总收入948.3亿美元。两者相除得到约4.6%的集团营业利润率，这是计算值，不能称为新能源乘用车分部利润率。公司将促销激励、销售结构和现金交付减少列为汽车收入承压因素；同时列明松下、宁德时代等电芯供应商，自产电芯属于对外购供应的补充。[C03]
+
+2026年上半年，汽车收入367.5亿美元，汽车毛利率由上年同期16.8%升至18.7%；但第二季度对应毛利率从17.2%下降到16.9%。两者没有矛盾，分别观察六个月与三个月。公司还说明，上年Model Y工厂换线影响了比较基数。因此，判断恢复的持续性需要多个期间，不能外推单个增幅。[C04]
+
+大众 电动化发生在庞大的既有经营体系之中
+
+大众集团2025年合并收入3,219.1亿欧元，营业利润88.7亿欧元，营业销售回报率2.8%。这是包含新能源乘用车之外业务的全集团数字。其披露的983,120辆BEV交付明确包含重型商用车，可用于说明集团电动化进展，不能进入本报告的乘用车份额计算。[C07]
+
+2026年上半年集团收入1,581.0亿欧元、营业利润59.3亿欧元；同源2025年上半年分别为1,583.6亿和67.1亿欧元。[C08] 从经营机制看，既有集团需要在当前产品与未来平台之间分配现金和工程资源。工厂、销售和服务网络提供基础能力，调整这些体系也消耗资源。仅凭合并利润率，不能识别其BEV业务自身是否盈利。
+
+吉利汽车 快速电动化需要明确公司边界
+
+吉利汽车2025年收入3,452.3亿元人民币，归母净利润168.5亿元；公司披露的新能源销量包括1,073,805辆BEV和613,962辆PHEV。上市集团报表纳入领克，并相应重述比较数；它不是覆盖更广品牌版图的吉利控股。[C09] 2026年上半年收入1,736.0亿元、归母净利润90.9亿元，新能源销量799,454辆。[C10]
+
+多品牌制造商可以通过共享工程能力分摊开发成本，但品牌增加也要求更清楚的产品定位。多个标识并不自动创造多个彼此独立的需求来源。这是经营上的取舍，不能声称上述合并报表已经单独量化了每个品牌的效果。
+
+现代与起亚 动力路线灵活性及转型成本
+
+两家公司分别发布的2025年业绩显示，现代汽车收入186.25万亿韩元、营业利润11.47万亿韩元；起亚收入114.1万亿韩元、营业利润9.08万亿韩元。现代新闻稿标明财务数字为初步、未经审计数据。两者较宽的“电动化车辆”销量均包含普通混合动力，不能代表本报告的BEV/PHEV市场；现代汽车公司与起亚也是不同的报表主体，不能冒称一张现代汽车集团合并报表。[C11][C12]
+
+因此，应比较其产品组合与经营能力，不能只比较“电动化”销量标题。混合动力可服务充电条件受限的消费者，并为未来产品提供现金来源，同时也占用研发与生产资源。多路线有助于适应地区需求差异，但增加协调要求；集团盈利不能证明某一种动力路线贡献了多少回报。
+
+宁德时代 应单独观察供应商环节的利润
+
+宁德时代2025年度业绩公告（标明未经审计）披露，动力电池收入3,165.1亿元人民币，产品毛利率23.84%；集团整体毛利率更高，为26.27%，但范围还包含储能电池、材料、回收等业务。不能从集团毛利率直接推断动力电池自身经济性，也不能在缺少车辆层面证据时，把GWh换算成整车市场份额。[C05]
+
+2026年上半年，动力电池系统收入增长46.02%，至1,921.2亿元，产品毛利率却下降1.78个百分点至20.63%。收入增长并不等于利润率扩张。[C06] 专业供应商可在多家客户之间分摊研发与制造成本，但仍需管理价格、产品结构、产能和客户集中风险。这也解释了为什么车企即使内部设计重要系统，向专业供应商采购仍可能合理。
+
+对产业组织的含义
+
+核心问题是如何组织整车、电池、软件和制造过程之间的协作。当系统设计紧密相连时，内部生产可以改善协调；外部采购则能获得专业能力，并减少车企在每一零部件环节都投入资本的需要。两种安排都不能免除供应商认证、测试、质保和可靠生产规划。
+
+同样的逻辑适用于地区经营。产品还要适应当地充电条件、销售渠道、服务和生产环境。靠近客户生产有助于提高响应速度，但在需求尚不确定时，工厂已经形成固定成本。需要判断的是，整个经营体系能否支撑有持续回报的销售。因此应把整车销量、产品毛利率、集团营业利润和现金创造能力放在一起观察，同时保留各自定义。本节据此讨论产业组织与竞争执行，不提供投资建议。
+
+P4 行业问题
+
+1 改善可负担性不能只把亏损转移到别处
+
+客户的经济比较包含购车价、融资、能源、保险、维护、税费与残值。仅凭电价低，不能证明总拥有成本更低。能在家中夜间充电的家庭，与依赖公共快充的家庭，面对不同账单和限制。车队高年行驶里程可能提高节能价值，同时也增加停运损失风险。
+
+价格竞争可降低购买门槛并扩大普及，也可能降低已售车辆残值、削弱经销商并挤压部件企业。经营检验应当是：降价后厂家是否仍能维持质量、保修服务和后续车型投入。原材料降价或有利产品结构可暂时保护利润，但不能证明全行业拥有永久成本优势。P3企业披露说明，集团利润、汽车毛利率和电池分部利润率必须分开。
+
+2 充电表现是系统结果
+
+充电峰值功率不是完整过程的平均功率。实际停留还包含寻找兼容且正常运营的设备、连接、支付以及可能的排队。荷电状态、温度、车辆限值与共享功率均会改变结果。作为工程示例，四辆车同时各以1 MW充电，在未计损耗前就需4 MW；这只是算术示例，不是实测场站负载，也不代表某个具名场站能够提供这种能力。
+
+IEA报告，2025年底全球公共充电点超过700万个，全年新增近180万个。数量不能证明场站可用性或驾驶体验。运营商需要合适位置、接电、维护和利用率，驾驶者需要可靠接入；缺乏需求时增加额定功率可能形成昂贵闲置资产，而高需求地点仍可能排队。[M04]
+
+解决路径是把家庭与工作场所充电、合理选址的公共设施、可靠支付维护，以及驾驶者可调整时间时的有序充电结合起来。换电可为兼容车队缩短停留，却也要求标准化、备用电池库存、资产归属和电池健康评估。任何模式都不会消除能源和基础设施成本。
+
+3 电池取舍与量产执行
+
+磷酸铁锂、镍系锂离子和新兴技术面向不同要求，电池包工程、热管理和整车效率可能与单体能量密度同样重要。磷酸铁锂部署增长，不代表所有应用都应选它；更大或更重的电池包会带来不同车辆约束。反过来，高能量电芯也不能自动证明成品系统更便宜或更安全。[M03]
+
+评估厂家应看可用产量、一致性、保修表现和预期充电窗口，不能只看实验室纪录。固态等电池公告应分别归入研究结果、经验证样件、试生产及持续商业交付。这是一套评估框架，不是对哪家公司或哪种技术胜出的预测。
+
+安全是贯穿电芯、包体、软件、维修和应急响应的全寿命责任。中国强制标准GB 38031 2025于2026年7月1日实施。标准存在及其实施日期不能证明某车队实际事故率，通过规定试验也不会消除全部现实风险。比较起火风险时，需要兼容的分母、车龄、暴露程度和报告制度。[M12]
+
+4 排放取决于车辆与能源路径
+
+尾气零排放不代表全生命周期零排放。ICCT对2025年欧盟销售中型车的评估，采用2025—2044年预期欧盟电力结构，估计纯电为63克二氧化碳当量每公里，汽油车235克，降低73%。结果包含制造与使用，但属于带有明确假设的模型，不是适用于所有车型和国家的统一比例。[M13]
+
+实践上需要把车型大小、电池生产、电力来源、寿命里程与实际能耗放在一起考虑。插混还必须考察实际电驱里程比例；经常不充电的插电车型，不能按每公里均为电驱计算收益。清洁电力和高效车辆可以相互强化，过大的车型则可能消耗部分收益。
+
+5 资源韧性与回收经济性
+
+即使地质资源分布较广，加工和合格材料供应集中仍会造成风险。改变电池化学体系可减少对某种材料的依赖，却不会消除其他材料和制造知识需求。新地区的工厂需要合格设备、劳动力、供应商和客户，名义产能公告不能证明具有竞争力的产量。
+
+IEA回收评估指出，目前电池回收原料主要来自制造废料，随着车队老化，退役电池的重要性会上升。回收商需要区分未来退役机会与今天可获得原料。收集合同、运输、电池状态、回收质量及商品价格都会影响收入；梯次利用可以延长资产寿命，但检测、集成与责任同样有成本。[M14]
+
+6 政策支持会同时改变需求和生产激励
+
+中国已公布的购置税框架，从2024—2025年符合条件新能源乘用车每辆免税上限3万元，调整为2026—2027年减半征收、每辆减税上限1.5万元。这是有资格条件的税收减免，不是统一现金补贴。美国IRS指引说明，2025年9月30日以后购得车辆不再享受相关联邦车辆抵免；购得与随后投入使用的条件不同。两项变化都不代表所有地方激励或制造税抵免的全貌。[M11][M10]
+
+欧盟通过了允许车企按2025—2027年表现评估二氧化碳合规性的灵活安排。另在2026年3月，理事会讨论了欧委会调整2035年长期框架的提案。提案、已通过的合规安排及最终可执行规则属于不同阶段，长期需求模型不能把每项公告都当成已生效法律。[M16][M17]
+
+贸易政策也影响价值可以在哪里实现。欧委会2026年1月关于中国纯电车价格承诺的指南，涉及进口价、渠道、交叉补偿和投资，并逐项评估承诺。它不代表所有品牌的贸易救济措施普遍取消，纯电待遇也不能自动套到插混。本地制造可以降低部分跨境风险，同时增加固定成本和执行风险。[M18]
+
+7 软件价值需要明确责任
+
+软件可以改善电池管理、诊断和产品功能，但功能可用不等于已经形成付费经常性需求。NHTSA对二级辅助驾驶的定义要求，系统辅助转向及加减速时，驾驶员仍投入驾驶并保持注意；不应将其描述为不受限制的自动驾驶。商业评估还应计入验证、网络安全、召回支持与功能失效责任。[M15]
+
+8 商用车和氢能需要独立运营案例
+
+IEA报告，2025年电动货车销量超过40万辆，占全部货车9%，其中几乎全部为纯电。该类别包括中重型货车，分类调整也限制与旧版报告的比较。其经济性取决于载重、路线、场站能源、周转时间和融资，而非乘用车购买偏好。可预测路线有利于协调充电或换电，长途运营则有不同约束。[M22]
+
+燃料电池车利用氢在车内发电。美国替代燃料数据中心说明，制氢路径影响上游排放。考虑氢能的车队需要同时检验送达氢价、场站覆盖、利用率、可靠性、载重与工况。不能从尾管排水推断全生命周期零排放，也不能从示范计划推断大众乘用车市场已形成。[M21]
+
+9 什么证据能证明行业更健康
+
+有用指标包括口径一致的终端销量、可重复的制造质量、服务能力、良好现金转化，以及驾驶者能够可靠使用的基础设施。对整车企业，观察交付、折扣、保修成本和营运资金的关系；对供应商，观察合格产量与客户集中度；对充电运营商，把实际供电量和可用率与资本及接电成本一起看；对回收商，观察可获得原料及回收材料质量。
+
+本报告判断，汽车电动化已经达到显著规模，但持续获得回报的能力仍不均衡。下一阶段更适合用这些运营指标与地区条件来评估。预测销量、宣布产能、充电演示和软件路线图，应继续与已实现的商业表现分开。
+
+附录 材料证明
+
+读取日期为2026年10月18日。提供出版方链接，不再分发未经授权的来源报告。各项记录说明支持范围与限制。
+
+[H01] 比亚迪发布超级e平台及兆瓦闪充技术
+
+BYD | 2025-03-17 | Product launch and future network plan, not a fleet performance survey
+
+范围与定位：China launch; not worldwide charger compatibility or coverage; Opening; Megawatt Flash Charging; Megawatt Flash Charging Terminal; Han L and Tang L pre-sales sections
+
+支持：支持2025年3月17日发布、1000伏架构、1000千瓦峰值与汉L五分钟增加400公里续航的厂商主张，以及中国超4000座建站计划。
+
+限制：厂商技术公告，不是独立道路或全体用户性能测试；未披露完整测试协议，建设计划不代表场站已经投运；不采用其未经独立核验的全球最快、首次等表述。
+
+出版方原文
+https://prod.byd.com/en/news-list/BYD-Unveils-Super-e-Platform-Megawatt-Flash-Charging-Electric-Vehicles-Matching-Refueling-Speeds.html
+
+[H02] 美国西部国家公园出行电动化所需的快速充电基础设施
+
+National Renewable Energy Laboratory; Dong-Yeon Lee, Kaylyn Bopp, Matthew Moniot, Alicen Kandt | 2023-09 | 2023 study; model assumptions for 2020/2025/2030 vehicle cohorts
+
+范围与定位：Western United States; Printed p. 11, PDF page 19, Figure 5 and Section 2.4; printed p. 15, PDF page 23, high-SOC charging discussion
+
+支持：支持充电功率随荷电状态、车型及年份变化，以及车辆能耗受工况影响的一般原则。
+
+限制：美国建模研究，并非比亚迪测试；示例曲线和高电量降功率位置不能套用到所有车型。
+
+出版方原文
+https://afdc.energy.gov/files/u/publication/fast-charging-for-nps-road-trips.pdf
+
+[H03] 电动汽车充电基础设施的采购与安装
+
+U.S. Department of Energy, Alternative Fuels Data Center | 未显示；截止日已可读取 | Undated guidance available by the cutoff; accessed 2026-10-18
+
+范围与定位：United States; cited for planning principles only; Cost Considerations; Installation; Compliance, Permitting, and Inspection; Utilities and Other Partners
+
+支持：支持场站规划涉及设备、安装、电力升级、许可与持续维护，以及尽早与电力公司核查供电能力。
+
+限制：无明确发布日期的美国官方动态指南，仅用于规划原则；未使用其成本数字，不证明比亚迪场站的实际经济性。
+
+出版方原文
+https://afdc.energy.gov/fuels/electricity-infrastructure-development
+
+[H04] 电动汽车的历史
+
+U.S. Department of Energy; Rebecca Matulka | 2014-09-15 | Historical overview as published in 2014
+
+范围与定位：Primarily United States, with international origins acknowledged; The birth of the electric vehicle; The early rise and fall of the electric car; Gas shortages spark interest in electric vehicles; Environmental concern drives electric vehicles forward
+
+支持：支持电动汽车来自多项19世纪电池和电机进步、美国城市使用场景、汽油车配套体系扩张，以及1970年代联邦研发支持。
+
+限制：2014年机构历史综述，并非19世纪同时期原始文献；主要描述美国；不采用其旧市场预测、当前数量或无条件首次判断。
+
+出版方原文
+https://www.energy.gov/articles/history-electric-car
+
+[H05] 不含电池
+
+Science Museum; Kathleen McIlvenna | 2010-10-05 | Historical battery development
+
+范围与定位：Battery technology history; Opening discussion of rechargeable batteries, paragraph naming Gaston Planté
+
+支持：仅支持科学博物馆所记的普朗特1859年铅酸可充电电池节点。
+
+限制：博物馆历史文章，并非1859年实验记录；不使用该文的锂电池上市年份，锂离子商业化以诺奖材料为准；不推导全部技术线性替代。
+
+出版方原文
+https://blog.sciencemuseum.org.uk/batteries-not-included/
+
+[H06] 2019年诺贝尔化学奖：科普说明
+
+Royal Swedish Academy of Sciences / Nobel Prize Outreach; Ann Fernholm | 2019-10, prize educational material; exact page publication day not displayed in retrieved body | Lithium-ion battery research and commercialisation history
+
+范围与定位：International scientific development; Opening overview; High voltages when lithium ions hide in cobalt oxide; Yoshino builds the first commercially viable lithium-ion battery; The lithium-ion battery – necessary for a fossil fuel-free society
+
+支持：支持惠廷厄姆1970年代锂电池研究、古迪纳夫1980年正极研究、吉野彰1985年碳负极结构和1991年商业销售的历史脉络。
+
+限制：奖项机构的科学史解释，并非原始论文、专利或全部贡献者名单；不证明1991年已形成成熟车用电池包或所有锂电系统都安全。
+
+出版方原文
+https://www.nobelprize.org/prizes/chemistry/2019/popular-information/
+
+[H07] 加州空气资源委员会历史
+
+California Air Resources Board | 未显示；截止日已可读取 | Regulator's own historical account, undated page available by cutoff
+
+范围与定位：California, United States; List of automobile emission-control milestones: Zero-emission vehicle (ZEV) regulation (1990)
+
+支持：支持该监管机构将零排放汽车法规通过时间记为1990年，并描述逐步增加零排放车生产的要求。
+
+限制：机构自身历史记录，不是对2026年法规法律效力的判断；不使用具体历史比例，也不提供现行合规意见。
+
+出版方原文
+https://ww2.arb.ca.gov/about/history
+
+[H08] 从过去到现在驱动未来：EV1的故事
+
+General Motors | 2026-03-11 | Corporate historical account of Impact and EV1
+
+范围与定位：United States; From Impact to EV1; A pioneering program — and a lasting legacy
+
+支持：支持通用汽车1990年Impact概念车、20世纪90年代EV1租赁项目以及以租不售。
+
+限制：公司回顾的返回正文存在重复版本，首次租赁分别写为1997年与1996年末；稿件因此只采用90年代，不依赖该确切日期。宣传性首次判断和单一停产原因均不采用。
+
+出版方原文
+https://news.gm.com/home.detail.html/Pages/news/us/en/2026/mar/0311-ev1.html
+
+[H09] 特斯拉开始2008款Roadster常规生产
+
+Tesla Investor Relations / Tesla Motors | 2008-03-16 displayed on IR archive; release dateline 2008-03-17 | Start of regular Roadster production, not announcement of a mass-market scale
+
+范围与定位：United States; Dateline and first three paragraphs
+
+支持：支持正文记载的2008年3月17日常规生产启动，以及2006年原型亮相。
+
+限制：投资者关系存档显示3月16日，正文电头为3月17日，分别记录；不证明大众可负担性或普遍技术优势。
+
+出版方原文
+https://ir.tesla.com/press-release/tesla-motors-begins-regular-production-2008-tesla-roadster
+
+[H10] 日产2010财年第三季度财务业绩说明会
+
+Nissan Motor Co., Ltd.; Joji Tagawa | 2011-02-09 | Quarterly corporate update confirming events in late 2010
+
+范围与定位：Japan and United States for delivery event; Business update, paragraphs on Nissan LEAF
+
+支持：确认LEAF于2010年10月在追滨开始生产，同年12月向日本及美国客户交付。
+
+限制：使用已发生事件的回顾确认，不把预定安排当成交付；不采用全球首辆电动车或全球同步上市的说法。
+
+出版方原文
+https://www.nissan-global.com/EN/DOCUMENT/HTML/FINANCIAL/SPEECH/2010/20103rd_speech_185_e.html
+
+[H11] 关于开展节能与新能源汽车示范推广试点工作的通知
+
+中国财政部、科技部 | 2009-01-23 official issue metadata; separate web-publication date not displayed | Initial 13-city public-service demonstration pilot
+
+范围与定位：China; Notice first paragraph; annex Articles 2, 4 and 5
+
+支持：支持2009年初始13城市试点，聚焦公交、出租、公务、环卫、邮政等公共服务，以及购车和配套支持。
+
+限制：当时定义还包括常规混合动力和燃料电池车，宽于本文核心市场；13是最初通知范围，不是所有后续试点总数；政策不等于销量成果。
+
+出版方原文
+https://www.mof.gov.cn/gp/xxgkml/jjjss/200902/t20090210_2499581.htm
+
+[H12] 节能与新能源汽车产业发展规划（2012—2020年）
+
+中国国务院；国家能源局官方转载 | 2012-07-10 on NEA; issuing date 2012-06-28 | 2012–2020 planning horizon
+
+范围与定位：China; Section I market definition; Section II principles; Section III.1 technical route; Section IV charging infrastructure
+
+支持：支持纯电驱动的战略方向、BEV和PHEV产业化重点，以及电池、电机、电子、充电、售后、回收协同。
+
+限制：国家能源局对国务院原政策的官方转载；目标不能写成已完成数据；NEV定义还含燃料电池车，不能替代IEA乘用车统计。
+
+出版方原文
+https://www.nea.gov.cn/2012-07/10/c_131705726.htm
+
+[H13] 关于完善新能源汽车推广应用财政补贴政策的通知
+
+中国财政部、工业和信息化部、科技部、发展改革委 | 2020-04-23 | Historical purchase subsidy extension through 2022
+
+范围与定位：China; Section I extension and step-down; Section III subsidy settlement; effective-date paragraph
+
+支持：支持2020年将购置补贴安排延至2022年底并规划逐步退坡的历史政策。
+
+限制：不是2026年全部优惠的说明，不断言之后所有修订均原样执行，也不把购置补贴退出等同于全部支持结束。
+
+出版方原文
+https://www.mof.gov.cn/zcsjtsgb/gfxwj/202004/t20200423_3583791.htm
+
+[H14] 新能源汽车产业发展规划（2021—2035年）
+
+中国国务院办公厅 | 2020-11-02 | 2021–2035 planning horizon
+
+范围与定位：China; Chapter II principles; Chapter IV industrial ecosystem; Chapter V integrated development; Chapter VI charging/swap networks
+
+支持：支持2020年成文并公布的长期规划，强调市场、企业选择，以及充换电、电网、标准、安全和回收的系统协同。
+
+限制：政策目标不能写成市场成果；2025年目标的分母为全部新车，与IEA乘用车渗透率不兼容，不直接作达标比较。
+
+出版方原文
+https://www.gov.cn/zhengce/content/2020-11/02/content_5556716.htm
+
+[H15] 2019年新车平均二氧化碳排放上升，随后迎来更严格的2020年目标
+
+European Commission, Directorate-General for Climate Action | 2021-06-01 | 2019 registrations and transition to 2020 standards
+
+范围与定位：European Union / reporting area described in source; Paragraph on stricter fleet-wide 95 g CO2/km car and 147 g CO2/km van targets applicable since 2020
+
+支持：支持欧盟委员会对2020年更严格车队平均排放目标和低、零排放车辆部署机制的说明。
+
+限制：是历史车队平均机制，并非每辆车相同限值或即时禁售燃油车；未据此陈述2026年以后规则；不把厢式车数字混入乘用车。
+
+出版方原文
+https://climate.ec.europa.eu/news-other-reads/news/average-co2-emissions-new-cars-increased-2019-ahead-stricter-2020-targets-2021-06-01_en
+
+[H16] 全球电动汽车展望2026：乘用车趋势与执行摘要
+
+International Energy Agency | 2026-05-20, verified on report landing page | 2025 historical estimate; 2026 projections excluded from this history
+
+范围与定位：Global; China; Europe; United States; Electric car sales topped 20 million globally in 2025; Across the three major electric car markets; notes defining electric cars; executive-summary opening
+
+支持：支持IEA估计2025年全球BEV与PHEV乘用车销量超过2000万辆、增长20%、占新车25%，以及中国接近55%、欧洲28%、美国略低于10%的地区新车渗透率。
+
+限制：机构汇总分析而非单一全球直接登记普查；销量占比不等于保有量、收入或全部道路车辆份额；欧洲不等于欧盟；2026预测不写成实际。
+
+出版方原文
+https://www.iea.org/reports/global-ev-outlook-2026/trends-in-electric-cars
+
+[M01] Global EV Outlook 2026 Trends in electric cars
+
+IEA | 2026-05-20 | 2025; 2026 Q1; 2026 forecast
+
+范围与定位：Global; China; Europe; United States; Electric cars are BEV plus PHEV including EREV; Electric car sales; Across the three major electric car markets
+
+支持：2025年全球电动乘用车超过2000万辆，同比增长20%，占新车25%；纯电占电动乘用车65%。中国超过1300万辆，欧洲420万辆，美国约150万辆。
+
+限制：IEA估计，部分底层数据来自商业数据库；欧洲不等于欧盟。约数不能推算精确企业份额，增程不可再加到已包含它的插混总数。
+
+出版方原文
+https://www.iea.org/reports/global-ev-outlook-2026/trends-in-electric-cars
+
+[M02] Global EV Outlook 2026 Executive summary
+
+IEA | 2026-05-20 | 2026 Q1; May 2026 forecast for 2026
+
+范围与定位：Global; BEV plus PHEV electric cars; Electric cars are poised to make up a greater share of total car sales in 2026
+
+支持：2026年一季度销量约390万辆，同比下降8%；5月发布的2026年预测为2300万辆、新车占比28%。
+
+限制：属于有日期的预测，不是2026年全年实绩，也不是10月滚动预测；政策和情景假设可能变化。
+
+出版方原文
+https://www.iea.org/reports/global-ev-outlook-2026/executive-summary
+
+[M03] Global EV Outlook 2026 Electric vehicle batteries
+
+IEA | 2026-05-20 | 2025
+
+范围与定位：Global; EV battery deployment by capacity; nameplate battery manufacturing capacity separately; Electric vehicle battery deployment; Battery industry trends; Battery manufacturing and trade
+
+支持：电动车电池部署量达1.2 TWh，磷酸铁锂占部署容量超过55%；电池名义产能超过4 TWh，中国占比超过80%。宁德时代、比亚迪、LG新能源和松下是电芯企业例子。
+
+限制：GWh份额不是整车份额；名义产能涵盖不同应用，不是有效产量，不可用部署量相除推算工厂利用率。电池包价格均值包括储能应用。
+
+出版方原文
+https://www.iea.org/reports/global-ev-outlook-2026/electric-vehicle-batteries
+
+[M04] Global EV Outlook 2026 Electric vehicle charging
+
+IEA | 2026-05-20 | End 2025
+
+范围与定位：Global; Public charging points, not stations or private chargers; Public charging infrastructure rollout further accelerated in 2025
+
+支持：2025年底公共充电点超过700万个，全年新增近180万个；除数量外，还应考察额定功率、车型兼容和私人充电条件。
+
+限制：充电点不等于充电站，额定功率不等于实际充电电量、可用率或平均速度；相关指标按来源可能覆盖乘用车以外轻型车。
+
+出版方原文
+https://www.iea.org/reports/global-ev-outlook-2026/electric-vehicle-charging-chap-6-and-10
+
+[M05] Global EV Outlook 2026 Manufacturing and trade
+
+IEA | 2026-05-20 | 2025
+
+范围与定位：Global; Electric car production, trade and maker headquarters distinguished; Electric car manufacturing and trade
+
+支持：2025年全球电动乘用车产量接近2200万辆，中国占接近75%；约四分之一产量发生跨境贸易。
+
+限制：生产地、品牌归属和销售地不同；出口不等于海外终端注册，产量不等于销量。
+
+出版方原文
+https://www.iea.org/reports/global-ev-outlook-2026/manufacturing-and-trade
+
+[M06] 2026年9月份全国乘用车市场分析
+
+CADA Passenger Car Market Information Joint Committee | 2026-10-12 | 2026 January to September; September monthly
+
+范围与定位：China; NEV passenger car domestic retail; manufacturer wholesale separately; Section 1 New energy vehicles
+
+支持：1—9月新能源乘用车零售775.8万辆，同比下降12.8%；批发1144.8万辆，同比增长9.4%。9月零售108.4万辆，同比下降16.7%，零售渗透率67.0%。
+
+限制：国内零售与批发的渠道和出口覆盖不同，差值不等于库存变化。单月渗透率不是全年增长率；仅采用列明数据，未采用全球份额段落中约数及彼此不一致的比例。
+
+出版方原文
+https://www.cada.cn/Trends/info_91_10580.html
+
+[M07] New car registrations 2025 battery electric 17.4 percent market share
+
+ACEA | 2026-01-27 | 2025
+
+范围与定位：European Union; New passenger car registrations by power source; Electric cars
+
+支持：纯电注册1880370辆，占17.4%；插混1015887辆，占9.4%；二者相加为2896257辆。
+
+限制：欧盟小于IEA欧洲范围，普通混动不等于插混；加总是作者对同源可比数量进行的计算。
+
+出版方原文
+https://www.acea.auto/pc-registrations/new-car-registrations-1-8-in-2025-battery-electric-17-4-market-share/
+
+[M08] New car registrations August 2026 year to date battery electric 21.7 percent market share
+
+ACEA | 2026-09-24 | 2026 January to August
+
+范围与定位：European Union; New passenger car registrations; Electric cars; official ACEA email web version
+
+支持：纯电注册1641333辆，占21.7%；插混758082辆，占10.0%；普通混动占全部新车36.6%。
+
+限制：仅为前八个月，不是全年；普通混动不计入电动乘用车合计。实际读取的是官方邮件网页版。
+
+出版方原文
+https://www.acea.auto/?action=view&data=WzU0NzA2LCI2YjgzZjQ4NDljY2IiLDEzOTg0LCJ1dTR0MG00MDh6azBjMHM4c2trazhzODQwMDhnd28wdyIsNTQwNTQsMF0&endpoint=view_in_browser&mailpoet_router=
+
+[M09] Vehicle registrations 2025
+
+Statistics Canada | 2026-09-22 | 2025
+
+范围与定位：Canada; Registered vehicle stock, not new vehicle sales; Highlights; Electric vehicles
+
+支持：加拿大2025年轻型车登记保有量2530万辆，其中纯电加插混占3.5%；该机构更广的EV类别还包括普通混动。
+
+限制：保有量不是新车渗透率，轻型车包括皮卡和厢式车；更广EV保有量占比6.5%不能称为纯电加插混占比。
+
+出版方原文
+https://www150.statcan.gc.ca/n1/daily-quotidien/260922/dq260922c-eng.htm
+
+[M10] Clean vehicle tax credits
+
+US Internal Revenue Service | Undated live official guidance available by read date | Acquisition deadline 2025-09-30
+
+范围与定位：United States federal; Sections 30D 25E and 45W vehicle acquisition credits; Update; Planning to buy a new vehicle
+
+支持：2025年9月30日以后购得车辆不能享受相关抵免；其后投入使用的情况需满足截止前购得等条件。
+
+限制：不代表所有州补贴或制造税抵免均取消；不提供个人税务建议，购得与交付须区分。
+
+出版方原文
+https://www.irs.gov/clean-vehicle-tax-credits
+
+[M11] 关于延续和优化新能源汽车车辆购置税减免政策的公告 2023年第10号
+
+China Ministry of Finance State Taxation Administration MIIT | 2023-06-19 | 2024 to 2027
+
+范围与定位：China; Eligible NEV passenger vehicle purchase tax relief; Paragraphs 1 and 3
+
+支持：2026—2027年减半征收购置税，每辆新能源乘用车减税额上限1.5万元；2024—2025年免税额上限3万元。
+
+限制：不是所有车辆统一现金补贴，须满足车型目录和技术要求，不可随意与其他支持相加。
+
+出版方原文
+https://fgk.chinatax.gov.cn/zcfgk/c102416/c5207352/content.html
+
+[M12] GB 38031 2025 Electric vehicles traction battery safety requirements
+
+SAMR national standards platform | 2025-03-28 | Effective 2026-07-01
+
+范围与定位：China; Mandatory traction battery safety standard; Basic information and current status
+
+支持：标准2025年3月28日发布，2026年7月1日实施，替代2020版。
+
+限制：登记页只核实状态和日期，不支持实际事故率或通过试验即可消除起火风险的结论；不引用未读条款。
+
+出版方原文
+https://std.samr.gov.cn/gb/search/gbDetailed?id=31D72E7FB9BF92EDE06397BE0A0AC2E0
+
+[M13] 欧盟乘用车全生命周期温室气体排放 2025年更新及关键考量因素
+
+ICCT; Marta Negri and Georg Bieker | 2025-07-08 | Medium cars sold in 2025; projected EU electricity 2025 to 2044
+
+范围与定位：European Union; Modelled life-cycle greenhouse gas emissions; Life-cycle assessment and methodological assumptions
+
+支持：在研究假设下，纯电为63克二氧化碳当量每公里，汽油车235克，降低73%。
+
+限制：是欧盟中型车模型结果，不是全球所有车型实测；电网变化、寿命、车型和实际驾驶影响结果。已读官方中文研究说明，英文PDF访问失败。
+
+出版方原文
+https://www.theicct.org.cn/2025/07/08/欧盟乘用车全生命周期温室气体排放：2025年更新及/
+
+[M14] Recycling of Critical Minerals Executive summary
+
+IEA | 2024-11-18 | 2024 assessment and 2030 scenarios
+
+范围与定位：Global; Battery recycling feedstock and announced capacity; Manufacturing scrap and end-of-life batteries
+
+支持：当前电池回收原料以制造废料为主，车队老化后退役电池重要性上升。
+
+限制：未来原料和产能是情景结果，回收项目公告不等于已有原料、实际回收产量或利润。
+
+出版方原文
+https://www.iea.org/reports/recycling-of-critical-minerals/executive-summary
+
+[M15] Driver Assistance Technologies
+
+NHTSA | Undated official page available by read date | Technology definitions
+
+范围与定位：US framework; Level 2 driver assistance; Level 2 Additional Assistance
+
+支持：二级辅助驾驶可持续辅助转向及加减速，驾驶员仍须投入驾驶并保持注意。
+
+限制：仅使用该定义；网页其他有关商业可得性的表述可能滞后，不用于全球普遍结论。
+
+出版方原文
+https://www.nhtsa.gov/vehicle-safety/driver-assistance-technologies
+
+[M16] Council gives final approval to additional flexibility for carmakers
+
+Council of the European Union | 2025-05-27 | 2025 to 2027
+
+范围与定位：European Union; Car and van fleet CO2 compliance averaging; Main body
+
+支持：理事会通过合规灵活安排，以2025—2027年三年表现评估车企，而非逐年单独考核。
+
+限制：考核时间安排变化不等于取消全部排放目标，后续长期提案需单列。
+
+出版方原文
+https://www.consilium.europa.eu/en/press/press-releases/2025/05/27/co2-emissions-in-cars-council-gives-final-approval-to-additional-flexibility-for-carmakers/
+
+[M17] Results of the Environment Council 17 March 2026
+
+Cyprus Presidency of the Council of the EU | 2026-03-17 | March 2026 policy debate
+
+范围与定位：European Union; Proposed car CO2 amendment; Opening paragraphs
+
+支持：理事会讨论欧委会将2035年尾气减排目标从100%降至90%并引入补偿积分的提案。
+
+限制：仅证明当时存在提案和讨论，不证明截至报告日已生效；报告不宣称2035年规则已有最终结果。
+
+出版方原文
+https://cyprus-presidency.consilium.europa.eu/en/news/results-of-the-environment-council-17-march-2026/
+
+[M18] Guidance on price undertaking offers for BEVs from China
+
+European Commission DG Trade and Economic Security | 2026-01-12 | January 2026 guidance
+
+范围与定位：China to EU trade; BEV countervailing duties and case-specific price undertakings; Main body and Background
+
+支持：指南涉及最低进口价、销售渠道、交叉补偿和在欧投资，价格承诺需逐项评估。
+
+限制：不是所有中国品牌均免除税费，也不证明特定企业已获批准；纯电范围不可自动扩展至插混。
+
+出版方原文
+https://policy.trade.ec.europa.eu/news/commission-issues-guidance-document-submission-price-undertaking-offers-battery-electric-vehicles-2026-01-12_en
+
+[M19] EV traction inverter
+
+Infineon Technologies | Undated product page available by read date | Product and technology description
+
+范围与定位：Global products; Traction inverter and silicon/SiC semiconductor offering; Overview; How traction inverters work; Technology choice
+
+支持：逆变器控制电机转矩与转速；英飞凌提供硅及碳化硅功率器件和控制电子产品。
+
+限制：厂家资料核实其业务类别，不支持份额、独立性能验证或与特定整车企业的供货合同。
+
+出版方原文
+https://www.infineon.com/application/automotive-traction-inverter
+
+[M20] EV Charging Electric Vehicle Chargers
+
+ABB | Undated product page available by read date | Product portfolio
+
+范围与定位：Global products; AC wallboxes and DC fast chargers; EV charging portfolio
+
+支持：ABB提供交流壁挂充电设备、直流快充和联网充电产品。
+
+限制：产品参与不代表已核实的运营网络份额、可用率或利润。
+
+出版方原文
+https://new.abb.com/ev-charging
+
+[M21] Fuel Cell Electric Vehicle Emissions
+
+US Alternative Fuels Data Center | Undated official page available by read date | Technology and fuel pathways
+
+范围与定位：US analytical context; Tailpipe and well-to-wheels emissions distinguished; Main body
+
+支持：氢是可从多种原料获得的能源载体，其生产环节影响燃料电池车温室气体排放。
+
+限制：尾气零碳不等于全生命周期零排放，燃料路径结果不是市场渗透率。
+
+出版方原文
+https://afdc.energy.gov/vehicles/emissions-hydrogen
+
+[M22] Global EV Outlook 2026 Trends in other EV modes
+
+IEA | 2026-05-20 | 2025
+
+范围与定位：Global; Medium and heavy freight trucks; BEV plus PHEV, separate from passenger cars; Trends in electric truck sales and notes
+
+支持：2025年电动货车销量超过40万辆，占全部货车9%，其中几乎全部为纯电；路线可预测性和场站补能条件影响应用。
+
+限制：部分3.5吨及以上车辆重新分类，不可与乘用车或旧版IEA直接混比，更不能把货车份额加到乘用车份额。
+
+出版方原文
+https://www.iea.org/reports/global-ev-outlook-2026/trends-in-other-ev-modes
+
+[C01] 比亚迪2025年年度报告
+
+BYD Company Limited / HKEX | 2026-03-27 | 2025-01-01/2025-12-31
+
+范围与定位：Global consolidated group; BYD and consolidated subsidiaries; total revenue includes automotive-related and electronics businesses. Unit sales are company reported production/sales bulletins, not global consumer registrations; Printed pp. 11, 13–14, 16, 29–30; Section III operating review and product revenue/gross-margin table
+
+支持：2025年公司乘用车销量454.5万辆；汽车相关产品收入6486.5亿元、毛利率20.49%；集团归母净利润326.2亿元，同比下降18.97%。
+
+限制：汽车相关产品不等于新能源乘用车业务；集团归母还包含其他业务；公司产销快报不能与IEA/SNE分母拼接计算份额。
+
+出版方原文
+https://www.hkexnews.hk/listedco/listconews/sehk/2026/0327/2026032702970_c.pdf
+
+[C02] 比亚迪2026年半年度报告
+
+BYD Company Limited / Shenzhen Stock Exchange disclosure | 2026-08-29 | 2026-01-01/2026-06-30
+
+范围与定位：Global consolidated group; Unaudited first-half consolidated financial results; comparisons with H1 2025, not FY2025; Printed pp. 7, 14, 25–26, 150, 193 (PDF pages 6, 13, 24–25, 149, 192)
+
+支持：2026年上半年汽车相关收入下降8.98%，产品毛利率升至22.33%；集团归母净利润下降20.54%。
+
+限制：半年未经审计，不能年化或与全年混排；分部对外收入含租赁，与合同收入注释数字不同，应使用同名口径。
+
+出版方原文
+https://disc.static.szse.cn/disc/disk03/finalpage/2026-08-29/56e933c9-717e-42bd-8c21-3a0a11b8d2d0.PDF
+
+[C03] 特斯拉2025财年10-K年报
+
+Tesla, Inc. / US SEC | 2026-01-29 | 2025-01-01/2025-12-31
+
+范围与定位：Global consolidated group; US GAAP consolidated financials; total automotive revenue includes sales, regulatory credits and leasing; total group also includes energy and services; Printed pp. 32, 37–39, 50; Results of Operations and Consolidated Statements of Operations. SEC filing index shows filing date 2026-01-29, acceptance 2026-01-28
+
+支持：汽车收入695.3亿美元含积分及租赁，汽车毛利率17.8%；集团营业利润43.6亿美元；外购松下、宁德时代电芯与内部电芯开发并存。
+
+限制：汽车毛利率含积分及租赁，集团营业利润率不是乘用车分部利润率；10-K交付数为约数，精确交付量需要独立产销披露。
+
+出版方原文
+https://www.sec.gov/Archives/edgar/data/1318605/000162828026003952/tsla-20251231.htm
+
+[C04] 特斯拉2026年上半年10-Q季报
+
+Tesla, Inc. / US SEC | 2026-07-23 | 2026-01-01/2026-06-30
+
+范围与定位：Global consolidated group; Unaudited US GAAP first-half figures; six-month columns distinct from Q2 three-month columns; Printed pp. 4–5, 30–33; six-month income statement, Revenues, Cost of Revenues and Gross Margin. SEC filing index confirms 2026-07-23; signature dated 2026-07-22
+
+支持：2026年上半年汽车毛利率升至18.7%，但第二季度降至16.9%；应区分累计与单季，并考虑上年换线基数。
+
+限制：累计半年与第二季度毛利率方向不同，不可混用；财务签署日7月22日，SEC申报日7月23日；未纳入截止日后Q3财务。
+
+出版方原文
+https://www.sec.gov/Archives/edgar/data/1318605/000162828026049270/tsla-20260630.htm
+
+[C05] 宁德时代2025年度业绩及年报全文
+
+Contemporary Amperex Technology Co., Limited | 2026-03-09 | 2025-01-01/2025-12-31
+
+范围与定位：Global consolidated group; CATL and consolidated subsidiaries; battery supplier, not automaker. EV battery products serve passenger and commercial vehicles; group includes ESS, materials, recycling, mining and other businesses; Cover dated March 9; printed pp. 7, 9, 12–15, 32–33. Monetary tables in RMB thousand
+
+支持：2025年动力电池收入3165.1亿元、毛利率23.84%；集团毛利率26.27%属于更宽范围。
+
+限制：年度业绩公告封面称结果未经审计，尽管包含年报全文，不能擅自提高审计状态；电池供应商毛利、GWh与整车销量及份额不是同一指标。
+
+出版方原文
+https://www.catl.com/en/uploads/1/file/public/202603/20260310105310_46xjbwckvn.pdf
+
+[C06] 宁德时代2026年半年度报告
+
+CATL / Shenzhen Stock Exchange disclosure | 2026-07-25 | 2026-01-01/2026-06-30
+
+范围与定位：Global consolidated group; Unaudited H1 consolidated battery-supplier results; product line EV power battery systems includes passenger and commercial uses; Printed pp. 7, 15–17; financial highlights, product revenue/margin table and capacity/production table
+
+支持：2026年上半年动力电池系统收入增长46.02%，毛利率下降1.78个百分点至20.63%。
+
+限制：半年仅与上年同期比较；498GWh为产量而非销量；动力电池也服务商用车。
+
+出版方原文
+https://disc.static.szse.cn/disc/disk03/finalpage/2026-07-25/8e6750da-b178-4be9-a74a-4b1d8fc42c58.PDF
+
+[C07] 大众集团2025年年度报告
+
+Volkswagen Group | 2026-03-10 | 2025-01-01/2025-12-31
+
+范围与定位：Global group; Consolidated Volkswagen Group across passenger/light commercial vehicles, commercial vehicles, financial services and other activities; deliveries include equity-accounted Chinese JVs; Consolidated Income Statement; management-report Deliveries table and paragraph specifying BEVs including heavy commercial vehicles; About This Report confirms publication March 10
+
+支持：2025年集团收入3219.1亿欧元、营业利润88.7亿欧元、回报率2.8%；BEV交付明确包含重型商用车。
+
+限制：BEV包含重型商用车，不用于本报告乘用车份额；集团不同于大众乘用车品牌及大众AG单体；中国合资企业销量与财务并表边界不同。
+
+出版方原文
+https://annualreport2025.volkswagen-group.com/consolidated-financial-statements/income-statement.html
+
+[C08] 大众集团2026年半年度财务报告
+
+Volkswagen Group | 2026-07-24 | 2026-01-01/2026-06-30
+
+范围与定位：Global group; IFRS consolidated six-month results, with H1 2025 comparisons; separate automotive and financial-services divisions; Printed pp.19,35 (PDF pp.20,36), Income Statement by Division and consolidated income statement; official Financial Reports index dates publication July 24
+
+支持：2026年上半年收入1581.0亿欧元、营业利润59.3亿欧元；上年同期分别为1583.6亿和67.1亿欧元。
+
+限制：集团和汽车分部均含乘用BEV/PHEV之外业务；半年与全年不可混排，已使用稳定的有日期PDF锚定动态网页数字。
+
+出版方原文
+https://uploads.vw-mms.de/system/production/documents/cws/003/289/file_en/e916f0f9afd06d9586560cfdef53baa14b6aea78/2026-07-24-volkswagen-group-h1-2026-intrim-report-en.pdf
+
+[C09] 吉利汽车2025年年度报告
+
+Geely Automobile Holdings Limited | 未显示；截止日已可读取 | 2025-01-01/2025-12-31
+
+范围与定位：Global sales of listed Geely Auto group; Geely Auto listed company and consolidated subsidiaries, including Geely, Lynk & Co and ZEEKR; not all of Zhejiang Geely Holding. Common-control consolidation comparatives restated; Printed p.14 vehicle sales; p.123 consolidated income statement; p.139 common-control business-combination accounting
+
+支持：上市集团收入3452.3亿元、归母168.5亿元，BEV1073805辆/PHEV613962辆；同一控制合并比较数已重述。
+
+限制：仅为吉利汽车上市集团，不含更广吉利控股品牌；比较期已重述；未提取可直接比较的营业利润小计，不把归母冒称营业利润；完整年报具体首次公开日未核实，不以董事会批准日替代。
+
+出版方原文
+https://www.geelyauto.com.hk/wp-content/uploads/2026/04/e00175_2025-annual-report.pdf
+
+[C10] 吉利汽车2026年中期报告
+
+Geely Automobile Holdings Limited | 未显示；截止日已可读取 | 2026-01-01/2026-06-30
+
+范围与定位：Global sales of listed Geely Auto group; Unaudited interim listed-group consolidated results; NEVs explicitly defined as BEV+PHEV; Printed p.5 consolidated income statement; p.69 definition note; p.70 vehicle sales; p.71 non-HKFRS adjustment
+
+支持：2026年上半年上市集团收入1736.0亿元、归母90.9亿元，新能源799454辆，定义为BEV加PHEV。
+
+限制：NEV定义为BEV加PHEV，不含HEV；仍为上市集团范围；核心归母是非HKFRS指标；未编造营业利润率；具体首次公开日未核实，签署日不能替代发布日。
+
+出版方原文
+https://www.geelyauto.com.hk/wp-content/uploads/2026/08/e00175_2026-interim-report.pdf
+
+[C11] 现代汽车2025年年度业绩
+
+Hyundai Motor Company | 2026-01-29 | 2025-01-01/2025-12-31
+
+范围与定位：Global Hyundai Motor Company; Preliminary unaudited K-IFRS consolidated company results, separate from Kia; broad electrified-vehicle total includes HEV; Opening annual-results paragraphs; Enhancing Electrification Leadership; FY/Q4 table and notes A–C
+
+支持：公司单独披露初步、未经审计财务：收入186.25万亿韩元、营业利润11.47万亿韩元；电动化总量包含HEV。
+
+限制：初步、未经审计新闻稿，不称已审计年报数据；现代汽车公司不是包含起亚的集团合计；电动化总量含HEV。
+
+出版方原文
+https://www.hyundai.com/content/hyundai/worldwide/en/newsroom/detail/0000001116.html.html
+
+[C12] 起亚2025年年度业绩
+
+Kia Corporation / Hyundai Motor Group newsroom | 2026-01-28 | 2025-01-01/2025-12-31
+
+范围与定位：Global Kia Corporation; Kia standalone reporting entity consolidated company financial results; broader electrified category includes HEV, PHEV and EV; Article body after SEOUL January 28; annual financial-results paragraphs; Sales of Electrified Vehicles. AI summary panel excluded
+
+支持：起亚公司收入114.1万亿韩元、营业利润9.08万亿韩元；其电动化总量包含HEV。
+
+限制：起亚与现代汽车为不同报表主体；电动化总量含普通混动，不使用舍入差值拼PHEV，也不用集团收入除EV销量估价。
+
+出版方原文
+https://www.hyundaimotorgroup.com/en/news/kia-announces-2025-annual-and-fourth-quarter-business-results
+
+[S01] Global EV sales in 2025 BEV plus PHEV
+
+SNE Research | 2026-02-05 | 2025 January to December
+
+范围与定位：80-country coverage presented as global; BEV plus PHEV including commercial vehicles; customer deliveries or registrations; group table; Second image titled Global EV Sales by Group; footnotes 1 and 2
+
+支持：公布总量21470千辆，集团份额及数量按配套CSV保留。范围包含商用车，来源原图已实际打开核验。
+
+限制：并非纯乘用车口径，公开集团归并方法不完整；舍入份额合计100.1%，分项数量21471千辆。图弧按分项数量比例显示，标签原值不改。属于第三方市场估计，不是行业审计普查。
+
+出版方原文
+https://sneresearch.com/en/insight/release_view/589/page/48
+
+[P01] 德国亨格尔斯贝格的EnBW充电站
+
+APneunzehn74, photographer; Wikimedia Commons, host | 2025-06-03, first file upload | A specific site photographed in June 2025; not a market statistic
+
+范围与定位：Hengersberg, Bavaria, Germany; Original real photograph of a charging hub; 4000 × 2992 pixels; CC0 1.0 public domain dedication; Commons Summary, Licensing, File history and Metadata; downloaded original image visually inspected
+
+支持：摄影者页面将对象标为亨格尔斯贝格的EnBW充电站，并给出2025年6月3日拍摄日期；实图可见充电设备、空车位与光伏顶棚。作者将原图置于CC0 1.0公共领域声明下，允许再分发和商业使用。下载的4000×2992原图与公布SHA-1一致，按原样交付。
+
+限制：封面仅呈现德国的一处站点，不证明全球覆盖、充电速度、利用率、可再生电力供应或可用率；没有可见车辆连接充电桩，背景卡车动力类型不明。相机时间属于上传者元数据，而非独立认证的事件时间。CC0不意味着相关方背书，也不单独处理商标权。
+
+出版方原文
+https://commons.wikimedia.org/wiki/File:EnBW_Schnellladepark_Hengersberg.jpg

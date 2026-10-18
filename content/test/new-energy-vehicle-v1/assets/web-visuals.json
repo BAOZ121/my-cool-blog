@@ -1,0 +1,158 @@
+{
+  "maps": {
+    "nev-value-chain": {
+      "eyebrow": "INDUSTRY MAP · ILLUSTRATIVE ROLES",
+      "title": "The new energy passenger vehicle value chain",
+      "description": "Global structure · BEV and PHEV, including EREV within PHEV · Industry → stage → segment → companies, products or activities.",
+      "root": {
+        "name": "New energy passenger vehicles · BEV + PHEV; EREV within PHEV",
+        "children": [
+          {
+            "name": "Upstream",
+            "children": [
+              {
+                "name": "Materials",
+                "children": [
+                  { "name": "Lithium salts · graphite" },
+                  { "name": "Cathodes · anodes · electrolyte" }
+                ]
+              },
+              {
+                "name": "Cells and packs [M03]",
+                "children": [
+                  { "name": "CATL" },
+                  { "name": "BYD" },
+                  { "name": "LG Energy Solution" },
+                  { "name": "Panasonic" }
+                ]
+              },
+              {
+                "name": "Power electronics [M19]",
+                "children": [
+                  { "name": "Infineon · silicon / SiC" },
+                  { "name": "Power modules · control electronics" }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Midstream",
+            "children": [
+              {
+                "name": "Vehicle platforms",
+                "children": [
+                  { "name": "BEV · PHEV · EREV powertrains" },
+                  { "name": "Battery systems · thermal control" }
+                ]
+              },
+              {
+                "name": "Vehicle manufacturing",
+                "children": [
+                  { "name": "BYD [C01]" },
+                  { "name": "Tesla [C03]" },
+                  { "name": "Volkswagen [C07]" },
+                  { "name": "Geely Auto [C09]" },
+                  { "name": "Hyundai Motor [C11]" },
+                  { "name": "Kia [C12]" }
+                ]
+              },
+              {
+                "name": "Software integration",
+                "children": [
+                  { "name": "Battery management · vehicle control" },
+                  { "name": "Diagnostics" }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Downstream",
+            "children": [
+              {
+                "name": "Charging",
+                "children": [
+                  { "name": "ABB AC/DC chargers [M20]" },
+                  { "name": "Grid connection · site operations [H03]" }
+                ]
+              },
+              {
+                "name": "Sales and services",
+                "children": [
+                  { "name": "Dealers · direct sales · leasing" },
+                  { "name": "Repair · used vehicles" }
+                ]
+              },
+              {
+                "name": "Circularity [M14]",
+                "children": [
+                  { "name": "Collection · grading · reuse" },
+                  { "name": "Material recovery" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "note": "Category links are not verified supplier contracts. Companies can operate across several stages; examples are not exhaustive or ranked. Structure: DEX editorial synthesis. Commercial vehicles and fuel-cell vehicles are outside this map's core scope. The original report's Figure 1 and evidence references are preserved.",
+      "sources": [
+        { "title": "[M03] Battery supply chain", "url": "/test/new-energy-vehicle-v1/#source-M03" },
+        { "title": "[M14] Battery circularity", "url": "/test/new-energy-vehicle-v1/#source-M14" },
+        { "title": "[M19] Infineon", "url": "/test/new-energy-vehicle-v1/#source-M19" },
+        { "title": "[M20] ABB", "url": "/test/new-energy-vehicle-v1/#source-M20" },
+        { "title": "[H03] Charging", "url": "/test/new-energy-vehicle-v1/#source-H03" },
+        { "title": "[C01] BYD", "url": "/test/new-energy-vehicle-v1/#source-C01" },
+        { "title": "[C03] Tesla", "url": "/test/new-energy-vehicle-v1/#source-C03" },
+        { "title": "[C07] Volkswagen", "url": "/test/new-energy-vehicle-v1/#source-C07" },
+        { "title": "[C09] Geely Auto", "url": "/test/new-energy-vehicle-v1/#source-C09" },
+        { "title": "[C11] Hyundai Motor", "url": "/test/new-energy-vehicle-v1/#source-C11" },
+        { "title": "[C12] Kia", "url": "/test/new-energy-vehicle-v1/#source-C12" }
+      ],
+      "reviewed": "2026-10-18"
+    }
+  },
+  "shares": {
+    "nev-group-share-2025": {
+      "eyebrow": "MARKET SHARE · SOURCE VALUES",
+      "title": "Global EV deliveries / registrations by group",
+      "dimension": "Source group",
+      "scope": "BEV + PHEV, including commercial vehicles. This is SNE Research's broader EV comparison alongside the report's passenger-car analysis; it is not a passenger-car-only share chart.",
+      "geography": "Global · SNE coverage of 80 countries",
+      "metric": "Share of customer deliveries or registrations by source group",
+      "period": "Full year 2025",
+      "center_label": "2025\nBEV + PHEV",
+      "unit": "%",
+      "unitsLabel": "thousand vehicles (rounded)",
+      "unitsColumnLabel": "Deliveries / registrations (thousand vehicles)",
+      "totalUnits": 21471,
+      "publishedTotalThousandVehicles": 21470,
+      "sourceVolumeUnit": "thousand vehicles",
+      "sourceTotalVolumeThousands": 21470,
+      "componentTotalVolumeThousands": 21471,
+      "percentDecimals": 1,
+      "compactLabelMinShare": 100,
+      "colors": ["#d6b56f", "#67b8b0", "#7ea5dc", "#e58b78", "#a995d3", "#a4bd7e", "#d78fb3", "#8baeb8", "#c2a688", "#d8c690", "#a5aba2"],
+      "rounding_note": "Published shares total 100.1%. Published rounded component volumes total 21,471 thousand vehicles, while the source's published total is 21,470 thousand. Sector angles use each component volume / 21,471; displayed shares retain the original source values. Others remains 34.3%. No residual or group value is adjusted.",
+      "series": [
+        { "name": "BYD", "value": 19.2, "shareDisplay": "19.2%", "units": 4121, "sourceVolumeThousands": 4121 },
+        { "name": "Geely", "value": 10.4, "shareDisplay": "10.4%", "units": 2225, "sourceVolumeThousands": 2225 },
+        { "name": "TESLA", "value": 7.6, "shareDisplay": "7.6%", "units": 1636, "sourceVolumeThousands": 1636 },
+        { "name": "Volkswagen", "value": 6.4, "shareDisplay": "6.4%", "units": 1372, "sourceVolumeThousands": 1372 },
+        { "name": "SAIC", "value": 6.3, "shareDisplay": "6.3%", "units": 1349, "sourceVolumeThousands": 1349 },
+        { "name": "Changan", "value": 4.2, "shareDisplay": "4.2%", "units": 905, "sourceVolumeThousands": 905 },
+        { "name": "Chery", "value": 3.4, "shareDisplay": "3.4%", "units": 728, "sourceVolumeThousands": 728 },
+        { "name": "Hyundai & Kia", "value": 2.9, "shareDisplay": "2.9%", "units": 613, "sourceVolumeThousands": 613 },
+        { "name": "BMW", "value": 2.8, "shareDisplay": "2.8%", "units": 598, "sourceVolumeThousands": 598 },
+        { "name": "Leapmotor", "value": 2.6, "shareDisplay": "2.6%", "units": 558, "sourceVolumeThousands": 558 },
+        { "name": "Others", "value": 34.3, "shareDisplay": "34.3%", "units": 7366, "sourceVolumeThousands": 7366 }
+      ],
+      "note": "Source [S01], Global EV and Battery Monthly Tracker (Jan 2026), group table and footnotes 1–2. SNE reports 21,470 thousand vehicles. The 11 published rounded group volumes sum to 21,471 thousand, and the published shares sum to 100.1%. Arcs follow the component-volume proportions; all source shares, including Others at 34.3%, remain unchanged. Volumes retain the source unit of thousand vehicles. The public release does not fully describe group, joint-venture and brand-allocation rules. This is a third-party market estimate, not an audited industry census; it must not be substituted into company shipment or IEA passenger-car totals.",
+      "source": {
+        "publisher": "SNE Research",
+        "title": "Global EV sales in 2025 BEV plus PHEV · Global EV and Battery Monthly Tracker (Jan 2026)",
+        "published": "2026-02-05",
+        "url": "https://sneresearch.com/en/insight/release_view/589/page/48"
+      },
+      "reviewed": "2026-10-18"
+    }
+  }
+}
