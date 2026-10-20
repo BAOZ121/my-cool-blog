@@ -1,0 +1,492 @@
+[
+  {
+    "id": "C01",
+    "title": "CAAC releases the 2025 Civil Aviation Industry Development Statistical Bulletin",
+    "records": [
+      "Civil Aviation Administration of China (CAAC) | Primary government statistical release summary.",
+      "Published: 17 April 2026. | Event: Release of the 2025 civil aviation statistical bulletin.",
+      "Period / scope: Calendar year 2025 activity and year-end 2025 registered fleet; China; drone statistics cover all civil uses; Registered drones, accumulated drone flight hours and low-altitude flight service stations; not limited to logistics.",
+      "Location: General aviation and low-altitude economy paragraph; extracted webpage line 30.",
+      "Supports: China had 3.287 million registered drones at year-end 2025, up 51.0%. Drones accumulated 45.3029 million flight hours in 2025, up 69.89%. The country had 46 low-altitude flight service stations across 23 provincial-level regions.",
+      "Limits: These are all-purpose drone statistics, not logistics fleet size, deliveries, revenue or market share. Conventional civil aviation cargo tonnage and aviation revenue are outside the report's drone logistics market boundary.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://www.caac.gov.cn/PHONE/XWZX/MHYW/202604/t20260417_230603.html"
+  },
+  {
+    "id": "C02",
+    "title": "Interim Regulations on the Flight Management of Unmanned Aircraft",
+    "records": [
+      "State Council and Central Military Commission; official text on the Chinese government portal | Primary regulation text.",
+      "Published: 28 June 2023. | Event: Order No. 761 dated 31 May 2023; effective 1 January 2024.",
+      "Period / scope: Applicable framework at the research cutoff, read together with later aviation law and implementing rules; People's Republic of China; Separate layers for airworthiness, operator certification, liability insurance, pilot requirements, airspace and flight applications.",
+      "Location: Articles 8, 11, 12, 19, 26, 31 and 32; full regulation read.",
+      "Supports: Effective January 1, 2024. Articles 8, 11 and 12 separately address airworthiness, operator certification and liability insurance. Controlled airspace requires approval. Article 26 allows long-term applications for routine flights in fixed airspace. Article 31 retains application requirements for specified operations, including relayed flights and dropping items; Article 32 requires collision-avoidance measures for BVLOS flight.",
+      "Limits: An operator certificate is not blanket permission to use any route or airspace. Airspace below 120 metres is not universally unrestricted. This is a framework summary, not case-specific compliance advice.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://app.www.gov.cn/govdata/gov/202306/28/504796/article.html"
+  },
+  {
+    "id": "C03",
+    "title": "Civil Aviation Law of the People's Republic of China, effective July 1, 2026",
+    "records": [
+      "Standing Committee of the National People's Congress; official text published by CAAC | Primary legislation.",
+      "Published: 27 December 2025. | Event: Revision adopted on 27 December 2025; effective 1 July 2026.",
+      "Period / scope: In force from 1 July 2026, before the research cutoff; China; Aviation-law requirements for unmanned aircraft airworthiness and product identification, retaining prescribed exemptions and special-rule provisions.",
+      "Location: Articles 34, 258 and 262; full law text read.",
+      "Supports: The December 27, 2025 revision took effect on July 1, 2026. Article 34 embeds unmanned aircraft airworthiness requirements in the aviation law, retaining exemptions prescribed by national rules, and requires manufacturers to assign a unique product identifier. Article 258 preserves special State Council and Central Military Commission rules for unmanned aircraft.",
+      "Limits: The law does not imply that every small drone needs a type certificate after July 2026. The exemptions and interaction with special drone rules must remain explicit.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://app.caac.gov.cn/XXGK/XXGK/FLFG/202512/t20251227_229597.html"
+  },
+  {
+    "id": "C04",
+    "title": "Rules on the Operational Safety Management of Civil Unmanned Aircraft (CCAR-92)",
+    "records": [
+      "Ministry of Transport and CAAC | Primary official rule-publication page; evidence limited to metadata and commencement information.",
+      "Published: 1 January 2024 in publication metadata; webpage path dated 3 January 2024. | Event: Adopted at a ministry meeting on 15 December 2023; issued and effective 1 January 2024.",
+      "Period / scope: Official page marked the rule valid at the research cutoff; China; Ministry of Transport Order No. 1 of 2024; CCAR-92.",
+      "Location: Official publication page: issue date, order number, CCAR designation, validity and commencement paragraph. Linked PDF could not be read.",
+      "Supports: The official publication page identifies Ministry of Transport Order No. 1 of 2024 as CCAR-92, issued and effective January 1, 2024, and marks it valid.",
+      "Limits: This entry establishes the rule identity, publication and commencement. It does not support clause-by-clause interpretation; the report uses the flight regulations and aviation law separately for those claims.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://app.caac.gov.cn/XXGK/XXGK/MHGZ/202401/t20240103_222566.html"
+  },
+  {
+    "id": "C06",
+    "title": "Data interface requirements between the civil unmanned aircraft integrated management platform and civil unmanned aircraft navigation service provider systems",
+    "records": [
+      "CAAC | Primary official industry-standard publication page; metadata only.",
+      "Published: 13 October 2026 in issue metadata; webpage path dated 15 October 2026. | Event: Formal publication of industry standard MH/T 4066-2026.",
+      "Period / scope: Formal standard-publication page publicly available by 19 October 2026; attachment commencement date not verified; China; Data interfaces between UOM and civil unmanned-aircraft navigation service-provider systems.",
+      "Location: Formal standard page, extracted lines 19–30. Linked PDF could not be read.",
+      "Supports: The official standard page lists MH/T 4066-2026, dated October 13, 2026, and marks it valid. It documents publication of a formal interface standard following the February 2026 consultation draft.",
+      "Limits: The publication metadata establish the standard number, title and date, not detailed technical requirements or completed integration by individual providers.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://app.caac.gov.cn/PHONE/XXGK_17/XXGK/BZGF/HYBZ/202610/t20261015_231865.html"
+  },
+  {
+    "id": "C07",
+    "title": "Building urban low-altitude infrastructure: Meituan's delivery-drone network enters routine operation",
+    "records": [
+      "Meituan Newsroom; page credits Guangming Daily | Company-hosted operating disclosure crediting Guangming Daily; performance figures are company claims.",
+      "Published: 21 May 2026. | Event: Routine network-operation and authorized-service-provider announcement on 21 May 2026.",
+      "Period / scope: Disclosure as of 21 May 2026; cumulative orders have no explicit starting date; Meituan operating markets; product and authorized-provider model intended for multiple Chinese locations; Company-disclosed integrated network, ports and dispatch system, plus an authorized-service-provider model.",
+      "Location: Company-hosted article, extracted lines 125–149, especially 136–149.",
+      "Supports: On May 21, 2026, Meituan disclosed routine network operation and partner recruitment. Its integrated offering included M-Drone 4L Winch, M-Port 3 and M-DaaS 3. The port occupied 1.4 square metres; ten initial authorized service providers had signed. The company reported more than 900,000 cumulative real orders and offered partners hardware, software and operating standards.",
+      "Limits: Weather coverage and 100-millisecond anomaly assessment are company performance claims, not independent test results. Partner contracts do not establish revenue or profitability. Standalone drone revenue and profit were not disclosed in this article.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://www.meituan.com/news/NN260522185005269"
+  },
+  {
+    "id": "C08",
+    "title": "Meituan launches its Shanghai West Bund low-altitude network",
+    "records": [
+      "Meituan Newsroom; page credits Huanqiu | Company-hosted operating disclosure crediting Huanqiu; unaudited operational data.",
+      "Published: 11 September 2026. | Event: Shanghai West Bund network launched on 10 September 2026.",
+      "Period / scope: Cumulative activity disclosed on 11 September 2026; not 2026 annual additions; Shanghai West Bund case; cumulative orders include Meituan's international operating markets; Commercial orders, systematic urban network, merchant-to-port handling and customer collection.",
+      "Location: Company-hosted article, extracted lines 127, 138–156 and 169.",
+      "Supports: The September 10, 2026 launch was described as Meituan's second systematic urban network after Shenzhen. Nearly twenty restaurant brands had joined. Riders move meals to ports, mechanical arms load aircraft and drones connect the sites. The September 11 disclosure reported more than one million cumulative commercial orders across operating cities.",
+      "Limits: The total includes Meituan's international operating markets and is cumulative, not China's annual deliveries. The fastest ten-minute delivery is not an average. The forty-brand year-end target is a plan. No drone revenue, profit or comparable global market denominator is supplied.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://www.meituan.com/news/NN260911177010407"
+  },
+  {
+    "id": "C09",
+    "title": "Phoenix Wings standard express service: routine Greater Bay Area operations",
+    "records": [
+      "Phoenix Wings (Fengyi Technology, Shenzhen), on an SF-hosted official website | Primary company product/business page with self-reported operational figures.",
+      "Published: No publication date displayed; not treated as a new 2026 announcement. | Event: Routine scaled Greater Bay Area operations began in June 2020; statistics dated 31 December 2024.",
+      "Period / scope: Cumulative activity and contemporary daily activity through 31 December 2024; Guangdong–Hong Kong–Macao Greater Bay Area; not nationwide; Routes, flights, transported items and flight distance; one flight can carry several items.",
+      "Location: Extracted webpage lines 12–39. SF-hosted copy read successfully; the corresponding fyuav.cn page could not be fetched.",
+      "Supports: As of December 31, 2024, the Greater Bay Area network had over 400 routes, over 1,000 daily flights and over 20,000 daily items. Cumulative figures were over 600,000 flights, 5.15 million items and 2.34 million kilometres. The standard service targets intra-city items up to 3 kg in two to four hours and serves SF and other express carriers.",
+      "Limits: The page has no publication date and its statistics are historical, not a current nationwide total. Several items may travel on one flight. These items cannot be treated as equivalent to Meituan meal orders or converted into market shares. Route utilization, load factors and standalone financial results are not disclosed.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://piw-mr-web.inn.sf-express.com/logistics-service/standard-express-delivery/"
+  },
+  {
+    "id": "C10",
+    "title": "SF launches Wuxi's first low-altitude transport route",
+    "records": [
+      "SF Express Newsroom | Primary company route case; unaudited cost claim.",
+      "Published: No separate publication date displayed. An image filename includes 26 April 2024, which does not establish a precise publication date. | Event: First Wuxi flight on 1 April 2024; other historical company statistics refer to December 2023.",
+      "Period / scope: Single-route operating design and company case study; not an industry average; Changjiang North Road–Yongle Road, Xinwu District, Wuxi, China; Drone transport between facilities combined with ground pickup and doorstep delivery; route-specific cost claim.",
+      "Location: Company webpage, extracted lines 13–36.",
+      "Supports: The April 1, 2024 case describes a 1.87 km route taking about 2.5 minutes, with four scheduled daily flights, seven days a week. The ARK40 was rated at 10 kg and 20 km. SF claimed nearly 70% shorter delivery time and 30% lower transport cost than the previous model, while retaining ground pickup and doorstep delivery.",
+      "Limits: This is one corporate route case without a complete cost baseline, utilization, capital costs or subsidy treatment. The savings must not be generalized to industry unit economics. Proposed future routes and aircraft were plans. The webpage does not display a precise publication date.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://www.sf-express.com/chn/sc/news/311"
+  },
+  {
+    "id": "C12",
+    "title": "Shenzhen Government Work Report 2026, Municipal Gazette No. 10 of 2026",
+    "records": [
+      "Shenzhen Municipal People's Government | Primary local-government work report and administrative statistics.",
+      "Published: 13 April 2026, on the government-gazette cover. | Event: Mayor's report delivered on 9 February 2026; approved on 11 February 2026.",
+      "Period / scope: Review of 2025 work; landing and takeoff facilities are cumulative built-and-operating stock; Shenzhen, China; Cargo-drone flight movements, distinct from national all-use drone hours; low-altitude facilities include multiple uses.",
+      "Location: Printed page 7, PDF page 8, extracted lines 216–218.",
+      "Supports: In its review of 2025 work, the government reported more than 1,200 low-altitude takeoff and landing facilities built and in use, and cargo-drone flights exceeding one million, described as the largest city-level volume in China.",
+      "Limits: Cargo flights are not parcel counts or revenue. The facilities include uses beyond logistics. The report does not provide a complete city ranking or national logistics denominator.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://www.sz.gov.cn/attachment/1/1704/1704493/12737941.pdf"
+  },
+  {
+    "id": "C13",
+    "title": "Shenzhen implementation rules for measures supporting high-quality low-altitude economic development",
+    "records": [
+      "Shenzhen Municipal Transport Bureau | Primary local policy text in force during the stated term.",
+      "Published: 30 September 2025 on the government-gazette page; document dated 19 September 2025. | Event: Shenzhen transport policy No. 10 of 2025; effective 9 October 2025.",
+      "Period / scope: Effective through 31 December 2026; within its stated term at the research cutoff; Qualifying logistics routes with at least one endpoint in Shenzhen, China; Conditional route-opening and flight-volume awards; not subsidies actually received.",
+      "Location: Article 5, extracted lines 70–102; Article 19, validity, line 191; Article 10, flight-data verification, line 162.",
+      "Supports: Effective October 9, 2025 through December 31, 2026. Eligible small-drone new routes reaching 5,000 annual flights can receive RMB200,000 once. First-year operator volume of 20,000 flights qualifies for RMB400,000, with incremental blocks rewarded similarly. Large/medium new routes have a 1,000-flight threshold and RMB350,000 award. The operator's annual logistics-award cap is RMB20 million.",
+      "Limits: These are conditional policy awards, not payments received or commercial revenue. Routes wholly inside Shenzhen count one takeoff-and-landing cycle as one flight; routes with one endpoint outside count half, potentially differing from company-reported flights. Subsidies must be separated from operating economics.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://www.sz.gov.cn/zfgb/2025/gb1387/content/post_12422358.html"
+  },
+  {
+    "id": "C14",
+    "title": "JD Logistics, Inc. Interim Report 2026",
+    "records": [
+      "JD Logistics, Inc; original filing on HKEXnews | Management operational disclosures within a listed company's statutory interim report.",
+      "Published: 4 September 2026. | Event: 2026 interim report; Zizhong rural network launched in June 2026.",
+      "Period / scope: First half of 2026 / through 30 June 2026; Domestic Chinese routes; rural network in Zizhong County, Sichuan; Operating drone routes and administrative villages covered; not cumulative orders or market share.",
+      "Location: Printed page 9, PDF page 10, extracted lines 340–344; financial highlights on printed page 4; original 78-page report read.",
+      "Supports: The interim report states that over 100 domestic drone routes were in operation. In June 2026, the company launched a Zizhong, Sichuan network covering 78 administrative villages, with deliveries reaching mountain villages in as little as seven minutes. It lists food, parcels, urgent medicines and disaster relief among drone use cases.",
+      "Limits: The fastest service is not an average, and the company's largest-network claim lacks a nationwide ranking. The report does not disclose standalone drone revenue, operating profit or full unit costs. Group revenue of RMB124.7 billion in H1 2026 is not drone revenue.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0904/2026090400610.pdf"
+  },
+  {
+    "id": "G01",
+    "title": "Package Delivery by Drone (Part 135)",
+    "records": [
+      "Federal Aviation Administration (FAA) | Primary FAA regulatory explanation.",
+      "Published: Page last updated 3 September 2026. | Event: Wing initial certification: April 2019; UPS standard Part 135 authority: September 2019; Amazon: August 2020; Zipline: June 2022.",
+      "Period / scope: Regulatory explanation as updated on 3 September 2026; historical events retain their individual dates; United States; Commercial small-package drone delivery; operator certification, BVLOS approval, environmental review and UTM responsibilities.",
+      "Location: Drone Operator Certification; Safety in the NAS; Environmental Review; Operator Certification; certification history; page-end update date.",
+      "Supports: The FAA describes Part 135 certification plus BVLOS exemptions or waivers for drone package delivery, alongside airspace authorization, environmental review and local siting requirements. Wing received initial certification in April 2019; UPS obtained standard Part 135 authority in September 2019. UTM shares real-time airspace constraints while operators remain responsible for safe operations without positive FAA air traffic control.",
+      "Limits: Certification does not grant unrestricted nationwide operations. The page does not establish industry revenue, market shares or actual delivery volumes at every site.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://www.faa.gov/uas/advanced_operations/package_delivery_drone"
+  },
+  {
+    "id": "G02",
+    "title": "Normalizing Unmanned Aircraft Systems Beyond Visual Line of Sight Operations: Notice of Proposed Rulemaking",
+    "records": [
+      "FAA and Transportation Security Administration (TSA), Federal Register | Primary notice of proposed rulemaking; not an effective final rule.",
+      "Published: 7 August 2025. | Event: Joint FAA/TSA proposed rule published on 7 August 2025; FAA explanatory announcement on 6 August 2025.",
+      "Period / scope: 2025 proposed framework; some affected-entity estimates use May 2024 approval data, not 2026 market activity; United States; Proposed Part 108 routine BVLOS framework and Part 146 third-party automated data services; covers several drone uses beyond logistics.",
+      "Location: 90 FR 38212 onward; PDF page 1, title and Action; automated data-services discussion; PDF page 134, Tables 7–9, for background only.",
+      "Supports: The August 2025 joint proposal sets out a Part 108 framework for routine BVLOS operations and rules for third-party automated data services supporting those operations. It addresses aircraft, personnel, operations, accountability and record keeping.",
+      "Limits: This is a proposed rule, not evidence that the framework has taken effect. Cross-sector counts of affected entities are not the size of the logistics market.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2025-08-07/pdf/2025-14992.pdf"
+  },
+  {
+    "id": "G03",
+    "title": "Notice Soliciting Representatives for Technical Roundtables on Security of Unmanned Aircraft Systems Operating Beyond the Visual Line of Sight",
+    "records": [
+      "Transportation Security Administration (TSA), Federal Register | Primary TSA notice; not the Part 108 final rule.",
+      "Published: 4 September 2026. | Event: Technical-roundtable notice issued on 4 September 2026; participation requests due on 19 October 2026.",
+      "Period / scope: Official description of the rulemaking process on 4 September 2026; United States; BVLOS security requirements, covered-personnel vetting, TSA-approved security programs and proposed technical roundtables.",
+      "Location: PDF page 1, Background; passages describing finalization and meetings after publication of the final rule; 91 FR 56894.",
+      "Supports: A September 4, 2026 TSA notice says it is finalizing BVLOS security requirements in coordination with the FAA, including personnel vetting and security programs for certain operators. Technical roundtables are planned after publication of the final rule.",
+      "Limits: The notice is not the final rule and establishes the process described on its publication date, not the complete legal status on October 19.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://www.govinfo.gov/content/pkg/FR-2026-09-04/pdf/2026-18124.pdf"
+  },
+  {
+    "id": "G04",
+    "title": "New EU Rules on Dedicated Airspace for Drones Enter into Force",
+    "records": [
+      "European Commission, Directorate-General for Mobility and Transport | Primary European Commission explanation of regulatory applicability.",
+      "Published: 26 January 2023. | Event: U-space rules became applicable on 26 January 2023; the Commission adopted the framework in April 2021.",
+      "Period / scope: Historical applicability milestone on 26 January 2023; full implementation by 2030 was a policy ambition; European Union; Designated U-space airspace and supporting digital services; not automatic opening of all European airspace.",
+      "Location: Main text, paragraphs 1–4; Publication date; links to Regulations (EU) 2021/664, 2021/665 and 2021/666.",
+      "Supports: EU U-space rules became applicable on January 26, 2023. The framework supports complex and longer-distance drone operations, including medical-sample transport, through digital airspace services. Member States must still designate airspace and deploy the supporting services.",
+      "Limits: Legal applicability is distinct from actual deployment. The 2030 implementation ambition is not an achieved result.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://transport.ec.europa.eu/news-events/news/new-eu-rules-dedicated-airspace-drones-enter-force-2023-01-26_en"
+  },
+  {
+    "id": "G05",
+    "title": "EASA Certifies ANRA Technologies as First U-space Service Provider",
+    "records": [
+      "European Union Aviation Safety Agency (EASA) | Primary EASA certification announcement.",
+      "Published: 14 May 2025. | Event: EASA presented its first USSP certificate to ANRA in Lisbon on 14 May 2025.",
+      "Period / scope: Single certification event on 14 May 2025; Designated U-space airspace in Europe; EASA-issued U-space service-provider certification covering four mandatory services.",
+      "Location: Opening announcement; Background on USSP certification; list of the four mandatory services.",
+      "Supports: On May 14, 2025 EASA issued its first USSP certificate to ANRA. It covers network identification, geo-awareness, flight authorization and traffic information, with assessment extending to operational safety, cyber resilience, information security and service oversight.",
+      "Limits: The 'first' refers to EASA's own certification. USSP approval is not a cargo operator certificate or proof that a complete network is deployed.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://www.easa.europa.eu/en/newsroom-and-events/press-releases/easa-certifies-anra-technologies-first-u-space-service-provider"
+  },
+  {
+    "id": "G06",
+    "title": "Specific Category — Civil Drones",
+    "records": [
+      "European Union Aviation Safety Agency (EASA) | Primary EASA operational guidance.",
+      "Published: No publication date displayed in the readable page; read on 19 October 2026. | Event: Ongoing explanation of authorization pathways; relevant standard-scenario and remote-identification provisions refer to 1 January 2024.",
+      "Period / scope: Official guidance visible on the reading date; EASA Member States; cross-border and third-country operators have specific requirements; Specific-category operations outside open-category limitations; higher-risk operations may require the certified category.",
+      "Location: What is a specific UAS operation; This is what is needed; authorization before each flight; Geographical zones.",
+      "Supports: EASA lists BVLOS as an example of the specific category. Operational authorization normally comes from the operator's national aviation authority, with exceptions for standard scenarios or relevant LUC privileges. Authorization can cover multiple flights within its limits; geographical zones may require separate flight permission.",
+      "Limits: U-space services do not replace operator authorization. This page proves no specific route approval and does not display its original publication date.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://www.easa.europa.eu/en/domains/drones-air-mobility/operating-drone/specific-category-civil-drones"
+  },
+  {
+    "id": "G07",
+    "title": "Wing and Walmart Name New Metros to Expand the Nation's Largest Drone Delivery Network",
+    "records": [
+      "Wing | Primary company disclosure of operations and expansion plans.",
+      "Published: 5 October 2026. | Event: Expansion announcement on 5 October 2026; Denver and Seattle launches planned for 2027.",
+      "Period / scope: Actual reach described as of the announcement; more than 270 locations, over 40 million people and the new metros are expansion targets; United States; existing examples include Dallas–Fort Worth, Atlanta, Houston and Orlando; Denver and Seattle are planned; Potential delivery access, daily residential deliveries and planned Walmart locations; not active customers, paid orders or market share.",
+      "Location: Published date; opening paragraphs; Bringing drone delivery to millions of Americans.",
+      "Supports: On October 5, 2026 Wing said its Walmart partnership had brought delivery access to over three million customers and that its fleet completed thousands of residential deliveries daily. Denver and Seattle are planned for 2027. More than 270 Walmart locations and over 40 million people remain expansion targets.",
+      "Limits: These are company disclosures. Delivery access is not an active-customer count, and 2027 targets are not current coverage.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://wing.com/news/wing-walmart-new-metros-nations-largest-drone-delivery-network"
+  },
+  {
+    "id": "G08",
+    "title": "Wing and Walmart Name Seven New Markets for Drone Delivery Service",
+    "records": [
+      "Wing | Primary company disclosure of cumulative activity.",
+      "Published: 8 June 2026. | Event: New-market announcement on 8 June 2026.",
+      "Period / scope: Company cumulative commercial deliveries through the announcement; expansion targets extend to 2027; Wing's cumulative company activity; the Walmart expansion is in the United States; Well over one million cumulative commercial deliveries; not a U.S.-only, Walmart-only or 2026 annual total.",
+      "Location: Published date; Scaling speed together; Phased launch plans.",
+      "Supports: Wing disclosed well over one million cumulative commercial deliveries on June 8, 2026. The announcement does not limit that cumulative total to the United States or Walmart, nor does it provide a common annual period.",
+      "Limits: Dates and geographical scopes differ from peers. The figure cannot establish market shares or Walmart-only orders.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://wing.com/news/wing-and-walmart-seven-new-markets-drone-delivery"
+  },
+  {
+    "id": "G09",
+    "title": "Zipline Surpasses 2 Million Deliveries, Raises More than $600M to Power Next Phase of Growth, and Expands Operations to Houston and Phoenix",
+    "records": [
+      "Zipline | Primary company disclosure of cumulative operations and financing.",
+      "Published: 21 January 2026. | Event: Cumulative-delivery and financing announcement on 21 January 2026; Houston and Phoenix expansion was prospective.",
+      "Period / scope: Cumulative company activity through the announcement week; financing as announced; Global cumulative activity; metro expansion plans concern the United States; Commercial deliveries, items, autonomous commercial miles, financing and valuation are separate measures.",
+      "Location: Published date; opening paragraph; cumulative deliveries and miles paragraph.",
+      "Supports: On January 21, 2026 Zipline disclosed more than two million cumulative commercial deliveries, over 125 million autonomous commercial miles and more than 20 million items delivered. It also announced over $600 million in financing and a $7.6 billion post-financing valuation.",
+      "Limits: Financing and valuation are not revenue or profit. Items, deliveries and flights are distinct, and no global share can be calculated from these figures.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://www.zipline.com/newsroom/zipline-surpasses-2-million-deliveries-raises-more-than-600m-to-power-next-phase-of-growth-and-expands-operations-to-houston-and-phoenix"
+  },
+  {
+    "id": "G10",
+    "title": "Manna Announces Major US Expansion",
+    "records": [
+      "Manna | Primary company operational disclosure.",
+      "Published: 8 July 2026. | Event: Announcement of a full-scale metropolitan U.S. operation in Tulsa on 8 July 2026.",
+      "Period / scope: Cumulative global deliveries through the announcement; jobs over the next three years are projected; Global cumulative activity; expansion event in Tulsa, United States; Almost 380,000 cumulative global deliveries; not European-only or 2026 annual volume.",
+      "Location: Announcement date; opening paragraphs describing Tulsa and the cumulative global total.",
+      "Supports: On July 8, 2026 Manna disclosed almost 380,000 global deliveries and announced its first full-scale metropolitan U.S. operation in Tulsa.",
+      "Limits: The cumulative company figure cannot establish European market share. Future jobs and manufacturing capacity are plans.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://www.manna.aero/blog/manna-announces-major-us-expansion"
+  },
+  {
+    "id": "G11",
+    "title": "We've Raised $50 Million to Make Air Delivery the Infrastructure of Everyday Life",
+    "records": [
+      "Manna | Primary financing disclosure and unverified company unit-economics claim.",
+      "Published: 1 April 2026. | Event: Series B financing announcement on 1 April 2026.",
+      "Period / scope: Funding to the announcement date; 40 bases are an expansion target; unit economics is a contemporaneous company claim; United States and Europe; Funding in U.S. dollars, cumulative commercial flights and planned operating bases; no independently reproducible full unit-cost statement.",
+      "Location: Our Series B; Scaling to 40 US & European bases; positive-unit-economics claim.",
+      "Supports: Manna announced a $50 million Series B on April 1, 2026, taking total funding to $110 million, with expansion to 40 U.S. and European bases planned. It claims positive unit economics for residential last-mile delivery but does not disclose a complete cost basis that permits independent replication.",
+      "Limits: Positive unit economics is a company claim, not consolidated profitability. Forty bases remain a target.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://www.manna.aero/blog/series-b"
+  },
+  {
+    "id": "G12",
+    "title": "Matternet, Inc. Form 10-Q for the Quarter Ended June 30, 2026",
+    "records": [
+      "Matternet, Inc; U.S. Securities and Exchange Commission EDGAR | Primary statutory financial filing; unaudited interim statements.",
+      "Published: 19 August 2026, confirmed by the company's SEC-filings list and linked filing. | Event: Quarter ended 30 June 2026; reverse merger on 22 May 2026; filing on 19 August 2026.",
+      "Period / scope: Nine months ended 30 June 2026, compared with nine months ended 30 June 2025; Consolidated Matternet group, including U.S. and European operations; not an industry total; U.S. dollars; consolidated revenue, gross loss, operating loss and net loss in unaudited interim financial statements.",
+      "Location: Condensed Consolidated Statements of Operations, printed page 2; Note 1, Reverse Merger; company SEC-filings list dated 19 August 2026.",
+      "Supports: Matternet's August 19, 2026 Form 10-Q reports nine-month revenue of $255,564, gross loss of $278,932, operating loss of $10,642,176 and net loss of $15,092,017 through June 30. Following a reverse merger, historical financial statements reflect the operating drone business of Legacy Matternet.",
+      "Limits: These are unaudited nine-month figures, not a full year or an industry proxy. Net loss includes non-cash items.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2075109/000121390026091658/ea0301940-10q_matternet.htm"
+  },
+  {
+    "id": "G13",
+    "title": "Matternet, Inc. Form 8-K Reporting the May 22, 2026 Reverse Merger",
+    "records": [
+      "Matternet, Inc; U.S. Securities and Exchange Commission EDGAR | Primary statutory company-business disclosure.",
+      "Published: 29 May 2026, also identified in the later Form 10-Q exhibit index. | Event: Reverse merger on 22 May 2026; historical milestones include Swiss BVLOS operations in 2017, UPS partnership in 2019 and type certification in September 2022.",
+      "Period / scope: Cumulative company flights disclosed in the filing; not 2026 annual activity or exclusively commercial deliveries; Nine countries cumulatively, including the United States, United Kingdom, Switzerland, Germany and United Arab Emirates; Cumulative commercial, humanitarian and test flights; enterprise platform-access and delivery-as-a-service business models.",
+      "Location: Description of Business / Overview, printed page 12; Our Platform; Partners; International Regulation; MD&A explanation of historical financial statements; later Form 10-Q exhibit index.",
+      "Supports: Matternet's May 2026 Form 8-K discloses more than 60,000 cumulative flights across nine countries, including commercial, humanitarian and test flights. It describes enterprise platform access and delivery-as-a-service models integrating aircraft, ground stations and cloud software, with UPS Flight Forward and Ameriflight among U.S. operating partners.",
+      "Limits: Mixed-use flight counts cannot be ranked directly against commercial delivery totals or used for shares. Partner revenue is not Matternet or drone revenue.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://www.sec.gov/Archives/edgar/data/2075109/000121390026062961/ea0292214-8k_matternet.htm"
+  },
+  {
+    "id": "G14",
+    "title": "NTSB Aviation Investigation Final Report WPR25LA103",
+    "records": [
+      "National Transportation Safety Board (NTSB) | Primary independent accident-investigation final report.",
+      "Published: 9 May 2025, shown as Original Publish Date on report page 6. | Event: 21 February 2025 at 10:33 local time, Pendleton, Oregon; Amazon MK30 registration N265PA.",
+      "Period / scope: One Part 91 flight-test accident; Pendleton, Oregon, United States; Final NTSB accident investigation; experimental flight-test context; substantial aircraft damage and no injuries.",
+      "Location: Page 1, Analysis and Probable Cause; page 6, Administrative Information.",
+      "Supports: The NTSB reports that an Amazon MK30 suffered substantial damage without injuries during a February 21, 2025 Part 91 flight test in Pendleton. The scenario included an intentionally placed obstacle and another drone. The probable cause was failure to maintain obstacle clearance, resulting in loss of control and ground impact.",
+      "Limits: This was a test scenario, not evidence of the failure rate of routine commercial deliveries or an equivalent event during customer service.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://data.ntsb.gov/carol-repgen/api/Aviation/ReportMain/GenerateFinalReport/199746/pdf"
+  },
+  {
+    "id": "G15",
+    "title": "Effect of Unmanned Aerial Vehicle (Drone) Delivery on Blood Product Delivery Time and Wastage in Rwanda: A Retrospective, Cross-sectional Study and Time Series Analysis",
+    "records": [
+      "Nisingizwe et al; The Lancet Global Health | Primary peer-reviewed observational study; publisher-format full text read through a UPDWG-hosted copy.",
+      "Published: April 2022 journal issue, volume 10, pages e564–e569; exact online-first date not shown in the examined PDF. | Event: Drone orders from 17 March 2017 to 31 December 2019; facility administrative data begin in January 2015.",
+      "Period / scope: 2015–2019 facility study; delivery comparison uses March 2017–December 2019 orders; expiry effect is assessed at 12 months after implementation; Twenty district and provincial health facilities in Rwanda; Blood-product orders, delivery minutes and expired blood units. The 49.6-minute overall mean includes preparation; the road comparison uses a 41-minute drone median excluding preparation and estimated road medians.",
+      "Location: Page e564, abstract; e566, methods and Table 1; e567, delivery-time results; e568, discussion and limitations. DOI: 10.1016/S2214-109X(22)00048-1.",
+      "Supports: The study covers 12,733 drone blood-product orders at 20 Rwandan facilities; 43% were emergencies. Overall mean drone delivery time was 49.6 minutes including preparation and packaging. The road comparison used a 41-minute drone median excluding preparation, against estimated road medians of 120 or 139 minutes, yielding the reported 79- or 98-minute differences. Blood-product expirations were associated with a 67% reduction at 12 months after implementation.",
+      "Limits: There was no control group; road times were estimated. The study did not assess patient outcomes or cost-effectiveness and cannot establish a mortality reduction. The original paper was read through a UPDWG-hosted publisher-format copy.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://www.updwg.org/wp-content/uploads/2022/04/Effect-of-unmanned-aerial-vehicle-drone-delivery-on-blood-product-delivery-time-and-wastage-in-Rwanda-a-retrospective-cross-sectional-study-and-time-series-analysis.pdf"
+  },
+  {
+    "id": "T01",
+    "title": "NASA Moves Drone Package Delivery Industry Closer to Reality",
+    "records": [
+      "National Aeronautics and Space Administration (NASA) | Primary institutional technical-progress account.",
+      "Published: 10 December 2024; page last updated on 22 June 2026. | Event: Multiple operators approved in July 2024; the December 2024 account described deployment in approved Dallas areas.",
+      "Period / scope: 2016 TCL2 trial and 2024 Dallas commercial application; Approved areas of Dallas, United States; early testing at Reno–Stead Airport, Nevada; Digital sharing of planned flights, preflight strategic coordination and operator conformance monitoring; small-drone applications below 400 feet.",
+      "Location: Paragraphs beginning 'To address these challenges', 'This technology is now being used', and 'UTM allows for strategic coordination'; opening photograph caption.",
+      "Supports: NASA reported that UTM was being used in approved parts of Dallas in 2024. Operators digitally share planned flights, coordinate before takeoff and monitor whether their aircraft follow the planned paths. Its earlier 2016 trial involved five drones crossing paths at separated altitudes.",
+      "Limits: This is evidence of restricted-area deployment, not nationwide access, permission for every operator, unlimited density or a guaranteed airspace capacity. Strategic coordination does not remove the need for monitoring, tactical protection and contingency procedures.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://www.nasa.gov/aeronautics/drones/delivering-closer-to-reality/"
+  },
+  {
+    "id": "T02",
+    "title": "UAS Traffic Management Conflict Management Model",
+    "records": [
+      "FAA-NASA UTM Research Transition Team, Sense and Avoid Working Group | Primary joint technical concept document.",
+      "Published: 2020 version; exact publication day not independently verified. NASA-hosted PDF path dated March 2024. | Event: Research concept model; not a single commercial flight trial.",
+      "Period / scope: 2020 research model; United States UTM research architecture; Layered strategic and tactical conflict management, including lost communication, service failure and navigation degradation.",
+      "Location: 57-page PDF: sections 7.1 and 7.2; appendix R04 and Tables 15–16, printed pages 52–53; R06 and Tables 17–18, printed pages 55–56.",
+      "Supports: The model separates strategic coordination from tactical protection. Its communication-contingency section calls for loss-of-link detection, defined mitigations, shared contingency information and preplanned alternate landing sites. Continued flight after a link failure depends on available onboard autonomy and avoidance capabilities.",
+      "Limits: A research concept document is not a binding rule for all jurisdictions or proof that a specific product implements the capabilities. It supplies no universal network-capacity guarantee. Distinguish obstacle sensing from detecting and avoiding other aircraft.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://www.nasa.gov/wp-content/uploads/2024/03/2020-johnson-nasa-faa-508.pdf"
+  },
+  {
+    "id": "T03",
+    "title": "DJI’s First Delivery Drone Takes Flight Globally",
+    "records": [
+      "DJI | Primary manufacturer release and test conditions.",
+      "Published: 10 January 2024. | Event: Global launch on 10 January 2024.",
+      "Period / scope: Product and manufacturer test parameters at launch; Global product announcement; controlled test conditions include sea-level altitude; FlyCart 30 dual-battery payload and total test distance; not delivery radius or reserve-compliant operating range.",
+      "Location: Long-range heavy payload capacity; Increased operational safety; footnotes 1–8, especially footnote 3.",
+      "Supports: DJI specified 30 kg over 16 km with two batteries, and 40 kg over 8 km in emergency single-battery mode. The 16 km result was measured at sea level, without wind, at a constant 15 m/s until the displayed battery level reached zero. Obstacle sensing, an ADS-B receiver and a parachute provide different safety functions.",
+      "Limits: Manufacturer tests do not establish practical delivery radius, reserve energy, commercial reliability or regulatory permission. Account for return flight, battery aging, weather and diversion needs. ADS-B reception does not detect every non-cooperative aircraft.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://www.dji.com/media-center/announcements/dji-launch-fly-cart-30"
+  },
+  {
+    "id": "T04",
+    "title": "DJI FlyCart 100 — Specifications",
+    "records": [
+      "DJI | Primary manufacturer live product specifications.",
+      "Published: Undated live product specifications; read on 19 October 2026. | Event: Current product-specification snapshot; no claim about the original publication date.",
+      "Period / scope: Official specifications publicly readable on 19 October 2026; Global specifications; weight and communications restrictions vary by location; Controlled test distance at 149.9 kg takeoff weight; emergency single-battery mode; communications distance is distinct from flight range.",
+      "Location: Aircraft: Max Takeoff Weight, Loadable Battery Quantity, Max Flight Distance and footnote; Safety System: Measurement Range notes 1–3; O4 Video Transmission notes.",
+      "Supports: At 149.9 kg takeoff weight, DJI lists 12 km with two batteries and 6 km with one. Tests used new fully charged batteries, sea-level altitude, no wind and 25°C, flying at the optimal constant speed to zero charge. Single-battery mode is for emergencies. The safety-system notes explicitly state that the aircraft cannot automatically avoid moving objects.",
+      "Limits: Do not combine the 170 kg maximum takeoff weight with the 149.9 kg test case, or confuse payload and total weight. The 12 km test is not a reserve-compliant delivery radius. Listed sensors do not establish comprehensive aircraft detect-and-avoid capability. The page is undated.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://www.dji.com/flycart-100/specs"
+  },
+  {
+    "id": "T05",
+    "title": "A Summary of NASA Research Exploring the Acoustics of Small Unmanned Aerial Systems",
+    "records": [
+      "NASA Langley Research Center | Primary public research paper.",
+      "Published: 16 January 2018, according to the NTRS record. | Event: Psychoacoustic experiment in early 2017; conference report in January 2018.",
+      "Period / scope: DELIVER research and early-2017 experiment; NASA Langley laboratory, United States; participants recruited from the local community; Thirty-eight normal-hearing participants rated 103 drone and road-vehicle sounds for annoyance; not a long-term urban exposure study.",
+      "Location: 11-page PDF: Psychoacoustic Testing, printed page 9, Figure 11; Conclusions, printed page 10; NTRS record 20180002208.",
+      "Supports: In a laboratory test, 38 normal-hearing community participants rated 103 sounds. At equal sound exposure levels, the tested small-drone sounds were judged more annoying than road-vehicle sounds. This supports evaluating perceived annoyance and sound character alongside conventional exposure metrics.",
+      "Limits: An early, limited laboratory sample cannot establish effects for every modern aircraft, neighborhood or long-term repeated delivery pattern. It does not establish health injury, a legal noise threshold or a particular operator's non-compliance.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://ntrs.nasa.gov/api/citations/20180002208/downloads/20180002208.pdf"
+  },
+  {
+    "id": "T07",
+    "title": "Energy use and life cycle greenhouse gas emissions of drones for commercial package delivery — corrected version",
+    "records": [
+      "Lawrence Livermore National Laboratory, Carnegie Mellon University, SRI International and collaborators; Nature Communications | National-library archive of the original peer-reviewed paper, incorporating the author correction.",
+      "Published: 13 February 2018; author correction on 8 March 2018. | Event: Experiment-calibrated life-cycle model; original percentage error subsequently corrected.",
+      "Period / scope: 2018 study scenarios; not 2026 aircraft or electricity-grid performance; United States; regional electricity, warehousing and delivery scenarios, including California, the U.S. average and Missouri; Final-delivery life-cycle comparison including electricity, charging losses, additional warehousing and battery-related effects; corrected publisher-format article archived by the German National Library.",
+      "Location: 13-page PDF: pages 2–3, drone sizes and ranges; page 4, system boundary and electricity/warehouse assumptions; page 5, emissions comparison; page 12, publication date. Study DOI: 10.1038/s41467-017-02411-5; correction DOI: 10.1038/s41467-018-03457-9.",
+      "Supports: The corrected paper models the final delivery stage and includes electricity, battery-related effects and additional local warehousing. Its results depend on drone size, payload, regional electricity and warehouse assumptions. Lower flight energy alone does not prove lower emissions for an entire logistics network.",
+      "Limits: These are 2018 technology and scenario assumptions, not 2026 industry limits. The final-delivery boundary does not cover an entire supply chain. Avoid uncorrected percentages and use the qualitative findings. The paper supplies no universal failed-delivery or repeat-delivery coefficient.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://d-nb.info/115948712X/34"
+  },
+  {
+    "id": "R01",
+    "title": "Dronamics Cargo Drone Takes First Flight, Paving the Way for the Future of Deliveries",
+    "records": [
+      "Dronamics official newsroom | Primary company flight-test and specification disclosure",
+      "Published: May 25, 2023; page marked updated October 10, 2025 | Event: May 2023 full-scale Black Swan first-flight announcement, Balchik airport, Bulgaria",
+      "Period / scope: First-flight milestone and manufacturer specifications; not 2026 operating volume; Bulgaria first flight; regional cargo product; Larger middle-mile cargo UAV, assessed separately from urban last-mile delivery",
+      "Location: Opening announcement, About Dronamics and Black Swan Overview specifications",
+      "Supports: Dronamics reported a full-scale Black Swan first flight at Balchik airport in May 2023 and specified a 350 kg payload and up to 2,500 km range.",
+      "Limits: A first flight and product specifications do not establish achieved route range, routine commercial service or profitability. The report does not adopt the company's comparative cost, emissions or first-in-industry claims.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://www.dronamics.com/post/dronamics-cargo-drone-takes-first-flight-paving-the-way-for-the-future-of-deliveries"
+  },
+  {
+    "id": "P01",
+    "title": "Harbor Delivery.jpg: official DJI FlyCart 100 media photograph",
+    "records": [
+      "DJI Europe official Mynewsdesk newsroom; individual photographer not disclosed | Primary official media photograph, permission statement and embedded photographic metadata",
+      "Published: December 4, 2025; embedded capture date May 16, 2025, not independently verified against the camera clock | Event: Media material accompanying the December 2025 global FlyCart 100 launch; not proof of a specific commercial delivery",
+      "Period / scope: Media image published December 4, 2025; source and original image read October 19, 2026; Harbour scene; exact capture location is not specified and is not inferred from visual recognition; Original 3975 × 2232 pixel JPEG under the source's Media Use permission, reproduced intact for editorial reporting and commentary about DJI cargo aircraft",
+      "Location: Official image-page title, December 4, 2025 date, Media Use licence and explanatory paragraph, 3975 × 2232 dimensions and Download link; downloaded cover-original.jpg and its EXIF",
+      "Supports: The official image page and its permission were read, and the downloaded original was opened and inspected. It shows a cargo drone lifting a cardboard package near a container terminal. Camera, exposure and lens metadata support its photographic provenance. The source grants conditional media use with attribution and without modification.",
+      "Limits: The photograph establishes no routine commercial service, customer, route or delivery volume. The individual photographer and exact location are undisclosed. Metadata records Photoshop processing before publication, but the editing history is undisclosed. Media Use is not unrestricted advertising or stock-image relicensing. Keep the full image unchanged and place titles and credit outside it.",
+      "Read: 2026-10-19 | Original source"
+    ],
+    "sourceUrl": "https://www.mynewsdesk.com/uk/dji/images/harbor-delivery-dot-jpg-3375041"
+  }
+]
