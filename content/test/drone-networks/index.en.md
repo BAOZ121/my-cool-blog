@@ -24,7 +24,7 @@ reportversion: "1.0-web-figures-test"
 evidencecutoff: "2026-10-19"
 ---
 
-<style>.article-content .drone-report-figure{width:100%;max-width:100%}.article-content .research-table-scroll-hint{display:block}</style>
+<style>.article-content .drone-report-figure{width:100%;max-width:100%}.article-content figure[id^="research-table-drone-regulatory-frameworks-"] .research-table-scroll-hint{display:block}.article-content figure[id^="research-table-drone-company-disclosures-"] .research-data-table{table-layout:fixed;min-width:600px}.article-content figure[id^="research-table-drone-company-disclosures-"] .research-data-table :is(th,td):nth-child(1){width:17%}.article-content figure[id^="research-table-drone-company-disclosures-"] .research-data-table :is(th,td):nth-child(2){width:26%}.article-content figure[id^="research-table-drone-company-disclosures-"] .research-data-table :is(th,td):nth-child(3){width:15%}.article-content figure[id^="research-table-drone-company-disclosures-"] .research-data-table :is(th,td):nth-child(4){width:42%}</style>
 
 <p class="research-preview-note"><strong>Website test edition.</strong> Not a formally published article. English manuscript from the supplied bilingual report, version 1.0. Public information through 19 October 2026.</p>
 
