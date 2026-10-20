@@ -162,6 +162,75 @@ try {
       console.log(`PASS ${slug}: ${width}px, all ${figureCount} graphics, controls, dark theme and print`);
       await page.close();
     }
+    // The unlisted drone review page reuses the production map and table components.
+    // Keep this case page-scoped: it must not alter the existing article assertions.
+    const drone = await context.newPage();
+    const droneErrors = [];
+    drone.on('pageerror', error => droneErrors.push(error.message));
+    await drone.goto(`${base}/test/drone-networks/`, { waitUntil: 'domcontentloaded' });
+    assert.equal(await drone.locator('meta[name="robots"]').getAttribute('content'), 'noindex, nofollow');
+    assert.match(await drone.locator('.research-preview-note').innerText(), /Not a formally published article/);
+    assert.equal(await drone.locator('.research-evidence').count(), 35);
+    const droneMap = drone.locator('#industry-map-drone-logistics-value-chain');
+    await droneMap.scrollIntoViewIfNeeded();
+    await drone.waitForFunction(() => document.querySelector('#industry-map-drone-logistics-value-chain')?.dataset.visualState === 'ready');
+    const initialNodes = await droneMap.locator('foreignObject').count();
+    await droneMap.locator('[data-action="expand"]').click();
+    await drone.waitForFunction(initial => document.querySelector('#industry-map-drone-logistics-value-chain').querySelectorAll('foreignObject').length > initial, initialNodes);
+    await droneMap.locator('[data-action="collapse"]').click();
+    await drone.waitForFunction(initial => document.querySelector('#industry-map-drone-logistics-value-chain').querySelectorAll('foreignObject').length === initial, initialNodes);
+    const zoom = droneMap.locator('.visual-zoom-value');
+    const beforeZoom = await zoom.innerText();
+    await droneMap.locator('[data-action="zoom-in"]').click();
+    await drone.waitForFunction(before => document.querySelector('#industry-map-drone-logistics-value-chain .visual-zoom-value').textContent !== before, beforeZoom);
+    await droneMap.locator('[data-action="fit"]').click();
+    await droneMap.locator('[data-action="fullscreen"]').click();
+    await drone.waitForFunction(() => {
+      const map = document.querySelector('#industry-map-drone-logistics-value-chain');
+      return document.fullscreenElement === map || map.classList.contains('is-expanded');
+    });
+    await droneMap.locator('[data-action="fullscreen"]').click();
+    await drone.waitForFunction(() => {
+      const map = document.querySelector('#industry-map-drone-logistics-value-chain');
+      return document.fullscreenElement !== map && !map.classList.contains('is-expanded');
+    });
+    await droneMap.locator('.visual-fallback summary').click();
+    assert.equal(await droneMap.locator('.visual-fallback').evaluate(el => el.open), true);
+    assert.equal(await droneMap.locator('.visual-outline li').count(), 32);
+    assert.match(await droneMap.locator('.visual-fallback').innerText(), /DJI FlyCart 100/);
+    await droneMap.locator('.visual-fallback summary').click();
+    const droneTables = drone.locator('.research-data-table');
+    assert.equal(await droneTables.count(), 2);
+    for (const [index, rows] of [7, 4].entries()) {
+      const table = droneTables.nth(index);
+      await table.scrollIntoViewIfNeeded();
+      assert.equal(await table.locator('thead th').count(), 4);
+      assert.equal(await table.locator('tbody tr').count(), rows);
+      const scroll = table.locator('..');
+      assert.equal(await scroll.getAttribute('tabindex'), '0');
+      assert.equal(await scroll.evaluate(el => getComputedStyle(el).overflowX), 'auto');
+      if (width < 600) {
+        assert.ok(await scroll.evaluate(el => el.scrollWidth > el.clientWidth), 'Mobile tables must retain readable columns');
+        await scroll.focus();
+        await scroll.press('ArrowRight');
+        await drone.waitForFunction(index => document.querySelectorAll('.research-table-scroll')[index].scrollLeft > 0, index);
+      }
+      if (captures) await table.locator('..').screenshot({ path: resolve(captures, `drone-table-${index + 1}-${width}.png`) });
+    }
+    const missingDroneAnchors = await drone.locator('.article-content a[href*="#"]').evaluateAll(links =>
+      links.filter(link => link.origin === location.origin && link.pathname === location.pathname && link.hash)
+        .map(link => link.hash.slice(1)).filter(id => !document.getElementById(id)));
+    assert.deepEqual(missingDroneAnchors, []);
+    assert.ok(await drone.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `Drone page overflows at ${width}px`);
+    if (width === 1440) {
+      const wordPath = 'assets/Drone_Networks_Low_Altitude_Logistics_Bilingual_v1.docx';
+      const download = await context.request.get(`${base}/test/drone-networks/${wordPath}`);
+      assert.equal(download.status(), 200);
+      assert.ok((await download.body()).equals(await readFile(resolve('content/test/drone-networks', wordPath))), 'Original Word download must remain byte-identical');
+    }
+    assert.deepEqual(droneErrors, []);
+    console.log(`PASS drone test page: ${width}px, map zoom/fullscreen/outline, two scrollable tables, 35 sources and original download`);
+    await drone.close();
     await context.close();
   }
   const noJS = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 390, height: 844 } });
@@ -169,6 +238,11 @@ try {
   await page.goto(`${base}/post/vr-industry-report-2026/`);
   for (const details of await page.locator('.visual-fallback').all()) assert.equal(await details.evaluate(el => el.open), true);
   assert.match(await page.locator('.visual-table').innerText(), /74\.6%/);
+  assert.equal(await page.locator('.visual-toolbar:visible').count(), 0);
+  await page.goto(`${base}/test/drone-networks/`);
+  assert.equal(await page.locator('.visual-fallback').evaluate(el => el.open), true);
+  assert.equal(await page.locator('.visual-outline li').count(), 32);
+  assert.equal(await page.locator('.research-data-table').count(), 2);
   assert.equal(await page.locator('.visual-toolbar:visible').count(), 0);
   await noJS.close();
   const blocked = await browser.newContext();
