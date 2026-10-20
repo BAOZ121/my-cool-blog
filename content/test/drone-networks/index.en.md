@@ -24,7 +24,7 @@ reportversion: "1.0-web-figures-test"
 evidencecutoff: "2026-10-19"
 ---
 
-<style>.article-content .drone-report-figure{width:100%;max-width:100%}</style>
+<style>.article-content .drone-report-figure{width:100%;max-width:100%}.article-content .research-table-scroll-hint{display:block}</style>
 
 <p class="research-preview-note"><strong>Website test edition.</strong> Not a formally published article. English manuscript from the supplied bilingual report, version 1.0. Public information through 19 October 2026.</p>
 

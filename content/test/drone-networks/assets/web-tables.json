@@ -62,7 +62,7 @@
       ]
     ],
     "note": "No shared denominator: do not total these figures, rank delivery volume or calculate market shares.\nCompany disclosures and regulatory filings: [C09] [C14] [G10] [G13] [C08] [G08] [G09]. Full source links accompany the editable data.",
-    "width": "wide"
+    "width": "standard"
   },
   "drone-regulatory-frameworks": {
     "title": "Permissions have several layers",
