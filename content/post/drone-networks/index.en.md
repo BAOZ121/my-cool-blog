@@ -12,7 +12,6 @@ imageAlt: "A DJI FlyCart 100 cargo drone carries a cardboard package on lifting 
 categories: ["Industry Report"]
 tags: ["Drone Networks", "Low-Altitude Logistics", "Cargo Drones", "Global", "Industry Research"]
 wordDownload: "/post/drone-networks/assets/Drone_Networks_Low_Altitude_Logistics_Bilingual_v1.docx"
-textDownload: "/post/drone-networks/assets/report-en.txt"
 toc: true
 readingTime: true
 comments: false
