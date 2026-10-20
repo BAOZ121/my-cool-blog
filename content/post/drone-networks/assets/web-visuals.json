@@ -1,0 +1,181 @@
+{
+  "maps": {
+    "drone-logistics-value-chain": {
+      "eyebrow": "FIGURE 1 · INDUSTRY STRUCTURE",
+      "title": "The drone-logistics value chain",
+      "description": "A connected service needs aircraft, ground interfaces, airspace coordination and recurring demand.",
+      "root": {
+        "name": "Drone networks & low-altitude logistics",
+        "children": [
+          {
+            "name": "Upstream · Aircraft, components and flight capability",
+            "children": [
+              {
+                "name": "Components & aircraft",
+                "children": [
+                  {
+                    "name": "DJI FlyCart 30"
+                  },
+                  {
+                    "name": "DJI FlyCart 100"
+                  },
+                  {
+                    "name": "Dronamics Black Swan"
+                  }
+                ]
+              },
+              {
+                "name": "Flight capabilities",
+                "children": [
+                  {
+                    "name": "Propulsion"
+                  },
+                  {
+                    "name": "Batteries"
+                  },
+                  {
+                    "name": "Navigation"
+                  },
+                  {
+                    "name": "Communications"
+                  },
+                  {
+                    "name": "Sensing"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Midstream · Integrated networks and coordination",
+            "children": [
+              {
+                "name": "Integrated systems",
+                "children": [
+                  {
+                    "name": "Matternet M2"
+                  },
+                  {
+                    "name": "Meituan M-Port 3"
+                  }
+                ]
+              },
+              {
+                "name": "Airspace & software",
+                "children": [
+                  {
+                    "name": "ANRA U-space services"
+                  },
+                  {
+                    "name": "UTM service providers"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Downstream · Delivery services and customer demand",
+            "children": [
+              {
+                "name": "Delivery operators",
+                "children": [
+                  {
+                    "name": "Zipline"
+                  },
+                  {
+                    "name": "Wing"
+                  },
+                  {
+                    "name": "Meituan"
+                  },
+                  {
+                    "name": "Fengyi"
+                  },
+                  {
+                    "name": "JD Logistics"
+                  },
+                  {
+                    "name": "Manna"
+                  }
+                ]
+              },
+              {
+                "name": "Customers",
+                "children": [
+                  {
+                    "name": "Medical facilities"
+                  },
+                  {
+                    "name": "Retailers"
+                  },
+                  {
+                    "name": "Parcel networks"
+                  },
+                  {
+                    "name": "Industrial users"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "note": "Role map, not a contract map. Companies may span stages; capability and customer labels describe categories. The structure and labels reproduce the supplied report’s Figure 1. Information cutoff: 19 October 2026.",
+      "sources": [
+        {
+          "title": "[T01]",
+          "url": "/post/drone-networks/#source-T01"
+        },
+        {
+          "title": "[T03]",
+          "url": "/post/drone-networks/#source-T03"
+        },
+        {
+          "title": "[T04]",
+          "url": "/post/drone-networks/#source-T04"
+        },
+        {
+          "title": "[R01]",
+          "url": "/post/drone-networks/#source-R01"
+        },
+        {
+          "title": "[C07]",
+          "url": "/post/drone-networks/#source-C07"
+        },
+        {
+          "title": "[C08]",
+          "url": "/post/drone-networks/#source-C08"
+        },
+        {
+          "title": "[C09]",
+          "url": "/post/drone-networks/#source-C09"
+        },
+        {
+          "title": "[C14]",
+          "url": "/post/drone-networks/#source-C14"
+        },
+        {
+          "title": "[G05]",
+          "url": "/post/drone-networks/#source-G05"
+        },
+        {
+          "title": "[G08]",
+          "url": "/post/drone-networks/#source-G08"
+        },
+        {
+          "title": "[G09]",
+          "url": "/post/drone-networks/#source-G09"
+        },
+        {
+          "title": "[G10]",
+          "url": "/post/drone-networks/#source-G10"
+        },
+        {
+          "title": "[G13]",
+          "url": "/post/drone-networks/#source-G13"
+        }
+      ],
+      "reviewed": "2026-10-19"
+    }
+  }
+}

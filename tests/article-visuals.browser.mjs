@@ -162,14 +162,14 @@ try {
       console.log(`PASS ${slug}: ${width}px, all ${figureCount} graphics, controls, dark theme and print`);
       await page.close();
     }
-    // The unlisted drone review page reuses the production map and table components.
+    // The published drone report retains its reviewed map and table components.
     // Keep this case page-scoped: it must not alter the existing article assertions.
     const drone = await context.newPage();
     const droneErrors = [];
     drone.on('pageerror', error => droneErrors.push(error.message));
-    await drone.goto(`${base}/test/drone-networks/`, { waitUntil: 'domcontentloaded' });
-    assert.equal(await drone.locator('meta[name="robots"]').getAttribute('content'), 'noindex, nofollow');
-    assert.match(await drone.locator('.research-preview-note').innerText(), /Not a formally published article/);
+    await drone.goto(`${base}/post/drone-networks/`, { waitUntil: 'domcontentloaded' });
+    assert.equal(await drone.locator('meta[name="robots"][content*="noindex"]').count(), 0);
+    assert.match(await drone.locator('.research-preview-note').innerText(), /Industry report · Version 1.0/);
     assert.equal(await drone.locator('.research-evidence').count(), 35);
     const droneMap = drone.locator('#industry-map-drone-logistics-value-chain');
     await droneMap.scrollIntoViewIfNeeded();
@@ -224,12 +224,28 @@ try {
     assert.ok(await drone.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `Drone page overflows at ${width}px`);
     if (width === 1440) {
       const wordPath = 'assets/Drone_Networks_Low_Altitude_Logistics_Bilingual_v1.docx';
-      const download = await context.request.get(`${base}/test/drone-networks/${wordPath}`);
+      const download = await context.request.get(`${base}/post/drone-networks/${wordPath}`);
       assert.equal(download.status(), 200);
-      assert.ok((await download.body()).equals(await readFile(resolve('content/test/drone-networks', wordPath))), 'Original Word download must remain byte-identical');
+      assert.ok((await download.body()).equals(await readFile(resolve('content/post/drone-networks', wordPath))), 'Original Word download must remain byte-identical');
+      const articlePath = '/post/drone-networks/';
+      for (const path of ['/', '/archives/', '/index.xml', '/sitemap.xml', '/search/index.json', '/evidence-library/']) {
+        const response = await context.request.get(`${base}${path}`);
+        assert.equal(response.status(), 200);
+        const text = await response.text();
+        assert.ok(text.includes(articlePath), `Published drone report must appear in ${path}`);
+        assert.ok(!text.includes('/test/drone-networks/'), `Archived preview must remain excluded from ${path}`);
+      }
+      const preview = await context.request.get(`${base}/test/drone-networks/`);
+      assert.equal(preview.status(), 200);
+      assert.match(await preview.text(), /name=robots content="noindex, nofollow"/);
+      assert.ok((await preview.text()).includes('href=/post/drone-networks/'), 'Archived preview must point to the published report');
+      const cover = await context.request.get(`${base}${articlePath}assets/cover-original.jpg`);
+      assert.equal(cover.status(), 200);
+      assert.ok((await cover.body()).equals(await readFile(resolve('content/test/drone-networks/assets/cover-original.jpg'))), 'Original cover download must remain byte-identical');
+
     }
     assert.deepEqual(droneErrors, []);
-    console.log(`PASS drone test page: ${width}px, map zoom/fullscreen/outline, two scrollable tables, 35 sources and original download`);
+    console.log(`PASS published drone report: ${width}px, map zoom/fullscreen/outline, two scrollable tables, 35 sources and original download`);
     await drone.close();
     await context.close();
   }
@@ -239,7 +255,7 @@ try {
   for (const details of await page.locator('.visual-fallback').all()) assert.equal(await details.evaluate(el => el.open), true);
   assert.match(await page.locator('.visual-table').innerText(), /74\.6%/);
   assert.equal(await page.locator('.visual-toolbar:visible').count(), 0);
-  await page.goto(`${base}/test/drone-networks/`);
+  await page.goto(`${base}/post/drone-networks/`);
   assert.equal(await page.locator('.visual-fallback').evaluate(el => el.open), true);
   assert.equal(await page.locator('.visual-outline li').count(), 32);
   assert.equal(await page.locator('.research-data-table').count(), 2);

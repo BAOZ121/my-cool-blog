@@ -26,7 +26,7 @@ evidencecutoff: "2026-10-19"
 
 <style>.article-content .drone-report-figure{width:100%;max-width:100%}.article-content figure[id^="research-table-drone-regulatory-frameworks-"] .research-table-scroll-hint{display:block}.article-content figure[id^="research-table-drone-company-disclosures-"] .research-data-table{table-layout:fixed;min-width:600px}.article-content figure[id^="research-table-drone-company-disclosures-"] .research-data-table :is(th,td):nth-child(1){width:17%}.article-content figure[id^="research-table-drone-company-disclosures-"] .research-data-table :is(th,td):nth-child(2){width:26%}.article-content figure[id^="research-table-drone-company-disclosures-"] .research-data-table :is(th,td):nth-child(3){width:15%}.article-content figure[id^="research-table-drone-company-disclosures-"] .research-data-table :is(th,td):nth-child(4){width:42%}</style>
 
-<p class="research-preview-note"><strong>Website test edition.</strong> Not a formally published article. English manuscript from the supplied bilingual report, version 1.0. Public information through 19 October 2026.</p>
+<p class="research-preview-note"><strong>Archived website test edition.</strong> Not the formally published article. <a href="/post/drone-networks/">Read the published industry report</a>. English manuscript from the supplied bilingual report, version 1.0. Public information through 19 October 2026.</p>
 
 <p class="research-downloads"><a href="assets/Drone_Networks_Low_Altitude_Logistics_Bilingual_v1.docx" download>Download the original bilingual report (Word)</a> · <a href="assets/report-en.txt" download>English manuscript</a> · <a href="assets/supporting-evidence-en.json" download>Supporting Evidence records</a></p>
 
