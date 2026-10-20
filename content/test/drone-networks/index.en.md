@@ -20,7 +20,7 @@ build:
   render: "always"
 outputs:
   - "HTML"
-reportversion: "1.0-test"
+reportversion: "1.0-web-figures-test"
 evidencecutoff: "2026-10-19"
 ---
 
@@ -245,7 +245,12 @@ parcel-delivery chain. A company can span several stages. The map groups
 roles and examples; its links do not imply that one named company
 supplies another. <a href="#source-G09" class="evidence-cite" aria-label="Source G09">[G09]</a><a href="#source-G07" class="evidence-cite" aria-label="Source G07">[G07]</a><a href="#source-C08" class="evidence-cite" aria-label="Source C08">[C08]</a><a href="#source-C09" class="evidence-cite" aria-label="Source C09">[C09]</a></p>
 
-<figure class="research-photo drone-report-figure" id="figure-1" aria-labelledby="figure-1-caption"><a href="assets/figure-1-value-chain.png" target="_blank" rel="noopener" aria-label="Open Figure 1 at original resolution"><img src="assets/figure-1-value-chain.png" alt="Figure 1. The drone-network and low-altitude logistics value chain. Examples group business roles and products; links do not establish supplier contracts." width="3600" height="2420" loading="lazy" decoding="async"></a><figcaption id="figure-1-caption">Figure 1. The drone-network and low-altitude logistics value chain. Examples group business roles and products; links do not establish supplier contracts.</figcaption><p class="research-figure-caption"><a href="assets/figure-1-value-chain.png" target="_blank" rel="noopener">Open original figure · 3600 × 2420</a></p></figure>
+<div id="figure-1"></div>
+
+{{< industry-map id="drone-logistics-value-chain" data="assets/web-visuals.json" >}}
+
+<p class="research-figure-caption">Figure 1. The drone-network and low-altitude logistics value chain. Examples group business roles and products; links do not establish supplier contracts.</p>
+<p class="research-figure-caption"><a href="assets/figure-1-value-chain.png" target="_blank" rel="noopener">Open original report figure · 3600 × 2420</a></p>
 
 <p>Money need not follow the same path in every model. A hospital or
 public purchaser may buy availability and service levels. A retailer may
@@ -281,7 +286,12 @@ fastest-delivery claim is not an average, and its consolidated logistics
 revenue is not drone revenue. This is evidence of network deployment
 rather than a comparable delivery-volume measure. <a href="#source-C14" class="evidence-cite" aria-label="Source C14">[C14]</a></p>
 
-<figure class="research-photo drone-report-figure" id="figure-2" aria-labelledby="figure-2-caption"><a href="assets/figure-2-company-disclosures.png" target="_blank" rel="noopener" aria-label="Open Figure 2 at original resolution"><img src="assets/figure-2-company-disclosures.png" alt="Figure 2. Selected company disclosures and their statistical boundaries. Different units, periods and territories remain separate. No total, ranking or market share is calculated." width="3600" height="2320" loading="lazy" decoding="async"></a><figcaption id="figure-2-caption">Figure 2. Selected company disclosures and their statistical boundaries. Different units, periods and territories remain separate. No total, ranking or market share is calculated.</figcaption><p class="research-figure-caption"><a href="assets/figure-2-company-disclosures.png" target="_blank" rel="noopener">Open original figure · 3600 × 2320</a></p></figure>
+<div id="figure-2"></div>
+
+{{< research-table id="drone-company-disclosures" >}}
+
+<p class="research-figure-caption">Figure 2. Selected company disclosures and their statistical boundaries. Different units, periods and territories remain separate. No total, ranking or market share is calculated.</p>
+<p class="research-figure-caption"><a href="assets/figure-2-company-disclosures.png" target="_blank" rel="noopener">Open original report figure · 3600 × 2320</a></p>
 
 <p>Plans require another distinction. Wing's October 2026 announcement
 described current reach of more than three million customers, while more
@@ -315,7 +325,12 @@ company's experience, not an estimate for Ireland or Europe. UK
 requirements are a separate national regime and are not treated here as
 EU permissions. <a href="#source-G06" class="evidence-cite" aria-label="Source G06">[G06]</a><a href="#source-G04" class="evidence-cite" aria-label="Source G04">[G04]</a><a href="#source-G10" class="evidence-cite" aria-label="Source G10">[G10]</a></p>
 
-<figure class="research-photo drone-report-figure" id="figure-3" aria-labelledby="figure-3-caption"><a href="assets/figure-3-regulatory-frameworks.png" target="_blank" rel="noopener" aria-label="Open Figure 3 at original resolution"><img src="assets/figure-3-regulatory-frameworks.png" alt="Figure 3. China, United States and EU/EASA regulatory frameworks. Operating approval, aircraft requirements and airspace services have different functions. The examined Part 108 documents are proposed-rule materials." width="3600" height="2480" loading="lazy" decoding="async"></a><figcaption id="figure-3-caption">Figure 3. China, United States and EU/EASA regulatory frameworks. Operating approval, aircraft requirements and airspace services have different functions. The examined Part 108 documents are proposed-rule materials.</figcaption><p class="research-figure-caption"><a href="assets/figure-3-regulatory-frameworks.png" target="_blank" rel="noopener">Open original figure · 3600 × 2480</a></p></figure>
+<div id="figure-3"></div>
+
+{{< research-table id="drone-regulatory-frameworks" >}}
+
+<p class="research-figure-caption">Figure 3. China, United States and EU/EASA regulatory frameworks. Operating approval, aircraft requirements and airspace services have different functions. The examined Part 108 documents are proposed-rule materials.</p>
+<p class="research-figure-caption"><a href="assets/figure-3-regulatory-frameworks.png" target="_blank" rel="noopener">Open original report figure · 3600 × 2480</a></p>
 
 <p>The regional implication is an author assessment: the scarce resource
 can be a safe corridor, a permitted operating design, a suitable ground

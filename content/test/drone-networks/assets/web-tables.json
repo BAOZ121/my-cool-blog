@@ -1,0 +1,114 @@
+{
+  "drone-company-disclosures": {
+    "title": "Disclosed activity: seven different measures",
+    "eyebrow": "FIGURE 2 / OPERATING EVIDENCE",
+    "description": "Alphabetical company order. Original units, periods and geographical limits are preserved.",
+    "header": [
+      {
+        "label": "Company"
+      },
+      {
+        "label": "Disclosed value"
+      },
+      {
+        "label": "Cutoff / period"
+      },
+      {
+        "label": "Scope and limitation"
+      }
+    ],
+    "rows": [
+      [
+        "Fengyi",
+        ">5.15m items\n>600,000 flights",
+        "31 Dec 2024",
+        "Greater Bay Area cumulative totals. Several items can travel on one flight. [C09]"
+      ],
+      [
+        "JD Logistics",
+        ">100 operating domestic routes",
+        "H1 2026",
+        "China route count. Measures network deployment, not completed deliveries. [C14]"
+      ],
+      [
+        "Manna",
+        "Almost 380,000 deliveries",
+        "8 Jul 2026",
+        "Global cumulative total. Not an Ireland-only or annual delivery count. [G10]"
+      ],
+      [
+        "Matternet",
+        ">60,000 flights",
+        "May 2026",
+        "Nine countries. Includes commercial, humanitarian and test flights. [G13]"
+      ],
+      [
+        "Meituan",
+        ">1m commercial orders",
+        "11 Sep 2026",
+        "Cumulative across operating markets. Orders are not flight or item counts. [C08]"
+      ],
+      [
+        "Wing",
+        "Well over 1m commercial deliveries",
+        "8 Jun 2026",
+        "Global cumulative total. Not a U.S.-only, Walmart-only or annual count. [G08]"
+      ],
+      [
+        "Zipline",
+        ">2m commercial deliveries",
+        "21 Jan 2026",
+        "Global cumulative total. Deliveries differ from the number of items carried. [G09]"
+      ]
+    ],
+    "note": "No shared denominator: do not total these figures, rank delivery volume or calculate market shares.\nCompany disclosures and regulatory filings: [C09] [C14] [G10] [G13] [C08] [G08] [G09]. Full source links accompany the editable data.",
+    "width": "wide"
+  },
+  "drone-regulatory-frameworks": {
+    "title": "Permissions have several layers",
+    "eyebrow": "FIGURE 3 / REGIONAL COMPARISON",
+    "description": "Framework overview through 19 October 2026. The UK follows its own national regime.",
+    "header": [
+      {
+        "label": "Dimension"
+      },
+      {
+        "label": "China"
+      },
+      {
+        "label": "United States"
+      },
+      {
+        "label": "EU / EASA framework"
+      }
+    ],
+    "rows": [
+      [
+        "Operating path",
+        "Aircraft category and activity determine the route. Operator certification, applicable airworthiness requirements and insurance are separate layers. CCAR-92 governs civil operating safety. [C02][C03][C04]",
+        "Part 135 supports relevant package-delivery operations, with applicable aircraft and BVLOS permissions. The examined Part 108 material is a proposal, not an effective rule. [G01][G02][G03]",
+        "BVLOS commonly falls in the specific category, usually requiring national-authority authorization. Standard-scenario and relevant LUC privileges provide exceptions; higher-risk operations may be certified. [G06]"
+      ],
+      [
+        "Airspace coordination",
+        "Controlled airspace requires approval. Fixed-airspace routine operations can seek long-term applications; the actual aircraft, activity and operating conditions still matter. [C02]",
+        "UTM shares flight intent and real-time constraints. Operators remain responsible for safe operations; this is not positive FAA air traffic control. Separate airspace permissions apply. [G01]",
+        "Within designated U-space airspace, mandatory services include network identification, geo-awareness, flight authorization and traffic information. [G04][G05]"
+      ],
+      [
+        "What approval does not mean",
+        "An operator certificate does not permit every route or airspace. Airworthiness exemptions remain relevant; airspace below 120 metres is not universally unrestricted. [C02][C03]",
+        "Air-carrier certification does not replace aircraft authorization, environmental review or local requirements. A proposed future framework is not proof of current nationwide access. [G01][G02][G03]",
+        "A U-space service-provider certificate does not replace operator authorization. EU rules becoming applicable does not mean U-space services are deployed everywhere. [G04][G05][G06]"
+      ],
+      [
+        "Commercial deployment",
+        "Implementation remains location- and operation-specific. Permissions must match the aircraft category, activity and approved operating conditions. [C02][C03][C04]",
+        "Operators deploy under their applicable certifications and permissions. Approval lists do not measure active sites, completed deliveries or commercial profitability. [G01]",
+        "U-space rules apply from 26 January 2023. EASA issued its first USSP certificate to ANRA in May 2025; deployment still depends on designated airspace and services. [G04][G05]"
+      ]
+    ],
+    "note": "Framework descriptions are not route-specific permission, an airspace-capacity guarantee or a measure of market size.\nSources: China [C02] [C03] [C04]; United States [G01] [G02] [G03]; EU / EASA [G04] [G05] [G06]. Full links accompany the data.",
+    "width": "wide"
+  }
+}
