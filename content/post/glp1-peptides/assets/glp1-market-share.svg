@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1152pt" height="720pt" viewBox="0 0 1152 720" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-20T19:42:27.678400</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 720 
+L 1152 720 
+L 1152 0 
+L 0 0 
+z
+" style="fill: #f7f3e7"/>
+  </g>
+  <g id="axes_1"/>
+  <g id="axes_2">
+   <g id="patch_2">
+    <path d="M 377.401166 506.214962 
+C 411.093222 497.111536 440.353212 476.062856 459.697141 447.013949 
+C 479.041069 417.965041 487.17993 382.851619 482.588297 348.254744 
+C 477.996672 313.657872 460.980541 281.882965 434.729105 258.885379 
+C 408.477673 235.887793 374.740234 223.2 339.839994 223.2 
+L 339.839995 263.52 
+C 364.968169 263.52 389.259124 272.655211 408.160155 289.213473 
+C 427.06119 305.771735 439.312804 328.649668 442.618774 353.559416 
+C 445.924749 378.469165 440.06477 403.75083 426.137141 424.666043 
+C 412.209513 445.581256 391.142319 460.736306 366.884039 467.290773 
+z
+" style="fill: #cfae60; stroke: #f7f3e7; stroke-width: 5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 339.840002 223.2 
+C 319.330261 223.2 299.055205 227.581777 280.375842 236.05118 
+C 261.69648 244.520583 245.040314 256.883782 231.525379 272.310895 
+C 218.010444 287.738009 207.94605 305.875977 202.007802 325.507245 
+C 196.069554 345.138513 194.393341 365.813779 197.091695 386.145243 
+C 199.79004 406.476707 206.801197 425.999038 217.654522 443.401764 
+C 228.507847 460.804494 242.954945 475.689338 260.026051 487.057141 
+C 277.097157 498.424943 296.401548 506.015526 316.643435 509.319381 
+C 336.885321 512.623244 357.601438 511.564746 377.401166 506.214962 
+L 366.884039 467.290773 
+C 352.628235 471.142617 337.712631 471.904736 323.138473 469.525954 
+C 308.564314 467.147179 294.665153 461.681959 282.373957 453.497141 
+C 270.082761 445.312323 259.68085 434.595236 251.866456 422.06527 
+C 244.052062 409.535308 239.004029 395.479229 237.06122 380.840575 
+C 235.118405 366.201921 236.325279 351.31573 240.600817 337.181217 
+C 244.876356 323.046704 252.12272 309.987366 261.853473 298.879845 
+C 271.584226 287.772323 283.576665 278.87082 297.025807 272.77285 
+C 310.474948 266.674879 325.072988 263.52 339.840001 263.52 
+z
+" style="fill: #63afaa; stroke: #f7f3e7; stroke-width: 5; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2"/>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #262821" x="339.84" y="349.92" transform="rotate(-0 339.84 349.92)">MAT NOV 2025</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #98762e" x="339.84" y="388.8" transform="rotate(-0 339.84 388.8)">VALUE SHARE</text>
+   </g>
+  </g>
+  <g id="text_3">
+   <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #98762e" x="69.12" y="50.4" transform="rotate(-0 69.12 50.4)">DEX RESEARCH  /  MARKET LANDSCAPE</text>
+  </g>
+  <g id="text_4">
+   <text style="font-weight: 700; font-size: 26px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #262821" x="69.12" y="97.2" transform="rotate(-0 69.12 97.2)">Reported global GLP-1 diabetes value share</text>
+  </g>
+  <g id="text_5">
+   <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #595c54" x="69.12" y="135.36" transform="rotate(-0 69.12 135.36)">IQVIA moving annual total to November 2025, as reported by Novo Nordisk</text>
+  </g>
+  <g id="text_6">
+   <text style="font-size: 28px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #cfae60" x="656.64" y="302.4" transform="rotate(-0 656.64 302.4)">●</text>
+  </g>
+  <g id="text_7">
+   <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #262821" x="696.96" y="298.8" transform="rotate(-0 696.96 298.8)">Novo Nordisk</text>
+  </g>
+  <g id="text_8">
+   <text style="font-weight: 700; font-size: 28px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #262821" x="696.96" y="342" transform="rotate(-0 696.96 342)">45.8%</text>
+  </g>
+  <g id="text_9">
+   <text style="font-size: 28px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #63afaa" x="656.64" y="410.4" transform="rotate(-0 656.64 410.4)">●</text>
+  </g>
+  <g id="text_10">
+   <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #262821" x="696.96" y="406.8" transform="rotate(-0 696.96 406.8)">Other manufacturers combined</text>
+  </g>
+  <g id="text_11">
+   <text style="font-weight: 700; font-size: 28px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #262821" x="696.96" y="450" transform="rotate(-0 696.96 450)">54.2%</text>
+  </g>
+  <g id="text_12">
+   <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #262821" x="69.12" y="612" transform="rotate(-0 69.12 612)">Scope: source-defined GLP-1 diabetes market, not all obesity medicines, peptide APIs or CDMOs.</text>
+  </g>
+  <g id="text_13">
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #595c54" x="69.12" y="644.4" transform="rotate(-0 69.12 644.4)">Other = 100% − 45.8%. Do not interpret the residual as Lilly alone. International tirzepatide is</text>
+  </g>
+  <g id="text_14">
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #595c54" x="69.12" y="663.12" transform="rotate(-0 69.12 663.12)">classified as diabetes in the source; regional coverage is incomplete. Source [M01], FY2025 report p.7.</text>
+  </g>
+ </g>
+</svg>
