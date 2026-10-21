@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "maps": {
+    "glp1-peptide-value-chain": {
+      "title": "Therapeutic peptides and the GLP-1 value chain",
+      "description": "Explore inputs, manufacturing and access, including representative companies and technologies.",
+      "root": {
+        "name": "Therapeutic peptides and GLP-1 medicines",
+        "children": [
+          {
+            "name": "Upstream / Inputs",
+            "children": [
+              {
+                "name": "Building blocks & reagents",
+                "children": [
+                  {
+                    "name": "Merck / Novabiochem [C01]"
+                  }
+                ]
+              },
+              {
+                "name": "Solid supports & resins",
+                "children": [
+                  {
+                    "name": "Sunresin [C02]"
+                  }
+                ]
+              },
+              {
+                "name": "Purification technology",
+                "children": [
+                  {
+                    "name": "YMC / Bachem [C03]"
+                  }
+                ]
+              },
+              {
+                "name": "Recombinant route inputs",
+                "children": [
+                  {
+                    "name": "Yeast cell systems [E06]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Midstream / Manufacturing",
+            "children": [
+              {
+                "name": "Specialist peptide APIs",
+                "children": [
+                  {
+                    "name": "Bachem [C04]"
+                  },
+                  {
+                    "name": "PolyPeptide [C05]"
+                  }
+                ]
+              },
+              {
+                "name": "Diversified CDMO platforms",
+                "children": [
+                  {
+                    "name": "WuXi TIDES [C06]"
+                  },
+                  {
+                    "name": "Asymchem [C09]"
+                  }
+                ]
+              },
+              {
+                "name": "API-to-formulation capability",
+                "children": [
+                  {
+                    "name": "Sinopep [C11]"
+                  },
+                  {
+                    "name": "CordenPharma [C12]"
+                  }
+                ]
+              },
+              {
+                "name": "Fill-finish & device integration",
+                "children": [
+                  {
+                    "name": "Novo sites [E01][E02]"
+                  },
+                  {
+                    "name": "SHL / Thermo Fisher [C07]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Downstream / Access",
+            "children": [
+              {
+                "name": "Branded peptide medicines",
+                "children": [
+                  {
+                    "name": "Novo Nordisk [M01]"
+                  },
+                  {
+                    "name": "Lilly [M02]"
+                  }
+                ]
+              },
+              {
+                "name": "Clinical & prescribing services",
+                "children": [
+                  {
+                    "name": "Clinicians; care providers"
+                  }
+                ]
+              },
+              {
+                "name": "Payment & delivery",
+                "children": [
+                  {
+                    "name": "Payers; wholesalers; pharmacies"
+                  }
+                ]
+              },
+              {
+                "name": "Adjacent non-peptide competition",
+                "children": [
+                  {
+                    "name": "Foundayo / orforglipron [M04]"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "note": "Category connections, not verified supplier contracts. Examples are non-exhaustive, non-exclusive and unranked. The non-peptide branch is a competitive substitute, not peptide manufacturing demand. Source IDs resolve in the evidence appendix.",
+      "sources": [
+        {
+          "title": "Evidence and sources",
+          "url": "/test/glp1-peptides/#appendix-evidence-and-methods"
+        }
+      ],
+      "reviewed": "2026-10-21"
+    }
+  },
+  "shares": {
+    "glp1-diabetes-value-mat-nov-2025": {
+      "title": "Reported global GLP-1 diabetes value share",
+      "period": "MAT to November 2025",
+      "center_label": "MAT NOV 2025",
+      "geography": "Worldwide (source coverage)",
+      "scope": "Source-defined GLP-1 diabetes market, not all obesity medicines, peptide APIs or CDMOs. IQVIA moving annual total to November 2025, as reported by Novo Nordisk.",
+      "metric": "Share of market value (%)",
+      "dimension": "Manufacturer",
+      "percentDecimals": 1,
+      "unit": "%",
+      "series": [
+        {
+          "name": "Novo Nordisk",
+          "value": 45.8
+        },
+        {
+          "name": "Other manufacturers combined",
+          "value": 54.2,
+          "derived": true
+        }
+      ],
+      "source": {
+        "publisher": "Novo Nordisk, citing IQVIA",
+        "title": "[M01] Financial report for the year 2025",
+        "published": "2026-02-03",
+        "url": "https://www.sec.gov/Archives/edgar/data/353278/000035327826000006/caq42025.htm",
+        "locator": "Financial report p.7, GLP-1 diabetes table and footnotes; annual report therapeutic sales"
+      },
+      "note": "Other = 100% − 45.8% = 54.2%, not Lilly alone. International tirzepatide is classified as diabetes in the source, including where an obesity indication exists; regional coverage is incomplete. These are historical market-value estimates, not audited manufacturer net sales.",
+      "reviewed": "2026-10-21"
+    }
+  }
+}

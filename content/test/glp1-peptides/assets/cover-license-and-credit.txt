@@ -1,0 +1,14 @@
+Selected cover: automated liquid handling in a laboratory (contextual photograph, NOT a GLP-1 manufacturing facility).
+Source author/account: National Cancer Institute
+Image source: https://unsplash.com/photos/laboratory-needles-dispensing-into-vials-2fyeLhUeYpg
+Source description: DNA genotyping and sequencing; DNA samples for amplification at the Cancer Genomics Research Laboratory, National Cancer Institute Division of Cancer Epidemiology and Genetics.
+Source publication date: January 8, 2020
+License verified: October 21, 2026
+License: Unsplash License, https://unsplash.com/license
+The image page explicitly labels this photograph free to use under the Unsplash License. The license permits downloading, copying, modifying, distributing and using images for commercial and noncommercial purposes without permission or mandatory attribution. Restrictions include selling images without significant modification and compiling a competing image service. This is not an Unsplash+ image.
+Recommended visible credit: Photo: National Cancer Institute / Unsplash.
+Recommended English caption: Automated sample handling in a research laboratory. Illustrative image; not a GLP-1 manufacturing site.
+Recommended alt: Automated liquid-handling probes positioned over sample vials in a research laboratory.
+Use as a wide cover with CSS object-fit: cover; object-position: 50% 50%; keep the probes and sample vials visible. Do not imply NCI endorsement, and do not call this a drug filling line or peptide synthesis equipment.
+Downloaded original-format image: glp1-laboratory-cover-nci.jpg (2400 x 3600 JPEG).
+Download URL: https://images.unsplash.com/photo-1578496479531-32e296d5c6e1?auto=format&fit=crop&fm=jpg&q=90&w=2400

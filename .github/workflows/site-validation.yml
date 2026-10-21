@@ -83,7 +83,9 @@ jobs:
           node tests/article-history.browser.mjs
       - name: Verify interactive articles on desktop and mobile
         if: ${{ success() || (failure() && steps.chapter_rail.conclusion == 'failure') }}
-        run: node tests/article-visuals.browser.mjs
+        run: |
+          node tests/article-visuals.browser.mjs
+          node tests/glp1-preview.browser.mjs
       - name: Verify fine mind map zoom and gesture boundaries
         if: ${{ success() || (failure() && steps.chapter_rail.conclusion == 'failure') }}
         run: node tests/mindmap-zoom.browser.mjs
