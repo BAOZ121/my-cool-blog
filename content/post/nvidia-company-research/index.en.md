@@ -1,5 +1,5 @@
 ---
-title: "NVIDIA Company Research Report"
+title: "NVIDIA Company Research Brief"
 description: "NVIDIA’s founding history, products and software, revenue, customers, manufacturing partners and disclosed financial results."
 date: 2026-10-05T22:00:00+08:00
 lastmod: 2026-10-05

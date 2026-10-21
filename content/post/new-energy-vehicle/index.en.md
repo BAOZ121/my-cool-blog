@@ -1,5 +1,5 @@
 ---
-title: "Global New Energy Vehicle Industry Report"
+title: "Global New Energy Vehicle Industry Brief"
 description: "Passenger vehicles and the electric mobility value chain. Industry history, regional markets, the value chain, company economics and industry challenges."
 date: "2026-10-18"
 lastmod: "2026-10-18"

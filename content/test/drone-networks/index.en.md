@@ -1,5 +1,5 @@
 ---
-title: "Global Drone Networks and Low-Altitude Logistics Industry Report"
+title: "Global Drone Networks and Low-Altitude Logistics Industry Brief"
 description: "From flight permissions to dependable delivery networks"
 date: "2026-10-20"
 lastmod: "2026-10-20"

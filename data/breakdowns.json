@@ -60,7 +60,7 @@
       ],
       "evidence": [{"text": "SIA's primer distinguishes design, front-end fabrication and back-end assembly, test and packaging. The three-stage map here follows that production sequence.", "source": "sia"}],
       "sources": [{"id": "sia", "publisher": "Semiconductor Industry Association", "title": "Semiconductor Industry Primer: The Stages of Production and Business Models", "url": "https://www.semiconductors.org/semiconductor-industry-primer-the-stages-of-production-and-business-models/", "published": "2015-02-25", "type": "Industry-body explainer", "supports": "Production stages; foundational reference, not current market sizing."}],
-      "related": [{"title": "Semiconductor industry report", "url": "/post/semiconductor-industry-report/"}]
+      "related": [{"title": "Semiconductor industry brief", "url": "/post/semiconductor-industry-report/"}]
     },
     {
       "id": "battery-storage",
@@ -122,7 +122,7 @@
         {"id": "nist-zero-trust", "publisher": "NIST", "title": "SP 800-207: Zero Trust Architecture", "url": "https://csrc.nist.gov/pubs/sp/800/207/final", "published": "2020-08", "type": "Government publication", "supports": "Zero-trust architecture concepts; not an estimate of industry revenue."},
         {"id": "menlo-map", "publisher": "Menlo Ventures", "title": "Cybersecurity Market Map", "url": "https://menlovc.com/wp-content/uploads/2021/01/cybersecurity_market_map-091922.pdf", "published": "2022-09", "type": "Investor research · PDF", "supports": "Illustrative historical vendor categories; not a verified 2026 revenue dataset."}
       ],
-      "related": [{"title": "Cybersecurity industry report", "url": "/post/cybersecurity-industry-report/"}]
+      "related": [{"title": "Cybersecurity industry brief", "url": "/post/cybersecurity-industry-report/"}]
     },
     {
       "id": "robotics",
@@ -149,7 +149,7 @@
       ],
       "evidence": [{"text": "ABB's robotics services cover installation, support, maintenance and modernization, illustrating commercial activity beyond the initial equipment sale.", "source": "abb"}],
       "sources": [{"id": "abb", "publisher": "ABB", "title": "Robotics Services", "url": "https://www.abb.com/global/en/areas/robotics/services", "published": "Undated; product/service page", "type": "Company documentation", "supports": "One vendor's service offerings; not independent evidence of achieved returns or industry-wide revenue mix."}],
-      "related": [{"title": "Global embodied intelligence and humanoid robotics industry report", "url": "/post/embodied-intelligence-humanoid-robotics/"}]
+      "related": [{"title": "Global embodied intelligence and humanoid robotics industry brief", "url": "/post/embodied-intelligence-humanoid-robotics/"}]
     },
     {
       "id": "biopharmaceuticals",
@@ -182,7 +182,7 @@
         {"id": "fda", "publisher": "US Food and Drug Administration", "title": "The Drug Development Process", "url": "https://www.fda.gov/patients/learn-about-drug-and-device-approvals/drug-development-process", "published": "Undated overview; reviewed on the date shown above", "type": "Regulator explainer", "supports": "US development and review stages; not clinical advice or evidence for a particular drug."},
         {"id": "drug-act", "publisher": "U.S. Congress / GovInfo", "title": "Drug Amendments of 1962, Public Law 87-781", "url": "https://www.govinfo.gov/content/pkg/STATUTE-76/pdf/STATUTE-76-Pg780.pdf", "published": "1962-10-10", "type": "Original statute · PDF", "supports": "Historical U.S. effectiveness requirement and regulatory powers; not a global or modern market-size estimate."}
       ],
-      "related": [{"title": "Pharmaceutical industry report", "url": "/post/pharmaceutical-industry/"}]
+      "related": [{"title": "Pharmaceutical industry brief", "url": "/post/pharmaceutical-industry/"}]
     }
   ]
 }
