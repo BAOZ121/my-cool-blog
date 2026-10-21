@@ -1,5 +1,5 @@
 ---
-title: "Commercial Space and Advanced Engineering Industry Report"
+title: "Commercial Space and Advanced Engineering Industry Brief"
 description: "An evidence-based guide to commercial space history, the value chain and representative companies, market structure, and the path from engineering capability to delivery and cash flow."
 date: "2026-10-04"
 image: "cover.jpg"

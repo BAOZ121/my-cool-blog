@@ -1,5 +1,5 @@
 ---
-title: "AMD Company Research Report"
+title: "AMD Company Research Brief"
 description: "Founding history, products, customers, manufacturing, financial results and governance. Public information through 13 October 2026."
 date: 2026-10-13
 url: "/post/amd-company-research/"

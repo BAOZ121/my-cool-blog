@@ -1,5 +1,5 @@
 ---
-title: "Global Solid Waste Management and Resource Recovery Industry Report"
+title: "Global Solid Waste Management and Resource Recovery Industry Brief"
 description: "Industry structure and operating economics"
 date: 2026-10-10
 lastmod: 2026-10-10

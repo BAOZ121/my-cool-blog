@@ -1,5 +1,5 @@
 ---
-title: "Global Embodied Intelligence and Humanoid Robotics Industry Report"
+title: "Global Embodied Intelligence and Humanoid Robotics Industry Brief"
 description: "Industry story history market structure and operating challenges"
 date: 2026-10-13
 lastmod: 2026-10-13

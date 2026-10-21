@@ -1,5 +1,5 @@
 +++
-title = "Global Nuclear Equipment and Services Industry Report"
+title = "Global Nuclear Equipment and Services Industry Brief"
 description = "Industry history, the value chain, global markets and the constraints on equipment delivery and long term services"
 date = 2026-10-13T18:17:09+08:00
 lastmod = 2026-10-13

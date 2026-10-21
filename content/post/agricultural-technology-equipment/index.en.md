@@ -1,5 +1,5 @@
 ---
-title: "Global Agricultural Technology and Equipment Industry Report"
+title: "Global Agricultural Technology and Equipment Industry Brief"
 description: "Industry history, machinery and precision agriculture, drones and robots, irrigation, regional markets and farm operating economics."
 date: "2026-10-16"
 lastmod: "2026-10-16"

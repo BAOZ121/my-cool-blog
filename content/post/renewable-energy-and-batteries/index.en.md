@@ -1,5 +1,5 @@
 ---
-title: "Global Renewable Energy and Battery Industry Report"
+title: "Global Renewable Energy and Battery Industry Brief"
 description: "A fresh global report on renewable electricity and batteries, covering industry history, value chains, market structure and operating challenges."
 date: "2026-10-06"
 image: "cover-web.webp"
