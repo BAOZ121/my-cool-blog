@@ -1,0 +1,98 @@
+{
+  "glp1-revenue-comparison": {
+    "title": "Company-disclosed sales: keep periods and currencies separate",
+    "description": "Selected disclosures reproduced from the report, not a market-share calculation.",
+    "width": "wide",
+    "header": [
+      {
+        "label": "Company / measure"
+      },
+      {
+        "label": "Period"
+      },
+      {
+        "label": "Currency"
+      },
+      {
+        "label": "Amount (billion)",
+        "numeric": true
+      },
+      {
+        "label": "Interpretation / source"
+      }
+    ],
+    "rows": [
+      [
+        "Novo Nordisk: GLP-1 diabetes sales",
+        "FY2025",
+        "DKK",
+        "152.202",
+        "Diabetes business measure [M01]"
+      ],
+      [
+        "Novo Nordisk: obesity-care sales",
+        "FY2025",
+        "DKK",
+        "82.347",
+        "Not interchangeable with diabetes sales [M01]"
+      ],
+      [
+        "Lilly: Mounjaro",
+        "FY2025",
+        "USD",
+        "22.965",
+        "Worldwide brand revenue [M02]"
+      ],
+      [
+        "Lilly: Zepbound",
+        "FY2025",
+        "USD",
+        "13.542",
+        "Worldwide brand revenue [M02]"
+      ],
+      [
+        "Lilly: Mounjaro",
+        "H1 2026",
+        "USD",
+        "18.605",
+        "Half-year, not annual [M06]"
+      ],
+      [
+        "Lilly: Zepbound",
+        "H1 2026",
+        "USD",
+        "9.088",
+        "Half-year, not annual [M06]"
+      ],
+      [
+        "Lilly: Foundayo",
+        "H1 2026",
+        "USD",
+        "0.098",
+        "Early launch revenue; non-peptide drug [M06]"
+      ],
+      [
+        "Novo Nordisk: total reported sales",
+        "H1 2026",
+        "DKK",
+        "175.311",
+        "Includes 340B provision reversal [M05]"
+      ],
+      [
+        "Novo Nordisk: 340B provision reversal",
+        "H1 2026",
+        "DKK",
+        "26.760",
+        "Accounting adjustment, not additional volume [M05]"
+      ],
+      [
+        "Novo Nordisk: adjusted sales",
+        "H1 2026",
+        "DKK",
+        "148.551",
+        "175.311 − 26.760 [M05]"
+      ]
+    ],
+    "note": "Do not sum currencies, overlap brand sales with company totals, or add half-year and annual observations. Brand revenue cannot establish API or CDMO demand or whole-value-chain shares. Values come from [M01], [M02], [M05] and [M06]."
+  }
+}
