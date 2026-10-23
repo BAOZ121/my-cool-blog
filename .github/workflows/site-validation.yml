@@ -62,7 +62,7 @@ jobs:
         run: python3 scripts/validate_breakdowns.py public
       - name: Check article graphics, provenance and CSV exports
         run: python3 scripts/validate_article_visuals.py public
-      - name: Verify inert community integration and both HTML modes
+      - name: Verify retired community and isolated legacy fixtures
         run: |
           node --test tests/community-real.test.mjs
           npm test --prefix backend
@@ -103,5 +103,4 @@ jobs:
         run: |
           node --test tests/site-navigation.test.mjs tests/site-account.test.mjs tests/community-account-hint.test.mjs
           node tests/site-navigation.browser.mjs
-          node tests/site-account.browser.mjs
-          node tests/navigation-merger.browser.mjs
+          node tests/community-retired.browser.mjs

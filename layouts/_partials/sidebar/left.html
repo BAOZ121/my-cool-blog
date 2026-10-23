@@ -60,7 +60,7 @@
             <p class="site-description">{{ .Site.Params.sidebar.subtitle }}</p>
         </div>
     </header>
-    {{ if .Params.forumtest }}{{ if eq (partial "community/config.html" .).enabled true }}{{ partial "community/account.html" . }}{{ else }}{{ partial "forum-test/account.html" . }}{{ end }}{{ else if not (partial "community/is-test.html" .) }}{{ partial "site-navigation/account.html" . }}{{ end }}
+{{ if not hugo.Data.community.retired }}    {{ if .Params.forumtest }}{{ if eq (partial "community/config.html" .).enabled true }}{{ partial "community/account.html" . }}{{ else }}{{ partial "forum-test/account.html" . }}{{ end }}{{ else if not (partial "community/is-test.html" .) }}{{ partial "site-navigation/account.html" . }}{{ end }}{{ end }}
 
     {{- with .Site.Menus.social -}}
         <ol class="menu-social">
@@ -83,7 +83,7 @@
     {{- end -}}
 
     <ol class="menu" id="main-menu">
-        <li class="df-community-nav{{ if .Params.forumtest }} current{{ end }}"><a href="/test/forum-v1/" data-community-entry title="Forum" {{ if .Params.forumtest }}aria-current="page"{{ end }}><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 11a8 8 0 0 1-8 8H6l-4 3 1-6a8 8 0 0 1-1-5 9 9 0 0 1 19 0Z"/></svg><span>Forum</span></a></li>
+{{ if not hugo.Data.community.retired }}        <li class="df-community-nav{{ if .Params.forumtest }} current{{ end }}"><a href="/test/forum-v1/" data-community-entry title="Forum" {{ if .Params.forumtest }}aria-current="page"{{ end }}><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 11a8 8 0 0 1-8 8H6l-4 3 1-6a8 8 0 0 1-1-5 9 9 0 0 1 19 0Z"/></svg><span>Forum</span></a></li>{{ end }}
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
         {{ $active := or (eq $currentPage.RelPermalink .URL) (or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .)) }}

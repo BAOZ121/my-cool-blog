@@ -1,6 +1,6 @@
 export const COMMUNITY_PATHS = Object.freeze({ forum: '/test/forum-v1/', admin: '/test/forum-admin-v1/', callback: '/test/auth/callback-v1/', recovery: '/test/auth/recovery-v1/' });
 export function validateCommunityConfig(input = {}, runtimeOrigin) {
-  if (input.enabled !== true) return Object.freeze({ enabled: false, googleEnabled: false, emailStepupEnabled: false });
+  if (input.retired === true || input.enabled !== true) return Object.freeze({ enabled: false, googleEnabled: false, emailStepupEnabled: false });
   const bad = () => { throw Object.assign(new Error('Community sign-in is not configured for this site.'), { code: 'INVALID_CONFIG' }); };
   let site, project;
   try { site = new URL(input.allowedOrigin); project = new URL(input.supabaseUrl); } catch { return bad(); }

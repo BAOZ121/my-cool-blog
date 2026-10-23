@@ -212,8 +212,8 @@ try {
     const chapters = page.locator('.chapter-disclosure');
     const chapterSummary = page.locator('.chapter-widget summary');
     const names = await page.locator('#main-menu > li > a').evaluateAll(nodes => nodes.map(node => node.textContent.trim()));
-    assert.deepEqual(names, ['Forum', 'Home', 'Library', 'Search', 'Contact', 'About & Methodology'], 'Forum and Library each have one accessible sidebar entry');
-    assert.deepEqual(await page.locator('#main-menu > li > a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href'))), ['/test/forum-v1/', '/', '/library/', '/search/', '/contact/', '/about/'], 'Unified entries retain every remaining menu destination');
+    assert.deepEqual(names, ['Home', 'Library', 'Search', 'Contact', 'About & Methodology'], 'Retired Forum is absent and active destinations remain accessible');
+    assert.deepEqual(await page.locator('#main-menu > li > a').evaluateAll(nodes => nodes.map(node => node.getAttribute('href'))), ['/', '/library/', '/search/', '/contact/', '/about/'], 'Unified entries retain every remaining menu destination');
     await expect(disclosure).toHaveJSProperty('open', true);
     await expect(summary).toHaveAccessibleName('Minimize navigation');
     const expanded = await desktopLayout(page, false, false);
@@ -275,21 +275,16 @@ try {
       await page.reload();
       await expect(disclosure).toHaveJSProperty('open', true);
     }
-    // Activate the real anchors, including in no-JS mode. This HTTP fixture
-    // deliberately fails closed for HTTPS Auth; panel behavior is tested with
-    // the matching HTTPS synthetic community UI, without real credentials.
+    // Remaining destinations retain native keyboard navigation and history.
+    assert.equal(await page.locator('[data-community-entry], [data-site-account]').count(), 0);
     const sourceURL = page.url();
-    for (const [label, route] of [['Forum', '/test/forum-v1/']]) {
-      const link = page.locator(`#main-menu > li > a[href="${route}"]`);
-      await expect(link).toHaveAccessibleName(label);
-      await link.focus();
-      await page.keyboard.press('Enter');
-      await page.waitForURL(origin + route, { waitUntil: 'domcontentloaded' });
-      await expect(page.locator('#rc-root[data-community-mode="forum"]')).toBeVisible();
-      assert.equal(page.url(), origin + route, 'Native navigation opens the unified Forum');
-      await page.goBack({ waitUntil: 'domcontentloaded' });
-      await page.waitForURL(sourceURL);
-    }
+    const link = page.locator('#main-menu > li > a[href="/about/"]');
+    await expect(link).toHaveAccessibleName('About & Methodology');
+    await link.focus();
+    await page.keyboard.press('Enter');
+    await page.waitForURL(origin + '/about/', { waitUntil: 'domcontentloaded' });
+    await page.goBack({ waitUntil: 'domcontentloaded' });
+    await page.waitForURL(sourceURL);
     assert.deepEqual(errors, [], 'No runtime errors');
     console.log(`PASS site navigation ${width}px ${scheme} ${motion} ${js ? 'JS' : 'no JS'}: keyboard, accessible icons, geometry, independent rails${js ? ', global persistence and strict native Back' : ''}`);
     await context.close();
