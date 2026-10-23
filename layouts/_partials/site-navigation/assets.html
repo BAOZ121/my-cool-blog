@@ -3,9 +3,12 @@
 {{- $script := resources.Get "js/site-navigation.mjs" | fingerprint -}}
 <script type="module" src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" crossorigin="anonymous"></script>
 
+{{ if not hugo.Data.community.retired }}
 {{- $accountStyle := resources.Get "css/site-account.css" | minify | fingerprint -}}
 <link rel="stylesheet" href="{{ $accountStyle.RelPermalink }}" integrity="{{ $accountStyle.Data.Integrity }}" crossorigin="anonymous">
 {{- if and (eq (partial "community/config.html" .).enabled true) (not (partial "community/is-test.html" .)) -}}
 {{- $accountScript := resources.Get "js/generated/site-account.js" | fingerprint -}}
 <script type="module" src="{{ $accountScript.RelPermalink }}" integrity="{{ $accountScript.Data.Integrity }}" crossorigin="anonymous"></script>
 {{- end -}}
+
+{{ end }}

@@ -34,7 +34,7 @@ try {
   // Use the normal self-hosted bundle pipeline under synthetic server-secret
   // environment values, then prove those values never enter public artifacts.
   execFileSync(process.execPath, ['scripts/build-community.mjs'], { cwd: root, env: buildEnv, stdio: 'pipe' });
-  for (const [name, config] of [['disabled', sourceConfig], ['totp-enabled', enabled], ['email-enabled', { ...enabled, emailStepupEnabled: true }], ['google-enabled', { ...enabled, emailStepupEnabled: true, googleEnabled: true }]]) {
+  for (const [name, config] of [['retired', { ...sourceConfig, retired: true }], ['retired-overrides-enabled', { ...enabled, retired: true }], ['disabled', sourceConfig], ['totp-enabled', enabled], ['email-enabled', { ...enabled, emailStepupEnabled: true }], ['google-enabled', { ...enabled, emailStepupEnabled: true, googleEnabled: true }]]) {
     const fixture = join(temporary, name), data = join(fixture, 'data'), staticDir = join(fixture, 'static'), output = join(fixture, 'public');
     await mkdir(fixture); await cp(resolve('data'), data, { recursive: true }); await mkdir(staticDir);
     await writeFile(join(data, 'community.json'), JSON.stringify(config));
@@ -57,7 +57,12 @@ try {
         const attrs = attributes(script[0]); assert.ok(attrs.src?.startsWith('/'), 'All executable scripts must be same-origin external assets.');
         assert.doesNotMatch(script[0].replace(/^<script[^>]*>/, '').replace(/<\/script>$/, ''), /\S/);
       }
-      if (config.enabled) {
+      if (config.retired) {
+        assert.match(html, /data-community-retired/);
+        assert.doesNotMatch(html, /<form\b|<input\b|<textarea\b|data-community-mode|data-community-entry|data-site-account|dex-community-publishable-key|dex-community-email-stepup/);
+        for (const script of html.matchAll(/<script\b[^>]*>/g)) assert.doesNotMatch(attributes(script[0]).src || '', /community-real|forum-test|forum-admin-test|site-account/);
+        if (path.includes('/auth/')) assert.match(html, /data-disabled-callback=true|data-disabled-callback="true"/);
+      } else if (config.enabled) {
         assert.match(html, /data-community-mode=/); assert.doesNotMatch(html, /dex-onsite-forum|Enter member demo|Enter moderator demo/);
         assert.match(html, /dex-community-publishable-key/);
         const googleMeta = [...html.matchAll(/<meta\b[^>]*>/g)].map(match => attributes(match[0])).find(attrs => attrs.name === 'dex-community-google');
@@ -75,16 +80,17 @@ try {
     const homeMain = home.match(/<main\b[^>]*>[\s\S]*?<\/main>/)?.[0];
     assert.ok(homeMain);
     if (referenceHomeMain === undefined) referenceHomeMain = homeMain; else assert.equal(homeMain, referenceHomeMain, 'Account presentation must not alter home content.');
-    assert.match(home, /href="?\/test\/forum-v1\/(?:"|\s)[^>]*data-community-entry/);
-    assert.equal((home.match(/data-community-entry\b/g) || []).length, 1, 'The unified Forum has one sidebar entry.');
-    assert.equal(/data-site-account\b/.test(home), config.enabled);
-    assert.equal(/site-account\.[a-f0-9]+\.js/.test(home), config.enabled);
-    if (config.enabled) {
+    if (!config.retired) assert.match(home, /href="?\/test\/forum-v1\/(?:"|\s)[^>]*data-community-entry/);
+    assert.equal((home.match(/data-community-entry\b/g) || []).length, config.retired ? 0 : 1, 'Only legacy fixtures expose a Forum sidebar entry.');
+    assert.equal(/data-site-account\b/.test(home), config.enabled && !config.retired);
+    assert.equal(/site-account\.[a-f0-9]+\.js/.test(home), config.enabled && !config.retired);
+    if (config.enabled && !config.retired) {
       assert.match(home, /href="?\/test\/forum-v1\/#signin/);
       assert.match(home, /href="?\/test\/forum-v1\/#register/);
       assert.match(home, /href="?\/test\/forum-v1\/#account/);
       assert.doesNotMatch(home, /data-site-account-(?:email|admin|signout)/);
     }
+    if (config.retired) assert.doesNotMatch(home, /data-site-account|href=["']?\/test\/(?:forum|auth)/);
     const widgetMeta = JSON.parse(await readFile(resolve('assets/js/generated/site-account.meta.json'), 'utf8'));
     assert.ok(Object.keys(widgetMeta.inputs).every(path => /^assets\/js\/site-account(?:-hint|-entry)?\.mjs$/.test(path)), 'Formal-page bundle must be passive, without SDK/Auth/community UI imports.');
     await checkNoSecrets(output);

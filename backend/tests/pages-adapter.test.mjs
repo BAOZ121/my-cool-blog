@@ -37,87 +37,41 @@ async function bundledAdapter(entry, fetchImpl) {
   } finally { globalThis.fetch = previous; }
 }
 
-test('all four Pages entrypoints bundle the shared handler as browser-compatible ESM', async () => {
+test('retired adapters bundle independently without backend or SDK dependencies', async () => {
   for (const entry of entrypoints) {
-    const { module, source, metadata } = await bundledAdapter(entry, async () => { throw new Error('Unexpected network'); });
+    const { module, source, metadata } = await bundledAdapter(entry, () => { throw new Error('Network forbidden'); });
     assert.deepEqual(Object.keys(module), ['onRequest']);
-    assert.equal(typeof module.onRequest, 'function');
-    assert.deepEqual(Object.keys(metadata.inputs).sort(), ['backend/api/handler.mjs', 'backend/api/admin-stepup.mjs', entry].sort());
-    assert.ok(!source.includes('node:'));
-    assert.ok(!source.includes('process.env'));
-    assert.ok(!source.includes('SUPABASE_SECRET_KEY'));
-    assert.ok(!source.includes('SUPABASE_SERVICE_ROLE_KEY'));
+    assert.deepEqual(Object.keys(metadata.inputs), [entry]);
+    assert.doesNotMatch(source, /node:|process\.env|SUPABASE|createCommunity|fetch\(/);
   }
 });
 
-test('real Pages adapters remain closed with absent, partial or false configuration', async () => {
-  let calls = 0;
+test('all retired API namespaces return 410 for every method and configuration without side effects', async () => {
+  let fetches = 0;
+  const previousFetch = globalThis.fetch;
+  globalThis.fetch = () => { fetches++; throw new Error('Network forbidden'); };
+  try {
   for (const entry of entrypoints) {
-    const { module } = await bundledAdapter(entry, async () => { calls += 1; throw new Error('Network forbidden'); });
-    for (const env of [undefined, {}, { ...ENV, COMMUNITY_BACKEND_ENABLED: 'false' },
-      { COMMUNITY_BACKEND_ENABLED: 'true' }]) {
-      const request = new Request(`${ORIGIN}/api/community/topics`);
-      const result = await module.onRequest({ request, env, next: () => { throw new Error('No static fallthrough'); } });
-      assert.equal(result.status, 503);
-      assert.equal((await result.json()).error.code, 'backend_disabled');
-      assert.equal(result.headers.get('Cache-Control'), 'no-store');
-      assert.equal(result.headers.get('Access-Control-Allow-Origin'), null);
+    const { module } = await bundledAdapter(entry, () => { fetches++; throw new Error('Network forbidden'); });
+    for (const env of [undefined, {}, ENV, { ...ENV, COMMUNITY_BACKEND_ENABLED: 'false' }]) {
+      for (const method of ['GET', 'HEAD', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS']) {
+        for (const path of ['/api/community', '/api/community/', '/api/community/topics', '/api/community/unknown', '/api/admin', '/api/admin/', '/api/admin/session', '/api/admin/stepup/request', '/api/admin/stepup/verify', '/api/admin/stepup/cancel']) {
+          const response = await module.onRequest({ env, request: new Request(`${ORIGIN}${path}`, { method }), next() { throw new Error('No static fallback'); } });
+          assert.equal(response.status, 410);
+          assert.equal((await response.json()).error.code, 'COMMUNITY_RETIRED');
+          assert.equal(response.headers.get('Cache-Control'), 'no-store');
+          assert.equal(response.headers.get('X-Content-Type-Options'), 'nosniff');
+          assert.match(response.headers.get('Content-Type'), /^application\/json/);
+          assert.equal(response.headers.get('Access-Control-Allow-Origin'), null);
+        }
+      }
     }
+    const inaccessible = new Proxy({}, { get() { throw new Error('Retired adapter must not inspect context, credentials, requests or env'); } });
+    assert.equal((await module.onRequest(inaccessible)).status, 410);
+    assert.equal((await module.onRequest()).status, 410);
   }
-  assert.equal(calls, 0);
-});
-
-test('exact namespace base and unknown routes yield guarded JSON without static fallback', async () => {
-  let calls = 0;
-  for (const [entry, paths] of [
-    ['functions/api/community/index.js', ['/api/community', '/api/community/']],
-    ['functions/api/admin/index.js', ['/api/admin', '/api/admin/']],
-    ['functions/api/community/[[path]].js', ['/api/community/unknown', '/api/community/topics/invalid-uuid']],
-    ['functions/api/admin/[[path]].js', ['/api/admin/unknown', '/api/admin/auth/register']],
-  ]) {
-    const { module } = await bundledAdapter(entry, async () => { calls += 1; throw new Error('Network forbidden'); });
-    for (const path of paths) {
-      const result = await module.onRequest({ request: new Request(`${ORIGIN}${path}`), env: ENV,
-        next: () => { throw new Error('No static fallthrough'); } });
-      assert.equal(result.status, path.endsWith('invalid-uuid') ? 400 : 404);
-      assert.match(result.headers.get('Content-Type'), /^application\/json/);
-    }
-  }
-  assert.equal(calls, 0);
-});
-
-test('adapter preserves configured origins, method allowlist and protected-route checks', async () => {
-  let calls = 0;
-  const { module } = await bundledAdapter('functions/api/admin/[[path]].js', async () => {
-    calls += 1; throw new Error('Network forbidden');
-  });
-  const cases = [
-    [new Request(`${ORIGIN}/api/admin/session`), 401],
-    [new Request(`${ORIGIN}/api/admin/session`, { headers: { Origin: 'https://evil.example' } }), 403],
-    [new Request(`${ORIGIN}/api/admin/session`, { method: 'DELETE' }), 405],
-    [new Request(`${ORIGIN}/api/admin/posts/22222222-2222-4222-8222-222222222222/hide`, { method: 'POST' }), 403],
-  ];
-  for (const [request, status] of cases) assert.equal((await module.onRequest({ request, env: ENV })).status, status);
-  assert.equal(calls, 0);
-});
-
-test('adapter forwards public reads only to controlled Supabase origin without caller credentials', async () => {
-  const calls = [];
-  const { module } = await bundledAdapter('functions/api/community/[[path]].js', async (url, init) => {
-    calls.push({ url: new URL(url), init });
-    return new Response('[]', { headers: { 'Content-Type': 'application/json' } });
-  });
-  const response = await module.onRequest({ request: new Request(`${ORIGIN}/api/community/topics`, {
-    headers: { Authorization: 'Bearer not-a-real-user-token', Cookie: 'private=do-not-forward' },
-  }), env: ENV });
-  assert.equal(response.status, 200);
-  assert.equal(calls.length, 1);
-  assert.equal(calls[0].url.origin, ENV.SUPABASE_URL);
-  assert.equal(calls[0].url.pathname, '/rest/v1/community_posts');
-  assert.equal(calls[0].init.headers.Authorization, undefined);
-  assert.equal(calls[0].init.headers.Cookie, undefined);
-  assert.equal(calls[0].init.headers.apikey, ENV.SUPABASE_PUBLISHABLE_KEY);
-  assert.equal(calls[0].init.redirect, 'manual');
+  assert.equal(fetches, 0);
+  } finally { globalThis.fetch = previousFetch; }
 });
 
 test('Hugo invocation manifest includes only exact API namespaces and leaves site assets static', async () => {
@@ -138,45 +92,4 @@ test('Hugo invocation manifest includes only exact API namespaces and leaves sit
     deployedFiles.push(...names.map((name) => `functions/api/${directory}/${name}`));
   }
   assert.deepEqual(deployedFiles.sort(), [...entrypoints].sort());
-});
-
-test('real bundled admin adapter mounts guarded email capability and cancellation without review imports', async () => {
-  const uid = '11111111-1111-4111-8111-111111111111';
-  const sid = '22222222-2222-4222-8222-222222222222';
-  const challenge = '33333333-3333-4333-8333-333333333333';
-  const token = 'not-a-real-original-password-token';
-  const calls = [];
-  const { module, metadata } = await bundledAdapter('functions/api/admin/[[path]].js', async (url, init) => {
-    calls.push({ path: new URL(url).pathname, init });
-    const body = new URL(url).pathname === '/auth/v1/user'
-      ? { id: uid, role: 'authenticated', email: 'owner@example.test', email_confirmed_at: '2026-01-01T00:00:00Z' }
-      : new URL(url).pathname.endsWith('/community_me')
-        ? { user_id: uid, role: 'owner', state: 'active', email_verified: true, can_post: true, can_moderate: false,
-          aal: 'aal1', version: 1, admin_auth_method: 'email', can_request_email_stepup: true }
-        : new URL(url).pathname.endsWith('/community_admin_stepup_status')
-          ? { enabled: true, admitted: false, original_session_id: sid, idle_expires_epoch: null, absolute_expires_epoch: null }
-          : { cancelled: true, already_used: false };
-    return new Response(JSON.stringify(body));
-  });
-  assert.ok(!Object.keys(metadata.inputs).some(path => path.includes('stepup-review')));
-  const env = { ...ENV, COMMUNITY_EMAIL_STEPUP_ENABLED: 'true',
-    ADMIN_STEPUP_HMAC_KEY: 'test-only-hmac-key-not-a-real-secret-123456789',
-    ADMIN_STEPUP_RESEND_KEY: 're_test_only_not_a_real_sending_key' };
-  const session = await module.onRequest({ env, request: new Request(`${ORIGIN}/api/admin/session`, {
-    headers: { Authorization: `Bearer ${token}` },
-  }) });
-  assert.equal(session.status, 200);
-  const data = (await session.json()).data;
-  assert.equal(data.admin_auth_method, 'email');
-  assert.equal(data.admitted, false);
-  assert.equal(data.session_id, sid);
-  const cancel = await module.onRequest({ env: { ...env, ADMIN_STEPUP_HMAC_KEY: '', ADMIN_STEPUP_RESEND_KEY: '' },
-    request: new Request(`${ORIGIN}/api/admin/stepup/cancel`, { method: 'POST',
-      headers: { Authorization: `Bearer ${token}`, Origin: ORIGIN, 'Sec-Fetch-Site': 'same-origin', 'Content-Type': 'application/json' },
-      body: JSON.stringify({ challenge_id: challenge }),
-    }) });
-  assert.equal(cancel.status, 200);
-  assert.deepEqual(await cancel.json(), { data: { cancelled: true, already_used: false } });
-  for (const call of calls) assert.equal(call.init.headers.Authorization, `Bearer ${token}`);
-  assert.equal(calls.at(-1).path, '/rest/v1/rpc/community_admin_stepup_cancel');
 });

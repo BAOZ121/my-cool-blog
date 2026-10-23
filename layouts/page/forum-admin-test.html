@@ -1,5 +1,6 @@
 {{ define "body-class" }}article-page forum-admin-test-page{{ end }}
 {{ define "head" }}
+{{ if not hugo.Data.community.retired }}
 {{ $baseCSS := resources.Get "css/forum-test.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $baseCSS.RelPermalink }}" integrity="{{ $baseCSS.Data.Integrity }}">
 {{ $css := resources.Get "css/forum-admin-test.css" | minify | fingerprint }}
@@ -11,7 +12,11 @@
 <script type="module" src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 {{ end }}
 {{ end }}
+{{ end }}
 {{ define "main" }}
+{{ if hugo.Data.community.retired }}
+{{ partial "community/closed.html" . }}
+{{ else }}
 {{ if eq (partial "community/config.html" .).enabled true }}
 {{ partial "community/admin.html" . }}
 {{ else }}
@@ -84,4 +89,5 @@
 </div>
 {{ end }}
 {{ partialCached "footer/footer" . }}
+{{ end }}
 {{ end }}

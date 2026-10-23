@@ -1,9 +1,14 @@
 {{ define "body-class" }}article-page forum-test-page{{ end }}
 {{ define "head" }}
+{{ if not hugo.Data.community.retired }}
 {{ $css := resources.Get "css/forum-test.css" | minify | fingerprint }}<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 {{ if eq (partial "community/config.html" .).enabled true }}{{ partial "community/assets.html" . }}{{ end }}
 {{ end }}
+{{ end }}
 {{ define "main" }}
+{{ if hugo.Data.community.retired }}
+{{ partial "community/closed.html" . }}
+{{ else }}
 <div class="dex-forum rc-community" id="rc-root" data-community-mode="{{ .Params.authmode }}">
 <header class="topbar"><span>DEX / <b>ACCOUNT SECURITY</b></span><a href="/test/forum-v1/">Back to community</a></header>
 <section class="hero"><div class="eyebrow">YOUR DEX ACCOUNT</div><h1>{{ .Title }}</h1></section>
@@ -18,4 +23,5 @@
 {{ else }}<p class="auth-notice">The community backend is disabled. Account verification and password recovery are not connected. No credentials can be entered here.</p>{{ end }}
 </div>
 {{ partialCached "footer/footer" . }}
+{{ end }}
 {{ end }}
