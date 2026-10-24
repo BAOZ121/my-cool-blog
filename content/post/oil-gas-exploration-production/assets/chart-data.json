@@ -1,0 +1,144 @@
+{
+  "oil": {
+    "year": 2025,
+    "scope": "Worldwide crude oil and condensate production",
+    "unit": "thousand barrels/day",
+    "world": 85760,
+    "countries": [
+      [
+        "United States",
+        13586
+      ],
+      [
+        "Russia",
+        10161
+      ],
+      [
+        "Saudi Arabia",
+        9727
+      ],
+      [
+        "Canada",
+        5358
+      ],
+      [
+        "Iran",
+        4446
+      ],
+      [
+        "China",
+        4340
+      ]
+    ],
+    "source": "S01",
+    "printed_page": 33,
+    "rows": [
+      {
+        "country": "United States",
+        "production": 13586,
+        "share_pct": 15.841884328358208
+      },
+      {
+        "country": "Russia",
+        "production": 10161,
+        "share_pct": 11.848180970149254
+      },
+      {
+        "country": "Saudi Arabia",
+        "production": 9727,
+        "share_pct": 11.342117537313433
+      },
+      {
+        "country": "Canada",
+        "production": 5358,
+        "share_pct": 6.2476679104477615
+      },
+      {
+        "country": "Iran",
+        "production": 4446,
+        "share_pct": 5.184235074626866
+      },
+      {
+        "country": "China",
+        "production": 4340,
+        "share_pct": 5.060634328358209
+      },
+      {
+        "country": "Other",
+        "production": 38142,
+        "share_pct": 44.47527985074627
+      }
+    ]
+  },
+  "gas": {
+    "year": 2025,
+    "scope": "Worldwide natural gas marketed production",
+    "unit": "billion cubic metres/year",
+    "world": 4196.5,
+    "countries": [
+      [
+        "United States",
+        1073.7
+      ],
+      [
+        "Russia",
+        609.4
+      ],
+      [
+        "Iran",
+        264.8
+      ],
+      [
+        "China",
+        264.1
+      ],
+      [
+        "Canada",
+        206.2
+      ],
+      [
+        "Qatar",
+        183.5
+      ]
+    ],
+    "source": "S01",
+    "printed_page": 47,
+    "rows": [
+      {
+        "country": "United States",
+        "production": 1073.7,
+        "share_pct": 25.58560705349696
+      },
+      {
+        "country": "Russia",
+        "production": 609.4,
+        "share_pct": 14.521625163826998
+      },
+      {
+        "country": "Iran",
+        "production": 264.8,
+        "share_pct": 6.310020254974384
+      },
+      {
+        "country": "China",
+        "production": 264.1,
+        "share_pct": 6.293339687835101
+      },
+      {
+        "country": "Canada",
+        "production": 206.2,
+        "share_pct": 4.913618491600143
+      },
+      {
+        "country": "Qatar",
+        "production": 183.5,
+        "share_pct": 4.372691528654832
+      },
+      {
+        "country": "Other",
+        "production": 1594.8,
+        "share_pct": 38.00309781961158
+      }
+    ]
+  }
+}

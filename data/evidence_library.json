@@ -2,6 +2,502 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "oil-gas-exploration-production",
+      "title": "Oil and Gas Exploration and Production",
+      "url": "/post/oil-gas-exploration-production/",
+      "published": "2026-10-24",
+      "notices": [],
+      "entries": [
+        {
+          "id": "00aecaa118bd",
+          "url": "https://commons.wikimedia.org/wiki/File:Oil_platform_P-51_(Brazil).jpg",
+          "title": "Divulgação Petrobras / ABr — Oil platform P-51 (Brazil)",
+          "kind": "link",
+          "format": "Web",
+          "host": "commons.wikimedia.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "Article",
+              "url": "/post/oil-gas-exploration-production/",
+              "text": "Petrobras P-51 offshore platform, Brazil. Historical industry illustration; not the ONE GUYANA vessel discussed below. Photo: Divulgação Petrobras / ABr — Oil platform P-51 (Brazil) , image record dated 2 January 2009, CC BY 3.0 BR . Resized and displayed with cover cropping. View original photograph .",
+              "notes": [
+                "Industry brief · Version 1.0 · Global scope · Research cutoff: 24 October 2026.",
+                "Scope: global exploration and production (E&P), using full-year 2025 output as the comparable baseline. Developments are reviewed through 24 October 2026. Midstream and downstream explain the route to market.",
+                "Core view: E&P is a business of replacing production, managing subsurface uncertainty and recovering long-lived capital. Resource quality, access to market and lifetime costs reveal more about competitiveness than output growth alone. This is the author’s interpretation of the evidence below."
+              ]
+            },
+            {
+              "section": "Cover photograph and permissions",
+              "url": "/post/oil-gas-exploration-production/#photo-credit",
+              "text": "Credit: Divulgação Petrobras / ABr. Title: Oil platform P-51 (Brazil). Image record · Original Agência Brasil publication · CC BY 3.0 BR license . The original file is retained; the site generates smaller WebP copies and crops the displayed cover. Photo provenance record .",
+              "notes": [
+                "The photograph shows Petrobras P-51 in Brazil. The image record and original Agência Brasil publication are dated 2 January 2009. It illustrates offshore production infrastructure and is not evidence about the Guyana project or current operating conditions."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "364e4766b469",
+          "url": "https://creativecommons.org/licenses/by/3.0/br/deed.en",
+          "title": "CC BY 3.0 BR license",
+          "kind": "link",
+          "format": "Web",
+          "host": "creativecommons.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "Article",
+              "url": "/post/oil-gas-exploration-production/",
+              "text": "Petrobras P-51 offshore platform, Brazil. Historical industry illustration; not the ONE GUYANA vessel discussed below. Photo: Divulgação Petrobras / ABr — Oil platform P-51 (Brazil) , image record dated 2 January 2009, CC BY 3.0 BR . Resized and displayed with cover cropping. View original photograph .",
+              "notes": [
+                "Industry brief · Version 1.0 · Global scope · Research cutoff: 24 October 2026.",
+                "Scope: global exploration and production (E&P), using full-year 2025 output as the comparable baseline. Developments are reviewed through 24 October 2026. Midstream and downstream explain the route to market.",
+                "Core view: E&P is a business of replacing production, managing subsurface uncertainty and recovering long-lived capital. Resource quality, access to market and lifetime costs reveal more about competitiveness than output growth alone. This is the author’s interpretation of the evidence below."
+              ]
+            },
+            {
+              "section": "Cover photograph and permissions",
+              "url": "/post/oil-gas-exploration-production/#photo-credit",
+              "text": "Credit: Divulgação Petrobras / ABr. Title: Oil platform P-51 (Brazil). Image record · Original Agência Brasil publication · CC BY 3.0 BR license . The original file is retained; the site generates smaller WebP copies and crops the displayed cover. Photo provenance record .",
+              "notes": [
+                "The photograph shows Petrobras P-51 in Brazil. The image record and original Agência Brasil publication are dated 2 January 2009. It illustrates offshore production infrastructure and is not evidence about the Guyana project or current operating conditions."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7455681e9fe1",
+          "url": "/post/oil-gas-exploration-production/assets/oil-gas-ep-en.txt",
+          "title": "Complete English manuscript",
+          "kind": "file",
+          "format": "TXT",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Article",
+              "url": "/post/oil-gas-exploration-production/",
+              "text": "Complete English manuscript · Evidence records · Chart inputs and calculations",
+              "notes": [
+                "Industry brief · Version 1.0 · Global scope · Research cutoff: 24 October 2026.",
+                "Scope: global exploration and production (E&P), using full-year 2025 output as the comparable baseline. Developments are reviewed through 24 October 2026. Midstream and downstream explain the route to market.",
+                "Core view: E&P is a business of replacing production, managing subsurface uncertainty and recovering long-lived capital. Resource quality, access to market and lifetime costs reveal more about competitiveness than output growth alone. This is the author’s interpretation of the evidence below."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "05515d2c22ba",
+          "url": "/post/oil-gas-exploration-production/assets/evidence-en.json",
+          "title": "Evidence records",
+          "kind": "file",
+          "format": "JSON",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Article",
+              "url": "/post/oil-gas-exploration-production/",
+              "text": "Complete English manuscript · Evidence records · Chart inputs and calculations",
+              "notes": [
+                "Industry brief · Version 1.0 · Global scope · Research cutoff: 24 October 2026.",
+                "Scope: global exploration and production (E&P), using full-year 2025 output as the comparable baseline. Developments are reviewed through 24 October 2026. Midstream and downstream explain the route to market.",
+                "Core view: E&P is a business of replacing production, managing subsurface uncertainty and recovering long-lived capital. Resource quality, access to market and lifetime costs reveal more about competitiveness than output growth alone. This is the author’s interpretation of the evidence below."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4d331dc7943a",
+          "url": "/post/oil-gas-exploration-production/assets/chart-data.json",
+          "title": "Chart inputs and calculations",
+          "kind": "file",
+          "format": "JSON",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Article",
+              "url": "/post/oil-gas-exploration-production/",
+              "text": "Complete English manuscript · Evidence records · Chart inputs and calculations",
+              "notes": [
+                "Industry brief · Version 1.0 · Global scope · Research cutoff: 24 October 2026.",
+                "Scope: global exploration and production (E&P), using full-year 2025 output as the comparable baseline. Developments are reviewed through 24 October 2026. Midstream and downstream explain the route to market.",
+                "Core view: E&P is a business of replacing production, managing subsurface uncertainty and recovering long-lived capital. Resource quality, access to market and lifetime costs reveal more about competitiveness than output growth alone. This is the author’s interpretation of the evidence below."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5ee8b2acd9b9",
+          "url": "/data/charts/oil-gas-oil-production-2025.csv",
+          "title": "Crude oil and condensate production by country — data (CSV)",
+          "kind": "file",
+          "format": "CSV",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Crude oil and condensate production by country",
+              "url": "/post/oil-gas-exploration-production/#market-share-oil-gas-oil-production-2025-1-title",
+              "text": "Download data (CSV)",
+              "notes": [
+                "Crude oil and condensate; excludes separately reported NGLs, biofuels and other synthetic liquids.",
+                "Worldwide · Share of global production (%)",
+                "World denominator: 85.760 million barrels/day. Other = world less the six countries shown. Shares use published volumes before percentage rounding; displayed shares may not sum to 100.0%. Production location, not company revenue, reserves or exports. Raw inputs are available below."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "9d2244c9c841",
+          "url": "https://www.energyinst.org/__data/assets/file/0004/1827616/Statistical-Review-of-World-Energy-PDF-Report.pdf",
+          "title": "Energy Institute — Statistical Review of World Energy 2026 [S01]",
+          "kind": "file",
+          "format": "PDF",
+          "host": "energyinst.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "Crude oil and condensate production by country",
+              "url": "/post/oil-gas-exploration-production/#market-share-oil-gas-oil-production-2025-1-title",
+              "text": "Source: Energy Institute — Statistical Review of World Energy 2026 [S01] (2026-06-30). Reviewed 2026-10-24.",
+              "notes": [
+                "Crude oil and condensate; excludes separately reported NGLs, biofuels and other synthetic liquids.",
+                "Worldwide · Share of global production (%)",
+                "World denominator: 85.760 million barrels/day. Other = world less the six countries shown. Shares use published volumes before percentage rounding; displayed shares may not sum to 100.0%. Production location, not company revenue, reserves or exports. Raw inputs are available below."
+              ]
+            },
+            {
+              "section": "Natural gas production by country",
+              "url": "/post/oil-gas-exploration-production/#market-share-oil-gas-gas-production-2025-2-title",
+              "text": "Source: Energy Institute — Statistical Review of World Energy 2026 [S01] (2026-06-30). Reviewed 2026-10-24.",
+              "notes": [
+                "Marketed natural gas; excludes flared/recycled gas. Standardised at 40 MJ/m³ GCV.",
+                "Worldwide · Share of global production (%)",
+                "World denominator: 4,196.5 billion cubic metres/year. Other = world less the six countries shown. Shares use published volumes before percentage rounding; displayed shares may not sum to 100.0%. Production location, not company revenue, reserves or exports. Raw inputs are available below."
+              ]
+            },
+            {
+              "section": "[S01] Energy Institute",
+              "url": "/post/oil-gas-exploration-production/#source-S01",
+              "text": "Statistical Review of World Energy 2026 · Published: 2026-06-30 · Accessed: 2026-10-24.",
+              "notes": [
+                "2025; printed pp. 33, 47 and 81 (PDF pp. 34, 48 and 82). Global crude/condensate and gas output and definitions. Statistical compilation, not a well-level audit or company revenue dataset. Gas is standardised at 40 MJ/m³ GCV and excludes flared/recycled gas; annual growth is leap-year adjusted."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "827669a088e5",
+          "url": "/data/charts/oil-gas-gas-production-2025.csv",
+          "title": "Natural gas production by country — data (CSV)",
+          "kind": "file",
+          "format": "CSV",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Natural gas production by country",
+              "url": "/post/oil-gas-exploration-production/#market-share-oil-gas-gas-production-2025-2-title",
+              "text": "Download data (CSV)",
+              "notes": [
+                "Marketed natural gas; excludes flared/recycled gas. Standardised at 40 MJ/m³ GCV.",
+                "Worldwide · Share of global production (%)",
+                "World denominator: 4,196.5 billion cubic metres/year. Other = world less the six countries shown. Shares use published volumes before percentage rounding; displayed shares may not sum to 100.0%. Production location, not company revenue, reserves or exports. Raw inputs are available below."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "efe07e696093",
+          "url": "https://corporate.exxonmobil.com/news/news-releases/2025/0808_exxonmobil-guyana-begins-production-at-fourth-offshore-guyana-project",
+          "title": "ExxonMobil Guyana begins production at fourth offshore Guyana project",
+          "kind": "link",
+          "format": "Web",
+          "host": "corporate.exxonmobil.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[S02] ExxonMobil",
+              "url": "/post/oil-gas-exploration-production/#source-S02",
+              "text": "ExxonMobil Guyana begins production at fourth offshore Guyana project · Published: 2025-08-08 · Accessed: 2026-10-24.",
+              "notes": [
+                "Event on the same date; opening, ONE GUYANA and ownership paragraphs. Supports startup, initial annual-average target of 250,000 b/d, installed capacity above 900,000 b/d at startup, and 45/30/25 interests. Company disclosure; targets and capacity are not full-year actual output."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8a99aa82749d",
+          "url": "https://dpi.gov.gy/first-oil-achieved-at-guyanas-fourth-fpso-one-guyana/",
+          "title": "First oil achieved at Guyana’s fourth FPSO ONE GUYANA",
+          "kind": "link",
+          "format": "Web",
+          "host": "dpi.gov.gy",
+          "local": false,
+          "citations": [
+            {
+              "section": "[S03] Government of Guyana Department of Public Information",
+              "url": "/post/oil-gas-exploration-production/#source-S03",
+              "text": "First oil achieved at Guyana’s fourth FPSO ONE GUYANA · Published: 2025-08-08 · Accessed: 2026-10-24.",
+              "notes": [
+                "Same-day event; first five body paragraphs. Government announcement corroborates first oil and SBM construction and describes licensing/decommissioning safeguards. The government is a stakeholder; this is not independent proof of returns or environmental performance."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f20130611223",
+          "url": "https://www.sbmoffshore.com/newsroom/fpso-one-guyana-purchase-by-exxonmobil-guyana-completed/",
+          "title": "FPSO ONE GUYANA Purchase by ExxonMobil Guyana Completed",
+          "kind": "link",
+          "format": "Web",
+          "host": "sbmoffshore.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[S04] SBM Offshore",
+              "url": "/post/oil-gas-exploration-production/#source-S04",
+              "text": "FPSO ONE GUYANA Purchase by ExxonMobil Guyana Completed · Published: 2026-02-04 · Accessed: 2026-10-24.",
+              "notes": [
+                "Same-day event; first three paragraphs. Approximately US$2.32bn cash consideration, ownership transfer and operations/maintenance through 2035. Consideration is neither total field-development cost nor SBM annual revenue."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "27426b22ef47",
+          "url": "https://www.sec.gov/Archives/edgar/data/93410/000095014225001949/eh250652625_8k.htm",
+          "title": "Form 8-K dated July 18 2025",
+          "kind": "link",
+          "format": "Web",
+          "host": "sec.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[S05] Chevron via US SEC",
+              "url": "/post/oil-gas-exploration-production/#source-S05",
+              "text": "Form 8-K dated July 18 2025 · Published: 2025-07-18 · Accessed: 2026-10-24.",
+              "notes": [
+                "Same-day event; Item 8.01. Confirms completion of the Hess acquisition and wholly owned subsidiary status. Establishes ownership change, not realised synergies."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f14d27ea64c0",
+          "url": "https://www.slb.com/products-and-services",
+          "title": "Products and services",
+          "kind": "link",
+          "format": "Web",
+          "host": "slb.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[S06] SLB",
+              "url": "/post/oil-gas-exploration-production/#source-S06",
+              "text": "Products and services · Published: Undated · Accessed: 2026-10-24.",
+              "notes": [
+                "Product catalogue at access date; Reservoir Characterization, Well Construction, Production, and Plug and Abandonment. Supports business categories, not rankings or particular customer contracts."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "95e29c0cb8af",
+          "url": "https://www.aramco.com/en/what-we-do/energy-products/oil-production",
+          "title": "Oil production",
+          "kind": "link",
+          "format": "Web",
+          "host": "aramco.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[S07] Aramco",
+              "url": "/post/oil-gas-exploration-production/#source-S07",
+              "text": "Oil production · Published: Undated · Accessed: 2026-10-24.",
+              "notes": [
+                "Business description at access date; grades and integrated upstream/downstream paragraphs. Supports production and processing-related positioning. Some page figures are dated 2023; no cost, emissions or capacity ranking is adopted."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c03b21d911f2",
+          "url": "https://www.enbridge.com/reports/annual-letter-to-shareholders-2026/about-us",
+          "title": "Annual Letter to Shareholders 2026 About us",
+          "kind": "link",
+          "format": "Web",
+          "host": "enbridge.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[S08] Enbridge",
+              "url": "/post/oil-gas-exploration-production/#source-S08",
+              "text": "Annual Letter to Shareholders 2026 About us · Published: 2026; publication day unstated · Accessed: 2026-10-24.",
+              "notes": [
+                "Liquids Pipelines, Gas Transmission and Midstream, and Gas Distribution and Storage sections. Supports transport, storage and distribution roles; throughput shares are not used as upstream production shares."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bb22f673cdbd",
+          "url": "https://www.conocophillips.com/about-us/",
+          "title": "About us",
+          "kind": "link",
+          "format": "Web",
+          "host": "conocophillips.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[S09] ConocoPhillips",
+              "url": "/post/oil-gas-exploration-production/#source-S09",
+              "text": "About us · Published: Undated · Accessed: 2026-10-24.",
+              "notes": [
+                "At access date; About us text and business navigation. Supports independent E&P positioning and activities. Independent is a business classification, not absence of joint ventures or gas commercial activities; no self-reported ranking is adopted."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1f34c2991391",
+          "url": "https://www.iea.org/reports/the-implications-of-oil-and-gas-field-decline-rates/executive-summary",
+          "title": "The Implications of Oil and Gas Field Decline Rates Executive summary",
+          "kind": "link",
+          "format": "Web",
+          "host": "iea.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[S10] International Energy Agency",
+              "url": "/post/oil-gas-exploration-production/#source-S10",
+              "text": "The Implications of Oil and Gas Field Decline Rates Executive summary · Published: 2025-09-16 · Accessed: 2026-10-24.",
+              "notes": [
+                "Opening section and no-investment scenario. Supports the estimate that nearly 90% of upstream investment since 2019 offset declines. Model and historical-sample analysis, not every company’s spending mix or an oil-price forecast."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3ccc5258caed",
+          "url": "https://www.iea.org/reports/oil-market-report-october-2026",
+          "title": "Oil Market Report October 2026",
+          "kind": "link",
+          "format": "Web",
+          "host": "iea.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[S11] International Energy Agency",
+              "url": "/post/oil-gas-exploration-production/#source-S11",
+              "text": "Oil Market Report October 2026 · Published: 2026-10-14 · Accessed: 2026-10-24.",
+              "notes": [
+                "Public Highlights and Fragile rebound; 2026 forecast and September estimates. Uses 100.7 mb/d supply and 102.4 mb/d demand forecasts to frame risk. This broader oil balance differs from S01 crude/condensate; do not splice the series for growth calculations."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f93ec9337e3e",
+          "url": "https://www.iea.org/news/impacts-of-middle-east-conflict-set-to-reshape-energy-investment-plans-as-disruptions-put-focus-on-security",
+          "title": "Impacts of Middle East conflict set to reshape energy investment plans as disruptions put focus on security",
+          "kind": "link",
+          "format": "Web",
+          "host": "iea.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[S12] International Energy Agency",
+              "url": "/post/oil-gas-exploration-production/#source-S12",
+              "text": "Impacts of Middle East conflict set to reshape energy investment plans as disruptions put focus on security · Published: 2026-05-28 · Accessed: 2026-10-24.",
+              "notes": [
+                "Oil/gas investment paragraphs; 2026 forecast. Supports oil investment below US$500bn, gas investment of US$330bn and supply-chain constraints. Broader supply infrastructure is included; these are not E&P revenue or pure upstream capex."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "aebb382e9779",
+          "url": "https://www.iea.org/reports/global-methane-tracker-2026/key-findings",
+          "title": "Global Methane Tracker 2026 Key findings",
+          "kind": "link",
+          "format": "Web",
+          "host": "iea.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[S13] International Energy Agency",
+              "url": "/post/oil-gas-exploration-production/#source-S13",
+              "text": "Global Methane Tracker 2026 Key findings · Published: 2026-05-04 · Accessed: 2026-10-24.",
+              "notes": [
+                "Opening and mitigation-policy sections; 2025 estimates. Oil 45 Mt and gas 36 Mt of methane across their activity scopes, not E&P alone. Combines measurement, satellite and inferred data; not a globally measured census."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1e93946c3861",
+          "url": "https://www.eia.gov/energyexplained/natural-gas/prices.php",
+          "title": "Natural gas explained Natural gas prices",
+          "kind": "link",
+          "format": "Web",
+          "host": "eia.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[S14] US Energy Information Administration",
+              "url": "/post/oil-gas-exploration-production/#source-S14",
+              "text": "Natural gas explained Natural gas prices · Published: Undated · Accessed: 2026-10-24.",
+              "notes": [
+                "Commodity cost, Transmission and distribution costs, and regional price factors. Supports separating fuel and transport costs and the effect of pipeline capacity. US explanatory material, not a single global gas price."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "9f093792fcc6",
+          "url": "https://memoria.ebc.com.br/agenciabrasil/galeria/2009-01-02/2-de-janeiro-de-2009",
+          "title": "Original Agência Brasil publication",
+          "kind": "link",
+          "format": "Web",
+          "host": "memoria.ebc.com.br",
+          "local": false,
+          "citations": [
+            {
+              "section": "Cover photograph and permissions",
+              "url": "/post/oil-gas-exploration-production/#photo-credit",
+              "text": "Credit: Divulgação Petrobras / ABr. Title: Oil platform P-51 (Brazil). Image record · Original Agência Brasil publication · CC BY 3.0 BR license . The original file is retained; the site generates smaller WebP copies and crops the displayed cover. Photo provenance record .",
+              "notes": [
+                "The photograph shows Petrobras P-51 in Brazil. The image record and original Agência Brasil publication are dated 2 January 2009. It illustrates offshore production infrastructure and is not evidence about the Guyana project or current operating conditions."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5504ba2484ee",
+          "url": "/post/oil-gas-exploration-production/assets/cover-credit.json",
+          "title": "Photo provenance record",
+          "kind": "file",
+          "format": "JSON",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Cover photograph and permissions",
+              "url": "/post/oil-gas-exploration-production/#photo-credit",
+              "text": "Credit: Divulgação Petrobras / ABr. Title: Oil platform P-51 (Brazil). Image record · Original Agência Brasil publication · CC BY 3.0 BR license . The original file is retained; the site generates smaller WebP copies and crops the displayed cover. Photo provenance record .",
+              "notes": [
+                "The photograph shows Petrobras P-51 in Brazil. The image record and original Agência Brasil publication are dated 2 January 2009. It illustrates offshore production infrastructure and is not evidence about the Guyana project or current operating conditions."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "glp1-peptides",
       "title": "Therapeutic Peptides and the GLP-1 Value Chain",
       "url": "/post/glp1-peptides/",
@@ -27249,9 +27745,9 @@
     }
   ],
   "counts": {
-    "articles": 22,
-    "materials": 1002,
-    "files": 238,
-    "hosted_files": 85
+    "articles": 23,
+    "materials": 1025,
+    "files": 245,
+    "hosted_files": 91
   }
 }
