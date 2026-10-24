@@ -1,0 +1,248 @@
+{
+  "schema_version": 1,
+  "maps": {
+    "oil-gas-value-chain": {
+      "title": "The oil and gas value chain",
+      "description": "E&P is the upstream core. Infrastructure connects production to customers.",
+      "root": {
+        "name": "Oil and gas industry",
+        "children": [
+          {
+            "name": "Upstream | E&P",
+            "children": [
+              {
+                "name": "Explore and build wells",
+                "children": [
+                  {
+                    "name": "SLB: imaging, logging and well services"
+                  }
+                ]
+              },
+              {
+                "name": "Develop and produce",
+                "children": [
+                  {
+                    "name": "Aramco"
+                  },
+                  {
+                    "name": "ExxonMobil"
+                  },
+                  {
+                    "name": "ConocoPhillips"
+                  },
+                  {
+                    "name": "CNOOC: Guyana venture participation"
+                  }
+                ]
+              },
+              {
+                "name": "Production facilities",
+                "children": [
+                  {
+                    "name": "SBM Offshore: FPSOs and operations"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Midstream",
+            "children": [
+              {
+                "name": "Gather and process",
+                "children": [
+                  {
+                    "name": "Gas gathering, treatment and compression"
+                  }
+                ]
+              },
+              {
+                "name": "Transport and store",
+                "children": [
+                  {
+                    "name": "Enbridge: pipelines and gas storage"
+                  }
+                ]
+              },
+              {
+                "name": "Export and connect markets",
+                "children": [
+                  {
+                    "name": "LNG liquefaction and shipping"
+                  },
+                  {
+                    "name": "Crude export terminals"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Downstream",
+            "children": [
+              {
+                "name": "Refine and convert",
+                "children": [
+                  {
+                    "name": "Aramco and ExxonMobil: fuels and chemical feedstocks"
+                  }
+                ]
+              },
+              {
+                "name": "Distribute",
+                "children": [
+                  {
+                    "name": "Enbridge: gas utilities"
+                  }
+                ]
+              },
+              {
+                "name": "Use energy and feedstocks",
+                "children": [
+                  {
+                    "name": "Power, industry and transport"
+                  },
+                  {
+                    "name": "Businesses and households"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "note": "Editorial categories and illustrative companies, not a ranking. Companies span stages; branches do not assert supply contracts. Source IDs: S02, S04, S06–S09 and S14.",
+      "sources": [
+        {
+          "title": "Evidence and sources",
+          "url": "/post/oil-gas-exploration-production/#supporting-evidence"
+        }
+      ],
+      "reviewed": "2026-10-24"
+    }
+  },
+  "shares": {
+    "oil-gas-oil-production-2025": {
+      "eyebrow": "PRODUCTION SHARE",
+      "title": "Crude oil and condensate production by country",
+      "period": "Full year 2025",
+      "center_label": "2025 OUTPUT",
+      "geography": "Worldwide",
+      "scope": "Crude oil and condensate; excludes separately reported NGLs, biofuels and other synthetic liquids.",
+      "metric": "Share of global production (%)",
+      "dimension": "Country",
+      "percentDecimals": 1,
+      "unit": "%",
+      "colors": [
+        "#C9A353",
+        "#4B8E88",
+        "#5E7898",
+        "#A97760",
+        "#8A8F56",
+        "#907A9D",
+        "#D8D7D0"
+      ],
+      "series": [
+        {
+          "name": "United States",
+          "value": 15.841884328358208
+        },
+        {
+          "name": "Russia",
+          "value": 11.848180970149254
+        },
+        {
+          "name": "Saudi Arabia",
+          "value": 11.342117537313433
+        },
+        {
+          "name": "Canada",
+          "value": 6.2476679104477615
+        },
+        {
+          "name": "Iran",
+          "value": 5.184235074626866
+        },
+        {
+          "name": "China",
+          "value": 5.060634328358209
+        },
+        {
+          "name": "Other",
+          "value": 44.47527985074627,
+          "derived": true
+        }
+      ],
+      "source": {
+        "publisher": "Energy Institute",
+        "title": "Statistical Review of World Energy 2026 [S01]",
+        "published": "2026-06-30",
+        "url": "https://www.energyinst.org/__data/assets/file/0004/1827616/Statistical-Review-of-World-Energy-PDF-Report.pdf",
+        "locator": "Printed page 33"
+      },
+      "note": "World denominator: 85.760 million barrels/day. Other = world less the six countries shown. Shares use published volumes before percentage rounding; displayed shares may not sum to 100.0%. Production location, not company revenue, reserves or exports. Raw inputs are available below.",
+      "reviewed": "2026-10-24"
+    },
+    "oil-gas-gas-production-2025": {
+      "eyebrow": "PRODUCTION SHARE",
+      "title": "Natural gas production by country",
+      "period": "Full year 2025",
+      "center_label": "2025 OUTPUT",
+      "geography": "Worldwide",
+      "scope": "Marketed natural gas; excludes flared/recycled gas. Standardised at 40 MJ/m³ GCV.",
+      "metric": "Share of global production (%)",
+      "dimension": "Country",
+      "percentDecimals": 1,
+      "unit": "%",
+      "colors": [
+        "#C9A353",
+        "#4B8E88",
+        "#5E7898",
+        "#A97760",
+        "#8A8F56",
+        "#907A9D",
+        "#D8D7D0"
+      ],
+      "series": [
+        {
+          "name": "United States",
+          "value": 25.58560705349696
+        },
+        {
+          "name": "Russia",
+          "value": 14.521625163826998
+        },
+        {
+          "name": "Iran",
+          "value": 6.310020254974384
+        },
+        {
+          "name": "China",
+          "value": 6.293339687835101
+        },
+        {
+          "name": "Canada",
+          "value": 4.913618491600143
+        },
+        {
+          "name": "Qatar",
+          "value": 4.372691528654832
+        },
+        {
+          "name": "Other",
+          "value": 38.00309781961158,
+          "derived": true
+        }
+      ],
+      "source": {
+        "publisher": "Energy Institute",
+        "title": "Statistical Review of World Energy 2026 [S01]",
+        "published": "2026-06-30",
+        "url": "https://www.energyinst.org/__data/assets/file/0004/1827616/Statistical-Review-of-World-Energy-PDF-Report.pdf",
+        "locator": "Printed page 47"
+      },
+      "note": "World denominator: 4,196.5 billion cubic metres/year. Other = world less the six countries shown. Shares use published volumes before percentage rounding; displayed shares may not sum to 100.0%. Production location, not company revenue, reserves or exports. Raw inputs are available below.",
+      "reviewed": "2026-10-24"
+    }
+  }
+}
