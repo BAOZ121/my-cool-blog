@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "maps": {
+    "healthcare-value-chain": {
+      "title": "From research inputs to delivered care",
+      "description": "A functional map of the healthcare industry with illustrative companies and products. Expand a category to see its company examples.",
+      "root": {
+        "name": "Global healthcare",
+        "children": [
+          {
+            "name": "Upstream / Research and evidence",
+            "children": [
+              {
+                "name": "Research tools",
+                "children": [
+                  {
+                    "name": "Thermo Fisher Scientific — reagents and laboratory instruments [E08]"
+                  }
+                ]
+              },
+              {
+                "name": "Clinical research",
+                "children": [
+                  {
+                    "name": "Thermo Fisher Scientific PPD — clinical development services [E08]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Midstream / Manufacturing and medical products",
+            "children": [
+              {
+                "name": "Contract manufacturing",
+                "children": [
+                  {
+                    "name": "Lonza — drug substance and drug product [E09]"
+                  }
+                ]
+              },
+              {
+                "name": "Medicines",
+                "children": [
+                  {
+                    "name": "Lilly — Mounjaro and Zepbound [E10]"
+                  }
+                ]
+              },
+              {
+                "name": "Diagnostics and imaging",
+                "children": [
+                  {
+                    "name": "Siemens Healthineers — imaging, diagnostics and therapy [E11]"
+                  }
+                ]
+              },
+              {
+                "name": "Devices and fluids",
+                "children": [
+                  {
+                    "name": "Medtronic — medical devices [E12]"
+                  },
+                  {
+                    "name": "Baxter — IV solutions [E03]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Downstream / Distribution, care and payment",
+            "children": [
+              {
+                "name": "Distribution",
+                "children": [
+                  {
+                    "name": "McKesson — pharmaceutical distribution [E13]"
+                  }
+                ]
+              },
+              {
+                "name": "Care delivery",
+                "children": [
+                  {
+                    "name": "HCA Healthcare — clinical care [E14]"
+                  },
+                  {
+                    "name": "Optum — clinical and care services [E15]"
+                  }
+                ]
+              },
+              {
+                "name": "Payment",
+                "children": [
+                  {
+                    "name": "UnitedHealthcare — health insurance [E15]"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "note": "Figure 1. Connections show functional categories, not verified supply contracts, customers or ownership. Company examples are non-exhaustive and unranked. Companies may span functions; Optum also illustrates overlap within UnitedHealth Group. Source IDs resolve in the evidence appendix.",
+      "sources": [
+        {
+          "title": "Evidence and methods: E03 and E08–E15",
+          "url": "/test/healthcare-industry-report/#appendix-evidence-and-methods"
+        }
+      ],
+      "reviewed": "2026-10-26"
+    }
+  },
+  "shares": {
+    "healthcare-us-expenditure-2024": {
+      "unit": "%",
+      "reviewed": "2026-10-26",
+      "eyebrow": "EXPENDITURE COMPOSITION",
+      "title": "Where US healthcare expenditure goes",
+      "period": "Calendar 2024",
+      "center_label": "2024",
+      "geography": "United States",
+      "metric": "Share of national health expenditure (%)",
+      "dimension": "Expenditure category",
+      "scope": "National Health Expenditure Accounts: US$5,278.6 billion in 2024, including investment. This is expenditure composition, not supplier market share.",
+      "percentDecimals": 1,
+      "totalUnits": 5278600,
+      "unitsLabel": "US$ million",
+      "unitsColumnLabel": "US$ million",
+      "series": [
+        {
+          "name": "Hospital care",
+          "value": 31.0,
+          "units": 1634700
+        },
+        {
+          "name": "Physician and clinical services",
+          "value": 21.0,
+          "units": 1109700
+        },
+        {
+          "name": "Retail prescription drugs",
+          "value": 8.8,
+          "units": 467000
+        },
+        {
+          "name": "All remaining NHE",
+          "value": 39.2,
+          "units": 2067200
+        }
+      ],
+      "source": {
+        "publisher": "US Centers for Medicare and Medicaid Services",
+        "title": "[E05] National Health Expenditure Accounts Table 2 and NHE Fact Sheet",
+        "published": "Fact sheet last modified 2026-06-24; table is the 1960 to 2024 historical release",
+        "url": "https://www.cms.gov/data-research/statistics-trends-and-reports/national-health-expenditure-data/nhe-fact-sheet",
+        "locator": "Table 2 Amount in Billions 2024 column rows 4 7 9 and 16; Fact Sheet Historical NHE 2024"
+      },
+      "note": "Figure 2. Slice areas use the published expenditure amounts converted from US$ billion to US$ million; labels are rounded to one decimal. Remaining NHE = 5,278.6 − 1,634.7 − 1,109.7 − 467.0 = US$2,067.2 billion, including other care, administration, public health and investment. Retail drugs exclude medicines recorded within service expenditure. Source E05."
+    },
+    "healthcare-us-medicare-advantage-mar-2026": {
+      "unit": "%",
+      "reviewed": "2026-10-26",
+      "eyebrow": "ENROLLMENT SHARE",
+      "title": "Medicare Advantage enrollment shares",
+      "period": "March 2026",
+      "center_label": "MAR 2026",
+      "geography": "United States",
+      "metric": "Share of Medicare Advantage enrollees (%)",
+      "dimension": "Parent organization",
+      "scope": "US Medicare Advantage enrollment by parent organization, excluding Original Medicare. This is one insurance submarket, not all US insurance or global healthcare.",
+      "percentDecimals": 0,
+      "series": [
+        {
+          "name": "UnitedHealth Group",
+          "value": 26
+        },
+        {
+          "name": "Humana",
+          "value": 20
+        },
+        {
+          "name": "CVS Health",
+          "value": 12
+        },
+        {
+          "name": "Kaiser Foundation Health Plan",
+          "value": 6
+        },
+        {
+          "name": "Elevance Health",
+          "value": 5
+        },
+        {
+          "name": "All remaining organizations",
+          "value": 31
+        }
+      ],
+      "source": {
+        "publisher": "KFF",
+        "title": "[E07] Medicare Advantage in 2026: Enrollment Update and Key Trends",
+        "published": "2026-06-05",
+        "url": "https://www.kff.org/medicare/medicare-advantage-in-2026-enrollment-update-and-key-trends/",
+        "locator": "Section on enrollment concentration Figure 6 and its methods note"
+      },
+      "note": "Figure 3. Published rounded KFF shares based on CMS enrollment files. Remaining organizations = 100 − 26 − 20 − 12 − 6 − 5 = 31%; this residual inherits source rounding and is not an independently measured exact share. DEX did not reaggregate CMS enrollment microdata. Shares do not measure revenue or clinical quality. Source E07."
+    },
+    "healthcare-china-hospital-visits-2025": {
+      "unit": "%",
+      "reviewed": "2026-10-26",
+      "eyebrow": "HOSPITAL ACTIVITY",
+      "title": "China hospital visits by ownership",
+      "period": "2025",
+      "center_label": "2025",
+      "geography": "China",
+      "metric": "Share of hospital diagnosis and treatment visits (%)",
+      "dimension": "Hospital ownership",
+      "scope": "Public and private hospitals in China; denominator 4.67 billion hospital visits in 2025. This is hospital activity, not revenue, profit or care-quality share.",
+      "percentDecimals": 1,
+      "totalUnits": 4670,
+      "unitsLabel": "million hospital visits",
+      "unitsColumnLabel": "Million hospital visits",
+      "series": [
+        {
+          "name": "Public hospitals",
+          "value": 84.2,
+          "units": 3930
+        },
+        {
+          "name": "Private hospitals",
+          "value": 15.8,
+          "units": 740
+        }
+      ],
+      "source": {
+        "publisher": "National Health Commission of China; official PDF hosted by Shanxi Health Commission",
+        "title": "[E06] 2025年我国卫生健康事业发展统计公报 China Health Statistics Bulletin 2025",
+        "published": "NHC release dated 2026-08-28; provincial PDF hosted August 2026",
+        "url": "https://wjw.shanxi.gov.cn/zfxxgk/fdzdgknr/ghjh/202608/P020260831335869219767.pdf",
+        "locator": "Printed page 1 hospital counts; page 6 Table 4; pages 7 to 8 hospital diagnosis and treatment visits and Table 5"
+      },
+      "note": "Figure 4. Calculated from published rounded totals: public 39.3 and private 7.4, divided by 46.7, in units of 100 million hospital visits. Values are converted to millions for the table and slice areas; percentages are rounded to one decimal. Visits count encounters, not unique patients. Private hospitals account for 69.4% of facilities and 15.8% of visits; these describe different measures. Source E06."
+    }
+  }
+}

@@ -1,0 +1,3 @@
+ownership,region,period,metric,visits_100_million,denominator_100_million,share_pct_unrounded,display_share_pct,source,precision_note
+Public hospitals,China,2025,Hospital diagnosis and treatment visits,39.3,46.7,84.15417558886509,84.2,E06,Calculated from published rounded visit totals
+Private hospitals,China,2025,Hospital diagnosis and treatment visits,7.4,46.7,15.845824411134904,15.8,E06,Calculated from published rounded visit totals

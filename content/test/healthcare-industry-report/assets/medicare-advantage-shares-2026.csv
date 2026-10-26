@@ -1,0 +1,7 @@
+parent_organization,region,period,metric,share_pct,source,method
+UnitedHealth Group,United States,March 2026,Share of Medicare Advantage enrollees,26,E07,Published rounded KFF share
+Humana,United States,March 2026,Share of Medicare Advantage enrollees,20,E07,Published rounded KFF share
+CVS Health,United States,March 2026,Share of Medicare Advantage enrollees,12,E07,Published rounded KFF share
+Kaiser Foundation Health Plan,United States,March 2026,Share of Medicare Advantage enrollees,6,E07,Published rounded KFF share
+Elevance Health,United States,March 2026,Share of Medicare Advantage enrollees,5,E07,Published rounded KFF share
+All remaining organizations,United States,March 2026,Share of Medicare Advantage enrollees,31,E07,DEX residual from published rounded shares

@@ -1,0 +1,5 @@
+category,region,period,measure,value_usd_bn,denominator_usd_bn,share_pct_unrounded,display_share_pct,source,calculation
+Hospital care,United States,2024,National health expenditure,1634.7,5278.6,30.968438601144243,31.0,E05,Original CMS Table 2 amount
+Physician and clinical services,United States,2024,National health expenditure,1109.7,5278.6,21.022619633993862,21.0,E05,Original CMS Table 2 amount
+Retail prescription drugs,United States,2024,National health expenditure,467.0,5278.6,8.847042776493767,8.8,E05,Original CMS Table 2 amount
+All remaining NHE,United States,2024,National health expenditure,2067.2,5278.6,39.16189898836814,39.2,E05,Residual = total minus three named categories

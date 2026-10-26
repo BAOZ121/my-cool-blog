@@ -1,0 +1,3 @@
+ownership,region,period,hospital_count,total_hospitals,share_pct,source
+Public hospitals,China,2025,11678,38159,30.60352734610446,E06
+Private hospitals,China,2025,26481,38159,69.39647265389554,E06
