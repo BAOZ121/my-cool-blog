@@ -38,7 +38,7 @@ jobs:
       - name: Test industry explorer with translated labels and embedded data
         run: node --test tests/industries.test.mjs
       - name: Test article graphics and source data
-        run: node --test tests/article-visuals.test.mjs tests/article-reading-history.test.mjs tests/glp1-preview.test.mjs
+        run: node --test tests/article-visuals.test.mjs tests/article-reading-history.test.mjs tests/glp1-preview.test.mjs tests/healthcare-publication.test.mjs
       - name: Test contact submission safeguards
         run: node --test tests/contact.test.mjs
       - name: Test Evidence Library search and source extraction

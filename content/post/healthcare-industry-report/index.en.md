@@ -1,33 +1,26 @@
 ---
 title: "Global Healthcare Industry Report"
 description: "Medicines, devices, care and payment: a global industry framework with United States and China case studies."
-date: "2026-10-26"
-lastmod: "2026-10-26"
-url: "/test/healthcare-industry-report/"
+date: "2026-10-27"
+lastmod: "2026-10-27"
+url: "/post/healthcare-industry-report/"
 type: "post"
 layout: "single"
 image: "assets/cover.webp"
 imageAlt: "AI-generated conceptual hospital scene with an IV bag in the foreground; not a documentary image of Baxter or North Cove."
 industrialreport: true
-testpage: true
 toc: true
 readingTime: true
 comments: false
 draft: false
-robots: "noindex, nofollow"
-sitemap:
-  disable: true
-build:
-  list: "never"
-  render: "always"
-outputs:
-  - "HTML"
-reportversion: "1.1-web-preview"
+reportversion: "1.1"
+categories: ["Industry Report"]
+tags: ["Healthcare", "Medical Devices", "Pharmaceuticals", "Health Insurance", "Global"]
 evidencecutoff: "2026-10-26"
 ---
 
 
-<p class="research-preview-note"><strong>Website test edition.</strong> Version 1.1 · Research cutoff: 26 October 2026. This test page is excluded from the homepage, formal article listings, feeds and sitemap.</p>
+<p class="research-preview-note">Industry report · Version 1.1 · Published: 27 October 2026 · Research cutoff: 26 October 2026.</p>
 
 <p class="research-figure-caption">Cover: AI-generated concept image of a hospital and IV bag. It does not depict Baxter, North Cove or the hurricane.</p>
 
@@ -197,7 +190,7 @@ evidencecutoff: "2026-10-26"
 
 <p><a href="https://thedexs.com/post/semiconductor-industry-report/" target="_blank" rel="noopener">https://thedexs.com/post/semiconductor-industry-report/</a></p>
 
-<section class="research-evidence" id="source-E01" aria-labelledby="heading-E01"><h3 id="heading-E01">[E01] Disruptions in Availability of Peritoneal Dialysis and Intravenous Solutions from Baxter International Facility in North Carolina</h3>
+<section class="research-evidence" id="source-E01" data-source-id="E01" aria-labelledby="heading-E01"><h3 id="heading-E01">[E01] Disruptions in Availability of Peritoneal Dialysis and Intravenous Solutions from Baxter International Facility in North Carolina</h3>
 
 <p><strong>Publisher:</strong> US Centers for Disease Control and Prevention</p>
 
@@ -217,7 +210,7 @@ evidencecutoff: "2026-10-26"
 
 <p><strong>Original sources:</strong> <a href="https://www.cdc.gov/han/2024/han00518.html" target="_blank" rel="noopener">Original source</a></p></section>
 
-<section class="research-evidence" id="source-E02" aria-labelledby="heading-E02"><h3 id="heading-E02">[E02] FDA Roundup: October 11, 2024</h3>
+<section class="research-evidence" id="source-E02" data-source-id="E02" aria-labelledby="heading-E02"><h3 id="heading-E02">[E02] FDA Roundup: October 11, 2024</h3>
 
 <p><strong>Publisher:</strong> US Food and Drug Administration</p>
 
@@ -237,7 +230,7 @@ evidencecutoff: "2026-10-26"
 
 <p><strong>Original sources:</strong> <a href="https://www.fda.gov/news-events/press-announcements/fda-roundup-october-11-2024" target="_blank" rel="noopener">Original source</a></p></section>
 
-<section class="research-evidence" id="source-E03" aria-labelledby="heading-E03"><h3 id="heading-E03">[E03] Hurricane Helene Summary</h3>
+<section class="research-evidence" id="source-E03" data-source-id="E03" aria-labelledby="heading-E03"><h3 id="heading-E03">[E03] Hurricane Helene Summary</h3>
 
 <p><strong>Publisher:</strong> Baxter International</p>
 
@@ -257,7 +250,7 @@ evidencecutoff: "2026-10-26"
 
 <p><strong>Original sources:</strong> <a href="https://www.baxter.com/news-insights/hurricane-helene-summary" target="_blank" rel="noopener">Original source</a></p></section>
 
-<section class="research-evidence" id="source-E04" aria-labelledby="heading-E04"><h3 id="heading-E04">[E04] Global spending on health: Emerging from the pandemic</h3>
+<section class="research-evidence" id="source-E04" data-source-id="E04" aria-labelledby="heading-E04"><h3 id="heading-E04">[E04] Global spending on health: Emerging from the pandemic</h3>
 
 <p><strong>Publisher:</strong> World Health Organization</p>
 
@@ -277,7 +270,7 @@ evidencecutoff: "2026-10-26"
 
 <p><strong>Original sources:</strong> <a href="https://www.who.int/publications/i/item/9789240104495" target="_blank" rel="noopener">Original source</a> · <a href="https://iris.who.int/server/api/core/bitstreams/6a22149b-17d5-4afb-a89b-14a3e8c12442/content" target="_blank" rel="noopener">Publisher download</a></p></section>
 
-<section class="research-evidence" id="source-E05" aria-labelledby="heading-E05"><h3 id="heading-E05">[E05] National Health Expenditure Accounts Table 2 and NHE Fact Sheet</h3>
+<section class="research-evidence" id="source-E05" data-source-id="E05" aria-labelledby="heading-E05"><h3 id="heading-E05">[E05] National Health Expenditure Accounts Table 2 and NHE Fact Sheet</h3>
 
 <p><strong>Publisher:</strong> US Centers for Medicare and Medicaid Services</p>
 
@@ -297,7 +290,7 @@ evidencecutoff: "2026-10-26"
 
 <p><strong>Original sources:</strong> <a href="https://www.cms.gov/data-research/statistics-trends-and-reports/national-health-expenditure-data/nhe-fact-sheet" target="_blank" rel="noopener">Original source</a> · <a href="https://www.cms.gov/files/zip/nhe-tables.zip" target="_blank" rel="noopener">Publisher download</a></p></section>
 
-<section class="research-evidence" id="source-E06" aria-labelledby="heading-E06"><h3 id="heading-E06">[E06] 2025年我国卫生健康事业发展统计公报 China Health Statistics Bulletin 2025</h3>
+<section class="research-evidence" id="source-E06" data-source-id="E06" aria-labelledby="heading-E06"><h3 id="heading-E06">[E06] 2025年我国卫生健康事业发展统计公报 China Health Statistics Bulletin 2025</h3>
 
 <p><strong>Publisher:</strong> National Health Commission of China; official PDF hosted by Shanxi Health Commission</p>
 
@@ -317,7 +310,7 @@ evidencecutoff: "2026-10-26"
 
 <p><strong>Original sources:</strong> <a href="https://wjw.shanxi.gov.cn/zfxxgk/fdzdgknr/ghjh/202608/P020260831335869219767.pdf" target="_blank" rel="noopener">Original source</a> · <a href="https://www.nhc.gov.cn/guihuaxxs/c100132/202608/3fadb2a3da314bb688e848598f6ac6df.shtml" target="_blank" rel="noopener">Publisher page</a></p></section>
 
-<section class="research-evidence" id="source-E07" aria-labelledby="heading-E07"><h3 id="heading-E07">[E07] Medicare Advantage in 2026: Enrollment Update and Key Trends</h3>
+<section class="research-evidence" id="source-E07" data-source-id="E07" aria-labelledby="heading-E07"><h3 id="heading-E07">[E07] Medicare Advantage in 2026: Enrollment Update and Key Trends</h3>
 
 <p><strong>Publisher:</strong> KFF</p>
 
@@ -337,7 +330,7 @@ evidencecutoff: "2026-10-26"
 
 <p><strong>Original sources:</strong> <a href="https://www.kff.org/medicare/medicare-advantage-in-2026-enrollment-update-and-key-trends/" target="_blank" rel="noopener">Original source</a></p></section>
 
-<section class="research-evidence" id="source-E08" aria-labelledby="heading-E08"><h3 id="heading-E08">[E08] Thermo Fisher Scientific Inc. Form 10-K for the year ended December 31, 2025</h3>
+<section class="research-evidence" id="source-E08" data-source-id="E08" aria-labelledby="heading-E08"><h3 id="heading-E08">[E08] Thermo Fisher Scientific Inc. Form 10-K for the year ended December 31, 2025</h3>
 
 <p><strong>Publisher:</strong> Thermo Fisher Scientific filing with SEC</p>
 
@@ -357,7 +350,7 @@ evidencecutoff: "2026-10-26"
 
 <p><strong>Original sources:</strong> <a href="https://www.sec.gov/Archives/edgar/data/97745/000009774526000018/tmo-20251231.htm" target="_blank" rel="noopener">Original source</a></p></section>
 
-<section class="research-evidence" id="source-E09" aria-labelledby="heading-E09"><h3 id="heading-E09">[E09] Annual Report 2025 One Lonza Strategy</h3>
+<section class="research-evidence" id="source-E09" data-source-id="E09" aria-labelledby="heading-E09"><h3 id="heading-E09">[E09] Annual Report 2025 One Lonza Strategy</h3>
 
 <p><strong>Publisher:</strong> Lonza</p>
 
@@ -377,7 +370,7 @@ evidencecutoff: "2026-10-26"
 
 <p><strong>Original sources:</strong> <a href="https://www.lonza.com/annualreport/2025/company/one-lonza-strategy" target="_blank" rel="noopener">Original source</a></p></section>
 
-<section class="research-evidence" id="source-E10" aria-labelledby="heading-E10"><h3 id="heading-E10">[E10] Eli Lilly and Company Form 10-K for the year ended December 31, 2025</h3>
+<section class="research-evidence" id="source-E10" data-source-id="E10" aria-labelledby="heading-E10"><h3 id="heading-E10">[E10] Eli Lilly and Company Form 10-K for the year ended December 31, 2025</h3>
 
 <p><strong>Publisher:</strong> Eli Lilly filing with SEC</p>
 
@@ -397,7 +390,7 @@ evidencecutoff: "2026-10-26"
 
 <p><strong>Original sources:</strong> <a href="https://www.sec.gov/Archives/edgar/data/59478/000005947826000013/lly-20251231.htm" target="_blank" rel="noopener">Original source</a></p></section>
 
-<section class="research-evidence" id="source-E11" aria-labelledby="heading-E11"><h3 id="heading-E11">[E11] Capital Markets Day 2025</h3>
+<section class="research-evidence" id="source-E11" data-source-id="E11" aria-labelledby="heading-E11"><h3 id="heading-E11">[E11] Capital Markets Day 2025</h3>
 
 <p><strong>Publisher:</strong> Siemens Healthineers</p>
 
@@ -417,7 +410,7 @@ evidencecutoff: "2026-10-26"
 
 <p><strong>Original sources:</strong> <a href="https://www.siemens-healthineers.com/press/features/cmd2025" target="_blank" rel="noopener">Original source</a></p></section>
 
-<section class="research-evidence" id="source-E12" aria-labelledby="heading-E12"><h3 id="heading-E12">[E12] Key Facts and Global Impact</h3>
+<section class="research-evidence" id="source-E12" data-source-id="E12" aria-labelledby="heading-E12"><h3 id="heading-E12">[E12] Key Facts and Global Impact</h3>
 
 <p><strong>Publisher:</strong> Medtronic</p>
 
@@ -437,7 +430,7 @@ evidencecutoff: "2026-10-26"
 
 <p><strong>Original sources:</strong> <a href="https://www.medtronic.com/en-us/our-company/key-facts.html" target="_blank" rel="noopener">Original source</a></p></section>
 
-<section class="research-evidence" id="source-E13" aria-labelledby="heading-E13"><h3 id="heading-E13">[E13] McKesson Corporation Form 10-K for the fiscal year ended March 31, 2026</h3>
+<section class="research-evidence" id="source-E13" data-source-id="E13" aria-labelledby="heading-E13"><h3 id="heading-E13">[E13] McKesson Corporation Form 10-K for the fiscal year ended March 31, 2026</h3>
 
 <p><strong>Publisher:</strong> McKesson filing with SEC</p>
 
@@ -457,7 +450,7 @@ evidencecutoff: "2026-10-26"
 
 <p><strong>Original sources:</strong> <a href="https://www.sec.gov/Archives/edgar/data/927653/000092765326000069/mck-20260331.htm" target="_blank" rel="noopener">Original source</a></p></section>
 
-<section class="research-evidence" id="source-E14" aria-labelledby="heading-E14"><h3 id="heading-E14">[E14] HCA Healthcare Reports Fourth Quarter 2025 Results and Provides 2026 Guidance</h3>
+<section class="research-evidence" id="source-E14" data-source-id="E14" aria-labelledby="heading-E14"><h3 id="heading-E14">[E14] HCA Healthcare Reports Fourth Quarter 2025 Results and Provides 2026 Guidance</h3>
 
 <p><strong>Publisher:</strong> HCA Healthcare</p>
 
@@ -477,7 +470,7 @@ evidencecutoff: "2026-10-26"
 
 <p><strong>Original sources:</strong> <a href="https://investor.hcahealthcare.com/news/news-details/2026/HCA-Healthcare-Reports-Fourth-Quarter-2025-Results-and-Provides-2026-Guidance/default.aspx" target="_blank" rel="noopener">Original source</a></p></section>
 
-<section class="research-evidence" id="source-E15" aria-labelledby="heading-E15"><h3 id="heading-E15">[E15] UnitedHealth Group Reports 2025 Results and Issues 2026 Outlook</h3>
+<section class="research-evidence" id="source-E15" data-source-id="E15" aria-labelledby="heading-E15"><h3 id="heading-E15">[E15] UnitedHealth Group Reports 2025 Results and Issues 2026 Outlook</h3>
 
 <p><strong>Publisher:</strong> UnitedHealth Group</p>
 
@@ -497,7 +490,7 @@ evidencecutoff: "2026-10-26"
 
 <p><strong>Original sources:</strong> <a href="https://www.unitedhealthgroup.com/newsroom/2026/2026-01-27-uhg-reports-2025-results-and-issues-2026-outlook.html" target="_blank" rel="noopener">Original source</a></p></section>
 
-<section class="research-evidence" id="source-E16" aria-labelledby="heading-E16"><h3 id="heading-E16">[E16] Tracking universal health coverage: 2025 global monitoring report</h3>
+<section class="research-evidence" id="source-E16" data-source-id="E16" aria-labelledby="heading-E16"><h3 id="heading-E16">[E16] Tracking universal health coverage: 2025 global monitoring report</h3>
 
 <p><strong>Publisher:</strong> World Health Organization and World Bank</p>
 
@@ -517,7 +510,7 @@ evidencecutoff: "2026-10-26"
 
 <p><strong>Original sources:</strong> <a href="https://www.who.int/teams/health-financing-and-economics/global-monitoring-report/2025" target="_blank" rel="noopener">Original source</a></p></section>
 
-<section class="research-evidence" id="source-E17" aria-labelledby="heading-E17"><h3 id="heading-E17">[E17] Health workforce</h3>
+<section class="research-evidence" id="source-E17" data-source-id="E17" aria-labelledby="heading-E17"><h3 id="heading-E17">[E17] Health workforce</h3>
 
 <p><strong>Publisher:</strong> World Health Organization</p>
 
@@ -537,7 +530,7 @@ evidencecutoff: "2026-10-26"
 
 <p><strong>Original sources:</strong> <a href="https://www.who.int/health-topics/health-workforce" target="_blank" rel="noopener">Original source</a></p></section>
 
-<section class="research-evidence" id="source-E18" aria-labelledby="heading-E18"><h3 id="heading-E18">[E18] Ageing and health</h3>
+<section class="research-evidence" id="source-E18" data-source-id="E18" aria-labelledby="heading-E18"><h3 id="heading-E18">[E18] Ageing and health</h3>
 
 <p><strong>Publisher:</strong> World Health Organization</p>
 
@@ -557,7 +550,7 @@ evidencecutoff: "2026-10-26"
 
 <p><strong>Original sources:</strong> <a href="https://www.who.int/news-room/fact-sheets/detail/ageing-and-health" target="_blank" rel="noopener">Original source</a></p></section>
 
-<section class="research-evidence" id="source-E19" aria-labelledby="heading-E19"><h3 id="heading-E19">[E19] DRG DIP 2.0 policy explanation July 2024</h3>
+<section class="research-evidence" id="source-E19" data-source-id="E19" aria-labelledby="heading-E19"><h3 id="heading-E19">[E19] DRG DIP 2.0 policy explanation July 2024</h3>
 
 <p><strong>Publisher:</strong> National Healthcare Security Administration of China</p>
 
@@ -577,7 +570,7 @@ evidencecutoff: "2026-10-26"
 
 <p><strong>Original sources:</strong> <a href="https://www.nhsa.gov.cn/art/2024/7/23/art_105_13316.html" target="_blank" rel="noopener">Original source</a></p></section>
 
-<section class="research-evidence" id="source-E20" aria-labelledby="heading-E20"><h3 id="heading-E20">[E20] List of Artificial Intelligence-Enabled Medical Devices</h3>
+<section class="research-evidence" id="source-E20" data-source-id="E20" aria-labelledby="heading-E20"><h3 id="heading-E20">[E20] List of Artificial Intelligence-Enabled Medical Devices</h3>
 
 <p><strong>Publisher:</strong> US Food and Drug Administration</p>
 
@@ -597,7 +590,7 @@ evidencecutoff: "2026-10-26"
 
 <p><strong>Original sources:</strong> <a href="https://www.fda.gov/medical-devices/artificial-intelligence-enabled-medical-devices/list-artificial-intelligence-enabled-medical-devices" target="_blank" rel="noopener">Original source</a></p></section>
 
-<section class="research-evidence" id="source-E21" aria-labelledby="heading-E21"><h3 id="heading-E21">[E21] Considerations for the Regulation of Generative AI-Enabled Medical Devices: Discussion Paper and Request for Feedback</h3>
+<section class="research-evidence" id="source-E21" data-source-id="E21" aria-labelledby="heading-E21"><h3 id="heading-E21">[E21] Considerations for the Regulation of Generative AI-Enabled Medical Devices: Discussion Paper and Request for Feedback</h3>
 
 <p><strong>Publisher:</strong> US Food and Drug Administration</p>
 
@@ -617,7 +610,7 @@ evidencecutoff: "2026-10-26"
 
 <p><strong>Original sources:</strong> <a href="https://www.fda.gov/medical-devices/digital-health-center-excellence/considerations-regulation-generative-ai-enabled-medical-devices-discussion-paper-and-request" target="_blank" rel="noopener">Original source</a></p></section>
 
-<section class="research-evidence" id="source-E22" aria-labelledby="heading-E22"><h3 id="heading-E22">[E22] Parts of Medicare</h3>
+<section class="research-evidence" id="source-E22" data-source-id="E22" aria-labelledby="heading-E22"><h3 id="heading-E22">[E22] Parts of Medicare</h3>
 
 <p><strong>Publisher:</strong> US Centers for Medicare and Medicaid Services Medicare.gov</p>
 
@@ -637,7 +630,7 @@ evidencecutoff: "2026-10-26"
 
 <p><strong>Original sources:</strong> <a href="https://www.medicare.gov/basics/get-started-with-medicare/medicare-basics/parts-of-medicare" target="_blank" rel="noopener">Original source</a></p></section>
 
-<section class="research-evidence" id="source-E23" aria-labelledby="heading-E23"><h3 id="heading-E23">[E23] 国家医保局按病种付费3.0版分组方案新闻发布会实录 Official press conference on DRG DIP version 3.0</h3>
+<section class="research-evidence" id="source-E23" data-source-id="E23" aria-labelledby="heading-E23"><h3 id="heading-E23">[E23] 国家医保局按病种付费3.0版分组方案新闻发布会实录 Official press conference on DRG DIP version 3.0</h3>
 
 <p><strong>Publisher:</strong> National Healthcare Security Administration of China</p>
 

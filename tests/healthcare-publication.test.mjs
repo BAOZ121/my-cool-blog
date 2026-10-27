@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { readFileSync, existsSync } from "node:fs";
 import { validateMap, validateShare, pieOptions } from "../assets/js/article-visuals.mjs";
 
-const bundle = new URL("../content/test/healthcare-industry-report/", import.meta.url);
+const bundle = new URL("../content/post/healthcare-industry-report/", import.meta.url);
 const read = (path) => readFileSync(new URL(path, bundle), "utf8");
 const article = read("index.en.md");
 const front = article.split("---", 3)[1];
@@ -20,16 +20,24 @@ function csv(path) {
   return lines.map((line) => Object.fromEntries(fields(line).map((value, index) => [headers[index], value])));
 }
 
-test("healthcare stays a native, unlisted test page with four report parts and four sourced visuals", () => {
+test("healthcare publishes at its canonical article route with four report parts and four sourced visuals", () => {
   for (const expected of [
-    /^url:\s*"\/test\/healthcare-industry-report\/"$/m,
+    /^url:\s*"\/post\/healthcare-industry-report\/"$/m,
     /^type:\s*"post"$/m, /^layout:\s*"single"$/m,
-    /^testpage:\s*true$/m, /^robots:\s*"noindex, nofollow"$/m,
-    /^sitemap:\s*\n\s+disable:\s*true$/m,
-    /^build:\s*\n\s+list:\s*"never"\s*\n\s+render:\s*"always"$/m,
+    /^reportversion:\s*"1\.1"$/m,
+    /^categories:\s*\["Industry Report"\]$/m,
+    /^draft:\s*false$/m,
   ]) assert.match(front, expected);
-  assert.doesNotMatch(front, /^(?:categories|tags):/m);
-  assert.doesNotMatch(article, /<(?:script|style)\b/i, "The test page must use the site's shared components");
+  assert.doesNotMatch(front, /^testpage:|noindex|^sitemap:\s*\n\s+disable:\s*true|^build:\s*\n\s+list:\s*"never"/mi);
+  assert.doesNotMatch(article, /<(?:script|style)\b/i, "The article must use the site's shared components");
+  assert.doesNotMatch(article, /Website test edition|\/test\/healthcare-industry-report\//);
+  const redirects = readFileSync(new URL("../static/_redirects", import.meta.url), "utf8")
+    .split(/\r?\n/).map((line) => line.trim().split(/\s+/).join(" "));
+  for (const suffix of ["", "/", "/*"]) {
+    const destination = `/post/healthcare-industry-report/${suffix === "/*" ? ":splat" : ""}`;
+    assert.ok(redirects.includes(`/test/healthcare-industry-report${suffix} ${destination} 301`));
+  }
+  assert.ok(!existsSync(new URL("../content/test/healthcare-industry-report/index.en.md", import.meta.url)), "The retired test page must not compete with the redirect");
   assert.deepEqual([...article.matchAll(/^## Part (\d): ([^{\n]+)/gm)].map((match) => [Number(match[1]), match[2].trim()]), [
     [1, "Industry Story"], [2, "Industry Value Chain"], [3, "Market Landscape"], [4, "Industry Problems"],
   ]);
@@ -44,6 +52,9 @@ test("healthcare stays a native, unlisted test page with four report parts and f
   }
   assert.ok(existsSync(new URL("assets/cover.webp", bundle)));
   assert.match(article, /id="supporting-evidence"/);
+  assert.deepEqual(visuals.maps["healthcare-value-chain"].sources.map((source) => source.url), [
+    "/post/healthcare-industry-report/#appendix-evidence-and-methods",
+  ]);
 });
 
 test("all healthcare citations and chart provenance resolve to the complete 23-record appendix", () => {

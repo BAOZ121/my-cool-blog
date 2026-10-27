@@ -43,3 +43,8 @@
 /test/new-energy-vehicle-v1 /post/new-energy-vehicle/ 301
 /test/new-energy-vehicle-v1/ /post/new-energy-vehicle/ 301
 /test/new-energy-vehicle-v1/* /post/new-energy-vehicle/:splat 301
+
+# The reviewed healthcare report is now a published article.
+/test/healthcare-industry-report /post/healthcare-industry-report/ 301
+/test/healthcare-industry-report/ /post/healthcare-industry-report/ 301
+/test/healthcare-industry-report/* /post/healthcare-industry-report/:splat 301
