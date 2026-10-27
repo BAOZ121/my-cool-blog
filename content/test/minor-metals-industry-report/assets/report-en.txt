@@ -1,0 +1,432 @@
+Minor Metals Industry Report
+
+Value chains and competition from mineral resources to qualified materials
+
+DEX Research | Review edition 1.1 | 27 October 2026
+
+This report examines global minor-metal supply chains, focusing on tungsten, antimony, gallium, germanium, indium, bismuth and molybdenum. Niobium, rhenium, tellurium and selenium provide adjacent-market examples. It does not comprehensively cover rare earths, lithium–nickel–cobalt battery materials or precious metals. Research closes on 27 October 2026. Production charts use the 2024 statistical period in the BGS publication released in 2026; company cases mainly cover disclosures for 2025–2026. The central assessment is that commercial value depends on converting feedstock consistently into customer-qualified material that can be delivered on time. Resources, processing capability, permission to trade and cash flow must be assessed together.
+
+P1 Industry Story
+
+What a shipment of antimony reveals
+
+On 17 February 2026, Nyrstar announced the first shipment of Australian-produced commercial-grade antimony metal from a demonstration plant at its Port Pirie multi-metals facility. The announcement did not disclose the shipment volume and identified the buyer only as an Australian east-coast manufacturer. Its potential expansion to as much as 5,000 tonnes a year was a future capacity proposition, not achieved production. [E01]
+
+The episode illustrates an easily overlooked stage of supply. Extraction must be followed by separation, refining and conversion before manufacturers have usable material. Opening a mine, producing crude metal, qualifying a material and securing repeat orders are different milestones. The analytical question is therefore which step a business controls: the resource itself, or a difficult part of turning that resource into a product a customer can accept.
+
+A category of markets rather than one market
+
+“Minor metals” is used here as a working industrial category, not a universal legal list of elements or a claim that every member is geologically scarce. Tungsten and molybdenum connect strongly to alloys and industrial processing; gallium, germanium and indium to electronic and optical materials; antimony and bismuth also serve chemical and alloy applications. Low geological abundance, limited economic resources, difficult recovery and few qualified suppliers are different constraints. Critical-mineral classifications additionally reflect economic importance and supply risk. [E03]
+
+A useful commercial assessment asks which form, purity grade and delivery location is constrained, and what customers will pay for reliability. A higher metal price may improve a mine’s economics while putting pressure on a processor that buys metal. Scarcity is therefore only the start of the analysis; the contract and the position in the chain determine how it affects earnings.
+
+P2 Industry Value Chain
+
+Core materials and their applications
+
+Material: Tungsten W; Feed and products: Ore and carbide scrap; powder and tungsten carbide; Applications: Cutting and wear-resistant tools; alloys; Evidence: E03,E07
+
+Material: Antimony Sb; Feed and products: Antimony ores and associated feed; metal and oxides; Applications: Flame retardants; lead alloys; glass; Evidence: E01,E03
+
+Material: Gallium Ga; Feed and products: Byproduct recovery in aluminium or zinc processing; high-purity metal and compounds; Applications: GaAs and GaN electronics and optoelectronics; Evidence: E04,E05,E20
+
+Material: Germanium Ge; Feed and products: Germanium-bearing feed and residues; metal and compounds; Applications: Infrared optics; fibre optics; semiconductors; Evidence: E04,E14,E20
+
+Material: Indium In; Feed and products: Primarily zinc-processing byproduct; metal, ITO and InP; Applications: Conductive display coatings; optical communication; solder; Evidence: E04,E08
+
+Material: Bismuth Bi; Feed and products: Primarily lead-processing byproduct; metal and compounds; Applications: Low-melting alloys; solder; pharmaceutical ingredients; Evidence: E03
+
+Material: Molybdenum Mo; Feed and products: Molybdenum ores and associated feed; oxides, ferromolybdenum and metal; Applications: Steel alloys; chemicals; high-performance components; Evidence: E06,E09,E12
+
+The table maps commercial connections, not end-use shares. Metal ingots, compounds, crystals, targets and finished devices containing the same element are not interchangeable tonne for tonne. Possessing gallium does not mean possessing a material ready for a particular semiconductor production line. Demand analysis must identify the form and process involved.
+
+Figure 1. Minor-metal value chain. Companies are business examples and may operate across stages. Connections indicate categories, not verified supply contracts.
+
+Upstream: primary mining (CMOC, Xiamen Tungsten); host-metal processing streams (Nyrstar); secondary feed and recycling (Nichia, Xiamen Tungsten).
+
+Midstream: separation and purification (Nyrstar, Nichia); powders and compounds (Xiamen Tungsten, Indium Corporation); specialised processing and materials (Molymet, 5N Plus).
+
+Downstream: tools and alloys; electronics and optics; displays and solar materials; antimony flame retardants; bismuth alloys and solder. The verified contract example is 5N Plus supplying CdTe to First Solar; other connections are categories.
+
+Upstream feedstock and supply responsiveness
+
+Upstream activity comprises exploration, mining and beneficiation, recovery of associated metals, and collection of production scrap and end-of-life material. CMOC’s China operations cover molybdenum and tungsten extraction and processing; Xiamen Tungsten describes a chain extending from mines to powders, carbide, tools and recycling. [E06,E07] A mine sells feedstock with agreed metal-content and impurity characteristics. Its economics also depend on extraction costs, recovery, treatment terms and transport.
+
+Byproduct routes have different constraints. Supply of some gallium, germanium and indium depends on whether host-metal processing systems are equipped to recover them; a rise in the minor metal’s price alone cannot immediately increase output. [E08,E20] For a byproduct project, the report’s assessment framework starts with sustainable feed availability, recoverable content, actual recovery and product acceptance. Host-metal tonnage or geological content alone can overstate saleable supply.
+
+Midstream recovery and material specifications
+
+Midstream processors convert concentrates and residues into crude metal, oxides, compounds or high-purity materials. Nyrstar produces high-purity indium at Auby in France. Nichia offers 6N and 7N gallium and recovers gallium from scrap. [E05,E08] Those labels mean 99.9999% and 99.99999% purity, respectively; they are not recovery rates. Aggregate purity does not replace a customer’s requirements for particular impurities, physical form and consistency between batches.
+
+A processor can purchase feedstock and sell the resulting material, or process material owned by a customer. Molymet’s tolling service converts customer concentrates into oxide or ferromolybdenum and returns the products for the customer to sell. [E09] These models differ in metal-price exposure, inventory funding and revenue presentation. Comparisons should establish who owns the material, who bears price changes and how the processing fee is determined.
+
+Downstream buyers purchase usable performance
+
+Downstream buyers include alloy and tool manufacturers, semiconductor-material and device producers, optical and fibre-optic businesses, display-material suppliers and chemical companies. Indium Corporation offers gallium, germanium and indium materials; CBMM supplies ferroniobium for steel alongside more specialised metal and oxide products. [E04,E13] Procurement has to specify a usable product, rather than just the name of an element.
+
+An identifiable supply relationship comes from the adjacent tellurium and selenium markets. In August 2025, 5N Plus announced an expanded agreement with First Solar for cadmium telluride, with cadmium selenide deliveries planned from 2026. [E11] This identifies a material and a customer. It does not establish growth for all minor metals, and committed supply is not the same as completed delivery. Other company connections in the industry map should not be read as contractual relationships.
+
+Recycling returns material to the processing chain
+
+Recycling runs through the chain. Production scrap is often easier to collect, characterise and process consistently than dispersed consumer waste. MMTA identifies established routes including indium recovery from ITO production scrap, tungsten from carbide scrap and rhenium from spent catalysts. [E22] Technical recyclability does not mean complete economic recovery. A recycler still needs feedstock access, a way to manage contaminants and customers able to use the recovered product.
+
+P3 Market Landscape
+
+Read production geography by material and stage
+
+The two charts show BGS-reported mine-production geography for antimony and tungsten in the 2024 statistical period, measured in tonnes of contained metal. They do not measure company revenue shares, refining capacity or real-time 2026 supply. China accounts for 42.9% and 78.1%, respectively. The difference itself demonstrates why a single minor-metals market-share chart would obscure rather than explain the industry. [E02]
+
+Figure 2. Antimony mine-production geography. BGS 2024 statistical period; reported world total 105,000 tonnes of metal content. Other and rounding is a residual.
+
+China: 45,000 t; 42.9%
+
+Tajikistan: 27,500 t; 26.2%
+
+Russia: 15,000 t; 14.3%
+
+Bolivia: 4,817 t; 4.6%
+
+Turkey: 4,548 t; 4.3%
+
+Other and rounding: 8,135 t; 7.7%
+
+Figure 3. Tungsten mine-production geography. BGS 2024 statistical period; reported world total 75,500 tonnes of metal content. Rwanda uses an export proxy; US output is acknowledged but unquantified.
+
+China: 59,000 t; 78.1%
+
+Vietnam: 5,394 t; 7.1%
+
+Bolivia: 2,127 t; 2.8%
+
+North Korea: 1,800 t; 2.4%
+
+Rwanda: 1,587 t; 2.1%
+
+Other and rounding: 5,592 t; 7.4%
+
+Antimony’s distribution gives Tajikistan and Russia important roles alongside China, while tungsten mining is more concentrated. [E02] Concentrates may nevertheless be refined elsewhere, and processors can source from several countries. Mine location, refining location and customs shipment origin are three different maps. Supply-risk analysis should trace processing stages, rather than infer the entire chain from the country making the final export.
+
+Gallium, germanium, indium and bismuth remain central to the report, but this edition does not publish unverified company shares or an aggregate global market value. Molybdenum’s proposed production chart was excluded because BGS and USGS give conflicting US figures for 2024; the independent appendix records the issue. [E02,E24] Its value chain and business models can still be analysed, while numerical conclusions about global concentration remain constrained.
+
+Different business models defend different advantages
+
+One group combines resources with processing, potentially benefiting from feedstock control, resource life and supporting infrastructure; CMOC and Xiamen Tungsten illustrate this position. A second recovers additional products from established base-metal processing streams, as Nyrstar demonstrates. A third supplies high-purity or functional materials, where process control and customer integration matter; Nichia, Indium Corporation and 5N Plus provide observable examples. [E01,E04–E08,E10] These are analytical categories, not rankings.
+
+Integration can coordinate feedstock and conversion, but it also puts mining, refining, development and sales capital requirements on one balance sheet. A specialist processor can serve several customers while having less control over feed. Neither structure is automatically superior. Relevant questions are whether operations can continue during feed shortages, cash can be recovered during price declines and orders can survive changes in customer technology.
+
+Competitive positions can move along the chain. In August 2026, Molymet announced the completion of its approximately US$40 million acquisition of Rhenium Alloys, adding downstream molybdenum, tungsten, rhenium and alloy capabilities. [E12] Acquisition can extend a processor into components. Completion alone does not establish an improvement in future margins; integration costs, utilisation and customer revenue still need to be observed.
+
+How price changes pass through earnings
+
+5N Plus offers a concrete example. Second-quarter 2026 revenue rose 28% year on year to US$122.4 million, while its adjusted gross-margin percentage fell from 34.6% to 30.3%. The company attributed dilution of the benefit from higher volumes to metal-input and chemical costs. [E10] This is one company’s experience, using a non-IFRS adjusted metric, not an industry margin estimate. Price, volume and profitability must be separated.
+
+For a processor buying its own feed, the timing of purchase and sales repricing matters. If input costs rise before contracts reset, revenue can increase while the processing contribution narrows. Inventory also increases funding needs: the same physical quantity ties up more cash at a higher price. Tolling may reduce some exposure through the ownership arrangement, but insufficient throughput still affects fixed-cost absorption. These are business-model inferences that require company-specific contract and financial evidence.
+
+Corporate revenues cannot simply be added into an industry size. Umicore’s 2025 results define revenue excluding the value of several purchased metals, including germanium. [E14] Tolling income, sales including metal value and trading turnover are not equivalent measures. Adding extraction, refining, material-manufacturing and trading revenues can also count the same metal repeatedly.
+
+Demand growth must translate into material orders
+
+Semiconductors, optical communications, industrial automation and energy equipment can create demand, but an end-market growth rate cannot be assigned directly to a metal. A useful research decomposition starts with equipment production multiplied by metal intensity, adds process losses, subtracts material recovered for reuse and considers substitution and inventory changes. This is an estimation framework, not a numerical forecast supplied by this report.
+
+Projects should be distinguished by stage: planned, financed, under construction, trial production, customer qualification and stable commercial sales. A demonstration batch establishes progress, while sustained acceptance, cost control and repeat demand determine commercial viability. Expansion announcements from established producers likewise need to be read alongside customer commitments and operating evidence.
+
+P4 Industry Problems
+
+Byproduct dependence and processing gaps
+
+Minor-metal prices and host-metal processing cycles can diverge. Weak host-metal economics, reduced feed or plant shutdowns may therefore affect byproduct availability. The IEA’s 2026 outlook identifies copper, zinc and lead smelters as important byproduct-processing nodes and highlights equipment, technology and skills constraints. [E19] The report’s assessment is that additional mineral feed may need recovery and purification investment before it becomes usable additional supply.
+
+One improvement path is to add recovery around reliable feed streams and match purification capacity to customer requirements. Yet additional processing still requires validation of impurity behaviour, energy use, waste handling and stability at scale. A laboratory recovery rate is not a full-year commercial recovery rate, and nameplate capacity is not accepted sales volume.
+
+Policy changes affect deliverable supply
+
+Export policy must be read by notice, product and date. China announced controls on specified gallium and germanium items in 2023, antimony-related items in 2024, and additional specified tungsten, tellurium, bismuth, molybdenum and indium items in 2025. [E15–E17] Licensing differs from a blanket export prohibition, and products containing the same element may have different classifications.
+
+In Announcement 10 of 2025, the indium section lists indium phosphide, trimethylindium, triethylindium and related technology. It cannot be paraphrased as a prohibition on all indium metal. The molybdenum provision also specifies use, purity and particle-size conditions for powder and associated technology, rather than every molybdenum product. [E17] Such details determine the supply actually covered by a market assessment.
+
+At the 27 October 2026 cutoff, Announcement 72 of 2025’s suspension remained within its stated period: clause 2 of Announcement 46 of 2024 was suspended from 9 November 2025 through 27 November 2026. That did not remove all mineral-export licensing or suspend clause 1’s prohibition on dual-use exports to US military users or for US military end uses. [E18] This report does not predict treatment after expiry. Announcement 26 of 2026 concerns reporting and enforcement arrangements and should not be described as a new blanket product ban. [E23]
+
+New capacity needs customers and cash
+
+A new supplier may face substantial upfront expenditure while customers initially purchase only trial quantities; unit costs may fall only after utilisation improves. A project with nameplate capacity but no sustainable feed or route to customer adoption can postpone its financing problem until after commissioning. Procurement commitments, staged expansion and verified specifications can reduce risk, while potentially creating customer concentration and contractual pricing constraints.
+
+Project review should separate who funds construction, who buys initial output, who bears feed and energy inflation, how failed-qualification inventory is treated and whether debt service continues during downtime. Public support can alter financing costs or demand assurance; it cannot replace reliable operation or product suitability. This is a due-diligence framework, not an estimate of any named project’s probability of success.
+
+Recycling and substitution have boundaries
+
+The first recycling gains may come from concentrated production scrap rather than discarded finished goods. Lower process losses and reuse can reduce the additional metal needed per unit of final output. [E22] End-market growth therefore need not create proportionate primary-metal demand. Conversely, long-lived or highly dispersed products cannot quickly supply large amounts of recoverable feed.
+
+Substitution is more than swapping one element for another. A material change may affect device design, processing, efficiency, reliability and qualification costs. Research should identify the application in which replacement is practical instead of treating one experimental result as evidence that all demand will disappear. Developing both a second supplier and an alternative material can increase choices, but requires time and investment.
+
+Limited transparency magnifies analytical errors
+
+A quotation needs its purity, form, location, delivery terms, unit and date. MMTA’s gallium norms, for example, specify quality, packaging and lot conditions. [E21] Prices per kilogram of high-purity material, per tonne of concentrate and per unit of contained metal cannot be compared directly. A price gap need not represent a riskless arbitrage: freight, financing, processing, permission and acceptance can explain part of the difference.
+
+Inventory can buffer interruptions, but the stored form must be usable by the intended industry; an elemental-tonnage count is insufficient. The IEA also stresses that stocks do not replace diversified supply. [E20] This report’s assessment is that competition centres on organising resources, recovery, purification, customer suitability and delivery. The most useful follow-up evidence is accepted sales volume, processing economics, feed security and repeat orders, alongside resource and capacity announcements.
+
+Independent Appendix Evidence and Methods
+
+All evidence was accessed on 27 October 2026. Official statistics, policy records, issuer disclosures and author inferences are distinguished. Company statements establish their own disclosed activities, not independent rankings. Original reports are linked rather than redistributed. Bracketed body references map to the records below.
+
+Chart definitions and calculations
+
+Charts divide country values by the corresponding BGS published 2024 statistical-period world total: 105,000 t Sb and 75,500 t W, both metal content. Share = country value / world total × 100, displayed to one decimal. “Other and rounding” retains the published total and includes unlabelled countries plus rounding; it is not the exact sum of other raw country rows.
+
+Sb residual = 105000 − (45000+27500+15000+4817+4548) = 8135 t. W residual = 75500 − (59000+5394+2127+1800+1587) = 5592 t. Unrounded segments total 100%; displayed percentages may differ slightly through rounding. Raw country data, calculated shares and editable SVGs accompany the report.
+
+The Sb table includes antimony in antimonial lead alloys; Iran uses a year ending the following 31 March and Pakistan the stated 30 June. W uses Rwanda exports as a proxy; Rwanda and Australia use June year ends. US W production is acknowledged without a figure. Charts represent the BGS reporting basis, not error-free measurement of every physical flow.
+
+Evidence gaps and exclusions
+
+No unread paywalled market-size estimate, mixed-year company share or 27 October 2026 spot quotation is used. USGS 2026 commodity-summary originals were inaccessible in this retrieval; search snippets were not treated as read evidence. The Mo conflict in E02/E24 is not filled by an author estimate. Global shares for Ga, Ge, In and Bi remain unquantified in this edition.
+
+Website style references
+
+DEX cybersecurity’s story opening, warm neutral cards, industry map and scoped donut were inspected, together with the semiconductor article’s scope and evidence notes. These pages are style references, not factual evidence for minor metals. This report retains four body parts rather than the older five-part numbering.
+
+Reference pages: https://thedexs.com/post/cybersecurity-industry-report/
+https://thedexs.com/post/semiconductor-industry-report/
+
+Claim-level evidence register
+
+[E01] Nyrstar marks Port Pirie’s first shipment of Australian-produced Antimony metal
+
+Nyrstar | 2026-02-17 | 2026-02-17
+
+Locator: Opening paragraphs and potential expansion paragraph
+
+Issuer record of first demonstration-plant shipment. The 5,000 t/y figure is potential expanded capacity; shipment tonnage is undisclosed. Its unspecified “15% market” comparison is not adopted.
+
+https://www.nyrstar.com/resource-center/press-releases/nyrstar-marks-port-piries-first-shipment-of-australian-produced-antimony-metal
+
+[E02] World Mineral Production 2020–24
+
+British Geological Survey; N. E. Idoine et al. | 2026; repository live 2026-05-20 | 2024 statistical period
+
+Locator: Printed p.5 antimony; p.74 tungsten; p.48 molybdenum exclusion
+
+Official statistical compilation supporting Sb/W charts. Country estimates, rounded totals and reporting-period/proxy caveats are retained. These are not refining or revenue shares. See E24 for the excluded Mo comparison.
+
+https://nora.nerc.ac.uk/id/eprint/541620/1/WMP_2020%20to%202024.pdf
+
+[E03] What are critical minerals
+
+Geoscience Australia | Updated 2026-10-19 | Technical overview
+
+Locator: Antimony, Bismuth, Tungsten entries and definition
+
+Government technical overview for applications and classification. Supports Sb extraction, Bi byproduct recovery and W tooling uses; does not establish end-use shares or company rankings.
+
+https://www.ga.gov.au/scientific-topics/minerals/critical-minerals/what-are-critical-minerals
+
+[E04] Metals and Alloys
+
+Indium Corporation | Undated; accessed 2026-10-27 | Product catalogue
+
+Locator: Product Overview and Features
+
+Manufacturer catalogue linking In to ITO/InP, Ge to optics and Ga to GaAs/GaN. Establishes products and positioning, not independently measured market shares.
+
+https://www.indium.com/products/metals/
+
+[E05] High-purity Gallium
+
+Nichia | Undated; accessed 2026-10-27 | Product catalogue
+
+Locator: Purity table; Gallium Recycling Business
+
+Direct product specifications for 6N/7N gallium and scrap recovery. Purity is not recovery, output or proof of qualification for every customer.
+
+https://www.nichia.co.jp/en/product/semiconductor_materials.html
+
+[E06] China — molybdenum and tungsten
+
+CMOC | Undated; accessed 2026-10-27 | Company operations; FY2025 information
+
+Locator: China operations description and product paragraph
+
+Confirms Mo/W mining, processing, ferromolybdenum and APT activities. Positioning is not an independent ranking; no cross-year share is computed from its production figures.
+
+https://en.cmoc.com/html/Business/China-Mo-W/
+
+[E07] 厦钨简介 — Xiamen Tungsten corporate introduction
+
+Xiamen Tungsten | Undated; accessed 2026-10-27 | Company profile
+
+Locator: Corporate introduction main business paragraph
+
+Confirms the mine-to-powder, carbide, tool and recycling chain. Other group activities include rare earths and battery materials; group revenue is not tungsten revenue.
+
+https://www.cxtc.com/About.aspx
+
+[E08] Indium
+
+Nyrstar | Undated; accessed 2026-10-27 | Product and site description
+
+Locator: Product description below opening smelter paragraph
+
+Confirms zinc-associated indium and high-purity indium production at Auby. No output, capacity or share is inferred.
+
+https://www.nyrstar.com/products/other-metals/indium
+
+[E09] Tolling
+
+Molymet | Undated; accessed 2026-10-27 | Service description
+
+Locator: Tolling body paragraph
+
+Customer concentrate is converted into oxide or ferromolybdenum and returned, supporting the tolling example. Undated capacity claims are not used.
+
+https://molymet.com/en/productos-servicios/servicio-de-maquila/
+
+[E10] 5N Plus Inc. Reports Second Quarter 2026 Financial Results
+
+5N Plus | 2026-08-03 | Quarter ended 2026-06-30
+
+Locator: Financial Highlights; adjusted margin disclosure
+
+Supports US$122.4m revenue, 28% growth and adjusted margin of 30.3% versus 34.6%. Non-IFRS group metric; not a single-metal or industry-average margin.
+
+https://www.5nplus.com/en/news/5n-plus-inc-reports-second-quarter-2026-financial/
+
+[E11] 5N Plus Inc. Scales Up and Expands Critical Materials Supply Agreement with First Solar
+
+5N Plus | 2025-08-05 | Contract terms for 2025–2028
+
+Locator: Opening three paragraphs
+
+Issuer contract announcement identifying CdTe and planned CdSe supply. No value or tonnage is disclosed; commitments do not establish delivered volumes or industry-wide demand.
+
+https://www.5nplus.com/en/news/5n-plus-inc-scales-up-and-expands-critical-materia/
+
+[E12] Molymet completes acquisition process in the United States integrating Rhenium Alloys into the group
+
+Molymet | 2026-08-19 | Acquisition completion
+
+Locator: Announcement body under headline
+
+Supports the approximately US$40m acquisition and Mo/W/Re product extension. It does not prove future returns; self-reported processing-capacity shares are not used as independent market shares.
+
+https://molymet.com/en/molymet-completes-acquisition-process-in-the-united-states-integrating-rhenium-alloys-into-the-group/
+
+[E13] 2025 Sustainability Report
+
+CBMM | Undated; accessed 2026-10-27 | FY2025
+
+Locator: Product Portfolio; Highlights of the Year
+
+Confirms niobium products and applications. Ferroniobium-equivalent tonnes differ from contained-niobium tonnes; no mixed-basis calculation is made.
+
+https://cbmm.com/relatorio-sustentabilidade/en.html
+
+[E14] Full Year Results 2025
+
+Umicore | 2026-02-20 | FY2025
+
+Locator: Specialty Materials and footnote 1
+
+Confirms germanium business and the revenue definition excluding specified purchased metals. Segment revenue is not all germanium revenue; unverified recycling percentages are omitted.
+
+https://www.umicore.de/en/media/full-year-results-2025/
+
+[E15] 商务部 海关总署公告2023年第23号 — Ga and Ge export controls
+
+MOFCOM and GACC | 2023-07-03 | Effective 2023-08-01
+
+Locator: Item lists; licensing; commencement
+
+Historical item-based licensing notice. It is not alone an exhaustive current compliance list or evidence that all exports stopped.
+
+https://www.mofcom.gov.cn/zcfb/dwmygl/art/2023/art_52b9a321087f402bb3d310d18b07967e.html
+
+[E16] 商务部 海关总署公告2024年第33号 — Antimony-related export controls
+
+MOFCOM and GACC | 2024-08-15 | Effective 2024-09-15
+
+Locator: Section I item list; II documents; VIII commencement
+
+Supports specified Sb-related items and application documents. Some items have technical thresholds; licensing is not a universal embargo.
+
+https://www.mofcom.gov.cn/zwgk/zcfb/art/2024/art_a4711acb06364199a3c5a06d7f2be6d8.html
+
+[E17] 商务部 海关总署公告2025年第10号 — W Te Bi Mo In related items
+
+MOFCOM and GACC | 2025-02-04 | Effective on publication
+
+Locator: Sections I–V and final operative paragraphs
+
+Supports listed materials and technologies. Distinguishes specified indium compounds and Mo-powder conditions from all products containing those elements.
+
+https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_e623090907fc4e1092f0a4db72f57b95.html
+
+[E18] 商务部公告2025年第72号及2024年第46号 — Suspension and underlying US-specific provisions
+
+MOFCOM | 2025-11-09; underlying notice 2024-12-03 | Suspension through 2026-11-27
+
+Locator: No72 operative paragraph; No46 clauses 1 and 2
+
+Only clause 2 is suspended for the stated interval. Clause 1 and general licensing remain separate considerations. No post-expiry policy is forecast. The original No46 link follows.
+
+https://www.mofcom.gov.cn/zcfb/dwmygl/art/2025/art_23fd9e81b68646d390baef0a888261fc.html
+
+https://www.mofcom.gov.cn/zwgk/zcfb/art/2024/art_3d5e990b43424e60828030f58a547b60.html
+
+[E19] Global Critical Minerals Outlook 2026 — Executive summary
+
+International Energy Agency | 2026-07-16 | 2026 report; underlying observations vary
+
+Locator: Byproduct smelters and technology/workforce paragraphs
+
+Supports the role of smelters and technology/skills constraints. Broad critical-mineral aggregates are not all-minor-metal metrics; early-year price observations are not October spot prices.
+
+https://www.iea.org/reports/global-critical-minerals-outlook-2026/executive-summary
+
+[E20] Designing an effective strategic stockpiling system for critical minerals
+
+IEA; Scanziani, Dhir, Nishiumi and Kim | 2026-01-27 | Structural analysis
+
+Locator: Strategic stocks section; risk and physical-form discussion
+
+Supports byproduct responsiveness, usable stockpile forms and short-term buffering. Stocks do not replace diversification; purchase outlay differs from annual holding cost.
+
+https://www.iea.org/commentaries/designing-an-effective-strategic-stockpiling-system-for-critical-minerals
+
+[E21] Gallium — Metal norms
+
+Minor Metals Trade Association | Last modified 2017-05-25 | Trade specification example
+
+Locator: Quality, Form, Packaging and Lot Size
+
+Illustrates specification, packaging and lot terms. It is not a 2026 price list or a universal semiconductor-customer specification.
+
+https://mmta.co.uk/metal-norms/gallium/
+
+[E22] Minor Metals Ready for the Circular Economy
+
+MMTA Sustainability Working Group | 2016-05-15; modified 2016-12-06 | Historical recycling-route examples
+
+Locator: How do minor metals fit in to the Circular Economy
+
+Supports the existence of In/W/Re recovery routes. Historical forecasts are not adopted; a route’s existence does not establish a 2026 recycling rate.
+
+https://mmta.co.uk/minor-metals/
+
+[E23] 商务部公告2026年第26号 — Reporting of strategic-mineral export-control violations
+
+MOFCOM | 2026-06-24 | Effective 2026-07-01
+
+Locator: Reportable conduct and commencement
+
+Reporting and enforcement mechanism; does not itself establish a blanket product ban or a violation by any named business.
+
+https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_d6998a818b2e4329b6980093d751cd52.html
+
+[E24] Molybdenum in December 2025
+
+US Geological Survey; D. E. Polyak | 2026-03 | 2024 annual row and 2025 survey
+
+Locator: PDF p.3 Table 1; tonnes of contained Mo
+
+Reports 2024 US concentrate output of 34,000 tonnes contained Mo versus 67,000 in E02. The discrepancy is unresolved; the Mo share chart is excluded rather than splicing sources.
+
+https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/files/mis-202512-molyb.pdf

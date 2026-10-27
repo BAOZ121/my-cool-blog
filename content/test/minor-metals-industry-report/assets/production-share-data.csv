@@ -1,0 +1,13 @@
+commodity,statistical_year,metric,geography,segment,tonnes_metal_content,share_pct_unrounded,world_total_tonnes,source_id,source_page,source_url,segment_basis
+Antimony,2024,Mine production,World,China,45000,42.857142857142854,105000,E02,5,https://nora.nerc.ac.uk/id/eprint/541620/1/WMP_2020%20to%202024.pdf,Published country row
+Antimony,2024,Mine production,World,Tajikistan,27500,26.19047619047619,105000,E02,5,https://nora.nerc.ac.uk/id/eprint/541620/1/WMP_2020%20to%202024.pdf,Published country row
+Antimony,2024,Mine production,World,Russia,15000,14.285714285714286,105000,E02,5,https://nora.nerc.ac.uk/id/eprint/541620/1/WMP_2020%20to%202024.pdf,Published country row
+Antimony,2024,Mine production,World,Bolivia,4817,4.5876190476190475,105000,E02,5,https://nora.nerc.ac.uk/id/eprint/541620/1/WMP_2020%20to%202024.pdf,Published country row
+Antimony,2024,Mine production,World,Turkey,4548,4.331428571428572,105000,E02,5,https://nora.nerc.ac.uk/id/eprint/541620/1/WMP_2020%20to%202024.pdf,Published country row
+Antimony,2024,Mine production,World,Other and rounding,8135,7.747619047619048,105000,E02,5,https://nora.nerc.ac.uk/id/eprint/541620/1/WMP_2020%20to%202024.pdf,Residual including rounding
+Tungsten,2024,Mine production,World,China,59000,78.1456953642384,75500,E02,74,https://nora.nerc.ac.uk/id/eprint/541620/1/WMP_2020%20to%202024.pdf,Published country row
+Tungsten,2024,Mine production,World,Vietnam,5394,7.144370860927152,75500,E02,74,https://nora.nerc.ac.uk/id/eprint/541620/1/WMP_2020%20to%202024.pdf,Published country row
+Tungsten,2024,Mine production,World,Bolivia,2127,2.8172185430463577,75500,E02,74,https://nora.nerc.ac.uk/id/eprint/541620/1/WMP_2020%20to%202024.pdf,Published country row
+Tungsten,2024,Mine production,World,North Korea,1800,2.384105960264901,75500,E02,74,https://nora.nerc.ac.uk/id/eprint/541620/1/WMP_2020%20to%202024.pdf,Published country row
+Tungsten,2024,Mine production,World,Rwanda,1587,2.1019867549668874,75500,E02,74,https://nora.nerc.ac.uk/id/eprint/541620/1/WMP_2020%20to%202024.pdf,Published country row
+Tungsten,2024,Mine production,World,Other and rounding,5592,7.406622516556292,75500,E02,74,https://nora.nerc.ac.uk/id/eprint/541620/1/WMP_2020%20to%202024.pdf,Residual including rounding

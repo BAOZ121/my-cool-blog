@@ -1,0 +1,67 @@
+{
+  "minor-metals-materials": {
+    "title": "Core materials, feedstocks and applications",
+    "description": "Illustrative applications and processing routes; adjacent metals are discussed separately.",
+    "eyebrow": "INDUSTRY SCOPE",
+    "width": "wide",
+    "header": [
+      {
+        "label": "Material"
+      },
+      {
+        "label": "Feed and products"
+      },
+      {
+        "label": "Applications"
+      },
+      {
+        "label": "Evidence"
+      }
+    ],
+    "rows": [
+      [
+        "Tungsten W",
+        "Ore and carbide scrap; powder and tungsten carbide",
+        "Cutting and wear-resistant tools; alloys",
+        "[E03], [E07]"
+      ],
+      [
+        "Antimony Sb",
+        "Antimony ores and associated feed; metal and oxides",
+        "Flame retardants; lead alloys; glass",
+        "[E01], [E03]"
+      ],
+      [
+        "Gallium Ga",
+        "Byproduct recovery in aluminium or zinc processing; high-purity metal and compounds",
+        "GaAs and GaN electronics and optoelectronics",
+        "[E04], [E05], [E20]"
+      ],
+      [
+        "Germanium Ge",
+        "Germanium-bearing feed and residues; metal and compounds",
+        "Infrared optics; fibre optics; semiconductors",
+        "[E04], [E14], [E20]"
+      ],
+      [
+        "Indium In",
+        "Primarily zinc-processing byproduct; metal, ITO and InP",
+        "Conductive display coatings; optical communication; solder",
+        "[E04], [E08]"
+      ],
+      [
+        "Bismuth Bi",
+        "Primarily lead-processing byproduct; metal and compounds",
+        "Low-melting alloys; solder; pharmaceutical ingredients",
+        "[E03]"
+      ],
+      [
+        "Molybdenum Mo",
+        "Molybdenum ores and associated feed; oxides, ferromolybdenum and metal",
+        "Steel alloys; chemicals; high-performance components",
+        "[E06], [E09], [E12]"
+      ]
+    ],
+    "note": "The seven core metals are separate markets. Source IDs link to the evidence appendix; product examples do not imply a supply contract."
+  }
+}

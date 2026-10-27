@@ -1,0 +1,22 @@
+DEX Research
+Version 1 • 27 October 2026
+
+Source [E02]: World Mineral Production 2020–24
+https://nora.nerc.ac.uk/id/eprint/541620/1/WMP_2020%20to%202024.pdf
+
+Antimony
+105000 - (45000 + 27500 + 15000 + 4817 + 4548) = 8135
+Published world total minus sum of all displayed country rows: -244 tonnes.
+Table includes antimony content of antimonial lead alloys.
+Iran reports years ended 31 March following the stated year; Pakistan reports years ended 30 June of stated year.
+Country ranking/production data are BGS estimates for the 2024 statistical period, not 2026 output.
+
+Tungsten
+75500 - (59000 + 5394 + 2127 + 1800 + 1587) = 5592
+Published world total minus sum of all displayed country rows: -43 tonnes.
+The table includes artisanal mining where data are available.
+Rwanda's series is exports, for years ended 30 June of the stated year. Australia also uses June year end.
+Source notes US production exists but provides no country figure. This is the BGS reported world-total basis, not independently exhaustive refinery supply.
+Portugal refers to wolframite and scheelite; Myanmar includes tungsten in tin-tungsten concentrates; Thailand is scheelite.
+
+Each chart uses its own commodity denominator. Do not add volumes to estimate an overall minor-metals market. Molybdenum is excluded from these charts because a cross-source discrepancy in US output remains unresolved.

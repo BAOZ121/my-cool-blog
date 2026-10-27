@@ -1,0 +1,277 @@
+{
+  "schema_version": 1,
+  "maps": {
+    "minor-metals-value-chain": {
+      "eyebrow": "INDUSTRY MAP",
+      "title": "The minor metals value chain",
+      "description": "From mineral feedstocks to qualified industrial materials. Expand a segment to inspect company and product examples.",
+      "root": {
+        "name": "Minor metals",
+        "children": [
+          {
+            "name": "Upstream / Feedstocks and recovery",
+            "children": [
+              {
+                "name": "Primary mining",
+                "children": [
+                  {
+                    "name": "CMOC — molybdenum and tungsten [E06]"
+                  },
+                  {
+                    "name": "Xiamen Tungsten — tungsten mining [E07]"
+                  }
+                ]
+              },
+              {
+                "name": "Host metal processing",
+                "children": [
+                  {
+                    "name": "Zinc ores — indium feed [E08]"
+                  },
+                  {
+                    "name": "Multi-metal feed — Nyrstar [E01, E08]"
+                  }
+                ]
+              },
+              {
+                "name": "Secondary feedstocks",
+                "children": [
+                  {
+                    "name": "Nichia — gallium scrap recycling [E05]"
+                  },
+                  {
+                    "name": "Xiamen Tungsten — recycling [E07]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Midstream / Refining and conversion",
+            "children": [
+              {
+                "name": "Separation and purification",
+                "children": [
+                  {
+                    "name": "Nyrstar — antimony and indium [E01, E08]"
+                  },
+                  {
+                    "name": "Nichia — 6N and 7N gallium [E05]"
+                  }
+                ]
+              },
+              {
+                "name": "Powders and compounds",
+                "children": [
+                  {
+                    "name": "Xiamen Tungsten — powders and carbide [E07]"
+                  },
+                  {
+                    "name": "Indium Corporation — In / Ga / Ge [E04]"
+                  }
+                ]
+              },
+              {
+                "name": "Processing and specialities",
+                "children": [
+                  {
+                    "name": "Molymet — molybdenum tolling [E09]"
+                  },
+                  {
+                    "name": "5N Plus — specialty materials [E10, E11]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Downstream / Industrial applications",
+            "children": [
+              {
+                "name": "Tools and alloy systems",
+                "children": [
+                  {
+                    "name": "Cemented carbide — cutting tools [E07]"
+                  },
+                  {
+                    "name": "Niobium alloys — steel and turbines [E13]"
+                  },
+                  {
+                    "name": "Bismuth — alloys and solder [E03]"
+                  }
+                ]
+              },
+              {
+                "name": "Electronics and optics",
+                "children": [
+                  {
+                    "name": "Ga materials — LEDs and chips [E05]"
+                  },
+                  {
+                    "name": "In compounds / Ge products [E04, E14]"
+                  }
+                ]
+              },
+              {
+                "name": "Displays solar and chemicals",
+                "children": [
+                  {
+                    "name": "Indium — ITO transparent coatings [E08]"
+                  },
+                  {
+                    "name": "5N Plus → First Solar — CdTe [E11]"
+                  },
+                  {
+                    "name": "Antimony — flame retardants [E03]"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "note": "Figure 1. Companies can span stages. Connections show functional categories, not verified supply contracts, except the explicitly labelled 5N Plus to First Solar CdTe agreement [E11]. Nyrstar’s Port Pirie antimony example refers to the demonstration-plant shipment announced on 17 February 2026 [E01], not the potential 5,000-tonne annual expansion. 6N and 7N denote 99.9999% and 99.99999% purity. Examples are illustrative and unranked; source IDs resolve in the appendix.",
+      "sources": [
+        {
+          "title": "Evidence and methods: E01, E03–E11, E13 and E14",
+          "url": "/test/minor-metals-industry-report/#supporting-evidence"
+        }
+      ],
+      "reviewed": "2026-10-27"
+    }
+  },
+  "shares": {
+    "minor-metals-antimony-2024": {
+      "unit": "%",
+      "reviewed": "2026-10-27",
+      "eyebrow": "PRODUCTION GEOGRAPHY",
+      "title": "Antimony mine production by country",
+      "period": "2024 statistical period",
+      "center_label": "2024",
+      "geography": "World",
+      "metric": "Share of reported mine production by contained metal (%)",
+      "dimension": "Country / group",
+      "scope": "BGS reported world mine production: 105,000 metric tonnes of contained metal in the 2024 statistical period. Production geography, not company revenue share or refined-metal supply.",
+      "percentDecimals": 1,
+      "rounding_note": "Each percentage is independently rounded to one decimal place. Displayed percentages may not total exactly 100%; slice areas use the original tonnes.",
+      "totalUnits": 105000,
+      "unitsLabel": "tonnes of metal content",
+      "unitsColumnLabel": "tonnes of metal content",
+      "colors": [
+        "#c7a452",
+        "#5ca4a1",
+        "#5c789f",
+        "#c97f68",
+        "#9c91b0",
+        "#bec2b7"
+      ],
+      "sourceBlock": "E02",
+      "series": [
+        {
+          "name": "China",
+          "value": 42.9,
+          "units": 45000
+        },
+        {
+          "name": "Tajikistan",
+          "value": 26.2,
+          "units": 27500
+        },
+        {
+          "name": "Russia",
+          "value": 14.3,
+          "units": 15000
+        },
+        {
+          "name": "Bolivia",
+          "value": 4.6,
+          "units": 4817
+        },
+        {
+          "name": "Turkey",
+          "value": 4.3,
+          "units": 4548
+        },
+        {
+          "name": "Other and rounding",
+          "value": 7.7,
+          "units": 8135
+        }
+      ],
+      "source": {
+        "publisher": "British Geological Survey; N. E. Idoine et al.",
+        "title": "[E02] World Mineral Production 2020–24",
+        "published": "2026; repository live 2026-05-20",
+        "url": "https://nora.nerc.ac.uk/id/eprint/541620/1/WMP_2020%20to%202024.pdf",
+        "locator": "Printed p. 5; Antimony table, 2024 column, country rows and rounded world total."
+      },
+      "note": "Figure 2. Slice areas use raw tonnes; labels are independently rounded to one decimal. Other and rounding = 105000 - (45000 + 27500 + 15000 + 4817 + 4548) = 8135 tonnes. The residual includes the difference caused by the published rounded world total; it is not an independently observed country total. BGS includes antimony content of antimonial lead alloys; some observations are estimates and country year ends differ. Source E02."
+    },
+    "minor-metals-tungsten-2024": {
+      "unit": "%",
+      "reviewed": "2026-10-27",
+      "eyebrow": "PRODUCTION GEOGRAPHY",
+      "title": "Tungsten mine production by country",
+      "period": "2024 statistical period",
+      "center_label": "2024",
+      "geography": "World",
+      "metric": "Share of reported mine production by contained metal (%)",
+      "dimension": "Country / group",
+      "scope": "BGS reported world mine production: 75,500 metric tonnes of contained metal in the 2024 statistical period. Production geography, not company revenue share or refined-metal supply.",
+      "percentDecimals": 1,
+      "rounding_note": "Each percentage is independently rounded to one decimal place. Displayed percentages may not total exactly 100%; slice areas use the original tonnes.",
+      "totalUnits": 75500,
+      "unitsLabel": "tonnes of metal content",
+      "unitsColumnLabel": "tonnes of metal content",
+      "colors": [
+        "#c7a452",
+        "#5ca4a1",
+        "#5c789f",
+        "#c97f68",
+        "#9c91b0",
+        "#bec2b7"
+      ],
+      "sourceBlock": "E02",
+      "series": [
+        {
+          "name": "China",
+          "value": 78.1,
+          "units": 59000
+        },
+        {
+          "name": "Vietnam",
+          "value": 7.1,
+          "units": 5394
+        },
+        {
+          "name": "Bolivia",
+          "value": 2.8,
+          "units": 2127
+        },
+        {
+          "name": "North Korea",
+          "value": 2.4,
+          "units": 1800
+        },
+        {
+          "name": "Rwanda",
+          "value": 2.1,
+          "units": 1587
+        },
+        {
+          "name": "Other and rounding",
+          "value": 7.4,
+          "units": 5592
+        }
+      ],
+      "source": {
+        "publisher": "British Geological Survey; N. E. Idoine et al.",
+        "title": "[E02] World Mineral Production 2020–24",
+        "published": "2026; repository live 2026-05-20",
+        "url": "https://nora.nerc.ac.uk/id/eprint/541620/1/WMP_2020%20to%202024.pdf",
+        "locator": "Printed p. 74; Tungsten table, 2024 column, country rows and rounded world total."
+      },
+      "note": "Figure 3. Slice areas use raw tonnes; labels are independently rounded to one decimal. Other and rounding = 75500 - (59000 + 5394 + 2127 + 1800 + 1587) = 5592 tonnes. The residual includes the difference caused by the published rounded world total; it is not an independently observed country total. Rwanda is represented by export data; country year ends differ. BGS notes US production without a quantified country row. Some observations are estimates. Source E02."
+    }
+  }
+}

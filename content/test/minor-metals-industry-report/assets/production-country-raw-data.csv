@@ -1,0 +1,41 @@
+commodity,statistical_year,country,tonnes_metal_content,estimated,source_id,source_page
+Antimony,2024,Russia,15000,True,E02,5
+Antimony,2024,Turkey,4548,False,E02,5
+Antimony,2024,Canada,0,True,E02,5
+Antimony,2024,Guatemala,0,False,E02,5
+Antimony,2024,Honduras,80,True,E02,5
+Antimony,2024,Mexico,800,False,E02,5
+Antimony,2024,Bolivia,4817,False,E02,5
+Antimony,2024,China,45000,True,E02,5
+Antimony,2024,Iran,1500,True,E02,5
+Antimony,2024,Kazakhstan,150,True,E02,5
+Antimony,2024,Kyrgyzstan,100,True,E02,5
+Antimony,2024,Laos,1269,False,E02,5
+Antimony,2024,Myanmar,2600,True,E02,5
+Antimony,2024,Pakistan,380,True,E02,5
+Antimony,2024,Tajikistan,27500,False,E02,5
+Antimony,2024,Vietnam,218,False,E02,5
+Antimony,2024,Australia,1282,False,E02,5
+Tungsten,2024,Austria,838,False,E02,74
+Tungsten,2024,Portugal,469,False,E02,74
+Tungsten,2024,Russia,1400,True,E02,74
+Tungsten,2024,Spain,840,False,E02,74
+Tungsten,2024,Burundi,43,False,E02,74
+Tungsten,2024,DR Congo,174,False,E02,74
+Tungsten,2024,Nigeria,82,False,E02,74
+Tungsten,2024,Rwanda,1587,False,E02,74
+Tungsten,2024,Uganda,17,True,E02,74
+Tungsten,2024,Mexico,50,True,E02,74
+Tungsten,2024,Bolivia,2127,False,E02,74
+Tungsten,2024,Brazil,283,False,E02,74
+Tungsten,2024,China,59000,True,E02,74
+Tungsten,2024,South Korea,17,False,E02,74
+Tungsten,2024,North Korea,1800,True,E02,74
+Tungsten,2024,Kyrgyzstan,100,True,E02,74
+Tungsten,2024,Malaysia,50,True,E02,74
+Tungsten,2024,Mongolia,190,False,E02,74
+Tungsten,2024,Myanmar,30,True,E02,74
+Tungsten,2024,Thailand,20,True,E02,74
+Tungsten,2024,Uzbekistan,16,True,E02,74
+Tungsten,2024,Vietnam,5394,False,E02,74
+Tungsten,2024,Australia,1016,False,E02,74
