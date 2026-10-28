@@ -88,7 +88,7 @@
         {{ range .Site.Menus.main }}
         {{ $active := or (eq $currentPage.RelPermalink .URL) (or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .)) }}
         {{ if eq .Identifier "library" }}
-            {{ $active = or $active (in (slice "/industries/" "/archives/" "/evidence-library/") $currentPage.RelPermalink) }}
+            {{ $active = or $active (in (slice "/archives/" "/evidence-library/") $currentPage.RelPermalink) }}
         {{ end }}
         <li {{ if $active }} class='current'{{ end }}>
             <a href='{{ .URL }}' title="{{ .Name }}" {{ if $active }}aria-current="page"{{ end }} {{ if .Params.newTab }}target="_blank"{{ end }}>

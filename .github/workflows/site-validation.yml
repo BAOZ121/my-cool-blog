@@ -33,9 +33,7 @@ jobs:
           printf '%s  %s\n' '0e39b901e3f919f1daae05c8ff64f0c14c8a348ef46886d63f8e6d1bb2653885' "$hugo_dir/hugo.tar.gz" | sha256sum --check
           tar -xzf "$hugo_dir/hugo.tar.gz" -C "$hugo_dir" hugo
           printf '%s\n' "$hugo_dir" >> "$GITHUB_PATH"
-      - name: Check JavaScript syntax
-        run: node --check static/js/industries.js
-      - name: Test industry explorer with translated labels and embedded data
+      - name: Test withdrawn list routes and retained navigation
         run: node --test tests/industries.test.mjs
       - name: Test article graphics and source data
         run: node --test tests/article-visuals.test.mjs tests/article-reading-history.test.mjs tests/glp1-preview.test.mjs tests/healthcare-publication.test.mjs
@@ -58,7 +56,7 @@ jobs:
         run: python3 scripts/validate_cover_images.py public
       - name: Check Evidence Library stays in sync with article citations
         run: python3 scripts/build_evidence_library.py public --check
-      - name: Check industry data and site links
+      - name: Check list withdrawal and site links
         run: python3 scripts/validate_site.py public
       - name: Check sourced industry breakdowns
         run: python3 scripts/validate_breakdowns.py public
@@ -94,7 +92,7 @@ jobs:
       - name: Verify contact and keyboard controls on desktop and mobile
         if: ${{ success() || (failure() && steps.chapter_rail.conclusion == 'failure') }}
         run: node tests/site-controls.browser.mjs
-      - name: Verify industry pages, details and mobile filtering
+      - name: Verify retained industry profiles and withdrawn list routes
         if: ${{ success() || (failure() && steps.chapter_rail.conclusion == 'failure') }}
         run: node tests/industry-pages.browser.mjs
       - name: Verify Evidence Library search, links and keyboard controls

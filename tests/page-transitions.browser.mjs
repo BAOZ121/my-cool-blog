@@ -704,15 +704,15 @@ try {
     await popup.close();
     await page.evaluate(() => {
       const download = document.createElement("a");
-      Object.assign(download, { href: "/data/industries.csv", download: "industries.csv", id: "test-native-download", textContent: "Download test fixture" });
+      Object.assign(download, { href: "/data/industry-breakdowns.json", download: "industry-breakdowns.json", id: "test-native-download", textContent: "Download test fixture" });
       document.querySelector("main").prepend(download);
     });
     const downloadPromise = page.waitForEvent("download");
     await page.locator("#test-native-download").click();
-    assert.equal((await downloadPromise).suggestedFilename(), "industries.csv");
+    assert.equal((await downloadPromise).suggestedFilename(), "industry-breakdowns.json");
     assert.equal(page.url(), origin + listing);
 
-    for (const path of ["/evidence-library/", "/industries/", "/industry-breakdowns/semiconductors/", "/about/"]) {
+    for (const path of ["/evidence-library/", "/industry-breakdowns/semiconductors/", "/about/"]) {
       await page.goto(origin + "/");
       const link = page.locator(`a[href="${path}"]`).filter({ visible: true }).first();
       if (await link.count()) await link.click();
@@ -720,7 +720,6 @@ try {
       await page.waitForURL(origin + path);
       assert.equal(await page.locator("main").isVisible(), true);
       if (path === "/evidence-library/") await page.waitForSelector('[data-enhanced="true"]');
-      if (path === "/industries/") assert.equal(await page.locator("#industry-explorer").count(), 1);
       const pageEntry = await page.evaluate(() => ({ article: Boolean(document.querySelector(".main-article")), calls: window.__entry.calls }));
       if (pageEntry.calls.length) {
         if (pageEntry.article) assertArticleTimeline(pageEntry.calls);

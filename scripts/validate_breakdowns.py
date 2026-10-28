@@ -49,8 +49,6 @@ class Page(HTMLParser):
 
 def main() -> None:
     data = json.loads((ROOT / "data/breakdowns.json").read_text(encoding="utf-8"))
-    dataset = json.loads((ROOT / "static/data/industries.json").read_text(encoding="utf-8"))
-    ranks = {item["rank"]: item for item in dataset["industries"]}
     require(data["schema_version"] == 1, "Unsupported breakdown schema")
     require(date.fromisoformat(data["reviewed"]) <= date.today(), "Review date is in the future")
     profiles = data["profiles"]
@@ -61,8 +59,7 @@ def main() -> None:
         require(bool(re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", p["id"])), "Unsafe profile ID")
         for key in ("name", "summary", "question", "scope", "geography", "category", "keywords", "economics"):
             require(bool(p.get(key, "").strip()), f"{p['id']}: missing {key}")
-        require(p["dataset_rank"] in ranks, f"{p['id']}: unknown dataset row")
-        require(p["category"] == ranks[p["dataset_rank"]]["category"], f"{p['id']}: category mismatch")
+        require(isinstance(p["dataset_rank"], int), "Historical dataset rank must remain an integer")
         require(len(p["chain"]) == 3, f"{p['id']}: must have three readable stages")
         for stage in p["chain"]:
             require(all(stage.get(k) for k in ("title", "actors", "role", "revenue", "bottleneck")), "Incomplete stage")
@@ -94,13 +91,8 @@ def main() -> None:
         require(all(r["url"] in parsed.links for r in p["related"]), "Missing related report")
     require(not (BUILD / "industry-breakdowns/index.html").exists(), "Retired directory must not be generated")
     redirects = (BUILD / "_redirects").read_text(encoding="utf-8").splitlines()
-    require("/industry-breakdowns /industries/ 301" in redirects, "Missing retired-directory redirect")
-    require("/industry-breakdowns/ /industries/ 301" in redirects, "Missing trailing-slash redirect")
+    require(not any("/industries/" in line for line in redirects), "Redirect to withdrawn Explorer")
     require(not any(line.startswith("/industry-breakdowns/*") for line in redirects), "Redirect must preserve profile URLs")
-    industry_page = pages[BUILD / "industries/index.html"]
-    for p in profiles:
-        link = f"/industry-breakdowns/{p['id']}/"
-        require(link in industry_page.links, f"Missing Explorer integration: {link}")
     exported = json.loads((BUILD / "data/industry-breakdowns.json").read_text(encoding="utf-8"))
     require(exported == data, "Published JSON diverges from source data")
 

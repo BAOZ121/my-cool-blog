@@ -1,6 +1,6 @@
 ---
 title: "Search"
-description: "Search DEX industry research articles, six sourced industry breakdowns, and the 50-industry explorer."
+description: "Search DEX industry research articles and six sourced industry breakdowns."
 date: 2026-08-10
 layout: "search"
 slug: "search"

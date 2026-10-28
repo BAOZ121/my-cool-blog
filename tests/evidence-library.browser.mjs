@@ -75,13 +75,13 @@ try {
     assert.equal(await page.locator(".el img").count(), 0);
     await page.locator("[data-clear-empty]").click();
     assert.equal(await page.locator("[data-empty]").isVisible(), false);
-    await page.locator("#el-article").selectOption("50-high-potential-industries");
+    assert.equal(await page.locator('#el-article option[value="50-high-potential-industries"]').count(), 0);
+    await page.locator("#el-article").selectOption("pharmaceutical-industry");
     assert.equal(await page.locator("[data-article]:visible").count(), 1);
-    assert.match(await page.locator(".el-article-notice:visible").textContent(), /other seven audited original ranges remain unverified/);
-    await q.fill("internally inconsistent");
+    await q.fill("not manufacturers");
     assert.ok(await page.locator("[data-evidence-item]:visible").count() > 0, "Full citation notes must be searchable");
     await page.reload();
-    assert.equal(await q.inputValue(), "internally inconsistent");
+    assert.equal(await q.inputValue(), "not manufacturers");
     assert.ok(await page.locator("[data-evidence-item]:visible").count() > 0);
     await page.locator('button[type="reset"]').click();
     await page.locator("#el-article").selectOption("ai-computing-infrastructure");

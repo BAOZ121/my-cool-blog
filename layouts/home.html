@@ -1,18 +1,4 @@
 {{ define "main" }}
-  <section class="research-landing" aria-labelledby="research-landing-title">
-    <p class="research-landing__eyebrow">DEX RESEARCH / START HERE</p>
-    <h2 id="research-landing-title">See the structure. Check the evidence.</h2>
-    <p>Explore industry value chains, inspect a provisional 50-industry screening list, or read the full research notes. Market estimates in the list are not yet verified at the row level.</p>
-    <div class="research-landing__routes">
-      <a href="{{ "/industries/" | relURL }}"><strong>Industry Explorer</strong><span>Browse 50 industries and compare available estimates →</span></a>
-      <a href="{{ "/about/" | relURL }}#research-methodology"><strong>How the research works</strong><span>Source standards, limits, and corrections →</span></a>
-    </div>
-    <form action="{{ "/search/" | relURL }}" role="search" class="research-landing__search">
-      <label for="research-home-query">Search articles and industry maps</label>
-      <div><input id="research-home-query" name="keyword" type="search" placeholder="Try cybersecurity or biopharma" required><button type="submit">Search</button></div>
-    </form>
-  </section>
-
   {{- $paginator := partial "helper/paginator.html" . -}}
   <h2 class="research-landing__list-title">Latest research</h2>
   <section class="article-list" aria-label="Latest articles">

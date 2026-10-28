@@ -23,11 +23,12 @@ completed investment reports and do not upgrade the evidence status of the old
 50-row CSV/JSON dataset. No new market-size numbers or stock recommendations are
 introduced. Source evidence and DEX interpretation are explicitly separated.
 
-The Industry Guides directory was retired on October 6, 2026. Its sidebar and
-home/Explorer entry points are removed, and only `/industry-breakdowns` and
-`/industry-breakdowns/` redirect to `/industries/`. Do not use a wildcard redirect:
-individual profiles remain available through Explorer rows, search, and sibling
-links. Reports, citations, and downloads are preserved. Each profile has:
+The Industry Guides directory was retired on October 6, 2026. The 50-industry
+Explorer, screening article, CSV/JSON dataset and homepage Start Here card were
+withdrawn on October 28, 2026. Their source remains recoverable in Git history.
+The old directory redirects to Explorer were removed rather than redirecting
+readers to unrelated content. Individual profiles, their citations and downloads
+remain available through search and sibling links. Each profile has:
 
 - a permanent `/industry-breakdowns/<id>/` URL;
 - scope, geography and source-review date;
@@ -38,8 +39,8 @@ links. Reports, citations, and downloads are preserved. Each profile has:
 
 ## Add or update a profile
 
-1. Edit `data/breakdowns.json`. Keep the ID stable. Link exactly one existing
-   dataset rank and preserve its category. Explain narrower scope explicitly.
+1. Edit `data/breakdowns.json`. Keep the ID stable. Preserve its legacy dataset rank as a stable internal association
+   key and preserve its category. Explain narrower scope explicitly.
 2. Create a page under `content/page/` with `layout: breakdown`, the corresponding
    `industryId`, a title/description and an explicit URL matching the ID.
 3. Use official/primary sources. Each `evidence[].source` must match a source ID.
@@ -65,7 +66,7 @@ git diff --check
 
 Use Hugo Extended 0.166.0, Node 22+ and Python 3.11+. The validation script has no
 third-party Python dependencies. It checks schema, evidence-to-source mappings,
-dataset relationships, one main-content H1 per profile, native disclosures, duplicate IDs,
+stable profile association keys, one main-content H1 per profile, native disclosures, duplicate IDs,
 JSON export parity, feature fragments and generated internal links.
 
 The workflow builds and tests only. It does not deploy production or touch DNS.

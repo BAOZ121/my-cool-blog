@@ -9,7 +9,6 @@
         <div class="library-intro">{{ .Content }}</div>
     </header>
     <section class="library-categories" aria-label="Browse the Library">
-        {{- $industries := (os.ReadFile "static/data/industries.json" | transform.Unmarshal).industries -}}
         {{- $articles := partial "helper/pages.html" .Site.Home -}}
         {{- $evidence := hugo.Data.evidence_library -}}
         {{ range partial "library/categories.html" . }}
@@ -17,7 +16,7 @@
             <span class="library-category__icon" aria-hidden="true">{{ partial "helper/icon" .icon }}</span>
             <h2>{{ .name }}</h2>
             <p>{{ .description }}</p>
-            <span class="library-category__meta">{{ if eq .url "/industries/" }}{{ len $industries }} industries{{ else if eq .url "/archives/" }}{{ len $articles }} articles{{ else }}{{ $evidence.counts.materials }} materials across {{ $evidence.counts.articles }} articles{{ end }}</span>
+            <span class="library-category__meta">{{ if eq .url "/archives/" }}{{ len $articles }} articles{{ else }}{{ $evidence.counts.materials }} materials across {{ $evidence.counts.articles }} articles{{ end }}</span>
             <span class="library-category__action">Browse <span aria-hidden="true">→</span></span>
         </a>
         {{ end }}

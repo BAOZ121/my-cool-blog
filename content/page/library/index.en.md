@@ -1,6 +1,6 @@
 ---
 title: "Library"
-description: "Explore industries, browse the research archive, and find the sources and documents behind DEX Research articles."
+description: "Browse the research archive, and find the sources and documents behind DEX Research articles."
 slug: "library"
 layout: "library"
 comments: false

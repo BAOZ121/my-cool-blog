@@ -140,8 +140,8 @@ try {
     await page.goto(origin + '/library/', { waitUntil: 'networkidle' });
     await expect(page.locator('.library-hub h1')).toHaveText('Library');
     await assertMenu(page, '/library/');
-    assert.deepEqual(await page.locator('.library-category').evaluateAll(nodes => nodes.map(node => node.getAttribute('href'))), ['/industries/', '/archives/', '/evidence-library/']);
-    assert.deepEqual(await page.locator('.library-category h2').allTextContents(), ['Industry Explorer', 'Archives', 'Evidence Library']);
+    assert.deepEqual(await page.locator('.library-category').evaluateAll(nodes => nodes.map(node => node.getAttribute('href'))), ['/archives/', '/evidence-library/']);
+    assert.deepEqual(await page.locator('.library-category h2').allTextContents(), ['Archives', 'Evidence Library']);
     await screenshot(page, `library-${width}-${scheme}`);
     if (width < 768) {
       await page.locator('#toggle-menu').click();
@@ -149,12 +149,12 @@ try {
       await screenshot(page, `library-menu-${width}-${scheme}`);
       await page.locator('#toggle-menu').click();
     }
-    for (const [name, path] of [['Industry Explorer', '/industries/'], ['Archives', '/archives/'], ['Evidence Library', '/evidence-library/']]) {
+    for (const [name, path] of [['Archives', '/archives/'], ['Evidence Library', '/evidence-library/']]) {
       await nativeActivate(page.locator(`.library-category[href="${path}"]`), page);
       await page.waitForURL(origin + path);
       await assertMenu(page, '/library/');
       await expect(page.locator('.library-nav__links a[aria-current="page"]')).toHaveText(name);
-      await expect(page.locator('main h1').first()).toHaveText(path === '/industries/' ? 'Explore 50 industries in one place.' : name);
+      await expect(page.locator('main h1').first()).toHaveText(name);
       await settle(page);
       if (width === 1440 && scheme === 'light') await screenshot(page, `library-category-${path.split('/')[1]}-${width}-${scheme}`);
       await page.goBack({ waitUntil: 'networkidle' });

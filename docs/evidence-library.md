@@ -56,7 +56,7 @@ strings are retained.
   the surrounding reference text; generic inline citation labels lose to descriptive labels
 - Keep article publication dates separate from dates mentioned in original source notes
 - Keep original paragraphs and scope notes in expandable citation contexts
-- Show the 50-industry article's evidence-status notice and the pharma/cyber reading-list qualifications
+- Preserve article-specific evidence qualifications, including pharma/cyber reading-list qualifications. The withdrawn 50-industry article is excluded.
 - Do not reinterpret source checking as independent verification
 - CSV chart files are DEX data exports; locally hosted PDFs are the existing originals
 

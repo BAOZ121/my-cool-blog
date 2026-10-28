@@ -48,7 +48,9 @@ test("index covers current published posts, preserves contexts, and only uses sa
   assert.equal(total, data.counts.materials);
   assert.equal(files, data.counts.files);
   assert.equal(local.size, data.counts.hosted_files);
-  assert.ok(local.has("/data/industries.csv"));
+  assert.ok(!local.has("/data/industries.csv"));
+  assert.ok(!local.has("/data/industries.json"));
+  assert.ok(!data.articles.some(article => article.id === "50-high-potential-industries"));
   assert.ok(local.has("/research-files/cybersecurity/NIST.SP.800-207.pdf"));
   const visuals = JSON.parse(readFileSync(new URL("../data/article_visuals.json", import.meta.url)));
   const publishedCharts = new Set();
@@ -66,10 +68,6 @@ test("index covers current published posts, preserves contexts, and only uses sa
 });
 
 test("unverified ranges, reading leads and chart scope remain searchable", () => {
-  const screening = data.articles.find(article => article.id === "50-high-potential-industries");
-  assert.match(screening.notices.join(" "), /other seven audited original ranges remain unverified/);
-  assert.match(screening.notices.join(" "), /2022–2040/);
-  assert.match(JSON.stringify(screening.entries), /internally inconsistent/);
   const cyber = data.articles.find(article => article.id === "cybersecurity-industry-report");
   assert.match(cyber.notices.join(" "), /not all been independently verified/);
   const pharma = data.articles.find(article => article.id === "pharmaceutical-industry");
@@ -88,9 +86,6 @@ test("review corrections preserve file typing, isolated PDF metadata and unresol
   const cyber = data.articles.find(article => article.id === "cybersecurity-industry-report");
   const menlo = cyber.entries.find(entry => entry.url.includes("cybersecurity_market_map-091922.pdf"));
   assert.doesNotMatch(JSON.stringify(menlo), /59 pages|NIST SP 800-207/);
-  const screening = data.articles.find(article => article.id === "50-high-potential-industries");
-  assert.ok(screening.entries.some(entry => entry.url === "https://ifr.org/ifr-press-releases/news/service-robots-see-global-growth-boom"));
-  assert.ok(!screening.entries.some(entry => entry.url === "https://ifr.org/ifr-press-releases/news/robot-race-"));
   const chips = data.articles.find(article => article.id === "semiconductor-industry-report");
   const asml = chips.entries.find(entry => entry.url.endsWith("/tsmc-selects-asml-for-industry-first-immersion-tool-order"));
   assert.match(JSON.stringify(asml.citations), /not a currently accessible live copy of the release/);
