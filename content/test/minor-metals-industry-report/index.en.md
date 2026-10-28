@@ -2,12 +2,12 @@
 title: "Minor Metals Industry Report"
 description: "Value chains and competition from mineral resources to qualified materials"
 date: "2026-10-27"
-lastmod: "2026-10-27"
+lastmod: "2026-10-28"
 url: "/test/minor-metals-industry-report/"
 type: "post"
 layout: "single"
-image: "assets/cover.webp"
-imageAlt: "AI-generated editorial illustration of metal ingots, a carbide tool insert and a wafer; not a photograph of a real facility or verified sample."
+image: "assets/cover-antimony-photo.webp"
+imageAlt: "Close-up photograph of an antimony metal specimen, showing its silver-grey crystalline surface. Photo by Jurii, 2009."
 industrialreport: true
 testpage: true
 toc: true
@@ -29,7 +29,7 @@ evidencecutoff: "2026-10-27"
 
 <p class="research-preview-note"><strong>Website test edition.</strong> Version 1.1 · Research cutoff: 27 October 2026 · Prepared for editorial review.</p>
 
-<p class="research-figure-caption">Cover candidate: AI-generated editorial illustration. It does not depict a verified real facility or metal sample.</p>
+<p class="research-figure-caption">Cover: a real antimony metal specimen, photographed on 23 March 2009. Photo: <a href="https://commons.wikimedia.org/wiki/File:Antimony-piece.jpg" target="_blank" rel="noopener">Jurii / Wikimedia Commons</a> · <a href="https://images-of-elements.com/antimony.php" target="_blank" rel="noopener">images-of-elements.com</a> · <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener">CC BY 3.0</a>. Cropped and converted to WebP. <a href="assets/cover-antimony-original.jpg">View the full photograph</a>.</p>
 
 <p class="research-downloads"><a href="assets/report-en.txt" download>English manuscript</a> · <a href="assets/evidence-en.json" download>Evidence records</a> · <a href="assets/minor-metals-value-chain.svg" download>Value-chain graphic</a></p>
 
