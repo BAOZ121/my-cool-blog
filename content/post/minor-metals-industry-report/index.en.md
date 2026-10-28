@@ -1,33 +1,26 @@
 ---
 title: "Minor Metals Industry Report"
 description: "Value chains and competition from mineral resources to qualified materials"
-date: "2026-10-27"
+date: "2026-10-28"
 lastmod: "2026-10-28"
-url: "/test/minor-metals-industry-report/"
+url: "/post/minor-metals-industry-report/"
 type: "post"
 layout: "single"
 image: "assets/cover-antimony-photo.webp"
 imageAlt: "Close-up photograph of an antimony metal specimen, showing its silver-grey crystalline surface. Photo by Jurii, 2009."
 industrialreport: true
-testpage: true
 toc: true
 readingTime: true
 comments: false
 draft: false
-robots: "noindex, nofollow"
-sitemap:
-  disable: true
-build:
-  list: "never"
-  render: "always"
-outputs:
-  - "HTML"
-reportversion: "1.1-web-preview"
+reportversion: "1.1"
+categories: ["Industry Report"]
+tags: ["Minor Metals", "Critical Minerals", "Mining", "Materials", "Global"]
 evidencecutoff: "2026-10-27"
 ---
 
 
-<p class="research-preview-note"><strong>Website test edition.</strong> Version 1.1 · Research cutoff: 27 October 2026 · Prepared for editorial review.</p>
+<p class="research-preview-note">Industry report · Version 1.1 · Published: 28 October 2026 · Research cutoff: 27 October 2026.</p>
 
 <p class="research-figure-caption">Cover: a real antimony metal specimen, photographed on 23 March 2009. Photo: <a href="https://commons.wikimedia.org/wiki/File:Antimony-piece.jpg" target="_blank" rel="noopener">Jurii / Wikimedia Commons</a> · <a href="https://images-of-elements.com/antimony.php" target="_blank" rel="noopener">images-of-elements.com</a> · <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener">CC BY 3.0</a>. Cropped and converted to WebP. <a href="assets/cover-antimony-original.jpg">View the full photograph</a>.</p>
 

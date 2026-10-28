@@ -3,13 +3,18 @@ import assert from 'node:assert/strict';
 import {readFileSync, existsSync} from 'node:fs';
 import {validateMap, validateShare, pieOptions} from '../assets/js/article-visuals.mjs';
 
-const base='content/test/minor-metals-industry-report/';
+const base='content/post/minor-metals-industry-report/';
 const md=readFileSync(base+'index.en.md','utf8');
 const visuals=JSON.parse(readFileSync(base+'assets/web-visuals.json','utf8'));
 const evidence=JSON.parse(readFileSync(base+'assets/evidence-en.json','utf8'));
 
-test('review page has four parts, complete source anchors and preview isolation',()=>{
-  for(const s of ['testpage: true','list: "never"','disable: true','noindex, nofollow','outputs:\n  - "HTML"']) assert.ok(md.includes(s));
+test('published article has four parts, complete source anchors and canonical routing',()=>{
+  for(const s of ['categories: ["Industry Report"]','url: "/post/minor-metals-industry-report/"','reportversion: "1.1"']) assert.ok(md.includes(s));
+  assert.doesNotMatch(md, /testpage:|noindex|Website test edition|Prepared for editorial review/);
+  assert.match(md, /Jurii \/ Wikimedia Commons/);
+  const redirects=readFileSync('static/_redirects','utf8');
+  for(const suffix of ['', '/', '/*']) assert.ok(redirects.includes(`/test/minor-metals-industry-report${suffix} /post/minor-metals-industry-report/${suffix==='/*'?':splat':''} 301`));
+  for(const map of Object.values(visuals.maps)) for(const source of map.sources) assert.ok(source.url.startsWith('/post/minor-metals-industry-report/#'));
   assert.equal((md.match(/^## Part /gm)||[]).length,4);
   assert.match(md,/^## Appendix: Evidence and Methods \{#supporting-evidence\}/m);
   assert.equal(evidence.length,24);
@@ -21,7 +26,7 @@ test('review page has four parts, complete source anchors and preview isolation'
   }
   assert.match(md,/prohibition on dual-use exports/);
   assert.match(md,/Undated; accessed 2026-10-27/);
-  assert.ok(!existsSync('content/post/minor-metals-industry-report/index.en.md'));
+  assert.ok(!existsSync('content/test/minor-metals-industry-report/index.en.md'));
 });
 
 test('native graphics preserve contained-metal denominators and rounding residuals',()=>{
@@ -42,13 +47,14 @@ test('native graphics preserve contained-metal denominators and rounding residua
   }
 });
 
-test('production build renders test page but excludes it from discovery',()=>{
-  const path='/test/minor-metals-industry-report/';
+test('production build includes article in discovery without test metadata',()=>{
+  const path='/post/minor-metals-industry-report/';
   const html=readFileSync('public'+path+'index.html','utf8');
-  assert.match(html,/<meta name=robots content="noindex, nofollow">/);
+  assert.doesNotMatch(html, /noindex|Website test edition|Prepared for editorial review/);
+  assert.ok(html.includes(`rel=canonical href=https://thedexs.com${path}`));
   assert.equal((html.match(/class=visual-data/g)||[]).length,3);
   assert.equal((html.match(/data-source-id=E\d{2}/g)||[]).length,24);
-  for(const file of ['index.html','index.xml','sitemap.xml','search/index.json','library/index.html']){
-    assert.ok(!readFileSync('public/'+file,'utf8').includes(path),file);
+  for(const file of ['index.html','index.xml','sitemap.xml','search/index.json','evidence-library/index.html']){
+    assert.ok(readFileSync('public/'+file,'utf8').includes(path),file);
   }
 });

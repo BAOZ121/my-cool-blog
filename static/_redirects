@@ -48,3 +48,8 @@
 /test/healthcare-industry-report /post/healthcare-industry-report/ 301
 /test/healthcare-industry-report/ /post/healthcare-industry-report/ 301
 /test/healthcare-industry-report/* /post/healthcare-industry-report/:splat 301
+
+# The reviewed minor metals report is now a published article.
+/test/minor-metals-industry-report /post/minor-metals-industry-report/ 301
+/test/minor-metals-industry-report/ /post/minor-metals-industry-report/ 301
+/test/minor-metals-industry-report/* /post/minor-metals-industry-report/:splat 301

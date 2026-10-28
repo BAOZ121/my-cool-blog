@@ -2,6 +2,777 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "minor-metals-industry-report",
+      "title": "Minor Metals Industry Report",
+      "url": "/post/minor-metals-industry-report/",
+      "published": "2026-10-28",
+      "notices": [],
+      "entries": [
+        {
+          "id": "611b420bad81",
+          "url": "https://commons.wikimedia.org/wiki/File:Antimony-piece.jpg",
+          "title": "Jurii / Wikimedia Commons",
+          "kind": "link",
+          "format": "Web",
+          "host": "commons.wikimedia.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "Article",
+              "url": "/post/minor-metals-industry-report/",
+              "text": "Cover: a real antimony metal specimen, photographed on 23 March 2009. Photo: Jurii / Wikimedia Commons · images-of-elements.com · CC BY 3.0 . Cropped and converted to WebP. View the full photograph .",
+              "notes": [
+                "Industry report · Version 1.1 · Published: 28 October 2026 · Research cutoff: 27 October 2026.",
+                "This report examines global minor-metal supply chains, focusing on tungsten, antimony, gallium, germanium, indium, bismuth and molybdenum. Niobium, rhenium, tellurium and selenium provide adjacent-market examples. It does not comprehensively cover rare earths, lithium–nickel–cobalt battery materials or precious metals. Research closes on 27 October 2026. Production charts use the 2024 statistical period in the BGS publication released in 2026; company cases mainly cover disclosures for 2025–2026. The central assessment is that commercial value depends on converting feedstock consistently into customer-qualified material that can be delivered on time. Resources, processing capability, permission to trade and cash flow must be assessed together."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3fed90508bf9",
+          "url": "https://images-of-elements.com/antimony.php",
+          "title": "images-of-elements.com",
+          "kind": "link",
+          "format": "Web",
+          "host": "images-of-elements.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Article",
+              "url": "/post/minor-metals-industry-report/",
+              "text": "Cover: a real antimony metal specimen, photographed on 23 March 2009. Photo: Jurii / Wikimedia Commons · images-of-elements.com · CC BY 3.0 . Cropped and converted to WebP. View the full photograph .",
+              "notes": [
+                "Industry report · Version 1.1 · Published: 28 October 2026 · Research cutoff: 27 October 2026.",
+                "This report examines global minor-metal supply chains, focusing on tungsten, antimony, gallium, germanium, indium, bismuth and molybdenum. Niobium, rhenium, tellurium and selenium provide adjacent-market examples. It does not comprehensively cover rare earths, lithium–nickel–cobalt battery materials or precious metals. Research closes on 27 October 2026. Production charts use the 2024 statistical period in the BGS publication released in 2026; company cases mainly cover disclosures for 2025–2026. The central assessment is that commercial value depends on converting feedstock consistently into customer-qualified material that can be delivered on time. Resources, processing capability, permission to trade and cash flow must be assessed together."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bf244986c4a5",
+          "url": "https://creativecommons.org/licenses/by/3.0/",
+          "title": "CC BY 3.0",
+          "kind": "link",
+          "format": "Web",
+          "host": "creativecommons.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "Article",
+              "url": "/post/minor-metals-industry-report/",
+              "text": "Cover: a real antimony metal specimen, photographed on 23 March 2009. Photo: Jurii / Wikimedia Commons · images-of-elements.com · CC BY 3.0 . Cropped and converted to WebP. View the full photograph .",
+              "notes": [
+                "Industry report · Version 1.1 · Published: 28 October 2026 · Research cutoff: 27 October 2026.",
+                "This report examines global minor-metal supply chains, focusing on tungsten, antimony, gallium, germanium, indium, bismuth and molybdenum. Niobium, rhenium, tellurium and selenium provide adjacent-market examples. It does not comprehensively cover rare earths, lithium–nickel–cobalt battery materials or precious metals. Research closes on 27 October 2026. Production charts use the 2024 statistical period in the BGS publication released in 2026; company cases mainly cover disclosures for 2025–2026. The central assessment is that commercial value depends on converting feedstock consistently into customer-qualified material that can be delivered on time. Resources, processing capability, permission to trade and cash flow must be assessed together."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "34b93adb4e8e",
+          "url": "/post/minor-metals-industry-report/assets/report-en.txt",
+          "title": "English manuscript",
+          "kind": "file",
+          "format": "TXT",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Article",
+              "url": "/post/minor-metals-industry-report/",
+              "text": "English manuscript · Evidence records · Value-chain graphic",
+              "notes": [
+                "Industry report · Version 1.1 · Published: 28 October 2026 · Research cutoff: 27 October 2026.",
+                "This report examines global minor-metal supply chains, focusing on tungsten, antimony, gallium, germanium, indium, bismuth and molybdenum. Niobium, rhenium, tellurium and selenium provide adjacent-market examples. It does not comprehensively cover rare earths, lithium–nickel–cobalt battery materials or precious metals. Research closes on 27 October 2026. Production charts use the 2024 statistical period in the BGS publication released in 2026; company cases mainly cover disclosures for 2025–2026. The central assessment is that commercial value depends on converting feedstock consistently into customer-qualified material that can be delivered on time. Resources, processing capability, permission to trade and cash flow must be assessed together."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e46ba15e6f63",
+          "url": "/post/minor-metals-industry-report/assets/evidence-en.json",
+          "title": "Evidence records",
+          "kind": "file",
+          "format": "JSON",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Article",
+              "url": "/post/minor-metals-industry-report/",
+              "text": "English manuscript · Evidence records · Value-chain graphic",
+              "notes": [
+                "Industry report · Version 1.1 · Published: 28 October 2026 · Research cutoff: 27 October 2026.",
+                "This report examines global minor-metal supply chains, focusing on tungsten, antimony, gallium, germanium, indium, bismuth and molybdenum. Niobium, rhenium, tellurium and selenium provide adjacent-market examples. It does not comprehensively cover rare earths, lithium–nickel–cobalt battery materials or precious metals. Research closes on 27 October 2026. Production charts use the 2024 statistical period in the BGS publication released in 2026; company cases mainly cover disclosures for 2025–2026. The central assessment is that commercial value depends on converting feedstock consistently into customer-qualified material that can be delivered on time. Resources, processing capability, permission to trade and cash flow must be assessed together."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "34fb9977d288",
+          "url": "/data/charts/minor-metals-antimony-2024.csv",
+          "title": "Antimony mine production by country — data (CSV)",
+          "kind": "file",
+          "format": "CSV",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Antimony mine production by country",
+              "url": "/post/minor-metals-industry-report/#market-share-minor-metals-antimony-2024-2-title",
+              "text": "Download data (CSV)",
+              "notes": [
+                "BGS reported world mine production: 105,000 metric tonnes of contained metal in the 2024 statistical period. Production geography, not company revenue share or refined-metal supply.",
+                "World · Share of reported mine production by contained metal (%)",
+                "Figure 2. Slice areas use raw tonnes; labels are independently rounded to one decimal. Other and rounding = 105000 - (45000 + 27500 + 15000 + 4817 + 4548) = 8135 tonnes. The residual includes the difference caused by the published rounded world total; it is not an independently observed country total. BGS includes antimony content of antimonial lead alloys; some observations are estimates and country year ends differ. Source E02."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8c5caee8c8c8",
+          "url": "https://nora.nerc.ac.uk/id/eprint/541620/1/WMP_2020%20to%202024.pdf",
+          "title": "British Geological Survey; N. E. Idoine et al. — [E02] World Mineral Production 2020–24",
+          "kind": "file",
+          "format": "PDF",
+          "host": "nora.nerc.ac.uk",
+          "local": false,
+          "citations": [
+            {
+              "section": "Antimony mine production by country",
+              "url": "/post/minor-metals-industry-report/#market-share-minor-metals-antimony-2024-2-title",
+              "text": "Source: British Geological Survey; N. E. Idoine et al. — [E02] World Mineral Production 2020–24 (2026; repository live 2026-05-20). Reviewed 2026-10-27.",
+              "notes": [
+                "BGS reported world mine production: 105,000 metric tonnes of contained metal in the 2024 statistical period. Production geography, not company revenue share or refined-metal supply.",
+                "World · Share of reported mine production by contained metal (%)",
+                "Figure 2. Slice areas use raw tonnes; labels are independently rounded to one decimal. Other and rounding = 105000 - (45000 + 27500 + 15000 + 4817 + 4548) = 8135 tonnes. The residual includes the difference caused by the published rounded world total; it is not an independently observed country total. BGS includes antimony content of antimonial lead alloys; some observations are estimates and country year ends differ. Source E02."
+              ]
+            },
+            {
+              "section": "Tungsten mine production by country",
+              "url": "/post/minor-metals-industry-report/#market-share-minor-metals-tungsten-2024-3-title",
+              "text": "Source: British Geological Survey; N. E. Idoine et al. — [E02] World Mineral Production 2020–24 (2026; repository live 2026-05-20). Reviewed 2026-10-27.",
+              "notes": [
+                "BGS reported world mine production: 75,500 metric tonnes of contained metal in the 2024 statistical period. Production geography, not company revenue share or refined-metal supply.",
+                "World · Share of reported mine production by contained metal (%)",
+                "Figure 3. Slice areas use raw tonnes; labels are independently rounded to one decimal. Other and rounding = 75500 - (59000 + 5394 + 2127 + 1800 + 1587) = 5592 tonnes. The residual includes the difference caused by the published rounded world total; it is not an independently observed country total. Rwanda is represented by export data; country year ends differ. BGS notes US production without a quantified country row. Some observations are estimates. Source E02."
+              ]
+            },
+            {
+              "section": "[E02] World Mineral Production 2020–24",
+              "url": "/post/minor-metals-industry-report/#heading-E02",
+              "text": "Original sources: Original source",
+              "notes": [
+                "Publisher: British Geological Survey; N. E. Idoine et al.",
+                "Date: 2026; repository live 2026-05-20",
+                "Period / scope: 2024 statistical period",
+                "Location: Printed p.5 antimony; p.74 tungsten; p.48 molybdenum exclusion",
+                "Supports and limits: Official statistical compilation supporting Sb/W charts. Country estimates, rounded totals and reporting-period/proxy caveats are retained. These are not refining or revenue shares. See E24 for the excluded Mo comparison.",
+                "Accessed: 2026-10-27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "abadec8b846f",
+          "url": "/data/charts/minor-metals-tungsten-2024.csv",
+          "title": "Tungsten mine production by country — data (CSV)",
+          "kind": "file",
+          "format": "CSV",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Tungsten mine production by country",
+              "url": "/post/minor-metals-industry-report/#market-share-minor-metals-tungsten-2024-3-title",
+              "text": "Download data (CSV)",
+              "notes": [
+                "BGS reported world mine production: 75,500 metric tonnes of contained metal in the 2024 statistical period. Production geography, not company revenue share or refined-metal supply.",
+                "World · Share of reported mine production by contained metal (%)",
+                "Figure 3. Slice areas use raw tonnes; labels are independently rounded to one decimal. Other and rounding = 75500 - (59000 + 5394 + 2127 + 1800 + 1587) = 5592 tonnes. The residual includes the difference caused by the published rounded world total; it is not an independently observed country total. Rwanda is represented by export data; country year ends differ. BGS notes US production without a quantified country row. Some observations are estimates. Source E02."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "32937c2f474c",
+          "url": "https://www.nyrstar.com/resource-center/press-releases/nyrstar-marks-port-piries-first-shipment-of-australian-produced-antimony-metal",
+          "title": "[E01] Nyrstar marks Port Pirie’s first shipment of Australian-produced Antimony metal",
+          "kind": "link",
+          "format": "Web",
+          "host": "nyrstar.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E01] Nyrstar marks Port Pirie’s first shipment of Australian-produced Antimony metal",
+              "url": "/post/minor-metals-industry-report/#heading-E01",
+              "text": "Original sources: Original source",
+              "notes": [
+                "Publisher: Nyrstar",
+                "Date: 2026-02-17",
+                "Period / scope: 2026-02-17",
+                "Location: Opening paragraphs and potential expansion paragraph",
+                "Supports and limits: Issuer record of first demonstration-plant shipment. The 5,000 t/y figure is potential expanded capacity; shipment tonnage is undisclosed. Its unspecified “15% market” comparison is not adopted.",
+                "Accessed: 2026-10-27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c660c4ac57cf",
+          "url": "https://www.ga.gov.au/scientific-topics/minerals/critical-minerals/what-are-critical-minerals",
+          "title": "[E03] What are critical minerals",
+          "kind": "link",
+          "format": "Web",
+          "host": "ga.gov.au",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E03] What are critical minerals",
+              "url": "/post/minor-metals-industry-report/#heading-E03",
+              "text": "Original sources: Original source",
+              "notes": [
+                "Publisher: Geoscience Australia",
+                "Date: Updated 2026-10-19",
+                "Period / scope: Technical overview",
+                "Location: Antimony, Bismuth, Tungsten entries and definition",
+                "Supports and limits: Government technical overview for applications and classification. Supports Sb extraction, Bi byproduct recovery and W tooling uses; does not establish end-use shares or company rankings.",
+                "Accessed: 2026-10-27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "031b012b1508",
+          "url": "https://www.indium.com/products/metals/",
+          "title": "[E04] Metals and Alloys",
+          "kind": "link",
+          "format": "Web",
+          "host": "indium.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E04] Metals and Alloys",
+              "url": "/post/minor-metals-industry-report/#heading-E04",
+              "text": "Original sources: Original source",
+              "notes": [
+                "Publisher: Indium Corporation",
+                "Date: Undated; accessed 2026-10-27",
+                "Period / scope: Product catalogue",
+                "Location: Product Overview and Features",
+                "Supports and limits: Manufacturer catalogue linking In to ITO/InP, Ge to optics and Ga to GaAs/GaN. Establishes products and positioning, not independently measured market shares.",
+                "Accessed: 2026-10-27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bc5dfbae7900",
+          "url": "https://www.nichia.co.jp/en/product/semiconductor_materials.html",
+          "title": "[E05] High-purity Gallium",
+          "kind": "link",
+          "format": "Web",
+          "host": "nichia.co.jp",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E05] High-purity Gallium",
+              "url": "/post/minor-metals-industry-report/#heading-E05",
+              "text": "Original sources: Original source",
+              "notes": [
+                "Publisher: Nichia",
+                "Date: Undated; accessed 2026-10-27",
+                "Period / scope: Product catalogue",
+                "Location: Purity table; Gallium Recycling Business",
+                "Supports and limits: Direct product specifications for 6N/7N gallium and scrap recovery. Purity is not recovery, output or proof of qualification for every customer.",
+                "Accessed: 2026-10-27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8ed1343e4944",
+          "url": "https://en.cmoc.com/html/Business/China-Mo-W/",
+          "title": "[E06] China — molybdenum and tungsten",
+          "kind": "link",
+          "format": "Web",
+          "host": "en.cmoc.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E06] China — molybdenum and tungsten",
+              "url": "/post/minor-metals-industry-report/#heading-E06",
+              "text": "Original sources: Original source",
+              "notes": [
+                "Publisher: CMOC",
+                "Date: Undated; accessed 2026-10-27",
+                "Period / scope: Company operations; FY2025 information",
+                "Location: China operations description and product paragraph",
+                "Supports and limits: Confirms Mo/W mining, processing, ferromolybdenum and APT activities. Positioning is not an independent ranking; no cross-year share is computed from its production figures.",
+                "Accessed: 2026-10-27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3b739240ef2a",
+          "url": "https://www.cxtc.com/About.aspx",
+          "title": "[E07] 厦钨简介 — Xiamen Tungsten corporate introduction",
+          "kind": "link",
+          "format": "Web",
+          "host": "cxtc.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E07] 厦钨简介 — Xiamen Tungsten corporate introduction",
+              "url": "/post/minor-metals-industry-report/#heading-E07",
+              "text": "Original sources: Original source",
+              "notes": [
+                "Publisher: Xiamen Tungsten",
+                "Date: Undated; accessed 2026-10-27",
+                "Period / scope: Company profile",
+                "Location: Corporate introduction main business paragraph",
+                "Supports and limits: Confirms the mine-to-powder, carbide, tool and recycling chain. Other group activities include rare earths and battery materials; group revenue is not tungsten revenue.",
+                "Accessed: 2026-10-27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f30f81a7e8b4",
+          "url": "https://www.nyrstar.com/products/other-metals/indium",
+          "title": "[E08] Indium",
+          "kind": "link",
+          "format": "Web",
+          "host": "nyrstar.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E08] Indium",
+              "url": "/post/minor-metals-industry-report/#heading-E08",
+              "text": "Original sources: Original source",
+              "notes": [
+                "Publisher: Nyrstar",
+                "Date: Undated; accessed 2026-10-27",
+                "Period / scope: Product and site description",
+                "Location: Product description below opening smelter paragraph",
+                "Supports and limits: Confirms zinc-associated indium and high-purity indium production at Auby. No output, capacity or share is inferred.",
+                "Accessed: 2026-10-27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "413fa24958a1",
+          "url": "https://molymet.com/en/productos-servicios/servicio-de-maquila/",
+          "title": "[E09] Tolling",
+          "kind": "link",
+          "format": "Web",
+          "host": "molymet.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E09] Tolling",
+              "url": "/post/minor-metals-industry-report/#heading-E09",
+              "text": "Original sources: Original source",
+              "notes": [
+                "Publisher: Molymet",
+                "Date: Undated; accessed 2026-10-27",
+                "Period / scope: Service description",
+                "Location: Tolling body paragraph",
+                "Supports and limits: Customer concentrate is converted into oxide or ferromolybdenum and returned, supporting the tolling example. Undated capacity claims are not used.",
+                "Accessed: 2026-10-27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "94478e7a142d",
+          "url": "https://www.5nplus.com/en/news/5n-plus-inc-reports-second-quarter-2026-financial/",
+          "title": "[E10] 5N Plus Inc. Reports Second Quarter 2026 Financial Results",
+          "kind": "link",
+          "format": "Web",
+          "host": "5nplus.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E10] 5N Plus Inc. Reports Second Quarter 2026 Financial Results",
+              "url": "/post/minor-metals-industry-report/#heading-E10",
+              "text": "Original sources: Original source",
+              "notes": [
+                "Publisher: 5N Plus",
+                "Date: 2026-08-03",
+                "Period / scope: Quarter ended 2026-06-30",
+                "Location: Financial Highlights; adjusted margin disclosure",
+                "Supports and limits: Supports US$122.4m revenue, 28% growth and adjusted margin of 30.3% versus 34.6%. Non-IFRS group metric; not a single-metal or industry-average margin.",
+                "Accessed: 2026-10-27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0c70069dfbbc",
+          "url": "https://www.5nplus.com/en/news/5n-plus-inc-scales-up-and-expands-critical-materia/",
+          "title": "[E11] 5N Plus Inc. Scales Up and Expands Critical Materials Supply Agreement with First Solar",
+          "kind": "link",
+          "format": "Web",
+          "host": "5nplus.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E11] 5N Plus Inc. Scales Up and Expands Critical Materials Supply Agreement with First Solar",
+              "url": "/post/minor-metals-industry-report/#heading-E11",
+              "text": "Original sources: Original source",
+              "notes": [
+                "Publisher: 5N Plus",
+                "Date: 2025-08-05",
+                "Period / scope: Contract terms for 2025–2028",
+                "Location: Opening three paragraphs",
+                "Supports and limits: Issuer contract announcement identifying CdTe and planned CdSe supply. No value or tonnage is disclosed; commitments do not establish delivered volumes or industry-wide demand.",
+                "Accessed: 2026-10-27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e62983f9ab29",
+          "url": "https://molymet.com/en/molymet-completes-acquisition-process-in-the-united-states-integrating-rhenium-alloys-into-the-group/",
+          "title": "[E12] Molymet completes acquisition process in the United States integrating Rhenium Alloys into the group",
+          "kind": "link",
+          "format": "Web",
+          "host": "molymet.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E12] Molymet completes acquisition process in the United States integrating Rhenium Alloys into the group",
+              "url": "/post/minor-metals-industry-report/#heading-E12",
+              "text": "Original sources: Original source",
+              "notes": [
+                "Publisher: Molymet",
+                "Date: 2026-08-19",
+                "Period / scope: Acquisition completion",
+                "Location: Announcement body under headline",
+                "Supports and limits: Supports the approximately US$40m acquisition and Mo/W/Re product extension. It does not prove future returns; self-reported processing-capacity shares are not used as independent market shares.",
+                "Accessed: 2026-10-27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "107437630464",
+          "url": "https://cbmm.com/relatorio-sustentabilidade/en.html",
+          "title": "[E13] 2025 Sustainability Report",
+          "kind": "link",
+          "format": "Web",
+          "host": "cbmm.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E13] 2025 Sustainability Report",
+              "url": "/post/minor-metals-industry-report/#heading-E13",
+              "text": "Original sources: Original source",
+              "notes": [
+                "Publisher: CBMM",
+                "Date: Undated; accessed 2026-10-27",
+                "Period / scope: FY2025",
+                "Location: Product Portfolio; Highlights of the Year",
+                "Supports and limits: Confirms niobium products and applications. Ferroniobium-equivalent tonnes differ from contained-niobium tonnes; no mixed-basis calculation is made.",
+                "Accessed: 2026-10-27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f4b4d58f5954",
+          "url": "https://www.umicore.de/en/media/full-year-results-2025/",
+          "title": "[E14] Full Year Results 2025",
+          "kind": "link",
+          "format": "Web",
+          "host": "umicore.de",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E14] Full Year Results 2025",
+              "url": "/post/minor-metals-industry-report/#heading-E14",
+              "text": "Original sources: Original source",
+              "notes": [
+                "Publisher: Umicore",
+                "Date: 2026-02-20",
+                "Period / scope: FY2025",
+                "Location: Specialty Materials and footnote 1",
+                "Supports and limits: Confirms germanium business and the revenue definition excluding specified purchased metals. Segment revenue is not all germanium revenue; unverified recycling percentages are omitted.",
+                "Accessed: 2026-10-27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d0eb23720604",
+          "url": "https://www.mofcom.gov.cn/zcfb/dwmygl/art/2023/art_52b9a321087f402bb3d310d18b07967e.html",
+          "title": "[E15] 商务部 海关总署公告2023年第23号 — Ga and Ge export controls",
+          "kind": "link",
+          "format": "Web",
+          "host": "mofcom.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E15] 商务部 海关总署公告2023年第23号 — Ga and Ge export controls",
+              "url": "/post/minor-metals-industry-report/#heading-E15",
+              "text": "Original sources: Original source",
+              "notes": [
+                "Publisher: MOFCOM and GACC",
+                "Date: 2023-07-03",
+                "Period / scope: Effective 2023-08-01",
+                "Location: Item lists; licensing; commencement",
+                "Supports and limits: Historical item-based licensing notice. It is not alone an exhaustive current compliance list or evidence that all exports stopped.",
+                "Accessed: 2026-10-27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8bb57abbcac6",
+          "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2024/art_a4711acb06364199a3c5a06d7f2be6d8.html",
+          "title": "[E16] 商务部 海关总署公告2024年第33号 — Antimony-related export controls",
+          "kind": "link",
+          "format": "Web",
+          "host": "mofcom.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E16] 商务部 海关总署公告2024年第33号 — Antimony-related export controls",
+              "url": "/post/minor-metals-industry-report/#heading-E16",
+              "text": "Original sources: Original source",
+              "notes": [
+                "Publisher: MOFCOM and GACC",
+                "Date: 2024-08-15",
+                "Period / scope: Effective 2024-09-15",
+                "Location: Section I item list; II documents; VIII commencement",
+                "Supports and limits: Supports specified Sb-related items and application documents. Some items have technical thresholds; licensing is not a universal embargo.",
+                "Accessed: 2026-10-27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d6e78d69d4e5",
+          "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2025/art_e623090907fc4e1092f0a4db72f57b95.html",
+          "title": "[E17] 商务部 海关总署公告2025年第10号 — W Te Bi Mo In related items",
+          "kind": "link",
+          "format": "Web",
+          "host": "mofcom.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E17] 商务部 海关总署公告2025年第10号 — W Te Bi Mo In related items",
+              "url": "/post/minor-metals-industry-report/#heading-E17",
+              "text": "Original sources: Original source",
+              "notes": [
+                "Publisher: MOFCOM and GACC",
+                "Date: 2025-02-04",
+                "Period / scope: Effective on publication",
+                "Location: Sections I–V and final operative paragraphs",
+                "Supports and limits: Supports listed materials and technologies. Distinguishes specified indium compounds and Mo-powder conditions from all products containing those elements.",
+                "Accessed: 2026-10-27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "73d2131cf5c2",
+          "url": "https://www.mofcom.gov.cn/zcfb/dwmygl/art/2025/art_23fd9e81b68646d390baef0a888261fc.html",
+          "title": "[E18] 商务部公告2025年第72号及2024年第46号 — Suspension and underlying US-specific provisions",
+          "kind": "link",
+          "format": "Web",
+          "host": "mofcom.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E18] 商务部公告2025年第72号及2024年第46号 — Suspension and underlying US-specific provisions",
+              "url": "/post/minor-metals-industry-report/#heading-E18",
+              "text": "Original sources: Original source · Underlying announcement",
+              "notes": [
+                "Publisher: MOFCOM",
+                "Date: 2025-11-09; underlying notice 2024-12-03",
+                "Period / scope: Suspension through 2026-11-27",
+                "Location: No72 operative paragraph; No46 clauses 1 and 2",
+                "Supports and limits: Only clause 2 is suspended for the stated interval. Clause 1 and general licensing remain separate considerations. No post-expiry policy is forecast. The original No46 link follows.",
+                "Accessed: 2026-10-27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "020ac816a622",
+          "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2024/art_3d5e990b43424e60828030f58a547b60.html",
+          "title": "[E18] 商务部公告2025年第72号及2024年第46号 — Suspension and underlying US-specific provisions",
+          "kind": "link",
+          "format": "Web",
+          "host": "mofcom.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E18] 商务部公告2025年第72号及2024年第46号 — Suspension and underlying US-specific provisions",
+              "url": "/post/minor-metals-industry-report/#heading-E18",
+              "text": "Original sources: Original source · Underlying announcement",
+              "notes": [
+                "Publisher: MOFCOM",
+                "Date: 2025-11-09; underlying notice 2024-12-03",
+                "Period / scope: Suspension through 2026-11-27",
+                "Location: No72 operative paragraph; No46 clauses 1 and 2",
+                "Supports and limits: Only clause 2 is suspended for the stated interval. Clause 1 and general licensing remain separate considerations. No post-expiry policy is forecast. The original No46 link follows.",
+                "Accessed: 2026-10-27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "daa68a890efd",
+          "url": "https://www.iea.org/reports/global-critical-minerals-outlook-2026/executive-summary",
+          "title": "[E19] Global Critical Minerals Outlook 2026 — Executive summary",
+          "kind": "link",
+          "format": "Web",
+          "host": "iea.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E19] Global Critical Minerals Outlook 2026 — Executive summary",
+              "url": "/post/minor-metals-industry-report/#heading-E19",
+              "text": "Original sources: Original source",
+              "notes": [
+                "Publisher: International Energy Agency",
+                "Date: 2026-07-16",
+                "Period / scope: 2026 report; underlying observations vary",
+                "Location: Byproduct smelters and technology/workforce paragraphs",
+                "Supports and limits: Supports the role of smelters and technology/skills constraints. Broad critical-mineral aggregates are not all-minor-metal metrics; early-year price observations are not October spot prices.",
+                "Accessed: 2026-10-27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ef5e1777b882",
+          "url": "https://www.iea.org/commentaries/designing-an-effective-strategic-stockpiling-system-for-critical-minerals",
+          "title": "[E20] Designing an effective strategic stockpiling system for critical minerals",
+          "kind": "link",
+          "format": "Web",
+          "host": "iea.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E20] Designing an effective strategic stockpiling system for critical minerals",
+              "url": "/post/minor-metals-industry-report/#heading-E20",
+              "text": "Original sources: Original source",
+              "notes": [
+                "Publisher: IEA; Scanziani, Dhir, Nishiumi and Kim",
+                "Date: 2026-01-27",
+                "Period / scope: Structural analysis",
+                "Location: Strategic stocks section; risk and physical-form discussion",
+                "Supports and limits: Supports byproduct responsiveness, usable stockpile forms and short-term buffering. Stocks do not replace diversification; purchase outlay differs from annual holding cost.",
+                "Accessed: 2026-10-27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "496720650109",
+          "url": "https://mmta.co.uk/metal-norms/gallium/",
+          "title": "[E21] Gallium — Metal norms",
+          "kind": "link",
+          "format": "Web",
+          "host": "mmta.co.uk",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E21] Gallium — Metal norms",
+              "url": "/post/minor-metals-industry-report/#heading-E21",
+              "text": "Original sources: Original source",
+              "notes": [
+                "Publisher: Minor Metals Trade Association",
+                "Date: Last modified 2017-05-25",
+                "Period / scope: Trade specification example",
+                "Location: Quality, Form, Packaging and Lot Size",
+                "Supports and limits: Illustrates specification, packaging and lot terms. It is not a 2026 price list or a universal semiconductor-customer specification.",
+                "Accessed: 2026-10-27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6a49e48c2007",
+          "url": "https://mmta.co.uk/minor-metals/",
+          "title": "[E22] Minor Metals Ready for the Circular Economy",
+          "kind": "link",
+          "format": "Web",
+          "host": "mmta.co.uk",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E22] Minor Metals Ready for the Circular Economy",
+              "url": "/post/minor-metals-industry-report/#heading-E22",
+              "text": "Original sources: Original source",
+              "notes": [
+                "Publisher: MMTA Sustainability Working Group",
+                "Date: 2016-05-15; modified 2016-12-06",
+                "Period / scope: Historical recycling-route examples",
+                "Location: How do minor metals fit in to the Circular Economy",
+                "Supports and limits: Supports the existence of In/W/Re recovery routes. Historical forecasts are not adopted; a route’s existence does not establish a 2026 recycling rate.",
+                "Accessed: 2026-10-27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e6a7153e05fc",
+          "url": "https://www.mofcom.gov.cn/zwgk/zcfb/art/2026/art_d6998a818b2e4329b6980093d751cd52.html",
+          "title": "[E23] 商务部公告2026年第26号 — Reporting of strategic-mineral export-control violations",
+          "kind": "link",
+          "format": "Web",
+          "host": "mofcom.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E23] 商务部公告2026年第26号 — Reporting of strategic-mineral export-control violations",
+              "url": "/post/minor-metals-industry-report/#heading-E23",
+              "text": "Original sources: Original source",
+              "notes": [
+                "Publisher: MOFCOM",
+                "Date: 2026-06-24",
+                "Period / scope: Effective 2026-07-01",
+                "Location: Reportable conduct and commencement",
+                "Supports and limits: Reporting and enforcement mechanism; does not itself establish a blanket product ban or a violation by any named business.",
+                "Accessed: 2026-10-27"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "005985195628",
+          "url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/files/mis-202512-molyb.pdf",
+          "title": "[E24] Molybdenum in December 2025",
+          "kind": "file",
+          "format": "PDF",
+          "host": "d9-wret.s3.us-west-2.amazonaws.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E24] Molybdenum in December 2025",
+              "url": "/post/minor-metals-industry-report/#heading-E24",
+              "text": "Original sources: Original source",
+              "notes": [
+                "Publisher: US Geological Survey; D. E. Polyak",
+                "Date: 2026-03",
+                "Period / scope: 2024 annual row and 2025 survey",
+                "Location: PDF p.3 Table 1; tonnes of contained Mo",
+                "Supports and limits: Reports 2024 US concentrate output of 34,000 tonnes contained Mo versus 67,000 in E02. The discrepancy is unresolved; the Mo share chart is excluded rather than splicing sources.",
+                "Accessed: 2026-10-27"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "healthcare-industry-report",
       "title": "Global Healthcare Industry Report",
       "url": "/post/healthcare-industry-report/",
@@ -28567,9 +29338,9 @@
     }
   ],
   "counts": {
-    "articles": 24,
-    "materials": 1056,
-    "files": 252,
-    "hosted_files": 96
+    "articles": 25,
+    "materials": 1088,
+    "files": 258,
+    "hosted_files": 100
   }
 }

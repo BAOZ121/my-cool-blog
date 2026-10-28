@@ -52,6 +52,8 @@ jobs:
           npm run build:community
       - name: Build production HTML without warnings
         run: hugo --environment production --minify --panicOnWarning
+      - name: Verify minor metals publication and discovery
+        run: node --test tests/minor-metals-publication.test.mjs
       - name: Check responsive cover bytes and shared cache paths
         run: python3 scripts/validate_cover_images.py public
       - name: Check Evidence Library stays in sync with article citations
