@@ -686,9 +686,9 @@ try {
     assert.equal(await page.locator("main").isVisible(), true);
     await assertNoNative(page);
 
-    await page.goto(origin + "/");
-    await page.locator("#research-home-query").fill("space");
-    await page.locator("#research-home-query").press("Enter");
+    await page.goto(origin + "/search/");
+    await page.locator("#page-search-query").fill("space");
+    await page.locator("#page-search-query").press("Enter");
     await page.waitForURL(url => url.pathname === "/search/" && url.searchParams.get("keyword") === "space");
     assert.equal(await page.locator('input[name="keyword"]').inputValue(), "space");
     await assertNoNative(page);
