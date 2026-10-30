@@ -1,0 +1,185 @@
+{
+  "research_cutoff": "2026-10-28",
+  "records": [
+    {
+      "id": "E01",
+      "institution": "SL Green Realty",
+      "title": "Mori Building Co Ltd Completes Additional Investment in SL Green’s One Vanderbilt Avenue",
+      "published": "2025-10-15",
+      "period": "Transaction announced as completed on 2025-10-15",
+      "location": "Opening two paragraphs and property description",
+      "url": "https://slgreen.com/mori-building-co-ltd-completes-additional-investment-in-sl-greens-one-vanderbilt-avenue/",
+      "en": "Supports the additional 5.0% interest, USD 4.7bn gross property valuation and seller-reported full leasing. A party announcement; valuation is not the disclosed cash price for the stake, and one tower does not establish a market average."
+    },
+    {
+      "id": "E02",
+      "institution": "Mori Building",
+      "title": "Interim Financial Report for Fiscal Year Ending March 2026 FY2025",
+      "published": "2025 interim report; exact release day not identified in the inspected PDF",
+      "period": "FY ending March 2026 interim reporting",
+      "location": "PDF page 27, An Additional Stake Acquired in One Vanderbilt Avenue in USA",
+      "url": "https://www.mori.co.jp/_mori_assets/files/assets/3f2dbd9a710d4daaaa8451a27e512959/38586f1bcb254b83a1137dda820856ed/investors2025_m.pdf",
+      "en": "Buyer-side confirmation of an additional investment and the transit-connected mixed-use property. Corroborates participation, but does not independently confirm E01’s valuation or leasing metric."
+    },
+    {
+      "id": "E03",
+      "institution": "MSCI; Razia Neshat, Rishikesh Patkar and Hariharan G G",
+      "title": "MSCI Real Estate Market Size",
+      "published": "2026-08-03",
+      "period": "2025; 38 markets",
+      "location": "Public Preview, three bullets on market size and sector weights",
+      "url": "https://www.msci.com/research-and-insights/paper/msci-real-estate-market-size",
+      "en": "Public preview supports USD 13.5tn, 8.5% expansion, office 26.8% and industrial 20.5%, including data centers. Full gated paper was not retrieved. Other sectors = 100 − 26.8 − 20.5 = 52.7%; no more detailed split is inferred."
+    },
+    {
+      "id": "E04",
+      "institution": "Federal Reserve Board",
+      "title": "Financial Stability Report May 2026 Asset Valuations",
+      "published": "2026-05; exact day not stated on inspected chapter",
+      "period": "Table 1.1 through 2025 Q4; report market conditions through 2026-04-23",
+      "location": "Table 1.1, notes and CRE discussion",
+      "url": "https://www.federalreserve.gov/publications/2026-may-financial-stability-report-asset-valuations.htm",
+      "en": "U.S. CRE nominal market value USD 22,083bn and stabilizing conditions with refinancing vulnerability. Broader U.S. asset measure, not the institutional subset in E03. Dollar levels cannot form a comparable regional market-share calculation."
+    },
+    {
+      "id": "E05",
+      "institution": "JLL Research",
+      "title": "Global Real Estate Perspective August 2026",
+      "published": "2026-08-03",
+      "period": "2026 Q2 and H1; year-on-year comparisons",
+      "location": "Capital deployment continues to build and Offices subsections",
+      "url": "https://www.jll.com/en-us/insights/market-perspectives/global",
+      "en": "Direct investment volume grew 28% year on year in Q2; global office leasing grew 1% in H1. Brokerage research, not an official census; activity growth does not measure values, occupancy or profit growth."
+    },
+    {
+      "id": "E06",
+      "institution": "Blackstone",
+      "title": "Real Estate",
+      "published": "Undated live business page; read 2026-10-28",
+      "period": "Business descriptions as displayed on retrieval",
+      "location": "Our Real Estate Investment Strategies, Opportunistic, Core+ and Debt",
+      "url": "https://www.blackstone.com/our-businesses/real-estate/",
+      "en": "Supports the named manager’s equity and debt strategies. Company description is evidence of its business scope, not independent leadership, returns or industry concentration."
+    },
+    {
+      "id": "E07",
+      "institution": "AECOM",
+      "title": "Architectural design excellence",
+      "published": "Undated live service page; read 2026-10-28",
+      "period": "Service description at retrieval",
+      "location": "Opening architecture paragraphs and service list",
+      "url": "https://publications.aecom.com/social-infrastructure/architecture/",
+      "en": "Architectural design, planning, renovation and adaptive reuse. Does not establish a contract with any other named company or quantify design-market share."
+    },
+    {
+      "id": "E08",
+      "institution": "KONE",
+      "title": "KONE elevators and escalators for new buildings",
+      "published": "Undated live product page; read 2026-10-28",
+      "period": "Offering at retrieval",
+      "location": "Design Build Service and frequently asked questions",
+      "url": "https://www.kone.com/global/en/new-elevators-escalators.html",
+      "en": "Elevators, escalators and maintenance across building types. Product descriptions do not verify a particular building installation or an equipment supplier ranking."
+    },
+    {
+      "id": "E09",
+      "institution": "Prologis",
+      "title": "Prologis Reports Fourth Quarter and Full Year 2025 Results",
+      "published": "2026-01-21",
+      "period": "2025 full year and 2025 Q4",
+      "location": "Exhibit 99.2, opening and Operating Performance table, printed page 1",
+      "url": "https://ir.prologis.com/financials/sec-filings/content/0001193125-26-017256/pld-ex99_2.htm",
+      "en": "228m sq ft of annual lease signings; owned-and-managed Q4 average occupancy 95.3%. Signings are not net absorption or commenced leases, and the portfolio is not the entire logistics market."
+    },
+    {
+      "id": "E10",
+      "institution": "Simon Property Group",
+      "title": "Annual Report 2025",
+      "published": "2026 annual report; exact release day not identified in inspected PDF",
+      "period": "Year ended 2025-12-31",
+      "location": "PDF page 77, Current Leasing Activities",
+      "url": "https://investors.simon.com/static-files/2ada4742-db48-4426-abba-a35eeb5e203b",
+      "en": "U.S. malls and Premium Outlets new-lease initial annual base rent USD 65.09/sq ft; tenant allowance USD 63.92/sq ft, with source exclusions. Different time bases and no disclosed amortization period: subtracting them is not a valid annual margin."
+    },
+    {
+      "id": "E11",
+      "institution": "Digital Realty Trust",
+      "title": "Form 10 K for year ended December 31 2025",
+      "published": "2026 filing; exact filing day not asserted",
+      "period": "2025-12-31",
+      "location": "Item 1, Our Data Center Portfolio, paragraph on projects underway",
+      "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926015365/dlr-20251231x10k.htm",
+      "en": "769MW under development, 64% pre-leased. A company development pipeline; neither global capacity share nor a guarantee of delivered power, recognized revenue or returns."
+    },
+    {
+      "id": "E12",
+      "institution": "CBRE Group",
+      "title": "Form 10 K for year ended December 31 2025",
+      "published": "2026 filing; exact filing day not asserted",
+      "period": "2025 full year",
+      "location": "Item 1 business segments; Item 7 Results of Operations, printed pages 26 to 32",
+      "url": "https://ir.cbre.com/financial-reports/sec-filings/content/0001138118-26-000005/cbre-20251231.htm",
+      "en": "Property sales, leasing, management and facilities services; revenue USD 40,550m and pass-through costs USD 16,746m. Revenue is not property transaction value, economic fee income or industry market share."
+    },
+    {
+      "id": "E13",
+      "institution": "Marriott International",
+      "title": "Annual Report 2025",
+      "published": "2026 annual report; exact release day not identified in inspected PDF",
+      "period": "Year ended 2025-12-31",
+      "location": "Letter to Stockholders, Financial Performance; Form 10 K Item 2 Properties",
+      "url": "https://marriott.gcs-web.com/static-files/9cf0e9b0-bbfa-48a6-9e21-ffbdbc4b2d78",
+      "en": "Supports fee-driven franchising, management and licensing. Brand-system reach does not measure the value or area of hotels owned by the brand company."
+    },
+    {
+      "id": "E14",
+      "institution": "Yardi",
+      "title": "Commercial Property Management Software",
+      "published": "Undated live product page; read 2026-10-28",
+      "period": "Product offering at retrieval",
+      "location": "Commercial solutions and product descriptions",
+      "url": "https://www.yardi.com/market/commercial/",
+      "en": "Property accounting, leasing, budgeting and tenant-service software. Vendor claims establish offered functions, not verified client savings or market leadership."
+    },
+    {
+      "id": "E15",
+      "institution": "International Energy Agency",
+      "title": "Energy and AI Energy demand from AI",
+      "published": "2025-04-10",
+      "period": "2024 estimate and 2030 Base Case projection",
+      "location": "The outlook for energy demand from data centres",
+      "url": "https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai",
+      "en": "Around 415TWh in 2024 and 945TWh in the 2030 Base Case. This is a dated model with scenario uncertainty, not a 2026 forecast update or contracted local electricity demand."
+    },
+    {
+      "id": "E16",
+      "institution": "ECB Banking Supervision",
+      "title": "Aggregated results of the 2025 SREP",
+      "published": "2025 SREP; chapter notes a 2026-04-02 amendment",
+      "period": "2025 supervisory assessment",
+      "location": "Section 5.3 Credit risk, CRE paragraphs",
+      "url": "https://www.bankingsupervision.europa.eu/activities/srep/2025/html/ssm.srep202511_aggregatedresults2025.en.html",
+      "en": "Remote working, non-prime office repricing, climate considerations and refinancing risks. Supervisory assessment of covered banks, not a uniform conclusion about all European buildings."
+    },
+    {
+      "id": "E17",
+      "institution": "China Securities Regulatory Commission",
+      "title": "CSRC announcement introducing a commercial real estate REIT pilot",
+      "published": "2025-12-31",
+      "period": "Announced effective 2025-12-31",
+      "location": "Opening and paragraph summarizing the eight provisions",
+      "url": "https://www.csrc.gov.cn/csrc/c100028/c7605669/content.shtml",
+      "en": "Dated introduction of the pilot and active operating-management responsibility. This report does not assert that every asset qualifies or review every subsequent implementing rule. Official Chinese title: 中国证监会关于推出商业不动产投资信托基金试点的公告."
+    },
+    {
+      "id": "E18",
+      "institution": "Nareit",
+      "title": "REIT Industry Financial Snapshot",
+      "published": "September 2026 data edition; exact release day not shown",
+      "period": "Market values 2026-09-30; ratios separately dated Q2 2026",
+      "location": "Industry Size and data date note",
+      "url": "https://www.reit.com/data-research/reit-market-data/report/reit-industry-financial-snapshot",
+      "en": "Rounded USD 1.45tn equity capitalization for FTSE Nareit All Equity REITs. This measures listed equity claims, not gross underlying property value, and is not a global industry denominator."
+    }
+  ]
+}

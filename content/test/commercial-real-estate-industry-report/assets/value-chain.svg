@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1152pt" height="936pt" viewBox="0 0 1152 936" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-28T16:06:52.969314</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 936 
+L 1152 936 
+L 1152 0 
+L 0 0 
+z
+" style="fill: #f7f4ed"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 207.36 305.136 
+L 207.36 325.728 
+L 36.864 325.728 
+L 36.864 638.352 
+" clip-path="url(#p700a4528a2)" style="fill: none; stroke: #9a772e; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 36.864 391.248 
+L 51.84 391.248 
+" clip-path="url(#p700a4528a2)" style="fill: none; stroke: #9a772e; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 36.864 514.8 
+L 51.84 514.8 
+" clip-path="url(#p700a4528a2)" style="fill: none; stroke: #9a772e; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 36.864 638.352 
+L 51.84 638.352 
+" clip-path="url(#p700a4528a2)" style="fill: none; stroke: #9a772e; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 576 305.136 
+L 576 325.728 
+L 405.504 325.728 
+L 405.504 761.904 
+" clip-path="url(#p700a4528a2)" style="fill: none; stroke: #9a772e; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 405.504 391.248 
+L 420.48 391.248 
+" clip-path="url(#p700a4528a2)" style="fill: none; stroke: #9a772e; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 405.504 514.8 
+L 420.48 514.8 
+" clip-path="url(#p700a4528a2)" style="fill: none; stroke: #9a772e; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 405.504 638.352 
+L 420.48 638.352 
+" clip-path="url(#p700a4528a2)" style="fill: none; stroke: #9a772e; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_9">
+    <path d="M 405.504 761.904 
+L 420.48 761.904 
+" clip-path="url(#p700a4528a2)" style="fill: none; stroke: #9a772e; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_10">
+    <path d="M 944.64 305.136 
+L 944.64 325.728 
+L 774.144 325.728 
+L 774.144 638.352 
+" clip-path="url(#p700a4528a2)" style="fill: none; stroke: #9a772e; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_11">
+    <path d="M 774.144 391.248 
+L 789.12 391.248 
+" clip-path="url(#p700a4528a2)" style="fill: none; stroke: #9a772e; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_12">
+    <path d="M 774.144 514.8 
+L 789.12 514.8 
+" clip-path="url(#p700a4528a2)" style="fill: none; stroke: #9a772e; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_13">
+    <path d="M 774.144 638.352 
+L 789.12 638.352 
+" clip-path="url(#p700a4528a2)" style="fill: none; stroke: #9a772e; stroke-width: 1.5; stroke-linecap: square"/>
+   </g>
+   <g id="patch_2">
+    <path d="M 385.92 208.728 
+L 766.08 208.728 
+Q 786.816 208.728 786.816 191.88 
+L 786.816 161.928 
+Q 786.816 145.08 766.08 145.08 
+L 385.92 145.08 
+Q 365.184 145.08 365.184 161.928 
+L 365.184 191.88 
+Q 365.184 208.728 385.92 208.728 
+z
+" clip-path="url(#p700a4528a2)" style="fill: #2b3731; stroke: #2b3731; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 576 201.24 
+C 576 221.364 207.36 221.364 207.36 241.488 
+" clip-path="url(#p700a4528a2)" style="fill: none; stroke: #9a772e; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 63.36 312.624 
+L 351.36 312.624 
+Q 372.096 312.624 372.096 295.776 
+L 372.096 253.656 
+Q 372.096 236.808 351.36 236.808 
+L 63.36 236.808 
+Q 42.624 236.808 42.624 253.656 
+L 42.624 295.776 
+Q 42.624 312.624 63.36 312.624 
+z
+" clip-path="url(#p700a4528a2)" style="fill: #eee7d8; stroke: #e7ddc9; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 63.36 447.408 
+L 351.36 447.408 
+Q 372.096 447.408 372.096 430.56 
+L 372.096 351.936 
+Q 372.096 335.088 351.36 335.088 
+L 63.36 335.088 
+Q 42.624 335.088 42.624 351.936 
+L 42.624 430.56 
+Q 42.624 447.408 63.36 447.408 
+z
+" clip-path="url(#p700a4528a2)" style="fill: #ffffff; stroke: #e7ddc9; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 63.36 570.96 
+L 351.36 570.96 
+Q 372.096 570.96 372.096 554.112 
+L 372.096 475.488 
+Q 372.096 458.64 351.36 458.64 
+L 63.36 458.64 
+Q 42.624 458.64 42.624 475.488 
+L 42.624 554.112 
+Q 42.624 570.96 63.36 570.96 
+z
+" clip-path="url(#p700a4528a2)" style="fill: #ffffff; stroke: #e7ddc9; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 63.36 694.512 
+L 351.36 694.512 
+Q 372.096 694.512 372.096 677.664 
+L 372.096 599.04 
+Q 372.096 582.192 351.36 582.192 
+L 63.36 582.192 
+Q 42.624 582.192 42.624 599.04 
+L 42.624 677.664 
+Q 42.624 694.512 63.36 694.512 
+z
+" clip-path="url(#p700a4528a2)" style="fill: #ffffff; stroke: #e7ddc9; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 576 201.24 
+C 576 221.364 576 221.364 576 241.488 
+" clip-path="url(#p700a4528a2)" style="fill: none; stroke: #9a772e; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 432 312.624 
+L 720 312.624 
+Q 740.736 312.624 740.736 295.776 
+L 740.736 253.656 
+Q 740.736 236.808 720 236.808 
+L 432 236.808 
+Q 411.264 236.808 411.264 253.656 
+L 411.264 295.776 
+Q 411.264 312.624 432 312.624 
+z
+" clip-path="url(#p700a4528a2)" style="fill: #eee7d8; stroke: #e7ddc9; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 432 447.408 
+L 720 447.408 
+Q 740.736 447.408 740.736 430.56 
+L 740.736 351.936 
+Q 740.736 335.088 720 335.088 
+L 432 335.088 
+Q 411.264 335.088 411.264 351.936 
+L 411.264 430.56 
+Q 411.264 447.408 432 447.408 
+z
+" clip-path="url(#p700a4528a2)" style="fill: #ffffff; stroke: #e7ddc9; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 432 570.96 
+L 720 570.96 
+Q 740.736 570.96 740.736 554.112 
+L 740.736 475.488 
+Q 740.736 458.64 720 458.64 
+L 432 458.64 
+Q 411.264 458.64 411.264 475.488 
+L 411.264 554.112 
+Q 411.264 570.96 432 570.96 
+z
+" clip-path="url(#p700a4528a2)" style="fill: #ffffff; stroke: #e7ddc9; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 432 694.512 
+L 720 694.512 
+Q 740.736 694.512 740.736 677.664 
+L 740.736 599.04 
+Q 740.736 582.192 720 582.192 
+L 432 582.192 
+Q 411.264 582.192 411.264 599.04 
+L 411.264 677.664 
+Q 411.264 694.512 432 694.512 
+z
+" clip-path="url(#p700a4528a2)" style="fill: #ffffff; stroke: #e7ddc9; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 432 818.064 
+L 720 818.064 
+Q 740.736 818.064 740.736 801.216 
+L 740.736 722.592 
+Q 740.736 705.744 720 705.744 
+L 432 705.744 
+Q 411.264 705.744 411.264 722.592 
+L 411.264 801.216 
+Q 411.264 818.064 432 818.064 
+z
+" clip-path="url(#p700a4528a2)" style="fill: #ffffff; stroke: #e7ddc9; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 576 201.24 
+C 576 221.364 944.64 221.364 944.64 241.488 
+" clip-path="url(#p700a4528a2)" style="fill: none; stroke: #9a772e; stroke-width: 1.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 800.64 312.624 
+L 1088.64 312.624 
+Q 1109.376 312.624 1109.376 295.776 
+L 1109.376 253.656 
+Q 1109.376 236.808 1088.64 236.808 
+L 800.64 236.808 
+Q 779.904 236.808 779.904 253.656 
+L 779.904 295.776 
+Q 779.904 312.624 800.64 312.624 
+z
+" clip-path="url(#p700a4528a2)" style="fill: #eee7d8; stroke: #e7ddc9; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 800.64 447.408 
+L 1088.64 447.408 
+Q 1109.376 447.408 1109.376 430.56 
+L 1109.376 351.936 
+Q 1109.376 335.088 1088.64 335.088 
+L 800.64 335.088 
+Q 779.904 335.088 779.904 351.936 
+L 779.904 430.56 
+Q 779.904 447.408 800.64 447.408 
+z
+" clip-path="url(#p700a4528a2)" style="fill: #ffffff; stroke: #e7ddc9; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 800.64 570.96 
+L 1088.64 570.96 
+Q 1109.376 570.96 1109.376 554.112 
+L 1109.376 475.488 
+Q 1109.376 458.64 1088.64 458.64 
+L 800.64 458.64 
+Q 779.904 458.64 779.904 475.488 
+L 779.904 554.112 
+Q 779.904 570.96 800.64 570.96 
+z
+" clip-path="url(#p700a4528a2)" style="fill: #ffffff; stroke: #e7ddc9; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 800.64 694.512 
+L 1088.64 694.512 
+Q 1109.376 694.512 1109.376 677.664 
+L 1109.376 599.04 
+Q 1109.376 582.192 1088.64 582.192 
+L 800.64 582.192 
+Q 779.904 582.192 779.904 599.04 
+L 779.904 677.664 
+Q 779.904 694.512 800.64 694.512 
+z
+" clip-path="url(#p700a4528a2)" style="fill: #ffffff; stroke: #e7ddc9; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #9a772e" x="46.08" y="32.76" transform="rotate(-0 46.08 32.76)">DEX RESEARCH   /   INDUSTRY MAP</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 27px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #202523" x="46.08" y="76.752" transform="rotate(-0 46.08 76.752)">The commercial real estate value chain</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #646863" x="46.08" y="112.32" transform="rotate(-0 46.08 112.32)">How capital and building inputs become operating space and services</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="576" y="183.35875" transform="rotate(-0 576 183.35875)">Commercial real estate</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #9a772e" x="69.12" y="269.568" transform="rotate(-0 69.12 269.568)">Upstream</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 11.6px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #202523" x="69.12" y="293.904" transform="rotate(-0 69.12 293.904)">Capital and building inputs</text>
+   </g>
+   <g id="text_7">
+    <text style="font-weight: 700; font-size: 16.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #202523" x="67.968" y="367.848" transform="rotate(-0 67.968 367.848)">Capital</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #515a54" transform="translate(67.968 393.809863)">Blackstone</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #515a54" transform="translate(67.968 410.836512)">Equity and debt strategies</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #9a772e" x="349.056" y="430.56" transform="rotate(-0 349.056 430.56)">E06</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 16.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #202523" x="67.968" y="491.4" transform="rotate(-0 67.968 491.4)">Planning and design</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #515a54" transform="translate(67.968 517.361863)">AECOM</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #515a54" transform="translate(67.968 534.388512)">Architecture and adaptive reuse</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #9a772e" x="349.056" y="554.112" transform="rotate(-0 349.056 554.112)">E07</text>
+   </g>
+   <g id="text_13">
+    <text style="font-weight: 700; font-size: 16.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #202523" x="67.968" y="614.952" transform="rotate(-0 67.968 614.952)">Equipment</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #515a54" transform="translate(67.968 640.913863)">KONE</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #515a54" transform="translate(67.968 657.940512)">Elevators escalators and service</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #9a772e" x="349.056" y="677.664" transform="rotate(-0 349.056 677.664)">E08</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #9a772e" x="437.76" y="269.568" transform="rotate(-0 437.76 269.568)">Midstream</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 11.6px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #202523" x="437.76" y="293.904" transform="rotate(-0 437.76 293.904)">Development and ownership</text>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 16.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #202523" x="436.608" y="367.848" transform="rotate(-0 436.608 367.848)">Office ownership</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #515a54" transform="translate(436.608 393.809863)">SL Green</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #515a54" transform="translate(436.608 410.836512)">Office acquisition and leasing</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #9a772e" x="717.696" y="430.56" transform="rotate(-0 717.696 430.56)">E01</text>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 16.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #202523" x="436.608" y="491.4" transform="rotate(-0 436.608 491.4)">Logistics ownership</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #515a54" transform="translate(436.608 517.361863)">Prologis</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #515a54" transform="translate(436.608 534.388512)">Logistics properties and leasing</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #9a772e" x="717.696" y="554.112" transform="rotate(-0 717.696 554.112)">E09</text>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 700; font-size: 16.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #202523" x="436.608" y="614.952" transform="rotate(-0 436.608 614.952)">Retail ownership</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #515a54" transform="translate(436.608 640.913863)">Simon Property Group</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #515a54" transform="translate(436.608 657.940512)">Malls and Premium Outlets</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #9a772e" x="717.696" y="677.664" transform="rotate(-0 717.696 677.664)">E10</text>
+   </g>
+   <g id="text_27">
+    <text style="font-weight: 700; font-size: 16.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #202523" x="436.608" y="738.504" transform="rotate(-0 436.608 738.504)">Digital infrastructure</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #515a54" transform="translate(436.608 764.465863)">Digital Realty</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #515a54" transform="translate(436.608 781.492512)">Data centers and connectivity</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #9a772e" x="717.696" y="801.216" transform="rotate(-0 717.696 801.216)">E11</text>
+   </g>
+   <g id="text_30">
+    <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #9a772e" x="806.4" y="269.568" transform="rotate(-0 806.4 269.568)">Downstream</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 11.6px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #202523" x="806.4" y="293.904" transform="rotate(-0 806.4 293.904)">Transactions operations and users</text>
+   </g>
+   <g id="text_32">
+    <text style="font-weight: 700; font-size: 16.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #202523" x="805.248" y="367.848" transform="rotate(-0 805.248 367.848)">Transactions and operations</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #515a54" transform="translate(805.248 393.809863)">CBRE</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #515a54" transform="translate(805.248 410.836512)">Sales leasing and management</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #9a772e" x="1086.336" y="430.56" transform="rotate(-0 1086.336 430.56)">E12</text>
+   </g>
+   <g id="text_35">
+    <text style="font-weight: 700; font-size: 16.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #202523" x="805.248" y="491.4" transform="rotate(-0 805.248 491.4)">Hotel operating services</text>
+   </g>
+   <g id="text_36">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #515a54" transform="translate(805.248 517.361863)">Marriott International</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #515a54" transform="translate(805.248 534.388512)">Management and franchising</text>
+   </g>
+   <g id="text_37">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #9a772e" x="1086.336" y="554.112" transform="rotate(-0 1086.336 554.112)">E13</text>
+   </g>
+   <g id="text_38">
+    <text style="font-weight: 700; font-size: 16.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #202523" x="805.248" y="614.952" transform="rotate(-0 805.248 614.952)">Property software</text>
+   </g>
+   <g id="text_39">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #515a54" transform="translate(805.248 640.913863)">Yardi</text>
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; fill: #515a54" transform="translate(805.248 657.940512)">Accounting leasing and tenant tools</text>
+   </g>
+   <g id="text_40">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #9a772e" x="1086.336" y="677.664" transform="rotate(-0 1086.336 677.664)">E14</text>
+   </g>
+   <g id="text_41">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #202523" x="46.08" y="865.8" transform="rotate(-0 46.08 865.8)">Demand comes from the businesses and consumers using the space.</text>
+   </g>
+   <g id="text_42">
+    <text style="font-size: 11.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #686b64" x="46.08" y="892.008" transform="rotate(-0 46.08 892.008)">Editorial categories, not supplier contracts. Examples are illustrative; companies can span stages.</text>
+   </g>
+   <g id="text_43">
+    <text style="font-size: 11.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #686b64" x="46.08" y="912.6" transform="rotate(-0 46.08 912.6)">Sources E01 and E06–E14  |  Review draft v1  |  28 October 2026</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p700a4528a2">
+   <rect x="0" y="0" width="1152" height="936"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -1,0 +1,205 @@
+{
+  "schema_version": 1,
+  "maps": {
+    "commercial-real-estate-value-chain": {
+      "title": "The commercial real estate value chain",
+      "description": "Explore the capital, building inputs, ownership and services behind income-producing space.",
+      "root": {
+        "name": "Commercial real estate",
+        "children": [
+          {
+            "name": "Upstream · Capital and building inputs",
+            "children": [
+              {
+                "name": "Capital",
+                "children": [
+                  {
+                    "name": "Blackstone [E06]",
+                    "children": [
+                      {
+                        "name": "Equity and debt strategies"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Planning and design",
+                "children": [
+                  {
+                    "name": "AECOM [E07]",
+                    "children": [
+                      {
+                        "name": "Architecture and adaptive reuse"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Equipment",
+                "children": [
+                  {
+                    "name": "KONE [E08]",
+                    "children": [
+                      {
+                        "name": "Elevators escalators and service"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Midstream · Development and ownership",
+            "children": [
+              {
+                "name": "Office ownership",
+                "children": [
+                  {
+                    "name": "SL Green [E01]",
+                    "children": [
+                      {
+                        "name": "Office acquisition and leasing"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Logistics ownership",
+                "children": [
+                  {
+                    "name": "Prologis [E09]",
+                    "children": [
+                      {
+                        "name": "Logistics properties and leasing"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Retail ownership",
+                "children": [
+                  {
+                    "name": "Simon Property Group [E10]",
+                    "children": [
+                      {
+                        "name": "Malls and Premium Outlets"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Digital infrastructure",
+                "children": [
+                  {
+                    "name": "Digital Realty [E11]",
+                    "children": [
+                      {
+                        "name": "Data centers and connectivity"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Downstream · Transactions operations and users",
+            "children": [
+              {
+                "name": "Transactions and operations",
+                "children": [
+                  {
+                    "name": "CBRE [E12]",
+                    "children": [
+                      {
+                        "name": "Sales leasing and management"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Hotel operating services",
+                "children": [
+                  {
+                    "name": "Marriott International [E13]",
+                    "children": [
+                      {
+                        "name": "Management and franchising"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Property software",
+                "children": [
+                  {
+                    "name": "Yardi [E14]",
+                    "children": [
+                      {
+                        "name": "Accounting leasing and tenant tools"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "note": "Editorial categories, not verified supplier contracts. Company examples are illustrative, non-exclusive and unranked; firms can span several stages. Source IDs resolve in the evidence appendix.",
+      "sources": [
+        {
+          "title": "Evidence and methods E01 and E06–E14",
+          "url": "/test/commercial-real-estate-industry-report/#supporting-evidence"
+        }
+      ],
+      "reviewed": "2026-10-28"
+    }
+  },
+  "shares": {
+    "commercial-real-estate-institutional-value-2025": {
+      "title": "Global institutional investment-property value shares",
+      "eyebrow": "SECTOR SHARES",
+      "period": "2025",
+      "center_label": "2025",
+      "geography": "MSCI 38-market universe",
+      "scope": "Commercial property managed by institutional investors for investment returns. Industrial includes data centers. This is a defined asset-stock universe, not all global buildings or company revenue shares.",
+      "metric": "Share of investment-property asset value (%)",
+      "dimension": "Property sector",
+      "percentDecimals": 1,
+      "unit": "%",
+      "series": [
+        {
+          "name": "Office",
+          "value": 26.8
+        },
+        {
+          "name": "Industrial including data centers",
+          "value": 20.5
+        },
+        {
+          "name": "All other sectors",
+          "value": 52.7,
+          "derived": true
+        }
+      ],
+      "source": {
+        "publisher": "MSCI",
+        "title": "[E03] MSCI Real Estate Market Size — public preview",
+        "published": "2026-08-03",
+        "url": "https://www.msci.com/research-and-insights/paper/msci-real-estate-market-size",
+        "locator": "Public preview, sector-weight bullet"
+      },
+      "note": "Other sectors = 100 − 26.8 − 20.5 = 52.7%. Published rounding is retained; the three slices total 100.0%. The residual pools every other property type and is not a single-sector estimate. Only the public preview was retrieved. Sector shares do not measure corporate concentration.",
+      "reviewed": "2026-10-28"
+    }
+  }
+}
