@@ -1,0 +1,56 @@
+{{ define "body-class" }}article-page support-page{{ end }}
+{{ define "head" }}
+  {{ $css := resources.Get "css/support.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
+  {{ $js := resources.Get "js/support-paypal.mjs" | fingerprint }}
+  <script type="module" src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
+{{ end }}
+{{ define "main" }}
+<article class="dex-support" aria-labelledby="support-title">
+  <aside class="dex-support__preview" aria-label="Live payment warning"><strong>REVIEW PREVIEW · LIVE PAYPAL</strong><p>This is not a sandbox. The PayPal button can lead to a real payment. Check the display and checkout entry only; do not complete a payment while testing.</p></aside>
+  <div class="dex-support__hero">
+    <header class="dex-support__intro">
+      <p class="dex-support__eyebrow">DEX RESEARCH / READER SUPPORT</p>
+      <h1 id="support-title">Support<br>independent<br><em>research.</em></h1>
+      <div class="dex-support__lede">{{ .Content }}</div>
+      <a class="dex-support__text-link" href="{{ "/about/" | relURL }}">How I approach the research <span aria-hidden="true">↗</span></a>
+    </header>
+    <section class="dex-support__payment" aria-labelledby="support-card-title" data-dex-paypal-preview>
+      <div class="dex-support__mark" aria-hidden="true"><span>DEX</span><span>INDEPENDENT RESEARCH</span></div>
+      <p class="dex-support__eyebrow">BUILT ONE REPORT AT A TIME</p>
+      <h2 id="support-card-title">Thank you for<br>being here.</h2>
+      <p class="dex-support__card-copy">Thoughtful research starts with curious readers. Every share, correction, and word of encouragement matters.</p>
+      <div class="dex-support__availability">
+        <p class="dex-support__status">PayPal · USD · live mode</p>
+        <p id="support-live-notice">Loading the button connects to PayPal. This preview uses the real payment service, not test funds. Do not authorize or complete a payment.</p>
+        <button class="dex-support__load-button" id="support-load-paypal" type="button" aria-describedby="support-live-notice support-paypal-status">Load live PayPal button <span aria-hidden="true">↗</span></button>
+        <p id="support-paypal-status" class="dex-support__load-status" role="status" aria-live="polite" aria-atomic="true">PayPal has not been loaded.</p>
+        <div id="paypal-container-YTJXE3R8LDUPL" class="dex-support__paypal" aria-label="PayPal reader-support options"></div>
+        <button class="dex-support__reload" id="support-reload" type="button" hidden>Reload preview to try again</button>
+        <noscript><p>JavaScript is needed to display PayPal. No payment can be made through this page while JavaScript is disabled.</p></noscript>
+      </div>
+      <p class="dex-support__small">Voluntary support for free content, not a purchase or investment. Button availability does not confirm PayPal account approval.</p>
+    </section>
+  </div>
+  <section class="dex-support__work" aria-labelledby="support-work-title">
+    <div class="dex-support__section-heading"><p class="dex-support__eyebrow">THE WORK BEHIND THE PAGE</p><h2 id="support-work-title">What your support helps with</h2></div>
+    <div class="dex-support__work-grid">
+      <section><span class="dex-support__number" aria-hidden="true">01</span><h3>Time to go deeper</h3><p>Reading filings, following industry developments, and turning a question into a useful report.</p></section>
+      <section><span class="dex-support__number" aria-hidden="true">02</span><h3>Careful source checking</h3><p>Tracing claims to original sources, explaining uncertainty, and revisiting work when better evidence appears.</p></section>
+      <section><span class="dex-support__number" aria-hidden="true">03</span><h3>Clearer ways to explore</h3><p>Improving the website, charts, and visual explanations so the research is easier to understand.</p></section>
+    </div>
+  </section>
+  <section class="dex-support__faq" aria-labelledby="support-faq-title">
+    <div class="dex-support__section-heading"><p class="dex-support__eyebrow">A FEW THINGS TO KNOW</p><h2 id="support-faq-title">Before you contribute</h2></div>
+    <div class="dex-support__questions">
+      <details open><summary>Is this a real payment button?</summary><div><p>Yes. The supplied button uses live PayPal, not a sandbox. This page is for review only. You may inspect the payment options and checkout entry, but do not log in, authorize, or complete a payment during testing.</p></div></details>
+      <details><summary>Is this a charitable donation?</summary><div><p>No. This is voluntary reader support for an independent publishing project, not a charitable fundraiser. No charitable tax receipt is offered.</p></div></details>
+      <details><summary>Does support influence the research?</summary><div><p>Support does not buy coverage, favorable conclusions, investment advice, or a promised return. Editorial decisions remain independent. Any sponsored or commissioned work will be labeled separately.</p></div></details>
+      <details><summary>How else can I help?</summary><div><p>Share a report you found useful, suggest a reliable source, or point out something that needs correcting. Those contributions matter too.</p><a href="{{ "/contact/" | relURL }}">Send feedback or a source suggestion <span aria-hidden="true">↗</span></a></div></details>
+    </div>
+  </section>
+  <aside class="dex-support__closing" aria-label="Keep exploring DEX"><div><p class="dex-support__eyebrow">SUPPORT STARTS WITH CURIOSITY</p><p>Keep reading. Keep asking good questions.</p></div><a class="dex-support__browse" href="{{ "/library/" | relURL }}">Explore the Library <span aria-hidden="true">→</span></a></aside>
+  <p class="dex-support__contact">Questions about supporting DEX? <a href="{{ "/contact/" | relURL }}">Get in touch.</a></p>
+</article>
+{{ partialCached "footer/footer" . }}
+{{ end }}
