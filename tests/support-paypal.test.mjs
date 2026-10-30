@@ -76,6 +76,7 @@ test('native buttons, live warnings and noindex isolation preserve the existing 
   assert.doesNotMatch(readFileSync('hugo.toml', 'utf8'), /\/test\/support-dex\//);
   const css = readFileSync('assets/css/support.css', 'utf8');
   assert.match(css, /:focus-visible/); assert.match(css, /@media\(max-width:800px\)/); assert.match(css, /var\(--accent-color\)/);
+  assert.match(css, /\.dex-support__paypal:not\(:empty\).*background:#fff;color:#202020.*color-scheme:light/);
 });
 test('built preview has no listing/feed/sitemap links and does not change production routes', { skip: !existsSync('public/test/support-dex/index.html') }, () => {
   const html = readFileSync('public/test/support-dex/index.html', 'utf8');
