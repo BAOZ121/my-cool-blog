@@ -1,0 +1,53 @@
+{{ define "body-class" }}article-page about-support-preview{{ end }}
+{{ define "head" }}
+  {{ $about := .Site.GetPage "/page/about" }}
+  {{ partial "chapter-rail/assets.html" $about }}
+  {{ range slice "css/support.css" "css/about-support-preview.css" }}
+    {{ $css := resources.Get . | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
+  {{ end }}
+  {{ $js := resources.Get "js/support-paypal.mjs" | fingerprint }}
+  <script type="module" src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
+{{ end }}
+{{ define "main" }}
+{{ $about := .Site.GetPage "/page/about" }}
+{{ if not $about }}{{ errorf "About support preview requires the existing /page/about page" }}{{ end }}
+{{ $preview := .RelPermalink }}
+<aside class="dex-about-preview-note" aria-label="Test preview"><strong>TEST PREVIEW</strong><span>The public About page is unchanged. <a href="#support-paypal">Review the PayPal section ↓</a></span></aside>
+<article class="main-article">
+  {{ partial "article/components/header" (dict "Page" $about "IsList" false) | replaceRE `href="/about/"` (printf `href="%s"` $preview) | safeHTML }}
+  <aside class="chapter-mobile">
+    <details><summary>Chapters <span aria-hidden="true">+</span></summary>{{ partial "chapter-rail/nav.html" (dict "Page" $about "Desktop" false) | replaceRE (printf `href="%s#` $about.RelPermalink) (printf `href="%s#` $preview) | safeHTML }}</details>
+  </aside>
+  {{/* Render the real About content, not a copied version that can drift. */}}
+  {{ partial "article/components/content" $about }}
+  <div class="dex-about-support-wrap">
+    <section class="dex-support dex-about-support" id="support-paypal" aria-labelledby="about-support-title" data-dex-paypal-preview>
+      <div class="dex-about-support__intro">
+        <p class="dex-support__eyebrow">READER SUPPORTED / EDITORIALLY INDEPENDENT</p>
+        <h3 id="about-support-title">Help the next<br>report take shape.</h3>
+        <p>If you find DEX useful, you can also leave a voluntary contribution through PayPal. Your support helps make time for research, source checking, and clearer visual explanations.</p>
+        <p>The published research stays free to read. Support does not buy coverage, favorable conclusions, advice, or a financial return.</p>
+        <p class="dex-about-support__thanks">Thank you for reading, sharing, and asking good questions.</p>
+      </div>
+      <div class="dex-about-support__channel">
+        <p class="dex-support__status">Support DEX via PayPal <span>USD</span></p>
+        <aside class="dex-about-support__live" id="support-live-notice"><strong>Preview only · live PayPal</strong><p>This is not a sandbox. Loading connects to the real payment service. Review the button only; do not authorize or complete a payment.</p></aside>
+        <button class="dex-support__load-button" id="support-load-paypal" type="button" aria-describedby="support-live-notice support-paypal-status">Load live PayPal button <span aria-hidden="true">↗</span></button>
+        <p id="support-paypal-status" class="dex-support__load-status" role="status" aria-live="polite" aria-atomic="true">PayPal has not been loaded.</p>
+        <div id="paypal-container-YTJXE3R8LDUPL" class="dex-support__paypal" aria-label="PayPal reader-support options"></div>
+        <button class="dex-support__reload" id="support-reload" type="button" hidden>Reload preview to try again</button>
+        <noscript><p>JavaScript is needed to display PayPal. No payment can be made through this page while JavaScript is disabled.</p></noscript>
+        <p class="dex-support__small">Voluntary reader support, not a charitable donation. No charitable tax receipt is offered. A displayed button does not confirm PayPal account approval.</p>
+      </div>
+    </section>
+  </div>
+  {{ partial "article/components/footer" $about }}
+</article>
+{{ partialCached "footer/footer" . }}
+{{ end }}
+{{ define "right-sidebar" }}
+  {{ $about := .Site.GetPage "/page/about" }}
+  {{ $about.Scratch.Set "TOCEnabled" true }}
+  {{ partial "sidebar/right.html" (dict "Context" $about "Scope" "page") | replaceRE (printf `href="%s#` $about.RelPermalink) (printf `href="%s#` .RelPermalink) | safeHTML }}
+{{ end }}
