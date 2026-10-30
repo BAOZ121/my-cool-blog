@@ -49,3 +49,8 @@
 /test/minor-metals-industry-report /post/minor-metals-industry-report/ 301
 /test/minor-metals-industry-report/ /post/minor-metals-industry-report/ 301
 /test/minor-metals-industry-report/* /post/minor-metals-industry-report/:splat 301
+
+# The reviewed commercial real estate report is now a published article.
+/test/commercial-real-estate-industry-report /post/commercial-real-estate-industry-report/ 301
+/test/commercial-real-estate-industry-report/ /post/commercial-real-estate-industry-report/ 301
+/test/commercial-real-estate-industry-report/* /post/commercial-real-estate-industry-report/:splat 301

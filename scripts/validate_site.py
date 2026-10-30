@@ -72,7 +72,7 @@ def main() -> None:
         assert retired_url.rstrip("/") not in sitemap_urls, f"Withdrawn list in sitemap: {retired_url}"
     for path in BUILD.rglob("index.xml"):
         assert "50-high-potential-industries" not in path.read_text(encoding="utf-8"), f"Withdrawn list in feed: {path}"
-    assert len(list((BUILD / "post").glob("*/index.html"))) == 24, "Expected all 24 unrelated articles"
+    assert len(list((BUILD / "post").glob("*/index.html"))) == 25, "Expected all 25 published articles"
     evidence = json.loads((ROOT / "data/evidence_library.json").read_text(encoding="utf-8"))
     assert not any(article["id"] == "50-high-potential-industries" for article in evidence["articles"])
     for slug in ("pharmaceutical-industry", "cybersecurity-industry-report", "vr-industry-report-2026"):
@@ -116,7 +116,7 @@ def main() -> None:
             if not target.exists():
                 errors.append(f"{page.relative_to(BUILD)}: {link}")
     assert not errors, "Missing internal links:\n" + "\n".join(errors)
-    print(f"PASS: list withdrawal, 24 retained articles, {len(pages)} HTML pages, {checked} internal links")
+    print(f"PASS: list withdrawal, 25 published articles, {len(pages)} HTML pages, {checked} internal links")
 
 
 if __name__ == "__main__":

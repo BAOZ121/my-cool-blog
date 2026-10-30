@@ -1,32 +1,25 @@
 ---
 title: "Commercial Real Estate Industry Report"
 description: "Global value chains, property-sector shares, operating economics and refinancing risk"
-date: "2026-10-28"
+date: "2026-10-30"
 lastmod: "2026-10-30"
-url: "/test/commercial-real-estate-industry-report/"
+url: "/post/commercial-real-estate-industry-report/"
 type: "post"
 layout: "single"
 image: "assets/cover-v1.webp"
 imageAlt: "An illustrated city at dusk connects office towers, retail, a logistics warehouse and a data center around rail transit."
 industrialreport: true
-testpage: true
 toc: true
 readingTime: true
 comments: false
 draft: false
-robots: "noindex, nofollow"
-sitemap:
-  disable: true
-build:
-  list: "never"
-  render: "always"
-outputs:
-  - "HTML"
-reportversion: "1.0-web-preview"
+reportversion: "1.0"
+categories: ["Industry Report"]
+tags: ["Commercial Real Estate", "REITs", "Investment Property", "Property Services", "Global"]
 evidencecutoff: "2026-10-28"
 ---
 
-<p class="research-preview-note"><strong>Website test edition.</strong> Prepared for editorial review on 30 October 2026. Research cutoff: 28 October 2026. This test page is excluded from article listings, feeds and the sitemap.</p>
+<p class="research-preview-note">Industry report · Version 1.0 · Published: 30 October 2026 · Research cutoff: 28 October 2026.</p>
 
 <p class="research-figure-caption">Cover: AI-generated architectural illustration. It is not a photograph of One Vanderbilt or documentary evidence of the opening transaction.</p>
 

@@ -2,6 +2,468 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "commercial-real-estate-industry-report",
+      "title": "Commercial Real Estate Industry Report",
+      "url": "/post/commercial-real-estate-industry-report/",
+      "published": "2026-10-30",
+      "notices": [],
+      "entries": [
+        {
+          "id": "da9b4030aa31",
+          "url": "/post/commercial-real-estate-industry-report/assets/report-en.txt",
+          "title": "English manuscript and evidence appendix",
+          "kind": "file",
+          "format": "TXT",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Article",
+              "url": "/post/commercial-real-estate-industry-report/",
+              "text": "English manuscript and evidence appendix · Evidence records · Value-chain graphic",
+              "notes": [
+                "Industry report · Version 1.0 · Published: 30 October 2026 · Research cutoff: 28 October 2026.",
+                "Cover: AI-generated architectural illustration. It is not a photograph of One Vanderbilt or documentary evidence of the opening transaction.",
+                "The report covers income-producing offices, retail, logistics, hotels and data centers, with institutional rental housing included where source universes include it. The framework is global; company examples and financing analysis emphasize the United States, with Europe and mainland China as comparisons. Market size and sector shares refer to 2025; trading conditions cover H1 2026; the separate U.S. listed REIT snapshot is dated 30 September 2026. These are dated observations, not a claim of complete October market coverage.",
+                "Our assessment is that commercial real estate is recovering unevenly. A useful analysis connects tenant demand and the cost of keeping a building competitive with the owner’s debt schedule. Transaction recovery can improve liquidity while an individual property still requires new equity."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "9ef2349eed0b",
+          "url": "/post/commercial-real-estate-industry-report/assets/evidence-en.json",
+          "title": "Evidence records",
+          "kind": "file",
+          "format": "JSON",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Article",
+              "url": "/post/commercial-real-estate-industry-report/",
+              "text": "English manuscript and evidence appendix · Evidence records · Value-chain graphic",
+              "notes": [
+                "Industry report · Version 1.0 · Published: 30 October 2026 · Research cutoff: 28 October 2026.",
+                "Cover: AI-generated architectural illustration. It is not a photograph of One Vanderbilt or documentary evidence of the opening transaction.",
+                "The report covers income-producing offices, retail, logistics, hotels and data centers, with institutional rental housing included where source universes include it. The framework is global; company examples and financing analysis emphasize the United States, with Europe and mainland China as comparisons. Market size and sector shares refer to 2025; trading conditions cover H1 2026; the separate U.S. listed REIT snapshot is dated 30 September 2026. These are dated observations, not a claim of complete October market coverage.",
+                "Our assessment is that commercial real estate is recovering unevenly. A useful analysis connects tenant demand and the cost of keeping a building competitive with the owner’s debt schedule. Transaction recovery can improve liquidity while an individual property still requires new equity."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7843fd448e7c",
+          "url": "/data/charts/commercial-real-estate-institutional-value-2025.csv",
+          "title": "Global institutional investment-property value shares — data (CSV)",
+          "kind": "file",
+          "format": "CSV",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Global institutional investment-property value shares",
+              "url": "/post/commercial-real-estate-industry-report/#market-share-commercial-real-estate-institutional-value-2025-1-title",
+              "text": "Download data (CSV)",
+              "notes": [
+                "Commercial property managed by institutional investors for investment returns. Industrial includes data centers. This is a defined asset-stock universe, not all global buildings or company revenue shares.",
+                "MSCI 38-market universe · Share of investment-property asset value (%)",
+                "Other sectors = 100 − 26.8 − 20.5 = 52.7%. Published rounding is retained; the three slices total 100.0%. The residual pools every other property type and is not a single-sector estimate. Only the public preview was retrieved. Sector shares do not measure corporate concentration."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "20a5f12d5f3a",
+          "url": "https://www.msci.com/research-and-insights/paper/msci-real-estate-market-size",
+          "title": "MSCI — [E03] MSCI Real Estate Market Size — public preview",
+          "kind": "link",
+          "format": "Web",
+          "host": "msci.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "Global institutional investment-property value shares",
+              "url": "/post/commercial-real-estate-industry-report/#market-share-commercial-real-estate-institutional-value-2025-1-title",
+              "text": "Source: MSCI — [E03] MSCI Real Estate Market Size — public preview (2026-08-03). Reviewed 2026-10-28.",
+              "notes": [
+                "Commercial property managed by institutional investors for investment returns. Industrial includes data centers. This is a defined asset-stock universe, not all global buildings or company revenue shares.",
+                "MSCI 38-market universe · Share of investment-property asset value (%)",
+                "Other sectors = 100 − 26.8 − 20.5 = 52.7%. Published rounding is retained; the three slices total 100.0%. The residual pools every other property type and is not a single-sector estimate. Only the public preview was retrieved. Sector shares do not measure corporate concentration."
+              ]
+            },
+            {
+              "section": "[E03] MSCI; Razia Neshat, Rishikesh Patkar and Hariharan G G",
+              "url": "/post/commercial-real-estate-industry-report/#heading-E03",
+              "text": "MSCI Real Estate Market Size",
+              "notes": [
+                "Publication: 2026-08-03. Period: 2025; 38 markets. Read: 28 October 2026.",
+                "Location: Public Preview, three bullets on market size and sector weights.",
+                "Public preview supports USD 13.5tn, 8.5% expansion, office 26.8% and industrial 20.5%, including data centers. Full gated paper was not retrieved. Other sectors = 100 − 26.8 − 20.5 = 52.7%; no more detailed split is inferred."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4efbdfec6c06",
+          "url": "https://slgreen.com/mori-building-co-ltd-completes-additional-investment-in-sl-greens-one-vanderbilt-avenue/",
+          "title": "Mori Building Co Ltd Completes Additional Investment in SL Green’s One Vanderbilt Avenue",
+          "kind": "link",
+          "format": "Web",
+          "host": "slgreen.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E01] SL Green Realty",
+              "url": "/post/commercial-real-estate-industry-report/#heading-E01",
+              "text": "Mori Building Co Ltd Completes Additional Investment in SL Green’s One Vanderbilt Avenue",
+              "notes": [
+                "Publication: 2025-10-15. Period: Transaction announced as completed on 2025-10-15. Read: 28 October 2026.",
+                "Location: Opening two paragraphs and property description.",
+                "Supports the additional 5.0% interest, USD 4.7bn gross property valuation and seller-reported full leasing. A party announcement; valuation is not the disclosed cash price for the stake, and one tower does not establish a market average."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b0ee1468ca83",
+          "url": "https://www.mori.co.jp/_mori_assets/files/assets/3f2dbd9a710d4daaaa8451a27e512959/38586f1bcb254b83a1137dda820856ed/investors2025_m.pdf",
+          "title": "Interim Financial Report for Fiscal Year Ending March 2026 FY2025",
+          "kind": "file",
+          "format": "PDF",
+          "host": "mori.co.jp",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E02] Mori Building",
+              "url": "/post/commercial-real-estate-industry-report/#heading-E02",
+              "text": "Interim Financial Report for Fiscal Year Ending March 2026 FY2025",
+              "notes": [
+                "Publication: 2025 interim report; exact release day not identified in the inspected PDF. Period: FY ending March 2026 interim reporting. Read: 28 October 2026.",
+                "Location: PDF page 27, An Additional Stake Acquired in One Vanderbilt Avenue in USA.",
+                "Buyer-side confirmation of an additional investment and the transit-connected mixed-use property. Corroborates participation, but does not independently confirm E01’s valuation or leasing metric."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8f986d6c73ed",
+          "url": "https://www.federalreserve.gov/publications/2026-may-financial-stability-report-asset-valuations.htm",
+          "title": "Financial Stability Report May 2026 Asset Valuations",
+          "kind": "link",
+          "format": "Web",
+          "host": "federalreserve.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E04] Federal Reserve Board",
+              "url": "/post/commercial-real-estate-industry-report/#heading-E04",
+              "text": "Financial Stability Report May 2026 Asset Valuations",
+              "notes": [
+                "Publication: 2026-05; exact day not stated on inspected chapter. Period: Table 1.1 through 2025 Q4; report market conditions through 2026-04-23. Read: 28 October 2026.",
+                "Location: Table 1.1, notes and CRE discussion.",
+                "U.S. CRE nominal market value USD 22,083bn and stabilizing conditions with refinancing vulnerability. Broader U.S. asset measure, not the institutional subset in E03. Dollar levels cannot form a comparable regional market-share calculation."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "eeac43cc714a",
+          "url": "https://www.jll.com/en-us/insights/market-perspectives/global",
+          "title": "Global Real Estate Perspective August 2026",
+          "kind": "link",
+          "format": "Web",
+          "host": "jll.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E05] JLL Research",
+              "url": "/post/commercial-real-estate-industry-report/#heading-E05",
+              "text": "Global Real Estate Perspective August 2026",
+              "notes": [
+                "Publication: 2026-08-03. Period: 2026 Q2 and H1; year-on-year comparisons. Read: 28 October 2026.",
+                "Location: Capital deployment continues to build and Offices subsections.",
+                "Direct investment volume grew 28% year on year in Q2; global office leasing grew 1% in H1. Brokerage research, not an official census; activity growth does not measure values, occupancy or profit growth."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "afacb45b64ae",
+          "url": "https://www.blackstone.com/our-businesses/real-estate/",
+          "title": "Real Estate",
+          "kind": "link",
+          "format": "Web",
+          "host": "blackstone.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E06] Blackstone",
+              "url": "/post/commercial-real-estate-industry-report/#heading-E06",
+              "text": "Real Estate",
+              "notes": [
+                "Publication: Undated live business page; read 2026-10-28. Period: Business descriptions as displayed on retrieval. Read: 28 October 2026.",
+                "Location: Our Real Estate Investment Strategies, Opportunistic, Core+ and Debt.",
+                "Supports the named manager’s equity and debt strategies. Company description is evidence of its business scope, not independent leadership, returns or industry concentration."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "505091ffb29a",
+          "url": "https://publications.aecom.com/social-infrastructure/architecture/",
+          "title": "Architectural design excellence",
+          "kind": "link",
+          "format": "Web",
+          "host": "publications.aecom.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E07] AECOM",
+              "url": "/post/commercial-real-estate-industry-report/#heading-E07",
+              "text": "Architectural design excellence",
+              "notes": [
+                "Publication: Undated live service page; read 2026-10-28. Period: Service description at retrieval. Read: 28 October 2026.",
+                "Location: Opening architecture paragraphs and service list.",
+                "Architectural design, planning, renovation and adaptive reuse. Does not establish a contract with any other named company or quantify design-market share."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "edf5b3914166",
+          "url": "https://www.kone.com/global/en/new-elevators-escalators.html",
+          "title": "KONE elevators and escalators for new buildings",
+          "kind": "link",
+          "format": "Web",
+          "host": "kone.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E08] KONE",
+              "url": "/post/commercial-real-estate-industry-report/#heading-E08",
+              "text": "KONE elevators and escalators for new buildings",
+              "notes": [
+                "Publication: Undated live product page; read 2026-10-28. Period: Offering at retrieval. Read: 28 October 2026.",
+                "Location: Design Build Service and frequently asked questions.",
+                "Elevators, escalators and maintenance across building types. Product descriptions do not verify a particular building installation or an equipment supplier ranking."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "866a43954e54",
+          "url": "https://ir.prologis.com/financials/sec-filings/content/0001193125-26-017256/pld-ex99_2.htm",
+          "title": "Prologis Reports Fourth Quarter and Full Year 2025 Results",
+          "kind": "link",
+          "format": "Web",
+          "host": "ir.prologis.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E09] Prologis",
+              "url": "/post/commercial-real-estate-industry-report/#heading-E09",
+              "text": "Prologis Reports Fourth Quarter and Full Year 2025 Results",
+              "notes": [
+                "Publication: 2026-01-21. Period: 2025 full year and 2025 Q4. Read: 28 October 2026.",
+                "Location: Exhibit 99.2, opening and Operating Performance table, printed page 1.",
+                "228m sq ft of annual lease signings; owned-and-managed Q4 average occupancy 95.3%. Signings are not net absorption or commenced leases, and the portfolio is not the entire logistics market."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "00f21e4ee652",
+          "url": "https://investors.simon.com/static-files/2ada4742-db48-4426-abba-a35eeb5e203b",
+          "title": "Annual Report 2025",
+          "kind": "link",
+          "format": "Web",
+          "host": "investors.simon.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E10] Simon Property Group",
+              "url": "/post/commercial-real-estate-industry-report/#heading-E10",
+              "text": "Annual Report 2025",
+              "notes": [
+                "Publication: 2026 annual report; exact release day not identified in inspected PDF. Period: Year ended 2025-12-31. Read: 28 October 2026.",
+                "Location: PDF page 77, Current Leasing Activities.",
+                "U.S. malls and Premium Outlets new-lease initial annual base rent USD 65.09/sq ft; tenant allowance USD 63.92/sq ft, with source exclusions. Different time bases and no disclosed amortization period: subtracting them is not a valid annual margin."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c816910d3670",
+          "url": "https://www.sec.gov/Archives/edgar/data/1297996/000110465926015365/dlr-20251231x10k.htm",
+          "title": "Form 10 K for year ended December 31 2025",
+          "kind": "link",
+          "format": "Web",
+          "host": "sec.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E11] Digital Realty Trust",
+              "url": "/post/commercial-real-estate-industry-report/#heading-E11",
+              "text": "Form 10 K for year ended December 31 2025",
+              "notes": [
+                "Publication: 2026 filing; exact filing day not asserted. Period: 2025-12-31. Read: 28 October 2026.",
+                "Location: Item 1, Our Data Center Portfolio, paragraph on projects underway.",
+                "769MW under development, 64% pre-leased. A company development pipeline; neither global capacity share nor a guarantee of delivered power, recognized revenue or returns."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3e7e4c3aae9b",
+          "url": "https://ir.cbre.com/financial-reports/sec-filings/content/0001138118-26-000005/cbre-20251231.htm",
+          "title": "Form 10 K for year ended December 31 2025",
+          "kind": "link",
+          "format": "Web",
+          "host": "ir.cbre.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E12] CBRE Group",
+              "url": "/post/commercial-real-estate-industry-report/#heading-E12",
+              "text": "Form 10 K for year ended December 31 2025",
+              "notes": [
+                "Publication: 2026 filing; exact filing day not asserted. Period: 2025 full year. Read: 28 October 2026.",
+                "Location: Item 1 business segments; Item 7 Results of Operations, printed pages 26 to 32.",
+                "Property sales, leasing, management and facilities services; revenue USD 40,550m and pass-through costs USD 16,746m. Revenue is not property transaction value, economic fee income or industry market share."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "553a6c9468ae",
+          "url": "https://marriott.gcs-web.com/static-files/9cf0e9b0-bbfa-48a6-9e21-ffbdbc4b2d78",
+          "title": "Annual Report 2025",
+          "kind": "link",
+          "format": "Web",
+          "host": "marriott.gcs-web.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E13] Marriott International",
+              "url": "/post/commercial-real-estate-industry-report/#heading-E13",
+              "text": "Annual Report 2025",
+              "notes": [
+                "Publication: 2026 annual report; exact release day not identified in inspected PDF. Period: Year ended 2025-12-31. Read: 28 October 2026.",
+                "Location: Letter to Stockholders, Financial Performance; Form 10 K Item 2 Properties.",
+                "Supports fee-driven franchising, management and licensing. Brand-system reach does not measure the value or area of hotels owned by the brand company."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "510108e3084d",
+          "url": "https://www.yardi.com/market/commercial/",
+          "title": "Commercial Property Management Software",
+          "kind": "link",
+          "format": "Web",
+          "host": "yardi.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E14] Yardi",
+              "url": "/post/commercial-real-estate-industry-report/#heading-E14",
+              "text": "Commercial Property Management Software",
+              "notes": [
+                "Publication: Undated live product page; read 2026-10-28. Period: Product offering at retrieval. Read: 28 October 2026.",
+                "Location: Commercial solutions and product descriptions.",
+                "Property accounting, leasing, budgeting and tenant-service software. Vendor claims establish offered functions, not verified client savings or market leadership."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cbc5f0946ae9",
+          "url": "https://www.iea.org/reports/energy-and-ai/energy-demand-from-ai",
+          "title": "Energy and AI Energy demand from AI",
+          "kind": "link",
+          "format": "Web",
+          "host": "iea.org",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E15] International Energy Agency",
+              "url": "/post/commercial-real-estate-industry-report/#heading-E15",
+              "text": "Energy and AI Energy demand from AI",
+              "notes": [
+                "Publication: 2025-04-10. Period: 2024 estimate and 2030 Base Case projection. Read: 28 October 2026.",
+                "Location: The outlook for energy demand from data centres.",
+                "Around 415TWh in 2024 and 945TWh in the 2030 Base Case. This is a dated model with scenario uncertainty, not a 2026 forecast update or contracted local electricity demand."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "afa3d3cf6d42",
+          "url": "https://www.bankingsupervision.europa.eu/activities/srep/2025/html/ssm.srep202511_aggregatedresults2025.en.html",
+          "title": "Aggregated results of the 2025 SREP",
+          "kind": "link",
+          "format": "Web",
+          "host": "bankingsupervision.europa.eu",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E16] ECB Banking Supervision",
+              "url": "/post/commercial-real-estate-industry-report/#heading-E16",
+              "text": "Aggregated results of the 2025 SREP",
+              "notes": [
+                "Publication: 2025 SREP; chapter notes a 2026-04-02 amendment. Period: 2025 supervisory assessment. Read: 28 October 2026.",
+                "Location: Section 5.3 Credit risk, CRE paragraphs.",
+                "Remote working, non-prime office repricing, climate considerations and refinancing risks. Supervisory assessment of covered banks, not a uniform conclusion about all European buildings."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4056cd0c5b2f",
+          "url": "https://www.csrc.gov.cn/csrc/c100028/c7605669/content.shtml",
+          "title": "CSRC announcement introducing a commercial real estate REIT pilot",
+          "kind": "link",
+          "format": "Web",
+          "host": "csrc.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E17] China Securities Regulatory Commission",
+              "url": "/post/commercial-real-estate-industry-report/#heading-E17",
+              "text": "CSRC announcement introducing a commercial real estate REIT pilot",
+              "notes": [
+                "Publication: 2025-12-31. Period: Announced effective 2025-12-31. Read: 28 October 2026.",
+                "Location: Opening and paragraph summarizing the eight provisions.",
+                "Dated introduction of the pilot and active operating-management responsibility. This report does not assert that every asset qualifies or review every subsequent implementing rule. Official Chinese title: 中国证监会关于推出商业不动产投资信托基金试点的公告."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "89b143248eba",
+          "url": "https://www.reit.com/data-research/reit-market-data/report/reit-industry-financial-snapshot",
+          "title": "REIT Industry Financial Snapshot",
+          "kind": "link",
+          "format": "Web",
+          "host": "reit.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E18] Nareit",
+              "url": "/post/commercial-real-estate-industry-report/#heading-E18",
+              "text": "REIT Industry Financial Snapshot",
+              "notes": [
+                "Publication: September 2026 data edition; exact release day not shown. Period: Market values 2026-09-30; ratios separately dated Q2 2026. Read: 28 October 2026.",
+                "Location: Industry Size and data date note.",
+                "Rounded USD 1.45tn equity capitalization for FTSE Nareit All Equity REITs. This measures listed equity claims, not gross underlying property value, and is not a global industry denominator."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "minor-metals-industry-report",
       "title": "Minor Metals Industry Report",
       "url": "/post/minor-metals-industry-report/",
@@ -28545,9 +29007,9 @@
     }
   ],
   "counts": {
-    "articles": 24,
-    "materials": 1050,
-    "files": 253,
-    "hosted_files": 99
+    "articles": 25,
+    "materials": 1071,
+    "files": 257,
+    "hosted_files": 102
   }
 }
