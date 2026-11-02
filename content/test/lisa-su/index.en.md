@@ -14,7 +14,7 @@ amdbiography: true
 entryTheme: "amd"
 entryImage: "assets/lisa-su-cover.jpg"
 entryPreview: true
-homeCard: false
+homeCard: true
 categories:
   - "个人传记"
 categoryLabel: "Personal Biography · Test"
