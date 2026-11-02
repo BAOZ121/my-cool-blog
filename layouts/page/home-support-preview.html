@@ -1,0 +1,45 @@
+{{ define "head" }}
+  {{ $css := resources.Get "css/home-support-preview.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
+{{ end }}
+{{ define "left-sidebar" }}
+  {{ partial "sidebar/left.html" .Site.Home }}
+{{ end }}
+{{ define "main" }}
+  <aside class="dex-home-preview-note" aria-label="Test preview"><strong>TEST PREVIEW</strong><span>Homepage button review · production is unchanged.</span></aside>
+  <section class="dex-home-support" aria-label="Reader support">
+    <div><p class="dex-home-support__eyebrow">READER SUPPORTED</p><p class="dex-home-support__copy">Independent research. Free to read.</p></div>
+    <a class="dex-home-support__button" href="/test/support-dex/" aria-describedby="home-support-preview-note">Support the Research <span aria-hidden="true">↗</span></a>
+    <p id="home-support-preview-note" class="dex-home-support__note">Opens the PayPal test preview. Please do not complete a payment.</p>
+  </section>
+  {{/* Keep the home feed in sync with layouts/home.html; the parity test guards drift. */}}
+  {{ with .Site.Home }}
+  {{- $paginator := partial "helper/paginator.html" . -}}
+  <h2 class="research-landing__list-title">Latest research</h2>
+  <section class="article-list" aria-label="Latest articles">
+    {{ $firstCover := true }}
+    {{ if eq $paginator.PageNumber 1 }}
+      {{ with .Site.GetPage "/test/lisa-su" }}
+        {{ if .Params.homeCard }}
+          {{ partial "article-list/lead.html" . }}
+          {{ $firstCover = false }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ range $index, $element := $paginator.Pages }}
+      {{ $cover := partial "helper/image" (dict "Image" .Params.image "Resources" .Resources "Context" .) }}
+      {{ if and $firstCover $cover }}
+        {{ partial "article-list/lead.html" . }}
+        {{ $firstCover = false }}
+      {{ else }}
+        {{ partial "article-list/default" . }}
+      {{ end }}
+    {{ end }}
+  </section>
+  {{- partial "pagination.html" . -}}
+  {{- partial "footer/footer" . -}}
+  {{ end }}
+{{ end }}
+{{ define "right-sidebar" }}
+  {{ partial "sidebar/right.html" (dict "Context" .Site.Home "Scope" "homepage") }}
+{{ end }}
