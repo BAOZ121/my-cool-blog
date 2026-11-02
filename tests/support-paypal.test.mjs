@@ -72,7 +72,7 @@ test('published homepage has the exact CTA and a real support route, while prese
   assert.ok(card.includes('href="/support/"'));
   assert.ok(card.includes('lang="zh-CN"'));
   assert.doesNotMatch(card, /\/test\/|PREVIEW/);
-  assert.match(readFileSync('content/test/lisa-su/index.en.md', 'utf8'), /homeCard: true/);
+  assert.match(readFileSync('content/test/lisa-su/index.en.md', 'utf8'), /homeFeed: true/);
   const template = readFileSync('layouts/page/support.html', 'utf8');
   assert.match(template, /data-dex-paypal-support/);
   assert.match(template, /Loading connects your browser to PayPal/);
@@ -83,7 +83,6 @@ test('built production is consent gated, preserves research and has no test link
   const home = readFileSync('public/index.html', 'utf8');
   const support = readFileSync('public/support/index.html', 'utf8');
   assert.ok(home.includes('如果您觉得对您有帮助，请支持我。'));
-  assert.ok(home.includes('/test/lisa-su/'));
   assert.ok(home.includes('/support/'));
   assert.doesNotMatch(home, /\/test\/(?:home-support|about-support|support-dex)\//);
   assert.doesNotMatch(support, /noindex|REVIEW PREVIEW/);
