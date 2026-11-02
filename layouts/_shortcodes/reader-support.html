@@ -1,0 +1,10 @@
+{{- $style := resources.Get "css/home-support.css" | resources.Minify | fingerprint -}}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+<div class="dex-about-support">
+  {{ partial "home/support.html" .Page }}
+</div>
+<style>
+.article-content .dex-about-support p { margin: 0; }
+.article-content .dex-about-support .dex-home-support__eyebrow { margin-bottom: 7px; }
+.article-content .dex-about-support .dex-home-support__button { color: var(--accent-color-text); box-shadow: none; text-decoration: none; }
+</style>

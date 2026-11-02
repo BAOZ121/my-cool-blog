@@ -70,3 +70,5 @@ Corrections, source suggestions, dataset feedback, sponsorship inquiries, and re
 ## Support the Research
 
 If this work is useful, you can support it by sharing a report, subscribing on YouTube, starring the [website repository](https://github.com/BAOZ121/my-cool-blog), or using [GitHub Sponsors](https://github.com/sponsors/BAOZ121). These actions help fund more research and better datasets.
+
+{{< reader-support >}}
