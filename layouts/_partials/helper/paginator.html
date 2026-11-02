@@ -1,0 +1,17 @@
+{{- $result := slice -}}
+
+{{- if or .IsHome (eq .Kind "section") (eq .Kind "taxonomy") (eq .Kind "term") -}}
+    {{- $pages := partial "helper/pages.html" . -}}
+    {{- if .IsHome -}}
+        {{/* Keep this opt-in homepage-only: the biography remains an unlisted test page elsewhere. */}}
+        {{- with .Site.GetPage "/test/lisa-su" -}}
+            {{- if .Params.homeFeed -}}
+                {{- $pages = $pages | union (slice .) -}}
+            {{- end -}}
+        {{- end -}}
+        {{- $pages = $pages.ByDate.Reverse -}}
+    {{- end -}}
+    {{- $result = .Paginate $pages -}}
+{{- end -}}
+
+{{- return $result -}}
