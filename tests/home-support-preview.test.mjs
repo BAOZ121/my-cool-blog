@@ -23,3 +23,10 @@ test('support is a native keyboard link to the existing consent-gated preview, n
   assert.ok(read('assets/css/home-support-preview.css').includes(':focus-visible'));
   assert.ok(read('assets/css/home-support-preview.css').includes('max-width:600px'));
 });
+
+test('CTA preserves the exact requested Chinese sentence and permits wrapping', () => {
+  assert.ok(template.includes('<span>如果您觉得对您有帮助，请支持我。</span>'));
+  assert.ok(template.includes('lang="zh-CN"'));
+  assert.ok(!template.includes('>Support the Research'));
+  assert.ok(read('assets/css/home-support-preview.css').includes('overflow-wrap:anywhere'));
+});
