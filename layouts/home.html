@@ -1,5 +1,10 @@
+{{ define "head" }}
+  {{ $css := resources.Get "css/home-support.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">
+{{ end }}
 {{ define "main" }}
   {{- $paginator := partial "helper/paginator.html" . -}}
+  {{ if eq $paginator.PageNumber 1 }}{{ partial "home/support.html" . }}{{ end }}
   <h2 class="research-landing__list-title">Latest research</h2>
   <section class="article-list" aria-label="Latest articles">
     {{ $firstCover := true }}
