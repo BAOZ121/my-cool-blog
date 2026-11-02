@@ -13,8 +13,7 @@
     <p id="home-support-preview-note" class="dex-home-support__note">Opens the PayPal test preview. Please do not complete a payment.</p>
   </section>
   {{/* Keep the home feed in sync with layouts/home.html; the parity test guards drift. */}}
-  {{ with .Site.Home }}
-  {{- $paginator := partial "helper/paginator.html" . -}}
+  {{- $paginator := (partial "helper/paginator.html" .Site.Home).First -}}
   <h2 class="research-landing__list-title">Latest research</h2>
   <section class="article-list" aria-label="Latest articles">
     {{ $firstCover := true }}
@@ -36,9 +35,8 @@
       {{ end }}
     {{ end }}
   </section>
-  {{- partial "pagination.html" . -}}
+  {{- partial "pagination.html" (dict "Paginator" $paginator) -}}
   {{- partial "footer/footer" . -}}
-  {{ end }}
 {{ end }}
 {{ define "right-sidebar" }}
   {{ partial "sidebar/right.html" (dict "Context" .Site.Home "Scope" "homepage") }}

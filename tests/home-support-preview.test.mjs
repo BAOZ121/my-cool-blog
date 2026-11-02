@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 const read = p => readFileSync(p, 'utf8');
 const template = read('layouts/page/home-support-preview.html');
 test('preview retains the exact current homepage feed and existing sidebar components', () => {
-  const main = read('layouts/home.html').split('{{ define "main" }}\n')[1].split('{{ end }}\n\n{{ define "right-sidebar" }}')[0];
+  const main = read('layouts/home.html').replace('partial "helper/paginator.html" .', '(partial "helper/paginator.html" .Site.Home).First').replace('partial "pagination.html" .', 'partial "pagination.html" (dict "Paginator" $paginator)').split('{{ define "main" }}\n')[1].split('{{ end }}\n\n{{ define "right-sidebar" }}')[0];
   assert.ok(template.includes(main));
   assert.ok(template.includes('partial "sidebar/left.html" .Site.Home'));
   assert.ok(template.includes('"Context" .Site.Home "Scope" "homepage"'));
