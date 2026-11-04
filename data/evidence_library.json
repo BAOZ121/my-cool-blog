@@ -2,6 +2,1133 @@
   "schema_version": 1,
   "articles": [
     {
+      "id": "creator-economy-industry-report",
+      "title": "Creator Economy Industry Report",
+      "url": "/post/creator-economy-industry-report/",
+      "published": "2026-11-04",
+      "notices": [],
+      "entries": [
+        {
+          "id": "7ec40c0ecc9f",
+          "url": "/post/creator-economy-industry-report/assets/report-en.txt",
+          "title": "English manuscript and evidence appendix",
+          "kind": "file",
+          "format": "TXT",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Article",
+              "url": "/post/creator-economy-industry-report/",
+              "text": "English manuscript and evidence appendix · Evidence records · Value-chain graphic",
+              "notes": [
+                "Industry report · Version 2.0 · Published: 4 November 2026 · Research cutoff: 3 November 2026.",
+                "Cover: AI-generated concept illustration of a creator workspace. It is not a photograph or documentary evidence of a particular creator or business.",
+                "DEX Research. Research cutoff November 3, 2026. Global value-chain framework with U.S. and China cases. Quantitative observations primarily cover 2025, Q1 2026 and H1 2026; full-year 2026 advertising spending is a forecast. Four body sections are followed by a separate evidence appendix.",
+                "Central finding: a sustainable content business depends on repeatable audience value, realized receipts and full operating costs. Platform growth creates commercial opportunities, but creators still need to establish why customers keep paying and whether receipts cover production, selling and maintenance."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "baeaf4c2c177",
+          "url": "/post/creator-economy-industry-report/assets/evidence-en.json",
+          "title": "Evidence records",
+          "kind": "file",
+          "format": "JSON",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Article",
+              "url": "/post/creator-economy-industry-report/",
+              "text": "English manuscript and evidence appendix · Evidence records · Value-chain graphic",
+              "notes": [
+                "Industry report · Version 2.0 · Published: 4 November 2026 · Research cutoff: 3 November 2026.",
+                "Cover: AI-generated concept illustration of a creator workspace. It is not a photograph or documentary evidence of a particular creator or business.",
+                "DEX Research. Research cutoff November 3, 2026. Global value-chain framework with U.S. and China cases. Quantitative observations primarily cover 2025, Q1 2026 and H1 2026; full-year 2026 advertising spending is a forecast. Four body sections are followed by a separate evidence appendix.",
+                "Central finding: a sustainable content business depends on repeatable audience value, realized receipts and full operating costs. Platform growth creates commercial opportunities, but creators still need to establish why customers keep paying and whether receipts cover production, selling and maintenance."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "86c5b12787ef",
+          "url": "/data/charts/creator-economy-podcast-platforms-q1-2026.csv",
+          "title": "U.S. podcast primary-platform preference — data (CSV)",
+          "kind": "file",
+          "format": "CSV",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "U.S. podcast primary-platform preference",
+              "url": "/post/creator-economy-industry-report/#market-share-creator-economy-podcast-platforms-q1-2026-1-title",
+              "text": "Download data (CSV)",
+              "notes": [
+                "Service used most often to consume podcasts among U.S. weekly podcast consumers aged 13+. This defined audience measure does not represent creator-economy revenue, viewing time or whole-industry market share.",
+                "United States · Weekly podcast consumers aged 13+ · Share naming each service as their most-used podcast platform (%)",
+                "37% + 21% + 12% + 30% = 100%. Other services (30%) is reported directly in the source, not calculated as a residual. Published rounding is retained. This is primary-platform preference, not advertising revenue, time spent or the entire creator economy. No sample size from a different survey within the report is assigned to this chart."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "f49eac2e5fb8",
+          "url": "https://ssrs.com/wp-content/uploads/Podcast-Consumer-2026.pdf",
+          "title": "Edison Research at SSRS — [E02] The Podcast Consumer 2026",
+          "kind": "file",
+          "format": "PDF",
+          "host": "ssrs.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "U.S. podcast primary-platform preference",
+              "url": "/post/creator-economy-industry-report/#market-share-creator-economy-podcast-platforms-q1-2026-1-title",
+              "text": "Source: Edison Research at SSRS — [E02] The Podcast Consumer 2026 (2026-06-04). Reviewed 2026-11-03.",
+              "notes": [
+                "Service used most often to consume podcasts among U.S. weekly podcast consumers aged 13+. This defined audience measure does not represent creator-economy revenue, viewing time or whole-industry market share.",
+                "United States · Weekly podcast consumers aged 13+ · Share naming each service as their most-used podcast platform (%)",
+                "37% + 21% + 12% + 30% = 100%. Other services (30%) is reported directly in the source, not calculated as a residual. Published rounding is retained. This is primary-platform preference, not advertising revenue, time spent or the entire creator economy. No sample size from a different survey within the report is assigned to this chart."
+              ]
+            },
+            {
+              "section": "[E02] Edison Research at SSRS",
+              "url": "/post/creator-economy-industry-report/#heading-E02",
+              "text": "The Podcast Consumer 2026",
+              "notes": [
+                "Publication or update: 2026-06-04. Period or applicability: Q1 2026. Accessed: 2026-11-03.",
+                "Location: p. 28 (PDF index 27), Service Used Most Often to Consume Podcasts.",
+                "Evidence type: Original research.",
+                "U.S. weekly podcast consumers aged 13+: YouTube 37%, Spotify 21%, Apple Podcasts 12%, other services 30%. Primary-platform preference, not revenue, time or whole-industry share. Other is reported directly. No sample size from a different survey within the report is assigned to this chart."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "22ca6c630360",
+          "url": "/post/creator-economy-industry-report/assets/expansion-scenarios.json",
+          "title": "Hypothetical operating assumptions and formulas (JSON)",
+          "kind": "file",
+          "format": "JSON",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Appendix: Evidence and Methods",
+              "url": "/post/creator-economy-industry-report/#supporting-evidence",
+              "text": "Hypothetical operating assumptions and formulas (JSON) · Subscription sensitivity data (CSV) · Podcast preference data (CSV)",
+              "notes": [
+                "The report distinguishes documented facts from analytical judgments. All sources were read on November 3, 2026. Undated product and help pages reflect their state when read, not reconstructed historical versions. Company disclosures establish their own activities and payments rather than independent industry rankings.",
+                "Figure 3 uses four categories from one source, geography, quarter and audience. 37% + 21% + 12% + 30% = 100%. Other services at 30% is reported directly; no additional residual was estimated. It measures primary-platform preference rather than revenue or listening time.",
+                "The IAB growth calculation is (44 / 37 - 1) × 100% = 18.9189%, rounded to 18.9%. Inputs are rounded US$ billion values and do not warrant higher precision. The 2026 value remains a forecast.",
+                "Currency conversions use RMB100 million = RMB100m = RMB100,000 thousand; one Chinese unit of 10,000 people equals 10,000 people. Kuaishou revenue of RMB69,251m equals RMB69.251bn; Bilibili revenue of RMB15,411,958 thousand equals RMB15.411958bn. Metrics with different populations, periods or measurement bases are not aggregated.",
+                "All P4 unit-economics scenarios are hypothetical and explain revenue denominators, owner-time cost, break-even conditions and sensitivity to receipts. The value-chain diagram maps roles; connections are not verified purchasing or supply contracts. Third-party originals are linked through publishers or identified mirrors and are not redistributed with the review package.",
+                "The payment-flow figure is an analytical classification, not a universal contract or market-share chart. The subscription sensitivity figure uses only P4 hypothetical inputs. Monthly churn of 5% and 10% produces contribution before fixed costs of RMB20.99 and RMB18.99 per opening billed member; integer break-even after owner-time cost is 334 and 369 members respectively. Assumptions, formulas and curve data accompany the package.",
+                "The body distinguishes platform disclosures, association estimates and forecasts, current product offers and author analysis. When a real case has no disclosed paying-user count or creator profit, neither is inferred from follower counts, list prices or platform revenue."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "74cac53c1c27",
+          "url": "/post/creator-economy-industry-report/assets/subscription-sensitivity.csv",
+          "title": "Subscription sensitivity data (CSV)",
+          "kind": "file",
+          "format": "CSV",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Appendix: Evidence and Methods",
+              "url": "/post/creator-economy-industry-report/#supporting-evidence",
+              "text": "Hypothetical operating assumptions and formulas (JSON) · Subscription sensitivity data (CSV) · Podcast preference data (CSV)",
+              "notes": [
+                "The report distinguishes documented facts from analytical judgments. All sources were read on November 3, 2026. Undated product and help pages reflect their state when read, not reconstructed historical versions. Company disclosures establish their own activities and payments rather than independent industry rankings.",
+                "Figure 3 uses four categories from one source, geography, quarter and audience. 37% + 21% + 12% + 30% = 100%. Other services at 30% is reported directly; no additional residual was estimated. It measures primary-platform preference rather than revenue or listening time.",
+                "The IAB growth calculation is (44 / 37 - 1) × 100% = 18.9189%, rounded to 18.9%. Inputs are rounded US$ billion values and do not warrant higher precision. The 2026 value remains a forecast.",
+                "Currency conversions use RMB100 million = RMB100m = RMB100,000 thousand; one Chinese unit of 10,000 people equals 10,000 people. Kuaishou revenue of RMB69,251m equals RMB69.251bn; Bilibili revenue of RMB15,411,958 thousand equals RMB15.411958bn. Metrics with different populations, periods or measurement bases are not aggregated.",
+                "All P4 unit-economics scenarios are hypothetical and explain revenue denominators, owner-time cost, break-even conditions and sensitivity to receipts. The value-chain diagram maps roles; connections are not verified purchasing or supply contracts. Third-party originals are linked through publishers or identified mirrors and are not redistributed with the review package.",
+                "The payment-flow figure is an analytical classification, not a universal contract or market-share chart. The subscription sensitivity figure uses only P4 hypothetical inputs. Monthly churn of 5% and 10% produces contribution before fixed costs of RMB20.99 and RMB18.99 per opening billed member; integer break-even after owner-time cost is 334 and 369 members respectively. Assumptions, formulas and curve data accompany the package.",
+                "The body distinguishes platform disclosures, association estimates and forecasts, current product offers and author analysis. When a real case has no disclosed paying-user count or creator profit, neither is inferred from follower counts, list prices or platform revenue."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b38f48885b94",
+          "url": "/post/creator-economy-industry-report/assets/podcast-platform-share.csv",
+          "title": "Podcast preference data (CSV)",
+          "kind": "file",
+          "format": "CSV",
+          "host": "DEX Research",
+          "local": true,
+          "citations": [
+            {
+              "section": "Appendix: Evidence and Methods",
+              "url": "/post/creator-economy-industry-report/#supporting-evidence",
+              "text": "Hypothetical operating assumptions and formulas (JSON) · Subscription sensitivity data (CSV) · Podcast preference data (CSV)",
+              "notes": [
+                "The report distinguishes documented facts from analytical judgments. All sources were read on November 3, 2026. Undated product and help pages reflect their state when read, not reconstructed historical versions. Company disclosures establish their own activities and payments rather than independent industry rankings.",
+                "Figure 3 uses four categories from one source, geography, quarter and audience. 37% + 21% + 12% + 30% = 100%. Other services at 30% is reported directly; no additional residual was estimated. It measures primary-platform preference rather than revenue or listening time.",
+                "The IAB growth calculation is (44 / 37 - 1) × 100% = 18.9189%, rounded to 18.9%. Inputs are rounded US$ billion values and do not warrant higher precision. The 2026 value remains a forecast.",
+                "Currency conversions use RMB100 million = RMB100m = RMB100,000 thousand; one Chinese unit of 10,000 people equals 10,000 people. Kuaishou revenue of RMB69,251m equals RMB69.251bn; Bilibili revenue of RMB15,411,958 thousand equals RMB15.411958bn. Metrics with different populations, periods or measurement bases are not aggregated.",
+                "All P4 unit-economics scenarios are hypothetical and explain revenue denominators, owner-time cost, break-even conditions and sensitivity to receipts. The value-chain diagram maps roles; connections are not verified purchasing or supply contracts. Third-party originals are linked through publishers or identified mirrors and are not redistributed with the review package.",
+                "The payment-flow figure is an analytical classification, not a universal contract or market-share chart. The subscription sensitivity figure uses only P4 hypothetical inputs. Monthly churn of 5% and 10% produces contribution before fixed costs of RMB20.99 and RMB18.99 per opening billed member; integer break-even after owner-time cost is 334 and 369 members respectively. Assumptions, formulas and curve data accompany the package.",
+                "The body distinguishes platform disclosures, association estimates and forecasts, current product offers and author analysis. When a real case has no disclosed paying-user count or creator profit, neither is inferred from follower counts, list prices or platform revenue."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d0f7a1abccca",
+          "url": "https://blog.youtube/news-and-events/made-on-youtube-2025/",
+          "title": "[E01] YouTube / Johanna Voolich",
+          "kind": "link",
+          "format": "Web",
+          "host": "blog.youtube",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E01] YouTube / Johanna Voolich",
+              "url": "/post/creator-economy-industry-report/#heading-E01",
+              "text": "The next 20: Powering the future of entertainment together at Made on YouTube",
+              "notes": [
+                "Publication or update: 2025-09-16. Period or applicability: The preceding four years as described by the announcement. Accessed: 2026-11-03.",
+                "Location: Opening paragraphs.",
+                "Evidence type: Primary source.",
+                "Supports the cumulative payout and platform role. Company disclosure covers creators, artists and media companies; it does not report independent-creator net earnings, their distribution or four specified calendar years."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d293dbb3d690",
+          "url": "https://www.iab.com/news/digital-ad-revenue-climbs-to-nearly-300b-as-iab-celebrates-30-year-anniversary/",
+          "title": "[E03] IAB",
+          "kind": "link",
+          "format": "Web",
+          "host": "iab.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E03] IAB",
+              "url": "/post/creator-economy-industry-report/#heading-E03",
+              "text": "Digital Ad Revenue Climbs to Nearly $300B as IAB Celebrates 30 Year Anniversary",
+              "notes": [
+                "Publication or update: 2026-04-16. Period or applicability: 2025 estimate and 2026 forecast. Accessed: 2026-11-03.",
+                "Location: Redefining the Market in 2026 AI Creators and Performance.",
+                "Evidence type: Trade association estimate.",
+                "Supports approximately US$37bn of U.S. creator ad spending in 2025 and a US$44bn 2026 forecast. The latter is not a completed-year result. Overlapping digital-ad categories are not combined into a pie chart."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b41c4f6bd2b9",
+          "url": "https://support.google.com/youtube/answer/72902?hl=en",
+          "title": "[E04] YouTube Help",
+          "kind": "link",
+          "format": "Web",
+          "host": "support.google.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E04] YouTube Help",
+              "url": "/post/creator-economy-industry-report/#heading-E04",
+              "text": "YouTube partner earnings overview",
+              "notes": [
+                "Publication or update: Undated live help page. Period or applicability: Terms read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: Revenue share rates and How do I earn revenue.",
+                "Evidence type: Primary source.",
+                "Watch Page share is 55% of relevant net advertising revenue; Shorts share is 45% of the creator’s allocated pool amount. Denominators differ. These terms do not establish fixed earnings per view or platform net profit."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d9ad3569da50",
+          "url": "https://support.google.com/youtube/answer/1311392?hl=en",
+          "title": "[E05] YouTube Help",
+          "kind": "link",
+          "format": "Web",
+          "host": "support.google.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E05] YouTube Help",
+              "url": "/post/creator-economy-industry-report/#heading-E05",
+              "text": "YouTube channel monetization policies",
+              "notes": [
+                "Publication or update: Clarification dated 2025-07-15. Period or applicability: Policy clarification and live page read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: Opening policy update and Inauthentic content.",
+                "Evidence type: Primary source.",
+                "Supports the clarification and renaming concerning repetitive or mass-produced content. It does not prohibit all AI-assisted work or all derivative commentary. Future-effective provisions are not treated as operative rules."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6d31c6d4a339",
+          "url": "https://support.patreon.com/hc/en-us/articles/36426991446797-A-standard-platform-fee-for-new-creators-effective-after-August-4-2025",
+          "title": "[E06] Patreon Help",
+          "kind": "link",
+          "format": "Web",
+          "host": "support.patreon.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E06] Patreon Help",
+              "url": "/post/creator-economy-industry-report/#heading-E06",
+              "text": "A standard platform fee for new creators — effective after August 4, 2025",
+              "notes": [
+                "Publication or update: Updated 2026-11-02. Period or applicability: Applicable plan rules read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: Who does this plan apply to and Payment processing rates.",
+                "Evidence type: Primary source.",
+                "The 10% standard platform fee applies to pages published after August 4, 2025, with processing charges additional. Earlier pages can retain legacy pricing subject to exceptions such as unpublishing and republishing. It is not a universal fee for every creator."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "e66caf4d2806",
+          "url": "https://support.substack.com/hc/en-us/articles/360037607131-How-much-does-Substack-cost",
+          "title": "[E07] Substack Help",
+          "kind": "link",
+          "format": "Web",
+          "host": "support.substack.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E07] Substack Help",
+              "url": "/post/creator-economy-industry-report/#heading-E07",
+              "text": "How much does Substack cost?",
+              "notes": [
+                "Publication or update: Updated 2026-10-29. Period or applicability: Fee rules read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: Opening paragraph and How much do creators pay.",
+                "Evidence type: Primary source.",
+                "Free publishing; paid subscriptions incur a 10% platform fee plus payment charges. The remaining 90% is not profit. U.S. card rates are not generalized across countries, and availability for a Chinese business is not established here."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "872233eafb11",
+          "url": "https://ir.kuaishou.com/static-files/3dd8a357-fa7b-4388-b023-f1105b05e4de",
+          "title": "[E08] Kuaishou Technology",
+          "kind": "link",
+          "format": "Web",
+          "host": "ir.kuaishou.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E08] Kuaishou Technology",
+              "url": "/post/creator-economy-industry-report/#heading-E08",
+              "text": "Results announcement for the three and six months ended June 30 2026",
+              "notes": [
+                "Publication or update: 2026-08-19. Period or applicability: H1 2026. Accessed: 2026-11-03.",
+                "Location: p. 31 note 3 Revenue; p. 42 GMV definition.",
+                "Evidence type: Primary source.",
+                "RMB millions: revenue 69,251; marketing 40,282; live streaming 17,182; other 11,787. Unaudited, reviewed interim figures. Other includes commerce and AI activities, not solely commissions. Group revenue differs from creator receipts and GMV."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "856a0c27f5f4",
+          "url": "https://www.sec.gov/Archives/edgar/data/1723690/000119312526371261/d434015dex992.htm",
+          "title": "[E09] Bilibili Inc. / SEC exhibit 99.2",
+          "kind": "link",
+          "format": "Web",
+          "host": "sec.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E09] Bilibili Inc. / SEC exhibit 99.2",
+              "url": "/post/creator-economy-industry-report/#heading-E09",
+              "text": "Interim results announcement for the six months ended June 30 2026",
+              "notes": [
+                "Publication or update: 2026-08-27. Period or applicability: H1 2026. Accessed: 2026-11-03.",
+                "Location: p. 10 income statement and p. 24 note 5 revenue disaggregation.",
+                "Evidence type: Primary source.",
+                "Supports H1 2026 net revenue of RMB15,411,958 thousand and advertising of RMB5,719,547 thousand. Advertising share is 5,719,547 / 15,411,958 = 37.1111%; total growth is about 7.5% and ad growth about 29%. Gross margin is 37.2% and net profit RMB541,071 thousand. The group includes value-added services and games; these are not creator receipts or studio margins."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "0697de5c8f30",
+          "url": "https://www.cnnic.net.cn/n4/2026/0304/c88-11549.html",
+          "title": "[E10] CNNIC",
+          "kind": "link",
+          "format": "Web",
+          "host": "cnnic.net.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E10] CNNIC",
+              "url": "/post/creator-economy-industry-report/#heading-E10",
+              "text": "第57次中国互联网络发展状况统计报告 The 57th Statistical Report on Internet Development in China",
+              "notes": [
+                "Publication or update: 2026-02-05. Period or applicability: December 2025. Accessed: 2026-11-03.",
+                "Location: Printed p. 23 Table 5; PDF index 29.",
+                "Evidence type: Original statistical report read through a mirror.",
+                "Mainland China survey scope is age 6+. Short video: 1,074.03m users, 95.4%; live streaming: 813.59m, 72.3%. The original CNNIC report was read via an Eastmoney-hosted mirror after the official PDF timed out; the official release page was verified separately. Mirror dates do not replace publication date. Audiences overlap; these are not MAU or creator counts."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "520e63ac9896",
+          "url": "https://pdf.dfcfw.com/pdf/H3_AP202603101820433901_1.pdf",
+          "title": "[E10] CNNIC",
+          "kind": "file",
+          "format": "PDF",
+          "host": "pdf.dfcfw.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E10] CNNIC",
+              "url": "/post/creator-economy-industry-report/#heading-E10",
+              "text": "Original-report mirror: https://pdf.dfcfw.com/pdf/H3_AP202603101820433901_1.pdf",
+              "notes": [
+                "Publication or update: 2026-02-05. Period or applicability: December 2025. Accessed: 2026-11-03.",
+                "Location: Printed p. 23 Table 5; PDF index 29.",
+                "Evidence type: Original statistical report read through a mirror.",
+                "Mainland China survey scope is age 6+. Short video: 1,074.03m users, 95.4%; live streaming: 813.59m, 72.3%. The original CNNIC report was read via an Eastmoney-hosted mirror after the official PDF timed out; the official release page was verified separately. Mirror dates do not replace publication date. Audiences overlap; these are not MAU or creator counts."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3a8dc5194ec2",
+          "url": "https://www.cac.gov.cn/2023-07/10/c_1690638496047430.htm",
+          "title": "[E11] Cyberspace Administration of China",
+          "kind": "link",
+          "format": "Web",
+          "host": "cac.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E11] Cyberspace Administration of China",
+              "url": "/post/creator-economy-industry-report/#heading-E11",
+              "text": "关于加强自媒体管理的通知 Notice on strengthening management of self-media",
+              "notes": [
+                "Publication or update: 2023-07-10 public release; document dated 2023-07-05. Period or applicability: Policy text read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: Items 2 3 8 9 and 11.",
+                "Evidence type: Primary source.",
+                "Supports professional-domain verification, source attribution, affiliation and monetization governance. It does not establish one specified license for every general industry commentator."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7efd0ef154b8",
+          "url": "https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_d93a579afd45413e8576e4623fab348f.html",
+          "title": "[E12] State Administration for Market Regulation",
+          "kind": "link",
+          "format": "Web",
+          "host": "samr.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E12] State Administration for Market Regulation",
+              "url": "/post/creator-economy-industry-report/#heading-E12",
+              "text": "互联网广告管理办法 Measures for the Administration of Internet Advertising",
+              "notes": [
+                "Publication or update: Promulgated 2023-02-25; effective 2023-05-01. Period or applicability: Rules read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: Order 72 Articles 2 4 9 14 and 18.",
+                "Evidence type: Primary source.",
+                "Supports ad recognizability and relevant advertising-operator/publisher duties including advertiser verification and at least three years of advertising records. Absence of a purchase link does not exclude advertising status, and commercial-ad duties are not imposed on all noncommercial articles. The webpage separately shows March 20, 2023."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1df4715b84b9",
+          "url": "https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm",
+          "title": "[E13] CAC and three other authorities",
+          "kind": "link",
+          "format": "Web",
+          "host": "cac.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E13] CAC and three other authorities",
+              "url": "/post/creator-economy-industry-report/#heading-E13",
+              "text": "人工智能生成合成内容标识办法 Measures for Labeling AI Generated Synthetic Content",
+              "notes": [
+                "Publication or update: Released 2025-03-14; document dated 2025-03-07. Period or applicability: Effective 2025-09-01. Accessed: 2026-11-03.",
+                "Location: Articles 2 4 5 6 10 and 14.",
+                "Evidence type: Primary source.",
+                "Supports explicit and implicit labels and relevant declaration and labeling duties. Scope follows the text; it is not a global rule or an identical obligation for every possible use of AI assistance."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "629fbc85930f",
+          "url": "https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking",
+          "title": "[E14] U.S. Federal Trade Commission",
+          "kind": "link",
+          "format": "Web",
+          "host": "ftc.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E14] U.S. Federal Trade Commission",
+              "url": "/post/creator-economy-industry-report/#heading-E14",
+              "text": "FTC Endorsement Guides What People Are Asking",
+              "notes": [
+                "Publication or update: Live guidance discussing the 2023 revision. Period or applicability: Guidance read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: Opening explanation and What is the legal basis for the Guides.",
+                "Evidence type: Primary source.",
+                "Supports material-connection disclosures and non-misleading endorsements. The guides explain FTC views on Section 5 of the FTC Act and do not themselves have the force of law. Application depends on facts."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "abff00bf9b43",
+          "url": "https://www.adobe.com/products/premiere.html",
+          "title": "[E15] Adobe",
+          "kind": "link",
+          "format": "Web",
+          "host": "adobe.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E15] Adobe",
+              "url": "/post/creator-economy-industry-report/#heading-E15",
+              "text": "Professional video editing software Adobe Premiere",
+              "notes": [
+                "Publication or update: Undated product page. Period or applicability: Read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: Editing Audio and Titles.",
+                "Evidence type: Primary source.",
+                "Supports editing, audio and caption capabilities only. Dynamic prices, rankings and efficiency promises are not adopted."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "080b8ca5fc3b",
+          "url": "https://www.capcut.com/",
+          "title": "[E16] CapCut",
+          "kind": "link",
+          "format": "Web",
+          "host": "capcut.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E16] CapCut",
+              "url": "/post/creator-economy-industry-report/#heading-E16",
+              "text": "CapCut AI Video Editor",
+              "notes": [
+                "Publication or update: Undated product page. Period or applicability: Read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: Products Smart Editor and Generator AI Editing Tools.",
+                "Evidence type: Primary source.",
+                "Supports editing, template and AI-assisted creation roles. Vendor marketing is not independent evidence of results or market share."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7b94f5731efc",
+          "url": "https://www.iab.com/news/creator-economy-ad-spend-to-reach-37-billion-in-2025-growing-4x-faster-than-total-media-industry-according-to-iab/",
+          "title": "[E17] IAB",
+          "kind": "link",
+          "format": "Web",
+          "host": "iab.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E17] IAB",
+              "url": "/post/creator-economy-industry-report/#heading-E17",
+              "text": "Creator Economy Ad Spend to Reach $37 Billion in 2025, Growing 4x Faster than Total Media Industry, According to IAB",
+              "notes": [
+                "Publication or update: 2025-11-20. Period or applicability: 2021 2024 and 2025 forecast. Accessed: 2026-11-03.",
+                "Location: Opening estimate and Methodology.",
+                "Evidence type: Trade association methodology.",
+                "Defines intentional U.S. brand investment in creator partnerships, promotion and related advertising. This release treated 2025 as a forecast; the body uses E03 for the later 2025 review. Updates from the same institution are not independent corroboration."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fd346a41f785",
+          "url": "https://newsroom.spotify.com/2025-04-28/from-audio-to-video-spotifys-100-million-payout-fuels-creator-success-stories/",
+          "title": "[E18] Spotify",
+          "kind": "link",
+          "format": "Web",
+          "host": "newsroom.spotify.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E18] Spotify",
+              "url": "/post/creator-economy-industry-report/#heading-E18",
+              "text": "From Audio to Video, Spotify’s $100 Million Payout Fuels Creator Success Stories",
+              "notes": [
+                "Publication or update: 2025-04-28. Period or applicability: Q1 2025. Accessed: 2026-11-03.",
+                "Location: Opening payout statement and payment description.",
+                "Evidence type: Primary source.",
+                "Supports quarterly payments exceeding US$100m to podcast publishers and podcasters globally, including ads and partner-program revenue. It is not music royalties or payments from one program alone. Company disclosure does not establish industry share."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c1b4d8f3ce18",
+          "url": "https://ads.tiktok.com/resources/help/article/how-to-create-a-new-creator-marketing-project-in-tiktok-one",
+          "title": "[E19] TikTok for Business",
+          "kind": "link",
+          "format": "Web",
+          "host": "ads.tiktok.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E19] TikTok for Business",
+              "url": "/post/creator-economy-industry-report/#heading-E19",
+              "text": "How to create a new Creator marketing project in TikTok One",
+              "notes": [
+                "Publication or update: Updated March 2026. Period or applicability: Product roles read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: Opening explanation; How to invite creators; To publish the video.",
+                "Evidence type: Primary source.",
+                "Supports brand projects, creator sourcing and invitations, negotiation, review, publication and ad authorization. Regional and eligibility conditions apply; no universal availability, effectiveness or share ranking is established."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5b9d6bb5a5a8",
+          "url": "https://about.fb.com/news/2024/02/creator-marketplace-for-brands-and-creators-to-collaborate-on-instagram/",
+          "title": "[E20] Meta",
+          "kind": "link",
+          "format": "Web",
+          "host": "about.fb.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E20] Meta",
+              "url": "/post/creator-economy-industry-report/#heading-E20",
+              "text": "Making it Easier for Brands and Creators to Collaborate on Instagram",
+              "notes": [
+                "Publication or update: 2024-02-21. Period or applicability: Historical product introduction read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: How it works and Partnership ads discussion.",
+                "Evidence type: Primary source.",
+                "Supports creator discovery, portfolios, partnership messages and advertising roles. A 2024 product introduction is not a 2026 worldwide availability list or independent effectiveness evidence."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "853a47a560b7",
+          "url": "https://www.xingtu.cn/",
+          "title": "[E21] Ocean Engine / Xingtu",
+          "kind": "link",
+          "format": "Web",
+          "host": "xingtu.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E21] Ocean Engine / Xingtu",
+              "url": "/post/creator-economy-industry-report/#heading-E21",
+              "text": "巨量星图 抖音营销 达人变现 星图营销服务平台 Douyin Xingtu creator marketing services",
+              "notes": [
+                "Publication or update: Undated product page. Period or applicability: Read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: Brand creator and MCN services; measurement description.",
+                "Evidence type: Primary source.",
+                "Supports brand, agency, creator and MCN matching, collaboration tasks and campaign measurement. Product marketing does not establish competitive superiority; dynamic rankings are not used."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "008180f0e218",
+          "url": "https://pgy.xiaohongshu.com/",
+          "title": "[E22] Xiaohongshu",
+          "kind": "link",
+          "format": "Web",
+          "host": "pgy.xiaohongshu.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E22] Xiaohongshu",
+              "url": "/post/creator-economy-industry-report/#heading-E22",
+              "text": "小红书蒲公英 好产品种草第一站 Xiaohongshu Pugongying creator partnerships",
+              "notes": [
+                "Publication or update: Undated product page. Period or applicability: Read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: Official homepage introduction; collaboration and live-streaming modules.",
+                "Evidence type: Primary source.",
+                "Supports recommendation-content and live collaborations, creator selection, invitations and campaign review. Search extraction was empty; the official page was read directly in a browser. Promotional effectiveness claims and dynamic rankings are not adopted."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3f9e1ba09f0a",
+          "url": "https://www.tencent.com/zh-cn/products/official-accounts/",
+          "title": "[E23] Tencent",
+          "kind": "link",
+          "format": "Web",
+          "host": "tencent.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E23] Tencent",
+              "url": "/post/creator-economy-industry-report/#heading-E23",
+              "text": "公众号 Official Accounts and 视频号 Channels",
+              "notes": [
+                "Publication or update: Undated product pages. Period or applicability: Read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: Product introductions.",
+                "Evidence type: Primary source.",
+                "Supports Official Accounts publishing and follower communication, routes to websites and commerce, and Channels video creation and connected Weixin services. Overall Weixin users are not assigned to these products, and complete creator control over distribution is not implied."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8abae92c37c2",
+          "url": "https://www.tencent.com/zh-cn/products/channels/",
+          "title": "[E23] Tencent",
+          "kind": "link",
+          "format": "Web",
+          "host": "tencent.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E23] Tencent",
+              "url": "/post/creator-economy-industry-report/#heading-E23",
+              "text": "Additional source: https://www.tencent.com/zh-cn/products/channels/",
+              "notes": [
+                "Publication or update: Undated product pages. Period or applicability: Read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: Product introductions.",
+                "Evidence type: Primary source.",
+                "Supports Official Accounts publishing and follower communication, routes to websites and commerce, and Channels video creation and connected Weixin services. Overall Weixin users are not assigned to these products, and complete creator control over distribution is not implied."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8b8299c172e9",
+          "url": "https://support.google.com/youtube/answer/2737059?hl=en",
+          "title": "[E24] YouTube Help",
+          "kind": "link",
+          "format": "Web",
+          "host": "support.google.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E24] YouTube Help",
+              "url": "/post/creator-economy-industry-report/#heading-E24",
+              "text": "Multi-Channel Network (MCN) overview for YouTube Creators",
+              "notes": [
+                "Publication or update: Undated live help page. Period or applicability: Terms and explanation read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: Key aspects of working with MCNs; Signing a contract with an MCN; Revenue & getting paid.",
+                "Evidence type: Primary source.",
+                "Supports MCN roles, contract considerations, unchanged YouTube revenue share and receipt through the MCN’s AdSense account with potential network deductions. Platform-specific explanation, not a universal description of agency contracts or evidence of higher creator earnings."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "79abd3bf0b06",
+          "url": "https://podcasters.apple.com/support/823-podcast-requirements",
+          "title": "[E25] Apple Podcasts for Creators",
+          "kind": "link",
+          "format": "Web",
+          "host": "podcasters.apple.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E25] Apple Podcasts for Creators",
+              "url": "/post/creator-economy-industry-report/#heading-E25",
+              "text": "Podcast RSS feed requirements",
+              "notes": [
+                "Publication or update: Undated live support page. Period or applicability: Requirements read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: Opening requirements and Podcast RSS feed technical requirements.",
+                "Evidence type: Primary source.",
+                "Supports self-generated or hosting-provider RSS feeds and technical requirements for media and metadata. Illustrates separation of hosting and listening interfaces; does not establish transferability of recommendations, all audience relationships or paid entitlements."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "97291c375ebe",
+          "url": "https://support.google.com/youtube/answer/9314357?hl=en",
+          "title": "[E26] YouTube Help",
+          "kind": "link",
+          "format": "Web",
+          "host": "support.google.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E26] YouTube Help",
+              "url": "/post/creator-economy-industry-report/#heading-E26",
+              "text": "Understand ad revenue analytics",
+              "notes": [
+                "Publication or update: Undated live help page. Period or applicability: Metric definitions read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: RPM; What is the difference between RPM and CPM; CPM.",
+                "Evidence type: Primary source.",
+                "CPM measures advertiser spending per thousand ad impressions. RPM is after revenue sharing and can combine several sources. Shorts uses engaged views, unlike the long-form view denominator. The report does not treat blended RPM as an advertising rate or multiply CPM by all views to infer earnings."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "549753148efa",
+          "url": "https://affiliate-program.amazon.com/help/operating/policies",
+          "title": "[E27] Amazon.com Associates Central",
+          "kind": "link",
+          "format": "Web",
+          "host": "affiliate-program.amazon.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E27] Amazon.com Associates Central",
+              "url": "/post/creator-economy-industry-report/#heading-E27",
+              "text": "Associates Program Policies",
+              "notes": [
+                "Publication or update: 2026-04-14. Period or applicability: U.S. program terms read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: Associates Program Commission Income Statement sections 1, 2 and 6.",
+                "Evidence type: Primary source.",
+                "Supports the distinction between qualifying purchases and revenue, exclusion of initiated cancellations, returns or refunds, and payment approximately 60 days after the earning month. Thresholds and detailed conditions apply. U.S. Amazon program example, not a general rule for commerce or average creator earnings."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b6ab14837a9f",
+          "url": "https://support.google.com/youtube/answer/141805?hl=en",
+          "title": "[E31] YouTube Help",
+          "kind": "link",
+          "format": "Web",
+          "host": "support.google.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E31] YouTube Help",
+              "url": "/post/creator-economy-industry-report/#heading-E31",
+              "text": "YouTube performance FAQ and Troubleshooting",
+              "notes": [
+                "Publication or update: Undated live help page. Period or applicability: Rules described on 2026-11-03. Accessed: 2026-11-03.",
+                "Location: Discovery FAQs; How are videos ranked on Home and in Search.",
+                "Evidence type: Primary source.",
+                "Supports personalized homepage discovery and search relevance. Platform description does not disclose model weights or guarantee reach; it cannot establish revenue per view."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d1acea3bf6e7",
+          "url": "https://ir.kuaishou.com/news-releases/news-release-details/kuaishou-technology-announces-second-quarter-and-interim-2026",
+          "title": "[E32] Kuaishou Technology",
+          "kind": "link",
+          "format": "Web",
+          "host": "ir.kuaishou.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E32] Kuaishou Technology",
+              "url": "/post/creator-economy-industry-report/#heading-E32",
+              "text": "Kuaishou Technology Announces Second Quarter and Interim 2026 Unaudited Financial Results",
+              "notes": [
+                "Publication or update: 2026-08-19. Period or applicability: H1 2026 and H1 2025 comparison. Accessed: 2026-11-03.",
+                "Location: First Half 2026 Key Highlights; Condensed Consolidated Income Statement.",
+                "Evidence type: Primary source.",
+                "H1 revenue RMB69,251m, gross profit RMB35,577m and operating profit RMB7,352m, versus operating profit RMB9,548m a year earlier. Gross margins 51.4% and 55.1%. Group accounts do not measure creator profits. The original E08 static PDF endpoint returned 403 on this review; the same-date corporate HTML release and linked PDF were read to cross-check total revenue and profits."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "3d5ca47c5940",
+          "url": "https://ir.kuaishou.com/node/11711/pdf",
+          "title": "[E32] Kuaishou Technology",
+          "kind": "link",
+          "format": "Web",
+          "host": "ir.kuaishou.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E32] Kuaishou Technology",
+              "url": "/post/creator-economy-industry-report/#heading-E32",
+              "text": "Additional source: https://ir.kuaishou.com/node/11711/pdf",
+              "notes": [
+                "Publication or update: 2026-08-19. Period or applicability: H1 2026 and H1 2025 comparison. Accessed: 2026-11-03.",
+                "Location: First Half 2026 Key Highlights; Condensed Consolidated Income Statement.",
+                "Evidence type: Primary source.",
+                "H1 revenue RMB69,251m, gross profit RMB35,577m and operating profit RMB7,352m, versus operating profit RMB9,548m a year earlier. Gross margins 51.4% and 55.1%. Group accounts do not measure creator profits. The original E08 static PDF endpoint returned 403 on this review; the same-date corporate HTML release and linked PDF were read to cross-check total revenue and profits."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "8f7824466b73",
+          "url": "https://support.tiktok.com/en/getting-started/for-you/test-for-you",
+          "title": "[E33] TikTok Help Center",
+          "kind": "link",
+          "format": "Web",
+          "host": "support.tiktok.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E33] TikTok Help Center",
+              "url": "/post/creator-economy-industry-report/#heading-E33",
+              "text": "For You on TikTok",
+              "notes": [
+                "Publication or update: Undated live help page. Period or applicability: Functionality read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: What is For You on TikTok; Why do you see certain posts on TikTok.",
+                "Evidence type: Primary source.",
+                "Supports personalization through interests and interactions. Listed factors are not a complete algorithm disclosure or evidence of fixed reach thresholds or ranking formulas."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "68ac39b468d2",
+          "url": "https://support.substack.com/hc/en-us/articles/6314498343700-How-do-I-export-my-email-list-on-Substack",
+          "title": "[E34] Substack Help",
+          "kind": "link",
+          "format": "Web",
+          "host": "support.substack.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E34] Substack Help",
+              "url": "/post/creator-economy-industry-report/#heading-E34",
+              "text": "How do I export my email list on Substack",
+              "notes": [
+                "Publication or update: Updated 2026-06-04. Period or applicability: Functionality read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: Export instructions and CSV column choices.",
+                "Evidence type: Primary source.",
+                "Supports CSV export of subscriber email lists. Does not establish complete portability of all data, followers or payment relationships; migration cost and consent implications are analytical observations."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b7619ccff087",
+          "url": "https://support.google.com/youtube/answer/72851?hl=en",
+          "title": "[E35] YouTube Help",
+          "kind": "link",
+          "format": "Web",
+          "host": "support.google.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E35] YouTube Help",
+              "url": "/post/creator-economy-industry-report/#heading-E35",
+              "text": "YouTube Partner Program overview and eligibility",
+              "notes": [
+                "Publication or update: Undated live help page. Period or applicability: Requirements read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: What you need to join; How you can become eligible.",
+                "Evidence type: Primary source.",
+                "Supports availability by residence and account/policy review requirements. The page mentions terms effective February 2027; those future terms are not treated as operative rules. No individual operator’s eligibility is determined."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b902ac4eff02",
+          "url": "https://support.google.com/youtube/answer/7101720?hl=en",
+          "title": "[E36] YouTube Help",
+          "kind": "link",
+          "format": "Web",
+          "host": "support.google.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E36] YouTube Help",
+              "url": "/post/creator-economy-industry-report/#heading-E36",
+              "text": "YouTube Partner Program availability",
+              "notes": [
+                "Publication or update: Undated live availability list. Period or applicability: List read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: You can sign up in the following areas.",
+                "Evidence type: Primary source.",
+                "The complete list read did not include mainland China; it included areas such as Hong Kong. Establishes that language alone does not determine availability, not personal tax, account or relocation advice."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7ea38b836fbb",
+          "url": "https://stratechery.com/about/",
+          "title": "[E37] Stratechery / Ben Thompson",
+          "kind": "link",
+          "format": "Web",
+          "host": "stratechery.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E37] Stratechery / Ben Thompson",
+              "url": "/post/creator-economy-industry-report/#heading-E37",
+              "text": "About and Ethics Statement",
+              "notes": [
+                "Publication or update: Undated live page; sponsorship disclosure references October 2026. Period or applicability: Product and disclosure status read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: About opening; Ethics Statement.",
+                "Evidence type: Primary source.",
+                "Supports free weekly articles, paid updates, and an October 2026 Stripe sponsorship disclosure acknowledging conflict. Publisher self-description establishes product structure and disclosure, not audited income, profit or a guarantee of objectivity."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2d71cc1541e2",
+          "url": "https://stratechery.com/stratechery-plus/",
+          "title": "[E38] Stratechery",
+          "kind": "link",
+          "format": "Web",
+          "host": "stratechery.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E38] Stratechery",
+              "url": "/post/creator-economy-industry-report/#heading-E38",
+              "text": "Stratechery Plus",
+              "notes": [
+                "Publication or update: Undated live product page. Period or applicability: Listed offer read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: Opening price; product description; team subscription FAQ.",
+                "Evidence type: Primary source.",
+                "Lists US$15/month or US$150/year for analysis updates, interviews and podcasts, with team subscriptions. A dated observation of one offer, not an industry average or purchase recommendation; no subscriber or revenue estimate is inferred."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "895829778589",
+          "url": "https://support.google.com/youtube/answer/10285842?hl=en",
+          "title": "[E42] YouTube Help",
+          "kind": "link",
+          "format": "Web",
+          "host": "support.google.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E42] YouTube Help",
+              "url": "/post/creator-economy-industry-report/#heading-E42",
+              "text": "Invalid traffic on your videos",
+              "notes": [
+                "Publication or update: Undated live help page. Period or applicability: Rules and definitions read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: How invalid traffic impacts your earnings.",
+                "Evidence type: Primary source.",
+                "Supports possible ad restrictions, earnings adjustments or offsets, and payment delays of up to 90 days for invalid traffic. It does not attribute every revenue fluctuation or payment delay to violations or establish enforcement against a particular creator."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dfdf6e03b4a0",
+          "url": "https://support.google.com/google-ads/answer/12003020?hl=en",
+          "title": "[E44] Google Ads Help",
+          "kind": "link",
+          "format": "Web",
+          "host": "support.google.com",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E44] Google Ads Help",
+              "url": "/post/creator-economy-industry-report/#heading-E44",
+              "text": "About Conversion Lift",
+              "notes": [
+                "Publication or update: Undated live help page. Period or applicability: Rules and definitions read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: Opening eligibility note; How Conversion Lift works.",
+                "Evidence type: Primary source.",
+                "Supports exposed-versus-control measurement of incremental conversions and limited account availability. This tool explanation does not establish incremental sales from any specific creator campaign. The discussion of measurement limits is methodological analysis."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c0be3f4b0a2c",
+          "url": "https://www.copyright.gov/help/faq/faq-fairuse.html",
+          "title": "[E45] U.S. Copyright Office",
+          "kind": "link",
+          "format": "Web",
+          "host": "copyright.gov",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E45] U.S. Copyright Office",
+              "url": "/post/creator-economy-industry-report/#heading-E45",
+              "text": "Can I Use Someone Else's Work Can Someone Else Use Mine",
+              "notes": [
+                "Publication or update: Undated live FAQ. Period or applicability: Guidance read 2026-11-03. Accessed: 2026-11-03.",
+                "Location: Questions How much of someone else's work can I use without getting permission and Could I be sued for using somebody else's work.",
+                "Evidence type: Primary source.",
+                "The U.S. Copyright Office explains that fair use depends on circumstances and has no universal safe threshold based on words, notes or percentages. This is general U.S. guidance, not a determination for a particular use or another jurisdiction."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "53a7fb89568f",
+          "url": "https://www.cac.gov.cn/2026-04/28/c_1779119736411711.htm",
+          "title": "[E46] Cyberspace Administration of China",
+          "kind": "link",
+          "format": "Web",
+          "host": "cac.gov.cn",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E46] Cyberspace Administration of China",
+              "url": "/post/creator-economy-industry-report/#heading-E46",
+              "text": "网信部门依法查处剪映App等生成合成内容标识违法问题网站平台 AI content labeling enforcement against Jianying and other platforms",
+              "notes": [
+                "Publication or update: 2026-04-28. Period or applicability: Enforcement notice published 2026-04-28. Accessed: 2026-11-03.",
+                "Location: First substantive paragraph.",
+                "Evidence type: Primary source.",
+                "The notice identifies labeling implementation issues involving Jianying, Maoxiang and Jimeng AI and describes measures including interviews, correction orders and warnings. It does not match every measure to each product, state a monetary fine, or establish a general ban or wrongdoing by all users."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "cb6dd067d2c1",
+          "url": "https://www.404media.co/welcome-to-404-media/",
+          "title": "[E51] 404 Media / Jason Koebler, Samantha Cole, Emanuel Maiberg and Joseph Cox",
+          "kind": "link",
+          "format": "Web",
+          "host": "404media.co",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E51] 404 Media / Jason Koebler, Samantha Cole, Emanuel Maiberg and Joseph Cox",
+              "url": "/post/creator-economy-industry-report/#heading-E51",
+              "text": "Welcome to 404 Media",
+              "notes": [
+                "Publication or update: 2023-08-22. Period or applicability: Launch statement in August 2023. Accessed: 2026-11-03.",
+                "Location: Opening paragraphs and subscriber offer.",
+                "Evidence type: Primary source.",
+                "The founders describe ownership by four former Motherboard journalists and a reader-supported mix of free and paid work. This is a launch statement, not evidence of realized profitability or typical creator outcomes."
+              ]
+            }
+          ]
+        },
+        {
+          "id": "7741715978d3",
+          "url": "https://www.404media.co/membership/",
+          "title": "[E52] 404 Media",
+          "kind": "link",
+          "format": "Web",
+          "host": "404media.co",
+          "local": false,
+          "citations": [
+            {
+              "section": "[E52] 404 Media",
+              "url": "/post/creator-economy-industry-report/#heading-E52",
+              "text": "Membership",
+              "notes": [
+                "Publication or update: Undated live offer. Period or applicability: Offer read on 2026-11-03. Accessed: 2026-11-03.",
+                "Location: Free and Supporter tiers.",
+                "Evidence type: Primary source.",
+                "Supports the tier structure and listed Supporter prices of US$10 monthly or US$100 annually. It does not disclose realized prices, membership, revenue or profit. Offers can change."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "commercial-real-estate-industry-report",
       "title": "Commercial Real Estate Industry Report",
       "url": "/post/commercial-real-estate-industry-report/",
@@ -29007,9 +30134,9 @@
     }
   ],
   "counts": {
-    "articles": 25,
-    "materials": 1071,
-    "files": 257,
-    "hosted_files": 102
+    "articles": 26,
+    "materials": 1121,
+    "files": 265,
+    "hosted_files": 108
   }
 }

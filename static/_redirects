@@ -54,3 +54,8 @@
 /test/commercial-real-estate-industry-report /post/commercial-real-estate-industry-report/ 301
 /test/commercial-real-estate-industry-report/ /post/commercial-real-estate-industry-report/ 301
 /test/commercial-real-estate-industry-report/* /post/commercial-real-estate-industry-report/:splat 301
+
+# The reviewed creator economy report is now a published article.
+/test/creator-economy-industry-report /post/creator-economy-industry-report/ 301
+/test/creator-economy-industry-report/ /post/creator-economy-industry-report/ 301
+/test/creator-economy-industry-report/* /post/creator-economy-industry-report/:splat 301

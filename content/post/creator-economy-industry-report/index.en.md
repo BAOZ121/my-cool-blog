@@ -3,36 +3,29 @@ title: "Creator Economy Industry Report"
 description: "Value chains, platform competition and creator business economics"
 date: "2026-11-04"
 lastmod: "2026-11-04"
-url: "/test/creator-economy-industry-report/"
+url: "/post/creator-economy-industry-report/"
 type: "post"
 layout: "single"
 image: "assets/cover-v2.webp"
 imageAlt: "An illustrated creator workspace with a microphone, camera, notebook and laptop on a navy background."
 industrialreport: true
-testpage: true
 toc: true
 readingTime: true
 comments: false
 draft: false
-robots: "noindex, nofollow"
-sitemap:
-  disable: true
-build:
-  list: "never"
-  render: "always"
-outputs:
-  - "HTML"
 reportversion: "2.0"
+categories: ["Industry Report"]
+tags: ["Creator Economy", "Independent Media", "Digital Platforms", "Podcasts", "Global"]
 evidencecutoff: "2026-11-03"
 ---
 
-<p class="research-preview-note"><strong>Website test edition for review.</strong> Version 2.0 · Prepared: 4 November 2026 · Research cutoff: 3 November 2026.</p>
+<p class="research-preview-note">Industry report · Version 2.0 · Published: 4 November 2026 · Research cutoff: 3 November 2026.</p>
 
 <p class="research-figure-caption">Cover: AI-generated concept illustration of a creator workspace. It is not a photograph or documentary evidence of a particular creator or business.</p>
 
 <p class="research-downloads"><a href="assets/report-en.txt" download>English manuscript and evidence appendix</a> · <a href="assets/evidence-en.json" download>Evidence records</a> · <a href="assets/value-chain.svg" download>Value-chain graphic</a></p>
 
-<p>DEX Research review draft. Research cutoff November 3, 2026. Global value-chain framework with U.S. and China cases. Quantitative observations primarily cover 2025, Q1 2026 and H1 2026; full-year 2026 advertising spending is a forecast. Four body sections are followed by a separate evidence appendix.</p>
+<p>DEX Research. Research cutoff November 3, 2026. Global value-chain framework with U.S. and China cases. Quantitative observations primarily cover 2025, Q1 2026 and H1 2026; full-year 2026 advertising spending is a forecast. Four body sections are followed by a separate evidence appendix.</p>
 
 <p>Central finding: a sustainable content business depends on repeatable audience value, realized receipts and full operating costs. Platform growth creates commercial opportunities, but creators still need to establish why customers keep paying and whether receipts cover production, selling and maintenance.</p>
 
@@ -631,7 +624,7 @@ evidencecutoff: "2026-11-03"
 
 <p class="research-downloads"><a href="assets/expansion-scenarios.json" download>Hypothetical operating assumptions and formulas (JSON)</a> · <a href="assets/subscription-sensitivity.csv" download>Subscription sensitivity data (CSV)</a> · <a href="assets/podcast-platform-share.csv" download>Podcast preference data (CSV)</a></p>
 
-<section class="research-evidence" id="source-E01" aria-labelledby="heading-E01">
+<section class="research-evidence" id="source-E01" data-source-id="E01" aria-labelledby="heading-E01">
 <h3 id="heading-E01">[E01] YouTube / Johanna Voolich</h3>
 <p><a href="https://blog.youtube/news-and-events/made-on-youtube-2025/" target="_blank" rel="noopener">The next 20: Powering the future of entertainment together at Made on YouTube</a></p>
 <p class="research-source-identity">Publication or update: 2025-09-16. Period or applicability: The preceding four years as described by the announcement. Accessed: 2026-11-03.</p>
@@ -640,7 +633,7 @@ evidencecutoff: "2026-11-03"
 <p>Supports the cumulative payout and platform role. Company disclosure covers creators, artists and media companies; it does not report independent-creator net earnings, their distribution or four specified calendar years.</p>
 </section>
 
-<section class="research-evidence" id="source-E02" aria-labelledby="heading-E02">
+<section class="research-evidence" id="source-E02" data-source-id="E02" aria-labelledby="heading-E02">
 <h3 id="heading-E02">[E02] Edison Research at SSRS</h3>
 <p><a href="https://ssrs.com/wp-content/uploads/Podcast-Consumer-2026.pdf" target="_blank" rel="noopener">The Podcast Consumer 2026</a></p>
 <p class="research-source-identity">Publication or update: 2026-06-04. Period or applicability: Q1 2026. Accessed: 2026-11-03.</p>
@@ -649,7 +642,7 @@ evidencecutoff: "2026-11-03"
 <p>U.S. weekly podcast consumers aged 13+: YouTube 37%, Spotify 21%, Apple Podcasts 12%, other services 30%. Primary-platform preference, not revenue, time or whole-industry share. Other is reported directly. No sample size from a different survey within the report is assigned to this chart.</p>
 </section>
 
-<section class="research-evidence" id="source-E03" aria-labelledby="heading-E03">
+<section class="research-evidence" id="source-E03" data-source-id="E03" aria-labelledby="heading-E03">
 <h3 id="heading-E03">[E03] IAB</h3>
 <p><a href="https://www.iab.com/news/digital-ad-revenue-climbs-to-nearly-300b-as-iab-celebrates-30-year-anniversary/" target="_blank" rel="noopener">Digital Ad Revenue Climbs to Nearly $300B as IAB Celebrates 30 Year Anniversary</a></p>
 <p class="research-source-identity">Publication or update: 2026-04-16. Period or applicability: 2025 estimate and 2026 forecast. Accessed: 2026-11-03.</p>
@@ -658,7 +651,7 @@ evidencecutoff: "2026-11-03"
 <p>Supports approximately US$37bn of U.S. creator ad spending in 2025 and a US$44bn 2026 forecast. The latter is not a completed-year result. Overlapping digital-ad categories are not combined into a pie chart.</p>
 </section>
 
-<section class="research-evidence" id="source-E04" aria-labelledby="heading-E04">
+<section class="research-evidence" id="source-E04" data-source-id="E04" aria-labelledby="heading-E04">
 <h3 id="heading-E04">[E04] YouTube Help</h3>
 <p><a href="https://support.google.com/youtube/answer/72902?hl=en" target="_blank" rel="noopener">YouTube partner earnings overview</a></p>
 <p class="research-source-identity">Publication or update: Undated live help page. Period or applicability: Terms read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -667,7 +660,7 @@ evidencecutoff: "2026-11-03"
 <p>Watch Page share is 55% of relevant net advertising revenue; Shorts share is 45% of the creator’s allocated pool amount. Denominators differ. These terms do not establish fixed earnings per view or platform net profit.</p>
 </section>
 
-<section class="research-evidence" id="source-E05" aria-labelledby="heading-E05">
+<section class="research-evidence" id="source-E05" data-source-id="E05" aria-labelledby="heading-E05">
 <h3 id="heading-E05">[E05] YouTube Help</h3>
 <p><a href="https://support.google.com/youtube/answer/1311392?hl=en" target="_blank" rel="noopener">YouTube channel monetization policies</a></p>
 <p class="research-source-identity">Publication or update: Clarification dated 2025-07-15. Period or applicability: Policy clarification and live page read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -676,7 +669,7 @@ evidencecutoff: "2026-11-03"
 <p>Supports the clarification and renaming concerning repetitive or mass-produced content. It does not prohibit all AI-assisted work or all derivative commentary. Future-effective provisions are not treated as operative rules.</p>
 </section>
 
-<section class="research-evidence" id="source-E06" aria-labelledby="heading-E06">
+<section class="research-evidence" id="source-E06" data-source-id="E06" aria-labelledby="heading-E06">
 <h3 id="heading-E06">[E06] Patreon Help</h3>
 <p><a href="https://support.patreon.com/hc/en-us/articles/36426991446797-A-standard-platform-fee-for-new-creators-effective-after-August-4-2025" target="_blank" rel="noopener">A standard platform fee for new creators — effective after August 4, 2025</a></p>
 <p class="research-source-identity">Publication or update: Updated 2026-11-02. Period or applicability: Applicable plan rules read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -685,7 +678,7 @@ evidencecutoff: "2026-11-03"
 <p>The 10% standard platform fee applies to pages published after August 4, 2025, with processing charges additional. Earlier pages can retain legacy pricing subject to exceptions such as unpublishing and republishing. It is not a universal fee for every creator.</p>
 </section>
 
-<section class="research-evidence" id="source-E07" aria-labelledby="heading-E07">
+<section class="research-evidence" id="source-E07" data-source-id="E07" aria-labelledby="heading-E07">
 <h3 id="heading-E07">[E07] Substack Help</h3>
 <p><a href="https://support.substack.com/hc/en-us/articles/360037607131-How-much-does-Substack-cost" target="_blank" rel="noopener">How much does Substack cost?</a></p>
 <p class="research-source-identity">Publication or update: Updated 2026-10-29. Period or applicability: Fee rules read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -694,7 +687,7 @@ evidencecutoff: "2026-11-03"
 <p>Free publishing; paid subscriptions incur a 10% platform fee plus payment charges. The remaining 90% is not profit. U.S. card rates are not generalized across countries, and availability for a Chinese business is not established here.</p>
 </section>
 
-<section class="research-evidence" id="source-E08" aria-labelledby="heading-E08">
+<section class="research-evidence" id="source-E08" data-source-id="E08" aria-labelledby="heading-E08">
 <h3 id="heading-E08">[E08] Kuaishou Technology</h3>
 <p><a href="https://ir.kuaishou.com/static-files/3dd8a357-fa7b-4388-b023-f1105b05e4de" target="_blank" rel="noopener">Results announcement for the three and six months ended June 30 2026</a></p>
 <p class="research-source-identity">Publication or update: 2026-08-19. Period or applicability: H1 2026. Accessed: 2026-11-03.</p>
@@ -703,7 +696,7 @@ evidencecutoff: "2026-11-03"
 <p>RMB millions: revenue 69,251; marketing 40,282; live streaming 17,182; other 11,787. Unaudited, reviewed interim figures. Other includes commerce and AI activities, not solely commissions. Group revenue differs from creator receipts and GMV.</p>
 </section>
 
-<section class="research-evidence" id="source-E09" aria-labelledby="heading-E09">
+<section class="research-evidence" id="source-E09" data-source-id="E09" aria-labelledby="heading-E09">
 <h3 id="heading-E09">[E09] Bilibili Inc. / SEC exhibit 99.2</h3>
 <p><a href="https://www.sec.gov/Archives/edgar/data/1723690/000119312526371261/d434015dex992.htm" target="_blank" rel="noopener">Interim results announcement for the six months ended June 30 2026</a></p>
 <p class="research-source-identity">Publication or update: 2026-08-27. Period or applicability: H1 2026. Accessed: 2026-11-03.</p>
@@ -712,7 +705,7 @@ evidencecutoff: "2026-11-03"
 <p>Supports H1 2026 net revenue of RMB15,411,958 thousand and advertising of RMB5,719,547 thousand. Advertising share is 5,719,547 / 15,411,958 = 37.1111%; total growth is about 7.5% and ad growth about 29%. Gross margin is 37.2% and net profit RMB541,071 thousand. The group includes value-added services and games; these are not creator receipts or studio margins.</p>
 </section>
 
-<section class="research-evidence" id="source-E10" aria-labelledby="heading-E10">
+<section class="research-evidence" id="source-E10" data-source-id="E10" aria-labelledby="heading-E10">
 <h3 id="heading-E10">[E10] CNNIC</h3>
 <p><a href="https://www.cnnic.net.cn/n4/2026/0304/c88-11549.html" target="_blank" rel="noopener">第57次中国互联网络发展状况统计报告 The 57th Statistical Report on Internet Development in China</a></p>
 <p class="research-source-identity">Publication or update: 2026-02-05. Period or applicability: December 2025. Accessed: 2026-11-03.</p>
@@ -722,7 +715,7 @@ evidencecutoff: "2026-11-03"
 <p>Original-report mirror: <a href="https://pdf.dfcfw.com/pdf/H3_AP202603101820433901_1.pdf" target="_blank" rel="noopener">https://pdf.dfcfw.com/pdf/H3_AP202603101820433901_1.pdf</a></p>
 </section>
 
-<section class="research-evidence" id="source-E11" aria-labelledby="heading-E11">
+<section class="research-evidence" id="source-E11" data-source-id="E11" aria-labelledby="heading-E11">
 <h3 id="heading-E11">[E11] Cyberspace Administration of China</h3>
 <p><a href="https://www.cac.gov.cn/2023-07/10/c_1690638496047430.htm" target="_blank" rel="noopener">关于加强自媒体管理的通知 Notice on strengthening management of self-media</a></p>
 <p class="research-source-identity">Publication or update: 2023-07-10 public release; document dated 2023-07-05. Period or applicability: Policy text read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -731,7 +724,7 @@ evidencecutoff: "2026-11-03"
 <p>Supports professional-domain verification, source attribution, affiliation and monetization governance. It does not establish one specified license for every general industry commentator.</p>
 </section>
 
-<section class="research-evidence" id="source-E12" aria-labelledby="heading-E12">
+<section class="research-evidence" id="source-E12" data-source-id="E12" aria-labelledby="heading-E12">
 <h3 id="heading-E12">[E12] State Administration for Market Regulation</h3>
 <p><a href="https://www.samr.gov.cn/zw/zfxxgk/fdzdgknr/fgs/art/2023/art_d93a579afd45413e8576e4623fab348f.html" target="_blank" rel="noopener">互联网广告管理办法 Measures for the Administration of Internet Advertising</a></p>
 <p class="research-source-identity">Publication or update: Promulgated 2023-02-25; effective 2023-05-01. Period or applicability: Rules read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -740,7 +733,7 @@ evidencecutoff: "2026-11-03"
 <p>Supports ad recognizability and relevant advertising-operator/publisher duties including advertiser verification and at least three years of advertising records. Absence of a purchase link does not exclude advertising status, and commercial-ad duties are not imposed on all noncommercial articles. The webpage separately shows March 20, 2023.</p>
 </section>
 
-<section class="research-evidence" id="source-E13" aria-labelledby="heading-E13">
+<section class="research-evidence" id="source-E13" data-source-id="E13" aria-labelledby="heading-E13">
 <h3 id="heading-E13">[E13] CAC and three other authorities</h3>
 <p><a href="https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm" target="_blank" rel="noopener">人工智能生成合成内容标识办法 Measures for Labeling AI Generated Synthetic Content</a></p>
 <p class="research-source-identity">Publication or update: Released 2025-03-14; document dated 2025-03-07. Period or applicability: Effective 2025-09-01. Accessed: 2026-11-03.</p>
@@ -749,7 +742,7 @@ evidencecutoff: "2026-11-03"
 <p>Supports explicit and implicit labels and relevant declaration and labeling duties. Scope follows the text; it is not a global rule or an identical obligation for every possible use of AI assistance.</p>
 </section>
 
-<section class="research-evidence" id="source-E14" aria-labelledby="heading-E14">
+<section class="research-evidence" id="source-E14" data-source-id="E14" aria-labelledby="heading-E14">
 <h3 id="heading-E14">[E14] U.S. Federal Trade Commission</h3>
 <p><a href="https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking" target="_blank" rel="noopener">FTC Endorsement Guides What People Are Asking</a></p>
 <p class="research-source-identity">Publication or update: Live guidance discussing the 2023 revision. Period or applicability: Guidance read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -758,7 +751,7 @@ evidencecutoff: "2026-11-03"
 <p>Supports material-connection disclosures and non-misleading endorsements. The guides explain FTC views on Section 5 of the FTC Act and do not themselves have the force of law. Application depends on facts.</p>
 </section>
 
-<section class="research-evidence" id="source-E15" aria-labelledby="heading-E15">
+<section class="research-evidence" id="source-E15" data-source-id="E15" aria-labelledby="heading-E15">
 <h3 id="heading-E15">[E15] Adobe</h3>
 <p><a href="https://www.adobe.com/products/premiere.html" target="_blank" rel="noopener">Professional video editing software Adobe Premiere</a></p>
 <p class="research-source-identity">Publication or update: Undated product page. Period or applicability: Read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -767,7 +760,7 @@ evidencecutoff: "2026-11-03"
 <p>Supports editing, audio and caption capabilities only. Dynamic prices, rankings and efficiency promises are not adopted.</p>
 </section>
 
-<section class="research-evidence" id="source-E16" aria-labelledby="heading-E16">
+<section class="research-evidence" id="source-E16" data-source-id="E16" aria-labelledby="heading-E16">
 <h3 id="heading-E16">[E16] CapCut</h3>
 <p><a href="https://www.capcut.com/" target="_blank" rel="noopener">CapCut AI Video Editor</a></p>
 <p class="research-source-identity">Publication or update: Undated product page. Period or applicability: Read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -776,7 +769,7 @@ evidencecutoff: "2026-11-03"
 <p>Supports editing, template and AI-assisted creation roles. Vendor marketing is not independent evidence of results or market share.</p>
 </section>
 
-<section class="research-evidence" id="source-E17" aria-labelledby="heading-E17">
+<section class="research-evidence" id="source-E17" data-source-id="E17" aria-labelledby="heading-E17">
 <h3 id="heading-E17">[E17] IAB</h3>
 <p><a href="https://www.iab.com/news/creator-economy-ad-spend-to-reach-37-billion-in-2025-growing-4x-faster-than-total-media-industry-according-to-iab/" target="_blank" rel="noopener">Creator Economy Ad Spend to Reach $37 Billion in 2025, Growing 4x Faster than Total Media Industry, According to IAB</a></p>
 <p class="research-source-identity">Publication or update: 2025-11-20. Period or applicability: 2021 2024 and 2025 forecast. Accessed: 2026-11-03.</p>
@@ -785,7 +778,7 @@ evidencecutoff: "2026-11-03"
 <p>Defines intentional U.S. brand investment in creator partnerships, promotion and related advertising. This release treated 2025 as a forecast; the body uses E03 for the later 2025 review. Updates from the same institution are not independent corroboration.</p>
 </section>
 
-<section class="research-evidence" id="source-E18" aria-labelledby="heading-E18">
+<section class="research-evidence" id="source-E18" data-source-id="E18" aria-labelledby="heading-E18">
 <h3 id="heading-E18">[E18] Spotify</h3>
 <p><a href="https://newsroom.spotify.com/2025-04-28/from-audio-to-video-spotifys-100-million-payout-fuels-creator-success-stories/" target="_blank" rel="noopener">From Audio to Video, Spotify’s $100 Million Payout Fuels Creator Success Stories</a></p>
 <p class="research-source-identity">Publication or update: 2025-04-28. Period or applicability: Q1 2025. Accessed: 2026-11-03.</p>
@@ -794,7 +787,7 @@ evidencecutoff: "2026-11-03"
 <p>Supports quarterly payments exceeding US$100m to podcast publishers and podcasters globally, including ads and partner-program revenue. It is not music royalties or payments from one program alone. Company disclosure does not establish industry share.</p>
 </section>
 
-<section class="research-evidence" id="source-E19" aria-labelledby="heading-E19">
+<section class="research-evidence" id="source-E19" data-source-id="E19" aria-labelledby="heading-E19">
 <h3 id="heading-E19">[E19] TikTok for Business</h3>
 <p><a href="https://ads.tiktok.com/resources/help/article/how-to-create-a-new-creator-marketing-project-in-tiktok-one" target="_blank" rel="noopener">How to create a new Creator marketing project in TikTok One</a></p>
 <p class="research-source-identity">Publication or update: Updated March 2026. Period or applicability: Product roles read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -803,7 +796,7 @@ evidencecutoff: "2026-11-03"
 <p>Supports brand projects, creator sourcing and invitations, negotiation, review, publication and ad authorization. Regional and eligibility conditions apply; no universal availability, effectiveness or share ranking is established.</p>
 </section>
 
-<section class="research-evidence" id="source-E20" aria-labelledby="heading-E20">
+<section class="research-evidence" id="source-E20" data-source-id="E20" aria-labelledby="heading-E20">
 <h3 id="heading-E20">[E20] Meta</h3>
 <p><a href="https://about.fb.com/news/2024/02/creator-marketplace-for-brands-and-creators-to-collaborate-on-instagram/" target="_blank" rel="noopener">Making it Easier for Brands and Creators to Collaborate on Instagram</a></p>
 <p class="research-source-identity">Publication or update: 2024-02-21. Period or applicability: Historical product introduction read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -812,7 +805,7 @@ evidencecutoff: "2026-11-03"
 <p>Supports creator discovery, portfolios, partnership messages and advertising roles. A 2024 product introduction is not a 2026 worldwide availability list or independent effectiveness evidence.</p>
 </section>
 
-<section class="research-evidence" id="source-E21" aria-labelledby="heading-E21">
+<section class="research-evidence" id="source-E21" data-source-id="E21" aria-labelledby="heading-E21">
 <h3 id="heading-E21">[E21] Ocean Engine / Xingtu</h3>
 <p><a href="https://www.xingtu.cn/" target="_blank" rel="noopener">巨量星图 抖音营销 达人变现 星图营销服务平台 Douyin Xingtu creator marketing services</a></p>
 <p class="research-source-identity">Publication or update: Undated product page. Period or applicability: Read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -821,7 +814,7 @@ evidencecutoff: "2026-11-03"
 <p>Supports brand, agency, creator and MCN matching, collaboration tasks and campaign measurement. Product marketing does not establish competitive superiority; dynamic rankings are not used.</p>
 </section>
 
-<section class="research-evidence" id="source-E22" aria-labelledby="heading-E22">
+<section class="research-evidence" id="source-E22" data-source-id="E22" aria-labelledby="heading-E22">
 <h3 id="heading-E22">[E22] Xiaohongshu</h3>
 <p><a href="https://pgy.xiaohongshu.com/" target="_blank" rel="noopener">小红书蒲公英 好产品种草第一站 Xiaohongshu Pugongying creator partnerships</a></p>
 <p class="research-source-identity">Publication or update: Undated product page. Period or applicability: Read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -830,7 +823,7 @@ evidencecutoff: "2026-11-03"
 <p>Supports recommendation-content and live collaborations, creator selection, invitations and campaign review. Search extraction was empty; the official page was read directly in a browser. Promotional effectiveness claims and dynamic rankings are not adopted.</p>
 </section>
 
-<section class="research-evidence" id="source-E23" aria-labelledby="heading-E23">
+<section class="research-evidence" id="source-E23" data-source-id="E23" aria-labelledby="heading-E23">
 <h3 id="heading-E23">[E23] Tencent</h3>
 <p><a href="https://www.tencent.com/zh-cn/products/official-accounts/" target="_blank" rel="noopener">公众号 Official Accounts and 视频号 Channels</a></p>
 <p class="research-source-identity">Publication or update: Undated product pages. Period or applicability: Read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -840,7 +833,7 @@ evidencecutoff: "2026-11-03"
 <p>Additional source: <a href="https://www.tencent.com/zh-cn/products/channels/" target="_blank" rel="noopener">https://www.tencent.com/zh-cn/products/channels/</a></p>
 </section>
 
-<section class="research-evidence" id="source-E24" aria-labelledby="heading-E24">
+<section class="research-evidence" id="source-E24" data-source-id="E24" aria-labelledby="heading-E24">
 <h3 id="heading-E24">[E24] YouTube Help</h3>
 <p><a href="https://support.google.com/youtube/answer/2737059?hl=en" target="_blank" rel="noopener">Multi-Channel Network (MCN) overview for YouTube Creators</a></p>
 <p class="research-source-identity">Publication or update: Undated live help page. Period or applicability: Terms and explanation read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -849,7 +842,7 @@ evidencecutoff: "2026-11-03"
 <p>Supports MCN roles, contract considerations, unchanged YouTube revenue share and receipt through the MCN’s AdSense account with potential network deductions. Platform-specific explanation, not a universal description of agency contracts or evidence of higher creator earnings.</p>
 </section>
 
-<section class="research-evidence" id="source-E25" aria-labelledby="heading-E25">
+<section class="research-evidence" id="source-E25" data-source-id="E25" aria-labelledby="heading-E25">
 <h3 id="heading-E25">[E25] Apple Podcasts for Creators</h3>
 <p><a href="https://podcasters.apple.com/support/823-podcast-requirements" target="_blank" rel="noopener">Podcast RSS feed requirements</a></p>
 <p class="research-source-identity">Publication or update: Undated live support page. Period or applicability: Requirements read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -858,7 +851,7 @@ evidencecutoff: "2026-11-03"
 <p>Supports self-generated or hosting-provider RSS feeds and technical requirements for media and metadata. Illustrates separation of hosting and listening interfaces; does not establish transferability of recommendations, all audience relationships or paid entitlements.</p>
 </section>
 
-<section class="research-evidence" id="source-E26" aria-labelledby="heading-E26">
+<section class="research-evidence" id="source-E26" data-source-id="E26" aria-labelledby="heading-E26">
 <h3 id="heading-E26">[E26] YouTube Help</h3>
 <p><a href="https://support.google.com/youtube/answer/9314357?hl=en" target="_blank" rel="noopener">Understand ad revenue analytics</a></p>
 <p class="research-source-identity">Publication or update: Undated live help page. Period or applicability: Metric definitions read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -867,7 +860,7 @@ evidencecutoff: "2026-11-03"
 <p>CPM measures advertiser spending per thousand ad impressions. RPM is after revenue sharing and can combine several sources. Shorts uses engaged views, unlike the long-form view denominator. The report does not treat blended RPM as an advertising rate or multiply CPM by all views to infer earnings.</p>
 </section>
 
-<section class="research-evidence" id="source-E27" aria-labelledby="heading-E27">
+<section class="research-evidence" id="source-E27" data-source-id="E27" aria-labelledby="heading-E27">
 <h3 id="heading-E27">[E27] Amazon.com Associates Central</h3>
 <p><a href="https://affiliate-program.amazon.com/help/operating/policies" target="_blank" rel="noopener">Associates Program Policies</a></p>
 <p class="research-source-identity">Publication or update: 2026-04-14. Period or applicability: U.S. program terms read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -876,7 +869,7 @@ evidencecutoff: "2026-11-03"
 <p>Supports the distinction between qualifying purchases and revenue, exclusion of initiated cancellations, returns or refunds, and payment approximately 60 days after the earning month. Thresholds and detailed conditions apply. U.S. Amazon program example, not a general rule for commerce or average creator earnings.</p>
 </section>
 
-<section class="research-evidence" id="source-E31" aria-labelledby="heading-E31">
+<section class="research-evidence" id="source-E31" data-source-id="E31" aria-labelledby="heading-E31">
 <h3 id="heading-E31">[E31] YouTube Help</h3>
 <p><a href="https://support.google.com/youtube/answer/141805?hl=en" target="_blank" rel="noopener">YouTube performance FAQ and Troubleshooting</a></p>
 <p class="research-source-identity">Publication or update: Undated live help page. Period or applicability: Rules described on 2026-11-03. Accessed: 2026-11-03.</p>
@@ -885,7 +878,7 @@ evidencecutoff: "2026-11-03"
 <p>Supports personalized homepage discovery and search relevance. Platform description does not disclose model weights or guarantee reach; it cannot establish revenue per view.</p>
 </section>
 
-<section class="research-evidence" id="source-E32" aria-labelledby="heading-E32">
+<section class="research-evidence" id="source-E32" data-source-id="E32" aria-labelledby="heading-E32">
 <h3 id="heading-E32">[E32] Kuaishou Technology</h3>
 <p><a href="https://ir.kuaishou.com/news-releases/news-release-details/kuaishou-technology-announces-second-quarter-and-interim-2026" target="_blank" rel="noopener">Kuaishou Technology Announces Second Quarter and Interim 2026 Unaudited Financial Results</a></p>
 <p class="research-source-identity">Publication or update: 2026-08-19. Period or applicability: H1 2026 and H1 2025 comparison. Accessed: 2026-11-03.</p>
@@ -895,7 +888,7 @@ evidencecutoff: "2026-11-03"
 <p>Additional source: <a href="https://ir.kuaishou.com/node/11711/pdf" target="_blank" rel="noopener">https://ir.kuaishou.com/node/11711/pdf</a></p>
 </section>
 
-<section class="research-evidence" id="source-E33" aria-labelledby="heading-E33">
+<section class="research-evidence" id="source-E33" data-source-id="E33" aria-labelledby="heading-E33">
 <h3 id="heading-E33">[E33] TikTok Help Center</h3>
 <p><a href="https://support.tiktok.com/en/getting-started/for-you/test-for-you" target="_blank" rel="noopener">For You on TikTok</a></p>
 <p class="research-source-identity">Publication or update: Undated live help page. Period or applicability: Functionality read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -904,7 +897,7 @@ evidencecutoff: "2026-11-03"
 <p>Supports personalization through interests and interactions. Listed factors are not a complete algorithm disclosure or evidence of fixed reach thresholds or ranking formulas.</p>
 </section>
 
-<section class="research-evidence" id="source-E34" aria-labelledby="heading-E34">
+<section class="research-evidence" id="source-E34" data-source-id="E34" aria-labelledby="heading-E34">
 <h3 id="heading-E34">[E34] Substack Help</h3>
 <p><a href="https://support.substack.com/hc/en-us/articles/6314498343700-How-do-I-export-my-email-list-on-Substack" target="_blank" rel="noopener">How do I export my email list on Substack</a></p>
 <p class="research-source-identity">Publication or update: Updated 2026-06-04. Period or applicability: Functionality read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -913,7 +906,7 @@ evidencecutoff: "2026-11-03"
 <p>Supports CSV export of subscriber email lists. Does not establish complete portability of all data, followers or payment relationships; migration cost and consent implications are analytical observations.</p>
 </section>
 
-<section class="research-evidence" id="source-E35" aria-labelledby="heading-E35">
+<section class="research-evidence" id="source-E35" data-source-id="E35" aria-labelledby="heading-E35">
 <h3 id="heading-E35">[E35] YouTube Help</h3>
 <p><a href="https://support.google.com/youtube/answer/72851?hl=en" target="_blank" rel="noopener">YouTube Partner Program overview and eligibility</a></p>
 <p class="research-source-identity">Publication or update: Undated live help page. Period or applicability: Requirements read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -922,7 +915,7 @@ evidencecutoff: "2026-11-03"
 <p>Supports availability by residence and account/policy review requirements. The page mentions terms effective February 2027; those future terms are not treated as operative rules. No individual operator’s eligibility is determined.</p>
 </section>
 
-<section class="research-evidence" id="source-E36" aria-labelledby="heading-E36">
+<section class="research-evidence" id="source-E36" data-source-id="E36" aria-labelledby="heading-E36">
 <h3 id="heading-E36">[E36] YouTube Help</h3>
 <p><a href="https://support.google.com/youtube/answer/7101720?hl=en" target="_blank" rel="noopener">YouTube Partner Program availability</a></p>
 <p class="research-source-identity">Publication or update: Undated live availability list. Period or applicability: List read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -931,7 +924,7 @@ evidencecutoff: "2026-11-03"
 <p>The complete list read did not include mainland China; it included areas such as Hong Kong. Establishes that language alone does not determine availability, not personal tax, account or relocation advice.</p>
 </section>
 
-<section class="research-evidence" id="source-E37" aria-labelledby="heading-E37">
+<section class="research-evidence" id="source-E37" data-source-id="E37" aria-labelledby="heading-E37">
 <h3 id="heading-E37">[E37] Stratechery / Ben Thompson</h3>
 <p><a href="https://stratechery.com/about/" target="_blank" rel="noopener">About and Ethics Statement</a></p>
 <p class="research-source-identity">Publication or update: Undated live page; sponsorship disclosure references October 2026. Period or applicability: Product and disclosure status read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -940,7 +933,7 @@ evidencecutoff: "2026-11-03"
 <p>Supports free weekly articles, paid updates, and an October 2026 Stripe sponsorship disclosure acknowledging conflict. Publisher self-description establishes product structure and disclosure, not audited income, profit or a guarantee of objectivity.</p>
 </section>
 
-<section class="research-evidence" id="source-E38" aria-labelledby="heading-E38">
+<section class="research-evidence" id="source-E38" data-source-id="E38" aria-labelledby="heading-E38">
 <h3 id="heading-E38">[E38] Stratechery</h3>
 <p><a href="https://stratechery.com/stratechery-plus/" target="_blank" rel="noopener">Stratechery Plus</a></p>
 <p class="research-source-identity">Publication or update: Undated live product page. Period or applicability: Listed offer read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -949,7 +942,7 @@ evidencecutoff: "2026-11-03"
 <p>Lists US$15/month or US$150/year for analysis updates, interviews and podcasts, with team subscriptions. A dated observation of one offer, not an industry average or purchase recommendation; no subscriber or revenue estimate is inferred.</p>
 </section>
 
-<section class="research-evidence" id="source-E42" aria-labelledby="heading-E42">
+<section class="research-evidence" id="source-E42" data-source-id="E42" aria-labelledby="heading-E42">
 <h3 id="heading-E42">[E42] YouTube Help</h3>
 <p><a href="https://support.google.com/youtube/answer/10285842?hl=en" target="_blank" rel="noopener">Invalid traffic on your videos</a></p>
 <p class="research-source-identity">Publication or update: Undated live help page. Period or applicability: Rules and definitions read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -958,7 +951,7 @@ evidencecutoff: "2026-11-03"
 <p>Supports possible ad restrictions, earnings adjustments or offsets, and payment delays of up to 90 days for invalid traffic. It does not attribute every revenue fluctuation or payment delay to violations or establish enforcement against a particular creator.</p>
 </section>
 
-<section class="research-evidence" id="source-E44" aria-labelledby="heading-E44">
+<section class="research-evidence" id="source-E44" data-source-id="E44" aria-labelledby="heading-E44">
 <h3 id="heading-E44">[E44] Google Ads Help</h3>
 <p><a href="https://support.google.com/google-ads/answer/12003020?hl=en" target="_blank" rel="noopener">About Conversion Lift</a></p>
 <p class="research-source-identity">Publication or update: Undated live help page. Period or applicability: Rules and definitions read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -967,7 +960,7 @@ evidencecutoff: "2026-11-03"
 <p>Supports exposed-versus-control measurement of incremental conversions and limited account availability. This tool explanation does not establish incremental sales from any specific creator campaign. The discussion of measurement limits is methodological analysis.</p>
 </section>
 
-<section class="research-evidence" id="source-E45" aria-labelledby="heading-E45">
+<section class="research-evidence" id="source-E45" data-source-id="E45" aria-labelledby="heading-E45">
 <h3 id="heading-E45">[E45] U.S. Copyright Office</h3>
 <p><a href="https://www.copyright.gov/help/faq/faq-fairuse.html" target="_blank" rel="noopener">Can I Use Someone Else&#x27;s Work Can Someone Else Use Mine</a></p>
 <p class="research-source-identity">Publication or update: Undated live FAQ. Period or applicability: Guidance read 2026-11-03. Accessed: 2026-11-03.</p>
@@ -976,7 +969,7 @@ evidencecutoff: "2026-11-03"
 <p>The U.S. Copyright Office explains that fair use depends on circumstances and has no universal safe threshold based on words, notes or percentages. This is general U.S. guidance, not a determination for a particular use or another jurisdiction.</p>
 </section>
 
-<section class="research-evidence" id="source-E46" aria-labelledby="heading-E46">
+<section class="research-evidence" id="source-E46" data-source-id="E46" aria-labelledby="heading-E46">
 <h3 id="heading-E46">[E46] Cyberspace Administration of China</h3>
 <p><a href="https://www.cac.gov.cn/2026-04/28/c_1779119736411711.htm" target="_blank" rel="noopener">网信部门依法查处剪映App等生成合成内容标识违法问题网站平台 AI content labeling enforcement against Jianying and other platforms</a></p>
 <p class="research-source-identity">Publication or update: 2026-04-28. Period or applicability: Enforcement notice published 2026-04-28. Accessed: 2026-11-03.</p>
@@ -985,7 +978,7 @@ evidencecutoff: "2026-11-03"
 <p>The notice identifies labeling implementation issues involving Jianying, Maoxiang and Jimeng AI and describes measures including interviews, correction orders and warnings. It does not match every measure to each product, state a monetary fine, or establish a general ban or wrongdoing by all users.</p>
 </section>
 
-<section class="research-evidence" id="source-E51" aria-labelledby="heading-E51">
+<section class="research-evidence" id="source-E51" data-source-id="E51" aria-labelledby="heading-E51">
 <h3 id="heading-E51">[E51] 404 Media / Jason Koebler, Samantha Cole, Emanuel Maiberg and Joseph Cox</h3>
 <p><a href="https://www.404media.co/welcome-to-404-media/" target="_blank" rel="noopener">Welcome to 404 Media</a></p>
 <p class="research-source-identity">Publication or update: 2023-08-22. Period or applicability: Launch statement in August 2023. Accessed: 2026-11-03.</p>
@@ -994,7 +987,7 @@ evidencecutoff: "2026-11-03"
 <p>The founders describe ownership by four former Motherboard journalists and a reader-supported mix of free and paid work. This is a launch statement, not evidence of realized profitability or typical creator outcomes.</p>
 </section>
 
-<section class="research-evidence" id="source-E52" aria-labelledby="heading-E52">
+<section class="research-evidence" id="source-E52" data-source-id="E52" aria-labelledby="heading-E52">
 <h3 id="heading-E52">[E52] 404 Media</h3>
 <p><a href="https://www.404media.co/membership/" target="_blank" rel="noopener">Membership</a></p>
 <p class="research-source-identity">Publication or update: Undated live offer. Period or applicability: Offer read on 2026-11-03. Accessed: 2026-11-03.</p>
