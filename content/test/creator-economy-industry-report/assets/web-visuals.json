@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "maps": {
+    "creator-economy-value-chain": {
+      "title": "The creator economy value chain",
+      "description": "Explore the tools, content production, distribution and customer payments behind creator businesses.",
+      "root": {
+        "name": "Creator Economy",
+        "children": [
+          {
+            "name": "Upstream",
+            "children": [
+              {
+                "name": "Editing tools",
+                "children": [
+                  {
+                    "name": "Adobe Premiere [E15]"
+                  },
+                  {
+                    "name": "CapCut [E16]"
+                  }
+                ]
+              },
+              {
+                "name": "Content inputs",
+                "children": [
+                  {
+                    "name": "Reporting · data · rights (generic inputs)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Midstream",
+            "children": [
+              {
+                "name": "Production",
+                "children": [
+                  {
+                    "name": "Independent creators"
+                  },
+                  {
+                    "name": "Studios · MCNs"
+                  }
+                ]
+              },
+              {
+                "name": "Video distribution",
+                "children": [
+                  {
+                    "name": "YouTube [E01, E04]"
+                  },
+                  {
+                    "name": "Kuaishou [E08] · Bilibili [E09]"
+                  }
+                ]
+              },
+              {
+                "name": "Podcast distribution",
+                "children": [
+                  {
+                    "name": "Spotify · Apple Podcasts [E02]"
+                  }
+                ]
+              },
+              {
+                "name": "Creator partnerships",
+                "children": [
+                  {
+                    "name": "TikTok One [E19]"
+                  },
+                  {
+                    "name": "Instagram Creator Marketplace [E20]"
+                  },
+                  {
+                    "name": "Douyin Xingtu [E21]"
+                  },
+                  {
+                    "name": "Xiaohongshu Pugongying [E22]"
+                  }
+                ]
+              },
+              {
+                "name": "Publishing and social",
+                "children": [
+                  {
+                    "name": "Weixin Official Accounts [E23]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Downstream",
+            "children": [
+              {
+                "name": "Advertising",
+                "children": [
+                  {
+                    "name": "Brands · agencies [E03]"
+                  }
+                ]
+              },
+              {
+                "name": "Membership",
+                "children": [
+                  {
+                    "name": "Patreon [E06]"
+                  }
+                ]
+              },
+              {
+                "name": "Paid publishing",
+                "children": [
+                  {
+                    "name": "Substack [E07]"
+                  }
+                ]
+              },
+              {
+                "name": "Commerce",
+                "children": [
+                  {
+                    "name": "Merchants · fulfillment [E08]"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "note": "Connections show editorial business categories, not verified supplier contracts. Companies can span stages; examples are illustrative, non-exclusive and unranked. Source IDs resolve in the evidence appendix.",
+      "sources": [
+        {
+          "title": "Evidence and sources E01–E04, E06–E09, E15–E16 and E19–E23",
+          "url": "/test/creator-economy-industry-report/#supporting-evidence"
+        }
+      ],
+      "reviewed": "2026-11-03"
+    }
+  },
+  "shares": {
+    "creator-economy-podcast-platforms-q1-2026": {
+      "title": "U.S. podcast primary-platform preference",
+      "eyebrow": "PODCAST PLATFORM PREFERENCE",
+      "period": "Q1 2026",
+      "center_label": "Q1 2026",
+      "geography": "United States · Weekly podcast consumers aged 13+",
+      "scope": "Service used most often to consume podcasts among U.S. weekly podcast consumers aged 13+. This defined audience measure does not represent creator-economy revenue, viewing time or whole-industry market share.",
+      "metric": "Share naming each service as their most-used podcast platform (%)",
+      "dimension": "Platform",
+      "percentDecimals": 0,
+      "unit": "%",
+      "series": [
+        {
+          "name": "YouTube",
+          "value": 37
+        },
+        {
+          "name": "Spotify",
+          "value": 21
+        },
+        {
+          "name": "Apple Podcasts",
+          "value": 12
+        },
+        {
+          "name": "Other services",
+          "value": 30
+        }
+      ],
+      "source": {
+        "publisher": "Edison Research at SSRS",
+        "title": "[E02] The Podcast Consumer 2026",
+        "published": "2026-06-04",
+        "url": "https://ssrs.com/wp-content/uploads/Podcast-Consumer-2026.pdf",
+        "locator": "Page 28 (PDF index 27), Service Used Most Often to Consume Podcasts"
+      },
+      "note": "37% + 21% + 12% + 30% = 100%. Other services (30%) is reported directly in the source, not calculated as a residual. Published rounding is retained. This is primary-platform preference, not advertising revenue, time spent or the entire creator economy. No sample size from a different survey within the report is assigned to this chart.",
+      "reviewed": "2026-11-03"
+    }
+  }
+}

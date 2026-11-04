@@ -1,0 +1,12 @@
+metric,period,value,unit,status,source_id,limitation
+U.S. creator advertising spend,2025,37,USD billion,estimate,E03,Intentional creator advertising; not creator net income
+U.S. creator advertising spend,2026,44,USD billion,forecast,E03,Full-year forecast as of report cutoff
+China short-video users,2025-12,107403,ten thousand people,reported survey,E10,Mainland China; users overlap with live-streaming
+China short-video penetration,2025-12,95.4,percent of internet users,reported survey,E10,Not creator count or MAU
+China live-streaming users,2025-12,81359,ten thousand people,reported survey,E10,Overlaps with short video
+Kuaishou revenue,2026-H1,69251,RMB million,reported reviewed interim,E08,"Group revenue, not creator receipts"
+Kuaishou online marketing,2026-H1,40282,RMB million,reported reviewed interim,E08,Platform segment
+Kuaishou live streaming,2026-H1,17182,RMB million,reported reviewed interim,E08,Platform segment
+Kuaishou other services,2026-H1,11787,RMB million,reported reviewed interim,E08,Includes commerce and AI; not solely commissions
+Bilibili net revenue,2026-H1,15411958,RMB thousand,reported reviewed interim,E09,Includes games and value-added services
+Bilibili advertising revenue,2026-H1,5719547,RMB thousand,reported reviewed interim,E09,Not creator receipts

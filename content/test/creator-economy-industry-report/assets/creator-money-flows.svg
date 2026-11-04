@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="504pt" height="457.2pt" viewBox="0 0 504 457.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-03T16:33:06.370645</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 457.2 
+L 504 457.2 
+L 504 0 
+L 0 0 
+z
+" style="fill: #f6f3eb"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 28.8 163.44 
+L 138.24 163.44 
+Q 141.84 163.44 141.84 159.84 
+L 141.84 130.32 
+Q 141.84 126.72 138.24 126.72 
+L 28.8 126.72 
+Q 25.2 126.72 25.2 130.32 
+L 25.2 159.84 
+Q 25.2 163.44 28.8 163.44 
+z
+" clip-path="url(#p887f1b000e)" style="fill: #ffffff; stroke: #b28c3c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 197.28 163.44 
+L 306.72 163.44 
+Q 310.32 163.44 310.32 159.84 
+L 310.32 130.32 
+Q 310.32 126.72 306.72 126.72 
+L 197.28 126.72 
+Q 193.68 126.72 193.68 130.32 
+L 193.68 159.84 
+Q 193.68 163.44 197.28 163.44 
+z
+" clip-path="url(#p887f1b000e)" style="fill: #ffffff; stroke: #b28c3c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 365.76 163.44 
+L 475.2 163.44 
+Q 478.8 163.44 478.8 159.84 
+L 478.8 130.32 
+Q 478.8 126.72 475.2 126.72 
+L 365.76 126.72 
+Q 362.16 126.72 362.16 130.32 
+L 362.16 159.84 
+Q 362.16 163.44 365.76 163.44 
+z
+" clip-path="url(#p887f1b000e)" style="fill: #ffffff; stroke: #b28c3c; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 28.8 239.76 
+L 138.24 239.76 
+Q 141.84 239.76 141.84 236.16 
+L 141.84 206.64 
+Q 141.84 203.04 138.24 203.04 
+L 28.8 203.04 
+Q 25.2 203.04 25.2 206.64 
+L 25.2 236.16 
+Q 25.2 239.76 28.8 239.76 
+z
+" clip-path="url(#p887f1b000e)" style="fill: #ffffff; stroke: #4e9993; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 365.76 239.76 
+L 475.2 239.76 
+Q 478.8 239.76 478.8 236.16 
+L 478.8 206.64 
+Q 478.8 203.04 475.2 203.04 
+L 365.76 203.04 
+Q 362.16 203.04 362.16 206.64 
+L 362.16 236.16 
+Q 362.16 239.76 365.76 239.76 
+z
+" clip-path="url(#p887f1b000e)" style="fill: #ffffff; stroke: #4e9993; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 28.8 316.08 
+L 138.24 316.08 
+Q 141.84 316.08 141.84 312.48 
+L 141.84 282.96 
+Q 141.84 279.36 138.24 279.36 
+L 28.8 279.36 
+Q 25.2 279.36 25.2 282.96 
+L 25.2 312.48 
+Q 25.2 316.08 28.8 316.08 
+z
+" clip-path="url(#p887f1b000e)" style="fill: #ffffff; stroke: #617da5; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 197.28 316.08 
+L 306.72 316.08 
+Q 310.32 316.08 310.32 312.48 
+L 310.32 282.96 
+Q 310.32 279.36 306.72 279.36 
+L 197.28 279.36 
+Q 193.68 279.36 193.68 282.96 
+L 193.68 312.48 
+Q 193.68 316.08 197.28 316.08 
+z
+" clip-path="url(#p887f1b000e)" style="fill: #ffffff; stroke: #617da5; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 365.76 316.08 
+L 475.2 316.08 
+Q 478.8 316.08 478.8 312.48 
+L 478.8 282.96 
+Q 478.8 279.36 475.2 279.36 
+L 365.76 279.36 
+Q 362.16 279.36 362.16 282.96 
+L 362.16 312.48 
+Q 362.16 316.08 365.76 316.08 
+z
+" clip-path="url(#p887f1b000e)" style="fill: #ffffff; stroke: #617da5; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 28.8 392.4 
+L 138.24 392.4 
+Q 141.84 392.4 141.84 388.8 
+L 141.84 359.28 
+Q 141.84 355.68 138.24 355.68 
+L 28.8 355.68 
+Q 25.2 355.68 25.2 359.28 
+L 25.2 388.8 
+Q 25.2 392.4 28.8 392.4 
+z
+" clip-path="url(#p887f1b000e)" style="fill: #ffffff; stroke: #8f7baa; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 197.28 392.4 
+L 306.72 392.4 
+Q 310.32 392.4 310.32 388.8 
+L 310.32 359.28 
+Q 310.32 355.68 306.72 355.68 
+L 197.28 355.68 
+Q 193.68 355.68 193.68 359.28 
+L 193.68 388.8 
+Q 193.68 392.4 197.28 392.4 
+z
+" clip-path="url(#p887f1b000e)" style="fill: #ffffff; stroke: #8f7baa; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 365.76 392.4 
+L 475.2 392.4 
+Q 478.8 392.4 478.8 388.8 
+L 478.8 359.28 
+Q 478.8 355.68 475.2 355.68 
+L 365.76 355.68 
+Q 362.16 355.68 362.16 359.28 
+L 362.16 388.8 
+Q 362.16 392.4 365.76 392.4 
+z
+" clip-path="url(#p887f1b000e)" style="fill: #ffffff; stroke: #8f7baa; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 25.2 406.8 
+L 478.8 406.8 
+" clip-path="url(#p887f1b000e)" style="fill: none; stroke: #ded8cb; stroke-width: 0.9; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 9.8px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b28c3c" x="25.2" y="26.64" transform="rotate(-0 25.2 26.64)">DEX RESEARCH  /  BUSINESS MODELS</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 19.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #222522" x="25.2" y="54" transform="rotate(-0 25.2 54)">How money reaches creators</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #60665f" x="25.2" y="77.76" transform="rotate(-0 25.2 77.76)">Four illustrative payment paths</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 10.9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #b28c3c" x="25.2" y="102.24" transform="rotate(-0 25.2 102.24)">1  Platform advertising</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #60665f" x="25.2" y="117.36" transform="rotate(-0 25.2 117.36)">Advertisers buy audience reach</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 10.9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #4e9993" x="25.2" y="178.56" transform="rotate(-0 25.2 178.56)">2  Direct sponsorship</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #60665f" x="25.2" y="193.68" transform="rotate(-0 25.2 193.68)">Brands buy delivery and agreed usage rights</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 10.9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #617da5" x="25.2" y="254.88" transform="rotate(-0 25.2 254.88)">3  Membership</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #60665f" x="25.2" y="270" transform="rotate(-0 25.2 270)">Audiences buy continuing content or access</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 10.9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #8f7baa" x="25.2" y="331.2" transform="rotate(-0 25.2 331.2)">4  Commerce commission</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 9.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #60665f" x="25.2" y="346.32" transform="rotate(-0 25.2 346.32)">Merchants pay for eligible transactions</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 10.4px; font-family: 'DejaVu Sans'; fill: #222522" transform="translate(61.05925 141.534209)">Brand or</text>
+    <text style="font-size: 10.4px; font-family: 'DejaVu Sans'; fill: #222522" transform="translate(64.600125 154.365291)">agency</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 10.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #222522" x="252" y="147.94975" transform="rotate(-0 252 147.94975)">Platform</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 10.4px; font-family: 'DejaVu Sans'; fill: #222522" transform="translate(401.084 141.534209)">Creator</text>
+    <text style="font-size: 10.4px; font-family: 'DejaVu Sans'; fill: #222522" transform="translate(402.398625 154.365291)">payout</text>
+   </g>
+   <g id="patch_13">
+    <path d="M 143.28 145.08 
+Q 167.4 145.08 190.122458 145.08 
+" style="fill: none; stroke: #b28c3c; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 186.122458 143.08 
+L 190.122458 145.08 
+L 186.122458 147.08 
+z
+" style="fill: #b28c3c; stroke: #b28c3c; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 8.8px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #60665f" x="167.4" y="133.889875" transform="rotate(-0 167.4 133.889875)">Ad spend</text>
+   </g>
+   <g id="patch_14">
+    <path d="M 311.76 145.08 
+Q 335.88 145.08 358.602458 145.08 
+" style="fill: none; stroke: #b28c3c; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 354.602458 143.08 
+L 358.602458 145.08 
+L 354.602458 147.08 
+z
+" style="fill: #b28c3c; stroke: #b28c3c; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 8.8px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #60665f" x="335.88" y="133.889875" transform="rotate(-0 335.88 133.889875)">Share</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 10.4px; font-family: 'DejaVu Sans'; fill: #222522" transform="translate(61.05925 217.854209)">Brand or</text>
+    <text style="font-size: 10.4px; font-family: 'DejaVu Sans'; fill: #222522" transform="translate(64.600125 230.685291)">agency</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 10.4px; font-family: 'DejaVu Sans'; fill: #222522" transform="translate(401.084 217.854209)">Creator</text>
+    <text style="font-size: 10.4px; font-family: 'DejaVu Sans'; fill: #222522" transform="translate(392.551938 230.685291)">project fee</text>
+   </g>
+   <g id="patch_15">
+    <path d="M 143.28 221.4 
+Q 251.64 221.4 358.602458 221.4 
+" style="fill: none; stroke: #4e9993; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 354.602458 219.4 
+L 358.602458 221.4 
+L 354.602458 223.4 
+z
+" style="fill: #4e9993; stroke: #4e9993; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 8.8px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #60665f" x="251.64" y="210.209875" transform="rotate(-0 251.64 210.209875)">Payment under the contract</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 10.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #222522" x="83.52" y="300.58975" transform="rotate(-0 83.52 300.58975)">Audience</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 10.4px; font-family: 'DejaVu Sans'; fill: #222522" transform="translate(212.887875 294.174209)">Membership or</text>
+    <text style="font-size: 10.4px; font-family: 'DejaVu Sans'; fill: #222522" transform="translate(208.555625 307.005291)">payment service</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 10.4px; font-family: 'DejaVu Sans'; fill: #222522" transform="translate(401.084 294.174209)">Creator</text>
+    <text style="font-size: 10.4px; font-family: 'DejaVu Sans'; fill: #222522" transform="translate(399.707625 307.005291)">receipts</text>
+   </g>
+   <g id="patch_16">
+    <path d="M 143.28 297.72 
+Q 167.4 297.72 190.122458 297.72 
+" style="fill: none; stroke: #617da5; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 186.122458 295.72 
+L 190.122458 297.72 
+L 186.122458 299.72 
+z
+" style="fill: #617da5; stroke: #617da5; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 8.8px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #60665f" x="167.4" y="286.529875" transform="rotate(-0 167.4 286.529875)">Payment</text>
+   </g>
+   <g id="patch_17">
+    <path d="M 311.76 297.72 
+Q 335.88 297.72 358.602458 297.72 
+" style="fill: none; stroke: #617da5; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 354.602458 295.72 
+L 358.602458 297.72 
+L 354.602458 299.72 
+z
+" style="fill: #617da5; stroke: #617da5; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="text_24">
+    <text style="font-size: 8.8px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #60665f" x="335.88" y="286.529875" transform="rotate(-0 335.88 286.529875)">Net paid</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 10.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #222522" x="83.52" y="376.90975" transform="rotate(-0 83.52 376.90975)">Shopper</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 10.4px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #222522" x="252" y="376.90975" transform="rotate(-0 252 376.90975)">Merchant</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 10.4px; font-family: 'DejaVu Sans'; fill: #222522" transform="translate(401.084 370.494209)">Creator</text>
+    <text style="font-size: 10.4px; font-family: 'DejaVu Sans'; fill: #222522" transform="translate(389.524563 383.325291)">commission</text>
+   </g>
+   <g id="patch_18">
+    <path d="M 143.28 374.04 
+Q 167.4 374.04 190.122458 374.04 
+" style="fill: none; stroke: #8f7baa; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 186.122458 372.04 
+L 190.122458 374.04 
+L 186.122458 376.04 
+z
+" style="fill: #8f7baa; stroke: #8f7baa; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 8.8px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #60665f" x="167.4" y="362.849875" transform="rotate(-0 167.4 362.849875)">Purchase</text>
+   </g>
+   <g id="patch_19">
+    <path d="M 311.76 374.04 
+Q 335.88 374.04 358.602458 374.04 
+" style="fill: none; stroke: #8f7baa; stroke-width: 1.25; stroke-linecap: round"/>
+    <path d="M 354.602458 372.04 
+L 358.602458 374.04 
+L 354.602458 376.04 
+z
+" style="fill: #8f7baa; stroke: #8f7baa; stroke-width: 1.25; stroke-linecap: round"/>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 8.8px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #60665f" x="335.88" y="362.849875" transform="rotate(-0 335.88 362.849875)">Fee</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #60665f" x="25.2" y="419.76" transform="rotate(-0 25.2 419.76)">Analytical framework, not market shares. Contracts and intermediaries vary.</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #60665f" x="25.2" y="433.44" transform="rotate(-0 25.2 433.44)">Fees, refunds and revenue-sharing rules may reduce amounts paid to creators.</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 9.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #60665f" x="25.2" y="447.12" transform="rotate(-0 25.2 447.12)">Creator receipts still have to cover production, selling and service costs.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p887f1b000e">
+   <rect x="0" y="0" width="504" height="457.2"/>
+  </clipPath>
+ </defs>
+</svg>
