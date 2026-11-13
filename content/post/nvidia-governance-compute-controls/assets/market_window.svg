@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="633.6pt" height="345.6pt" viewBox="0 0 633.6 345.6" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-13T20:53:48.349979</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 345.6 
+L 633.6 345.6 
+L 633.6 0 
+L 0 0 
+z
+" style="fill: #faf8f3"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 76.032 269.568 
+L 608.256 269.568 
+L 608.256 62.208 
+L 76.032 62.208 
+z
+" style="fill: #faf8f3"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1"/>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="100.224" y="280.666437" transform="rotate(-0 100.224 280.666437)">Nov 6</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2"/>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="221.184" y="280.666437" transform="rotate(-0 221.184 280.666437)">Nov 9</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3"/>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="342.144" y="280.666437" transform="rotate(-0 342.144 280.666437)">Nov 10</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4"/>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="463.104" y="280.666437" transform="rotate(-0 463.104 280.666437)">Nov 11</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5"/>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="584.064" y="280.666437" transform="rotate(-0 584.064 280.666437)">Nov 12</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_6">
+      <path d="M 76.032 231.866182 
+L 608.256 231.866182 
+" clip-path="url(#pd0b0c7fdc3)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.12; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_7"/>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="72.532" y="235.665401" transform="rotate(-0 72.532 235.665401)">90</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_8">
+      <path d="M 76.032 184.738909 
+L 608.256 184.738909 
+" clip-path="url(#pd0b0c7fdc3)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.12; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_9"/>
+     <g id="text_7">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="72.532" y="188.538128" transform="rotate(-0 72.532 188.538128)">95</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_10">
+      <path d="M 76.032 137.611636 
+L 608.256 137.611636 
+" clip-path="url(#pd0b0c7fdc3)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.12; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_11"/>
+     <g id="text_8">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="72.532" y="141.410855" transform="rotate(-0 72.532 141.410855)">100</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_12">
+      <path d="M 76.032 90.484364 
+L 608.256 90.484364 
+" clip-path="url(#pd0b0c7fdc3)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.12; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_13"/>
+     <g id="text_9">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="72.532" y="94.283582" transform="rotate(-0 72.532 94.283582)">105</text>
+     </g>
+    </g>
+    <g id="text_10">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="43.364812" y="165.888" transform="rotate(-90 43.364812 165.888)">November 6 close = 100</text>
+    </g>
+   </g>
+   <g id="line2d_14">
+    <path d="M 100.224 137.611636 
+L 221.184 177.860711 
+L 342.144 227.250416 
+L 463.104 202.808067 
+L 584.064 240.885611 
+" clip-path="url(#pd0b0c7fdc3)" style="fill: none; stroke: #a64e38; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="m901256c7aa" d="M 0 2 
+C 0.530406 2 1.03916 1.789267 1.414214 1.414214 
+C 1.789267 1.03916 2 0.530406 2 0 
+C 2 -0.530406 1.789267 -1.03916 1.414214 -1.414214 
+C 1.03916 -1.789267 0.530406 -2 0 -2 
+C -0.530406 -2 -1.03916 -1.789267 -1.414214 -1.414214 
+C -1.789267 -1.03916 -2 -0.530406 -2 0 
+C -2 0.530406 -1.789267 1.03916 -1.414214 1.414214 
+C -1.03916 1.789267 -0.530406 2 0 2 
+z
+" style="stroke: #a64e38"/>
+    </defs>
+    <g clip-path="url(#pd0b0c7fdc3)">
+     <use xlink:href="#m901256c7aa" x="100.224" y="137.611636" style="fill: #a64e38; stroke: #a64e38"/>
+     <use xlink:href="#m901256c7aa" x="221.184" y="177.860711" style="fill: #a64e38; stroke: #a64e38"/>
+     <use xlink:href="#m901256c7aa" x="342.144" y="227.250416" style="fill: #a64e38; stroke: #a64e38"/>
+     <use xlink:href="#m901256c7aa" x="463.104" y="202.808067" style="fill: #a64e38; stroke: #a64e38"/>
+     <use xlink:href="#m901256c7aa" x="584.064" y="240.885611" style="fill: #a64e38; stroke: #a64e38"/>
+    </g>
+   </g>
+   <g id="line2d_15">
+    <path d="M 100.224 137.611636 
+L 221.184 111.776932 
+L 342.144 118.95816 
+L 463.104 103.607121 
+L 584.064 107.445648 
+" clip-path="url(#pd0b0c7fdc3)" style="fill: none; stroke: #193c4a; stroke-width: 2; stroke-linecap: square"/>
+    <defs>
+     <path id="m829cfe43cb" d="M 0 2 
+C 0.530406 2 1.03916 1.789267 1.414214 1.414214 
+C 1.789267 1.03916 2 0.530406 2 0 
+C 2 -0.530406 1.789267 -1.03916 1.414214 -1.414214 
+C 1.03916 -1.789267 0.530406 -2 0 -2 
+C -0.530406 -2 -1.03916 -1.789267 -1.414214 -1.414214 
+C -1.789267 -1.03916 -2 -0.530406 -2 0 
+C -2 0.530406 -1.789267 1.03916 -1.414214 1.414214 
+C -1.03916 1.789267 -0.530406 2 0 2 
+z
+" style="stroke: #193c4a"/>
+    </defs>
+    <g clip-path="url(#pd0b0c7fdc3)">
+     <use xlink:href="#m829cfe43cb" x="100.224" y="137.611636" style="fill: #193c4a; stroke: #193c4a"/>
+     <use xlink:href="#m829cfe43cb" x="221.184" y="111.776932" style="fill: #193c4a; stroke: #193c4a"/>
+     <use xlink:href="#m829cfe43cb" x="342.144" y="118.95816" style="fill: #193c4a; stroke: #193c4a"/>
+     <use xlink:href="#m829cfe43cb" x="463.104" y="103.607121" style="fill: #193c4a; stroke: #193c4a"/>
+     <use xlink:href="#m829cfe43cb" x="584.064" y="107.445648" style="fill: #193c4a; stroke: #193c4a"/>
+    </g>
+   </g>
+   <g id="line2d_16">
+    <path d="M 100.224 137.611636 
+L 221.184 115.49711 
+L 342.144 119.203733 
+L 463.104 106.624723 
+L 584.064 110.071972 
+" clip-path="url(#pd0b0c7fdc3)" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #b59454; stroke-width: 2"/>
+    <defs>
+     <path id="mbccdd69ef5" d="M 0 2 
+C 0.530406 2 1.03916 1.789267 1.414214 1.414214 
+C 1.789267 1.03916 2 0.530406 2 0 
+C 2 -0.530406 1.789267 -1.03916 1.414214 -1.414214 
+C 1.03916 -1.789267 0.530406 -2 0 -2 
+C -0.530406 -2 -1.03916 -1.789267 -1.414214 -1.414214 
+C -1.789267 -1.03916 -2 -0.530406 -2 0 
+C -2 0.530406 -1.789267 1.03916 -1.414214 1.414214 
+C -1.03916 1.789267 -0.530406 2 0 2 
+z
+" style="stroke: #b59454"/>
+    </defs>
+    <g clip-path="url(#pd0b0c7fdc3)">
+     <use xlink:href="#mbccdd69ef5" x="100.224" y="137.611636" style="fill: #b59454; stroke: #b59454"/>
+     <use xlink:href="#mbccdd69ef5" x="221.184" y="115.49711" style="fill: #b59454; stroke: #b59454"/>
+     <use xlink:href="#mbccdd69ef5" x="342.144" y="119.203733" style="fill: #b59454; stroke: #b59454"/>
+     <use xlink:href="#mbccdd69ef5" x="463.104" y="106.624723" style="fill: #b59454; stroke: #b59454"/>
+     <use xlink:href="#mbccdd69ef5" x="584.064" y="110.071972" style="fill: #b59454; stroke: #b59454"/>
+    </g>
+   </g>
+   <g id="line2d_17">
+    <path d="M 76.032 137.611636 
+L 608.256 137.611636 
+" clip-path="url(#pd0b0c7fdc3)" style="fill: none; stroke-dasharray: 1,1.65; stroke-dashoffset: 0; stroke: #84909a"/>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start" x="76.032" y="39.208" transform="rotate(-0 76.032 39.208)">A descriptive market window, not a causal estimate</text>
+   </g>
+   <g id="legend_1">
+    <g id="line2d_18">
+     <path d="M 84.132 230.025656 
+L 93.132 230.025656 
+L 102.132 230.025656 
+" style="fill: none; stroke: #a64e38; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use xlink:href="#m901256c7aa" x="93.132" y="230.025656" style="fill: #a64e38; stroke: #a64e38"/>
+     </g>
+    </g>
+    <g id="text_12">
+     <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start" x="109.332" y="233.175656" transform="rotate(-0 109.332 233.175656)">NVDA  -10.96%</text>
+    </g>
+    <g id="line2d_19">
+     <path d="M 84.132 243.235969 
+L 93.132 243.235969 
+L 102.132 243.235969 
+" style="fill: none; stroke: #193c4a; stroke-width: 2; stroke-linecap: square"/>
+     <g>
+      <use xlink:href="#m829cfe43cb" x="93.132" y="243.235969" style="fill: #193c4a; stroke: #193c4a"/>
+     </g>
+    </g>
+    <g id="text_13">
+     <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start" x="109.332" y="246.385969" transform="rotate(-0 109.332 246.385969)">Nasdaq Composite  +3.20%</text>
+    </g>
+    <g id="line2d_20">
+     <path d="M 84.132 256.446281 
+L 93.132 256.446281 
+L 102.132 256.446281 
+" style="fill: none; stroke-dasharray: 7.4,3.2; stroke-dashoffset: 0; stroke: #b59454; stroke-width: 2"/>
+     <g>
+      <use xlink:href="#mbccdd69ef5" x="93.132" y="256.446281" style="fill: #b59454; stroke: #b59454"/>
+     </g>
+    </g>
+    <g id="text_14">
+     <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start" x="109.332" y="259.596281" transform="rotate(-0 109.332 259.596281)">S&amp;P 500  +2.92%</text>
+    </g>
+   </g>
+  </g>
+  <g id="text_15">
+   <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #53616a" transform="translate(76.032 322.81775)">U.S. regular closes, November 6–12, 2026. Price changes exclude dividends.</text>
+   <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #53616a" transform="translate(76.032 331.776)">Index movements do not isolate governance, policy or other company-specific news. Sources [41][65][66][93].</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pd0b0c7fdc3">
+   <rect x="76.032" y="62.208" width="532.224" height="207.36"/>
+  </clipPath>
+ </defs>
+</svg>
