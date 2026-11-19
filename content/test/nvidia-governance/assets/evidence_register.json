@@ -1,0 +1,479 @@
+[
+  {
+    "id": "s01",
+    "url": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
+    "title": "NVIDIA · A Message to Our Company",
+    "note": "November 8 employee letter. Acknowledges infidelity and does not name the other person.",
+    "zh": "员工信承认婚姻不忠；没有说明伴侣姓名或承认泄密。",
+    "kind": "Company statement",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s02",
+    "url": "https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors",
+    "title": "NVIDIA · Statement From NVIDIA Board of Directors",
+    "note": "November 8 statement announcing the inquiry and the board’s initial position.",
+    "zh": "11月8日董事会当时的初步表态，不能作为最终调查结论。",
+    "kind": "Company statement",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s03",
+    "url": "https://nvidianews.nvidia.com/news/statement-from-the-independent-members-of-the-nvidia-board",
+    "title": "NVIDIA · Statement From the Independent Members of the NVIDIA Board",
+    "note": "November 10 appointment of Joon H. Kim and Wachtell by the independent directors.",
+    "zh": "11月10日独立董事宣布聘请外部律师；确认程序，不提供最终发现。",
+    "kind": "Company statement",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s04",
+    "url": "https://gvwire.com/2026/10/29/nvidia-chief-seen-as-target-of-chinese-spy-plot/",
+    "title": "The New York Times · October 29 investigation, syndicated by GV Wire",
+    "note": "Intelligence allegations and an equipment-purchase estimate from trade records. The intelligence material is not public.",
+    "zh": "10月29日《纽约时报》调查转载；关系及情报指称应明确归于报道。",
+    "kind": "Investigative reporting",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s05",
+    "url": "https://www.mfa.gov.cn/web/fyrbt_673021/jzhsl_673025/202611/t20261110_12056801.shtml",
+    "title": "中华人民共和国外交部 · 2026 年 11 月 10 日例行记者会",
+    "note": "Chinese Foreign Ministry’s denial in the exchange about NVIDIA.",
+    "zh": "11月10日外交部回应；证明中国政府否认立场。",
+    "kind": "Government statement",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s07",
+    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+    "title": "SEC EDGAR · NVIDIA FY2026 Form 10-K",
+    "note": "Export-control history, H20 charge, H200 licenses and Note 17 geographic revenue.",
+    "zh": "2026财年年报；地域收入与H20费用，财年截至2026年1月25日。",
+    "kind": "Primary corporate filing",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s09",
+    "url": "https://www.megaspeed.ai/",
+    "title": "MegaSpeed · Official site and November 12 company statement",
+    "note": "Cloud offerings and November 12 company statement on cooperation and an intended GPU census.",
+    "zh": "11月12日公司声明；配合核验及聘请律师安排，并非已完成核查的结果。",
+    "kind": "Company statement",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s10",
+    "url": "https://www.reuters.com/world/china/nvidia-customer-megaspeed-says-it-cooperated-with-us-inspections-takes-export-2026-11-12/",
+    "title": "Reuters · MegaSpeed responds to U.S. inspections",
+    "note": "November 12 reporting on MegaSpeed’s own compliance and verification statements.",
+    "zh": "11月12日报道公司回应及美方核验；公司说法与独立发现分开。",
+    "kind": "News reporting",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s12",
+    "url": "https://www.cotton.senate.gov/imo/media/doc/101325lutnickletter.pdf",
+    "title": "U.S. Senator Tom Cotton · October 2025 letter to Commerce",
+    "note": "Signed October 2025 request to investigate MegaSpeed.",
+    "zh": "2025年10月议员致商务部长信；政策担忧与诉求，不是执法裁决。",
+    "kind": "Congressional letter",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s13",
+    "url": "https://clerk.house.gov/Votes/202613/",
+    "title": "Clerk of the U.S. House · H.R. 2683 vote",
+    "note": "January 12, 2026 House roll call, 369 to 22.",
+    "zh": "众议院2026年1月12日表决记录；不能据此写成法律已颁布。",
+    "kind": "Legislative record",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s19",
+    "url": "https://www.reuters.com/world/china/nvidia-ceos-affair-aided-75-billion-chip-shipments-china-information-reports-2026-11-10/",
+    "title": "Reuters · NVIDIA faces deepening scrutiny",
+    "note": "Reports the allegations and verification limits, and estimates the two-session market-cap move.",
+    "zh": "11月10日报道及对其他调查的转述；重复引用不增加独立信源数量。",
+    "kind": "News reporting",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s26",
+    "url": "https://www.banking.senate.gov/newsroom/minority/warren-banks-statement-on-nvidias-continued-export-of-advanced-ai-chips-following-reports-of-foreign-intelligence-operation",
+    "title": "U.S. Senate Banking Committee · Warren–Banks joint statement",
+    "note": "November 9 joint statement explicitly linking the reports to the push for AI Overwatch in the defense bill.",
+    "zh": "参议员跨党派声明；确认公开政策立场。",
+    "kind": "Congressional statement",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000075/nvda-20260726.htm",
+    "title": "SEC EDGAR · NVIDIA Q2 FY2027 Form 10-Q",
+    "note": "Geographic revenue, licensed H200 shipments and charges. Quarter ended July 26, 2026.",
+    "zh": "截至2026年7月26日季报；地域收入、H200、附注10及管理层讨论的投资与承诺。",
+    "kind": "Primary corporate filing",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s29",
+    "url": "https://www.csis.org/analysis/nvidias-jensen-huang-securing-american-leadership-ai",
+    "title": "CSIS · Jensen Huang on American AI leadership",
+    "note": "Huang’s public argument about global adoption of U.S. technology and AI leadership.",
+    "zh": "黄仁勋在CSIS的公开政策论证；代表其立场，不能独立证明政策效果。",
+    "kind": "Public interview / transcript",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s30",
+    "url": "https://lda.gov/filings/public/filing/017c32c9-d63b-43f1-bf16-8e1e70da4b7d/print/",
+    "title": "U.S. Lobbying Disclosure Act · NVIDIA Q3 2026 LD-2",
+    "note": "Aggregate in-house lobbying expenses and disclosed issues, with no per-bill allocation.",
+    "zh": "2026年第三季度LD-2游说申报；总额215万美元，未按每项法案分配。",
+    "kind": "Lobbying disclosure",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s31",
+    "url": "https://www.govinfo.gov/app/details/BILLS-119hr6875ih",
+    "title": "GovInfo · H.R. 6875, AI Overwatch Act",
+    "note": "Introduced text and December 2025 filing date.",
+    "zh": "AI Overwatch法案文本；文本版本和立法进度应与现行法区别。",
+    "kind": "Bill text",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s37",
+    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000209/R20.htm",
+    "title": "SEC EDGAR · NVIDIA Q2 FY2026 geographic revenue note",
+    "note": "Old billing-address table and the qualifier for controlled compute billed to Singapore.",
+    "zh": "旧地域披露按开票地址；有关新加坡说明仅适用于相应产品子集。",
+    "kind": "Primary corporate filing",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s38",
+    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000230/nvda-20251026.htm",
+    "title": "SEC EDGAR · NVIDIA Q3 FY2026 Form 10-Q",
+    "note": "Change to customer-headquarters reporting and recast comparatives.",
+    "zh": "2026财年第三季度季报；地域口径变更及可比重列说明。",
+    "kind": "Primary corporate filing",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s39",
+    "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+    "title": "NVIDIA · Q2 FY2027 results and Q3 outlook",
+    "note": "August Q3 outlook, including its China Data Center compute assumption.",
+    "zh": "2027财年二季度业绩及三季度指引；指引早于11月事件，非实际结果。",
+    "kind": "Company earnings disclosure",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s41",
+    "url": "https://stockanalysis.com/stocks/nvda/history/",
+    "title": "Stock Analysis / S&P Global Market Intelligence · NVDA historical prices",
+    "note": "Regular-session closes for November 5–11. Period returns calculated by DEX Research.",
+    "zh": "NVDA日线历史；仅取11月6至12日常规收盘，不混入盘中与盘后。",
+    "kind": "Market data",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s46",
+    "url": "https://www.bis.gov/media/documents/ai-counter-diversion-industry-guidance-may-13-2025.pdf",
+    "title": "U.S. BIS · May 2025 industry guidance on chip diversion",
+    "note": "Guidance on end users, data centers, and controls for specified restricted uses.",
+    "zh": "BIS于2025年5月13日发布的防转运指导；一般指引不是个案认定。",
+    "kind": "Regulatory guidance",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s51",
+    "url": "https://s201.q4cdn.com/141608511/files/doc_downloads/governance_documents/2024/03/NVIDIA-Amended-and-Restated-Bylaws-March-12-2024.pdf",
+    "title": "NVIDIA · Amended and Restated Bylaws, §32",
+    "note": "Director voting authority for removal of an officer.",
+    "zh": "公司章程第32条等；高管任免与股权、董事任免是不同事项。",
+    "kind": "Corporate governance document",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s55",
+    "url": "https://dockets.justia.com/docket/california/candce/5:2026cv13448/483368",
+    "title": "N.D. California federal court docket, via Justia",
+    "note": "Case number, parties and November 9 filing date.",
+    "zh": "Justia公开案卷镜像：案号5:26-cv-13448及立案；未查询完整实时PACER。",
+    "kind": "Court-docket mirror",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s56",
+    "url": "https://www.dandodiary.com/wp-content/uploads/sites/893/2026/11/Nvidia-Complaint.pdf",
+    "title": "Kistenmacher v. NVIDIA et al. · Filed complaint, document mirror",
+    "note": "File-stamped complaint setting out the plaintiff’s allegations.",
+    "zh": "起诉书镜像；属于原告指控，不能作为法院事实认定。",
+    "kind": "Party pleading",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s63",
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-01-15/pdf/2026-00789.pdf",
+    "title": "U.S. Federal Register · H200-class license review rule",
+    "note": "January 15, 2026 final rule and case-by-case review conditions.",
+    "zh": "2026年1月15日联邦公报：H200类许可逐案审查及客户识别等条件。",
+    "kind": "Published regulation",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s64",
+    "url": "https://www.govinfo.gov/app/details/BILLS-119hr2683rfs",
+    "title": "GovInfo · H.R. 2683 as referred in the U.S. Senate",
+    "note": "Version received and referred in the Senate on January 13, 2026.",
+    "zh": "众议院通过后提交参议院的远程接入法案版本；不等于已生效法律。",
+    "kind": "Bill text",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s65",
+    "url": "https://markets.ft.markitdigital.com/data/indices/tearsheet/historical?s=COMP%3ANAS",
+    "title": "Financial Times Markets · NASDAQ Composite daily history",
+    "note": "Same-date benchmark for a descriptive comparison with NVDA.",
+    "zh": "纳斯达克综合指数历史；用于同一日期窗口的起点及比较。",
+    "kind": "Market data",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s66",
+    "url": "https://fred.stlouisfed.org/series/SP500",
+    "title": "FRED / S&P Dow Jones Indices · S&P 500",
+    "note": "Same-date S&P 500 benchmark.",
+    "zh": "FRED转引标普指数；注明数据来源与相同收盘窗口。",
+    "kind": "Market data",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s67",
+    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000036/nvda-20260512.htm",
+    "title": "SEC EDGAR · NVIDIA 2026 proxy statement",
+    "note": "Beneficial ownership, board independence and lead independent director structure.",
+    "zh": "2026年代理声明；持股口径日期3月23日，实益权益包含共享权利。",
+    "kind": "Primary corporate filing",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s68",
+    "url": "https://democrats-foreignaffairs.house.gov/wp-content/uploads/2026/11/letter-to-commerce-on-ai-chip-export-to-chinafinal.pdf",
+    "title": "U.S. House Foreign Affairs Democrats · November 9 letter to Commerce",
+    "note": "Request to pause certain exports and provide details about awareness, licenses and enforcement.",
+    "zh": "11月9日民主党议员致商务部函；确认问责诉求，不证明指控成立。",
+    "kind": "Congressional letter",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s71",
+    "title": "SEC EDGAR · NVIDIA Form 8-K, Item 5.02",
+    "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm",
+    "note": "November 12 filing: resignation effective November 11; interim CEO and board chair. Does not disclose investigative findings.",
+    "zh": "11月12日提交；确认11日生效的辞任、临时CEO与董事长任命，不披露调查结论。",
+    "kind": "Primary corporate filing",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s72",
+    "title": "NVIDIA · CEO transition announcement",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition/",
+    "note": "November 12: transition, first board chair and November 17 results schedule. Business-continuity statements are management expectations.",
+    "zh": "11月12日：过渡安排、首任董事长及财报日程；业务持续为管理层预期。",
+    "kind": "Company statement",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s73",
+    "title": "Singapore MHA · Investigations into Alice Huang and Megaspeed",
+    "url": "https://www.mha.gov.sg/media-room/newsroom/singapore-investigations-into-alice-huang-huang-le-and-megaspeed-international-pte-ltd/",
+    "note": "November 12, paragraphs 2–9: domestic declaration inquiry, individual disposition, continuing company inquiry and unresolved onward route.",
+    "zh": "11月12日，第2至9段：本国申报调查、个人处理、公司调查状态及尚待核实的后续去向。",
+    "kind": "Government statement",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s74",
+    "title": "Malaysia MITI · Megaspeed / Speedmatrix statement",
+    "url": "https://www.miti.gov.my/miti/resources/Speech/MEDIA_STATEMENT_13112026.pdf",
+    "note": "November 13, two-page statement: no official clearance; customs inquiry and distinction between imports and controlled onward movements.",
+    "zh": "11月13日两页声明：例行走访不构成确认；海关核验及进口与后续流动的规则区别。",
+    "kind": "Government statement",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s75",
+    "title": "Reuters · DOJ has not concluded Alice Huang was a spy",
+    "url": "https://www.reuters.com/world/china/us-justice-department-has-not-concluded-alice-huang-was-chinese-spy-blanche-says-2026-11-12/",
+    "note": "November 12: reports Attorney General Blanche’s remarks on an FBI inquiry and the absence of a DOJ conclusion.",
+    "zh": "11月12日：转述司法部长关于FBI调查和司法部尚无身份结论的公开表态。",
+    "kind": "News reporting",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s76",
+    "title": "House Foreign Affairs Committee · Second request to Huang and NVIDIA",
+    "url": "https://foreignaffairs.house.gov/news/press-releases/chairmen-mast-moolenaar-and-crawford-send-second-request-to-jensen-huang-and-nvidia-to-brief-congress-on-the-chinese-intelligence-asset",
+    "note": "November 12: committee requests and explicit support for four legislative proposals. Political allegations in the release are attributed positions.",
+    "zh": "11月12日：委员会要求及明确推动四项提案；声明中的指控属于议员立场。",
+    "kind": "Congressional statement",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s77",
+    "title": "House committee chairs · Letter to Jensen Huang",
+    "url": "https://foreignaffairs.house.gov/sites/evo-subsites/republicans-foreignaffairs.house.gov/files/evo-media-document/11.12.26-chairmen-letter-to-mr-jensen-huang.pdf",
+    "note": "Signed November 12: proposed December 1 transcribed interview, reply by November 19, conditional subpoena warning.",
+    "zh": "11月12日签署：拟12月1日录供、11月19日前回复及有条件传票警告。",
+    "kind": "Congressional letter",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s78",
+    "title": "House committee chairs · Letter to Tim Teter",
+    "url": "https://foreignaffairs.house.gov/sites/evo-subsites/republicans-foreignaffairs.house.gov/files/evo-media-document/11.12.26-chairmen-letter-to-nvidia-gc.pdf",
+    "note": "Signed November 12: proposed December 2 transcribed interview; a request, not an attendance record.",
+    "zh": "11月12日签署：拟12月2日录供；证明提出要求，不是出席记录。",
+    "kind": "Congressional letter",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s79",
+    "title": "House committee chairs · Invitation to Jeffrey Kessler",
+    "url": "https://foreignaffairs.house.gov/sites/evo-subsites/republicans-foreignaffairs.house.gov/files/evo-media-document/11.12.26-invitation-to-u-s-kessler.pdf",
+    "note": "November 12: invitation for December 3, written confirmation requested by November 19.",
+    "zh": "11月12日：拟12月3日听证，要求11月19日前书面确认。",
+    "kind": "Congressional letter",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s80",
+    "title": "Reuters · Chinese AI projects reliant on NVIDIA",
+    "url": "https://www.reuters.com/world/china/huang-exit-us-scrutiny-imperil-3-billion-chinese-ai-projects-reliant-nvidia-2026-11-13/",
+    "note": "November 13: review of over 150 documents; mixed project and equipment values, not NVIDIA revenue or a MegaSpeed transaction finding.",
+    "zh": "11月13日：核查150余份文件；项目与设备混合口径，不等于英伟达收入或MegaSpeed交易认定。",
+    "kind": "Investigative reporting",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s81",
+    "title": "Lettall / Tianjian · 2024 financing inquiry response",
+    "url": "https://static.cninfo.com.cn/finalpage/2024-07-23/1220700361.PDF",
+    "note": "July 23, 2024; new-business section, printed pages 107–133. Ownership, procurement and leasing disclosures; not proof of every later supply route.",
+    "zh": "2024年7月23日，新业务部分，第107至133页：股权、采购与租赁披露，不代表后续全部供货路径。",
+    "kind": "Issuer / accountant disclosure",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s82",
+    "title": "Lettall · 2025-026 reply to annual-report inquiry",
+    "url": "https://static.cninfo.com.cn/finalpage/2025-07-05/1224082997.PDF",
+    "note": "July 5, 2025, especially printed pages 8–10, 19–25: service model, anonymous Company Seven, annual transactions and prepaid balances.",
+    "zh": "2025年7月5日，重点第8至10、19至25页：服务模式、匿名公司七、年度交易及预付款余额。",
+    "kind": "Issuer disclosure",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s83",
+    "title": "Kharon · Research on Alice Huang and MegaSpeed",
+    "url": "https://www.kharon.com/brief/alice-huang-nvidia-china-megaspeed",
+    "note": "Third-party matching of anonymous supplier identifiers; treated as a research inference, not issuer confirmation of the name.",
+    "zh": "第三方对匿名供应商身份特征的匹配；本文作为推论，未升级为发行人名称确认。",
+    "kind": "Third-party research",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s84",
+    "title": "Lianhe Zaobao · MegaSpeed financial statements",
+    "url": "https://www.zaobao.com.sg/en/finance/singapore/megaspeed-linked-jensen-huangs-alleged-affair-partner-sees-assets-surge-90-fold-year",
+    "note": "November 2026: registry-based financial reporting. Full financial statements were not obtained independently for this report.",
+    "zh": "2026年11月：查阅登记财报后的报道；本文未独立取得完整财报附注。",
+    "kind": "Registry-based reporting",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s85",
+    "title": "Lianhe Zaobao · Speedmatrix and Apex financing",
+    "url": "https://www.zaobao.com.sg/finance/singapore/story20261113-9986149",
+    "note": "November 13: registered collateral and creditor ownership chain; does not trace every purchase or establish operational control.",
+    "zh": "11月13日：登记担保及债权人股权链，不追踪全部采购或证明经营控制。",
+    "kind": "Registry-based reporting",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s86",
+    "title": "SEC EDGAR · CoreWeave 2025 Form 10-K",
+    "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000104/crwv-20251231.htm",
+    "note": "Financing model: long-term contracts, asset financing and customer prepayments. Industry comparator, not evidence of MegaSpeed terms.",
+    "zh": "长期合同、资产融资和客户预付款模式；行业对照，不是MegaSpeed合同证据。",
+    "kind": "Primary corporate filing",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s87",
+    "title": "SEC EDGAR · CoreWeave September 2025 Form 8-K",
+    "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962825000047/crwv-20250909.htm",
+    "note": "Filed September 15; September 9 order, Item 1.01: conditional residual-capacity arrangement and NVIDIA’s multiple commercial roles.",
+    "zh": "9月15日提交，披露9日订单，1.01项：有条件剩余容量安排及英伟达的多重角色。",
+    "kind": "Primary corporate filing",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s88",
+    "title": "Taipei City Government · NVIDIA headquarters contract progress",
+    "url": "https://www.gov.taipei/News_Content.aspx?n=F0DDAF49B89E9413&s=399C8CF37DD8B114&sms=72544237BBE4C5F6",
+    "note": "November 13: one local project’s contracting and payments; does not establish worldwide business continuity.",
+    "zh": "11月13日：当地总部项目签约和付款情况，不代表全球全部项目状态。",
+    "kind": "Government statement",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s89",
+    "title": "NVIDIA · Fleet Intelligence technical description",
+    "url": "https://developer.nvidia.com/blog/introducing-nvidia-fleet-intelligence-for-real-time-gpu-fleet-visibility-and-optimization/",
+    "note": "May 11, 2026: agent telemetry and supported hardware attestation. Product description, not evidence all historical GPUs are monitored.",
+    "zh": "2026年5月11日：代理遥测及部分硬件证明功能；不证明历史销售全部受到监控。",
+    "kind": "Company technical disclosure",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s90",
+    "title": "Reuters · Senate Banking chair requests testimony",
+    "url": "https://www.reuters.com/business/us-senate-banking-committee-chair-calls-jensen-huang-lutnick-testify-2026-11-13/",
+    "note": "November 13: Tim Scott’s oversight request; invitations and possible subpoenas are not completed proceedings.",
+    "zh": "11月13日：Tim Scott监督要求；邀请与可能传票不等于已经完成程序。",
+    "kind": "News reporting",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s92",
+    "title": "SEC exhibit · NVIDIA and CoreWeave expand partnership",
+    "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000044/ex991pressrelease_final.htm",
+    "note": "January 26, 2026: $2 billion investment and expansion target. Target capacity is not installed capacity.",
+    "zh": "2026年1月26日：20亿美元投资及扩张目标；目标容量不是已投运容量。",
+    "kind": "Company announcement filed with SEC",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s93",
+    "title": "Associated Press · U.S. index closes, November 12, 2026",
+    "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-3f3668a937a11535103e3a5c8d82c9fc",
+    "note": "Regular-close index values; used with starting values for the November 6–12 window.",
+    "zh": "常规收盘指数；与起始值配对计算11月6至12日变动。",
+    "kind": "Market reporting",
+    "accessed": "2026-11-13"
+  },
+  {
+    "id": "s94",
+    "title": "Reuters · Malaysia probes possible onward chip exports",
+    "url": "https://www.reuters.com/world/asia-pacific/malaysia-says-it-is-investigating-if-any-chips-linked-speedmatrix-were-re-2026-11-13/",
+    "note": "November 13 update: Prime Minister Anwar said there was then no indication of linked chips leaving Malaysia. Not a final clearance.",
+    "zh": "11月13日更新：总理称当时未见相关芯片出境迹象；不构成最终确认。",
+    "kind": "News reporting",
+    "accessed": "2026-11-13"
+  }
+]

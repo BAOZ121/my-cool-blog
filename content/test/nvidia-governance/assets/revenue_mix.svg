@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="633.6pt" height="331.2pt" viewBox="0 0 633.6 331.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-13T20:53:48.217252</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 331.2 
+L 633.6 331.2 
+L 633.6 0 
+L 0 0 
+z
+" style="fill: #faf8f3"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 82.368 261.648 
+L 608.256 261.648 
+L 608.256 59.616 
+L 82.368 59.616 
+z
+" style="fill: #faf8f3"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 82.368 261.648 
+L 82.368 59.616 
+" clip-path="url(#p0eb24a5d82)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2"/>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="82.368" y="272.746438" transform="rotate(-0 82.368 272.746438)">0.0%</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 196.691478 261.648 
+L 196.691478 59.616 
+" clip-path="url(#p0eb24a5d82)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4"/>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="196.691478" y="272.746438" transform="rotate(-0 196.691478 272.746438)">5.0%</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 311.014957 261.648 
+L 311.014957 59.616 
+" clip-path="url(#p0eb24a5d82)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6"/>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="311.014957" y="272.746438" transform="rotate(-0 311.014957 272.746438)">10.0%</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 425.338435 261.648 
+L 425.338435 59.616 
+" clip-path="url(#p0eb24a5d82)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8"/>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="425.338435" y="272.746438" transform="rotate(-0 425.338435 272.746438)">15.0%</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 539.661913 261.648 
+L 539.661913 59.616 
+" clip-path="url(#p0eb24a5d82)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10"/>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="539.661913" y="272.746438" transform="rotate(-0 539.661913 272.746438)">20.0%</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_11"/>
+     <g id="text_6">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="78.868" y="90.372568" transform="rotate(-0 78.868 90.372568)">FY2025</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_12"/>
+     <g id="text_7">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="78.868" y="164.431219" transform="rotate(-0 78.868 164.431219)">FY2026</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_13"/>
+     <g id="text_8">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="78.868" y="238.48987" transform="rotate(-0 78.868 238.48987)">H1 FY2027</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 82.368 68.799273 
+L 521.240079 68.799273 
+L 521.240079 104.347425 
+L 82.368 104.347425 
+z
+" clip-path="url(#p0eb24a5d82)" style="fill: #c7af7d"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 82.368 142.857924 
+L 290.71883 142.857924 
+L 290.71883 178.406076 
+L 82.368 178.406076 
+z
+" clip-path="url(#p0eb24a5d82)" style="fill: #b59454"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 82.368 216.916575 
+L 242.181856 216.916575 
+L 242.181856 252.464727 
+L 82.368 252.464727 
+z
+" clip-path="url(#p0eb24a5d82)" style="fill: #193c4a"/>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #193c4a" x="529.242722" y="89.332724" transform="rotate(-0 529.242722 89.332724)">19.19%</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #193c4a" x="298.721474" y="163.391375" transform="rotate(-0 298.721474 163.391375)">9.11%</text>
+   </g>
+   <g id="text_11">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #193c4a" x="250.184499" y="237.450026" transform="rotate(-0 250.184499 237.450026)">6.99%</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start" x="82.368" y="35.616" transform="rotate(-0 82.368 35.616)">Direct China / Hong Kong customer revenue share</text>
+   </g>
+  </g>
+  <g id="text_13">
+   <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #53616a" transform="translate(79.8336 307.33775)">Customer headquarters basis. H1 FY2027 ended July 26, 2026.</text>
+   <text style="font-size: 8px; font-family: 'DejaVu Sans'; fill: #53616a" transform="translate(79.8336 316.296)">Annual and half-year shares show mix; absolute revenue is not a like-for-like growth series. Sources [07][28].</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p0eb24a5d82">
+   <rect x="82.368" y="59.616" width="525.888" height="202.032"/>
+  </clipPath>
+ </defs>
+</svg>
