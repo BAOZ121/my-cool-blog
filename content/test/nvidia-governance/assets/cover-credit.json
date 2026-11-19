@@ -1,9 +1,15 @@
 {
-  "title": "NVIDIA: governance, power and AI compute",
-  "creator": "DEX Research",
-  "kind": "Original typographic editorial artwork",
-  "description": "Abstract circuit illustration. It does not depict a person, location, or alleged transaction.",
-  "created": "2026-11-13",
-  "source": "Original vector geometry and typography rendered locally",
-  "rights": "Original DEX Research artwork; DejaVu Sans font license applies to font software."
+  "title": "Jen-Hsun Huang Headshot",
+  "creator": "NVIDIA / nvidia.corporation",
+  "kind": "Archival photograph",
+  "description": "Portrait of Jensen Huang, dated October 10, 2014 by the source. This archival portrait does not depict the events discussed in the report.",
+  "created": "2014-10-10",
+  "retrieved": "2026-11-19",
+  "source": "https://www.flickr.com/photos/nvidia/15313247387/",
+  "source_page": "https://commons.wikimedia.org/wiki/File:Jen-Hsun_Huang_Headshot_(15313247387).jpg",
+  "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Jen-Hsun_Huang_Headshot_%2815313247387%29.jpg",
+  "rights": "Creative Commons Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0)",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+  "modifications": "Original JPEG preserved byte-for-byte. Hugo generates resized and compressed WebP copies for responsive display; those copies retain the same CC BY-SA 2.0 license. CSS may crop the viewport without altering the source photograph.",
+  "local_file": "../cover.jpg"
 }

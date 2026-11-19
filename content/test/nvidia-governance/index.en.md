@@ -3,8 +3,8 @@ title: "After Jensen Huang: NVIDIA, Compute Access and the Politics of Control"
 description: "A document-based investigation of NVIDIA’s leadership transition, cross-border compute access, financing chains and export-control politics, updated through 13 November 2026."
 date: "2026-11-13"
 lastmod: "2026-11-19"
-image: "cover.webp"
-imageAlt: "NVIDIA: governance, power and AI compute. Original DEX Research typographic artwork with an abstract circuit."
+image: "cover.jpg"
+imageAlt: "Archival portrait of Jensen Huang, photographed in 2014 and published by NVIDIA."
 dataDownload: "/test/nvidia-governance/assets/market_data.csv"
 draft: false
 url: "/test/nvidia-governance/"
@@ -25,6 +25,7 @@ outputs:
 reportversion: "2026-11-13-review"
 evidencecutoff: "2026-11-13"
 ---
+<style>.article-header .article-image img[data-article-cover]{object-position:center top}</style>
 <style>.article-content .table-wrapper{max-width:100%;overflow-x:auto;overscroll-behavior-x:contain}.article-content .table-wrapper:focus-visible{outline:2px solid var(--accent-color);outline-offset:3px}.article-content .source-list{padding-left:1.5em}.article-content .source-list li{margin-bottom:1.35em;overflow-wrap:anywhere}.article-content sup a{white-space:nowrap}.article-content table{min-width:600px}.article-content .report-chart{margin:2rem 0;max-width:100%}.article-content .report-chart img{display:block;width:100%;height:auto;max-width:100%}.article-content .report-chart figcaption{font-size:.9em;line-height:1.6;margin-top:.65rem}@media print{.article-content table{min-width:0}.article-content .table-wrapper{overflow:visible}} .article-content .nvidia-preview-note{padding:1.2rem 1.5rem;border:1px solid var(--card-separator-color);border-left:4px solid #b59454;border-radius:8px;margin:1.5rem 0 2rem;background:var(--card-background)}.article-content .nvidia-preview-note p{font-size:.95em;line-height:1.7;margin:.5rem 0}</style>
 <aside class="nvidia-preview-note" aria-label="Research preview status">
 <p><strong>Website test edition.</strong> Prepared for review on 19 November 2026. The research below retains its <strong>13 November 2026 (UTC)</strong> information cutoff. Events described as upcoming reflect that date.</p>
@@ -32,7 +33,7 @@ evidencecutoff: "2026-11-13"
 </aside>
 
 
-<p><small>Cover: original DEX Research editorial artwork. The abstract circuit does not depict an alleged transaction.</small></p>
+<p><small>Cover: Jensen Huang, 2014 archival portrait. Photo: <a href="https://www.flickr.com/photos/nvidia/15313247387/" target="_blank" rel="noopener">NVIDIA / nvidia.corporation</a>, via <a href="https://commons.wikimedia.org/wiki/File:Jen-Hsun_Huang_Headshot_(15313247387).jpg" target="_blank" rel="noopener">Wikimedia Commons</a>, licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener">CC BY-SA 2.0</a>. The original photograph is preserved; responsive copies are resized and compressed. This is an archival portrait, not a photograph of the events discussed.</small></p>
 
 **DEX Research | Revised in-depth report | Information cutoff: November 13, 2026 (UTC)**
 
